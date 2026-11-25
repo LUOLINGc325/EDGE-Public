@@ -4,13 +4,14 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**114 research entries / 成果条目 · 156 manuscript versions / 论文版本**
+**120 research entries / 成果条目 · 167 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
 | 自适应指数核回归的尖锐同时置信宽度 · Sharp simultaneous confidence widths for adaptive exponential-kernel regression | [阅读](adaptive-exponential-kernel-confidence/paper.zh.md) | [Read](adaptive-exponential-kernel-confidence/paper.en.md) |
 | 不可逆环境切换下的平均增长频率单调性 · Annealed frequency reduction under irreversible environmental switching | [阅读](annealed-frequency-reduction/paper.zh.md) | [Read](annealed-frequency-reduction/paper.en.md) |
 | 近似差分隐私下最优 e-power 的指数预算相图 · The Privacy-Failure Exponent in Optimal Differentially Private E-Power | [阅读](approximate-dp-epower-exponent/paper.zh.md) | [Read](approximate-dp-epower-exponent/paper.en.md) |
+| Gray 区间内部二元 Markov 源的操作色散 | [阅读](binary-markov-gray-dispersion/paper.zh.md) | [Read](binary-markov-gray-dispersion/paper.en.md) |
 | Assignment bounds and constant-factor algorithms for bounded-hop independent-set reconfiguration | [阅读](bounded-hop-independent-set-approximation/paper.zh.md) | [Read](bounded-hop-independent-set-approximation/paper.en.md) |
 | 图伊辛演化的稳定子 Rényi 矩：连续角分解、整数阶消元与二元割谱 | [阅读](cactus-ising-stabilizer/paper.zh.md) | — |
 | 仙人掌图态的奇复制有理延拓分类 | [阅读](cactus-replica-rationality/paper.zh.md) | — |
@@ -33,10 +34,12 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 弦图与凸二分图上更快的最大边开堆积算法 | [阅读](faster-edge-open-packing/paper.zh.md) | — |
 | 链图等距路径划分与覆盖的更快算法 | [阅读](faster-isometric-paths-chain/paper.zh.md) | — |
 | 余图等距路径覆盖与划分的更快算法 | [阅读](faster-isometric-paths-cographs/paper.zh.md) | — |
+| The exact finite-job consistency–robustness frontier for non-clairvoyant scheduling | — | [Read](finite-n-prediction-scheduling/paper.en.md) |
 | 量子首次通过核的逆实现与任意维可见例外点 | [阅读](first-passage-kernel-inverse-realization/paper.zh.md) | — |
 | 固定至少四个代理时，累计嫉妒最小化的弱 NP 完全性 | [阅读](fixed-agent-cumulative-envy/paper.zh.md) | [Read](fixed-agent-cumulative-envy/paper.en.md) |
 | 任意量子比特数的固定角测量型精确酉二设计 | [阅读](fixed-angle-mbqc-unitary-design/paper.zh.md) | — |
 | 固定不可逆生成元的任意多重频率峰 | [阅读](floquet-many-frequency-optima/paper.zh.md) | [Read](floquet-many-frequency-optima/paper.en.md) |
+| 多控制 Fredkin 门的精确纠缠能力 | [阅读](four-qubit-fredkin-exact-entangling-power/paper.zh.md) | — |
 | Two-level Pauli spectra and the four-qubit obstruction to mutually unbiased orbits | — | [Read](four-qubit-pauli-mub-obstruction-and-robustness/paper.en.md) |
 | 全覆盖唯一支配在弦图上的困难性及区间图算法 | [阅读](full-cover-unidomination-chordal/paper.zh.md) | — |
 | 双变量 Gaffke 改进规则的精确反演与最大区间缩减 | [阅读](gaffke-bivariate-interval-inversion/paper.zh.md) | [Read](gaffke-bivariate-interval-inversion/paper.en.md) |
@@ -50,9 +53,10 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 一维随机 Pauli 读出恢复 GHZ 相位的最优对数深度 | [阅读](ghz-pauli-readout-depth/paper.zh.md) | — |
 | 降温可使 Glauber 活动度超过二分之一 | [阅读](glauber-activity-counterexample/paper.zh.md) | [Read](glauber-activity-counterexample/paper.en.md) |
 | Glauber 退火中过量活动度的桥结构机制 | [阅读](glauber-annealing-activity-counterexample/paper.zh.md) | [Read](glauber-annealing-activity-counterexample/paper.en.md) |
+| Precise independent e-merging beyond reordered martingales | [阅读](independent-e-merging-beyond-martingales/paper.zh.md) | [Read](independent-e-merging-beyond-martingales/paper.en.md) |
 | 分裂图上的等距路径覆盖是 NP 完全的 | [阅读](isometric-path-cover-split/paper.zh.md) | — |
 | 闭合三角链的 Johnson 诱导表示 | [阅读](johnson-triangle-chain-parity/paper.zh.md) | — |
-| 任意类别数随机响应的精确 zCDP：全局相变、唯一最优阶与锐渐近 | [阅读](krr-exact-zcdp/paper.zh.md) | — |
+| 任意类别数随机响应的精确 zCDP：全局相变、唯一最优阶与锐渐近 | [阅读](krr-exact-zcdp/paper.zh.md) | [Read](krr-exact-zcdp/paper.en.md) |
 | 非参数均值检验的留一强对偶与有限网格计算 | [阅读](leave-one-out-mean-strong-duality/paper.zh.md) | [Read](leave-one-out-mean-strong-duality/paper.en.md) |
 | Lexicographic Swap Rounding Need Not Be 1-Negatively Associated | [阅读](lexicographic-swap-rounding-counterexample/paper.zh.md) | [Read](lexicographic-swap-rounding-counterexample/paper.en.md) |
 | 留一对偶的闭包效应与近单位间隙 | [阅读](loo-continuous-dual-closure-gap/paper.zh.md) | [Read](loo-continuous-dual-closure-gap/paper.en.md) |
@@ -88,11 +92,12 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 似然比单调事后检验的可容许性 | [阅读](posthoc-randomized-admissibility/paper.zh.md) | [Read](posthoc-randomized-admissibility/paper.en.md) |
 | Three Projective Measurements Witness an Exclusion Advantage for Every Pure Entangled State | [阅读](pure-entanglement-three-measurement-exclusion/paper.zh.md) | [Read](pure-entanglement-three-measurement-exclusion/paper.en.md) |
 | 完全图量子电池中可分初态的精确充电功率 | [阅读](quantum-battery-separable-initialization/paper.zh.md) | [Read](quantum-battery-separable-initialization/paper.en.md) |
-| 四阶与五阶量子 Rényi 信息合并的最优擦除界 | [阅读](quantum-renyi45-erasure-bound/paper.zh.md) | — |
-| 量子输运代价的精确多边形逼近 | [阅读](quantum-transport-polygon-exactness/paper.zh.md) | — |
+| 四阶与五阶量子 Rényi 信息合并的最优擦除界 | [阅读](quantum-renyi45-erasure-bound/paper.zh.md) | [Read](quantum-renyi45-erasure-bound/paper.en.md) |
+| 量子输运代价的精确多边形逼近 | [阅读](quantum-transport-polygon-exactness/paper.zh.md) | [Read](quantum-transport-polygon-exactness/paper.en.md) |
 | 任意维热机器下双能级系统的二阶耗散下界 | [阅读](qubit-cooling-arbitrary-machine/paper.zh.md) | — |
 | 双能级冷却壳容量的多项式时间精确证书 | [阅读](qubit-cooling-bernstein-certificate/paper.zh.md) | — |
 | 四能级纠缠交换的固定资源精确可达区间 | [阅读](ququart-swapping-fixed-resource-range/paper.zh.md) | — |
+| 三维纯态 ECQC 的精确最优界 | [阅读](qutrit-ecqc-sharp-bound/paper.zh.md) | — |
 | 量子通道高阶张量矩的精确谱半径 | [阅读](rb-all-tensor-contractivity/paper.zh.md) | — |
 | 反射扩散的周期与 Markov 切换频率分类 | [阅读](reflecting-diffusion-frequency-classification/paper.zh.md) | — |
 | 排序 Schmidt 参考态最优性的半阶精确反例 | [阅读](schmidt-reference-renyi-half-counterexample/paper.zh.md) | [Read](schmidt-reference-renyi-half-counterexample/paper.en.md) |
@@ -105,6 +110,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 六环图态偶阶复制秩的二素数分解 | [阅读](six-cycle-even-replica-factorization/paper.zh.md) | — |
 | 六 qubit 多重熵在奇数指标上的无限次上升 | [阅读](six-cycle-odd-index-entropy-rises/paper.zh.md) | — |
 | 六环图态的奇阶复制秩及两条算术分支 | [阅读](six-cycle-replica-arithmetic/paper.zh.md) | — |
+| 三态马尔可夫链有限精度观测下的熵产生双区间定理 | [阅读](stroboscopic-three-state-entropy-range/paper.zh.md) | — |
 | 重抽样最大幂分样本似然比的水平反例 | [阅读](subsampled-max-power-lqrt/paper.zh.md) | — |
 | 三量子比特张量 Pauli 单轨道互无偏基的不存在性 | [阅读](three-qubit-pauli-mub-obstruction/paper.zh.md) | — |
 | 三态热弛豫的全局熵衰减常数 | [阅读](three-state-mlsi-certificate/paper.zh.md) | — |
