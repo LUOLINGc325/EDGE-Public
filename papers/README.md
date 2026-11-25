@@ -4,10 +4,11 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**124 research entries / 成果条目 · 177 manuscript versions / 论文版本**
+**130 research entries / 成果条目 · 187 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
+| Exact erasure resilience with adaptively scheduled feedback | [阅读](adaptive-erasure-feedback-law/paper.zh.md) | [Read](adaptive-erasure-feedback-law/paper.en.md) |
 | 自适应指数核回归的尖锐同时置信宽度 · Sharp simultaneous confidence widths for adaptive exponential-kernel regression | [阅读](adaptive-exponential-kernel-confidence/paper.zh.md) | [Read](adaptive-exponential-kernel-confidence/paper.en.md) |
 | 不可逆环境切换下的平均增长频率单调性 · Annealed frequency reduction under irreversible environmental switching | [阅读](annealed-frequency-reduction/paper.zh.md) | [Read](annealed-frequency-reduction/paper.en.md) |
 | 近似差分隐私下最优 e-power 的指数预算相图 · The Privacy-Failure Exponent in Optimal Differentially Private E-Power | [阅读](approximate-dp-epower-exponent/paper.zh.md) | [Read](approximate-dp-epower-exponent/paper.en.md) |
@@ -28,9 +29,11 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Optimal induction of bounded composite sequential tests on finite trees | [阅读](composite-sequential-test-induction/paper.zh.md) | [Read](composite-sequential-test-induction/paper.en.md) |
 | Global optimality and uniqueness for conjugate-target renewal resetting | [阅读](conjugate-resetting-global-optimality/paper.zh.md) | [Read](conjugate-resetting-global-optimality/paper.en.md) |
 | 风险敏感一次在线卖出的精确最优值 | [阅读](cvar-one-max-exact-optimality/paper.zh.md) | [Read](cvar-one-max-exact-optimality/paper.en.md) |
+| Sharp Finite-Horizon Descent for the Difference-of-Convex Algorithm | — | [Read](dca-sharp-finite-horizon/paper.en.md) |
 | 平均增长频率单调性的细致平衡判据 · The detailed-balance boundary for annealed frequency reduction | [阅读](detailed-balance-frequency-reduction/paper.zh.md) | [Read](detailed-balance-frequency-reduction/paper.en.md) |
 | Two-season frequency witnesses on directed cycles | [阅读](directed-cycle-two-season-witness/paper.zh.md) | [Read](directed-cycle-two-season-witness/paper.en.md) |
 | 分裂矩形相交图的支配与打包之比至多为四 | [阅读](domination-packing-split-rectangle/paper.zh.md) | — |
+| 所有有限社会成本指数下欧氏坐标中位数的尖锐保证 | [阅读](euclidean-median-all-p-sharp/paper.zh.md) | — |
 | 任意偶环图态的两条精确复制算术分支 | [阅读](even-cycle-replica-branch-separation/paper.zh.md) | — |
 | 可交换算术合并规则的严格改进 | [阅读](exchangeable-arithmetic-merging-improvement/paper.zh.md) | — |
 | 弦图与凸二分图上更快的最大边开堆积算法 | [阅读](faster-edge-open-packing/paper.zh.md) | — |
@@ -89,6 +92,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 有限独立激活下贪心在线冲突消解的最优损失指数 | [阅读](pairwise-independent-online-crs-sharp/paper.zh.md) | — |
 | 乘积 Pauli 相互无偏基的奇偶障碍与相位刚性 | [阅读](pauli-mub-phase-rigidity/paper.zh.md) | [Read](pauli-mub-phase-rigidity/paper.en.md) |
 | 四方完美张量的全整数 Rényi 多重熵 | [阅读](perfect-tensor-renyi-multientropy/paper.zh.md) | — |
+| 泊松阈值噪声稳定性的精确强度边界 | [阅读](poisson-threshold-noise-sharp/paper.zh.md) | [Read](poisson-threshold-noise-sharp/paper.en.md) |
 | 任意赌注集合下随机化事后检验的可容许性 | [阅读](posthoc-closed-stake-admissibility/paper.zh.md) | [Read](posthoc-closed-stake-admissibility/paper.en.md) |
 | 有限赌注事后检验的可容许性刻画 | [阅读](posthoc-finite-stake-admissibility/paper.zh.md) | [Read](posthoc-finite-stake-admissibility/paper.en.md) |
 | 似然比单调事后检验的可容许性 | [阅读](posthoc-randomized-admissibility/paper.zh.md) | [Read](posthoc-randomized-admissibility/paper.en.md) |
@@ -97,9 +101,11 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 四阶与五阶量子 Rényi 信息合并的最优擦除界 | [阅读](quantum-renyi45-erasure-bound/paper.zh.md) | [Read](quantum-renyi45-erasure-bound/paper.en.md) |
 | 量子输运代价的精确多边形逼近 | [阅读](quantum-transport-polygon-exactness/paper.zh.md) | [Read](quantum-transport-polygon-exactness/paper.en.md) |
 | 任意维热机器下双能级系统的二阶耗散下界 | [阅读](qubit-cooling-arbitrary-machine/paper.zh.md) | — |
-| 双能级冷却壳容量的多项式时间精确证书 | [阅读](qubit-cooling-bernstein-certificate/paper.zh.md) | — |
+| 双能级冷却壳容量的多项式时间精确证书 | [阅读](qubit-cooling-bernstein-certificate/paper.zh.md) | [Read](qubit-cooling-bernstein-certificate/paper.en.md) |
+| 有界简并量子冷却的超水平集解析证明与显式余量 | [阅读](qubit-cooling-bounded-degeneracy/paper.zh.md) | [Read](qubit-cooling-bounded-degeneracy/paper.en.md) |
 | 四能级纠缠交换的固定资源精确可达区间 | [阅读](ququart-swapping-fixed-resource-range/paper.zh.md) | — |
 | 三维纯态 ECQC 的精确最优界 | [阅读](qutrit-ecqc-sharp-bound/paper.zh.md) | [Read](qutrit-ecqc-sharp-bound/paper.en.md) |
+| 秩二有噪声置换信道的精确固定错误率定律 | [阅读](rank-two-permutation-sharp-constant/paper.zh.md) | — |
 | 量子通道高阶张量矩的精确谱半径 | [阅读](rb-all-tensor-contractivity/paper.zh.md) | — |
 | 反射扩散的周期与 Markov 切换频率分类 | [阅读](reflecting-diffusion-frequency-classification/paper.zh.md) | — |
 | 排序 Schmidt 参考态最优性的半阶精确反例 | [阅读](schmidt-reference-renyi-half-counterexample/paper.zh.md) | [Read](schmidt-reference-renyi-half-counterexample/paper.en.md) |
