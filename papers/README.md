@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**132 research entries / 成果条目 · 195 manuscript versions / 论文版本**
+**136 research entries / 成果条目 · 202 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -12,6 +12,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 自适应指数核回归的尖锐同时置信宽度 · Sharp simultaneous confidence widths for adaptive exponential-kernel regression | [阅读](adaptive-exponential-kernel-confidence/paper.zh.md) | [Read](adaptive-exponential-kernel-confidence/paper.en.md) |
 | 不可逆环境切换下的平均增长频率单调性 · Annealed frequency reduction under irreversible environmental switching | [阅读](annealed-frequency-reduction/paper.zh.md) | [Read](annealed-frequency-reduction/paper.en.md) |
 | 近似差分隐私下最优 e-power 的指数预算相图 · The Privacy-Failure Exponent in Optimal Differentially Private E-Power | [阅读](approximate-dp-epower-exponent/paper.zh.md) | [Read](approximate-dp-epower-exponent/paper.en.md) |
+| Approximate Local Privacy: Blackwell Structure, Exact Pearson Information, and Minimax Estimation | — | [Read](approximate-ldp-blackwell-structure/paper.en.md) |
 | Gray 区间内部二元 Markov 源的操作色散 | [阅读](binary-markov-gray-dispersion/paper.zh.md) | [Read](binary-markov-gray-dispersion/paper.en.md) |
 | Assignment bounds and constant-factor algorithms for bounded-hop independent-set reconfiguration | [阅读](bounded-hop-independent-set-approximation/paper.zh.md) | [Read](bounded-hop-independent-set-approximation/paper.en.md) |
 | 图伊辛演化的稳定子 Rényi 矩：连续角分解、整数阶消元与二元割谱 | [阅读](cactus-ising-stabilizer/paper.zh.md) | — |
@@ -25,6 +26,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 色类支配着色的显式树宽参数算法 | [阅读](class-domination-coloring-treewidth/paper.zh.md) | — |
 | 用单个扩充字母表二值分类器消除稀疏拟合度检验的额外对数损失 · Log-free sparse goodness-of-fit by one augmented binary classifier | [阅读](classifier-accuracy-augmented-gof/paper.zh.md) | [Read](classifier-accuracy-augmented-gof/paper.en.md) |
 | 每个有限图都有团对偶共形的诱导扩张 · Every finite graph has a clique dually conformal induced extension | [阅读](clique-dually-conformal-induced-extension/paper.zh.md) | [Read](clique-dually-conformal-induced-extension/paper.en.md) |
+| 共同扰动分布下的仿射最优性：时域精确边界、暴露面刚性与矩证书 | [阅读](common-law-lqr-affine-boundary/paper.zh.md) | [Read](common-law-lqr-affine-boundary/paper.en.md) |
 | 完全二分图的功率支配重配置刚性 | [阅读](complete-bipartite-tar-rigidity/paper.zh.md) | — |
 | Optimal induction of bounded composite sequential tests on finite trees | [阅读](composite-sequential-test-induction/paper.zh.md) | [Read](composite-sequential-test-induction/paper.en.md) |
 | Global optimality and uniqueness for conjugate-target renewal resetting | [阅读](conjugate-resetting-global-optimality/paper.zh.md) | [Read](conjugate-resetting-global-optimality/paper.en.md) |
@@ -109,7 +111,9 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 三维纯态 ECQC 的精确最优界 | [阅读](qutrit-ecqc-sharp-bound/paper.zh.md) | [Read](qutrit-ecqc-sharp-bound/paper.en.md) |
 | 秩二有噪声置换信道的精确固定错误率定律 | [阅读](rank-two-permutation-sharp-constant/paper.zh.md) | [Read](rank-two-permutation-sharp-constant/paper.en.md) |
 | 量子通道高阶张量矩的精确谱半径 | [阅读](rb-all-tensor-contractivity/paper.zh.md) | — |
+| 独立同分布先知选择中的记录约束 | [阅读](record-constrained-prophet-gap/paper.zh.md) | [Read](record-constrained-prophet-gap/paper.en.md) |
 | 反射扩散的周期与 Markov 切换频率分类 | [阅读](reflecting-diffusion-frequency-classification/paper.zh.md) | — |
+| 三阶 Rényi 约束下的最优通道设计 | [阅读](renyi-three-channel-frontier/paper.zh.md) | [Read](renyi-three-channel-frontier/paper.en.md) |
 | 排序 Schmidt 参考态最优性的半阶精确反例 | [阅读](schmidt-reference-renyi-half-counterexample/paper.zh.md) | [Read](schmidt-reference-renyi-half-counterexample/paper.en.md) |
 | 自删除图寻路的确定性参数界 | [阅读](self-deleting-path-derandomization/paper.zh.md) | [Read](self-deleting-path-derandomization/paper.en.md) |
 | 顺序局部隐私下的高斯自协方差估计 | [阅读](sequential-ldp-autocovariance-minimax/paper.zh.md) | [Read](sequential-ldp-autocovariance-minimax/paper.en.md) |
