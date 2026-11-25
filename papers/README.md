@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**239 research entries / 成果条目 · 338 manuscript versions / 论文版本**
+**251 research entries / 成果条目 · 350 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -247,5 +247,17 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Finite-grid witnesses and full-domain tensorization for read-once e-value capital | — | [Read](full-domain-capital-tensorization/paper.en.md) |
 | Computational complexity of optimal Pauli error cancellation on odd cycles | — | [Read](odd-cycle-exact-complexity/paper.en.md) |
 | Minimal negative-association failures of swap rounding | — | [Read](sharp-minimal-failures/paper.en.md) |
+| The sharp seventh-order quantum Rényi erasure bound | — | [Read](order-seven-sharp-erasure/paper.en.md) |
+| The sharp sixth-order quantum Rényi erasure bound | — | [Read](order-six-sharp-erasure/paper.en.md) |
+| Which scalings of a rank-two quantum first-passage kernel are realizable? | — | [Read](rank-two-scale-classification/paper.en.md) |
+| Proper hat-guessing saturation of windmills and cone bouquets | — | [Read](all-clique-saturation/paper.en.md) |
+| Noncommuting Markov aliases on a fixed cubic graph of girth six | — | [Read](noncommuting-pell-aliases/paper.en.md) |
+| Exact and local minimax stopping costs for critical sparse audits | — | [Read](critical-sparse-audit-stopping-limits/paper.en.md) |
+| 拟阵秩家务的公平分配与共同独立包的计算边界 | [阅读](weak-order-and-common-anchors/paper.zh.md) | — |
+| Exact CVaR One-Max Search at a Fixed Announced Horizon | — | [Read](announced-fixed-horizon/paper.en.md) |
+| 有限可逆链的修正对数 Sobolev 常数：重心证书与谱隙分岔 | [阅读](finite-reversible-certificates-and-spectral-criteria/paper.zh.md) | — |
+| Exact Two-Sided Coverage of the Bivariate Gaffke Intervals | — | [Read](exact-coverage-and-risk-transitions/paper.en.md) |
+| Exact binary deletion-ball intersections with a growing alternating middle | — | [Read](periodic-infinite-counterexamples/paper.en.md) |
+| Sharp coarse-graining bounds for Lüders order scores | — | [Read](sharp-amplification-and-pointwise-monotonicity/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
