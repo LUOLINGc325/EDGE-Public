@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**120 research entries / 成果条目 · 167 manuscript versions / 论文版本**
+**122 research entries / 成果条目 · 174 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -39,7 +39,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 固定至少四个代理时，累计嫉妒最小化的弱 NP 完全性 | [阅读](fixed-agent-cumulative-envy/paper.zh.md) | [Read](fixed-agent-cumulative-envy/paper.en.md) |
 | 任意量子比特数的固定角测量型精确酉二设计 | [阅读](fixed-angle-mbqc-unitary-design/paper.zh.md) | — |
 | 固定不可逆生成元的任意多重频率峰 | [阅读](floquet-many-frequency-optima/paper.zh.md) | [Read](floquet-many-frequency-optima/paper.en.md) |
-| 多控制 Fredkin 门的精确纠缠能力 | [阅读](four-qubit-fredkin-exact-entangling-power/paper.zh.md) | — |
+| 多控制 Fredkin 门的精确纠缠能力 | [阅读](four-qubit-fredkin-exact-entangling-power/paper.zh.md) | [Read](four-qubit-fredkin-exact-entangling-power/paper.en.md) |
 | Two-level Pauli spectra and the four-qubit obstruction to mutually unbiased orbits | — | [Read](four-qubit-pauli-mub-obstruction-and-robustness/paper.en.md) |
 | 全覆盖唯一支配在弦图上的困难性及区间图算法 | [阅读](full-cover-unidomination-chordal/paper.zh.md) | — |
 | 双变量 Gaffke 改进规则的精确反演与最大区间缩减 | [阅读](gaffke-bivariate-interval-inversion/paper.zh.md) | [Read](gaffke-bivariate-interval-inversion/paper.en.md) |
@@ -97,20 +97,21 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 任意维热机器下双能级系统的二阶耗散下界 | [阅读](qubit-cooling-arbitrary-machine/paper.zh.md) | — |
 | 双能级冷却壳容量的多项式时间精确证书 | [阅读](qubit-cooling-bernstein-certificate/paper.zh.md) | — |
 | 四能级纠缠交换的固定资源精确可达区间 | [阅读](ququart-swapping-fixed-resource-range/paper.zh.md) | — |
-| 三维纯态 ECQC 的精确最优界 | [阅读](qutrit-ecqc-sharp-bound/paper.zh.md) | — |
+| 三维纯态 ECQC 的精确最优界 | [阅读](qutrit-ecqc-sharp-bound/paper.zh.md) | [Read](qutrit-ecqc-sharp-bound/paper.en.md) |
 | 量子通道高阶张量矩的精确谱半径 | [阅读](rb-all-tensor-contractivity/paper.zh.md) | — |
 | 反射扩散的周期与 Markov 切换频率分类 | [阅读](reflecting-diffusion-frequency-classification/paper.zh.md) | — |
 | 排序 Schmidt 参考态最优性的半阶精确反例 | [阅读](schmidt-reference-renyi-half-counterexample/paper.zh.md) | [Read](schmidt-reference-renyi-half-counterexample/paper.en.md) |
 | 自删除图寻路的确定性参数界 | [阅读](self-deleting-path-derandomization/paper.zh.md) | [Read](self-deleting-path-derandomization/paper.en.md) |
+| 顺序局部隐私下的高斯自协方差估计 | [阅读](sequential-ldp-autocovariance-minimax/paper.zh.md) | [Read](sequential-ldp-autocovariance-minimax/paper.en.md) |
 | 非负次模函数在边际概率上限下的精确相关间隙 | [阅读](sharp-nonmonotone-correlation-gap/paper.zh.md) | [Read](sharp-nonmonotone-correlation-gap/paper.en.md) |
-| Sibuya 时钟下量子重置归约的最优收敛速率 | [阅读](sibuya-quantum-reset-rate/paper.zh.md) | — |
+| Sibuya 时钟下量子重置归约的最优收敛速率 | [阅读](sibuya-quantum-reset-rate/paper.zh.md) | [Read](sibuya-quantum-reset-rate/paper.en.md) |
 | Simes 带曲率的精确变号与全零假设线性系数的反例 | [阅读](simes-band-curvature/paper.zh.md) | — |
 | 任意阶的单量子比特固定角测量型精确酉设计 | [阅读](single-qubit-fixed-angle-all-orders/paper.zh.md) | — |
 | 单 qubit 普通首次通过时间的三阶例外点 | [阅读](single-qubit-marginal-first-passage-ep3/paper.zh.md) | — |
 | 六环图态偶阶复制秩的二素数分解 | [阅读](six-cycle-even-replica-factorization/paper.zh.md) | — |
 | 六 qubit 多重熵在奇数指标上的无限次上升 | [阅读](six-cycle-odd-index-entropy-rises/paper.zh.md) | — |
 | 六环图态的奇阶复制秩及两条算术分支 | [阅读](six-cycle-replica-arithmetic/paper.zh.md) | — |
-| 三态马尔可夫链有限精度观测下的熵产生双区间定理 | [阅读](stroboscopic-three-state-entropy-range/paper.zh.md) | — |
+| 三态马尔可夫链有限精度观测下的熵产生双区间定理 | [阅读](stroboscopic-three-state-entropy-range/paper.zh.md) | [Read](stroboscopic-three-state-entropy-range/paper.en.md) |
 | 重抽样最大幂分样本似然比的水平反例 | [阅读](subsampled-max-power-lqrt/paper.zh.md) | — |
 | 三量子比特张量 Pauli 单轨道互无偏基的不存在性 | [阅读](three-qubit-pauli-mub-obstruction/paper.zh.md) | — |
 | 三态热弛豫的全局熵衰减常数 | [阅读](three-state-mlsi-certificate/paper.zh.md) | — |
@@ -118,6 +119,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 完全三部图的邻接谱秩间隙 | [阅读](tripartite-spectral-rank/paper.zh.md) | — |
 | 二次访问排程的重复副本与单端点扫描 | [阅读](two-visits-duplicate-midpoint/paper.zh.md) | — |
 | 平面二分图上两种唯一支配的固定阈值 | [阅读](unidomination-thresholds-planar-bipartite/paper.zh.md) | — |
+| 未知尺度非自适应一比特均值估计的尖锐样本复杂度 | [阅读](unknown-scale-onebit-mean-minimax/paper.zh.md) | — |
 | Helly 圆弧图的最大极小团横截与锐利比例界 | [阅读](upper-clique-transversal-helly-circular-arc/paper.zh.md) | — |
 | 团横截与团关联图诱导匹配相等的判定复杂性 | [阅读](upper-clique-transversal-incidence-equality/paper.zh.md) | — |
 | 强弦图上最大极小团横截的多项式算法 | [阅读](upper-clique-transversal-strongly-chordal/paper.zh.md) | — |
