@@ -1,0 +1,36 @@
+name = "glauber_annealing_counterexample"
+version = "0.1.0"
+defaultTargets = ["GlauberSpecialization"]
+moreLeanArgs = ["-j1"]
+
+[[lean_lib]]
+name = "GlauberCounterexample"
+
+[[lean_lib]]
+name = "GlauberPhysical"
+
+[[lean_lib]]
+name = "RegularGlauber"
+
+[[lean_lib]]
+name = "GlauberBias"
+
+[[lean_lib]]
+name = "GlauberBridge"
+
+[[lean_lib]]
+name = "GlauberLimits"
+
+[[lean_lib]]
+name = "GlauberStructural"
+
+[[lean_lib]]
+name = "GlauberRobust"
+
+[[lean_lib]]
+name = "GlauberSpecialization"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"

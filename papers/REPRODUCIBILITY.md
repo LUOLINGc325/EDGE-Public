@@ -31,6 +31,8 @@ Run the selected script with Python 3.10 or newer, e.g. `python3 certificate_ame
 
 - [lexicographic-swap-rounding-counterexample](lexicographic-swap-rounding-counterexample/formalization/) — The fixed lexicographic swap-rounding counterexample for all positive real parameters, including the uniform-matroid model, actual rounding definitions, and the parametric failure of one-negative association. The archived release reports complete coverage of the original manuscript.
 
+- [glauber-annealing-activity-counterexample](glauber-annealing-activity-counterexample/formalization/) — Ten-state counterexample to Glauber annealing activity, including finite regular Gibbs/Glauber models, bias identities and first-step bounds, total-variation estimates, three-temperature limits for regular bridge graphs, distinct-energy perturbations, and finite-parameter stability. The archived release records full coverage for this manuscript.
+
 These packages preserve the original Lean sources and dependencies; migration is not a fresh compilation or independent review.
 
 ## Auxiliary Lean source
