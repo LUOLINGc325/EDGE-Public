@@ -1,0 +1,54 @@
+name = "reciprocal_search_game"
+version = "0.1.0"
+moreLeanArgs = ["-j1"]
+defaultTargets = ["FourVertexGame", "FiveVertexGraph", "FiniteRewardGame", "RewardPerturbation", "StarHypergraphFamily", "ActiveConstraints", "GraphSearch", "CoveringGame", "SmallCoverBases", "FractionalMatchingStructure", "GraphGuarantee", "HypergraphMinimality", "GraphConsequences", "SmallSimpleGraphs", "OddCycleSupport"]
+
+[[lean_lib]]
+name = "FourVertexGame"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "FiveVertexGraph"
+
+[[lean_lib]]
+name = "FiniteRewardGame"
+
+[[lean_lib]]
+name = "RewardPerturbation"
+
+[[lean_lib]]
+name = "StarHypergraphFamily"
+
+[[lean_lib]]
+name = "ActiveConstraints"
+
+[[lean_lib]]
+name = "GraphSearch"
+
+[[lean_lib]]
+name = "CoveringGame"
+
+[[lean_lib]]
+name = "SmallCoverBases"
+
+[[lean_lib]]
+name = "FractionalMatchingStructure"
+
+[[lean_lib]]
+name = "GraphGuarantee"
+
+[[lean_lib]]
+name = "HypergraphMinimality"
+
+[[lean_lib]]
+name = "GraphConsequences"
+
+[[lean_lib]]
+name = "SmallSimpleGraphs"
+
+[[lean_lib]]
+name = "OddCycleSupport"

@@ -41,6 +41,8 @@ Run the selected script with Python 3.10 or newer, e.g. `python3 certificate_ame
 
 - [variety-jump-subcubic-potential](variety-jump-subcubic-potential/formalization/) — Two-vacancy variety jump games on finite simple undirected subcubic graphs, including strict potential descent, labelled moves, reachable equilibrium, linear improvement-path bounds and a nonvacuity witness. The archived release records complete coverage of this stated subcubic result; general graphs are outside its scope.
 
+- [reciprocal-reward-counterexamples](reciprocal-reward-counterexamples/formalization/) — Reciprocal-reward search counterexamples and sharp graph guarantee, including four-vertex examples, continuous reward perturbations, graph and hypergraph families, fractional matchings, odd-cycle supports and the sharp 5/6 bound. The archived release records complete coverage of the original mathematical manuscript.
+
 These packages preserve the original Lean sources and dependencies; migration is not a fresh compilation or independent review.
 
 ## Auxiliary Lean source
