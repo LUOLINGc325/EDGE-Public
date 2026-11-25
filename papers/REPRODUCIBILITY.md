@@ -37,6 +37,8 @@ Run the selected script with Python 3.10 or newer, e.g. `python3 certificate_ame
 
 - [lueders-coarse-graining-tv](lueders-coarse-graining-tv/formalization/) — The coarse-graining counterexample for Lüders measurement order total-variation scores on complex qubit density matrices, including square-root uniqueness, exact normalized probabilities, complex trace semantics, and the exact optima 1/30 and 9/250. The archived release records full coverage of this mathematical manuscript.
 
+- [two-box-pure-search-conjecture21](two-box-pure-search-conjecture21/formalization/) — The optimal deterministic and mixed two-location search strategies of Conjecture 21, with geometric first-success expectation, conditional continuation cost, first-deviation bounds, almost-optimal prefixes, finite witnesses and asymptotics. The archived release records full mathematical manuscript coverage.
+
 These packages preserve the original Lean sources and dependencies; migration is not a fresh compilation or independent review.
 
 ## Auxiliary Lean source

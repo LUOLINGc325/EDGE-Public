@@ -1,0 +1,32 @@
+name = "pure_search_budget_rigidity"
+version = "0.1.0"
+defaultTargets = ["BudgetRigidity", "CandidateRigidity", "SearchExpectation", "GeometricSearchModel", "SuffixPayoffs", "DepartureBounds", "MixedBenchmark", "ManuscriptConsequences"]
+
+[[lean_lib]]
+name = "BudgetRigidity"
+
+[[lean_lib]]
+name = "CandidateRigidity"
+
+[[lean_lib]]
+name = "SearchExpectation"
+
+[[lean_lib]]
+name = "GeometricSearchModel"
+
+[[lean_lib]]
+name = "SuffixPayoffs"
+
+[[lean_lib]]
+name = "DepartureBounds"
+
+[[lean_lib]]
+name = "MixedBenchmark"
+
+[[lean_lib]]
+name = "ManuscriptConsequences"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
