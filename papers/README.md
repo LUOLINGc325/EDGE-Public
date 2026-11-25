@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**177 research entries / 成果条目 · 266 manuscript versions / 论文版本**
+**183 research entries / 成果条目 · 278 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -185,5 +185,11 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 加权共形 BH 的有限样本误报率线性上界 | [阅读](weighted-conformal-global-null-linear-fdr/paper.zh.md) | [Read](weighted-conformal-global-null-linear-fdr/paper.en.md) |
 | 加权共形 BH 的 Poisson 转移与共享阈值格点 | [阅读](weighted-conformal-poisson-transfer/paper.zh.md) | [Read](weighted-conformal-poisson-transfer/paper.en.md) |
 | 协变量偏移下谱截断核回归的训练条件共形覆盖 | [阅读](weighted-conformal-spectral-rkhs/paper.zh.md) | — |
+| 时滞牛顿冷却中的全历史最优制备 | [阅读](delayed-newton-cooling-optimal-preparation/paper.zh.md) | [Read](delayed-newton-cooling-optimal-preparation/paper.en.md) |
+| 模磁化投影态的魔性分辨率定律 | [阅读](modular-magnetization-magic/paper.zh.md) | [Read](modular-magnetization-magic/paper.en.md) |
+| 三量子比特的精确输出主序与最优经典通信 | [阅读](three-qubit-depolarizing-majorization/paper.zh.md) | [Read](three-qubit-depolarizing-majorization/paper.en.md) |
+| 定时观测下马尔可夫生成元的拓扑刚性 | [阅读](topology-constrained-markov-reconstruction/paper.zh.md) | [Read](topology-constrained-markov-reconstruction/paper.en.md) |
+| 选择性缺失下的稀疏随机复核 | [阅读](selection-audit-information/paper.zh.md) | [Read](selection-audit-information/paper.en.md) |
+| Pauli–Lindblad 误差缓解的奇偶判据与开销渐近 | [阅读](pauli-lindblad-pec-parity/paper.zh.md) | [Read](pauli-lindblad-pec-parity/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
