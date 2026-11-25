@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**142 research entries / 成果条目 · 213 manuscript versions / 论文版本**
+**148 research entries / 成果条目 · 224 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -66,6 +66,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Glauber 退火中过量活动度的桥结构机制 | [阅读](glauber-annealing-activity-counterexample/paper.zh.md) | [Read](glauber-annealing-activity-counterexample/paper.en.md) |
 | 长路径森林燃烧阈值的构造性近线性上界 | [阅读](graph-burning-long-path-forests/paper.zh.md) | [Read](graph-burning-long-path-forests/paper.en.md) |
 | Precise independent e-merging beyond reordered martingales | [阅读](independent-e-merging-beyond-martingales/paper.zh.md) | [Read](independent-e-merging-beyond-martingales/paper.en.md) |
+| 独立评分赢家偏差的取等结构 | [阅读](independent-winners-bias-extremizers/paper.zh.md) | [Read](independent-winners-bias-extremizers/paper.en.md) |
 | 分裂图上的等距路径覆盖是 NP 完全的 | [阅读](isometric-path-cover-split/paper.zh.md) | — |
 | 闭合三角链的 Johnson 诱导表示 | [阅读](johnson-triangle-chain-parity/paper.zh.md) | — |
 | 任意类别数随机响应的精确 zCDP：全局相变、唯一最优阶与锐渐近 | [阅读](krr-exact-zcdp/paper.zh.md) | [Read](krr-exact-zcdp/paper.en.md) |
@@ -96,6 +97,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 临界共形预测首项的固定区间抛物方程求值 | [阅读](online-conformal-parabolic-evaluation/paper.zh.md) | — |
 | The sharp cost of online conformal coverage in subdiffusive corridors | — | [Read](online-conformal-sharp-constant/paper.en.md) |
 | 对称宽走廊下临界共形代价的精确渐近 | [阅读](online-conformal-wide-corridor-asymptotic/paper.zh.md) | — |
+| 局部对角尾占优下的有序因果获益锐界 | [阅读](ordinal-causal-benefit-sharp-bounds/paper.zh.md) | [Read](ordinal-causal-benefit-sharp-bounds/paper.en.md) |
 | 加性外部性下 EF1 的最小三参与者反例 | [阅读](ordinary-ef1-three-agent-counterexample/paper.zh.md) | [Read](ordinary-ef1-three-agent-counterexample/paper.en.md) |
 | 有限独立激活下贪心在线冲突消解的最优损失指数 | [阅读](pairwise-independent-online-crs-sharp/paper.zh.md) | [Read](pairwise-independent-online-crs-sharp/paper.en.md) |
 | 乘积 Pauli 相互无偏基的奇偶障碍与相位刚性 | [阅读](pauli-mub-phase-rigidity/paper.zh.md) | [Read](pauli-mub-phase-rigidity/paper.en.md) |
@@ -104,6 +106,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 任意赌注集合下随机化事后检验的可容许性 | [阅读](posthoc-closed-stake-admissibility/paper.zh.md) | [Read](posthoc-closed-stake-admissibility/paper.en.md) |
 | 有限赌注事后检验的可容许性刻画 | [阅读](posthoc-finite-stake-admissibility/paper.zh.md) | [Read](posthoc-finite-stake-admissibility/paper.en.md) |
 | 似然比单调事后检验的可容许性 | [阅读](posthoc-randomized-admissibility/paper.zh.md) | [Read](posthoc-randomized-admissibility/paper.en.md) |
+| When pinching makes a Schur channel mixed unitary | — | [Read](ppt-squared-toroidal-mixing/paper.en.md) |
 | 两阶段预言机调度中的持续差距与无条件自适应优化 | [阅读](processing-oracle-two-phase/paper.zh.md) | [Read](processing-oracle-two-phase/paper.en.md) |
 | Three Projective Measurements Witness an Exclusion Advantage for Every Pure Entangled State | [阅读](pure-entanglement-three-measurement-exclusion/paper.zh.md) | [Read](pure-entanglement-three-measurement-exclusion/paper.en.md) |
 | 完全图量子电池中可分初态的精确充电功率 | [阅读](quantum-battery-separable-initialization/paper.zh.md) | [Read](quantum-battery-separable-initialization/paper.en.md) |
@@ -120,9 +123,11 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 反射扩散的周期与 Markov 切换频率分类 | [阅读](reflecting-diffusion-frequency-classification/paper.zh.md) | — |
 | Rényi contraction of repeated symmetric channels | — | [Read](renyi-product-order-phase/paper.en.md) |
 | 三阶 Rényi 约束下的最优通道设计 | [阅读](renyi-three-channel-frontier/paper.zh.md) | [Read](renyi-three-channel-frontier/paper.en.md) |
+| 以共享样本秩实现可复现的共形校准 | [阅读](replicable-conformal-pilot-ranks/paper.zh.md) | [Read](replicable-conformal-pilot-ranks/paper.en.md) |
 | 排序 Schmidt 参考态最优性的半阶精确反例 | [阅读](schmidt-reference-renyi-half-counterexample/paper.zh.md) | [Read](schmidt-reference-renyi-half-counterexample/paper.en.md) |
 | 自删除图寻路的确定性参数界 | [阅读](self-deleting-path-derandomization/paper.zh.md) | [Read](self-deleting-path-derandomization/paper.en.md) |
 | 顺序局部隐私下的高斯自协方差估计 | [阅读](sequential-ldp-autocovariance-minimax/paper.zh.md) | [Read](sequential-ldp-autocovariance-minimax/paper.en.md) |
+| 重算投注目标能带来多少收益 | [阅读](sequential-target-recalculation/paper.zh.md) | [Read](sequential-target-recalculation/paper.en.md) |
 | 非负次模函数在边际概率上限下的精确相关间隙 | [阅读](sharp-nonmonotone-correlation-gap/paper.zh.md) | [Read](sharp-nonmonotone-correlation-gap/paper.en.md) |
 | Sibuya 时钟下量子重置归约的最优收敛速率 | [阅读](sibuya-quantum-reset-rate/paper.zh.md) | [Read](sibuya-quantum-reset-rate/paper.en.md) |
 | Simes 带曲率的精确变号与全零假设线性系数的反例 | [阅读](simes-band-curvature/paper.zh.md) | — |
@@ -131,6 +136,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 六环图态偶阶复制秩的二素数分解 | [阅读](six-cycle-even-replica-factorization/paper.zh.md) | — |
 | 六 qubit 多重熵在奇数指标上的无限次上升 | [阅读](six-cycle-odd-index-entropy-rises/paper.zh.md) | — |
 | 六环图态的奇阶复制秩及两条算术分支 | [阅读](six-cycle-replica-arithmetic/paper.zh.md) | — |
+| 限速谐势阱的精确最省功控制 | [阅读](speed-limited-harmonic-equilibration/paper.zh.md) | [Read](speed-limited-harmonic-equilibration/paper.en.md) |
 | 三态马尔可夫链有限精度观测下的熵产生双区间定理 | [阅读](stroboscopic-three-state-entropy-range/paper.zh.md) | [Read](stroboscopic-three-state-entropy-range/paper.en.md) |
 | 重抽样最大幂分样本似然比的水平反例 | [阅读](subsampled-max-power-lqrt/paper.zh.md) | — |
 | 三量子比特张量 Pauli 单轨道互无偏基的不存在性 | [阅读](three-qubit-pauli-mub-obstruction/paper.zh.md) | — |
