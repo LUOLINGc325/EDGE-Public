@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**154 research entries / 成果条目 · 237 manuscript versions / 论文版本**
+**160 research entries / 成果条目 · 247 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -68,6 +68,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 降温可使 Glauber 活动度超过二分之一 | [阅读](glauber-activity-counterexample/paper.zh.md) | [Read](glauber-activity-counterexample/paper.en.md) |
 | Glauber 退火中过量活动度的桥结构机制 | [阅读](glauber-annealing-activity-counterexample/paper.zh.md) | [Read](glauber-annealing-activity-counterexample/paper.en.md) |
 | 长路径森林燃烧阈值的构造性近线性上界 | [阅读](graph-burning-long-path-forests/paper.zh.md) | [Read](graph-burning-long-path-forests/paper.en.md) |
+| 高温 Gibbs 态在弱局域量子信道下的一致 Markov 性：定量补全稿 | [阅读](high-temperature-gibbs-weak-noise/paper.zh.md) | — |
 | Precise independent e-merging beyond reordered martingales | [阅读](independent-e-merging-beyond-martingales/paper.zh.md) | [Read](independent-e-merging-beyond-martingales/paper.en.md) |
 | 独立评分赢家偏差的取等结构 | [阅读](independent-winners-bias-extremizers/paper.zh.md) | [Read](independent-winners-bias-extremizers/paper.en.md) |
 | 分裂图上的等距路径覆盖是 NP 完全的 | [阅读](isometric-path-cover-split/paper.zh.md) | — |
@@ -114,6 +115,8 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 似然比单调事后检验的可容许性 | [阅读](posthoc-randomized-admissibility/paper.zh.md) | [Read](posthoc-randomized-admissibility/paper.en.md) |
 | When pinching makes a Schur channel mixed unitary | [阅读](ppt-squared-toroidal-mixing/paper.zh.md) | [Read](ppt-squared-toroidal-mixing/paper.en.md) |
 | 两阶段预言机调度中的持续差距与无条件自适应优化 | [阅读](processing-oracle-two-phase/paper.zh.md) | [Read](processing-oracle-two-phase/paper.en.md) |
+| 以缺货概率校准在线阈值 | [阅读](prophet-secretary-stockout/paper.zh.md) | [Read](prophet-secretary-stockout/paper.en.md) |
+| p-spin Curie–Weiss 模型在驻拐点边界上的混合时间 | [阅读](pspin-curie-weiss-spinodal/paper.zh.md) | — |
 | Three Projective Measurements Witness an Exclusion Advantage for Every Pure Entangled State | [阅读](pure-entanglement-three-measurement-exclusion/paper.zh.md) | [Read](pure-entanglement-three-measurement-exclusion/paper.en.md) |
 | 完全图量子电池中可分初态的精确充电功率 | [阅读](quantum-battery-separable-initialization/paper.zh.md) | [Read](quantum-battery-separable-initialization/paper.en.md) |
 | 四阶与五阶量子 Rényi 信息合并的最优擦除界 | [阅读](quantum-renyi45-erasure-bound/paper.zh.md) | [Read](quantum-renyi45-erasure-bound/paper.en.md) |
@@ -125,11 +128,13 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 三维纯态 ECQC 的精确最优界 | [阅读](qutrit-ecqc-sharp-bound/paper.zh.md) | [Read](qutrit-ecqc-sharp-bound/paper.en.md) |
 | 秩二有噪声置换信道的精确固定错误率定律 | [阅读](rank-two-permutation-sharp-constant/paper.zh.md) | [Read](rank-two-permutation-sharp-constant/paper.en.md) |
 | 量子通道高阶张量矩的精确谱半径 | [阅读](rb-all-tensor-contractivity/paper.zh.md) | — |
+| 超图搜索中的逆奖励策略：最小反例与锐5/6保证 | [阅读](reciprocal-reward-counterexamples/paper.zh.md) | [Read](reciprocal-reward-counterexamples/paper.en.md) |
 | 独立同分布先知选择中的记录约束 | [阅读](record-constrained-prophet-gap/paper.zh.md) | [Read](record-constrained-prophet-gap/paper.en.md) |
 | 反射扩散的周期与 Markov 切换频率分类 | [阅读](reflecting-diffusion-frequency-classification/paper.zh.md) | — |
 | Rényi contraction of repeated symmetric channels | — | [Read](renyi-product-order-phase/paper.en.md) |
 | 三阶 Rényi 约束下的最优通道设计 | [阅读](renyi-three-channel-frontier/paper.zh.md) | [Read](renyi-three-channel-frontier/paper.en.md) |
 | 以共享样本秩实现可复现的共形校准 | [阅读](replicable-conformal-pilot-ranks/paper.zh.md) | [Read](replicable-conformal-pilot-ranks/paper.en.md) |
+| 离散滑雪租赁的 CVaR 最优解与精确相变 | [阅读](risk-sensitive-ski-rental/paper.zh.md) | [Read](risk-sensitive-ski-rental/paper.en.md) |
 | 排序 Schmidt 参考态最优性的半阶精确反例 | [阅读](schmidt-reference-renyi-half-counterexample/paper.zh.md) | [Read](schmidt-reference-renyi-half-counterexample/paper.en.md) |
 | 自删除图寻路的确定性参数界 | [阅读](self-deleting-path-derandomization/paper.zh.md) | [Read](self-deleting-path-derandomization/paper.en.md) |
 | 顺序局部隐私下的高斯自协方差估计 | [阅读](sequential-ldp-autocovariance-minimax/paper.zh.md) | [Read](sequential-ldp-autocovariance-minimax/paper.en.md) |
@@ -149,6 +154,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 三态热弛豫的全局熵衰减常数 | [阅读](three-state-mlsi-certificate/paper.zh.md) | — |
 | 平衡完全三部图的唯一最近谱邻居 | [阅读](tripartite-nearest-spectral/paper.zh.md) | — |
 | 完全三部图的邻接谱秩间隙 | [阅读](tripartite-spectral-rank/paper.zh.md) | — |
+| 两处位置的确定性搜索：一个参数族的最优性与唯一性 | [阅读](two-box-pure-search-conjecture21/paper.zh.md) | [Read](two-box-pure-search-conjecture21/paper.en.md) |
 | 二次访问排程的重复副本与单端点扫描 | [阅读](two-visits-duplicate-midpoint/paper.zh.md) | — |
 | 平面二分图上两种唯一支配的固定阈值 | [阅读](unidomination-thresholds-planar-bipartite/paper.zh.md) | — |
 | 未知尺度非自适应一比特均值估计的尖锐样本复杂度 | [阅读](unknown-scale-onebit-mean-minimax/paper.zh.md) | [Read](unknown-scale-onebit-mean-minimax/paper.en.md) |
