@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**222 research entries / 成果条目 · 318 manuscript versions / 论文版本**
+**312 research entries / 成果条目 · 413 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -21,7 +21,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 图伊辛演化的稳定子 Rényi 矩：连续角分解、整数阶消元与二元割谱 | [阅读](cactus-ising-stabilizer/paper.zh.md) | — |
 | 仙人掌图态的奇复制有理延拓分类 | [阅读](cactus-replica-rationality/paper.zh.md) | — |
 | 笛卡尔积何时成为代数平方 | [阅读](cartesian-algebraic-squares/paper.zh.md) | [Read](cartesian-algebraic-squares/paper.en.md) |
-| 链式索引的统一通信下界与强直接积 | [阅读](chained-index-uniform-direct-product/paper.zh.md) | — |
+| 链式索引的统一通信下界与强直接积 | [阅读](chained-index-uniform-direct-product/paper.zh.md) | [Proof](chained-index-uniform-direct-product/paper.en.md) |
 | 用同一个四环链接解释所有级数的多重熵坍缩违反 | [阅读](chern-simons-four-cycle/paper.zh.md) | — |
 | 四分量 Abelian Chern–Simons 链接态的三阶多重熵坍缩 | [阅读](chern-simons-order-three/paper.zh.md) | — |
 | 弦二分图上最大边开堆积的多项式算法 | [阅读](chordal-bipartite-edge-open-packing/paper.zh.md) | — |
@@ -51,7 +51,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 弦图与凸二分图上更快的最大边开堆积算法 | [阅读](faster-edge-open-packing/paper.zh.md) | — |
 | 链图等距路径划分与覆盖的更快算法 | [阅读](faster-isometric-paths-chain/paper.zh.md) | — |
 | 余图等距路径覆盖与划分的更快算法 | [阅读](faster-isometric-paths-cographs/paper.zh.md) | — |
-| The exact finite-job consistency–robustness frontier for non-clairvoyant scheduling | — | [Read](finite-n-prediction-scheduling/paper.en.md) |
+| The exact finite-job consistency–robustness frontier for non-clairvoyant scheduling | [阅读](finite-n-prediction-scheduling/paper.zh.md) | [Read](finite-n-prediction-scheduling/paper.en.md) |
 | 有限 Pinwheel 排程的期限障碍与两访参数算法 | [阅读](finite-pinwheel-three-task/paper.zh.md) | — |
 | Transient learning at a common reward threshold in finite-state Markov decision processes | — | [Read](finite-worst-models-transient-learning/paper.en.md) |
 | 量子首次通过核的逆实现与任意维可见例外点 | [阅读](first-passage-kernel-inverse-realization/paper.zh.md) | — |
@@ -230,5 +230,97 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 严格可行凸场景优化的全参数风险下界与极小极大样本校准 | [阅读](convex-scenario-compression-transfer/paper.zh.md) | [Read](convex-scenario-compression-transfer/paper.en.md) |
 | 分数建议在线匹配的无损 PAW 保证转移与因果有限实现 | — | [Read](fractional-advice-paw-transfer/paper.en.md) |
 | 条件独立信息评分的结构刚性、精确 Shannon 修复预算与二元最小修复 | [阅读](ci-score-quadratic-rigidity/paper.zh.md) | — |
+| 二次访问排程在切口宽度一时的线性算法 | [阅读](position-matching-cut-width-one/paper.zh.md) | — |
+| 三态机器在任意有限系统上的锐冷却耗散界 | [阅读](general-qutrit-cooling/paper.zh.md) | — |
+| 单次在线择价的全风险 CVaR 精确最优竞争比 | [阅读](risk-transfer-and-finite-horizon/paper.zh.md) | [Read](risk-transfer-and-finite-horizon/paper.en.md) |
+| 共振权重层数给出的量子比特耗散下界 | [阅读](shell-capacity-spectral-bound/paper.zh.md) | — |
+| 对称临界共形走廊的严格数值夹界 | [阅读](certified-symmetric-corridor/paper.zh.md) | — |
+| Extremal visibility of logical Pauli operators under product measurements | — | [Read](stabilizer-logical-pauli-visibility/paper.en.md) |
+| Sharp local cooling capacity of resonant finite machines | — | [Read](two-weight-qutrit-sharp-cooling/paper.en.md) |
+| 连续时间 CVaR 滑雪租赁的精确高风险首项 | [阅读](continuous-high-risk-prefactor/paper.zh.md) | [Read](continuous-high-risk-prefactor/paper.en.md) |
+| Lüders 粗粒化可以增大测量顺序分数 | [阅读](commuting-effect-threshold/paper.zh.md) | [Read](commuting-effect-threshold/paper.en.md) |
+| 移位系数逐项非负法的适用边界 | [阅读](shifted-coefficient-boundary/paper.zh.md) | — |
+| Precise independent e-value mergers without symmetry | — | [Read](precise-mergers-without-symmetry/paper.en.md) |
+| The weak-response frequency boundary for reversible Markov environments | — | [Read](reversible-environment-weak-response/paper.en.md) |
+| Sharp randomized robustness for two weighted nonclairvoyant jobs | — | [Read](randomized-weighted-two-job-robustness/paper.en.md) |
+| Rigidity and stability of optimal quantum polygon approximations | — | [Read](minimizer-rigidity-stability/paper.en.md) |
+| Finite-grid witnesses and full-domain tensorization for read-once e-value capital | — | [Read](full-domain-capital-tensorization/paper.en.md) |
+| Computational complexity of optimal Pauli error cancellation on odd cycles | — | [Read](odd-cycle-exact-complexity/paper.en.md) |
+| Minimal negative-association failures of swap rounding | — | [Read](sharp-minimal-failures/paper.en.md) |
+| The sharp seventh-order quantum Rényi erasure bound | — | [Read](order-seven-sharp-erasure/paper.en.md) |
+| The sharp sixth-order quantum Rényi erasure bound | — | [Read](order-six-sharp-erasure/paper.en.md) |
+| Which scalings of a rank-two quantum first-passage kernel are realizable? | — | [Read](rank-two-scale-classification/paper.en.md) |
+| Proper hat-guessing saturation of windmills and cone bouquets | — | [Read](all-clique-saturation/paper.en.md) |
+| Noncommuting Markov aliases on a fixed cubic graph of girth six | — | [Read](noncommuting-pell-aliases/paper.en.md) |
+| Exact and local minimax stopping costs for critical sparse audits | — | [Read](critical-sparse-audit-stopping-limits/paper.en.md) |
+| 拟阵秩家务的公平分配与共同独立包的计算边界 | [阅读](weak-order-and-common-anchors/paper.zh.md) | — |
+| Exact CVaR One-Max Search at a Fixed Announced Horizon | — | [Read](announced-fixed-horizon/paper.en.md) |
+| 有限可逆链的修正对数 Sobolev 常数：重心证书与谱隙分岔 | [阅读](finite-reversible-certificates-and-spectral-criteria/paper.zh.md) | — |
+| Exact Two-Sided Coverage of the Bivariate Gaffke Intervals | — | [Read](exact-coverage-and-risk-transitions/paper.en.md) |
+| Exact binary deletion-ball intersections with a growing alternating middle | — | [Read](periodic-infinite-counterexamples/paper.en.md) |
+| Sharp coarse-graining bounds for Lüders order scores | — | [Read](sharp-amplification-and-pointwise-monotonicity/paper.en.md) |
+| 完全多分图上的多样性跳跃博弈：共享权重势与个别权重循环 | [阅读](complete-multipartite-potentials-and-weighted-cycles/paper.zh.md) | — |
+| 排序 Schmidt 参考态在 $0<\alpha<1$ 的失效与两种最小置换维数 | [阅读](low-order-failure-and-minimal-permutation-dimension/paper.zh.md) | — |
+| Sharp ordered Gaffke intervals under bounded likelihood tilts | — | [Read](sharp-conditional-ranks-under-tilts/paper.en.md) |
+| Three Items with Additive Externalities: Oriented Obstructions and Binary Existence | — | [Read](three-item-obstructions-and-binary-existence/paper.en.md) |
+| The sharp random EFX threshold for two-class nullity chores | — | [Read](random-occupancy-threshold/paper.en.md) |
+| Ordinal predictions attain the exact finite-job scheduling frontier | — | [Read](ordinal-only-frontier/paper.en.md) |
+| The sharp two-step activity bound for Glauber annealing on regular graphs | — | [Read](sharp-two-step-activity/paper.en.md) |
+| Exact capital for convex-profile e-value mergers | — | [Read](exact-convex-profile-capital/paper.en.md) |
+| The complexity of exact terminal induction with slack composite nulls | — | [Read](slack-null-induction-complexity/paper.en.md) |
+| Information loss and sharp power limits for conditional Gamma calibration | — | [Read](conditional-information-power-boundaries/paper.en.md) |
+| The additive cost of counted feedback at the growing-round erasure frontier | — | [Read](counted-feedback-additive-frontier/paper.en.md) |
+| Polynomial forward length for growing-round adaptive erasure feedback | — | [Read](growing-round-blocklength/paper.en.md) |
+| Two scales of private e-power when epsilon tends to zero | — | [Read](vanishing-epsilon-two-scales/paper.en.md) |
+| Dispersion at the Gray distortion endpoint for binary Markov sources | — | [Read](gray-critical-endpoint/paper.en.md) |
+| Private-chain silence does not reduce chained index below linear payload | — | [Read](private-slot-coalescence/paper.en.md) |
+| Weighting makes unique-cover preassignment hard on interval graphs | — | [Read](weighted-interval-inapproximability/paper.en.md) |
+| Optimal identity testing with one hard classifier | — | [Read](original-alphabet-hard-classifier/paper.en.md) |
+| Optimal two-sample closeness testing with one hard classifier | — | [Read](unknown-reference-hard-sign-classifier/paper.en.md) |
+| A two-quadrant complexity boundary for domination in split rectangle graphs | — | [Read](two-quadrant-complexity/paper.en.md) |
+| The finite-population effect for Euclidean coordinate medians | — | [Read](fixed-population-sharp-deficit/paper.en.md) |
+| The pointwise extension frontier of the exchangeable arithmetic prefix rule | — | [Read](three-coordinate-extension-frontier/paper.en.md) |
+| Serial service and the exact ordinal scheduling frontier | — | [Read](serial-service-frontier/paper.en.md) |
+| Three Laplace samples generically identify a quantum no-jump generator | — | [Read](first-count-tomography/paper.en.md) |
+| The sharp peripheral Jordan order of monitored quantum kernels | — | [Read](sharp-peripheral-jordan-order/paper.en.md) |
+| Exact cumulative envy is already hard for two agents | — | [Read](complete-fixed-count-classification/paper.en.md) |
+| Cumulative envy is weakly NP-complete with two and three identical agents | — | [Read](two-three-agent-complexity/paper.en.md) |
+| Linear weighted full-cover unique domination on proper intervals | — | [Read](proper-interval-linear-weighted/paper.en.md) |
+| Sharp fixed-statistic sensitivity envelopes for Gaffke's statistic | — | [Read](fixed-statistic-sensitivity-envelope/paper.en.md) |
+| The trivariate Gaussian Simes inequality uniformly near level one | — | [Read](uniform-endpoint-singular-correlations/paper.en.md) |
+| The trivariate two-sided Gaussian Simes inequality without a high-level correlation cap | — | [Read](unrestricted-correlation-boundary/paper.en.md) |
+| Several optimal Rényi orders under randomized-response composition | — | [Read](composition-multiple-orders/paper.en.md) |
+| Sharp weighted bivariate tails under leave-one-out mean constraints | — | [Read](weighted-bivariate-tail/paper.en.md) |
+| High-order parity gaps and crossover radii for noisy qubit designs | — | [Read](high-order-parity-gap/paper.en.md) |
+| Parity under anisotropic noise applied after qubit Haar conjugation | — | [Read](post-conjugation-anisotropic-parity/paper.en.md) |
+| Exact finite-power prediction with corrupted smooth feedback | — | [Read](exact-finite-power-plateau/paper.en.md) |
+| Thermodynamic boundary charge in the two-track non-Hermitian fermion chain | — | [Read](thermodynamic-boundary-charge/paper.en.md) |
+| Narrow corridors in critical online conformal prediction | — | [Read](narrow-corridor-expansion/paper.en.md) |
+| Prefix constraints and optimal rank protection in online contention resolution | — | [Read](nongreedy-exchangeable-rank-optimality/paper.en.md) |
+| The exact Gaussian threshold noise-stability phase curve | — | [Read](gaussian-threshold-phase-curve/paper.en.md) |
+| A Poisson-to-Gaussian crossover for nearly coincident threshold counts | — | [Read](high-overlap-crossover/paper.en.md) |
+| Optimal separable gaps for perfect exclusion with a pure two-qubit probe | — | [Read](sharp-qubit-separable-gap/paper.en.md) |
+| Entanglement required for optimal charging in a Clifford battery | — | [Read](optimal-charging-entanglement/paper.en.md) |
+| Universal Bernstein positivity for qubit shell capacity | — | [Read](universal-fixed-degree-positivity/paper.en.md) |
+| Reliability exponents for binary noisy-permutation channels | — | [Read](binary-reliability-exponents/paper.en.md) |
+| An order \(1/n\) horizon bound for record-constrained prophet inequalities | — | [Read](uniform-bin-minimum-rate/paper.en.md) |
+| Single-frequency identification of a reflected diffusion from weak Floquet response | — | [Read](single-frequency-inverse-identification/paper.en.md) |
+| Self-deleting paths with bounded deleters per edge | — | [Read](bounded-edge-deleters/paper.en.md) |
+| Finite-size nonmonotone submodular correlation gaps | — | [Read](finite-cardinality-profile/paper.en.md) |
+| Sharp Jordan-order limits for monitored qubit first-passage kernels | — | [Read](dominant-jordan-order-limit/paper.en.md) |
+| The exact principal entropy endpoint near a three-state sampling resonance | — | [Read](exact-principal-entropy-endpoint/paper.en.md) |
+| The bottleneck spectral neighbor of a balanced complete tripartite graph | — | [Read](bottleneck-spectral-neighbor/paper.en.md) |
+| A square-root mixed-null inflation for weighted conformal BH | — | [Read](mixed-null-square-root-boundary/paper.en.md) |
+| Exact phase complexity of discrete CVaR ski rental | — | [Read](polynomial-exact-phase-sweep/paper.en.md) |
+| Optimal finite preparation for delayed Newton cooling | — | [Read](finite-common-preparation/paper.en.md) |
+| Magnetization projection at every integer stabilizer Rényi order | — | [Read](integer-order-projection-law/paper.en.md) |
+| Effective error certificates for Sibuya quantum resetting | — | [Read](sibuya-reset-error-certificates/paper.en.md) |
+| A linear threshold for optimal burning of long path forests | — | [Read](linear-threshold-path-forest-burning/paper.en.md) |
+| 处理相关延迟下实用 AIPW 的时间一致误差与积压周转前沿 | [阅读](aipw-treatment-dependent-delay/paper.zh.md) | — |
+| Exact finite-decision realizations in strictly feasible convex scenario optimization | — | [Read](convex-scenario-finite-decision-realizations/paper.en.md) |
+| Local support-rank classification of feedback gain in POST channels | — | [Read](post-channel-feedback-support-rank/paper.en.md) |
+| Finite Certificates and Memory Penalties for Binary POST Channels | — | [Read](binary-post-channel-certificates/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
+
+[Mathematical appendices / 数学附录](APPENDICES.md)
