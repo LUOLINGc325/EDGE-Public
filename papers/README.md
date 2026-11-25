@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**303 research entries / 成果条目 · 402 manuscript versions / 论文版本**
+**311 research entries / 成果条目 · 410 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -311,5 +311,13 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | The exact principal entropy endpoint near a three-state sampling resonance | — | [Read](exact-principal-entropy-endpoint/paper.en.md) |
 | The bottleneck spectral neighbor of a balanced complete tripartite graph | — | [Read](bottleneck-spectral-neighbor/paper.en.md) |
 | A square-root mixed-null inflation for weighted conformal BH | — | [Read](mixed-null-square-root-boundary/paper.en.md) |
+| Exact phase complexity of discrete CVaR ski rental | — | [Read](polynomial-exact-phase-sweep/paper.en.md) |
+| Optimal finite preparation for delayed Newton cooling | — | [Read](finite-common-preparation/paper.en.md) |
+| Magnetization projection at every integer stabilizer Rényi order | — | [Read](integer-order-projection-law/paper.en.md) |
+| Effective error certificates for Sibuya quantum resetting | — | [Read](sibuya-reset-error-certificates/paper.en.md) |
+| A linear threshold for optimal burning of long path forests | — | [Read](linear-threshold-path-forest-burning/paper.en.md) |
+| 处理相关延迟下实用 AIPW 的时间一致误差与积压周转前沿 | [阅读](aipw-treatment-dependent-delay/paper.zh.md) | — |
+| Exact finite-decision realizations in strictly feasible convex scenario optimization | — | [Read](convex-scenario-finite-decision-realizations/paper.en.md) |
+| Local support-rank classification of feedback gain in POST channels | — | [Read](post-channel-feedback-support-rank/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
