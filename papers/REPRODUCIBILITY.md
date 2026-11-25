@@ -35,6 +35,8 @@ Run the selected script with Python 3.10 or newer, e.g. `python3 certificate_ame
 
 - [glauber-activity-counterexample](glauber-activity-counterexample/formalization/) — The eight-state cubic Glauber activity counterexample, explicit graph families for each degree in the stated range, energies, cooling schedule, parameter interval, limits and first-step bound. The archived release records full coverage of the original mathematical manuscript. Its dependency has been relocated to a public commit containing the identical prerequisite source; a new compilation is still required.
 
+- [lueders-coarse-graining-tv](lueders-coarse-graining-tv/formalization/) — The coarse-graining counterexample for Lüders measurement order total-variation scores on complex qubit density matrices, including square-root uniqueness, exact normalized probabilities, complex trace semantics, and the exact optima 1/30 and 9/250. The archived release records full coverage of this mathematical manuscript.
+
 These packages preserve the original Lean sources and dependencies; migration is not a fresh compilation or independent review.
 
 ## Auxiliary Lean source
