@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**275 research entries / 成果条目 · 374 manuscript versions / 论文版本**
+**289 research entries / 成果条目 · 388 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -283,5 +283,19 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Serial service and the exact ordinal scheduling frontier | — | [Read](serial-service-frontier/paper.en.md) |
 | Three Laplace samples generically identify a quantum no-jump generator | — | [Read](first-count-tomography/paper.en.md) |
 | The sharp peripheral Jordan order of monitored quantum kernels | — | [Read](sharp-peripheral-jordan-order/paper.en.md) |
+| Exact cumulative envy is already hard for two agents | — | [Read](complete-fixed-count-classification/paper.en.md) |
+| Cumulative envy is weakly NP-complete with two and three identical agents | — | [Read](two-three-agent-complexity/paper.en.md) |
+| Linear weighted full-cover unique domination on proper intervals | — | [Read](proper-interval-linear-weighted/paper.en.md) |
+| Sharp fixed-statistic sensitivity envelopes for Gaffke's statistic | — | [Read](fixed-statistic-sensitivity-envelope/paper.en.md) |
+| The trivariate Gaussian Simes inequality uniformly near level one | — | [Read](uniform-endpoint-singular-correlations/paper.en.md) |
+| The trivariate two-sided Gaussian Simes inequality without a high-level correlation cap | — | [Read](unrestricted-correlation-boundary/paper.en.md) |
+| Several optimal Rényi orders under randomized-response composition | — | [Read](composition-multiple-orders/paper.en.md) |
+| Sharp weighted bivariate tails under leave-one-out mean constraints | — | [Read](weighted-bivariate-tail/paper.en.md) |
+| High-order parity gaps and crossover radii for noisy qubit designs | — | [Read](high-order-parity-gap/paper.en.md) |
+| Parity under anisotropic noise applied after qubit Haar conjugation | — | [Read](post-conjugation-anisotropic-parity/paper.en.md) |
+| Exact finite-power prediction with corrupted smooth feedback | — | [Read](exact-finite-power-plateau/paper.en.md) |
+| Thermodynamic boundary charge in the two-track non-Hermitian fermion chain | — | [Read](thermodynamic-boundary-charge/paper.en.md) |
+| Narrow corridors in critical online conformal prediction | — | [Read](narrow-corridor-expansion/paper.en.md) |
+| Prefix constraints and optimal rank protection in online contention resolution | — | [Read](nongreedy-exchangeable-rank-optimality/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
