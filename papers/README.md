@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**122 research entries / 成果条目 · 174 manuscript versions / 论文版本**
+**124 research entries / 成果条目 · 177 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -15,6 +15,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Assignment bounds and constant-factor algorithms for bounded-hop independent-set reconfiguration | [阅读](bounded-hop-independent-set-approximation/paper.zh.md) | [Read](bounded-hop-independent-set-approximation/paper.en.md) |
 | 图伊辛演化的稳定子 Rényi 矩：连续角分解、整数阶消元与二元割谱 | [阅读](cactus-ising-stabilizer/paper.zh.md) | — |
 | 仙人掌图态的奇复制有理延拓分类 | [阅读](cactus-replica-rationality/paper.zh.md) | — |
+| 链式索引的统一通信下界与强直接积 | [阅读](chained-index-uniform-direct-product/paper.zh.md) | — |
 | 用同一个四环链接解释所有级数的多重熵坍缩违反 | [阅读](chern-simons-four-cycle/paper.zh.md) | — |
 | 四分量 Abelian Chern–Simons 链接态的三阶多重熵坍缩 | [阅读](chern-simons-order-three/paper.zh.md) | — |
 | 弦二分图上最大边开堆积的多项式算法 | [阅读](chordal-bipartite-edge-open-packing/paper.zh.md) | — |
@@ -25,6 +26,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 每个有限图都有团对偶共形的诱导扩张 · Every finite graph has a clique dually conformal induced extension | [阅读](clique-dually-conformal-induced-extension/paper.zh.md) | [Read](clique-dually-conformal-induced-extension/paper.en.md) |
 | 完全二分图的功率支配重配置刚性 | [阅读](complete-bipartite-tar-rigidity/paper.zh.md) | — |
 | Optimal induction of bounded composite sequential tests on finite trees | [阅读](composite-sequential-test-induction/paper.zh.md) | [Read](composite-sequential-test-induction/paper.en.md) |
+| Global optimality and uniqueness for conjugate-target renewal resetting | [阅读](conjugate-resetting-global-optimality/paper.zh.md) | [Read](conjugate-resetting-global-optimality/paper.en.md) |
 | 风险敏感一次在线卖出的精确最优值 | [阅读](cvar-one-max-exact-optimality/paper.zh.md) | [Read](cvar-one-max-exact-optimality/paper.en.md) |
 | 平均增长频率单调性的细致平衡判据 · The detailed-balance boundary for annealed frequency reduction | [阅读](detailed-balance-frequency-reduction/paper.zh.md) | [Read](detailed-balance-frequency-reduction/paper.en.md) |
 | Two-season frequency witnesses on directed cycles | [阅读](directed-cycle-two-season-witness/paper.zh.md) | [Read](directed-cycle-two-season-witness/paper.en.md) |
