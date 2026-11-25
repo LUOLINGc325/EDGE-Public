@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**89 research entries / 成果条目 · 115 manuscript versions / 论文版本**
+**94 research entries / 成果条目 · 123 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -49,6 +49,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Lexicographic Swap Rounding Need Not Be 1-Negatively Associated | [阅读](lexicographic-swap-rounding-counterexample/paper.zh.md) | [Read](lexicographic-swap-rounding-counterexample/paper.en.md) |
 | 留一对偶的闭包效应与近单位间隙 | [阅读](loo-continuous-dual-closure-gap/paper.zh.md) | [Read](loo-continuous-dual-closure-gap/paper.en.md) |
 | 可数收益的留一可测强对偶 | [阅读](loo-countable-measurable-duality/paper.zh.md) | [Read](loo-countable-measurable-duality/paper.en.md) |
+| Lüders 总变差顺序分数在测量粗粒化下增加的量子比特反例 | [阅读](lueders-coarse-graining-tv/paper.zh.md) | [Read](lueders-coarse-graining-tv/paper.en.md) |
 | 独立侧度数为二的分裂图上最大总传递性为 NP 完全 | [阅读](maximum-total-transitivity-split/paper.zh.md) | — |
 | 九次固定测量构造单量子比特精确酉五设计 | [阅读](mbqc-nine-measurement-five-design/paper.zh.md) | — |
 | 弦二分图上的近二次时间最小填边算法 | [阅读](minimum-fill-in-chordal-bipartite/paper.zh.md) | — |
@@ -58,6 +59,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 错报外部矩时的保形预测覆盖偏差 | [阅读](moment-conformal-misspecification/paper.zh.md) | — |
 | 区间图与排列图上的近线性最大边开堆积算法 | [阅读](near-linear-edge-open-packing/paper.zh.md) | — |
 | 单量子比特酉设计偶奇噪声平台的精确判定 | [阅读](noisy-qubit-design-parity/paper.zh.md) | — |
+| 含恶意反馈的平滑函数在线学习：大幂次极小极大常数 | [阅读](noisy-smooth-online-sharp-limit/paper.zh.md) | — |
 | 非重叠唯一支配平方根阈值的复杂度 | [阅读](non-overlapping-unidomination-threshold/paper.zh.md) | — |
 | 周期谱线隙与多体趋肤效应：一个严格反例 | [阅读](nonhermitian-skin-imbalance/paper.zh.md) | — |
 | 奇素数稳定子多重 Rényi 复制收缩的正相位 | [阅读](odd-qudit-replica-phase-reflection/paper.zh.md) | — |
@@ -69,6 +71,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 临界共形预测首项的固定区间抛物方程求值 | [阅读](online-conformal-parabolic-evaluation/paper.zh.md) | — |
 | The sharp cost of online conformal coverage in subdiffusive corridors | — | [Read](online-conformal-sharp-constant/paper.en.md) |
 | 对称宽走廊下临界共形代价的精确渐近 | [阅读](online-conformal-wide-corridor-asymptotic/paper.zh.md) | — |
+| 加性外部性下 EF1 的最小三参与者反例 | [阅读](ordinary-ef1-three-agent-counterexample/paper.zh.md) | [Read](ordinary-ef1-three-agent-counterexample/paper.en.md) |
 | 四方完美张量的全整数 Rényi 多重熵 | [阅读](perfect-tensor-renyi-multientropy/paper.zh.md) | — |
 | 任意赌注集合下随机化事后检验的可容许性 | [阅读](posthoc-closed-stake-admissibility/paper.zh.md) | [Read](posthoc-closed-stake-admissibility/paper.en.md) |
 | 有限赌注事后检验的可容许性刻画 | [阅读](posthoc-finite-stake-admissibility/paper.zh.md) | [Read](posthoc-finite-stake-admissibility/paper.en.md) |
@@ -76,6 +79,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 量子通道高阶张量矩的精确谱半径 | [阅读](rb-all-tensor-contractivity/paper.zh.md) | — |
 | 反射扩散的周期与 Markov 切换频率分类 | [阅读](reflecting-diffusion-frequency-classification/paper.zh.md) | — |
 | 排序 Schmidt 参考态最优性的半阶精确反例 | [阅读](schmidt-reference-renyi-half-counterexample/paper.zh.md) | [Read](schmidt-reference-renyi-half-counterexample/paper.en.md) |
+| 自删除图寻路的确定性参数界 | [阅读](self-deleting-path-derandomization/paper.zh.md) | — |
 | 非负次模函数在边际概率上限下的精确相关间隙 | [阅读](sharp-nonmonotone-correlation-gap/paper.zh.md) | — |
 | Simes 带曲率的精确变号与全零假设线性系数的反例 | [阅读](simes-band-curvature/paper.zh.md) | — |
 | 任意阶的单量子比特固定角测量型精确酉设计 | [阅读](single-qubit-fixed-angle-all-orders/paper.zh.md) | — |
@@ -92,6 +96,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Helly 圆弧图的最大极小团横截与锐利比例界 | [阅读](upper-clique-transversal-helly-circular-arc/paper.zh.md) | — |
 | 团横截与团关联图诱导匹配相等的判定复杂性 | [阅读](upper-clique-transversal-incidence-equality/paper.zh.md) | — |
 | 强弦图上最大极小团横截的多项式算法 | [阅读](upper-clique-transversal-strongly-chordal/paper.zh.md) | — |
+| 次三次图上双空位多样类型偏好跳跃博弈的度数修正势函数 | [阅读](variety-jump-subcubic-potential/paper.zh.md) | [Read](variety-jump-subcubic-potential/paper.en.md) |
 | 固定分布加权共形 BH 的显式样本量门槛 | [阅读](weighted-conformal-explicit-sample-threshold/paper.zh.md) | [Read](weighted-conformal-explicit-sample-threshold/paper.en.md) |
 | 固定权重上界下全零加权共形 Simes 检验的尖锐曲率 | [阅读](weighted-conformal-fixed-cap-curvature/paper.zh.md) | [Read](weighted-conformal-fixed-cap-curvature/paper.en.md) |
 | 加权共形 BH 的有限样本误报率线性上界 | [阅读](weighted-conformal-global-null-linear-fdr/paper.zh.md) | [Read](weighted-conformal-global-null-linear-fdr/paper.en.md) |
