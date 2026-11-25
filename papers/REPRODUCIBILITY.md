@@ -45,6 +45,8 @@ Run the selected script with Python 3.10 or newer, e.g. `python3 certificate_ame
 
 - [independent-e-merging-beyond-martingales](independent-e-merging-beyond-martingales/formalization/) — Independent e-value merging beyond reordered martingales, including randomized input models, all-domain and three-point optimal capital, exact product capital for finite adaptive interleavings, and smooth strictly monotone separation. The archived release records complete coverage of the original mathematical manuscript.
 
+- [finite-n-prediction-scheduling](finite-n-prediction-scheduling/formalization/) — The exact optimal frontier for finite-job prediction scheduling, including the scheduling model, dimension and snapshot arguments, explicit frontier construction, guarantees, examples and rational complexity bounds. The archived release records full coverage of the frozen mathematical manuscript.
+
 These packages preserve the original Lean sources and dependencies; migration is not a fresh compilation or independent review.
 
 ## Auxiliary Lean source

@@ -1,0 +1,123 @@
+name = "finite_frontier"
+version = "0.1.0"
+defaultTargets = ["FiniteFrontier","DimensionCertificate","UnitRecurrence","SchedulingModel","OfflineOptimum","SnapshotPlan","RoundRobin","RoundRobinExecution","SnapshotTrajectory","FirstPredictionError","SnapshotExecution","SnapshotCausality","SnapshotGuarantees","UnitProduct","FiniteStages","OfflineAndLinearProgram","UnitPlan","UnitRunLower","UnitOptimality","DimensionTelescoping","DimensionBranches","DimensionComparison","SuffixEmbedding","GapSynthesis","ExactFrontier","RationalSizeBounds","RationalUnitBounds","ParameterContinuity","FrontierInverse","PublishedFrontier","RationalAssembly","StreamingBudget","FiveJobExample","RationalBitLength","TradeoffStatements","RoundRobinVelocity","ProportionalWitness","RationalRecurrenceBounds"]
+moreLeanArgs = ["-j1", "-DElab.async=false"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "FiniteFrontier"
+
+[[lean_lib]]
+name = "DimensionCertificate"
+
+[[lean_lib]]
+name = "UnitRecurrence"
+
+[[lean_lib]]
+name = "SchedulingModel"
+
+[[lean_lib]]
+name = "OfflineOptimum"
+
+[[lean_lib]]
+name = "SnapshotPlan"
+
+[[lean_lib]]
+name = "RoundRobin"
+
+[[lean_lib]]
+name = "RoundRobinExecution"
+
+[[lean_lib]]
+name = "SnapshotTrajectory"
+
+[[lean_lib]]
+name = "FirstPredictionError"
+
+[[lean_lib]]
+name = "SnapshotExecution"
+
+[[lean_lib]]
+name = "SnapshotCausality"
+
+[[lean_lib]]
+name = "SnapshotGuarantees"
+
+[[lean_lib]]
+name = "UnitProduct"
+
+[[lean_lib]]
+name = "FiniteStages"
+
+[[lean_lib]]
+name = "OfflineAndLinearProgram"
+
+[[lean_lib]]
+name = "UnitPlan"
+
+[[lean_lib]]
+name = "UnitRunLower"
+
+[[lean_lib]]
+name = "UnitOptimality"
+
+[[lean_lib]]
+name = "DimensionTelescoping"
+
+[[lean_lib]]
+name = "DimensionBranches"
+
+[[lean_lib]]
+name = "DimensionComparison"
+
+[[lean_lib]]
+name = "SuffixEmbedding"
+
+[[lean_lib]]
+name = "GapSynthesis"
+
+[[lean_lib]]
+name = "ExactFrontier"
+
+[[lean_lib]]
+name = "RationalSizeBounds"
+
+[[lean_lib]]
+name = "RationalUnitBounds"
+
+[[lean_lib]]
+name = "ParameterContinuity"
+
+[[lean_lib]]
+name = "FrontierInverse"
+
+[[lean_lib]]
+name = "PublishedFrontier"
+
+[[lean_lib]]
+name = "RationalAssembly"
+
+[[lean_lib]]
+name = "StreamingBudget"
+
+[[lean_lib]]
+name = "FiveJobExample"
+
+[[lean_lib]]
+name = "RationalBitLength"
+
+[[lean_lib]]
+name = "TradeoffStatements"
+
+[[lean_lib]]
+name = "RoundRobinVelocity"
+
+[[lean_lib]]
+name = "ProportionalWitness"
+
+[[lean_lib]]
+name = "RationalRecurrenceBounds"
