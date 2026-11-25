@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**183 research entries / 成果条目 · 278 manuscript versions / 论文版本**
+**194 research entries / 成果条目 · 289 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -191,5 +191,16 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 定时观测下马尔可夫生成元的拓扑刚性 | [阅读](topology-constrained-markov-reconstruction/paper.zh.md) | [Read](topology-constrained-markov-reconstruction/paper.en.md) |
 | 选择性缺失下的稀疏随机复核 | [阅读](selection-audit-information/paper.zh.md) | [Read](selection-audit-information/paper.en.md) |
 | Pauli–Lindblad 误差缓解的奇偶判据与开销渐近 | [阅读](pauli-lindblad-pec-parity/paper.zh.md) | [Read](pauli-lindblad-pec-parity/paper.en.md) |
+| 稳定匹配的有限信息安全操纵与精确信息组成 | — | [Read](stable-matching-rat-barrier/paper.en.md) |
+| 隐藏三正则图的相干恢复与指数级预言机分离 | — | [Read](spired-graph-oracle-separation/paper.en.md) |
+| 一次查询秘书问题的排列层级及有理界 | — | [Read](ordinal-query-secretary-upper-bound/paper.en.md) |
+| 传递复合提升的复杂性与精确同步深度 | — | [Read](transitive-composition-lift-complexity/paper.en.md) |
+| 在线无界背包的指定随机源与公平位 | — | [Read](online-unbounded-knapsack-minimax/paper.en.md) |
+| 多机器二交换的持久临界作业 | — | [Read](multimachine-two-swap/paper.en.md) |
+| 实权最大割的稳定性、单中心度与弥散外围 | [阅读](weighted-maxcut-feedback/paper.zh.md) | — |
+| 时序 EF1 九件失败阈值与单参算法 | — | [Read](temporal-ef1-nine-chores-threshold/paper.en.md) |
+| 有限独立争用消解的精确异质保证区域 | — | [Read](pairwise-independent-uniform-crs-sharp/paper.en.md) |
+| KCBS 五角环的标量及算子重叠锐界 | — | [Read](kcbs-rank-one-all-dimensions/paper.en.md) |
+| 固定输入保真度和切换收缩的短词校准 | — | [Read](anisotropic-qubit-fidelity-composition/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
