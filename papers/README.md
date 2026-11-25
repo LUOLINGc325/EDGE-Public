@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**148 research entries / 成果条目 · 224 manuscript versions / 论文版本**
+**150 research entries / 成果条目 · 229 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -13,6 +13,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 不可逆环境切换下的平均增长频率单调性 · Annealed frequency reduction under irreversible environmental switching | [阅读](annealed-frequency-reduction/paper.zh.md) | [Read](annealed-frequency-reduction/paper.en.md) |
 | 近似差分隐私下最优 e-power 的指数预算相图 · The Privacy-Failure Exponent in Optimal Differentially Private E-Power | [阅读](approximate-dp-epower-exponent/paper.zh.md) | [Read](approximate-dp-epower-exponent/paper.en.md) |
 | Approximate Local Privacy: Blackwell Structure, Exact Pearson Information, and Minimax Estimation | — | [Read](approximate-ldp-blackwell-structure/paper.en.md) |
+| 循环 Bell 纠缠交换链的尖锐乘法系数 | [阅读](bell-chain-sharp-parity/paper.zh.md) | [Read](bell-chain-sharp-parity/paper.en.md) |
 | Gray 区间内部二元 Markov 源的操作色散 | [阅读](binary-markov-gray-dispersion/paper.zh.md) | [Read](binary-markov-gray-dispersion/paper.en.md) |
 | 一阶以上二元 Rényi 熵的最优跨阶幂界 | [阅读](binary-renyi-order-monotonicity/paper.zh.md) | [Read](binary-renyi-order-monotonicity/paper.en.md) |
 | Assignment bounds and constant-factor algorithms for bounded-hop independent-set reconfiguration | [阅读](bounded-hop-independent-set-approximation/paper.zh.md) | [Read](bounded-hop-independent-set-approximation/paper.en.md) |
@@ -83,6 +84,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 弦二分图上的最小极大无环匹配是 NP 完全的 | [阅读](minimum-maximal-acyclic-matching-chordal-bipartite/paper.zh.md) | — |
 | 错报外部矩时的保形预测覆盖偏差 | [阅读](moment-conformal-misspecification/paper.zh.md) | — |
 | 区间图与排列图上的近线性最大边开堆积算法 | [阅读](near-linear-edge-open-packing/paper.zh.md) | — |
+| 用更少的二元测量认证无噪声量子编码 | [阅读](noiseless-codes-few-binary-measurements/paper.zh.md) | [Read](noiseless-codes-few-binary-measurements/paper.en.md) |
 | 单量子比特酉设计偶奇噪声平台的精确判定 | [阅读](noisy-qubit-design-parity/paper.zh.md) | — |
 | 含恶意反馈的平滑函数在线学习：大幂次极小极大常数 | [阅读](noisy-smooth-online-sharp-limit/paper.zh.md) | [Read](noisy-smooth-online-sharp-limit/paper.en.md) |
 | 非重叠唯一支配平方根阈值的复杂度 | [阅读](non-overlapping-unidomination-threshold/paper.zh.md) | — |
@@ -106,7 +108,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 任意赌注集合下随机化事后检验的可容许性 | [阅读](posthoc-closed-stake-admissibility/paper.zh.md) | [Read](posthoc-closed-stake-admissibility/paper.en.md) |
 | 有限赌注事后检验的可容许性刻画 | [阅读](posthoc-finite-stake-admissibility/paper.zh.md) | [Read](posthoc-finite-stake-admissibility/paper.en.md) |
 | 似然比单调事后检验的可容许性 | [阅读](posthoc-randomized-admissibility/paper.zh.md) | [Read](posthoc-randomized-admissibility/paper.en.md) |
-| When pinching makes a Schur channel mixed unitary | — | [Read](ppt-squared-toroidal-mixing/paper.en.md) |
+| When pinching makes a Schur channel mixed unitary | [阅读](ppt-squared-toroidal-mixing/paper.zh.md) | [Read](ppt-squared-toroidal-mixing/paper.en.md) |
 | 两阶段预言机调度中的持续差距与无条件自适应优化 | [阅读](processing-oracle-two-phase/paper.zh.md) | [Read](processing-oracle-two-phase/paper.en.md) |
 | Three Projective Measurements Witness an Exclusion Advantage for Every Pure Entangled State | [阅读](pure-entanglement-three-measurement-exclusion/paper.zh.md) | [Read](pure-entanglement-three-measurement-exclusion/paper.en.md) |
 | 完全图量子电池中可分初态的精确充电功率 | [阅读](quantum-battery-separable-initialization/paper.zh.md) | [Read](quantum-battery-separable-initialization/paper.en.md) |
