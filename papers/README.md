@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**177 research entries / 成果条目 · 266 manuscript versions / 论文版本**
+**222 research entries / 成果条目 · 318 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -185,5 +185,50 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 加权共形 BH 的有限样本误报率线性上界 | [阅读](weighted-conformal-global-null-linear-fdr/paper.zh.md) | [Read](weighted-conformal-global-null-linear-fdr/paper.en.md) |
 | 加权共形 BH 的 Poisson 转移与共享阈值格点 | [阅读](weighted-conformal-poisson-transfer/paper.zh.md) | [Read](weighted-conformal-poisson-transfer/paper.en.md) |
 | 协变量偏移下谱截断核回归的训练条件共形覆盖 | [阅读](weighted-conformal-spectral-rkhs/paper.zh.md) | — |
+| 时滞牛顿冷却中的全历史最优制备 | [阅读](delayed-newton-cooling-optimal-preparation/paper.zh.md) | [Read](delayed-newton-cooling-optimal-preparation/paper.en.md) |
+| 模磁化投影态的魔性分辨率定律 | [阅读](modular-magnetization-magic/paper.zh.md) | [Read](modular-magnetization-magic/paper.en.md) |
+| 三量子比特的精确输出主序与最优经典通信 | [阅读](three-qubit-depolarizing-majorization/paper.zh.md) | [Read](three-qubit-depolarizing-majorization/paper.en.md) |
+| 定时观测下马尔可夫生成元的拓扑刚性 | [阅读](topology-constrained-markov-reconstruction/paper.zh.md) | [Read](topology-constrained-markov-reconstruction/paper.en.md) |
+| 选择性缺失下的稀疏随机复核 | [阅读](selection-audit-information/paper.zh.md) | [Read](selection-audit-information/paper.en.md) |
+| Pauli–Lindblad 误差缓解的奇偶判据与开销渐近 | [阅读](pauli-lindblad-pec-parity/paper.zh.md) | [Read](pauli-lindblad-pec-parity/paper.en.md) |
+| 稳定匹配的有限信息安全操纵与精确信息组成 | — | [Read](stable-matching-rat-barrier/paper.en.md) |
+| 隐藏三正则图的相干恢复与指数级预言机分离 | — | [Read](spired-graph-oracle-separation/paper.en.md) |
+| 一次查询秘书问题的排列层级及有理界 | — | [Read](ordinal-query-secretary-upper-bound/paper.en.md) |
+| 传递复合提升的复杂性与精确同步深度 | — | [Read](transitive-composition-lift-complexity/paper.en.md) |
+| 在线无界背包的指定随机源与公平位 | — | [Read](online-unbounded-knapsack-minimax/paper.en.md) |
+| 多机器二交换的持久临界作业 | — | [Read](multimachine-two-swap/paper.en.md) |
+| 实权最大割的稳定性、单中心度与弥散外围 | [阅读](weighted-maxcut-feedback/paper.zh.md) | — |
+| 时序 EF1 九件失败阈值与单参算法 | — | [Read](temporal-ef1-nine-chores-threshold/paper.en.md) |
+| 有限独立争用消解的精确异质保证区域 | — | [Read](pairwise-independent-uniform-crs-sharp/paper.en.md) |
+| KCBS 五角环的标量及算子重叠锐界 | — | [Read](kcbs-rank-one-all-dimensions/paper.en.md) |
+| 固定输入保真度和切换收缩的短词校准 | — | [Read](anisotropic-qubit-fidelity-composition/paper.en.md) |
+| 强积代数平方与定核等翼修复 | — | [Read](strong-product-algebraic-squares/paper.en.md) |
+| 量子 χ² 的异质张量化与精确区域 | — | [Read](quantum-chi2-tensorization-regions/paper.en.md) |
+| 加权伯努利熵的最终全参数严格凹性 | — | [Read](weighted-bernoulli-entropy-curvature/paper.en.md) |
+| 可见再生词的未见平稳质量 | [阅读](markov-missing-mass-minimax/paper.zh.md) | — |
+| 对数凹密度均匀置信带的量化分辨率 | — | [Read](logconcave-band-smooth-minimax/paper.en.md) |
+| 异质伯努利和的泊松密度比及二阶损失 | — | [Read](sharp-poisson-binomial-density-ratio/paper.en.md) |
+| 未知间距适应前沿与似然重尾分界 | — | [Read](unknown-gap-adaptation-boundary/paper.en.md) |
+| 矩约束 Bayes 错误率的极值、达到及奇阶删阶 | [阅读](moment-bayes-minimax-geometry/paper.zh.md) | — |
+| 纵向硬预算协方差与低秩异质风险 | — | [Read](hard-budget-covariance-fourth-moment/paper.en.md) |
+| 任意整数服务的工件年龄指数 | — | [Read](aoj-general-service-indexability/paper.en.md) |
+| 固定自适应前缀的精确 Bandit 隐私转换 | — | [Read](bandit-view-table-sharp-conversion/paper.en.md) |
+| 二项混合符号泛函的全参数极小极大风险 | [阅读](binomial-sign-margin-minimax/paper.zh.md) | — |
+| 光滑 Gibbs 有限查询的有界误差高温风险 | [阅读](smooth-gibbs-oracle-minimax/paper.zh.md) | — |
+| 加权回归选择的风险边界与有限最坏实例 | — | [Read](weighted-regression-selection-frontier/paper.en.md) |
+| 异质服务器折扣派工的全动作有限归约 | — | [Read](one-fast-many-slow-threshold/paper.en.md) |
+| 未知污染预算定价的全前缀保证 | [阅读](unknown-budget-robust-pricing/paper.zh.md) | — |
+| 标量 LQ 全局学习与自治离散临界步 | — | [Read](scalar-lq-global-learning-bifurcations/paper.en.md) |
+| 第二高估值的稳健拍卖机制与唯一等化轨道 | [阅读](second-statistic-auction-sharp-ratio/paper.zh.md) | — |
+| 联合 RR 洗牌的真实隐私上端包络 | — | [Read](shuffle-rr-hamming-extremality/paper.en.md) |
+| 路径漂移与实际切换预算遗憾 | — | [Read](path-drift-switch-budget/paper.en.md) |
+| 完工反馈队列路由与双临界极小极大 | — | [Read](queue-routing-logarithmic-regret/paper.en.md) |
+| 重球周期轨道的最小维数和开集稳定性 | [阅读](heavy-ball-planar-cycle-domain/paper.zh.md) | — |
+| 二态 Collapsing Bandit 的全参数阈值结构、可指数性与精确指数 | — | [Read](collapsing-bandit-global-indexability/paper.en.md) |
+| 随机接受在线选择的秩稀疏化、稀有接受锐极限与异质率信息边界 | [阅读](robust-secretary-acceptance-thinning/paper.zh.md) | — |
+| 鲁棒 CRT 的固定通道精确设计：有限窗口、容量准多项式与五六通道最优证书 | — | [Read](robust-crt-fixed-channel-exact-design/paper.en.md) |
+| 严格可行凸场景优化的全参数风险下界与极小极大样本校准 | [阅读](convex-scenario-compression-transfer/paper.zh.md) | [Read](convex-scenario-compression-transfer/paper.en.md) |
+| 分数建议在线匹配的无损 PAW 保证转移与因果有限实现 | — | [Read](fractional-advice-paw-transfer/paper.en.md) |
+| 条件独立信息评分的结构刚性、精确 Shannon 修复预算与二元最小修复 | [阅读](ci-score-quadratic-rigidity/paper.zh.md) | — |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
