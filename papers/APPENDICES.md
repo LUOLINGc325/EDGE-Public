@@ -14,3 +14,7 @@ Supplementary mathematical proofs and technical notes associated with the resear
 - [弦二分图最小填边的输出敏感近线性算法](minimum-fill-in-chordal-bipartite/appendices/sparse-supplement.zh.md)
 - [A bounded code-size remainder for every positive binary-output channel](rank-two-permutation-sharp-constant/appendices/binary_refinement.md)
 - [Exact fixed-error laws for rank-two noisy permutation channels](rank-two-permutation-sharp-constant/appendices/main_theorem.md)
+- [可逆反射扩散的 Markov 严格频率单调性](reflecting-diffusion-frequency-classification/appendices/strict-markov.zh.md)
+- [Supplement. The sharp Simes coefficient over arbitrary score laws](weighted-conformal-fixed-cap-curvature/appendices/atom-smoothing.en.md)
+- [Supplement: Every one-dimensional log-concave target density](optimal-resetting-asymmetric/appendices/all-log-concave-targets.en.md)
+- [Rényi contraction of repeated symmetric channels](renyi-product-order-phase/appendices/overview.en.md)
