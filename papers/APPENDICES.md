@@ -18,3 +18,17 @@ Supplementary mathematical proofs and technical notes associated with the resear
 - [Supplement. The sharp Simes coefficient over arbitrary score laws](weighted-conformal-fixed-cap-curvature/appendices/atom-smoothing.en.md)
 - [Supplement: Every one-dimensional log-concave target density](optimal-resetting-asymmetric/appendices/all-log-concave-targets.en.md)
 - [Rényi contraction of repeated symmetric channels](renyi-product-order-phase/appendices/overview.en.md)
+
+## Reading guides and expanded proofs / 导读与分章节证明
+
+- [二态 Collapsing Bandit 中文导读](collapsing-bandit-global-indexability/guide.zh.md)
+- [差分凸算法中文导读](dca-sharp-finite-horizon/guide.zh.md)
+- [分数建议在线匹配中文导读](fractional-advice-paw-transfer/guide.zh.md)
+- [Rényi 乘积通道收缩中文导读](renyi-product-order-phase/guide.zh.md)
+- [鲁棒 CRT 模数设计中文导读](robust-crt-fixed-channel-exact-design/guide.zh.md)
+- [critical window](renyi-product-order-phase/appendices/critical_window.md)
+- [endpoint](renyi-product-order-phase/appendices/endpoint.md)
+- [fixed order](renyi-product-order-phase/appendices/fixed_order.md)
+- [growing order](renyi-product-order-phase/appendices/growing_order.md)
+- [high order interior](renyi-product-order-phase/appendices/high_order_interior.md)
+- [References and verification boundaries](renyi-product-order-phase/appendices/references_and_validation.md)
