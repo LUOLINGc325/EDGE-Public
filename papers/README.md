@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**107 research entries / 成果条目 · 146 manuscript versions / 论文版本**
+**114 research entries / 成果条目 · 156 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -37,12 +37,15 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 固定至少四个代理时，累计嫉妒最小化的弱 NP 完全性 | [阅读](fixed-agent-cumulative-envy/paper.zh.md) | [Read](fixed-agent-cumulative-envy/paper.en.md) |
 | 任意量子比特数的固定角测量型精确酉二设计 | [阅读](fixed-angle-mbqc-unitary-design/paper.zh.md) | — |
 | 固定不可逆生成元的任意多重频率峰 | [阅读](floquet-many-frequency-optima/paper.zh.md) | [Read](floquet-many-frequency-optima/paper.en.md) |
+| Two-level Pauli spectra and the four-qubit obstruction to mutually unbiased orbits | — | [Read](four-qubit-pauli-mub-obstruction-and-robustness/paper.en.md) |
 | 全覆盖唯一支配在弦图上的困难性及区间图算法 | [阅读](full-cover-unidomination-chordal/paper.zh.md) | — |
 | 双变量 Gaffke 改进规则的精确反演与最大区间缩减 | [阅读](gaffke-bivariate-interval-inversion/paper.zh.md) | [Read](gaffke-bivariate-interval-inversion/paper.en.md) |
 | Gaffke 统计量留一系数的尖锐下界 | [阅读](gaffke-delta-sharp-bound/paper.zh.md) | [Read](gaffke-delta-sharp-bound/paper.en.md) |
 | 利用观测顺序确定性缩短 Gaffke 置信区间 | [阅读](gaffke-ordered-iid-interval/paper.zh.md) | [Read](gaffke-ordered-iid-interval/paper.en.md) |
 | 未知离散度下 Gamma 均值检验的有限样本条件似然 | [阅读](gamma-calibration-unknown-dispersion/paper.zh.md) | — |
 | 高斯频率模型的梯度方差精确渐近 | [阅读](gaussian-frequency-gradient-variance/paper.zh.md) | — |
+| A nonvanishing privacy floor for Gaussian-product post-processing | [阅读](gaussian-product-privacy-floor/paper.zh.md) | [Read](gaussian-product-privacy-floor/paper.en.md) |
+| The exact asymptotic privacy gain of the Gaussian-product mechanism | [阅读](gaussian-product-sharp-zcdp/paper.zh.md) | [Read](gaussian-product-sharp-zcdp/paper.en.md) |
 | 三维双侧高斯 Simes 检验在水平一附近的精确控制 | [阅读](gaussian-simes-high-level-trivariate/paper.zh.md) | [Read](gaussian-simes-high-level-trivariate/paper.en.md) |
 | 一维随机 Pauli 读出恢复 GHZ 相位的最优对数深度 | [阅读](ghz-pauli-readout-depth/paper.zh.md) | — |
 | 降温可使 Glauber 活动度超过二分之一 | [阅读](glauber-activity-counterexample/paper.zh.md) | [Read](glauber-activity-counterexample/paper.en.md) |
@@ -78,6 +81,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 对称宽走廊下临界共形代价的精确渐近 | [阅读](online-conformal-wide-corridor-asymptotic/paper.zh.md) | — |
 | 加性外部性下 EF1 的最小三参与者反例 | [阅读](ordinary-ef1-three-agent-counterexample/paper.zh.md) | [Read](ordinary-ef1-three-agent-counterexample/paper.en.md) |
 | 有限独立激活下贪心在线冲突消解的最优损失指数 | [阅读](pairwise-independent-online-crs-sharp/paper.zh.md) | — |
+| 乘积 Pauli 相互无偏基的奇偶障碍与相位刚性 | [阅读](pauli-mub-phase-rigidity/paper.zh.md) | [Read](pauli-mub-phase-rigidity/paper.en.md) |
 | 四方完美张量的全整数 Rényi 多重熵 | [阅读](perfect-tensor-renyi-multientropy/paper.zh.md) | — |
 | 任意赌注集合下随机化事后检验的可容许性 | [阅读](posthoc-closed-stake-admissibility/paper.zh.md) | [Read](posthoc-closed-stake-admissibility/paper.en.md) |
 | 有限赌注事后检验的可容许性刻画 | [阅读](posthoc-finite-stake-admissibility/paper.zh.md) | [Read](posthoc-finite-stake-admissibility/paper.en.md) |
@@ -86,6 +90,8 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 完全图量子电池中可分初态的精确充电功率 | [阅读](quantum-battery-separable-initialization/paper.zh.md) | [Read](quantum-battery-separable-initialization/paper.en.md) |
 | 四阶与五阶量子 Rényi 信息合并的最优擦除界 | [阅读](quantum-renyi45-erasure-bound/paper.zh.md) | — |
 | 量子输运代价的精确多边形逼近 | [阅读](quantum-transport-polygon-exactness/paper.zh.md) | — |
+| 任意维热机器下双能级系统的二阶耗散下界 | [阅读](qubit-cooling-arbitrary-machine/paper.zh.md) | — |
+| 双能级冷却壳容量的多项式时间精确证书 | [阅读](qubit-cooling-bernstein-certificate/paper.zh.md) | — |
 | 四能级纠缠交换的固定资源精确可达区间 | [阅读](ququart-swapping-fixed-resource-range/paper.zh.md) | — |
 | 量子通道高阶张量矩的精确谱半径 | [阅读](rb-all-tensor-contractivity/paper.zh.md) | — |
 | 反射扩散的周期与 Markov 切换频率分类 | [阅读](reflecting-diffusion-frequency-classification/paper.zh.md) | — |
@@ -100,6 +106,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 六 qubit 多重熵在奇数指标上的无限次上升 | [阅读](six-cycle-odd-index-entropy-rises/paper.zh.md) | — |
 | 六环图态的奇阶复制秩及两条算术分支 | [阅读](six-cycle-replica-arithmetic/paper.zh.md) | — |
 | 重抽样最大幂分样本似然比的水平反例 | [阅读](subsampled-max-power-lqrt/paper.zh.md) | — |
+| 三量子比特张量 Pauli 单轨道互无偏基的不存在性 | [阅读](three-qubit-pauli-mub-obstruction/paper.zh.md) | — |
 | 三态热弛豫的全局熵衰减常数 | [阅读](three-state-mlsi-certificate/paper.zh.md) | — |
 | 平衡完全三部图的唯一最近谱邻居 | [阅读](tripartite-nearest-spectral/paper.zh.md) | — |
 | 完全三部图的邻接谱秩间隙 | [阅读](tripartite-spectral-rank/paper.zh.md) | — |
