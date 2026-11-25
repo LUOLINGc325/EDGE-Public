@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**261 research entries / 成果条目 · 360 manuscript versions / 论文版本**
+**275 research entries / 成果条目 · 374 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -269,5 +269,19 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Exact capital for convex-profile e-value mergers | — | [Read](exact-convex-profile-capital/paper.en.md) |
 | The complexity of exact terminal induction with slack composite nulls | — | [Read](slack-null-induction-complexity/paper.en.md) |
 | Information loss and sharp power limits for conditional Gamma calibration | — | [Read](conditional-information-power-boundaries/paper.en.md) |
+| The additive cost of counted feedback at the growing-round erasure frontier | — | [Read](counted-feedback-additive-frontier/paper.en.md) |
+| Polynomial forward length for growing-round adaptive erasure feedback | — | [Read](growing-round-blocklength/paper.en.md) |
+| Two scales of private e-power when epsilon tends to zero | — | [Read](vanishing-epsilon-two-scales/paper.en.md) |
+| Dispersion at the Gray distortion endpoint for binary Markov sources | — | [Read](gray-critical-endpoint/paper.en.md) |
+| Private-chain silence does not reduce chained index below linear payload | — | [Read](private-slot-coalescence/paper.en.md) |
+| Weighting makes unique-cover preassignment hard on interval graphs | — | [Read](weighted-interval-inapproximability/paper.en.md) |
+| Optimal identity testing with one hard classifier | — | [Read](original-alphabet-hard-classifier/paper.en.md) |
+| Optimal two-sample closeness testing with one hard classifier | — | [Read](unknown-reference-hard-sign-classifier/paper.en.md) |
+| A two-quadrant complexity boundary for domination in split rectangle graphs | — | [Read](two-quadrant-complexity/paper.en.md) |
+| The finite-population effect for Euclidean coordinate medians | — | [Read](fixed-population-sharp-deficit/paper.en.md) |
+| The pointwise extension frontier of the exchangeable arithmetic prefix rule | — | [Read](three-coordinate-extension-frontier/paper.en.md) |
+| Serial service and the exact ordinal scheduling frontier | — | [Read](serial-service-frontier/paper.en.md) |
+| Three Laplace samples generically identify a quantum no-jump generator | — | [Read](first-count-tomography/paper.en.md) |
+| The sharp peripheral Jordan order of monitored quantum kernels | — | [Read](sharp-peripheral-jordan-order/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
