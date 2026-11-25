@@ -53,6 +53,8 @@ These packages preserve the original Lean sources and dependencies; migration is
 
 ## Auxiliary Lean source
 
+- [Rényi product order phase](renyi-product-order-phase/formalization/) — 139 source files, including the asymptotic regime development; final matching-source full verification is not asserted.
+
 - [Detailed-balance frequency reduction](detailed-balance-frequency-reduction/formalization/): two auxiliary real-analysis lemmas, not a formalization of the entire paper.
 - [Chern–Simons four-cycle](chern-simons-four-cycle/formalization/): algebraic consequences of the partition-count formulas, not a formalization of the complete replica-matrix argument.
 

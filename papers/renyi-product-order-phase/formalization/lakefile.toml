@@ -1,0 +1,428 @@
+name = "renyi_product_order_phase"
+version = "0.1.0"
+defaultTargets = ["Core","AuditImported","BoundaryAttacks","FiniteDistributions","FiniteRenyi","BalancedBlocks","FiniteJensen","NormalizedBlocks","TwoPointReduction","ConditionalPower","FinitePowerTools","BinaryMoments","BinaryExtremum","BinaryVariation","BinaryUpperOrder","BinaryLowerOrder","DiracReduction","DiracCoefficient","TensorChannel","ProductMonotonicity","HammingReduction","ProductCoefficient","EndpointSmall","EndpointLarge","PriorAttainment","CumulantTilt","CumulantDerivatives","FiniteCharacteristic","CharacteristicTaylor","CharacteristicGaussian","CharacteristicScaling","FourierCutoff","FourierKernelShape","SmoothingKernelMass","SmoothedFourierInterval","SmoothedFourierSum","FourierLocalScaling","FourierSmoothedUniform","SmoothedConvolution","Desmoothing","FiniteNonarithmeticLLT","LatticeStructure","LatticeOrthogonality","LatticeInversion","LatticeGaussianScaling","FiniteLatticeLLT","LatticeExistence","TiltedKernels","CentralWindows","PriorVariational","GrowingKernelIntegral","FixedKernelIntegral","GridConcentration","CompactPriorLimit","GridStep","KernelEnvelope","GridStepLimit","PriorBoundaryEstimates","ExponentialEnvelopeMeasure","GridApproximation","GridApproximationError","NonarithmeticTestLimit","NonarithmeticKernelLimits","LatticePhaseLaw","UniformIntegerSum","LatticeTestLimit","SaddleRates","InverseOrderRoot","LogLinearization","GrowingKernelReplacement","NonarithmeticDeficitLimits","DeficitScaling","CompactDeficitLimit","SmallPriorExclusion","LargePriorExclusion","LatticeWindow","PriorConfinement","GlobalPriorLimit","NonarithmeticOptimizedLimit","LatticeKernelLimits","ArithmeticDeficitLimits","EndpointAtomicSandwich","SuperEndpointBounds","SuperEndpointLimit","SoftThresholdBounds","GrowingSmoothingSpectrum","NormalizedSmoothedDensity","SmoothedNormalL1","HalflineDesmoothing","FiniteCentralLimit","NormalizedLikelihood","StandardNormalTail","NormalMillsRatio","NegativeLogPriorShape","EndpointLambertVariational","PeriodicPhaseProfile","PhaseCostFactorization","MovingPhaseMinimum","CriticalScaling","CriticalGaussianVariational","CriticalSoftThreshold","CriticalCompactLimit","CriticalMomentGrowth","CriticalGlobalLimit","CriticalLargePrior","CriticalSmallPrior","ArithmeticPhaseOptimization","ArithmeticOptimizedLimits","MinimumAtomTilt","LikelihoodLegendre","EndpointSupportGap","EndpointPriorBounds","TiltedLikelihoodWindow","InteriorPriorScale","InverseOrderMinimum","InverseOrderPriorLimit","EndpointAtomicRemainder","CriticalExactCoefficient","NonarithmeticExactLimits","EndpointSharpError","EndpointLambertScale","InverseOrderExactCoefficient","EndpointTimeConfinement","EndpointUniformShell","EndpointOptimizedLimits","BISOPhaseParity","MovingPhaseOptimizer","ChannelAsymptotics","DeficitRateConsequences","DeficitScaleRates","DeficitRegimeRates","InteriorMovingScale","PublicTheoremInterfaces","FullAsymptoticReplay","OrientedChernoff","InfiniteRenyi","InfiniteRenyiSharpChannel","InfiniteRenyiProduct","ExtendedLikelihoodRate"]
+moreLeanArgs = ["-j1"]
+
+[[lean_lib]]
+name = "Core"
+
+[[lean_lib]]
+name = "AuditImported"
+srcDir = "independent_replay"
+
+[[lean_lib]]
+name = "BoundaryAttacks"
+srcDir = "independent_replay"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "FiniteDistributions"
+
+[[lean_lib]]
+name = "FiniteRenyi"
+
+[[lean_lib]]
+name = "BalancedBlocks"
+
+[[lean_lib]]
+name = "FiniteJensen"
+
+[[lean_lib]]
+name = "NormalizedBlocks"
+
+[[lean_lib]]
+name = "TwoPointReduction"
+
+[[lean_lib]]
+name = "ConditionalPower"
+
+[[lean_lib]]
+name = "FinitePowerTools"
+
+[[lean_lib]]
+name = "BinaryMoments"
+
+[[lean_lib]]
+name = "BinaryExtremum"
+
+[[lean_lib]]
+name = "BinaryVariation"
+
+[[lean_lib]]
+name = "BinaryUpperOrder"
+
+[[lean_lib]]
+name = "BinaryLowerOrder"
+
+[[lean_lib]]
+name = "DiracReduction"
+
+[[lean_lib]]
+name = "DiracCoefficient"
+
+[[lean_lib]]
+name = "TensorChannel"
+
+[[lean_lib]]
+name = "ProductMonotonicity"
+
+[[lean_lib]]
+name = "HammingReduction"
+
+[[lean_lib]]
+name = "ProductCoefficient"
+
+[[lean_lib]]
+name = "EndpointSmall"
+
+[[lean_lib]]
+name = "EndpointLarge"
+
+[[lean_lib]]
+name = "PriorAttainment"
+
+[[lean_lib]]
+name = "CumulantTilt"
+
+[[lean_lib]]
+name = "CumulantDerivatives"
+
+[[lean_lib]]
+name = "FiniteCharacteristic"
+
+[[lean_lib]]
+name = "CharacteristicTaylor"
+
+[[lean_lib]]
+name = "CharacteristicGaussian"
+
+[[lean_lib]]
+name = "CharacteristicScaling"
+
+[[lean_lib]]
+name = "FourierCutoff"
+
+[[lean_lib]]
+name = "FourierKernelShape"
+
+[[lean_lib]]
+name = "SmoothingKernelMass"
+
+[[lean_lib]]
+name = "SmoothedFourierInterval"
+
+[[lean_lib]]
+name = "SmoothedFourierSum"
+
+[[lean_lib]]
+name = "FourierLocalScaling"
+
+[[lean_lib]]
+name = "FourierSmoothedUniform"
+
+[[lean_lib]]
+name = "SmoothedConvolution"
+
+[[lean_lib]]
+name = "Desmoothing"
+
+[[lean_lib]]
+name = "FiniteNonarithmeticLLT"
+
+[[lean_lib]]
+name = "LatticeStructure"
+
+[[lean_lib]]
+name = "LatticeOrthogonality"
+
+[[lean_lib]]
+name = "LatticeInversion"
+
+[[lean_lib]]
+name = "LatticeGaussianScaling"
+
+[[lean_lib]]
+name = "FiniteLatticeLLT"
+
+[[lean_lib]]
+name = "LatticeExistence"
+
+[[lean_lib]]
+name = "TiltedKernels"
+
+[[lean_lib]]
+name = "CentralWindows"
+
+[[lean_lib]]
+name = "PriorVariational"
+
+[[lean_lib]]
+name = "GrowingKernelIntegral"
+
+[[lean_lib]]
+name = "FixedKernelIntegral"
+
+[[lean_lib]]
+name = "GridConcentration"
+
+[[lean_lib]]
+name = "CompactPriorLimit"
+
+[[lean_lib]]
+name = "GridStep"
+
+[[lean_lib]]
+name = "KernelEnvelope"
+
+[[lean_lib]]
+name = "GridStepLimit"
+
+[[lean_lib]]
+name = "PriorBoundaryEstimates"
+
+[[lean_lib]]
+name = "ExponentialEnvelopeMeasure"
+
+[[lean_lib]]
+name = "GridApproximation"
+
+[[lean_lib]]
+name = "GridApproximationError"
+
+[[lean_lib]]
+name = "NonarithmeticTestLimit"
+
+[[lean_lib]]
+name = "NonarithmeticKernelLimits"
+
+[[lean_lib]]
+name = "LatticePhaseLaw"
+
+[[lean_lib]]
+name = "UniformIntegerSum"
+
+[[lean_lib]]
+name = "LatticeTestLimit"
+
+[[lean_lib]]
+name = "SaddleRates"
+
+[[lean_lib]]
+name = "InverseOrderRoot"
+
+[[lean_lib]]
+name = "LogLinearization"
+
+[[lean_lib]]
+name = "GrowingKernelReplacement"
+
+[[lean_lib]]
+name = "NonarithmeticDeficitLimits"
+
+[[lean_lib]]
+name = "DeficitScaling"
+
+[[lean_lib]]
+name = "CompactDeficitLimit"
+
+[[lean_lib]]
+name = "SmallPriorExclusion"
+
+[[lean_lib]]
+name = "LargePriorExclusion"
+
+[[lean_lib]]
+name = "LatticeWindow"
+
+[[lean_lib]]
+name = "PriorConfinement"
+
+[[lean_lib]]
+name = "GlobalPriorLimit"
+
+[[lean_lib]]
+name = "NonarithmeticOptimizedLimit"
+
+[[lean_lib]]
+name = "LatticeKernelLimits"
+
+[[lean_lib]]
+name = "ArithmeticDeficitLimits"
+
+[[lean_lib]]
+name = "EndpointAtomicSandwich"
+
+[[lean_lib]]
+name = "SuperEndpointBounds"
+
+[[lean_lib]]
+name = "SuperEndpointLimit"
+
+[[lean_lib]]
+name = "SoftThresholdBounds"
+
+[[lean_lib]]
+name = "GrowingSmoothingSpectrum"
+
+[[lean_lib]]
+name = "NormalizedSmoothedDensity"
+
+[[lean_lib]]
+name = "SmoothedNormalL1"
+
+[[lean_lib]]
+name = "HalflineDesmoothing"
+
+[[lean_lib]]
+name = "FiniteCentralLimit"
+
+[[lean_lib]]
+name = "NormalizedLikelihood"
+
+[[lean_lib]]
+name = "StandardNormalTail"
+
+[[lean_lib]]
+name = "NormalMillsRatio"
+
+[[lean_lib]]
+name = "NegativeLogPriorShape"
+
+[[lean_lib]]
+name = "EndpointLambertVariational"
+
+[[lean_lib]]
+name = "PeriodicPhaseProfile"
+
+[[lean_lib]]
+name = "PhaseCostFactorization"
+
+[[lean_lib]]
+name = "MovingPhaseMinimum"
+
+[[lean_lib]]
+name = "CriticalScaling"
+
+[[lean_lib]]
+name = "CriticalGaussianVariational"
+
+[[lean_lib]]
+name = "CriticalSoftThreshold"
+
+[[lean_lib]]
+name = "CriticalCompactLimit"
+
+[[lean_lib]]
+name = "CriticalMomentGrowth"
+
+[[lean_lib]]
+name = "CriticalGlobalLimit"
+
+[[lean_lib]]
+name = "CriticalLargePrior"
+
+[[lean_lib]]
+name = "CriticalSmallPrior"
+
+[[lean_lib]]
+name = "ArithmeticPhaseOptimization"
+
+[[lean_lib]]
+name = "ArithmeticOptimizedLimits"
+
+[[lean_lib]]
+name = "MinimumAtomTilt"
+
+[[lean_lib]]
+name = "LikelihoodLegendre"
+
+[[lean_lib]]
+name = "EndpointSupportGap"
+
+[[lean_lib]]
+name = "EndpointPriorBounds"
+
+[[lean_lib]]
+name = "TiltedLikelihoodWindow"
+
+[[lean_lib]]
+name = "InteriorPriorScale"
+
+[[lean_lib]]
+name = "InverseOrderMinimum"
+
+[[lean_lib]]
+name = "InverseOrderPriorLimit"
+
+[[lean_lib]]
+name = "EndpointAtomicRemainder"
+
+[[lean_lib]]
+name = "CriticalExactCoefficient"
+
+[[lean_lib]]
+name = "NonarithmeticExactLimits"
+
+[[lean_lib]]
+name = "EndpointSharpError"
+
+[[lean_lib]]
+name = "EndpointLambertScale"
+
+[[lean_lib]]
+name = "InverseOrderExactCoefficient"
+
+[[lean_lib]]
+name = "EndpointTimeConfinement"
+
+[[lean_lib]]
+name = "EndpointUniformShell"
+
+[[lean_lib]]
+name = "EndpointOptimizedLimits"
+
+[[lean_lib]]
+name = "BISOPhaseParity"
+
+[[lean_lib]]
+name = "MovingPhaseOptimizer"
+
+[[lean_lib]]
+name = "ChannelAsymptotics"
+
+[[lean_lib]]
+name = "DeficitRateConsequences"
+
+[[lean_lib]]
+name = "DeficitScaleRates"
+
+[[lean_lib]]
+name = "DeficitRegimeRates"
+
+[[lean_lib]]
+name = "InteriorMovingScale"
+
+[[lean_lib]]
+name = "PublicTheoremInterfaces"
+
+[[lean_lib]]
+name = "FullAsymptoticReplay"
+
+[[lean_lib]]
+name = "OrientedChernoff"
+
+[[lean_lib]]
+name = "InfiniteRenyi"
+
+[[lean_lib]]
+name = "InfiniteRenyiSharpChannel"
+
+[[lean_lib]]
+name = "InfiniteRenyiProduct"
+
+[[lean_lib]]
+name = "ExtendedLikelihoodRate"
