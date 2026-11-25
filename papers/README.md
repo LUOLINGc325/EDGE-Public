@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**167 research entries / 成果条目 · 254 manuscript versions / 论文版本**
+**173 research entries / 成果条目 · 260 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -34,6 +34,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 完全二分图的功率支配重配置刚性 | [阅读](complete-bipartite-tar-rigidity/paper.zh.md) | — |
 | Optimal induction of bounded composite sequential tests on finite trees | [阅读](composite-sequential-test-induction/paper.zh.md) | [Read](composite-sequential-test-induction/paper.en.md) |
 | Global optimality and uniqueness for conjugate-target renewal resetting | [阅读](conjugate-resetting-global-optimality/paper.zh.md) | [Read](conjugate-resetting-global-optimality/paper.en.md) |
+| Optimal centroid partitions in one-trap games on finite metric trees | — | [Read](continuous-star-partition-optimality/paper.en.md) |
 | 风险敏感一次在线卖出的精确最优值 | [阅读](cvar-one-max-exact-optimality/paper.zh.md) | [Read](cvar-one-max-exact-optimality/paper.en.md) |
 | Sharp Finite-Horizon Descent for the Difference-of-Convex Algorithm | — | [Read](dca-sharp-finite-horizon/paper.en.md) |
 | 距离三删除球交集精确值猜想的有限反例 | [阅读](deletion-intersection-counterexample/paper.zh.md) | [Read](deletion-intersection-counterexample/paper.en.md) |
@@ -41,6 +42,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Two-season frequency witnesses on directed cycles | [阅读](directed-cycle-two-season-witness/paper.zh.md) | [Read](directed-cycle-two-season-witness/paper.en.md) |
 | 分裂矩形相交图的支配与打包之比至多为四 | [阅读](domination-packing-split-rectangle/paper.zh.md) | — |
 | 两类拟阵零度家务的最坏近似 EFX 因子 | [阅读](efx-binary-partition-nullity/paper.zh.md) | [Read](efx-binary-partition-nullity/paper.en.md) |
+| 四人八物品 EFX 存在性的共同双件支配充分条件 | [阅读](efx-four-agents-eight-goods/paper.zh.md) | — |
 | 共同独立集如何保证拟阵秩费用下的杂务 EFX | [阅读](efx-matroid-rank-chores/paper.zh.md) | [Read](efx-matroid-rank-chores/paper.en.md) |
 | 所有有限社会成本指数下欧氏坐标中位数的尖锐保证 | [阅读](euclidean-median-all-p-sharp/paper.zh.md) | [Read](euclidean-median-all-p-sharp/paper.en.md) |
 | 任意偶环图态的两条精确复制算术分支 | [阅读](even-cycle-replica-branch-separation/paper.zh.md) | — |
@@ -50,6 +52,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 余图等距路径覆盖与划分的更快算法 | [阅读](faster-isometric-paths-cographs/paper.zh.md) | — |
 | The exact finite-job consistency–robustness frontier for non-clairvoyant scheduling | — | [Read](finite-n-prediction-scheduling/paper.en.md) |
 | 有限 Pinwheel 排程的期限障碍与两访参数算法 | [阅读](finite-pinwheel-three-task/paper.zh.md) | — |
+| Transient learning at a common reward threshold in finite-state Markov decision processes | — | [Read](finite-worst-models-transient-learning/paper.en.md) |
 | 量子首次通过核的逆实现与任意维可见例外点 | [阅读](first-passage-kernel-inverse-realization/paper.zh.md) | — |
 | 固定至少四个代理时，累计嫉妒最小化的弱 NP 完全性 | [阅读](fixed-agent-cumulative-envy/paper.zh.md) | [Read](fixed-agent-cumulative-envy/paper.en.md) |
 | 任意量子比特数的固定角测量型精确酉二设计 | [阅读](fixed-angle-mbqc-unitary-design/paper.zh.md) | — |
@@ -123,8 +126,10 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | p-spin Curie–Weiss 模型在驻拐点边界上的混合时间 | [阅读](pspin-curie-weiss-spinodal/paper.zh.md) | — |
 | Three Projective Measurements Witness an Exclusion Advantage for Every Pure Entangled State | [阅读](pure-entanglement-three-measurement-exclusion/paper.zh.md) | [Read](pure-entanglement-three-measurement-exclusion/paper.en.md) |
 | 完全图量子电池中可分初态的精确充电功率 | [阅读](quantum-battery-separable-initialization/paper.zh.md) | [Read](quantum-battery-separable-initialization/paper.en.md) |
+| Singular-value product bounds for quantum channels and the optimal qubit count | — | [Read](quantum-channel-product-bound-universality/paper.en.md) |
 | 四阶与五阶量子 Rényi 信息合并的最优擦除界 | [阅读](quantum-renyi45-erasure-bound/paper.zh.md) | [Read](quantum-renyi45-erasure-bound/paper.en.md) |
 | 量子输运代价的精确多边形逼近 | [阅读](quantum-transport-polygon-exactness/paper.zh.md) | [Read](quantum-transport-polygon-exactness/paper.en.md) |
+| Entropy of independent four-letter sums: exact ray classes and unrestricted asymptotics | — | [Read](quaternary-sum-entropy/paper.en.md) |
 | 任意维热机器下双能级系统的二阶耗散下界 | [阅读](qubit-cooling-arbitrary-machine/paper.zh.md) | — |
 | 双能级冷却壳容量的多项式时间精确证书 | [阅读](qubit-cooling-bernstein-certificate/paper.zh.md) | [Read](qubit-cooling-bernstein-certificate/paper.en.md) |
 | 有界简并量子冷却的超水平集解析证明与显式余量 | [阅读](qubit-cooling-bounded-degeneracy/paper.zh.md) | [Read](qubit-cooling-bounded-degeneracy/paper.en.md) |
@@ -165,6 +170,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 未知尺度非自适应一比特均值估计的尖锐样本复杂度 | [阅读](unknown-scale-onebit-mean-minimax/paper.zh.md) | [Read](unknown-scale-onebit-mean-minimax/paper.en.md) |
 | Helly 圆弧图的最大极小团横截与锐利比例界 | [阅读](upper-clique-transversal-helly-circular-arc/paper.zh.md) | — |
 | 团横截与团关联图诱导匹配相等的判定复杂性 | [阅读](upper-clique-transversal-incidence-equality/paper.zh.md) | — |
+| Upper Clique Transversal on simultaneous interval representations | — | [Read](upper-clique-transversal-simultaneous-xp/paper.en.md) |
 | 强弦图上最大极小团横截的多项式算法 | [阅读](upper-clique-transversal-strongly-chordal/paper.zh.md) | — |
 | 次三次图上双空位多样类型偏好跳跃博弈的度数修正势函数 | [阅读](variety-jump-subcubic-potential/paper.zh.md) | [Read](variety-jump-subcubic-potential/paper.en.md) |
 | 经验 Wasserstein 重心二阈值猜想的有限反例 | [阅读](wasserstein-barycenter-threshold-two/paper.zh.md) | [Read](wasserstein-barycenter-threshold-two/paper.en.md) |
