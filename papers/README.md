@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**237 research entries / 成果条目 · 336 manuscript versions / 论文版本**
+**239 research entries / 成果条目 · 338 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -245,5 +245,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Sharp randomized robustness for two weighted nonclairvoyant jobs | — | [Read](randomized-weighted-two-job-robustness/paper.en.md) |
 | Rigidity and stability of optimal quantum polygon approximations | — | [Read](minimizer-rigidity-stability/paper.en.md) |
 | Finite-grid witnesses and full-domain tensorization for read-once e-value capital | — | [Read](full-domain-capital-tensorization/paper.en.md) |
+| Computational complexity of optimal Pauli error cancellation on odd cycles | — | [Read](odd-cycle-exact-complexity/paper.en.md) |
+| Minimal negative-association failures of swap rounding | — | [Read](sharp-minimal-failures/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
