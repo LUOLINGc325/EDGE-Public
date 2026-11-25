@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**173 research entries / 成果条目 · 260 manuscript versions / 论文版本**
+**175 research entries / 成果条目 · 262 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -31,6 +31,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 用单个扩充字母表二值分类器消除稀疏拟合度检验的额外对数损失 · Log-free sparse goodness-of-fit by one augmented binary classifier | [阅读](classifier-accuracy-augmented-gof/paper.zh.md) | [Read](classifier-accuracy-augmented-gof/paper.en.md) |
 | 每个有限图都有团对偶共形的诱导扩张 · Every finite graph has a clique dually conformal induced extension | [阅读](clique-dually-conformal-induced-extension/paper.zh.md) | [Read](clique-dually-conformal-induced-extension/paper.en.md) |
 | 共同扰动分布下的仿射最优性：时域精确边界、暴露面刚性与矩证书 | [阅读](common-law-lqr-affine-boundary/paper.zh.md) | [Read](common-law-lqr-affine-boundary/paper.en.md) |
+| 共同最高单件下的完整 EFX：构造、束型困难性和四人核 | [阅读](common-top-good-constructive-efx/paper.zh.md) | — |
 | 完全二分图的功率支配重配置刚性 | [阅读](complete-bipartite-tar-rigidity/paper.zh.md) | — |
 | Optimal induction of bounded composite sequential tests on finite trees | [阅读](composite-sequential-test-induction/paper.zh.md) | [Read](composite-sequential-test-induction/paper.en.md) |
 | Global optimality and uniqueness for conjugate-target renewal resetting | [阅读](conjugate-resetting-global-optimality/paper.zh.md) | [Read](conjugate-resetting-global-optimality/paper.en.md) |
@@ -127,6 +128,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Three Projective Measurements Witness an Exclusion Advantage for Every Pure Entangled State | [阅读](pure-entanglement-three-measurement-exclusion/paper.zh.md) | [Read](pure-entanglement-three-measurement-exclusion/paper.en.md) |
 | 完全图量子电池中可分初态的精确充电功率 | [阅读](quantum-battery-separable-initialization/paper.zh.md) | [Read](quantum-battery-separable-initialization/paper.en.md) |
 | Singular-value product bounds for quantum channels and the optimal qubit count | — | [Read](quantum-channel-product-bound-universality/paper.en.md) |
+| 一个 23 量子比特 M₃ 候选权重枚举式的非实现性 | [阅读](quantum-code-n23-m3-b2/paper.zh.md) | — |
 | 四阶与五阶量子 Rényi 信息合并的最优擦除界 | [阅读](quantum-renyi45-erasure-bound/paper.zh.md) | [Read](quantum-renyi45-erasure-bound/paper.en.md) |
 | 量子输运代价的精确多边形逼近 | [阅读](quantum-transport-polygon-exactness/paper.zh.md) | [Read](quantum-transport-polygon-exactness/paper.en.md) |
 | Entropy of independent four-letter sums: exact ray classes and unrestricted asymptotics | — | [Read](quaternary-sum-entropy/paper.en.md) |

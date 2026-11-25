@@ -1,0 +1,24 @@
+{
+  "partition_counts": {
+    "all_pairs": 105,
+    "top_singleton_empties_allowed": 365,
+    "top_singleton_nonempty": 301
+  },
+  "sampled_constructive": {
+    "all_pairs": 69,
+    "genuine_exception": 56,
+    "singleton_and_triple": 75,
+    "some_double_bound_fails": 129
+  },
+  "scope_witnesses": {
+    "incomparable_witnesses": 2,
+    "sharpness_configurations": 4,
+    "triple_five_strict_witnesses": 1
+  },
+  "status": "PASS",
+  "three_dimensional_matching": {
+    "constructive_fallback_despite_perfect_matching": 55,
+    "instances": 258,
+    "positive_instances": 176
+  }
+}

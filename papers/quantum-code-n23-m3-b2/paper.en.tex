@@ -1,0 +1,924 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\F}{\mathbb F_4}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\tr}{\operatorname{Tr}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\Span}{\operatorname{span}_{\F}}
+\newcommand{\ip}[2]{\left\langle #1,#2\right\rangle}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\Arow}[1]{\mathcal A_{#1}}
+\newcommand{\Trow}[1]{\mathcal T_{#1}}
+\newcommand{\Drow}[1]{\mathcal D_{#1}}
+
+\title{Nonrealizability of a 23-qubit $M_3$-code weight enumerator}
+\author{}
+\date{Research draft --- 24 November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a finite nonexistence argument for the particular length-23 weight
+enumerator in Appendix B, equation (B.2), of Kalra and Prakash,
+\texttt{arXiv:2501.10163v3}.  If a Hermitian self-orthogonal quaternary linear
+code with this enumerator existed, puncturing the support of a weight-six
+word would produce a length-17 code.  Let $e$ be the number of its projective
+weight-two words.  A structural argument using the support graph of these
+words and the weight-ten coefficients of contained subcodes gives $e\leq4$.
+An exact nonnegative identity obtained from four local fiber types and
+MacWilliams identities gives
+$e\geq30850111/6429420>4$.  The contradiction excludes the stated enumerator.
+The argument includes a self-contained Pauli-projector positivity lemma and
+an integer linear-combination certificate; its verification does not require
+a numerical optimization tolerance.
+\end{abstract}
+
+\noindent\textbf{Scope and status.}
+This is a research draft concerning exactly the polynomial specified below.
+It does not settle the general $T$-state distillation threshold problem, nor
+does it exclude every 23-qubit $M_3$ code or every other candidate enumerator.
+No claim of priority, publication, or peer-review acceptance is made.
+
+\section*{Related work and novelty scope}
+
+The ingredients of the argument have substantial prior literature.
+Residual-code methods are standard; Bouyukliev and {\"O}sterg{\aa}rd
+use them in their classification of self-orthogonal codes
+\cite[Section 3]{BO}.  Their Table 2 already implies the stronger
+statement that no Hermitian self-orthogonal $[10,4,6]_4$ code exists.
+The short-code lemma below is retained to make this proof self-contained,
+not as a new small-parameter nonexistence result.
+Quantum weight-enumerator linear-programming bounds have an established
+history, including shadow enumerators \cite{Rains}.  Signed quantum
+weight enumerators for magic-state distillation were developed by
+Rall \cite{Rall}, and the positivity viewpoint used here is part of the
+framework of Kalra and Prakash \cite{KP}.
+
+The closest recent methodological comparison found in our literature
+check is Lai \cite[Sections VI--VII]{Lai}: a fixed reference stabilizer,
+refined MacWilliams conditions, multiplication-orbit restrictions, and
+low-weight combinatorial arguments are already present there.
+The length-23 candidate discussed in its Section VII.D has parameters
+$[[23,1,9]]$ and vanishing coefficients through weight eight;
+it differs from the present polynomial, which has $A_6=90$.
+Neither residual codes, refined enumerators, nor linear programming
+is claimed as a new general method in this manuscript.
+
+The contribution claimed here is the explicit exclusion of the precise
+polynomial in \cite[equation (B.2)]{KP}, by the structural bound $e\leq4$
+and the displayed exact certificate forcing $e>4$.
+A source check dated 24 November 2026, including the current source
+version and eight distinct forward-citing papers returned by INSPIRE
+and OpenAlex, found no prior resolution of this exact candidate.
+This bounded search does not establish priority.  Nor do we assert
+that the certificate is independent of, or stronger than, every
+previously proposed refined linear or semidefinite programming bound.
+
+\section{Statement and notation}
+
+Write
+\[
+ \F=\{0,1,\omega,\omega^2\},\qquad
+ \omega^2=\omega+1,\qquad \overline a=a^2.
+\]
+On $\F^n$ use the Hermitian form
+\[
+ \ip{c}{d}=\sum_{i=1}^n c_i\overline{d_i}.
+\]
+A code in this manuscript is an $\F$-linear subspace.  Its Hermitian dual is
+$C^\perp=\{v:\ip{v}{c}=0\text{ for all }c\in C\}$.  It is
+Hermitian self-orthogonal when $C\subseteq C^\perp$.  Define the ordinary
+weight enumerator and its coefficients by
+\[
+ W_C(y)=\sum_{c\in C}y^{\wt(c)}=\sum_{j=0}^n A_j(C)y^j.
+\]
+Since every nonzero element of $\F$ has cube one,
+$\ip{c}{c}=\wt(c)\pmod2$.  In particular, every word of a self-orthogonal
+code has even weight.
+
+The polynomial considered here is
+\begin{align}
+ A(y)={}&1+90y^6+1314y^8+348y^{10}+107280y^{12}
+       +434880y^{14}\notag\\
+       &+1282869y^{16}+1543428y^{18}
+       +738072y^{20}+86022y^{22}.
+ \label{eq:target}
+\end{align}
+It is equation (B.2) of \cite[Appendix B]{KP}, with the first homogeneous
+variable specialized to one.  That paper presents it as a candidate whose
+realizability is undetermined.  The candidate is relevant because its
+formal distillation behavior would improve upon the five-qubit protocol.
+The related quadratic-residue-code approach is developed in \cite{ZJS};
+no assertion about that code family is needed in the proof below.
+
+\begin{theorem}\label{thm:main}
+There is no Hermitian self-orthogonal $\F$-linear code
+$C\subseteq\F^{23}$ with weight enumerator \eqref{eq:target}.
+Consequently, the 23-qubit $M_3$-code weight enumerator in
+\cite[equation (B.2)]{KP} is not realizable.
+\end{theorem}
+
+Here the coding-theoretic assertion implies the $M_3$ assertion as follows.
+Label the one-qubit Paulis $X,Y,Z$ by $1,\omega,\omega^2$, respectively.
+Pauli multiplication modulo phase is addition in $\F$.  A transversal
+Clifford cycling $X\mapsto Y\mapsto Z\mapsto X$ acts by multiplication
+by $\omega$.  Therefore the additive label code of an invariant stabilizer
+is $\F$-linear.  Commutativity gives
+$\tr_{\F/\mathbb F_2}\ip{c}{d}=0$ for all labels $c,d$.  Applying the
+same condition after multiplying one label by $\omega$ forces
+$\ip{c}{d}=0$, because these are the two independent binary trace
+conditions on $\F$.  A one-logical-qubit stabilizer on 23 qubits has
+$2^{22}=4^{11}$ labels, so its quaternary dimension is 11.
+Equivalently, the contradiction below can be read entirely as a statement
+about classical quaternary codes.
+
+\section{Two elementary coding identities}
+
+We record the identities used in the proof, including their derivations.
+This also fixes all normalization and phase conventions.
+
+\subsection{MacWilliams identities}
+
+For length $n$, define the quaternary Krawtchouk coefficient
+\begin{equation}
+ K_j^{(n)}(b)=
+ \sum_{s=0}^{j}(-1)^s3^{j-s}
+     \binom{b}{s}\binom{n-b}{j-s},
+ \label{eq:krawtchouk}
+\end{equation}
+where a binomial coefficient is zero outside its usual range.  Thus
+$K_j^{(n)}(b)$ is the coefficient of $y^j$ in
+$(1+3y)^{n-b}(1-y)^b$.
+
+\begin{lemma}[MacWilliams identity]\label{lem:macwilliams}
+For an $[n,k]_4$ code $E$,
+\begin{equation}
+ W_{E^\perp}(y)=4^{-k}
+ \sum_{b=0}^n A_b(E)(1+3y)^{n-b}(1-y)^b.
+ \label{eq:macwilliams}
+\end{equation}
+In particular,
+$4^k A_j(E^\perp)=\sum_b K_j^{(n)}(b)A_b(E)$.
+\end{lemma}
+
+\begin{proof}
+Let $\chi(a)=(-1)^{\tr_{\F/\mathbb F_2}(a)}$.  Character orthogonality
+on the linear space $E$ gives
+\[
+ \boldsymbol1_{E^\perp}(v)=\frac1{|E|}\sum_{c\in E}\chi(\ip{v}{c}).
+\]
+For completeness, if $v\notin E^\perp$, there is a $c\in E$ with
+$\ip{v}{c}\ne0$; scalar closure of $E$ then supplies a nontrivial
+character on $E$, whose sum vanishes.  Summing the displayed indicator
+against $y^{\wt(v)}$ factors coordinatewise.  A zero coordinate of $c$
+contributes $1+3y$; a nonzero coordinate contributes $1-y$, because the
+sum of a nontrivial additive character over $\F^*$ is $-1$.
+This proves \eqref{eq:macwilliams}.
+\end{proof}
+
+\subsection{A self-contained positivity constraint}
+
+Let $P(c)$ be the unsigned tensor product obtained from
+$0\mapsto I$, $1\mapsto X$, $\omega\mapsto Y$ and $\omega^2\mapsto Z$.
+
+\begin{lemma}[Pauli-projector positivity]\label{lem:positivity}
+Every Hermitian self-orthogonal $\F$-linear code $E$ satisfies
+\begin{equation}
+ W_E(i/\sqrt3)\geq0.
+ \label{eq:positivity}
+\end{equation}
+The expression is real because every weight in $E$ is even.
+\end{lemma}
+
+\begin{proof}
+For $c\in E$ set
+\[
+ S(c)=(-1)^{\wt(c)/2}P(c).
+\]
+We first check that $S(c)S(d)=S(c+d)$.  Let $s$ count coordinates at
+which $c_i=d_i\ne0$.  Let $p$ and $q$ count coordinates with distinct
+nonzero entries in the two cyclic orders of $X,Y,Z$, chosen so that
+\[
+ P(c)P(d)=i^{p-q}P(c+d).
+\]
+In the Hermitian product the corresponding nonzero local contributions
+are $1$, $\omega$, and $\omega^2$, with the latter two possibly
+interchanged according to the cyclic convention.  The equation
+$\ip{c}{d}=0$ therefore says that $s,p,q$ have the same parity.
+Furthermore,
+\[
+ \wt(c)+\wt(d)-\wt(c+d)=2s+p+q.
+\]
+It follows that the phase relating $S(c)S(d)$ to $S(c+d)$ is
+\[
+ (-1)^s i^{p+q}i^{p-q}=(-1)^{s+p}=1.
+\]
+Consequently $\{S(c):c\in E\}$ is a commuting Pauli subgroup and does
+not contain $-I$: its only scalar label is $c=0$, for which $S(0)=I$.
+Thus
+\[
+ \Pi_E=\frac1{|E|}\sum_{c\in E}S(c)
+\]
+is a Hermitian idempotent and hence a positive semidefinite projector.
+
+Let $\lvert\tau\rangle$ be the pure qubit state with Bloch vector
+$(1,1,1)/\sqrt3$.  Its expectations of $X,Y,Z$ are all $1/\sqrt3$.
+Therefore
+\[
+ 0\leq
+ \langle\tau\rvert^{\otimes n}\Pi_E\lvert\tau\rangle^{\otimes n}
+ =\frac1{|E|}\sum_{c\in E}(-1)^{\wt(c)/2}3^{-\wt(c)/2}
+ =\frac1{|E|}W_E(i/\sqrt3).
+\]
+This establishes the claim for every dimension of $E$.
+\end{proof}
+
+The following consequence will exclude large components in a residual
+support graph.  It is stated with exactly the hypotheses needed here, so
+no bound on general code parameters is required.  Its conclusion is
+already implied by \cite[Table 2]{BO}; the proof below avoids dependence
+on that classification.
+
+\begin{lemma}[Forbidden short subcode]\label{lem:short-code}
+There is no Hermitian self-orthogonal code of dimension four, length at
+most ten, minimum weight at least six, and at most 90 words of weight six.
+\end{lemma}
+
+\begin{proof}
+Pad with zero coordinates to length ten.  Every nonzero weight is in
+$\{6,8,10\}$, so write
+\[
+ W_E(y)=1+a y^6+b y^8+c y^{10},\qquad a+b+c=4^4-1=255.
+\]
+All three coefficients are nonnegative integers and $a\leq90$.
+The first MacWilliams coefficient is
+\[
+ A_1(E^\perp)=\frac{a-c-60}{32}.
+\]
+It is a nonnegative integer, but it is at most $30/32<1$.
+It must therefore vanish.  Hence $a=c+60$ and $b=195-2c$.
+The next two dual coefficients become
+\[
+ A_2(E^\perp)=\frac{c-30}{4},\qquad
+ A_3(E^\perp)=30-c.
+\]
+Their nonnegativity forces $c=30$, $a=90$, and $b=135$.
+However,
+\[
+ W_E(i/\sqrt3)=1-\frac{90}{27}+\frac{135}{81}
+                   -\frac{30}{243}=-\frac{64}{81}<0,
+\]
+contradicting Lemma~\ref{lem:positivity}.
+\end{proof}
+
+\section{The residual code and its Hermitian quotient}
+
+Assume from now on that a code $C$ as in Theorem~\ref{thm:main} exists.
+The target polynomial gives $|C|=4^{11}$ and minimum weight six.
+Since $\dim C=11$ and $C\subseteq C^\perp\subseteq\F^{23}$,
+the Hermitian quotient $C^\perp/C$ is a nondegenerate one-dimensional
+space.  Every nonzero vector in such a space has nonzero Hermitian norm.
+It follows that
+\begin{equation}
+ \{c\in C^\perp:\wt(c)\text{ is even}\}=C.
+ \label{eq:even-dual}
+\end{equation}
+MacWilliams substitution of \eqref{eq:target} gives
+\begin{align}
+ W_{C^\perp}(y)-A(y)={}&927y^7+1020y^9+102600y^{11}
+          +609372y^{13}\notag\\
+       &+2591118y^{15}+4577364y^{17}+3738960y^{19}\notag\\
+       &+924372y^{21}+37179y^{23}.
+ \label{eq:dual-polynomial}
+\end{align}
+In particular, $C^\perp$ also has minimum weight six.
+Only this minimum-weight conclusion and \eqref{eq:even-dual} will be
+needed; all coefficients in \eqref{eq:dual-polynomial} follow directly
+from Lemma~\ref{lem:macwilliams}.
+
+Choose $u\in C$ of weight six, let $S=\supp(u)$, and denote the other
+17 coordinates by $T$.  Coordinate permutations and nonzero coordinate
+scalings preserve weights and the Hermitian form, because $a\bar a=1$
+for $a\in\F^*$.  We may therefore suppose
+\[
+ u|_S=\boldsymbol1=(1,1,1,1,1,1),\qquad u|_T=0.
+\]
+Let $\pi_T$ denote puncturing the six coordinates in $S$, and set
+\[
+ R=\pi_T(C)\subseteq\F^{17}.
+\]
+
+\begin{lemma}\label{lem:residual}
+The following statements hold.
+\begin{enumerate}
+\item The subcodes of $C$ and of $C^\perp$ supported in $S$ are both
+      exactly $\Span\{u\}$.
+\item $R$ has dimension ten, and $C|_S=\boldsymbol1^\perp\subseteq\F^6$.
+\item The space
+      $V=\boldsymbol1^\perp/\Span\{\boldsymbol1\}$ is nondegenerate
+      Hermitian of dimension four.  There is a surjective linear map
+      \[
+       \phi:R\longrightarrow V,\qquad
+       \phi(\pi_T(c))=[c|_S],
+      \]
+      satisfying $\ip{\phi(r)}{\phi(s)}=\ip{r}{s}$.
+\item Its kernel $H=\ker\phi$ is the shortening of $C$ on $S$,
+      viewed on $T$.  It has dimension six and minimum weight at least six.
+      Moreover $R^\perp$ has dimension seven and its even-weight words
+      are exactly $H$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+Any vector supported in $S$ and not proportional to $u$ has, after
+subtracting a suitable multiple of $u$, a nonzero word of weight at most
+five.  Such a vector cannot belong to either $C$ or $C^\perp$, because
+both codes have minimum weight six.  This proves the first assertion
+and gives $\dim R=11-1=10$.
+
+The annihilator of the restriction $C|_S$ is the subcode of $C^\perp$
+supported in $S$, which is $\Span\{\boldsymbol1\}$.  Thus
+$C|_S=\boldsymbol1^\perp$ and has dimension five.  The vector
+$\boldsymbol1$ is isotropic, and the radical of
+$\boldsymbol1^\perp$ is $\Span\{\boldsymbol1\}$.  Hence its quotient
+$V$ is nondegenerate of dimension four.
+
+Two lifts in $C$ of the same residual vector differ by a multiple of $u$,
+so $\phi$ is well-defined.  The restriction result makes it surjective.
+For lifts $(a,r),(b,s)\in C$,
+\[
+ \ip{a}{b}+\ip{r}{s}=0.
+\]
+Since the characteristic is two, this says
+$\ip{\phi(r)}{\phi(s)}=\ip{r}{s}$.
+
+If $\phi(r)=0$, a multiple of $u$ can be subtracted from a lift to
+make its $S$ coordinates zero.  This identifies $\ker\phi$ with the
+shortening of $C$.  Its dimension is $11-5=6$ and its minimum weight
+is at least six.  The puncturing--shortening duality follows directly
+from the definition of orthogonality:
+\[
+ R^\perp=\{v\in\F^{17}:(0_S,v)\in C^\perp\}.
+\]
+It has dimension $17-10=7$.  By \eqref{eq:even-dual}, its even-weight
+words are precisely those with $(0_S,v)\in C$, namely $H$.
+\end{proof}
+
+\section{Four local fibers and 32 exact equations}
+
+\subsection{Local classification}
+
+For $a\in\boldsymbol1^\perp$, let $n_0,n_1,n_\omega,n_{\omega^2}$
+be its four symbol multiplicities.  The condition
+$\sum_i a_i=0$ says that the three nonzero multiplicities have the same
+parity.  Their sum with $n_0$ is six, so all four multiplicities have
+the same parity.  Up to permutation, the possibilities are
+\[
+ (6,0,0,0),\quad(4,2,0,0),\quad(2,2,2,0),\quad(3,1,1,1).
+\]
+The local fiber $a+\Span\{\boldsymbol1\}$ has weight polynomial
+$\sum_{\alpha\in\F}y^{6-n_\alpha}$.  We number the four types
+$0,1,2,3$, respectively, and obtain
+\begin{equation}
+\begin{aligned}
+ f_0(y)&=1+3y^6,&
+ f_1(y)&=y^2+y^4+2y^6,\\
+ f_2(y)&=3y^4+y^6,&
+ f_3(y)&=y^3+3y^5.
+\end{aligned}
+\label{eq:fibers}
+\end{equation}
+There are respectively
+\begin{equation}
+ (N_0,N_1,N_2,N_3)=(1,45,90,120)
+ \label{eq:type-counts}
+\end{equation}
+such fibers in $V$.  Indeed, the numbers of representatives in
+$\boldsymbol1^\perp$ are
+\[
+ 4,\qquad 4\cdot3\binom62=180,\qquad
+ 4\frac{6!}{2!2!2!}=360,\qquad
+ 4\frac{6!}{3!}=480,
+\]
+and each fiber has four representatives.
+Type zero consists only of the zero class in $V$.
+
+For $r\in R$, its four lifts in $C$ form precisely one local fiber
+and all have outside weight $\wt(r)$.  Because $C$ is even, this
+outside weight is even for types $0,1,2$ and odd for type $3$.
+The minimum weight of $C$ further imposes the following possibilities
+for a nonzero residual vector:
+\begin{equation}
+\begin{aligned}
+ I_0&=\{6,8,10,12,14,16\},\\
+ I_1&=\{4,6,8,10,12,14,16\},\\
+ I_2&=\{2,4,6,8,10,12,14,16\},\\
+ I_3&=\{3,5,7,9,11,13,15,17\}.
+\end{aligned}
+\label{eq:allowed}
+\end{equation}
+In particular, $R$ has no weight-one words.  The residual vector zero
+has type zero and accounts for the polynomial $f_0(y)$.
+
+\subsection{Variables and equations}
+
+For $b\in I_t$, let $x_{t,b}$ be the number of vectors $r\in R$ with
+$\wt(r)=b$ and $\phi(r)$ of type $t$.  Put
+\[
+ z_{t,b}=\frac{x_{t,b}}3.
+\]
+Scalar multiplication by $\F^*$ preserves outside weight and local
+type and acts freely on nonzero vectors, so these are nonnegative
+integers.  Their integrality will not be needed for the linear certificate.
+For odd $j\in\{7,9,11,13,15,17\}$ put
+\[
+ q_j=\frac{A_j(R^\perp)}3.
+\]
+These are also nonnegative integers.  There are 29 variables $z_{t,b}$
+and six variables $q_j$, for a total of 35.
+
+We now specify 32 equalities with integer coefficients.  Their labels
+will be used in the certificate appendix.  Let $A_w$ denote the
+coefficient of $y^w$ in \eqref{eq:target}; absent coefficients are zero.
+For $w=2,4,\ldots,22$, the coefficient equations
+\begin{equation}
+ \Arow{w}:\qquad
+ \sum_{t=0}^3\sum_{b\in I_t}
+       [y^{w-b}]f_t(y)\,z_{t,b}
+ =\frac{A_w-3\boldsymbol1_{w=6}}3
+ \label{eq:Arows}
+\end{equation}
+follow from
+\[
+ A(y)=f_0(y)+3\sum_{t=0}^3\sum_{b\in I_t}z_{t,b}y^b f_t(y).
+\]
+The two equations for $w=2,4$ are included even though both are trivial.
+
+Since $\phi$ is surjective with $4^6$ elements in every fiber, the four
+type-total equations are
+\begin{equation}
+ \Trow{t}:\qquad
+ \sum_{b\in I_t}z_{t,b}
+   =\frac{4^6N_t-\boldsymbol1_{t=0}}3,
+ \qquad t=0,1,2,3.
+ \label{eq:Trows}
+\end{equation}
+
+Write $K_j(b)=K_j^{(17)}(b)$ and define the following linear expressions
+in the variables:
+\begin{equation}
+ h_j=
+ \begin{cases}
+   z_{0,j},&j\in\{6,8,10,12,14,16\},\\
+   q_j,&j\in\{7,9,11,13,15,17\},\\
+   0,&j\in\{1,2,3,4,5\}.
+ \end{cases}
+ \label{eq:hdef}
+\end{equation}
+For every $1\leq j\leq17$ one has $A_j(R^\perp)=3h_j$.
+For even $j$ this is Lemma~\ref{lem:residual}: the even words of
+$R^\perp$ are $H$, and $r\in H$ is exactly local type zero.
+For odd $j<7$ it follows from the minimum weight of $C^\perp$.
+The 17 residual MacWilliams equations are therefore
+\begin{equation}
+ \Drow{j}:\qquad
+ 4^{10}h_j-
+ \sum_{t=0}^3\sum_{b\in I_t} K_j(b)z_{t,b}
+   =\frac{K_j(0)}3,
+ \qquad 1\leq j\leq17.
+ \label{eq:Drows}
+\end{equation}
+The factor $4^{10}$ is $|R|$.  The constant term $K_j(0)/3$ accounts
+for the zero word of $R$; it is an integer for all these $j$.
+Equations \eqref{eq:Arows}, \eqref{eq:Trows}, and \eqref{eq:Drows}
+are the promised $11+4+17=32$ exact equalities.
+
+Only type two can occur at residual weight two.  Consequently
+\begin{equation}
+ e:=\frac{A_2(R)}3=z_{2,2}
+ \label{eq:e}
+\end{equation}
+counts the one-dimensional subspaces of $R$ generated by weight-two
+words.
+
+\section{A structural upper bound on the weight-two count}
+
+\subsection{The support graph}
+
+Form a graph on the 17 residual coordinate positions.  Join two positions
+when they are the support of a weight-two word of $R$.
+
+\begin{lemma}\label{lem:graph}
+There is exactly one projective class of weight-two words for each edge.
+Every nontrivial connected component is a complete graph.  After scaling
+its coordinates, the subcode generated by the edges of a component on
+$m$ vertices is
+\[
+ K_m=\{(a_1,\ldots,a_m)\in\F^m:a_1+\cdots+a_m=0\},
+\]
+of dimension $m-1$.  Subcodes from distinct components have disjoint
+supports and are mutually Hermitian orthogonal.
+\end{lemma}
+
+\begin{proof}
+Two independent words on the same two positions could be linearly
+combined to cancel one of them, giving a weight-one word.  This is
+impossible by \eqref{eq:allowed}.  Similarly, two edges sharing a
+vertex can be combined to cancel that vertex and produce the edge
+between their other endpoints.  This implies that every connected
+component is complete.
+
+Fix a vertex in such a component.  The words on edges from that vertex
+to the other $m-1$ vertices are independent.  Scale the coordinates so
+that each is a scalar multiple of the vector with ones at its two
+endpoints.  They then span the displayed single-parity-check code.
+Uniqueness on each edge ensures that all other edge words lie in this
+same subcode.  Coordinate scalings preserve the Hermitian form, and
+disjoint supports imply orthogonality.
+\end{proof}
+
+\begin{lemma}\label{lem:noK4}
+Every nontrivial component of the support graph is $K_2$ or $K_3$.
+\end{lemma}
+
+\begin{proof}
+A component with at least four vertices contains the three-dimensional
+single-parity-check subcode generated by the edges on any four of its
+vertices.  Its full inverse image in $C$ under $\pi_T$ has dimension
+$3+1=4$, because $\ker\pi_T=\Span\{u\}$.  It is supported on those
+four outside positions together with the six positions of $S$, so has
+length at most ten.  As a subcode of $C$, it is Hermitian
+self-orthogonal, has minimum weight at least six, and has at most
+$A_6(C)=90$ words of weight six.  This contradicts
+Lemma~\ref{lem:short-code}.
+\end{proof}
+
+\begin{proposition}\label{prop:six}
+One has $e\leq6$.  If $e=5$, the nontrivial components are exactly
+five copies of $K_2$.  If $e=6$, they are exactly two copies of $K_3$.
+\end{proposition}
+
+\begin{proof}
+Let $a$ and $b$ be the numbers of $K_3$ and $K_2$ components.  Their
+edge counts give $e=3a+b$.
+
+The standard $K_3$ is the orthogonal complement of the all-one vector
+in $\F^3$.  That vector has norm one, so $K_3$ is nondegenerate of
+dimension two.  Because $\phi$ preserves the Hermitian form, its
+restriction to any nondegenerate subspace is injective.  Thus the
+images of the $a$ disjoint $K_3$ subcodes form a nondegenerate
+$2a$-dimensional subspace of the four-dimensional space $V$, and
+$a\leq2$.
+
+Each $K_2$ is a one-dimensional zero-form space.  Its generator has a
+nonzero image under $\phi$, since a zero image would be a weight-two
+word of $H$, whereas $H$ has minimum weight at least six.  Images of
+generators of distinct $K_2$ components are not proportional: otherwise
+a nonzero linear combination would be a word of $H$ with weight four.
+These images are isotropic, pairwise orthogonal, and orthogonal to all
+the $K_3$ images.
+
+If $a=2$, the nondegenerate $K_3$ image fills $V$, so $b=0$.
+If $a=1$, the $K_2$ images lie in its nondegenerate
+two-dimensional orthogonal complement.  Their span is totally
+isotropic and has dimension at most one, so projective distinctness
+gives $b\leq1$.
+If $a=0$, their totally isotropic span has dimension at most two.
+Indeed, in a nondegenerate Hermitian space a totally isotropic
+subspace $W$ satisfies $W\subseteq W^\perp$, giving
+$2\dim W\leq\dim V$.  A two-dimensional $\F$-space has only
+$(4^2-1)/(4-1)=5$ projective points, so $b\leq5$.
+These alternatives prove the assertion and the classifications at
+$e=5$ and $e=6$.
+\end{proof}
+
+\subsection{Excluding five disjoint edges}
+
+\begin{proposition}\label{prop:no-five}
+The case $e=5$ is impossible.
+\end{proposition}
+
+\begin{proof}
+Suppose the support graph has five $K_2$ components.  Let $K\subseteq R$
+be the subcode they generate.  After coordinate scalings, $K$ is the
+pair-repetition image of $\F^5$: each of five symbols is repeated on
+its own pair of coordinates.  It has dimension five, support ten, and
+identically zero Hermitian form.
+
+Put $W=\phi(K)$.  By the proof of Proposition~\ref{prop:six}, the five
+pair generators have nonzero, projectively distinct images spanning a
+totally isotropic space of dimension at most two.  They must therefore
+span a two-dimensional space and represent all five projective points
+of $W$.  Each generator has residual weight two, so its local type is
+two.  Local type is invariant under nonzero scalar multiplication.
+It follows that every nonzero vector of $W$ has local type two, while
+zero has type zero.
+
+In the five pair coordinates, the kernel of $\phi|_K$ is a
+three-dimensional code $L\subseteq\F^5$ whose parity-check columns
+represent the five distinct projective points of $\F^2$.  Any nonzero
+linear functional on $\F^2$ vanishes on exactly one of these five
+points.  Hence the corresponding two-dimensional check code has
+enumerator $1+15z^4$, and MacWilliams gives
+\begin{align}
+ h(z):=W_L(z)
+ &=\frac{(1+3z)^5+15(1+3z)(1-z)^4}{16}\notag\\
+ &=1+30z^3+15z^4+18z^5.
+ \label{eq:hamming}
+\end{align}
+
+Let $U=\{c\in C:\pi_T(c)\in K\}$.  It has dimension six and
+support at most 16.  A vector in the five pair coordinates with
+weight $j$ has outside weight $2j$.  If it belongs to $L$, its local
+fiber is $f_0$; otherwise its local fiber is $f_2$.  Thus
+\begin{equation}
+ W_U(y)=h(y^2)(1+3y^6)
+       +\bigl((1+3y^2)^5-h(y^2)\bigr)(3y^4+y^6).
+ \label{eq:e5-enumerator}
+\end{equation}
+The coefficient at weight ten is
+\[
+ A_{10}(U)=18+\binom52 3^2
+                +3\left(\binom53 3^3-30\right)
+          =18+90+720=828.
+\]
+The three summands count, respectively, kernel words of pair weight
+five with local weight zero, nonkernel words of pair weight two with
+local weight six, and nonkernel words of pair weight three with local
+weight four.  Since $U\subseteq C$ but $A_{10}(C)=348$, this is a
+contradiction.
+\end{proof}
+
+\subsection{Excluding two triangles}
+
+\begin{proposition}\label{prop:no-six}
+The case $e=6$ is impossible.  Consequently, every code satisfying
+the assumed target enumerator would have $e\leq4$.
+\end{proposition}
+
+\begin{proof}
+Suppose the support graph consists of two nontrivial $K_3$ components.
+Their generated subcode is
+$K=K_3\oplus K_3\subseteq R$, of dimension four.  It is nondegenerate,
+so the form-preserving map $\phi|_K$ is an isomorphism onto $V$.
+The enumerator of one $K_3$ is $1+9y^2+6y^3$.  Therefore
+\[
+ W_K(y)=(1+9y^2+6y^3)^2
+ =1+18y^2+12y^3+81y^4+108y^5+36y^6.
+\]
+Residual weight-two vectors have local type two; vectors of outside
+weight three or five have local type three.  At outside weights four
+and six, the local type is one or two.  It cannot be zero, because
+$\phi|_K$ is injective.  Since $\phi(K)=V$, the total counts of local
+types are exactly $(1,45,90,120)$.
+
+Let $a$ be the number of vectors of $K$ with outside weight four and
+local type one.  The remaining even-weight type counts are forced:
+\[
+\begin{array}{c|cc}
+ &\text{type one}&\text{type two}\\\hline
+ \text{outside weight four}&a&81-a\\
+ \text{outside weight six}&45-a&a-9
+\end{array}
+\]
+Thus $9\leq a\leq45$.
+
+The full inverse image $U=\{c\in C:\pi_T(c)\in K\}$ has dimension
+five and support at most 12.  Using the fiber polynomials in
+\eqref{eq:fibers}, its weight-ten coefficient is
+\begin{align*}
+ A_{10}(U)
+ &=2a+(81-a)+3\cdot108+(45-a)+3(a-9)\\
+ &=423+3a\geq450.
+\end{align*}
+The five summands correspond to outside/local types
+$(4,1),(4,2),(5,3),(6,1),(6,2)$, respectively.
+This exceeds $A_{10}(C)=348$, again a contradiction.
+Propositions~\ref{prop:six} and \ref{prop:no-five} now yield $e\leq4$.
+\end{proof}
+
+\section{The exact linear certificate and the contradiction}
+
+\begin{lemma}\label{lem:certificate}
+Every solution of the 32 equalities
+\eqref{eq:Arows}, \eqref{eq:Trows}, and \eqref{eq:Drows} satisfies
+\begin{align}
+ 12858840\,e={}&61700222
+       +415155z_{0,10}+2259z_{0,12}+83404z_{0,16}\notag\\
+       &+1207628z_{1,4}+333082z_{1,8}+890442z_{2,6}\notag\\
+       &+698464z_{3,5}+251078z_{3,7}+187648q_9.
+ \label{eq:certificate}
+\end{align}
+\end{lemma}
+
+\begin{proof}
+This is an exact linear combination of the displayed integer
+equalities.  Appendix~\ref{app:certificate} gives all nonzero integer
+multipliers and an explicit normalization, so that the identity can
+be verified by coefficient collection using
+\eqref{eq:krawtchouk}.  No inequalities, coefficient upper bounds,
+or integrality assumptions enter this calculation.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+If the target code existed, all $z_{t,b}$ and $q_j$ in
+\eqref{eq:certificate} would be nonnegative.  Thus
+\[
+ e\geq\frac{61700222}{12858840}
+   =\frac{30850111}{6429420}>4.
+\]
+On the other hand, Proposition~\ref{prop:no-six} gives $e\leq4$.
+These two necessary conditions are incompatible.  This proves
+nonexistence of the code and hence of the stated $M_3$-code enumerator.
+\end{proof}
+
+\begin{remark}[What the certificate uses]
+The inequality $e>4$ follows already over the real nonnegative cone.
+In particular, there is no need to round a numerical optimum, solve an
+integer program, or assume any finite upper bounds on residual
+coefficients.  The exact excess over four is
+\[
+ \frac{30850111}{6429420}-4=\frac{5132431}{6429420}>0.
+\]
+The structural argument is essential to this proof: the four-type linear constraints
+alone do not encode the forbidden subcodes responsible for $e\leq4$.
+\end{remark}
+
+\section{Interpretation and limitations}
+
+The theorem removes one specific formal enumerator from the space of
+possible $T$-state distillation codes.  Its mechanism is local: a
+weight-six stabilizer word forces a four-dimensional Hermitian quotient,
+and the low-weight geometry of the residual code controls subcodes
+whose weight-ten counts are too large.  The linear certificate then
+shows that the enumerator necessarily demands more weight-two
+structure than those subcode restrictions permit.
+
+\paragraph{Formal verification of the finite certificate.}
+The accompanying Lean file \texttt{N23Certificate.lean} has been checked
+locally with Lean 4.19.0 (compiler commit \texttt{6caaee842e94}).
+It verifies the fixed $32\times35$ integer coefficient identities and
+proves that the encoded row equations, nonnegativity of the 35 variables,
+and $e\leq4$ are inconsistent.  There are no admitted goals or
+user-declared axioms; the final implication uses only Lean's standard
+logical foundations.  The derivation of these equations from a
+quaternary code, the Hermitian quotient geometry, and the proof of
+$e\leq4$ remain mathematical arguments in this manuscript.
+Thus the formal check covers the finite arithmetic implication,
+while the coding-theoretic reductions retain their written proofs.
+
+Nothing in the proof supplies a universal upper bound on the
+$T$-direction distillation threshold or rules out a different enumerator
+at length 23 or at another length.  Publication-level novelty and the
+relationship to any independently obtained results require separate
+literature and expert review.  The mathematical claim of this draft is
+exactly Theorem~\ref{thm:main}.
+
+\appendix
+\section{Integer multipliers for the certificate}\label{app:certificate}
+
+Order the 35 variables as $z_{t,b}$ with $t=0,1,2,3$ and increasing
+$b\in I_t$, followed by $q_7,q_9,q_{11},q_{13},q_{15},q_{17}$.
+Let $v$ be this column vector.  Let $Mv=d$ be the 32-row system whose
+rows, in order, are $\Arow{2},\Arow{4},\ldots,\Arow{22}$,
+$\Trow{0},\ldots,\Trow{3}$, and
+$\Drow{1},\ldots,\Drow{17}$, with the signs exactly as written in
+\eqref{eq:Arows}--\eqref{eq:Drows}.
+All its matrix entries and right-hand sides are integers.
+
+Assign the following integer multipliers $\lambda$; every unlisted row
+has multiplier zero.
+\begin{center}
+\begin{longtable}{lr}
+\toprule
+Row&Multiplier\\
+\midrule
+\endfirsthead
+\toprule
+Row&Multiplier\\
+\midrule
+\endhead
+$\Arow{6}$&$-431289105217$\\
+$\Arow{8}$&$245979135951$\\
+$\Arow{10}$&$-342176944369$\\
+$\Arow{12}$&$4228502143$\\
+$\Arow{14}$&$2237573663$\\
+$\Arow{16}$&$1112061423$\\
+$\Arow{18}$&$851965423$\\
+$\Arow{20}$&$1457285663$\\
+$\Arow{22}$&$2928022143$\\
+$\Trow{0}$&$-99690634384$\\
+$\Trow{1}$&$-10504369200$\\
+$\Trow{2}$&$-9638952960$\\
+$\Drow{3}$&$-18731648$\\
+$\Drow{4}$&$-4474665$\\
+$\Drow{5}$&$-238208$\\
+$\Drow{6}$&$400590$\\
+$\Drow{8}$&$-140874$\\
+$\Drow{9}$&$-187648$\\
+$\Drow{10}$&$1331$\\
+$\Drow{12}$&$81145$\\
+$\Drow{14}$&$83404$\\
+\bottomrule
+\end{longtable}
+\end{center}
+
+Let $e_{2,2}$ denote the coordinate vector selecting $z_{2,2}$, and let
+$r$ be zero except at the nine variable positions listed below:
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Variable&Nonnegative coefficient in $r$\\
+\midrule
+$z_{0,10}$&$435321569280$\\
+$z_{0,12}$&$2368733184$\\
+$z_{0,16}$&$87455432704$\\
+$z_{1,4}$&$1266289737728$\\
+$z_{1,8}$&$349261791232$\\
+$z_{2,6}$&$933696110592$\\
+$z_{3,5}$&$732392587264$\\
+$z_{3,7}$&$263274364928$\\
+$q_9$&$196763189248$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Direct integer arithmetic gives
+\begin{align}
+ M^{\mathsf T}\lambda
+   &=13483471011840\,e_{2,2}-r,
+ \label{eq:matrix-cert}\\
+ d^{\mathsf T}\lambda&=64697371983872.
+ \label{eq:rhs-cert}
+\end{align}
+Applying these identities to $Mv=d$ gives
+\[
+ 13483471011840\,e=64697371983872+r^{\mathsf T}v.
+\]
+Every coefficient of this last identity is divisible by $2^{20}=1048576$,
+yielding exactly \eqref{eq:certificate}.  Equations
+\eqref{eq:matrix-cert} and \eqref{eq:rhs-cert}, together with
+the nonnegativity of $r$, are a finite integer certificate.
+Their strict incompatibility with $e\leq4$ is also visible without
+division:
+\[
+ 64697371983872>4\cdot13483471011840=53933884047360.
+\]
+The equality multipliers, the nine residual coefficients, and the
+defining row formulas suffice to reproduce the verification without
+using an optimization solver.
+
+\begin{thebibliography}{9}
+
+\bibitem{KP}
+Amolak Ratan Kalra and Shiroman Prakash,
+\emph{Invariant Theory, Magic State Distillation, and Bounds on Classical
+Codes}, arXiv:2501.10163v3, revised 23 March 2026.
+\url{https://arxiv.org/abs/2501.10163v3}.
+
+\bibitem{ZJS}
+Michael Zurel, Santanil Jana, and Nadish de Silva,
+\emph{High-threshold magic state distillation with quantum quadratic
+residue codes}, arXiv:2603.18560v2, revised 30 September 2026;
+\emph{Quantum Science and Technology} \textbf{11}, 045052 (2026).
+\url{https://arxiv.org/abs/2603.18560v2}.
+
+\bibitem{BO}
+Iliya Bouyukliev and Patric R. J. {\"O}sterg{\aa}rd,
+\emph{Classification of Self-Orthogonal Codes over $F_3$ and $F_4$},
+\emph{SIAM Journal on Discrete Mathematics} \textbf{19}(2),
+363--370 (2005).
+\url{https://doi.org/10.1137/S0895480104441085}.
+
+\bibitem{Rains}
+E. M. Rains,
+\emph{Quantum shadow enumerators},
+\emph{IEEE Transactions on Information Theory} \textbf{45}(7),
+2361--2366 (1999); arXiv:quant-ph/9611001v2.
+\url{https://arxiv.org/abs/quant-ph/9611001}.
+
+\bibitem{Rall}
+Patrick Rall,
+\emph{Signed quantum weight enumerators characterize qubit magic state
+distillation}, arXiv:1702.06990v1 (2017).
+\url{https://arxiv.org/abs/1702.06990}.
+
+\bibitem{Lai}
+Ching-Yi Lai,
+\emph{Twisted Fourier Analysis of Quantum Weight Enumerators},
+arXiv:2610.37894v1, 27 October 2026.
+\url{https://arxiv.org/abs/2610.37894}.
+
+\end{thebibliography}
+\end{document}
