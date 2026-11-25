@@ -1,0 +1,24 @@
+name = "johnson_triangle_chain_parity"
+version = "0.1.0"
+defaultTargets = ["TriangleComplete"]
+moreLeanArgs = ["-j1", "-DElab.async=false"]
+
+[[lean_lib]]
+name = "JohnsonCore"
+
+[[lean_lib]]
+name = "TriangleModel"
+
+[[lean_lib]]
+name = "TriangleEven"
+
+[[lean_lib]]
+name = "TriangleOdd"
+
+[[lean_lib]]
+name = "TriangleComplete"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
