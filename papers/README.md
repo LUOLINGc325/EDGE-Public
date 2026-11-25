@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**194 research entries / 成果条目 · 289 manuscript versions / 论文版本**
+**205 research entries / 成果条目 · 300 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -202,5 +202,16 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 有限独立争用消解的精确异质保证区域 | — | [Read](pairwise-independent-uniform-crs-sharp/paper.en.md) |
 | KCBS 五角环的标量及算子重叠锐界 | — | [Read](kcbs-rank-one-all-dimensions/paper.en.md) |
 | 固定输入保真度和切换收缩的短词校准 | — | [Read](anisotropic-qubit-fidelity-composition/paper.en.md) |
+| 强积代数平方与定核等翼修复 | — | [Read](strong-product-algebraic-squares/paper.en.md) |
+| 量子 χ² 的异质张量化与精确区域 | — | [Read](quantum-chi2-tensorization-regions/paper.en.md) |
+| 加权伯努利熵的最终全参数严格凹性 | — | [Read](weighted-bernoulli-entropy-curvature/paper.en.md) |
+| 可见再生词的未见平稳质量 | [阅读](markov-missing-mass-minimax/paper.zh.md) | — |
+| 对数凹密度均匀置信带的量化分辨率 | — | [Read](logconcave-band-smooth-minimax/paper.en.md) |
+| 异质伯努利和的泊松密度比及二阶损失 | — | [Read](sharp-poisson-binomial-density-ratio/paper.en.md) |
+| 未知间距适应前沿与似然重尾分界 | — | [Read](unknown-gap-adaptation-boundary/paper.en.md) |
+| 矩约束 Bayes 错误率的极值、达到及奇阶删阶 | [阅读](moment-bayes-minimax-geometry/paper.zh.md) | — |
+| 纵向硬预算协方差与低秩异质风险 | — | [Read](hard-budget-covariance-fourth-moment/paper.en.md) |
+| 任意整数服务的工件年龄指数 | — | [Read](aoj-general-service-indexability/paper.en.md) |
+| 固定自适应前缀的精确 Bandit 隐私转换 | — | [Read](bandit-view-table-sharp-conversion/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
