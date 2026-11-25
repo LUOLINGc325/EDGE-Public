@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**160 research entries / 成果条目 · 247 manuscript versions / 论文版本**
+**167 research entries / 成果条目 · 254 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -49,6 +49,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 链图等距路径划分与覆盖的更快算法 | [阅读](faster-isometric-paths-chain/paper.zh.md) | — |
 | 余图等距路径覆盖与划分的更快算法 | [阅读](faster-isometric-paths-cographs/paper.zh.md) | — |
 | The exact finite-job consistency–robustness frontier for non-clairvoyant scheduling | — | [Read](finite-n-prediction-scheduling/paper.en.md) |
+| 有限 Pinwheel 排程的期限障碍与两访参数算法 | [阅读](finite-pinwheel-three-task/paper.zh.md) | — |
 | 量子首次通过核的逆实现与任意维可见例外点 | [阅读](first-passage-kernel-inverse-realization/paper.zh.md) | — |
 | 固定至少四个代理时，累计嫉妒最小化的弱 NP 完全性 | [阅读](fixed-agent-cumulative-envy/paper.zh.md) | [Read](fixed-agent-cumulative-envy/paper.en.md) |
 | 任意量子比特数的固定角测量型精确酉二设计 | [阅读](fixed-angle-mbqc-unitary-design/paper.zh.md) | — |
@@ -68,10 +69,12 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 降温可使 Glauber 活动度超过二分之一 | [阅读](glauber-activity-counterexample/paper.zh.md) | [Read](glauber-activity-counterexample/paper.en.md) |
 | Glauber 退火中过量活动度的桥结构机制 | [阅读](glauber-annealing-activity-counterexample/paper.zh.md) | [Read](glauber-annealing-activity-counterexample/paper.en.md) |
 | 长路径森林燃烧阈值的构造性近线性上界 | [阅读](graph-burning-long-path-forests/paper.zh.md) | [Read](graph-burning-long-path-forests/paper.en.md) |
+| Schmidt 稳定子熵的随机极限与单项局部酉极小态 | [阅读](haar-schmidt-magic/paper.zh.md) | — |
 | 高温 Gibbs 态在弱局域量子信道下的一致 Markov 性：定量补全稿 | [阅读](high-temperature-gibbs-weak-noise/paper.zh.md) | — |
 | Precise independent e-merging beyond reordered martingales | [阅读](independent-e-merging-beyond-martingales/paper.zh.md) | [Read](independent-e-merging-beyond-martingales/paper.en.md) |
 | 独立评分赢家偏差的取等结构 | [阅读](independent-winners-bias-extremizers/paper.zh.md) | [Read](independent-winners-bias-extremizers/paper.en.md) |
 | 分裂图上的等距路径覆盖是 NP 完全的 | [阅读](isometric-path-cover-split/paper.zh.md) | — |
+| 诱导 Johnson 表示的地面规模与中位图最小秩 | [阅读](johnson-representation-size/paper.zh.md) | — |
 | 闭合三角链的 Johnson 诱导表示 | [阅读](johnson-triangle-chain-parity/paper.zh.md) | — |
 | 任意类别数随机响应的精确 zCDP：全局相变、唯一最优阶与锐渐近 | [阅读](krr-exact-zcdp/paper.zh.md) | [Read](krr-exact-zcdp/paper.en.md) |
 | 非参数均值检验的留一强对偶与有限网格计算 | [阅读](leave-one-out-mean-strong-duality/paper.zh.md) | [Read](leave-one-out-mean-strong-duality/paper.en.md) |
@@ -113,6 +116,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 任意赌注集合下随机化事后检验的可容许性 | [阅读](posthoc-closed-stake-admissibility/paper.zh.md) | [Read](posthoc-closed-stake-admissibility/paper.en.md) |
 | 有限赌注事后检验的可容许性刻画 | [阅读](posthoc-finite-stake-admissibility/paper.zh.md) | [Read](posthoc-finite-stake-admissibility/paper.en.md) |
 | 似然比单调事后检验的可容许性 | [阅读](posthoc-randomized-admissibility/paper.zh.md) | [Read](posthoc-randomized-admissibility/paper.en.md) |
+| 最小功率支配重配置的表示、宿主规模与可达性 | [阅读](power-domination-token-jumping/paper.zh.md) | — |
 | When pinching makes a Schur channel mixed unitary | [阅读](ppt-squared-toroidal-mixing/paper.zh.md) | [Read](ppt-squared-toroidal-mixing/paper.en.md) |
 | 两阶段预言机调度中的持续差距与无条件自适应优化 | [阅读](processing-oracle-two-phase/paper.zh.md) | [Read](processing-oracle-two-phase/paper.en.md) |
 | 以缺货概率校准在线阈值 | [阅读](prophet-secretary-stockout/paper.zh.md) | [Read](prophet-secretary-stockout/paper.en.md) |
@@ -150,6 +154,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 限速谐势阱的精确最省功控制 | [阅读](speed-limited-harmonic-equilibration/paper.zh.md) | [Read](speed-limited-harmonic-equilibration/paper.en.md) |
 | 三态马尔可夫链有限精度观测下的熵产生双区间定理 | [阅读](stroboscopic-three-state-entropy-range/paper.zh.md) | [Read](stroboscopic-three-state-entropy-range/paper.en.md) |
 | 重抽样最大幂分样本似然比的水平反例 | [阅读](subsampled-max-power-lqrt/paper.zh.md) | — |
+| 两两独立的三水平乘积矩：完整最优分区与二进制耦合损失 | [阅读](ternary-pairwise-moment/paper.zh.md) | — |
 | 三量子比特张量 Pauli 单轨道互无偏基的不存在性 | [阅读](three-qubit-pauli-mub-obstruction/paper.zh.md) | — |
 | 三态热弛豫的全局熵衰减常数 | [阅读](three-state-mlsi-certificate/paper.zh.md) | — |
 | 平衡完全三部图的唯一最近谱邻居 | [阅读](tripartite-nearest-spectral/paper.zh.md) | — |
@@ -163,6 +168,8 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 强弦图上最大极小团横截的多项式算法 | [阅读](upper-clique-transversal-strongly-chordal/paper.zh.md) | — |
 | 次三次图上双空位多样类型偏好跳跃博弈的度数修正势函数 | [阅读](variety-jump-subcubic-potential/paper.zh.md) | [Read](variety-jump-subcubic-potential/paper.en.md) |
 | 经验 Wasserstein 重心二阈值猜想的有限反例 | [阅读](wasserstein-barycenter-threshold-two/paper.zh.md) | [Read](wasserstein-barycenter-threshold-two/paper.en.md) |
+| 变角部分交换中的全环境解耦、残差乘积与浴谱相界 | [阅读](weak-partial-swap-factorization/paper.zh.md) | — |
+| 带权移球的 Gaussian 最优偏移与余球分布 | [阅读](weighted-ball-removal-gaussian-optimum/paper.zh.md) | — |
 | 固定分布加权共形 BH 的显式样本量门槛 | [阅读](weighted-conformal-explicit-sample-threshold/paper.zh.md) | [Read](weighted-conformal-explicit-sample-threshold/paper.en.md) |
 | 固定权重上界下全零加权共形 Simes 检验的尖锐曲率 | [阅读](weighted-conformal-fixed-cap-curvature/paper.zh.md) | [Read](weighted-conformal-fixed-cap-curvature/paper.en.md) |
 | 加权共形 BH 的有限样本误报率线性上界 | [阅读](weighted-conformal-global-null-linear-fdr/paper.zh.md) | [Read](weighted-conformal-global-null-linear-fdr/paper.en.md) |
