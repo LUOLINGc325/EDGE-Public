@@ -1,0 +1,7 @@
+name = "deletion_intersection_counterexample"
+version = "1.0.0"
+defaultTargets = ["Result"]
+moreLeanArgs = ["-j1", "-DElab.async=false"]
+
+[[lean_lib]]
+name = "Result"
