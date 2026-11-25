@@ -39,6 +39,8 @@ Run the selected script with Python 3.10 or newer, e.g. `python3 certificate_ame
 
 - [two-box-pure-search-conjecture21](two-box-pure-search-conjecture21/formalization/) — The optimal deterministic and mixed two-location search strategies of Conjecture 21, with geometric first-success expectation, conditional continuation cost, first-deviation bounds, almost-optimal prefixes, finite witnesses and asymptotics. The archived release records full mathematical manuscript coverage.
 
+- [variety-jump-subcubic-potential](variety-jump-subcubic-potential/formalization/) — Two-vacancy variety jump games on finite simple undirected subcubic graphs, including strict potential descent, labelled moves, reachable equilibrium, linear improvement-path bounds and a nonvacuity witness. The archived release records complete coverage of this stated subcubic result; general graphs are outside its scope.
+
 These packages preserve the original Lean sources and dependencies; migration is not a fresh compilation or independent review.
 
 ## Auxiliary Lean source
