@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**222 research entries / 成果条目 · 318 manuscript versions / 论文版本**
+**227 research entries / 成果条目 · 324 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -230,5 +230,10 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 严格可行凸场景优化的全参数风险下界与极小极大样本校准 | [阅读](convex-scenario-compression-transfer/paper.zh.md) | [Read](convex-scenario-compression-transfer/paper.en.md) |
 | 分数建议在线匹配的无损 PAW 保证转移与因果有限实现 | — | [Read](fractional-advice-paw-transfer/paper.en.md) |
 | 条件独立信息评分的结构刚性、精确 Shannon 修复预算与二元最小修复 | [阅读](ci-score-quadratic-rigidity/paper.zh.md) | — |
+| 二次访问排程在切口宽度一时的线性算法 | [阅读](position-matching-cut-width-one/paper.zh.md) | — |
+| 三态机器在任意有限系统上的锐冷却耗散界 | [阅读](general-qutrit-cooling/paper.zh.md) | — |
+| 单次在线择价的全风险 CVaR 精确最优竞争比 | [阅读](risk-transfer-and-finite-horizon/paper.zh.md) | [Read](risk-transfer-and-finite-horizon/paper.en.md) |
+| 共振权重层数给出的量子比特耗散下界 | [阅读](shell-capacity-spectral-bound/paper.zh.md) | — |
+| 对称临界共形走廊的严格数值夹界 | [阅读](certified-symmetric-corridor/paper.zh.md) | — |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
