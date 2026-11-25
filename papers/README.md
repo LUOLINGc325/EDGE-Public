@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**175 research entries / 成果条目 · 262 manuscript versions / 论文版本**
+**176 research entries / 成果条目 · 264 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -164,6 +164,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 两两独立的三水平乘积矩：完整最优分区与二进制耦合损失 | [阅读](ternary-pairwise-moment/paper.zh.md) | — |
 | 三量子比特张量 Pauli 单轨道互无偏基的不存在性 | [阅读](three-qubit-pauli-mub-obstruction/paper.zh.md) | — |
 | 三态热弛豫的全局熵衰减常数 | [阅读](three-state-mlsi-certificate/paper.zh.md) | — |
+| 合法着色猜帽中的三角风车图：精确值与三瓣饱和 · Proper hat guessing on triangular windmills | [阅读](triangular-windmill-proper-hat/paper.zh.md) | [Read](triangular-windmill-proper-hat/paper.en.md) |
 | 平衡完全三部图的唯一最近谱邻居 | [阅读](tripartite-nearest-spectral/paper.zh.md) | — |
 | 完全三部图的邻接谱秩间隙 | [阅读](tripartite-spectral-rank/paper.zh.md) | — |
 | 两处位置的确定性搜索：一个参数族的最优性与唯一性 | [阅读](two-box-pure-search-conjecture21/paper.zh.md) | [Read](two-box-pure-search-conjecture21/paper.en.md) |

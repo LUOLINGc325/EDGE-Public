@@ -22,6 +22,8 @@ Run the selected script with Python 3.10 or newer, e.g. `python3 certificate_ame
 - [bell-chain-sharp-parity](bell-chain-sharp-parity/formalization/) — The archived release records complete coverage of the sharp parity coefficient and equality conditions for the specified cyclic Bell swapping chains.
 - [johnson-triangle-chain-parity](johnson-triangle-chain-parity/formalization/) — The archived release records exact parity classification of closed triangle chains and optimal representation rank; scope is limited to the archived formal theorems.
 
+- [triangular-windmill-proper-hat](triangular-windmill-proper-hat/formalization/) — Exact 5/6/7 classification for all positive numbers of triangular windmill blades, including unrestricted strategy upper bounds, explicit separation tables, decoding, monotonicity, and the final classification. The archived release reports a full local kernel and independent scope audit; a new public build has not been run.
+
 These packages preserve the original Lean sources and dependencies; migration is not a fresh compilation or independent review.
 
 ## Auxiliary Lean source
@@ -31,4 +33,4 @@ These packages preserve the original Lean sources and dependencies; migration is
 
 Each Lean directory contains a toolchain and a pinned mathlib dependency. Run `lake build` from the corresponding directory. No new execution or Lean compilation result is asserted by this page.
 
-以上程序为有限精确算术校验；Lean 源码仅涵盖所述辅助命题。此页不声称这些源码已在当前仓库重新运行或编译，也不声称整篇论文获得形式化认证。
+以上程序为有限精确算术校验；完整证明包与辅助引理包的数学范围见各项说明。迁移不代表在本仓库重新编译或重新完成公理核验。
