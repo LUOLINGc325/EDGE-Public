@@ -1,0 +1,187 @@
+name = "two_color_nullity"
+version = "0.1.0"
+defaultTargets = [
+  "AsymptoticWitness",
+  "BalancedAllocation",
+  "BitMaskProjection",
+  "BucketAllocation",
+  "ExactMatchingCount",
+  "FiniteEstimateTable",
+  "FiniteProbability",
+  "FiniteRandomBound",
+  "InstanceBounds",
+  "LabelBuckets",
+  "MatchingEncoding",
+  "NormalizedAllCounts",
+  "NormalizedFixedFactor",
+  "Nullity",
+  "NullityCosts",
+  "OptimalFactor",
+  "ProjectedAllocation",
+  "ProjectedMatching",
+  "PublishedInstance",
+  "PublishedInstanceCertificate",
+  "PublishedInstanceSearch",
+  "PublishedInstanceSearchReplay",
+  "PublishedInstanceSearchSound",
+  "RandomThresholdBound",
+  "RandomWitnessEstimates",
+  "UniformBounds",
+  "WorstFactor",
+]
+moreLeanArgs = ["-j1"]
+
+[[lean_lib]]
+name = "AsymptoticWitness"
+
+[[lean_lib]]
+name = "BalancedAllocation"
+
+[[lean_lib]]
+name = "BitMaskProjection"
+
+[[lean_lib]]
+name = "BucketAllocation"
+
+[[lean_lib]]
+name = "ExactMatchingCount"
+
+[[lean_lib]]
+name = "FiniteEstimateTable"
+
+[[lean_lib]]
+name = "FiniteProbability"
+
+[[lean_lib]]
+name = "FiniteRandomBound"
+
+[[lean_lib]]
+name = "InstanceBounds"
+
+[[lean_lib]]
+name = "LabelBuckets"
+
+[[lean_lib]]
+name = "MatchingEncoding"
+
+[[lean_lib]]
+name = "NormalizedAllCounts"
+
+[[lean_lib]]
+name = "NormalizedFixedFactor"
+
+[[lean_lib]]
+name = "Nullity"
+
+[[lean_lib]]
+name = "NullityCosts"
+
+[[lean_lib]]
+name = "OptimalFactor"
+
+[[lean_lib]]
+name = "ProjectedAllocation"
+
+[[lean_lib]]
+name = "ProjectedMatching"
+
+[[lean_lib]]
+name = "PublishedInstance"
+
+[[lean_lib]]
+name = "PublishedInstanceCertificate"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay01"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay02"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay03"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay04"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay05"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay06"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay07"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay08"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay09"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay10"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay11"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay12"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay13"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay14"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay15"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay16"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay17"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay18"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay19"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay20"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay21"
+
+[[lean_lib]]
+name = "PublishedInstanceReplay22"
+
+[[lean_lib]]
+name = "PublishedInstanceSearch"
+
+[[lean_lib]]
+name = "PublishedInstanceSearchReplay"
+
+[[lean_lib]]
+name = "PublishedInstanceSearchSound"
+
+[[lean_lib]]
+name = "PublishedInstanceSearchStates"
+
+[[lean_lib]]
+name = "RandomThresholdBound"
+
+[[lean_lib]]
+name = "RandomWitnessEstimates"
+
+[[lean_lib]]
+name = "UniformBounds"
+
+[[lean_lib]]
+name = "WorstFactor"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "f897ebcf72cd16f89ab4577d0c826cd14afaafc7"

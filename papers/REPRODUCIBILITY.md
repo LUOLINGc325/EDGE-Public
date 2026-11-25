@@ -47,6 +47,8 @@ Run the selected script with Python 3.10 or newer, e.g. `python3 certificate_ame
 
 - [finite-n-prediction-scheduling](finite-n-prediction-scheduling/formalization/) — The exact optimal frontier for finite-job prediction scheduling, including the scheduling model, dimension and snapshot arguments, explicit frontier construction, guarantees, examples and rational complexity bounds. The archived release records full coverage of the frozen mathematical manuscript.
 
+- [efx-binary-partition-nullity](efx-binary-partition-nullity/formalization/) — Worst approximate EFX factor for two-class partition-matroid nullity chores, including the rank/nullity cost model, matching and allocation criteria, exact factor and capacity algorithms, finite and asymptotic probability bounds, and the 18-agent 53-chore instance. The archived release records complete coverage of the original mathematical manuscript.
+
 These packages preserve the original Lean sources and dependencies; migration is not a fresh compilation or independent review.
 
 ## Auxiliary Lean source
