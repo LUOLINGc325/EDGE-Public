@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**137 research entries / 成果条目 · 203 manuscript versions / 论文版本**
+**142 research entries / 成果条目 · 213 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -14,6 +14,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 近似差分隐私下最优 e-power 的指数预算相图 · The Privacy-Failure Exponent in Optimal Differentially Private E-Power | [阅读](approximate-dp-epower-exponent/paper.zh.md) | [Read](approximate-dp-epower-exponent/paper.en.md) |
 | Approximate Local Privacy: Blackwell Structure, Exact Pearson Information, and Minimax Estimation | — | [Read](approximate-ldp-blackwell-structure/paper.en.md) |
 | Gray 区间内部二元 Markov 源的操作色散 | [阅读](binary-markov-gray-dispersion/paper.zh.md) | [Read](binary-markov-gray-dispersion/paper.en.md) |
+| 一阶以上二元 Rényi 熵的最优跨阶幂界 | [阅读](binary-renyi-order-monotonicity/paper.zh.md) | [Read](binary-renyi-order-monotonicity/paper.en.md) |
 | Assignment bounds and constant-factor algorithms for bounded-hop independent-set reconfiguration | [阅读](bounded-hop-independent-set-approximation/paper.zh.md) | [Read](bounded-hop-independent-set-approximation/paper.en.md) |
 | 图伊辛演化的稳定子 Rényi 矩：连续角分解、整数阶消元与二元割谱 | [阅读](cactus-ising-stabilizer/paper.zh.md) | — |
 | 仙人掌图态的奇复制有理延拓分类 | [阅读](cactus-replica-rationality/paper.zh.md) | — |
@@ -32,9 +33,12 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Global optimality and uniqueness for conjugate-target renewal resetting | [阅读](conjugate-resetting-global-optimality/paper.zh.md) | [Read](conjugate-resetting-global-optimality/paper.en.md) |
 | 风险敏感一次在线卖出的精确最优值 | [阅读](cvar-one-max-exact-optimality/paper.zh.md) | [Read](cvar-one-max-exact-optimality/paper.en.md) |
 | Sharp Finite-Horizon Descent for the Difference-of-Convex Algorithm | — | [Read](dca-sharp-finite-horizon/paper.en.md) |
+| 距离三删除球交集精确值猜想的有限反例 | [阅读](deletion-intersection-counterexample/paper.zh.md) | [Read](deletion-intersection-counterexample/paper.en.md) |
 | 平均增长频率单调性的细致平衡判据 · The detailed-balance boundary for annealed frequency reduction | [阅读](detailed-balance-frequency-reduction/paper.zh.md) | [Read](detailed-balance-frequency-reduction/paper.en.md) |
 | Two-season frequency witnesses on directed cycles | [阅读](directed-cycle-two-season-witness/paper.zh.md) | [Read](directed-cycle-two-season-witness/paper.en.md) |
 | 分裂矩形相交图的支配与打包之比至多为四 | [阅读](domination-packing-split-rectangle/paper.zh.md) | — |
+| 两类拟阵零度家务的最坏近似 EFX 因子 | [阅读](efx-binary-partition-nullity/paper.zh.md) | [Read](efx-binary-partition-nullity/paper.en.md) |
+| 共同独立集如何保证拟阵秩费用下的杂务 EFX | [阅读](efx-matroid-rank-chores/paper.zh.md) | [Read](efx-matroid-rank-chores/paper.en.md) |
 | 所有有限社会成本指数下欧氏坐标中位数的尖锐保证 | [阅读](euclidean-median-all-p-sharp/paper.zh.md) | [Read](euclidean-median-all-p-sharp/paper.en.md) |
 | 任意偶环图态的两条精确复制算术分支 | [阅读](even-cycle-replica-branch-separation/paper.zh.md) | — |
 | 可交换算术合并规则的严格改进 | [阅读](exchangeable-arithmetic-merging-improvement/paper.zh.md) | — |
@@ -60,6 +64,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 一维随机 Pauli 读出恢复 GHZ 相位的最优对数深度 | [阅读](ghz-pauli-readout-depth/paper.zh.md) | — |
 | 降温可使 Glauber 活动度超过二分之一 | [阅读](glauber-activity-counterexample/paper.zh.md) | [Read](glauber-activity-counterexample/paper.en.md) |
 | Glauber 退火中过量活动度的桥结构机制 | [阅读](glauber-annealing-activity-counterexample/paper.zh.md) | [Read](glauber-annealing-activity-counterexample/paper.en.md) |
+| 长路径森林燃烧阈值的构造性近线性上界 | [阅读](graph-burning-long-path-forests/paper.zh.md) | [Read](graph-burning-long-path-forests/paper.en.md) |
 | Precise independent e-merging beyond reordered martingales | [阅读](independent-e-merging-beyond-martingales/paper.zh.md) | [Read](independent-e-merging-beyond-martingales/paper.en.md) |
 | 分裂图上的等距路径覆盖是 NP 完全的 | [阅读](isometric-path-cover-split/paper.zh.md) | — |
 | 闭合三角链的 Johnson 诱导表示 | [阅读](johnson-triangle-chain-parity/paper.zh.md) | — |
