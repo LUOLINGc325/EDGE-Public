@@ -33,6 +33,8 @@ Run the selected script with Python 3.10 or newer, e.g. `python3 certificate_ame
 
 - [glauber-annealing-activity-counterexample](glauber-annealing-activity-counterexample/formalization/) — Ten-state counterexample to Glauber annealing activity, including finite regular Gibbs/Glauber models, bias identities and first-step bounds, total-variation estimates, three-temperature limits for regular bridge graphs, distinct-energy perturbations, and finite-parameter stability. The archived release records full coverage for this manuscript.
 
+- [glauber-activity-counterexample](glauber-activity-counterexample/formalization/) — The eight-state cubic Glauber activity counterexample, explicit graph families for each degree in the stated range, energies, cooling schedule, parameter interval, limits and first-step bound. The archived release records full coverage of the original mathematical manuscript. Its dependency has been relocated to a public commit containing the identical prerequisite source; a new compilation is still required.
+
 These packages preserve the original Lean sources and dependencies; migration is not a fresh compilation or independent review.
 
 ## Auxiliary Lean source

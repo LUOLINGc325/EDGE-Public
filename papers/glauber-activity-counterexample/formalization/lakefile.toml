@@ -1,0 +1,39 @@
+name = "glauber_activity_counterexample"
+version = "0.1.0"
+defaultTargets = ["DoubleCliqueFinite", "EightStateCertificate"]
+moreLeanArgs = ["-j1"]
+
+[[lean_lib]]
+name = "DoubleCliqueGraph"
+
+[[lean_lib]]
+name = "DoubleCliqueEnergy"
+
+[[lean_lib]]
+name = "DoubleCliqueLimits"
+
+[[lean_lib]]
+name = "GlauberErrorBounds"
+
+[[lean_lib]]
+name = "DoubleCliqueEstimates"
+
+[[lean_lib]]
+name = "DoubleCliqueFinite"
+
+[[lean_lib]]
+name = "EightStateModel"
+
+[[lean_lib]]
+name = "EightStateCertificate"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[require]]
+name = "glauber_annealing_counterexample"
+git = "https://github.com/LUOLINGc325/EDGE-Public.git"
+rev = "f58e7feccc507e7338e7aae8cf7dd0a46e6f263b"
+subDir = "papers/glauber-annealing-activity-counterexample/formalization"
