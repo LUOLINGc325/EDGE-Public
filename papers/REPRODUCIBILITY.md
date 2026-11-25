@@ -24,6 +24,8 @@ Run the selected script with Python 3.10 or newer, e.g. `python3 certificate_ame
 
 - [triangular-windmill-proper-hat](triangular-windmill-proper-hat/formalization/) — Exact 5/6/7 classification for all positive numbers of triangular windmill blades, including unrestricted strategy upper bounds, explicit separation tables, decoding, monotonicity, and the final classification. The archived release reports a full local kernel and independent scope audit; a new public build has not been run.
 
+- [two-agent-sd-ef1-market](two-agent-sd-ef1-market/formalization/) — Two-agent subjective stochastic-dominance EF1 with a common market EF1, adjacent pairing, greedy exchanges, shortest complementary paths, padding removal, market choice, complexity bounds, and the six-good example. The archived release records full manuscript coverage and a successful prior CI replay.
+
 These packages preserve the original Lean sources and dependencies; migration is not a fresh compilation or independent review.
 
 ## Auxiliary Lean source

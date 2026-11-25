@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**176 research entries / 成果条目 · 264 manuscript versions / 论文版本**
+**177 research entries / 成果条目 · 266 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -167,6 +167,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 合法着色猜帽中的三角风车图：精确值与三瓣饱和 · Proper hat guessing on triangular windmills | [阅读](triangular-windmill-proper-hat/paper.zh.md) | [Read](triangular-windmill-proper-hat/paper.en.md) |
 | 平衡完全三部图的唯一最近谱邻居 | [阅读](tripartite-nearest-spectral/paper.zh.md) | — |
 | 完全三部图的邻接谱秩间隙 | [阅读](tripartite-spectral-rank/paper.zh.md) | — |
+| 两参与者的主观 SD-EF1 与共同市场 EF1 | [阅读](two-agent-sd-ef1-market/paper.zh.md) | [Read](two-agent-sd-ef1-market/paper.en.md) |
 | 两处位置的确定性搜索：一个参数族的最优性与唯一性 | [阅读](two-box-pure-search-conjecture21/paper.zh.md) | [Read](two-box-pure-search-conjecture21/paper.en.md) |
 | 二次访问排程的重复副本与单端点扫描 | [阅读](two-visits-duplicate-midpoint/paper.zh.md) | — |
 | 平面二分图上两种唯一支配的固定阈值 | [阅读](unidomination-thresholds-planar-bipartite/paper.zh.md) | — |
