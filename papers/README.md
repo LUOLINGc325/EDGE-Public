@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**136 research entries / 成果条目 · 202 manuscript versions / 论文版本**
+**137 research entries / 成果条目 · 203 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -113,6 +113,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 量子通道高阶张量矩的精确谱半径 | [阅读](rb-all-tensor-contractivity/paper.zh.md) | — |
 | 独立同分布先知选择中的记录约束 | [阅读](record-constrained-prophet-gap/paper.zh.md) | [Read](record-constrained-prophet-gap/paper.en.md) |
 | 反射扩散的周期与 Markov 切换频率分类 | [阅读](reflecting-diffusion-frequency-classification/paper.zh.md) | — |
+| Rényi contraction of repeated symmetric channels | — | [Read](renyi-product-order-phase/paper.en.md) |
 | 三阶 Rényi 约束下的最优通道设计 | [阅读](renyi-three-channel-frontier/paper.zh.md) | [Read](renyi-three-channel-frontier/paper.en.md) |
 | 排序 Schmidt 参考态最优性的半阶精确反例 | [阅读](schmidt-reference-renyi-half-counterexample/paper.zh.md) | [Read](schmidt-reference-renyi-half-counterexample/paper.en.md) |
 | 自删除图寻路的确定性参数界 | [阅读](self-deleting-path-derandomization/paper.zh.md) | [Read](self-deleting-path-derandomization/paper.en.md) |
