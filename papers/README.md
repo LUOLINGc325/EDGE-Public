@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**100 research entries / 成果条目 · 130 manuscript versions / 论文版本**
+**104 research entries / 成果条目 · 136 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -45,8 +45,10 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 三维双侧高斯 Simes 检验在水平一附近的精确控制 | [阅读](gaussian-simes-high-level-trivariate/paper.zh.md) | [Read](gaussian-simes-high-level-trivariate/paper.en.md) |
 | 一维随机 Pauli 读出恢复 GHZ 相位的最优对数深度 | [阅读](ghz-pauli-readout-depth/paper.zh.md) | — |
 | 降温可使 Glauber 活动度超过二分之一 | [阅读](glauber-activity-counterexample/paper.zh.md) | — |
+| Glauber 退火中过量活动度的桥结构机制 | [阅读](glauber-annealing-activity-counterexample/paper.zh.md) | — |
 | 分裂图上的等距路径覆盖是 NP 完全的 | [阅读](isometric-path-cover-split/paper.zh.md) | — |
 | 闭合三角链的 Johnson 诱导表示 | [阅读](johnson-triangle-chain-parity/paper.zh.md) | — |
+| 任意类别数随机响应的精确 zCDP：全局相变、唯一最优阶与锐渐近 | [阅读](krr-exact-zcdp/paper.zh.md) | — |
 | 非参数均值检验的留一强对偶与有限网格计算 | [阅读](leave-one-out-mean-strong-duality/paper.zh.md) | [Read](leave-one-out-mean-strong-duality/paper.en.md) |
 | Lexicographic Swap Rounding Need Not Be 1-Negatively Associated | [阅读](lexicographic-swap-rounding-counterexample/paper.zh.md) | [Read](lexicographic-swap-rounding-counterexample/paper.en.md) |
 | 留一对偶的闭包效应与近单位间隙 | [阅读](loo-continuous-dual-closure-gap/paper.zh.md) | [Read](loo-continuous-dual-closure-gap/paper.en.md) |
@@ -61,7 +63,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 错报外部矩时的保形预测覆盖偏差 | [阅读](moment-conformal-misspecification/paper.zh.md) | — |
 | 区间图与排列图上的近线性最大边开堆积算法 | [阅读](near-linear-edge-open-packing/paper.zh.md) | — |
 | 单量子比特酉设计偶奇噪声平台的精确判定 | [阅读](noisy-qubit-design-parity/paper.zh.md) | — |
-| 含恶意反馈的平滑函数在线学习：大幂次极小极大常数 | [阅读](noisy-smooth-online-sharp-limit/paper.zh.md) | — |
+| 含恶意反馈的平滑函数在线学习：大幂次极小极大常数 | [阅读](noisy-smooth-online-sharp-limit/paper.zh.md) | [Read](noisy-smooth-online-sharp-limit/paper.en.md) |
 | 非重叠唯一支配平方根阈值的复杂度 | [阅读](non-overlapping-unidomination-threshold/paper.zh.md) | — |
 | 周期谱线隙与多体趋肤效应：一个严格反例 | [阅读](nonhermitian-skin-imbalance/paper.zh.md) | — |
 | 奇素数稳定子多重 Rényi 复制收缩的正相位 | [阅读](odd-qudit-replica-phase-reflection/paper.zh.md) | — |
@@ -80,11 +82,13 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 有限赌注事后检验的可容许性刻画 | [阅读](posthoc-finite-stake-admissibility/paper.zh.md) | [Read](posthoc-finite-stake-admissibility/paper.en.md) |
 | 似然比单调事后检验的可容许性 | [阅读](posthoc-randomized-admissibility/paper.zh.md) | [Read](posthoc-randomized-admissibility/paper.en.md) |
 | 完全图量子电池中可分初态的精确充电功率 | [阅读](quantum-battery-separable-initialization/paper.zh.md) | — |
+| 四阶与五阶量子 Rényi 信息合并的最优擦除界 | [阅读](quantum-renyi45-erasure-bound/paper.zh.md) | — |
+| 四能级纠缠交换的固定资源精确可达区间 | [阅读](ququart-swapping-fixed-resource-range/paper.zh.md) | — |
 | 量子通道高阶张量矩的精确谱半径 | [阅读](rb-all-tensor-contractivity/paper.zh.md) | — |
 | 反射扩散的周期与 Markov 切换频率分类 | [阅读](reflecting-diffusion-frequency-classification/paper.zh.md) | — |
 | 排序 Schmidt 参考态最优性的半阶精确反例 | [阅读](schmidt-reference-renyi-half-counterexample/paper.zh.md) | [Read](schmidt-reference-renyi-half-counterexample/paper.en.md) |
 | 自删除图寻路的确定性参数界 | [阅读](self-deleting-path-derandomization/paper.zh.md) | [Read](self-deleting-path-derandomization/paper.en.md) |
-| 非负次模函数在边际概率上限下的精确相关间隙 | [阅读](sharp-nonmonotone-correlation-gap/paper.zh.md) | — |
+| 非负次模函数在边际概率上限下的精确相关间隙 | [阅读](sharp-nonmonotone-correlation-gap/paper.zh.md) | [Read](sharp-nonmonotone-correlation-gap/paper.en.md) |
 | Sibuya 时钟下量子重置归约的最优收敛速率 | [阅读](sibuya-quantum-reset-rate/paper.zh.md) | — |
 | Simes 带曲率的精确变号与全零假设线性系数的反例 | [阅读](simes-band-curvature/paper.zh.md) | — |
 | 任意阶的单量子比特固定角测量型精确酉设计 | [阅读](single-qubit-fixed-angle-all-orders/paper.zh.md) | — |
