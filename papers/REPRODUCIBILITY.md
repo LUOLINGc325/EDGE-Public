@@ -43,6 +43,8 @@ Run the selected script with Python 3.10 or newer, e.g. `python3 certificate_ame
 
 - [reciprocal-reward-counterexamples](reciprocal-reward-counterexamples/formalization/) — Reciprocal-reward search counterexamples and sharp graph guarantee, including four-vertex examples, continuous reward perturbations, graph and hypergraph families, fractional matchings, odd-cycle supports and the sharp 5/6 bound. The archived release records complete coverage of the original mathematical manuscript.
 
+- [independent-e-merging-beyond-martingales](independent-e-merging-beyond-martingales/formalization/) — Independent e-value merging beyond reordered martingales, including randomized input models, all-domain and three-point optimal capital, exact product capital for finite adaptive interleavings, and smooth strictly monotone separation. The archived release records complete coverage of the original mathematical manuscript.
+
 These packages preserve the original Lean sources and dependencies; migration is not a fresh compilation or independent review.
 
 ## Auxiliary Lean source
