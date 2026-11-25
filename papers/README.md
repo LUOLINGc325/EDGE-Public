@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**221 research entries / 成果条目 · 316 manuscript versions / 论文版本**
+**222 research entries / 成果条目 · 318 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -227,7 +227,8 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 二态 Collapsing Bandit 的全参数阈值结构、可指数性与精确指数 | — | [Read](collapsing-bandit-global-indexability/paper.en.md) |
 | 随机接受在线选择的秩稀疏化、稀有接受锐极限与异质率信息边界 | [阅读](robust-secretary-acceptance-thinning/paper.zh.md) | — |
 | 鲁棒 CRT 的固定通道精确设计：有限窗口、容量准多项式与五六通道最优证书 | — | [Read](robust-crt-fixed-channel-exact-design/paper.en.md) |
-| 严格可行凸场景优化的全参数风险下界与极小极大样本校准 | — | [Read](convex-scenario-compression-transfer/paper.en.md) |
+| 严格可行凸场景优化的全参数风险下界与极小极大样本校准 | [阅读](convex-scenario-compression-transfer/paper.zh.md) | [Read](convex-scenario-compression-transfer/paper.en.md) |
 | 分数建议在线匹配的无损 PAW 保证转移与因果有限实现 | — | [Read](fractional-advice-paw-transfer/paper.en.md) |
+| 条件独立信息评分的结构刚性、精确 Shannon 修复预算与二元最小修复 | [阅读](ci-score-quadratic-rigidity/paper.zh.md) | — |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
