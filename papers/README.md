@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**150 research entries / 成果条目 · 229 manuscript versions / 论文版本**
+**154 research entries / 成果条目 · 237 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -16,9 +16,11 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 循环 Bell 纠缠交换链的尖锐乘法系数 | [阅读](bell-chain-sharp-parity/paper.zh.md) | [Read](bell-chain-sharp-parity/paper.en.md) |
 | Gray 区间内部二元 Markov 源的操作色散 | [阅读](binary-markov-gray-dispersion/paper.zh.md) | [Read](binary-markov-gray-dispersion/paper.en.md) |
 | 一阶以上二元 Rényi 熵的最优跨阶幂界 | [阅读](binary-renyi-order-monotonicity/paper.zh.md) | [Read](binary-renyi-order-monotonicity/paper.en.md) |
+| 有边界重置的布朗搜索：内部不重置的全局最优性 | [阅读](boundary-resetting-global-optimality/paper.zh.md) | [Read](boundary-resetting-global-optimality/paper.en.md) |
 | Assignment bounds and constant-factor algorithms for bounded-hop independent-set reconfiguration | [阅读](bounded-hop-independent-set-approximation/paper.zh.md) | [Read](bounded-hop-independent-set-approximation/paper.en.md) |
 | 图伊辛演化的稳定子 Rényi 矩：连续角分解、整数阶消元与二元割谱 | [阅读](cactus-ising-stabilizer/paper.zh.md) | — |
 | 仙人掌图态的奇复制有理延拓分类 | [阅读](cactus-replica-rationality/paper.zh.md) | — |
+| 笛卡尔积何时成为代数平方 | [阅读](cartesian-algebraic-squares/paper.zh.md) | [Read](cartesian-algebraic-squares/paper.en.md) |
 | 链式索引的统一通信下界与强直接积 | [阅读](chained-index-uniform-direct-product/paper.zh.md) | — |
 | 用同一个四环链接解释所有级数的多重熵坍缩违反 | [阅读](chern-simons-four-cycle/paper.zh.md) | — |
 | 四分量 Abelian Chern–Simons 链接态的三阶多重熵坍缩 | [阅读](chern-simons-order-three/paper.zh.md) | — |
@@ -99,6 +101,8 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 临界共形预测首项的固定区间抛物方程求值 | [阅读](online-conformal-parabolic-evaluation/paper.zh.md) | — |
 | The sharp cost of online conformal coverage in subdiffusive corridors | — | [Read](online-conformal-sharp-constant/paper.en.md) |
 | 对称宽走廊下临界共形代价的精确渐近 | [阅读](online-conformal-wide-corridor-asymptotic/paper.zh.md) | — |
+| 一维对数凹目标的精确布朗重置分布 | [阅读](optimal-resetting-asymmetric/paper.zh.md) | [Read](optimal-resetting-asymmetric/paper.en.md) |
+| 对称严格对数凹目标下的最优重置位置 | [阅读](optimal-resetting-logconcave/paper.zh.md) | [Read](optimal-resetting-logconcave/paper.en.md) |
 | 局部对角尾占优下的有序因果获益锐界 | [阅读](ordinal-causal-benefit-sharp-bounds/paper.zh.md) | [Read](ordinal-causal-benefit-sharp-bounds/paper.en.md) |
 | 加性外部性下 EF1 的最小三参与者反例 | [阅读](ordinary-ef1-three-agent-counterexample/paper.zh.md) | [Read](ordinary-ef1-three-agent-counterexample/paper.en.md) |
 | 有限独立激活下贪心在线冲突消解的最优损失指数 | [阅读](pairwise-independent-online-crs-sharp/paper.zh.md) | [Read](pairwise-independent-online-crs-sharp/paper.en.md) |
