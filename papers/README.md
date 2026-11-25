@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**289 research entries / 成果条目 · 388 manuscript versions / 论文版本**
+**303 research entries / 成果条目 · 402 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -297,5 +297,19 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Thermodynamic boundary charge in the two-track non-Hermitian fermion chain | — | [Read](thermodynamic-boundary-charge/paper.en.md) |
 | Narrow corridors in critical online conformal prediction | — | [Read](narrow-corridor-expansion/paper.en.md) |
 | Prefix constraints and optimal rank protection in online contention resolution | — | [Read](nongreedy-exchangeable-rank-optimality/paper.en.md) |
+| The exact Gaussian threshold noise-stability phase curve | — | [Read](gaussian-threshold-phase-curve/paper.en.md) |
+| A Poisson-to-Gaussian crossover for nearly coincident threshold counts | — | [Read](high-overlap-crossover/paper.en.md) |
+| Optimal separable gaps for perfect exclusion with a pure two-qubit probe | — | [Read](sharp-qubit-separable-gap/paper.en.md) |
+| Entanglement required for optimal charging in a Clifford battery | — | [Read](optimal-charging-entanglement/paper.en.md) |
+| Universal Bernstein positivity for qubit shell capacity | — | [Read](universal-fixed-degree-positivity/paper.en.md) |
+| Reliability exponents for binary noisy-permutation channels | — | [Read](binary-reliability-exponents/paper.en.md) |
+| An order \(1/n\) horizon bound for record-constrained prophet inequalities | — | [Read](uniform-bin-minimum-rate/paper.en.md) |
+| Single-frequency identification of a reflected diffusion from weak Floquet response | — | [Read](single-frequency-inverse-identification/paper.en.md) |
+| Self-deleting paths with bounded deleters per edge | — | [Read](bounded-edge-deleters/paper.en.md) |
+| Finite-size nonmonotone submodular correlation gaps | — | [Read](finite-cardinality-profile/paper.en.md) |
+| Sharp Jordan-order limits for monitored qubit first-passage kernels | — | [Read](dominant-jordan-order-limit/paper.en.md) |
+| The exact principal entropy endpoint near a three-state sampling resonance | — | [Read](exact-principal-entropy-endpoint/paper.en.md) |
+| The bottleneck spectral neighbor of a balanced complete tripartite graph | — | [Read](bottleneck-spectral-neighbor/paper.en.md) |
+| A square-root mixed-null inflation for weighted conformal BH | — | [Read](mixed-null-square-root-boundary/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
