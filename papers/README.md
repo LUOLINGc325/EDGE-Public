@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**227 research entries / 成果条目 · 324 manuscript versions / 论文版本**
+**237 research entries / 成果条目 · 336 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -235,5 +235,15 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 单次在线择价的全风险 CVaR 精确最优竞争比 | [阅读](risk-transfer-and-finite-horizon/paper.zh.md) | [Read](risk-transfer-and-finite-horizon/paper.en.md) |
 | 共振权重层数给出的量子比特耗散下界 | [阅读](shell-capacity-spectral-bound/paper.zh.md) | — |
 | 对称临界共形走廊的严格数值夹界 | [阅读](certified-symmetric-corridor/paper.zh.md) | — |
+| Extremal visibility of logical Pauli operators under product measurements | — | [Read](stabilizer-logical-pauli-visibility/paper.en.md) |
+| Sharp local cooling capacity of resonant finite machines | — | [Read](two-weight-qutrit-sharp-cooling/paper.en.md) |
+| 连续时间 CVaR 滑雪租赁的精确高风险首项 | [阅读](continuous-high-risk-prefactor/paper.zh.md) | [Read](continuous-high-risk-prefactor/paper.en.md) |
+| Lüders 粗粒化可以增大测量顺序分数 | [阅读](commuting-effect-threshold/paper.zh.md) | [Read](commuting-effect-threshold/paper.en.md) |
+| 移位系数逐项非负法的适用边界 | [阅读](shifted-coefficient-boundary/paper.zh.md) | — |
+| Precise independent e-value mergers without symmetry | — | [Read](precise-mergers-without-symmetry/paper.en.md) |
+| The weak-response frequency boundary for reversible Markov environments | — | [Read](reversible-environment-weak-response/paper.en.md) |
+| Sharp randomized robustness for two weighted nonclairvoyant jobs | — | [Read](randomized-weighted-two-job-robustness/paper.en.md) |
+| Rigidity and stability of optimal quantum polygon approximations | — | [Read](minimizer-rigidity-stability/paper.en.md) |
+| Finite-grid witnesses and full-domain tensorization for read-once e-value capital | — | [Read](full-domain-capital-tensorization/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
