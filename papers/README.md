@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**94 research entries / 成果条目 · 123 manuscript versions / 论文版本**
+**100 research entries / 成果条目 · 130 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -23,6 +23,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 每个有限图都有团对偶共形的诱导扩张 · Every finite graph has a clique dually conformal induced extension | [阅读](clique-dually-conformal-induced-extension/paper.zh.md) | [Read](clique-dually-conformal-induced-extension/paper.en.md) |
 | 完全二分图的功率支配重配置刚性 | [阅读](complete-bipartite-tar-rigidity/paper.zh.md) | — |
 | Optimal induction of bounded composite sequential tests on finite trees | [阅读](composite-sequential-test-induction/paper.zh.md) | [Read](composite-sequential-test-induction/paper.en.md) |
+| 风险敏感一次在线卖出的精确最优值 | [阅读](cvar-one-max-exact-optimality/paper.zh.md) | — |
 | 平均增长频率单调性的细致平衡判据 · The detailed-balance boundary for annealed frequency reduction | [阅读](detailed-balance-frequency-reduction/paper.zh.md) | [Read](detailed-balance-frequency-reduction/paper.en.md) |
 | Two-season frequency witnesses on directed cycles | [阅读](directed-cycle-two-season-witness/paper.zh.md) | [Read](directed-cycle-two-season-witness/paper.en.md) |
 | 分裂矩形相交图的支配与打包之比至多为四 | [阅读](domination-packing-split-rectangle/paper.zh.md) | — |
@@ -43,6 +44,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 高斯频率模型的梯度方差精确渐近 | [阅读](gaussian-frequency-gradient-variance/paper.zh.md) | — |
 | 三维双侧高斯 Simes 检验在水平一附近的精确控制 | [阅读](gaussian-simes-high-level-trivariate/paper.zh.md) | [Read](gaussian-simes-high-level-trivariate/paper.en.md) |
 | 一维随机 Pauli 读出恢复 GHZ 相位的最优对数深度 | [阅读](ghz-pauli-readout-depth/paper.zh.md) | — |
+| 降温可使 Glauber 活动度超过二分之一 | [阅读](glauber-activity-counterexample/paper.zh.md) | — |
 | 分裂图上的等距路径覆盖是 NP 完全的 | [阅读](isometric-path-cover-split/paper.zh.md) | — |
 | 闭合三角链的 Johnson 诱导表示 | [阅读](johnson-triangle-chain-parity/paper.zh.md) | — |
 | 非参数均值检验的留一强对偶与有限网格计算 | [阅读](leave-one-out-mean-strong-duality/paper.zh.md) | [Read](leave-one-out-mean-strong-duality/paper.en.md) |
@@ -72,15 +74,18 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | The sharp cost of online conformal coverage in subdiffusive corridors | — | [Read](online-conformal-sharp-constant/paper.en.md) |
 | 对称宽走廊下临界共形代价的精确渐近 | [阅读](online-conformal-wide-corridor-asymptotic/paper.zh.md) | — |
 | 加性外部性下 EF1 的最小三参与者反例 | [阅读](ordinary-ef1-three-agent-counterexample/paper.zh.md) | [Read](ordinary-ef1-three-agent-counterexample/paper.en.md) |
+| 有限独立激活下贪心在线冲突消解的最优损失指数 | [阅读](pairwise-independent-online-crs-sharp/paper.zh.md) | — |
 | 四方完美张量的全整数 Rényi 多重熵 | [阅读](perfect-tensor-renyi-multientropy/paper.zh.md) | — |
 | 任意赌注集合下随机化事后检验的可容许性 | [阅读](posthoc-closed-stake-admissibility/paper.zh.md) | [Read](posthoc-closed-stake-admissibility/paper.en.md) |
 | 有限赌注事后检验的可容许性刻画 | [阅读](posthoc-finite-stake-admissibility/paper.zh.md) | [Read](posthoc-finite-stake-admissibility/paper.en.md) |
 | 似然比单调事后检验的可容许性 | [阅读](posthoc-randomized-admissibility/paper.zh.md) | [Read](posthoc-randomized-admissibility/paper.en.md) |
+| 完全图量子电池中可分初态的精确充电功率 | [阅读](quantum-battery-separable-initialization/paper.zh.md) | — |
 | 量子通道高阶张量矩的精确谱半径 | [阅读](rb-all-tensor-contractivity/paper.zh.md) | — |
 | 反射扩散的周期与 Markov 切换频率分类 | [阅读](reflecting-diffusion-frequency-classification/paper.zh.md) | — |
 | 排序 Schmidt 参考态最优性的半阶精确反例 | [阅读](schmidt-reference-renyi-half-counterexample/paper.zh.md) | [Read](schmidt-reference-renyi-half-counterexample/paper.en.md) |
-| 自删除图寻路的确定性参数界 | [阅读](self-deleting-path-derandomization/paper.zh.md) | — |
+| 自删除图寻路的确定性参数界 | [阅读](self-deleting-path-derandomization/paper.zh.md) | [Read](self-deleting-path-derandomization/paper.en.md) |
 | 非负次模函数在边际概率上限下的精确相关间隙 | [阅读](sharp-nonmonotone-correlation-gap/paper.zh.md) | — |
+| Sibuya 时钟下量子重置归约的最优收敛速率 | [阅读](sibuya-quantum-reset-rate/paper.zh.md) | — |
 | Simes 带曲率的精确变号与全零假设线性系数的反例 | [阅读](simes-band-curvature/paper.zh.md) | — |
 | 任意阶的单量子比特固定角测量型精确酉设计 | [阅读](single-qubit-fixed-angle-all-orders/paper.zh.md) | — |
 | 单 qubit 普通首次通过时间的三阶例外点 | [阅读](single-qubit-marginal-first-passage-ep3/paper.zh.md) | — |
@@ -97,6 +102,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 团横截与团关联图诱导匹配相等的判定复杂性 | [阅读](upper-clique-transversal-incidence-equality/paper.zh.md) | — |
 | 强弦图上最大极小团横截的多项式算法 | [阅读](upper-clique-transversal-strongly-chordal/paper.zh.md) | — |
 | 次三次图上双空位多样类型偏好跳跃博弈的度数修正势函数 | [阅读](variety-jump-subcubic-potential/paper.zh.md) | [Read](variety-jump-subcubic-potential/paper.en.md) |
+| 经验 Wasserstein 重心二阈值猜想的有限反例 | [阅读](wasserstein-barycenter-threshold-two/paper.zh.md) | — |
 | 固定分布加权共形 BH 的显式样本量门槛 | [阅读](weighted-conformal-explicit-sample-threshold/paper.zh.md) | [Read](weighted-conformal-explicit-sample-threshold/paper.en.md) |
 | 固定权重上界下全零加权共形 Simes 检验的尖锐曲率 | [阅读](weighted-conformal-fixed-cap-curvature/paper.zh.md) | [Read](weighted-conformal-fixed-cap-curvature/paper.en.md) |
 | 加权共形 BH 的有限样本误报率线性上界 | [阅读](weighted-conformal-global-null-linear-fdr/paper.zh.md) | [Read](weighted-conformal-global-null-linear-fdr/paper.en.md) |
