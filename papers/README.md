@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**251 research entries / 成果条目 · 350 manuscript versions / 论文版本**
+**261 research entries / 成果条目 · 360 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -259,5 +259,15 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Exact Two-Sided Coverage of the Bivariate Gaffke Intervals | — | [Read](exact-coverage-and-risk-transitions/paper.en.md) |
 | Exact binary deletion-ball intersections with a growing alternating middle | — | [Read](periodic-infinite-counterexamples/paper.en.md) |
 | Sharp coarse-graining bounds for Lüders order scores | — | [Read](sharp-amplification-and-pointwise-monotonicity/paper.en.md) |
+| 完全多分图上的多样性跳跃博弈：共享权重势与个别权重循环 | [阅读](complete-multipartite-potentials-and-weighted-cycles/paper.zh.md) | — |
+| 排序 Schmidt 参考态在 $0<\alpha<1$ 的失效与两种最小置换维数 | [阅读](low-order-failure-and-minimal-permutation-dimension/paper.zh.md) | — |
+| Sharp ordered Gaffke intervals under bounded likelihood tilts | — | [Read](sharp-conditional-ranks-under-tilts/paper.en.md) |
+| Three Items with Additive Externalities: Oriented Obstructions and Binary Existence | — | [Read](three-item-obstructions-and-binary-existence/paper.en.md) |
+| The sharp random EFX threshold for two-class nullity chores | — | [Read](random-occupancy-threshold/paper.en.md) |
+| Ordinal predictions attain the exact finite-job scheduling frontier | — | [Read](ordinal-only-frontier/paper.en.md) |
+| The sharp two-step activity bound for Glauber annealing on regular graphs | — | [Read](sharp-two-step-activity/paper.en.md) |
+| Exact capital for convex-profile e-value mergers | — | [Read](exact-convex-profile-capital/paper.en.md) |
+| The complexity of exact terminal induction with slack composite nulls | — | [Read](slack-null-induction-complexity/paper.en.md) |
+| Information loss and sharp power limits for conditional Gamma calibration | — | [Read](conditional-information-power-boundaries/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
