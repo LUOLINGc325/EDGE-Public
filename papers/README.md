@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**205 research entries / 成果条目 · 300 manuscript versions / 论文版本**
+**214 research entries / 成果条目 · 309 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -213,5 +213,14 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 纵向硬预算协方差与低秩异质风险 | — | [Read](hard-budget-covariance-fourth-moment/paper.en.md) |
 | 任意整数服务的工件年龄指数 | — | [Read](aoj-general-service-indexability/paper.en.md) |
 | 固定自适应前缀的精确 Bandit 隐私转换 | — | [Read](bandit-view-table-sharp-conversion/paper.en.md) |
+| 二项混合符号泛函的全参数极小极大风险 | [阅读](binomial-sign-margin-minimax/paper.zh.md) | — |
+| 光滑 Gibbs 有限查询的有界误差高温风险 | [阅读](smooth-gibbs-oracle-minimax/paper.zh.md) | — |
+| 加权回归选择的风险边界与有限最坏实例 | — | [Read](weighted-regression-selection-frontier/paper.en.md) |
+| 异质服务器折扣派工的全动作有限归约 | — | [Read](one-fast-many-slow-threshold/paper.en.md) |
+| 未知污染预算定价的全前缀保证 | [阅读](unknown-budget-robust-pricing/paper.zh.md) | — |
+| 标量 LQ 全局学习与自治离散临界步 | — | [Read](scalar-lq-global-learning-bifurcations/paper.en.md) |
+| 第二高估值的稳健拍卖机制与唯一等化轨道 | [阅读](second-statistic-auction-sharp-ratio/paper.zh.md) | — |
+| 联合 RR 洗牌的真实隐私上端包络 | — | [Read](shuffle-rr-hamming-extremality/paper.en.md) |
+| 路径漂移与实际切换预算遗憾 | — | [Read](path-drift-switch-budget/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
