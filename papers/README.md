@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**312 research entries / 成果条目 · 411 manuscript versions / 论文版本**
+**312 research entries / 成果条目 · 413 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -21,7 +21,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 图伊辛演化的稳定子 Rényi 矩：连续角分解、整数阶消元与二元割谱 | [阅读](cactus-ising-stabilizer/paper.zh.md) | — |
 | 仙人掌图态的奇复制有理延拓分类 | [阅读](cactus-replica-rationality/paper.zh.md) | — |
 | 笛卡尔积何时成为代数平方 | [阅读](cartesian-algebraic-squares/paper.zh.md) | [Read](cartesian-algebraic-squares/paper.en.md) |
-| 链式索引的统一通信下界与强直接积 | [阅读](chained-index-uniform-direct-product/paper.zh.md) | — |
+| 链式索引的统一通信下界与强直接积 | [阅读](chained-index-uniform-direct-product/paper.zh.md) | [Proof](chained-index-uniform-direct-product/paper.en.md) |
 | 用同一个四环链接解释所有级数的多重熵坍缩违反 | [阅读](chern-simons-four-cycle/paper.zh.md) | — |
 | 四分量 Abelian Chern–Simons 链接态的三阶多重熵坍缩 | [阅读](chern-simons-order-three/paper.zh.md) | — |
 | 弦二分图上最大边开堆积的多项式算法 | [阅读](chordal-bipartite-edge-open-packing/paper.zh.md) | — |
@@ -51,7 +51,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 弦图与凸二分图上更快的最大边开堆积算法 | [阅读](faster-edge-open-packing/paper.zh.md) | — |
 | 链图等距路径划分与覆盖的更快算法 | [阅读](faster-isometric-paths-chain/paper.zh.md) | — |
 | 余图等距路径覆盖与划分的更快算法 | [阅读](faster-isometric-paths-cographs/paper.zh.md) | — |
-| The exact finite-job consistency–robustness frontier for non-clairvoyant scheduling | — | [Read](finite-n-prediction-scheduling/paper.en.md) |
+| The exact finite-job consistency–robustness frontier for non-clairvoyant scheduling | [阅读](finite-n-prediction-scheduling/paper.zh.md) | [Read](finite-n-prediction-scheduling/paper.en.md) |
 | 有限 Pinwheel 排程的期限障碍与两访参数算法 | [阅读](finite-pinwheel-three-task/paper.zh.md) | — |
 | Transient learning at a common reward threshold in finite-state Markov decision processes | — | [Read](finite-worst-models-transient-learning/paper.en.md) |
 | 量子首次通过核的逆实现与任意维可见例外点 | [阅读](first-passage-kernel-inverse-realization/paper.zh.md) | — |
@@ -322,3 +322,5 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Finite Certificates and Memory Penalties for Binary POST Channels | — | [Read](binary-post-channel-certificates/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
+
+[Mathematical appendices / 数学附录](APPENDICES.md)
