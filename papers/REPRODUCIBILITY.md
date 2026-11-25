@@ -29,6 +29,8 @@ Run the selected script with Python 3.10 or newer, e.g. `python3 certificate_ame
 - [pauli-mub-phase-rigidity](pauli-mub-phase-rigidity/formalization/) — Odd-qubit Pauli MUB obstruction for odd n ≥ 5, fourth-root phase rigidity for equimodular even-qubit candidates, and a two-qubit witness. The even-qubit nonexistence question is not resolved. The archived release records complete coverage for this scope.
 - [three-qubit-pauli-mub-obstruction](three-qubit-pauli-mub-obstruction/formalization/) — Three-qubit tensor-Pauli orbit obstruction, with arbitrary normalized complex states, full orbit partitions and per-label unit-modulus phases. The archived release records complete coverage for this scope.
 
+- [lexicographic-swap-rounding-counterexample](lexicographic-swap-rounding-counterexample/formalization/) — The fixed lexicographic swap-rounding counterexample for all positive real parameters, including the uniform-matroid model, actual rounding definitions, and the parametric failure of one-negative association. The archived release reports complete coverage of the original manuscript.
+
 These packages preserve the original Lean sources and dependencies; migration is not a fresh compilation or independent review.
 
 ## Auxiliary Lean source
