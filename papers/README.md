@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**214 research entries / 成果条目 · 309 manuscript versions / 论文版本**
+**221 research entries / 成果条目 · 316 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -222,5 +222,12 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 第二高估值的稳健拍卖机制与唯一等化轨道 | [阅读](second-statistic-auction-sharp-ratio/paper.zh.md) | — |
 | 联合 RR 洗牌的真实隐私上端包络 | — | [Read](shuffle-rr-hamming-extremality/paper.en.md) |
 | 路径漂移与实际切换预算遗憾 | — | [Read](path-drift-switch-budget/paper.en.md) |
+| 完工反馈队列路由与双临界极小极大 | — | [Read](queue-routing-logarithmic-regret/paper.en.md) |
+| 重球周期轨道的最小维数和开集稳定性 | [阅读](heavy-ball-planar-cycle-domain/paper.zh.md) | — |
+| 二态 Collapsing Bandit 的全参数阈值结构、可指数性与精确指数 | — | [Read](collapsing-bandit-global-indexability/paper.en.md) |
+| 随机接受在线选择的秩稀疏化、稀有接受锐极限与异质率信息边界 | [阅读](robust-secretary-acceptance-thinning/paper.zh.md) | — |
+| 鲁棒 CRT 的固定通道精确设计：有限窗口、容量准多项式与五六通道最优证书 | — | [Read](robust-crt-fixed-channel-exact-design/paper.en.md) |
+| 严格可行凸场景优化的全参数风险下界与极小极大样本校准 | — | [Read](convex-scenario-compression-transfer/paper.en.md) |
+| 分数建议在线匹配的无损 PAW 保证转移与因果有限实现 | — | [Read](fractional-advice-paw-transfer/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
