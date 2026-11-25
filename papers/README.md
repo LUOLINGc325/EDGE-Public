@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**130 research entries / 成果条目 · 187 manuscript versions / 论文版本**
+**132 research entries / 成果条目 · 195 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -33,7 +33,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 平均增长频率单调性的细致平衡判据 · The detailed-balance boundary for annealed frequency reduction | [阅读](detailed-balance-frequency-reduction/paper.zh.md) | [Read](detailed-balance-frequency-reduction/paper.en.md) |
 | Two-season frequency witnesses on directed cycles | [阅读](directed-cycle-two-season-witness/paper.zh.md) | [Read](directed-cycle-two-season-witness/paper.en.md) |
 | 分裂矩形相交图的支配与打包之比至多为四 | [阅读](domination-packing-split-rectangle/paper.zh.md) | — |
-| 所有有限社会成本指数下欧氏坐标中位数的尖锐保证 | [阅读](euclidean-median-all-p-sharp/paper.zh.md) | — |
+| 所有有限社会成本指数下欧氏坐标中位数的尖锐保证 | [阅读](euclidean-median-all-p-sharp/paper.zh.md) | [Read](euclidean-median-all-p-sharp/paper.en.md) |
 | 任意偶环图态的两条精确复制算术分支 | [阅读](even-cycle-replica-branch-separation/paper.zh.md) | — |
 | 可交换算术合并规则的严格改进 | [阅读](exchangeable-arithmetic-merging-improvement/paper.zh.md) | — |
 | 弦图与凸二分图上更快的最大边开堆积算法 | [阅读](faster-edge-open-packing/paper.zh.md) | — |
@@ -78,6 +78,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 单量子比特酉设计偶奇噪声平台的精确判定 | [阅读](noisy-qubit-design-parity/paper.zh.md) | — |
 | 含恶意反馈的平滑函数在线学习：大幂次极小极大常数 | [阅读](noisy-smooth-online-sharp-limit/paper.zh.md) | [Read](noisy-smooth-online-sharp-limit/paper.en.md) |
 | 非重叠唯一支配平方根阈值的复杂度 | [阅读](non-overlapping-unidomination-threshold/paper.zh.md) | — |
+| 非自适应 Bernoulli 工厂的有限矩：精确的逼近判据 | [阅读](nonadaptive-bernoulli-moment-characterization/paper.zh.md) | [Read](nonadaptive-bernoulli-moment-characterization/paper.en.md) |
 | 周期谱线隙与多体趋肤效应：一个严格反例 | [阅读](nonhermitian-skin-imbalance/paper.zh.md) | — |
 | 奇素数稳定子多重 Rényi 复制收缩的正相位 | [阅读](odd-qudit-replica-phase-reflection/paper.zh.md) | — |
 | 临界覆盖约束的精确已知分布代价 | [阅读](online-conformal-critical-known-oracle/paper.zh.md) | — |
@@ -89,13 +90,14 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | The sharp cost of online conformal coverage in subdiffusive corridors | — | [Read](online-conformal-sharp-constant/paper.en.md) |
 | 对称宽走廊下临界共形代价的精确渐近 | [阅读](online-conformal-wide-corridor-asymptotic/paper.zh.md) | — |
 | 加性外部性下 EF1 的最小三参与者反例 | [阅读](ordinary-ef1-three-agent-counterexample/paper.zh.md) | [Read](ordinary-ef1-three-agent-counterexample/paper.en.md) |
-| 有限独立激活下贪心在线冲突消解的最优损失指数 | [阅读](pairwise-independent-online-crs-sharp/paper.zh.md) | — |
+| 有限独立激活下贪心在线冲突消解的最优损失指数 | [阅读](pairwise-independent-online-crs-sharp/paper.zh.md) | [Read](pairwise-independent-online-crs-sharp/paper.en.md) |
 | 乘积 Pauli 相互无偏基的奇偶障碍与相位刚性 | [阅读](pauli-mub-phase-rigidity/paper.zh.md) | [Read](pauli-mub-phase-rigidity/paper.en.md) |
 | 四方完美张量的全整数 Rényi 多重熵 | [阅读](perfect-tensor-renyi-multientropy/paper.zh.md) | — |
 | 泊松阈值噪声稳定性的精确强度边界 | [阅读](poisson-threshold-noise-sharp/paper.zh.md) | [Read](poisson-threshold-noise-sharp/paper.en.md) |
 | 任意赌注集合下随机化事后检验的可容许性 | [阅读](posthoc-closed-stake-admissibility/paper.zh.md) | [Read](posthoc-closed-stake-admissibility/paper.en.md) |
 | 有限赌注事后检验的可容许性刻画 | [阅读](posthoc-finite-stake-admissibility/paper.zh.md) | [Read](posthoc-finite-stake-admissibility/paper.en.md) |
 | 似然比单调事后检验的可容许性 | [阅读](posthoc-randomized-admissibility/paper.zh.md) | [Read](posthoc-randomized-admissibility/paper.en.md) |
+| 两阶段预言机调度中的持续差距与无条件自适应优化 | [阅读](processing-oracle-two-phase/paper.zh.md) | [Read](processing-oracle-two-phase/paper.en.md) |
 | Three Projective Measurements Witness an Exclusion Advantage for Every Pure Entangled State | [阅读](pure-entanglement-three-measurement-exclusion/paper.zh.md) | [Read](pure-entanglement-three-measurement-exclusion/paper.en.md) |
 | 完全图量子电池中可分初态的精确充电功率 | [阅读](quantum-battery-separable-initialization/paper.zh.md) | [Read](quantum-battery-separable-initialization/paper.en.md) |
 | 四阶与五阶量子 Rényi 信息合并的最优擦除界 | [阅读](quantum-renyi45-erasure-bound/paper.zh.md) | [Read](quantum-renyi45-erasure-bound/paper.en.md) |
@@ -105,7 +107,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 有界简并量子冷却的超水平集解析证明与显式余量 | [阅读](qubit-cooling-bounded-degeneracy/paper.zh.md) | [Read](qubit-cooling-bounded-degeneracy/paper.en.md) |
 | 四能级纠缠交换的固定资源精确可达区间 | [阅读](ququart-swapping-fixed-resource-range/paper.zh.md) | — |
 | 三维纯态 ECQC 的精确最优界 | [阅读](qutrit-ecqc-sharp-bound/paper.zh.md) | [Read](qutrit-ecqc-sharp-bound/paper.en.md) |
-| 秩二有噪声置换信道的精确固定错误率定律 | [阅读](rank-two-permutation-sharp-constant/paper.zh.md) | — |
+| 秩二有噪声置换信道的精确固定错误率定律 | [阅读](rank-two-permutation-sharp-constant/paper.zh.md) | [Read](rank-two-permutation-sharp-constant/paper.en.md) |
 | 量子通道高阶张量矩的精确谱半径 | [阅读](rb-all-tensor-contractivity/paper.zh.md) | — |
 | 反射扩散的周期与 Markov 切换频率分类 | [阅读](reflecting-diffusion-frequency-classification/paper.zh.md) | — |
 | 排序 Schmidt 参考态最优性的半阶精确反例 | [阅读](schmidt-reference-renyi-half-counterexample/paper.zh.md) | [Read](schmidt-reference-renyi-half-counterexample/paper.en.md) |
@@ -127,7 +129,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | 完全三部图的邻接谱秩间隙 | [阅读](tripartite-spectral-rank/paper.zh.md) | — |
 | 二次访问排程的重复副本与单端点扫描 | [阅读](two-visits-duplicate-midpoint/paper.zh.md) | — |
 | 平面二分图上两种唯一支配的固定阈值 | [阅读](unidomination-thresholds-planar-bipartite/paper.zh.md) | — |
-| 未知尺度非自适应一比特均值估计的尖锐样本复杂度 | [阅读](unknown-scale-onebit-mean-minimax/paper.zh.md) | — |
+| 未知尺度非自适应一比特均值估计的尖锐样本复杂度 | [阅读](unknown-scale-onebit-mean-minimax/paper.zh.md) | [Read](unknown-scale-onebit-mean-minimax/paper.en.md) |
 | Helly 圆弧图的最大极小团横截与锐利比例界 | [阅读](upper-clique-transversal-helly-circular-arc/paper.zh.md) | — |
 | 团横截与团关联图诱导匹配相等的判定复杂性 | [阅读](upper-clique-transversal-incidence-equality/paper.zh.md) | — |
 | 强弦图上最大极小团横截的多项式算法 | [阅读](upper-clique-transversal-strongly-chordal/paper.zh.md) | — |
