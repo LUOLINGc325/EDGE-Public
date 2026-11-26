@@ -1,0 +1,21 @@
+{
+  "schema": "schmidt-half-full-pauli-v1",
+  "arithmetic": "exact integers and Gaussian phases",
+  "source": {
+    "full_pauli_count": 65536,
+    "nonzero_expectations": 2176,
+    "total_absolute_numerator": 894720,
+    "Q": 2096,
+    "zeta_half": "3495/2096",
+    "pauli_purity_normalization": true
+  },
+  "permuted": {
+    "full_pauli_count": 65536,
+    "nonzero_expectations": 2176,
+    "total_absolute_numerator": 894656,
+    "Q": 2096,
+    "zeta_half": "13979/8384",
+    "pauli_purity_normalization": true
+  },
+  "status": "passed"
+}

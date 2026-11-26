@@ -11,7 +11,7 @@
   "maximum_twirled_spectrum_error": 1.2212453270876722e-15,
   "minimum_twirl_entropy_gain": 7.770699470177611e-05,
   "maximum_twirl_entropy_gain": 0.4538113573593784,
-  "prior_counterexample_source": "https://www.trureturing.org/the four-qubit Fredkin-gate derivation in the manuscript/",
+  "prior_counterexample_source": "https://www.trureturing.org/research/qiu-2025-fredkin-entangling-power/",
   "prior_counterexample_spectrum_error": 1.6653345369377348e-16,
   "prior_counterexample_entropy_bits": 2.0003442154411326,
   "original_baseline_entropy_bits": 2.0,

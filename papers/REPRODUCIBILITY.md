@@ -525,3 +525,26 @@ The table gives the local check status of each supplement. Compiled entries cove
 | [weighted conformal poisson transfer](weighted-conformal-poisson-transfer/paper.en.md) | [Modules](weighted-conformal-poisson-transfer/formalization/README.md) | Compiled and checked |
 | [weighted maxcut feedback](weighted-maxcut-feedback/paper.zh.md) | [Modules](weighted-maxcut-feedback/formalization/README.md) | Compiled and checked |
 | [weighted regression selection frontier](weighted-regression-selection-frontier/paper.en.md) | [Modules](weighted-regression-selection-frontier/formalization/README.md) | Compiled and checked |
+
+## Additional archived examples
+
+| Research project | Files |
+|---|---|
+| [conjugate resetting global optimality](conjugate-resetting-global-optimality/paper.en.md) | [radial_resolvent_check.json](conjugate-resetting-global-optimality/results/radial_resolvent_check.json) |
+| [euclidean median all p sharp](euclidean-median-all-p-sharp/paper.en.md) | [verify_contact_algebra.py](euclidean-median-all-p-sharp/code/verify_contact_algebra.py) |
+| [fixed agent cumulative envy](fixed-agent-cumulative-envy/paper.en.md) | [verify_exact.py](fixed-agent-cumulative-envy/code/verify_exact.py) |
+| [four qubit fredkin exact entangling power](four-qubit-fredkin-exact-entangling-power/paper.en.md) | [independent_statevector_check.py](four-qubit-fredkin-exact-entangling-power/code/independent_statevector_check.py), [exact_certificate.json](four-qubit-fredkin-exact-entangling-power/results/exact_certificate.json) |
+| [heavy ball planar cycle domain](heavy-ball-planar-cycle-domain/paper.zh.md) | [fan7_certificate.py](heavy-ball-planar-cycle-domain/code/fan7_certificate.py), [fan7_certificate.json](heavy-ball-planar-cycle-domain/results/fan7_certificate.json) |
+| [markov missing mass minimax](markov-missing-mass-minimax/paper.zh.md) | [general_counterexample_checks.py](markov-missing-mass-minimax/code/general_counterexample_checks.py) |
+| [one fast many slow threshold](one-fast-many-slow-threshold/paper.en.md) | [tail_bound_certificate.json](one-fast-many-slow-threshold/results/tail_bound_certificate.json) |
+| [processing oracle two phase](processing-oracle-two-phase/paper.en.md) | [verify_physical_subsolution.py](processing-oracle-two-phase/code/verify_physical_subsolution.py) |
+| [pure entanglement three measurement exclusion](pure-entanglement-three-measurement-exclusion/paper.en.md) | [numerical_checks.json](pure-entanglement-three-measurement-exclusion/results/numerical_checks.json) |
+| [quantum code n23 m3 b2](quantum-code-n23-m3-b2/paper.zh.md) | [b2_hxrx_reference6_result.json](quantum-code-n23-m3-b2/data/b2_hxrx_reference6_result.json), [comparison_summary.json](quantum-code-n23-m3-b2/data/comparison_summary.json) |
+| [quantum renyi45 erasure bound](quantum-renyi45-erasure-bound/paper.en.md) | [verify_numerical.py](quantum-renyi45-erasure-bound/code/verify_numerical.py) |
+| [qubit cooling bernstein certificate](qubit-cooling-bernstein-certificate/paper.en.md) | [exact_certificate.py](qubit-cooling-bernstein-certificate/code/exact_certificate.py) |
+| [queue routing logarithmic regret](queue-routing-logarithmic-regret/paper.en.md) | [check_counterexample_bases.py](queue-routing-logarithmic-regret/code/check_counterexample_bases.py) |
+| [record constrained prophet gap](record-constrained-prophet-gap/paper.en.md) | [sparse_policy_input.json](record-constrained-prophet-gap/results/sparse_policy_input.json) |
+| [renyi three channel frontier](renyi-three-channel-frontier/paper.en.md) | [hessian_polynomial_cloud.json](renyi-three-channel-frontier/results/hessian_polynomial_cloud.json) |
+| [schmidt reference renyi half counterexample](schmidt-reference-renyi-half-counterexample/paper.en.md) | [full_pauli_certificate.json](schmidt-reference-renyi-half-counterexample/results/full_pauli_certificate.json) |
+| [temporal ef1 nine chores threshold](temporal-ef1-nine-chores-threshold/paper.en.md) | [teh_nine.json](temporal-ef1-nine-chores-threshold/results/teh_nine.json) |
+| [two weight qutrit sharp cooling](two-weight-qutrit-sharp-cooling/paper.en.md) | [verify_product.py](two-weight-qutrit-sharp-cooling/code/verify_product.py) |

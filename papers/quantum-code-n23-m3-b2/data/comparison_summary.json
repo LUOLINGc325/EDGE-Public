@@ -1,0 +1,56 @@
+{
+  "full_RXxRY_reference6": {
+    "status": "incomplete",
+    "exit_code": 137,
+    "last_stage": "building branch-invariant base",
+    "interpretation": "No feasibility or infeasibility result. External termination cause not inferred."
+  },
+  "coarse_HxRX_reference6": {
+    "source_sha256": "1ff6c96aa79dd70b06e3e51b05eb7b567af10ad89b501270a996fdfc58d2b1b5",
+    "parameters": [
+      23,
+      1,
+      7
+    ],
+    "reference_weight": 6,
+    "configuration": "H x R_X",
+    "global_parity_case": 3,
+    "fixed_A": {
+      "0": 1,
+      "6": 90,
+      "8": 1314,
+      "10": 348,
+      "12": 107280,
+      "14": 434880,
+      "16": 1282869,
+      "18": 1543428,
+      "20": 738072,
+      "22": 86022
+    },
+    "status": "unknown",
+    "runtime": 0.26303629899985026,
+    "detail": {
+      "scipy_status": 4,
+      "message": "(HiGHS Status 0: Not Set)",
+      "runtime_solve": 0.08547798000017792,
+      "matrix_nnz_eq": 42488,
+      "matrix_nnz_ineq": 183667
+    },
+    "scope": "Floating-point continuous relaxation with one reference; not a code-existence certificate or full prior-method comparison."
+  },
+  "scaled_HxRX_reference6": {
+    "scope": "Floating-point row-scaled HxRX single-reference diagnostic, not exact verification.",
+    "scipy_status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "runtime": 0.07480935100011266,
+    "max_original_abs_equality_coefficient": 35184367894528.0,
+    "max_original_abs_inequality_coefficient": 1821354595200.0,
+    "nvars": 131,
+    "n_eq": 1050,
+    "n_ineq": 1933,
+    "max_scaled_equality_residual": 2.2264430299401283e-08,
+    "max_scaled_inequality_violation": 1.9616436475189403e-08,
+    "min_variable": -1.711569419658316e-09
+  },
+  "novelty_boundary": "No claim of strict advantage over the existing full refined LP or SDP algorithms is established."
+}

@@ -1,0 +1,33 @@
+{
+  "source_sha256": "1ff6c96aa79dd70b06e3e51b05eb7b567af10ad89b501270a996fdfc58d2b1b5",
+  "parameters": [
+    23,
+    1,
+    7
+  ],
+  "reference_weight": 6,
+  "configuration": "H x R_X",
+  "global_parity_case": 3,
+  "fixed_A": {
+    "0": 1,
+    "6": 90,
+    "8": 1314,
+    "10": 348,
+    "12": 107280,
+    "14": 434880,
+    "16": 1282869,
+    "18": 1543428,
+    "20": 738072,
+    "22": 86022
+  },
+  "status": "unknown",
+  "runtime": 0.26303629899985026,
+  "detail": {
+    "scipy_status": 4,
+    "message": "(HiGHS Status 0: Not Set)",
+    "runtime_solve": 0.08547798000017792,
+    "matrix_nnz_eq": 42488,
+    "matrix_nnz_ineq": 183667
+  },
+  "scope": "Floating-point continuous relaxation with one reference; not a code-existence certificate or full prior-method comparison."
+}

@@ -1,0 +1,780 @@
+{
+  "status": "all_finite_numerical_diagnostics_passed",
+  "evidence_type": "high_precision_floating_point_diagnostics_not_exact_certificate",
+  "working_decimal_precision": 80,
+  "residual_tolerance": "1e-60",
+  "mpmath_version": "1.3.0",
+  "case_count": 9,
+  "outcome_branches_checked": 45,
+  "povm_effects_checked": 135,
+  "conditional_probabilities_checked": 405,
+  "general_scope": "The manuscript proves the all-ranks/all-spectra theorem; this script only checks the listed nine spectra.",
+  "eigenvalue_note": "Effect Hermiticity is checked first; only the eigenvalue diagnostic uses (N+N*)/2. All probability and sum checks use the original N.",
+  "cases": [
+    {
+      "name": "r3_uniform",
+      "schmidt_rank": 3,
+      "integer_schmidt_weights": [
+        1,
+        1,
+        1
+      ],
+      "normalisation_denominator": 3,
+      "prime_q": 83,
+      "transversal_degree_upper_bound": 12,
+      "specialisation_extension_degree": 82,
+      "prime_conditions_checked_exactly": true,
+      "transversal_nonvanishing_scope": "analytic degree argument; no floating-point certificate claimed",
+      "unitarity_residual": "4.216879177292209289739429620508007603084e-81",
+      "fourier_geometric_sum_residual": "1.209556429040071755704555054763408938367e-81",
+      "normalisation_residual": "2.108439588646104644869714810254003801542e-81",
+      "max_absolute_gram_overlap": "0.02870057000614146861385917209672004307042",
+      "analytic_absolute_overlap_bound": "0.4542061667840664923078520554139040314502",
+      "minimum_gram_eigenvalue": "0.9604199967488187920561489024812655315638",
+      "povm_sum_residual": "2.108542668609877110877541577469613518315e-81",
+      "hermiticity_residual": "2.38966666456796784311117263669453380585e-83",
+      "minimum_symmetrised_effect_eigenvalue": "-9.916058635113084720884827210163041633476e-82",
+      "max_exclusion_probability_absolute_value": "3.513637606893247510377948378237218415302e-82",
+      "max_wrong_label_probability_error_from_one_half": "1.054318796406483490656213103513579745059e-81",
+      "max_probability_imaginary_part": "2.127205281068592293375028291095637329577e-83",
+      "minimum_same_output_01_overlap": "0.01467324100547799565845498996943333289489",
+      "minimum_conditional_probability": "0.3333333333333333333333333333333333333333",
+      "nonorthogonality_identity_residual": "7.648598525430565855701723012113794195578e-82",
+      "branches": [
+        {
+          "outcome": 0,
+          "probabilities_by_hypothesis": [
+            "0.3333333333333333333333333333333333333333",
+            "0.3333333333333333333333333333333333333333",
+            "0.3333333333333333333333333333333333333333"
+          ],
+          "maximum_absolute_overlap": "0.02870057000614146861385917209672004307042",
+          "absolute_overlap_01": "0.01467324100547799565845498996943333289489"
+        },
+        {
+          "outcome": 1,
+          "probabilities_by_hypothesis": [
+            "0.3333333333333333333333333333333333333333",
+            "0.3333333333333333333333333333333333333333",
+            "0.3333333333333333333333333333333333333333"
+          ],
+          "maximum_absolute_overlap": "0.02870057000614146861385917209672004307042",
+          "absolute_overlap_01": "0.01467324100547799565845498996943333289489"
+        },
+        {
+          "outcome": 2,
+          "probabilities_by_hypothesis": [
+            "0.3333333333333333333333333333333333333333",
+            "0.3333333333333333333333333333333333333333",
+            "0.3333333333333333333333333333333333333333"
+          ],
+          "maximum_absolute_overlap": "0.02870057000614146861385917209672004307042",
+          "absolute_overlap_01": "0.01467324100547799565845498996943333289489"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "r3_quadratic",
+      "schmidt_rank": 3,
+      "integer_schmidt_weights": [
+        1,
+        4,
+        9
+      ],
+      "normalisation_denominator": 14,
+      "prime_q": 241,
+      "transversal_degree_upper_bound": 12,
+      "specialisation_extension_degree": 240,
+      "prime_conditions_checked_exactly": true,
+      "transversal_nonvanishing_scope": "analytic degree argument; no floating-point certificate claimed",
+      "unitarity_residual": "3.443067430444411135377759692253336302586e-81",
+      "fourier_geometric_sum_residual": "1.337902405073734087339810321561402043146e-81",
+      "normalisation_residual": "4.216879177292209289739429620508007603084e-81",
+      "max_absolute_gram_overlap": "0.02850293630024235374861604255658532244287",
+      "analytic_absolute_overlap_bound": "0.4692835499138280356209757750956933768925",
+      "minimum_gram_eigenvalue": "0.963576388303970639998969747364460880718",
+      "povm_sum_residual": "3.162698802327338302137133418973725949982e-81",
+      "hermiticity_residual": "1.982717378073070867533202765863345615841e-83",
+      "minimum_symmetrised_effect_eigenvalue": "-5.271098971615261612174287025635009503855e-82",
+      "max_exclusion_probability_absolute_value": "3.514386161245356512790465147786738925026e-82",
+      "max_wrong_label_probability_error_from_one_half": "1.054276024685490434304385371761343420904e-81",
+      "max_probability_imaginary_part": "1.350594510703704825835654072488318345174e-83",
+      "minimum_same_output_01_overlap": "0.002514959325982354798724324737634056454974",
+      "minimum_conditional_probability": "0.07142857142857142857142857142857142857143",
+      "nonorthogonality_identity_residual": "8.822505257918148724339885248608115348145e-82",
+      "branches": [
+        {
+          "outcome": 0,
+          "probabilities_by_hypothesis": [
+            "0.07142857142857142857142857142857142857143",
+            "0.2857178098354601457105379845936515389718",
+            "0.6427638609280874985926431621943707100319"
+          ],
+          "maximum_absolute_overlap": "0.003328240869249107055089051082207683434119",
+          "absolute_overlap_01": "0.002514959325982354798724324737634056454974"
+        },
+        {
+          "outcome": 1,
+          "probabilities_by_hypothesis": [
+            "0.2857142857142857142857142857142857142857",
+            "0.6428337939876686431948882643204774939939",
+            "0.07150804636152614360655130501124894658979"
+          ],
+          "maximum_absolute_overlap": "0.02850293630024235374861604255658532244287",
+          "absolute_overlap_01": "0.003353360679989606201481652734130611586601"
+        },
+        {
+          "outcome": 2,
+          "probabilities_by_hypothesis": [
+            "0.6428571428571428571428571428571428571429",
+            "0.07144839617687121109457375108587096703431",
+            "0.2857280927103863578008055327943803433783"
+          ],
+          "maximum_absolute_overlap": "0.01508775538592139157650200586139741039257",
+          "absolute_overlap_01": "0.01508775538592139157650200586139741039257"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "r3_imbalanced",
+      "schmidt_rank": 3,
+      "integer_schmidt_weights": [
+        1,
+        10,
+        100
+      ],
+      "normalisation_denominator": 111,
+      "prime_q": 809,
+      "transversal_degree_upper_bound": 12,
+      "specialisation_extension_degree": 808,
+      "prime_conditions_checked_exactly": true,
+      "transversal_nonvanishing_scope": "analytic degree argument; no floating-point certificate claimed",
+      "unitarity_residual": "3.443067430444411135377759692253336302586e-81",
+      "fourier_geometric_sum_residual": "1.17318066217929017955895811964567846115e-81",
+      "normalisation_residual": "2.108439588646104644869714810254003801542e-81",
+      "max_absolute_gram_overlap": "0.02977001130151289539603860068248441577906",
+      "analytic_absolute_overlap_bound": "0.4659964381097344729487233695841042597079",
+      "minimum_gram_eigenvalue": "0.9686319066141931475271317490164037130031",
+      "povm_sum_residual": "2.108442626707853058947140332630066441221e-81",
+      "hermiticity_residual": "1.84164619010327490784790870240618024132e-83",
+      "minimum_symmetrised_effect_eigenvalue": "-5.271098971615261612174287025635009503855e-82",
+      "max_exclusion_probability_absolute_value": "3.514074541043541608846948716497604914635e-82",
+      "max_wrong_label_probability_error_from_one_half": "1.054221173170263056710396417386158413646e-81",
+      "max_probability_imaginary_part": "4.703112874379347215720398909805804876467e-84",
+      "minimum_same_output_01_overlap": "0.0004730091073776913543738088497484080032552",
+      "minimum_conditional_probability": "0.009009009009009009009009009009009009009009",
+      "nonorthogonality_identity_residual": "1.109818818107814909916682447181242231372e-81",
+      "branches": [
+        {
+          "outcome": 0,
+          "probabilities_by_hypothesis": [
+            "0.009009009009009009009009009009009009009009",
+            "0.0900917173844950246588922985574338788262",
+            "0.9008856872653373457145365633342825520593"
+          ],
+          "maximum_absolute_overlap": "0.00377643782390003034370888141539433548343",
+          "absolute_overlap_01": "0.0004730091073776913543738088497484080032552"
+        },
+        {
+          "outcome": 1,
+          "probabilities_by_hypothesis": [
+            "0.09009009009009009009009009009009009009009",
+            "0.9008970972021422243950292055746325357668",
+            "0.009017725412577641576468292475208989394491"
+          ],
+          "maximum_absolute_overlap": "0.02977001130151289539603860068248441577906",
+          "absolute_overlap_01": "0.0004730143778919467750654355701763117248538"
+        },
+        {
+          "outcome": 2,
+          "probabilities_by_hypothesis": [
+            "0.9009009009009009009009009009009009009009",
+            "0.009011185413362750946078495867933585407022",
+            "0.09009658732208501270899514419050845854617"
+          ],
+          "maximum_absolute_overlap": "0.01495618996854433875752995714543906770193",
+          "absolute_overlap_01": "0.01495618996854433875752995714543906770193"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "r5_uniform",
+      "schmidt_rank": 5,
+      "integer_schmidt_weights": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "normalisation_denominator": 5,
+      "prime_q": 83,
+      "transversal_degree_upper_bound": 40,
+      "specialisation_extension_degree": 82,
+      "prime_conditions_checked_exactly": true,
+      "transversal_nonvanishing_scope": "analytic degree argument; no floating-point certificate claimed",
+      "unitarity_residual": "1.054219794323052322434857405127001900771e-80",
+      "fourier_geometric_sum_residual": "4.23857181205768467753189528115941423513e-81",
+      "normalisation_residual": "2.108439588646104644869714810254003801542e-81",
+      "max_absolute_gram_overlap": "0.0159846168177595847237437306202881550009",
+      "analytic_absolute_overlap_bound": "0.4542061667840664923078520554139040314502",
+      "minimum_gram_eigenvalue": "0.9719453864349178406662548483695177738483",
+      "povm_sum_residual": "2.108484852546137529999722246062203791885e-81",
+      "hermiticity_residual": "5.792320453444859711036622017797810286931e-83",
+      "minimum_symmetrised_effect_eigenvalue": "-1.917262331108214593779714917773246860181e-81",
+      "max_exclusion_probability_absolute_value": "3.888139363440228885051460061730264344447e-82",
+      "max_wrong_label_probability_error_from_one_half": "1.054347360726972002532926969345358685608e-81",
+      "max_probability_imaginary_part": "2.120899309387188457871681139418612313093e-83",
+      "minimum_same_output_01_overlap": "0.01301190021630071988724809161383666993557",
+      "minimum_conditional_probability": "0.2",
+      "nonorthogonality_identity_residual": "8.863490311890803898744243124764910346164e-82",
+      "branches": [
+        {
+          "outcome": 0,
+          "probabilities_by_hypothesis": [
+            "0.2",
+            "0.2",
+            "0.2"
+          ],
+          "maximum_absolute_overlap": "0.0159846168177595847237437306202881550009",
+          "absolute_overlap_01": "0.01301190021630071988724809161383666993557"
+        },
+        {
+          "outcome": 1,
+          "probabilities_by_hypothesis": [
+            "0.2",
+            "0.2",
+            "0.2"
+          ],
+          "maximum_absolute_overlap": "0.0159846168177595847237437306202881550009",
+          "absolute_overlap_01": "0.01301190021630071988724809161383666993557"
+        },
+        {
+          "outcome": 2,
+          "probabilities_by_hypothesis": [
+            "0.2",
+            "0.2",
+            "0.2"
+          ],
+          "maximum_absolute_overlap": "0.0159846168177595847237437306202881550009",
+          "absolute_overlap_01": "0.01301190021630071988724809161383666993557"
+        },
+        {
+          "outcome": 3,
+          "probabilities_by_hypothesis": [
+            "0.2",
+            "0.2",
+            "0.2"
+          ],
+          "maximum_absolute_overlap": "0.0159846168177595847237437306202881550009",
+          "absolute_overlap_01": "0.01301190021630071988724809161383666993557"
+        },
+        {
+          "outcome": 4,
+          "probabilities_by_hypothesis": [
+            "0.2",
+            "0.2",
+            "0.2"
+          ],
+          "maximum_absolute_overlap": "0.0159846168177595847237437306202881550009",
+          "absolute_overlap_01": "0.01301190021630071988724809161383666993557"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "r5_linear",
+      "schmidt_rank": 5,
+      "integer_schmidt_weights": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "normalisation_denominator": 15,
+      "prime_q": 179,
+      "transversal_degree_upper_bound": 40,
+      "specialisation_extension_degree": 178,
+      "prime_conditions_checked_exactly": true,
+      "transversal_nonvanishing_scope": "analytic degree argument; no floating-point certificate claimed",
+      "unitarity_residual": "8.433758354584418579478859241016015206168e-81",
+      "fourier_geometric_sum_residual": "4.23386408334764414468785866152947700927e-81",
+      "normalisation_residual": "2.108439588646104644869714810254003801542e-81",
+      "max_absolute_gram_overlap": "0.0241377531554004914345047660826662130176",
+      "analytic_absolute_overlap_bound": "0.4709373004049648978652318196561940647687",
+      "minimum_gram_eigenvalue": "0.9691110430481180133858367492947507213185",
+      "povm_sum_residual": "2.108462108997590492144597740653362920228e-81",
+      "hermiticity_residual": "2.255987274378192098207285900434036245827e-83",
+      "minimum_symmetrised_effect_eigenvalue": "-1.783556694240448260843884876848286924943e-81",
+      "max_exclusion_probability_absolute_value": "3.259831531225749303453228240302748623288e-82",
+      "max_wrong_label_probability_error_from_one_half": "1.054232342697452760972477129033462309944e-81",
+      "max_probability_imaginary_part": "1.056979006666332414226288830419266828552e-83",
+      "minimum_same_output_01_overlap": "0.004242965690856083936275232793779863307826",
+      "minimum_conditional_probability": "0.06666666666666666666666666666666666666667",
+      "nonorthogonality_identity_residual": "5.778201607511649273422493854898891233985e-82",
+      "branches": [
+        {
+          "outcome": 0,
+          "probabilities_by_hypothesis": [
+            "0.06666666666666666666666666666666666666667",
+            "0.1333378297358043845307599021433255330711",
+            "0.1999995662220508901777818587847596837876"
+          ],
+          "maximum_absolute_overlap": "0.004270745151852973100340783150130017248815",
+          "absolute_overlap_01": "0.004242965690856083936275232793779863307826"
+        },
+        {
+          "outcome": 1,
+          "probabilities_by_hypothesis": [
+            "0.1333333333333333333333333333333333333333",
+            "0.1999999457702242343884521067282650317561",
+            "0.2666481593278052788103397326194951833582"
+          ],
+          "maximum_absolute_overlap": "0.005230749066215769999550571251290852057558",
+          "absolute_overlap_01": "0.004899438041614179480280528465654676786034"
+        },
+        {
+          "outcome": 2,
+          "probabilities_by_hypothesis": [
+            "0.2",
+            "0.2666620825178016245771906578853703377884",
+            "0.3332681981477409069585830526515360133047"
+          ],
+          "maximum_absolute_overlap": "0.005730359570214939222378544201466096501861",
+          "absolute_overlap_01": "0.005196682757442420110565127444309694177505"
+        },
+        {
+          "outcome": 3,
+          "probabilities_by_hypothesis": [
+            "0.2666666666666666666666666666666666666667",
+            "0.3333169766637246262450058963931798163022",
+            "0.06673293752242557785371244120288127690013"
+          ],
+          "maximum_absolute_overlap": "0.0241377531554004914345047660826662130176",
+          "absolute_overlap_01": "0.005367196427148601709203839112804276855449"
+        },
+        {
+          "outcome": 4,
+          "probabilities_by_hypothesis": [
+            "0.3333333333333333333333333333333333333333",
+            "0.06668316531244513025859143684985928108222",
+            "0.1333511387799773461995829147413278426493"
+          ],
+          "maximum_absolute_overlap": "0.01341600186209128295356237774182553041903",
+          "absolute_overlap_01": "0.01341600186209128295356237774182553041903"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "r5_quadratic",
+      "schmidt_rank": 5,
+      "integer_schmidt_weights": [
+        1,
+        4,
+        9,
+        16,
+        25
+      ],
+      "normalisation_denominator": 55,
+      "prime_q": 401,
+      "transversal_degree_upper_bound": 40,
+      "specialisation_extension_degree": 400,
+      "prime_conditions_checked_exactly": true,
+      "transversal_nonvanishing_scope": "analytic degree argument; no floating-point certificate claimed",
+      "unitarity_residual": "8.433758354584418579478859241016015206168e-81",
+      "fourier_geometric_sum_residual": "5.272025450559707952199880318133709300725e-81",
+      "normalisation_residual": "1.054219794323052322434857405127001900771e-81",
+      "max_absolute_gram_overlap": "0.02618145649444448957615756914964970722394",
+      "analytic_absolute_overlap_bound": "0.470063738691739636677702251862269758234",
+      "minimum_gram_eigenvalue": "0.9697880845971997496364263415024070373075",
+      "povm_sum_residual": "2.108458925081555363282065806035741167377e-81",
+      "hermiticity_residual": "2.470827642944653880706697043266410704932e-83",
+      "minimum_symmetrised_effect_eigenvalue": "-1.780614163980974942357053058755380331377e-81",
+      "max_exclusion_probability_absolute_value": "3.858926290302633180301010602320154265145e-82",
+      "max_wrong_label_probability_error_from_one_half": "1.054228049259719320489944648021326737947e-81",
+      "max_probability_imaginary_part": "7.584995153112967407898641321907690751759e-84",
+      "minimum_same_output_01_overlap": "0.001335718390084608241592155981288851091271",
+      "minimum_conditional_probability": "0.01818181818181818181818181818181818181818",
+      "nonorthogonality_identity_residual": "6.574460875696218475594677642633302186429e-82",
+      "branches": [
+        {
+          "outcome": 0,
+          "probabilities_by_hypothesis": [
+            "0.01818181818181818181818181818181818181818",
+            "0.07272915567905005287589582659654635768602",
+            "0.1636389132169070069288112056671499997558"
+          ],
+          "maximum_absolute_overlap": "0.001335718390084608241592155981288851091271",
+          "absolute_overlap_01": "0.001335718390084608241592155981288851091271"
+        },
+        {
+          "outcome": 1,
+          "probabilities_by_hypothesis": [
+            "0.07272727272727272727272727272727272727273",
+            "0.163637008947925801786850534935603693977",
+            "0.2909047248514055880170736103815037317542"
+          ],
+          "maximum_absolute_overlap": "0.001780977396617348737253877589556942086617",
+          "absolute_overlap_01": "0.001780977396617348737253877589556942086617"
+        },
+        {
+          "outcome": 2,
+          "probabilities_by_hypothesis": [
+            "0.1636363636363636363636363636363636363636",
+            "0.2909080080942449069053167787950205247517",
+            "0.4545211655333372503654673287128645047205"
+          ],
+          "maximum_absolute_overlap": "0.002003607250751775932880651373978535760203",
+          "absolute_overlap_01": "0.002003607250751775932880651373978535760203"
+        },
+        {
+          "outcome": 3,
+          "probabilities_by_hypothesis": [
+            "0.2909090909090909090909090909090909090909",
+            "0.4545393735362475276639418279840282659255",
+            "0.01820040823643898854801280143826762114795"
+          ],
+          "maximum_absolute_overlap": "0.02618145649444448957615756914964970722394",
+          "absolute_overlap_01": "0.002137191385939144201753780260977907647157"
+        },
+        {
+          "outcome": 4,
+          "probabilities_by_hypothesis": [
+            "0.4545454545454545454545454545454545454545",
+            "0.01818645374253171076799503168880115765977",
+            "0.07273478816191116614063505380021414262151"
+          ],
+          "maximum_absolute_overlap": "0.01335565436986315082960879840124652065739",
+          "absolute_overlap_01": "0.01335565436986315082960879840124652065739"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "r7_uniform",
+      "schmidt_rank": 7,
+      "integer_schmidt_weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "normalisation_denominator": 7,
+      "prime_q": 89,
+      "transversal_degree_upper_bound": 84,
+      "specialisation_extension_degree": 88,
+      "prime_conditions_checked_exactly": true,
+      "transversal_nonvanishing_scope": "analytic degree argument; no floating-point certificate claimed",
+      "unitarity_residual": "2.53012750637532557384365777230480456185e-80",
+      "fourier_geometric_sum_residual": "1.374534443752616866713129812080266320918e-80",
+      "normalisation_residual": "2.108439588646104644869714810254003801542e-81",
+      "max_absolute_gram_overlap": "0.01299412771054440661446035991944360333324",
+      "analytic_absolute_overlap_bound": "0.4235855263267136950736148381949891529255",
+      "minimum_gram_eigenvalue": "0.9756702894735550191566649784939117006651",
+      "povm_sum_residual": "2.108916732654153707419617170345955894302e-81",
+      "hermiticity_residual": "8.607373668685225049907793749542751608327e-83",
+      "minimum_symmetrised_effect_eigenvalue": "-1.460442117847778248063964738860643145193e-81",
+      "max_exclusion_probability_absolute_value": "2.504587719128638151691306035902495501323e-82",
+      "max_wrong_label_probability_error_from_one_half": "1.054369563641415480880405723030608131226e-81",
+      "max_probability_imaginary_part": "3.36068822483244991549557675006681268629e-83",
+      "minimum_same_output_01_overlap": "0.01174290101634611067683400664734771001077",
+      "minimum_conditional_probability": "0.1428571428571428571428571428571428571429",
+      "nonorthogonality_identity_residual": "1.28669048036825636600053425279723756004e-81",
+      "branches": [
+        {
+          "outcome": 0,
+          "probabilities_by_hypothesis": [
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429"
+          ],
+          "maximum_absolute_overlap": "0.01299412771054440661446035991944360333324",
+          "absolute_overlap_01": "0.01174290101634611067683400664734771001077"
+        },
+        {
+          "outcome": 1,
+          "probabilities_by_hypothesis": [
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429"
+          ],
+          "maximum_absolute_overlap": "0.01299412771054440661446035991944360333324",
+          "absolute_overlap_01": "0.01174290101634611067683400664734771001077"
+        },
+        {
+          "outcome": 2,
+          "probabilities_by_hypothesis": [
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429"
+          ],
+          "maximum_absolute_overlap": "0.01299412771054440661446035991944360333324",
+          "absolute_overlap_01": "0.01174290101634611067683400664734771001077"
+        },
+        {
+          "outcome": 3,
+          "probabilities_by_hypothesis": [
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429"
+          ],
+          "maximum_absolute_overlap": "0.01299412771054440661446035991944360333324",
+          "absolute_overlap_01": "0.01174290101634611067683400664734771001077"
+        },
+        {
+          "outcome": 4,
+          "probabilities_by_hypothesis": [
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429"
+          ],
+          "maximum_absolute_overlap": "0.01299412771054440661446035991944360333324",
+          "absolute_overlap_01": "0.01174290101634611067683400664734771001077"
+        },
+        {
+          "outcome": 5,
+          "probabilities_by_hypothesis": [
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429"
+          ],
+          "maximum_absolute_overlap": "0.01299412771054440661446035991944360333324",
+          "absolute_overlap_01": "0.01174290101634611067683400664734771001077"
+        },
+        {
+          "outcome": 6,
+          "probabilities_by_hypothesis": [
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429",
+            "0.1428571428571428571428571428571428571429"
+          ],
+          "maximum_absolute_overlap": "0.01299412771054440661446035991944360333324",
+          "absolute_overlap_01": "0.01174290101634611067683400664734771001077"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "r7_linear",
+      "schmidt_rank": 7,
+      "integer_schmidt_weights": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalisation_denominator": 28,
+      "prime_q": 223,
+      "transversal_degree_upper_bound": 84,
+      "specialisation_extension_degree": 222,
+      "prime_conditions_checked_exactly": true,
+      "transversal_nonvanishing_scope": "analytic degree argument; no floating-point certificate claimed",
+      "unitarity_residual": "2.53012750637532557384365777230480456185e-80",
+      "fourier_geometric_sum_residual": "1.371055805049751491921280068530703997688e-80",
+      "normalisation_residual": "2.108439588646104644869714810254003801542e-81",
+      "max_absolute_gram_overlap": "0.02287429048804431355374606541221124402267",
+      "analytic_absolute_overlap_bound": "0.4472756707838250210668543723217331592796",
+      "minimum_gram_eigenvalue": "0.971885525982695496749539359941930048113",
+      "povm_sum_residual": "2.108486593582504737257047041007797716183e-81",
+      "hermiticity_residual": "2.519700391772756907169499199842617231427e-83",
+      "minimum_symmetrised_effect_eigenvalue": "-1.420683097925758356036391387488420102892e-81",
+      "max_exclusion_probability_absolute_value": "5.329015270613245589239592412175768250861e-82",
+      "max_wrong_label_probability_error_from_one_half": "1.054231399656449914070516657251304618487e-81",
+      "max_probability_imaginary_part": "1.414854963487079596742077293217117563914e-83",
+      "minimum_same_output_01_overlap": "0.003293484601278725651823096529912354438211",
+      "minimum_conditional_probability": "0.03571428571428571428571428571428571428571",
+      "nonorthogonality_identity_residual": "1.933698353379270221153848418135543334956e-81",
+      "branches": [
+        {
+          "outcome": 0,
+          "probabilities_by_hypothesis": [
+            "0.03571428571428571428571428571428571428571",
+            "0.07143128275047857141629532013581938979392",
+            "0.1071469915285296016076570719265201492304"
+          ],
+          "maximum_absolute_overlap": "0.003293484601278725651823096529912354438211",
+          "absolute_overlap_01": "0.003293484601278725651823096529912354438211"
+        },
+        {
+          "outcome": 1,
+          "probabilities_by_hypothesis": [
+            "0.07142857142857142857142857142857142857143",
+            "0.1071439066759332323495953026711525801966",
+            "0.1428570090956471443273415911948966689933"
+          ],
+          "maximum_absolute_overlap": "0.003803041992863118775722482809740022479776",
+          "absolute_overlap_01": "0.003803041992863118775722482809740022479776"
+        },
+        {
+          "outcome": 2,
+          "probabilities_by_hypothesis": [
+            "0.1071428571428571428571428571428571428571",
+            "0.1428571261353021311204549252330940452809",
+            "0.1785670423187153408327543133649623319135"
+          ],
+          "maximum_absolute_overlap": "0.00403375516598196323149690450809153956337",
+          "absolute_overlap_01": "0.00403375516598196323149690450809153956337"
+        },
+        {
+          "outcome": 3,
+          "probabilities_by_hypothesis": [
+            "0.1428571428571428571428571428571428571429",
+            "0.1785703475520191228568664597882803079016",
+            "0.2142747457569083449886119515617303504673"
+          ],
+          "maximum_absolute_overlap": "0.004216689745887882232203312976764452817828",
+          "absolute_overlap_01": "0.004166056787716087538385188445848748950335"
+        },
+        {
+          "outcome": 4,
+          "probabilities_by_hypothesis": [
+            "0.1785714285714285714285714285714285714286",
+            "0.2142829821117185299692891927873567106035",
+            "0.2499678766391470325273790441401524974997"
+          ],
+          "maximum_absolute_overlap": "0.004364857280959382115360808539391944695537",
+          "absolute_overlap_01": "0.004251978140562247148212578642823256488663"
+        },
+        {
+          "outcome": 5,
+          "probabilities_by_hypothesis": [
+            "0.2142857142857142857142857142857142857143",
+            "0.2499919340120773893147389355687675132939",
+            "0.03574696151094858662010373793009149387822"
+          ],
+          "maximum_absolute_overlap": "0.02287429048804431355374606541221124402267",
+          "absolute_overlap_01": "0.004312334975587206542532380003232015770597"
+        },
+        {
+          "outcome": 6,
+          "probabilities_by_hypothesis": [
+            "0.25",
+            "0.03572242076247102297275986381552945292949",
+            "0.07143937315010394909615228988164650801751"
+          ],
+          "maximum_absolute_overlap": "0.01232192159538969524607673707062175555973",
+          "absolute_overlap_01": "0.01232192159538969524607673707062175555973"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "r7_geometric",
+      "schmidt_rank": 7,
+      "integer_schmidt_weights": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "normalisation_denominator": 127,
+      "prime_q": 641,
+      "transversal_degree_upper_bound": 84,
+      "specialisation_extension_degree": 640,
+      "prime_conditions_checked_exactly": true,
+      "transversal_nonvanishing_scope": "analytic degree argument; no floating-point certificate claimed",
+      "unitarity_residual": "2.740971465239936038330629253330204942005e-80",
+      "fourier_geometric_sum_residual": "1.370565913383070932242923385059791181918e-80",
+      "normalisation_residual": "3.162659382969156967304572215381005702313e-81",
+      "max_absolute_gram_overlap": "0.02566538366247968685009636182578269563881",
+      "analytic_absolute_overlap_bound": "0.4705037359510454772112539232368678266504",
+      "minimum_gram_eigenvalue": "0.9719990881056120673299031185172035607542",
+      "povm_sum_residual": "3.162659401042311784793159132668750336332e-81",
+      "hermiticity_residual": "3.294436857259538507608929391021880939909e-83",
+      "minimum_symmetrised_effect_eigenvalue": "-1.352055487002332596384127655532391558128e-81",
+      "max_exclusion_probability_absolute_value": "4.668398709927131801815553455463704006391e-82",
+      "max_wrong_label_probability_error_from_one_half": "1.581340077319673573537610988947677801465e-81",
+      "max_probability_imaginary_part": "6.879150200249514404465703794670343032027e-84",
+      "minimum_same_output_01_overlap": "0.001142686252118290328323721478872838747361",
+      "minimum_conditional_probability": "0.007874015748031496062992125984251968503937",
+      "nonorthogonality_identity_residual": "3.199324081424173864693449815986419266542e-81",
+      "branches": [
+        {
+          "outcome": 0,
+          "probabilities_by_hypothesis": [
+            "0.007874015748031496062992125984251968503937",
+            "0.0157486603234372734461032596334089864822",
+            "0.03149788042171647730855822727046539023212"
+          ],
+          "maximum_absolute_overlap": "0.001142686252118290328323721478872838747361",
+          "absolute_overlap_01": "0.001142686252118290328323721478872838747361"
+        },
+        {
+          "outcome": 1,
+          "probabilities_by_hypothesis": [
+            "0.01574803149606299212598425196850393700787",
+            "0.0314965177807222419928779848015919349216",
+            "0.06299369657017499949782280161731645147166"
+          ],
+          "maximum_absolute_overlap": "0.001142700815923002983942826879491166306731",
+          "absolute_overlap_01": "0.001142700815923002983942826879491166306731"
+        },
+        {
+          "outcome": 2,
+          "probabilities_by_hypothesis": [
+            "0.03149606299212598425196850393700787401575",
+            "0.06299251964645087277483721125765094563143",
+            "0.1259853315044681265322846129026306838683"
+          ],
+          "maximum_absolute_overlap": "0.001142705495330021226685737726530887260081",
+          "absolute_overlap_01": "0.001142705495330021226685737726530887260081"
+        },
+        {
+          "outcome": 3,
+          "probabilities_by_hypothesis": [
+            "0.0629921259842519685039370078740157480315",
+            "0.1259845237075873667408140617541415106859",
+            "0.251967462354330024131387508233263673405"
+          ],
+          "maximum_absolute_overlap": "0.001142707833559955887891314476850220905677",
+          "absolute_overlap_01": "0.001142707833559955887891314476850220905677"
+        },
+        {
+          "outcome": 4,
+          "probabilities_by_hypothesis": [
+            "0.125984251968503937007874015748031496063",
+            "0.2519682463401576296052568585968813767151",
+            "0.5039245693344635651390289253012860782968"
+          ],
+          "maximum_absolute_overlap": "0.001142709650046721659730511049901827193172",
+          "absolute_overlap_01": "0.001142709650046721659730511049901827193172"
+        },
+        {
+          "outcome": 5,
+          "probabilities_by_hypothesis": [
+            "0.251968503937007874015748031496062992126",
+            "0.5039338962559166221396408668975966939311",
+            "0.007880512112289295486214361634701020028097"
+          ],
+          "maximum_absolute_overlap": "0.02566538366247968685009636182578269563881",
+          "absolute_overlap_01": "0.001142712593840953719031689249828512729296"
+        },
+        {
+          "outcome": 6,
+          "probabilities_by_hypothesis": [
+            "0.503937007874015748031496062992125984252",
+            "0.007875635945727993300469757058728551632638",
+            "0.01575054770255751190470356304033670269797"
+          ],
+          "maximum_absolute_overlap": "0.01292694738211819316806882703946882222379",
+          "absolute_overlap_01": "0.01292694738211819316806882703946882222379"
+        }
+      ],
+      "passed": true
+    }
+  ]
+}

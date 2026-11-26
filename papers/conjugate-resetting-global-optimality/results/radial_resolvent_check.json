@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "status": "passed_finite_cases",
+  "scope": "Finite numerical checks of radial occupation and Laplace-resolvent identities only",
+  "not_certified": [
+    "The continuum analytic identity for every parameter",
+    "Global optimality among all renewal laws",
+    "Identification or uniqueness of all resetting laws",
+    "Interval-arithmetic error bounds"
+  ],
+  "design": {
+    "precision_decimal_digits": 40,
+    "criterion": "All independently evaluated pairs are finite and have absolute difference <= tolerance",
+    "absolute_tolerance": "1e-32",
+    "case_count": 10,
+    "parameters_fixed_before_execution": true
+  },
+  "environment": {
+    "python": "3.12.14",
+    "mpmath": "1.3.0"
+  },
+  "script_sha256": "798ec87dc1be4481bb3017cb21182fff629ef857ee587f2dce352a5026221a1e",
+  "results": [
+    {
+      "label": "finite_time_occupation",
+      "inputs": {
+        "dimension": 1,
+        "target_radius": "0.7",
+        "diffusivity": "1.3",
+        "position": "0.9",
+        "time": "0.05"
+      },
+      "left": "0.03110956562253870143958867406462936047473",
+      "right": "0.03110956562253870143958867406462936047473",
+      "absolute_error": "0.0",
+      "absolute_tolerance": "1e-32",
+      "passed": true
+    },
+    {
+      "label": "finite_time_occupation",
+      "inputs": {
+        "dimension": 1,
+        "target_radius": "0.7",
+        "diffusivity": "1.3",
+        "position": "2.1",
+        "time": "0.7"
+      },
+      "left": "0.6030200271718052272660127080198024811469",
+      "right": "0.6030200271718052272660127080198024811469",
+      "absolute_error": "1.147943701974890144500719274631099294745e-41",
+      "absolute_tolerance": "1e-32",
+      "passed": true
+    },
+    {
+      "label": "finite_time_occupation",
+      "inputs": {
+        "dimension": 1,
+        "target_radius": "0.7",
+        "diffusivity": "1.3",
+        "position": "5.0",
+        "time": "3.0"
+      },
+      "left": "2.876246872514648234037810990834550643776",
+      "right": "2.876246872514648234037810990834550643776",
+      "absolute_error": "0.0",
+      "absolute_tolerance": "1e-32",
+      "passed": true
+    },
+    {
+      "label": "finite_time_occupation",
+      "inputs": {
+        "dimension": 3,
+        "target_radius": "0.7",
+        "diffusivity": "1.3",
+        "position": "0.9",
+        "time": "0.05"
+      },
+      "left": "0.03530743992864121223079119093915616925812",
+      "right": "0.03530743992864121223079119093915616925812",
+      "absolute_error": "0.0",
+      "absolute_tolerance": "1e-32",
+      "passed": true
+    },
+    {
+      "label": "finite_time_occupation",
+      "inputs": {
+        "dimension": 3,
+        "target_radius": "0.7",
+        "diffusivity": "1.3",
+        "position": "2.1",
+        "time": "0.7"
+      },
+      "left": "0.667673342390601742422004236006600827049",
+      "right": "0.667673342390601742422004236006600827049",
+      "absolute_error": "0.0",
+      "absolute_tolerance": "1e-32",
+      "passed": true
+    },
+    {
+      "label": "finite_time_occupation",
+      "inputs": {
+        "dimension": 3,
+        "target_radius": "0.7",
+        "diffusivity": "1.3",
+        "position": "5.0",
+        "time": "3.0"
+      },
+      "left": "2.982674562152050752765293538716837090129",
+      "right": "2.982674562152050752765293538716837090129",
+      "absolute_error": "0.0",
+      "absolute_tolerance": "1e-32",
+      "passed": true
+    },
+    {
+      "label": "bessel_resolvent",
+      "inputs": {
+        "dimension": 2,
+        "target_radius": "0.7",
+        "diffusivity": "1.3",
+        "position": "2.1",
+        "laplace_parameter": "0.8"
+      },
+      "left": "0.9891566438242599476968948237387234085769",
+      "right": "0.9891566438242599476968948237387234085769",
+      "absolute_error": "0.0",
+      "absolute_tolerance": "1e-32",
+      "passed": true
+    },
+    {
+      "label": "bessel_resolvent",
+      "inputs": {
+        "dimension": 4,
+        "target_radius": "0.7",
+        "diffusivity": "1.3",
+        "position": "2.1",
+        "laplace_parameter": "0.8"
+      },
+      "left": "1.186026003120736646820736764992910708463",
+      "right": "1.186026003120736646820736764992910708463",
+      "absolute_error": "2.29588740394978028900143854926219858949e-41",
+      "absolute_tolerance": "1e-32",
+      "passed": true
+    },
+    {
+      "label": "bessel_resolvent",
+      "inputs": {
+        "dimension": 5,
+        "target_radius": "0.7",
+        "diffusivity": "1.3",
+        "position": "2.1",
+        "laplace_parameter": "0.8"
+      },
+      "left": "1.223617787288766152886576491978715803465",
+      "right": "1.223617787288766152886576491978715803465",
+      "absolute_error": "2.29588740394978028900143854926219858949e-41",
+      "absolute_tolerance": "1e-32",
+      "passed": true
+    },
+    {
+      "label": "bessel_resolvent",
+      "inputs": {
+        "dimension": 8,
+        "target_radius": "0.7",
+        "diffusivity": "1.3",
+        "position": "2.1",
+        "laplace_parameter": "0.8"
+      },
+      "left": "1.248688716295043996597839456656516629316",
+      "right": "1.248688716295043996597839456656516629316",
+      "absolute_error": "2.29588740394978028900143854926219858949e-41",
+      "absolute_tolerance": "1e-32",
+      "passed": true
+    }
+  ]
+}
