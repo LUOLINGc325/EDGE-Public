@@ -1,0 +1,7 @@
+Bloch characteristic: (x - 1/4)^3
+Constraint Jacobian: -63/8192
+Jordan square zz component: 3/112
+Jordan square rotation contraction: 3*sqrt(21)/224
+Marginal quadratic coefficient derivative: -s/(28*eta)
+Laplace cubic derivative: 9*(sqrt(3) + 6)/(8192*eta)
+All symbolic identities verified.

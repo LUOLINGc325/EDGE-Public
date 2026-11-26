@@ -1,0 +1,2 @@
+exhaustive chordal bipartite matrices: 596 passed
+seeded inputs: 179 chordal bipartite passed; 1 nonchordal inputs excluded

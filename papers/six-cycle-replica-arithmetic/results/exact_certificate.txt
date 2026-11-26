@@ -1,0 +1,7 @@
+n=3 H(n)=2 rank=572 S/log(2)=286/81
+n=5 H(n)=108 rank=8288 S/log(2)=2072/625
+n=7 H(n)=510 rank=46812 S/log(2)=7802/2401
+n=9 H(n)=2744 rank=167264 S/log(2)=20908/6561
+n=11 H(n)=2490 rank=466940 S/log(2)=46694/14641
+raw replica bit-elimination agrees at n=3,5
+field mode elimination and polynomial gcd counts agree at every tested n

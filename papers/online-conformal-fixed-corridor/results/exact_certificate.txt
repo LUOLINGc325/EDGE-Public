@@ -1,0 +1,9 @@
+Pathwise comparison against exact dynamic programming: 2048 words of length 9.
+Width one: alpha=1/2, lower=1/2, T=12, V_T/T=1/4.
+Width one: alpha=1/3, lower=1/2, T=18, V_T/T=4/9.
+Width one: alpha=2/5, lower=1/5, T=30, V_T/T=48/125.
+Symmetric alpha=1/2: kappa=1/2, invariant mean=1/4.
+Symmetric alpha=1/2: kappa=3/4, invariant mean=1/4.
+Symmetric alpha=1/2: kappa=1, invariant mean=1/8.
+Symmetric alpha=1/2: kappa=3/2, invariant mean=1/12.
+Symmetric alpha=1/2: kappa=2, invariant mean=1/16.

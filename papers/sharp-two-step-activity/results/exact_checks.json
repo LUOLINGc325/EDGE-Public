@@ -1,0 +1,11 @@
+{
+  "script": "code/checks.py",
+  "arithmetic": "fractions.Fraction",
+  "status": "pass",
+  "integer_degree_optimizations": 158,
+  "connected_layered_graphs": 72,
+  "degree_two_cycle_cases": 7020,
+  "finite_cubic_order": 750,
+  "second_activity_strict_lower_bound": "1014317668429/1842278400000",
+  "mean_activity_strict_lower_bound": "1935452262733/3684556800000"
+}

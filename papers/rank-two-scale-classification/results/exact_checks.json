@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "arithmetic": "exact rationals",
+  "isolated_scale_pairs_checked": 300,
+  "triangular_derivative_grid_points": 5695,
+  "nilpotent_coefficient_determinant": "45/256",
+  "orthogonal_cutoff": "32/35",
+  "singular_triangular_ratio_at_one_half": "9/140",
+  "singular_triangular_ratio_at_nine_tenths": "1089/1036",
+  "singular_triangular_cutoff_enclosure": [
+    "601133763/671088640",
+    "150283441/167772160"
+  ]
+}

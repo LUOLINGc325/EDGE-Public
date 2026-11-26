@@ -1,0 +1,72 @@
+{
+  "rounding_grid_fraction_checks": 655,
+  "exact_weighted_pav_examples": [
+    {
+      "J": 1,
+      "z": "2",
+      "trained_standardized_slope": "45/2",
+      "log_score": "15/8"
+    },
+    {
+      "J": 2,
+      "z": "8",
+      "trained_standardized_slope": "27",
+      "log_score": "255/8"
+    },
+    {
+      "J": 5,
+      "z": "10/3",
+      "trained_standardized_slope": "24",
+      "log_score": "16/3"
+    }
+  ],
+  "two_power_fixture": {
+    "n": 1000000000000,
+    "B": 1000000000000,
+    "nominal_alpha": "99999/100000",
+    "strict_score_lower_bound": "250006249999999999999999/250000000000000000000000",
+    "failure_upper_bound": "23441/2000000000000"
+  },
+  "arbitrary_level_parameters": [
+    {
+      "nominal_alpha": "1/20",
+      "L": 138241,
+      "exposure_root": 276484,
+      "grid_size": 138243,
+      "K0_power_of_two_exponent": 19110574081,
+      "scaled_failure_upper_coefficient": "41/1280"
+    },
+    {
+      "nominal_alpha": "1/10",
+      "L": 69121,
+      "exposure_root": 138244,
+      "grid_size": 69123,
+      "K0_power_of_two_exponent": 4777712641,
+      "scaled_failure_upper_coefficient": "11/320"
+    },
+    {
+      "nominal_alpha": "1/2",
+      "L": 13825,
+      "exposure_root": 27652,
+      "grid_size": 13827,
+      "K0_power_of_two_exponent": 191130625,
+      "scaled_failure_upper_coefficient": "7/64"
+    },
+    {
+      "nominal_alpha": "3/4",
+      "L": 9217,
+      "exposure_root": 18436,
+      "grid_size": 9219,
+      "K0_power_of_two_exponent": 84953089,
+      "scaled_failure_upper_coefficient": "53/256"
+    },
+    {
+      "nominal_alpha": "99999/100000",
+      "L": 6914,
+      "exposure_root": 13830,
+      "grid_size": 6916,
+      "K0_power_of_two_exponent": 47803396,
+      "scaled_failure_upper_coefficient": "10999800001/32000000000"
+    }
+  ]
+}

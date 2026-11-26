@@ -1,0 +1,57 @@
+{
+  "status": "pass",
+  "arithmetic": "Gaussian integers and exact rational scalars",
+  "seed": 20261124,
+  "symbolic_identity_count": 8,
+  "symbolic_identities": [
+    "order_4_trace_expansion",
+    "order_5_trace_expansion",
+    "quartic_commutator_identity",
+    "quintic_commutator_identity",
+    "quartic_positive_congruence_identity",
+    "quintic_two_basis_identity",
+    "weighted_covariance_4_2_1",
+    "weighted_covariance_5_5_5"
+  ],
+  "orders": {
+    "4": {
+      "single_matrix_pairs": 54,
+      "dense_xor_pairs": 144,
+      "equality_pairs": 100,
+      "strict_pairs": 44,
+      "three_input_checks": 5,
+      "largest_single_dimension": 4,
+      "largest_two_input_dimension": 16,
+      "named_noncommutative_witness": {
+        "invariants": [
+          "5/17",
+          "4/17",
+          "2/17"
+        ],
+        "input_K": "47/136",
+        "output_K": "25/136",
+        "gap": "13/4046"
+      }
+    },
+    "5": {
+      "single_matrix_pairs": 54,
+      "dense_xor_pairs": 144,
+      "equality_pairs": 100,
+      "strict_pairs": 44,
+      "three_input_checks": 5,
+      "largest_single_dimension": 4,
+      "largest_two_input_dimension": 16,
+      "named_noncommutative_witness": {
+        "invariants": [
+          "3/11",
+          "2/11",
+          "1/11"
+        ],
+        "input_K": "41/176",
+        "output_K": "191/1936",
+        "gap": "5/968"
+      }
+    }
+  },
+  "coverage": "Universal formal cyclic-word equalities plus the listed finite PSD matrix checks. Positivity and all-dimensional entropy theorems rely on the written proof; no proof-assistant certification is claimed."
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "arithmetic": "integer only",
+  "states_verified": 1330,
+  "claim_kind": "threshold_separation",
+  "scale": 1000,
+  "root_payoffs_scaled": {
+    "full": -568,
+    "postponing": -568,
+    "two_phase": 306,
+    "two_phase_postponing": 306,
+    "execution_suffix": 27405,
+    "execution_suffix_postponing": 27405
+  },
+  "full_vs_two_phase_differing_states": [
+    [
+      18,
+      0,
+      0
+    ]
+  ],
+  "largest_E_minus_known_long": -3000,
+  "scope": "finite counterexample; Bellman model correspondence is a separate mathematical obligation"
+}

@@ -1,0 +1,4 @@
+forms=12 directions=36 singletons_histogram={8: 30, 10: 6}
+all direction pairs have a unit 2x2 minor modulo 3
+bound H(3^j) <= 5670 (3^j)^3
+E(9)=167264 E(11)=466940 (S11-S9)/log(2)=245306/96059601

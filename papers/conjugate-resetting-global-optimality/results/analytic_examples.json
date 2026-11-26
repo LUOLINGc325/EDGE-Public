@@ -1,0 +1,12 @@
+{
+  "status": "generated_from_exact_formulas",
+  "diffusion": 1,
+  "reference_time_scale": 1,
+  "exponential_reference_mean": "1",
+  "deterministic_reference_mean": "0.942809041582063365867792482806465385713114583584632048784453",
+  "mixed_exponential_mean": "1.02258872223978123766892848583270627230200053744102101648272",
+  "infinite_mean_reset_reference_mean": "6.21305648843398359263827635900942616176636126307954683973286",
+  "plot_a": "Different target distributions, not a performance comparison on a common target.",
+  "plot_b": "Within exponential competitors only; the unrestricted theorem is analytic.",
+  "no_simulations": true
+}

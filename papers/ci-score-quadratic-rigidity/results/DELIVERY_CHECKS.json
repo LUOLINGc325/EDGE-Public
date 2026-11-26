@@ -1,0 +1,30 @@
+{
+  "manuscript_sha256": "2c086674b6587bf0742c6093b6a8cc0254b8af0428bfcf8661340e6044db175f",
+  "html_sha256": "8598268597ee62299bd3744e9178782aca3fd60cc1055645779c929fa92516af",
+  "python": "3.12.14",
+  "pandoc": "pandoc 3.1.11.1",
+  "paper_certificate": "passed",
+  "task_plan_schema": "passed",
+  "task_board_validation": "passed",
+  "source_ids_valid": true,
+  "exact_quoted_excerpts_valid": true,
+  "task_files": 30,
+  "board_files": 33,
+  "completed_receipts": 0,
+  "formalization_code_written": false,
+  "Lean_executed": false,
+  "scientific_certificate_files": [
+    "results/phase_certificates.json",
+    "results/full_quadratic_certificates.json"
+  ],
+  "browser_visual_validation": "not_run_missing_browser_binary",
+  "delivery_mode": "GitHub connector atomic tree/commit/ref with expected-head lease",
+  "native_safe_push_executed": false,
+  "native_gitleaks_history_scan_executed": false,
+  "sensitive_material_review": "Only generated manuscript, source bibliography, case metadata, exact arithmetic scripts/results and task plans are staged; no credentials, repository copies or third-party full texts are included.",
+  "generated_artifact_signature_scan": {
+    "status": "passed",
+    "matches": 0,
+    "scope": "Generated case text only; not gitleaks or historical repository scan"
+  }
+}

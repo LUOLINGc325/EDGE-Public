@@ -1,0 +1,23 @@
+{
+  "exact_recovery_checks": 12,
+  "partition_count_checks": 6,
+  "approximation_checks": [
+    {
+      "normalized_exact": "2/3",
+      "dp_states": 8
+    },
+    {
+      "normalized_exact": "3/10",
+      "dp_states": 8
+    },
+    {
+      "normalized_exact": "3/1000000",
+      "dp_states": 8
+    },
+    {
+      "normalized_exact": "889/1100",
+      "dp_states": 32
+    }
+  ],
+  "cactus_factorization": "225/1"
+}

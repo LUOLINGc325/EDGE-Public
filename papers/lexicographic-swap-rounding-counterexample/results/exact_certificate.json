@@ -1,0 +1,905 @@
+{
+  "result": "PASS",
+  "matroid": "U_{3,6}",
+  "ordered_bases": [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      1,
+      2,
+      4
+    ],
+    [
+      3,
+      5,
+      6
+    ]
+  ],
+  "exchange_rule": "i=min(left-right); j=min(right-left)",
+  "probability_rule": "replace right j by left i with probability left_weight/(left_weight+right_weight); otherwise replace left i by right j",
+  "witness": "Cov(X3, X2*X5) = a*b*c > 0 for a,b,c>0 and a+b+c=1",
+  "proof_scope": "Four rational instances checked here; the accompanying analytic proof establishes the whole positive simplex.",
+  "samples": [
+    {
+      "weights": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "marginals": {
+        "1": "2/3",
+        "2": "2/3",
+        "3": "2/3",
+        "4": "1/3",
+        "5": "1/3",
+        "6": "1/3"
+      },
+      "event_probability": "1/9",
+      "joint_probability": "1/9",
+      "covariance": "1/27",
+      "conditional_event_given_X3_zero": "0",
+      "conditional_event_given_X3_one": "1/6",
+      "distinct_output_bases": 11,
+      "execution_paths": 12,
+      "cylinder_inequalities_checked": 128,
+      "law": [
+        {
+          "base": [
+            1,
+            2,
+            3
+          ],
+          "probability": "2/9"
+        },
+        {
+          "base": [
+            1,
+            2,
+            4
+          ],
+          "probability": "4/27"
+        },
+        {
+          "base": [
+            1,
+            2,
+            6
+          ],
+          "probability": "2/27"
+        },
+        {
+          "base": [
+            1,
+            3,
+            6
+          ],
+          "probability": "1/9"
+        },
+        {
+          "base": [
+            1,
+            4,
+            5
+          ],
+          "probability": "2/27"
+        },
+        {
+          "base": [
+            1,
+            5,
+            6
+          ],
+          "probability": "1/27"
+        },
+        {
+          "base": [
+            2,
+            3,
+            4
+          ],
+          "probability": "2/27"
+        },
+        {
+          "base": [
+            2,
+            3,
+            5
+          ],
+          "probability": "1/9"
+        },
+        {
+          "base": [
+            2,
+            3,
+            6
+          ],
+          "probability": "1/27"
+        },
+        {
+          "base": [
+            3,
+            4,
+            5
+          ],
+          "probability": "1/27"
+        },
+        {
+          "base": [
+            3,
+            5,
+            6
+          ],
+          "probability": "2/27"
+        }
+      ]
+    },
+    {
+      "weights": [
+        "1/6",
+        "1/3",
+        "1/2"
+      ],
+      "marginals": {
+        "1": "1/2",
+        "2": "1/2",
+        "3": "2/3",
+        "4": "1/3",
+        "5": "1/2",
+        "6": "1/2"
+      },
+      "event_probability": "1/12",
+      "joint_probability": "1/12",
+      "covariance": "1/36",
+      "conditional_event_given_X3_zero": "0",
+      "conditional_event_given_X3_one": "1/8",
+      "distinct_output_bases": 11,
+      "execution_paths": 12,
+      "cylinder_inequalities_checked": 128,
+      "law": [
+        {
+          "base": [
+            1,
+            2,
+            3
+          ],
+          "probability": "1/12"
+        },
+        {
+          "base": [
+            1,
+            2,
+            4
+          ],
+          "probability": "1/12"
+        },
+        {
+          "base": [
+            1,
+            2,
+            6
+          ],
+          "probability": "1/12"
+        },
+        {
+          "base": [
+            1,
+            3,
+            6
+          ],
+          "probability": "1/12"
+        },
+        {
+          "base": [
+            1,
+            4,
+            5
+          ],
+          "probability": "1/12"
+        },
+        {
+          "base": [
+            1,
+            5,
+            6
+          ],
+          "probability": "1/12"
+        },
+        {
+          "base": [
+            2,
+            3,
+            4
+          ],
+          "probability": "1/12"
+        },
+        {
+          "base": [
+            2,
+            3,
+            5
+          ],
+          "probability": "1/12"
+        },
+        {
+          "base": [
+            2,
+            3,
+            6
+          ],
+          "probability": "1/12"
+        },
+        {
+          "base": [
+            3,
+            4,
+            5
+          ],
+          "probability": "1/12"
+        },
+        {
+          "base": [
+            3,
+            5,
+            6
+          ],
+          "probability": "1/6"
+        }
+      ]
+    },
+    {
+      "weights": [
+        "1/2",
+        "1/4",
+        "1/4"
+      ],
+      "marginals": {
+        "1": "3/4",
+        "2": "3/4",
+        "3": "3/4",
+        "4": "1/4",
+        "5": "1/4",
+        "6": "1/4"
+      },
+      "event_probability": "1/8",
+      "joint_probability": "1/8",
+      "covariance": "1/32",
+      "conditional_event_given_X3_zero": "0",
+      "conditional_event_given_X3_one": "1/6",
+      "distinct_output_bases": 11,
+      "execution_paths": 12,
+      "cylinder_inequalities_checked": 128,
+      "law": [
+        {
+          "base": [
+            1,
+            2,
+            3
+          ],
+          "probability": "3/8"
+        },
+        {
+          "base": [
+            1,
+            2,
+            4
+          ],
+          "probability": "9/64"
+        },
+        {
+          "base": [
+            1,
+            2,
+            6
+          ],
+          "probability": "3/64"
+        },
+        {
+          "base": [
+            1,
+            3,
+            6
+          ],
+          "probability": "1/8"
+        },
+        {
+          "base": [
+            1,
+            4,
+            5
+          ],
+          "probability": "3/64"
+        },
+        {
+          "base": [
+            1,
+            5,
+            6
+          ],
+          "probability": "1/64"
+        },
+        {
+          "base": [
+            2,
+            3,
+            4
+          ],
+          "probability": "3/64"
+        },
+        {
+          "base": [
+            2,
+            3,
+            5
+          ],
+          "probability": "1/8"
+        },
+        {
+          "base": [
+            2,
+            3,
+            6
+          ],
+          "probability": "1/64"
+        },
+        {
+          "base": [
+            3,
+            4,
+            5
+          ],
+          "probability": "1/64"
+        },
+        {
+          "base": [
+            3,
+            5,
+            6
+          ],
+          "probability": "3/64"
+        }
+      ]
+    },
+    {
+      "weights": [
+        "2/7",
+        "3/7",
+        "2/7"
+      ],
+      "marginals": {
+        "1": "5/7",
+        "2": "5/7",
+        "3": "4/7",
+        "4": "3/7",
+        "5": "2/7",
+        "6": "2/7"
+      },
+      "event_probability": "4/49",
+      "joint_probability": "4/49",
+      "covariance": "12/343",
+      "conditional_event_given_X3_zero": "0",
+      "conditional_event_given_X3_one": "1/7",
+      "distinct_output_bases": 11,
+      "execution_paths": 12,
+      "cylinder_inequalities_checked": 128,
+      "law": [
+        {
+          "base": [
+            1,
+            2,
+            3
+          ],
+          "probability": "10/49"
+        },
+        {
+          "base": [
+            1,
+            2,
+            4
+          ],
+          "probability": "75/343"
+        },
+        {
+          "base": [
+            1,
+            2,
+            6
+          ],
+          "probability": "30/343"
+        },
+        {
+          "base": [
+            1,
+            3,
+            6
+          ],
+          "probability": "4/49"
+        },
+        {
+          "base": [
+            1,
+            4,
+            5
+          ],
+          "probability": "30/343"
+        },
+        {
+          "base": [
+            1,
+            5,
+            6
+          ],
+          "probability": "12/343"
+        },
+        {
+          "base": [
+            2,
+            3,
+            4
+          ],
+          "probability": "30/343"
+        },
+        {
+          "base": [
+            2,
+            3,
+            5
+          ],
+          "probability": "4/49"
+        },
+        {
+          "base": [
+            2,
+            3,
+            6
+          ],
+          "probability": "12/343"
+        },
+        {
+          "base": [
+            3,
+            4,
+            5
+          ],
+          "probability": "12/343"
+        },
+        {
+          "base": [
+            3,
+            5,
+            6
+          ],
+          "probability": "16/343"
+        }
+      ]
+    }
+  ],
+  "equal_weight_execution_tree": [
+    {
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "final": [
+        1,
+        2,
+        3
+      ],
+      "probability": "2/9",
+      "first_merge": [
+        [
+          3,
+          4,
+          "retain_left_element"
+        ]
+      ],
+      "second_merge": [
+        [
+          1,
+          5,
+          "retain_left_element"
+        ],
+        [
+          2,
+          6,
+          "retain_left_element"
+        ]
+      ]
+    },
+    {
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "final": [
+        1,
+        3,
+        6
+      ],
+      "probability": "1/9",
+      "first_merge": [
+        [
+          3,
+          4,
+          "retain_left_element"
+        ]
+      ],
+      "second_merge": [
+        [
+          1,
+          5,
+          "retain_left_element"
+        ],
+        [
+          2,
+          6,
+          "retain_right_element"
+        ]
+      ]
+    },
+    {
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "final": [
+        2,
+        3,
+        5
+      ],
+      "probability": "1/9",
+      "first_merge": [
+        [
+          3,
+          4,
+          "retain_left_element"
+        ]
+      ],
+      "second_merge": [
+        [
+          1,
+          5,
+          "retain_right_element"
+        ],
+        [
+          2,
+          6,
+          "retain_left_element"
+        ]
+      ]
+    },
+    {
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "final": [
+        3,
+        5,
+        6
+      ],
+      "probability": "1/18",
+      "first_merge": [
+        [
+          3,
+          4,
+          "retain_left_element"
+        ]
+      ],
+      "second_merge": [
+        [
+          1,
+          5,
+          "retain_right_element"
+        ],
+        [
+          2,
+          6,
+          "retain_right_element"
+        ]
+      ]
+    },
+    {
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "final": [
+        1,
+        2,
+        4
+      ],
+      "probability": "4/27",
+      "first_merge": [
+        [
+          3,
+          4,
+          "retain_right_element"
+        ]
+      ],
+      "second_merge": [
+        [
+          1,
+          3,
+          "retain_left_element"
+        ],
+        [
+          2,
+          5,
+          "retain_left_element"
+        ],
+        [
+          4,
+          6,
+          "retain_left_element"
+        ]
+      ]
+    },
+    {
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "final": [
+        1,
+        2,
+        6
+      ],
+      "probability": "2/27",
+      "first_merge": [
+        [
+          3,
+          4,
+          "retain_right_element"
+        ]
+      ],
+      "second_merge": [
+        [
+          1,
+          3,
+          "retain_left_element"
+        ],
+        [
+          2,
+          5,
+          "retain_left_element"
+        ],
+        [
+          4,
+          6,
+          "retain_right_element"
+        ]
+      ]
+    },
+    {
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "final": [
+        1,
+        4,
+        5
+      ],
+      "probability": "2/27",
+      "first_merge": [
+        [
+          3,
+          4,
+          "retain_right_element"
+        ]
+      ],
+      "second_merge": [
+        [
+          1,
+          3,
+          "retain_left_element"
+        ],
+        [
+          2,
+          5,
+          "retain_right_element"
+        ],
+        [
+          4,
+          6,
+          "retain_left_element"
+        ]
+      ]
+    },
+    {
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "final": [
+        1,
+        5,
+        6
+      ],
+      "probability": "1/27",
+      "first_merge": [
+        [
+          3,
+          4,
+          "retain_right_element"
+        ]
+      ],
+      "second_merge": [
+        [
+          1,
+          3,
+          "retain_left_element"
+        ],
+        [
+          2,
+          5,
+          "retain_right_element"
+        ],
+        [
+          4,
+          6,
+          "retain_right_element"
+        ]
+      ]
+    },
+    {
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "final": [
+        2,
+        3,
+        4
+      ],
+      "probability": "2/27",
+      "first_merge": [
+        [
+          3,
+          4,
+          "retain_right_element"
+        ]
+      ],
+      "second_merge": [
+        [
+          1,
+          3,
+          "retain_right_element"
+        ],
+        [
+          2,
+          5,
+          "retain_left_element"
+        ],
+        [
+          4,
+          6,
+          "retain_left_element"
+        ]
+      ]
+    },
+    {
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "final": [
+        2,
+        3,
+        6
+      ],
+      "probability": "1/27",
+      "first_merge": [
+        [
+          3,
+          4,
+          "retain_right_element"
+        ]
+      ],
+      "second_merge": [
+        [
+          1,
+          3,
+          "retain_right_element"
+        ],
+        [
+          2,
+          5,
+          "retain_left_element"
+        ],
+        [
+          4,
+          6,
+          "retain_right_element"
+        ]
+      ]
+    },
+    {
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "final": [
+        3,
+        4,
+        5
+      ],
+      "probability": "1/27",
+      "first_merge": [
+        [
+          3,
+          4,
+          "retain_right_element"
+        ]
+      ],
+      "second_merge": [
+        [
+          1,
+          3,
+          "retain_right_element"
+        ],
+        [
+          2,
+          5,
+          "retain_right_element"
+        ],
+        [
+          4,
+          6,
+          "retain_left_element"
+        ]
+      ]
+    },
+    {
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "final": [
+        3,
+        5,
+        6
+      ],
+      "probability": "1/54",
+      "first_merge": [
+        [
+          3,
+          4,
+          "retain_right_element"
+        ]
+      ],
+      "second_merge": [
+        [
+          1,
+          3,
+          "retain_right_element"
+        ],
+        [
+          2,
+          5,
+          "retain_right_element"
+        ],
+        [
+          4,
+          6,
+          "retain_right_element"
+        ]
+      ]
+    }
+  ]
+}

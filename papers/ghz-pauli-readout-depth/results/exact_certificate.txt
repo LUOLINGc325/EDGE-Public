@@ -1,0 +1,8 @@
+one-qubit Pauli frame eigenvalues: 1 1/3 1/3 1/3
+block_length=1 settings=3 blocked=1 generic_fisher_fraction=2/3
+block_length=2 settings=9 blocked=2 generic_fisher_fraction=7/9
+block_length=3 settings=27 blocked=4 generic_fisher_fraction=23/27
+block_length=4 settings=81 blocked=8 generic_fisher_fraction=73/81
+block_length=5 settings=243 blocked=16 generic_fisher_fraction=227/243
+block_length=6 settings=729 blocked=32 generic_fisher_fraction=697/729
+two length-three blocks: generic_fisher_fraction=529/729

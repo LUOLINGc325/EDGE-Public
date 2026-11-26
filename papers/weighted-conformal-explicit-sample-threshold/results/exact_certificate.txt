@@ -1,0 +1,6 @@
+Lim Example 13 fixed weight B=10
+Grid regions: below, window, window, window, window, window, window, above
+Population grid identities, switch moments and covariance formulas checked exactly.
+Gaussian coefficient exceeds 9/50, with a rational upper bound on pi.
+Coarse power-only threshold: 10^282.
+Refined monotone error bound certifies n0 = 10^40.

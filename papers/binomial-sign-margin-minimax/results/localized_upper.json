@@ -1,0 +1,232 @@
+{
+  "status": "finite_exact_algebra_checks_and_float_diagnostics",
+  "scope": "Explicit rational derivative-kernel estimator; not a replacement for its all-parameter analytic proof.",
+  "proof_file": "manuscript/localized_upper.md",
+  "proof_sha256_at_run": "0032355bdb7c5f83f034d856ba70c074259b523234752f01220e734c86b4a561",
+  "exact_arithmetic": [
+    "polynomial construction",
+    "normalizing integral",
+    "inverse Bernstein coefficients",
+    "derivative coefficient identities",
+    "antisymmetry",
+    "five reproduction points per case"
+  ],
+  "floating_point_only": [
+    "displayed coefficient values",
+    "pi/exponential bound ratios",
+    "binomial probabilities",
+    "finite-grid variance lower approximations"
+  ],
+  "certified_interval_arithmetic": false,
+  "number_of_cases": 8,
+  "total_exact_derivative_identities": 856,
+  "total_exact_reproduction_checks": 40,
+  "rows": [
+    {
+      "n": 33,
+      "odd_m": 1,
+      "r": 2,
+      "degree_of_kernel": 0,
+      "degree_of_sign_polynomial": 1,
+      "normalization_integral_exact": "1",
+      "all_n_derivative_identities_exact": true,
+      "endpoint_and_antisymmetry_checks_exact": true,
+      "exact_reproduction_checks": 5,
+      "max_abs_inverse_coefficient_float": 1.0,
+      "log_ratio_to_L13_bound_float": -2.09861228866811,
+      "log_ratio_to_L18_bound_float": -7.69534938035456,
+      "variance_diagnostics": [
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance_lower_approximation": 1.0,
+          "continuum_upper_certificate": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance_lower_approximation": 1.0,
+          "continuum_upper_certificate": false
+        }
+      ]
+    },
+    {
+      "n": 33,
+      "odd_m": 3,
+      "r": 2,
+      "degree_of_kernel": 8,
+      "degree_of_sign_polynomial": 9,
+      "normalization_integral_exact": "8987/25515",
+      "all_n_derivative_identities_exact": true,
+      "endpoint_and_antisymmetry_checks_exact": true,
+      "exact_reproduction_checks": 5,
+      "max_abs_inverse_coefficient_float": 1.0040005726709533,
+      "log_ratio_to_L13_bound_float": -9.904655139610764,
+      "log_ratio_to_L18_bound_float": -15.776313136019217,
+      "variance_diagnostics": [
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance_lower_approximation": 1.0,
+          "continuum_upper_certificate": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance_lower_approximation": 1.0,
+          "continuum_upper_certificate": false
+        }
+      ]
+    },
+    {
+      "n": 65,
+      "odd_m": 7,
+      "r": 2,
+      "degree_of_kernel": 24,
+      "degree_of_sign_polynomial": 25,
+      "normalization_integral_exact": "86044723883/573906408075",
+      "all_n_derivative_identities_exact": true,
+      "endpoint_and_antisymmetry_checks_exact": true,
+      "exact_reproduction_checks": 5,
+      "max_abs_inverse_coefficient_float": 1.2291451065890397,
+      "log_ratio_to_L13_bound_float": -21.933072443627548,
+      "log_ratio_to_L18_bound_float": -30.792996939965086,
+      "variance_diagnostics": [
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance_lower_approximation": 1.0065034130993133,
+          "continuum_upper_certificate": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance_lower_approximation": 1.00203019401463,
+          "continuum_upper_certificate": false
+        }
+      ]
+    },
+    {
+      "n": 129,
+      "odd_m": 15,
+      "r": 2,
+      "degree_of_kernel": 56,
+      "degree_of_sign_polynomial": 57,
+      "normalization_integral_exact": "3630043918212039828308387/51969523659093999455371875",
+      "all_n_derivative_identities_exact": true,
+      "endpoint_and_antisymmetry_checks_exact": true,
+      "exact_reproduction_checks": 5,
+      "max_abs_inverse_coefficient_float": 33.691129275470296,
+      "log_ratio_to_L13_bound_float": -45.37793290711867,
+      "log_ratio_to_L18_bound_float": -55.829668222099485,
+      "variance_diagnostics": [
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance_lower_approximation": 95.82322315842224,
+          "continuum_upper_certificate": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance_lower_approximation": 25.578566518774892,
+          "continuum_upper_certificate": false
+        }
+      ]
+    },
+    {
+      "n": 257,
+      "odd_m": 31,
+      "r": 2,
+      "degree_of_kernel": 120,
+      "degree_of_sign_polynomial": 121,
+      "normalization_integral_exact": "165358488788867785731655931009086027111553769992658979/4894460478677459256422454386681583253429817375118970275",
+      "all_n_derivative_identities_exact": true,
+      "endpoint_and_antisymmetry_checks_exact": true,
+      "exact_reproduction_checks": 5,
+      "max_abs_inverse_coefficient_float": 18493983.638583254,
+      "log_ratio_to_L13_bound_float": -92.53603041314635,
+      "log_ratio_to_L18_bound_float": -103.96773196583119,
+      "variance_diagnostics": [
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance_lower_approximation": 35102170349868.89,
+          "continuum_upper_certificate": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance_lower_approximation": 10289714668236.016,
+          "continuum_upper_certificate": false
+        }
+      ]
+    },
+    {
+      "n": 49,
+      "odd_m": 3,
+      "r": 3,
+      "degree_of_kernel": 12,
+      "degree_of_sign_polynomial": 13,
+      "normalization_integral_exact": "215513/729729",
+      "all_n_derivative_identities_exact": true,
+      "endpoint_and_antisymmetry_checks_exact": true,
+      "exact_reproduction_checks": 5,
+      "max_abs_inverse_coefficient_float": 1.0011542829373155,
+      "log_ratio_to_L13_bound_float": -14.401921883159295,
+      "log_ratio_to_L18_bound_float": -21.849610780000692,
+      "variance_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance_lower_approximation": 1.0,
+          "continuum_upper_certificate": false
+        }
+      ]
+    },
+    {
+      "n": 97,
+      "odd_m": 7,
+      "r": 3,
+      "degree_of_kernel": 36,
+      "degree_of_sign_polynomial": 37,
+      "normalization_integral_exact": "38661509813196887/311800864579379175",
+      "all_n_derivative_identities_exact": true,
+      "endpoint_and_antisymmetry_checks_exact": true,
+      "exact_reproduction_checks": 5,
+      "max_abs_inverse_coefficient_float": 1.2059236128516626,
+      "log_ratio_to_L13_bound_float": -32.706595924759625,
+      "log_ratio_to_L18_bound_float": -44.02755571714057,
+      "variance_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance_lower_approximation": 1.0000909610963906,
+          "continuum_upper_certificate": false
+        }
+      ]
+    },
+    {
+      "n": 193,
+      "odd_m": 15,
+      "r": 3,
+      "degree_of_kernel": 84,
+      "degree_of_sign_polynomial": 85,
+      "normalization_integral_exact": "87692794635835716401681236996881550571/1521015874511578872173827414974561796875",
+      "all_n_derivative_identities_exact": true,
+      "endpoint_and_antisymmetry_checks_exact": true,
+      "exact_reproduction_checks": 5,
+      "max_abs_inverse_coefficient_float": 193.9005832512494,
+      "log_ratio_to_L13_bound_float": -68.01612064988583,
+      "log_ratio_to_L18_bound_float": -80.93615498585294,
+      "variance_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance_lower_approximation": 43.91308137105004,
+          "continuum_upper_certificate": false
+        }
+      ]
+    }
+  ]
+}

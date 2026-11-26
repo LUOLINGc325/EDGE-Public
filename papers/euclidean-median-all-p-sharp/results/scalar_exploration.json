@@ -1,0 +1,266 @@
+{
+  "status": "exploratory_only",
+  "grid_size": 501,
+  "rows": [
+    {
+      "p": 1,
+      "lambda_grid": 0.6465345535865508,
+      "C_grid": 1.5467077427689737,
+      "grid_contacts": [
+        0.134,
+        1.0
+      ],
+      "grid_hull_vertices": 69,
+      "value_at_half": 0.0,
+      "one_dimensional_constant": 1.0,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 1.05,
+      "lambda_grid": 0.6631148983898255,
+      "C_grid": 1.5080342824873914,
+      "grid_contacts": [
+        0.16,
+        1.0
+      ],
+      "grid_hull_vertices": 82,
+      "value_at_half": 0.0,
+      "one_dimensional_constant": 1.0335577830070277,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 1.2,
+      "lambda_grid": 0.6956708591828482,
+      "C_grid": 1.4374613896787687,
+      "grid_contacts": [
+        0.27,
+        1.0
+      ],
+      "grid_hull_vertices": 137,
+      "value_at_half": 2.7755575615628914e-17,
+      "one_dimensional_constant": 1.122462048309373,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 1.5,
+      "lambda_grid": 0.7071067811865476,
+      "C_grid": 1.414213562373095,
+      "grid_contacts": [
+        0.498,
+        0.5
+      ],
+      "grid_hull_vertices": 288,
+      "value_at_half": 0.0,
+      "one_dimensional_constant": 1.2599210498948732,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 1.8,
+      "lambda_grid": 0.7071067811865476,
+      "C_grid": 1.414213562373095,
+      "grid_contacts": [
+        0.498,
+        0.5
+      ],
+      "grid_hull_vertices": 501,
+      "value_at_half": -2.220446049250313e-16,
+      "one_dimensional_constant": 1.360790000174377,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 1.95,
+      "lambda_grid": 0.7071067811865476,
+      "C_grid": 1.414213562373095,
+      "grid_contacts": [
+        0.498,
+        0.5
+      ],
+      "grid_hull_vertices": 501,
+      "value_at_half": -2.220446049250313e-16,
+      "one_dimensional_constant": 1.4017018254045788,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 2,
+      "lambda_grid": 0.7071067811865476,
+      "C_grid": 1.414213562373095,
+      "grid_contacts": [
+        0.0,
+        1.0
+      ],
+      "grid_hull_vertices": 2,
+      "value_at_half": -2.220446049250313e-16,
+      "one_dimensional_constant": 1.4142135623730951,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 2.1,
+      "lambda_grid": 0.6955328096229147,
+      "C_grid": 1.437746697445018,
+      "grid_contacts": [
+        0.0,
+        1.0
+      ],
+      "grid_hull_vertices": 2,
+      "value_at_half": 5.551115123125783e-17,
+      "one_dimensional_constant": 1.4377466974450177,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 2.5,
+      "lambda_grid": 0.6597539553864471,
+      "C_grid": 1.5157165665103982,
+      "grid_contacts": [
+        0.0,
+        1.0
+      ],
+      "grid_hull_vertices": 2,
+      "value_at_half": 5.551115123125783e-17,
+      "one_dimensional_constant": 1.515716566510398,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 3,
+      "lambda_grid": 0.6299605249474366,
+      "C_grid": 1.5874010519681994,
+      "grid_contacts": [
+        0.0,
+        1.0
+      ],
+      "grid_hull_vertices": 2,
+      "value_at_half": 0.0,
+      "one_dimensional_constant": 1.5874010519681996,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 3.5,
+      "lambda_grid": 0.6095068271022377,
+      "C_grid": 1.640670712015276,
+      "grid_contacts": [
+        0.0,
+        1.0
+      ],
+      "grid_hull_vertices": 2,
+      "value_at_half": 0.0,
+      "one_dimensional_constant": 1.640670712015276,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 3.9,
+      "lambda_grid": 0.5972514086239653,
+      "C_grid": 1.6743367793873363,
+      "grid_contacts": [
+        0.0,
+        1.0
+      ],
+      "grid_hull_vertices": 2,
+      "value_at_half": 0.0,
+      "one_dimensional_constant": 1.6743367793873363,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 4,
+      "lambda_grid": 0.5946035575013605,
+      "C_grid": 1.6817928305074292,
+      "grid_contacts": [
+        0.0,
+        1.0
+      ],
+      "grid_hull_vertices": 2,
+      "value_at_half": 1.6653345369377348e-16,
+      "one_dimensional_constant": 1.681792830507429,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 4.1,
+      "lambda_grid": 0.5920470923056877,
+      "C_grid": 1.6890548285704217,
+      "grid_contacts": [
+        0.026000000000000002,
+        1.0
+      ],
+      "grid_hull_vertices": 15,
+      "value_at_half": 4.440892098500626e-16,
+      "one_dimensional_constant": 1.6889159824348465,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 4.5,
+      "lambda_grid": 0.5823188144884295,
+      "C_grid": 1.717272351707382,
+      "grid_contacts": [
+        0.10400000000000001,
+        1.0
+      ],
+      "grid_hull_vertices": 54,
+      "value_at_half": 9.486855745421963e-14,
+      "one_dimensional_constant": 1.7144879657061456,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 5,
+      "lambda_grid": 0.5713904319700994,
+      "C_grid": 1.7501168098879358,
+      "grid_contacts": [
+        0.17,
+        1.0
+      ],
+      "grid_hull_vertices": 87,
+      "value_at_half": 5.551115123125783e-16,
+      "one_dimensional_constant": 1.7411011265922482,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 6,
+      "lambda_grid": 0.5532234814464748,
+      "C_grid": 1.8075877715554838,
+      "grid_contacts": [
+        0.252,
+        1.0
+      ],
+      "grid_hull_vertices": 128,
+      "value_at_half": 1.115274539387201e-12,
+      "one_dimensional_constant": 1.7817974362806785,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 8,
+      "lambda_grid": 0.5273757358116702,
+      "C_grid": 1.8961812842240953,
+      "grid_contacts": [
+        0.334,
+        1.0
+      ],
+      "grid_hull_vertices": 169,
+      "value_at_half": 3.444466933899548e-13,
+      "one_dimensional_constant": 1.8340080864093424,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 12,
+      "lambda_grid": 0.4975610457890167,
+      "C_grid": 2.0098036380927518,
+      "grid_contacts": [
+        0.4,
+        1.0
+      ],
+      "grid_hull_vertices": 202,
+      "value_at_half": 2.400857290751901e-15,
+      "one_dimensional_constant": 1.8877486253633868,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    },
+    {
+      "p": 20,
+      "lambda_grid": 0.4700320335311881,
+      "C_grid": 2.1275145706290397,
+      "grid_contacts": [
+        0.444,
+        1.0
+      ],
+      "grid_hull_vertices": 224,
+      "value_at_half": 4.336808689942018e-19,
+      "one_dimensional_constant": 1.931872657849691,
+      "note": "Finite grid and floating-point roots only; not a proof or rigorous error enclosure."
+    }
+  ]
+}

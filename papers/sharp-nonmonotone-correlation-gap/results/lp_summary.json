@@ -1,0 +1,286 @@
+{
+  "method": "independent LP over the full nonnegative submodular cone; coupling coverage specified per case",
+  "cases": [
+    {
+      "name": "n2_balanced",
+      "n": 2,
+      "x": [
+        "1/2",
+        "1/2"
+      ],
+      "p": "1/2",
+      "mode": "all coupling vertices",
+      "couplings": 2,
+      "rational_certificates": 2,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.5,
+      "best_exact_value": "1/2",
+      "conjectured_bound": 0.3934693402873666,
+      "observed_margin": 0.10653065971263342
+    },
+    {
+      "name": "n2_asymmetric",
+      "n": 2,
+      "x": [
+        "1/5",
+        "4/5"
+      ],
+      "p": "4/5",
+      "mode": "all coupling vertices",
+      "couplings": 2,
+      "rational_certificates": 2,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.2,
+      "best_exact_value": "1/5",
+      "conjectured_bound": 0.18126924692201807,
+      "observed_margin": 0.018730753077981943
+    },
+    {
+      "name": "n3_balanced",
+      "n": 3,
+      "x": [
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "p": "1/2",
+      "mode": "all coupling vertices",
+      "couplings": 6,
+      "rational_certificates": 6,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.5,
+      "best_exact_value": "1/2",
+      "conjectured_bound": 0.3934693402873666,
+      "observed_margin": 0.10653065971263342
+    },
+    {
+      "name": "n3_upper_construction",
+      "n": 3,
+      "x": [
+        "1/2",
+        "1/4",
+        "1/4"
+      ],
+      "p": "1/2",
+      "mode": "all coupling vertices",
+      "couplings": 6,
+      "rational_certificates": 6,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.4375,
+      "best_exact_value": "7/16",
+      "conjectured_bound": 0.3934693402873666,
+      "observed_margin": 0.044030659712633424
+    },
+    {
+      "name": "n3_sparse",
+      "n": 3,
+      "x": [
+        "4/5",
+        "1/10",
+        "1/10"
+      ],
+      "p": "4/5",
+      "mode": "all coupling vertices",
+      "couplings": 6,
+      "rational_certificates": 6,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.19,
+      "best_exact_value": "19/100",
+      "conjectured_bound": 0.18126924692201807,
+      "observed_margin": 0.008730753077981934
+    },
+    {
+      "name": "n3_unequal",
+      "n": 3,
+      "x": [
+        "2/5",
+        "1/5",
+        "3/10"
+      ],
+      "p": "2/5",
+      "mode": "all coupling vertices",
+      "couplings": 11,
+      "rational_certificates": 11,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.528,
+      "best_exact_value": "66/125",
+      "conjectured_bound": 0.4511883639059736,
+      "observed_margin": 0.07681163609402641
+    },
+    {
+      "name": "n4_balanced",
+      "n": 4,
+      "x": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "p": "1/2",
+      "mode": "all coupling vertices",
+      "couplings": 48,
+      "rational_certificates": 48,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.5,
+      "best_exact_value": "1/2",
+      "conjectured_bound": 0.3934693402873666,
+      "observed_margin": 0.10653065971263342
+    },
+    {
+      "name": "n4_upper_construction",
+      "n": 4,
+      "x": [
+        "1/2",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "p": "1/2",
+      "mode": "all coupling vertices",
+      "couplings": 30,
+      "rational_certificates": 30,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.42129629629629634,
+      "best_exact_value": "91/216",
+      "conjectured_bound": 0.3934693402873666,
+      "observed_margin": 0.02782695600892976
+    },
+    {
+      "name": "n4_sparse",
+      "n": 4,
+      "x": [
+        "4/5",
+        "1/15",
+        "1/15",
+        "1/15"
+      ],
+      "p": "4/5",
+      "mode": "all coupling vertices",
+      "couplings": 30,
+      "rational_certificates": 30,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.18696296296296297,
+      "best_exact_value": "631/3375",
+      "conjectured_bound": 0.18126924692201807,
+      "observed_margin": 0.005693716040944902
+    },
+    {
+      "name": "n4_unequal",
+      "n": 4,
+      "x": [
+        "4/5",
+        "1/10",
+        "1/20",
+        "1/20"
+      ],
+      "p": "4/5",
+      "mode": "all coupling vertices",
+      "couplings": 36,
+      "rational_certificates": 36,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.18775,
+      "best_exact_value": "751/4000",
+      "conjectured_bound": 0.18126924692201807,
+      "observed_margin": 0.006480753077981932
+    },
+    {
+      "name": "n4_small_max",
+      "n": 4,
+      "x": [
+        "1/5",
+        "1/5",
+        "1/5",
+        "1/5"
+      ],
+      "p": "1/5",
+      "mode": "all coupling vertices",
+      "couplings": 42,
+      "rational_certificates": 42,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.6506666666666667,
+      "best_exact_value": "244/375",
+      "conjectured_bound": 0.5506710358827784,
+      "observed_margin": 0.09999563078388829
+    },
+    {
+      "name": "n4_high",
+      "n": 4,
+      "x": [
+        "4/5",
+        "4/5",
+        "4/5",
+        "4/5"
+      ],
+      "p": "4/5",
+      "mode": "all coupling vertices",
+      "couplings": 42,
+      "rational_certificates": 42,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.6506666666666667,
+      "best_exact_value": "244/375",
+      "conjectured_bound": 0.18126924692201807,
+      "observed_margin": 0.46939741974464866
+    },
+    {
+      "name": "n5_sampled_upper",
+      "n": 5,
+      "x": [
+        "1/2",
+        "1/8",
+        "1/8",
+        "1/8",
+        "1/8"
+      ],
+      "p": "1/2",
+      "mode": "sampled coupling vertices",
+      "couplings": 89,
+      "rational_certificates": 89,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.413818359375,
+      "best_exact_value": "1695/4096",
+      "conjectured_bound": 0.3934693402873666,
+      "observed_margin": 0.020349019087633424
+    },
+    {
+      "name": "n5_sampled_sparse",
+      "n": 5,
+      "x": [
+        "4/5",
+        "1/20",
+        "1/20",
+        "1/20",
+        "1/20"
+      ],
+      "p": "4/5",
+      "mode": "sampled coupling vertices",
+      "couplings": 83,
+      "rational_certificates": 83,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.18549375,
+      "best_exact_value": "29679/160000",
+      "conjectured_bound": 0.18126924692201807,
+      "observed_margin": 0.004224503077981945
+    },
+    {
+      "name": "n6_sampled_upper",
+      "n": 6,
+      "x": [
+        "1/2",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10"
+      ],
+      "p": "1/2",
+      "mode": "sampled coupling vertices",
+      "couplings": 152,
+      "rational_certificates": 152,
+      "certificate_failures": 0,
+      "minimum_lp_value": 0.40951000000000004,
+      "best_exact_value": "40951/100000",
+      "conjectured_bound": 0.3934693402873666,
+      "observed_margin": 0.016040659712633465
+    }
+  ]
+}

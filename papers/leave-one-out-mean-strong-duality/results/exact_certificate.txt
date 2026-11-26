@@ -1,0 +1,4 @@
+6216 pointwise multiplier checks and 16 exact primal witnesses
+48 exact finite-grid size comparisons
+n=3 and max threshold 5: least favorable rejection probability 61/125
+54 exact preservation and power checks for dependent rounding examples

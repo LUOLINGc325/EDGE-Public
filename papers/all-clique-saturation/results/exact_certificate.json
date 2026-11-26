@@ -1,0 +1,71 @@
+{
+  "weighted_clique_matches": [
+    {
+      "budgets": [
+        3
+      ],
+      "palette": 3,
+      "verified_injections": 3
+    },
+    {
+      "budgets": [
+        0,
+        3
+      ],
+      "palette": 4,
+      "verified_injections": 12
+    },
+    {
+      "budgets": [
+        1,
+        2,
+        2
+      ],
+      "palette": 7,
+      "verified_injections": 210
+    },
+    {
+      "budgets": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "palette": 7,
+      "verified_injections": 840
+    }
+  ],
+  "separating_star_checks": [
+    {
+      "peripheral_clique": 1,
+      "pairs_separated": 2,
+      "verified_injections_per_pair": 2
+    },
+    {
+      "peripheral_clique": 2,
+      "pairs_separated": 2,
+      "verified_injections_per_pair": 20
+    },
+    {
+      "peripheral_clique": 3,
+      "pairs_separated": 2,
+      "verified_injections_per_pair": 336
+    },
+    {
+      "peripheral_clique": 4,
+      "pairs_separated": 2,
+      "verified_injections_per_pair": 7920
+    }
+  ],
+  "group_decomposition_petal_counts": {
+    "4": 4,
+    "7": 9,
+    "10": 9,
+    "13": 19,
+    "19": 19,
+    "31": 29,
+    "46": 39
+  },
+  "weighted_star_hub_pair_checks": 24496,
+  "exact_volume_crosscheck": "107/100"
+}

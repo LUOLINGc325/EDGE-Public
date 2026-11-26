@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "script_sha256": "58e3abfd6994487d1f49eebbbc3b7dd117b111a53a6b6ba43eebcc48eb243867",
+  "python": "3.12.14",
+  "seed": 2026112409,
+  "counts": {
+    "decision_comparisons": 104584,
+    "color_state_bfs_calls": 307353,
+    "accepted_witness_checks": 61800,
+    "witness_separation_checks": 61801,
+    "dummy_padded_witness_checks": 38124,
+    "exhaustive_n_le_3_decisions": 26306,
+    "exhaustive_n_4_mu_le_1_decisions": 77952,
+    "seeded_decisions": 320,
+    "targeted_decisions": 6,
+    "exhaustive_deletion_instances": 26719,
+    "vertex_cover_graph_checks": 1099,
+    "vertex_cover_deletion_decision_checks": 26304,
+    "explicit_walk_erasure_checks": 1,
+    "exhaustive_walk_erasure_checks": 8424
+  },
+  "targeted_cases": [
+    "source_deletes_first_edge",
+    "target_deletes_entering_edge",
+    "later_deletes_past_edge",
+    "past_future_color_conflict",
+    "off_path_color_conflict",
+    "short_witness_dummy_padding",
+    "repeated_walk_erasure",
+    "full_graph_vertex_cover_bound_star"
+  ],
+  "finite_family": {
+    "construction": "all p-subsets of m+p labels, canonical injection, complement forbidden",
+    "duplicate_real_edge_restrictions_removed": true,
+    "efficient_GLP_construction_implemented": false,
+    "parameters": "p=min(k,n)-1; N=m+p; K=min(N,p*(mu+1)); bad set excludes terminal vertex"
+  },
+  "scope": [
+    "Independent state BFS compared to enumeration of simple paths using actual edge deletions",
+    "All graphs n<=3 with every deletion function, ordered endpoints, and k=1,...,n+1",
+    "All graphs n=4 with mu<=1, endpoints 0 and 3, and k=2,3,4",
+    "320 fixed-seed additional inputs on four to six vertices",
+    "All conforming walks through six vertices on K3 under every deletion function, then cycle erasure",
+    "Every labeled graph through five vertices for the full-graph vertex-cover length bound"
+  ],
+  "limitations": [
+    "Finite exact combinatorial checks do not replace the general written proof",
+    "The exhaustive family is not the efficient GLP construction and does not certify the claimed complexity",
+    "No proof-assistant certification or external peer review is implied"
+  ]
+}

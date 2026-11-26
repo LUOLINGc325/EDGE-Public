@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "method": "exact integer combinatorics and SymPy identities",
+  "enumerated_graphs": 1873,
+  "counts_by_order": {
+    "2": {
+      "connected_girth_at_least_5_labelled_graphs": 1,
+      "cycles": 0
+    },
+    "3": {
+      "connected_girth_at_least_5_labelled_graphs": 3,
+      "cycles": 0
+    },
+    "4": {
+      "connected_girth_at_least_5_labelled_graphs": 16,
+      "cycles": 0
+    },
+    "5": {
+      "connected_girth_at_least_5_labelled_graphs": 137,
+      "cycles": 12
+    },
+    "6": {
+      "connected_girth_at_least_5_labelled_graphs": 1716,
+      "cycles": 60
+    }
+  },
+  "cycle_commutator_n": 5,
+  "c6_alias_eigenvalue_windings": [
+    0,
+    -1,
+    -1,
+    0,
+    1,
+    1
+  ],
+  "c6_alias_sampled_spectrum": "simple",
+  "limitations": [
+    "Finite enumeration is a check, not the graph theorem proof.",
+    "Sine commensurability classification uses the algebraic-integer proof in the manuscript and reviews/final_math_audit.md.",
+    "No simulation and no floating point acceptance criteria are used."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "alpha": 0.05,
+  "limiting_variance": 0.25,
+  "time": 1,
+  "rows": [
+    {
+      "local_shift": -1,
+      "star_de_hoog": "0.00467671773245829",
+      "star_talbot": "0.00467671773245829",
+      "fixed_hoeffding": 0.00028264181466901484,
+      "brownian_crossing_lower_bound": 0.0008350103614386099
+    },
+    {
+      "local_shift": 0,
+      "star_de_hoog": "0.05",
+      "star_talbot": "0.05",
+      "fixed_hoeffding": 0.007187631212321859,
+      "brownian_crossing_lower_bound": 0.014375262424643718
+    },
+    {
+      "local_shift": 1,
+      "star_de_hoog": "0.248349486787977",
+      "star_talbot": "0.248349486787977",
+      "fixed_hoeffding": 0.07384393377345609,
+      "brownian_crossing_lower_bound": 0.11162918343346995
+    },
+    {
+      "local_shift": 2,
+      "star_de_hoog": "0.615126147954474",
+      "star_talbot": "0.615126147954474",
+      "fixed_hoeffding": 0.32716795985030667,
+      "brownian_crossing_lower_bound": 0.404710493694202
+    }
+  ]
+}

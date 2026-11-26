@@ -1,0 +1,3 @@
+Exhaustive beta-acyclic hypergraphs by order 0 through 3: [1, 2, 8, 112]
+Seeded order-4 hypergraphs: 25. Strongly chordal graph checks: 72
+Exact coefficient, clone acyclicity and optimal witness checks passed.

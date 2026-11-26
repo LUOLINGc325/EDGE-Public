@@ -1,0 +1,4 @@
+Chordal labelled graph counts through n=6: [1, 1, 2, 8, 61, 822, 18154]; total 19049
+Convex interval multisets through p=5, |Y|<=4: [1, 5, 35, 210, 1001, 3876]; total 5128
+Convex seeded additional instances: 300
+Exact optimum and valid witness agree in all checked instances.

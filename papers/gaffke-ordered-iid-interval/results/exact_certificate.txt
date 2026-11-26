@@ -1,0 +1,4 @@
+Lexicographic orbit ranks verified with and without ties: 139
+Exact discrete IID null calibration: 24 one-sided distributions
+Three-observation 95% width reduction: [0.238895649520, 0.238895649521]
+Sharp three-observation supremum: [0.238927510770, 0.238927510771]

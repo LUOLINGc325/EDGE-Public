@@ -1,0 +1,6 @@
+Exact rational threshold calibrations: 114
+Explicit polarity graph orders q: 2, 4, 8, 16
+Exhaustive small split instances: 5410
+Seeded large split instances: 420 including boundary branch: 88
+Exact split clique joins: 60
+All threshold, polarity and split packing checks passed.

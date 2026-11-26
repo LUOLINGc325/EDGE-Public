@@ -1,0 +1,24 @@
+{
+  "n": 18,
+  "p": "1260",
+  "x": "3",
+  "optimal_competitive_ratio": "215783/215568",
+  "threshold_residual": 0,
+  "root_optimal_actions": [
+    "execute_unknown"
+  ],
+  "state_count": 1330,
+  "denominator_bound": 215973,
+  "bisection_lower": "2201216484593/2199023255552",
+  "bisection_upper": "1100608242305/1099511627776",
+  "threshold_evaluations": 42,
+  "input_scaling": {
+    "scale_q": 1,
+    "integer_p": 1260,
+    "integer_x": 3,
+    "threshold_numerator": 215783,
+    "threshold_denominator": 215568
+  },
+  "known_long_execution_included": true,
+  "two_phase_assumption": false
+}

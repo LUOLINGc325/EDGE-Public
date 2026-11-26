@@ -1,0 +1,4 @@
+A0 and B0: certified normal-quantile intervals, width 10^-12
+Independence quadratic endpoint coefficient k0: [0.73582, 0.73584]
+Singular equicorrelation -1/2 endpoint coefficient: [1.14319, 1.14320]
+All explicit cutoff and domination comparisons passed in rational arithmetic

@@ -1,0 +1,12 @@
+{
+  "exact_occupancy_distributions": 96,
+  "root_lower": "1114937/524288",
+  "root_upper": "2229875/1048576",
+  "allocation_witness": {
+    "agents": 64,
+    "chosen_coordinates": 6,
+    "chores": 191,
+    "proved_factor_for_allocation": 10
+  },
+  "scope": "Exact finite checks of occupancy moments, the root bracket and a seeded allocation."
+}

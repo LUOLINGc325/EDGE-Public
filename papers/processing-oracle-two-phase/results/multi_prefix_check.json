@@ -1,0 +1,97 @@
+{
+  "kind": "physical_schedule_check_of_three_block_regret_formula",
+  "status": "passed",
+  "small_case_word_parameter_combinations": 438,
+  "physical_input_schedules_evaluated": 94204,
+  "n_range": [
+    1,
+    9
+  ],
+  "x_values": [
+    3,
+    4
+  ],
+  "large_family_evaluation": "exact finite count maxima, not exhaustive binary inputs",
+  "large_family": [
+    {
+      "k": 1,
+      "n": 150,
+      "word_block_counts": [
+        6,
+        54,
+        90
+      ],
+      "exact_word_regret": 14859,
+      "physical_two_phase_regret_from_analytic_theorem": 15000,
+      "regret_gap": 141,
+      "sufficient_p_threshold": "14859/47"
+    },
+    {
+      "k": 2,
+      "n": 300,
+      "word_block_counts": [
+        12,
+        108,
+        180
+      ],
+      "exact_word_regret": 59418,
+      "physical_two_phase_regret_from_analytic_theorem": 60000,
+      "regret_gap": 582,
+      "sufficient_p_threshold": "29709/97"
+    },
+    {
+      "k": 3,
+      "n": 450,
+      "word_block_counts": [
+        18,
+        162,
+        270
+      ],
+      "exact_word_regret": 133677,
+      "physical_two_phase_regret_from_analytic_theorem": 135000,
+      "regret_gap": 1323,
+      "sufficient_p_threshold": "14853/49"
+    },
+    {
+      "k": 4,
+      "n": 600,
+      "word_block_counts": [
+        24,
+        216,
+        360
+      ],
+      "exact_word_regret": 237636,
+      "physical_two_phase_regret_from_analytic_theorem": 240000,
+      "regret_gap": 2364,
+      "sufficient_p_threshold": "59409/197"
+    },
+    {
+      "k": 5,
+      "n": 750,
+      "word_block_counts": [
+        30,
+        270,
+        450
+      ],
+      "exact_word_regret": 371295,
+      "physical_two_phase_regret_from_analytic_theorem": 375000,
+      "regret_gap": 3705,
+      "sufficient_p_threshold": "74259/247"
+    },
+    {
+      "k": 6,
+      "n": 900,
+      "word_block_counts": [
+        36,
+        324,
+        540
+      ],
+      "exact_word_regret": 534654,
+      "physical_two_phase_regret_from_analytic_theorem": 540000,
+      "regret_gap": 5346,
+      "sufficient_p_threshold": "9901/33"
+    }
+  ],
+  "universal_claim_basis": "analytic proof in the manuscript, not these finite checks",
+  "formalization_status": "not_started"
+}

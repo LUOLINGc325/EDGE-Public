@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "p": "0.2",
+    "q": "0.5",
+    "rho": "0.3",
+    "alpha": "0.05"
+  },
+  "interpretation": "Analytic minimax bounds, not simulated stopping times; decimal displays are approximate.",
+  "cases": [
+    {
+      "audit_probability": "0.1",
+      "full_lower": "31.6666666666666667",
+      "full_upper": "175.314185975269494",
+      "coarsened_lower": "994.997858596122477",
+      "coarsened_upper": "1041.41817278913285",
+      "coarsened_information": "0.00301079268429861263259255"
+    },
+    {
+      "audit_probability": "0.01",
+      "full_lower": "316.666666666666667",
+      "full_upper": "1753.14185975269494",
+      "coarsened_lower": "95550.0364077992705",
+      "coarsened_upper": "96024.9144462668996",
+      "coarsened_information": "0.0000313524974576510405787417"
+    },
+    {
+      "audit_probability": "0.001",
+      "full_lower": "3166.66666666666667",
+      "full_upper": "17531.4185975269494",
+      "coarsened_lower": "9514743.67250719752",
+      "coarsened_upper": "9519504.25216249132",
+      "coarsened_information": "0.000000314851600491366242231324"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "arithmetic": "fractions.Fraction; no floating point used in certificates",
+  "scope": "Exact algebra and finite-support cross-checks; general theorem proved in manuscript",
+  "example": {
+    "affine_value": "3/2",
+    "nonlinear_step": "1/192",
+    "uniform_paper_upper": "35/24",
+    "certified_gap": "1/24",
+    "stronger_polynomial_upper": "4839/3328",
+    "polynomial_coefficients_low_to_high": [
+      "840",
+      "-576",
+      "48",
+      "35",
+      "-6"
+    ],
+    "shifted_coefficients_low_to_high": [
+      "3",
+      "9",
+      "39",
+      "-37",
+      "-6"
+    ],
+    "continuous_domain_certificate": "Two polynomial factorizations on z in [-3,0] and [0,1]"
+  },
+  "multilinear_moment_checks": [
+    {
+      "n": 3,
+      "law": 0,
+      "paths": 8,
+      "result": "exact_pass"
+    },
+    {
+      "n": 3,
+      "law": 1,
+      "paths": 8,
+      "result": "exact_pass"
+    },
+    {
+      "n": 3,
+      "law": 2,
+      "paths": 27,
+      "result": "exact_pass"
+    },
+    {
+      "n": 4,
+      "law": 0,
+      "paths": 16,
+      "result": "exact_pass"
+    },
+    {
+      "n": 4,
+      "law": 1,
+      "paths": 16,
+      "result": "exact_pass"
+    },
+    {
+      "n": 4,
+      "law": 2,
+      "paths": 81,
+      "result": "exact_pass"
+    },
+    {
+      "n": 5,
+      "law": 0,
+      "paths": 32,
+      "result": "exact_pass"
+    },
+    {
+      "n": 5,
+      "law": 1,
+      "paths": 32,
+      "result": "exact_pass"
+    },
+    {
+      "n": 5,
+      "law": 2,
+      "paths": 243,
+      "result": "exact_pass"
+    },
+    {
+      "n": 6,
+      "law": 0,
+      "paths": 64,
+      "result": "exact_pass"
+    },
+    {
+      "n": 6,
+      "law": 1,
+      "paths": 64,
+      "result": "exact_pass"
+    },
+    {
+      "n": 6,
+      "law": 2,
+      "paths": 729,
+      "result": "exact_pass"
+    },
+    {
+      "n": 7,
+      "law": 0,
+      "paths": 128,
+      "result": "exact_pass"
+    },
+    {
+      "n": 7,
+      "law": 1,
+      "paths": 128,
+      "result": "exact_pass"
+    },
+    {
+      "n": 7,
+      "law": 2,
+      "paths": 2187,
+      "result": "exact_pass"
+    }
+  ],
+  "rare_outlier_checks": [
+    {
+      "magnitude": 2,
+      "risk": "21053/36864",
+      "result": "exact_pass"
+    },
+    {
+      "magnitude": 100,
+      "risk": "21053/36864",
+      "result": "exact_pass"
+    },
+    {
+      "magnitude": 1000000,
+      "risk": "21053/36864",
+      "result": "exact_pass"
+    }
+  ],
+  "result": "PASS"
+}

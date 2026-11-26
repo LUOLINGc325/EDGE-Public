@@ -1,0 +1,8 @@
+K=3, grid spacing=1/12: checked 2925 multisets
+K=4, grid spacing=1/4: checked 495 multisets
+K=5, grid spacing=1/2: checked 126 multisets
+K=3: original 7/60, improved 1/10
+K=4: original 7/60, improved 1/10
+K=5: original 7/60, improved 1/10
+K=12: original 7/60, improved 1/10
+All checks used exact integer or rational arithmetic.

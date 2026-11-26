@@ -1,0 +1,2686 @@
+{
+  "status": "PASS_EXACT_RATIONAL_CHECKS",
+  "arithmetic": "Python standard-library fractions.Fraction; no floating point is used.",
+  "scope": "Explicit finite-support examples and exact algebraic identities only. The manuscript proves the uniform theorem using a stated prior weighted-approximation input.",
+  "finite_difference_witness_count": 36,
+  "rare_atom_witness_count": 12,
+  "finite_difference_witnesses": [
+    {
+      "beta": 1,
+      "L": 1,
+      "n": 2,
+      "matched_degree": 2,
+      "s": 1,
+      "h": "1/8",
+      "local_mass": "1/18",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "17/36"
+        },
+        {
+          "z": "-1/8",
+          "mass": "1/72"
+        },
+        {
+          "z": "1/24",
+          "mass": "1/24"
+        },
+        {
+          "z": "1",
+          "mass": "17/36"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/24",
+          "mass": "1/24",
+          "bound": "1/24"
+        },
+        {
+          "radius": "1/8",
+          "mass": "1/18",
+          "bound": "1/8"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/36",
+      "target_minus": "-1/36",
+      "moments_match_through_degree": 2,
+      "central_binomial_quadratic_lhs": "0",
+      "central_binomial_quadratic_rhs": "0",
+      "pointwise_denominator_ratio_to_central_binomial": "191/1728",
+      "hellinger_squared_upper": "0",
+      "certified_Q": 1000000,
+      "Q_selection_note": "Any Q is valid because the count laws coincide; one example is recorded.",
+      "Q_times_hellinger_squared_upper": "0",
+      "certified_minimax_decision_risk_lower": "1/144",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "L": 1,
+      "n": 8,
+      "matched_degree": 2,
+      "s": 2,
+      "h": "1/16",
+      "local_mass": "1/36",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "35/72"
+        },
+        {
+          "z": "-1/16",
+          "mass": "1/144"
+        },
+        {
+          "z": "1/48",
+          "mass": "1/48"
+        },
+        {
+          "z": "1",
+          "mass": "35/72"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/48",
+          "mass": "1/48",
+          "bound": "1/48"
+        },
+        {
+          "radius": "1/16",
+          "mass": "1/36",
+          "bound": "1/16"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/72",
+      "target_minus": "-1/72",
+      "moments_match_through_degree": 2,
+      "central_binomial_quadratic_lhs": "197258678902873/387730393310243409887232",
+      "central_binomial_quadratic_rhs": "197258678902873/387730393310243409887232",
+      "pointwise_denominator_ratio_to_central_binomial": "9344393506339/169075682574336",
+      "hellinger_squared_upper": "197258678902873/21428896895717493178368",
+      "certified_Q": 27158370,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "24131640483582968455/96526562593322041344",
+      "certified_minimax_decision_risk_lower": "1/288",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "L": 1,
+      "n": 18,
+      "matched_degree": 2,
+      "s": 3,
+      "h": "1/24",
+      "local_mass": "1/54",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "53/108"
+        },
+        {
+          "z": "-1/24",
+          "mass": "1/216"
+        },
+        {
+          "z": "1/72",
+          "mass": "1/72"
+        },
+        {
+          "z": "1",
+          "mass": "53/108"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/72",
+          "mass": "1/72",
+          "bound": "1/72"
+        },
+        {
+          "radius": "1/24",
+          "mass": "1/54",
+          "bound": "1/24"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/108",
+      "target_minus": "-1/108",
+      "moments_match_through_degree": 2,
+      "central_binomial_quadratic_lhs": "7170749447310701841016889937753225149111798609937865/24790051393509995270393992344579492338331166529985630236049408",
+      "central_binomial_quadratic_rhs": "7170749447310701841016889937753225149111798609937865/24790051393509995270393992344579492338331166529985630236049408",
+      "pointwise_denominator_ratio_to_central_binomial": "896619237462590468977936161142607/24334781169379526551941294720024576",
+      "hellinger_squared_upper": "7170749447310701841016889937753225149111798609937865/913393747919784428434712371071392582556342925071126632595456",
+      "certified_Q": 31844431,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "228348435993173780337835321457376873288355382120062256279815/913393747919784428434712371071392582556342925071126632595456",
+      "certified_minimax_decision_risk_lower": "1/432",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "L": 1,
+      "n": 4,
+      "matched_degree": 4,
+      "s": 1,
+      "h": "1/8",
+      "local_mass": "1/25",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "12/25"
+        },
+        {
+          "z": "-3/40",
+          "mass": "1/80"
+        },
+        {
+          "z": "1/40",
+          "mass": "1/40"
+        },
+        {
+          "z": "1/8",
+          "mass": "1/400"
+        },
+        {
+          "z": "1",
+          "mass": "12/25"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/40",
+          "mass": "1/40",
+          "bound": "1/40"
+        },
+        {
+          "radius": "3/40",
+          "mass": "3/80",
+          "bound": "3/40"
+        },
+        {
+          "radius": "1/8",
+          "mass": "1/25",
+          "bound": "1/8"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "3/200",
+      "target_minus": "-3/200",
+      "moments_match_through_degree": 4,
+      "central_binomial_quadratic_lhs": "0",
+      "central_binomial_quadratic_rhs": "0",
+      "pointwise_denominator_ratio_to_central_binomial": "508813/6400000",
+      "hellinger_squared_upper": "0",
+      "certified_Q": 1000000,
+      "Q_selection_note": "Any Q is valid because the count laws coincide; one example is recorded.",
+      "Q_times_hellinger_squared_upper": "0",
+      "certified_minimax_decision_risk_lower": "3/800",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "L": 1,
+      "n": 16,
+      "matched_degree": 4,
+      "s": 2,
+      "h": "1/16",
+      "local_mass": "1/50",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "49/100"
+        },
+        {
+          "z": "-3/80",
+          "mass": "1/160"
+        },
+        {
+          "z": "1/80",
+          "mass": "1/80"
+        },
+        {
+          "z": "1/16",
+          "mass": "1/800"
+        },
+        {
+          "z": "1",
+          "mass": "49/100"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/80",
+          "mass": "1/80",
+          "bound": "1/80"
+        },
+        {
+          "radius": "3/80",
+          "mass": "3/160",
+          "bound": "3/80"
+        },
+        {
+          "radius": "1/16",
+          "mass": "1/50",
+          "bound": "1/16"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "3/400",
+      "target_minus": "-3/400",
+      "moments_match_through_degree": 4,
+      "central_binomial_quadratic_lhs": "11331800096605040441477599371429753604329/1208925819614629174706176000000000000000000000000000000",
+      "central_binomial_quadratic_rhs": "11331800096605040441477599371429753604329/1208925819614629174706176000000000000000000000000000000",
+      "pointwise_denominator_ratio_to_central_binomial": "559456385809534121621484771853/14073748835532800000000000000000",
+      "hellinger_squared_upper": "1618828585229291491639657053061393372047/6865276801686592963886753103059018055680000000000000",
+      "certified_Q": 1060222939032,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "214539900052601741110153557185162306755594421754813/858159600210824120485844137882377256960000000000000",
+      "certified_minimax_decision_risk_lower": "3/1600",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "L": 1,
+      "n": 36,
+      "matched_degree": 4,
+      "s": 3,
+      "h": "1/24",
+      "local_mass": "1/75",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "37/75"
+        },
+        {
+          "z": "-1/40",
+          "mass": "1/240"
+        },
+        {
+          "z": "1/120",
+          "mass": "1/120"
+        },
+        {
+          "z": "1/24",
+          "mass": "1/1200"
+        },
+        {
+          "z": "1",
+          "mass": "37/75"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/120",
+          "mass": "1/120",
+          "bound": "1/120"
+        },
+        {
+          "radius": "1/40",
+          "mass": "1/80",
+          "bound": "1/40"
+        },
+        {
+          "radius": "1/24",
+          "mass": "1/75",
+          "bound": "1/24"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/200",
+      "target_minus": "-1/200",
+      "moments_match_through_degree": 4,
+      "central_binomial_quadratic_lhs": "368842725870326968276668127534870331353881450909908910556038472615163552850438838952644651747001252242450143036789743111828809/59151366667380364630809374530468490258563848591010047340989426444533760000000000000000000000000000000000000000000000000000000000000000000000",
+      "central_binomial_quadratic_rhs": "368842725870326968276668127534870331353881450909908910556038472615163552850438838952644651747001252242450143036789743111828809/59151366667380364630809374530468490258563848591010047340989426444533760000000000000000000000000000000000000000000000000000000000000000000000",
+      "pointwise_denominator_ratio_to_central_binomial": "140881125075002984354262379057011959636403112455231156141130734123778410253/5316014062388188840360082302571768709120000000000000000000000000000000000000",
+      "hellinger_squared_upper": "368842725870326968276668127534870331353881450909908910556038472615163552850438838952644651747001252242450143036789743111828809/1567586350981337203436777286196898483460011883639505290412158396518588914614722564536966163852752054124544000000000000000000000000000000000",
+      "certified_Q": 1062503230396,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "97974146936322171098679224645353060799619491461250427757973975434517264259367935058352134937165313853365128994640341882439274760459319591/391896587745334300859194321549224620865002970909876322603039599129647228653680641134241540963188013531136000000000000000000000000000000000",
+      "certified_minimax_decision_risk_lower": "1/800",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "L": 1,
+      "n": 6,
+      "matched_degree": 6,
+      "s": 1,
+      "h": "1/8",
+      "local_mass": "8/245",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "237/490"
+        },
+        {
+          "z": "-1/8",
+          "mass": "1/1960"
+        },
+        {
+          "z": "-3/56",
+          "mass": "3/280"
+        },
+        {
+          "z": "1/56",
+          "mass": "1/56"
+        },
+        {
+          "z": "5/56",
+          "mass": "1/280"
+        },
+        {
+          "z": "1",
+          "mass": "237/490"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/56",
+          "mass": "1/56",
+          "bound": "1/56"
+        },
+        {
+          "radius": "3/56",
+          "mass": "1/35",
+          "bound": "3/56"
+        },
+        {
+          "radius": "5/56",
+          "mass": "9/280",
+          "bound": "5/56"
+        },
+        {
+          "radius": "1/8",
+          "mass": "8/245",
+          "bound": "1/8"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/98",
+      "target_minus": "-1/98",
+      "moments_match_through_degree": 6,
+      "central_binomial_quadratic_lhs": "0",
+      "central_binomial_quadratic_rhs": "0",
+      "pointwise_denominator_ratio_to_central_binomial": "4376528931/67464642560",
+      "hellinger_squared_upper": "0",
+      "certified_Q": 1000000,
+      "Q_selection_note": "Any Q is valid because the count laws coincide; one example is recorded.",
+      "Q_times_hellinger_squared_upper": "0",
+      "certified_minimax_decision_risk_lower": "1/392",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "L": 1,
+      "n": 24,
+      "matched_degree": 6,
+      "s": 2,
+      "h": "1/16",
+      "local_mass": "4/245",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "241/490"
+        },
+        {
+          "z": "-1/16",
+          "mass": "1/3920"
+        },
+        {
+          "z": "-3/112",
+          "mass": "3/560"
+        },
+        {
+          "z": "1/112",
+          "mass": "1/112"
+        },
+        {
+          "z": "5/112",
+          "mass": "1/560"
+        },
+        {
+          "z": "1",
+          "mass": "241/490"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/112",
+          "mass": "1/112",
+          "bound": "1/112"
+        },
+        {
+          "radius": "3/112",
+          "mass": "1/70",
+          "bound": "3/112"
+        },
+        {
+          "radius": "5/112",
+          "mass": "9/560",
+          "bound": "5/112"
+        },
+        {
+          "radius": "1/16",
+          "mass": "4/245",
+          "bound": "1/16"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/196",
+      "target_minus": "-1/196",
+      "moments_match_through_degree": 6,
+      "central_binomial_quadratic_lhs": "26881646393016926154654757451996805197485671695502158592109496992854315/140126126354636767853318019410017857302468021388745975091365266693656707643267375559606272",
+      "central_binomial_quadratic_rhs": "26881646393016926154654757451996805197485671695502158592109496992854315/140126126354636767853318019410017857302468021388745975091365266693656707643267375559606272",
+      "pointwise_denominator_ratio_to_central_binomial": "2153975245079991929587527736425990751940834456319/66406501588447976301517603391111922532773233950720",
+      "hellinger_squared_upper": "44802743988361543591091262419994675329142786159170264320182494988090525/7575267484786571205741459330742818214530827958714226061430434359215606005544923875508224",
+      "certified_Q": 42270108984588123,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "1893816871196642799392561550084741873390796170684135286650490427278398963307657363834575/7575267484786571205741459330742818214530827958714226061430434359215606005544923875508224",
+      "certified_minimax_decision_risk_lower": "1/784",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "L": 1,
+      "n": 54,
+      "matched_degree": 6,
+      "s": 3,
+      "h": "1/24",
+      "local_mass": "8/735",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "727/1470"
+        },
+        {
+          "z": "-1/24",
+          "mass": "1/5880"
+        },
+        {
+          "z": "-1/56",
+          "mass": "1/280"
+        },
+        {
+          "z": "1/168",
+          "mass": "1/168"
+        },
+        {
+          "z": "5/168",
+          "mass": "1/840"
+        },
+        {
+          "z": "1",
+          "mass": "727/1470"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/168",
+          "mass": "1/168",
+          "bound": "1/168"
+        },
+        {
+          "radius": "1/56",
+          "mass": "1/105",
+          "bound": "1/56"
+        },
+        {
+          "radius": "5/168",
+          "mass": "3/280",
+          "bound": "5/168"
+        },
+        {
+          "radius": "1/24",
+          "mass": "8/735",
+          "bound": "1/24"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/294",
+      "target_minus": "-1/294",
+      "moments_match_through_degree": 6,
+      "central_binomial_quadratic_lhs": "621980883108665568129306476525434057975995215095770254529463817579791716154790418983958057657346831498791614452454483640833850900247727058989612951025547434626709827510493001212180740111015307362562455098441/4161454778580372788848003286959838950239486959661281612917580001663681729767400882831137684914728413118111675808370957851135007709832002561122588777889061366709166380472181148400251295602701135355823328694683144997090931769344",
+      "central_binomial_quadratic_rhs": "621980883108665568129306476525434057975995215095770254529463817579791716154790418983958057657346831498791614452454483640833850900247727058989612951025547434626709827510493001212180740111015307362562455098441/4161454778580372788848003286959838950239486959661281612917580001663681729767400882831137684914728413118111675808370957851135007709832002561122588777889061366709166380472181148400251295602701135355823328694683144997090931769344",
+      "pointwise_denominator_ratio_to_central_binomial": "208310220331773967649808398482002019086152704915217375523481085053244837882491024323309134319926078430428964047990586131/9633198948865734785638644463737916368086305717407640608001575473122010601304321843023759214676023966977160202290955550720",
+      "hellinger_squared_upper": "3109904415543327840646532382627170289879976075478851272647319087898958580773952094919790288286734157493958072262272418204169254501238635294948064755127737173133549137552465006060903700555076536812812275492205/449940651297802539555483938648315556996425874803941729215893635101330787565281824653043441602594363388444480045366475877622253408346495187375097662941492911898771320162956021833055022975044395701630572526435174325598138925056",
+      "certified_Q": 36169974312473678,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "56242581412225317411462619098201336312073200490907195469201355479048819364531813627295622254087832695552254715592428082471985890560053147466922879928161616624003682569678983554939693837861887610392434950417870649634278339995/224970325648901269777741969324157778498212937401970864607946817550665393782640912326521720801297181694222240022683237938811126704173247593687548831470746455949385660081478010916527511487522197850815286263217587162799069462528",
+      "certified_minimax_decision_risk_lower": "1/1176",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "L": 1,
+      "n": 8,
+      "matched_degree": 8,
+      "s": 1,
+      "h": "1/8",
+      "local_mass": "16/567",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "551/1134"
+        },
+        {
+          "z": "-7/72",
+          "mass": "1/1008"
+        },
+        {
+          "z": "-1/24",
+          "mass": "1/108"
+        },
+        {
+          "z": "1/72",
+          "mass": "1/72"
+        },
+        {
+          "z": "5/72",
+          "mass": "1/252"
+        },
+        {
+          "z": "1/8",
+          "mass": "1/9072"
+        },
+        {
+          "z": "1",
+          "mass": "551/1134"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/72",
+          "mass": "1/72",
+          "bound": "1/72"
+        },
+        {
+          "radius": "1/24",
+          "mass": "5/216",
+          "bound": "1/24"
+        },
+        {
+          "radius": "5/72",
+          "mass": "41/1512",
+          "bound": "5/72"
+        },
+        {
+          "radius": "7/72",
+          "mass": "85/3024",
+          "bound": "7/72"
+        },
+        {
+          "radius": "1/8",
+          "mass": "16/567",
+          "bound": "1/8"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "5/648",
+      "target_minus": "-5/648",
+      "moments_match_through_degree": 8,
+      "central_binomial_quadratic_lhs": "0",
+      "central_binomial_quadratic_rhs": "0",
+      "pointwise_denominator_ratio_to_central_binomial": "79691658954937/1421839393357824",
+      "hellinger_squared_upper": "0",
+      "certified_Q": 1000000,
+      "Q_selection_note": "Any Q is valid because the count laws coincide; one example is recorded.",
+      "Q_times_hellinger_squared_upper": "0",
+      "certified_minimax_decision_risk_lower": "5/2592",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "L": 1,
+      "n": 32,
+      "matched_degree": 8,
+      "s": 2,
+      "h": "1/16",
+      "local_mass": "8/567",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "559/1134"
+        },
+        {
+          "z": "-7/144",
+          "mass": "1/2016"
+        },
+        {
+          "z": "-1/48",
+          "mass": "1/216"
+        },
+        {
+          "z": "1/144",
+          "mass": "1/144"
+        },
+        {
+          "z": "5/144",
+          "mass": "1/504"
+        },
+        {
+          "z": "1/16",
+          "mass": "1/18144"
+        },
+        {
+          "z": "1",
+          "mass": "559/1134"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/144",
+          "mass": "1/144",
+          "bound": "1/144"
+        },
+        {
+          "radius": "1/48",
+          "mass": "5/432",
+          "bound": "1/48"
+        },
+        {
+          "radius": "5/144",
+          "mass": "41/3024",
+          "bound": "5/144"
+        },
+        {
+          "radius": "7/144",
+          "mass": "85/6048",
+          "bound": "7/144"
+        },
+        {
+          "radius": "1/16",
+          "mass": "8/567",
+          "bound": "1/16"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "5/1296",
+      "target_minus": "-5/1296",
+      "moments_match_through_degree": 8,
+      "central_binomial_quadratic_lhs": "226223616788511001503745483089018933044348425594468603913085471918479233512826261148557487840192511625/54503214576765121528844854898469952854997594437009807671234180746907557464733951877383199535582451699544711583549347560685568",
+      "central_binomial_quadratic_rhs": "226223616788511001503745483089018933044348425594468603913085471918479233512826261148557487840192511625/54503214576765121528844854898469952854997594437009807671234180746907557464733951877383199535582451699544711583549347560685568",
+      "pointwise_denominator_ratio_to_central_binomial": "128931194988167863967433555250456281370412525229702169945732739536441/4600661851907361693507395796814215908999410445967448126521399834574848",
+      "hellinger_squared_upper": "1583565317519577010526218381623132531310438979161280227391598303429354634589783828039902414881347581375/10691972956490714196354346209189261975970953938514399619959532698404483395498003671203093814905258410072491883792503398203392",
+      "certified_Q": 1687958942741642457762,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "445498873187113091514539909057138695960512086362527500517623310195787936821624019786936051815026419495207588185258215897125/1781995492748452366059057701531543662661825656419066603326588783067413899249667278533848969150876401678748647298750566367232",
+      "certified_minimax_decision_risk_lower": "5/5184",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "L": 1,
+      "n": 72,
+      "matched_degree": 8,
+      "s": 3,
+      "h": "1/24",
+      "local_mass": "16/1701",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "1685/3402"
+        },
+        {
+          "z": "-7/216",
+          "mass": "1/3024"
+        },
+        {
+          "z": "-1/72",
+          "mass": "1/324"
+        },
+        {
+          "z": "1/216",
+          "mass": "1/216"
+        },
+        {
+          "z": "5/216",
+          "mass": "1/756"
+        },
+        {
+          "z": "1/24",
+          "mass": "1/27216"
+        },
+        {
+          "z": "1",
+          "mass": "1685/3402"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/216",
+          "mass": "1/216",
+          "bound": "1/216"
+        },
+        {
+          "radius": "1/72",
+          "mass": "5/648",
+          "bound": "1/72"
+        },
+        {
+          "radius": "5/216",
+          "mass": "41/4536",
+          "bound": "5/216"
+        },
+        {
+          "radius": "7/216",
+          "mass": "85/9072",
+          "bound": "7/216"
+        },
+        {
+          "radius": "1/24",
+          "mass": "16/1701",
+          "bound": "1/24"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "5/1944",
+      "target_minus": "-5/1944",
+      "moments_match_through_degree": 8,
+      "central_binomial_quadratic_lhs": "1522786277887277289980982348395647859876160186128555268888071498735889699177945728330831844262367745937383142062965528591691232240540563361515226427404417702083088262679208426913046942816658594997544716193862206312796160237342571380259534033535434120529243151030474962155241319846426308038142224625/401976159940738780036304775487701566894786348672629209943261918641159526967948191180851613736802803197369514700423765620724130469489290279278988477324857988814710919435929359744547484620384512579073335381243665571311345349057509730507459642307152635427961378000011751250030085319642200051470888614631922431492871476477952",
+      "central_binomial_quadratic_rhs": "1522786277887277289980982348395647859876160186128555268888071498735889699177945728330831844262367745937383142062965528591691232240540563361515226427404417702083088262679208426913046942816658594997544716193862206312796160237342571380259534033535434120529243151030474962155241319846426308038142224625/401976159940738780036304775487701566894786348672629209943261918641159526967948191180851613736802803197369514700423765620724130469489290279278988477324857988814710919435929359744547484620384512579073335381243665571311345349057509730507459642307152635427961378000011751250030085319642200051470888614631922431492871476477952",
+      "pointwise_denominator_ratio_to_central_binomial": "132870733619059515561965029010341514687054267264536380645067943774836608116764614062750733006702929671478542544516592718695950461745341699508587907679675900730710266041/7111838874547388607818594398313330100957577470733083106365153462387777657165948539189754838104304225411046976104232996656032136119319381196960288306195312295650275622912",
+      "hellinger_squared_upper": "10659503945210941029866876438769535019133121302899886882216500491151227894245620098315822909836574221561681994440758700141838625683783943530606584991830923914581617838754458988391328599716610164982813013357035444189573121661397999661816738234748038843704702057213324735086689238924984156266995572375/52570942266276070983776842318460523500022793925422863623901163526150107153027211130373587012809123638382120796624461584368378220343693202900946585203299308299455757578335743732575699186295456483455621317474150538141495024613995838267735045040300116042728963330606488668740723778322103707815810775768979898304791368957952",
+      "certified_Q": 1232959397934622746721,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "13142735566569017745943608563294129873340258297429494002128236969357404477926865696222232096982704394889313558352396846918336515036129792321488672167049790671990184493628578233380826651552096628986900582915869037276498557669256046635689870859123975413559999643997689821873325961698588572075730353318815945566468049432375/52570942266276070983776842318460523500022793925422863623901163526150107153027211130373587012809123638382120796624461584368378220343693202900946585203299308299455757578335743732575699186295456483455621317474150538141495024613995838267735045040300116042728963330606488668740723778322103707815810775768979898304791368957952",
+      "certified_minimax_decision_risk_lower": "5/7776",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "L": 1,
+      "n": 2,
+      "matched_degree": 2,
+      "s": 1,
+      "h": "1/8",
+      "local_mass": "1/432",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "431/864"
+        },
+        {
+          "z": "-1/8",
+          "mass": "1/1728"
+        },
+        {
+          "z": "1/24",
+          "mass": "1/576"
+        },
+        {
+          "z": "1",
+          "mass": "431/864"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/24",
+          "mass": "1/576",
+          "bound": "1/576"
+        },
+        {
+          "radius": "1/8",
+          "mass": "1/432",
+          "bound": "1/64"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/864",
+      "target_minus": "-1/864",
+      "moments_match_through_degree": 2,
+      "central_binomial_quadratic_lhs": "0",
+      "central_binomial_quadratic_rhs": "0",
+      "pointwise_denominator_ratio_to_central_binomial": "191/41472",
+      "hellinger_squared_upper": "0",
+      "certified_Q": 1000000,
+      "Q_selection_note": "Any Q is valid because the count laws coincide; one example is recorded.",
+      "Q_times_hellinger_squared_upper": "0",
+      "certified_minimax_decision_risk_lower": "1/3456",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "L": 1,
+      "n": 8,
+      "matched_degree": 2,
+      "s": 2,
+      "h": "1/16",
+      "local_mass": "1/1728",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "1727/3456"
+        },
+        {
+          "z": "-1/16",
+          "mass": "1/6912"
+        },
+        {
+          "z": "1/48",
+          "mass": "1/2304"
+        },
+        {
+          "z": "1",
+          "mass": "1727/3456"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/48",
+          "mass": "1/2304",
+          "bound": "1/2304"
+        },
+        {
+          "radius": "1/16",
+          "mass": "1/1728",
+          "bound": "1/256"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/3456",
+      "target_minus": "-1/3456",
+      "moments_match_through_degree": 2,
+      "central_binomial_quadratic_lhs": "197258678902873/893330826186800816380182528",
+      "central_binomial_quadratic_rhs": "197258678902873/893330826186800816380182528",
+      "pointwise_denominator_ratio_to_central_binomial": "9344393506339/8115632763568128",
+      "hellinger_squared_upper": "197258678902873/1028587050994439672561664",
+      "certified_Q": 1303601768,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "32143345321391192884933/128573381374304959070208",
+      "certified_minimax_decision_risk_lower": "1/13824",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "L": 1,
+      "n": 18,
+      "matched_degree": 2,
+      "s": 3,
+      "h": "1/24",
+      "local_mass": "1/3888",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "3887/7776"
+        },
+        {
+          "z": "-1/24",
+          "mass": "1/15552"
+        },
+        {
+          "z": "1/72",
+          "mass": "1/5184"
+        },
+        {
+          "z": "1",
+          "mass": "3887/7776"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/72",
+          "mass": "1/5184",
+          "bound": "1/5184"
+        },
+        {
+          "radius": "1/24",
+          "mass": "1/3888",
+          "bound": "1/576"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/7776",
+      "target_minus": "-1/7776",
+      "moments_match_through_degree": 2,
+      "central_binomial_quadratic_lhs": "7170749447310701841016889937753225149111798609937865/128511626423955815481722456314300088281908767291445507143680131072",
+      "central_binomial_quadratic_rhs": "7170749447310701841016889937753225149111798609937865/128511626423955815481722456314300088281908767291445507143680131072",
+      "pointwise_denominator_ratio_to_central_binomial": "896619237462590468977936161142607/1752104244195325911739773219841769472",
+      "hellinger_squared_upper": "7170749447310701841016889937753225149111798609937865/65764349850224478847299290717140265944056690605121117546872832",
+      "certified_Q": 2292799041,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "22552932038470860370535610033035863260000842050275267409585/90211728189608338610835789735446180993219054328012506923008",
+      "certified_minimax_decision_risk_lower": "1/31104",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "L": 1,
+      "n": 4,
+      "matched_degree": 4,
+      "s": 1,
+      "h": "1/8",
+      "local_mass": "1/1000",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "999/2000"
+        },
+        {
+          "z": "-3/40",
+          "mass": "1/3200"
+        },
+        {
+          "z": "1/40",
+          "mass": "1/1600"
+        },
+        {
+          "z": "1/8",
+          "mass": "1/16000"
+        },
+        {
+          "z": "1",
+          "mass": "999/2000"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/40",
+          "mass": "1/1600",
+          "bound": "1/1600"
+        },
+        {
+          "radius": "3/40",
+          "mass": "3/3200",
+          "bound": "9/1600"
+        },
+        {
+          "radius": "1/8",
+          "mass": "1/1000",
+          "bound": "1/64"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "3/8000",
+      "target_minus": "-3/8000",
+      "moments_match_through_degree": 4,
+      "central_binomial_quadratic_lhs": "0",
+      "central_binomial_quadratic_rhs": "0",
+      "pointwise_denominator_ratio_to_central_binomial": "508813/256000000",
+      "hellinger_squared_upper": "0",
+      "certified_Q": 1000000,
+      "Q_selection_note": "Any Q is valid because the count laws coincide; one example is recorded.",
+      "Q_times_hellinger_squared_upper": "0",
+      "certified_minimax_decision_risk_lower": "3/32000",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "L": 1,
+      "n": 16,
+      "matched_degree": 4,
+      "s": 2,
+      "h": "1/16",
+      "local_mass": "1/4000",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "3999/8000"
+        },
+        {
+          "z": "-3/80",
+          "mass": "1/12800"
+        },
+        {
+          "z": "1/80",
+          "mass": "1/6400"
+        },
+        {
+          "z": "1/16",
+          "mass": "1/64000"
+        },
+        {
+          "z": "1",
+          "mass": "3999/8000"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/80",
+          "mass": "1/6400",
+          "bound": "1/6400"
+        },
+        {
+          "radius": "3/80",
+          "mass": "3/12800",
+          "bound": "9/6400"
+        },
+        {
+          "radius": "1/16",
+          "mass": "1/4000",
+          "bound": "1/256"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "3/32000",
+      "target_minus": "-3/32000",
+      "moments_match_through_degree": 4,
+      "central_binomial_quadratic_lhs": "11331800096605040441477599371429753604329/7737125245533626718119526400000000000000000000000000000000",
+      "central_binomial_quadratic_rhs": "11331800096605040441477599371429753604329/7737125245533626718119526400000000000000000000000000000000",
+      "pointwise_denominator_ratio_to_central_binomial": "559456385809534121621484771853/1125899906842624000000000000000000",
+      "hellinger_squared_upper": "1618828585229291491639657053061393372047/549222144134927437110940248244721444454400000000000000",
+      "certified_Q": 84817835122601,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "137305536033731486282492677549661102262755947051334247/549222144134927437110940248244721444454400000000000000",
+      "certified_minimax_decision_risk_lower": "3/128000",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "L": 1,
+      "n": 36,
+      "matched_degree": 4,
+      "s": 3,
+      "h": "1/24",
+      "local_mass": "1/9000",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "8999/18000"
+        },
+        {
+          "z": "-1/40",
+          "mass": "1/28800"
+        },
+        {
+          "z": "1/120",
+          "mass": "1/14400"
+        },
+        {
+          "z": "1/24",
+          "mass": "1/144000"
+        },
+        {
+          "z": "1",
+          "mass": "8999/18000"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/120",
+          "mass": "1/14400",
+          "bound": "1/14400"
+        },
+        {
+          "radius": "1/40",
+          "mass": "1/9600",
+          "bound": "1/1600"
+        },
+        {
+          "radius": "1/24",
+          "mass": "1/9000",
+          "bound": "1/576"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/24000",
+      "target_minus": "-1/24000",
+      "moments_match_through_degree": 4,
+      "central_binomial_quadratic_lhs": "368842725870326968276668127534870331353881450909908910556038472615163552850438838952644651747001252242450143036789743111828809/851779680010277250683654993238746259723319419710544681710247740801286144000000000000000000000000000000000000000000000000000000000000000000000000",
+      "central_binomial_quadratic_rhs": "368842725870326968276668127534870331353881450909908910556038472615163552850438838952644651747001252242450143036789743111828809/851779680010277250683654993238746259723319419710544681710247740801286144000000000000000000000000000000000000000000000000000000000000000000000000",
+      "pointwise_denominator_ratio_to_central_binomial": "140881125075002984354262379057011959636403112455231156141130734123778410253/637921687486582660843209876308612245094400000000000000000000000000000000000000",
+      "hellinger_squared_upper": "368842725870326968276668127534870331353881450909908910556038472615163552850438838952644651747001252242450143036789743111828809/188110362117760464412413274343627818015201426036740634849459007582230669753766707744435939662330246494945280000000000000000000000000000000000",
+      "certified_Q": 127500387647534,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "23513795264719902962764106203662671268801422043019579832070123466658035691556610558874465456792343837369859967479379202786683470712019503503/94055181058880232206206637171813909007600713018370317424729503791115334876883353872217969831165123247472640000000000000000000000000000000000",
+      "certified_minimax_decision_risk_lower": "1/96000",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "L": 1,
+      "n": 6,
+      "matched_degree": 6,
+      "s": 1,
+      "h": "1/8",
+      "local_mass": "1/1715",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "857/1715"
+        },
+        {
+          "z": "-1/8",
+          "mass": "1/109760"
+        },
+        {
+          "z": "-3/56",
+          "mass": "3/15680"
+        },
+        {
+          "z": "1/56",
+          "mass": "1/3136"
+        },
+        {
+          "z": "5/56",
+          "mass": "1/15680"
+        },
+        {
+          "z": "1",
+          "mass": "857/1715"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/56",
+          "mass": "1/3136",
+          "bound": "1/3136"
+        },
+        {
+          "radius": "3/56",
+          "mass": "1/1960",
+          "bound": "9/3136"
+        },
+        {
+          "radius": "5/56",
+          "mass": "9/15680",
+          "bound": "25/3136"
+        },
+        {
+          "radius": "1/8",
+          "mass": "1/1715",
+          "bound": "1/64"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/5488",
+      "target_minus": "-1/5488",
+      "moments_match_through_degree": 6,
+      "central_binomial_quadratic_lhs": "0",
+      "central_binomial_quadratic_rhs": "0",
+      "pointwise_denominator_ratio_to_central_binomial": "4376528931/3778019983360",
+      "hellinger_squared_upper": "0",
+      "certified_Q": 1000000,
+      "Q_selection_note": "Any Q is valid because the count laws coincide; one example is recorded.",
+      "Q_times_hellinger_squared_upper": "0",
+      "certified_minimax_decision_risk_lower": "1/21952",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "L": 1,
+      "n": 24,
+      "matched_degree": 6,
+      "s": 2,
+      "h": "1/16",
+      "local_mass": "1/6860",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "6859/13720"
+        },
+        {
+          "z": "-1/16",
+          "mass": "1/439040"
+        },
+        {
+          "z": "-3/112",
+          "mass": "3/62720"
+        },
+        {
+          "z": "1/112",
+          "mass": "1/12544"
+        },
+        {
+          "z": "5/112",
+          "mass": "1/62720"
+        },
+        {
+          "z": "1",
+          "mass": "6859/13720"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/112",
+          "mass": "1/12544",
+          "bound": "1/12544"
+        },
+        {
+          "radius": "3/112",
+          "mass": "1/7840",
+          "bound": "9/12544"
+        },
+        {
+          "radius": "5/112",
+          "mass": "9/62720",
+          "bound": "25/12544"
+        },
+        {
+          "radius": "1/16",
+          "mass": "1/6860",
+          "bound": "1/256"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/21952",
+      "target_minus": "-1/21952",
+      "moments_match_through_degree": 6,
+      "central_binomial_quadratic_lhs": "26881646393016926154654757451996805197485671695502158592109496992854315/1757742128992563615952021235479264002002158860300429511546085905405229740677145959019701075968",
+      "central_binomial_quadratic_rhs": "26881646393016926154654757451996805197485671695502158592109496992854315/1757742128992563615952021235479264002002158860300429511546085905405229740677145959019701075968",
+      "pointwise_denominator_ratio_to_central_binomial": "2153975245079991929587527736425990751940834456319/7437528177906173345769971579804535323670602202480640",
+      "hellinger_squared_upper": "44802743988361543591091262419994675329142786159170264320182494988090525/848429958296095975043043445043195640027452731375993318880208648232147872621031474056921088",
+      "certified_Q": 4734252206273869781,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "212107489574023993755980613551298807775225483216596528750568858651032005491370099689925025/848429958296095975043043445043195640027452731375993318880208648232147872621031474056921088",
+      "certified_minimax_decision_risk_lower": "1/87808",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "L": 1,
+      "n": 54,
+      "matched_degree": 6,
+      "s": 3,
+      "h": "1/24",
+      "local_mass": "1/15435",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "7717/15435"
+        },
+        {
+          "z": "-1/24",
+          "mass": "1/987840"
+        },
+        {
+          "z": "-1/56",
+          "mass": "1/47040"
+        },
+        {
+          "z": "1/168",
+          "mass": "1/28224"
+        },
+        {
+          "z": "5/168",
+          "mass": "1/141120"
+        },
+        {
+          "z": "1",
+          "mass": "7717/15435"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/168",
+          "mass": "1/28224",
+          "bound": "1/28224"
+        },
+        {
+          "radius": "1/56",
+          "mass": "1/17640",
+          "bound": "1/3136"
+        },
+        {
+          "radius": "5/168",
+          "mass": "1/15680",
+          "bound": "25/28224"
+        },
+        {
+          "radius": "1/24",
+          "mass": "1/15435",
+          "bound": "1/576"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/49392",
+      "target_minus": "-1/49392",
+      "moments_match_through_degree": 6,
+      "central_binomial_quadratic_lhs": "621980883108665568129306476525434057975995215095770254529463817579791716154790418983958057657346831498791614452454483640833850900247727058989612951025547434626709827510493001212180740111015307362562455098441/117452899670652441592446044771154494531559279949480012242985777966955753140955122517026030019033294731845583938015461914390434457602298440285123945667140868013999511922446840732448692567090636844282757629078737084397894458257965056",
+      "central_binomial_quadratic_rhs": "621980883108665568129306476525434057975995215095770254529463817579791716154790418983958057657346831498791614452454483640833850900247727058989612951025547434626709827510493001212180740111015307362562455098441/117452899670652441592446044771154494531559279949480012242985777966955753140955122517026030019033294731845583938015461914390434457602298440285123945667140868013999511922446840732448692567090636844282757629078737084397894458257965056",
+      "pointwise_denominator_ratio_to_central_binomial": "208310220331773967649808398482002019086152704915217375523481085053244837882491024323309134319926078430428964047990586131/1618377423409443443987292269907969949838499360524483622144264679484497781019126069627991548065572026452162913984880532520960",
+      "hellinger_squared_upper": "3109904415543327840646532382627170289879976075478851272647319087898958580773952094919790288286734157493958072262272418204169254501238635294948064755127737173133549137552465006060903700555076536812812275492205/75590029418030826645321301692917013575399546967062210508270130697023572310967346541711298189235853049258672647621567947440538572602211191479016407374170809198993581787376611667953243859807458477873936184441109286700487339409408",
+      "certified_Q": 6076555684495577907,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "6299169118169235553193717754541877507598730837608776182430527889132319041474882214156068273231789356821642816433086102730820492004998370720464617053192736356836477202931783331286794847392996418424856415001878049571851449571645/25196676472676942215107100564305671191799848989020736836090043565674524103655782180570432729745284349752890882540522649146846190867403730493005469124723603066331193929125537222651081286602486159291312061480369762233495779803136",
+      "certified_minimax_decision_risk_lower": "1/197568",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "L": 1,
+      "n": 8,
+      "matched_degree": 8,
+      "s": 1,
+      "h": "1/8",
+      "local_mass": "2/5103",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "5101/10206"
+        },
+        {
+          "z": "-7/72",
+          "mass": "1/72576"
+        },
+        {
+          "z": "-1/24",
+          "mass": "1/7776"
+        },
+        {
+          "z": "1/72",
+          "mass": "1/5184"
+        },
+        {
+          "z": "5/72",
+          "mass": "1/18144"
+        },
+        {
+          "z": "1/8",
+          "mass": "1/653184"
+        },
+        {
+          "z": "1",
+          "mass": "5101/10206"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/72",
+          "mass": "1/5184",
+          "bound": "1/5184"
+        },
+        {
+          "radius": "1/24",
+          "mass": "5/15552",
+          "bound": "1/576"
+        },
+        {
+          "radius": "5/72",
+          "mass": "41/108864",
+          "bound": "25/5184"
+        },
+        {
+          "radius": "7/72",
+          "mass": "85/217728",
+          "bound": "49/5184"
+        },
+        {
+          "radius": "1/8",
+          "mass": "2/5103",
+          "bound": "1/64"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "5/46656",
+      "target_minus": "-5/46656",
+      "moments_match_through_degree": 8,
+      "central_binomial_quadratic_lhs": "0",
+      "central_binomial_quadratic_rhs": "0",
+      "pointwise_denominator_ratio_to_central_binomial": "79691658954937/102372436321763328",
+      "hellinger_squared_upper": "0",
+      "certified_Q": 1000000,
+      "Q_selection_note": "Any Q is valid because the count laws coincide; one example is recorded.",
+      "Q_times_hellinger_squared_upper": "0",
+      "certified_minimax_decision_risk_lower": "5/186624",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "L": 1,
+      "n": 32,
+      "matched_degree": 8,
+      "s": 2,
+      "h": "1/16",
+      "local_mass": "1/10206",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "10205/20412"
+        },
+        {
+          "z": "-7/144",
+          "mass": "1/290304"
+        },
+        {
+          "z": "-1/48",
+          "mass": "1/31104"
+        },
+        {
+          "z": "1/144",
+          "mass": "1/20736"
+        },
+        {
+          "z": "5/144",
+          "mass": "1/72576"
+        },
+        {
+          "z": "1/16",
+          "mass": "1/2612736"
+        },
+        {
+          "z": "1",
+          "mass": "10205/20412"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/144",
+          "mass": "1/20736",
+          "bound": "1/20736"
+        },
+        {
+          "radius": "1/48",
+          "mass": "5/62208",
+          "bound": "1/2304"
+        },
+        {
+          "radius": "5/144",
+          "mass": "41/435456",
+          "bound": "25/20736"
+        },
+        {
+          "radius": "7/144",
+          "mass": "85/870912",
+          "bound": "49/20736"
+        },
+        {
+          "radius": "1/16",
+          "mass": "1/10206",
+          "bound": "1/256"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "5/186624",
+      "target_minus": "-5/186624",
+      "moments_match_through_degree": 8,
+      "central_binomial_quadratic_lhs": "226223616788511001503745483089018933044348425594468603913085471918479233512826261148557487840192511625/1130178657463801560022126911174672942401230118245835371870711971967875111588723226129418025569837718441759139396479271018375938048",
+      "central_binomial_quadratic_rhs": "226223616788511001503745483089018933044348425594468603913085471918479233512826261148557487840192511625/1130178657463801560022126911174672942401230118245835371870711971967875111588723226129418025569837718441759139396479271018375938048",
+      "pointwise_denominator_ratio_to_central_binomial": "128931194988167863967433555250456281370412525229702169945732739536441/662495306674660083865064994741247090895915104219312530219081576178778112",
+      "hellinger_squared_upper": "1583565317519577010526218381623132531310438979161280227391598303429354634589783828039902414881347581375/1539644105734662844275025854123253724539817367146073545274172708570245608951712528653245509346357211050438831266120489341288448",
+      "certified_Q": 243066087754796513917850,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "192455513216832855534377838197052610852583320629890891308023206782309226800812464044465565016801390035440112143339311470021875/769822052867331422137512927061626862269908683573036772637086354285122804475856264326622754673178605525219415633060244670644224",
+      "certified_minimax_decision_risk_lower": "5/746496",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "L": 1,
+      "n": 72,
+      "matched_degree": 8,
+      "s": 3,
+      "h": "1/24",
+      "local_mass": "2/45927",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "45925/91854"
+        },
+        {
+          "z": "-7/216",
+          "mass": "1/653184"
+        },
+        {
+          "z": "-1/72",
+          "mass": "1/69984"
+        },
+        {
+          "z": "1/216",
+          "mass": "1/46656"
+        },
+        {
+          "z": "5/216",
+          "mass": "1/163296"
+        },
+        {
+          "z": "1/24",
+          "mass": "1/5878656"
+        },
+        {
+          "z": "1",
+          "mass": "45925/91854"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/216",
+          "mass": "1/46656",
+          "bound": "1/46656"
+        },
+        {
+          "radius": "1/72",
+          "mass": "5/139968",
+          "bound": "1/5184"
+        },
+        {
+          "radius": "5/216",
+          "mass": "41/979776",
+          "bound": "25/46656"
+        },
+        {
+          "radius": "7/216",
+          "mass": "85/1959552",
+          "bound": "49/46656"
+        },
+        {
+          "radius": "1/24",
+          "mass": "2/45927",
+          "bound": "1/576"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "5/419904",
+      "target_minus": "-5/419904",
+      "moments_match_through_degree": 8,
+      "central_binomial_quadratic_lhs": "1522786277887277289980982348395647859876160186128555268888071498735889699177945728330831844262367745937383142062965528591691232240540563361515226427404417702083088262679208426913046942816658594997544716193862206312796160237342571380259534033535434120529243151030474962155241319846426308038142224625/18754599718195108521373835605154204305043151883670188419112828076121938890216590807733812890504271585976472077862971208800505031184492327270040486398068574326139152657202720208241607442448659818889245535547304460895102128605627173986556037071482513358526966051968548266321403660673226485601425779204266972963731411606555328512",
+      "central_binomial_quadratic_rhs": "1522786277887277289980982348395647859876160186128555268888071498735889699177945728330831844262367745937383142062965528591691232240540563361515226427404417702083088262679208426913046942816658594997544716193862206312796160237342571380259534033535434120529243151030474962155241319846426308038142224625/18754599718195108521373835605154204305043151883670188419112828076121938890216590807733812890504271585976472077862971208800505031184492327270040486398068574326139152657202720208241607442448659818889245535547304460895102128605627173986556037071482513358526966051968548266321403660673226485601425779204266972963731411606555328512",
+      "pointwise_denominator_ratio_to_central_binomial": "132870733619059515561965029010341514687054267264536380645067943774836608116764614062750733006702929671478542544516592718695950461745341699508587907679675900730710266041/1536157196902235939288816390035679301806836733678345950974873147875759973947844884464987045030529712688786146838514327277702941401772986338543422274138187455860459534548992",
+      "hellinger_squared_upper": "10659503945210941029866876438769535019133121302899886882216500491151227894245620098315822909836574221561681994440758700141838625683783943530606584991830923914581617838754458988391328599716610164982813013357035444189573121661397999661816738234748038843704702057213324735086689238924984156266995572375/11355323529515631332495797940787473076004923487891338542762651321648423145053877604160694794766770705890538092070883702223569695594237731826604462403912650592682443636920520646236351024239818600426414204574416516238562925316623101065830769728704825065229456079411001552447996336117574400888215127566099658033834935694917632",
+      "certified_Q": 266319229953878513291748,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "236569240198242319426995613643239548661154516230169661573327398569736180489565799032491328973582924728105959873252979818751618952644777020486937937632580016039353927470306239124769461345776493780752601821085359281141956851059965874886607248585892955443741810330193164832563572012631807622098233048977612004352691885355125/946276960792969277707983161732289423000410290657611545230220943470701928754489800346724566230564225490878174339240308518630807966186477652217038533659387549390203636410043387186362585353318216702201183714534709686546910443051925088819230810725402088769121339950916796037333028009797866740684593963841638169486244641243136",
+      "certified_minimax_decision_risk_lower": "5/1679616",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "L": 1,
+      "n": 2,
+      "matched_degree": 2,
+      "s": 1,
+      "h": "1/8",
+      "local_mass": "1/10368",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "10367/20736"
+        },
+        {
+          "z": "-1/8",
+          "mass": "1/41472"
+        },
+        {
+          "z": "1/24",
+          "mass": "1/13824"
+        },
+        {
+          "z": "1",
+          "mass": "10367/20736"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/24",
+          "mass": "1/13824",
+          "bound": "1/13824"
+        },
+        {
+          "radius": "1/8",
+          "mass": "1/10368",
+          "bound": "1/512"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/20736",
+      "target_minus": "-1/20736",
+      "moments_match_through_degree": 2,
+      "central_binomial_quadratic_lhs": "0",
+      "central_binomial_quadratic_rhs": "0",
+      "pointwise_denominator_ratio_to_central_binomial": "191/995328",
+      "hellinger_squared_upper": "0",
+      "certified_Q": 1000000,
+      "Q_selection_note": "Any Q is valid because the count laws coincide; one example is recorded.",
+      "Q_times_hellinger_squared_upper": "0",
+      "certified_minimax_decision_risk_lower": "1/82944",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "L": 1,
+      "n": 8,
+      "matched_degree": 2,
+      "s": 2,
+      "h": "1/16",
+      "local_mass": "1/82944",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "82943/165888"
+        },
+        {
+          "z": "-1/16",
+          "mass": "1/331776"
+        },
+        {
+          "z": "1/48",
+          "mass": "1/110592"
+        },
+        {
+          "z": "1",
+          "mass": "82943/165888"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/48",
+          "mass": "1/110592",
+          "bound": "1/110592"
+        },
+        {
+          "radius": "1/16",
+          "mass": "1/82944",
+          "bound": "1/4096"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/165888",
+      "target_minus": "-1/165888",
+      "moments_match_through_degree": 2,
+      "central_binomial_quadratic_lhs": "197258678902873/2058234223534389080939940544512",
+      "central_binomial_quadratic_rhs": "197258678902873/2058234223534389080939940544512",
+      "pointwise_denominator_ratio_to_central_binomial": "9344393506339/389550372651270144",
+      "hellinger_squared_upper": "197258678902873/49372178447733104282959872",
+      "certified_Q": 62572884907,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "12343044611896341260637811/49372178447733104282959872",
+      "certified_minimax_decision_risk_lower": "1/663552",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "L": 1,
+      "n": 18,
+      "matched_degree": 2,
+      "s": 3,
+      "h": "1/24",
+      "local_mass": "1/279936",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "279935/559872"
+        },
+        {
+          "z": "-1/24",
+          "mass": "1/1119744"
+        },
+        {
+          "z": "1/72",
+          "mass": "1/373248"
+        },
+        {
+          "z": "1",
+          "mass": "279935/559872"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/72",
+          "mass": "1/373248",
+          "bound": "1/373248"
+        },
+        {
+          "radius": "1/24",
+          "mass": "1/279936",
+          "bound": "1/13824"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/559872",
+      "target_minus": "-1/559872",
+      "moments_match_through_degree": 2,
+      "central_binomial_quadratic_lhs": "7170749447310701841016889937753225149111798609937865/666204271381786947457249213533331657653415049638853509032837799477248",
+      "central_binomial_quadratic_rhs": "7170749447310701841016889937753225149111798609937865/666204271381786947457249213533331657653415049638853509032837799477248",
+      "pointwise_denominator_ratio_to_central_binomial": "896619237462590468977936161142607/126151505582063465645263671828607401984",
+      "hellinger_squared_upper": "7170749447310701841016889937753225149111798609937865/4735033189216162477005548931634099147972081723568720463374843904",
+      "certified_Q": 165081531017,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "1183758297301357233203868719080084236744883832227115145440258705/4735033189216162477005548931634099147972081723568720463374843904",
+      "certified_minimax_decision_risk_lower": "1/2239488",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "L": 1,
+      "n": 4,
+      "matched_degree": 4,
+      "s": 1,
+      "h": "1/8",
+      "local_mass": "1/40000",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "39999/80000"
+        },
+        {
+          "z": "-3/40",
+          "mass": "1/128000"
+        },
+        {
+          "z": "1/40",
+          "mass": "1/64000"
+        },
+        {
+          "z": "1/8",
+          "mass": "1/640000"
+        },
+        {
+          "z": "1",
+          "mass": "39999/80000"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/40",
+          "mass": "1/64000",
+          "bound": "1/64000"
+        },
+        {
+          "radius": "3/40",
+          "mass": "3/128000",
+          "bound": "27/64000"
+        },
+        {
+          "radius": "1/8",
+          "mass": "1/40000",
+          "bound": "1/512"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "3/320000",
+      "target_minus": "-3/320000",
+      "moments_match_through_degree": 4,
+      "central_binomial_quadratic_lhs": "0",
+      "central_binomial_quadratic_rhs": "0",
+      "pointwise_denominator_ratio_to_central_binomial": "508813/10240000000",
+      "hellinger_squared_upper": "0",
+      "certified_Q": 1000000,
+      "Q_selection_note": "Any Q is valid because the count laws coincide; one example is recorded.",
+      "Q_times_hellinger_squared_upper": "0",
+      "certified_minimax_decision_risk_lower": "3/1280000",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "L": 1,
+      "n": 16,
+      "matched_degree": 4,
+      "s": 2,
+      "h": "1/16",
+      "local_mass": "1/320000",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "319999/640000"
+        },
+        {
+          "z": "-3/80",
+          "mass": "1/1024000"
+        },
+        {
+          "z": "1/80",
+          "mass": "1/512000"
+        },
+        {
+          "z": "1/16",
+          "mass": "1/5120000"
+        },
+        {
+          "z": "1",
+          "mass": "319999/640000"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/80",
+          "mass": "1/512000",
+          "bound": "1/512000"
+        },
+        {
+          "radius": "3/80",
+          "mass": "3/1024000",
+          "bound": "27/512000"
+        },
+        {
+          "radius": "1/16",
+          "mass": "1/320000",
+          "bound": "1/4096"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "3/2560000",
+      "target_minus": "-3/2560000",
+      "moments_match_through_degree": 4,
+      "central_binomial_quadratic_lhs": "11331800096605040441477599371429753604329/49517601571415210995964968960000000000000000000000000000000000",
+      "central_binomial_quadratic_rhs": "11331800096605040441477599371429753604329/49517601571415210995964968960000000000000000000000000000000000",
+      "pointwise_denominator_ratio_to_central_binomial": "559456385809534121621484771853/90071992547409920000000000000000000",
+      "hellinger_squared_upper": "1618828585229291491639657053061393372047/43937771530794194968875219859577715556352000000000000000",
+      "certified_Q": 6785426809808098,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "5492221441349274020756974165609868847423715434593718303/21968885765397097484437609929788857778176000000000000000",
+      "certified_minimax_decision_risk_lower": "3/10240000",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "L": 1,
+      "n": 36,
+      "matched_degree": 4,
+      "s": 3,
+      "h": "1/24",
+      "local_mass": "1/1080000",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "1079999/2160000"
+        },
+        {
+          "z": "-1/40",
+          "mass": "1/3456000"
+        },
+        {
+          "z": "1/120",
+          "mass": "1/1728000"
+        },
+        {
+          "z": "1/24",
+          "mass": "1/17280000"
+        },
+        {
+          "z": "1",
+          "mass": "1079999/2160000"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/120",
+          "mass": "1/1728000",
+          "bound": "1/1728000"
+        },
+        {
+          "radius": "1/40",
+          "mass": "1/1152000",
+          "bound": "1/64000"
+        },
+        {
+          "radius": "1/24",
+          "mass": "1/1080000",
+          "bound": "1/13824"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/2880000",
+      "target_minus": "-1/2880000",
+      "moments_match_through_degree": 4,
+      "central_binomial_quadratic_lhs": "368842725870326968276668127534870331353881450909908910556038472615163552850438838952644651747001252242450143036789743111828809/12265627392147992409844631902637946140015799643831843416627567467538520473600000000000000000000000000000000000000000000000000000000000000000000000000",
+      "central_binomial_quadratic_rhs": "368842725870326968276668127534870331353881450909908910556038472615163552850438838952644651747001252242450143036789743111828809/12265627392147992409844631902637946140015799643831843416627567467538520473600000000000000000000000000000000000000000000000000000000000000000000000000",
+      "pointwise_denominator_ratio_to_central_binomial": "140881125075002984354262379057011959636403112455231156141130734123778410253/76550602498389919301185185157033469411328000000000000000000000000000000000000000",
+      "hellinger_squared_upper": "368842725870326968276668127534870331353881450909908910556038472615163552850438838952644651747001252242450143036789743111828809/22573243454131255729489592921235338161824171124408876181935080909867680370452004929332312759479629579393433600000000000000000000000000000000000",
+      "certified_Q": 15300046517704180,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "282165543176640679766798626078793438566254738867891727392096031144449208491042402524257837675702889271697054616013762684155385597259793186081/1128662172706562786474479646061766908091208556220443809096754045493384018522600246466615637973981478969671680000000000000000000000000000000000",
+      "certified_minimax_decision_risk_lower": "1/11520000",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "L": 1,
+      "n": 6,
+      "matched_degree": 6,
+      "s": 1,
+      "h": "1/8",
+      "local_mass": "1/96040",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "96039/192080"
+        },
+        {
+          "z": "-1/8",
+          "mass": "1/6146560"
+        },
+        {
+          "z": "-3/56",
+          "mass": "3/878080"
+        },
+        {
+          "z": "1/56",
+          "mass": "1/175616"
+        },
+        {
+          "z": "5/56",
+          "mass": "1/878080"
+        },
+        {
+          "z": "1",
+          "mass": "96039/192080"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/56",
+          "mass": "1/175616",
+          "bound": "1/175616"
+        },
+        {
+          "radius": "3/56",
+          "mass": "1/109760",
+          "bound": "27/175616"
+        },
+        {
+          "radius": "5/56",
+          "mass": "9/878080",
+          "bound": "125/175616"
+        },
+        {
+          "radius": "1/8",
+          "mass": "1/96040",
+          "bound": "1/512"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/307328",
+      "target_minus": "-1/307328",
+      "moments_match_through_degree": 6,
+      "central_binomial_quadratic_lhs": "0",
+      "central_binomial_quadratic_rhs": "0",
+      "pointwise_denominator_ratio_to_central_binomial": "4376528931/211569119068160",
+      "hellinger_squared_upper": "0",
+      "certified_Q": 1000000,
+      "Q_selection_note": "Any Q is valid because the count laws coincide; one example is recorded.",
+      "Q_times_hellinger_squared_upper": "0",
+      "certified_minimax_decision_risk_lower": "1/1229312",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "L": 1,
+      "n": 24,
+      "matched_degree": 6,
+      "s": 2,
+      "h": "1/16",
+      "local_mass": "1/768320",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "768319/1536640"
+        },
+        {
+          "z": "-1/16",
+          "mass": "1/49172480"
+        },
+        {
+          "z": "-3/112",
+          "mass": "3/7024640"
+        },
+        {
+          "z": "1/112",
+          "mass": "1/1404928"
+        },
+        {
+          "z": "5/112",
+          "mass": "1/7024640"
+        },
+        {
+          "z": "1",
+          "mass": "768319/1536640"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/112",
+          "mass": "1/1404928",
+          "bound": "1/1404928"
+        },
+        {
+          "radius": "3/112",
+          "mass": "1/878080",
+          "bound": "27/1404928"
+        },
+        {
+          "radius": "5/112",
+          "mass": "9/7024640",
+          "bound": "125/1404928"
+        },
+        {
+          "radius": "1/16",
+          "mass": "1/768320",
+          "bound": "1/4096"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/2458624",
+      "target_minus": "-1/2458624",
+      "moments_match_through_degree": 6,
+      "central_binomial_quadratic_lhs": "26881646393016926154654757451996805197485671695502158592109496992854315/22049117266082717998502154377851887641115080743608587792834101597403201867054118909943130296942592",
+      "central_binomial_quadratic_rhs": "26881646393016926154654757451996805197485671695502158592109496992854315/22049117266082717998502154377851887641115080743608587792834101597403201867054118909943130296942592",
+      "pointwise_denominator_ratio_to_central_binomial": "2153975245079991929587527736425990751940834456319/833003155925491414726236816938107956251107446677831680",
+      "hellinger_squared_upper": "44802743988361543591091262419994675329142786159170264320182494988090525/95024155329162749204820865844837911683074705914111251714583368602000561733555525094375161856",
+      "certified_Q": 530236247102673415483,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "23756038832290687301162658901617443450327258006878752648684282816666457522555458610140598575/95024155329162749204820865844837911683074705914111251714583368602000561733555525094375161856",
+      "certified_minimax_decision_risk_lower": "1/9834496",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "L": 1,
+      "n": 54,
+      "matched_degree": 6,
+      "s": 3,
+      "h": "1/24",
+      "local_mass": "1/2593080",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "2593079/5186160"
+        },
+        {
+          "z": "-1/24",
+          "mass": "1/165957120"
+        },
+        {
+          "z": "-1/56",
+          "mass": "1/7902720"
+        },
+        {
+          "z": "1/168",
+          "mass": "1/4741632"
+        },
+        {
+          "z": "5/168",
+          "mass": "1/23708160"
+        },
+        {
+          "z": "1",
+          "mass": "2593079/5186160"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/168",
+          "mass": "1/4741632",
+          "bound": "1/4741632"
+        },
+        {
+          "radius": "1/56",
+          "mass": "1/2963520",
+          "bound": "1/175616"
+        },
+        {
+          "radius": "5/168",
+          "mass": "1/2634240",
+          "bound": "125/4741632"
+        },
+        {
+          "radius": "1/24",
+          "mass": "1/2593080",
+          "bound": "1/13824"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "1/8297856",
+      "target_minus": "-1/8297856",
+      "moments_match_through_degree": 6,
+      "central_binomial_quadratic_lhs": "621980883108665568129306476525434057975995215095770254529463817579791716154790418983958057657346831498791614452454483640833850900247727058989612951025547434626709827510493001212180740111015307362562455098441/3314990640304494511505197167621064453658729117294123865546030597339359176650317377920542671257195710511609761066548397071755622131367271178607338242509383858827122224499139632832631899013566134293036551323118275470046173189872805740544",
+      "central_binomial_quadratic_rhs": "621980883108665568129306476525434057975995215095770254529463817579791716154790418983958057657346831498791614452454483640833850900247727058989612951025547434626709827510493001212180740111015307362562455098441/3314990640304494511505197167621064453658729117294123865546030597339359176650317377920542671257195710511609761066548397071755622131367271178607338242509383858827122224499139632832631899013566134293036551323118275470046173189872805740544",
+      "pointwise_denominator_ratio_to_central_binomial": "208310220331773967649808398482002019086152704915217375523481085053244837882491024323309134319926078430428964047990586131/271887407132786498589865101344538951572867892568113248520236466153395627211213179697502580075016100443963369549459929463521280",
+      "hellinger_squared_upper": "3109904415543327840646532382627170289879976075478851272647319087898958580773952094919790288286734157493958072262272418204169254501238635294948064755127737173133549137552465006060903700555076536812812275492205/12699124942229178876413978684410058280667123890466451365389381957099960148242514219007498095791623312275457004800423415170010480197171480168474756438860695945430921740279270760216144968447653024282821278986106360165681873020780544",
+      "certified_Q": 1020861354995257088470,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "1587390617778647359550982381675089540425267193060888601596851903608850408266094315098580258150786666380284133290614203290382793381586393077153038458962785420785351298629813046621549111008000952727926290506561865722308742240188175/6349562471114589438206989342205029140333561945233225682694690978549980074121257109503749047895811656137728502400211707585005240098585740084237378219430347972715460870139635380108072484223826512141410639493053180082840936510390272",
+      "certified_minimax_decision_risk_lower": "1/33191424",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "L": 1,
+      "n": 8,
+      "matched_degree": 8,
+      "s": 1,
+      "h": "1/8",
+      "local_mass": "1/183708",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "183707/367416"
+        },
+        {
+          "z": "-7/72",
+          "mass": "1/5225472"
+        },
+        {
+          "z": "-1/24",
+          "mass": "1/559872"
+        },
+        {
+          "z": "1/72",
+          "mass": "1/373248"
+        },
+        {
+          "z": "5/72",
+          "mass": "1/1306368"
+        },
+        {
+          "z": "1/8",
+          "mass": "1/47029248"
+        },
+        {
+          "z": "1",
+          "mass": "183707/367416"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/72",
+          "mass": "1/373248",
+          "bound": "1/373248"
+        },
+        {
+          "radius": "1/24",
+          "mass": "5/1119744",
+          "bound": "1/13824"
+        },
+        {
+          "radius": "5/72",
+          "mass": "41/7838208",
+          "bound": "125/373248"
+        },
+        {
+          "radius": "7/72",
+          "mass": "85/15676416",
+          "bound": "343/373248"
+        },
+        {
+          "radius": "1/8",
+          "mass": "1/183708",
+          "bound": "1/512"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "5/3359232",
+      "target_minus": "-5/3359232",
+      "moments_match_through_degree": 8,
+      "central_binomial_quadratic_lhs": "0",
+      "central_binomial_quadratic_rhs": "0",
+      "pointwise_denominator_ratio_to_central_binomial": "79691658954937/7370815415166959616",
+      "hellinger_squared_upper": "0",
+      "certified_Q": 1000000,
+      "Q_selection_note": "Any Q is valid because the count laws coincide; one example is recorded.",
+      "Q_times_hellinger_squared_upper": "0",
+      "certified_minimax_decision_risk_lower": "5/13436928",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "L": 1,
+      "n": 32,
+      "matched_degree": 8,
+      "s": 2,
+      "h": "1/16",
+      "local_mass": "1/1469664",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "1469663/2939328"
+        },
+        {
+          "z": "-7/144",
+          "mass": "1/41803776"
+        },
+        {
+          "z": "-1/48",
+          "mass": "1/4478976"
+        },
+        {
+          "z": "1/144",
+          "mass": "1/2985984"
+        },
+        {
+          "z": "5/144",
+          "mass": "1/10450944"
+        },
+        {
+          "z": "1/16",
+          "mass": "1/376233984"
+        },
+        {
+          "z": "1",
+          "mass": "1469663/2939328"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/144",
+          "mass": "1/2985984",
+          "bound": "1/2985984"
+        },
+        {
+          "radius": "1/48",
+          "mass": "5/8957952",
+          "bound": "1/110592"
+        },
+        {
+          "radius": "5/144",
+          "mass": "41/62705664",
+          "bound": "125/2985984"
+        },
+        {
+          "radius": "7/144",
+          "mass": "85/125411328",
+          "bound": "343/2985984"
+        },
+        {
+          "radius": "1/16",
+          "mass": "1/1469664",
+          "bound": "1/4096"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "5/26873856",
+      "target_minus": "-5/26873856",
+      "moments_match_through_degree": 8,
+      "central_binomial_quadratic_lhs": "226223616788511001503745483089018933044348425594468603913085471918479233512826261148557487840192511625/23435384641169389148618823630118018133631907731945642271111083450725858313903764817019612178216154929608317514525394163837043451363328",
+      "central_binomial_quadratic_rhs": "226223616788511001503745483089018933044348425594468603913085471918479233512826261148557487840192511625/23435384641169389148618823630118018133631907731945642271111083450725858313903764817019612178216154929608317514525394163837043451363328",
+      "pointwise_denominator_ratio_to_central_binomial": "128931194988167863967433555250456281370412525229702169945732739536441/95399324161151052076569359242739581089011775007581004351547746969744048128",
+      "hellinger_squared_upper": "1583565317519577010526218381623132531310438979161280227391598303429354634589783828039902414881347581375/221708751225791449575603722993748536333733700869034590519480870034115367689046604126067353345875438391263191702321350465145536512",
+      "certified_Q": 35001516636690698004170471,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "55427187806447862393900929833888695815511743702913671939120406594472577769530134448285626209017856204858543130353178279044577625/221708751225791449575603722993748536333733700869034590519480870034115367689046604126067353345875438391263191702321350465145536512",
+      "certified_minimax_decision_risk_lower": "5/107495424",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "L": 1,
+      "n": 72,
+      "matched_degree": 8,
+      "s": 3,
+      "h": "1/24",
+      "local_mass": "1/4960116",
+      "plus_atoms": [
+        {
+          "z": "-1",
+          "mass": "4960115/9920232"
+        },
+        {
+          "z": "-7/216",
+          "mass": "1/141087744"
+        },
+        {
+          "z": "-1/72",
+          "mass": "1/15116544"
+        },
+        {
+          "z": "1/216",
+          "mass": "1/10077696"
+        },
+        {
+          "z": "5/216",
+          "mass": "1/35271936"
+        },
+        {
+          "z": "1/24",
+          "mass": "1/1269789696"
+        },
+        {
+          "z": "1",
+          "mass": "4960115/9920232"
+        }
+      ],
+      "minus_is_reflection": true,
+      "binding_radius_margin_checks": [
+        {
+          "radius": "1/216",
+          "mass": "1/10077696",
+          "bound": "1/10077696"
+        },
+        {
+          "radius": "1/72",
+          "mass": "5/30233088",
+          "bound": "1/373248"
+        },
+        {
+          "radius": "5/216",
+          "mass": "41/211631616",
+          "bound": "125/10077696"
+        },
+        {
+          "radius": "7/216",
+          "mass": "85/423263232",
+          "bound": "343/10077696"
+        },
+        {
+          "radius": "1/24",
+          "mass": "1/4960116",
+          "bound": "1/13824"
+        },
+        {
+          "radius": "1",
+          "mass": "1",
+          "bound": "1"
+        }
+      ],
+      "target_plus": "5/90699264",
+      "target_minus": "-5/90699264",
+      "moments_match_through_degree": 8,
+      "central_binomial_quadratic_lhs": "1522786277887277289980982348395647859876160186128555268888071498735889699177945728330831844262367745937383142062965528591691232240540563361515226427404417702083088262679208426913046942816658594997544716193862206312796160237342571380259534033535434120529243151030474962155241319846426308038142224625/875014604452110983173217673994074556056093294284516310882128106719545180861945260725628774219367295115318281264774784717796362734943674021111008933388287403760348306374450114035720436834884672510096639706495036927521884912224141429516758465607088143255434128120644587913491409192370054912220121154554279890595852739915445407055872",
+      "central_binomial_quadratic_rhs": "1522786277887277289980982348395647859876160186128555268888071498735889699177945728330831844262367745937383142062965528591691232240540563361515226427404417702083088262679208426913046942816658594997544716193862206312796160237342571380259534033535434120529243151030474962155241319846426308038142224625/875014604452110983173217673994074556056093294284516310882128106719545180861945260725628774219367295115318281264774784717796362734943674021111008933388287403760348306374450114035720436834884672510096639706495036927521884912224141429516758465607088143255434128120644587913491409192370054912220121154554279890595852739915445407055872",
+      "pointwise_denominator_ratio_to_central_binomial": "132870733619059515561965029010341514687054267264536380645067943774836608116764614062750733006702929671478542544516592718695950461745341699508587907679675900730710266041/331809954530882962886384340247706729190276734474522725410572599941164154372734495044437201726594417940777807717119094691983835342782965049125379211213848490465859259462582272",
+      "hellinger_squared_upper": "10659503945210941029866876438769535019133121302899886882216500491151227894245620098315822909836574221561681994440758700141838625683783943530606584991830923914581617838754458988391328599716610164982813013357035444189573121661397999661816738234748038843704702057213324735086689238924984156266995572375/2452749882375376367819092355210094184417063473384529125236732685476059399331637562498710075669622472472356227887310879680291054248355350074546563879245132528019407825574832459587051821235800817692105468188073967507529591868390589830219446261400242214089562513152776335328767208601396070591854467554277526135308346110102208512",
+      "certified_Q": 57524953670037758871017610,
+      "Q_selection_note": "Largest integer certified by Q times this rational Hellinger upper bound <= 1/4.",
+      "Q_times_hellinger_squared_upper": "102197911765640681992462179710407101498205960079568365186422570113975150270700600697539692175183083201882462876005656137720250319316504758161258181927654353416605610913267238118367809372700316594498042726009073225724480239348998757199123658400957386537694094779811090443939369042371341386019582283983000860769456763442420625/408791647062562727969848725868349030736177245564088187539455447579343233221939593749785012611603745412059371314551813280048509041392558345757760646540855421336567970929138743264508636872633469615350911364678994584588265311398431638369907710233373702348260418858796055888127868100232678431975744592379587689218057685017034752",
+      "certified_minimax_decision_risk_lower": "5/362797056",
+      "all_checks_exact": true
+    }
+  ],
+  "rare_atom_witnesses": [
+    {
+      "beta": 1,
+      "n": 3,
+      "h": "1/2",
+      "rho": "1/2",
+      "hellinger_squared_lower": "9/128",
+      "lower_divided_by_rho_h_squared": "9/16",
+      "lower_divided_by_rho_squared_h_squared": "9/8",
+      "interpretation": "The final ratio diverges as h tends to zero; quadratic-in-local-mass Hellinger scaling cannot be presumed.",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "n": 3,
+      "h": "1/4",
+      "rho": "1/4",
+      "hellinger_squared_lower": "45/4096",
+      "lower_divided_by_rho_h_squared": "45/64",
+      "lower_divided_by_rho_squared_h_squared": "45/16",
+      "interpretation": "The final ratio diverges as h tends to zero; quadratic-in-local-mass Hellinger scaling cannot be presumed.",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "n": 3,
+      "h": "1/8",
+      "rho": "1/8",
+      "hellinger_squared_lower": "189/131072",
+      "lower_divided_by_rho_h_squared": "189/256",
+      "lower_divided_by_rho_squared_h_squared": "189/32",
+      "interpretation": "The final ratio diverges as h tends to zero; quadratic-in-local-mass Hellinger scaling cannot be presumed.",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 1,
+      "n": 3,
+      "h": "1/16",
+      "rho": "1/16",
+      "hellinger_squared_lower": "765/4194304",
+      "lower_divided_by_rho_h_squared": "765/1024",
+      "lower_divided_by_rho_squared_h_squared": "765/64",
+      "interpretation": "The final ratio diverges as h tends to zero; quadratic-in-local-mass Hellinger scaling cannot be presumed.",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "n": 3,
+      "h": "1/2",
+      "rho": "1/4",
+      "hellinger_squared_lower": "9/256",
+      "lower_divided_by_rho_h_squared": "9/16",
+      "lower_divided_by_rho_squared_h_squared": "9/4",
+      "interpretation": "The final ratio diverges as h tends to zero; quadratic-in-local-mass Hellinger scaling cannot be presumed.",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "n": 3,
+      "h": "1/4",
+      "rho": "1/16",
+      "hellinger_squared_lower": "45/16384",
+      "lower_divided_by_rho_h_squared": "45/64",
+      "lower_divided_by_rho_squared_h_squared": "45/4",
+      "interpretation": "The final ratio diverges as h tends to zero; quadratic-in-local-mass Hellinger scaling cannot be presumed.",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "n": 3,
+      "h": "1/8",
+      "rho": "1/64",
+      "hellinger_squared_lower": "189/1048576",
+      "lower_divided_by_rho_h_squared": "189/256",
+      "lower_divided_by_rho_squared_h_squared": "189/4",
+      "interpretation": "The final ratio diverges as h tends to zero; quadratic-in-local-mass Hellinger scaling cannot be presumed.",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 2,
+      "n": 3,
+      "h": "1/16",
+      "rho": "1/256",
+      "hellinger_squared_lower": "765/67108864",
+      "lower_divided_by_rho_h_squared": "765/1024",
+      "lower_divided_by_rho_squared_h_squared": "765/4",
+      "interpretation": "The final ratio diverges as h tends to zero; quadratic-in-local-mass Hellinger scaling cannot be presumed.",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "n": 3,
+      "h": "1/2",
+      "rho": "1/8",
+      "hellinger_squared_lower": "9/512",
+      "lower_divided_by_rho_h_squared": "9/16",
+      "lower_divided_by_rho_squared_h_squared": "9/2",
+      "interpretation": "The final ratio diverges as h tends to zero; quadratic-in-local-mass Hellinger scaling cannot be presumed.",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "n": 3,
+      "h": "1/4",
+      "rho": "1/64",
+      "hellinger_squared_lower": "45/65536",
+      "lower_divided_by_rho_h_squared": "45/64",
+      "lower_divided_by_rho_squared_h_squared": "45",
+      "interpretation": "The final ratio diverges as h tends to zero; quadratic-in-local-mass Hellinger scaling cannot be presumed.",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "n": 3,
+      "h": "1/8",
+      "rho": "1/512",
+      "hellinger_squared_lower": "189/8388608",
+      "lower_divided_by_rho_h_squared": "189/256",
+      "lower_divided_by_rho_squared_h_squared": "378",
+      "interpretation": "The final ratio diverges as h tends to zero; quadratic-in-local-mass Hellinger scaling cannot be presumed.",
+      "all_checks_exact": true
+    },
+    {
+      "beta": 3,
+      "n": 3,
+      "h": "1/16",
+      "rho": "1/4096",
+      "hellinger_squared_lower": "765/1073741824",
+      "lower_divided_by_rho_h_squared": "765/1024",
+      "lower_divided_by_rho_squared_h_squared": "3060",
+      "interpretation": "The final ratio diverges as h tends to zero; quadratic-in-local-mass Hellinger scaling cannot be presumed.",
+      "all_checks_exact": true
+    }
+  ],
+  "not_claimed": [
+    "Numerical solution of the weighted best-approximation dual",
+    "The full minimax rate or original spectral conjecture",
+    "A numerical proof of a theorem over all real beta and all Q,n"
+  ]
+}

@@ -1,0 +1,5 @@
+m=2 rank-two critical length=20 rank-one length=24
+m=4 rank-two critical length=336 rank-one length=352
+m=8 rank-two critical length=5440 rank-one length=5504
+E(2)=62 E(6)=20894 E(7)=46812 (S7-S6)/log(2)=195233/7779240
+four branch checks of the consecutive-index inequality passed

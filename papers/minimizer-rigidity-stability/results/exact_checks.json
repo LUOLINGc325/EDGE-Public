@@ -1,0 +1,10 @@
+{
+  "script": "code/checks.py",
+  "arithmetic": "fractions.Fraction",
+  "status": "pass",
+  "cdf_triples": 9261,
+  "binary_projection_checks": 100,
+  "square_root_triangle_comparisons": 488,
+  "polygon_comparisons": 3797,
+  "degenerate_tensor_entries": 16
+}

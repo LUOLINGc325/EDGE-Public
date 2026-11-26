@@ -1,0 +1,1241 @@
+{
+  "schema_version": 1,
+  "mechanism": "independent truncated zero-sum lattice histogram noise",
+  "validation_status": "passed_exact_finite_instance_checks",
+  "case_count": 18,
+  "independent_shell_and_cap_count_enumerations": [
+    {
+      "m": 2,
+      "radius": 0,
+      "cap_count": 1,
+      "exact_match": true
+    },
+    {
+      "m": 2,
+      "radius": 1,
+      "cap_count": 1,
+      "exact_match": true
+    },
+    {
+      "m": 2,
+      "radius": 2,
+      "cap_count": 1,
+      "exact_match": true
+    },
+    {
+      "m": 2,
+      "radius": 3,
+      "cap_count": 1,
+      "exact_match": true
+    },
+    {
+      "m": 3,
+      "radius": 0,
+      "cap_count": 1,
+      "exact_match": true
+    },
+    {
+      "m": 3,
+      "radius": 1,
+      "cap_count": 3,
+      "exact_match": true
+    },
+    {
+      "m": 3,
+      "radius": 2,
+      "cap_count": 5,
+      "exact_match": true
+    },
+    {
+      "m": 3,
+      "radius": 3,
+      "cap_count": 7,
+      "exact_match": true
+    },
+    {
+      "m": 4,
+      "radius": 0,
+      "cap_count": 1,
+      "exact_match": true
+    },
+    {
+      "m": 4,
+      "radius": 1,
+      "cap_count": 7,
+      "exact_match": true
+    },
+    {
+      "m": 4,
+      "radius": 2,
+      "cap_count": 19,
+      "exact_match": true
+    },
+    {
+      "m": 4,
+      "radius": 3,
+      "cap_count": 37,
+      "exact_match": true
+    },
+    {
+      "m": 5,
+      "radius": 0,
+      "cap_count": 1,
+      "exact_match": true
+    },
+    {
+      "m": 5,
+      "radius": 1,
+      "cap_count": 13,
+      "exact_match": true
+    },
+    {
+      "m": 5,
+      "radius": 2,
+      "cap_count": 55,
+      "exact_match": true
+    },
+    {
+      "m": 5,
+      "radius": 3,
+      "cap_count": 147,
+      "exact_match": true
+    }
+  ],
+  "uncalibrated_radius_counterexample": {
+    "m": 3,
+    "exp_minus_epsilon": "1/2",
+    "delta": "1/1024",
+    "naive_radius": 10,
+    "exact_leakage": "21/13240",
+    "naive_radius_violates_delta_exact": true,
+    "smallest_corrected_radius": 11
+  },
+  "arithmetic": "fractions.Fraction for all probabilities and privacy/type/e-value checks",
+  "numerical_quantities": [
+    "logarithms",
+    "KL values",
+    "variational reference minimizers and values"
+  ],
+  "limitations": [
+    "Finite enumerations do not establish the general theorem or asymptotic limit.",
+    "Variational numerical references are not directed-rounding certificates.",
+    "The general proof is in manuscript/achievability-notes.md.",
+    "These checks do not verify the all-mechanism converse."
+  ],
+  "environment": {
+    "python": "3.12.14"
+  },
+  "elapsed_seconds": 1.0148510369981523,
+  "cases": [
+    {
+      "n": 8,
+      "m": 2,
+      "P": [
+        "1/10",
+        "9/10"
+      ],
+      "Q": [
+        "4/5",
+        "1/5"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/4",
+      "delta_exponent_base_t": 2,
+      "limiting_rho_over_epsilon": 0.0,
+      "selected_radius": 1,
+      "radius_over_n": 0.125,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 6,
+      "noise_support_count": 3,
+      "output_support_count": 11,
+      "normalizer": "2",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 2,
+        "maximum_hockey_stick": "1/4",
+        "maximum_hockey_stick_decimal": 0.25,
+        "cap_cardinality": 1,
+        "shell_cardinality": 2,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 8.94833701679916,
+      "output_kl_per_record_numerical": 1.118542127099895,
+      "nonprivate_kl_per_record_numerical": 1.3627377539886139,
+      "asymptotic_variational_reference_numerical": {
+        "value": 1.3627377539886139,
+        "minimizer": [
+          0.8,
+          0.2
+        ],
+        "tv": 0.0,
+        "method": "endpoint exact formula with floating logarithms"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 1.0445494745437525,
+        "minimizer": [
+          0.6749999999999999,
+          0.3249999999999999
+        ],
+        "tv": 0.125,
+        "dual_penalty": 2.928112085879012,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 32,
+      "m": 2,
+      "P": [
+        "1/10",
+        "9/10"
+      ],
+      "Q": [
+        "4/5",
+        "1/5"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/4",
+      "delta_exponent_base_t": 2,
+      "limiting_rho_over_epsilon": 0.0,
+      "selected_radius": 1,
+      "radius_over_n": 0.03125,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 6,
+      "noise_support_count": 3,
+      "output_support_count": 35,
+      "normalizer": "2",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 2,
+        "maximum_hockey_stick": "1/4",
+        "maximum_hockey_stick_decimal": 0.25,
+        "cap_cardinality": 1,
+        "shell_cardinality": 2,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 41.43921084878157,
+      "output_kl_per_record_numerical": 1.294975339024424,
+      "nonprivate_kl_per_record_numerical": 1.3627377539886139,
+      "asymptotic_variational_reference_numerical": {
+        "value": 1.3627377539886139,
+        "minimizer": [
+          0.8,
+          0.2
+        ],
+        "tv": 0.0,
+        "method": "endpoint exact formula with floating logarithms"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 1.2753554341352396,
+        "minimizer": [
+          0.7687500000000002,
+          0.23125000000000004
+        ],
+        "tv": 0.03124999999999996,
+        "dual_penalty": 3.3984910200644123,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 96,
+      "m": 2,
+      "P": [
+        "1/10",
+        "9/10"
+      ],
+      "Q": [
+        "4/5",
+        "1/5"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/4",
+      "delta_exponent_base_t": 2,
+      "limiting_rho_over_epsilon": 0.0,
+      "selected_radius": 1,
+      "radius_over_n": 0.010416666666666666,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 6,
+      "noise_support_count": 3,
+      "output_support_count": 99,
+      "normalizer": "2",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 2,
+        "maximum_hockey_stick": "1/4",
+        "maximum_hockey_stick_decimal": 0.25,
+        "cap_cardinality": 1,
+        "shell_cardinality": 2,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 128.59949551083562,
+      "output_kl_per_record_numerical": 1.339578078237871,
+      "nonprivate_kl_per_record_numerical": 1.3627377539886139,
+      "asymptotic_variational_reference_numerical": {
+        "value": 1.3627377539886139,
+        "minimizer": [
+          0.8,
+          0.2
+        ],
+        "tv": 0.0,
+        "method": "endpoint exact formula with floating logarithms"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 1.3329645047567935,
+        "minimizer": [
+          0.7895833333333335,
+          0.21041666666666667
+        ],
+        "tv": 0.010416666666666588,
+        "dual_penalty": 3.519640265577386,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 8,
+      "m": 2,
+      "P": [
+        "1/10",
+        "9/10"
+      ],
+      "Q": [
+        "4/5",
+        "1/5"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/4",
+      "delta_exponent_base_t": 2,
+      "limiting_rho_over_epsilon": 0.25,
+      "selected_radius": 1,
+      "radius_over_n": 0.125,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 6,
+      "noise_support_count": 3,
+      "output_support_count": 11,
+      "normalizer": "2",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 2,
+        "maximum_hockey_stick": "1/4",
+        "maximum_hockey_stick_decimal": 0.25,
+        "cap_cardinality": 1,
+        "shell_cardinality": 2,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 8.94833701679916,
+      "output_kl_per_record_numerical": 1.118542127099895,
+      "nonprivate_kl_per_record_numerical": 1.3627377539886139,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.7989820146191444,
+        "minimizer": [
+          0.5499999999999999,
+          0.44999999999999984
+        ],
+        "tv": 0.24999999999999997,
+        "dual_penalty": 2.3978952727983707,
+        "method": "floating-point nested scalar KKT bisection"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 1.0445494745437525,
+        "minimizer": [
+          0.6749999999999999,
+          0.3249999999999999
+        ],
+        "tv": 0.125,
+        "dual_penalty": 2.928112085879012,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 32,
+      "m": 2,
+      "P": [
+        "1/10",
+        "9/10"
+      ],
+      "Q": [
+        "4/5",
+        "1/5"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/256",
+      "delta_exponent_base_t": 8,
+      "limiting_rho_over_epsilon": 0.25,
+      "selected_radius": 7,
+      "radius_over_n": 0.21875,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 12,
+      "noise_support_count": 15,
+      "output_support_count": 47,
+      "normalizer": "191/64",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 2,
+        "maximum_hockey_stick": "1/382",
+        "maximum_hockey_stick_decimal": 0.002617801047120419,
+        "cap_cardinality": 1,
+        "shell_cardinality": 2,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 28.261334706280163,
+      "output_kl_per_record_numerical": 0.8831667095712551,
+      "nonprivate_kl_per_record_numerical": 1.3627377539886139,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.7989820146191444,
+        "minimizer": [
+          0.5499999999999999,
+          0.44999999999999984
+        ],
+        "tv": 0.24999999999999997,
+        "dual_penalty": 2.3978952727983707,
+        "method": "floating-point nested scalar KKT bisection"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.8542379215134621,
+        "minimizer": [
+          0.58125,
+          0.41874999999999996
+        ],
+        "tv": 0.21874999999999997,
+        "dual_penalty": 2.5251314510985092,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 96,
+      "m": 2,
+      "P": [
+        "1/10",
+        "9/10"
+      ],
+      "Q": [
+        "4/5",
+        "1/5"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/16777216",
+      "delta_exponent_base_t": 24,
+      "limiting_rho_over_epsilon": 0.25,
+      "selected_radius": 23,
+      "radius_over_n": 0.23958333333333334,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 28,
+      "noise_support_count": 47,
+      "output_support_count": 143,
+      "normalizer": "12582911/4194304",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 2,
+        "maximum_hockey_stick": "1/25165822",
+        "maximum_hockey_stick_decimal": 3.9736433008228384e-08,
+        "cap_cardinality": 1,
+        "shell_cardinality": 2,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 79.3474318858444,
+      "output_kl_per_record_numerical": 0.8265357488108792,
+      "nonprivate_kl_per_record_numerical": 1.3627377539886139,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.7989820146191444,
+        "minimizer": [
+          0.5499999999999999,
+          0.44999999999999984
+        ],
+        "tv": 0.24999999999999997,
+        "dual_penalty": 2.3978952727983707,
+        "method": "floating-point nested scalar KKT bisection"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.8169593374729344,
+        "minimizer": [
+          0.5604166666666667,
+          0.4395833333333333
+        ],
+        "tv": 0.23958333333333334,
+        "dual_penalty": 2.440077823461992,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 8,
+      "m": 2,
+      "P": [
+        "1/10",
+        "9/10"
+      ],
+      "Q": [
+        "4/5",
+        "1/5"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/256",
+      "delta_exponent_base_t": 8,
+      "limiting_rho_over_epsilon": 1.0,
+      "selected_radius": 7,
+      "radius_over_n": 0.875,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 12,
+      "noise_support_count": 15,
+      "output_support_count": 23,
+      "normalizer": "191/64",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 2,
+        "maximum_hockey_stick": "1/382",
+        "maximum_hockey_stick_decimal": 0.002617801047120419,
+        "cap_cardinality": 1,
+        "shell_cardinality": 2,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 2.912484328413075,
+      "output_kl_per_record_numerical": 0.3640605410516344,
+      "nonprivate_kl_per_record_numerical": 1.3627377539886139,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.4592075646436312,
+        "minimizer": [
+          0.18181818181818182,
+          0.8181818181818181
+        ],
+        "tv": 0.6181818181818182,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.4592075646436312,
+        "minimizer": [
+          0.18181818181818182,
+          0.8181818181818181
+        ],
+        "tv": 0.6181818181818182,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 32,
+      "m": 2,
+      "P": [
+        "1/10",
+        "9/10"
+      ],
+      "Q": [
+        "4/5",
+        "1/5"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/4294967296",
+      "delta_exponent_base_t": 32,
+      "limiting_rho_over_epsilon": 1.0,
+      "selected_radius": 31,
+      "radius_over_n": 0.96875,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 36,
+      "noise_support_count": 63,
+      "output_support_count": 95,
+      "normalizer": "3221225471/1073741824",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 2,
+        "maximum_hockey_stick": "1/6442450942",
+        "maximum_hockey_stick_decimal": 1.552204291507665e-10,
+        "cap_cardinality": 1,
+        "shell_cardinality": 2,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 13.27632844376219,
+      "output_kl_per_record_numerical": 0.4148852638675684,
+      "nonprivate_kl_per_record_numerical": 1.3627377539886139,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.4592075646436312,
+        "minimizer": [
+          0.18181818181818182,
+          0.8181818181818181
+        ],
+        "tv": 0.6181818181818182,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.4592075646436312,
+        "minimizer": [
+          0.18181818181818182,
+          0.8181818181818181
+        ],
+        "tv": 0.6181818181818182,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 96,
+      "m": 2,
+      "P": [
+        "1/10",
+        "9/10"
+      ],
+      "Q": [
+        "4/5",
+        "1/5"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/79228162514264337593543950336",
+      "delta_exponent_base_t": 96,
+      "limiting_rho_over_epsilon": 1.0,
+      "selected_radius": 95,
+      "radius_over_n": 0.9895833333333334,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 100,
+      "noise_support_count": 191,
+      "output_support_count": 287,
+      "normalizer": "59421121885698253195157962751/19807040628566084398385987584",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 2,
+        "maximum_hockey_stick": "1/118842243771396506390315925502",
+        "maximum_hockey_stick_decimal": 8.414516322357459e-30,
+        "cap_cardinality": 1,
+        "shell_cardinality": 2,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 42.28322619318454,
+      "output_kl_per_record_numerical": 0.4404502728456723,
+      "nonprivate_kl_per_record_numerical": 1.3627377539886139,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.4592075646436312,
+        "minimizer": [
+          0.18181818181818182,
+          0.8181818181818181
+        ],
+        "tv": 0.6181818181818182,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.4592075646436312,
+        "minimizer": [
+          0.18181818181818182,
+          0.8181818181818181
+        ],
+        "tv": 0.6181818181818182,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 4,
+      "m": 3,
+      "P": [
+        "1/10",
+        "3/10",
+        "3/5"
+      ],
+      "Q": [
+        "3/5",
+        "3/10",
+        "1/10"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/4",
+      "delta_exponent_base_t": 2,
+      "limiting_rho_over_epsilon": 0.0,
+      "selected_radius": 2,
+      "radius_over_n": 0.5,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 11,
+      "noise_support_count": 19,
+      "output_support_count": 57,
+      "normalizer": "7",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 6,
+        "maximum_hockey_stick": "5/28",
+        "maximum_hockey_stick_decimal": 0.17857142857142858,
+        "cap_cardinality": 5,
+        "shell_cardinality": 12,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 1.5243927880286405,
+      "output_kl_per_record_numerical": 0.38109819700716013,
+      "nonprivate_kl_per_record_numerical": 0.8958797346140274,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.8958797346140274,
+        "minimizer": [
+          0.6,
+          0.3,
+          0.1
+        ],
+        "tv": 0.0,
+        "method": "endpoint exact formula with floating logarithms"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.3224163334988014,
+        "minimizer": [
+          0.17500000000000002,
+          0.3,
+          0.525
+        ],
+        "tv": 0.425,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 8,
+      "m": 3,
+      "P": [
+        "1/10",
+        "3/10",
+        "3/5"
+      ],
+      "Q": [
+        "3/5",
+        "3/10",
+        "1/10"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/4",
+      "delta_exponent_base_t": 2,
+      "limiting_rho_over_epsilon": 0.0,
+      "selected_radius": 2,
+      "radius_over_n": 0.25,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 11,
+      "noise_support_count": 19,
+      "output_support_count": 111,
+      "normalizer": "7",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 6,
+        "maximum_hockey_stick": "5/28",
+        "maximum_hockey_stick_decimal": 0.17857142857142858,
+        "cap_cardinality": 5,
+        "shell_cardinality": 12,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 4.368440416285323,
+      "output_kl_per_record_numerical": 0.5460550520356654,
+      "nonprivate_kl_per_record_numerical": 0.8958797346140274,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.8958797346140274,
+        "minimizer": [
+          0.6,
+          0.3,
+          0.1
+        ],
+        "tv": 0.0,
+        "method": "endpoint exact formula with floating logarithms"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.42310505885692473,
+        "minimizer": [
+          0.35000000000000003,
+          0.3,
+          0.35000000000000003
+        ],
+        "tv": 0.24999999999999997,
+        "dual_penalty": 1.791759469228055,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 12,
+      "m": 3,
+      "P": [
+        "1/10",
+        "3/10",
+        "3/5"
+      ],
+      "Q": [
+        "3/5",
+        "3/10",
+        "1/10"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/4",
+      "delta_exponent_base_t": 2,
+      "limiting_rho_over_epsilon": 0.0,
+      "selected_radius": 2,
+      "radius_over_n": 0.16666666666666666,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 11,
+      "noise_support_count": 19,
+      "output_support_count": 181,
+      "normalizer": "7",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 6,
+        "maximum_hockey_stick": "5/28",
+        "maximum_hockey_stick_decimal": 0.17857142857142858,
+        "cap_cardinality": 5,
+        "shell_cardinality": 12,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 7.598707915165951,
+      "output_kl_per_record_numerical": 0.6332256595971626,
+      "nonprivate_kl_per_record_numerical": 0.8958797346140274,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.8958797346140274,
+        "minimizer": [
+          0.6,
+          0.3,
+          0.1
+        ],
+        "tv": 0.0,
+        "method": "endpoint exact formula with floating logarithms"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.5346892022461213,
+        "minimizer": [
+          0.43333333333333324,
+          0.3,
+          0.26666666666666655
+        ],
+        "tv": 0.16666666666666663,
+        "dual_penalty": 2.277267285009756,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 4,
+      "m": 3,
+      "P": [
+        "1/10",
+        "3/10",
+        "3/5"
+      ],
+      "Q": [
+        "3/5",
+        "3/10",
+        "1/10"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/4",
+      "delta_exponent_base_t": 2,
+      "limiting_rho_over_epsilon": 0.25,
+      "selected_radius": 2,
+      "radius_over_n": 0.5,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 11,
+      "noise_support_count": 19,
+      "output_support_count": 57,
+      "normalizer": "7",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 6,
+        "maximum_hockey_stick": "5/28",
+        "maximum_hockey_stick_decimal": 0.17857142857142858,
+        "cap_cardinality": 5,
+        "shell_cardinality": 12,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 1.5243927880286405,
+      "output_kl_per_record_numerical": 0.38109819700716013,
+      "nonprivate_kl_per_record_numerical": 0.8958797346140274,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.42310505885692473,
+        "minimizer": [
+          0.35000000000000003,
+          0.3,
+          0.35000000000000003
+        ],
+        "tv": 0.24999999999999997,
+        "dual_penalty": 1.791759469228055,
+        "method": "floating-point nested scalar KKT bisection"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.3224163334988014,
+        "minimizer": [
+          0.17500000000000002,
+          0.3,
+          0.525
+        ],
+        "tv": 0.425,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 8,
+      "m": 3,
+      "P": [
+        "1/10",
+        "3/10",
+        "3/5"
+      ],
+      "Q": [
+        "3/5",
+        "3/10",
+        "1/10"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/4",
+      "delta_exponent_base_t": 2,
+      "limiting_rho_over_epsilon": 0.25,
+      "selected_radius": 2,
+      "radius_over_n": 0.25,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 11,
+      "noise_support_count": 19,
+      "output_support_count": 111,
+      "normalizer": "7",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 6,
+        "maximum_hockey_stick": "5/28",
+        "maximum_hockey_stick_decimal": 0.17857142857142858,
+        "cap_cardinality": 5,
+        "shell_cardinality": 12,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 4.368440416285323,
+      "output_kl_per_record_numerical": 0.5460550520356654,
+      "nonprivate_kl_per_record_numerical": 0.8958797346140274,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.42310505885692473,
+        "minimizer": [
+          0.35000000000000003,
+          0.3,
+          0.35000000000000003
+        ],
+        "tv": 0.24999999999999997,
+        "dual_penalty": 1.791759469228055,
+        "method": "floating-point nested scalar KKT bisection"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.42310505885692473,
+        "minimizer": [
+          0.35000000000000003,
+          0.3,
+          0.35000000000000003
+        ],
+        "tv": 0.24999999999999997,
+        "dual_penalty": 1.791759469228055,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 12,
+      "m": 3,
+      "P": [
+        "1/10",
+        "3/10",
+        "3/5"
+      ],
+      "Q": [
+        "3/5",
+        "3/10",
+        "1/10"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/8",
+      "delta_exponent_base_t": 3,
+      "limiting_rho_over_epsilon": 0.25,
+      "selected_radius": 3,
+      "radius_over_n": 0.25,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 12,
+      "noise_support_count": 37,
+      "output_support_count": 235,
+      "normalizer": "37/4",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 6,
+        "maximum_hockey_stick": "7/74",
+        "maximum_hockey_stick_decimal": 0.0945945945945946,
+        "cap_cardinality": 7,
+        "shell_cardinality": 18,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 6.236890422547448,
+      "output_kl_per_record_numerical": 0.5197408685456207,
+      "nonprivate_kl_per_record_numerical": 0.8958797346140274,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.42310505885692473,
+        "minimizer": [
+          0.35000000000000003,
+          0.3,
+          0.35000000000000003
+        ],
+        "tv": 0.24999999999999997,
+        "dual_penalty": 1.791759469228055,
+        "method": "floating-point nested scalar KKT bisection"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.42310505885692473,
+        "minimizer": [
+          0.35000000000000003,
+          0.3,
+          0.35000000000000003
+        ],
+        "tv": 0.24999999999999997,
+        "dual_penalty": 1.791759469228055,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 4,
+      "m": 3,
+      "P": [
+        "1/10",
+        "3/10",
+        "3/5"
+      ],
+      "Q": [
+        "3/5",
+        "3/10",
+        "1/10"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/16",
+      "delta_exponent_base_t": 4,
+      "limiting_rho_over_epsilon": 1.0,
+      "selected_radius": 4,
+      "radius_over_n": 1.0,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 13,
+      "noise_support_count": 61,
+      "output_support_count": 123,
+      "normalizer": "43/4",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 6,
+        "maximum_hockey_stick": "9/172",
+        "maximum_hockey_stick_decimal": 0.05232558139534884,
+        "cap_cardinality": 9,
+        "shell_cardinality": 24,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 0.7836010477740771,
+      "output_kl_per_record_numerical": 0.19590026194351928,
+      "nonprivate_kl_per_record_numerical": 0.8958797346140274,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.3224163334988014,
+        "minimizer": [
+          0.17500000000000002,
+          0.3,
+          0.525
+        ],
+        "tv": 0.425,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.3224163334988014,
+        "minimizer": [
+          0.17500000000000002,
+          0.3,
+          0.525
+        ],
+        "tv": 0.425,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 8,
+      "m": 3,
+      "P": [
+        "1/10",
+        "3/10",
+        "3/5"
+      ],
+      "Q": [
+        "3/5",
+        "3/10",
+        "1/10"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/256",
+      "delta_exponent_base_t": 8,
+      "limiting_rho_over_epsilon": 1.0,
+      "selected_radius": 9,
+      "radius_over_n": 1.125,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 17,
+      "noise_support_count": 271,
+      "output_support_count": 531,
+      "normalizer": "3295/256",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 6,
+        "maximum_hockey_stick": "19/6590",
+        "maximum_hockey_stick_decimal": 0.002883156297420334,
+        "cap_cardinality": 19,
+        "shell_cardinality": 54,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 1.4477815170179584,
+      "output_kl_per_record_numerical": 0.1809726896272448,
+      "nonprivate_kl_per_record_numerical": 0.8958797346140274,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.3224163334988014,
+        "minimizer": [
+          0.17500000000000002,
+          0.3,
+          0.525
+        ],
+        "tv": 0.425,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.3224163334988014,
+        "minimizer": [
+          0.17500000000000002,
+          0.3,
+          0.525
+        ],
+        "tv": 0.425,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    },
+    {
+      "n": 12,
+      "m": 3,
+      "P": [
+        "1/10",
+        "3/10",
+        "3/5"
+      ],
+      "Q": [
+        "3/5",
+        "3/10",
+        "1/10"
+      ],
+      "exp_minus_epsilon": "1/2",
+      "epsilon": 0.6931471805599453,
+      "delta": "1/4096",
+      "delta_exponent_base_t": 12,
+      "limiting_rho_over_epsilon": 1.0,
+      "selected_radius": 14,
+      "radius_over_n": 1.1666666666666667,
+      "radius_calibration": "smallest radius satisfying exact boundary-cap privacy inequality",
+      "conservative_shell_bound_radius": 22,
+      "noise_support_count": 631,
+      "output_support_count": 1225,
+      "normalizer": "6653/512",
+      "privacy": {
+        "ordered_neighbor_directions_checked": 6,
+        "maximum_hockey_stick": "29/212896",
+        "maximum_hockey_stick_decimal": 0.00013621674432586804,
+        "cap_cardinality": 29,
+        "shell_cardinality": 84,
+        "all_directions_within_delta_exact": true,
+        "privacy_equals_boundary_cap_exact": true
+      },
+      "probability_normalization_exact": true,
+      "all_output_type_sandwiches_exact": true,
+      "input_likelihood_ratio_envelope_exact": true,
+      "null_e_value_mean_exact": "1",
+      "output_kl_numerical": 2.4813484393815437,
+      "output_kl_per_record_numerical": 0.20677903661512864,
+      "nonprivate_kl_per_record_numerical": 0.8958797346140274,
+      "asymptotic_variational_reference_numerical": {
+        "value": 0.3224163334988014,
+        "minimizer": [
+          0.17500000000000002,
+          0.3,
+          0.525
+        ],
+        "tv": 0.425,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      },
+      "current_radius_variational_reference_numerical": {
+        "value": 0.3224163334988014,
+        "minimizer": [
+          0.17500000000000002,
+          0.3,
+          0.525
+        ],
+        "tv": 0.425,
+        "dual_penalty": 0.6931471805599453,
+        "method": "floating-point nested scalar KKT bisection"
+      }
+    }
+  ]
+}

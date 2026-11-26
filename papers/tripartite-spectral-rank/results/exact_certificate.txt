@@ -1,0 +1,9 @@
+labelled_six=32768
+nonsingular_six=15848
+minimum_middle_mass_numerator=750
+middle_mass_denominator=1024
+first_minimum_mask=703
+labelled_seven=2097152
+seven_without_nonsingular_six=243216
+nonsingular_exceptional_seven=0
+EXACT_CHECKS_OK

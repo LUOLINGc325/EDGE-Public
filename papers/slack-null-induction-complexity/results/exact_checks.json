@@ -1,0 +1,57 @@
+{
+  "status": "pass",
+  "arithmetic": "exact rationals and integers",
+  "valid_random_trees": 50,
+  "enumerated_leaf_assignments": 6453,
+  "accepted_exact_node_assignments_in_subset": 150,
+  "packing_examples": [
+    {
+      "input": [
+        6,
+        6,
+        8,
+        6,
+        6,
+        8,
+        6,
+        6,
+        8
+      ],
+      "null_count": 3,
+      "feasible": true
+    },
+    {
+      "input": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        9,
+        9,
+        9,
+        9
+      ],
+      "null_count": 3,
+      "feasible": false
+    },
+    {
+      "input": [
+        3,
+        1,
+        2,
+        2
+      ],
+      "null_count": 2,
+      "feasible": true
+    },
+    {
+      "input": [
+        3,
+        1
+      ],
+      "null_count": 2,
+      "feasible": false
+    }
+  ]
+}

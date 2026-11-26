@@ -1,0 +1,3120 @@
+{
+  "algorithm": "rcrt-local-exact-v1",
+  "edge_cases": [
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [],
+      "base_threshold_b": 4,
+      "bases": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ],
+      "channels": 5,
+      "counts": {
+        "anchor_candidates": 0,
+        "completed_cliques": 0,
+        "graph_gcd_evaluations": 0,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 0,
+        "search_nodes": 0
+      },
+      "input_bits": 2,
+      "input_threshold": "1",
+      "integer_threshold": 1,
+      "integer_threshold_bits": 1,
+      "largest_base": 11,
+      "method": "prime-divisor-count-base-case",
+      "minimality_certificate": {
+        "available_distinct_primes_below_largest_base": 4,
+        "kind": "distinct_prime_divisors",
+        "primes_below_largest_base": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "required_distinct_primes": 5
+      },
+      "product_smallest": 210,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 20,
+        "largest_base_lower": 5,
+        "largest_base_upper_non_base_case": 10,
+        "maximum_trials_non_base_case": 6,
+        "raw_candidate_bound_per_trial": 4845,
+        "raw_candidate_bound_total_non_base_case": 29070
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [],
+      "base_threshold_b": 4,
+      "bases": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ],
+      "channels": 5,
+      "counts": {
+        "anchor_candidates": 0,
+        "completed_cliques": 0,
+        "graph_gcd_evaluations": 0,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 0,
+        "search_nodes": 0
+      },
+      "input_bits": 3,
+      "input_threshold": "1/2",
+      "integer_threshold": 1,
+      "integer_threshold_bits": 1,
+      "largest_base": 11,
+      "method": "prime-divisor-count-base-case",
+      "minimality_certificate": {
+        "available_distinct_primes_below_largest_base": 4,
+        "kind": "distinct_prime_divisors",
+        "primes_below_largest_base": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "required_distinct_primes": 5
+      },
+      "product_smallest": 210,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 20,
+        "largest_base_lower": 5,
+        "largest_base_upper_non_base_case": 10,
+        "maximum_trials_non_base_case": 6,
+        "raw_candidate_bound_per_trial": 4845,
+        "raw_candidate_bound_total_non_base_case": 29070
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 2520,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 45,
+            "pruned_cardinality": 4,
+            "pruned_product_bound": 2,
+            "search_nodes": 7
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 11,
+          "raw_candidate_bound": 126,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 11,
+            "width_bound": 20
+          },
+          "witness": [
+            5,
+            7,
+            8,
+            9,
+            11
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 55,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 12,
+          "raw_candidate_bound": 210,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 12,
+            "width_bound": 20
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 6930,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 2,
+            "graph_gcd_evaluations": 66,
+            "pruned_cardinality": 4,
+            "pruned_product_bound": 3,
+            "search_nodes": 9
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 13,
+          "raw_candidate_bound": 330,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 13,
+            "width_bound": 20
+          },
+          "witness": [
+            7,
+            9,
+            10,
+            11,
+            13
+          ]
+        }
+      ],
+      "base_threshold_b": 10,
+      "bases": [
+        7,
+        9,
+        10,
+        11,
+        13
+      ],
+      "channels": 5,
+      "counts": {
+        "anchor_candidates": 3,
+        "completed_cliques": 3,
+        "graph_gcd_evaluations": 166,
+        "pruned_cardinality": 9,
+        "pruned_product_bound": 5,
+        "search_nodes": 17
+      },
+      "input_bits": 16,
+      "input_threshold": "10000/3",
+      "integer_threshold": 3334,
+      "integer_threshold_bits": 12,
+      "largest_base": 13,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          11,
+          12
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 11,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 6930,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 20,
+        "largest_base_lower": 11,
+        "largest_base_upper_non_base_case": 16,
+        "maximum_trials_non_base_case": 6,
+        "raw_candidate_bound_per_trial": 4845,
+        "raw_candidate_bound_total_non_base_case": 29070
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [],
+      "base_threshold_b": 6,
+      "bases": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ],
+      "channels": 5,
+      "counts": {
+        "anchor_candidates": 0,
+        "completed_cliques": 0,
+        "graph_gcd_evaluations": 0,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 0,
+        "search_nodes": 0
+      },
+      "input_bits": 9,
+      "input_threshold": "210",
+      "integer_threshold": 210,
+      "integer_threshold_bits": 8,
+      "largest_base": 11,
+      "method": "prime-divisor-count-base-case",
+      "minimality_certificate": {
+        "available_distinct_primes_below_largest_base": 4,
+        "kind": "distinct_prime_divisors",
+        "primes_below_largest_base": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "required_distinct_primes": 5
+      },
+      "product_smallest": 210,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 20,
+        "largest_base_lower": 7,
+        "largest_base_upper_non_base_case": 12,
+        "maximum_trials_non_base_case": 6,
+        "raw_candidate_bound_per_trial": 4845,
+        "raw_candidate_bound_total_non_base_case": 29070
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 15,
+            "pruned_cardinality": 4,
+            "pruned_product_bound": 0,
+            "search_nodes": 4
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 7,
+          "raw_candidate_bound": 5,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 7,
+            "width_bound": 20
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 21,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 8,
+          "raw_candidate_bound": 15,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 8,
+            "width_bound": 20
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 28,
+            "pruned_cardinality": 5,
+            "pruned_product_bound": 0,
+            "search_nodes": 5
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 9,
+          "raw_candidate_bound": 35,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 9,
+            "width_bound": 20
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 36,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10,
+          "raw_candidate_bound": 70,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 10,
+            "width_bound": 20
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 2520,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 45,
+            "pruned_cardinality": 4,
+            "pruned_product_bound": 2,
+            "search_nodes": 7
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 11,
+          "raw_candidate_bound": 126,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 11,
+            "width_bound": 20
+          },
+          "witness": [
+            5,
+            7,
+            8,
+            9,
+            11
+          ]
+        }
+      ],
+      "base_threshold_b": 6,
+      "bases": [
+        5,
+        7,
+        8,
+        9,
+        11
+      ],
+      "channels": 5,
+      "counts": {
+        "anchor_candidates": 5,
+        "completed_cliques": 1,
+        "graph_gcd_evaluations": 145,
+        "pruned_cardinality": 15,
+        "pruned_product_bound": 2,
+        "search_nodes": 18
+      },
+      "input_bits": 9,
+      "input_threshold": "211",
+      "integer_threshold": 211,
+      "integer_threshold_bits": 8,
+      "largest_base": 11,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 7,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 2520,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 20,
+        "largest_base_lower": 7,
+        "largest_base_upper_non_base_case": 12,
+        "maximum_trials_non_base_case": 6,
+        "raw_candidate_bound_per_trial": 4845,
+        "raw_candidate_bound_total_non_base_case": 29070
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 15,
+            "pruned_cardinality": 4,
+            "pruned_product_bound": 0,
+            "search_nodes": 4
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 7,
+          "raw_candidate_bound": 5,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 7,
+            "width_bound": 20
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 21,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 8,
+          "raw_candidate_bound": 15,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 8,
+            "width_bound": 20
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 28,
+            "pruned_cardinality": 5,
+            "pruned_product_bound": 0,
+            "search_nodes": 5
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 9,
+          "raw_candidate_bound": 35,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 9,
+            "width_bound": 20
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 36,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10,
+          "raw_candidate_bound": 70,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 10,
+            "width_bound": 20
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 2520,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 45,
+            "pruned_cardinality": 4,
+            "pruned_product_bound": 2,
+            "search_nodes": 7
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 11,
+          "raw_candidate_bound": 126,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 11,
+            "width_bound": 20
+          },
+          "witness": [
+            5,
+            7,
+            8,
+            9,
+            11
+          ]
+        }
+      ],
+      "base_threshold_b": 6,
+      "bases": [
+        5,
+        7,
+        8,
+        9,
+        11
+      ],
+      "channels": 5,
+      "counts": {
+        "anchor_candidates": 5,
+        "completed_cliques": 1,
+        "graph_gcd_evaluations": 145,
+        "pruned_cardinality": 15,
+        "pruned_product_bound": 2,
+        "search_nodes": 18
+      },
+      "input_bits": 11,
+      "input_threshold": "421/2",
+      "integer_threshold": 211,
+      "integer_threshold_bits": 8,
+      "largest_base": 11,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 7,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 2520,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 20,
+        "largest_base_lower": 7,
+        "largest_base_upper_non_base_case": 12,
+        "maximum_trials_non_base_case": 6,
+        "raw_candidate_bound_per_trial": 4845,
+        "raw_candidate_bound_total_non_base_case": 29070
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [],
+      "base_threshold_b": 5,
+      "bases": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "channels": 6,
+      "counts": {
+        "anchor_candidates": 0,
+        "completed_cliques": 0,
+        "graph_gcd_evaluations": 0,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 0,
+        "search_nodes": 0
+      },
+      "input_bits": 2,
+      "input_threshold": "1",
+      "integer_threshold": 1,
+      "integer_threshold_bits": 1,
+      "largest_base": 13,
+      "method": "prime-divisor-count-base-case",
+      "minimality_certificate": {
+        "available_distinct_primes_below_largest_base": 5,
+        "kind": "distinct_prime_divisors",
+        "primes_below_largest_base": [
+          2,
+          3,
+          5,
+          7,
+          11
+        ],
+        "required_distinct_primes": 6
+      },
+      "product_smallest": 2310,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 39,
+        "largest_base_lower": 6,
+        "largest_base_upper_non_base_case": 14,
+        "maximum_trials_non_base_case": 9,
+        "raw_candidate_bound_per_trial": 575757,
+        "raw_candidate_bound_total_non_base_case": 5181813
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [],
+      "base_threshold_b": 5,
+      "bases": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "channels": 6,
+      "counts": {
+        "anchor_candidates": 0,
+        "completed_cliques": 0,
+        "graph_gcd_evaluations": 0,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 0,
+        "search_nodes": 0
+      },
+      "input_bits": 3,
+      "input_threshold": "1/2",
+      "integer_threshold": 1,
+      "integer_threshold_bits": 1,
+      "largest_base": 13,
+      "method": "prime-divisor-count-base-case",
+      "minimality_certificate": {
+        "available_distinct_primes_below_largest_base": 5,
+        "kind": "distinct_prime_divisors",
+        "primes_below_largest_base": [
+          2,
+          3,
+          5,
+          7,
+          11
+        ],
+        "required_distinct_primes": 6
+      },
+      "product_smallest": 2310,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 39,
+        "largest_base_lower": 6,
+        "largest_base_upper_non_base_case": 14,
+        "maximum_trials_non_base_case": 9,
+        "raw_candidate_bound_per_trial": 575757,
+        "raw_candidate_bound_total_non_base_case": 5181813
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 28,
+            "pruned_cardinality": 2,
+            "pruned_product_bound": 0,
+            "search_nodes": 2
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 9,
+          "raw_candidate_bound": 21,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 9,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 36,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10,
+          "raw_candidate_bound": 56,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 10,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 45,
+            "pruned_cardinality": 13,
+            "pruned_product_bound": 0,
+            "search_nodes": 13
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 11,
+          "raw_candidate_bound": 126,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 11,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 55,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 12,
+          "raw_candidate_bound": 252,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 12,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 27720,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 66,
+            "pruned_cardinality": 6,
+            "pruned_product_bound": 3,
+            "search_nodes": 10
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 13,
+          "raw_candidate_bound": 462,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 13,
+            "width_bound": 39
+          },
+          "witness": [
+            5,
+            7,
+            8,
+            9,
+            11,
+            13
+          ]
+        }
+      ],
+      "base_threshold_b": 8,
+      "bases": [
+        5,
+        7,
+        8,
+        9,
+        11,
+        13
+      ],
+      "channels": 6,
+      "counts": {
+        "anchor_candidates": 5,
+        "completed_cliques": 1,
+        "graph_gcd_evaluations": 230,
+        "pruned_cardinality": 23,
+        "pruned_product_bound": 3,
+        "search_nodes": 27
+      },
+      "input_bits": 16,
+      "input_threshold": "10000/3",
+      "integer_threshold": 3334,
+      "integer_threshold_bits": 12,
+      "largest_base": 13,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 9,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 27720,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 39,
+        "largest_base_lower": 9,
+        "largest_base_upper_non_base_case": 17,
+        "maximum_trials_non_base_case": 9,
+        "raw_candidate_bound_per_trial": 575757,
+        "raw_candidate_bound_total_non_base_case": 5181813
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [],
+      "base_threshold_b": 7,
+      "bases": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "channels": 6,
+      "counts": {
+        "anchor_candidates": 0,
+        "completed_cliques": 0,
+        "graph_gcd_evaluations": 0,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 0,
+        "search_nodes": 0
+      },
+      "input_bits": 13,
+      "input_threshold": "2310",
+      "integer_threshold": 2310,
+      "integer_threshold_bits": 12,
+      "largest_base": 13,
+      "method": "prime-divisor-count-base-case",
+      "minimality_certificate": {
+        "available_distinct_primes_below_largest_base": 5,
+        "kind": "distinct_prime_divisors",
+        "primes_below_largest_base": [
+          2,
+          3,
+          5,
+          7,
+          11
+        ],
+        "required_distinct_primes": 6
+      },
+      "product_smallest": 2310,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 39,
+        "largest_base_lower": 8,
+        "largest_base_upper_non_base_case": 16,
+        "maximum_trials_non_base_case": 9,
+        "raw_candidate_bound_per_trial": 575757,
+        "raw_candidate_bound_total_non_base_case": 5181813
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 21,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 8,
+          "raw_candidate_bound": 6,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 8,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 28,
+            "pruned_cardinality": 2,
+            "pruned_product_bound": 0,
+            "search_nodes": 2
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 9,
+          "raw_candidate_bound": 21,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 9,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 36,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10,
+          "raw_candidate_bound": 56,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 10,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 45,
+            "pruned_cardinality": 13,
+            "pruned_product_bound": 0,
+            "search_nodes": 13
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 11,
+          "raw_candidate_bound": 126,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 11,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 55,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 12,
+          "raw_candidate_bound": 252,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 12,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 27720,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 66,
+            "pruned_cardinality": 6,
+            "pruned_product_bound": 3,
+            "search_nodes": 10
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 13,
+          "raw_candidate_bound": 462,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 13,
+            "width_bound": 39
+          },
+          "witness": [
+            5,
+            7,
+            8,
+            9,
+            11,
+            13
+          ]
+        }
+      ],
+      "base_threshold_b": 7,
+      "bases": [
+        5,
+        7,
+        8,
+        9,
+        11,
+        13
+      ],
+      "channels": 6,
+      "counts": {
+        "anchor_candidates": 6,
+        "completed_cliques": 1,
+        "graph_gcd_evaluations": 251,
+        "pruned_cardinality": 24,
+        "pruned_product_bound": 3,
+        "search_nodes": 28
+      },
+      "input_bits": 13,
+      "input_threshold": "2311",
+      "integer_threshold": 2311,
+      "integer_threshold_bits": 12,
+      "largest_base": 13,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 8,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 27720,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 39,
+        "largest_base_lower": 8,
+        "largest_base_upper_non_base_case": 16,
+        "maximum_trials_non_base_case": 9,
+        "raw_candidate_bound_per_trial": 575757,
+        "raw_candidate_bound_total_non_base_case": 5181813
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 21,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 8,
+          "raw_candidate_bound": 6,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 8,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 28,
+            "pruned_cardinality": 2,
+            "pruned_product_bound": 0,
+            "search_nodes": 2
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 9,
+          "raw_candidate_bound": 21,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 9,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 36,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10,
+          "raw_candidate_bound": 56,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 10,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 45,
+            "pruned_cardinality": 13,
+            "pruned_product_bound": 0,
+            "search_nodes": 13
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 11,
+          "raw_candidate_bound": 126,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 11,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 55,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 12,
+          "raw_candidate_bound": 252,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 12,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 27720,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 66,
+            "pruned_cardinality": 6,
+            "pruned_product_bound": 3,
+            "search_nodes": 10
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 13,
+          "raw_candidate_bound": 462,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 13,
+            "width_bound": 39
+          },
+          "witness": [
+            5,
+            7,
+            8,
+            9,
+            11,
+            13
+          ]
+        }
+      ],
+      "base_threshold_b": 7,
+      "bases": [
+        5,
+        7,
+        8,
+        9,
+        11,
+        13
+      ],
+      "channels": 6,
+      "counts": {
+        "anchor_candidates": 6,
+        "completed_cliques": 1,
+        "graph_gcd_evaluations": 251,
+        "pruned_cardinality": 24,
+        "pruned_product_bound": 3,
+        "search_nodes": 28
+      },
+      "input_bits": 15,
+      "input_threshold": "4621/2",
+      "integer_threshold": 2311,
+      "integer_threshold_bits": 12,
+      "largest_base": 13,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 8,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 27720,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 39,
+        "largest_base_lower": 8,
+        "largest_base_upper_non_base_case": 16,
+        "maximum_trials_non_base_case": 9,
+        "raw_candidate_bound_per_trial": 575757,
+        "raw_candidate_bound_total_non_base_case": 5181813
+      }
+    }
+  ],
+  "finite_checks": [
+    {
+      "all_equal": true,
+      "capacities": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2520,
+        2520,
+        6930,
+        6930,
+        8008,
+        15015,
+        34320,
+        34320,
+        53040,
+        53040,
+        83980,
+        88179,
+        149226,
+        149226,
+        201894,
+        229425,
+        284050,
+        294975,
+        434700,
+        434700,
+        548100,
+        606825,
+        719200,
+        741675,
+        1008678
+      ],
+      "capacity_comparisons": 36,
+      "channels": 5,
+      "maximum_range": [
+        0,
+        35
+      ],
+      "pairwise_coprime_tuples": 9361,
+      "threshold_comparisons": 38,
+      "tuples_enumerated": 278256
+    },
+    {
+      "all_equal": true,
+      "capacities": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        27720,
+        27720,
+        27720,
+        45045,
+        240240,
+        240240,
+        583440,
+        583440,
+        923780,
+        923780,
+        1939938,
+        1939938,
+        3432198,
+        3900225,
+        4828850,
+        5014575,
+        8259300,
+        8259300
+      ],
+      "capacity_comparisons": 31,
+      "channels": 6,
+      "maximum_range": [
+        0,
+        30
+      ],
+      "pairwise_coprime_tuples": 3944,
+      "threshold_comparisons": 22,
+      "tuples_enumerated": 475020
+    }
+  ],
+  "formalization": "No Lean code or kernel verification in this delivery.",
+  "large_and_ordinary_examples": [
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 6930,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 2,
+            "graph_gcd_evaluations": 66,
+            "pruned_cardinality": 4,
+            "pruned_product_bound": 3,
+            "search_nodes": 9
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 13,
+          "raw_candidate_bound": 330,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 13,
+            "width_bound": 20
+          },
+          "witness": [
+            7,
+            9,
+            10,
+            11,
+            13
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 6435,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 78,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 3,
+            "search_nodes": 5
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 14,
+          "raw_candidate_bound": 495,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 14,
+            "width_bound": 20
+          },
+          "witness": [
+            5,
+            9,
+            11,
+            13,
+            14
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 8008,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 91,
+            "pruned_cardinality": 2,
+            "pruned_product_bound": 3,
+            "search_nodes": 6
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 15,
+          "raw_candidate_bound": 715,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 15,
+            "width_bound": 20
+          },
+          "witness": [
+            7,
+            8,
+            11,
+            13,
+            15
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 15015,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 105,
+            "pruned_cardinality": 3,
+            "pruned_product_bound": 1,
+            "search_nodes": 5
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 16,
+          "raw_candidate_bound": 1001,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 16,
+            "width_bound": 20
+          },
+          "witness": [
+            7,
+            11,
+            13,
+            15,
+            16
+          ]
+        }
+      ],
+      "base_threshold_b": 12,
+      "bases": [
+        7,
+        11,
+        13,
+        15,
+        16
+      ],
+      "channels": 5,
+      "counts": {
+        "anchor_candidates": 4,
+        "completed_cliques": 5,
+        "graph_gcd_evaluations": 340,
+        "pruned_cardinality": 10,
+        "pruned_product_bound": 10,
+        "search_nodes": 25
+      },
+      "input_bits": 15,
+      "input_description": "10^4",
+      "input_threshold": "10000",
+      "integer_threshold": 10000,
+      "integer_threshold_bits": 14,
+      "largest_base": 16,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          13,
+          14,
+          15
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 13,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 15015,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 20,
+        "largest_base_lower": 13,
+        "largest_base_upper_non_base_case": 18,
+        "maximum_trials_non_base_case": 6,
+        "raw_candidate_bound_per_trial": 4845,
+        "raw_candidate_bound_total_non_base_case": 29070
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 96990300,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 2,
+            "graph_gcd_evaluations": 210,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 7,
+            "search_nodes": 9
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 103,
+          "raw_candidate_bound": 4845,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 83,
+            "upper": 103,
+            "width_bound": 20
+          },
+          "witness": [
+            97,
+            99,
+            100,
+            101,
+            103
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 99900009,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 210,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 4,
+            "search_nodes": 5
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 104,
+          "raw_candidate_bound": 4845,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 84,
+            "upper": 104,
+            "width_bound": 20
+          },
+          "witness": [
+            97,
+            99,
+            101,
+            103,
+            104
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 104945464,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 210,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 4,
+            "search_nodes": 5
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 105,
+          "raw_candidate_bound": 4845,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 85,
+            "upper": 105,
+            "width_bound": 20
+          },
+          "witness": [
+            97,
+            101,
+            103,
+            104,
+            105
+          ]
+        }
+      ],
+      "base_threshold_b": 102,
+      "bases": [
+        97,
+        101,
+        103,
+        104,
+        105
+      ],
+      "channels": 5,
+      "counts": {
+        "anchor_candidates": 3,
+        "completed_cliques": 4,
+        "graph_gcd_evaluations": 630,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 15,
+        "search_nodes": 19
+      },
+      "input_bits": 28,
+      "input_description": "10^8",
+      "input_threshold": "100000000",
+      "integer_threshold": 100000000,
+      "integer_threshold_bits": 27,
+      "largest_base": 105,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          103,
+          104
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 103,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 104945464,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 20,
+        "largest_base_lower": 103,
+        "largest_base_upper_non_base_case": 108,
+        "maximum_trials_non_base_case": 6,
+        "raw_candidate_bound_per_trial": 4845,
+        "raw_candidate_bound_total_non_base_case": 29070
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 99996999990000300000,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 2,
+            "graph_gcd_evaluations": 210,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 7,
+            "search_nodes": 9
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 100003,
+          "raw_candidate_bound": 4845,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 99983,
+            "upper": 100003,
+            "width_bound": 20
+          },
+          "witness": [
+            99997,
+            99999,
+            100000,
+            100001,
+            100003
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 99999999900000000009,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 210,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 4,
+            "search_nodes": 5
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 100004,
+          "raw_candidate_bound": 4845,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 99984,
+            "upper": 100004,
+            "width_bound": 20
+          },
+          "witness": [
+            99997,
+            99999,
+            100001,
+            100003,
+            100004
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 100004999949995499964,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 210,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 4,
+            "search_nodes": 5
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 100005,
+          "raw_candidate_bound": 4845,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 99985,
+            "upper": 100005,
+            "width_bound": 20
+          },
+          "witness": [
+            99997,
+            100001,
+            100003,
+            100004,
+            100005
+          ]
+        }
+      ],
+      "base_threshold_b": 100002,
+      "bases": [
+        99997,
+        100001,
+        100003,
+        100004,
+        100005
+      ],
+      "channels": 5,
+      "counts": {
+        "anchor_candidates": 3,
+        "completed_cliques": 4,
+        "graph_gcd_evaluations": 630,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 15,
+        "search_nodes": 19
+      },
+      "input_bits": 68,
+      "input_description": "10^20",
+      "input_threshold": "100000000000000000000",
+      "integer_threshold": 100000000000000000000,
+      "integer_threshold_bits": 67,
+      "largest_base": 100005,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          100003,
+          100004
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 100003,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 100004999949995499964,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 20,
+        "largest_base_lower": 100003,
+        "largest_base_upper_non_base_case": 100008,
+        "maximum_trials_non_base_case": 6,
+        "raw_candidate_bound_per_trial": 4845,
+        "raw_candidate_bound_total_non_base_case": 29070
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 9999999999999999999999996999999999999999999999999900000000000000000000000030000000000000000000000000,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 2,
+            "graph_gcd_evaluations": 210,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 7,
+            "search_nodes": 9
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10000000000000000000000003,
+          "raw_candidate_bound": 4845,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 9999999999999999999999983,
+            "upper": 10000000000000000000000003,
+            "width_bound": 20
+          },
+          "witness": [
+            9999999999999999999999997,
+            9999999999999999999999999,
+            10000000000000000000000000,
+            10000000000000000000000001,
+            10000000000000000000000003
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 9999999999999999999999997999999999999999999999998400000000000000000000000020000000000000000000000015,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 210,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 4,
+            "search_nodes": 5
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10000000000000000000000004,
+          "raw_candidate_bound": 4845,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 9999999999999999999999984,
+            "upper": 10000000000000000000000004,
+            "width_bound": 20
+          },
+          "witness": [
+            9999999999999999999999995,
+            9999999999999999999999999,
+            10000000000000000000000001,
+            10000000000000000000000003,
+            10000000000000000000000004
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 9999999999999999999999998999999999999999999999998900000000000000000000000090000000000000000000000018,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 2,
+            "graph_gcd_evaluations": 210,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 7,
+            "search_nodes": 9
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10000000000000000000000005,
+          "raw_candidate_bound": 4845,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 9999999999999999999999985,
+            "upper": 10000000000000000000000005,
+            "width_bound": 20
+          },
+          "witness": [
+            9999999999999999999999997,
+            9999999999999999999999998,
+            10000000000000000000000001,
+            10000000000000000000000003,
+            10000000000000000000000005
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 10000000000000000000000005999999999999999999999999599999999999999999999999459999999999999999999999955,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 210,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 4,
+            "search_nodes": 5
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10000000000000000000000006,
+          "raw_candidate_bound": 4845,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 9999999999999999999999986,
+            "upper": 10000000000000000000000006,
+            "width_bound": 20
+          },
+          "witness": [
+            9999999999999999999999997,
+            10000000000000000000000001,
+            10000000000000000000000003,
+            10000000000000000000000005,
+            10000000000000000000000006
+          ]
+        }
+      ],
+      "base_threshold_b": 10000000000000000000000002,
+      "bases": [
+        9999999999999999999999997,
+        10000000000000000000000001,
+        10000000000000000000000003,
+        10000000000000000000000005,
+        10000000000000000000000006
+      ],
+      "channels": 5,
+      "counts": {
+        "anchor_candidates": 4,
+        "completed_cliques": 6,
+        "graph_gcd_evaluations": 840,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 22,
+        "search_nodes": 28
+      },
+      "input_bits": 334,
+      "input_description": "10^100",
+      "input_threshold": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "integer_threshold": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+      "integer_threshold_bits": 333,
+      "largest_base": 10000000000000000000000006,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          10000000000000000000000003,
+          10000000000000000000000004,
+          10000000000000000000000005
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 10000000000000000000000003,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 10000000000000000000000005999999999999999999999999599999999999999999999999459999999999999999999999955,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 20,
+        "largest_base_lower": 10000000000000000000000003,
+        "largest_base_upper_non_base_case": 10000000000000000000000008,
+        "maximum_trials_non_base_case": 6,
+        "raw_candidate_bound_per_trial": 4845,
+        "raw_candidate_bound_total_non_base_case": 29070
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999996999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999990000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 2,
+            "graph_gcd_evaluations": 210,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 7,
+            "search_nodes": 9
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+          "raw_candidate_bound": 4845,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999983,
+            "upper": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+            "width_bound": 20
+          },
+          "witness": [
+            99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997,
+            99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999,
+            100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+            100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
+            100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 210,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 4,
+            "search_nodes": 5
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004,
+          "raw_candidate_bound": 4845,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999984,
+            "upper": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004,
+            "width_bound": 20
+          },
+          "witness": [
+            99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997,
+            99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999,
+            100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
+            100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+            100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999949999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999995499999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999964,
+          "channels": 5,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 210,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 4,
+            "search_nodes": 5
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005,
+          "raw_candidate_bound": 4845,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999985,
+            "upper": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005,
+            "width_bound": 20
+          },
+          "witness": [
+            99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997,
+            100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
+            100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+            100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004,
+            100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005
+          ]
+        }
+      ],
+      "base_threshold_b": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002,
+      "bases": [
+        99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997,
+        100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
+        100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+        100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004,
+        100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005
+      ],
+      "channels": 5,
+      "counts": {
+        "anchor_candidates": 3,
+        "completed_cliques": 4,
+        "graph_gcd_evaluations": 630,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 15,
+        "search_nodes": 19
+      },
+      "input_bits": 1662,
+      "input_description": "10^500",
+      "input_threshold": "100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "integer_threshold": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+      "integer_threshold_bits": 1661,
+      "largest_base": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+          100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999949999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999995499999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999964,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 20,
+        "largest_base_lower": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+        "largest_base_upper_non_base_case": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008,
+        "maximum_trials_non_base_case": 6,
+        "raw_candidate_bound_per_trial": 4845,
+        "raw_candidate_bound_total_non_base_case": 29070
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 36,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10,
+          "raw_candidate_bound": 56,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 10,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 45,
+            "pruned_cardinality": 13,
+            "pruned_product_bound": 0,
+            "search_nodes": 13
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 11,
+          "raw_candidate_bound": 126,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 11,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 0,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 0,
+            "graph_gcd_evaluations": 55,
+            "pruned_cardinality": 1,
+            "pruned_product_bound": 0,
+            "search_nodes": 1
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 12,
+          "raw_candidate_bound": 252,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 12,
+            "width_bound": 39
+          },
+          "witness": null
+        },
+        {
+          "anchored": true,
+          "capacity": 27720,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 66,
+            "pruned_cardinality": 6,
+            "pruned_product_bound": 3,
+            "search_nodes": 10
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 13,
+          "raw_candidate_bound": 462,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 2,
+            "upper": 13,
+            "width_bound": 39
+          },
+          "witness": [
+            5,
+            7,
+            8,
+            9,
+            11,
+            13
+          ]
+        }
+      ],
+      "base_threshold_b": 9,
+      "bases": [
+        5,
+        7,
+        8,
+        9,
+        11,
+        13
+      ],
+      "channels": 6,
+      "counts": {
+        "anchor_candidates": 4,
+        "completed_cliques": 1,
+        "graph_gcd_evaluations": 202,
+        "pruned_cardinality": 21,
+        "pruned_product_bound": 3,
+        "search_nodes": 25
+      },
+      "input_bits": 15,
+      "input_description": "10^4",
+      "input_threshold": "10000",
+      "integer_threshold": 10000,
+      "integer_threshold_bits": 14,
+      "largest_base": 13,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          10,
+          11,
+          12
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 10,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 27720,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 39,
+        "largest_base_lower": 10,
+        "largest_base_upper_non_base_case": 18,
+        "maximum_trials_non_base_case": 9,
+        "raw_candidate_bound_per_trial": 575757,
+        "raw_candidate_bound_total_non_base_case": 5181813
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 78686790,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 3,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 13,
+            "search_nodes": 16
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 43,
+          "raw_candidate_bound": 575757,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 4,
+            "upper": 43,
+            "width_bound": 39
+          },
+          "witness": [
+            35,
+            37,
+            38,
+            39,
+            41,
+            43
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 89040315,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 5,
+            "search_nodes": 6
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 44,
+          "raw_candidate_bound": 575757,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 5,
+            "upper": 44,
+            "width_bound": 39
+          },
+          "witness": [
+            35,
+            37,
+            39,
+            41,
+            43,
+            44
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 88975084,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 5,
+            "search_nodes": 6
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 45,
+          "raw_candidate_bound": 575757,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 6,
+            "upper": 45,
+            "width_bound": 39
+          },
+          "witness": [
+            31,
+            37,
+            41,
+            43,
+            44,
+            45
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 90997245,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 5,
+            "search_nodes": 6
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 46,
+          "raw_candidate_bound": 575757,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 7,
+            "upper": 46,
+            "width_bound": 39
+          },
+          "witness": [
+            31,
+            37,
+            41,
+            43,
+            45,
+            46
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 135028170,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 6,
+            "search_nodes": 7
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 47,
+          "raw_candidate_bound": 575757,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 8,
+            "upper": 47,
+            "width_bound": 39
+          },
+          "witness": [
+            37,
+            41,
+            43,
+            45,
+            46,
+            47
+          ]
+        }
+      ],
+      "base_threshold_b": 42,
+      "bases": [
+        37,
+        41,
+        43,
+        45,
+        46,
+        47
+      ],
+      "channels": 6,
+      "counts": {
+        "anchor_candidates": 5,
+        "completed_cliques": 7,
+        "graph_gcd_evaluations": 3900,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 34,
+        "search_nodes": 41
+      },
+      "input_bits": 28,
+      "input_description": "10^8",
+      "input_threshold": "100000000",
+      "integer_threshold": 100000000,
+      "integer_threshold_bits": 27,
+      "largest_base": 47,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          43,
+          44,
+          45,
+          46
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 43,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 135028170,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 39,
+        "largest_base_lower": 43,
+        "largest_base_upper_non_base_case": 51,
+        "maximum_trials_non_base_case": 9,
+        "raw_candidate_bound_per_trial": 575757,
+        "raw_candidate_bound_total_non_base_case": 5181813
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 99949990005000089955,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 5,
+            "search_nodes": 6
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10004,
+          "raw_candidate_bound": 575757,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 9965,
+            "upper": 10004,
+            "width_bound": 39
+          },
+          "witness": [
+            9995,
+            9997,
+            9999,
+            10001,
+            10003,
+            10004
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 99959950000003690324,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 5,
+            "search_nodes": 6
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10005,
+          "raw_candidate_bound": 575757,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 9966,
+            "upper": 10005,
+            "width_bound": 39
+          },
+          "witness": [
+            9991,
+            9997,
+            10001,
+            10003,
+            10004,
+            10005
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 99969941998204410405,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 5,
+            "search_nodes": 6
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10006,
+          "raw_candidate_bound": 575757,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 9967,
+            "upper": 10006,
+            "width_bound": 39
+          },
+          "witness": [
+            9991,
+            9997,
+            10001,
+            10003,
+            10005,
+            10006
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 100120031992196309730,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 6,
+            "search_nodes": 7
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10007,
+          "raw_candidate_bound": 575757,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 9968,
+            "upper": 10007,
+            "width_bound": 39
+          },
+          "witness": [
+            9997,
+            10001,
+            10003,
+            10005,
+            10006,
+            10007
+          ]
+        }
+      ],
+      "base_threshold_b": 10003,
+      "bases": [
+        9997,
+        10001,
+        10003,
+        10005,
+        10006,
+        10007
+      ],
+      "channels": 6,
+      "counts": {
+        "anchor_candidates": 4,
+        "completed_cliques": 4,
+        "graph_gcd_evaluations": 3120,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 21,
+        "search_nodes": 25
+      },
+      "input_bits": 68,
+      "input_description": "10^20",
+      "input_threshold": "100000000000000000000",
+      "integer_threshold": 100000000000000000000,
+      "integer_threshold_bits": 67,
+      "largest_base": 10007,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          10004,
+          10005,
+          10006
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 10004,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 100120031992196309730,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 39,
+        "largest_base_lower": 10004,
+        "largest_base_upper_non_base_case": 10012,
+        "maximum_trials_non_base_case": 9,
+        "raw_candidate_bound_per_trial": 575757,
+        "raw_candidate_bound_total_non_base_case": 5181813
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 9999999999999999999499999999999999999990000000000000000000500000000000000000000899999999999999999955,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 5,
+            "search_nodes": 6
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 100000000000000000004,
+          "raw_candidate_bound": 575757,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 99999999999999999965,
+            "upper": 100000000000000000004,
+            "width_bound": 39
+          },
+          "witness": [
+            99999999999999999995,
+            99999999999999999997,
+            99999999999999999999,
+            100000000000000000001,
+            100000000000000000003,
+            100000000000000000004
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 9999999999999999999399999999999999999940000000000000000000100000000000000000045900000000000000000396,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 5,
+            "search_nodes": 6
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 100000000000000000005,
+          "raw_candidate_bound": 575757,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 99999999999999999966,
+            "upper": 100000000000000000005,
+            "width_bound": 39
+          },
+          "witness": [
+            99999999999999999989,
+            99999999999999999997,
+            100000000000000000001,
+            100000000000000000003,
+            100000000000000000004,
+            100000000000000000005
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 9999999999999999999499999999999999999990000000000000000000500000000000000000000899999999999999999955,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 2,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 9,
+            "search_nodes": 11
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 100000000000000000006,
+          "raw_candidate_bound": 575757,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 99999999999999999967,
+            "upper": 100000000000000000006,
+            "width_bound": 39
+          },
+          "witness": [
+            99999999999999999995,
+            99999999999999999997,
+            99999999999999999999,
+            100000000000000000001,
+            100000000000000000003,
+            100000000000000000006
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 10000000000000000001200000000000000000031999999999999999999219999999999999999963099999999999999999730,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 6,
+            "search_nodes": 7
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 100000000000000000007,
+          "raw_candidate_bound": 575757,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 99999999999999999968,
+            "upper": 100000000000000000007,
+            "width_bound": 39
+          },
+          "witness": [
+            99999999999999999997,
+            100000000000000000001,
+            100000000000000000003,
+            100000000000000000005,
+            100000000000000000006,
+            100000000000000000007
+          ]
+        }
+      ],
+      "base_threshold_b": 100000000000000000003,
+      "bases": [
+        99999999999999999997,
+        100000000000000000001,
+        100000000000000000003,
+        100000000000000000005,
+        100000000000000000006,
+        100000000000000000007
+      ],
+      "channels": 6,
+      "counts": {
+        "anchor_candidates": 4,
+        "completed_cliques": 5,
+        "graph_gcd_evaluations": 3120,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 25,
+        "search_nodes": 30
+      },
+      "input_bits": 334,
+      "input_description": "10^100",
+      "input_threshold": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "integer_threshold": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+      "integer_threshold_bits": 333,
+      "largest_base": 100000000000000000007,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          100000000000000000004,
+          100000000000000000005,
+          100000000000000000006
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 100000000000000000004,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 10000000000000000001200000000000000000031999999999999999999219999999999999999963099999999999999999730,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 39,
+        "largest_base_lower": 100000000000000000004,
+        "largest_base_upper_non_base_case": 100000000000000000012,
+        "maximum_trials_non_base_case": 9,
+        "raw_candidate_bound_per_trial": 575757,
+        "raw_candidate_bound_total_non_base_case": 5181813
+      }
+    },
+    {
+      "algorithm": "rcrt-local-exact-v1",
+      "attempts": [
+        {
+          "anchored": true,
+          "capacity": 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999949999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999990000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000089999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999955,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 5,
+            "search_nodes": 6
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004,
+          "raw_candidate_bound": 575757,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999965,
+            "upper": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004,
+            "width_bound": 39
+          },
+          "witness": [
+            9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999995,
+            9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997,
+            9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999959999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999950000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003690000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000324,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 5,
+            "search_nodes": 6
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005,
+          "raw_candidate_bound": 575757,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999966,
+            "upper": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005,
+            "width_bound": 39
+          },
+          "witness": [
+            9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999991,
+            9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999969999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999941999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999998200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004410000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000405,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 5,
+            "search_nodes": 6
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006,
+          "raw_candidate_bound": 575757,
+          "threshold_met": false,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999967,
+            "upper": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006,
+            "width_bound": 39
+          },
+          "witness": [
+            9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999991,
+            9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006
+          ]
+        },
+        {
+          "anchored": true,
+          "capacity": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000031999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999992199999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999996309999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999730,
+          "channels": 6,
+          "counts": {
+            "anchor_candidates": 1,
+            "completed_cliques": 1,
+            "graph_gcd_evaluations": 780,
+            "pruned_cardinality": 0,
+            "pruned_product_bound": 6,
+            "search_nodes": 7
+          },
+          "exact_scope": "anchored_local_maximum",
+          "maximum": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007,
+          "raw_candidate_bound": 575757,
+          "threshold_met": true,
+          "tie_rule": "first maximizer in descending anchor/candidate order",
+          "window": {
+            "lower": 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999968,
+            "upper": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007,
+            "width_bound": 39
+          },
+          "witness": [
+            9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006,
+            10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007
+          ]
+        }
+      ],
+      "base_threshold_b": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+      "bases": [
+        9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997,
+        10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
+        10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+        10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005,
+        10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006,
+        10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007
+      ],
+      "channels": 6,
+      "counts": {
+        "anchor_candidates": 4,
+        "completed_cliques": 4,
+        "graph_gcd_evaluations": 3120,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 21,
+        "search_nodes": 25
+      },
+      "input_bits": 1662,
+      "input_description": "10^500",
+      "input_threshold": "100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "integer_threshold": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+      "integer_threshold_bits": 1661,
+      "largest_base": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007,
+      "method": "bounded-local-exact-search",
+      "minimality_certificate": {
+        "failed_trial_maxima": [
+          10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004,
+          10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005,
+          10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006
+        ],
+        "kind": "first-feasible-localized-capacity-threshold",
+        "lower_bound": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004,
+        "reason_anchoring_suffices": "At a first globally feasible maximum, a capacity maximizer must include that maximum and lies in the proved window."
+      },
+      "product_smallest": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000031999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999992199999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999996309999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999730,
+      "schema_version": 1,
+      "scope": "common-scale pairwise-coprime bases; standard certified m/4 radius",
+      "search_bounds": {
+        "capacity_window_width": 39,
+        "largest_base_lower": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004,
+        "largest_base_upper_non_base_case": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012,
+        "maximum_trials_non_base_case": 9,
+        "raw_candidate_bound_per_trial": 575757,
+        "raw_candidate_bound_total_non_base_case": 5181813
+      }
+    }
+  ],
+  "reproduce": "python code/solve.py examples > results/solver_examples.json",
+  "schema_version": 1,
+  "timing_note": "No hardware-independent timing or universal performance claim is made.",
+  "verification_scope": "Unlocalized all-tuple enumeration on the stated finite ranges; boundary inversion checks and exact large-integer examples. These checks validate the implementation on those inputs; all-range correctness relies on the manuscript's analytic proofs."
+}

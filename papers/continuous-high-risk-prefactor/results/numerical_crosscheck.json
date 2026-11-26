@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "scope": "high precision numerical checks; not rigorous global or floating-point certificates",
+  "mpmath_version": "1.3.0",
+  "decimal_precision": 110,
+  "first_discretization": {
+    "delay_mesh": 8,
+    "taylor_order": 100
+  },
+  "second_discretization": {
+    "delay_mesh": 16,
+    "taylor_order": 80
+  },
+  "c_numeric": "1.256431208626169676982737616609216326916416831701323711125894727",
+  "amplitude_numeric": "1.1062346581287343915159084319820058181944718331361159624954289147",
+  "rows": [
+    {
+      "tail_mass_q": "1/1",
+      "T": 1,
+      "optimal_gap_numeric": "0.41802329313067357561499799489098844145313069892460386373321294035",
+      "scaled_gap_numeric": "1.4684583159748012014040487687338707862355039109041",
+      "relative_error_of_leading_term": "0.32743835603450622712732689829032006",
+      "independent_mesh_relative_difference": "0.0",
+      "source_strategy_gap_numeric": "0.397952547315916544786059572021919544065871618"
+    },
+    {
+      "tail_mass_q": "1/2",
+      "T": 2,
+      "optimal_gap_numeric": "0.10383418438767513699267287803750590696912956633516948502980543499",
+      "scaled_gap_numeric": "1.2813348474936127245105033355378285535906825862349",
+      "relative_error_of_leading_term": "0.15828485220402634398381330998583417",
+      "independent_mesh_relative_difference": "2.6260319444e-90",
+      "source_strategy_gap_numeric": "0.0881818479097819113179100961660284721725667107"
+    },
+    {
+      "tail_mass_q": "1/4",
+      "T": 4,
+      "optimal_gap_numeric": "0.0074325580098022580502577501269890976011665240145265763771857887289",
+      "scaled_gap_numeric": "1.1318343512626541756862617870343401518938449390848",
+      "relative_error_of_leading_term": "0.023141286476436453084725164698435475",
+      "independent_mesh_relative_difference": "1.54111936257e-93",
+      "source_strategy_gap_numeric": "0.00661023315188794609275564879746117163646390281"
+    },
+    {
+      "tail_mass_q": "1/8",
+      "T": 8,
+      "optimal_gap_numeric": "0.000047718866373203945622213845050091017024724573354385801776658951179",
+      "scaled_gap_numeric": "1.10657089758874211015251721783906526789495165983",
+      "relative_error_of_leading_term": "0.00030394948986365050585824082130109924",
+      "independent_mesh_relative_difference": "1.13985404712e-91",
+      "source_strategy_gap_numeric": "0.0000431250490643149917818584940647554653655639396"
+    },
+    {
+      "tail_mass_q": "1/16",
+      "T": 16,
+      "optimal_gap_numeric": "0.0000000020571644923572708850421846759376109764705841274248382704589101925",
+      "scaled_gap_numeric": "1.1062346877494168615389281856868957823772551586173",
+      "relative_error_of_leading_term": "0.000000026776129505947924309749407672682394",
+      "independent_mesh_relative_difference": "2.63099327949e-87",
+      "source_strategy_gap_numeric": "0.00000000185960946530071223262641751265900003232475003"
+    },
+    {
+      "tail_mass_q": "1/32",
+      "T": 32,
+      "optimal_gap_numeric": "0.0000000000000000038255224521214534536269143865974551061883392090674555383407853011",
+      "scaled_gap_numeric": "1.106234658128734502830634460059406336963031289884",
+      "relative_error_of_leading_term": "1.0062487665715813999650150915722646e-16",
+      "independent_mesh_relative_difference": "1.41480929533e-78",
+      "source_strategy_gap_numeric": "3.45814735057439376209171740368588744827616893e-18"
+    },
+    {
+      "tail_mass_q": "1/48",
+      "T": 48,
+      "optimal_gap_numeric": "7.1139777484562244966505010828475830704059189979332111551116004202e-27",
+      "scaled_gap_numeric": "1.1062346581287343915159087435567300053607792976085",
+      "relative_error_of_leading_term": "2.8165337426167299823514791611710082e-25",
+      "independent_mesh_relative_difference": "7.60809903565e-70",
+      "source_strategy_gap_numeric": "6.43080353357393989440304097917106264604412202e-27"
+    },
+    {
+      "tail_mass_q": "1/64",
+      "T": 64,
+      "optimal_gap_numeric": "1.3229220332366660995111377934573628852725946293117112560074774092e-35",
+      "scaled_gap_numeric": "1.1062346581287343915159084319820065920664736483121",
+      "relative_error_of_leading_term": "6.9955501405482020370358656085067095e-34",
+      "independent_mesh_relative_difference": "4.09123484891e-61",
+      "source_strategy_gap_numeric": "1.19587830982846989500874660120861970090947318e-35"
+    }
+  ]
+}

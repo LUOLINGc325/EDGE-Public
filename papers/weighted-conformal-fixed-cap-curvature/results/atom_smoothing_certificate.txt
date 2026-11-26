@@ -1,0 +1,4 @@
+3969 exact interval inequalities, 1962 strict
+1646 intervals cross at least two Simes thresholds
+240 unweighted finite-sample laws: exact marginals and Simes control
+q=99/100, B=5: rational Taylor comparison is strict

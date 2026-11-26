@@ -1,0 +1,30 @@
+d=2 limit=1/2
+  r=  1 scaled=0.083333333333 error_bound=1.250000000000
+  r=  2 scaled=0.284444444444 error_bound=0.312500000000
+  r=  8 scaled=0.480976102014 error_bound=0.019531250000
+  r= 32 scaled=0.498781320584 error_bound=0.001220703125
+  r=128 scaled=0.499923713970 error_bound=0.000076293945
+d=4 limit=1/4
+  r=  1 scaled=0.048611111111 error_bound=1.250000000000
+  r=  2 scaled=0.171930864198 error_bound=0.125000000000
+  r=  8 scaled=0.245909594391 error_bound=0.004150390625
+  r= 32 scaled=0.249755088114 error_bound=0.000245094299
+  r=128 scaled=0.249984738185 error_bound=0.000015262514
+d=6 limit=1/8
+  r=  1 scaled=0.021412037037 error_bound=1.187500000000
+  r=  2 scaled=0.083695495199 error_bound=0.062500000000
+  r=  8 scaled=0.122112023890 error_bound=0.002933502197
+  r= 32 scaled=0.124817072274 error_bound=0.000183106400
+  r=128 scaled=0.124988556606 error_bound=0.000011444092
+d=8 limit=1/16
+  r=  1 scaled=0.008439429012 error_bound=1.125000000000
+  r=  2 scaled=0.038363082311 error_bound=0.035156250000
+  r=  8 scaled=0.060584381323 error_bound=0.001953184605
+  r= 32 scaled=0.062378078553 error_bound=0.000122070313
+  r=128 scaled=0.062492371188 error_bound=0.000007629395
+packet i= 2 lower_ratio_to_R^-2=1/64
+packet i= 8 lower_ratio_to_R^-2=1/256
+packet i=16 lower_ratio_to_R^-2=1/16
+packet i=32 lower_ratio_to_R^-2=256
+packet i=64 lower_ratio_to_R^-2=68719476736
+EXACT_RATIONAL_CHECKS_OK

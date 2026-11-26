@@ -1,0 +1,113 @@
+{
+  "kind": "independent_numerical_stress_check_not_theorem_proof",
+  "seed": 20261124,
+  "cases": 1200,
+  "n_range": [
+    1,
+    100
+  ],
+  "boundary_probabilities": "fixed Bernoulli ones present; arbitrary zeros may be appended",
+  "max_stockout_calibration_error": 4.6629367034256575e-15,
+  "min_utilization_gap": -6.661338147750939e-16,
+  "min_acceptance_gap": 0.0006731188845274794,
+  "tolerance": 2e-12,
+  "violations": [],
+  "sample_cases": [
+    {
+      "n": 22,
+      "k": 22,
+      "fixed_ones": 3,
+      "u_gap": 0.05621555300268777,
+      "a_gap": 0.06176114638238617,
+      "boundary_error": 1.5543122344752192e-15
+    },
+    {
+      "n": 97,
+      "k": 52,
+      "fixed_ones": 6,
+      "u_gap": 0.03282065942570289,
+      "a_gap": 0.03208377389001782,
+      "boundary_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 44,
+      "k": 3,
+      "fixed_ones": 2,
+      "u_gap": 0.08297844727977322,
+      "a_gap": 0.07431524175186177,
+      "boundary_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 90,
+      "k": 6,
+      "fixed_ones": 2,
+      "u_gap": 0.040794079238925196,
+      "a_gap": 0.03471858941765882,
+      "boundary_error": 7.771561172376096e-16
+    },
+    {
+      "n": 54,
+      "k": 17,
+      "fixed_ones": 14,
+      "u_gap": 0.05230923727765335,
+      "a_gap": 0.04213931893311307,
+      "boundary_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 18,
+      "k": 7,
+      "fixed_ones": 3,
+      "u_gap": 0.06313699567195485,
+      "a_gap": 0.0554190939488991,
+      "boundary_error": 0.0
+    },
+    {
+      "n": 68,
+      "k": 5,
+      "fixed_ones": 2,
+      "u_gap": 0.04548556430151085,
+      "a_gap": 0.03514976022520988,
+      "boundary_error": 4.440892098500626e-16
+    },
+    {
+      "n": 92,
+      "k": 63,
+      "fixed_ones": 34,
+      "u_gap": 0.03692003562011037,
+      "a_gap": 0.03614121114073254,
+      "boundary_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 8,
+      "k": 1,
+      "fixed_ones": 0,
+      "u_gap": 1.1102230246251565e-16,
+      "a_gap": 0.006489115201393836,
+      "boundary_error": 2.220446049250313e-16
+    },
+    {
+      "n": 64,
+      "k": 44,
+      "fixed_ones": 25,
+      "u_gap": 0.03983870757350805,
+      "a_gap": 0.03869412510976755,
+      "boundary_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 46,
+      "k": 28,
+      "fixed_ones": 22,
+      "u_gap": 0.04655552675862362,
+      "a_gap": 0.043693539694024675,
+      "boundary_error": 0.0
+    },
+    {
+      "n": 53,
+      "k": 34,
+      "fixed_ones": 28,
+      "u_gap": 0.04977501871297896,
+      "a_gap": 0.04839919754760047,
+      "boundary_error": 2.220446049250313e-16
+    }
+  ]
+}

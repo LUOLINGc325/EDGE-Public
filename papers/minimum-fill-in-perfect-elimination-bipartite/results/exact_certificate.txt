@@ -1,0 +1,2 @@
+exhaustive source graphs: 75; degrees 2, 3, 4 passed
+seeded source graphs: 60; degrees 2, 3, 4 passed

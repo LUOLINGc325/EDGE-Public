@@ -1,0 +1,96 @@
+{
+  "algorithm_scope": "Reference prime factorization is polynomial, direct automorphism enumeration is potentially exponential; the manuscript's linear bound is an external-algorithm-based promise result.",
+  "arithmetic": "finite graph adjacency, exact permutations and integer counts; no floating point",
+  "atlas_automorphisms_examined": 24083,
+  "atlas_composite_connected_graphs": 3,
+  "atlas_connected_graphs": 996,
+  "atlas_nonempty_graphs": 1252,
+  "atlas_square_graphs_with_root_reconstruction": 634,
+  "groups": {
+    "connected_atlas_count_formula": {
+      "cases": 996,
+      "sha256": "50c36ceeed3a72b014c81fa7f5a087319a4a8a405b9422477c5f677e4a0281e5"
+    },
+    "disconnected_atlas_component_lemma": {
+      "cases": 256,
+      "sha256": "d8bf39e991763da668a63a1caa828f62b30ad992a80ce160ad4d243e8c9f2c2a"
+    },
+    "nonsquare_product_full_criterion": {
+      "cases": 79,
+      "sha256": "242d4a02e794785874c2abd807fe8ae88bd98f4bc2de047a34a1ec355f57dbbf"
+    },
+    "ordered_token_connectivity": {
+      "cases": 995,
+      "sha256": "4203655a211a822eca54c3b809c64e2759c1e99d9b906a7547fc25765de63b7a"
+    },
+    "small_connected_product_count_formula": {
+      "cases": 55,
+      "sha256": "631b5b84d127667c007a5973391eed6722624921958603256daf318a12326997"
+    }
+  },
+  "hypercube_counts": [
+    {
+      "count": 0,
+      "dimension": 1
+    },
+    {
+      "count": 2,
+      "dimension": 2
+    },
+    {
+      "count": 6,
+      "dimension": 3
+    },
+    {
+      "count": 12,
+      "dimension": 4
+    }
+  ],
+  "networkx_version": "3.4.2",
+  "scope": "All nonempty NetworkX atlas graphs (up to seven vertices); explicitly specified product families only. The finite checks do not prove the unrestricted theorems.",
+  "status": "PASS",
+  "targeted_cases": [
+    {
+      "name": "P4_box_P4",
+      "reason": "common_even_path",
+      "square": true,
+      "vertices": 16
+    },
+    {
+      "name": "P2_box_P4",
+      "reason": "neither_condition",
+      "square": false,
+      "vertices": 8
+    },
+    {
+      "name": "K3_box_K3",
+      "reason": "neither_condition",
+      "square": false,
+      "vertices": 9
+    },
+    {
+      "name": "K1_plus_K3_squared",
+      "reason": "repeated_product_component",
+      "square": true,
+      "vertices": 16
+    },
+    {
+      "name": "two_K3_times_K1",
+      "reason": "neither_condition",
+      "square": false,
+      "vertices": 6
+    },
+    {
+      "name": "two_K3_times_two_K1",
+      "reason": "repeated_product_component",
+      "square": true,
+      "vertices": 12
+    },
+    {
+      "name": "nonisomorphic_factors_P2K3_P2K4",
+      "reason": "common_even_path",
+      "square": true,
+      "vertices": 48
+    }
+  ]
+}

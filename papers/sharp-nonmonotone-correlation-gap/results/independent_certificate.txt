@@ -1,0 +1,22 @@
+PASS n2_balanced: n=2, verified=2, coverage=all coupling vertices, minimum=1/2
+PASS n2_asymmetric: n=2, verified=2, coverage=all coupling vertices, minimum=1/5
+PASS n3_balanced: n=3, verified=6, coverage=all coupling vertices, minimum=1/2
+PASS n3_upper_construction: n=3, verified=6, coverage=all coupling vertices, minimum=7/16
+PASS n3_sparse: n=3, verified=6, coverage=all coupling vertices, minimum=19/100
+PASS n3_unequal: n=3, verified=11, coverage=all coupling vertices, minimum=66/125
+PASS n4_balanced: n=4, verified=48, coverage=all coupling vertices, minimum=1/2
+PASS n4_upper_construction: n=4, verified=30, coverage=all coupling vertices, minimum=91/216
+PASS n4_sparse: n=4, verified=30, coverage=all coupling vertices, minimum=631/3375
+PASS n4_unequal: n=4, verified=36, coverage=all coupling vertices, minimum=751/4000
+PASS n4_small_max: n=4, verified=42, coverage=all coupling vertices, minimum=244/375
+PASS n4_high: n=4, verified=42, coverage=all coupling vertices, minimum=244/375
+PASS n5_sampled_upper: n=5, verified=89, coverage=sampled coupling vertices, minimum=1695/4096
+PASS n5_sampled_sparse: n=5, verified=83, coverage=sampled coupling vertices, minimum=29679/160000
+PASS n6_sampled_upper: n=6, verified=152, coverage=sampled coupling vertices, minimum=40951/100000
+LP TOTAL: 585 exact primal/dual certificates; 12 exhaustive fixed-marginal cases; 3 sampled cases.
+PASS extremal family: p=1/10; m=9,...,9; exact f+=(1-p) via blocker envelope and explicit coupling.
+PASS extremal family: p=1/2; m=1,...,9; exact f+=(1-p) via blocker envelope and explicit coupling.
+PASS extremal family: p=4/5; m=1,...,9; exact f+=(1-p) via blocker envelope and explicit coupling.
+PASS extremal family: p=19/20; m=1,...,9; exact f+=(1-p) via blocker envelope and explicit coupling.
+EXTREMAL TOTAL: 28 fully enumerated exact instances.
+PASS: all listed finite checks. Universal validity requires the written proof.

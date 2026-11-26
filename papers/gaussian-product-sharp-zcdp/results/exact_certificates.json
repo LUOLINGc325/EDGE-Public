@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "arithmetic": "Python standard-library fractions.Fraction; all decisions exact",
+  "gaussian_quadratic_completion_checks": 200,
+  "forward_rational_substitution_checks": 120,
+  "cleared_forward_polynomial_identity_checks": 1,
+  "integer_count_gate_certificates": [
+    {
+      "sigma": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "r": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "b": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "d": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "first_larger_count_for_this_certificate": 12,
+      "edge": [
+        11,
+        12
+      ],
+      "a": {
+        "numerator": "11",
+        "denominator": "1"
+      },
+      "a_lower_threshold": {
+        "numerator": "2",
+        "denominator": "1"
+      },
+      "initial_rho": {
+        "numerator": "1",
+        "denominator": "2"
+      },
+      "asymptotic_optimum": {
+        "numerator": "1",
+        "denominator": "4"
+      },
+      "forward_bound_exact": {
+        "numerator": "31",
+        "denominator": "77"
+      },
+      "forward_bound_decimal_upper": "0.402597402598",
+      "reverse_bound_rational_upper": {
+        "numerator": "458362719521",
+        "denominator": "1000000000000"
+      },
+      "reverse_bound_decimal_upper": "0.458362719521",
+      "bidirectional_bound_rational_upper": {
+        "numerator": "458362719521",
+        "denominator": "1000000000000"
+      },
+      "comparison_target": {
+        "numerator": "47",
+        "denominator": "100"
+      },
+      "strictly_below_initial_rho": true,
+      "previous_larger_count": 11,
+      "previous_reverse_leading_term": {
+        "numerator": "1",
+        "denominator": "2"
+      },
+      "previous_leading_at_least_initial_rho": true,
+      "gate_scope": "first strict improvement for the sufficient R/F certificate on integer counts, not for the unknown finite-count optimum",
+      "exponential_certificate": {
+        "leading_term": {
+          "numerator": "5",
+          "denominator": "11"
+        },
+        "tail_exponent_positive": {
+          "numerator": "60",
+          "denominator": "1"
+        },
+        "central_exponent_positive": {
+          "numerator": "97",
+          "denominator": "8"
+        },
+        "tail_exponential_upper": {
+          "numerator": "159835207",
+          "denominator": "1000000000000000000000000000000"
+        },
+        "central_exponential_upper": {
+          "numerator": "5422251384804647748592551",
+          "denominator": "1000000000000000000000000000000"
+        },
+        "taylor_degree": 32
+      }
+    },
+    {
+      "sigma": {
+        "numerator": "10",
+        "denominator": "1"
+      },
+      "r": {
+        "numerator": "3",
+        "denominator": "10"
+      },
+      "b": {
+        "numerator": "10",
+        "denominator": "3"
+      },
+      "d": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "first_larger_count_for_this_certificate": 3024,
+      "edge": [
+        3023,
+        3024
+      ],
+      "a": {
+        "numerator": "3023",
+        "denominator": "10"
+      },
+      "a_lower_threshold": {
+        "numerator": "1000",
+        "denominator": "9"
+      },
+      "initial_rho": {
+        "numerator": "1",
+        "denominator": "200"
+      },
+      "asymptotic_optimum": {
+        "numerator": "1",
+        "denominator": "400"
+      },
+      "forward_bound_exact": {
+        "numerator": "29790347",
+        "denominator": "10948096800"
+      },
+      "forward_bound_decimal_upper": "0.002721052577",
+      "reverse_bound_rational_upper": {
+        "numerator": "4998713567",
+        "denominator": "1000000000000"
+      },
+      "reverse_bound_decimal_upper": "0.004998713567",
+      "bidirectional_bound_rational_upper": {
+        "numerator": "4998713567",
+        "denominator": "1000000000000"
+      },
+      "comparison_target": {
+        "numerator": "4999",
+        "denominator": "1000000"
+      },
+      "strictly_below_initial_rho": true,
+      "previous_larger_count": 3023,
+      "previous_reverse_leading_term": {
+        "numerator": "68",
+        "denominator": "13599"
+      },
+      "previous_leading_at_least_initial_rho": true,
+      "gate_scope": "first strict improvement for the sufficient R/F certificate on integer counts, not for the unknown finite-count optimum",
+      "exponential_certificate": {
+        "leading_term": {
+          "numerator": "136",
+          "denominator": "27207"
+        },
+        "tail_exponent_positive": {
+          "numerator": "82236761",
+          "denominator": "1800"
+        },
+        "central_exponent_positive": {
+          "numerator": "27371987",
+          "denominator": "2400"
+        },
+        "tail_exponential_upper": {
+          "numerator": "1",
+          "denominator": "1000000000000000000000000000000"
+        },
+        "central_exponential_upper": {
+          "numerator": "1",
+          "denominator": "1000000000000000000000000000000"
+        },
+        "taylor_degree": 32
+      }
+    }
+  ],
+  "large_count_examples": [
+    {
+      "sigma": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "r": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "larger_edge_count": 100,
+      "edge": [
+        99,
+        100
+      ],
+      "initial_rho": {
+        "numerator": "1",
+        "denominator": "2"
+      },
+      "asymptotic_optimum": {
+        "numerator": "1",
+        "denominator": "4"
+      },
+      "forward_bound_exact": {
+        "numerator": "5197",
+        "denominator": "19503"
+      },
+      "reverse_bound_decimal_upper": "0.050505050506",
+      "bidirectional_bound_rational_upper": {
+        "numerator": "16654489053",
+        "denominator": "62500000000"
+      },
+      "bidirectional_bound_decimal_upper": "0.266471824848",
+      "ratio_to_initial_budget_decimal_upper": "0.532943649695",
+      "scope": "Sufficient all-orders bidirectional upper bound, not the exact finite-count optimum"
+    },
+    {
+      "sigma": {
+        "numerator": "10",
+        "denominator": "1"
+      },
+      "r": {
+        "numerator": "3",
+        "denominator": "10"
+      },
+      "larger_edge_count": 10000,
+      "edge": [
+        9999,
+        10000
+      ],
+      "initial_rho": {
+        "numerator": "1",
+        "denominator": "200"
+      },
+      "asymptotic_optimum": {
+        "numerator": "1",
+        "denominator": "400"
+      },
+      "forward_bound_exact": {
+        "numerator": "923407649",
+        "denominator": "359748021600"
+      },
+      "reverse_bound_decimal_upper": "0.001511262238",
+      "bidirectional_bound_rational_upper": {
+        "numerator": "1283408933",
+        "denominator": "500000000000"
+      },
+      "bidirectional_bound_decimal_upper": "0.002566817866",
+      "ratio_to_initial_budget_decimal_upper": "0.513363573144",
+      "scope": "Sufficient all-orders bidirectional upper bound, not the exact finite-count optimum"
+    }
+  ],
+  "claim_scope": [
+    "Finite exact substitutions and evaluations of analytically proved all-orders bounds.",
+    "The exponential upper bounds use reciprocal positive Taylor sums.",
+    "No exact Renyi integral, arbitrary-input theorem proof, or Lean certification is asserted.",
+    "The displayed gates concern this sufficient certificate, not the exact finite-count privacy optimum."
+  ]
+}

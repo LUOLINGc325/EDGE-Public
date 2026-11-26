@@ -1,0 +1,16 @@
+{
+  "scope":"All labelled simple subcubic graphs, two vacancies, all partitions of occupied vertices into types, n=2..6",
+  "example": {"vertices":7,"move":[0,1],"utility":[0,1],"old_cubic_potential":[10,10],"new_potential":[28,24]},
+  "by_size":[
+    {"n":2,"graphs":2,"states":2,"improving_jumps":0,"largest_delta":null},
+    {"n":3,"graphs":8,"states":24,"improving_jumps":0,"largest_delta":null},
+    {"n":4,"graphs":64,"states":768,"improving_jumps":384,"largest_delta":-5},
+    {"n":5,"graphs":768,"states":38400,"improving_jumps":48240,"largest_delta":-1},
+    {"n":6,"graphs":12068,"states":2715300,"improving_jumps":5483280,"largest_delta":-1}
+  ],
+  "total_graphs":12910,
+  "total_states":2754494,
+  "total_improving_jumps":5531904,
+  "largest_delta":-1,
+  "result":"passed"
+}

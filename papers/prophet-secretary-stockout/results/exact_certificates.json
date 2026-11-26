@@ -1,0 +1,983 @@
+{
+  "status": "passed",
+  "arithmetic": "fractions.Fraction exact rational",
+  "exponential_enclosure": {
+    "method": "positive exp(x) Taylor sum plus geometric remainder, then reciprocal",
+    "terms": 192,
+    "inverse_bracket_bisections": 44
+  },
+  "probability_cases": 35,
+  "bridge_cases": 4,
+  "scope": "finite numerical certificates; not a universal theorem",
+  "python": "3.12.14",
+  "probability": [
+    {
+      "bernoulli_parameters": [
+        "1/4"
+      ],
+      "k": 1,
+      "stockout_exact": "1/4",
+      "lambda_interval_exact": [
+        "2530478270107/8796093022208",
+        "632619567527/2199023255552"
+      ],
+      "lambda_interval_decimal": [
+        "0.2876820724517301641753",
+        "0.2876820724518438510132"
+      ],
+      "utilization_exact": "1/4",
+      "acceptance_exact": "7/8",
+      "utilization_gap_certified_lower": "exact equality by the stockout constraint",
+      "acceptance_gap_certified_lower": "0.0059851258044272715023",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0342384456611533516598",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/2",
+        "1/2"
+      ],
+      "k": 1,
+      "stockout_exact": "3/4",
+      "lambda_interval_exact": [
+        "3048493539143/2199023255552",
+        "12193974156573/8796093022208"
+      ],
+      "lambda_interval_decimal": [
+        "1.3862943611197806603740",
+        "1.3862943611198943472119"
+      ],
+      "utilization_exact": "3/4",
+      "acceptance_exact": "7/12",
+      "utilization_gap_certified_lower": "exact equality by the stockout constraint",
+      "acceptance_gap_certified_lower": "0.0423226929999489731149",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.1534264097199892365929",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/2",
+        "1/2"
+      ],
+      "k": 2,
+      "stockout_exact": "1/4",
+      "lambda_interval_exact": [
+        "4227748710315/4398046511104",
+        "1056937177579/1099511627776"
+      ],
+      "lambda_interval_decimal": [
+        "0.9612787631147057254565",
+        "0.9612787631149330991321"
+      ],
+      "utilization_exact": "1/2",
+      "acceptance_exact": "11/12",
+      "utilization_gap_certified_lower": "0.0662017848010215145519",
+      "acceptance_gap_certified_lower": "0.0141226142144650670079",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0733186790308659634585",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/7",
+        "2/7",
+        "5/7"
+      ],
+      "k": 1,
+      "stockout_exact": "283/343",
+      "lambda_interval_exact": [
+        "7667492208785/4398046511104",
+        "15334984417571/8796093022208"
+      ],
+      "lambda_interval_decimal": [
+        "1.7433858849437910976121",
+        "1.7433858849439047844499"
+      ],
+      "utilization_exact": "283/343",
+      "acceptance_exact": "1105/2058",
+      "utilization_gap_certified_lower": "exact equality by the stockout constraint",
+      "acceptance_gap_certified_lower": "0.0636701572722077227948",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0997861358914307529273",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/7",
+        "2/7",
+        "5/7"
+      ],
+      "k": 2,
+      "stockout_exact": "99/343",
+      "lambda_interval_exact": [
+        "4689822702547/4398046511104",
+        "1172455675637/1099511627776"
+      ],
+      "lambda_interval_decimal": [
+        "1.0663422250552230252651",
+        "1.0663422250554503989406"
+      ],
+      "utilization_exact": "191/343",
+      "acceptance_exact": "925/1029",
+      "utilization_gap_certified_lower": "0.0846691745435215428911",
+      "acceptance_gap_certified_lower": "0.0133201223717556766850",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0233284576826215909456",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/7",
+        "2/7",
+        "5/7"
+      ],
+      "k": 3,
+      "stockout_exact": "10/343",
+      "lambda_interval_exact": [
+        "5781755321649/8796093022208",
+        "1445438830413/2199023255552"
+      ],
+      "lambda_interval_decimal": [
+        "0.6573094789983997543458",
+        "0.6573094789987408148591"
+      ],
+      "utilization_exact": "8/21",
+      "acceptance_exact": "681/686",
+      "utilization_gap_certified_lower": "0.1636122675703269912915",
+      "acceptance_gap_certified_lower": "0.0007580195525066659008",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0046248009363917014367",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "0",
+        "1/3",
+        "2/3",
+        "1"
+      ],
+      "k": 2,
+      "stockout_exact": "7/9",
+      "lambda_interval_exact": [
+        "6273603864747/2199023255552",
+        "12547207729495/4398046511104"
+      ],
+      "lambda_interval_decimal": [
+        "2.8529047380047813931014",
+        "2.8529047380050087667769"
+      ],
+      "utilization_exact": "8/9",
+      "acceptance_exact": "19/27",
+      "utilization_gap_certified_lower": "0.0288382710361446609395",
+      "acceptance_gap_certified_lower": "0.1007739203179413557888",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0576765420723209456401",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "0",
+        "1/3",
+        "2/3",
+        "1"
+      ],
+      "k": 3,
+      "stockout_exact": "2/9",
+      "lambda_interval_exact": [
+        "7131599930811/4398046511104",
+        "14263199861625/8796093022208"
+      ],
+      "lambda_interval_decimal": [
+        "1.6215380880591965251369",
+        "1.6215380880595375856502"
+      ],
+      "utilization_exact": "2/3",
+      "acceptance_exact": "17/18",
+      "utilization_gap_certified_lower": "0.1644579857549889343963",
+      "acceptance_gap_certified_lower": "0.0153105228737002930562",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0248889422412690342396",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1",
+        "1",
+        "1/5",
+        "2/5",
+        "4/5",
+        "0"
+      ],
+      "k": 3,
+      "stockout_exact": "113/125",
+      "lambda_interval_exact": [
+        "2958372652737/549755813888",
+        "47333962443795/8796093022208"
+      ],
+      "lambda_interval_decimal": [
+        "5.3812485070684488164260",
+        "5.3812485070687898769393"
+      ],
+      "utilization_exact": "121/125",
+      "acceptance_exact": "1757/2500",
+      "utilization_gap_certified_lower": "0.0113230138889912136462",
+      "acceptance_gap_certified_lower": "0.1694607657009126157587",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0046020726215143894696",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1",
+        "1",
+        "1/5",
+        "2/5",
+        "4/5",
+        "0"
+      ],
+      "k": 4,
+      "stockout_exact": "54/125",
+      "lambda_interval_exact": [
+        "7379925413399/2199023255552",
+        "922490676675/274877906944"
+      ],
+      "lambda_interval_decimal": [
+        "3.3560015314828888222109",
+        "3.3560015314833435695619"
+      ],
+      "utilization_exact": "417/500",
+      "acceptance_exact": "1697/1875",
+      "utilization_gap_certified_lower": "0.1097728549805434944973",
+      "acceptance_gap_certified_lower": "0.0418642655648010982038",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0348744248238276749960",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1",
+        "1",
+        "1/5",
+        "2/5",
+        "4/5",
+        "0"
+      ],
+      "k": 5,
+      "stockout_exact": "8/125",
+      "lambda_interval_exact": [
+        "18636506899375/8796093022208",
+        "4659126724845/2199023255552"
+      ],
+      "lambda_interval_decimal": [
+        "2.1187255355670231438125",
+        "2.1187255355675915780012"
+      ],
+      "utilization_exact": "17/25",
+      "acceptance_exact": "371/375",
+      "utilization_gap_certified_lower": "0.2621349492624925212464",
+      "acceptance_gap_certified_lower": "0.0032097327944601209509",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0061400493435989671573",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/1000",
+        "1/3",
+        "997/1000",
+        "2/7",
+        "1/9",
+        "8/9"
+      ],
+      "k": 1,
+      "stockout_exact": "262463/262500",
+      "lambda_interval_exact": [
+        "2437366713375/274877906944",
+        "9749466853501/1099511627776"
+      ],
+      "lambda_interval_decimal": [
+        "8.8670884483690315391868",
+        "8.8670884483699410338887"
+      ],
+      "utilization_exact": "262463/262500",
+      "acceptance_exact": "103855810777/357210000000",
+      "utilization_gap_certified_lower": "exact equality by the stockout constraint",
+      "acceptance_gap_certified_lower": "0.1779809167052349826002",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0468655737058305216691",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/1000",
+        "1/3",
+        "997/1000",
+        "2/7",
+        "1/9",
+        "8/9"
+      ],
+      "k": 2,
+      "stockout_exact": "269819321/283500000",
+      "lambda_interval_exact": [
+        "5263151616765/1099511627776",
+        "10526303233531/2199023255552"
+      ],
+      "lambda_interval_decimal": [
+        "4.7868085100753887672908",
+        "4.7868085100758435146418"
+      ],
+      "utilization_exact": "553279361/567000000",
+      "acceptance_exact": "103830635977/178605000000",
+      "utilization_gap_certified_lower": "0.0040990382518676067175",
+      "acceptance_gap_certified_lower": "0.1753505517394053496012",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0081980765037378962686",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/1000",
+        "1/3",
+        "997/1000",
+        "2/7",
+        "1/9",
+        "8/9"
+      ],
+      "k": 3,
+      "stockout_exact": "897678877/1701000000",
+      "lambda_interval_exact": [
+        "24525531698241/8796093022208",
+        "6131382924561/2199023255552"
+      ],
+      "lambda_interval_decimal": [
+        "2.7882301422142745650489",
+        "2.7882301422146156255622"
+      ],
+      "utilization_exact": "4217355043/5103000000",
+      "acceptance_exact": "100957693387/119070000000",
+      "utilization_gap_certified_lower": "0.0820741887577701345491",
+      "acceptance_gap_certified_lower": "0.0469771299979717671252",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0239348056928965187057",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/1000",
+        "1/3",
+        "997/1000",
+        "2/7",
+        "1/9",
+        "8/9"
+      ],
+      "k": 4,
+      "stockout_exact": "218073563/1701000000",
+      "lambda_interval_exact": [
+        "4215329395313/2199023255552",
+        "2107664697657/1099511627776"
+      ],
+      "lambda_interval_decimal": [
+        "1.9169098756324274290818",
+        "1.9169098756328821764328"
+      ],
+      "utilization_exact": "105605443/162000000",
+      "acceptance_exact": "173799147469/178605000000",
+      "utilization_gap_certified_lower": "0.1886288509118765259127",
+      "acceptance_gap_certified_lower": "0.0064185652913033784371",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0036144390341568227849",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/1000",
+        "1/3",
+        "997/1000",
+        "2/7",
+        "1/9",
+        "8/9"
+      ],
+      "k": 5,
+      "stockout_exact": "8076721/850500000",
+      "lambda_interval_exact": [
+        "1388236898405/1099511627776",
+        "11105895187245/8796093022208"
+      ],
+      "lambda_interval_decimal": [
+        "1.2625941039050303515978",
+        "1.2625941039055987857865"
+      ],
+      "utilization_exact": "139111939/265781250",
+      "acceptance_exact": "35664423073/35721000000",
+      "utilization_gap_certified_lower": "0.2713552607567176403151",
+      "acceptance_gap_certified_lower": "0.0002632668450077539030",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0003397085628110134406",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10"
+      ],
+      "k": 1,
+      "stockout_exact": "56953279/100000000",
+      "lambda_interval_exact": [
+        "463380448297/549755813888",
+        "7414087172753/8796093022208"
+      ],
+      "lambda_interval_decimal": [
+        "0.8428841252625716151669",
+        "0.8428841252626853020047"
+      ],
+      "utilization_exact": "56953279/100000000",
+      "acceptance_exact": "612579511/900000000",
+      "utilization_gap_certified_lower": "exact equality by the stockout constraint",
+      "acceptance_gap_certified_lower": "0.0049486626670783562468",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0000002779745388582184",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10"
+      ],
+      "k": 2,
+      "stockout_exact": "18689527/100000000",
+      "lambda_interval_exact": [
+        "3465591147303/4398046511104",
+        "433198893413/549755813888"
+      ],
+      "lambda_interval_decimal": [
+        "0.7879841967458105500554",
+        "0.7879841967460379237310"
+      ],
+      "utilization_exact": "37821403/100000000",
+      "acceptance_exact": "837738533/900000000",
+      "utilization_gap_certified_lower": "0.0121466849040080803318",
+      "acceptance_gap_certified_lower": "0.0016970219585759704674",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0000001592363001277622",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10"
+      ],
+      "k": 3,
+      "stockout_exact": "3809179/100000000",
+      "lambda_interval_exact": [
+        "3217380601173/4398046511104",
+        "6434761202349/8796093022208"
+      ],
+      "lambda_interval_decimal": [
+        "0.7315476525884605507599",
+        "0.7315476525888016112731"
+      ],
+      "utilization_exact": "5296799/20000000",
+      "acceptance_exact": "296903557/300000000",
+      "utilization_gap_certified_lower": "0.0235832474750780275734",
+      "acceptance_gap_certified_lower": "0.0003101547609008251398",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0000000857959474454343",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10"
+      ],
+      "k": 4,
+      "stockout_exact": "100487/20000000",
+      "lambda_interval_exact": [
+        "92516628703/137438953472",
+        "1480266059249/2199023255552"
+      ],
+      "lambda_interval_decimal": [
+        "0.6731470690501737408339",
+        "0.6731470690506284881849"
+      ],
+      "utilization_exact": "3997721/20000000",
+      "acceptance_exact": "179808353/180000000",
+      "utilization_gap_certified_lower": "0.0317844623011020003236",
+      "acceptance_gap_certified_lower": "0.0000356754593679372449",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0000000427510445703789",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10"
+      ],
+      "k": 5,
+      "stockout_exact": "8633/20000000",
+      "lambda_interval_exact": [
+        "1346061515395/2199023255552",
+        "5384246061585/8796093022208"
+      ],
+      "lambda_interval_decimal": [
+        "0.6121179082560956885572",
+        "0.6121179082566641227459"
+      ],
+      "utilization_exact": "15999517/100000000",
+      "acceptance_exact": "179986537/180000000",
+      "utilization_gap_certified_lower": "0.0375810711874693756726",
+      "acceptance_gap_certified_lower": "0.0000026648054341243171",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0000000191947073082588",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "k": 1,
+      "stockout_exact": "255/256",
+      "lambda_interval_exact": [
+        "3048493539143/549755813888",
+        "12193974156573/2199023255552"
+      ],
+      "lambda_interval_decimal": [
+        "5.5451774444791226414963",
+        "5.5451774444795773888473"
+      ],
+      "utilization_exact": "255/256",
+      "acceptance_exact": "511/2304",
+      "utilization_gap_certified_lower": "exact equality by the stockout constraint",
+      "acceptance_gap_certified_lower": "0.0421557552712441443921",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0095891506074921819061",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "k": 2,
+      "stockout_exact": "247/256",
+      "lambda_interval_exact": [
+        "5681393587203/1099511627776",
+        "11362787174407/2199023255552"
+      ],
+      "lambda_interval_decimal": [
+        "5.1671973662478194455616",
+        "5.1671973662482741929126"
+      ],
+      "utilization_exact": "251/256",
+      "acceptance_exact": "1013/2304",
+      "utilization_gap_certified_lower": "0.0008971364649881921346",
+      "acceptance_gap_certified_lower": "0.0605200719943767605985",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0017942729299780233706",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "k": 3,
+      "stockout_exact": "219/256",
+      "lambda_interval_exact": [
+        "42037549667007/8796093022208",
+        "21018774833505/4398046511104"
+      ],
+      "lambda_interval_decimal": [
+        "4.7791160872073987775365",
+        "4.7791160872077398380498"
+      ],
+      "utilization_exact": "721/768",
+      "acceptance_exact": "493/768",
+      "utilization_gap_certified_lower": "0.0059684279912450139083",
+      "acceptance_gap_certified_lower": "0.0563583474080514613555",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0044971735792538934493",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "k": 4,
+      "stockout_exact": "163/256",
+      "lambda_interval_exact": [
+        "9627507332125/2199023255552",
+        "4813753666063/1099511627776"
+      ],
+      "lambda_interval_decimal": [
+        "4.3780834549238534236792",
+        "4.3780834549243081710302"
+      ],
+      "utilization_exact": "221/256",
+      "acceptance_exact": "1861/2304",
+      "utilization_gap_certified_lower": "0.0210524617367896737883",
+      "acceptance_gap_certified_lower": "0.0382302776168384149137",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0086431370538931832571",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "k": 5,
+      "stockout_exact": "93/256",
+      "lambda_interval_exact": [
+        "17414740599935/4398046511104",
+        "34829481199875/8796093022208"
+      ],
+      "lambda_interval_decimal": [
+        "3.9596535770976970525225",
+        "3.9596535770982654867112"
+      ],
+      "utilization_exact": "977/1280",
+      "acceptance_exact": "2117/2304",
+      "utilization_gap_certified_lower": "0.0504481544595084443426",
+      "acceptance_gap_certified_lower": "0.0187162752351939662939",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0151634693349837223612",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10"
+      ],
+      "k": 1,
+      "stockout_exact": "99999999/100000000",
+      "lambda_interval_exact": [
+        "5063438167381/274877906944",
+        "10126876334763/549755813888"
+      ],
+      "lambda_interval_decimal": [
+        "18.4206807439513795543462",
+        "18.4206807439531985437498"
+      ],
+      "utilization_exact": "99999999/100000000",
+      "acceptance_exact": "12345679/100000000",
+      "utilization_gap_certified_lower": "exact equality by the stockout constraint",
+      "acceptance_gap_certified_lower": "0.0691699803049587183665",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0000005357931925602947",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10"
+      ],
+      "k": 2,
+      "stockout_exact": "99999927/100000000",
+      "lambda_interval_exact": [
+        "9357835514523/549755813888",
+        "2339458878631/137438953472"
+      ],
+      "lambda_interval_decimal": [
+        "17.0218036410424247151240",
+        "17.0218036410442437045277"
+      ],
+      "utilization_exact": "99999963/100000000",
+      "acceptance_exact": "24691357/100000000",
+      "utilization_gap_certified_lower": "0.0000000152532447508394",
+      "acceptance_gap_certified_lower": "0.1294172534127743801980",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0000000305064895023477",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10"
+      ],
+      "k": 3,
+      "stockout_exact": "99997659/100000000",
+      "lambda_interval_exact": [
+        "34283839895115/2199023255552",
+        "17141919947559/1099511627776"
+      ],
+      "lambda_interval_decimal": [
+        "15.5904853705192181223537",
+        "15.5904853705205823644065"
+      ],
+      "utilization_exact": "19999839/20000000",
+      "acceptance_exact": "37036999/100000000",
+      "utilization_gap_certified_lower": "0.0000007471237437128562",
+      "acceptance_gap_certified_lower": "0.1779466281012383366976",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0000001594877184080722",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10"
+      ],
+      "k": 4,
+      "stockout_exact": "19991367/20000000",
+      "lambda_interval_exact": [
+        "15522092269255/1099511627776",
+        "1940261533657/137438953472"
+      ],
+      "lambda_interval_decimal": [
+        "14.1172606793179511441849",
+        "14.1172606793188606388867"
+      ],
+      "utilization_exact": "19997721/20000000",
+      "acceptance_exact": "9876377/20000000",
+      "utilization_gap_certified_lower": "0.0000181602502167330080",
+      "acceptance_gap_certified_lower": "0.2105151942944400167011",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0000007295228327675011",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10",
+        "9/10"
+      ],
+      "k": 5,
+      "stockout_exact": "19899513/20000000",
+      "lambda_interval_exact": [
+        "3459958961175/274877906944",
+        "55359343378805/4398046511104"
+      ],
+      "lambda_interval_decimal": [
+        "12.5872573741617088671773",
+        "12.5872573741628457355546"
+      ],
+      "utilization_exact": "99890397/100000000",
+      "acceptance_exact": "12343313/20000000",
+      "utilization_gap_certified_lower": "0.0002726239996967445412",
+      "acceptance_gap_certified_lower": "0.2204821961245645827441",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0000034052584937918498",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/100",
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5",
+        "99/100",
+        "0",
+        "1"
+      ],
+      "k": 2,
+      "stockout_exact": "780953/781250",
+      "lambda_interval_exact": [
+        "11324633299775/1099511627776",
+        "176947395309/17179869184"
+      ],
+      "lambda_interval_decimal": [
+        "10.2996939856666358537040",
+        "10.2996939856675453484059"
+      ],
+      "utilization_exact": "1562203/1562500",
+      "acceptance_exact": "108801989/262500000",
+      "utilization_gap_certified_lower": "0.0000168216944848646529",
+      "acceptance_gap_certified_lower": "0.2203434174888676099283",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0000336433889698330424",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/100",
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5",
+        "99/100",
+        "0",
+        "1"
+      ],
+      "k": 3,
+      "stockout_exact": "599713/625000",
+      "lambda_interval_exact": [
+        "28954555232541/4398046511104",
+        "904829851017/137438953472"
+      ],
+      "lambda_interval_decimal": [
+        "6.5835036440469139051856",
+        "6.5835036440475960262120"
+      ],
+      "utilization_exact": "3082459/3125000",
+      "acceptance_exact": "4350749/7000000",
+      "utilization_gap_certified_lower": "0.0038302616559146682815",
+      "acceptance_gap_certified_lower": "0.1737998345922080453451",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0013829952732624825812",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/100",
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5",
+        "99/100",
+        "0",
+        "1"
+      ],
+      "k": 4,
+      "stockout_exact": "891723/1250000",
+      "lambda_interval_exact": [
+        "10666664197843/2199023255552",
+        "2666666049461/549755813888"
+      ],
+      "lambda_interval_decimal": [
+        "4.8506372867645950464066",
+        "4.8506372867650497937575"
+      ],
+      "utilization_exact": "22953369/25000000",
+      "acceptance_exact": "21399727/26250000",
+      "utilization_gap_certified_lower": "0.0376411744695705681410",
+      "acceptance_gap_certified_lower": "0.0891428255795011668313",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0078233902171709865585",
+      "all_checks": "passed"
+    },
+    {
+      "bernoulli_parameters": [
+        "1/100",
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5",
+        "99/100",
+        "0",
+        "1"
+      ],
+      "k": 5,
+      "stockout_exact": "358277/1250000",
+      "lambda_interval_exact": [
+        "31346034760835/8796093022208",
+        "3918254345105/1099511627776"
+      ],
+      "lambda_interval_decimal": [
+        "3.5636315670711837810813",
+        "3.5636315670717522152700"
+      ],
+      "utilization_exact": "12372377/15625000",
+      "acceptance_exact": "49737409/52500000",
+      "utilization_gap_certified_lower": "0.1324786473544717773737",
+      "acceptance_gap_certified_lower": "0.0222646719406278233876",
+      "minimum_off_cut_cdf_gap_certified_lower": "0.0109914438965544136984",
+      "all_checks": "passed"
+    }
+  ],
+  "online_bridge": [
+    {
+      "k": 1,
+      "enumerated_outcomes_including_orders": 3456,
+      "direct_reward": "636988/196875",
+      "bridge_reward": "636988/196875",
+      "offline": "174/35",
+      "ex_ante_lp": "21/4",
+      "utilization": "21017/21875",
+      "acceptance": "326379/875000",
+      "all_checks": "passed"
+    },
+    {
+      "k": 2,
+      "enumerated_outcomes_including_orders": 3456,
+      "direct_reward": "4466801/787500",
+      "bridge_reward": "4466801/787500",
+      "offline": "688/105",
+      "ex_ante_lp": "467/70",
+      "utilization": "442777/525000",
+      "acceptance": "309219/437500",
+      "all_checks": "passed"
+    },
+    {
+      "k": 3,
+      "enumerated_outcomes_including_orders": 3456,
+      "direct_reward": "576883/87500",
+      "bridge_reward": "576883/87500",
+      "offline": "3089/420",
+      "ex_ante_lp": "3173/420",
+      "utilization": "518669/787500",
+      "acceptance": "302917/328125",
+      "all_checks": "passed"
+    },
+    {
+      "k": 4,
+      "enumerated_outcomes_including_orders": 3456,
+      "direct_reward": "14023/2100",
+      "bridge_reward": "14023/2100",
+      "offline": "3173/420",
+      "ex_ante_lp": "3173/420",
+      "utilization": "4213/8400",
+      "acceptance": "108712/109375",
+      "all_checks": "passed"
+    }
+  ]
+}

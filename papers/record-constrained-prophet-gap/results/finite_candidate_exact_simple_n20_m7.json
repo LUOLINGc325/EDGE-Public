@@ -1,0 +1,230 @@
+{
+  "schema_version": 2,
+  "status": "exact_integer_certificate",
+  "model": "iid_full_information_randomized_history_adapted_weak_record_only",
+  "horizon": 20,
+  "probability_numerators": [
+    1400,
+    300,
+    150,
+    80,
+    40,
+    29,
+    1
+  ],
+  "probability_denominator": 2000,
+  "reward_numerators": [
+    0,
+    31,
+    43,
+    49,
+    50,
+    54,
+    5228
+  ],
+  "reward_denominator": 100,
+  "normalization": "row r uses denominator B*Q^r",
+  "bellman_rows_included": false,
+  "bellman_rows_sha256": "dc96fc74018fdd77cd08d4c240358a2c89916f93e14922cf1cea151317b5035c",
+  "bellman_rows_hash_format": "ASCII decimal integers, TAB-separated, LF after each row; includes row zero",
+  "accept_record_when_tied_or_better": [
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  ],
+  "record_value_numerator": "77418991079861639966399013525657099361482334759154000000000000000000",
+  "prophet_value_numerator": "105168390769978205286461675090184350415681908239705230702947966954826",
+  "common_value_denominator": "104857600000000000000000000000000000000000000000000000000000000000000",
+  "ratio_numerator": "38709495539930819983199506762828549680741167379577000000000000000000",
+  "ratio_denominator": "52584195384989102643230837545092175207840954119852615351473983477413",
+  "ratio_decimal_display_only": 0.7361431558764706,
+  "strict_below_18_over_25": false,
+  "separation_integer_18P_minus_25R": "-42443743136933304003665186518109176554784020664155847346936594813132",
+  "strict_below_149_over_200": true,
+  "separation_integer_149P_minus_200R": "186292008754424594402986883306048339640137375885279374739247076269074",
+  "source_probability_tail_rates": [
+    6,
+    3,
+    1.5,
+    0.7,
+    0.3,
+    0.01
+  ]
+}

@@ -1,0 +1,4 @@
+Exhaustive interval multisets: 8008 seeded intervals: 300
+Exact split instances: 5430 exact chordal reductions: 51
+Exact fixed proportional threshold calibrations: 36
+Verified all interval witnesses and every reduction threshold.

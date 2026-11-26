@@ -1,0 +1,4 @@
+One-sided alpha=1/40; sharp maximizing ratio [0.009356988544, 0.009356988545]
+Sharp equal-tail width gain [0.003093358034, 0.003093358035]
+Sorted maximizer coordinates [0.009270246950, 0.009270246951] and [0.990729753049, 0.990729753050]
+Exact rational sample-grid checks at alpha=1/40: 231

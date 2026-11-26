@@ -1,0 +1,5 @@
+rank_five_principal_blocks=268, middle_mass_at_least=9722/16384, one_sign_budget_at_least=79/128
+rank_six_principal_blocks=15848, one_sign_budget_at_least=6/8
+rank_four_core_completions=268, retained_representations=48
+n_3_to_19_paw_competitors=7715, after_coordinate_filters=47
+EXACT_CHECKS_OK

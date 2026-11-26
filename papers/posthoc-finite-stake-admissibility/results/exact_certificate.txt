@@ -1,0 +1,8 @@
+tied, caps 1,3: 1314 feasible, 9 admissible.
+tied, caps 2,3: 1314 feasible, 9 admissible.
+tied, caps 1/2,3/2: 814 feasible, 8 admissible.
+distinct, caps 1,3: 1314 feasible, 9 admissible.
+distinct, caps 2,3: 1314 feasible, 5 admissible.
+distinct, caps 1/2,3/2: 814 feasible, 2 admissible.
+Exact witnesses: tied admissible power 7/6; straddling gain 7/16; nonoptimal loss 1/3.
+All 6884 frontier comparisons passed.

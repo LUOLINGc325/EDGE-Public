@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "n": 18,
+  "x": 3,
+  "physical_p_checks": [
+    1260,
+    1
+  ],
+  "strategy": "E T^7 E^10; tested short jobs immediate; tested long jobs at end",
+  "inputs_enumerated": 262144,
+  "first_untested_short_max_regret": 194,
+  "first_untested_long_max_regret": 215,
+  "worst_case_regret": 215,
+  "maximizers_by_first_bit": [
+    [
+      "011111101111100000",
+      "011111111111100000"
+    ],
+    [
+      "111100001111000000",
+      "111110001111000000",
+      "111100001111100000",
+      "111110001111100000"
+    ]
+  ],
+  "formula_upper_bound_violations": 0,
+  "formula_equality_inputs": 176,
+  "bit_convention": "0=short, 1=long; bits ordered by unknown-job processing order",
+  "arithmetic": "integer physical schedule completion times",
+  "seconds": 1.460130258999925
+}

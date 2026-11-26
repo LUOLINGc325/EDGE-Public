@@ -1,0 +1,80 @@
+{
+  "n": 30,
+  "p": "100",
+  "x": "4",
+  "rho": "11928/11761",
+  "root_payoff": {
+    "full": "0",
+    "postponing": "0",
+    "two_phase": "9373/11761",
+    "two_phase_postponing": "9373/11761",
+    "execution_suffix": "2739240/11761",
+    "execution_suffix_postponing": "2739240/11761"
+  },
+  "states": 5456,
+  "suffix_errors": [],
+  "local_strict_gaps": [
+    {
+      "state": [
+        27,
+        0,
+        0
+      ],
+      "values": {
+        "full": "6294302/11761",
+        "postponing": "6294302/11761",
+        "two_phase": "331343/619",
+        "two_phase_postponing": "331343/619",
+        "execution_suffix": "8501220/11761",
+        "execution_suffix_postponing": "8501220/11761"
+      }
+    },
+    {
+      "state": [
+        28,
+        0,
+        0
+      ],
+      "values": {
+        "full": "6765815/11761",
+        "postponing": "6765815/11761",
+        "two_phase": "6775188/11761",
+        "two_phase_postponing": "6775188/11761",
+        "execution_suffix": "9150484/11761",
+        "execution_suffix_postponing": "9150484/11761"
+      }
+    },
+    {
+      "state": [
+        29,
+        0,
+        0
+      ],
+      "values": {
+        "full": "7259777/11761",
+        "postponing": "7259777/11761",
+        "two_phase": "7269150/11761",
+        "two_phase_postponing": "7269150/11761",
+        "execution_suffix": "9809100/11761",
+        "execution_suffix_postponing": "9809100/11761"
+      }
+    },
+    {
+      "state": [
+        30,
+        0,
+        0
+      ],
+      "values": {
+        "full": "7765500/11761",
+        "postponing": "7765500/11761",
+        "two_phase": "7774873/11761",
+        "two_phase_postponing": "7774873/11761",
+        "execution_suffix": "10504740/11761",
+        "execution_suffix_postponing": "10504740/11761"
+      }
+    }
+  ],
+  "known_long_dominance_violations": [],
+  "arithmetic": "exact rational Fraction"
+}

@@ -1,0 +1,7 @@
+{
+  "script": "code/checks.py",
+  "arithmetic": "fractions.Fraction",
+  "status": "pass",
+  "exact_kernel_and_equality_checks": 1001,
+  "weighted_two_job_instances": 900
+}

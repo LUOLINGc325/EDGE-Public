@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "returncodes": [
+    0,
+    0
+  ],
+  "checks": [
+    {
+      "file": "results/verified_windmill.json",
+      "byte_identical": true,
+      "sha256": "161c8c3dfce0b6f5f6f2df3062983bfc9e74e21b63b60c8f7ad073c90a9c2e96"
+    },
+    {
+      "file": "review/independent_table_check.json",
+      "byte_identical": true,
+      "sha256": "fd27fdbfd5db41a9ec7601b1a1c95907c34f9be1ce9f6d97fb060b0d9ff6fd9c"
+    }
+  ],
+  "proper_colorings_total": 191460,
+  "failures": 0,
+  "independent_implementations": true
+}

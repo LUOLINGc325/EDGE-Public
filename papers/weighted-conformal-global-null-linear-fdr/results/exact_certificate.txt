@@ -1,0 +1,3 @@
+Atomic score/weight cases with exact uniform marginals and window bound: 48
+Exact per-threshold split and complete quantitative bound cases: 18
+Lim Appendix F.2 replication FDR: 393728107849/492032000000

@@ -1,0 +1,1473 @@
+{
+  "schema_version": 1,
+  "model": "exact fixed endpoint composition; sum of two independent multinomial count vectors",
+  "decoder": "deterministic one-step estimator and inverse-H midpoint thresholds",
+  "scope": "Monte Carlo evidence for constructed codes; no finite-error guarantee or global optimality certificate",
+  "confidence_scope": "95% intervals are per codebook; maximum uses simultaneous Bonferroni Clopper--Pearson intervals, average uses Hoeffding",
+  "software": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "seed": 20261124,
+  "input_rejection_checks": {
+    "zero_entry": true,
+    "nonstochastic_row": true,
+    "rank_one": true,
+    "affine_dimension_two": true
+  },
+  "channels": [
+    {
+      "name": "ternary_with_interior_input",
+      "channel_matrix": [
+        [
+          0.5000000000000001,
+          0.33333333333333337,
+          0.16666666666666669
+        ],
+        [
+          0.3,
+          0.3333333333333333,
+          0.36666666666666664
+        ],
+        [
+          0.16666666666666666,
+          0.3333333333333333,
+          0.5
+        ]
+      ],
+      "endpoint_input_indices": [
+        0,
+        2
+      ],
+      "endpoint_p0": [
+        0.5000000000000001,
+        0.33333333333333337,
+        0.16666666666666669
+      ],
+      "endpoint_p1": [
+        0.16666666666666666,
+        0.3333333333333333,
+        0.5
+      ],
+      "input_row_segment_coordinates": [
+        0.0,
+        0.6,
+        1.0
+      ],
+      "numerical_tolerances": {
+        "row_atol": 2e-12,
+        "row_rtol": 2e-12,
+        "rank_atol": 1e-12,
+        "rank_rtol": 1e-10,
+        "segment_atol": 2e-12,
+        "segment_rtol": 2e-10,
+        "quad_atol": 1e-12,
+        "quad_rtol": 1e-12,
+        "root_xtol": 1e-13,
+        "root_rtol": 1e-12
+      },
+      "row_normalization_max_change": 1.1102230246251565e-16,
+      "affine_singular_values": [
+        0.5497474167490216,
+        4.205233248564228e-17,
+        1.0958337850322427e-17
+      ],
+      "max_segment_residual": 5.551115123125783e-17,
+      "segment_acceptance_threshold": 1.0200000000000004e-10,
+      "min_endpoint_covariance_eigenvalue": 0.06886674196121807,
+      "largest_reported_quad_error_estimate": 1.0103562380709839e-14,
+      "geometry_checks": {
+        "matrix_vs_identity_max_relative_J_error_on_101_points": 1.897731971567392e-15,
+        "length_matrix": 0.9100479954575879,
+        "length_scalar_identity": 0.9100479954575875,
+        "length_scalar_quadrature_error_estimate": 1.0103562380709836e-14,
+        "length_after_output_permutation": 0.9100479954575875,
+        "length_after_endpoint_reversal": 0.9100479954575874,
+        "checks_passed": true
+      }
+    },
+    {
+      "name": "quaternary_with_interior_input",
+      "channel_matrix": [
+        [
+          0.1,
+          0.2,
+          0.3,
+          0.4
+        ],
+        [
+          0.28,
+          0.26,
+          0.24,
+          0.22000000000000003
+        ],
+        [
+          0.4000000000000001,
+          0.30000000000000004,
+          0.20000000000000004,
+          0.10000000000000002
+        ]
+      ],
+      "endpoint_input_indices": [
+        0,
+        2
+      ],
+      "endpoint_p0": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "endpoint_p1": [
+        0.4000000000000001,
+        0.30000000000000004,
+        0.20000000000000004,
+        0.10000000000000002
+      ],
+      "input_row_segment_coordinates": [
+        0.0,
+        0.6,
+        1.0
+      ],
+      "numerical_tolerances": {
+        "row_atol": 2e-12,
+        "row_rtol": 2e-12,
+        "rank_atol": 1e-12,
+        "rank_rtol": 1e-10,
+        "segment_atol": 2e-12,
+        "segment_rtol": 2e-10,
+        "quad_atol": 1e-12,
+        "quad_rtol": 1e-12,
+        "root_xtol": 1e-13,
+        "root_rtol": 1e-12
+      },
+      "row_normalization_max_change": 5.551115123125783e-17,
+      "affine_singular_values": [
+        0.521536192416212,
+        4.308632328931698e-17,
+        -0.0
+      ],
+      "max_segment_residual": 5.551115123125783e-17,
+      "segment_acceptance_threshold": 8.200000000000003e-11,
+      "min_endpoint_covariance_eigenvalue": 0.029719825908023665,
+      "largest_reported_quad_error_estimate": 1.1438224346463828e-14,
+      "geometry_checks": {
+        "matrix_vs_identity_max_relative_J_error_on_101_points": 2.056733777575075e-15,
+        "length_matrix": 1.0302636580902926,
+        "length_scalar_identity": 1.030263658090292,
+        "length_scalar_quadrature_error_estimate": 1.1438224346463821e-14,
+        "length_after_output_permutation": 1.030263658090292,
+        "length_after_endpoint_reversal": 1.030263658090292,
+        "checks_passed": true
+      }
+    }
+  ],
+  "runs": [
+    {
+      "name": "ternary_with_interior_input",
+      "n": 1024,
+      "target_epsilon": 0.1,
+      "message_count": 8,
+      "message_count_rule": "max(1, floor(L*sqrt(n)/(2*Phi_inverse(1-epsilon/2))))",
+      "asymptotic_fixed_error_coefficient": 0.2766349481030256,
+      "M_over_sqrt_n": 0.25,
+      "asymptotic_error_curve_at_M_over_sqrt_n": 0.06874438804359348,
+      "gaussian_minimum_spacing_two_tail_reference": 0.03853823610913635,
+      "empirical_average_error": 0.0317,
+      "average_error_95pct_hoeffding_interval": [
+        0.024909492421296902,
+        0.0384905075787031
+      ],
+      "empirical_maximum_error": 0.0412,
+      "true_maximum_error_95pct_simultaneous_interval": [
+        0.0339054310704711,
+        0.049487389100991624
+      ],
+      "replicates_per_message": 5000,
+      "total_trials": 40000,
+      "rng": {
+        "bit_generator": "PCG64",
+        "entropy": 20261124,
+        "spawn_key": [
+          0
+        ]
+      },
+      "code_weights": [
+        0,
+        143,
+        289,
+        438,
+        586,
+        735,
+        881,
+        1024
+      ],
+      "theta_decision_boundaries": [
+        0.06937043724024548,
+        0.21063302724516741,
+        0.35482539366032,
+        0.5,
+        0.64517460633968,
+        0.7893669727548326,
+        0.9306295627597545
+      ],
+      "max_inverse_arc_residual": 3.3306690738754696e-15,
+      "max_rounding_arc_displacement": 0.0003933573250838318,
+      "midpoint_fixed_type_moment_diagnostic": {
+        "message": 4,
+        "expected_full_count": [
+          316.6666666666667,
+          341.3333333333333,
+          366.0
+        ],
+        "empirical_full_count_mean": [
+          316.7762,
+          341.4518,
+          365.772
+        ],
+        "fixed_type_reduced_covariance": [
+          [
+            190.88888888888889,
+            -105.55555555555557
+          ],
+          [
+            -105.55555555555557,
+            227.55555555555554
+          ]
+        ],
+        "empirical_reduced_covariance": [
+          [
+            196.43740104020787,
+            -111.1741219843969
+          ],
+          [
+            -111.1741219843969,
+            232.78663408681734
+          ]
+        ],
+        "relative_frobenius_covariance_sampling_error": 0.03312970569163943
+      },
+      "per_message": [
+        {
+          "message": 0,
+          "endpoint_one_count": 0,
+          "theta": 0.0,
+          "errors": 102,
+          "trials": 5000,
+          "empirical_error": 0.0204,
+          "pointwise_95pct_clopper_pearson": [
+            0.01666361465908611,
+            0.024709979407044336
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.015345095725759213,
+            0.02649978554290604
+          ]
+        },
+        {
+          "message": 1,
+          "endpoint_one_count": 143,
+          "theta": 0.1396484375,
+          "errors": 160,
+          "trials": 5000,
+          "empirical_error": 0.032,
+          "pointwise_95pct_clopper_pearson": [
+            0.027296492536751826,
+            0.03725972243526561
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.02559444528218649,
+            0.039420494233006434
+          ]
+        },
+        {
+          "message": 2,
+          "endpoint_one_count": 289,
+          "theta": 0.2822265625,
+          "errors": 193,
+          "trials": 5000,
+          "empirical_error": 0.0386,
+          "pointwise_95pct_clopper_pearson": [
+            0.03343135060691491,
+            0.04431579583989731
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.03154442056758341,
+            0.046654562613574875
+          ]
+        },
+        {
+          "message": 3,
+          "endpoint_one_count": 438,
+          "theta": 0.427734375,
+          "errors": 176,
+          "trials": 5000,
+          "empirical_error": 0.0352,
+          "pointwise_95pct_clopper_pearson": [
+            0.030264940502128638,
+            0.040686829668803694
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.028470888676398787,
+            0.0429362508905192
+          ]
+        },
+        {
+          "message": 4,
+          "endpoint_one_count": 586,
+          "theta": 0.572265625,
+          "errors": 206,
+          "trials": 5000,
+          "empirical_error": 0.0412,
+          "pointwise_95pct_clopper_pearson": [
+            0.03586038059180311,
+            0.047083285930462196
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.0339054310704711,
+            0.049487389100991624
+          ]
+        },
+        {
+          "message": 5,
+          "endpoint_one_count": 735,
+          "theta": 0.7177734375,
+          "errors": 180,
+          "trials": 5000,
+          "empirical_error": 0.036,
+          "pointwise_95pct_clopper_pearson": [
+            0.031008887931919037,
+            0.04154178597840886
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.029192554697475382,
+            0.04381265467159618
+          ]
+        },
+        {
+          "message": 6,
+          "endpoint_one_count": 881,
+          "theta": 0.8603515625,
+          "errors": 158,
+          "trials": 5000,
+          "empirical_error": 0.0316,
+          "pointwise_95pct_clopper_pearson": [
+            0.0269263162412221,
+            0.036830461814333845
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.02523611440239749,
+            0.03897981000600088
+          ]
+        },
+        {
+          "message": 7,
+          "endpoint_one_count": 1024,
+          "theta": 1.0,
+          "errors": 93,
+          "trials": 5000,
+          "empirical_error": 0.0186,
+          "pointwise_95pct_clopper_pearson": [
+            0.015038179098901915,
+            0.022738412389717935
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.01378874105043071,
+            0.024461179016754233
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ternary_with_interior_input",
+      "n": 4096,
+      "target_epsilon": 0.1,
+      "message_count": 17,
+      "message_count_rule": "max(1, floor(L*sqrt(n)/(2*Phi_inverse(1-epsilon/2))))",
+      "asymptotic_fixed_error_coefficient": 0.2766349481030256,
+      "M_over_sqrt_n": 0.265625,
+      "asymptotic_error_curve_at_M_over_sqrt_n": 0.08670674081725681,
+      "gaussian_minimum_spacing_two_tail_reference": 0.0696922573180516,
+      "empirical_average_error": 0.06488235294117647,
+      "average_error_95pct_hoeffding_interval": [
+        0.060224103172588216,
+        0.06954060270976473
+      ],
+      "empirical_maximum_error": 0.0748,
+      "true_maximum_error_95pct_simultaneous_interval": [
+        0.0641710095061081,
+        0.08650108822109212
+      ],
+      "replicates_per_message": 5000,
+      "total_trials": 85000,
+      "rng": {
+        "bit_generator": "PCG64",
+        "entropy": 20261124,
+        "spawn_key": [
+          1
+        ]
+      },
+      "code_weights": [
+        0,
+        249,
+        500,
+        754,
+        1011,
+        1268,
+        1528,
+        1788,
+        2048,
+        2308,
+        2568,
+        2828,
+        3085,
+        3342,
+        3596,
+        3847,
+        4096
+      ],
+      "theta_decision_boundaries": [
+        0.03030030803170579,
+        0.0913484362084124,
+        0.15300607152116286,
+        0.2153961980041789,
+        0.2781536922496383,
+        0.3412762878736443,
+        0.4047658982309587,
+        0.4682553201255272,
+        0.5317446798744729,
+        0.5952341017690412,
+        0.6587237121263555,
+        0.7218463077503615,
+        0.7846038019958211,
+        0.8469939284788371,
+        0.9086515637915875,
+        0.969699691968294
+      ],
+      "max_inverse_arc_residual": 3.3306690738754696e-15,
+      "max_rounding_arc_displacement": 0.00010597542061552279,
+      "midpoint_fixed_type_moment_diagnostic": {
+        "message": 8,
+        "expected_full_count": [
+          1365.3333333333335,
+          1365.3333333333335,
+          1365.3333333333335
+        ],
+        "empirical_full_count_mean": [
+          1365.3614,
+          1365.7856,
+          1364.853
+        ],
+        "fixed_type_reduced_covariance": [
+          [
+            796.4444444444445,
+            -455.1111111111112
+          ],
+          [
+            -455.1111111111112,
+            910.2222222222222
+          ]
+        ],
+        "empirical_reduced_covariance": [
+          [
+            789.9667833966791,
+            -454.4057969993998
+          ],
+          [
+            -454.4057969993998,
+            913.8047935987196
+          ]
+        ],
+        "relative_frobenius_covariance_sampling_error": 0.0054517525349851905
+      },
+      "per_message": [
+        {
+          "message": 0,
+          "endpoint_one_count": 0,
+          "theta": 0.0,
+          "errors": 173,
+          "trials": 5000,
+          "empirical_error": 0.0346,
+          "pointwise_95pct_clopper_pearson": [
+            0.02970744421138276,
+            0.04004515183425784
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.027395315387168526,
+            0.04298425185967768
+          ]
+        },
+        {
+          "message": 1,
+          "endpoint_one_count": 249,
+          "theta": 0.060791015625,
+          "errors": 320,
+          "trials": 5000,
+          "empirical_error": 0.064,
+          "pointwise_95pct_clopper_pearson": [
+            0.05737203193704096,
+            0.07114237794531825
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.05415410933901309,
+            0.074946204865325
+          ]
+        },
+        {
+          "message": 2,
+          "endpoint_one_count": 500,
+          "theta": 0.1220703125,
+          "errors": 359,
+          "trials": 5000,
+          "empirical_error": 0.0718,
+          "pointwise_95pct_clopper_pearson": [
+            0.06479599185378122,
+            0.07930872056023686
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.06138115566117384,
+            0.08329875272048351
+          ]
+        },
+        {
+          "message": 3,
+          "endpoint_one_count": 754,
+          "theta": 0.18408203125,
+          "errors": 350,
+          "trials": 5000,
+          "empirical_error": 0.07,
+          "pointwise_95pct_clopper_pearson": [
+            0.06308045024315442,
+            0.07742649084549721
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.05970986093735676,
+            0.0813747432008544
+          ]
+        },
+        {
+          "message": 4,
+          "endpoint_one_count": 1011,
+          "theta": 0.246826171875,
+          "errors": 320,
+          "trials": 5000,
+          "empirical_error": 0.064,
+          "pointwise_95pct_clopper_pearson": [
+            0.05737203193704096,
+            0.07114237794531825
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.05415410933901309,
+            0.074946204865325
+          ]
+        },
+        {
+          "message": 5,
+          "endpoint_one_count": 1268,
+          "theta": 0.3095703125,
+          "errors": 347,
+          "trials": 5000,
+          "empirical_error": 0.0694,
+          "pointwise_95pct_clopper_pearson": [
+            0.062508901175648,
+            0.07679878395307746
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.05915321437145223,
+            0.08073295667756746
+          ]
+        },
+        {
+          "message": 6,
+          "endpoint_one_count": 1528,
+          "theta": 0.373046875,
+          "errors": 327,
+          "trials": 5000,
+          "empirical_error": 0.0654,
+          "pointwise_95pct_clopper_pearson": [
+            0.05870255111632304,
+            0.07261011012200952
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.05544826224294868,
+            0.07644837773638308
+          ]
+        },
+        {
+          "message": 7,
+          "endpoint_one_count": 1788,
+          "theta": 0.4365234375,
+          "errors": 347,
+          "trials": 5000,
+          "empirical_error": 0.0694,
+          "pointwise_95pct_clopper_pearson": [
+            0.062508901175648,
+            0.07679878395307746
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.05915321437145223,
+            0.08073295667756746
+          ]
+        },
+        {
+          "message": 8,
+          "endpoint_one_count": 2048,
+          "theta": 0.5,
+          "errors": 330,
+          "trials": 5000,
+          "empirical_error": 0.066,
+          "pointwise_95pct_clopper_pearson": [
+            0.05927305045841534,
+            0.07323886252005611
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.05600331856337116,
+            0.07709174841812974
+          ]
+        },
+        {
+          "message": 9,
+          "endpoint_one_count": 2308,
+          "theta": 0.5634765625,
+          "errors": 349,
+          "trials": 5000,
+          "empirical_error": 0.0698,
+          "pointwise_95pct_clopper_pearson": [
+            0.06288991710547728,
+            0.07721727193122643
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.05952428665792593,
+            0.08116083968960282
+          ]
+        },
+        {
+          "message": 10,
+          "endpoint_one_count": 2568,
+          "theta": 0.626953125,
+          "errors": 344,
+          "trials": 5000,
+          "empirical_error": 0.0688,
+          "pointwise_95pct_clopper_pearson": [
+            0.06193750415539103,
+            0.0761709256081591
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.05859679815236493,
+            0.08009094066601735
+          ]
+        },
+        {
+          "message": 11,
+          "endpoint_one_count": 2828,
+          "theta": 0.6904296875,
+          "errors": 352,
+          "trials": 5000,
+          "empirical_error": 0.0704,
+          "pointwise_95pct_clopper_pearson": [
+            0.0634615665319,
+            0.07784487885427832
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.06008108526591589,
+            0.08180247473325185
+          ]
+        },
+        {
+          "message": 12,
+          "endpoint_one_count": 3085,
+          "theta": 0.753173828125,
+          "errors": 326,
+          "trials": 5000,
+          "empirical_error": 0.0652,
+          "pointwise_95pct_clopper_pearson": [
+            0.05851242126420102,
+            0.0724004895462847
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.05526329890568434,
+            0.07623386562560396
+          ]
+        },
+        {
+          "message": 13,
+          "endpoint_one_count": 3342,
+          "theta": 0.81591796875,
+          "errors": 374,
+          "trials": 5000,
+          "empirical_error": 0.0748,
+          "pointwise_95pct_clopper_pearson": [
+            0.0676581074111947,
+            0.08244290134447964
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.0641710095061081,
+            0.08650108822109212
+          ]
+        },
+        {
+          "message": 14,
+          "endpoint_one_count": 3596,
+          "theta": 0.8779296875,
+          "errors": 354,
+          "trials": 5000,
+          "empirical_error": 0.0708,
+          "pointwise_95pct_clopper_pearson": [
+            0.06384274906776313,
+            0.07826320087111958
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.06045240995871196,
+            0.08223010626992343
+          ]
+        },
+        {
+          "message": 15,
+          "endpoint_one_count": 3847,
+          "theta": 0.939208984375,
+          "errors": 370,
+          "trials": 5000,
+          "empirical_error": 0.074,
+          "pointwise_95pct_clopper_pearson": [
+            0.06689453351210192,
+            0.08160746162461728
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.0634265286802696,
+            0.08564765006461958
+          ]
+        },
+        {
+          "message": 16,
+          "endpoint_one_count": 4096,
+          "theta": 1.0,
+          "errors": 173,
+          "trials": 5000,
+          "empirical_error": 0.0346,
+          "pointwise_95pct_clopper_pearson": [
+            0.02970744421138276,
+            0.04004515183425784
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.027395315387168526,
+            0.04298425185967768
+          ]
+        }
+      ]
+    },
+    {
+      "name": "quaternary_with_interior_input",
+      "n": 1024,
+      "target_epsilon": 0.1,
+      "message_count": 10,
+      "message_count_rule": "max(1, floor(L*sqrt(n)/(2*Phi_inverse(1-epsilon/2))))",
+      "asymptotic_fixed_error_coefficient": 0.31317791480320223,
+      "M_over_sqrt_n": 0.3125,
+      "asymptotic_error_curve_at_M_over_sqrt_n": 0.09926613472515848,
+      "gaussian_minimum_spacing_two_tail_reference": 0.06863602454452469,
+      "empirical_average_error": 0.06118000000000001,
+      "average_error_95pct_hoeffding_interval": [
+        0.05510638538091696,
+        0.06725361461908307
+      ],
+      "empirical_maximum_error": 0.072,
+      "true_maximum_error_95pct_simultaneous_interval": [
+        0.062121552761848775,
+        0.08284718972327997
+      ],
+      "replicates_per_message": 5000,
+      "total_trials": 50000,
+      "rng": {
+        "bit_generator": "PCG64",
+        "entropy": 20261124,
+        "spawn_key": [
+          2
+        ]
+      },
+      "code_weights": [
+        0,
+        109,
+        222,
+        337,
+        453,
+        571,
+        687,
+        802,
+        915,
+        1024
+      ],
+      "theta_decision_boundaries": [
+        0.05269339568101679,
+        0.1612384973347546,
+        0.2727043206209523,
+        0.3856226989380206,
+        0.5,
+        0.6143773010619793,
+        0.7272956793792544,
+        0.8387615026652454,
+        0.9473066043189833
+      ],
+      "max_inverse_arc_residual": 2.1038726316646716e-13,
+      "max_rounding_arc_displacement": 0.0004645173445844142,
+      "midpoint_fixed_type_moment_diagnostic": {
+        "message": 5,
+        "expected_full_count": [
+          273.70000000000005,
+          261.90000000000003,
+          250.10000000000002,
+          238.30000000000004
+        ],
+        "empirical_full_count_mean": [
+          273.811,
+          262.0958,
+          249.724,
+          238.3692
+        ],
+        "fixed_type_reduced_covariance": [
+          [
+            177.81,
+            -77.58000000000001,
+            -59.27000000000002
+          ],
+          [
+            -77.58000000000001,
+            192.39000000000001,
+            -61.44000000000001
+          ],
+          [
+            -59.27000000000002,
+            -61.44000000000001,
+            186.49
+          ]
+        ],
+        "empirical_reduced_covariance": [
+          [
+            180.74782856571312,
+            -76.5792096419284,
+            -62.752714542908535
+          ],
+          [
+            -76.5792096419284,
+            192.78237883576716,
+            -61.067372674534916
+          ],
+          [
+            -62.752714542908535,
+            -61.067372674534916,
+            190.08704140828155
+          ]
+        ],
+        "relative_frobenius_covariance_sampling_error": 0.019266330913273462
+      },
+      "per_message": [
+        {
+          "message": 0,
+          "endpoint_one_count": 0,
+          "theta": 0.0,
+          "errors": 157,
+          "trials": 5000,
+          "empirical_error": 0.0314,
+          "pointwise_95pct_clopper_pearson": [
+            0.0267413056154401,
+            0.036615754667133925
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.024902719375855472,
+            0.03896445392348581
+          ]
+        },
+        {
+          "message": 1,
+          "endpoint_one_count": 109,
+          "theta": 0.1064453125,
+          "errors": 347,
+          "trials": 5000,
+          "empirical_error": 0.0694,
+          "pointwise_95pct_clopper_pearson": [
+            0.062508901175648,
+            0.07679878395307746
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.05969721853173704,
+            0.08007762485566874
+          ]
+        },
+        {
+          "message": 2,
+          "endpoint_one_count": 222,
+          "theta": 0.216796875,
+          "errors": 320,
+          "trials": 5000,
+          "empirical_error": 0.064,
+          "pointwise_95pct_clopper_pearson": [
+            0.05737203193704096,
+            0.07114237794531825
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.0546753734186832,
+            0.07431219199745769
+          ]
+        },
+        {
+          "message": 3,
+          "endpoint_one_count": 337,
+          "theta": 0.3291015625,
+          "errors": 352,
+          "trials": 5000,
+          "empirical_error": 0.0704,
+          "pointwise_95pct_clopper_pearson": [
+            0.0634615665319,
+            0.07784487885427832
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.0606291827759765,
+            0.08114331236449954
+          ]
+        },
+        {
+          "message": 4,
+          "endpoint_one_count": 453,
+          "theta": 0.4423828125,
+          "errors": 341,
+          "trials": 5000,
+          "empirical_error": 0.0682,
+          "pointwise_95pct_clopper_pearson": [
+            0.061366261027862724,
+            0.07554291397811508
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.05857966001531934,
+            0.0787980042793165
+          ]
+        },
+        {
+          "message": 5,
+          "endpoint_one_count": 571,
+          "theta": 0.5576171875,
+          "errors": 360,
+          "trials": 5000,
+          "empirical_error": 0.072,
+          "pointwise_95pct_clopper_pearson": [
+            0.06498668900921349,
+            0.07951777608384271
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.062121552761848775,
+            0.08284718972327997
+          ]
+        },
+        {
+          "message": 6,
+          "endpoint_one_count": 687,
+          "theta": 0.6708984375,
+          "errors": 355,
+          "trials": 5000,
+          "empirical_error": 0.071,
+          "pointwise_95pct_clopper_pearson": [
+            0.06403336501605865,
+            0.07847233729376069
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.06118864636782095,
+            0.08178244088414066
+          ]
+        },
+        {
+          "message": 7,
+          "endpoint_one_count": 802,
+          "theta": 0.783203125,
+          "errors": 336,
+          "trials": 5000,
+          "empirical_error": 0.0672,
+          "pointwise_95pct_clopper_pearson": [
+            0.06041453627308235,
+            0.07449588218999997
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.05764904121834574,
+            0.07773097643815627
+          ]
+        },
+        {
+          "message": 8,
+          "endpoint_one_count": 915,
+          "theta": 0.8935546875,
+          "errors": 332,
+          "trials": 5000,
+          "empirical_error": 0.0664,
+          "pointwise_95pct_clopper_pearson": [
+            0.05965347406825942,
+            0.07365794044514937
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.0569050004667609,
+            0.07687690164730268
+          ]
+        },
+        {
+          "message": 9,
+          "endpoint_one_count": 1024,
+          "theta": 1.0,
+          "errors": 159,
+          "trials": 5000,
+          "empirical_error": 0.0318,
+          "pointwise_95pct_clopper_pearson": [
+            0.027111378705938934,
+            0.03704511758179383
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.025259789970453472,
+            0.0394063513774113
+          ]
+        }
+      ]
+    },
+    {
+      "name": "quaternary_with_interior_input",
+      "n": 4096,
+      "target_epsilon": 0.1,
+      "message_count": 20,
+      "message_count_rule": "max(1, floor(L*sqrt(n)/(2*Phi_inverse(1-epsilon/2))))",
+      "asymptotic_fixed_error_coefficient": 0.31317791480320223,
+      "M_over_sqrt_n": 0.3125,
+      "asymptotic_error_curve_at_M_over_sqrt_n": 0.09926613472515848,
+      "gaussian_minimum_spacing_two_tail_reference": 0.08324354541458842,
+      "empirical_average_error": 0.07904999999999998,
+      "average_error_95pct_hoeffding_interval": [
+        0.07475530591653261,
+        0.08334469408346735
+      ],
+      "empirical_maximum_error": 0.0896,
+      "true_maximum_error_95pct_simultaneous_interval": [
+        0.07782171039256389,
+        0.10244473930849363
+      ],
+      "replicates_per_message": 5000,
+      "total_trials": 100000,
+      "rng": {
+        "bit_generator": "PCG64",
+        "entropy": 20261124,
+        "spawn_key": [
+          3
+        ]
+      },
+      "code_weights": [
+        0,
+        204,
+        412,
+        624,
+        838,
+        1055,
+        1274,
+        1494,
+        1715,
+        1937,
+        2159,
+        2381,
+        2602,
+        2822,
+        3041,
+        3258,
+        3472,
+        3684,
+        3892,
+        4096
+      ],
+      "theta_decision_boundaries": [
+        0.024774685711468066,
+        0.07508419092136832,
+        0.12636896519005641,
+        0.1783866944964709,
+        0.23101295559099488,
+        0.2842494703418759,
+        0.3378519614626792,
+        0.3916980376658506,
+        0.4457879912990338,
+        0.5,
+        0.5542120087009662,
+        0.6083019623341491,
+        0.6621480385371018,
+        0.7157505296583254,
+        0.7689870444088296,
+        0.8216133055033897,
+        0.8736310348099438,
+        0.9249158090786316,
+        0.9752253142885318
+      ],
+      "max_inverse_arc_residual": 2.049471703458039e-13,
+      "max_rounding_arc_displacement": 8.874306815231936e-05,
+      "midpoint_fixed_type_moment_diagnostic": {
+        "message": 10,
+        "expected_full_count": [
+          1057.3000000000002,
+          1035.1000000000001,
+          1012.9000000000001,
+          990.7000000000002
+        ],
+        "empirical_full_count_mean": [
+          1057.8766,
+          1035.0164,
+          1012.4444,
+          990.6626
+        ],
+        "fixed_type_reduced_covariance": [
+          [
+            692.49,
+            -297.82000000000005,
+            -230.83000000000004
+          ],
+          [
+            -297.82000000000005,
+            763.3100000000001,
+            -245.76000000000005
+          ],
+          [
+            -230.83000000000004,
+            -245.76000000000005,
+            752.21
+          ]
+        ],
+        "empirical_reduced_covariance": [
+          [
+            690.9779680336067,
+            -301.6681098619723,
+            -222.4526515703141
+          ],
+          [
+            -301.6681098619723,
+            761.8240958591718,
+            -248.4749831566313
+          ],
+          [
+            -222.4526515703141,
+            -248.4749831566313,
+            741.3579802360473
+          ]
+        ],
+        "relative_frobenius_covariance_sampling_error": 0.012288846123210236
+      },
+      "per_message": [
+        {
+          "message": 0,
+          "endpoint_one_count": 0,
+          "theta": 0.0,
+          "errors": 196,
+          "trials": 5000,
+          "empirical_error": 0.0392,
+          "pointwise_95pct_clopper_pearson": [
+            0.033991336093895666,
+            0.04495500335765761
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.03139673742417195,
+            0.04820677187512846
+          ]
+        },
+        {
+          "message": 1,
+          "endpoint_one_count": 204,
+          "theta": 0.0498046875,
+          "errors": 448,
+          "trials": 5000,
+          "empirical_error": 0.0896,
+          "pointwise_95pct_clopper_pearson": [
+            0.08182480281857703,
+            0.09785809567322282
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.07782171039256389,
+            0.10244473930849363
+          ]
+        },
+        {
+          "message": 2,
+          "endpoint_one_count": 412,
+          "theta": 0.1005859375,
+          "errors": 408,
+          "trials": 5000,
+          "empirical_error": 0.0816,
+          "pointwise_95pct_clopper_pearson": [
+            0.07415798038440725,
+            0.08953467746563964
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.070338392677763,
+            0.09394935951723342
+          ]
+        },
+        {
+          "message": 3,
+          "endpoint_one_count": 624,
+          "theta": 0.15234375,
+          "errors": 392,
+          "trials": 5000,
+          "empirical_error": 0.0784,
+          "pointwise_95pct_clopper_pearson": [
+            0.07109715506566541,
+            0.08619942553516496
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.06735415967936326,
+            0.0905421414566093
+          ]
+        },
+        {
+          "message": 4,
+          "endpoint_one_count": 838,
+          "theta": 0.20458984375,
+          "errors": 439,
+          "trials": 5000,
+          "empirical_error": 0.0878,
+          "pointwise_95pct_clopper_pearson": [
+            0.08009802088458354,
+            0.09598706806795274
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.07613527285606678,
+            0.10053596196681455
+          ]
+        },
+        {
+          "message": 5,
+          "endpoint_one_count": 1055,
+          "theta": 0.257568359375,
+          "errors": 384,
+          "trials": 5000,
+          "empirical_error": 0.0768,
+          "pointwise_95pct_clopper_pearson": [
+            0.06956810051406696,
+            0.0845304460862195
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.06586413510177982,
+            0.08883644729312706
+          ]
+        },
+        {
+          "message": 6,
+          "endpoint_one_count": 1274,
+          "theta": 0.31103515625,
+          "errors": 445,
+          "trials": 5000,
+          "empirical_error": 0.089,
+          "pointwise_95pct_clopper_pearson": [
+            0.0812491004335346,
+            0.09723452788763126
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.07725939754230304,
+            0.10180864672186637
+          ]
+        },
+        {
+          "message": 7,
+          "endpoint_one_count": 1494,
+          "theta": 0.36474609375,
+          "errors": 410,
+          "trials": 5000,
+          "empirical_error": 0.082,
+          "pointwise_95pct_clopper_pearson": [
+            0.07454083070041703,
+            0.08995133762745104
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.07071180250491649,
+            0.09437488227946246
+          ]
+        },
+        {
+          "message": 8,
+          "endpoint_one_count": 1715,
+          "theta": 0.418701171875,
+          "errors": 429,
+          "trials": 5000,
+          "empirical_error": 0.0858,
+          "pointwise_95pct_clopper_pearson": [
+            0.078180537602931,
+            0.09390698872134477
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.07426324546824523,
+            0.09841331134873099
+          ]
+        },
+        {
+          "message": 9,
+          "endpoint_one_count": 1937,
+          "theta": 0.472900390625,
+          "errors": 443,
+          "trials": 5000,
+          "empirical_error": 0.0886,
+          "pointwise_95pct_clopper_pearson": [
+            0.08086535882434212,
+            0.09681875622851872
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.07688461471163313,
+            0.1013844928579428
+          ]
+        },
+        {
+          "message": 10,
+          "endpoint_one_count": 2159,
+          "theta": 0.527099609375,
+          "errors": 427,
+          "trials": 5000,
+          "empirical_error": 0.0854,
+          "pointwise_95pct_clopper_pearson": [
+            0.07779719112514095,
+            0.09349082313684101
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.07388907133857116,
+            0.09798855055914278
+          ]
+        },
+        {
+          "message": 11,
+          "endpoint_one_count": 2381,
+          "theta": 0.581298828125,
+          "errors": 413,
+          "trials": 5000,
+          "empirical_error": 0.0826,
+          "pointwise_95pct_clopper_pearson": [
+            0.07511520674279039,
+            0.09057622762984302
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.0712720721606252,
+            0.09501301198993066
+          ]
+        },
+        {
+          "message": 12,
+          "endpoint_one_count": 2602,
+          "theta": 0.63525390625,
+          "errors": 387,
+          "trials": 5000,
+          "empirical_error": 0.0774,
+          "pointwise_95pct_clopper_pearson": [
+            0.07014138725481957,
+            0.0851564217183736
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.06642272686441904,
+            0.08947624950476148
+          ]
+        },
+        {
+          "message": 13,
+          "endpoint_one_count": 2822,
+          "theta": 0.68896484375,
+          "errors": 391,
+          "trials": 5000,
+          "empirical_error": 0.0782,
+          "pointwise_95pct_clopper_pearson": [
+            0.07090597275112714,
+            0.08599085342504284
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.0671678288291449,
+            0.09032900720798193
+          ]
+        },
+        {
+          "message": 14,
+          "endpoint_one_count": 3041,
+          "theta": 0.742431640625,
+          "errors": 413,
+          "trials": 5000,
+          "empirical_error": 0.0826,
+          "pointwise_95pct_clopper_pearson": [
+            0.07511520674279039,
+            0.09057622762984302
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.0712720721606252,
+            0.09501301198993066
+          ]
+        },
+        {
+          "message": 15,
+          "endpoint_one_count": 3258,
+          "theta": 0.79541015625,
+          "errors": 406,
+          "trials": 5000,
+          "empirical_error": 0.0812,
+          "pointwise_95pct_clopper_pearson": [
+            0.07377518412438534,
+            0.08911796342526289
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.06996506611760317,
+            0.09352375374872358
+          ]
+        },
+        {
+          "message": 16,
+          "endpoint_one_count": 3472,
+          "theta": 0.84765625,
+          "errors": 436,
+          "trials": 5000,
+          "empirical_error": 0.0872,
+          "pointwise_95pct_clopper_pearson": [
+            0.07952264572722366,
+            0.09536317403827158
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.07557346410871166,
+            0.09989936672572935
+          ]
+        },
+        {
+          "message": 17,
+          "endpoint_one_count": 3684,
+          "theta": 0.8994140625,
+          "errors": 418,
+          "trials": 5000,
+          "empirical_error": 0.0836,
+          "pointwise_95pct_clopper_pearson": [
+            0.07607276538594127,
+            0.09161744658551155
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.07220626349715145,
+            0.09607615419095583
+          ]
+        },
+        {
+          "message": 18,
+          "endpoint_one_count": 3892,
+          "theta": 0.9501953125,
+          "errors": 406,
+          "trials": 5000,
+          "empirical_error": 0.0812,
+          "pointwise_95pct_clopper_pearson": [
+            0.07377518412438534,
+            0.08911796342526289
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.06996506611760317,
+            0.09352375374872358
+          ]
+        },
+        {
+          "message": 19,
+          "endpoint_one_count": 4096,
+          "theta": 1.0,
+          "errors": 214,
+          "trials": 5000,
+          "empirical_error": 0.0428,
+          "pointwise_95pct_clopper_pearson": [
+            0.03735817349816419,
+            0.048783372033677976
+          ],
+          "simultaneous_95pct_bonferroni_clopper_pearson": [
+            0.03463608877621994,
+            0.0521572506238968
+          ]
+        }
+      ]
+    }
+  ]
+}

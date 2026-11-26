@@ -1,0 +1,84 @@
+{
+  "method": "exact dyadic frequency indices, binomial polynomials, and Legendre Sturm sequence",
+  "spin_coefficients_compared": 33,
+  "orders": [
+    {
+      "t": 1,
+      "even_nonzero_weights_annihilated": 0,
+      "certified_root_brackets": 0,
+      "measurements": 2
+    },
+    {
+      "t": 2,
+      "even_nonzero_weights_annihilated": 1,
+      "certified_root_brackets": 1,
+      "measurements": 10
+    },
+    {
+      "t": 3,
+      "even_nonzero_weights_annihilated": 1,
+      "certified_root_brackets": 1,
+      "measurements": 10
+    },
+    {
+      "t": 4,
+      "even_nonzero_weights_annihilated": 2,
+      "certified_root_brackets": 2,
+      "measurements": 22
+    },
+    {
+      "t": 5,
+      "even_nonzero_weights_annihilated": 2,
+      "certified_root_brackets": 2,
+      "measurements": 22
+    },
+    {
+      "t": 7,
+      "even_nonzero_weights_annihilated": 3,
+      "certified_root_brackets": 3,
+      "measurements": 30
+    },
+    {
+      "t": 8,
+      "even_nonzero_weights_annihilated": 4,
+      "certified_root_brackets": 4,
+      "measurements": 48
+    },
+    {
+      "t": 16,
+      "even_nonzero_weights_annihilated": 8,
+      "certified_root_brackets": 8,
+      "measurements": 106
+    },
+    {
+      "t": 31,
+      "even_nonzero_weights_annihilated": 15,
+      "certified_root_brackets": 15,
+      "measurements": 190
+    },
+    {
+      "t": 32,
+      "even_nonzero_weights_annihilated": 16,
+      "certified_root_brackets": 16,
+      "measurements": 236
+    },
+    {
+      "t": 33,
+      "even_nonzero_weights_annihilated": 16,
+      "certified_root_brackets": 16,
+      "measurements": 236
+    },
+    {
+      "t": 64,
+      "even_nonzero_weights_annihilated": 32,
+      "certified_root_brackets": 32,
+      "measurements": 526
+    },
+    {
+      "t": 65,
+      "even_nonzero_weights_annihilated": 32,
+      "certified_root_brackets": 32,
+      "measurements": 526
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "status": "all_exact_arithmetic_checks_passed",
+  "frozen_manuscript_sha256": "762f47ad02dc906554077c70da4e721eb2a87405eb193b2ec1f405d4b9704675",
+  "discovery_note_sha256": "63bc8206e8080a53ef1a3d3c12819f5ae849d5dfd44e59ea9f26774cfc1c521e",
+  "method": "standard-library Fraction; all 64 tuples; all 24 pair assignments; exact coefficient expansion",
+  "taylor_inequalities": 36,
+  "taylor_minimum": "7640/9",
+  "maximizing_tuples": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      3,
+      0
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      3,
+      3,
+      3
+    ]
+  ],
+  "other_tuple_gap": 9328,
+  "costs_nu": [
+    "25597",
+    "38884",
+    "25597"
+  ],
+  "costs_nu_prime": [
+    "21157",
+    "47764",
+    "21157"
+  ],
+  "squared_separation": 58400,
+  "variance": 30026,
+  "contrast_variance": 39427200,
+  "cross_coefficients": [
+    -13320,
+    26640,
+    -13320
+  ],
+  "radius_squared": 90117,
+  "finite_n_constants_checked": true,
+  "proof_assistant_validation": false
+}

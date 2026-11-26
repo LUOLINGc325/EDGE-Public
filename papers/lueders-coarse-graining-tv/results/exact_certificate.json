@@ -1,0 +1,716 @@
+{
+  "schema_version": 1,
+  "arithmetic": "Python standard-library fractions.Fraction; no floating-point arithmetic",
+  "status": "all_exact_checks_passed",
+  "scope": "Admissibility, exact Lueders difference matrices, all 32 subset norm certificates, and both attaining states. The all-complex-density upper-bound lemma is supplied in core_proof.md and the Lean development.",
+  "effects": {
+    "A": [
+      [
+        [
+          "2/3",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "5/18",
+          "1/6"
+        ],
+        [
+          "1/6",
+          "1/2"
+        ]
+      ],
+      [
+        [
+          "1/18",
+          "-1/6"
+        ],
+        [
+          "-1/6",
+          "1/2"
+        ]
+      ]
+    ],
+    "B": [
+      [
+        [
+          "16/25",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      [
+        [
+          "9/25",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ]
+    ],
+    "coarse_A": [
+      [
+        [
+          "17/18",
+          "1/6"
+        ],
+        [
+          "1/6",
+          "1/2"
+        ]
+      ],
+      [
+        [
+          "1/18",
+          "-1/6"
+        ],
+        [
+          "-1/6",
+          "1/2"
+        ]
+      ]
+    ]
+  },
+  "positive_square_root_certificates": {
+    "A": [
+      {
+        "numerator": [
+          [
+            "2",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "normalization_square": "6",
+        "meaning": "positive square root = numerator / sqrt(normalization_square)"
+      },
+      {
+        "numerator": [
+          [
+            "11",
+            "3"
+          ],
+          [
+            "3",
+            "15"
+          ]
+        ],
+        "normalization_square": "468",
+        "meaning": "positive square root = numerator / sqrt(normalization_square)"
+      },
+      {
+        "numerator": [
+          [
+            "1",
+            "-3"
+          ],
+          [
+            "-3",
+            "9"
+          ]
+        ],
+        "normalization_square": "180",
+        "meaning": "positive square root = numerator / sqrt(normalization_square)"
+      }
+    ],
+    "B": [
+      {
+        "numerator": [
+          [
+            "4",
+            "0"
+          ],
+          [
+            "0",
+            "5"
+          ]
+        ],
+        "normalization_square": "25",
+        "meaning": "positive square root = numerator / sqrt(normalization_square)"
+      },
+      {
+        "numerator": [
+          [
+            "3",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "normalization_square": "25",
+        "meaning": "positive square root = numerator / sqrt(normalization_square)"
+      }
+    ],
+    "coarse_A": [
+      {
+        "numerator": [
+          [
+            "29",
+            "3"
+          ],
+          [
+            "3",
+            "21"
+          ]
+        ],
+        "normalization_square": "900",
+        "meaning": "positive square root = numerator / sqrt(normalization_square)"
+      },
+      {
+        "numerator": [
+          [
+            "1",
+            "-3"
+          ],
+          [
+            "-3",
+            "9"
+          ]
+        ],
+        "normalization_square": "180",
+        "meaning": "positive square root = numerator / sqrt(normalization_square)"
+      }
+    ]
+  },
+  "fine_difference_order": [
+    "D00",
+    "D01",
+    "D10",
+    "D11",
+    "D20",
+    "D21"
+  ],
+  "fine_differences": [
+    [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    [
+      [
+        "9/1300",
+        "31/3900"
+      ],
+      [
+        "31/3900",
+        "-9/1300"
+      ]
+    ],
+    [
+      [
+        "-9/1300",
+        "33/1300"
+      ],
+      [
+        "33/1300",
+        "9/1300"
+      ]
+    ],
+    [
+      [
+        "9/500",
+        "-41/1500"
+      ],
+      [
+        "-41/1500",
+        "-9/500"
+      ]
+    ],
+    [
+      [
+        "-9/500",
+        "-3/500"
+      ],
+      [
+        "-3/500",
+        "9/500"
+      ]
+    ]
+  ],
+  "fine_subset_bit_order": [
+    "D10",
+    "D11",
+    "D20",
+    "D21"
+  ],
+  "fine_subset_table": [
+    {
+      "mask": 0,
+      "selected_indices": [],
+      "diagonal": "0",
+      "off_diagonal": "0",
+      "squared_operator_norm": "0"
+    },
+    {
+      "mask": 1,
+      "selected_indices": [
+        0
+      ],
+      "diagonal": "9/1300",
+      "off_diagonal": "31/3900",
+      "squared_operator_norm": "1/9000"
+    },
+    {
+      "mask": 2,
+      "selected_indices": [
+        1
+      ],
+      "diagonal": "-9/1300",
+      "off_diagonal": "33/1300",
+      "squared_operator_norm": "9/13000"
+    },
+    {
+      "mask": 3,
+      "selected_indices": [
+        0,
+        1
+      ],
+      "diagonal": "0",
+      "off_diagonal": "1/30",
+      "squared_operator_norm": "1/900"
+    },
+    {
+      "mask": 4,
+      "selected_indices": [
+        2
+      ],
+      "diagonal": "9/500",
+      "off_diagonal": "-41/1500",
+      "squared_operator_norm": "241/225000"
+    },
+    {
+      "mask": 5,
+      "selected_indices": [
+        0,
+        2
+      ],
+      "diagonal": "81/3250",
+      "off_diagonal": "-63/3250",
+      "squared_operator_norm": "81/81250"
+    },
+    {
+      "mask": 6,
+      "selected_indices": [
+        1,
+        2
+      ],
+      "diagonal": "18/1625",
+      "off_diagonal": "-19/9750",
+      "squared_operator_norm": "37/292500"
+    },
+    {
+      "mask": 7,
+      "selected_indices": [
+        0,
+        1,
+        2
+      ],
+      "diagonal": "9/500",
+      "off_diagonal": "3/500",
+      "squared_operator_norm": "9/25000"
+    },
+    {
+      "mask": 8,
+      "selected_indices": [
+        3
+      ],
+      "diagonal": "-9/500",
+      "off_diagonal": "-3/500",
+      "squared_operator_norm": "9/25000"
+    },
+    {
+      "mask": 9,
+      "selected_indices": [
+        0,
+        3
+      ],
+      "diagonal": "-18/1625",
+      "off_diagonal": "19/9750",
+      "squared_operator_norm": "37/292500"
+    },
+    {
+      "mask": 10,
+      "selected_indices": [
+        1,
+        3
+      ],
+      "diagonal": "-81/3250",
+      "off_diagonal": "63/3250",
+      "squared_operator_norm": "81/81250"
+    },
+    {
+      "mask": 11,
+      "selected_indices": [
+        0,
+        1,
+        3
+      ],
+      "diagonal": "-9/500",
+      "off_diagonal": "41/1500",
+      "squared_operator_norm": "241/225000"
+    },
+    {
+      "mask": 12,
+      "selected_indices": [
+        2,
+        3
+      ],
+      "diagonal": "0",
+      "off_diagonal": "-1/30",
+      "squared_operator_norm": "1/900"
+    },
+    {
+      "mask": 13,
+      "selected_indices": [
+        0,
+        2,
+        3
+      ],
+      "diagonal": "9/1300",
+      "off_diagonal": "-33/1300",
+      "squared_operator_norm": "9/13000"
+    },
+    {
+      "mask": 14,
+      "selected_indices": [
+        1,
+        2,
+        3
+      ],
+      "diagonal": "-9/1300",
+      "off_diagonal": "-31/3900",
+      "squared_operator_norm": "1/9000"
+    },
+    {
+      "mask": 15,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "diagonal": "0",
+      "off_diagonal": "0",
+      "squared_operator_norm": "0"
+    }
+  ],
+  "coarse_difference_order": [
+    "D00",
+    "D01",
+    "D10",
+    "D11"
+  ],
+  "coarse_differences": [
+    [
+      [
+        "9/2500",
+        "-11/7500"
+      ],
+      [
+        "-11/7500",
+        "-9/2500"
+      ]
+    ],
+    [
+      [
+        "-9/2500",
+        "87/2500"
+      ],
+      [
+        "87/2500",
+        "9/2500"
+      ]
+    ],
+    [
+      [
+        "9/500",
+        "-41/1500"
+      ],
+      [
+        "-41/1500",
+        "-9/500"
+      ]
+    ],
+    [
+      [
+        "-9/500",
+        "-3/500"
+      ],
+      [
+        "-3/500",
+        "9/500"
+      ]
+    ]
+  ],
+  "coarse_subset_bit_order": [
+    "D00",
+    "D01",
+    "D10",
+    "D11"
+  ],
+  "coarse_subset_table": [
+    {
+      "mask": 0,
+      "selected_indices": [],
+      "diagonal": "0",
+      "off_diagonal": "0",
+      "squared_operator_norm": "0"
+    },
+    {
+      "mask": 1,
+      "selected_indices": [
+        0
+      ],
+      "diagonal": "9/2500",
+      "off_diagonal": "-11/7500",
+      "squared_operator_norm": "17/1125000"
+    },
+    {
+      "mask": 2,
+      "selected_indices": [
+        1
+      ],
+      "diagonal": "-9/2500",
+      "off_diagonal": "87/2500",
+      "squared_operator_norm": "153/125000"
+    },
+    {
+      "mask": 3,
+      "selected_indices": [
+        0,
+        1
+      ],
+      "diagonal": "0",
+      "off_diagonal": "1/30",
+      "squared_operator_norm": "1/900"
+    },
+    {
+      "mask": 4,
+      "selected_indices": [
+        2
+      ],
+      "diagonal": "9/500",
+      "off_diagonal": "-41/1500",
+      "squared_operator_norm": "241/225000"
+    },
+    {
+      "mask": 5,
+      "selected_indices": [
+        0,
+        2
+      ],
+      "diagonal": "27/1250",
+      "off_diagonal": "-18/625",
+      "squared_operator_norm": "81/62500"
+    },
+    {
+      "mask": 6,
+      "selected_indices": [
+        1,
+        2
+      ],
+      "diagonal": "9/625",
+      "off_diagonal": "14/1875",
+      "squared_operator_norm": "37/140625"
+    },
+    {
+      "mask": 7,
+      "selected_indices": [
+        0,
+        1,
+        2
+      ],
+      "diagonal": "9/500",
+      "off_diagonal": "3/500",
+      "squared_operator_norm": "9/25000"
+    },
+    {
+      "mask": 8,
+      "selected_indices": [
+        3
+      ],
+      "diagonal": "-9/500",
+      "off_diagonal": "-3/500",
+      "squared_operator_norm": "9/25000"
+    },
+    {
+      "mask": 9,
+      "selected_indices": [
+        0,
+        3
+      ],
+      "diagonal": "-9/625",
+      "off_diagonal": "-14/1875",
+      "squared_operator_norm": "37/140625"
+    },
+    {
+      "mask": 10,
+      "selected_indices": [
+        1,
+        3
+      ],
+      "diagonal": "-27/1250",
+      "off_diagonal": "18/625",
+      "squared_operator_norm": "81/62500"
+    },
+    {
+      "mask": 11,
+      "selected_indices": [
+        0,
+        1,
+        3
+      ],
+      "diagonal": "-9/500",
+      "off_diagonal": "41/1500",
+      "squared_operator_norm": "241/225000"
+    },
+    {
+      "mask": 12,
+      "selected_indices": [
+        2,
+        3
+      ],
+      "diagonal": "0",
+      "off_diagonal": "-1/30",
+      "squared_operator_norm": "1/900"
+    },
+    {
+      "mask": 13,
+      "selected_indices": [
+        0,
+        2,
+        3
+      ],
+      "diagonal": "9/2500",
+      "off_diagonal": "-87/2500",
+      "squared_operator_norm": "153/125000"
+    },
+    {
+      "mask": 14,
+      "selected_indices": [
+        1,
+        2,
+        3
+      ],
+      "diagonal": "-9/2500",
+      "off_diagonal": "11/7500",
+      "squared_operator_norm": "17/1125000"
+    },
+    {
+      "mask": 15,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "diagonal": "0",
+      "off_diagonal": "0",
+      "squared_operator_norm": "0"
+    }
+  ],
+  "fine_attaining_state": {
+    "density_matrix": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "1/2"
+      ]
+    ],
+    "probabilities_AB": [
+      "16/75",
+      "3/25",
+      "2809/5850",
+      "49/650",
+      "241/2250",
+      "1/250"
+    ],
+    "probabilities_BA": [
+      "16/75",
+      "3/25",
+      "17/36",
+      "1/20",
+      "121/900",
+      "1/100"
+    ],
+    "differences": [
+      "0",
+      "0",
+      "31/3900",
+      "33/1300",
+      "-41/1500",
+      "-3/500"
+    ],
+    "total_variation": "1/30"
+  },
+  "coarse_attaining_state": {
+    "density_matrix": [
+      [
+        "1/5",
+        "2/5"
+      ],
+      [
+        "2/5",
+        "4/5"
+      ]
+    ],
+    "probabilities_AB": [
+      "2809/4500",
+      "49/500",
+      "241/900",
+      "1/100"
+    ],
+    "probabilities_BA": [
+      "706/1125",
+      "17/250",
+      "338/1125",
+      "1/250"
+    ],
+    "differences": [
+      "-1/300",
+      "3/100",
+      "-49/1500",
+      "3/500"
+    ],
+    "total_variation": "9/250"
+  },
+  "exact_scores": {
+    "fine": "1/30",
+    "coarse": "9/250",
+    "increase": "1/375",
+    "ratio": "27/25"
+  }
+}

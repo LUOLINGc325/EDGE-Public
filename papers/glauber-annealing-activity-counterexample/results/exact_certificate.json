@@ -1,0 +1,842 @@
+{
+  "status": "passed",
+  "arithmetic": "exact rational",
+  "model": {
+    "states": 10,
+    "degree": 3,
+    "connected": true,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        4,
+        9
+      ]
+    ],
+    "energies": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      11,
+      11,
+      11,
+      11,
+      10
+    ],
+    "q_exp_beta": [
+      {
+        "numerator": "10001",
+        "denominator": "10000",
+        "decimal_50_significant_digits": "1.0001",
+        "enclosure": {
+          "lower_numerator": "100010000000000",
+          "upper_numerator": "100010000000001",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "5",
+        "denominator": "4",
+        "decimal_50_significant_digits": "1.25",
+        "enclosure": {
+          "lower_numerator": "125000000000000",
+          "upper_numerator": "125000000000001",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "100",
+        "denominator": "1",
+        "decimal_50_significant_digits": "100",
+        "enclosure": {
+          "lower_numerator": "10000000000000000",
+          "upper_numerator": "10000000000000001",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      }
+    ],
+    "probability_convention": "column vectors; next temperature, pre-update distribution"
+  },
+  "activities": {
+    "A0": {
+      "numerator": "3324650920268926728738304075807200837450117750615473",
+      "denominator": "6649463955507329640804662502784906246791551639733228",
+      "decimal_50_significant_digits": "0.49998780992193048029296388819080677507805624396204",
+      "enclosure": {
+        "lower_numerator": "49998780992193",
+        "upper_numerator": "49998780992194",
+        "denominator": "100000000000000",
+        "upper_strict": true
+      }
+    },
+    "A1": {
+      "numerator": "5902774591859117272939967982483087445482386027746372473407417552821",
+      "denominator": "11727449656979417367643962007570080930504786847474663574588274496884",
+      "decimal_50_significant_digits": "0.50332977454703194592816635189571121804636114956947",
+      "enclosure": {
+        "lower_numerator": "50332977454703",
+        "upper_numerator": "50332977454704",
+        "denominator": "100000000000000",
+        "upper_strict": true
+      }
+    },
+    "two_step_average": {
+      "numerator": "1667881028463261556454979210536009536944233676038716757468030875766245",
+      "denominator": "3324731977753664823727063229146117943798107071259067123395775819866614",
+      "decimal_50_significant_digits": "0.50165879223448121311056512004325899656220869676575",
+      "enclosure": {
+        "lower_numerator": "50165879223448",
+        "upper_numerator": "50165879223449",
+        "denominator": "100000000000000",
+        "upper_strict": true
+      }
+    }
+  },
+  "states": [
+    [
+      {
+        "numerator": "100110055016503300462046203300165005500110001",
+        "denominator": "1000550265078015302100205814400705023000450004",
+        "decimal_50_significant_digits": "0.10005499824508814611859613967529400463517428602077",
+        "enclosure": {
+          "lower_numerator": "10005499824508",
+          "upper_numerator": "10005499824509",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "100110055016503300462046203300165005500110001",
+        "denominator": "1000550265078015302100205814400705023000450004",
+        "decimal_50_significant_digits": "0.10005499824508814611859613967529400463517428602077",
+        "enclosure": {
+          "lower_numerator": "10005499824508",
+          "upper_numerator": "10005499824509",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "100110055016503300462046203300165005500110001",
+        "denominator": "1000550265078015302100205814400705023000450004",
+        "decimal_50_significant_digits": "0.10005499824508814611859613967529400463517428602077",
+        "enclosure": {
+          "lower_numerator": "10005499824508",
+          "upper_numerator": "10005499824509",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "100110055016503300462046203300165005500110001",
+        "denominator": "1000550265078015302100205814400705023000450004",
+        "decimal_50_significant_digits": "0.10005499824508814611859613967529400463517428602077",
+        "enclosure": {
+          "lower_numerator": "10005499824508",
+          "upper_numerator": "10005499824509",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "25025011253000525063005250300011250250002500",
+        "denominator": "250137566269503825525051453600176255750112501",
+        "decimal_50_significant_digits": "0.10004499374571357476112002767252675195997828819195",
+        "enclosure": {
+          "lower_numerator": "10004499374571",
+          "upper_numerator": "10004499374572",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "25000000000000000000000000000000000000000000",
+        "denominator": "250137566269503825525051453600176255750112501",
+        "decimal_50_significant_digits": "0.099945003754711673919420694311373218435496203620921",
+        "enclosure": {
+          "lower_numerator": "9994500375471",
+          "upper_numerator": "9994500375472",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "25000000000000000000000000000000000000000000",
+        "denominator": "250137566269503825525051453600176255750112501",
+        "decimal_50_significant_digits": "0.099945003754711673919420694311373218435496203620921",
+        "enclosure": {
+          "lower_numerator": "9994500375471",
+          "upper_numerator": "9994500375472",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "25000000000000000000000000000000000000000000",
+        "denominator": "250137566269503825525051453600176255750112501",
+        "decimal_50_significant_digits": "0.099945003754711673919420694311373218435496203620921",
+        "enclosure": {
+          "lower_numerator": "9994500375471",
+          "upper_numerator": "9994500375472",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "25000000000000000000000000000000000000000000",
+        "denominator": "250137566269503825525051453600176255750112501",
+        "decimal_50_significant_digits": "0.099945003754711673919420694311373218435496203620921",
+        "enclosure": {
+          "lower_numerator": "9994500375471",
+          "upper_numerator": "9994500375472",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "25002500000000000000000000000000000000000000",
+        "denominator": "250137566269503825525051453600176255750112501",
+        "decimal_50_significant_digits": "0.099954998255087145086812636380804355757339753241283",
+        "enclosure": {
+          "lower_numerator": "9995499825508",
+          "upper_numerator": "9995499825509",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      }
+    ],
+    [
+      {
+        "numerator": "934343830146528803962389227301340043834193341",
+        "denominator": "9004952385702137718901852329606345207004050036",
+        "decimal_50_significant_digits": "0.10375888623576278646419671669979243949662592664583",
+        "enclosure": {
+          "lower_numerator": "10375888623576",
+          "upper_numerator": "10375888623577",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "934343830146528803962389227301340043834193341",
+        "denominator": "9004952385702137718901852329606345207004050036",
+        "decimal_50_significant_digits": "0.10375888623576278646419671669979243949662592664583",
+        "enclosure": {
+          "lower_numerator": "10375888623576",
+          "upper_numerator": "10375888623577",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "100110055016503300462046203300165005500110001",
+        "denominator": "1000550265078015302100205814400705023000450004",
+        "decimal_50_significant_digits": "0.10005499824508814611859613967529400463517428602077",
+        "enclosure": {
+          "lower_numerator": "10005499824508",
+          "upper_numerator": "10005499824509",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "100110055016503300462046203300165005500110001",
+        "denominator": "1000550265078015302100205814400705023000450004",
+        "decimal_50_significant_digits": "0.10005499824508814611859613967529400463517428602077",
+        "enclosure": {
+          "lower_numerator": "10005499824508",
+          "upper_numerator": "10005499824509",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "51920634491621806790084982803235990466198438",
+        "denominator": "439757374268014750109363744959901888952612663",
+        "decimal_50_significant_digits": "0.11806654653158409761003098971373106540004643496698",
+        "enclosure": {
+          "lower_numerator": "11806654653158",
+          "upper_numerator": "11806654653159",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "216670000000000000000000000000000000000000000",
+        "denominator": "2251238096425534429725463082401586301751012509",
+        "decimal_50_significant_digits": "0.096244817615703903947203919273089934392973166393534",
+        "enclosure": {
+          "lower_numerator": "9624481761570",
+          "upper_numerator": "9624481761571",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "216670000000000000000000000000000000000000000",
+        "denominator": "2251238096425534429725463082401586301751012509",
+        "decimal_50_significant_digits": "0.096244817615703903947203919273089934392973166393534",
+        "enclosure": {
+          "lower_numerator": "9624481761570",
+          "upper_numerator": "9624481761571",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "25000000000000000000000000000000000000000000",
+        "denominator": "250137566269503825525051453600176255750112501",
+        "decimal_50_significant_digits": "0.099945003754711673919420694311373218435496203620921",
+        "enclosure": {
+          "lower_numerator": "9994500375471",
+          "upper_numerator": "9994500375472",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "25000000000000000000000000000000000000000000",
+        "denominator": "250137566269503825525051453600176255750112501",
+        "decimal_50_significant_digits": "0.099945003754711673919420694311373218435496203620921",
+        "enclosure": {
+          "lower_numerator": "9994500375471",
+          "upper_numerator": "9994500375472",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "12009193670378788789142240271993997230080000",
+        "denominator": "146585791422671583369787914986633962984204221",
+        "decimal_50_significant_digits": "0.081926041765882881491134070367169740679414399670901",
+        "enclosure": {
+          "lower_numerator": "8192604176588",
+          "upper_numerator": "8192604176589",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      }
+    ],
+    [
+      {
+        "numerator": "27864254643087538138250516456562158793657592924025",
+        "denominator": "197412069225820192157927957901609503505569287364214",
+        "decimal_50_significant_digits": "0.14114767527821990956529653179945901434646553676768",
+        "enclosure": {
+          "lower_numerator": "14114767527821",
+          "upper_numerator": "14114767527822",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "27864254643087538138250516456562158793657592924025",
+        "denominator": "197412069225820192157927957901609503505569287364214",
+        "decimal_50_significant_digits": "0.14114767527821990956529653179945901434646553676768",
+        "enclosure": {
+          "lower_numerator": "14114767527821",
+          "upper_numerator": "14114767527822",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "2736324820443588212279220886704310142836173359",
+        "denominator": "27014857157106413156705556988819035621012150108",
+        "decimal_50_significant_digits": "0.10128962757531302623379633201679348292232483289579",
+        "enclosure": {
+          "lower_numerator": "10128962757531",
+          "upper_numerator": "10128962757532",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "2736324820443588212279220886704310142836173359",
+        "denominator": "27014857157106413156705556988819035621012150108",
+        "decimal_50_significant_digits": "0.10128962757531302623379633201679348292232483289579",
+        "enclosure": {
+          "lower_numerator": "10128962757531",
+          "upper_numerator": "10128962757532",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "3595375207494304710719252014329488680638018187888826017153642903139",
+        "denominator": "52773523456407378154397829034065364187271540813635986085647235235978",
+        "decimal_50_significant_digits": "0.068128390374847718274478135521299879718813430269060",
+        "enclosure": {
+          "lower_numerator": "6812839037484",
+          "upper_numerator": "6812839037485",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "58617730342601246154571633947680151938598830080000",
+        "denominator": "888354311516190864710675810557242765775061793138963",
+        "decimal_50_significant_digits": "0.065984629761694917986691168190333459111378857879618",
+        "enclosure": {
+          "lower_numerator": "6598462976169",
+          "upper_numerator": "6598462976170",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "58617730342601246154571633947680151938598830080000",
+        "denominator": "888354311516190864710675810557242765775061793138963",
+        "decimal_50_significant_digits": "0.065984629761694917986691168190333459111378857879618",
+        "enclosure": {
+          "lower_numerator": "6598462976169",
+          "upper_numerator": "6598462976170",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "666670000000000000000000000000000000000000000",
+        "denominator": "6753714289276603289176389247204758905253037527",
+        "decimal_50_significant_digits": "0.098711608375042417262015102631945457087988524545125",
+        "enclosure": {
+          "lower_numerator": "9871160837504",
+          "upper_numerator": "9871160837505",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "666670000000000000000000000000000000000000000",
+        "denominator": "6753714289276603289176389247204758905253037527",
+        "decimal_50_significant_digits": "0.098711608375042417262015102631945457087988524545125",
+        "enclosure": {
+          "lower_numerator": "9871160837504",
+          "upper_numerator": "9871160837505",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "3103202649116313794396714002516595487682583827732445823084173198438",
+        "denominator": "26386761728203689077198914517032682093635770406817993042823617617989",
+        "decimal_50_significant_digits": "0.11760452764461173962992359520163729334487106555450",
+        "enclosure": {
+          "lower_numerator": "11760452764461",
+          "upper_numerator": "11760452764462",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      }
+    ]
+  ],
+  "exit_biases": [
+    [
+      {
+        "numerator": "-1",
+        "denominator": "27",
+        "decimal_50_significant_digits": "-0.037037037037037037037037037037037037037037037037037",
+        "enclosure": {
+          "lower_numerator": "-3703703703704",
+          "upper_numerator": "-3703703703703",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "-1",
+        "denominator": "27",
+        "decimal_50_significant_digits": "-0.037037037037037037037037037037037037037037037037037",
+        "enclosure": {
+          "lower_numerator": "-3703703703704",
+          "upper_numerator": "-3703703703703",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "0",
+        "denominator": "1",
+        "decimal_50_significant_digits": "0",
+        "enclosure": {
+          "lower_numerator": "0",
+          "upper_numerator": "1",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "0",
+        "denominator": "1",
+        "decimal_50_significant_digits": "0",
+        "enclosure": {
+          "lower_numerator": "0",
+          "upper_numerator": "1",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "-1198699",
+        "denominator": "6645807",
+        "decimal_50_significant_digits": "-0.18036921625921426848537732136969972194497974437115",
+        "enclosure": {
+          "lower_numerator": "-18036921625922",
+          "upper_numerator": "-18036921625921",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "1",
+        "denominator": "27",
+        "decimal_50_significant_digits": "0.037037037037037037037037037037037037037037037037037",
+        "enclosure": {
+          "lower_numerator": "3703703703703",
+          "upper_numerator": "3703703703704",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "1",
+        "denominator": "27",
+        "decimal_50_significant_digits": "0.037037037037037037037037037037037037037037037037037",
+        "enclosure": {
+          "lower_numerator": "3703703703703",
+          "upper_numerator": "3703703703704",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "0",
+        "denominator": "1",
+        "decimal_50_significant_digits": "0",
+        "enclosure": {
+          "lower_numerator": "0",
+          "upper_numerator": "1",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "0",
+        "denominator": "1",
+        "decimal_50_significant_digits": "0",
+        "enclosure": {
+          "lower_numerator": "0",
+          "upper_numerator": "1",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "1198699",
+        "denominator": "6645807",
+        "decimal_50_significant_digits": "0.18036921625921426848537732136969972194497974437115",
+        "enclosure": {
+          "lower_numerator": "18036921625921",
+          "upper_numerator": "18036921625922",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      }
+    ],
+    [
+      {
+        "numerator": "-33",
+        "denominator": "101",
+        "decimal_50_significant_digits": "-0.32673267326732673267326732673267326732673267326733",
+        "enclosure": {
+          "lower_numerator": "-32673267326733",
+          "upper_numerator": "-32673267326732",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "-33",
+        "denominator": "101",
+        "decimal_50_significant_digits": "-0.32673267326732673267326732673267326732673267326733",
+        "enclosure": {
+          "lower_numerator": "-32673267326733",
+          "upper_numerator": "-32673267326732",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "0",
+        "denominator": "1",
+        "decimal_50_significant_digits": "0",
+        "enclosure": {
+          "lower_numerator": "0",
+          "upper_numerator": "1",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "0",
+        "denominator": "1",
+        "decimal_50_significant_digits": "0",
+        "enclosure": {
+          "lower_numerator": "0",
+          "upper_numerator": "1",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "320132013201320133",
+        "denominator": "1000000000000000001",
+        "decimal_50_significant_digits": "0.32013201320132013267986798679867986732013201320132",
+        "enclosure": {
+          "lower_numerator": "32013201320132",
+          "upper_numerator": "32013201320133",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "33",
+        "denominator": "101",
+        "decimal_50_significant_digits": "0.32673267326732673267326732673267326732673267326733",
+        "enclosure": {
+          "lower_numerator": "32673267326732",
+          "upper_numerator": "32673267326733",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "33",
+        "denominator": "101",
+        "decimal_50_significant_digits": "0.32673267326732673267326732673267326732673267326733",
+        "enclosure": {
+          "lower_numerator": "32673267326732",
+          "upper_numerator": "32673267326733",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "0",
+        "denominator": "1",
+        "decimal_50_significant_digits": "0",
+        "enclosure": {
+          "lower_numerator": "0",
+          "upper_numerator": "1",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "0",
+        "denominator": "1",
+        "decimal_50_significant_digits": "0",
+        "enclosure": {
+          "lower_numerator": "0",
+          "upper_numerator": "1",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      },
+      {
+        "numerator": "-320132013201320133",
+        "denominator": "1000000000000000001",
+        "decimal_50_significant_digits": "-0.32013201320132013267986798679867986732013201320132",
+        "enclosure": {
+          "lower_numerator": "-32013201320133",
+          "upper_numerator": "-32013201320132",
+          "denominator": "100000000000000",
+          "upper_strict": true
+        }
+      }
+    ]
+  ],
+  "bias_inner_product": {
+    "numerator": "-148598206820682068888174",
+    "denominator": "2215269000000000002215269",
+    "decimal_50_significant_digits": "-0.067079080157164691393946194877153939887401578237533",
+    "enclosure": {
+      "lower_numerator": "-6707908015717",
+      "upper_numerator": "-6707908015716",
+      "denominator": "100000000000000",
+      "upper_strict": true
+    }
+  },
+  "uniform_start_A1": {
+    "numerator": "5575322051705170522760216",
+    "denominator": "11076345000000000011076345",
+    "decimal_50_significant_digits": "0.50335395400785823456969730974385769699437007891188",
+    "enclosure": {
+      "lower_numerator": "50335395400785",
+      "upper_numerator": "50335395400786",
+      "denominator": "100000000000000",
+      "upper_strict": true
+    }
+  },
+  "gibbs_start_total_variation": {
+    "numerator": "44188756501275175017151200058751916704167",
+    "denominator": "166758377513002550350034302400117503833408334",
+    "decimal_50_significant_digits": "0.00026498672606615923550458637370277050067543227503090",
+    "enclosure": {
+      "lower_numerator": "26498672606",
+      "upper_numerator": "26498672607",
+      "denominator": "100000000000000",
+      "upper_strict": true
+    }
+  },
+  "mean_energies": [
+    {
+      "numerator": "1375050011253000525063005250300011250250002500",
+      "denominator": "250137566269503825525051453600176255750112501",
+      "decimal_50_significant_digits": "5.4971751415038986780837569411809919206952087799253",
+      "enclosure": {
+        "lower_numerator": "549717514150389",
+        "upper_numerator": "549717514150390",
+        "denominator": "100000000000000",
+        "upper_strict": true
+      }
+    },
+    {
+      "numerator": "46207644268504312394757508171452081203279337358438",
+      "denominator": "8795587242734563016937384262942997680941205872663",
+      "decimal_50_significant_digits": "5.2535030343395556255871131922436178344205165719940",
+      "enclosure": {
+        "lower_numerator": "525350303433955",
+        "upper_numerator": "525350303433956",
+        "denominator": "100000000000000",
+        "upper_strict": true
+      }
+    },
+    {
+      "numerator": "256874645492626169823566330368395502872888717036139525210471221431899",
+      "denominator": "52773523456407378154397829034065364187271540813635986085647235235978",
+      "decimal_50_significant_digits": "4.8674909058291864900452520456278089695536064991584",
+      "enclosure": {
+        "lower_numerator": "486749090582918",
+        "upper_numerator": "486749090582919",
+        "denominator": "100000000000000",
+        "upper_strict": true
+      }
+    }
+  ],
+  "margins": {
+    "A1_minus_half": {
+      "numerator": "39049763369408589117986978698046980229992604009040686113280304379",
+      "denominator": "11727449656979417367643962007570080930504786847474663574588274496884",
+      "decimal_50_significant_digits": "0.0033297745470319459281663518957112180463611495694699",
+      "enclosure": {
+        "lower_numerator": "332977454703",
+        "upper_numerator": "332977454704",
+        "denominator": "100000000000000",
+        "upper_strict": true
+      }
+    },
+    "mean_minus_half": {
+      "numerator": "2757519793214572295723797981475282522590070204591597885071482916469",
+      "denominator": "1662365988876832411863531614573058971899053535629533561697887909933307",
+      "decimal_50_significant_digits": "0.0016587922344812131105651200432589965622086967657527",
+      "enclosure": {
+        "lower_numerator": "165879223448",
+        "upper_numerator": "165879223449",
+        "denominator": "100000000000000",
+        "upper_strict": true
+      }
+    }
+  },
+  "checks_passed": 711,
+  "check_categories": [
+    "15 distinct edges",
+    "3-regular",
+    "Gibbs first-update bound",
+    "Gibbs probability vector",
+    "Gibbs stationarity",
+    "actual mean energy strictly decreases",
+    "analytic average margin",
+    "analytic bias bound",
+    "analytic pointwise margin",
+    "column normalization",
+    "connected",
+    "contraction comparison",
+    "cross-temperature identity",
+    "detailed balance",
+    "equilibrium activity bound",
+    "finite Gibbs-start total variation bound",
+    "nonnegative transition",
+    "positive finite strictly cooling temperatures",
+    "positive holding probability",
+    "run probability vector",
+    "sharper certified average margin",
+    "sharper certified pointwise margin",
+    "uniform first activity",
+    "uniform margin bound",
+    "uniform update identity",
+    "valid simple edge",
+    "zero-sum exit bias"
+  ],
+  "scope": "One finite exact counterexample and its algebraic identities. The general bridge theorem is a separate analytic proof.",
+  "formal_proof_assistant_used": false
+}

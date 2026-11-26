@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "exact_checks": 88,
+  "wrong_negative_shift_quadratic_coefficient": "3/8",
+  "coverage": [
+    "exact quadratic identities at three distinct points",
+    "positive and reflected negative conditional Gaussian maps",
+    "threshold boundaries and zero/negative second-factor means",
+    "low and nonintegral high Renyi-order factors"
+  ],
+  "limits": "Finite algebra checks only; not a proof certificate for the continuum theorem."
+}

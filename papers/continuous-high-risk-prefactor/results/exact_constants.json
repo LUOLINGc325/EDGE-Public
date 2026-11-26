@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational, Python fractions.Fraction",
+  "scope": "root and amplitude constants only; no global theorem certification",
+  "root_equation": "exp(c)=1+2*c, c>0",
+  "root_lower": "19631737634783901202855275259519/15625000000000000000000000000000",
+  "root_upper": "1256431208626169676982737616609217/1000000000000000000000000000000000",
+  "root_decimal_outward": [
+    "1.256431208626169676982737616609",
+    "1.256431208626169676982737616610"
+  ],
+  "amplitude_formula": "exp(c)/(c*(2*c-1))*integral_0^1 (exp(c*t)-1)/(1+t) dt",
+  "amplitude_lower": "553117329064367195757954215991/500000000000000000000000000000",
+  "amplitude_upper": "1106234658128734391515908431983/1000000000000000000000000000000",
+  "amplitude_decimal_outward": [
+    "1.1062346581287343915159084319",
+    "1.1062346581287343915159084320"
+  ],
+  "amplitude_greater_than_one": true,
+  "exp_taylor_degree": 90,
+  "integral_series_terms": 80,
+  "log2_atanh_terms": 90,
+  "analytic_requirements": [
+    "positive exponential power series and geometric tail",
+    "log(2)=2*atanh(1/3) positive power series",
+    "termwise integration of a uniformly convergent nonnegative series",
+    "J_n=1/n-J_(n-1) for J_n=integral_0^1 t^n/(1+t) dt"
+  ]
+}

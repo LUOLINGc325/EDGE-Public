@@ -1,0 +1,43 @@
+{
+  "kind": "symbolic_rational_identity_checks",
+  "all_parameters_symbolic": true,
+  "count": 9,
+  "checks": [
+    {
+      "identity": "D2_local_coefficient_0",
+      "exact_zero": true
+    },
+    {
+      "identity": "reverse_edge_decomposition",
+      "exact_zero": true
+    },
+    {
+      "identity": "paired_sum_bound_coefficient",
+      "exact_zero": true
+    },
+    {
+      "identity": "Bernstein_positive_representation",
+      "exact_zero": true
+    },
+    {
+      "identity": "nonconvex_reverse_edge_bound",
+      "exact_zero": true
+    },
+    {
+      "identity": "GN_terminal_skip_cancels",
+      "exact_zero": true
+    },
+    {
+      "identity": "GN_terminal_forward",
+      "exact_zero": true
+    },
+    {
+      "identity": "GN_terminal_total_support",
+      "exact_zero": true
+    },
+    {
+      "identity": "P_sum_telescoping_increment",
+      "exact_zero": true
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+weighted grouped cut agrees on 596 exhaustive chordal bipartite cases
+weighted grouped cut agrees on 179 seeded chordal bipartite cases
+sparse, output-heavy, and isolated-vertex regressions: 6 passed

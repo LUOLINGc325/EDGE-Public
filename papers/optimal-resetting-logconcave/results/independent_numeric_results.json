@@ -1,0 +1,439 @@
+{
+  "status": "PASS",
+  "review_scope": "Independent direct-kernel numerical diagnostics; not a proof",
+  "quadrature_absolute_tolerance": 2e-10,
+  "quadrature_relative_tolerance": 2e-10,
+  "assertion_tolerance": 2e-07,
+  "gaussian_critical_alpha": 0.5060544689891808,
+  "number_of_cases": 7,
+  "cases": [
+    {
+      "target": "gaussian",
+      "alpha": 0.25,
+      "A": 0.3870931553869145,
+      "regime": "delta",
+      "a": 0.0,
+      "Vprime_a": 0.0,
+      "mass": 1.0,
+      "endpoint_atom_each": null,
+      "minimum_sampled_interior_density": null,
+      "F_direct": 9.883380872821876,
+      "F_formula": 9.883380872821876,
+      "objective_relative_error": 0.0,
+      "maximum_reconstruction_relative_error": 6.661338147750939e-16,
+      "maximum_certificate_relative_excess": 0.0,
+      "maximum_support_certificate_relative_error": 0.0,
+      "outer_certificate_relative_gap_at_a_plus_inverse_alpha": 0.5109999087101377,
+      "asymmetric_competitors": [
+        {
+          "locations": [
+            -2.1,
+            -0.35,
+            0.8,
+            2.7
+          ],
+          "weights": [
+            0.15,
+            0.2,
+            0.4,
+            0.25
+          ],
+          "F_competitor": 11.532409073284228,
+          "objective_gap": 1.649028200462352,
+          "square_term": 0.35650859936412144,
+          "potential_term": 1.2925196010982343,
+          "normalized_gap_identity_residual": 2.289080491569017e-15
+        },
+        {
+          "locations": [
+            0.73
+          ],
+          "weights": [
+            1.0
+          ],
+          "F_competitor": 10.456859275103072,
+          "objective_gap": 0.5734784022811965,
+          "square_term": 0.27758412728805704,
+          "potential_term": 0.2958942749931399,
+          "normalized_gap_identity_residual": 4.440892098500626e-16
+        }
+      ],
+      "point_mass_failure_test": null,
+      "boundary_cubic_diagnostic": null
+    },
+    {
+      "target": "gaussian",
+      "alpha": 0.5060544689891808,
+      "A": 1.0,
+      "regime": "delta",
+      "a": 0.0,
+      "Vprime_a": 0.0,
+      "mass": 1.0,
+      "endpoint_atom_each": null,
+      "minimum_sampled_interior_density": null,
+      "F_direct": 6.2312550580078305,
+      "F_formula": 6.23125505800783,
+      "objective_relative_error": 2.220446049250313e-16,
+      "maximum_reconstruction_relative_error": 4.440892098500626e-16,
+      "maximum_certificate_relative_excess": 0.0,
+      "maximum_support_certificate_relative_error": 0.0,
+      "outer_certificate_relative_gap_at_a_plus_inverse_alpha": 0.2252979872284191,
+      "asymmetric_competitors": [
+        {
+          "locations": [
+            -2.1,
+            -0.35,
+            0.8,
+            2.7
+          ],
+          "weights": [
+            0.15,
+            0.2,
+            0.4,
+            0.25
+          ],
+          "F_competitor": 7.8444139686613665,
+          "objective_gap": 1.613158910653536,
+          "square_term": 0.6733012796193703,
+          "potential_term": 0.9398576310341663,
+          "normalized_gap_identity_residual": 3.441145870047527e-16
+        },
+        {
+          "locations": [
+            0.73
+          ],
+          "weights": [
+            1.0
+          ],
+          "F_competitor": 7.073350046809329,
+          "objective_gap": 0.8420949888014988,
+          "square_term": 0.7421837137740376,
+          "potential_term": 0.09991127502746178,
+          "normalized_gap_identity_residual": 5.551115123125783e-16
+        }
+      ],
+      "point_mass_failure_test": null,
+      "boundary_cubic_diagnostic": {
+        "step": 0.02,
+        "predicted_cubic_coefficient": 0.26918203182117323,
+        "finite_step_ratio": 0.2692051377373161,
+        "relative_difference": 8.583751295176967e-05
+      }
+    },
+    {
+      "target": "gaussian",
+      "alpha": 1.0,
+      "A": 3.4770518117036944,
+      "regime": "interval_with_endpoint_atoms",
+      "a": 1.3026308407115896,
+      "Vprime_a": 1.3026308407115896,
+      "mass": 0.9999999999999998,
+      "endpoint_atom_each": 0.06358481550776066,
+      "minimum_sampled_interior_density": 0.1964979132957887,
+      "F_direct": 5.135740245535847,
+      "F_formula": 5.135740245535869,
+      "objective_relative_error": 4.3298697960381105e-15,
+      "maximum_reconstruction_relative_error": 2.220446049250313e-16,
+      "maximum_certificate_relative_excess": 1.1102230246251565e-15,
+      "maximum_support_certificate_relative_error": 1.887379141862766e-15,
+      "outer_certificate_relative_gap_at_a_plus_inverse_alpha": 0.08696180614718885,
+      "asymmetric_competitors": [
+        {
+          "locations": [
+            -2.1,
+            -0.35,
+            0.8,
+            2.7
+          ],
+          "weights": [
+            0.15,
+            0.2,
+            0.4,
+            0.25
+          ],
+          "F_competitor": 6.513361553208474,
+          "objective_gap": 1.3776213076726274,
+          "square_term": 1.086040118448005,
+          "potential_term": 0.29158118922462295,
+          "normalized_gap_identity_residual": 4.835391344958722e-16
+        },
+        {
+          "locations": [
+            0.73
+          ],
+          "weights": [
+            1.0
+          ],
+          "F_competitor": 7.519982637807358,
+          "objective_gap": 2.384242392271511,
+          "square_term": 2.384242392271513,
+          "potential_term": -1.7763568394002505e-15,
+          "normalized_gap_identity_residual": 1.8626009305495606e-16
+        }
+      ],
+      "point_mass_failure_test": {
+        "delta_objective": 5.54857191534002,
+        "perturbation_location": 0.2,
+        "directional_derivative": -0.07472870956164801
+      },
+      "boundary_cubic_diagnostic": {
+        "step": 0.02,
+        "predicted_cubic_coefficient": 0.5969178095588313,
+        "finite_step_ratio": 0.5947013067553185,
+        "relative_difference": -0.0037132462258933074
+      }
+    },
+    {
+      "target": "gaussian",
+      "alpha": 1.7,
+      "A": 17.270118523349197,
+      "regime": "interval_with_endpoint_atoms",
+      "a": 2.915115239473999,
+      "Vprime_a": 2.915115239473999,
+      "mass": 0.9999999999999999,
+      "endpoint_atom_each": 0.002826779680268717,
+      "minimum_sampled_interior_density": 0.014868040940180358,
+      "F_direct": 5.017099107668466,
+      "F_formula": 5.017099107668465,
+      "objective_relative_error": 2.220446049250313e-16,
+      "maximum_reconstruction_relative_error": 9.992007221626409e-16,
+      "maximum_certificate_relative_excess": 0.0,
+      "maximum_support_certificate_relative_error": 3.3306690738754696e-16,
+      "outer_certificate_relative_gap_at_a_plus_inverse_alpha": 0.03659882591213448,
+      "asymmetric_competitors": [
+        {
+          "locations": [
+            -2.1,
+            -0.35,
+            0.8,
+            2.7
+          ],
+          "weights": [
+            0.15,
+            0.2,
+            0.4,
+            0.25
+          ],
+          "F_competitor": 6.570248650341512,
+          "objective_gap": 1.5531495426730455,
+          "square_term": 1.553149542673046,
+          "potential_term": 1.0658141036401502e-15,
+          "normalized_gap_identity_residual": 9.72155785393077e-16
+        },
+        {
+          "locations": [
+            0.73
+          ],
+          "weights": [
+            1.0
+          ],
+          "F_competitor": 18.335058303035996,
+          "objective_gap": 13.31795919536753,
+          "square_term": 13.317959195367532,
+          "potential_term": 8.881784197001252e-16,
+          "normalized_gap_identity_residual": 2.000708381827148e-16
+        }
+      ],
+      "point_mass_failure_test": {
+        "delta_objective": 9.536028327346648,
+        "perturbation_location": 0.11764705882352942,
+        "directional_derivative": -0.17865768082350364
+      },
+      "boundary_cubic_diagnostic": {
+        "step": 0.011764705882352941,
+        "predicted_cubic_coefficient": 1.1717576765236395,
+        "finite_step_ratio": 1.166322196772929,
+        "relative_difference": -0.004638740466234026
+      }
+    },
+    {
+      "target": "pure_quartic",
+      "alpha": 1.0,
+      "A": 2.840769516365518,
+      "regime": "interval_with_endpoint_atoms",
+      "a": 0.6826720809609982,
+      "Vprime_a": 0.31815329542179,
+      "mass": 1.0,
+      "endpoint_atom_each": 0.24766842880158993,
+      "minimum_sampled_interior_density": 0.30262515560441483,
+      "F_direct": 4.259159177665925,
+      "F_formula": 4.25915917766613,
+      "objective_relative_error": 4.8183679268731794e-14,
+      "maximum_reconstruction_relative_error": 4.440892098500626e-16,
+      "maximum_certificate_relative_excess": 6.8833827526759706e-15,
+      "maximum_support_certificate_relative_error": 6.8833827526759706e-15,
+      "outer_certificate_relative_gap_at_a_plus_inverse_alpha": 0.24128025752894622,
+      "asymmetric_competitors": [
+        {
+          "locations": [
+            -2.1,
+            -0.35,
+            0.8,
+            2.7
+          ],
+          "weights": [
+            0.15,
+            0.2,
+            0.4,
+            0.25
+          ],
+          "F_competitor": 6.213910525046012,
+          "objective_gap": 1.9547513473800873,
+          "square_term": 0.8937191440307395,
+          "potential_term": 1.0610322033493478,
+          "normalized_gap_identity_residual": 0.0
+        },
+        {
+          "locations": [
+            0.73
+          ],
+          "weights": [
+            1.0
+          ],
+          "F_competitor": 6.099240326096215,
+          "objective_gap": 1.84008114843029,
+          "square_term": 1.8399533529743606,
+          "potential_term": 0.0001277954559286698,
+          "normalized_gap_identity_residual": 3.620132815030195e-16
+        }
+      ],
+      "point_mass_failure_test": {
+        "delta_objective": 4.432307809518454,
+        "perturbation_location": 0.2,
+        "directional_derivative": -0.05301272642983612
+      },
+      "boundary_cubic_diagnostic": {
+        "step": 0.02,
+        "predicted_cubic_coefficient": 1.1938754712052457,
+        "finite_step_ratio": 1.1988838034548974,
+        "relative_difference": 0.004195020645323844
+      }
+    },
+    {
+      "target": "quadratic_quartic",
+      "alpha": 1.5,
+      "A": 4.078121070940407,
+      "regime": "interval_with_endpoint_atoms",
+      "a": 0.779934625208489,
+      "Vprime_a": 1.254367313139584,
+      "mass": 1.0,
+      "endpoint_atom_each": 0.12403027163176206,
+      "minimum_sampled_interior_density": 0.4647127912294062,
+      "F_direct": 3.3995652073815465,
+      "F_formula": 3.399565207381803,
+      "objective_relative_error": 7.538414337204813e-14,
+      "maximum_reconstruction_relative_error": 6.661338147750939e-16,
+      "maximum_certificate_relative_excess": 2.042810365310288e-14,
+      "maximum_support_certificate_relative_error": 2.120525977034049e-14,
+      "outer_certificate_relative_gap_at_a_plus_inverse_alpha": 0.16092262987992623,
+      "asymmetric_competitors": [
+        {
+          "locations": [
+            -2.1,
+            -0.35,
+            0.8,
+            2.7
+          ],
+          "weights": [
+            0.15,
+            0.2,
+            0.4,
+            0.25
+          ],
+          "F_competitor": 5.708110961182579,
+          "objective_gap": 2.3085457538010328,
+          "square_term": 1.279611545567892,
+          "potential_term": 1.0289342082331407,
+          "normalized_gap_identity_residual": 0.0
+        },
+        {
+          "locations": [
+            0.73
+          ],
+          "weights": [
+            1.0
+          ],
+          "F_competitor": 6.807339833786921,
+          "objective_gap": 3.4077746264053745,
+          "square_term": 3.4077746264053212,
+          "potential_term": 5.240252676230739e-14,
+          "normalized_gap_identity_residual": 2.606329693337153e-16
+        }
+      ],
+      "point_mass_failure_test": {
+        "delta_objective": 3.7462866231968377,
+        "perturbation_location": 0.13333333333333333,
+        "directional_derivative": -0.05405581961318395
+      },
+      "boundary_cubic_diagnostic": {
+        "step": 0.013333333333333332,
+        "predicted_cubic_coefficient": 2.2253970551694886,
+        "finite_step_ratio": 2.2262246009777114,
+        "relative_difference": 0.0003718643404782007
+      }
+    },
+    {
+      "target": "cosh",
+      "alpha": 1.2,
+      "A": 3.879865572191501,
+      "regime": "interval_with_endpoint_atoms",
+      "a": 1.0352317268743756,
+      "Vprime_a": 1.2303072860090796,
+      "mass": 1.0,
+      "endpoint_atom_each": 0.09667843188876393,
+      "minimum_sampled_interior_density": 0.3067849746632631,
+      "F_direct": 4.293478777761642,
+      "F_formula": 4.293478777761643,
+      "objective_relative_error": 2.220446049250313e-16,
+      "maximum_reconstruction_relative_error": 8.881784197001252e-16,
+      "maximum_certificate_relative_excess": 4.440892098500626e-16,
+      "maximum_support_certificate_relative_error": 2.220446049250313e-16,
+      "outer_certificate_relative_gap_at_a_plus_inverse_alpha": 0.13377944172679412,
+      "asymmetric_competitors": [
+        {
+          "locations": [
+            -2.1,
+            -0.35,
+            0.8,
+            2.7
+          ],
+          "weights": [
+            0.15,
+            0.2,
+            0.4,
+            0.25
+          ],
+          "F_competitor": 6.128468362976491,
+          "objective_gap": 1.8349895852148492,
+          "square_term": 1.061076356940138,
+          "potential_term": 0.7739132282747283,
+          "normalized_gap_identity_residual": 9.317455922904086e-15
+        },
+        {
+          "locations": [
+            0.73
+          ],
+          "weights": [
+            1.0
+          ],
+          "F_competitor": 7.109324129496115,
+          "objective_gap": 2.815845351734473,
+          "square_term": 2.8158453517344713,
+          "potential_term": -8.881784197001252e-16,
+          "normalized_gap_identity_residual": 9.462647717706177e-16
+        }
+      ],
+      "point_mass_failure_test": {
+        "delta_objective": 4.708498053522655,
+        "perturbation_location": 0.16666666666666669,
+        "directional_derivative": -0.06660895060684968
+      },
+      "boundary_cubic_diagnostic": {
+        "step": 0.016666666666666666,
+        "predicted_cubic_coefficient": 1.2052922025653843,
+        "finite_step_ratio": 1.2043086909159229,
+        "relative_difference": -0.0008159943683101467
+      }
+    }
+  ]
+}

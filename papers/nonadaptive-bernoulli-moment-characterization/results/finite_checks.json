@@ -1,0 +1,134 @@
+{
+  "status": "pass",
+  "arithmetic": "Python fractions.Fraction, exact rationals",
+  "stability_examples": [
+    {
+      "degree": 1,
+      "budget": 20,
+      "max_abs_coefficient": "1"
+    },
+    {
+      "degree": 2,
+      "budget": 80,
+      "max_abs_coefficient": "81/79"
+    },
+    {
+      "degree": 3,
+      "budget": 180,
+      "max_abs_coefficient": "32669/31862"
+    },
+    {
+      "degree": 4,
+      "budget": 320,
+      "max_abs_coefficient": "103683/101123"
+    },
+    {
+      "degree": 5,
+      "budget": 500,
+      "max_abs_coefficient": "934645437/911588170"
+    },
+    {
+      "degree": 6,
+      "budget": 720,
+      "max_abs_coefficient": "2207948245361/2153321527695"
+    },
+    {
+      "degree": 7,
+      "budget": 980,
+      "max_abs_coefficient": "118719888122461/115788029960075"
+    },
+    {
+      "degree": 8,
+      "budget": 1280,
+      "max_abs_coefficient": "43893917627623/42810095042810"
+    }
+  ],
+  "signed_mixture": {
+    "weights": [
+      "253/256",
+      "1/128",
+      "1/256"
+    ],
+    "budgets": [
+      320,
+      80,
+      320
+    ],
+    "target_power_coefficients": [
+      "513/1024",
+      "-1/32",
+      "5/32",
+      "-1/4",
+      "1/8"
+    ],
+    "mean_one_plus_budget": "2553/8",
+    "identity": "exact equality of all power-basis coefficients"
+  },
+  "hypergeometric_jensen_abel": {
+    "finite_truncation": [
+      3,
+      9
+    ],
+    "states_checked": 245,
+    "rows": [
+      {
+        "x": "0",
+        "mean": "19/80",
+        "second_moment": "32992801893883178862780477449/578994650890383619122595840000",
+        "jensen_upper": "2276602648705590344411478481/7237433136129795239032448000"
+      },
+      {
+        "x": "1/5",
+        "mean": "99/400",
+        "second_moment": "2998088235053848089072863387464518289/47944430814783663147414268422604800000",
+        "jensen_upper": "2348976980066888296801802961/7237433136129795239032448000"
+      },
+      {
+        "x": "1/2",
+        "mean": "3/10",
+        "second_moment": "912647987188608715733750977214692781/9588886162956732629482853684520960000",
+        "jensen_upper": "2728942219713702546851006481/7237433136129795239032448000"
+      },
+      {
+        "x": "4/5",
+        "mean": "159/400",
+        "second_moment": "7920765105417505697808315715204675729/47944430814783663147414268422604800000",
+        "jensen_upper": "3434591950486357582656670161/7237433136129795239032448000"
+      },
+      {
+        "x": "1",
+        "mean": "39/80",
+        "second_moment": "137935582367765209828750973449/578994650890383619122595840000",
+        "jensen_upper": "4085960932738039154169590481/7237433136129795239032448000"
+      }
+    ]
+  },
+  "critical_frequency_bands": [
+    {
+      "M": 1,
+      "J": 3,
+      "bands_checked": 4
+    },
+    {
+      "M": 2,
+      "J": 4,
+      "bands_checked": 4
+    },
+    {
+      "M": 3,
+      "J": 4,
+      "bands_checked": 4
+    },
+    {
+      "M": 4,
+      "J": 5,
+      "bands_checked": 4
+    },
+    {
+      "M": 5,
+      "J": 5,
+      "bands_checked": 4
+    }
+  ],
+  "scope": "Finite examples and algebraic identities only; not an infinite-dimensional proof or Lean verification."
+}

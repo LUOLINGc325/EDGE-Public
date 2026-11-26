@@ -1,0 +1,33 @@
+{
+  "all_subset_certificate_count": 64,
+  "certificate_file": "independent_verification.json",
+  "certificate_sha256": "326a7ac16bb650f9f2f26f58183a777a65ef23728fc1ee91a8fa1a226b49a114",
+  "compression_histogram": {
+    "0": 4,
+    "1": 8,
+    "2": 52
+  },
+  "counterexample": {
+    "N": 2,
+    "all_ordered_samples": 36,
+    "ambient_dimension": 9,
+    "beta_2_1_tail": "16/25",
+    "compression_bound": 2,
+    "epsilon": "3/5",
+    "exact_tail_probability": "2/3",
+    "high_risk": "2/3",
+    "high_risk_ordered_samples": 24,
+    "r": 3,
+    "strict_excess": "2/75"
+  },
+  "numerical_cross_check": {
+    "lp_count": 64,
+    "maximum_coordinate_absolute_error": 1.1102230246251565e-16,
+    "maximum_objective_absolute_error": 8.881784197001252e-16,
+    "numpy_version": "2.3.5",
+    "scipy_version": "1.17.0",
+    "status": "passed"
+  },
+  "scope_note": "Finite certificates supplement the symbolic manuscript; no proof assistant was run and no general transfer theorem is certified by enumeration.",
+  "verification_status": "passed"
+}

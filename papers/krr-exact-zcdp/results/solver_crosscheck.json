@@ -1,0 +1,339 @@
+{
+  "status": "PASS",
+  "case_count": 66,
+  "zero_case": "PASS",
+  "invalid_inputs_rejected": 5,
+  "scope": "Independent approximation agreement, not interval certification",
+  "cases": [
+    {
+      "k": 2,
+      "epsilon": "0.000001",
+      "absolute_difference": "1.58730585869e-59"
+    },
+    {
+      "k": 2,
+      "epsilon": "0.01",
+      "absolute_difference": "4.54915047359e-50"
+    },
+    {
+      "k": 2,
+      "epsilon": "0.2",
+      "absolute_difference": "4.46531126139e-47"
+    },
+    {
+      "k": 2,
+      "epsilon": "1.0",
+      "absolute_difference": "3.30113038553e-46"
+    },
+    {
+      "k": 2,
+      "epsilon": "5.0",
+      "absolute_difference": "9.27034697308e-46"
+    },
+    {
+      "k": 2,
+      "epsilon": "20.0",
+      "absolute_difference": "3.00996007548e-44"
+    },
+    {
+      "k": 3,
+      "epsilon": "0.000001",
+      "absolute_difference": "2.4432385839e-58"
+    },
+    {
+      "k": 3,
+      "epsilon": "0.01",
+      "absolute_difference": "1.70069061497e-50"
+    },
+    {
+      "k": 3,
+      "epsilon": "0.2",
+      "absolute_difference": "4.65689295803e-47"
+    },
+    {
+      "k": 3,
+      "epsilon": "1.0",
+      "absolute_difference": "4.98283247658e-46"
+    },
+    {
+      "k": 3,
+      "epsilon": "5.0",
+      "absolute_difference": "4.8309605315e-45"
+    },
+    {
+      "k": 3,
+      "epsilon": "20.0",
+      "absolute_difference": "3.15417420508e-44"
+    },
+    {
+      "k": 6,
+      "epsilon": "0.000001",
+      "absolute_difference": "3.81308924857e-58"
+    },
+    {
+      "k": 6,
+      "epsilon": "0.01",
+      "absolute_difference": "1.20134868807e-50"
+    },
+    {
+      "k": 6,
+      "epsilon": "0.2",
+      "absolute_difference": "8.57164140653e-49"
+    },
+    {
+      "k": 6,
+      "epsilon": "1.0",
+      "absolute_difference": "3.25224947346e-46"
+    },
+    {
+      "k": 6,
+      "epsilon": "5.0",
+      "absolute_difference": "3.25770361723e-45"
+    },
+    {
+      "k": 6,
+      "epsilon": "20.0",
+      "absolute_difference": "3.92221203106e-44"
+    },
+    {
+      "k": 7,
+      "epsilon": "0.000001",
+      "absolute_difference": "2.90242420551e-58"
+    },
+    {
+      "k": 7,
+      "epsilon": "0.01",
+      "absolute_difference": "2.1209439838e-51"
+    },
+    {
+      "k": 7,
+      "epsilon": "0.2",
+      "absolute_difference": "3.05310401836e-48"
+    },
+    {
+      "k": 7,
+      "epsilon": "1.0",
+      "absolute_difference": "7.39814535207e-47"
+    },
+    {
+      "k": 7,
+      "epsilon": "5.0",
+      "absolute_difference": "4.25282894339e-45"
+    },
+    {
+      "k": 7,
+      "epsilon": "20.0",
+      "absolute_difference": "2.67729112246e-44"
+    },
+    {
+      "k": 8,
+      "epsilon": "0.000001",
+      "absolute_difference": "3.33730245409e-58"
+    },
+    {
+      "k": 8,
+      "epsilon": "0.01",
+      "absolute_difference": "1.26798760154e-50"
+    },
+    {
+      "k": 8,
+      "epsilon": "0.2",
+      "absolute_difference": "1.82621619503e-48"
+    },
+    {
+      "k": 8,
+      "epsilon": "1.0",
+      "absolute_difference": "4.9005925581e-46"
+    },
+    {
+      "k": 8,
+      "epsilon": "5.0",
+      "absolute_difference": "8.37706643343e-46"
+    },
+    {
+      "k": 8,
+      "epsilon": "20.0",
+      "absolute_difference": "4.99140663583e-44"
+    },
+    {
+      "k": 16,
+      "epsilon": "0.000001",
+      "absolute_difference": "3.09354494166e-59"
+    },
+    {
+      "k": 16,
+      "epsilon": "0.01",
+      "absolute_difference": "1.48679359341e-51"
+    },
+    {
+      "k": 16,
+      "epsilon": "0.2",
+      "absolute_difference": "2.91829604364e-48"
+    },
+    {
+      "k": 16,
+      "epsilon": "1.0",
+      "absolute_difference": "7.20563101231e-47"
+    },
+    {
+      "k": 16,
+      "epsilon": "5.0",
+      "absolute_difference": "6.09478335358e-46"
+    },
+    {
+      "k": 16,
+      "epsilon": "20.0",
+      "absolute_difference": "1.30835157864e-44"
+    },
+    {
+      "k": 100,
+      "epsilon": "0.000001",
+      "absolute_difference": "1.70623052307e-59"
+    },
+    {
+      "k": 100,
+      "epsilon": "0.01",
+      "absolute_difference": "1.00334382451e-51"
+    },
+    {
+      "k": 100,
+      "epsilon": "0.2",
+      "absolute_difference": "2.45955428446e-48"
+    },
+    {
+      "k": 100,
+      "epsilon": "1.0",
+      "absolute_difference": "2.59864584822e-47"
+    },
+    {
+      "k": 100,
+      "epsilon": "5.0",
+      "absolute_difference": "3.28704302391e-45"
+    },
+    {
+      "k": 100,
+      "epsilon": "20.0",
+      "absolute_difference": "5.9355271414e-45"
+    },
+    {
+      "k": 10000,
+      "epsilon": "0.000001",
+      "absolute_difference": "4.15570611507e-59"
+    },
+    {
+      "k": 10000,
+      "epsilon": "0.01",
+      "absolute_difference": "4.34982607297e-51"
+    },
+    {
+      "k": 10000,
+      "epsilon": "0.2",
+      "absolute_difference": "3.87611111305e-48"
+    },
+    {
+      "k": 10000,
+      "epsilon": "1.0",
+      "absolute_difference": "2.00927954283e-47"
+    },
+    {
+      "k": 10000,
+      "epsilon": "5.0",
+      "absolute_difference": "2.68886926012e-47"
+    },
+    {
+      "k": 10000,
+      "epsilon": "20.0",
+      "absolute_difference": "2.98192167458e-44"
+    },
+    {
+      "k": 1000000000000,
+      "epsilon": "0.000001",
+      "absolute_difference": "2.23049139239e-60"
+    },
+    {
+      "k": 1000000000000,
+      "epsilon": "0.01",
+      "absolute_difference": "2.18174101151e-54"
+    },
+    {
+      "k": 1000000000000,
+      "epsilon": "0.2",
+      "absolute_difference": "2.32680268904e-49"
+    },
+    {
+      "k": 1000000000000,
+      "epsilon": "1.0",
+      "absolute_difference": "1.56654187821e-48"
+    },
+    {
+      "k": 1000000000000,
+      "epsilon": "5.0",
+      "absolute_difference": "4.92603042609e-46"
+    },
+    {
+      "k": 1000000000000,
+      "epsilon": "20.0",
+      "absolute_difference": "1.82146395777e-45"
+    },
+    {
+      "k": 7,
+      "epsilon": "0.436747106722855548266291414369579089302707674119768833706391650736953423839194596336086196",
+      "absolute_difference": "4.35435111489e-47"
+    },
+    {
+      "k": 7,
+      "epsilon": "0.436747980217942489064328744989738448620245597073040026515251872380476541269159704690387222",
+      "absolute_difference": "6.32891081337e-48"
+    },
+    {
+      "k": 8,
+      "epsilon": "0.780452845858255082591349655976233066004296058263216497693963115714584426707581905470248737",
+      "absolute_difference": "3.30682525077e-47"
+    },
+    {
+      "k": 8,
+      "epsilon": "0.780454406765507706354138601464490506727868790428065188975649785327485468777477390529544737",
+      "absolute_difference": "4.80015516669e-46"
+    },
+    {
+      "k": 16,
+      "epsilon": "2.25109627544857532209202645434132481338815508862885895746750612066417971631202347646329353",
+      "absolute_difference": "3.56483694783e-46"
+    },
+    {
+      "k": 16,
+      "epsilon": "2.25110077764562841629576484213262128733425581103975862608508967325997364046538025386702386",
+      "absolute_difference": "6.32280266174e-47"
+    },
+    {
+      "k": 100,
+      "epsilon": "5.10177973083408840715209642874540080722454884848970640903465390477113727858945437102953426",
+      "absolute_difference": "2.72733041626e-45"
+    },
+    {
+      "k": 100,
+      "epsilon": "5.10178993440375364499414857499040454302989910293765783639889933832438037410710706759097288",
+      "absolute_difference": "7.06587966702e-46"
+    },
+    {
+      "k": 10000,
+      "epsilon": "10.6783397636994400371402992250839399889212526349379977989954837618399672149947392944201502",
+      "absolute_difference": "3.00547214975e-45"
+    },
+    {
+      "k": 10000,
+      "epsilon": "10.6783611204003241369044732698564349292961708523614850984783812357049647599267142158736605",
+      "absolute_difference": "4.31406501521e-45"
+    },
+    {
+      "k": 1000000000000,
+      "epsilon": "30.279999551222278697214176992354189315886716727786361287970132820991666510911833562979775",
+      "absolute_difference": "7.93830412762e-45"
+    },
+    {
+      "k": 1000000000000,
+      "epsilon": "30.2800601112819412014340756406068222768983095128126018869333077244322119347902792650926031",
+      "absolute_difference": "2.86157923942e-44"
+    }
+  ]
+}

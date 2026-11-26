@@ -1,0 +1,2 @@
+exhaustive chain degree sequences: 1023 partitions, 63 covers passed
+seeded chain graphs: 80 partitions and covers passed

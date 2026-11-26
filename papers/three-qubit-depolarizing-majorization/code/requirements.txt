@@ -1,0 +1,3 @@
+# Used by verify_independent.py. The exact checker uses only the standard library.
+# Recorded run: Python 3.12.14, NumPy 2.3.5.
+numpy>=2.0,<3.0

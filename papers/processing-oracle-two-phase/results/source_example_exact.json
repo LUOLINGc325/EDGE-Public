@@ -1,0 +1,18 @@
+{
+  "n": 2,
+  "p": "1",
+  "x": "4",
+  "rho": "11/7",
+  "root_payoff": {
+    "full": "0",
+    "postponing": "0",
+    "two_phase": "0",
+    "two_phase_postponing": "0",
+    "execution_suffix": "0",
+    "execution_suffix_postponing": "0"
+  },
+  "states": 10,
+  "suffix_errors": [],
+  "local_strict_gaps": [],
+  "arithmetic": "exact rational Fraction"
+}

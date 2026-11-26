@@ -1,0 +1,6 @@
+Independent multinomial occupancy comparisons: 84
+Exact sign and budget checks: 8850
+m=40, q=3/4: first-band rational sign negative, second positive
+  Normalized first curvature: -7358629626739113113746965531188189652947847863433151734488580051586762336986354151/1141798154164767904846628775559596109106197299200000000000000000000000000000000000000
+q=3/4: rational lower bound 33/260 exceeds conjectured 1/8
+ALL_CHECKS_OK

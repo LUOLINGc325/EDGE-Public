@@ -1,0 +1,7 @@
+{
+  "checks": 3528,
+  "status": "PASS",
+  "arithmetic": "exact Python Fraction",
+  "scope": "finite atom/gap identity checks only",
+  "modified_from_reviewer_script": "Replaced two mass assertions with explicit exceptions so -O retains those checks."
+}

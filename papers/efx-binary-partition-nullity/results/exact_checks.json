@@ -1,0 +1,240 @@
+{
+  "published_gadget": {
+    "source": "https://arxiv.org/html/2608.10572v1#S3.SS1",
+    "agents": 18,
+    "chores": 53,
+    "maximum_matching_by_s_1_to_17": [
+      26,
+      26,
+      26,
+      25,
+      23,
+      20,
+      14,
+      10,
+      7,
+      4,
+      3,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "s_star": 8,
+    "big_owners": [
+      0,
+      1,
+      4,
+      5,
+      9,
+      10,
+      14,
+      16
+    ],
+    "optimal_factor": 2,
+    "word_order": "cyclic left shift of each listed seed; offsets 0..17, 0..17, 1..17, respectively; least significant bit is agent 0",
+    "words_decimal": [
+      129230,
+      258460,
+      254777,
+      247411,
+      232679,
+      203215,
+      144287,
+      26431,
+      52862,
+      105724,
+      211448,
+      160753,
+      59363,
+      118726,
+      237452,
+      212761,
+      163379,
+      64615,
+      122009,
+      244018,
+      225893,
+      189643,
+      117143,
+      234286,
+      206429,
+      150715,
+      39287,
+      78574,
+      157148,
+      52153,
+      104306,
+      208612,
+      155081,
+      48019,
+      96038,
+      192076,
+      21935,
+      43870,
+      87740,
+      175480,
+      88817,
+      177634,
+      93125,
+      186250,
+      110357,
+      220714,
+      179285,
+      96427,
+      192854,
+      123565,
+      247130,
+      232117,
+      202091
+    ],
+    "item_ids_by_owner": [
+      [
+        42,
+        13,
+        28,
+        41,
+        51
+      ],
+      [
+        1,
+        14,
+        30,
+        0
+      ],
+      [
+        2,
+        40
+      ],
+      [
+        4,
+        52
+      ],
+      [
+        3,
+        18,
+        31,
+        43
+      ],
+      [
+        5,
+        19,
+        32,
+        44
+      ],
+      [
+        6,
+        33
+      ],
+      [
+        7,
+        16
+      ],
+      [
+        11,
+        29
+      ],
+      [
+        8,
+        21,
+        35,
+        46
+      ],
+      [
+        9,
+        22,
+        37,
+        47
+      ],
+      [
+        15,
+        24
+      ],
+      [
+        17,
+        36
+      ],
+      [
+        20,
+        49
+      ],
+      [
+        10,
+        25,
+        38,
+        48
+      ],
+      [
+        23,
+        27
+      ],
+      [
+        12,
+        26,
+        39,
+        50
+      ],
+      [
+        34,
+        45
+      ]
+    ]
+  },
+  "finite_worst_case_bounds": [
+    {
+      "n": 18,
+      "threshold_t": 11,
+      "probability_upper_max_millionths": 316067,
+      "guaranteed_instance_lower": 1,
+      "all_instances_upper": 5
+    },
+    {
+      "n": 32,
+      "threshold_t": 10,
+      "probability_upper_max_millionths": 121,
+      "guaranteed_instance_lower": 3,
+      "all_instances_upper": 7
+    },
+    {
+      "n": 64,
+      "threshold_t": 10,
+      "probability_upper_max_millionths": 1,
+      "guaranteed_instance_lower": 6,
+      "all_instances_upper": 11
+    },
+    {
+      "n": 128,
+      "threshold_t": 10,
+      "probability_upper_max_millionths": 2704,
+      "guaranteed_instance_lower": 14,
+      "all_instances_upper": 19
+    },
+    {
+      "n": 256,
+      "threshold_t": 11,
+      "probability_upper_max_millionths": 1,
+      "guaranteed_instance_lower": 25,
+      "all_instances_upper": 32
+    },
+    {
+      "n": 512,
+      "threshold_t": 12,
+      "probability_upper_max_millionths": 1,
+      "guaranteed_instance_lower": 46,
+      "all_instances_upper": 57
+    }
+  ],
+  "direct_small_instances": {
+    "profiles": 59,
+    "endpoint_frequencies": {
+      "(1, 1, 1)": 59
+    }
+  },
+  "all_cardinalities_seed_20261124": {
+    "at_most_2n": 252,
+    "between_2n_and_3n": 105,
+    "at_least_3n": 385
+  }
+}

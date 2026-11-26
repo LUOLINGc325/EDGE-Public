@@ -1,0 +1,7 @@
+p=3, n=2, parties=(0, 1, 2), exponent=3: reflection, polar rank, exact phase histogram, Fourier, collision polynomial
+p=3, n=3, parties=(0, 1, 2), exponent=8: reflection, polar rank
+p=3, n=6, parties=(0, 1), exponent=5: reflection, polar rank, exact phase histogram
+p=5, n=4, parties=(0, 0, 1), exponent=3: reflection, polar rank, Fourier, collision polynomial
+p=7, n=3, parties=(0, 1, 1, 2), exponent=12: reflection, polar rank, Fourier, collision polynomial
+p=5, n=5, parties=(0, 1), exponent=4: reflection, polar rank
+d=9, n=2, nonunit weight 3: image index 3 and exact cyclotomic phase verified.

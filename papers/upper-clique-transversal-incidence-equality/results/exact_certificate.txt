@@ -1,0 +1,4 @@
+Triangle-free graphs with direct transversal and induced matching checks: 439
+SAT-side reductions: 128; UNSAT-side reductions: 320
+Connectedness and exact objective shift checks: 150
+All exact identities, domination certificates and reduction checks passed.

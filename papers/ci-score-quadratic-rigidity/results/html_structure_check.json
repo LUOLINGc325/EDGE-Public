@@ -1,0 +1,16 @@
+{
+  "html_sha256": "8598268597ee62299bd3744e9178782aca3fd60cc1055645779c929fa92516af",
+  "parser": "Python HTMLParser",
+  "mathml_elements": 426,
+  "table_elements": 1,
+  "internal_links_resolve": true,
+  "duplicate_ids": false,
+  "script_elements": 0,
+  "external_render_dependencies": false,
+  "visual_browser_check": "not_run_browser_binary_unavailable",
+  "browser_attempts": [
+    "Playwright bundled headless browser absent",
+    "system chromium wrapper points to missing binary"
+  ],
+  "scope": "Structural HTML and MathML generation only; not a browser visual pass."
+}

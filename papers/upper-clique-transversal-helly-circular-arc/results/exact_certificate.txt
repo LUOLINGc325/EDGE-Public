@@ -1,0 +1,4 @@
+Exhaustive circular cover inputs: 12650 seeded inputs: 400
+Arc graph models: 27404 Helly: 26529 proper Helly: 1844
+Tight P3, non-interval C5, and unbounded interval stars verified.
+Exact signed-weight objectives, witnesses and ratio checks passed.

@@ -1,0 +1,1695 @@
+{
+  "arithmetic": "Python fractions.Fraction; no floating-point comparisons",
+  "claim_scope": "Finite verification only; universal theorem requires the proof.",
+  "families": [
+    {
+      "dimension": 2,
+      "equality_cases": 9,
+      "input_families": 9,
+      "links": 2,
+      "support_patterns_per_link": 3,
+      "weights": "one positive normalized rational vector for every nonempty support",
+      "zero_cases": 8
+    },
+    {
+      "dimension": 3,
+      "equality_cases": 49,
+      "input_families": 49,
+      "links": 2,
+      "support_patterns_per_link": 7,
+      "weights": "one positive normalized rational vector for every nonempty support",
+      "zero_cases": 33
+    },
+    {
+      "dimension": 4,
+      "equality_cases": 108,
+      "input_families": 225,
+      "links": 2,
+      "support_patterns_per_link": 15,
+      "weights": "one positive normalized rational vector for every nonempty support",
+      "zero_cases": 120
+    },
+    {
+      "dimension": 5,
+      "equality_cases": 335,
+      "input_families": 961,
+      "links": 2,
+      "support_patterns_per_link": 31,
+      "weights": "one positive normalized rational vector for every nonempty support",
+      "zero_cases": 335
+    },
+    {
+      "dimension": 6,
+      "equality_cases": 729,
+      "input_families": 3969,
+      "links": 2,
+      "support_patterns_per_link": 63,
+      "weights": "one positive normalized rational vector for every nonempty support",
+      "zero_cases": 936
+    },
+    {
+      "dimension": 7,
+      "equality_cases": 1876,
+      "input_families": 16129,
+      "links": 2,
+      "support_patterns_per_link": 127,
+      "weights": "one positive normalized rational vector for every nonempty support",
+      "zero_cases": 2317
+    },
+    {
+      "dimension": 3,
+      "equality_cases": 343,
+      "input_families": 343,
+      "links": 3,
+      "support_patterns_per_link": 7,
+      "weights": "one positive normalized rational vector for every nonempty support",
+      "zero_cases": 279
+    },
+    {
+      "dimension": 4,
+      "equality_cases": 2052,
+      "input_families": 3375,
+      "links": 3,
+      "support_patterns_per_link": 15,
+      "weights": "one positive normalized rational vector for every nonempty support",
+      "zero_cases": 2428
+    },
+    {
+      "dimension": 5,
+      "equality_cases": 12465,
+      "input_families": 29791,
+      "links": 3,
+      "support_patterns_per_link": 31,
+      "weights": "one positive normalized rational vector for every nonempty support",
+      "zero_cases": 15365
+    }
+  ],
+  "nontrivial_zero_example": {
+    "dimension": 5,
+    "input_entanglements": [
+      "24/25",
+      "24/25"
+    ],
+    "links": 2,
+    "output_average": "0",
+    "support_differences": [
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ]
+    ]
+  },
+  "script_sha256": "6d18f549adb1c90c7a72f286865b4ac3fc848a7882610369acfebf58e34cbffe",
+  "sharp_witnesses": [
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 2,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "576/625",
+      "ratio": "1",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 2,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "13824/15625",
+      "ratio": "1",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 2,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "331776/390625",
+      "ratio": "1",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 2,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "7962624/9765625",
+      "ratio": "1",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 2,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "191102976/244140625",
+      "ratio": "1",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 2,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "4586471424/6103515625",
+      "ratio": "1",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 2,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "110075314176/152587890625",
+      "ratio": "1",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 3,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "288/625",
+      "ratio": "1/2",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 3,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "3456/15625",
+      "ratio": "1/4",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 3,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "41472/390625",
+      "ratio": "1/8",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 3,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "497664/9765625",
+      "ratio": "1/16",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 3,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "5971968/244140625",
+      "ratio": "1/32",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 3,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "71663616/6103515625",
+      "ratio": "1/64",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 3,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "859963392/152587890625",
+      "ratio": "1/128",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 4,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "576/625",
+      "ratio": "1",
+      "support": [
+        0,
+        2
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 4,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "13824/15625",
+      "ratio": "1",
+      "support": [
+        0,
+        2
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 4,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "331776/390625",
+      "ratio": "1",
+      "support": [
+        0,
+        2
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 4,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "7962624/9765625",
+      "ratio": "1",
+      "support": [
+        0,
+        2
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 4,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "191102976/244140625",
+      "ratio": "1",
+      "support": [
+        0,
+        2
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 4,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "4586471424/6103515625",
+      "ratio": "1",
+      "support": [
+        0,
+        2
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 4,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "110075314176/152587890625",
+      "ratio": "1",
+      "support": [
+        0,
+        2
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 5,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "288/625",
+      "ratio": "1/2",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 5,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "3456/15625",
+      "ratio": "1/4",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 5,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "41472/390625",
+      "ratio": "1/8",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 5,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "497664/9765625",
+      "ratio": "1/16",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 5,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "5971968/244140625",
+      "ratio": "1/32",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 5,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "71663616/6103515625",
+      "ratio": "1/64",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 5,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "859963392/152587890625",
+      "ratio": "1/128",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 6,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "576/625",
+      "ratio": "1",
+      "support": [
+        0,
+        3
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 6,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "13824/15625",
+      "ratio": "1",
+      "support": [
+        0,
+        3
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 6,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "331776/390625",
+      "ratio": "1",
+      "support": [
+        0,
+        3
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 6,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "7962624/9765625",
+      "ratio": "1",
+      "support": [
+        0,
+        3
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 6,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "191102976/244140625",
+      "ratio": "1",
+      "support": [
+        0,
+        3
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 6,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "4586471424/6103515625",
+      "ratio": "1",
+      "support": [
+        0,
+        3
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 6,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "110075314176/152587890625",
+      "ratio": "1",
+      "support": [
+        0,
+        3
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 7,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "288/625",
+      "ratio": "1/2",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 7,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "3456/15625",
+      "ratio": "1/4",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 7,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "41472/390625",
+      "ratio": "1/8",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 7,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "497664/9765625",
+      "ratio": "1/16",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 7,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "5971968/244140625",
+      "ratio": "1/32",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 7,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "71663616/6103515625",
+      "ratio": "1/64",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 7,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "859963392/152587890625",
+      "ratio": "1/128",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 8,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "576/625",
+      "ratio": "1",
+      "support": [
+        0,
+        4
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 8,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "13824/15625",
+      "ratio": "1",
+      "support": [
+        0,
+        4
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 8,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "331776/390625",
+      "ratio": "1",
+      "support": [
+        0,
+        4
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 8,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "7962624/9765625",
+      "ratio": "1",
+      "support": [
+        0,
+        4
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 8,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "191102976/244140625",
+      "ratio": "1",
+      "support": [
+        0,
+        4
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 8,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "4586471424/6103515625",
+      "ratio": "1",
+      "support": [
+        0,
+        4
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 8,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "110075314176/152587890625",
+      "ratio": "1",
+      "support": [
+        0,
+        4
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 9,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "288/625",
+      "ratio": "1/2",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 9,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "3456/15625",
+      "ratio": "1/4",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 9,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "41472/390625",
+      "ratio": "1/8",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 9,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "497664/9765625",
+      "ratio": "1/16",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 9,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "5971968/244140625",
+      "ratio": "1/32",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 9,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "71663616/6103515625",
+      "ratio": "1/64",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 9,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "859963392/152587890625",
+      "ratio": "1/128",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 10,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "576/625",
+      "ratio": "1",
+      "support": [
+        0,
+        5
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 10,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "13824/15625",
+      "ratio": "1",
+      "support": [
+        0,
+        5
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 10,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "331776/390625",
+      "ratio": "1",
+      "support": [
+        0,
+        5
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 10,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "7962624/9765625",
+      "ratio": "1",
+      "support": [
+        0,
+        5
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 10,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "191102976/244140625",
+      "ratio": "1",
+      "support": [
+        0,
+        5
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 10,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "4586471424/6103515625",
+      "ratio": "1",
+      "support": [
+        0,
+        5
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 10,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "110075314176/152587890625",
+      "ratio": "1",
+      "support": [
+        0,
+        5
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 11,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "288/625",
+      "ratio": "1/2",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 11,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "3456/15625",
+      "ratio": "1/4",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 11,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "41472/390625",
+      "ratio": "1/8",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 11,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "497664/9765625",
+      "ratio": "1/16",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 11,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "5971968/244140625",
+      "ratio": "1/32",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 11,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "71663616/6103515625",
+      "ratio": "1/64",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 11,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "859963392/152587890625",
+      "ratio": "1/128",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 12,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "576/625",
+      "ratio": "1",
+      "support": [
+        0,
+        6
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 12,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "13824/15625",
+      "ratio": "1",
+      "support": [
+        0,
+        6
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 12,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "331776/390625",
+      "ratio": "1",
+      "support": [
+        0,
+        6
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 12,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "7962624/9765625",
+      "ratio": "1",
+      "support": [
+        0,
+        6
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 12,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "191102976/244140625",
+      "ratio": "1",
+      "support": [
+        0,
+        6
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 12,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "4586471424/6103515625",
+      "ratio": "1",
+      "support": [
+        0,
+        6
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 12,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "110075314176/152587890625",
+      "ratio": "1",
+      "support": [
+        0,
+        6
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 13,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "288/625",
+      "ratio": "1/2",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 13,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "3456/15625",
+      "ratio": "1/4",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 13,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "41472/390625",
+      "ratio": "1/8",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 13,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "497664/9765625",
+      "ratio": "1/16",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 13,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "5971968/244140625",
+      "ratio": "1/32",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 13,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "71663616/6103515625",
+      "ratio": "1/64",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 13,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "859963392/152587890625",
+      "ratio": "1/128",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 14,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "576/625",
+      "ratio": "1",
+      "support": [
+        0,
+        7
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 14,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "13824/15625",
+      "ratio": "1",
+      "support": [
+        0,
+        7
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 14,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "331776/390625",
+      "ratio": "1",
+      "support": [
+        0,
+        7
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 14,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "7962624/9765625",
+      "ratio": "1",
+      "support": [
+        0,
+        7
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 14,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "191102976/244140625",
+      "ratio": "1",
+      "support": [
+        0,
+        7
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 14,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "4586471424/6103515625",
+      "ratio": "1",
+      "support": [
+        0,
+        7
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 14,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "110075314176/152587890625",
+      "ratio": "1",
+      "support": [
+        0,
+        7
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 15,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "288/625",
+      "ratio": "1/2",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 15,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "3456/15625",
+      "ratio": "1/4",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 15,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "41472/390625",
+      "ratio": "1/8",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 15,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "497664/9765625",
+      "ratio": "1/16",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 15,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "5971968/244140625",
+      "ratio": "1/32",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 15,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "71663616/6103515625",
+      "ratio": "1/64",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 15,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "859963392/152587890625",
+      "ratio": "1/128",
+      "support": [
+        0,
+        1
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 16,
+      "input_entanglement": "24/25",
+      "links": 2,
+      "output_average": "576/625",
+      "ratio": "1",
+      "support": [
+        0,
+        8
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 16,
+      "input_entanglement": "24/25",
+      "links": 3,
+      "output_average": "13824/15625",
+      "ratio": "1",
+      "support": [
+        0,
+        8
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 16,
+      "input_entanglement": "24/25",
+      "links": 4,
+      "output_average": "331776/390625",
+      "ratio": "1",
+      "support": [
+        0,
+        8
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 16,
+      "input_entanglement": "24/25",
+      "links": 5,
+      "output_average": "7962624/9765625",
+      "ratio": "1",
+      "support": [
+        0,
+        8
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 16,
+      "input_entanglement": "24/25",
+      "links": 6,
+      "output_average": "191102976/244140625",
+      "ratio": "1",
+      "support": [
+        0,
+        8
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 16,
+      "input_entanglement": "24/25",
+      "links": 7,
+      "output_average": "4586471424/6103515625",
+      "ratio": "1",
+      "support": [
+        0,
+        8
+      ]
+    },
+    {
+      "amplitudes": [
+        "3/5",
+        "4/5"
+      ],
+      "dimension": 16,
+      "input_entanglement": "24/25",
+      "links": 8,
+      "output_average": "110075314176/152587890625",
+      "ratio": "1",
+      "support": [
+        0,
+        8
+      ]
+    }
+  ],
+  "status": "PASS",
+  "totals": {
+    "equality_cases": 17966,
+    "equality_iff_checks": 54851,
+    "input_families": 54851,
+    "normalized_profiles": 246,
+    "sharp_witness_checks": 105,
+    "upper_bound_checks": 54851,
+    "zero_cases": 21821,
+    "zero_iff_checks": 54851
+  }
+}

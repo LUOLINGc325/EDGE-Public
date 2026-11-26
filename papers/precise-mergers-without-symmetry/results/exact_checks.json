@@ -1,0 +1,8 @@
+{
+  "script": "code/checks.py",
+  "arithmetic": "fractions.Fraction",
+  "status": "pass",
+  "coordinate_projection_evaluations": 3900,
+  "asymmetric_ordered_account_comparisons": 250,
+  "n_way_strategy_comparisons": 11700
+}

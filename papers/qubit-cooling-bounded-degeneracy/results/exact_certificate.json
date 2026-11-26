@@ -1,0 +1,160 @@
+{
+  "status": "PASS",
+  "arithmetic": "Python standard-library fractions.Fraction",
+  "assert_statements_used": false,
+  "checks": {
+    "11_bernoulli_moment": 640,
+    "11_identity": 640,
+    "11_implication": 640,
+    "121_identity": 640,
+    "121_implication": 640,
+    "121_increment_bound": 640,
+    "122_identity": 640,
+    "124plus_polynomial_identity": 1408,
+    "124plus_polynomial_positive": 1408,
+    "13plus_polynomial_identity": 1408,
+    "13plus_polynomial_positive": 1408,
+    "binary_block_identity": 5110,
+    "binary_target": 5110,
+    "bounded_height_target": 3633,
+    "five_eighths_uniform_quadratic": 272,
+    "physical_permutation_psd": 513,
+    "quadratic_identity": 5110,
+    "superlevel_increment_lower": 97443,
+    "superlevel_reconstruction": 3633,
+    "superlevel_target_comparison": 97443,
+    "ternary_child_start_geometric_bound": 18588,
+    "ternary_grouped_margin": 18588,
+    "ternary_nonpositive_target_child": 12753,
+    "ternary_parent_credit": 18588,
+    "ternary_positive_target_child": 2556,
+    "ternary_target": 22953
+  },
+  "total_checks": 322405,
+  "scopes": {
+    "binary": {
+      "distinct_chains": 1022,
+      "lengths": [
+        2,
+        10
+      ],
+      "initial_multiplicity": 1,
+      "multiplicities": [
+        1,
+        2
+      ],
+      "t_values": [
+        "1/2",
+        "3/5",
+        "3/4",
+        "9/10",
+        "1"
+      ]
+    },
+    "bounded_height": {
+      "input_count": 1211,
+      "enumerated_masses": [
+        2,
+        10
+      ],
+      "random_inputs": 700,
+      "seed": 202611240511,
+      "random_lengths": [
+        2,
+        25
+      ],
+      "random_maximum_allowed_height": 35,
+      "t_rule": "(H-1)/H, its midpoint with 1, and 1; H=1 uses 1/2,3/4,1"
+    },
+    "prefixes": {
+      "tail_masses": [
+        0,
+        7
+      ],
+      "tails": "all ordered compositions",
+      "t_values": [
+        "1/2",
+        "2/3",
+        "4/5",
+        "19/20",
+        "1"
+      ]
+    },
+    "ternary": {
+      "distinct_chains": 3279,
+      "lengths": [
+        2,
+        8
+      ],
+      "initial_multiplicity": 1,
+      "multiplicities": [
+        1,
+        2,
+        3
+      ],
+      "middle_t_values": [
+        "5/8",
+        "31/48",
+        "2/3"
+      ],
+      "other_t_values": [
+        "1/10",
+        "1/2",
+        "9/10",
+        "1"
+      ],
+      "low_ratio_tail_masses": "0..64,127,1024,1000000",
+      "scope": "finite exact audit of parent-child credit, global target, and the 5/8 polynomial bound"
+    },
+    "polynomials": {
+      "first_b": [
+        3,
+        10
+      ],
+      "second_d": [
+        4,
+        11
+      ],
+      "tail_mass_c": [
+        0,
+        15
+      ],
+      "t_values": [
+        "1/2",
+        "11/20",
+        "3/5",
+        "13/20",
+        "7/10",
+        "3/4",
+        "4/5",
+        "17/20",
+        "9/10",
+        "19/20",
+        "1"
+      ],
+      "scope": "finite exact evaluations of the independently expanded symbolic identities"
+    },
+    "physical": {
+      "matrix_models": 513,
+      "machine_dimensions": [
+        2,
+        6
+      ],
+      "multiplicities": "all ordered compositions, excluding one-layer chains",
+      "t_values": [
+        "1/2",
+        "2/3",
+        "1"
+      ],
+      "permutations_per_model": 3,
+      "permutation_rule": "one cyclic shell shift and two seeded independent shell shuffles",
+      "seed": 202611240512,
+      "claim": "PSD for all real perturbation directions in each listed finite permutation model; not all permutations or all dimensions"
+    }
+  },
+  "check_transcript_sha256": "8caccf99d2f80ddce9348dcace70ec494278e682b4e998bd1fce9a68e35a4a94",
+  "script_sha256": "90662c180fd7af211411df949bcd670f2fef12bbbcdda5aa1541815d38be741f",
+  "general_proofs": "written analytic proofs; this finite certificate is not a substitute",
+  "formal_proof_assistant_certification": false,
+  "certificate_payload_sha256": "3c6b2a62f761a9b884ebd61b690170bbb4ae24160ec96c142c06b4d9ee0fc940"
+}

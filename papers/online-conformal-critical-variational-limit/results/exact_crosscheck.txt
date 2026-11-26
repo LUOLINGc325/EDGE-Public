@@ -1,0 +1,6 @@
+T=  4  exact M_T/√T displayed as 0.718750000
+T= 16  exact M_T/√T displayed as 0.904889979
+T= 64  exact M_T/√T displayed as 0.988652859
+T=144  exact M_T/√T displayed as 1.013108018
+T=256  exact M_T/√T displayed as 1.024054805
+Finite checks corroborate the recurrence. They do not evaluate the limiting value.

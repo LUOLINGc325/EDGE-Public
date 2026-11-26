@@ -1,0 +1,9 @@
+{
+  "scope": "symbolic elementary identities and floating-point cross-check only",
+  "cubic_square_identity": true,
+  "third_derivative_identity": true,
+  "J_gamma_1_6": 2.3922372242473644,
+  "J_gamma_2_3": 2.3922372242473644,
+  "J_airy": 2.392237224247364,
+  "max_abs_difference": 4.440892098500626e-16
+}

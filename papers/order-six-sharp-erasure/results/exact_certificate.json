@@ -1,0 +1,36 @@
+{
+  "cyclic_orbit_weights": [
+    6,
+    6,
+    3,
+    6,
+    6,
+    3,
+    1
+  ],
+  "average_coefficient_differences": [
+    0,
+    4,
+    0,
+    -8,
+    0,
+    4,
+    0
+  ],
+  "exact_tensor_pair_checks": 13,
+  "opposite_internal_differences": [
+    "-1/65",
+    "1/4941"
+  ],
+  "strict_gap_examples": [
+    {
+      "gap": "263267/70799040",
+      "output_moment": "187469/4110912"
+    },
+    {
+      "gap": "5583/1047800",
+      "output_moment": "1769/33800"
+    }
+  ],
+  "order_seven_complex_word": "53632 - 12*I"
+}

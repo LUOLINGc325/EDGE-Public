@@ -1,0 +1,10 @@
+amplitude damping n=2: p=13/25, u=177/625, remaining radius=13/25
+amplitude damping n=3: p=13/25, u=177/625, remaining radius=13/25
+amplitude damping n=4: p=13/25, u=177/625, remaining radius=13/25
+phase flip n=2: p=0, u=1/2, remaining radius=1/2
+phase flip n=3: p=0, u=1/2, remaining radius=1/2
+phase flip n=4: p=0, u=1/2, remaining radius=1/2
+unitary boundary n=2: p=-1/3, u=1, remaining radius=1
+unitary boundary n=3: p=-1/3, u=1, remaining radius=1
+unitary boundary n=4: p=-1/3, u=1, remaining radius=1
+ALL_CHECKS_OK

@@ -1,0 +1,116 @@
+{
+  "arithmetic": "floating point; diagnostic only",
+  "quarter_turn": {
+    "W_justification": "Unitary quarter turns have no common traceless eigenvector with the same eigenvalue; proven in manuscript.",
+    "gamma": 0.5,
+    "horizon": 4096,
+    "independent_age_horizon": 64,
+    "independent_age_max_gap": 1.5612511283791264e-17,
+    "last_remainder_norm": 6.688752475745753e-07,
+    "last_trace_norm": 0.008332055514751021,
+    "leading_coefficients": [
+      {
+        "coefficient": [
+          [
+            0.35968471029938026,
+            -0.29999388289698753
+          ],
+          [
+            -0.2999938828969875,
+            -0.35968471029938015
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "eigenvalue": [
+          0.0,
+          0.9999999999999997
+        ]
+      },
+      {
+        "coefficient": [
+          [
+            0.35968471029938015,
+            0.2999938828969872
+          ],
+          [
+            -0.29999388289698725,
+            0.35968471029938015
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "eigenvalue": [
+          2.7755575615628914e-17,
+          -1.0
+        ]
+      },
+      {
+        "coefficient": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.12600846031215993,
+            -1.732149554721669e-16
+          ]
+        ],
+        "eigenvalue": [
+          1.0,
+          0.0
+        ]
+      }
+    ],
+    "word_contraction": false
+  },
+  "scalar_examples": [
+    {
+      "asymptotic_scaled_error": 0.12179686204724689,
+      "c": 0.5,
+      "effective_x": 0.5522442728183696,
+      "gamma": 0.25,
+      "horizon": 4096,
+      "last_error_over_prediction": 0.9379318586283898,
+      "last_scaled_trace_norm_error": 0.11423454259717497,
+      "last_trace_norm_error": 0.014279317824646871,
+      "leading_amplitude": -0.14925190906054345,
+      "max_mass_error": 2.886579864025407e-15
+    },
+    {
+      "asymptotic_scaled_error": 0.06947017968515047,
+      "c": 0.5,
+      "effective_x": 0.6306019374818708,
+      "gamma": 0.5,
+      "horizon": 4096,
+      "last_error_over_prediction": 0.9998848949738093,
+      "last_scaled_trace_norm_error": 0.06946006353304318,
+      "last_trace_norm_error": 0.0010853134927037997,
+      "leading_amplitude": -0.12313268750604307,
+      "max_mass_error": 7.105427357601002e-15
+    },
+    {
+      "asymptotic_scaled_error": 0.022193406166119537,
+      "c": 0.5,
+      "effective_x": 0.7586061001207715,
+      "gamma": 0.75,
+      "horizon": 4096,
+      "last_error_over_prediction": 0.959006778534227,
+      "last_scaled_trace_norm_error": 0.021283139804175732,
+      "last_trace_norm_error": 4.156863243003073e-05,
+      "leading_amplitude": -0.0804646332930762,
+      "max_mass_error": 4.218847493575595e-15
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Finite numerical corroboration, not proof of limits, (W), or optimality.",
+  "status": "passed"
+}

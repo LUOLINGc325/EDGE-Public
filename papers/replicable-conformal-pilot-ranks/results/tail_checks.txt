@@ -1,0 +1,5 @@
+720 exact inflation tails matched pooled-order enumeration.
+Ex ante disagreement bound  0.095745724
+Mean inflation bound        5/1602
+Pilot failure probability   0.041665158
+Private failure probability 1.70152e-116

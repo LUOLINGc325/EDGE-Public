@@ -1,0 +1,7 @@
+Exhaustive 2-Visits instances (n <= 5, d <= 2n): 2401
+Seeded 2-Visits instances with removable large deadlines: 350
+Seeded Position Matching instances (n <= 7): 1400
+Direct schedule search and independent triple assignment agree with the midpoint solver.
+Position Matching cases include repeated targets and translations by 10^30.
+The (3,4,4,5,6) instance requires an intermediate support point.
+The overlap-one family is feasible at 40 extra deadline copies.

@@ -1,0 +1,184 @@
+{
+  "verification": "independent symbolic reconstruction using positive spectral square roots",
+  "arithmetic": "exact SymPy algebra; no numerical optimizer",
+  "sympy_version": "1.14.0",
+  "fine": {
+    "nonzero_records": [
+      {
+        "index": [
+          1,
+          1
+        ],
+        "matrix": [
+          [
+            "7/160",
+            "0"
+          ],
+          [
+            "0",
+            "-7/160"
+          ]
+        ]
+      },
+      {
+        "index": [
+          1,
+          2
+        ],
+        "matrix": [
+          [
+            "7/160",
+            "0"
+          ],
+          [
+            "0",
+            "-7/160"
+          ]
+        ]
+      },
+      {
+        "index": [
+          2,
+          1
+        ],
+        "matrix": [
+          [
+            "-7/160",
+            "-7/80"
+          ],
+          [
+            "-7/80",
+            "7/160"
+          ]
+        ]
+      },
+      {
+        "index": [
+          2,
+          2
+        ],
+        "matrix": [
+          [
+            "-7/160",
+            "7/80"
+          ],
+          [
+            "7/80",
+            "7/160"
+          ]
+        ]
+      }
+    ],
+    "all_event_squared_values": [
+      "0",
+      "49/25600",
+      "49/5120",
+      "49/6400"
+    ],
+    "maximum_event_squared": "49/5120",
+    "exact_score": "7*sqrt(5)/160",
+    "attaining_state": [
+      [
+        "1/2 - sqrt(5)/10",
+        "sqrt(5)/5"
+      ],
+      [
+        "sqrt(5)/5",
+        "sqrt(5)/10 + 1/2"
+      ]
+    ],
+    "direct_tv_at_attaining_state": "7*sqrt(5)/160"
+  },
+  "coarse": {
+    "nonzero_records": [
+      {
+        "index": [
+          0,
+          1
+        ],
+        "matrix": [
+          [
+            "7/160",
+            "1/40"
+          ],
+          [
+            "1/40",
+            "-7/160"
+          ]
+        ]
+      },
+      {
+        "index": [
+          0,
+          2
+        ],
+        "matrix": [
+          [
+            "7/160",
+            "-1/40"
+          ],
+          [
+            "-1/40",
+            "-7/160"
+          ]
+        ]
+      },
+      {
+        "index": [
+          1,
+          1
+        ],
+        "matrix": [
+          [
+            "-7/160",
+            "-7/80"
+          ],
+          [
+            "-7/80",
+            "7/160"
+          ]
+        ]
+      },
+      {
+        "index": [
+          1,
+          2
+        ],
+        "matrix": [
+          [
+            "-7/160",
+            "7/80"
+          ],
+          [
+            "7/80",
+            "7/160"
+          ]
+        ]
+      }
+    ],
+    "all_event_squared_values": [
+      "0",
+      "1/256",
+      "13/5120",
+      "49/5120",
+      "49/6400",
+      "81/6400"
+    ],
+    "maximum_event_squared": "81/6400",
+    "exact_score": "9/80",
+    "attaining_state": [
+      [
+        "1/2",
+        "-1/2"
+      ],
+      [
+        "-1/2",
+        "1/2"
+      ]
+    ],
+    "direct_tv_at_attaining_state": "9/80"
+  },
+  "squared_gap": "79/25600",
+  "complex_state_algebra": "tr(rho H)=2u x+(2a-1)z; 1-(2u)^2-(2a-1)^2=4(det(rho)+v^2)",
+  "status": "instance arithmetic and mathematical optimizer witnesses pass; Lean/source semantic coverage separately required"
+}

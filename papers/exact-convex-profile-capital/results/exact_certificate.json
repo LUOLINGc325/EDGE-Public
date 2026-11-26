@@ -1,0 +1,60 @@
+{
+  "finite_optimality": [
+    {
+      "a": "1/2",
+      "radius": "3/4",
+      "t": 8,
+      "exact_finite_cost": "107/105",
+      "exact_full_cost": "19/16",
+      "dual_support": 2
+    },
+    {
+      "a": "1/2",
+      "radius": "3/4",
+      "t": 64,
+      "exact_finite_cost": "19571/16835",
+      "exact_full_cost": "19/16",
+      "dual_support": 2
+    },
+    {
+      "a": "1/2",
+      "radius": "3/4",
+      "t": 256,
+      "exact_finite_cost": "311747/263939",
+      "exact_full_cost": "19/16",
+      "dual_support": 2
+    },
+    {
+      "a": "2/5",
+      "radius": "1/4",
+      "t": 8,
+      "exact_finite_cost": "101/85",
+      "exact_full_cost": "13/10",
+      "dual_support": 3
+    },
+    {
+      "a": "2/5",
+      "radius": "1/4",
+      "t": 64,
+      "exact_finite_cost": "17943/13975",
+      "exact_full_cost": "13/10",
+      "dual_support": 3
+    },
+    {
+      "a": "2/5",
+      "radius": "1/4",
+      "t": 256,
+      "exact_finite_cost": "284759/219735",
+      "exact_full_cost": "13/10",
+      "dual_support": 3
+    }
+  ],
+  "adaptive_product": [
+    {
+      "adaptive_bellman_value": "141161475/138486403",
+      "exact_grid_product_cost": "351162453/235269125",
+      "support_size": 6
+    }
+  ],
+  "scope": "LP candidates are verified over the rationals. The full-domain proof appears in the manuscript."
+}

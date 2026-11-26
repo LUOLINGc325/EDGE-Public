@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-11-24T15:49:49.442847+00:00",
+  "status": "PASS",
+  "scope": "Pure Python validator rejection probes only; no Lean process launched",
+  "checker_sha256": "ccf83f78c5c7745cecaff1f231d60b1601cab3035fecef11f403b6e4efc71dae",
+  "frozen_source_sha256": "a78bc11cd466b0668eaa0414f959e97637d084f8abd35b727a71f97cf6f7b94d",
+  "baseline_log": "results/lean-compile.log",
+  "baseline_log_sha256": "e91635ddddd30a2e5f5a7d1893abaef747a5bd2cd7bbadd7eb9e11c1f6ac9402",
+  "baseline_axiom_audit_sha256": "8a506b7e3bd99cffa80a9f03d0edc82712ef90cc7b050b5d6df55fa8ec4b6203",
+  "baseline_kind": "Final strict compilation audit payload for the frozen source; replaces the preparatory diagnostic baseline",
+  "baseline_declaration_count": 165,
+  "baseline_validate_accepted": true,
+  "negative_probe_count": 10,
+  "negative_probes": [
+    {
+      "case": "broaden_allowed_axioms",
+      "rejected": true,
+      "reason": "The producer changed the allowed axiom set"
+    },
+    {
+      "case": "wrong_declaration_count",
+      "rejected": true,
+      "reason": "declaration_count does not match the actual record count"
+    },
+    {
+      "case": "weaken_required_theorem_set",
+      "rejected": true,
+      "reason": "The producer changed the required main-theorem set"
+    },
+    {
+      "case": "remove_required_theorem_record",
+      "rejected": true,
+      "reason": "Required main theorems missing: ['PauliMUB.no_pauli_mub_odd_ge_five']"
+    },
+    {
+      "case": "hidden_disallowed_dependency",
+      "rejected": true,
+      "reason": "Inconsistent unexpected-axiom report for PauliMUB.cardLabel"
+    },
+    {
+      "case": "explicit_disallowed_dependency",
+      "rejected": true,
+      "reason": "Disallowed axioms for PauliMUB.cardLabel: ['sorryAx']"
+    },
+    {
+      "case": "duplicate_declaration_record",
+      "rejected": true,
+      "reason": "Duplicate declaration record: PauliMUB.cardLabel"
+    },
+    {
+      "case": "empty_declaration_table",
+      "rejected": true,
+      "reason": "No nonempty all-declaration audit was supplied"
+    },
+    {
+      "case": "no_fresh_audit_marker",
+      "rejected": true,
+      "reason": "Expected exactly one fresh kernel audit marker; found 0"
+    },
+    {
+      "case": "duplicate_fresh_audit_markers",
+      "rejected": true,
+      "reason": "Expected exactly one fresh kernel audit marker; found 2"
+    }
+  ],
+  "coverage_limit": "Schema validation does not independently enumerate declarations. Completeness is established by review of the Lean producer iterating the entire current environment map and by the frozen kernel audit, not by a hand-authored JSON table."
+}

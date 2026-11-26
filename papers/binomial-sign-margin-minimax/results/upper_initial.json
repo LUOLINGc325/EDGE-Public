@@ -1,0 +1,1542 @@
+{
+  "status": "initial_research_diagnostics_not_a_minimax_proof",
+  "scope": "Known positive Jackson convolution; exact rational-times-4/pi inverse coefficients; margin-constrained variance diagnostic for L=1.",
+  "arithmetic": {
+    "exact": "Fraction-based kernel weights, Chebyshev/Bernstein conversion, antisymmetry, and reproduction identities before multiplication by 4/pi.",
+    "floating_point": "All evaluated coefficients containing pi, binomial probabilities, variance integrals, exponential comparisons, and mesh-bound numbers.",
+    "certified_interval_arithmetic": false
+  },
+  "mesh_intervals": 1600,
+  "total_exact_reproduction_checks": 140,
+  "total_exact_antisymmetry_checks": 28,
+  "candidate_localized_variance_bound_proved": false,
+  "original_conjecture_resolved": false,
+  "rows": [
+    {
+      "n": 32,
+      "degree_budget": 8,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 8,
+      "D_d_squared_over_n": 2.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 0.9951038507627662,
+      "proved_U1_bound_float": 163.7944500994327,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 17.31392573830773,
+      "kappa_float": 3.013967607915635,
+      "conditional_second_moment_at_zero_float": 0.1721461406737076,
+      "conditional_second_moment_at_one_float": 0.9802181248043388,
+      "radius_of_max_conditional_second_moment_on_grid": 0.865625,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 0.9865508376950474,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.0015153122756729376,
+          "grid_to_sup_coefficient_square_ratio": 0.996282853593541,
+          "grid_to_kappa_square_ratio": 0.10860312165993027,
+          "candidate_localized_prefactor": 0.5,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.865625,
+              "radial_mass": 0.9303897032964198
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.986414602559373,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.0015153122756729376,
+          "grid_to_sup_coefficient_square_ratio": 0.9961452745408015,
+          "grid_to_kappa_square_ratio": 0.10858812439831063,
+          "candidate_localized_prefactor": 0.25,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.865625,
+              "radial_mass": 0.865625
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9861558538359086,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.0015153122756729376,
+          "grid_to_sup_coefficient_square_ratio": 0.9958839733419915,
+          "grid_to_kappa_square_ratio": 0.10855964039320917,
+          "candidate_localized_prefactor": 0.0625,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.865625,
+              "radial_mass": 0.749306640625
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "degree_budget": 8,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 6,
+      "D_d_squared_over_n": 1.125,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 0.9981234823503073,
+      "proved_U1_bound_float": 28.46320750907558,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 10.900095544070094,
+      "kappa_float": 1.8974630820048688,
+      "conditional_second_moment_at_zero_float": 0.08454158251560069,
+      "conditional_second_moment_at_one_float": 0.9962504860191043,
+      "radius_of_max_conditional_second_moment_on_grid": 1.0,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9962504860191042,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.00102439260621907,
+          "grid_to_sup_coefficient_square_ratio": 0.9999999999999999,
+          "grid_to_kappa_square_ratio": 0.2767081027831331,
+          "candidate_localized_prefactor": 0.0012359619140625,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 1.0,
+              "radial_mass": 1.0
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "degree_budget": 16,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 16,
+      "D_d_squared_over_n": 8.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.1036438356884164,
+      "proved_U1_bound_float": 26658331.561523616,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 428.736525292795,
+      "kappa_float": 74.63344934556052,
+      "conditional_second_moment_at_zero_float": 0.6598076582756492,
+      "conditional_second_moment_at_one_float": 0.996864274729917,
+      "radius_of_max_conditional_second_moment_on_grid": 0.950625,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 0.9976625722492757,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.005190611062722352,
+          "grid_to_sup_coefficient_square_ratio": 0.819079008582933,
+          "grid_to_kappa_square_ratio": 0.00017910868770143113,
+          "candidate_localized_prefactor": 0.7071067811865476,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.950625,
+              "radial_mass": 0.975
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9976564469541205,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.005190611062722352,
+          "grid_to_sup_coefficient_square_ratio": 0.8190739797276643,
+          "grid_to_kappa_square_ratio": 0.00017910758803746905,
+          "candidate_localized_prefactor": 0.5,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.950625,
+              "radial_mass": 0.950625
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9976444153814957,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.005190611062722352,
+          "grid_to_sup_coefficient_square_ratio": 0.8190641018302154,
+          "grid_to_kappa_square_ratio": 0.0001791054280294225,
+          "candidate_localized_prefactor": 0.25,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.950625,
+              "radial_mass": 0.9036878906250001
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "degree_budget": 16,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 15,
+      "D_d_squared_over_n": 7.03125,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.0062906788193882,
+      "proved_U1_bound_float": 3840496.790292851,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 252.53228276321119,
+      "kappa_float": 43.96022783656128,
+      "conditional_second_moment_at_zero_float": 0.38733784407363386,
+      "conditional_second_moment_at_one_float": 0.9995839689347388,
+      "radius_of_max_conditional_second_moment_on_grid": 1.0,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9995839689347388,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.002766059129045162,
+          "grid_to_sup_coefficient_square_ratio": 0.9871255264885183,
+          "grid_to_kappa_square_ratio": 0.0005172487063768589,
+          "candidate_localized_prefactor": 0.048279762268066406,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 1.0,
+              "radial_mass": 1.0
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 64,
+      "degree_budget": 16,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 16,
+      "D_d_squared_over_n": 4.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.0053359054992275,
+      "proved_U1_bound_float": 8942.873961125184,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 66.8565354491617,
+      "kappa_float": 8.292532629990777,
+      "conditional_second_moment_at_zero_float": 0.29339534530409295,
+      "conditional_second_moment_at_one_float": 0.996864274729917,
+      "radius_of_max_conditional_second_moment_on_grid": 0.95125,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 0.9976601035571984,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.003111307232118411,
+          "grid_to_sup_coefficient_square_ratio": 0.9870978770367824,
+          "grid_to_kappa_square_ratio": 0.014508022717526596,
+          "candidate_localized_prefactor": 0.5,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.95125,
+              "radial_mass": 0.975320460156558
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9976540201648667,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.003111307232118411,
+          "grid_to_sup_coefficient_square_ratio": 0.9870918580493193,
+          "grid_to_kappa_square_ratio": 0.014507934252533527,
+          "candidate_localized_prefactor": 0.25,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.95125,
+              "radial_mass": 0.95125
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9976420699942444,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.003111307232118411,
+          "grid_to_sup_coefficient_square_ratio": 0.9870800343951415,
+          "grid_to_kappa_square_ratio": 0.014507760472559517,
+          "candidate_localized_prefactor": 0.0625,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.95125,
+              "radial_mass": 0.9048765625
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 64,
+      "degree_budget": 16,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 15,
+      "D_d_squared_over_n": 3.515625,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.0001021641222034,
+      "proved_U1_bound_float": 3394.332094960444,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 51.9995275715724,
+      "kappa_float": 6.44974760110421,
+      "conditional_second_moment_at_zero_float": 0.18582131044260755,
+      "conditional_second_moment_at_one_float": 0.9995839689347388,
+      "radius_of_max_conditional_second_moment_on_grid": 1.0,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9995839689347388,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.0021989193832487055,
+          "grid_to_sup_coefficient_square_ratio": 0.9993797569924626,
+          "grid_to_kappa_square_ratio": 0.024028897402571595,
+          "candidate_localized_prefactor": 0.0030174851417541504,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 1.0,
+              "radial_mass": 1.0
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 64,
+      "degree_budget": 32,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 32,
+      "D_d_squared_over_n": 16.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 2.5328603581463436,
+      "proved_U1_bound_float": 236888880548042.06,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 39649.72398693969,
+      "kappa_float": 4917.942991255437,
+      "conditional_second_moment_at_zero_float": 2.846710207197902,
+      "conditional_second_moment_at_one_float": 0.9995675600931803,
+      "radius_of_max_conditional_second_moment_on_grid": 0.0,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 1.7720648695820633,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.07337118715764525,
+          "grid_to_sup_coefficient_square_ratio": 0.27622127283519876,
+          "grid_to_kappa_square_ratio": 7.326771303693963e-08,
+          "candidate_localized_prefactor": 0.7071067811865476,
+          "candidate_log_excess_over_prefactor_divided_by_D": 0.005492930359281339,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.000625,
+              "radial_mass": 0.025
+            },
+            {
+              "radius": 0.00125,
+              "radial_mass": 0.010355339059327374
+            },
+            {
+              "radius": 0.984375,
+              "radial_mass": 0.03723527891000755
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 1.350430588040244,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.07337118715764525,
+          "grid_to_sup_coefficient_square_ratio": 0.21049887185678332,
+          "grid_to_kappa_square_ratio": 5.583484131942285e-08,
+          "candidate_localized_prefactor": 0.5,
+          "candidate_log_excess_over_prefactor_divided_by_D": -0.022215340533406912,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.984375,
+              "radial_mass": 0.07250000000000001
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 1.0875489073354185,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.07337118715764525,
+          "grid_to_sup_coefficient_square_ratio": 0.1695220917762274,
+          "grid_to_kappa_square_ratio": 4.496574737418136e-08,
+          "candidate_localized_prefactor": 0.25,
+          "candidate_log_excess_over_prefactor_divided_by_D": -0.06557895872948691,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.984375,
+              "radial_mass": 0.137478125
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 64,
+      "degree_budget": 32,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 30,
+      "D_d_squared_over_n": 14.0625,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.144531438680703,
+      "proved_U1_bound_float": 4916471865416.564,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 13763.063487180647,
+      "kappa_float": 1707.0979267668774,
+      "conditional_second_moment_at_zero_float": 0.7760832790818883,
+      "conditional_second_moment_at_one_float": 0.999987791043772,
+      "radius_of_max_conditional_second_moment_on_grid": 0.3225,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 1.0000684935520066,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.00957036156528118,
+          "grid_to_sup_coefficient_square_ratio": 0.7634389123250028,
+          "grid_to_kappa_square_ratio": 3.4317281370647927e-07,
+          "candidate_localized_prefactor": 0.048279762268066406,
+          "candidate_log_excess_over_prefactor_divided_by_D": -0.46634866784909035,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.3225,
+              "radial_mass": 0.010817300039062502
+            },
+            {
+              "radius": 1.0,
+              "radial_mass": 0.9524880914183044
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 128,
+      "degree_budget": 16,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 16,
+      "D_d_squared_over_n": 2.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 0.9989330688697711,
+      "proved_U1_bound_float": 163.7944500994327,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 32.689721331492926,
+      "kappa_float": 2.878169477384503,
+      "conditional_second_moment_at_zero_float": 0.14344593356641314,
+      "conditional_second_moment_at_one_float": 0.996864274729917,
+      "radius_of_max_conditional_second_moment_on_grid": 0.95125,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 0.9976599992314376,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.002653445848815488,
+          "grid_to_sup_coefficient_square_ratio": 0.9997922801407466,
+          "grid_to_kappa_square_ratio": 0.12043420030821356,
+          "candidate_localized_prefactor": 0.3535533905932738,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.95125,
+              "radial_mass": 0.975320460156558
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9976539169334095,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.002653445848815488,
+          "grid_to_sup_coefficient_square_ratio": 0.9997861848431316,
+          "grid_to_kappa_square_ratio": 0.1204334660734045,
+          "candidate_localized_prefactor": 0.125,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.95125,
+              "radial_mass": 0.95125
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9976419688934344,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.002653445848815488,
+          "grid_to_sup_coefficient_square_ratio": 0.9997742112668239,
+          "grid_to_kappa_square_ratio": 0.12043202374571695,
+          "candidate_localized_prefactor": 0.015625,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.95125,
+              "radial_mass": 0.9048765625
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 128,
+      "degree_budget": 16,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 15,
+      "D_d_squared_over_n": 1.7578125,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 0.9997919628276368,
+      "proved_U1_bound_float": 100.91083333756256,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 28.85801394969938,
+      "kappa_float": 2.5408064536770314,
+      "conditional_second_moment_at_zero_float": 0.09207994502611996,
+      "conditional_second_moment_at_one_float": 0.9995839689347388,
+      "radius_of_max_conditional_second_moment_on_grid": 1.0,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9995839689347388,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.0020275501698607036,
+          "grid_to_sup_coefficient_square_ratio": 1.0,
+          "grid_to_kappa_square_ratio": 0.15483748719513593,
+          "candidate_localized_prefactor": 0.0001885928213596344,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 1.0,
+              "radial_mass": 1.0
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 128,
+      "degree_budget": 32,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 32,
+      "D_d_squared_over_n": 8.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.0751408811244716,
+      "proved_U1_bound_float": 26658331.561523616,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 711.4858870555364,
+      "kappa_float": 62.64283940959374,
+      "conditional_second_moment_at_zero_float": 0.5735964491322622,
+      "conditional_second_moment_at_one_float": 0.9995675600931803,
+      "radius_of_max_conditional_second_moment_on_grid": 0.985,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 0.9996418307388484,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.008791393472996989,
+          "grid_to_sup_coefficient_square_ratio": 0.8647959949772323,
+          "grid_to_kappa_square_ratio": 0.0002547425851248611,
+          "candidate_localized_prefactor": 0.5,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.985,
+              "radial_mass": 0.9924716620639604
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9996416492677972,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.008791393472996989,
+          "grid_to_sup_coefficient_square_ratio": 0.8647958379855644,
+          "grid_to_kappa_square_ratio": 0.0002547425388798929,
+          "candidate_localized_prefactor": 0.25,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.985,
+              "radial_mass": 0.985
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9996412883227379,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.008791393472996989,
+          "grid_to_sup_coefficient_square_ratio": 0.8647955257298823,
+          "grid_to_kappa_square_ratio": 0.0002547424468988706,
+          "candidate_localized_prefactor": 0.0625,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.985,
+              "radial_mass": 0.970225
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 128,
+      "degree_budget": 32,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 30,
+      "D_d_squared_over_n": 7.03125,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.0052616889695718,
+      "proved_U1_bound_float": 3840496.790292851,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 432.2074668630452,
+      "kappa_float": 38.05374559202702,
+      "conditional_second_moment_at_zero_float": 0.3266846138177698,
+      "conditional_second_moment_at_one_float": 0.999987791043772,
+      "radius_of_max_conditional_second_moment_on_grid": 1.0,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9999877910437721,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.00478308692403103,
+          "grid_to_sup_coefficient_square_ratio": 0.9895470178106734,
+          "grid_to_kappa_square_ratio": 0.0006905575485195634,
+          "candidate_localized_prefactor": 0.0030174851417541504,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 1.0,
+              "radial_mass": 1.0
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 128,
+      "degree_budget": 64,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 64,
+      "D_d_squared_over_n": 32.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 345.251732128774,
+      "proved_U1_bound_float": 1.8705447242434851e+28,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 241790495.12056133,
+      "kappa_float": 21288466.056981955,
+      "conditional_second_moment_at_zero_float": 53493.65088894186,
+      "conditional_second_moment_at_one_float": 0.9999436907693932,
+      "radius_of_max_conditional_second_moment_on_grid": 0.0,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 23895.18638723032,
+          "analytic_mesh_error_bound_evaluated_in_float": 4003.787334851854,
+          "grid_to_sup_coefficient_square_ratio": 0.20046506088088947,
+          "grid_to_kappa_square_ratio": 5.2725618579612666e-11,
+          "candidate_localized_prefactor": 0.7071067811865476,
+          "candidate_log_excess_over_prefactor_divided_by_D": 0.3258738766004346,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.000625,
+              "radial_mass": 0.025
+            },
+            {
+              "radius": 0.00125,
+              "radial_mass": 0.010355339059327374
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 11692.271784604925,
+          "analytic_mesh_error_bound_evaluated_in_float": 4003.787334851854,
+          "grid_to_sup_coefficient_square_ratio": 0.09809055000254435,
+          "grid_to_kappa_square_ratio": 2.579943309308928e-11,
+          "candidate_localized_prefactor": 0.5,
+          "candidate_log_excess_over_prefactor_divided_by_D": 0.3143670319260165,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 3464.0491661669344,
+          "analytic_mesh_error_bound_evaluated_in_float": 4003.787334851854,
+          "grid_to_sup_coefficient_square_ratio": 0.0290611178225063,
+          "grid_to_kappa_square_ratio": 7.643553480459512e-12,
+          "candidate_localized_prefactor": 0.25,
+          "candidate_log_excess_over_prefactor_divided_by_D": 0.29800622196832305,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 128,
+      "degree_budget": 64,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 63,
+      "D_d_squared_over_n": 31.0078125,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 18.156726796929153,
+      "proved_U1_bound_float": 2.5713724351533936e+27,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 140319247.94737822,
+      "kappa_float": 12354420.903019909,
+      "conditional_second_moment_at_zero_float": 114.60978128309335,
+      "conditional_second_moment_at_one_float": 0.9999994652752688,
+      "radius_of_max_conditional_second_moment_on_grid": 0.0,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 1.3199593526678461,
+          "analytic_mesh_error_bound_evaluated_in_float": 6.844971165070052,
+          "grid_to_sup_coefficient_square_ratio": 0.004003920446453518,
+          "grid_to_kappa_square_ratio": 8.648001795209511e-15,
+          "candidate_localized_prefactor": 0.05868435278534889,
+          "candidate_log_excess_over_prefactor_divided_by_D": 0.054696565129929715,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 1.0,
+              "radial_mass": 0.06581054683822618
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 256,
+      "degree_budget": 32,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 32,
+      "D_d_squared_over_n": 4.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.0043178363994676,
+      "proved_U1_bound_float": 8942.873961125184,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 125.77851998725205,
+      "kappa_float": 7.845848511939902,
+      "conditional_second_moment_at_zero_float": 0.2627328820486566,
+      "conditional_second_moment_at_one_float": 0.9995675600931803,
+      "radius_of_max_conditional_second_moment_on_grid": 0.985,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 0.9996418268943814,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.005706324088087435,
+          "grid_to_sup_coefficient_square_ratio": 0.9910648381033959,
+          "grid_to_kappa_square_ratio": 0.016239198204587295,
+          "candidate_localized_prefactor": 0.3535533905932738,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.985,
+              "radial_mass": 0.9924716620639604
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9996416454394496,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.005706324088087435,
+          "grid_to_sup_coefficient_square_ratio": 0.9910646582053585,
+          "grid_to_kappa_square_ratio": 0.01623919525684889,
+          "candidate_localized_prefactor": 0.125,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.985,
+              "radial_mass": 0.985
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9996412845263642,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.005706324088087435,
+          "grid_to_sup_coefficient_square_ratio": 0.9910643003889299,
+          "grid_to_kappa_square_ratio": 0.01623918939380978,
+          "candidate_localized_prefactor": 0.015625,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.985,
+              "radial_mass": 0.970225
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 256,
+      "degree_budget": 32,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 30,
+      "D_d_squared_over_n": 3.515625,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.0001194557053394,
+      "proved_U1_bound_float": 3394.332094960444,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 98.3120593804796,
+      "kappa_float": 6.1325377725406565,
+      "conditional_second_moment_at_zero_float": 0.1585601515218742,
+      "conditional_second_moment_at_one_float": 0.999987791043772,
+      "radius_of_max_conditional_second_moment_on_grid": 1.0,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9999877910437721,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.003949985330854422,
+          "grid_to_sup_coefficient_square_ratio": 0.999748925351609,
+          "grid_to_kappa_square_ratio": 0.026589748768943496,
+          "candidate_localized_prefactor": 0.0001885928213596344,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 1.0,
+              "radial_mass": 1.0
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 256,
+      "degree_budget": 64,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 64,
+      "D_d_squared_over_n": 16.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 2.085703441105441,
+      "proved_U1_bound_float": 236888880548042.06,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 57245.074770092324,
+      "kappa_float": 3570.8496549835245,
+      "conditional_second_moment_at_zero_float": 2.0536817167832555,
+      "conditional_second_moment_at_one_float": 0.9999436907693932,
+      "radius_of_max_conditional_second_moment_on_grid": 0.0,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 1.312941300693816,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.10551042508832437,
+          "grid_to_sup_coefficient_square_ratio": 0.30181456533076856,
+          "grid_to_kappa_square_ratio": 1.0296797678772208e-07,
+          "candidate_localized_prefactor": 0.5,
+          "candidate_log_excess_over_prefactor_divided_by_D": -0.02928702894930458,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.000625,
+              "radial_mass": 0.025
+            },
+            {
+              "radius": 0.00125,
+              "radial_mass": 0.010355339059327374
+            },
+            {
+              "radius": 0.995625,
+              "radial_mass": 0.3614139991058626
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 1.100433935872136,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.10551042508832437,
+          "grid_to_sup_coefficient_square_ratio": 0.25296408137588866,
+          "grid_to_kappa_square_ratio": 8.630199682607748e-08,
+          "candidate_localized_prefactor": 0.25,
+          "candidate_log_excess_over_prefactor_divided_by_D": -0.05699754756383935,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.995625,
+              "radial_mass": 0.590625
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 1.0123659741751883,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.10551042508832437,
+          "grid_to_sup_coefficient_square_ratio": 0.23271931219612038,
+          "grid_to_kappa_square_ratio": 7.93952296835089e-08,
+          "candidate_localized_prefactor": 0.0625,
+          "candidate_log_excess_over_prefactor_divided_by_D": -0.10126361712377813,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.995625,
+              "radial_mass": 0.8272441406249998
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 256,
+      "degree_budget": 64,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 63,
+      "D_d_squared_over_n": 15.50390625,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.1515492518188732,
+      "proved_U1_bound_float": 87830047850722.36,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 44387.86589367332,
+      "kappa_float": 2768.8390005333326,
+      "conditional_second_moment_at_zero_float": 0.7807546261378298,
+      "conditional_second_moment_at_one_float": 0.9999994652752688,
+      "radius_of_max_conditional_second_moment_on_grid": 0.15875,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 1.0000069951495858,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.020322596077129686,
+          "grid_to_sup_coefficient_square_ratio": 0.7541157355258193,
+          "grid_to_kappa_square_ratio": 1.3043905108799314e-07,
+          "candidate_localized_prefactor": 0.0036677720490843058,
+          "candidate_log_excess_over_prefactor_divided_by_D": -0.4039061248225041,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 1.0,
+              "radial_mass": 0.9962096257200623
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 256,
+      "degree_budget": 128,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 128,
+      "D_d_squared_over_n": 64.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 336172706.84074765,
+      "proved_U1_bound_float": 1.1663125217983784e+56,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 6384763580532835.0,
+      "kappa_float": 398270609659652.2,
+      "conditional_second_moment_at_zero_float": 5.726346982791498e+16,
+      "conditional_second_moment_at_one_float": 0.9999928331663358,
+      "radius_of_max_conditional_second_moment_on_grid": 0.0,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 2.615283632654768e+16,
+          "analytic_mesh_error_bound_evaluated_in_float": 8003345229515086.0,
+          "grid_to_sup_coefficient_square_ratio": 0.23141627235233156,
+          "grid_to_kappa_square_ratio": 1.6487783575375477e-13,
+          "candidate_localized_prefactor": 0.7071067811865476,
+          "candidate_log_excess_over_prefactor_divided_by_D": 0.5960829317742209,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.000625,
+              "radial_mass": 0.025
+            },
+            {
+              "radius": 0.00125,
+              "radial_mass": 0.010355339059327374
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 1.3079400258740504e+16,
+          "analytic_mesh_error_bound_evaluated_in_float": 8003345229515086.0,
+          "grid_to_sup_coefficient_square_ratio": 0.11573452357859042,
+          "grid_to_kappa_square_ratio": 8.24577181874982e-14,
+          "candidate_localized_prefactor": 0.5,
+          "candidate_log_excess_over_prefactor_divided_by_D": 0.5906712823229721,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 4042812998797522.0,
+          "analytic_mesh_error_bound_evaluated_in_float": 8003345229515086.0,
+          "grid_to_sup_coefficient_square_ratio": 0.03577327913185371,
+          "grid_to_kappa_square_ratio": 2.5487493948113337e-14,
+          "candidate_localized_prefactor": 0.25,
+          "candidate_log_excess_over_prefactor_divided_by_D": 0.5831564295709296,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 256,
+      "degree_budget": 128,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 126,
+      "D_d_squared_over_n": 62.015625,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1936866.1040167392,
+      "proved_U1_bound_float": 2.2039854000888974e+54,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 2150380805827692.0,
+      "kappa_float": 134137069248527.47,
+      "conditional_second_moment_at_zero_float": 1749748636370.0276,
+      "conditional_second_moment_at_one_float": 0.9999999829759559,
+      "radius_of_max_conditional_second_moment_on_grid": 0.0,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 6736191842.590043,
+          "analytic_mesh_error_bound_evaluated_in_float": 255190313912.6133,
+          "grid_to_sup_coefficient_square_ratio": 0.0017956233709963511,
+          "grid_to_kappa_square_ratio": 3.7438360393401616e-19,
+          "candidate_localized_prefactor": 0.05868435278534889,
+          "candidate_log_excess_over_prefactor_divided_by_D": 0.41064397470216984,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 1.0,
+              "radial_mass": 0.014915835739746197
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 512,
+      "degree_budget": 64,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 64,
+      "D_d_squared_over_n": 8.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.0624918504199867,
+      "proved_U1_bound_float": 26658331.561523616,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 1320.1081560878747,
+      "kappa_float": 58.28419891879538,
+      "conditional_second_moment_at_zero_float": 0.5341064532169912,
+      "conditional_second_moment_at_one_float": 0.9999436907693932,
+      "radius_of_max_conditional_second_moment_on_grid": 0.995625,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 0.9999494614173406,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.01614813709202644,
+          "grid_to_sup_coefficient_square_ratio": 0.885781969233012,
+          "grid_to_kappa_square_ratio": 0.0002943583686345642,
+          "candidate_localized_prefactor": 0.3535533905932738,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.995625,
+              "radial_mass": 0.9978101021737553
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9999494567857071,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.01614813709202644,
+          "grid_to_sup_coefficient_square_ratio": 0.8857819651301873,
+          "grid_to_kappa_square_ratio": 0.0002943583672711352,
+          "candidate_localized_prefactor": 0.125,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.995625,
+              "radial_mass": 0.995625
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9999494475375318,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.01614813709202644,
+          "grid_to_sup_coefficient_square_ratio": 0.8857819569379063,
+          "grid_to_kappa_square_ratio": 0.0002943583645487198,
+          "candidate_localized_prefactor": 0.015625,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.995625,
+              "radial_mass": 0.9912691406249999
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 512,
+      "degree_budget": 64,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 63,
+      "D_d_squared_over_n": 7.751953125,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.0060083006117966,
+      "proved_U1_bound_float": 16232379.479058735,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 1164.5141719894862,
+      "kappa_float": 51.414556702029394,
+      "conditional_second_moment_at_zero_float": 0.3288456253399202,
+      "conditional_second_moment_at_one_float": 0.9999994652752688,
+      "radius_of_max_conditional_second_moment_on_grid": 1.0,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9999994652752688,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.009626570156284568,
+          "grid_to_sup_coefficient_square_ratio": 0.9880903083269782,
+          "grid_to_kappa_square_ratio": 0.00037829236531286304,
+          "candidate_localized_prefactor": 0.0002292357530677691,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 1.0,
+              "radial_mass": 1.0
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 512,
+      "degree_budget": 128,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 128,
+      "D_d_squared_over_n": 32.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 175.8520850102336,
+      "proved_U1_bound_float": 1.8705447242434851e+28,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 262659600.900344,
+      "kappa_float": 11596704.676209878,
+      "conditional_second_moment_at_zero_float": 13146.190179272817,
+      "conditional_second_moment_at_one_float": 0.9999928331663358,
+      "radius_of_max_conditional_second_moment_on_grid": 0.0,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 4134.1893683689095,
+          "analytic_mesh_error_bound_evaluated_in_float": 2102.873108270294,
+          "grid_to_sup_coefficient_square_ratio": 0.13368889138180212,
+          "grid_to_kappa_square_ratio": 3.0741225086812985e-11,
+          "candidate_localized_prefactor": 0.5,
+          "candidate_log_excess_over_prefactor_divided_by_D": 0.2818734941451578,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.000625,
+              "radial_mass": 0.025
+            },
+            {
+              "radius": 0.00125,
+              "radial_mass": 0.010355339059327374
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 1430.7329698644505,
+          "analytic_mesh_error_bound_evaluated_in_float": 2102.873108270294,
+          "grid_to_sup_coefficient_square_ratio": 0.04626616914745635,
+          "grid_to_kappa_square_ratio": 1.063872027784741e-11,
+          "candidate_localized_prefactor": 0.25,
+          "candidate_log_excess_over_prefactor_divided_by_D": 0.270360541643009,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 215.98446925904167,
+          "analytic_mesh_error_bound_evaluated_in_float": 2102.873108270294,
+          "grid_to_sup_coefficient_square_ratio": 0.006984373882786203,
+          "grid_to_kappa_square_ratio": 1.6060287986681216e-12,
+          "candidate_localized_prefactor": 0.0625,
+          "candidate_log_excess_over_prefactor_divided_by_D": 0.2544735784923075,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 512,
+      "degree_budget": 128,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 126,
+      "D_d_squared_over_n": 31.0078125,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 10.11784016423539,
+      "proved_U1_bound_float": 2.5713724351533936e+27,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 158087778.03430885,
+      "kappa_float": 6979745.908765285,
+      "conditional_second_moment_at_zero_float": 35.358782535121776,
+      "conditional_second_moment_at_one_float": 0.9999999829759559,
+      "radius_of_max_conditional_second_moment_on_grid": 0.0,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 1.0056972682931975,
+          "analytic_mesh_error_bound_evaluated_in_float": 5.712616355622889,
+          "grid_to_sup_coefficient_square_ratio": 0.009824074374518196,
+          "grid_to_kappa_square_ratio": 2.0643724037475758e-14,
+          "candidate_localized_prefactor": 0.0036677720490843058,
+          "candidate_log_excess_over_prefactor_divided_by_D": 0.014202949870377832,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.95125,
+              "radial_mass": 0.04219727695312525
+            },
+            {
+              "radius": 1.0,
+              "radial_mass": 0.07527660810531633
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 1024,
+      "degree_budget": 64,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 64,
+      "D_d_squared_over_n": 4.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.0034000070107598,
+      "proved_U1_bound_float": 8942.873961125184,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 243.9183474963957,
+      "kappa_float": 7.618729184432875,
+      "conditional_second_moment_at_zero_float": 0.24751183969079055,
+      "conditional_second_moment_at_one_float": 0.9999436907693932,
+      "radius_of_max_conditional_second_moment_on_grid": 0.995625,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 0.9999494614075918,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.010899404545452107,
+          "grid_to_sup_coefficient_square_ratio": 0.9931843128959408,
+          "grid_to_kappa_square_ratio": 0.017227131863900423,
+          "candidate_localized_prefactor": 0.25,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.995625,
+              "radial_mass": 0.9978101021737553
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9999494567759682,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.010899404545452107,
+          "grid_to_sup_coefficient_square_ratio": 0.9931843082956524,
+          "grid_to_kappa_square_ratio": 0.017227131784106803,
+          "candidate_localized_prefactor": 0.0625,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.995625,
+              "radial_mass": 0.995625
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9999494475278115,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.010899404545452107,
+          "grid_to_sup_coefficient_square_ratio": 0.993184299110064,
+          "grid_to_kappa_square_ratio": 0.017227131624779533,
+          "candidate_localized_prefactor": 0.00390625,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.995625,
+              "radial_mass": 0.9912691406249999
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 1024,
+      "degree_budget": 64,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 63,
+      "D_d_squared_over_n": 3.8759765625,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.0001671155558003,
+      "proved_U1_bound_float": 6978.333499996701,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 229.135417345033,
+      "kappa_float": 7.156988021737912,
+      "conditional_second_moment_at_zero_float": 0.15950597817022086,
+      "conditional_second_moment_at_one_float": 0.9999994652752688,
+      "radius_of_max_conditional_second_moment_on_grid": 1.0,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 0.9999994652752688,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.007916747664198222,
+          "grid_to_sup_coefficient_square_ratio": 0.9996653181065075,
+          "grid_to_kappa_square_ratio": 0.019522668821123274,
+          "candidate_localized_prefactor": 1.432723456673557e-05,
+          "candidate_log_excess_over_prefactor_divided_by_D": null,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 1.0,
+              "radial_mass": 1.0
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 1024,
+      "degree_budget": 128,
+      "kernel_power_r": 2,
+      "actual_degree_bound_d": 128,
+      "D_d_squared_over_n": 16.0,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.9272771860835658,
+      "proved_U1_bound_float": 236888880548042.06,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 102959.40928537774,
+      "kappa_float": 3215.911653985224,
+      "conditional_second_moment_at_zero_float": 1.8192994277607968,
+      "conditional_second_moment_at_one_float": 0.9999928331663358,
+      "radius_of_max_conditional_second_moment_on_grid": 0.0,
+      "margin_diagnostics": [
+        {
+          "beta": 0.5,
+          "L": 1.0,
+          "grid_robust_variance": 1.172944858005075,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.17279061536315937,
+          "grid_to_sup_coefficient_square_ratio": 0.3157833551044507,
+          "grid_to_kappa_square_ratio": 1.1341470740890297e-07,
+          "candidate_localized_prefactor": 0.3535533905932738,
+          "candidate_log_excess_over_prefactor_divided_by_D": -0.04469135651924015,
+          "cdf_cap_max_float_violation": 1.1102230246251565e-16,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.000625,
+              "radial_mass": 0.025
+            },
+            {
+              "radius": 0.00125,
+              "radial_mass": 0.010355339059327374
+            },
+            {
+              "radius": 0.99875,
+              "radial_mass": 0.557079654241481
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 1.0,
+          "L": 1.0,
+          "grid_robust_variance": 1.039329517079125,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.17279061536315937,
+          "grid_to_sup_coefficient_square_ratio": 0.27981107527981897,
+          "grid_to_kappa_square_ratio": 1.0049513604709913e-07,
+          "candidate_localized_prefactor": 0.125,
+          "candidate_log_excess_over_prefactor_divided_by_D": -0.07227115185149359,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.99875,
+              "radial_mass": 0.803125
+            }
+          ],
+          "continuum_certification": false
+        },
+        {
+          "beta": 2.0,
+          "L": 1.0,
+          "grid_robust_variance": 1.0024077365029003,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.17279061536315937,
+          "grid_to_sup_coefficient_square_ratio": 0.2698708946590347,
+          "grid_to_kappa_square_ratio": 9.692508506602383e-08,
+          "candidate_localized_prefactor": 0.015625,
+          "candidate_log_excess_over_prefactor_divided_by_D": -0.11688656874182422,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 0.99875,
+              "radial_mass": 0.9592324218750001
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    },
+    {
+      "n": 1024,
+      "degree_budget": 128,
+      "kernel_power_r": 3,
+      "actual_degree_bound_d": 126,
+      "D_d_squared_over_n": 15.50390625,
+      "exact_reproduction_checks": 5,
+      "exact_antisymmetry": true,
+      "max_abs_inverse_coefficient_float": 1.1244780888335781,
+      "proved_U1_bound_float": 87830047850722.36,
+      "old_source_bound_sqrt_n_plus_1_kappa_float": 80178.79756185407,
+      "kappa_float": 2504.364887787949,
+      "conditional_second_moment_at_zero_float": 0.7277511771235734,
+      "conditional_second_moment_at_one_float": 0.9999999829759559,
+      "radius_of_max_conditional_second_moment_on_grid": 0.08750000000000001,
+      "margin_diagnostics": [
+        {
+          "beta": 4.0,
+          "L": 1.0,
+          "grid_robust_variance": 1.0000002801923629,
+          "analytic_mesh_error_bound_evaluated_in_float": 0.036157219171958736,
+          "grid_to_sup_coefficient_square_ratio": 0.7908572986421407,
+          "grid_to_kappa_square_ratio": 1.5944279885137882e-07,
+          "candidate_localized_prefactor": 0.0002292357530677691,
+          "candidate_log_excess_over_prefactor_divided_by_D": -0.4326025813545786,
+          "cdf_cap_max_float_violation": 0.0,
+          "large_atoms_in_grid_optimizer": [
+            {
+              "radius": 1.0,
+              "radial_mass": 0.999765479489746
+            }
+          ],
+          "continuum_certification": false
+        }
+      ]
+    }
+  ]
+}

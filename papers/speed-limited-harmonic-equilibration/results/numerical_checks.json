@@ -1,0 +1,113 @@
+{
+  "cases": [
+    {
+      "kind": "fixed",
+      "initial": 0.0,
+      "final": 0.0,
+      "level": 1.0,
+      "displacement": 1.2418163864065586,
+      "energy": 1.1112097554913511,
+      "grid_energy": 1.1112100817674198
+    },
+    {
+      "kind": "fixed",
+      "initial": 0.9,
+      "final": -0.38,
+      "level": 0.12,
+      "displacement": 0.2219896271507019,
+      "energy": 0.12825016539231207,
+      "grid_energy": 0.12825035626793693
+    },
+    {
+      "kind": "fixed",
+      "initial": -0.4,
+      "final": 1.1,
+      "level": 0.0,
+      "displacement": 0.20412564433034686,
+      "energy": 0.1761392396919364,
+      "grid_energy": 0.1761398349439058
+    },
+    {
+      "kind": "fixed",
+      "initial": 0.65,
+      "final": -0.35,
+      "level": -0.55,
+      "displacement": -0.500486046558939,
+      "energy": 0.3449738058727669,
+      "grid_energy": 0.34497442545042334
+    },
+    {
+      "kind": "free",
+      "level": 0.3,
+      "terminal": 0.05294117647058823,
+      "displacement": 0.46494263491956545,
+      "energy": 0.1368770621553431,
+      "grid_energy": 0.13687746958996636
+    },
+    {
+      "kind": "free",
+      "level": 1.2,
+      "terminal": 0.4114285714285714,
+      "displacement": 1.6261339865257138,
+      "energy": 1.829255024121403,
+      "grid_energy": 1.8292551569029338
+    },
+    {
+      "kind": "free",
+      "level": 3.0,
+      "terminal": 1.1992411995476748,
+      "displacement": 2.533945552691737,
+      "energy": 5.0158142757107935,
+      "grid_energy": 5.015857512751253
+    },
+    {
+      "kind": "free",
+      "level": 10.0,
+      "terminal": 2.0001928000768117,
+      "displacement": 2.698885217832395,
+      "energy": 6.568360736518363,
+      "grid_energy": 6.568791124131437
+    },
+    {
+      "kind": "actuator",
+      "level": 0.4,
+      "terminal": 0.7407407407407408,
+      "displacement": 1.1868401359613034,
+      "energy": 0.46863299290861293,
+      "grid_energy": 0.468633314767256
+    },
+    {
+      "kind": "actuator",
+      "level": 0.8,
+      "terminal": 1.362962962962963,
+      "displacement": 2.2737942642742692,
+      "energy": 1.7657084963885135,
+      "grid_energy": 1.7657086462827074
+    },
+    {
+      "kind": "actuator",
+      "level": 1.7568774178427444,
+      "terminal": 2.370562887046308,
+      "displacement": 4.315971317369206,
+      "energy": 6.837066350361081,
+      "grid_energy": 6.837066518551444
+    }
+  ],
+  "cells": 170,
+  "fixed_frontier": {
+    "prediction": 1.7261949571694943,
+    "ratios": [
+      1.730543879678498,
+      1.7283782577940163,
+      1.7268517953888964
+    ]
+  },
+  "free_frontier": {
+    "prediction": 5.6663759866018175,
+    "ratios": [
+      5.653256876458426,
+      5.6637458416935615,
+      5.6658497023121255
+    ]
+  }
+}

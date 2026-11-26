@@ -1,0 +1,292 @@
+{
+  "schema": "robust-crt-independent-author-comparison/v1",
+  "python": "3.12.14",
+  "comparison_script_sha256": "4cb15a901bbdda0ff2bd33eab5ebb30ce581c392bc22fdd0422c08d2db2b5fba",
+  "reference_report_sha256": "629466ccef20e1afa090fb98e383f021b3439207cf644e7fdbf6a76e299db4e5",
+  "reference_generator_sha256": "f4492e92969ce305cd53c83fbfd1d53c4c12f3084691da102167b7710300c588",
+  "author_solver_sha256": "61356b1b0ae0675f5b8f1abedc2b32ce5f6d816d0f9eb57685fab3e4e13009ef",
+  "manuscript_sha256_at_run": "4443d1e433e826fce9d5dc3dad64f08643e5cb749dafdc379911d55c33b2364c",
+  "comparisons": [
+    {
+      "channels": 5,
+      "budget_range": [
+        0,
+        35
+      ],
+      "global_capacity_comparisons": 36,
+      "integer_threshold_queries": 57,
+      "rational_ceiling_queries": 57,
+      "all_passed": true,
+      "reference_all_tuples": 278256,
+      "reference_scope": "Full interval enumeration, including every maximizer in the finite range."
+    },
+    {
+      "channels": 6,
+      "budget_range": [
+        0,
+        50
+      ],
+      "global_capacity_comparisons": 51,
+      "integer_threshold_queries": 75,
+      "rational_ceiling_queries": 75,
+      "all_passed": true,
+      "reference_all_tuples": 13983816,
+      "reference_scope": "Full interval enumeration, including every maximizer in the finite range."
+    }
+  ],
+  "large_input_runs": [
+    {
+      "channels": 5,
+      "threshold_description": "10^4",
+      "threshold_bits": 14,
+      "largest_base": 16,
+      "bases": [
+        7,
+        11,
+        13,
+        15,
+        16
+      ],
+      "elapsed_seconds": 0.00013635300092573743,
+      "search_counts": {
+        "graph_gcd_evaluations": 340,
+        "anchor_candidates": 4,
+        "search_nodes": 25,
+        "completed_cliques": 5,
+        "pruned_cardinality": 10,
+        "pruned_product_bound": 10
+      },
+      "finite_feasibility_passed": true,
+      "independent_global_optimality_check": false
+    },
+    {
+      "channels": 5,
+      "threshold_description": "10^8",
+      "threshold_bits": 27,
+      "largest_base": 105,
+      "bases": [
+        97,
+        101,
+        103,
+        104,
+        105
+      ],
+      "elapsed_seconds": 0.0002410020006209379,
+      "search_counts": {
+        "graph_gcd_evaluations": 630,
+        "anchor_candidates": 3,
+        "search_nodes": 19,
+        "completed_cliques": 4,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 15
+      },
+      "finite_feasibility_passed": true,
+      "independent_global_optimality_check": false
+    },
+    {
+      "channels": 5,
+      "threshold_description": "10^20",
+      "threshold_bits": 67,
+      "largest_base": 100005,
+      "bases": [
+        99997,
+        100001,
+        100003,
+        100004,
+        100005
+      ],
+      "elapsed_seconds": 0.00018322999858355615,
+      "search_counts": {
+        "graph_gcd_evaluations": 630,
+        "anchor_candidates": 3,
+        "search_nodes": 19,
+        "completed_cliques": 4,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 15
+      },
+      "finite_feasibility_passed": true,
+      "independent_global_optimality_check": false
+    },
+    {
+      "channels": 5,
+      "threshold_description": "10^100",
+      "threshold_bits": 333,
+      "largest_base": 10000000000000000000000006,
+      "bases": [
+        9999999999999999999999997,
+        10000000000000000000000001,
+        10000000000000000000000003,
+        10000000000000000000000005,
+        10000000000000000000000006
+      ],
+      "elapsed_seconds": 0.00039137400017352775,
+      "search_counts": {
+        "graph_gcd_evaluations": 840,
+        "anchor_candidates": 4,
+        "search_nodes": 28,
+        "completed_cliques": 6,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 22
+      },
+      "finite_feasibility_passed": true,
+      "independent_global_optimality_check": false
+    },
+    {
+      "channels": 5,
+      "threshold_description": "10^500",
+      "threshold_bits": 1661,
+      "largest_base": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005,
+      "bases": [
+        99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997,
+        100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
+        100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+        100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004,
+        100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005
+      ],
+      "elapsed_seconds": 0.0012127740010328125,
+      "search_counts": {
+        "graph_gcd_evaluations": 630,
+        "anchor_candidates": 3,
+        "search_nodes": 19,
+        "completed_cliques": 4,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 15
+      },
+      "finite_feasibility_passed": true,
+      "independent_global_optimality_check": false
+    },
+    {
+      "channels": 6,
+      "threshold_description": "10^4",
+      "threshold_bits": 14,
+      "largest_base": 13,
+      "bases": [
+        5,
+        7,
+        8,
+        9,
+        11,
+        13
+      ],
+      "elapsed_seconds": 7.739299871900585e-05,
+      "search_counts": {
+        "graph_gcd_evaluations": 202,
+        "anchor_candidates": 4,
+        "search_nodes": 25,
+        "completed_cliques": 1,
+        "pruned_cardinality": 21,
+        "pruned_product_bound": 3
+      },
+      "finite_feasibility_passed": true,
+      "independent_global_optimality_check": false
+    },
+    {
+      "channels": 6,
+      "threshold_description": "10^8",
+      "threshold_bits": 27,
+      "largest_base": 47,
+      "bases": [
+        37,
+        41,
+        43,
+        45,
+        46,
+        47
+      ],
+      "elapsed_seconds": 0.0007011769994278438,
+      "search_counts": {
+        "graph_gcd_evaluations": 3900,
+        "anchor_candidates": 5,
+        "search_nodes": 41,
+        "completed_cliques": 7,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 34
+      },
+      "finite_feasibility_passed": true,
+      "independent_global_optimality_check": false
+    },
+    {
+      "channels": 6,
+      "threshold_description": "10^20",
+      "threshold_bits": 67,
+      "largest_base": 10007,
+      "bases": [
+        9997,
+        10001,
+        10003,
+        10005,
+        10006,
+        10007
+      ],
+      "elapsed_seconds": 0.0005777489986940054,
+      "search_counts": {
+        "graph_gcd_evaluations": 3120,
+        "anchor_candidates": 4,
+        "search_nodes": 25,
+        "completed_cliques": 4,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 21
+      },
+      "finite_feasibility_passed": true,
+      "independent_global_optimality_check": false
+    },
+    {
+      "channels": 6,
+      "threshold_description": "10^100",
+      "threshold_bits": 333,
+      "largest_base": 100000000000000000007,
+      "bases": [
+        99999999999999999997,
+        100000000000000000001,
+        100000000000000000003,
+        100000000000000000005,
+        100000000000000000006,
+        100000000000000000007
+      ],
+      "elapsed_seconds": 0.0007865099996706704,
+      "search_counts": {
+        "graph_gcd_evaluations": 3120,
+        "anchor_candidates": 4,
+        "search_nodes": 30,
+        "completed_cliques": 5,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 25
+      },
+      "finite_feasibility_passed": true,
+      "independent_global_optimality_check": false
+    },
+    {
+      "channels": 6,
+      "threshold_description": "10^500",
+      "threshold_bits": 1661,
+      "largest_base": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007,
+      "bases": [
+        9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997,
+        10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
+        10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+        10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005,
+        10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006,
+        10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007
+      ],
+      "elapsed_seconds": 0.001854505999290268,
+      "search_counts": {
+        "graph_gcd_evaluations": 3120,
+        "anchor_candidates": 4,
+        "search_nodes": 25,
+        "completed_cliques": 4,
+        "pruned_cardinality": 0,
+        "pruned_product_bound": 21
+      },
+      "finite_feasibility_passed": true,
+      "independent_global_optimality_check": false
+    }
+  ],
+  "total_elapsed_seconds": 0.0814467970012629,
+  "method_separation": "The full-interval reference predates inspection of the author solver; it uses no window, templates, graph search, pruning, root estimate, or author code. Author results are compared by capacities and minima, not by deterministic witness equality.",
+  "scope_limit": "Finite implementation comparison and large-input feasibility/timing observations only. All-input correctness and practical worst-case bounds depend on the written proofs. Timing observations are specific to this runtime and are not hardware-independent performance guarantees.",
+  "formalization": {
+    "lean_written": false,
+    "lean_run": false
+  },
+  "status": "PASS_ALL_STATED_FINITE_CHECKS"
+}

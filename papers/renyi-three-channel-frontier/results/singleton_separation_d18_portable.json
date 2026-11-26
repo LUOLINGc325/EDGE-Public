@@ -1,0 +1,65 @@
+{
+  "schema": "renyi-three-portable-singleton-separation-v1",
+  "verification_origin": "New exact BigInt rational/Sturm computation in cloud V8 after workspace unavailability; not a recovered original JSON.",
+  "dimension": 18,
+  "scope": "All mixtures of singleton orbits and the constant channel",
+  "witness": {
+    "high_count": 2,
+    "ratio": "3",
+    "low": "9/11",
+    "high": "27/11",
+    "cost": "3328/1683",
+    "signal": "576/121"
+  },
+  "dual": {
+    "tau": "19/10",
+    "polynomial_coefficients_descending": [
+      "38",
+      "1653",
+      "18126",
+      "-92338",
+      "12654",
+      "12597",
+      "10982"
+    ],
+    "root_interval": [
+      "35719/10000",
+      "893/250"
+    ],
+    "root_count_above_one": 1,
+    "root_count_in_interval": 1,
+    "sturm_variations": {
+      "at_one": 3,
+      "at_lower": 3,
+      "at_upper": 2,
+      "at_positive_infinity": 2
+    },
+    "endpoint_signal": [
+      "22489876674/4702256329",
+      "126515394/26450449"
+    ],
+    "endpoint_cost": [
+      "17469941468890621291533/8748865365665300000000",
+      "511889742050193/256330012937500"
+    ],
+    "support_upper": "2288993366639342180331852781977/2314114171623963687197000000000",
+    "frontier_upper": "18484982566066660076382578632067291/3894654150843130885552551000000000"
+  },
+  "simple_threshold": "19/4",
+  "strict_gap": "603445490143410985088851047259799/42841195659274439741078061000000000",
+  "strict_gap_exceeds": "5/484",
+  "verified": {
+    "integer_polynomial_from_derivative": true,
+    "all_positive_domain_roots_accounted_for": true,
+    "direct_moment_formulas": true,
+    "rational_interval_arithmetic": true,
+    "strict_separation": true
+  },
+  "theoretical_inputs": [
+    "The scalar support branch tends to minus infinity at r to infinity and is zero at r=1.",
+    "Signal and cost are strictly increasing for r>1.",
+    "A support upper bound also bounds every mixture of singleton orbits."
+  ],
+  "attribution": "The qualitative failure of singleton optimality above order two is due to Shvets, arXiv:2603.21197v2. This is a rational witness and exhaustive singleton-mixture verification refinement.",
+  "lean_status": "Not kernel verified; Lean formalization was paused by the user."
+}

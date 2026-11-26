@@ -1,0 +1,43 @@
+{
+  "atlas_by_order": {
+    "1": 1,
+    "2": 2,
+    "3": 4,
+    "4": 11,
+    "5": 34,
+    "6": 156,
+    "7": 1044
+  },
+  "atlas_square_by_order": {
+    "1": 0,
+    "2": 0,
+    "3": 2,
+    "4": 6,
+    "5": 21,
+    "6": 89,
+    "7": 516
+  },
+  "connected_atlas_checked": 996,
+  "disconnected_atlas_checked": 256,
+  "deleted_diagonal_checked_by_order": {
+    "2": 1,
+    "3": 2,
+    "4": 6,
+    "5": 21,
+    "6": 112,
+    "7": 853
+  },
+  "connected_product_pairs_checked": 139,
+  "connected_square_products": 93,
+  "nonsquare_input_products_checked_by_mechanism": {
+    "i=False,ii=False": 101,
+    "i=False,ii=True": 10,
+    "i=True,ii=False": 6,
+    "i=True,ii=True": 3
+  },
+  "limitations": [
+    "Finite exhaustive checks support but do not prove the statements.",
+    "Product enumeration uses each factor of order at most five and product order at most sixteen.",
+    "Every nonempty unlabeled graph of order at most seven is tested directly for squarehood."
+  ]
+}

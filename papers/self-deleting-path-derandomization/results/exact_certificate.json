@@ -1,0 +1,30 @@
+{
+  "arithmetic": "integer, Boolean and finite-set operations; no floating point",
+  "counts": {
+    "colored_dp_oracle_comparisons": 184878,
+    "cover_graphs": 1099,
+    "exhaustive_instances": 735,
+    "named_regressions": 8,
+    "negative_path_queries": 11480,
+    "padding_and_parameter_checks": 25548,
+    "positive_path_queries": 15326,
+    "seeded_colored_dp_comparisons": 4000,
+    "seeded_instances": 500,
+    "simple_paths_in_cover_checks": 55043,
+    "solver_oracle_comparisons": 26806,
+    "strictly_shorter_padding_checks": 15675,
+    "universe_capped_checks": 16289
+  },
+  "efficient_GLP_family_implemented": false,
+  "finite_checks_prove_asymptotic_bound": false,
+  "scope": {
+    "colored_dp": "all color maps with p=min(k,n)-1 on the exhaustive instances for 2<=k<=n; independent simple-path oracle",
+    "exhaustive_original_instances": "all labelled simple undirected graphs on 1..3 vertices, all deletion maps, all ordered endpoints, k=1..n+1",
+    "padding": "m=1..7, p=1..4, mu=1..4, all admissible disjoint actual-edge pairs",
+    "seeded": "500 instances on 4..7 vertices, at most 9 edges",
+    "vertex_cover": "all labelled simple undirected graphs on 1..5 vertices and all simple paths"
+  },
+  "script_sha256": "bcd96657285138c63330b3c02c86bcc5b3201de532ea5acb69b50201aa4ca33f",
+  "seed": 202611240928,
+  "status": "PASS"
+}

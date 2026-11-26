@@ -1,0 +1,5 @@
+Exhaustive bipartite full-cover bounds: 689
+Exhaustive subdivision cores: 1100 seeded cores: 45, cube: 1
+Exact tree fillers q=1 through 8
+Exact ratio and square-root calibrations: 49 147
+All finite checks passed.

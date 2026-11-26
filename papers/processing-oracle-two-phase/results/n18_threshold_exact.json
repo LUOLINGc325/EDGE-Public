@@ -1,0 +1,35 @@
+{
+  "n": 18,
+  "p": "1260",
+  "x": "3",
+  "rho": "1001/1000",
+  "root_payoff": {
+    "full": "-71/125",
+    "postponing": "-71/125",
+    "two_phase": "153/500",
+    "two_phase_postponing": "153/500",
+    "execution_suffix": "5481/200",
+    "execution_suffix_postponing": "5481/200"
+  },
+  "states": 1330,
+  "suffix_errors": [],
+  "local_strict_gaps": [
+    {
+      "state": [
+        18,
+        0,
+        0
+      ],
+      "values": {
+        "full": "53723/250",
+        "postponing": "53723/250",
+        "two_phase": "107883/500",
+        "two_phase_postponing": "107883/500",
+        "execution_suffix": "48573/200",
+        "execution_suffix_postponing": "48573/200"
+      }
+    }
+  ],
+  "known_long_dominance_violations": [],
+  "arithmetic": "exact rational Fraction"
+}

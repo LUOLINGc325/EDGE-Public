@@ -1,0 +1,1355 @@
+{
+  "schema_version": 1,
+  "seed": 20261124,
+  "convention": "row generator: Q*1=0; row transition matrix P=expm(delta*Q)",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "models": [
+    {
+      "name": "Heterogeneous C5",
+      "states": 5,
+      "undirected_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "directed_edge_order": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "rates": [
+        2.0,
+        0.5,
+        1.2,
+        0.6,
+        2.2,
+        0.4,
+        1.6,
+        0.7,
+        2.6,
+        0.3
+      ]
+    },
+    {
+      "name": "Path on 5 states",
+      "states": 5,
+      "undirected_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "directed_edge_order": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "rates": [
+        0.2,
+        0.55,
+        0.25,
+        0.6000000000000001,
+        0.30000000000000004,
+        0.65,
+        0.35,
+        0.7
+      ]
+    },
+    {
+      "name": "Petersen network",
+      "states": 10,
+      "undirected_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          6
+        ]
+      ],
+      "directed_edge_order": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "rates": [
+        0.2,
+        0.55,
+        0.25,
+        0.6000000000000001,
+        0.30000000000000004,
+        0.65,
+        0.35,
+        0.7,
+        0.4,
+        0.75,
+        0.45,
+        0.8,
+        0.5,
+        0.2,
+        0.55,
+        0.25,
+        0.6000000000000001,
+        0.30000000000000004,
+        0.65,
+        0.35,
+        0.7,
+        0.4,
+        0.75,
+        0.45,
+        0.8,
+        0.5,
+        0.2,
+        0.55,
+        0.25,
+        0.6000000000000001
+      ]
+    }
+  ],
+  "exact_data_illustrations": [
+    {
+      "model": "Heterogeneous C5",
+      "delta": 0.1,
+      "max_escape_rate": 3.3,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 1.1102230246251565e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.09562208308890899,
+      "principal_log_relative_frobenius_error": 2.8407376804993025e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.0713623450710601e-14,
+      "principal_log_min_allowed_real_rate": 0.30000000000000293,
+      "true_entropy_rate": 1.7657296055507197,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 8.646125977828673e-16,
+      "reconstruction_rate_l2_error": 5.426765147453324e-15,
+      "sigma_min_augmented": 0.07571906043191687,
+      "linear_residual": 2.3784669645040825e-16,
+      "exponential_residual": 4.77073694774465e-16,
+      "minimum_reconstructed_rate": 0.30000000000000165,
+      "reconstructed_entropy_rate": 1.7657296055507126
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 0.25,
+      "max_escape_rate": 3.3,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 2.220446049250313e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.12330522601045366,
+      "principal_log_relative_frobenius_error": 8.240851763049411e-16,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 4.594771343206099e-15,
+      "principal_log_min_allowed_real_rate": 0.2999999999999988,
+      "true_entropy_rate": 1.7657296055507197,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 7.003194854850259e-16,
+      "reconstruction_rate_l2_error": 3.2167742235357054e-15,
+      "sigma_min_augmented": 0.1339702809966164,
+      "linear_residual": 6.72772350471518e-16,
+      "exponential_residual": 7.014227331797922e-16,
+      "minimum_reconstructed_rate": 0.29999999999999927,
+      "reconstructed_entropy_rate": 1.765729605550723
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 0.5,
+      "max_escape_rate": 3.3,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 2.220446049250313e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.08105818386966493,
+      "principal_log_relative_frobenius_error": 3.3266296560212422e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.8050381612444912e-14,
+      "principal_log_min_allowed_real_rate": 0.29999999999999993,
+      "true_entropy_rate": 1.7657296055507197,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.6379024997894365e-15,
+      "reconstruction_rate_l2_error": 9.711278881628009e-15,
+      "sigma_min_augmented": 0.15266532683264936,
+      "linear_residual": 7.608092235258222e-16,
+      "exponential_residual": 1.935254897449953e-15,
+      "minimum_reconstructed_rate": 0.30000000000000215,
+      "reconstructed_entropy_rate": 1.765729605550708
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 0.75,
+      "max_escape_rate": 3.3,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 4.440892098500626e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.03949573163930632,
+      "principal_log_relative_frobenius_error": 3.935740062867614e-14,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 2.2441326245367447e-13,
+      "principal_log_min_allowed_real_rate": 0.3000000000000115,
+      "true_entropy_rate": 1.7657296055507197,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 7.101473958277617e-15,
+      "reconstruction_rate_l2_error": 3.318847348562505e-14,
+      "sigma_min_augmented": 0.1315068765074045,
+      "linear_residual": 7.0517979557293665e-16,
+      "exponential_residual": 4.400177987754509e-15,
+      "minimum_reconstructed_rate": 0.2999999999999998,
+      "reconstructed_entropy_rate": 1.7657296055507081
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 1.0,
+      "max_escape_rate": 3.3,
+      "fast_sampling_sufficient_condition": false,
+      "propagator_rowsum_residual": 2.220446049250313e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.016898284432762426,
+      "principal_log_relative_frobenius_error": 4.762559893320061e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.9783403116285483e-14,
+      "principal_log_min_allowed_real_rate": 0.29999999999999644,
+      "true_entropy_rate": 1.7657296055507197,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 9.453711256266695e-16,
+      "reconstruction_rate_l2_error": 5.773426602417214e-15,
+      "sigma_min_augmented": 0.09989927117774879,
+      "linear_residual": 6.825414267879471e-16,
+      "exponential_residual": 1.1328049796612015e-15,
+      "minimum_reconstructed_rate": 0.3000000000000015,
+      "reconstructed_entropy_rate": 1.7657296055507095
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 1.25,
+      "max_escape_rate": 3.3,
+      "fast_sampling_sufficient_condition": false,
+      "propagator_rowsum_residual": 6.661338147750939e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.006691457704322449,
+      "principal_log_relative_frobenius_error": 1.2653803879053253e-14,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 7.343065152379155e-14,
+      "principal_log_min_allowed_real_rate": 0.30000000000000354,
+      "true_entropy_rate": 1.7657296055507197,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 3.876395572044529e-15,
+      "reconstruction_rate_l2_error": 1.7131284500746128e-14,
+      "sigma_min_augmented": 0.06942706950868228,
+      "linear_residual": 7.845616923568706e-16,
+      "exponential_residual": 1.8622626159750123e-15,
+      "minimum_reconstructed_rate": 0.29999999999999666,
+      "reconstructed_entropy_rate": 1.76572960555072
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 1.5,
+      "max_escape_rate": 3.3,
+      "fast_sampling_sufficient_condition": false,
+      "propagator_rowsum_residual": 6.661338147750939e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.0025089555180265203,
+      "principal_log_relative_frobenius_error": 3.724592835253696e-14,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 2.1796379138943237e-13,
+      "principal_log_min_allowed_real_rate": 0.30000000000001825,
+      "true_entropy_rate": 1.7657296055507197,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 4.4025533242894185e-15,
+      "reconstruction_rate_l2_error": 2.073755747155557e-14,
+      "sigma_min_augmented": 0.04484876408609334,
+      "linear_residual": 1.1330934568814759e-15,
+      "exponential_residual": 2.0209223241054003e-15,
+      "minimum_reconstructed_rate": 0.3000000000000007,
+      "reconstructed_entropy_rate": 1.7657296055507095
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 2.0,
+      "max_escape_rate": 3.3,
+      "fast_sampling_sufficient_condition": false,
+      "propagator_rowsum_residual": 4.440892098500626e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.00031168672826757963,
+      "principal_log_relative_frobenius_error": 3.66813188379541e-14,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.5917988740962344e-13,
+      "principal_log_min_allowed_real_rate": 0.2999999999999686,
+      "true_entropy_rate": 1.7657296055507197,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 5.097114826508297e-15,
+      "reconstruction_rate_l2_error": 2.5380740066253617e-14,
+      "sigma_min_augmented": 0.014756277368096647,
+      "linear_residual": 1.2445104380645817e-16,
+      "exponential_residual": 1.6645248024572891e-15,
+      "minimum_reconstructed_rate": 0.30000000000000454,
+      "reconstructed_entropy_rate": 1.765729605550697
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 2.5,
+      "max_escape_rate": 3.3,
+      "fast_sampling_sufficient_condition": false,
+      "propagator_rowsum_residual": 9.992007221626409e-16,
+      "propagator_eigenvalue_min_separation_numerical": 3.359651693066229e-05,
+      "principal_log_relative_frobenius_error": 6.676110877024366e-13,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 3.0212297946934667e-12,
+      "principal_log_min_allowed_real_rate": 0.3000000000001152,
+      "true_entropy_rate": 1.7657296055507197,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.1217855983659918e-13,
+      "reconstruction_rate_l2_error": 5.788723664378219e-13,
+      "sigma_min_augmented": 0.0034381729278805417,
+      "linear_residual": 8.129467339777178e-16,
+      "exponential_residual": 1.7694489661618756e-14,
+      "minimum_reconstructed_rate": 0.29999999999998517,
+      "reconstructed_entropy_rate": 1.7657296055512148
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 3.0,
+      "max_escape_rate": 3.3,
+      "fast_sampling_sufficient_condition": false,
+      "propagator_rowsum_residual": 1.1102230246251565e-15,
+      "propagator_eigenvalue_min_separation_numerical": 3.1054320379557577e-06,
+      "principal_log_relative_frobenius_error": 0.4785338669613329,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.8887178556312485,
+      "principal_log_min_allowed_real_rate": 0.6906879143191414,
+      "true_entropy_rate": 1.7657296055507197,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 6.67732707596751e-13,
+      "reconstruction_rate_l2_error": 3.03913232355029e-12,
+      "sigma_min_augmented": 0.0024953122684610845,
+      "linear_residual": 2.036987939456484e-15,
+      "exponential_residual": 4.1055612219439803e-14,
+      "minimum_reconstructed_rate": 0.29999999999978477,
+      "reconstructed_entropy_rate": 1.7657296055496254
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 4.0,
+      "max_escape_rate": 3.3,
+      "fast_sampling_sufficient_condition": false,
+      "propagator_rowsum_residual": 8.881784197001252e-16,
+      "propagator_eigenvalue_min_separation_numerical": 8.518610571120193e-09,
+      "principal_log_relative_frobenius_error": 0.3589004002180824,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.4165383924688235,
+      "principal_log_min_allowed_real_rate": 0.8059597559000282,
+      "true_entropy_rate": 1.7657296055507197,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 3.38271268887578e-11,
+      "reconstruction_rate_l2_error": 1.5481978986749335e-10,
+      "sigma_min_augmented": 0.0007019464098043745,
+      "linear_residual": 2.8508784460015925e-16,
+      "exponential_residual": 5.646219524366059e-13,
+      "minimum_reconstructed_rate": 0.29999999998992943,
+      "reconstructed_entropy_rate": 1.7657296054910596
+    },
+    {
+      "model": "Path on 5 states",
+      "delta": 0.1,
+      "max_escape_rate": 1.0,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 1.1102230246251565e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.020846603624748328,
+      "principal_log_relative_frobenius_error": 8.458586751850089e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.2663856913766519e-14,
+      "principal_log_min_allowed_real_rate": 0.19999999999999996,
+      "true_entropy_rate": 1.0014835710813625e-32,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 2.0497062120927547e-15,
+      "reconstruction_rate_l2_error": 3.3006969732784794e-15,
+      "sigma_min_augmented": 0.04535389056439305,
+      "linear_residual": 4.489878920392615e-16,
+      "exponential_residual": 4.445203035361461e-16,
+      "minimum_reconstructed_rate": 0.19999999999999826,
+      "reconstructed_entropy_rate": 8.551128953079322e-32
+    },
+    {
+      "model": "Path on 5 states",
+      "delta": 0.25,
+      "max_escape_rate": 1.0,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 1.1102230246251565e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.051304508435556895,
+      "principal_log_relative_frobenius_error": 5.011422985890735e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 8.145893965707694e-15,
+      "principal_log_min_allowed_real_rate": 0.19999999999999737,
+      "true_entropy_rate": 1.0014835710813625e-32,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.47449169623695e-15,
+      "reconstruction_rate_l2_error": 2.222526742553255e-15,
+      "sigma_min_augmented": 0.09909333855163356,
+      "linear_residual": 8.970170231969015e-16,
+      "exponential_residual": 6.384611341209443e-16,
+      "minimum_reconstructed_rate": 0.2000000000000004,
+      "reconstructed_entropy_rate": 3.794081990442857e-32
+    },
+    {
+      "model": "Path on 5 states",
+      "delta": 0.5,
+      "max_escape_rate": 1.0,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 0.0,
+      "propagator_eigenvalue_min_separation_numerical": 0.09997686428529151,
+      "principal_log_relative_frobenius_error": 2.035369101509345e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 3.3661865713221165e-15,
+      "principal_log_min_allowed_real_rate": 0.19999999999999823,
+      "true_entropy_rate": 1.0014835710813625e-32,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 6.891140455737505e-16,
+      "reconstruction_rate_l2_error": 1.0148829165269725e-15,
+      "sigma_min_augmented": 0.15951854579096553,
+      "linear_residual": 4.720541606767665e-16,
+      "exponential_residual": 5.772657005740855e-16,
+      "minimum_reconstructed_rate": 0.2000000000000007,
+      "reconstructed_entropy_rate": 1.2325951644078307e-32
+    },
+    {
+      "model": "Path on 5 states",
+      "delta": 0.75,
+      "max_escape_rate": 1.0,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 0.0,
+      "propagator_eigenvalue_min_separation_numerical": 0.13248096230487183,
+      "principal_log_relative_frobenius_error": 1.2517995247952173e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.1597692211692992e-15,
+      "principal_log_min_allowed_real_rate": 0.20000000000000073,
+      "true_entropy_rate": 1.0014835710813625e-32,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 5.371532093482517e-16,
+      "reconstruction_rate_l2_error": 8.653332088726038e-16,
+      "sigma_min_augmented": 0.1943960391854387,
+      "linear_residual": 3.4910165809888115e-16,
+      "exponential_residual": 3.6859068553200017e-16,
+      "minimum_reconstructed_rate": 0.19999999999999996,
+      "reconstructed_entropy_rate": 6.625199008692096e-32
+    },
+    {
+      "model": "Path on 5 states",
+      "delta": 1.0,
+      "max_escape_rate": 1.0,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 1.1102230246251565e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.12557637461650284,
+      "principal_log_relative_frobenius_error": 9.818540965880208e-16,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.1948702467492515e-15,
+      "principal_log_min_allowed_real_rate": 0.19999999999999934,
+      "true_entropy_rate": 1.0014835710813625e-32,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.6390046139298352e-15,
+      "reconstruction_rate_l2_error": 2.308389691999729e-15,
+      "sigma_min_augmented": 0.21254134749907974,
+      "linear_residual": 1.3483897137464382e-15,
+      "exponential_residual": 1.434707650196855e-15,
+      "minimum_reconstructed_rate": 0.20000000000000132,
+      "reconstructed_entropy_rate": 9.706686919711675e-32
+    },
+    {
+      "model": "Path on 5 states",
+      "delta": 1.25,
+      "max_escape_rate": 1.0,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 2.220446049250313e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.11173314207712157,
+      "principal_log_relative_frobenius_error": 1.9559175042710177e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 3.413719040604538e-15,
+      "principal_log_min_allowed_real_rate": 0.20000000000000057,
+      "true_entropy_rate": 1.0014835710813625e-32,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.3119586976044325e-15,
+      "reconstruction_rate_l2_error": 1.931955546129999e-15,
+      "sigma_min_augmented": 0.219944296488317,
+      "linear_residual": 5.482770736615792e-16,
+      "exponential_residual": 1.718476521656305e-15,
+      "minimum_reconstructed_rate": 0.1999999999999985,
+      "reconstructed_entropy_rate": 6.875569901462436e-32
+    },
+    {
+      "model": "Path on 5 states",
+      "delta": 1.5,
+      "max_escape_rate": 1.0,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 2.220446049250313e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.09555906858639117,
+      "principal_log_relative_frobenius_error": 4.425937022092301e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 5.4869569871575686e-15,
+      "principal_log_min_allowed_real_rate": 0.1999999999999997,
+      "true_entropy_rate": 1.0014835710813625e-32,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 2.131612296683907e-15,
+      "reconstruction_rate_l2_error": 3.03286026951349e-15,
+      "sigma_min_augmented": 0.22070017677036394,
+      "linear_residual": 1.360860216170985e-16,
+      "exponential_residual": 1.6925719693458547e-15,
+      "minimum_reconstructed_rate": 0.19999999999999934,
+      "reconstructed_entropy_rate": 2.6577833232543844e-32
+    },
+    {
+      "model": "Path on 5 states",
+      "delta": 2.0,
+      "max_escape_rate": 1.0,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 2.220446049250313e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.06495953877061478,
+      "principal_log_relative_frobenius_error": 2.827614078067945e-14,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 3.470371714716746e-14,
+      "principal_log_min_allowed_real_rate": 0.19999999999999868,
+      "true_entropy_rate": 1.0014835710813625e-32,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.433674314147535e-14,
+      "reconstruction_rate_l2_error": 1.9838461495476643e-14,
+      "sigma_min_augmented": 0.21217541290271894,
+      "linear_residual": 1.247913994732278e-15,
+      "exponential_residual": 8.934723428885386e-15,
+      "minimum_reconstructed_rate": 0.19999999999999563,
+      "reconstructed_entropy_rate": 2.600005424922768e-32
+    },
+    {
+      "model": "Path on 5 states",
+      "delta": 2.5,
+      "max_escape_rate": 1.0,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 3.3306690738754696e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.04160064033690939,
+      "principal_log_relative_frobenius_error": 1.745271813345376e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.774294056915531e-15,
+      "principal_log_min_allowed_real_rate": 0.2,
+      "true_entropy_rate": 1.0014835710813625e-32,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 6.301190631217258e-16,
+      "reconstruction_rate_l2_error": 9.824846503263461e-16,
+      "sigma_min_augmented": 0.19865840791786527,
+      "linear_residual": 9.20190269682604e-16,
+      "exponential_residual": 9.80942794965919e-16,
+      "minimum_reconstructed_rate": 0.20000000000000054,
+      "reconstructed_entropy_rate": 3.023710012687961e-32
+    },
+    {
+      "model": "Path on 5 states",
+      "delta": 3.0,
+      "max_escape_rate": 1.0,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 3.3306690738754696e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.025697309432815636,
+      "principal_log_relative_frobenius_error": 4.631697230984402e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 6.0918485573416484e-15,
+      "principal_log_min_allowed_real_rate": 0.1999999999999997,
+      "true_entropy_rate": 1.0014835710813625e-32,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 2.2939266228745776e-15,
+      "reconstruction_rate_l2_error": 3.1671775324958466e-15,
+      "sigma_min_augmented": 0.1849459215558056,
+      "linear_residual": 7.834457576903566e-16,
+      "exponential_residual": 2.5277208407147725e-15,
+      "minimum_reconstructed_rate": 0.2000000000000005,
+      "reconstructed_entropy_rate": 1.3866695599588098e-32
+    },
+    {
+      "model": "Path on 5 states",
+      "delta": 4.0,
+      "max_escape_rate": 1.0,
+      "fast_sampling_sufficient_condition": false,
+      "propagator_rowsum_residual": 4.440892098500626e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.009203450887316394,
+      "principal_log_relative_frobenius_error": 2.807405719314822e-14,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 3.490725641619931e-14,
+      "principal_log_min_allowed_real_rate": 0.1999999999999987,
+      "true_entropy_rate": 1.0014835710813625e-32,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.599316640867296e-14,
+      "reconstruction_rate_l2_error": 2.1891830878690996e-14,
+      "sigma_min_augmented": 0.1627647783851538,
+      "linear_residual": 2.5889878414119997e-16,
+      "exponential_residual": 9.626058605425871e-15,
+      "minimum_reconstructed_rate": 0.1999999999999969,
+      "reconstructed_entropy_rate": 3.343414383456246e-31
+    },
+    {
+      "model": "Petersen network",
+      "delta": 0.1,
+      "max_escape_rate": 2.05,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 1.1102230246251565e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.015828923207788836,
+      "principal_log_relative_frobenius_error": 6.117202922271605e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 2.7384490289984207e-14,
+      "principal_log_min_allowed_real_rate": 0.19999999999999382,
+      "true_entropy_rate": 0.120806194761192,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 2.3869607995095205e-15,
+      "reconstruction_rate_l2_error": 9.028586272622012e-15,
+      "sigma_min_augmented": 0.05704752204447956,
+      "linear_residual": 2.472002529031284e-16,
+      "exponential_residual": 1.0771446110499795e-15,
+      "minimum_reconstructed_rate": 0.19999999999999915,
+      "reconstructed_entropy_rate": 0.12080619476119091
+    },
+    {
+      "model": "Petersen network",
+      "delta": 0.25,
+      "max_escape_rate": 2.05,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 2.220446049250313e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.0301375548063094,
+      "principal_log_relative_frobenius_error": 3.741697288126726e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.534245689113477e-14,
+      "principal_log_min_allowed_real_rate": 0.2000000000000011,
+      "true_entropy_rate": 0.120806194761192,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.882979969056274e-15,
+      "reconstruction_rate_l2_error": 7.361090530576702e-15,
+      "sigma_min_augmented": 0.11162714404513974,
+      "linear_residual": 2.2191285229788999e-16,
+      "exponential_residual": 1.831816975436831e-15,
+      "minimum_reconstructed_rate": 0.19999999999999968,
+      "reconstructed_entropy_rate": 0.12080619476119002
+    },
+    {
+      "model": "Petersen network",
+      "delta": 0.5,
+      "max_escape_rate": 2.05,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 2.220446049250313e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.03373052601468441,
+      "principal_log_relative_frobenius_error": 1.3854089970691022e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 3.848520591513502e-15,
+      "principal_log_min_allowed_real_rate": 0.19999999999999915,
+      "true_entropy_rate": 0.120806194761192,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.7887122595655043e-15,
+      "reconstruction_rate_l2_error": 6.813414370160524e-15,
+      "sigma_min_augmented": 0.14967541964189585,
+      "linear_residual": 3.3512671568970157e-16,
+      "exponential_residual": 2.307001243859051e-15,
+      "minimum_reconstructed_rate": 0.19999999999999946,
+      "reconstructed_entropy_rate": 0.12080619476119209
+    },
+    {
+      "model": "Petersen network",
+      "delta": 0.75,
+      "max_escape_rate": 2.05,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 3.3306690738754696e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.028316614261481063,
+      "principal_log_relative_frobenius_error": 1.6018332417130772e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 4.288396788604088e-15,
+      "principal_log_min_allowed_real_rate": 0.1999999999999991,
+      "true_entropy_rate": 0.120806194761192,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.814499379020779e-15,
+      "reconstruction_rate_l2_error": 6.817879051857152e-15,
+      "sigma_min_augmented": 0.15223976722062413,
+      "linear_residual": 3.255139053650126e-16,
+      "exponential_residual": 2.6803953359901084e-15,
+      "minimum_reconstructed_rate": 0.1999999999999956,
+      "reconstructed_entropy_rate": 0.12080619476119342
+    },
+    {
+      "model": "Petersen network",
+      "delta": 1.0,
+      "max_escape_rate": 2.05,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 3.3306690738754696e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.021122046773663614,
+      "principal_log_relative_frobenius_error": 7.312965054002234e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.5325393113945722e-14,
+      "principal_log_min_allowed_real_rate": 0.19999999999999726,
+      "true_entropy_rate": 0.120806194761192,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 5.659390715864771e-15,
+      "reconstruction_rate_l2_error": 1.7371975091097222e-14,
+      "sigma_min_augmented": 0.1393059117886789,
+      "linear_residual": 1.5868403759526956e-15,
+      "exponential_residual": 6.411169280936088e-15,
+      "minimum_reconstructed_rate": 0.199999999999993,
+      "reconstructed_entropy_rate": 0.120806194761192
+    },
+    {
+      "model": "Petersen network",
+      "delta": 1.25,
+      "max_escape_rate": 2.05,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 2.220446049250313e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.014425147898669973,
+      "principal_log_relative_frobenius_error": 2.8502663390389174e-14,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 6.35390422279051e-14,
+      "principal_log_min_allowed_real_rate": 0.19999999999999168,
+      "true_entropy_rate": 0.120806194761192,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.4893574228166525e-14,
+      "reconstruction_rate_l2_error": 4.400298789542435e-14,
+      "sigma_min_augmented": 0.1209373428386886,
+      "linear_residual": 1.3509031703807257e-15,
+      "exponential_residual": 1.3068726483977156e-14,
+      "minimum_reconstructed_rate": 0.19999999999999635,
+      "reconstructed_entropy_rate": 0.12080619476118833
+    },
+    {
+      "model": "Petersen network",
+      "delta": 1.5,
+      "max_escape_rate": 2.05,
+      "fast_sampling_sufficient_condition": true,
+      "propagator_rowsum_residual": 5.551115123125783e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.009454724082637892,
+      "principal_log_relative_frobenius_error": 1.969613155684863e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 5.6523160605755295e-15,
+      "principal_log_min_allowed_real_rate": 0.19999999999999937,
+      "true_entropy_rate": 0.120806194761192,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.9329029581155318e-15,
+      "reconstruction_rate_l2_error": 7.904785986203373e-15,
+      "sigma_min_augmented": 0.10192164609550913,
+      "linear_residual": 7.987463204391813e-16,
+      "exponential_residual": 2.9033031945270557e-15,
+      "minimum_reconstructed_rate": 0.19999999999999912,
+      "reconstructed_entropy_rate": 0.12080619476119314
+    },
+    {
+      "model": "Petersen network",
+      "delta": 2.0,
+      "max_escape_rate": 2.05,
+      "fast_sampling_sufficient_condition": false,
+      "propagator_rowsum_residual": 5.551115123125783e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.0037575128990321076,
+      "principal_log_relative_frobenius_error": 6.85360843305836e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.4993825389280876e-14,
+      "principal_log_min_allowed_real_rate": 0.19999999999999768,
+      "true_entropy_rate": 0.120806194761192,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 4.780152920395456e-15,
+      "reconstruction_rate_l2_error": 1.5205977657463766e-14,
+      "sigma_min_augmented": 0.06896016565814068,
+      "linear_residual": 3.870379466116515e-16,
+      "exponential_residual": 3.879511938975255e-15,
+      "minimum_reconstructed_rate": 0.19999999999999704,
+      "reconstructed_entropy_rate": 0.12080619476119277
+    },
+    {
+      "model": "Petersen network",
+      "delta": 2.5,
+      "max_escape_rate": 2.05,
+      "fast_sampling_sufficient_condition": false,
+      "propagator_rowsum_residual": 2.220446049250313e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.0013983379826529873,
+      "principal_log_relative_frobenius_error": 2.912763723240704e-14,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 6.372080356466318e-14,
+      "principal_log_min_allowed_real_rate": 0.1999999999999917,
+      "true_entropy_rate": 0.120806194761192,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.6712828630266988e-14,
+      "reconstruction_rate_l2_error": 4.9068615767788906e-14,
+      "sigma_min_augmented": 0.04484270885068325,
+      "linear_residual": 7.486400503620844e-16,
+      "exponential_residual": 9.735045585674394e-15,
+      "minimum_reconstructed_rate": 0.19999999999999782,
+      "reconstructed_entropy_rate": 0.12080619476118859
+    },
+    {
+      "model": "Petersen network",
+      "delta": 3.0,
+      "max_escape_rate": 2.05,
+      "fast_sampling_sufficient_condition": false,
+      "propagator_rowsum_residual": 9.992007221626409e-16,
+      "propagator_eigenvalue_min_separation_numerical": 0.0004740090604951734,
+      "principal_log_relative_frobenius_error": 5.946714554311516e-15,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.964502073917372e-14,
+      "principal_log_min_allowed_real_rate": 0.19999999999999782,
+      "true_entropy_rate": 0.120806194761192,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.2526194325372653e-14,
+      "reconstruction_rate_l2_error": 6.119138881027186e-14,
+      "sigma_min_augmented": 0.028016447953232528,
+      "linear_residual": 1.829407955477944e-15,
+      "exponential_residual": 8.700017164861356e-15,
+      "minimum_reconstructed_rate": 0.19999999999998636,
+      "reconstructed_entropy_rate": 0.12080619476119915
+    },
+    {
+      "model": "Petersen network",
+      "delta": 4.0,
+      "max_escape_rate": 2.05,
+      "fast_sampling_sufficient_condition": false,
+      "propagator_rowsum_residual": 8.881784197001252e-16,
+      "propagator_eigenvalue_min_separation_numerical": 4.9412848497255706e-05,
+      "principal_log_relative_frobenius_error": 4.201347409228893e-14,
+      "principal_log_imaginary_frobenius_norm": 0.0,
+      "principal_log_forbidden_edge_frobenius_norm": 1.4095502318324926e-13,
+      "principal_log_min_allowed_real_rate": 0.19999999999998042,
+      "true_entropy_rate": 0.120806194761192,
+      "reconstruction_status": "computed",
+      "reconstruction_relative_frobenius_error": 1.307988656730629e-14,
+      "reconstruction_rate_l2_error": 4.534736998689419e-14,
+      "sigma_min_augmented": 0.01069829409136889,
+      "linear_residual": 8.96953286530751e-16,
+      "exponential_residual": 4.3141732332001956e-15,
+      "minimum_reconstructed_rate": 0.19999999999999873,
+      "reconstructed_entropy_rate": 0.12080619476119445
+    }
+  ],
+  "synthetic_noise_illustrations": [
+    {
+      "model": "Heterogeneous C5",
+      "delta": 0.1,
+      "epsilon": 1e-08,
+      "actual_operator_error": 1.0000000000000002e-08,
+      "minimum_observed_entry": 0.0011425912493602426,
+      "rowsum_residual": 2.220446049250313e-16,
+      "status": "computed",
+      "rate_l2_error": 2.092104551109642e-07,
+      "certificate": {
+        "assumed_operator_error_epsilon": 1e-08,
+        "observed_augmented_sigma_min": 0.07571906192448731,
+        "normalized_rate_l2_bound": 3.7354228286226113e-07,
+        "inverse_error_product_h": 1.6241593202072825e-08,
+        "total_rate_scale_bound": 8.120796666983751e-07,
+        "rate_l2_bound": 5.331941252905477e-06,
+        "scale_condition_h_lt_one": true,
+        "confidence_level": null,
+        "interval_arithmetic_verified": false,
+        "interpretation": "Deterministic real-arithmetic theorem evaluated in ordinary floating point; epsilon must be justified separately."
+      },
+      "bound_satisfied_with_1e-10_roundoff_slack": true
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 0.25,
+      "epsilon": 1e-08,
+      "actual_operator_error": 1.0000000000000002e-08,
+      "minimum_observed_entry": 0.008670081208126021,
+      "rowsum_residual": 2.220446049250313e-16,
+      "status": "computed",
+      "rate_l2_error": 1.1810635396714116e-07,
+      "certificate": {
+        "assumed_operator_error_epsilon": 1e-08,
+        "observed_augmented_sigma_min": 0.1339702824072205,
+        "normalized_rate_l2_bound": 2.1112347260333524e-07,
+        "inverse_error_product_h": 3.354785904218989e-08,
+        "total_rate_scale_bound": 6.709571920983865e-07,
+        "rate_l2_bound": 3.2255511999611022e-06,
+        "scale_condition_h_lt_one": true,
+        "confidence_level": null,
+        "interval_arithmetic_verified": false,
+        "interpretation": "Deterministic real-arithmetic theorem evaluated in ordinary floating point; epsilon must be justified separately."
+      },
+      "bound_satisfied_with_1e-10_roundoff_slack": true
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 0.5,
+      "epsilon": 1e-08,
+      "actual_operator_error": 1.0000000000000002e-08,
+      "minimum_observed_entry": 0.03368493733100664,
+      "rowsum_residual": 2.220446049250313e-16,
+      "status": "computed",
+      "rate_l2_error": 1.0019036954155445e-07,
+      "certificate": {
+        "assumed_operator_error_epsilon": 1e-08,
+        "observed_augmented_sigma_min": 0.15266532805655542,
+        "normalized_rate_l2_bound": 1.852697767562776e-07,
+        "inverse_error_product_h": 1.1120234811352158e-07,
+        "total_rate_scale_bound": 1.1120235429650316e-06,
+        "rate_l2_bound": 3.353787836837761e-06,
+        "scale_condition_h_lt_one": true,
+        "confidence_level": null,
+        "interval_arithmetic_verified": false,
+        "interpretation": "Deterministic real-arithmetic theorem evaluated in ordinary floating point; epsilon must be justified separately."
+      },
+      "bound_satisfied_with_1e-10_roundoff_slack": true
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 0.75,
+      "epsilon": 1e-08,
+      "actual_operator_error": 1.0000000000000002e-08,
+      "minimum_observed_entry": 0.058034525538151,
+      "rowsum_residual": 4.440892098500626e-16,
+      "status": "computed",
+      "rate_l2_error": 1.02422891533257e-07,
+      "certificate": {
+        "assumed_operator_error_epsilon": 1e-08,
+        "observed_augmented_sigma_min": 0.13150687748691212,
+        "normalized_rate_l2_bound": 2.1507826653611196e-07,
+        "inverse_error_product_h": 3.628238934857187e-07,
+        "total_rate_scale_bound": 2.41882639537549e-06,
+        "rate_l2_bound": 5.021273425440175e-06,
+        "scale_condition_h_lt_one": true,
+        "confidence_level": null,
+        "interval_arithmetic_verified": false,
+        "interpretation": "Deterministic real-arithmetic theorem evaluated in ordinary floating point; epsilon must be justified separately."
+      },
+      "bound_satisfied_with_1e-10_roundoff_slack": true
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 1.0,
+      "epsilon": 1e-08,
+      "actual_operator_error": 1.0000000000000002e-08,
+      "minimum_observed_entry": 0.07002151273703842,
+      "rowsum_residual": 4.440892098500626e-16,
+      "status": "computed",
+      "rate_l2_error": 1.238689092172159e-07,
+      "certificate": {
+        "assumed_operator_error_epsilon": 1e-08,
+        "observed_augmented_sigma_min": 0.09989927197270343,
+        "normalized_rate_l2_bound": 2.8312790162465173e-07,
+        "inverse_error_product_h": 1.165794441795036e-06,
+        "total_rate_scale_bound": 5.828975606669521e-06,
+        "rate_l2_bound": 9.254823270295604e-06,
+        "scale_condition_h_lt_one": true,
+        "confidence_level": null,
+        "interval_arithmetic_verified": false,
+        "interpretation": "Deterministic real-arithmetic theorem evaluated in ordinary floating point; epsilon must be justified separately."
+      },
+      "bound_satisfied_with_1e-10_roundoff_slack": true
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 1.25,
+      "epsilon": 1e-08,
+      "actual_operator_error": 1.0000000000000002e-08,
+      "minimum_observed_entry": 0.0835032468930374,
+      "rowsum_residual": 4.440892098500626e-16,
+      "status": "computed",
+      "rate_l2_error": 2.9763437011798933e-07,
+      "certificate": {
+        "assumed_operator_error_epsilon": 1e-08,
+        "observed_augmented_sigma_min": 0.069427070275626,
+        "normalized_rate_l2_bound": 4.07395431424272e-07,
+        "inverse_error_product_h": 3.6919672994528357e-06,
+        "total_rate_scale_bound": 1.4767896459123522e-05,
+        "rate_l2_bound": 1.9697381479862467e-05,
+        "scale_condition_h_lt_one": true,
+        "confidence_level": null,
+        "interval_arithmetic_verified": false,
+        "interpretation": "Deterministic real-arithmetic theorem evaluated in ordinary floating point; epsilon must be justified separately."
+      },
+      "bound_satisfied_with_1e-10_roundoff_slack": true
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 1.5,
+      "epsilon": 1e-08,
+      "actual_operator_error": 1.0000000000000002e-08,
+      "minimum_observed_entry": 0.09605817737568932,
+      "rowsum_residual": 6.661338147750939e-16,
+      "status": "computed",
+      "rate_l2_error": 9.51026356133809e-07,
+      "certificate": {
+        "assumed_operator_error_epsilon": 1e-08,
+        "observed_augmented_sigma_min": 0.04484876483171575,
+        "normalized_rate_l2_bound": 6.306588677211481e-07,
+        "inverse_error_product_h": 1.1526712731312475e-05,
+        "total_rate_scale_bound": 3.842259721458725e-05,
+        "rate_l2_bound": 4.605357105170878e-05,
+        "scale_condition_h_lt_one": true,
+        "confidence_level": null,
+        "interval_arithmetic_verified": false,
+        "interpretation": "Deterministic real-arithmetic theorem evaluated in ordinary floating point; epsilon must be justified separately."
+      },
+      "bound_satisfied_with_1e-10_roundoff_slack": true
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 2.0,
+      "epsilon": 1e-08,
+      "actual_operator_error": 1.0000000000000002e-08,
+      "minimum_observed_entry": 0.11205323529577452,
+      "rowsum_residual": 4.440892098500626e-16,
+      "status": "computed",
+      "rate_l2_error": 8.896996398203863e-06,
+      "certificate": {
+        "assumed_operator_error_epsilon": 1e-08,
+        "observed_augmented_sigma_min": 0.014756275453942183,
+        "normalized_rate_l2_bound": 1.916762216573131e-06,
+        "inverse_error_product_h": 0.00010757251280546372,
+        "total_rate_scale_bound": 0.00026894574785797583,
+        "rate_l2_bound": 0.0002921386135523061,
+        "scale_condition_h_lt_one": true,
+        "confidence_level": null,
+        "interval_arithmetic_verified": false,
+        "interpretation": "Deterministic real-arithmetic theorem evaluated in ordinary floating point; epsilon must be justified separately."
+      },
+      "bound_satisfied_with_1e-10_roundoff_slack": true
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 2.5,
+      "epsilon": 1e-08,
+      "actual_operator_error": 1.0000000000000002e-08,
+      "minimum_observed_entry": 0.11873917497338939,
+      "rowsum_residual": 9.992007221626409e-16,
+      "status": "computed",
+      "rate_l2_error": 7.184674927019929e-05,
+      "certificate": {
+        "assumed_operator_error_epsilon": 1e-08,
+        "observed_augmented_sigma_min": 0.003438168700325615,
+        "normalized_rate_l2_bound": 8.226551316339776e-06,
+        "inverse_error_product_h": 0.0009465501360919603,
+        "total_rate_scale_bound": 0.0018939967951246447,
+        "rate_l2_bound": 0.0019935395556196977,
+        "scale_condition_h_lt_one": true,
+        "confidence_level": null,
+        "interval_arithmetic_verified": false,
+        "interpretation": "Deterministic real-arithmetic theorem evaluated in ordinary floating point; epsilon must be justified separately."
+      },
+      "bound_satisfied_with_1e-10_roundoff_slack": true
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 3.0,
+      "epsilon": 1e-08,
+      "actual_operator_error": 1.0000000000000002e-08,
+      "minimum_observed_entry": 0.12197403506921015,
+      "rowsum_residual": 1.1102230246251565e-15,
+      "status": "computed",
+      "rate_l2_error": 0.0005036052722163525,
+      "certificate": {
+        "assumed_operator_error_epsilon": 1e-08,
+        "observed_augmented_sigma_min": 0.002495312337889538,
+        "normalized_rate_l2_bound": 1.1334962288281679e-05,
+        "inverse_error_product_h": 0.007889210626305227,
+        "total_rate_scale_bound": 0.013200825161570113,
+        "rate_l2_bound": 0.013337993248316502,
+        "scale_condition_h_lt_one": true,
+        "confidence_level": null,
+        "interval_arithmetic_verified": false,
+        "interpretation": "Deterministic real-arithmetic theorem evaluated in ordinary floating point; epsilon must be justified separately."
+      },
+      "bound_satisfied_with_1e-10_roundoff_slack": true
+    },
+    {
+      "model": "Heterogeneous C5",
+      "delta": 4.0,
+      "epsilon": 1e-08,
+      "actual_operator_error": 1.0000000000000002e-08,
+      "minimum_observed_entry": 0.12343638082832219,
+      "rowsum_residual": 8.881784197001252e-16,
+      "status": "computed",
+      "rate_l2_error": 0.023075770547984896,
+      "certificate": {
+        "assumed_operator_error_epsilon": 1e-08,
+        "observed_augmented_sigma_min": 0.0007019458586732421,
+        "normalized_rate_l2_bound": 4.029409234057226e-05,
+        "inverse_error_product_h": 0.6658251811629716,
+        "total_rate_scale_bound": 1.3701137665560112,
+        "rate_l2_bound": 1.3706037830550346,
+        "scale_condition_h_lt_one": true,
+        "confidence_level": null,
+        "interval_arithmetic_verified": false,
+        "interpretation": "Deterministic real-arithmetic theorem evaluated in ordinary floating point; epsilon must be justified separately."
+      },
+      "bound_satisfied_with_1e-10_roundoff_slack": true
+    }
+  ],
+  "six_cycle_alias": {
+    "n": 6,
+    "delta": 1.0,
+    "a0": 5.5,
+    "b0": 4.5,
+    "a1": 9.127598728468435,
+    "b1": 0.8724012715315643,
+    "analytic_shift": "a1=a0+2*pi/sqrt(3), b1=b0-2*pi/sqrt(3)",
+    "propagator_difference_frobenius": 2.4380709957580736e-15,
+    "min_eigenvalue_separation_numerical": 3.045710299180102e-07,
+    "entropy_rate_0": 0.20067069546215127,
+    "entropy_rate_1": 19.38162224864955,
+    "entropy_analytic_0": 0.20067069546215124,
+    "entropy_analytic_1": 19.381622248649556,
+    "principal_log_error_to_q0": 4.387447239349478e-09,
+    "principal_log_error_to_q1": 12.566370614375696,
+    "proof": "Fourier modes have imaginary shifts 0 or +/-2*pi, so exponentials coincide exactly. Their modulus classes are 1, exp(-5), exp(-15), exp(-20); paired phases are +/-sqrt(3)/2, so the six eigenvalues are distinct.",
+    "boundary": "Both generators are on the same homogeneous six-cycle, have strictly positive bidirectional rates, and have different entropy production. They are outside the rigidity class."
+  },
+  "scope": {
+    "universal_theorem_proved_by": "written graph/matrix arguments in manuscript",
+    "numerical_illustration_only": true,
+    "interval_arithmetic_verified": false,
+    "noise_epsilon_is": "known synthetic operator-norm perturbation; not a confidence bound inferred from trajectories",
+    "simple_spectrum_numeric_values": "diagnostic only; exact theorem hypotheses are separate"
+  }
+}

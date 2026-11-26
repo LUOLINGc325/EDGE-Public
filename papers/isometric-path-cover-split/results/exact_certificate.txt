@@ -1,0 +1,2 @@
+exhaustive 3DM sources: 258 passed; 176 satisfiable
+seeded 3DM sources: 160 passed; 38 satisfiable

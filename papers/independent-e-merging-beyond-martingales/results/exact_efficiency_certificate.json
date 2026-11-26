@@ -1,0 +1,199 @@
+{
+  "status": "PASS",
+  "arithmetic": "fractions.Fraction (exact rational)",
+  "attainment_and_quadrant_point_checks": 726,
+  "finite_witness_parameter_vertices_checked": 48,
+  "finite_superhedging_costs_checked": 36,
+  "three_point_witness": {
+    "t": "3",
+    "lambda": "1",
+    "generalized_bound": "15",
+    "target_value": "17",
+    "sharp_capital": "17/15"
+  },
+  "whole_domain_sharp_efficiency": "2/(2+lambda)",
+  "whole_domain_sharp_capital": "1+lambda/2",
+  "cost_table": [
+    {
+      "lambda": "1/100",
+      "t": "3/2",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/100",
+      "t": "2",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/100",
+      "t": "3",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/100",
+      "t": "4",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/100",
+      "t": "10",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/100",
+      "t": "101",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/10",
+      "t": "3/2",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/10",
+      "t": "2",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/10",
+      "t": "3",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/10",
+      "t": "4",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/10",
+      "t": "10",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/10",
+      "t": "101",
+      "capital": "7067/6767"
+    },
+    {
+      "lambda": "1/3",
+      "t": "3/2",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/3",
+      "t": "2",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/3",
+      "t": "3",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/3",
+      "t": "4",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/3",
+      "t": "10",
+      "capital": "104/95"
+    },
+    {
+      "lambda": "1/3",
+      "t": "101",
+      "capital": "70603/60903"
+    },
+    {
+      "lambda": "1/2",
+      "t": "3/2",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/2",
+      "t": "2",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/2",
+      "t": "3",
+      "capital": "1"
+    },
+    {
+      "lambda": "1/2",
+      "t": "4",
+      "capital": "59/56"
+    },
+    {
+      "lambda": "1/2",
+      "t": "10",
+      "capital": "443/380"
+    },
+    {
+      "lambda": "1/2",
+      "t": "101",
+      "capital": "25201/20301"
+    },
+    {
+      "lambda": "3/4",
+      "t": "3/2",
+      "capital": "1"
+    },
+    {
+      "lambda": "3/4",
+      "t": "2",
+      "capital": "1"
+    },
+    {
+      "lambda": "3/4",
+      "t": "3",
+      "capital": "16/15"
+    },
+    {
+      "lambda": "3/4",
+      "t": "4",
+      "capital": "127/112"
+    },
+    {
+      "lambda": "3/4",
+      "t": "10",
+      "capital": "967/760"
+    },
+    {
+      "lambda": "3/4",
+      "t": "101",
+      "capital": "27701/20301"
+    },
+    {
+      "lambda": "1",
+      "t": "3/2",
+      "capital": "1"
+    },
+    {
+      "lambda": "1",
+      "t": "2",
+      "capital": "1"
+    },
+    {
+      "lambda": "1",
+      "t": "3",
+      "capital": "17/15"
+    },
+    {
+      "lambda": "1",
+      "t": "4",
+      "capital": "17/14"
+    },
+    {
+      "lambda": "1",
+      "t": "10",
+      "capital": "131/95"
+    },
+    {
+      "lambda": "1",
+      "t": "101",
+      "capital": "10067/6767"
+    }
+  ],
+  "scope": "Supplementary finite exact checks; universal claims proved analytically; not Lean."
+}

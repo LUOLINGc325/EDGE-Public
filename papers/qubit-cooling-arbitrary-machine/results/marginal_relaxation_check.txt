@@ -1,0 +1,4 @@
+Incoming machine marginal: ('1/50', '12/25', '3/10', '1/5')
+Exact resonance fails at destination (0, 1): needs row weight 24/25
+F=19551/62500; E=1299/3125; F-(3/4)E=33/31250 > 0
+Scope: counterexample to marginal relaxation only.

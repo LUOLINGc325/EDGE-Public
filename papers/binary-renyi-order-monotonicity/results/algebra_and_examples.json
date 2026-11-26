@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "g_first_derivative": "-u**2*y/(y + 1)**2",
+  "g_second_derivative": "-u**3*y*(y - 1)/(y + 1)**3",
+  "logconvex_determinant_identity_residual": "0",
+  "endpoint_identity_residual": "0",
+  "entropy_uniform_quadratic_coefficient": "-a/2",
+  "entropy_uniform_quartic_coefficient": "a*(a**2 + a - 3)/12",
+  "shannon_uniform_quadratic_coefficient": "-1/2",
+  "shannon_uniform_quartic_coefficient": "-1/12",
+  "scope": "Exact symbolic identities only; positivity is proved in the manuscript.",
+  "example_rows": 9,
+  "example_precision_decimal_digits": 100,
+  "packages": {
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "matplotlib": "3.10.8"
+  }
+}

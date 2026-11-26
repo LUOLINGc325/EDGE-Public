@@ -1,0 +1,8 @@
+{
+  "exact_paths": 1440,
+  "correct_order_paths": 208,
+  "event_invariant_checks": 6059,
+  "simultaneous_mark_tests": 297,
+  "fallback_paths": 1232,
+  "scope": "Exact rational event simulation for selected finite sizes and robustness values."
+}

@@ -1,0 +1,773 @@
+{
+  "arithmetic": "Python fractions.Fraction and integer polynomial coefficient dictionaries",
+  "asymptotic_constant": {
+    "population_sequence": "P_epsilon with epsilon=n^(-2)",
+    "risk_limit": 29200,
+    "score_CLT_variance": 39427200
+  },
+  "certificate_scope": "Exact finite arithmetic; analytic and probabilistic reductions are in the manuscript.",
+  "checks_passed": 303,
+  "finite_sample_constants": {
+    "additional_n_condition": "n is not divisible by 3",
+    "chebyshev_numerator": 15000,
+    "conjectured_denominator_gap_squared": "1/25",
+    "conjectured_rhs_C_over_n_coefficient_before_1_minus_n_inverse_squared": 750650,
+    "frequency_event_probability_lower_bound": "1/6",
+    "frequency_infinity_radius": "1/150",
+    "frequency_l1_radius": "1/50",
+    "n_threshold": 90000,
+    "no_anchor_probability_lower_bound": "1/2",
+    "radius_bound_verified": "R/50 < 7",
+    "radius_squared": 90117,
+    "remaining_other_orbit_gap": "52966/25",
+    "risk_lower_bound": "12500/3",
+    "risk_lower_bound_strictly_exceeds": 4000,
+    "separation_bound_verified": "sqrt(58400) > 240",
+    "squared_risk_on_favorable_event_strictly_exceeds": 50000
+  },
+  "interpolation": {
+    "conjugate_active_branch_gaps_checked": 36,
+    "conjugate_maximum_intercept": 2900,
+    "conjugate_strong_convexity": "5/9",
+    "margins_by_source_and_cyclic_difference_1_2_3": [
+      [
+        "28570/9",
+        "7640/9",
+        "391450/9"
+      ],
+      [
+        "59200/9",
+        "43520/9",
+        "59200/9"
+      ],
+      [
+        "391450/9",
+        "7640/9",
+        "28570/9"
+      ]
+    ],
+    "minimum_margin": "7640/9",
+    "ordered_pairs_checked": 36,
+    "transformed_gradients": [
+      [
+        [
+          80,
+          126,
+          237
+        ],
+        [
+          -126,
+          80,
+          -237
+        ],
+        [
+          -80,
+          -126,
+          237
+        ],
+        [
+          126,
+          -80,
+          -237
+        ]
+      ],
+      [
+        [
+          272,
+          0,
+          12
+        ],
+        [
+          0,
+          272,
+          -12
+        ],
+        [
+          -272,
+          0,
+          12
+        ],
+        [
+          0,
+          -272,
+          -12
+        ]
+      ],
+      [
+        [
+          80,
+          -126,
+          237
+        ],
+        [
+          126,
+          80,
+          -237
+        ],
+        [
+          -80,
+          126,
+          237
+        ],
+        [
+          -126,
+          -80,
+          -237
+        ]
+      ]
+    ]
+  },
+  "optimal_transport": {
+    "nu_prime_to_mu0": {
+      "assignments_enumerated": 24,
+      "minimum_mean_cost": 21157,
+      "optimal_permutations": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "squared_distance_matrix": [
+        [
+          21157,
+          195157,
+          111877,
+          264277
+        ],
+        [
+          264277,
+          21157,
+          195157,
+          111877
+        ],
+        [
+          111877,
+          264277,
+          21157,
+          195157
+        ],
+        [
+          195157,
+          111877,
+          264277,
+          21157
+        ]
+      ]
+    },
+    "nu_prime_to_mu1": {
+      "assignments_enumerated": 24,
+      "minimum_mean_cost": 47764,
+      "optimal_permutations": [
+        [
+          1,
+          2,
+          3,
+          0
+        ]
+      ],
+      "squared_distance_matrix": [
+        [
+          132244,
+          47764,
+          132244,
+          255124
+        ],
+        [
+          255124,
+          132244,
+          47764,
+          132244
+        ],
+        [
+          132244,
+          255124,
+          132244,
+          47764
+        ],
+        [
+          47764,
+          132244,
+          255124,
+          132244
+        ]
+      ]
+    },
+    "nu_prime_to_mu2": {
+      "assignments_enumerated": 24,
+      "minimum_mean_cost": 21157,
+      "optimal_permutations": [
+        [
+          2,
+          3,
+          0,
+          1
+        ]
+      ],
+      "squared_distance_matrix": [
+        [
+          111877,
+          195157,
+          21157,
+          264277
+        ],
+        [
+          264277,
+          111877,
+          195157,
+          21157
+        ],
+        [
+          21157,
+          264277,
+          111877,
+          195157
+        ],
+        [
+          195157,
+          21157,
+          264277,
+          111877
+        ]
+      ]
+    },
+    "nu_to_mu0": {
+      "assignments_enumerated": 24,
+      "minimum_mean_cost": 25597,
+      "optimal_permutations": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "squared_distance_matrix": [
+        [
+          25597,
+          280237,
+          87037,
+          199597
+        ],
+        [
+          199597,
+          25597,
+          280237,
+          87037
+        ],
+        [
+          87037,
+          199597,
+          25597,
+          280237
+        ],
+        [
+          280237,
+          87037,
+          199597,
+          25597
+        ]
+      ]
+    },
+    "nu_to_mu1": {
+      "assignments_enumerated": 24,
+      "minimum_mean_cost": 38884,
+      "optimal_permutations": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "squared_distance_matrix": [
+        [
+          38884,
+          152644,
+          223204,
+          152644
+        ],
+        [
+          152644,
+          38884,
+          152644,
+          223204
+        ],
+        [
+          223204,
+          152644,
+          38884,
+          152644
+        ],
+        [
+          152644,
+          223204,
+          152644,
+          38884
+        ]
+      ]
+    },
+    "nu_to_mu2": {
+      "assignments_enumerated": 24,
+      "minimum_mean_cost": 25597,
+      "optimal_permutations": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "squared_distance_matrix": [
+        [
+          25597,
+          199597,
+          87037,
+          280237
+        ],
+        [
+          280237,
+          25597,
+          199597,
+          87037
+        ],
+        [
+          87037,
+          280237,
+          25597,
+          199597
+        ],
+        [
+          199597,
+          87037,
+          280237,
+          25597
+        ]
+      ]
+    },
+    "nu_to_nu_prime": {
+      "assignments_enumerated": 24,
+      "minimum_mean_cost": 58400,
+      "optimal_permutations": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          0,
+          3
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ]
+      ],
+      "squared_distance_matrix": [
+        [
+          58400,
+          231200,
+          58400,
+          116000
+        ],
+        [
+          116000,
+          58400,
+          231200,
+          58400
+        ],
+        [
+          58400,
+          116000,
+          58400,
+          231200
+        ],
+        [
+          231200,
+          58400,
+          116000,
+          58400
+        ]
+      ]
+    }
+  },
+  "parameters": {
+    "alpha": "1/10",
+    "beta": "19/10",
+    "delta": "9/5",
+    "dimension": 3
+  },
+  "polynomials": {
+    "all_orbit_score_coefficients_by_row_a_and_column_b": [
+      [
+        [
+          90117,
+          70596,
+          116730,
+          83844,
+          70596,
+          90117
+        ],
+        [
+          90117,
+          70596,
+          -81666,
+          83844,
+          57276,
+          90117
+        ],
+        [
+          90117,
+          70596,
+          143370,
+          83844,
+          -39996,
+          90117
+        ],
+        [
+          90117,
+          70596,
+          -178434,
+          83844,
+          -87876,
+          90117
+        ]
+      ],
+      [
+        [
+          90117,
+          57276,
+          116730,
+          83844,
+          -87876,
+          90117
+        ],
+        [
+          90117,
+          57276,
+          -81666,
+          83844,
+          70596,
+          90117
+        ],
+        [
+          90117,
+          57276,
+          143370,
+          83844,
+          57276,
+          90117
+        ],
+        [
+          90117,
+          57276,
+          -178434,
+          83844,
+          -39996,
+          90117
+        ]
+      ],
+      [
+        [
+          90117,
+          -39996,
+          116730,
+          83844,
+          -39996,
+          90117
+        ],
+        [
+          90117,
+          -39996,
+          -81666,
+          83844,
+          -87876,
+          90117
+        ],
+        [
+          90117,
+          -39996,
+          143370,
+          83844,
+          70596,
+          90117
+        ],
+        [
+          90117,
+          -39996,
+          -178434,
+          83844,
+          57276,
+          90117
+        ]
+      ],
+      [
+        [
+          90117,
+          -87876,
+          116730,
+          83844,
+          57276,
+          90117
+        ],
+        [
+          90117,
+          -87876,
+          -81666,
+          83844,
+          -39996,
+          90117
+        ],
+        [
+          90117,
+          -87876,
+          143370,
+          83844,
+          -87876,
+          90117
+        ],
+        [
+          90117,
+          -87876,
+          -178434,
+          83844,
+          70596,
+          90117
+        ]
+      ]
+    ],
+    "bh_monomials": [
+      "1",
+      "b",
+      "h",
+      "b^2",
+      "b*h",
+      "h^2"
+    ],
+    "bh_variables": [
+      "b",
+      "h"
+    ],
+    "minimum_count_score_divided_by_13320": "t*u+t*v+2*u*v",
+    "minimum_count_substitution": "q0=t+u, q1=t, q2=t+v",
+    "q_monomials": [
+      "q0^2",
+      "q0*q1",
+      "q0*q2",
+      "q1^2",
+      "q1*q2",
+      "q2^2"
+    ],
+    "q_variables": [
+      "q0",
+      "q1",
+      "q2"
+    ],
+    "score_derivative_b_at_population": -13320,
+    "score_difference_bh_coefficients": [
+      6660,
+      -26640,
+      0,
+      19980,
+      0,
+      -6660
+    ],
+    "score_difference_q_coefficients": [
+      0,
+      -13320,
+      26640,
+      0,
+      -13320,
+      0
+    ],
+    "verification": "Every coefficient is compared exactly; no sampled evaluations are used."
+  },
+  "population_coupling": {
+    "optimal_orbits": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "orbit_moments_by_row_a_and_column_b": [
+      [
+        58000,
+        34476,
+        48672,
+        7596
+      ],
+      [
+        38912,
+        34476,
+        58000,
+        11436
+      ],
+      [
+        33424,
+        6060,
+        48672,
+        11436
+      ],
+      [
+        38912,
+        6060,
+        25744,
+        7596
+      ]
+    ],
+    "other_orbit_minimum_gap": 9328,
+    "tuple_count": 64
+  },
+  "risk_data": {
+    "barycenter_separation_squared": 58400,
+    "contrast": [
+      -4440,
+      8880,
+      -4440
+    ],
+    "contrast_variance": 39427200,
+    "costs_from_nu": [
+      25597,
+      38884,
+      25597
+    ],
+    "costs_from_nu_prime": [
+      21157,
+      47764,
+      21157
+    ],
+    "population_variance": 30026
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "support": {
+    "x": [
+      [
+        160,
+        0,
+        180
+      ],
+      [
+        0,
+        160,
+        -180
+      ],
+      [
+        -160,
+        0,
+        180
+      ],
+      [
+        0,
+        -160,
+        -180
+      ]
+    ],
+    "y": [
+      [
+        [
+          96,
+          126,
+          255
+        ],
+        [
+          -126,
+          96,
+          -255
+        ],
+        [
+          -96,
+          -126,
+          255
+        ],
+        [
+          126,
+          -96,
+          -255
+        ]
+      ],
+      [
+        [
+          288,
+          0,
+          30
+        ],
+        [
+          0,
+          288,
+          -30
+        ],
+        [
+          -288,
+          0,
+          30
+        ],
+        [
+          0,
+          -288,
+          -30
+        ]
+      ],
+      [
+        [
+          96,
+          -126,
+          255
+        ],
+        [
+          126,
+          96,
+          -255
+        ],
+        [
+          -96,
+          126,
+          255
+        ],
+        [
+          -126,
+          -96,
+          -255
+        ]
+      ]
+    ],
+    "z": [
+      [
+        0,
+        180,
+        160
+      ],
+      [
+        -180,
+        0,
+        -160
+      ],
+      [
+        0,
+        -180,
+        160
+      ],
+      [
+        180,
+        0,
+        -160
+      ]
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "arithmetic": "fractions.Fraction; no floating-point decisions",
+  "scope": "polynomial identity, exact band derivative, and Neumann remainder certificate; analytic operator premises are proved in the manuscript",
+  "density_full_positive_half_coefficients": [
+    "3/4",
+    "0",
+    "-3/4"
+  ],
+  "density_normalization": "1",
+  "mu_coefficients_in_increasing_powers": [
+    "0",
+    "0",
+    "1/32",
+    "-5/32",
+    "3/16",
+    "-1/32",
+    "-1/32"
+  ],
+  "mu_factorization": "-x^2 (1-x)^2 (x^2+3x-1)/32",
+  "band": [
+    "3/4",
+    "7/8"
+  ],
+  "band_convention": "r_epsilon(x)=epsilon for 3/4 <= |x| <= 7/8, and zero otherwise",
+  "baseline_cost": "23/80",
+  "first_variation": "-438807/1174405120",
+  "green_operator_sup_norm_bound": "9/8",
+  "K_operator_sup_norm_bound": "2",
+  "GK_operator_sup_norm_bound": "9/4",
+  "epsilon": "1/100000",
+  "neumann_contraction_bound": "9/400000",
+  "second_order_constant": "729/128",
+  "first_order_cost_change": "-438807/117440512000000",
+  "absolute_remainder_bound": "729/1279971200000",
+  "cost_change_strict_negative_upper_bound": "-148764434097/46975147835392000000",
+  "certified_improvement_at_least": "148764434097/46975147835392000000",
+  "decimal_orientation_only": {
+    "first_variation": -0.0003736419337136405,
+    "first_order_cost_change": -3.736419337136405e-09,
+    "absolute_remainder_bound": 5.695440647414567e-10,
+    "cost_change_upper_bound": -3.166875272394948e-09
+  },
+  "checks": {
+    "density_normalized": true,
+    "mu_factorization_exact": true,
+    "band_derivative_exact": true,
+    "baseline_exact": true,
+    "neumann_contraction": true,
+    "strict_improvement": true
+  }
+}

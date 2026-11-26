@@ -1,0 +1,31 @@
+{
+  "explicit_exchange_example": {
+    "status": "constructed",
+    "route": "five_to_four_exchange",
+    "common_good": 0,
+    "initial_allocation": [
+      1,
+      2,
+      4,
+      248
+    ],
+    "allocation": [
+      240,
+      10,
+      4,
+      1
+    ],
+    "residual_allocations_examined": 391,
+    "five_item_holder": 3,
+    "removed_item": 3,
+    "swapped_singletons": false,
+    "extra_item_recipient": 1
+  },
+  "deterministic_random_profiles": 40,
+  "seed": 20261124,
+  "random_routes": {
+    "direct_extension": 40
+  },
+  "all_outputs_exactly_checked": true,
+  "scope": "Implementation checks only; not a proof of the unrestricted EFX question"
+}

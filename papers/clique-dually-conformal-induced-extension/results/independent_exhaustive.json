@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "tested": "all labelled nonempty simple graphs on at most 5 vertices",
+  "graphs_by_order": {
+    "1": 1,
+    "2": 2,
+    "3": 8,
+    "4": 64,
+    "5": 1024
+  },
+  "total_graphs": 1099,
+  "maximum_extension_order": 16,
+  "maximum_transversal_count": 32,
+  "failures": 0,
+  "method": "Bron-Kerbosch maximal cliques; incremental exact blocker; co-occurrence graph; independently enumerated maximal-clique equality",
+  "negative_control": {
+    "graph": "ordinary corona of K3; no maximal-clique markers",
+    "order": 6,
+    "maximal_cliques": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ]
+    ],
+    "minimal_transversal_count": 7,
+    "dual_maximal_clique_count": 8,
+    "dual_clique_not_transversal": [
+      3,
+      4,
+      5
+    ],
+    "brute_force_cross_check": "PASS",
+    "interpretation": "The all-leaf triple is a maximal clique of the co-occurrence graph but misses the original triangle."
+  },
+  "scope": "Finite validation and a finite negative control, not the proof of the general theorem."
+}

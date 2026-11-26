@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "date": "2026-11-24",
+  "exact_result_byte_identical": true,
+  "independent_result_byte_identical": true,
+  "exit_codes": [
+    0,
+    0
+  ],
+  "hashes": {
+    "code/verify_exact.py": "92c0fed029c18bb51f831d099739cb3423c8314908bfda2f2bd5fe919b011793",
+    "code/verify_independent.py": "6a2b5e5658576237f1456026934c9be8e78f1b31299afe19250018e5001d3c68",
+    "results/exact_certificate.json": "4f9c2e458d9e401cf79bfe1da143e65f316ed3997197c00220d4eae3576c3e84",
+    "results/independent_certificate.json": "66535885b2a5e1d989a7aa7e69f2ae22e79024909e4b09313543057cf9452cf6"
+  },
+  "scope": "Each verifier covers four rational parameter triples; seven distinct triples total. Continuous theorem established separately."
+}

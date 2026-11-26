@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-24",
+  "status": "Floating-point evaluation of exact mean hitting identities",
+  "dynamics": {
+    "HB": "Exact Gibbs heat bath",
+    "FM": "Literal full-magnetization rule with its actual invariant law"
+  },
+  "time_unit": "One uniformly chosen single-site update",
+  "cases": [
+    {
+      "case": "A_p3_r08",
+      "p": 3,
+      "beta": 0.5787037037037038,
+      "h": -0.012498822443001822,
+      "inflections": [
+        0.8
+      ],
+      "mstar": -0.012238188391324152,
+      "predicted_left": 0,
+      "predicted_right": 5.119261927689757,
+      "predicted_max": 5.119261927689757
+    },
+    {
+      "case": "B_p3_r04",
+      "p": 3,
+      "beta": 0.49603174603174605,
+      "h": 0.1855536920983637,
+      "inflections": [
+        0.4
+      ],
+      "mstar": 0.8540852126029574,
+      "predicted_left": 6.257044898077878,
+      "predicted_right": 0,
+      "predicted_max": 6.257044898077878
+    },
+    {
+      "case": "C_p4_double",
+      "p": 4,
+      "beta": 0.5042495099160906,
+      "h": 0.0,
+      "inflections": [
+        -0.8894367591575862,
+        0.8894367591575862
+      ],
+      "mstar": 0.0,
+      "predicted_left": 3.9164892788857806,
+      "predicted_right": 3.9164892788857806,
+      "predicted_max": 3.9164892788857806
+    }
+  ],
+  "sizes": [
+    256,
+    1024,
+    4096,
+    16384,
+    65536,
+    262144
+  ],
+  "small_backward_checks": [
+    {
+      "case": "A_p3_r08",
+      "N": 31,
+      "dynamics": "HB",
+      "target": 16,
+      "max_absolute_error": 2.2737367544323206e-13,
+      "max_relative_error": 4.961582297944053e-16,
+      "detailed_balance_log_residual": 1.2878587085651816e-14
+    },
+    {
+      "case": "A_p3_r08",
+      "N": 31,
+      "dynamics": "FM",
+      "target": 17,
+      "max_absolute_error": 3.410605131648481e-13,
+      "max_relative_error": 5.626867355920134e-16,
+      "detailed_balance_log_residual": 1.4210854715202004e-14
+    },
+    {
+      "case": "B_p3_r04",
+      "N": 31,
+      "dynamics": "HB",
+      "target": 27,
+      "max_absolute_error": 1.3642420526593924e-12,
+      "max_relative_error": 3.8458002221755106e-15,
+      "detailed_balance_log_residual": 1.4654943925052066e-14
+    },
+    {
+      "case": "B_p3_r04",
+      "N": 31,
+      "dynamics": "FM",
+      "target": 28,
+      "max_absolute_error": 1.2789769243681803e-13,
+      "max_relative_error": 1.0269218651018946e-15,
+      "detailed_balance_log_residual": 1.4210854715202004e-14
+    },
+    {
+      "case": "C_p4_double",
+      "N": 31,
+      "dynamics": "HB",
+      "target": 16,
+      "max_absolute_error": 5.115907697472721e-13,
+      "max_relative_error": 1.4064178386730992e-15,
+      "detailed_balance_log_residual": 1.3322676295501878e-14
+    },
+    {
+      "case": "C_p4_double",
+      "N": 31,
+      "dynamics": "FM",
+      "target": 16,
+      "max_absolute_error": 2.6147972675971687e-12,
+      "max_relative_error": 4.068366540887828e-15,
+      "detailed_balance_log_residual": 1.509903313490213e-14
+    }
+  ],
+  "max_detailed_balance_log_residual": 1.3387762010097504e-09,
+  "largest_size_rows": [
+    {
+      "case": "A_p3_r08",
+      "p": 3,
+      "beta": 0.5787037037037038,
+      "h": -0.012498822443001822,
+      "N": 262144,
+      "dynamics": "HB",
+      "target_median": 129468,
+      "mean_left": 1498903.827657647,
+      "mean_right": 86778732.81150933,
+      "max_mean": 86778732.81150933,
+      "scaled_max": 5.172415543288553,
+      "predicted_max": 5.119261927689757,
+      "detailed_balance_log_residual": 1.3242242857813835e-09
+    },
+    {
+      "case": "A_p3_r08",
+      "p": 3,
+      "beta": 0.5787037037037038,
+      "h": -0.012498822443001822,
+      "N": 262144,
+      "dynamics": "FM",
+      "target_median": 129468,
+      "mean_left": 1498902.0855821024,
+      "mean_right": 88122901.11745721,
+      "max_mean": 88122901.11745721,
+      "scaled_max": 5.252534217682915,
+      "predicted_max": 5.119261927689757,
+      "detailed_balance_log_residual": 1.3242242857813835e-09
+    },
+    {
+      "case": "B_p3_r04",
+      "p": 3,
+      "beta": 0.49603174603174605,
+      "h": 0.1855536920983637,
+      "N": 262144,
+      "dynamics": "HB",
+      "target_median": 243017,
+      "mean_left": 109439149.1194722,
+      "mean_right": 3885745.2026103274,
+      "max_mean": 109439149.1194722,
+      "scaled_max": 6.523081607787151,
+      "predicted_max": 6.257044898077878,
+      "detailed_balance_log_residual": 1.3387762010097504e-09
+    },
+    {
+      "case": "B_p3_r04",
+      "p": 3,
+      "beta": 0.49603174603174605,
+      "h": 0.1855536920983637,
+      "N": 262144,
+      "dynamics": "FM",
+      "target_median": 243018,
+      "mean_left": 108853927.5217561,
+      "mean_right": 3885267.477715426,
+      "max_mean": 108853927.5217561,
+      "scaled_max": 6.488199682340395,
+      "predicted_max": 6.257044898077878,
+      "detailed_balance_log_residual": 1.3387762010097504e-09
+    },
+    {
+      "case": "C_p4_double",
+      "p": 4,
+      "beta": 0.5042495099160906,
+      "h": 0.0,
+      "N": 262144,
+      "dynamics": "HB",
+      "target_median": 131072,
+      "mean_left": 66626686.35051161,
+      "mean_right": 66626686.35023183,
+      "max_mean": 66626686.35051161,
+      "scaled_max": 3.9712599724836153,
+      "predicted_max": 3.9164892788857806,
+      "detailed_balance_log_residual": 1.3242242857813835e-09
+    },
+    {
+      "case": "C_p4_double",
+      "p": 4,
+      "beta": 0.5042495099160906,
+      "h": 0.0,
+      "N": 262144,
+      "dynamics": "FM",
+      "target_median": 131072,
+      "mean_left": 67945157.04137783,
+      "mean_right": 67945157.04285996,
+      "max_mean": 67945157.04285996,
+      "scaled_max": 4.049846949747802,
+      "predicted_max": 3.9164892788857806,
+      "detailed_balance_log_residual": 1.3169483281672e-09
+    }
+  ]
+}

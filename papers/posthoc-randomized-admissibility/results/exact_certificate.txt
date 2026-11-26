@@ -1,0 +1,4 @@
+Randomized cutoff mixture: 9801 feasible competitor budgets, 1 equal.
+Compatible sharp case: 3417 feasible competitor budgets, 1 equal.
+Reversed-order gains: 1/64, 1/64, 1/64, 1/64
+All checks passed.

@@ -1,0 +1,171 @@
+{
+  "status": "passed",
+  "arithmetic": "Python fractions.Fraction; exact integers/rationals",
+  "all_GF2_3_nonempty_families_two_parameter_sets": 254,
+  "all_simple_labelled_graphs_n_1_through_5": 1099,
+  "finite_parameter_maxcut_recoveries": 1099,
+  "factor_two_approximation_endpoint_recoveries": 2198,
+  "maxcut_recovery_base": "Q=2^(n+2), matching the manuscript rational-channel reduction",
+  "odd_cycle_closed_formula_checks": 16,
+  "three_way_coefficient_checks": "convolution vs ambient Walsh vs direct subsets (254 instances)",
+  "examples": {
+    "triangle": {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "odd_girth": 3,
+      "first_order": 2,
+      "leading_coefficient": "6",
+      "distinct_leading_subsets": 3,
+      "gap_taylor_coefficients_through_5": [
+        "0",
+        "0",
+        "6",
+        "20",
+        "38",
+        "52"
+      ],
+      "gamma_at_z_2": "11/2",
+      "factorized_at_z_2": "8",
+      "max_cut": "2"
+    },
+    "square": {
+      "vertices": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "odd_girth": null,
+      "first_order": null,
+      "leading_coefficient": "0",
+      "distinct_leading_subsets": 0,
+      "gap_taylor_coefficients_through_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "gamma_at_z_2": "16",
+      "factorized_at_z_2": "16",
+      "max_cut": "4"
+    },
+    "five_cycle": {
+      "vertices": 5,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "odd_girth": 5,
+      "first_order": 3,
+      "leading_coefficient": "20",
+      "distinct_leading_subsets": 10,
+      "gap_taylor_coefficients_through_5": [
+        "0",
+        "0",
+        "0",
+        "20",
+        "110",
+        "332"
+      ],
+      "gamma_at_z_2": "203/8",
+      "factorized_at_z_2": "32",
+      "max_cut": "4"
+    },
+    "theta_3_2_2": {
+      "vertices": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "odd_girth": 5,
+      "first_order": 3,
+      "leading_coefficient": "38",
+      "distinct_leading_subsets": 19,
+      "gap_taylor_coefficients_through_5": [
+        "0",
+        "0",
+        "0",
+        "38",
+        "310",
+        "1370"
+      ],
+      "gamma_at_z_2": "1471/16",
+      "factorized_at_z_2": "128",
+      "max_cut": "6"
+    }
+  },
+  "scope": "Finite certificates only. General theorem relies on the written proof.",
+  "python": "3.12.14"
+}

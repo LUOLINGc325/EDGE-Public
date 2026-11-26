@@ -1,0 +1,14 @@
+{
+  "plug_in_gamma_moment_cases": 225,
+  "rational_log_bracket_branch_and_evidence_checks": 70,
+  "bernoulli_log_power_regret_intervals": 48,
+  "largest_numerical_branch_gap_error": 4.440892098500626e-16,
+  "size_counterexample": {
+    "null": "Gamma(shape=1, rate=1)",
+    "trained_shape": 100,
+    "alternative_mean_factor": 2,
+    "nominal_alpha": "1/20",
+    "actual_size": "20^(-1/50)/4 > 1/5",
+    "with_isotonic_train_and_random_alternative_size_lower_bound": "3009/51200 > 1/20"
+  }
+}

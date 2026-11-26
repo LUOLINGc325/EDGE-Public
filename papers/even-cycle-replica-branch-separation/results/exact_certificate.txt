@@ -1,0 +1,12 @@
+C4, n=3: support baseline=44, singular=6, rank=38
+C6, n=3: support baseline=594, singular=22, rank=572
+C8, n=3: support baseline=7064, singular=86, rank=6978
+C10, n=3: support baseline=79070, singular=342, rank=78728
+C12, n=3: support baseline=851940, singular=1366, rank=850574
+C4, n=5: support baseline=232, singular=28, rank=204
+C6, n=5: support baseline=8604, singular=316, rank=8288
+C8, n=5: support baseline=283600, singular=4540, rank=279060
+C4, n=7: support baseline=660, singular=66, rank=594
+C6, n=7: support baseline=48078, singular=1266, rank=46812
+C8, n=7: support baseline=3114600, singular=36786, rank=3077814
+All exact mode sums and sampled formal branch inequalities passed.

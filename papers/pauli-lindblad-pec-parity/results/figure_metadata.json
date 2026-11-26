@@ -1,0 +1,13 @@
+{
+  "source": "Analytic finite Fourier formula; illustrative floating point curves",
+  "unit_edge_rates": true,
+  "hardware_measurements": false,
+  "models": [
+    "Triangle",
+    "Five-cycle",
+    "Theta (3,2,2)",
+    "Square (bipartite)"
+  ],
+  "data_rows": 644,
+  "matplotlib": "3.10.8"
+}

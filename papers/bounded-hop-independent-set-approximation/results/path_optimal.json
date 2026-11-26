@@ -1,0 +1,114 @@
+{
+  "algorithm": "bounded-hop forest-difference assignment, version 1",
+  "n": 11,
+  "k": 3,
+  "source": [
+    0,
+    3,
+    6
+  ],
+  "target": [
+    4,
+    7,
+    10
+  ],
+  "sources_only": [
+    0,
+    3,
+    6
+  ],
+  "targets_only": [
+    4,
+    7,
+    10
+  ],
+  "differences_forest": true,
+  "lower_bound": 6,
+  "assignment_upper_bound": 6,
+  "matching": [
+    [
+      0,
+      4
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      6,
+      10
+    ]
+  ],
+  "execution_order": [
+    2,
+    1,
+    0
+  ],
+  "moves": [
+    [
+      6,
+      8
+    ],
+    [
+      8,
+      10
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      2,
+      4
+    ]
+  ],
+  "length": 6,
+  "factor_numerator": 3,
+  "factor_denominator": 1,
+  "lower_certificate": {
+    "column_for_row": [
+      0,
+      1,
+      2
+    ],
+    "row_potential": [
+      4,
+      3,
+      2
+    ],
+    "column_potential": [
+      -2,
+      -1,
+      0
+    ],
+    "optimal_value": 6
+  },
+  "upper_certificate": {
+    "column_for_row": [
+      0,
+      1,
+      2
+    ],
+    "row_potential": [
+      18,
+      13,
+      8
+    ],
+    "column_potential": [
+      -10,
+      -5,
+      0
+    ],
+    "lex_multiplier": 4,
+    "optimal_lex_value": 24,
+    "optimal_primary_value": 6
+  }
+}

@@ -1,0 +1,9 @@
+25 forced-band Hessians, curvature sums and boundary cases: exact
+1092 contiguous-atom inequalities: exact
+20 sharp three-score coefficients: exact
+q=1/2, B=2: sharp coefficient 7/64
+n=16: n(FDR-q) in [0.00055335, 0.00055336]; exact marginals
+n=32: n(FDR-q) in [0.01830603, 0.01830604]; exact marginals
+n=64: n(FDR-q) in [0.03708343, 0.03708344]; exact marginals
+n=128: n(FDR-q) in [0.05383826, 0.05383827]; exact marginals
+One three-test straddling-atom finite-sample case: exact marginals

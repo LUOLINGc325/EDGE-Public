@@ -1,0 +1,13 @@
+{
+  "script": "code/checks.py",
+  "arithmetic": "fractions.Fraction",
+  "status": "pass",
+  "resolvent_comparisons": 40,
+  "slow_quadratic_coefficient": "873/19",
+  "intermediate_quadratic_coefficient": "9696/209",
+  "intermediate_speed": "1/2",
+  "finite_amplitude": "1/100000000",
+  "comparison_coefficient": "46",
+  "scaled_residual_slow_upper_bound": "-1/20",
+  "scaled_residual_intermediate_lower_bound": "1/3"
+}

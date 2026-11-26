@@ -1,0 +1,78 @@
+{
+  "as_of": "2026-11-25",
+  "scope": "Public primary-source checking; no account access, paywall bypass, author messaging or third-party fulltext redistribution.",
+  "primary_reads": [
+    {
+      "id": "ER2025v2",
+      "url": "https://arxiv.org/html/2410.01941v2",
+      "read_scope": "Model and Eqs. (1)–(17), reference 16, relevant fixed-target supplement",
+      "result": "primary_html_read",
+      "ref": "turn663288884view3"
+    },
+    {
+      "id": "PR2017",
+      "url": "https://arxiv.org/html/1607.06048v3",
+      "read_scope": "Renewal model, Eqs. (1),(3) and optimization discussion",
+      "result": "primary_html_read",
+      "ref": "turn975723280view0"
+    },
+    {
+      "id": "FS2008",
+      "url": "https://arxiv.org/html/0803.0503v2",
+      "read_scope": "Assumption 2.1, Proposition 2.3, Remark 2.4, Section 2.4",
+      "result": "primary_html_read",
+      "ref": "turn937875315view0"
+    },
+    {
+      "id": "ES2025",
+      "url": "https://arxiv.org/html/2412.16374v2",
+      "read_scope": "Sections 8.1–8.2, Eqs. (120)–(121)",
+      "result": "primary_html_read",
+      "ref": "turn975723280view2"
+    },
+    {
+      "id": "CS2018",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.050601",
+      "read_scope": "Publisher abstract, citation, authorization-required notice",
+      "result": "abstract_metadata_only",
+      "ref": "turn134400734view3"
+    },
+    {
+      "id": "CS2018_author_bibliography",
+      "url": "https://people.physik.hu-berlin.de/~sokolov/html/3.htm",
+      "read_scope": "Bibliography item 296, no manuscript link found",
+      "result": "metadata_only",
+      "ref": "turn555570521view2"
+    }
+  ],
+  "unsuccessful_primary_requests": [
+    {
+      "url": "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.121.050601",
+      "result": "tool inaccessible; publisher abstract confirms authorization required"
+    },
+    {
+      "url": "https://publishup.uni-potsdam.de/frontdoor/index/index/docId/52279",
+      "result": "tool inaccessible in this round"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1607.06048v3",
+      "result": "DisabledError; HTML succeeded"
+    },
+    {
+      "url": "https://arxiv.org/pdf/0803.0503v2",
+      "result": "DisabledError; HTML succeeded"
+    }
+  ],
+  "queries": [
+    "\"Chechkin\" \"Sokolov\" \"050601\" pdf",
+    "\"Random Search with Resetting: A Unified Renewal Approach\" filetype:pdf",
+    "\"Chechkin\" \"Sokolov\" \"Random Search\" full text",
+    "\"conjugate\" \"resetting\" \"global\" \"optimality\"",
+    "\"conjugate target\" \"uniqueness\" resetting",
+    "\"random search\" \"Sokolov\" \"multiple targets\" renewal 2018",
+    "\"Stochastic resetting prevails over sharp restart\" global proof",
+    "\"conjugate target distribution\" resetting proof",
+    "\"reset\" \"waiting law\" \"identifiability\" Brownian"
+  ],
+  "limitations": "No local PDF bytes were obtained in this round; source URL/version/reading locators are evidence identifiers, not fabricated PDF hashes. Search nonfindings do not certify worldwide priority."
+}

@@ -1,0 +1,80 @@
+{
+  "n": 30,
+  "p": "100",
+  "x": "4",
+  "rho": "48013/47340",
+  "root_payoff": {
+    "full": "-9373/11835",
+    "postponing": "-9373/11835",
+    "two_phase": "0",
+    "two_phase_postponing": "0",
+    "execution_suffix": "61047/263",
+    "execution_suffix_postponing": "61047/263"
+  },
+  "states": 5456,
+  "suffix_errors": [],
+  "local_strict_gaps": [
+    {
+      "state": [
+        27,
+        0,
+        0
+      ],
+      "values": {
+        "full": "422254/789",
+        "postponing": "422254/789",
+        "two_phase": "703888/1315",
+        "two_phase_postponing": "703888/1315",
+        "execution_suffix": "8554637/11835",
+        "execution_suffix_postponing": "8554637/11835"
+      }
+    },
+    {
+      "state": [
+        28,
+        0,
+        0
+      ],
+      "values": {
+        "full": "6808277/11835",
+        "postponing": "6808277/11835",
+        "two_phase": "454510/789",
+        "two_phase_postponing": "454510/789",
+        "execution_suffix": "613865/789",
+        "execution_suffix_postponing": "613865/789"
+      }
+    },
+    {
+      "state": [
+        29,
+        0,
+        0
+      ],
+      "values": {
+        "full": "7305347/11835",
+        "postponing": "7305347/11835",
+        "two_phase": "487648/789",
+        "two_phase_postponing": "487648/789",
+        "execution_suffix": "658049/789",
+        "execution_suffix_postponing": "658049/789"
+      }
+    },
+    {
+      "state": [
+        30,
+        0,
+        0
+      ],
+      "values": {
+        "full": "7814252/11835",
+        "postponing": "7814252/11835",
+        "two_phase": "521575/789",
+        "two_phase_postponing": "521575/789",
+        "execution_suffix": "704716/789",
+        "execution_suffix_postponing": "704716/789"
+      }
+    }
+  ],
+  "known_long_dominance_violations": [],
+  "arithmetic": "exact rational Fraction"
+}

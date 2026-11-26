@@ -1,0 +1,6 @@
+3x3, total 6: 3,003 integer tables, 784 margin pairs
+84,084 candidate joint profiles, 3,003 feasible
+4x4, total 4: 3,876 integer tables, 1,225 margin pairs
+47,775 candidate joint profiles, 3,471 feasible
+Three-level example: prior upper 17/36, sharp upper 13/36
+Trial, denominator 62211: open-only strict (13927, 49128); both strict (13927, 48696); both weak (31850, 62211)

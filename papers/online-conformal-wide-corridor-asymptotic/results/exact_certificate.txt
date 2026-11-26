@@ -1,0 +1,4 @@
+Alternating series terms: 100
+Monotone quadrature intervals: 2000 on [0,5] plus tail
+Certified enclosure: 0.6649312 < J < 0.6650689
+All bounds use exact rational arithmetic.

@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "purpose": "Independent exact nonvacuity check of the actual n=2 Pauli MUB definition",
+  "arithmetic": "Gaussian integer pairs; only integer addition, multiplication and conjugation",
+  "imports_author_code": false,
+  "uses_floating_point": false,
+  "qubits": 2,
+  "dimension": 4,
+  "pauli_order": [
+    "I",
+    "X",
+    "Y",
+    "Z"
+  ],
+  "basis_index_order": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "fiducial_coordinate_numerators": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "fiducial_coordinate_denominator": 2,
+  "fiducial_coordinate_norm_squared": {
+    "numerator": 1,
+    "denominator": 4
+  },
+  "label_count": 16,
+  "row_rule": "Local labels I,Z map to flip 0; X,Y map to flip 1",
+  "rows": [
+    {
+      "flip": [
+        0,
+        0
+      ],
+      "size": 4
+    },
+    {
+      "flip": [
+        0,
+        1
+      ],
+      "size": 4
+    },
+    {
+      "flip": [
+        1,
+        0
+      ],
+      "size": 4
+    },
+    {
+      "flip": [
+        1,
+        1
+      ],
+      "size": 4
+    }
+  ],
+  "ordered_pair_count": 256,
+  "counts": {
+    "normalized_diagonal": 16,
+    "within_row_ordered": 48,
+    "cross_row_ordered": 192
+  },
+  "inner_product_denominator": 4,
+  "squared_inner_product_denominator": 16,
+  "diagonal_inner_product_numerator_frequencies": [
+    {
+      "real": 4,
+      "imaginary": 0,
+      "count": 16
+    }
+  ],
+  "within_row_inner_product_numerator_frequencies": [
+    {
+      "real": 0,
+      "imaginary": 0,
+      "count": 48
+    }
+  ],
+  "cross_row_inner_product_numerator_frequencies": [
+    {
+      "real": -2,
+      "imaginary": 0,
+      "count": 24
+    },
+    {
+      "real": 0,
+      "imaginary": -2,
+      "count": 48
+    },
+    {
+      "real": 0,
+      "imaginary": 2,
+      "count": 48
+    },
+    {
+      "real": 2,
+      "imaginary": 0,
+      "count": 72
+    }
+  ],
+  "normalized_diagonal_overlap": {
+    "numerator": 1,
+    "denominator": 1
+  },
+  "normalized_within_row_overlap": {
+    "numerator": 0,
+    "denominator": 1
+  },
+  "normalized_cross_row_squared_overlap": {
+    "numerator": 1,
+    "denominator": 4
+  },
+  "scope_limit": "Finite independent arithmetic check only; not a Lean compilation or axiom-audit certificate"
+}

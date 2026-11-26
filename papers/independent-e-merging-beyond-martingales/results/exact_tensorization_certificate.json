@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "arithmetic": "fractions.Fraction",
+  "checks": [
+    {
+      "pairs": 1,
+      "t": "3",
+      "partial_information_states_checked": 10,
+      "optimal_expectation": "15/13",
+      "factorized_value": "15/13"
+    },
+    {
+      "pairs": 2,
+      "t": "3",
+      "partial_information_states_checked": 100,
+      "optimal_expectation": "225/169",
+      "factorized_value": "225/169"
+    },
+    {
+      "pairs": 3,
+      "t": "3",
+      "partial_information_states_checked": 1000,
+      "optimal_expectation": "3375/2197",
+      "factorized_value": "3375/2197"
+    },
+    {
+      "pairs": 4,
+      "t": "3",
+      "partial_information_states_checked": 10000,
+      "optimal_expectation": "50625/28561",
+      "factorized_value": "50625/28561"
+    },
+    {
+      "pairs": 1,
+      "t": "5/2",
+      "partial_information_states_checked": 10,
+      "optimal_expectation": "20/17",
+      "factorized_value": "20/17"
+    },
+    {
+      "pairs": 2,
+      "t": "5/2",
+      "partial_information_states_checked": 100,
+      "optimal_expectation": "400/289",
+      "factorized_value": "400/289"
+    },
+    {
+      "pairs": 3,
+      "t": "5/2",
+      "partial_information_states_checked": 1000,
+      "optimal_expectation": "8000/4913",
+      "factorized_value": "8000/4913"
+    },
+    {
+      "pairs": 4,
+      "t": "5/2",
+      "partial_information_states_checked": 10000,
+      "optimal_expectation": "160000/83521",
+      "factorized_value": "160000/83521"
+    }
+  ],
+  "scope": "Exact finite adaptive-order Bellman recursion; analytic proof handles arbitrary n."
+}

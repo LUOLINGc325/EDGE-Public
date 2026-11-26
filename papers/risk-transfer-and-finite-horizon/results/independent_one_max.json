@@ -1,0 +1,2982 @@
+{
+  "scope": "Finite verification only; not a proof of the general theorem or of reduction from arbitrary online algorithms.",
+  "model": "R_v(X)=X if X<=v, otherwise 1; offline=v; lower CVaR retains worst 1-delta mass",
+  "independence": "Written from the theorem statement and direct reward sorting; no parent implementation imported or read.",
+  "exact_grid_distributions_total": 51051,
+  "exact_grid_cases": 21,
+  "equal_atom_policy_cases": 168,
+  "exhaustive_exact": [
+    {
+      "theta": "2",
+      "delta": "0",
+      "threshold_grid": [
+        "1",
+        "6/5",
+        "7/5",
+        "8/5",
+        "9/5",
+        "2"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 1287,
+      "best_ratio_exact": "56/41",
+      "best_ratio_float": 1.3658536585365855,
+      "best_counts": [
+        0,
+        1,
+        3,
+        2,
+        2,
+        0
+      ],
+      "claimed_optimum": "1.278464542761073795109358739022980155439477488619745765453178105535026",
+      "no_better_grid_policy_certificate": "exact degree-60 exponential lower bound",
+      "certificate_residual_exact": "1526469025084960654548271807428903811781329424362205464642829649320158013216390456190591174353958097804567696610740195620293640387579093115536057731720026/3518790255507945271262313866055721679271237069023458978499860204286264591985869172742436121213600042218883417642297415161518435425990371356648660888671875",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "2",
+      "delta": "1/10",
+      "threshold_grid": [
+        "1",
+        "6/5",
+        "7/5",
+        "8/5",
+        "9/5",
+        "2"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 1287,
+      "best_ratio_exact": "252/181",
+      "best_ratio_float": 1.3922651933701657,
+      "best_counts": [
+        0,
+        1,
+        3,
+        2,
+        2,
+        0
+      ],
+      "claimed_optimum": "1.312770115774524593081761776030585559906572059110905307919790081529138",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "5118307536389008308354646/15284131723017060322419405",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "2",
+      "delta": "1/4",
+      "threshold_grid": [
+        "1",
+        "6/5",
+        "7/5",
+        "8/5",
+        "9/5",
+        "2"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 1287,
+      "best_ratio_exact": "7/5",
+      "best_ratio_float": 1.4,
+      "best_counts": [
+        0,
+        0,
+        5,
+        2,
+        1,
+        0
+      ],
+      "claimed_optimum": "1.359064287540752963654852819036028767745553213587398100320103792452060",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "7138/50625",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "2",
+      "delta": "2/5",
+      "threshold_grid": [
+        "1",
+        "6/5",
+        "7/5",
+        "8/5",
+        "9/5",
+        "2"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 1287,
+      "best_ratio_exact": "10/7",
+      "best_ratio_float": 1.4285714285714286,
+      "best_counts": [
+        0,
+        0,
+        5,
+        2,
+        1,
+        0
+      ],
+      "claimed_optimum": "1.398802722739193576267518766840088333849937670315331884699827106002728",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "92/1029",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "2",
+      "delta": "1/2",
+      "threshold_grid": [
+        "1",
+        "6/5",
+        "7/5",
+        "8/5",
+        "9/5",
+        "2"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 1287,
+      "best_ratio_exact": "10/7",
+      "best_ratio_float": 1.4285714285714286,
+      "best_counts": [
+        0,
+        0,
+        6,
+        1,
+        1,
+        0
+      ],
+      "claimed_optimum": "1.414213562373095048801688724209698078569671875376948073176679737990728",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "2/49",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "2",
+      "delta": "3/4",
+      "threshold_grid": [
+        "1",
+        "6/5",
+        "7/5",
+        "8/5",
+        "9/5",
+        "2"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 1287,
+      "best_ratio_exact": "10/7",
+      "best_ratio_float": 1.4285714285714286,
+      "best_counts": [
+        0,
+        0,
+        7,
+        1,
+        0,
+        0
+      ],
+      "claimed_optimum": "1.414213562373095048801688724209698078569671875376948073176679737990728",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "2/49",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "2",
+      "delta": "9/10",
+      "threshold_grid": [
+        "1",
+        "6/5",
+        "7/5",
+        "8/5",
+        "9/5",
+        "2"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 1287,
+      "best_ratio_exact": "10/7",
+      "best_ratio_float": 1.4285714285714286,
+      "best_counts": [
+        0,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      "claimed_optimum": "1.414213562373095048801688724209698078569671875376948073176679737990728",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "2/49",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "4",
+      "delta": "0",
+      "threshold_grid": [
+        "1",
+        "3/2",
+        "2",
+        "5/2",
+        "3",
+        "7/2",
+        "4"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "56/31",
+      "best_ratio_float": 1.8064516129032258,
+      "best_counts": [
+        0,
+        2,
+        3,
+        1,
+        1,
+        1,
+        0
+      ],
+      "claimed_optimum": "1.603545739535836010404151091434733827380120480687198140125925349296868",
+      "no_better_grid_policy_certificate": "exact degree-60 exponential lower bound",
+      "certificate_residual_exact": "120891147316859264002220009059669940166966481178176150222679807863164518695982942619124364654789335408508291022612566398524279270882987122144628164/63283009724334394634070560897658974508394748686241788376487718749680052996454253224292888913384696725777561723262403407501030512601118005615234375",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "4",
+      "delta": "1/10",
+      "threshold_grid": [
+        "1",
+        "3/2",
+        "2",
+        "5/2",
+        "3",
+        "7/2",
+        "4"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "288/151",
+      "best_ratio_float": 1.9072847682119205,
+      "best_counts": [
+        0,
+        2,
+        3,
+        1,
+        2,
+        0,
+        0
+      ],
+      "claimed_optimum": "1.698228473921311784829784698129441378640006459350828782693881349367117",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "26986815368231206165787636/17471191989204596987192835",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "4",
+      "delta": "1/4",
+      "threshold_grid": [
+        "1",
+        "3/2",
+        "2",
+        "5/2",
+        "3",
+        "7/2",
+        "4"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "2",
+      "best_ratio_float": 2.0,
+      "best_counts": [
+        0,
+        0,
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "claimed_optimum": "1.830389787535873121773298477285504554675628958459901742854538490561395",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "76/81",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "4",
+      "delta": "2/5",
+      "threshold_grid": [
+        "1",
+        "3/2",
+        "2",
+        "5/2",
+        "3",
+        "7/2",
+        "4"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "2",
+      "best_ratio_float": 2.0,
+      "best_counts": [
+        0,
+        0,
+        5,
+        1,
+        1,
+        1,
+        0
+      ],
+      "claimed_optimum": "1.949261493912594213011837853894219743988394683136581204423670632660396",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "2/9",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "4",
+      "delta": "1/2",
+      "threshold_grid": [
+        "1",
+        "3/2",
+        "2",
+        "5/2",
+        "3",
+        "7/2",
+        "4"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "2",
+      "best_ratio_float": 2.0,
+      "best_counts": [
+        0,
+        0,
+        5,
+        1,
+        1,
+        1,
+        0
+      ],
+      "claimed_optimum": "1.999999999999999999999999999999999999999999999999999999999999999999991",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "0",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "4",
+      "delta": "3/4",
+      "threshold_grid": [
+        "1",
+        "3/2",
+        "2",
+        "5/2",
+        "3",
+        "7/2",
+        "4"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "2",
+      "best_ratio_float": 2.0,
+      "best_counts": [
+        0,
+        0,
+        7,
+        0,
+        1,
+        0,
+        0
+      ],
+      "claimed_optimum": "1.999999999999999999999999999999999999999999999999999999999999999999991",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "0",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "4",
+      "delta": "9/10",
+      "threshold_grid": [
+        "1",
+        "3/2",
+        "2",
+        "5/2",
+        "3",
+        "7/2",
+        "4"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "2",
+      "best_ratio_float": 2.0,
+      "best_counts": [
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "claimed_optimum": "1.999999999999999999999999999999999999999999999999999999999999999999991",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "0",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "9",
+      "delta": "0",
+      "threshold_grid": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "9"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "12/5",
+      "best_ratio_float": 2.4,
+      "best_counts": [
+        0,
+        2,
+        2,
+        1,
+        2,
+        1,
+        0
+      ],
+      "claimed_optimum": "2.040112582235691962253408448285948987295002164018538141516403147564502",
+      "no_better_grid_policy_certificate": "exact degree-60 exponential lower bound",
+      "certificate_residual_exact": "1787971736172891541175717374830290463803561943952266037709722448629046870614216255770698792487/240563000626185658319478629264404080150693639967109972721548416529913083650171756744384765625",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "9",
+      "delta": "1/10",
+      "threshold_grid": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "9"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "60/23",
+      "best_ratio_float": 2.608695652173913,
+      "best_counts": [
+        0,
+        2,
+        2,
+        1,
+        2,
+        1,
+        0
+      ],
+      "claimed_optimum": "2.251994732021700000268247817573198765277879357571205497345582965097658",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "2345994195976211598899/462330677463749602389",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "9",
+      "delta": "1/4",
+      "threshold_grid": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "9"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "3",
+      "best_ratio_float": 3.0,
+      "best_counts": [
+        0,
+        0,
+        3,
+        1,
+        2,
+        1,
+        1
+      ],
+      "claimed_optimum": "2.561494759644522747628061806347277093247484606589329989028341863447912",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "13/3",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "9",
+      "delta": "2/5",
+      "threshold_grid": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "9"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "3",
+      "best_ratio_float": 3.0,
+      "best_counts": [
+        0,
+        0,
+        4,
+        1,
+        2,
+        1,
+        0
+      ],
+      "claimed_optimum": "2.856327760615727893871150759393228385298702547703354382439465194101418",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "1",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "9",
+      "delta": "1/2",
+      "threshold_grid": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "9"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "3",
+      "best_ratio_float": 3.0,
+      "best_counts": [
+        0,
+        0,
+        5,
+        1,
+        1,
+        1,
+        0
+      ],
+      "claimed_optimum": "2.999999999999999999999999999999999999999999999999999999999999999999982",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "0",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "9",
+      "delta": "3/4",
+      "threshold_grid": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "9"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "3",
+      "best_ratio_float": 3.0,
+      "best_counts": [
+        0,
+        0,
+        7,
+        0,
+        1,
+        0,
+        0
+      ],
+      "claimed_optimum": "2.999999999999999999999999999999999999999999999999999999999999999999982",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "0",
+      "certificate_nonnegative": true
+    },
+    {
+      "theta": "9",
+      "delta": "9/10",
+      "threshold_grid": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "9"
+      ],
+      "probability_denominator": 8,
+      "distributions_exhausted": 3003,
+      "best_ratio_exact": "3",
+      "best_ratio_float": 3.0,
+      "best_counts": [
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "claimed_optimum": "2.999999999999999999999999999999999999999999999999999999999999999999982",
+      "no_better_grid_policy_certificate": "exact finite polynomial",
+      "certificate_residual_exact": "0",
+      "certificate_nonnegative": true
+    }
+  ],
+  "equal_atom_float": [
+    {
+      "theta": "2",
+      "delta": "0",
+      "equal_atoms": 8,
+      "endpoint_budget": 1.2998545515856177,
+      "direct_sorted_reward_ratio": 1.299854551585618,
+      "claimed_optimum": 1.2784645427610737,
+      "gap_above_claim": 0.021390008824544005,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.2998545515856177,
+        1.8602285074056355
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "0",
+      "equal_atoms": 16,
+      "endpoint_budget": 1.2893697489722513,
+      "direct_sorted_reward_ratio": 1.2893697489722513,
+      "claimed_optimum": 1.2784645427610737,
+      "gap_above_claim": 0.010905206211177632,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.2893697489722513,
+        1.9254241324181933
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "0",
+      "equal_atoms": 32,
+      "endpoint_budget": 1.2839715122472282,
+      "direct_sorted_reward_ratio": 1.2839715122472284,
+      "claimed_optimum": 1.2784645427610737,
+      "gap_above_claim": 0.005506969486154478,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.2839715122472282,
+        1.9614237287826433
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "0",
+      "equal_atoms": 64,
+      "endpoint_budget": 1.2812318564459595,
+      "direct_sorted_reward_ratio": 1.2812318564459602,
+      "claimed_optimum": 1.2784645427610737,
+      "gap_above_claim": 0.002767313684885808,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.2812318564459595,
+        1.98037365686874
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "0",
+      "equal_atoms": 128,
+      "endpoint_budget": 1.2798516871899235,
+      "direct_sorted_reward_ratio": 1.2798516871899241,
+      "claimed_optimum": 1.2784645427610737,
+      "gap_above_claim": 0.0013871444288497958,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.2798516871899235,
+        1.9901001457652763
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "0",
+      "equal_atoms": 256,
+      "endpoint_budget": 1.2791589907098104,
+      "direct_sorted_reward_ratio": 1.2791589907098115,
+      "claimed_optimum": 1.2784645427610737,
+      "gap_above_claim": 0.0006944479487367428,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.2791589907098104,
+        1.9950281282178943
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/10",
+      "equal_atoms": 8,
+      "endpoint_budget": 1.329441903203458,
+      "direct_sorted_reward_ratio": 1.3294419032034583,
+      "claimed_optimum": 1.3127701157745246,
+      "gap_above_claim": 0.01667178742893327,
+      "terminal_price_residual": 8.881784197001252e-16,
+      "threshold_range": [
+        1.329441903203458,
+        1.8592179813398797
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/10",
+      "equal_atoms": 16,
+      "endpoint_budget": 1.3213955669327762,
+      "direct_sorted_reward_ratio": 1.3213955669327766,
+      "claimed_optimum": 1.3127701157745246,
+      "gap_above_claim": 0.00862545115825153,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.3213955669327762,
+        1.9250148611470053
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/10",
+      "equal_atoms": 32,
+      "endpoint_budget": 1.317287700228366,
+      "direct_sorted_reward_ratio": 1.3172877002283663,
+      "claimed_optimum": 1.3127701157745246,
+      "gap_above_claim": 0.004517584453841428,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.317287700228366,
+        1.9612513004383545
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/10",
+      "equal_atoms": 64,
+      "endpoint_budget": 1.3150476683217445,
+      "direct_sorted_reward_ratio": 1.315047668321745,
+      "claimed_optimum": 1.3127701157745246,
+      "gap_above_claim": 0.002277552547219841,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.3150476683217445,
+        1.9802948651163228
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/10",
+      "equal_atoms": 128,
+      "endpoint_budget": 1.313922136179028,
+      "direct_sorted_reward_ratio": 1.313922136179028,
+      "claimed_optimum": 1.3127701157745246,
+      "gap_above_claim": 0.001152020404503462,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.313922136179028,
+        1.990062750881099
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/10",
+      "equal_atoms": 256,
+      "endpoint_budget": 1.313347373053496,
+      "direct_sorted_reward_ratio": 1.3133473730534975,
+      "claimed_optimum": 1.3127701157745246,
+      "gap_above_claim": 0.0005772572789712882,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.313347373053496,
+        1.9950099194653463
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/4",
+      "equal_atoms": 8,
+      "endpoint_budget": 1.3722813232690143,
+      "direct_sorted_reward_ratio": 1.3722813232690143,
+      "claimed_optimum": 1.359064287540753,
+      "gap_above_claim": 0.013217035728261273,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.3722813232690143,
+        1.8564322306091547
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/4",
+      "equal_atoms": 16,
+      "endpoint_budget": 1.3657243933884595,
+      "direct_sorted_reward_ratio": 1.3657243933884595,
+      "claimed_optimum": 1.359064287540753,
+      "gap_above_claim": 0.006660105847706488,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.3657243933884595,
+        1.9235992779398916
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/4",
+      "equal_atoms": 32,
+      "endpoint_budget": 1.3624047148838432,
+      "direct_sorted_reward_ratio": 1.3624047148838436,
+      "claimed_optimum": 1.359064287540753,
+      "gap_above_claim": 0.0033404273430901466,
+      "terminal_price_residual": 8.881784197001252e-16,
+      "threshold_range": [
+        1.3624047148838432,
+        1.9605176218505673
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/4",
+      "equal_atoms": 64,
+      "endpoint_budget": 1.3607367948236753,
+      "direct_sorted_reward_ratio": 1.3607367948236764,
+      "claimed_optimum": 1.359064287540753,
+      "gap_above_claim": 0.001672507282922231,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.3607367948236753,
+        1.9799235854872321
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/4",
+      "equal_atoms": 128,
+      "endpoint_budget": 1.3599010780467378,
+      "direct_sorted_reward_ratio": 1.3599010780467407,
+      "claimed_optimum": 1.359064287540753,
+      "gap_above_claim": 0.0008367905059847303,
+      "terminal_price_residual": 1.3322676295501878e-15,
+      "threshold_range": [
+        1.3599010780467378,
+        1.9898762226745526
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/4",
+      "equal_atoms": 256,
+      "endpoint_budget": 1.359482812502588,
+      "direct_sorted_reward_ratio": 1.3594828125025884,
+      "claimed_optimum": 1.359064287540753,
+      "gap_above_claim": 0.0004185249618349207,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.359482812502588,
+        1.9949165030655658
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "2/5",
+      "equal_atoms": 8,
+      "endpoint_budget": 1.4062999990606189,
+      "direct_sorted_reward_ratio": 1.4062999990606193,
+      "claimed_optimum": 1.3988027227391935,
+      "gap_above_claim": 0.0074972763214253835,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.4062999990606189,
+        1.858642252295964
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "2/5",
+      "equal_atoms": 16,
+      "endpoint_budget": 1.4027362797069558,
+      "direct_sorted_reward_ratio": 1.402736279706956,
+      "claimed_optimum": 1.3988027227391935,
+      "gap_above_claim": 0.0039335569677623194,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.4027362797069558,
+        1.9222358010291511
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "2/5",
+      "equal_atoms": 32,
+      "endpoint_budget": 1.400987401283314,
+      "direct_sorted_reward_ratio": 1.4009874012833148,
+      "claimed_optimum": 1.3988027227391935,
+      "gap_above_claim": 0.002184678544120411,
+      "terminal_price_residual": 1.3322676295501878e-15,
+      "threshold_range": [
+        1.400987401283314,
+        1.9592117441995403
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "2/5",
+      "equal_atoms": 64,
+      "endpoint_budget": 1.3999052166178887,
+      "direct_sorted_reward_ratio": 1.3999052166178894,
+      "claimed_optimum": 1.3988027227391935,
+      "gap_above_claim": 0.0011024938786952099,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.3999052166178887,
+        1.9791495738053442
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "2/5",
+      "equal_atoms": 128,
+      "endpoint_budget": 1.399367213309476,
+      "direct_sorted_reward_ratio": 1.399367213309477,
+      "claimed_optimum": 1.3988027227391935,
+      "gap_above_claim": 0.0005644905702826275,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.399367213309476,
+        1.9894614256366538
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "2/5",
+      "equal_atoms": 256,
+      "endpoint_budget": 1.399085579257794,
+      "direct_sorted_reward_ratio": 1.3990855792577968,
+      "claimed_optimum": 1.3988027227391935,
+      "gap_above_claim": 0.0002828565186006049,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.399085579257794,
+        1.9947027054005133
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/2",
+      "equal_atoms": 8,
+      "endpoint_budget": 1.4142135623730951,
+      "direct_sorted_reward_ratio": 1.4142135623730954,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.4142135623730951,
+        1.8535533905932742
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/2",
+      "equal_atoms": 16,
+      "endpoint_budget": 1.4142135623730951,
+      "direct_sorted_reward_ratio": 1.4142135623730951,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.4142135623730951,
+        1.9267766952966374
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/2",
+      "equal_atoms": 32,
+      "endpoint_budget": 1.414213562373095,
+      "direct_sorted_reward_ratio": 1.414213562373095,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": -2.220446049250313e-16,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.414213562373095,
+        1.9633883476483187
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/2",
+      "equal_atoms": 64,
+      "endpoint_budget": 1.4142135623730954,
+      "direct_sorted_reward_ratio": 1.4142135623730963,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 2.220446049250313e-16,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.4142135623730954,
+        1.9816941738241594
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/2",
+      "equal_atoms": 128,
+      "endpoint_budget": 1.414213562373096,
+      "direct_sorted_reward_ratio": 1.414213562373097,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 8.881784197001252e-16,
+      "terminal_price_residual": 2.6645352591003757e-15,
+      "threshold_range": [
+        1.414213562373096,
+        1.9908470869120825
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "1/2",
+      "equal_atoms": 256,
+      "endpoint_budget": 1.4142135623730934,
+      "direct_sorted_reward_ratio": 1.4142135623730934,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": -1.7763568394002505e-15,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.4142135623730934,
+        1.9954235434560397
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "3/4",
+      "equal_atoms": 8,
+      "endpoint_budget": 1.4142135623730951,
+      "direct_sorted_reward_ratio": 1.4142135623730951,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.4142135623730951,
+        1.7071067811865475
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "3/4",
+      "equal_atoms": 16,
+      "endpoint_budget": 1.4142135623730951,
+      "direct_sorted_reward_ratio": 1.4142135623730954,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.4142135623730951,
+        1.8535533905932742
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "3/4",
+      "equal_atoms": 32,
+      "endpoint_budget": 1.4142135623730951,
+      "direct_sorted_reward_ratio": 1.4142135623730951,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.4142135623730951,
+        1.9267766952966374
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "3/4",
+      "equal_atoms": 64,
+      "endpoint_budget": 1.414213562373095,
+      "direct_sorted_reward_ratio": 1.414213562373095,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": -2.220446049250313e-16,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.414213562373095,
+        1.9633883476483187
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "3/4",
+      "equal_atoms": 128,
+      "endpoint_budget": 1.4142135623730954,
+      "direct_sorted_reward_ratio": 1.4142135623730963,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 2.220446049250313e-16,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.4142135623730954,
+        1.9816941738241594
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "3/4",
+      "equal_atoms": 256,
+      "endpoint_budget": 1.414213562373096,
+      "direct_sorted_reward_ratio": 1.414213562373097,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 8.881784197001252e-16,
+      "terminal_price_residual": 2.6645352591003757e-15,
+      "threshold_range": [
+        1.414213562373096,
+        1.9908470869120825
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "9/10",
+      "equal_atoms": 8,
+      "endpoint_budget": 1.4142135623730951,
+      "direct_sorted_reward_ratio": 1.4142135623730951,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.4142135623730951,
+        1.4142135623730951
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "9/10",
+      "equal_atoms": 16,
+      "endpoint_budget": 1.4142135623730951,
+      "direct_sorted_reward_ratio": 1.4142135623730951,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.4142135623730951,
+        1.6338834764831847
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "9/10",
+      "equal_atoms": 32,
+      "endpoint_budget": 1.4142135623730951,
+      "direct_sorted_reward_ratio": 1.4142135623730951,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.4142135623730951,
+        1.8169417382415922
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "9/10",
+      "equal_atoms": 64,
+      "endpoint_budget": 1.4142135623730951,
+      "direct_sorted_reward_ratio": 1.4142135623730951,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.4142135623730951,
+        1.908470869120796
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "9/10",
+      "equal_atoms": 128,
+      "endpoint_budget": 1.414213562373095,
+      "direct_sorted_reward_ratio": 1.414213562373095,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": -2.220446049250313e-16,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.414213562373095,
+        1.954235434560398
+      ]
+    },
+    {
+      "theta": "2",
+      "delta": "9/10",
+      "equal_atoms": 256,
+      "endpoint_budget": 1.4142135623730951,
+      "direct_sorted_reward_ratio": 1.4142135623730951,
+      "claimed_optimum": 1.4142135623730951,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 4.440892098500626e-16,
+      "threshold_range": [
+        1.4142135623730951,
+        1.9771177172801997
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "0",
+      "equal_atoms": 8,
+      "endpoint_budget": 1.6624401192710396,
+      "direct_sorted_reward_ratio": 1.66244011927104,
+      "claimed_optimum": 1.603545739535836,
+      "gap_above_claim": 0.05889437973520373,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        1.6624401192710396,
+        3.48384462969491
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "0",
+      "equal_atoms": 16,
+      "endpoint_budget": 1.633387006046138,
+      "direct_sorted_reward_ratio": 1.6333870060461384,
+      "claimed_optimum": 1.603545739535836,
+      "gap_above_claim": 0.029841266510302056,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        1.633387006046138,
+        3.722108916655761
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "0",
+      "equal_atoms": 32,
+      "endpoint_budget": 1.6185665438585872,
+      "direct_sorted_reward_ratio": 1.6185665438585872,
+      "claimed_optimum": 1.603545739535836,
+      "gap_above_claim": 0.015020804322751324,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.6185665438585872,
+        3.8555649413177373
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "0",
+      "equal_atoms": 64,
+      "endpoint_budget": 1.6110813917376265,
+      "direct_sorted_reward_ratio": 1.611081391737627,
+      "claimed_optimum": 1.603545739535836,
+      "gap_above_claim": 0.0075356522017906435,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.6110813917376265,
+        3.926334941100033
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "0",
+      "equal_atoms": 128,
+      "endpoint_budget": 1.607319904089107,
+      "direct_sorted_reward_ratio": 1.6073199040891084,
+      "claimed_optimum": 1.603545739535836,
+      "gap_above_claim": 0.0037741645532711754,
+      "terminal_price_residual": 3.552713678800501e-15,
+      "threshold_range": [
+        1.607319904089107,
+        3.962795622069532
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "0",
+      "equal_atoms": 256,
+      "endpoint_budget": 1.6054344096698745,
+      "direct_sorted_reward_ratio": 1.6054344096698752,
+      "claimed_optimum": 1.603545739535836,
+      "gap_above_claim": 0.0018886701340385947,
+      "terminal_price_residual": 2.6645352591003757e-15,
+      "threshold_range": [
+        1.6054344096698745,
+        3.9813035651206423
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/10",
+      "equal_atoms": 8,
+      "endpoint_budget": 1.7450671441017584,
+      "direct_sorted_reward_ratio": 1.7450671441017587,
+      "claimed_optimum": 1.6982284739213118,
+      "gap_above_claim": 0.04683867018044663,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        1.7450671441017584,
+        3.4816583382628887
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/10",
+      "equal_atoms": 16,
+      "endpoint_budget": 1.7223901561246304,
+      "direct_sorted_reward_ratio": 1.722390156124631,
+      "claimed_optimum": 1.6982284739213118,
+      "gap_above_claim": 0.024161682203318602,
+      "terminal_price_residual": 2.6645352591003757e-15,
+      "threshold_range": [
+        1.7223901561246304,
+        3.72122115994423
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/10",
+      "equal_atoms": 32,
+      "endpoint_budget": 1.7108953323633482,
+      "direct_sorted_reward_ratio": 1.710895332363349,
+      "claimed_optimum": 1.6982284739213118,
+      "gap_above_claim": 0.01266685844203641,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.7108953323633482,
+        3.8551911979573577
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/10",
+      "equal_atoms": 64,
+      "endpoint_budget": 1.704607675255404,
+      "direct_sorted_reward_ratio": 1.704607675255405,
+      "claimed_optimum": 1.6982284739213118,
+      "gap_above_claim": 0.006379201334092199,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        1.704607675255404,
+        3.9261639741936265
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/10",
+      "equal_atoms": 128,
+      "endpoint_budget": 1.7014556549907536,
+      "direct_sorted_reward_ratio": 1.7014556549907542,
+      "claimed_optimum": 1.6982284739213118,
+      "gap_above_claim": 0.0032271810694417535,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        1.7014556549907536,
+        3.962714437609132
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/10",
+      "equal_atoms": 256,
+      "endpoint_budget": 1.699845150578389,
+      "direct_sorted_reward_ratio": 1.6998451505783896,
+      "claimed_optimum": 1.6982284739213118,
+      "gap_above_claim": 0.0016166766570770985,
+      "terminal_price_residual": 8.881784197001252e-16,
+      "threshold_range": [
+        1.699845150578389,
+        3.9812640174902185
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/4",
+      "equal_atoms": 8,
+      "endpoint_budget": 1.8691877550272642,
+      "direct_sorted_reward_ratio": 1.8691877550272646,
+      "claimed_optimum": 1.8303897875358732,
+      "gap_above_claim": 0.03879796749139097,
+      "terminal_price_residual": 8.881784197001252e-16,
+      "threshold_range": [
+        1.8691877550272642,
+        3.4761522470191655
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/4",
+      "equal_atoms": 16,
+      "endpoint_budget": 1.8498760378750694,
+      "direct_sorted_reward_ratio": 1.8498760378750696,
+      "claimed_optimum": 1.8303897875358732,
+      "gap_above_claim": 0.019486250339196154,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.8498760378750694,
+        3.7182696935011763
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/4",
+      "equal_atoms": 32,
+      "endpoint_budget": 1.8401419381912123,
+      "direct_sorted_reward_ratio": 1.840141938191213,
+      "claimed_optimum": 1.8303897875358732,
+      "gap_above_claim": 0.009752150655339076,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.8401419381912123,
+        3.853547916880799
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/4",
+      "equal_atoms": 64,
+      "endpoint_budget": 1.8352666646382145,
+      "direct_sorted_reward_ratio": 1.8352666646382165,
+      "claimed_optimum": 1.8303897875358732,
+      "gap_above_claim": 0.004876877102341304,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        1.8352666646382145,
+        3.9253084317191593
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/4",
+      "equal_atoms": 128,
+      "endpoint_budget": 1.832828253453382,
+      "direct_sorted_reward_ratio": 1.8328282534533822,
+      "claimed_optimum": 1.8303897875358732,
+      "gap_above_claim": 0.0024384659175087364,
+      "terminal_price_residual": 8.881784197001252e-16,
+      "threshold_range": [
+        1.832828253453382,
+        3.9622798601189784
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/4",
+      "equal_atoms": 256,
+      "endpoint_budget": 1.831609006238175,
+      "direct_sorted_reward_ratio": 1.831609006238175,
+      "claimed_optimum": 1.8303897875358732,
+      "gap_above_claim": 0.0012192187023016832,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.831609006238175,
+        3.9810453821954046
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "2/5",
+      "equal_atoms": 8,
+      "endpoint_budget": 1.9734948365075198,
+      "direct_sorted_reward_ratio": 1.9734948365075198,
+      "claimed_optimum": 1.9492614939125943,
+      "gap_above_claim": 0.02423334259492549,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.9734948365075198,
+        3.494434571135525
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "2/5",
+      "equal_atoms": 16,
+      "endpoint_budget": 1.9618753235346311,
+      "direct_sorted_reward_ratio": 1.9618753235346316,
+      "claimed_optimum": 1.9492614939125943,
+      "gap_above_claim": 0.012613829622036832,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.9618753235346311,
+        3.7150517033943937
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "2/5",
+      "equal_atoms": 32,
+      "endpoint_budget": 1.9562404427887254,
+      "direct_sorted_reward_ratio": 1.9562404427887259,
+      "claimed_optimum": 1.9492614939125943,
+      "gap_above_claim": 0.0069789488761311524,
+      "terminal_price_residual": 8.881784197001252e-16,
+      "threshold_range": [
+        1.9562404427887254,
+        3.8489663290305685
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "2/5",
+      "equal_atoms": 64,
+      "endpoint_budget": 1.9527751779692333,
+      "direct_sorted_reward_ratio": 1.9527751779692337,
+      "claimed_optimum": 1.9492614939125943,
+      "gap_above_claim": 0.003513684056638988,
+      "terminal_price_residual": 3.552713678800501e-15,
+      "threshold_range": [
+        1.9527751779692333,
+        3.92247337888617
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "2/5",
+      "equal_atoms": 128,
+      "endpoint_budget": 1.9510584651310077,
+      "direct_sorted_reward_ratio": 1.9510584651310081,
+      "claimed_optimum": 1.9492614939125943,
+      "gap_above_claim": 0.001796971218413379,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.9510584651310077,
+        3.9607394971723475
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "2/5",
+      "equal_atoms": 256,
+      "endpoint_budget": 1.9501613821405486,
+      "direct_sorted_reward_ratio": 1.950161382140549,
+      "claimed_optimum": 1.9492614939125943,
+      "gap_above_claim": 0.0008998882279542819,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        1.9501613821405486,
+        3.9802475847651775
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/2",
+      "equal_atoms": 8,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.5
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/2",
+      "equal_atoms": 16,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.75
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/2",
+      "equal_atoms": 32,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.875
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/2",
+      "equal_atoms": 64,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.9375
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/2",
+      "equal_atoms": 128,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.96875
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "1/2",
+      "equal_atoms": 256,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.984375
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "3/4",
+      "equal_atoms": 8,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.0
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "3/4",
+      "equal_atoms": 16,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.5
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "3/4",
+      "equal_atoms": 32,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.75
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "3/4",
+      "equal_atoms": 64,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.875
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "3/4",
+      "equal_atoms": 128,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.9375
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "3/4",
+      "equal_atoms": 256,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.96875
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "9/10",
+      "equal_atoms": 8,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "9/10",
+      "equal_atoms": 16,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        2.75
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "9/10",
+      "equal_atoms": 32,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.375
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "9/10",
+      "equal_atoms": 64,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.6875
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "9/10",
+      "equal_atoms": 128,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.84375
+      ]
+    },
+    {
+      "theta": "4",
+      "delta": "9/10",
+      "equal_atoms": 256,
+      "endpoint_budget": 2.0,
+      "direct_sorted_reward_ratio": 2.0,
+      "claimed_optimum": 2.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.0,
+        3.921875
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "0",
+      "equal_atoms": 8,
+      "endpoint_budget": 2.1714825389353356,
+      "direct_sorted_reward_ratio": 2.1714825389353356,
+      "claimed_optimum": 2.040112582235692,
+      "gap_above_claim": 0.1313699566996438,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        2.1714825389353356,
+        7.292101446865287
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "0",
+      "equal_atoms": 16,
+      "endpoint_budget": 2.1061214870787435,
+      "direct_sorted_reward_ratio": 2.106121487078744,
+      "claimed_optimum": 2.040112582235692,
+      "gap_above_claim": 0.06600890484305166,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.1061214870787435,
+        8.069432296217936
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "0",
+      "equal_atoms": 32,
+      "endpoint_budget": 2.0731939830329065,
+      "direct_sorted_reward_ratio": 2.073193983032907,
+      "claimed_optimum": 2.040112582235692,
+      "gap_above_claim": 0.033081400797214666,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        2.0731939830329065,
+        8.513237535861117
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "0",
+      "equal_atoms": 64,
+      "endpoint_budget": 2.0566719760795173,
+      "direct_sorted_reward_ratio": 2.0566719760795182,
+      "claimed_optimum": 2.040112582235692,
+      "gap_above_claim": 0.016559393843825543,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        2.0566719760795173,
+        8.750920303484344
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "0",
+      "equal_atoms": 128,
+      "endpoint_budget": 2.0483968819865908,
+      "direct_sorted_reward_ratio": 2.048396881986591,
+      "claimed_optimum": 2.040112582235692,
+      "gap_above_claim": 0.008284299750898949,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        2.0483968819865908,
+        8.873991718092741
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "0",
+      "equal_atoms": 256,
+      "endpoint_budget": 2.044255873837393,
+      "direct_sorted_reward_ratio": 2.0442558738373933,
+      "claimed_optimum": 2.040112582235692,
+      "gap_above_claim": 0.004143291601701016,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.044255873837393,
+        8.936623092285785
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/10",
+      "equal_atoms": 8,
+      "endpoint_budget": 2.3593078647651575,
+      "direct_sorted_reward_ratio": 2.3593078647651575,
+      "claimed_optimum": 2.2519947320217,
+      "gap_above_claim": 0.10731313274345755,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        2.3593078647651575,
+        7.290898901870413
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/10",
+      "equal_atoms": 16,
+      "endpoint_budget": 2.3071432995625276,
+      "direct_sorted_reward_ratio": 2.3071432995625276,
+      "claimed_optimum": 2.2519947320217,
+      "gap_above_claim": 0.05514856754082764,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        2.3071432995625276,
+        8.069075217995438
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/10",
+      "equal_atoms": 32,
+      "endpoint_budget": 2.2809456375422417,
+      "direct_sorted_reward_ratio": 2.2809456375422417,
+      "claimed_optimum": 2.2519947320217,
+      "gap_above_claim": 0.028950905520541692,
+      "terminal_price_residual": 3.552713678800501e-15,
+      "threshold_range": [
+        2.2809456375422417,
+        8.513126008633872
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/10",
+      "equal_atoms": 64,
+      "endpoint_budget": 2.2665537168556615,
+      "direct_sorted_reward_ratio": 2.2665537168556624,
+      "claimed_optimum": 2.2519947320217,
+      "gap_above_claim": 0.014558984833961564,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.2665537168556615,
+        8.750876031383646
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/10",
+      "equal_atoms": 128,
+      "endpoint_budget": 2.259361463987726,
+      "direct_sorted_reward_ratio": 2.259361463987726,
+      "claimed_optimum": 2.2519947320217,
+      "gap_above_claim": 0.007366731966026219,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.259361463987726,
+        8.873972356445856
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/10",
+      "equal_atoms": 256,
+      "endpoint_budget": 2.2556838957419583,
+      "direct_sorted_reward_ratio": 2.2556838957419605,
+      "claimed_optimum": 2.2519947320217,
+      "gap_above_claim": 0.0036891637202582928,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.2556838957419583,
+        8.936614008025481
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/4",
+      "equal_atoms": 8,
+      "endpoint_budget": 2.6558324334434675,
+      "direct_sorted_reward_ratio": 2.6558324334434675,
+      "claimed_optimum": 2.5614947596445226,
+      "gap_above_claim": 0.09433767379894498,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        2.6558324334434675,
+        7.293787377083995
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/4",
+      "equal_atoms": 16,
+      "endpoint_budget": 2.608682289006775,
+      "direct_sorted_reward_ratio": 2.6086822890067753,
+      "claimed_optimum": 2.5614947596445226,
+      "gap_above_claim": 0.047187529362252345,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.608682289006775,
+        8.068540369610096
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/4",
+      "equal_atoms": 32,
+      "endpoint_budget": 2.5850401534112386,
+      "direct_sorted_reward_ratio": 2.5850401534112386,
+      "claimed_optimum": 2.5614947596445226,
+      "gap_above_claim": 0.02354539376671605,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.5850401534112386,
+        8.511850245534324
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/4",
+      "equal_atoms": 64,
+      "endpoint_budget": 2.573249703741548,
+      "direct_sorted_reward_ratio": 2.573249703741549,
+      "claimed_optimum": 2.5614947596445226,
+      "gap_above_claim": 0.011754944097025266,
+      "terminal_price_residual": 5.329070518200751e-15,
+      "threshold_range": [
+        2.573249703741548,
+        8.750042456744696
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/4",
+      "equal_atoms": 128,
+      "endpoint_budget": 2.567367142478599,
+      "direct_sorted_reward_ratio": 2.567367142478601,
+      "claimed_optimum": 2.5614947596445226,
+      "gap_above_claim": 0.005872382834076539,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.567367142478599,
+        8.873520128296809
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/4",
+      "equal_atoms": 256,
+      "endpoint_budget": 2.5644296007707688,
+      "direct_sorted_reward_ratio": 2.564429600770769,
+      "claimed_optimum": 2.5614947596445226,
+      "gap_above_claim": 0.0029348411262462015,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        2.5644296007707688,
+        8.936381237039063
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "2/5",
+      "equal_atoms": 8,
+      "endpoint_budget": 2.9229504018153287,
+      "direct_sorted_reward_ratio": 2.9229504018153296,
+      "claimed_optimum": 2.856327760615728,
+      "gap_above_claim": 0.06662264119960071,
+      "terminal_price_residual": 3.552713678800501e-15,
+      "threshold_range": [
+        2.9229504018153287,
+        7.372662249460505
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "2/5",
+      "equal_atoms": 16,
+      "endpoint_budget": 2.89059001959914,
+      "direct_sorted_reward_ratio": 2.890590019599141,
+      "claimed_optimum": 2.856327760615728,
+      "gap_above_claim": 0.034262258983412064,
+      "terminal_price_residual": 3.552713678800501e-15,
+      "threshold_range": [
+        2.89059001959914,
+        8.05364260737211
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "2/5",
+      "equal_atoms": 32,
+      "endpoint_budget": 2.8751770277349826,
+      "direct_sorted_reward_ratio": 2.8751770277349835,
+      "claimed_optimum": 2.856327760615728,
+      "gap_above_claim": 0.01884926711925461,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.8751770277349826,
+        8.492122917202973
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "2/5",
+      "equal_atoms": 64,
+      "endpoint_budget": 2.8657852356938824,
+      "direct_sorted_reward_ratio": 2.865785235693884,
+      "claimed_optimum": 2.856327760615728,
+      "gap_above_claim": 0.00945747507815442,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        2.8657852356938824,
+        8.738134749096988
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "2/5",
+      "equal_atoms": 128,
+      "endpoint_budget": 2.861156358358633,
+      "direct_sorted_reward_ratio": 2.8611563583586364,
+      "claimed_optimum": 2.856327760615728,
+      "gap_above_claim": 0.004828597742904783,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        2.861156358358633,
+        8.867118680766366
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "2/5",
+      "equal_atoms": 256,
+      "endpoint_budget": 2.858743707347586,
+      "direct_sorted_reward_ratio": 2.858743707347589,
+      "claimed_optimum": 2.856327760615728,
+      "gap_above_claim": 0.0024159467318578542,
+      "terminal_price_residual": 1.2434497875801753e-14,
+      "threshold_range": [
+        2.858743707347586,
+        8.93308430194579
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/2",
+      "equal_atoms": 8,
+      "endpoint_budget": 3.0,
+      "direct_sorted_reward_ratio": 3.0,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.0,
+        7.5
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/2",
+      "equal_atoms": 16,
+      "endpoint_budget": 3.0,
+      "direct_sorted_reward_ratio": 3.0,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.0,
+        8.25
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/2",
+      "equal_atoms": 32,
+      "endpoint_budget": 3.0,
+      "direct_sorted_reward_ratio": 3.0,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.0,
+        8.625
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/2",
+      "equal_atoms": 64,
+      "endpoint_budget": 3.0,
+      "direct_sorted_reward_ratio": 3.0,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.0,
+        8.8125
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/2",
+      "equal_atoms": 128,
+      "endpoint_budget": 3.0,
+      "direct_sorted_reward_ratio": 3.0,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.0,
+        8.90625
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "1/2",
+      "equal_atoms": 256,
+      "endpoint_budget": 3.0,
+      "direct_sorted_reward_ratio": 3.0,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.0,
+        8.953125
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "3/4",
+      "equal_atoms": 8,
+      "endpoint_budget": 3.0,
+      "direct_sorted_reward_ratio": 3.0,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.0,
+        6.0
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "3/4",
+      "equal_atoms": 16,
+      "endpoint_budget": 3.0,
+      "direct_sorted_reward_ratio": 3.0,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.0,
+        7.5
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "3/4",
+      "equal_atoms": 32,
+      "endpoint_budget": 3.0,
+      "direct_sorted_reward_ratio": 3.0,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.0,
+        8.25
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "3/4",
+      "equal_atoms": 64,
+      "endpoint_budget": 3.0,
+      "direct_sorted_reward_ratio": 3.0,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.0,
+        8.625
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "3/4",
+      "equal_atoms": 128,
+      "endpoint_budget": 3.0,
+      "direct_sorted_reward_ratio": 3.0,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.0,
+        8.8125
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "3/4",
+      "equal_atoms": 256,
+      "endpoint_budget": 3.0,
+      "direct_sorted_reward_ratio": 3.0,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.0,
+        8.90625
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "9/10",
+      "equal_atoms": 8,
+      "endpoint_budget": 3.0,
+      "direct_sorted_reward_ratio": 3.0,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 1.7763568394002505e-15,
+      "threshold_range": [
+        3.0,
+        3.0
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "9/10",
+      "equal_atoms": 16,
+      "endpoint_budget": 3.0000000000000004,
+      "direct_sorted_reward_ratio": 3.0000000000000004,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 4.440892098500626e-16,
+      "terminal_price_residual": 3.552713678800501e-15,
+      "threshold_range": [
+        3.0000000000000004,
+        5.250000000000001
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "9/10",
+      "equal_atoms": 32,
+      "endpoint_budget": 3.0000000000000004,
+      "direct_sorted_reward_ratio": 3.0000000000000013,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 4.440892098500626e-16,
+      "terminal_price_residual": 3.552713678800501e-15,
+      "threshold_range": [
+        3.0000000000000004,
+        7.125000000000003
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "9/10",
+      "equal_atoms": 64,
+      "endpoint_budget": 3.0000000000000004,
+      "direct_sorted_reward_ratio": 3.0000000000000013,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 4.440892098500626e-16,
+      "terminal_price_residual": 3.552713678800501e-15,
+      "threshold_range": [
+        3.0000000000000004,
+        8.062500000000002
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "9/10",
+      "equal_atoms": 128,
+      "endpoint_budget": 3.0000000000000004,
+      "direct_sorted_reward_ratio": 3.0000000000000013,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 4.440892098500626e-16,
+      "terminal_price_residual": 3.552713678800501e-15,
+      "threshold_range": [
+        3.0000000000000004,
+        8.531250000000002
+      ]
+    },
+    {
+      "theta": "9",
+      "delta": "9/10",
+      "equal_atoms": 256,
+      "endpoint_budget": 3.0000000000000004,
+      "direct_sorted_reward_ratio": 3.0000000000000004,
+      "claimed_optimum": 3.0,
+      "gap_above_claim": 4.440892098500626e-16,
+      "terminal_price_residual": 3.552713678800501e-15,
+      "threshold_range": [
+        3.0000000000000004,
+        8.765625000000002
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "0",
+      "equal_atoms": 8,
+      "endpoint_budget": 4.25811296062217,
+      "direct_sorted_reward_ratio": 4.25811296062217,
+      "claimed_optimum": 3.6286495970202823,
+      "gap_above_claim": 0.6294633636018876,
+      "terminal_price_residual": 5.684341886080802e-14,
+      "threshold_range": [
+        4.25811296062217,
+        65.61027097271928
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "0",
+      "equal_atoms": 16,
+      "endpoint_budget": 3.9351751574879397,
+      "direct_sorted_reward_ratio": 3.9351751574879406,
+      "claimed_optimum": 3.6286495970202823,
+      "gap_above_claim": 0.30652556046765733,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.9351751574879397,
+        80.45754112950578
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "0",
+      "equal_atoms": 32,
+      "endpoint_budget": 3.7798144565096825,
+      "direct_sorted_reward_ratio": 3.779814456509684,
+      "claimed_optimum": 3.6286495970202823,
+      "gap_above_claim": 0.15116485948940017,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        3.7798144565096825,
+        89.54154355246027
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "0",
+      "equal_atoms": 64,
+      "endpoint_budget": 3.703702111032211,
+      "direct_sorted_reward_ratio": 3.703702111032212,
+      "claimed_optimum": 3.6286495970202823,
+      "gap_above_claim": 0.07505251401192847,
+      "terminal_price_residual": 1.4210854715202004e-14,
+      "threshold_range": [
+        3.703702111032211,
+        94.58424727807551
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "0",
+      "equal_atoms": 128,
+      "endpoint_budget": 3.666042720563986,
+      "direct_sorted_reward_ratio": 3.6660427205639876,
+      "claimed_optimum": 3.6286495970202823,
+      "gap_above_claim": 0.0373931235437035,
+      "terminal_price_residual": 1.5631940186722204e-13,
+      "threshold_range": [
+        3.666042720563986,
+        97.24349405635223
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "0",
+      "equal_atoms": 256,
+      "endpoint_budget": 3.6473127952376383,
+      "direct_sorted_reward_ratio": 3.647312795237641,
+      "claimed_optimum": 3.6286495970202823,
+      "gap_above_claim": 0.01866319821735596,
+      "terminal_price_residual": 1.4210854715202004e-14,
+      "threshold_range": [
+        3.6473127952376383,
+        98.60932908243392
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/10",
+      "equal_atoms": 8,
+      "endpoint_budget": 5.220841067245461,
+      "direct_sorted_reward_ratio": 5.220841067245461,
+      "claimed_optimum": 4.655868671992483,
+      "gap_above_claim": 0.5649723952529779,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        5.220841067245461,
+        65.9027697381752
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/10",
+      "equal_atoms": 16,
+      "endpoint_budget": 4.942746150778338,
+      "direct_sorted_reward_ratio": 4.942746150778339,
+      "claimed_optimum": 4.655868671992483,
+      "gap_above_claim": 0.286877478785855,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        4.942746150778338,
+        80.60902601984951
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/10",
+      "equal_atoms": 32,
+      "endpoint_budget": 4.807297770044279,
+      "direct_sorted_reward_ratio": 4.807297770044279,
+      "claimed_optimum": 4.655868671992483,
+      "gap_above_claim": 0.15142909805179627,
+      "terminal_price_residual": 1.4210854715202004e-14,
+      "threshold_range": [
+        4.807297770044279,
+        89.61472603717576
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/10",
+      "equal_atoms": 64,
+      "endpoint_budget": 4.731613099773113,
+      "direct_sorted_reward_ratio": 4.731613099773114,
+      "claimed_optimum": 4.655868671992483,
+      "gap_above_claim": 0.07574442778062984,
+      "terminal_price_residual": 2.842170943040401e-14,
+      "threshold_range": [
+        4.731613099773113,
+        94.61974590144183
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/10",
+      "equal_atoms": 128,
+      "endpoint_budget": 4.694221993131406,
+      "direct_sorted_reward_ratio": 4.694221993131407,
+      "claimed_optimum": 4.655868671992483,
+      "gap_above_claim": 0.03835332113892331,
+      "terminal_price_residual": 4.263256414560601e-14,
+      "threshold_range": [
+        4.694221993131406,
+        97.2608586183118
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/10",
+      "equal_atoms": 256,
+      "endpoint_budget": 4.675051994199527,
+      "direct_sorted_reward_ratio": 4.6750519941995305,
+      "claimed_optimum": 4.655868671992483,
+      "gap_above_claim": 0.019183322207044107,
+      "terminal_price_residual": 7.105427357601002e-14,
+      "threshold_range": [
+        4.675051994199527,
+        98.6179058109504
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/4",
+      "equal_atoms": 8,
+      "endpoint_budget": 7.054937160429131,
+      "direct_sorted_reward_ratio": 7.054937160429133,
+      "claimed_optimum": 6.426649139384764,
+      "gap_above_claim": 0.6282880210443675,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        7.054937160429131,
+        67.7665356392728
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/4",
+      "equal_atoms": 16,
+      "endpoint_budget": 6.735029010830858,
+      "direct_sorted_reward_ratio": 6.73502901083086,
+      "claimed_optimum": 6.426649139384764,
+      "gap_above_claim": 0.30837987144609436,
+      "terminal_price_residual": 1.4210854715202004e-14,
+      "threshold_range": [
+        6.735029010830858,
+        81.0934842131834
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/4",
+      "equal_atoms": 32,
+      "endpoint_budget": 6.578359608978032,
+      "direct_sorted_reward_ratio": 6.578359608978032,
+      "claimed_optimum": 6.426649139384764,
+      "gap_above_claim": 0.15171046959326873,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        6.578359608978032,
+        89.77208257846063
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/4",
+      "equal_atoms": 64,
+      "endpoint_budget": 6.501803137998751,
+      "direct_sorted_reward_ratio": 6.501803137998753,
+      "claimed_optimum": 6.426649139384764,
+      "gap_above_claim": 0.0751539986139873,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        6.501803137998751,
+        94.68969593071348
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/4",
+      "equal_atoms": 128,
+      "endpoint_budget": 6.464043019166483,
+      "direct_sorted_reward_ratio": 6.464043019166484,
+      "claimed_optimum": 6.426649139384764,
+      "gap_above_claim": 0.037393879781719264,
+      "terminal_price_residual": 5.684341886080802e-14,
+      "threshold_range": [
+        6.464043019166483,
+        97.29573036661787
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/4",
+      "equal_atoms": 256,
+      "endpoint_budget": 6.445299451846917,
+      "direct_sorted_reward_ratio": 6.445299451846927,
+      "claimed_optimum": 6.426649139384764,
+      "gap_above_claim": 0.018650312462153096,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        6.445299451846917,
+        98.63559748925844
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "2/5",
+      "equal_atoms": 8,
+      "endpoint_budget": 9.04111696789737,
+      "direct_sorted_reward_ratio": 9.04111696789737,
+      "claimed_optimum": 8.415616362702178,
+      "gap_above_claim": 0.6255006051951923,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        9.04111696789737,
+        66.59582122318
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "2/5",
+      "equal_atoms": 16,
+      "endpoint_budget": 8.720466436033368,
+      "direct_sorted_reward_ratio": 8.72046643603337,
+      "claimed_optimum": 8.415616362702178,
+      "gap_above_claim": 0.3048500733311901,
+      "terminal_price_residual": 2.842170943040401e-14,
+      "threshold_range": [
+        8.720466436033368,
+        78.97154252558556
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "2/5",
+      "equal_atoms": 32,
+      "endpoint_budget": 8.57942452257775,
+      "direct_sorted_reward_ratio": 8.579424522577753,
+      "claimed_optimum": 8.415616362702178,
+      "gap_above_claim": 0.16380815987557185,
+      "terminal_price_residual": 2.842170943040401e-14,
+      "threshold_range": [
+        8.57942452257775,
+        88.44088031473193
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "2/5",
+      "equal_atoms": 64,
+      "endpoint_budget": 8.496680478273213,
+      "direct_sorted_reward_ratio": 8.496680478273216,
+      "claimed_optimum": 8.415616362702178,
+      "gap_above_claim": 0.08106411557103499,
+      "terminal_price_residual": 2.842170943040401e-14,
+      "threshold_range": [
+        8.496680478273213,
+        94.01023707714215
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "2/5",
+      "equal_atoms": 128,
+      "endpoint_budget": 8.456730158069881,
+      "direct_sorted_reward_ratio": 8.456730158069883,
+      "claimed_optimum": 8.415616362702178,
+      "gap_above_claim": 0.04111379536770343,
+      "terminal_price_residual": 1.4210854715202004e-14,
+      "threshold_range": [
+        8.456730158069881,
+        96.95475197240651
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "2/5",
+      "equal_atoms": 256,
+      "endpoint_budget": 8.436116908694261,
+      "direct_sorted_reward_ratio": 8.436116908694265,
+      "claimed_optimum": 8.415616362702178,
+      "gap_above_claim": 0.02050054599208373,
+      "terminal_price_residual": 1.7053025658242404e-13,
+      "threshold_range": [
+        8.436116908694261,
+        98.46555182329699
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/2",
+      "equal_atoms": 8,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        77.5
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/2",
+      "equal_atoms": 16,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        88.75
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/2",
+      "equal_atoms": 32,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        94.375
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/2",
+      "equal_atoms": 64,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        97.1875
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/2",
+      "equal_atoms": 128,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        98.59375
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "1/2",
+      "equal_atoms": 256,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        99.296875
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "3/4",
+      "equal_atoms": 8,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        55.0
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "3/4",
+      "equal_atoms": 16,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        77.5
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "3/4",
+      "equal_atoms": 32,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        88.75
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "3/4",
+      "equal_atoms": 64,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        94.375
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "3/4",
+      "equal_atoms": 128,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        97.1875
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "3/4",
+      "equal_atoms": 256,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        98.59375
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "9/10",
+      "equal_atoms": 8,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        10.0
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "9/10",
+      "equal_atoms": 16,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        43.75
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "9/10",
+      "equal_atoms": 32,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        71.875
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "9/10",
+      "equal_atoms": 64,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        85.9375
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "9/10",
+      "equal_atoms": 128,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        92.96875
+      ]
+    },
+    {
+      "theta": "100",
+      "delta": "9/10",
+      "equal_atoms": 256,
+      "endpoint_budget": 10.0,
+      "direct_sorted_reward_ratio": 10.0,
+      "claimed_optimum": 10.0,
+      "gap_above_claim": 0.0,
+      "terminal_price_residual": 0.0,
+      "threshold_range": [
+        10.0,
+        96.484375
+      ]
+    }
+  ],
+  "finite_checks_passed": true,
+  "elapsed_seconds": 8.59791094100001
+}

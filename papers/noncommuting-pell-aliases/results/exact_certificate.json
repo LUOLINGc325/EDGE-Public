@@ -1,0 +1,82 @@
+{
+  "graph_order": 16,
+  "girth": 6,
+  "ranks_at_rational_scales": [
+    {
+      "s_over_c": 2,
+      "real_linear_rank": 46,
+      "positive_bias_indices": [
+        1
+      ]
+    },
+    {
+      "s_over_c": 4,
+      "real_linear_rank": 46,
+      "positive_bias_indices": [
+        1
+      ]
+    },
+    {
+      "s_over_c": 8,
+      "real_linear_rank": 46,
+      "positive_bias_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "s_over_c": 42,
+      "real_linear_rank": 46,
+      "positive_bias_indices": [
+        1,
+        5,
+        29
+      ]
+    },
+    {
+      "s_over_c": 240,
+      "real_linear_rank": 46,
+      "positive_bias_indices": [
+        1,
+        5,
+        29,
+        169
+      ]
+    }
+  ],
+  "pell_witnesses": [
+    [
+      1,
+      1
+    ],
+    [
+      7,
+      5
+    ],
+    [
+      41,
+      29
+    ],
+    [
+      239,
+      169
+    ],
+    [
+      1393,
+      985
+    ],
+    [
+      8119,
+      5741
+    ],
+    [
+      47321,
+      33461
+    ],
+    [
+      275807,
+      195025
+    ]
+  ],
+  "negative_principal_log_entry_in_c_units": "-1/4"
+}

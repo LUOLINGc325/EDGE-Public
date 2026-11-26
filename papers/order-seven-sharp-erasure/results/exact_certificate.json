@@ -1,0 +1,24 @@
+{
+  "orbit_sizes": [
+    [
+      7,
+      7,
+      7
+    ],
+    [
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    [
+      7
+    ]
+  ],
+  "symbolic_covariance_and_psd_determinant": "exact",
+  "explicit_tensor_pairs": 12,
+  "unnormalized_complex_trace": "53632 - 12*I",
+  "normalization": "10745808",
+  "orientation_output_moment_difference": "7/12830265508096"
+}

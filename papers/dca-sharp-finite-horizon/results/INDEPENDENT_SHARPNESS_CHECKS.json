@@ -1,0 +1,69 @@
+{
+  "method": "independent symbolic identities and exact algebraic boundary data",
+  "checks": {
+    "terminal_forward_universal": {
+      "zero": true
+    },
+    "terminal_reverse_universal": {
+      "zero": true
+    },
+    "convexification_reverses_pair": {
+      "zero": true
+    },
+    "dual_dominance_is_reversed_interpolation": {
+      "zero": true
+    },
+    "sharp_prefix_scalar_recurrence": {
+      "zero": true
+    },
+    "sharp_branch_difference": {
+      "zero": true
+    },
+    "prefix_jensen_weights": {
+      "zero": true
+    },
+    "prefix_jensen_weighted_mean": {
+      "zero": true
+    },
+    "terminal_value_change": {
+      "zero": true
+    },
+    "constant_norm_recurrence": {
+      "zero": true
+    },
+    "constant_adjacent_product": {
+      "zero": true
+    },
+    "acute_angle_cosine": {
+      "zero": true
+    },
+    "acute_angle_sine": {
+      "zero": true
+    }
+  },
+  "all_zero": true,
+  "boundary_checks": [
+    {
+      "name": "empty_prefix_first_horizon",
+      "N": 1,
+      "m": 0,
+      "eta": "5/3",
+      "rho": "-1/2",
+      "old_and_new_ordered_pairs": 12,
+      "minimum_residual": "0",
+      "minimum_step_squared": "1",
+      "coefficient": "23/14"
+    },
+    {
+      "name": "exact_first_threshold",
+      "N": 2,
+      "m": 1,
+      "eta": "2",
+      "rho": "-2/3",
+      "old_and_new_ordered_pairs": 24,
+      "minimum_residual": "0",
+      "minimum_step_squared": "1",
+      "coefficient": "11/6"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Prefix caps: 23 coefficient certificates
+Staircases with no suffix: 2 coefficient certificates
+Repeated level 2: 21/1 intervals for constant/slope
+Repeated level 3: 4/1 intervals for constant/slope
+Repeated level 4: 18/1 intervals for constant/slope
+Repeated level 5: 7/1 intervals for constant/slope
+Repeated level 6: 18/1 intervals for constant/slope
+Repeated level 7: 7/1 intervals for constant/slope
+Down bump 3: 6 dimensions; 6 intervals
+Down bump 4: 30 dimensions; 30 intervals
+Down bump 5: 62 dimensions; 71 intervals
+Down bump 6: 95 dimensions; 115 intervals
+Down bump 7: 135 dimensions; 168 intervals

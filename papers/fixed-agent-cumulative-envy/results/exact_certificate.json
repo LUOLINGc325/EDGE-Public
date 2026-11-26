@@ -1,0 +1,233 @@
+{
+  "additional_large_integer_instances_per_construction": 6,
+  "all_labelled_assignments_checked": 1834505,
+  "assignment_checks": [
+    {
+      "agents": 4,
+      "assignments_checked": 4096,
+      "goods": 6,
+      "maximum_observed_absolute_perturbation": 3,
+      "minimum_integer_inequality_slack": 0,
+      "partition_input": [
+        1,
+        1
+      ],
+      "positive_optimum": 23,
+      "positive_threshold": 24,
+      "proved_perturbation_bound": 3,
+      "zero_optimum": 3,
+      "zero_threshold": 3
+    },
+    {
+      "agents": 4,
+      "assignments_checked": 4096,
+      "goods": 6,
+      "maximum_observed_absolute_perturbation": 3,
+      "minimum_integer_inequality_slack": 22,
+      "partition_input": [
+        1,
+        3
+      ],
+      "positive_optimum": 88,
+      "positive_threshold": 45,
+      "proved_perturbation_bound": 3,
+      "zero_optimum": 13,
+      "zero_threshold": 6
+    },
+    {
+      "agents": 4,
+      "assignments_checked": 65536,
+      "goods": 8,
+      "maximum_observed_absolute_perturbation": 6,
+      "minimum_integer_inequality_slack": 0,
+      "partition_input": [
+        1,
+        2,
+        3
+      ],
+      "positive_optimum": 159,
+      "positive_threshold": 162,
+      "proved_perturbation_bound": 6,
+      "zero_optimum": 12,
+      "zero_threshold": 12
+    },
+    {
+      "agents": 4,
+      "assignments_checked": 65536,
+      "goods": 8,
+      "maximum_observed_absolute_perturbation": 6,
+      "minimum_integer_inequality_slack": 28,
+      "partition_input": [
+        2,
+        2,
+        2
+      ],
+      "positive_optimum": 267,
+      "positive_threshold": 162,
+      "proved_perturbation_bound": 6,
+      "zero_optimum": 21,
+      "zero_threshold": 12
+    },
+    {
+      "agents": 5,
+      "assignments_checked": 15625,
+      "goods": 6,
+      "maximum_observed_absolute_perturbation": 3,
+      "minimum_integer_inequality_slack": 34,
+      "partition_input": [
+        2
+      ],
+      "positive_optimum": 74,
+      "positive_threshold": 24,
+      "proved_perturbation_bound": 3,
+      "zero_optimum": 11,
+      "zero_threshold": 3
+    },
+    {
+      "agents": 6,
+      "assignments_checked": 1679616,
+      "goods": 8,
+      "maximum_observed_absolute_perturbation": 6,
+      "minimum_integer_inequality_slack": 58,
+      "partition_input": [
+        2
+      ],
+      "positive_optimum": 189,
+      "positive_threshold": 58,
+      "proved_perturbation_bound": 6,
+      "zero_optimum": 15,
+      "zero_threshold": 4
+    }
+  ],
+  "boundary_checks": {
+    "arithmetic": "unbounded integers; no floating-point operations",
+    "invalid_inputs_rejected": 8,
+    "large_integer_stress_instances": [
+      {
+        "agents": 4,
+        "partition_input_decimal": [
+          "1208925819614629174706177",
+          "1208925819614629174706177"
+        ],
+        "partition_yes": true,
+        "positive_optimum_decimal": "25387442211907212668829719",
+        "zero_optimum_decimal": "3626777458843887524118531"
+      },
+      {
+        "agents": 4,
+        "partition_input_decimal": [
+          "1208925819614629174706176",
+          "1208925819614629174706178"
+        ],
+        "partition_yes": false,
+        "positive_optimum_decimal": "25387442211907212668829763",
+        "zero_optimum_decimal": "3626777458843887524118538"
+      },
+      {
+        "agents": 5,
+        "partition_input_decimal": [
+          "1208925819614629174706177",
+          "1208925819614629174706177"
+        ],
+        "partition_yes": true,
+        "positive_optimum_decimal": "62864142619960717084721207",
+        "zero_optimum_decimal": "4835703278458516698824708"
+      },
+      {
+        "agents": 5,
+        "partition_input_decimal": [
+          "1208925819614629174706176",
+          "1208925819614629174706178"
+        ],
+        "partition_yes": false,
+        "positive_optimum_decimal": "62864142619960717084721328",
+        "zero_optimum_decimal": "4835703278458516698824718"
+      },
+      {
+        "agents": 6,
+        "partition_input_decimal": [
+          "1208925819614629174706177",
+          "1208925819614629174706177"
+        ],
+        "partition_yes": true,
+        "positive_optimum_decimal": "126937211059536063344148589",
+        "zero_optimum_decimal": "6044629098073145873530885"
+      },
+      {
+        "agents": 6,
+        "partition_input_decimal": [
+          "1208925819614629174706176",
+          "1208925819614629174706178"
+        ],
+        "partition_yes": false,
+        "positive_optimum_decimal": "126937211059536063344148848",
+        "zero_optimum_decimal": "6044629098073145873530898"
+      }
+    ]
+  },
+  "claim_boundary": "These deterministic finite exact computations verify only the listed inputs. The general NP-completeness theorem and inequalities rely on the written proof; this is not a formal proof-assistant certificate.",
+  "dp_statistics_by_agents": {
+    "4": {
+      "instances": 682,
+      "largest_layer": 7834,
+      "no": 91,
+      "positive_terminal_states": 2692705,
+      "states_visited": 6279534,
+      "yes": 591,
+      "zero_terminal_states": 62187
+    },
+    "5": {
+      "instances": 65,
+      "largest_layer": 17497,
+      "no": 28,
+      "positive_terminal_states": 334630,
+      "states_visited": 700076,
+      "yes": 37,
+      "zero_terminal_states": 4638
+    },
+    "6": {
+      "instances": 65,
+      "largest_layer": 96091,
+      "no": 28,
+      "positive_terminal_states": 1732649,
+      "states_visited": 3648356,
+      "yes": 37,
+      "zero_terminal_states": 9027
+    }
+  },
+  "five_six_agent_range": {
+    "input_length": [
+      1,
+      4
+    ],
+    "input_values": [
+      1,
+      5
+    ],
+    "orders": "nondecreasing",
+    "total": "even"
+  },
+  "four_agent_range": {
+    "input_length": [
+      1,
+      5
+    ],
+    "input_values": [
+      1,
+      4
+    ],
+    "orders": "all",
+    "total": "even"
+  },
+  "independent_enumerator": "all labelled recipient sequences, including tail goods",
+  "positive_conversion": "B=r(r+1)/2; Q=2B+1; K_positive=Q*M*T+B",
+  "result": "PASS",
+  "schema_version": 1,
+  "source_problem_oracle": "exact subset-sum set enumeration",
+  "strictly_positive_instances_checked": 812,
+  "suite_sha256": "2db3e7a379ae6a6657d1faa5e4f0fe25a019437bdcddeaf24269c484e580c443",
+  "target_optimizer": "minimum cumulative cost per attainable sorted load vector",
+  "terminal_inequality": "n * (C - M*T) >= M*R",
+  "verifier_sha256": "e62fc5c0020f4e5948900646de9c11a5bcb71f0aaa2a8dfaab8be6d4af98c678",
+  "zero_tail_instances_checked": 812
+}

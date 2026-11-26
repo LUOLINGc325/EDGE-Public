@@ -1,0 +1,159 @@
+{
+  "method": "exact SymPy rational identities with free e,r,A,B and independent points/subgradients",
+  "checks": {
+    "generic_transfer_extra_terms": {
+      "zero": true
+    },
+    "generic_point_flow": {
+      "zero": true
+    },
+    "d2_support_(0, 1)": {
+      "zero": true
+    },
+    "d2_support_(2, 1)": {
+      "zero": true
+    },
+    "d2_support_(3, 1)": {
+      "zero": true
+    },
+    "d2_support_(0, 2)": {
+      "zero": true
+    },
+    "d2_support_(1, 2)": {
+      "zero": true
+    },
+    "d2_support_(3, 2)": {
+      "zero": true
+    },
+    "d2_support_(0, 3)": {
+      "zero": true
+    },
+    "d2_support_(1, 3)": {
+      "zero": true
+    },
+    "d2_support_(2, 3)": {
+      "zero": true
+    },
+    "d2_gd_kernel_identity": {
+      "zero": true
+    },
+    "b_affine_decomposition": {
+      "zero": true
+    },
+    "b_paired_lower_coefficient": {
+      "zero": true
+    },
+    "b_bernstein_identity": {
+      "zero": true
+    },
+    "b_superunit_lower_bound": {
+      "zero": true
+    },
+    "b_constant_numerator": {
+      "zero": true
+    },
+    "a_positive_power_identity": {
+      "zero": true
+    },
+    "pair_support_(0, 1)": {
+      "zero": true
+    },
+    "pair_support_(2, 1)": {
+      "zero": true
+    },
+    "pair_support_(3, 1)": {
+      "zero": true
+    },
+    "pair_support_(0, 2)": {
+      "zero": true
+    },
+    "pair_support_(1, 2)": {
+      "zero": true
+    },
+    "pair_support_(3, 2)": {
+      "zero": true
+    },
+    "pair_support_(0, 3)": {
+      "zero": true
+    },
+    "pair_support_(1, 3)": {
+      "zero": true
+    },
+    "pair_support_(2, 3)": {
+      "zero": true
+    },
+    "rho_reverse_support": {
+      "zero": true
+    },
+    "rho_forward_support": {
+      "zero": true
+    },
+    "rho_forward_affine": {
+      "zero": true
+    },
+    "rho_forward_paired": {
+      "zero": true
+    },
+    "rho_forward_derivative": {
+      "zero": true
+    },
+    "rho_forward_at_boundary": {
+      "zero": true
+    },
+    "rho_terminal_gd_identity": {
+      "zero": true
+    },
+    "eta_u_positive_decomposition": {
+      "zero": true
+    },
+    "eta_v_positive_decomposition": {
+      "zero": true
+    },
+    "eta_negative_reverse_edge": {
+      "zero": true
+    },
+    "eta_repaired_forward_increment": {
+      "zero": true
+    },
+    "eta_repaired_target_forward": {
+      "zero": true
+    },
+    "eta_repaired_target_reverse": {
+      "zero": true
+    },
+    "phase_recurrence": {
+      "zero": true
+    },
+    "eta_terminal_gd_identity": {
+      "zero": true
+    },
+    "eta_bregman_triangle": {
+      "zero": true
+    },
+    "eta_bregman_symmetric": {
+      "zero": true
+    },
+    "quoted_local_eta_tail_identity": {
+      "zero": true
+    },
+    "m_cancel_reverse": {
+      "zero": true
+    },
+    "m_target_forward": {
+      "zero": true
+    },
+    "m_total_forward": {
+      "zero": true
+    },
+    "m_scalar_recurrence": {
+      "zero": true
+    },
+    "m_tail_join": {
+      "zero": true
+    },
+    "m_terminal_gd_identity": {
+      "zero": true
+    }
+  },
+  "all_zero": true
+}

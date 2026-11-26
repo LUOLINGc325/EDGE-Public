@@ -1,0 +1,3 @@
+100 odd triangle-chain lengths from 1 to 199
+Every vertex has a distinct set of the predicted minimum rank.
+Every edge and every nonedge agrees with the Johnson adjacency rule.

@@ -1,0 +1,158 @@
+{
+  "status": "passed",
+  "interpretation": "Finite exact stress checks only; general proof is in lower_agent.md.",
+  "cores": [
+    {
+      "ground_size": 1,
+      "nonempty_downclosed_families": 2,
+      "nested_pathwise_checks": 6,
+      "layer_average_checks": 4
+    },
+    {
+      "ground_size": 2,
+      "nonempty_downclosed_families": 5,
+      "nested_pathwise_checks": 45,
+      "layer_average_checks": 25
+    },
+    {
+      "ground_size": 3,
+      "nonempty_downclosed_families": 19,
+      "nested_pathwise_checks": 513,
+      "layer_average_checks": 171
+    },
+    {
+      "ground_size": 4,
+      "nonempty_downclosed_families": 167,
+      "nested_pathwise_checks": 13527,
+      "layer_average_checks": 2338
+    },
+    {
+      "ground_size": 5,
+      "nonempty_downclosed_families": 7580,
+      "nested_pathwise_checks": 1841940,
+      "layer_average_checks": 151600
+    }
+  ],
+  "three_layer_counts": {
+    "max_rank": 10000,
+    "checks": 10000,
+    "samples": [
+      {
+        "k": 1,
+        "a": 1,
+        "b": 1,
+        "theta": "1/2",
+        "loss_lower_bound": "1/4"
+      },
+      {
+        "k": 2,
+        "a": 2,
+        "b": 1,
+        "theta": "1/2",
+        "loss_lower_bound": "1/6"
+      },
+      {
+        "k": 3,
+        "a": 2,
+        "b": 1,
+        "theta": "3/4",
+        "loss_lower_bound": "3/16"
+      },
+      {
+        "k": 4,
+        "a": 2,
+        "b": 1,
+        "theta": "1",
+        "loss_lower_bound": "1/5"
+      },
+      {
+        "k": 5,
+        "a": 2,
+        "b": 2,
+        "theta": "5/8",
+        "loss_lower_bound": "5/28"
+      },
+      {
+        "k": 6,
+        "a": 2,
+        "b": 2,
+        "theta": "3/4",
+        "loss_lower_bound": "3/16"
+      },
+      {
+        "k": 7,
+        "a": 2,
+        "b": 2,
+        "theta": "7/8",
+        "loss_lower_bound": "7/36"
+      },
+      {
+        "k": 8,
+        "a": 2,
+        "b": 2,
+        "theta": "1",
+        "loss_lower_bound": "1/5"
+      },
+      {
+        "k": 9,
+        "a": 3,
+        "b": 2,
+        "theta": "3/4",
+        "loss_lower_bound": "3/22"
+      },
+      {
+        "k": 10,
+        "a": 3,
+        "b": 2,
+        "theta": "5/6",
+        "loss_lower_bound": "5/36"
+      },
+      {
+        "k": 11,
+        "a": 3,
+        "b": 2,
+        "theta": "11/12",
+        "loss_lower_bound": "11/78"
+      },
+      {
+        "k": 12,
+        "a": 3,
+        "b": 2,
+        "theta": "1",
+        "loss_lower_bound": "1/7"
+      },
+      {
+        "k": 64,
+        "a": 4,
+        "b": 8,
+        "theta": "1",
+        "loss_lower_bound": "1/9"
+      },
+      {
+        "k": 125,
+        "a": 5,
+        "b": 13,
+        "theta": "25/26",
+        "loss_lower_bound": "25/276"
+      },
+      {
+        "k": 1000,
+        "a": 10,
+        "b": 50,
+        "theta": "1",
+        "loss_lower_bound": "1/21"
+      },
+      {
+        "k": 10000,
+        "a": 22,
+        "b": 228,
+        "theta": "625/627",
+        "loss_lower_bound": "625/28127"
+      }
+    ]
+  },
+  "cubic_sequence": {
+    "max_m": 1000,
+    "checks": 1000
+  }
+}

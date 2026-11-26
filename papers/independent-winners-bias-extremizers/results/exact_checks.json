@@ -1,0 +1,6 @@
+{
+  "arithmetic": "exact rational",
+  "mixture_reconstruction_checks": 1,
+  "sharp_frequency_profiles": 104,
+  "strict_all_random_configurations": 280
+}

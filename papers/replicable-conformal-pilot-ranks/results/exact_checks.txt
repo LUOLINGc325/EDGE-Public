@@ -1,0 +1,2 @@
+Verified 23,023 exact offset counts, including overflow.
+Verified exact disagreement and expected inflation in 198 parameter cases.

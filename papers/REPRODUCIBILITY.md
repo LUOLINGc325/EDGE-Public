@@ -96,3 +96,195 @@ Each Lean directory contains a toolchain and a pinned mathlib dependency. Run `l
 ## Partial formal proof packages
 
 - [Three-task pinwheel scheduling](finite-pinwheel-three-task/formalization/README.md) — Rank formula for positive integers excluding multiples of 3 and the three deadline inequalities for the (2, 3, c) family.
+
+## Supplementary material by project
+
+Each row links to a manuscript and the available programs, recorded results, or figures. Program dependencies vary by project. Archived numerical outputs and finite calculations illustrate or check specific claims. The manuscripts state the scope of the proofs.
+
+| Research project | Programs | Data and results | Figures |
+|---|---|---|---|
+| [adaptive erasure feedback law](adaptive-erasure-feedback-law/paper.en.md) | — | [results](adaptive-erasure-feedback-law/results/) | — |
+| [adaptive exponential kernel confidence](adaptive-exponential-kernel-confidence/paper.en.md) | — | [results](adaptive-exponential-kernel-confidence/results/) | — |
+| [all clique saturation](all-clique-saturation/paper.en.md) | [code](all-clique-saturation/code/) | [results](all-clique-saturation/results/) | — |
+| [approximate dp epower exponent](approximate-dp-epower-exponent/paper.en.md) | — | [results](approximate-dp-epower-exponent/results/) | — |
+| [approximate ldp blackwell structure](approximate-ldp-blackwell-structure/paper.en.md) | [code](approximate-ldp-blackwell-structure/code/) | [results](approximate-ldp-blackwell-structure/results/) | — |
+| [bell chain sharp parity](bell-chain-sharp-parity/paper.en.md) | [code](bell-chain-sharp-parity/code/) | [results](bell-chain-sharp-parity/results/) | — |
+| [binary markov gray dispersion](binary-markov-gray-dispersion/paper.en.md) | [code](binary-markov-gray-dispersion/code/) | [results](binary-markov-gray-dispersion/results/) | — |
+| [binary renyi order monotonicity](binary-renyi-order-monotonicity/paper.en.md) | [code](binary-renyi-order-monotonicity/code/) | [results](binary-renyi-order-monotonicity/results/) | [figures](binary-renyi-order-monotonicity/figures/) |
+| [binomial sign margin minimax](binomial-sign-margin-minimax/paper.zh.md) | [code](binomial-sign-margin-minimax/code/) | [results](binomial-sign-margin-minimax/results/) | — |
+| [boundary resetting global optimality](boundary-resetting-global-optimality/paper.en.md) | [code](boundary-resetting-global-optimality/code/) | [results](boundary-resetting-global-optimality/results/) | [figures](boundary-resetting-global-optimality/figures/) |
+| [bounded hop independent set approximation](bounded-hop-independent-set-approximation/paper.en.md) | [code](bounded-hop-independent-set-approximation/code/) | [results](bounded-hop-independent-set-approximation/results/) | — |
+| [cartesian algebraic squares](cartesian-algebraic-squares/paper.en.md) | [code](cartesian-algebraic-squares/code/) | [results](cartesian-algebraic-squares/results/) | [figures](cartesian-algebraic-squares/figures/) |
+| [certified symmetric corridor](certified-symmetric-corridor/paper.zh.md) | [code](certified-symmetric-corridor/code/) | [results](certified-symmetric-corridor/results/) | — |
+| [chained index uniform direct product](chained-index-uniform-direct-product/paper.en.md) | [code](chained-index-uniform-direct-product/code/) | [results](chained-index-uniform-direct-product/results/) | — |
+| [chordal bipartite edge open packing](chordal-bipartite-edge-open-packing/paper.zh.md) | [code](chordal-bipartite-edge-open-packing/code/) | — | — |
+| [chordal unique vertex cover preassignment](chordal-unique-vertex-cover-preassignment/paper.zh.md) | [code](chordal-unique-vertex-cover-preassignment/code/) | — | — |
+| [ci score quadratic rigidity](ci-score-quadratic-rigidity/paper.zh.md) | [code](ci-score-quadratic-rigidity/code/) | [results](ci-score-quadratic-rigidity/results/) | — |
+| [class domination coloring cluster deletion](class-domination-coloring-cluster-deletion/paper.zh.md) | [code](class-domination-coloring-cluster-deletion/code/) | — | — |
+| [class domination coloring treewidth](class-domination-coloring-treewidth/paper.zh.md) | [code](class-domination-coloring-treewidth/code/) | — | — |
+| [classifier accuracy augmented gof](classifier-accuracy-augmented-gof/paper.en.md) | [code](classifier-accuracy-augmented-gof/code/) | — | — |
+| [clique dually conformal induced extension](clique-dually-conformal-induced-extension/paper.en.md) | [code](clique-dually-conformal-induced-extension/code/) | [results](clique-dually-conformal-induced-extension/results/) | — |
+| [collapsing bandit global indexability](collapsing-bandit-global-indexability/paper.en.md) | [code](collapsing-bandit-global-indexability/code/) | [results](collapsing-bandit-global-indexability/results/) | — |
+| [common law lqr affine boundary](common-law-lqr-affine-boundary/paper.en.md) | [code](common-law-lqr-affine-boundary/code/) | [results](common-law-lqr-affine-boundary/results/) | — |
+| [commuting effect threshold](commuting-effect-threshold/paper.en.md) | [code](commuting-effect-threshold/code/) | [results](commuting-effect-threshold/results/) | — |
+| [composite sequential test induction](composite-sequential-test-induction/paper.en.md) | [code](composite-sequential-test-induction/code/) | — | — |
+| [conditional information power boundaries](conditional-information-power-boundaries/paper.en.md) | — | [results](conditional-information-power-boundaries/results/) | — |
+| [conjugate resetting global optimality](conjugate-resetting-global-optimality/paper.en.md) | [code](conjugate-resetting-global-optimality/code/) | [results](conjugate-resetting-global-optimality/results/) | [figures](conjugate-resetting-global-optimality/figures/) |
+| [continuous high risk prefactor](continuous-high-risk-prefactor/paper.en.md) | [code](continuous-high-risk-prefactor/code/) | [results](continuous-high-risk-prefactor/results/) | — |
+| [convex scenario compression transfer](convex-scenario-compression-transfer/paper.en.md) | [code](convex-scenario-compression-transfer/code/) | [results](convex-scenario-compression-transfer/results/) | — |
+| [cvar one max exact optimality](cvar-one-max-exact-optimality/paper.en.md) | [code](cvar-one-max-exact-optimality/code/) | [results](cvar-one-max-exact-optimality/results/) | [figures](cvar-one-max-exact-optimality/figures/) |
+| [dca sharp finite horizon](dca-sharp-finite-horizon/paper.en.md) | [code](dca-sharp-finite-horizon/code/) | [results](dca-sharp-finite-horizon/results/) | — |
+| [delayed newton cooling optimal preparation](delayed-newton-cooling-optimal-preparation/paper.en.md) | [code](delayed-newton-cooling-optimal-preparation/code/) | [results](delayed-newton-cooling-optimal-preparation/results/) | [figures](delayed-newton-cooling-optimal-preparation/figures/) |
+| [deletion intersection counterexample](deletion-intersection-counterexample/paper.en.md) | [code](deletion-intersection-counterexample/code/) | [results](deletion-intersection-counterexample/results/) | — |
+| [directed cycle two season witness](directed-cycle-two-season-witness/paper.en.md) | [code](directed-cycle-two-season-witness/code/) | — | — |
+| [domination packing split rectangle](domination-packing-split-rectangle/paper.zh.md) | [code](domination-packing-split-rectangle/code/) | [results](domination-packing-split-rectangle/results/) | — |
+| [efx binary partition nullity](efx-binary-partition-nullity/paper.en.md) | [code](efx-binary-partition-nullity/code/) | [results](efx-binary-partition-nullity/results/) | — |
+| [efx four agents eight goods](efx-four-agents-eight-goods/paper.zh.md) | [reproduction](efx-four-agents-eight-goods/reproduction/) | — | — |
+| [efx matroid rank chores](efx-matroid-rank-chores/paper.en.md) | [code](efx-matroid-rank-chores/code/) | — | — |
+| [euclidean median all p sharp](euclidean-median-all-p-sharp/paper.en.md) | [code](euclidean-median-all-p-sharp/code/) | [results](euclidean-median-all-p-sharp/results/) | — |
+| [even cycle replica branch separation](even-cycle-replica-branch-separation/paper.zh.md) | [code](even-cycle-replica-branch-separation/code/) | [results](even-cycle-replica-branch-separation/results/) | — |
+| [exact convex profile capital](exact-convex-profile-capital/paper.en.md) | [code](exact-convex-profile-capital/code/) | [results](exact-convex-profile-capital/results/) | — |
+| [exchangeable arithmetic merging improvement](exchangeable-arithmetic-merging-improvement/paper.zh.md) | [code](exchangeable-arithmetic-merging-improvement/code/) | [results](exchangeable-arithmetic-merging-improvement/results/) | — |
+| [faster edge open packing](faster-edge-open-packing/paper.zh.md) | [code](faster-edge-open-packing/code/) | [results](faster-edge-open-packing/results/) | — |
+| [faster isometric paths chain](faster-isometric-paths-chain/paper.zh.md) | [code](faster-isometric-paths-chain/code/) | [results](faster-isometric-paths-chain/results/) | — |
+| [faster isometric paths cographs](faster-isometric-paths-cographs/paper.zh.md) | [code](faster-isometric-paths-cographs/code/) | [results](faster-isometric-paths-cographs/results/) | — |
+| [finite n prediction scheduling](finite-n-prediction-scheduling/paper.en.md) | [code](finite-n-prediction-scheduling/code/) | [results](finite-n-prediction-scheduling/results/) | — |
+| [first passage kernel inverse realization](first-passage-kernel-inverse-realization/paper.zh.md) | [code](first-passage-kernel-inverse-realization/code/) | [results](first-passage-kernel-inverse-realization/results/) | — |
+| [fixed agent cumulative envy](fixed-agent-cumulative-envy/paper.en.md) | [code](fixed-agent-cumulative-envy/code/) | [results](fixed-agent-cumulative-envy/results/) | [figures](fixed-agent-cumulative-envy/figures/) |
+| [fixed angle mbqc unitary design](fixed-angle-mbqc-unitary-design/paper.zh.md) | [code](fixed-angle-mbqc-unitary-design/code/) | [results](fixed-angle-mbqc-unitary-design/results/) | — |
+| [floquet many frequency optima](floquet-many-frequency-optima/paper.en.md) | [code](floquet-many-frequency-optima/code/) | [results](floquet-many-frequency-optima/results/) | — |
+| [four qubit fredkin exact entangling power](four-qubit-fredkin-exact-entangling-power/paper.en.md) | [code](four-qubit-fredkin-exact-entangling-power/code/) | — | — |
+| [fractional advice paw transfer](fractional-advice-paw-transfer/paper.en.md) | [code](fractional-advice-paw-transfer/code/) | — | — |
+| [full cover unidomination chordal](full-cover-unidomination-chordal/paper.zh.md) | [code](full-cover-unidomination-chordal/code/) | [results](full-cover-unidomination-chordal/results/) | — |
+| [full domain capital tensorization](full-domain-capital-tensorization/paper.en.md) | [code](full-domain-capital-tensorization/code/) | [results](full-domain-capital-tensorization/results/) | — |
+| [gaffke bivariate interval inversion](gaffke-bivariate-interval-inversion/paper.en.md) | [code](gaffke-bivariate-interval-inversion/code/) | [results](gaffke-bivariate-interval-inversion/results/) | — |
+| [gaffke delta sharp bound](gaffke-delta-sharp-bound/paper.en.md) | [code](gaffke-delta-sharp-bound/code/) | [results](gaffke-delta-sharp-bound/results/) | — |
+| [gaffke ordered iid interval](gaffke-ordered-iid-interval/paper.en.md) | [code](gaffke-ordered-iid-interval/code/) | [results](gaffke-ordered-iid-interval/results/) | — |
+| [gamma calibration unknown dispersion](gamma-calibration-unknown-dispersion/paper.zh.md) | [code](gamma-calibration-unknown-dispersion/code/) | [results](gamma-calibration-unknown-dispersion/results/) | — |
+| [gaussian frequency gradient variance](gaussian-frequency-gradient-variance/paper.zh.md) | [code](gaussian-frequency-gradient-variance/code/) | [results](gaussian-frequency-gradient-variance/results/) | — |
+| [gaussian product privacy floor](gaussian-product-privacy-floor/paper.en.md) | [code](gaussian-product-privacy-floor/code/) | [results](gaussian-product-privacy-floor/results/) | [figures](gaussian-product-privacy-floor/figures/) |
+| [gaussian product sharp zcdp](gaussian-product-sharp-zcdp/paper.en.md) | [code](gaussian-product-sharp-zcdp/code/) | [results](gaussian-product-sharp-zcdp/results/) | — |
+| [gaussian simes high level trivariate](gaussian-simes-high-level-trivariate/paper.en.md) | [code](gaussian-simes-high-level-trivariate/code/) | [results](gaussian-simes-high-level-trivariate/results/) | — |
+| [ghz pauli readout depth](ghz-pauli-readout-depth/paper.zh.md) | [code](ghz-pauli-readout-depth/code/) | [results](ghz-pauli-readout-depth/results/) | — |
+| [glauber activity counterexample](glauber-activity-counterexample/paper.en.md) | [code](glauber-activity-counterexample/code/) | [results](glauber-activity-counterexample/results/) | — |
+| [glauber annealing activity counterexample](glauber-annealing-activity-counterexample/paper.en.md) | [code](glauber-annealing-activity-counterexample/code/) | [results](glauber-annealing-activity-counterexample/results/) | [figures](glauber-annealing-activity-counterexample/figures/) |
+| [graph burning long path forests](graph-burning-long-path-forests/paper.en.md) | [code](graph-burning-long-path-forests/code/) | [results](graph-burning-long-path-forests/results/) | — |
+| [high temperature gibbs weak noise](high-temperature-gibbs-weak-noise/paper.zh.md) | [code](high-temperature-gibbs-weak-noise/code/) | — | — |
+| [independent e merging beyond martingales](independent-e-merging-beyond-martingales/paper.en.md) | [code](independent-e-merging-beyond-martingales/code/) | [results](independent-e-merging-beyond-martingales/results/) | — |
+| [independent winners bias extremizers](independent-winners-bias-extremizers/paper.en.md) | [code](independent-winners-bias-extremizers/code/) | [results](independent-winners-bias-extremizers/results/) | — |
+| [isometric path cover split](isometric-path-cover-split/paper.zh.md) | [code](isometric-path-cover-split/code/) | [results](isometric-path-cover-split/results/) | — |
+| [johnson triangle chain parity](johnson-triangle-chain-parity/paper.zh.md) | [code](johnson-triangle-chain-parity/code/) | [results](johnson-triangle-chain-parity/results/) | — |
+| [krr exact zcdp](krr-exact-zcdp/paper.en.md) | [code](krr-exact-zcdp/code/) | [results](krr-exact-zcdp/results/) | [figures](krr-exact-zcdp/figures/) |
+| [leave one out mean strong duality](leave-one-out-mean-strong-duality/paper.en.md) | [code](leave-one-out-mean-strong-duality/code/) | [results](leave-one-out-mean-strong-duality/results/) | — |
+| [lexicographic swap rounding counterexample](lexicographic-swap-rounding-counterexample/paper.en.md) | [code](lexicographic-swap-rounding-counterexample/code/) | [results](lexicographic-swap-rounding-counterexample/results/) | — |
+| [loo continuous dual closure gap](loo-continuous-dual-closure-gap/paper.en.md) | [code](loo-continuous-dual-closure-gap/code/) | [results](loo-continuous-dual-closure-gap/results/) | — |
+| [loo countable measurable duality](loo-countable-measurable-duality/paper.en.md) | [code](loo-countable-measurable-duality/code/) | [results](loo-countable-measurable-duality/results/) | — |
+| [lueders coarse graining tv](lueders-coarse-graining-tv/paper.en.md) | [code](lueders-coarse-graining-tv/code/) | [results](lueders-coarse-graining-tv/results/) | — |
+| [maximum total transitivity split](maximum-total-transitivity-split/paper.zh.md) | [code](maximum-total-transitivity-split/code/) | [results](maximum-total-transitivity-split/results/) | — |
+| [mbqc nine measurement five design](mbqc-nine-measurement-five-design/paper.zh.md) | [code](mbqc-nine-measurement-five-design/code/) | [results](mbqc-nine-measurement-five-design/results/) | — |
+| [minimizer rigidity stability](minimizer-rigidity-stability/paper.en.md) | [code](minimizer-rigidity-stability/code/) | [results](minimizer-rigidity-stability/results/) | — |
+| [minimum fill in chordal bipartite](minimum-fill-in-chordal-bipartite/paper.zh.md) | [code](minimum-fill-in-chordal-bipartite/code/) | [results](minimum-fill-in-chordal-bipartite/results/) | — |
+| [minimum fill in perfect elimination bipartite](minimum-fill-in-perfect-elimination-bipartite/paper.zh.md) | [code](minimum-fill-in-perfect-elimination-bipartite/code/) | [results](minimum-fill-in-perfect-elimination-bipartite/results/) | — |
+| [minimum maximal acyclic matching chordal](minimum-maximal-acyclic-matching-chordal/paper.zh.md) | [code](minimum-maximal-acyclic-matching-chordal/code/) | [results](minimum-maximal-acyclic-matching-chordal/results/) | — |
+| [minimum maximal acyclic matching chordal bipartite](minimum-maximal-acyclic-matching-chordal-bipartite/paper.zh.md) | [code](minimum-maximal-acyclic-matching-chordal-bipartite/code/) | [results](minimum-maximal-acyclic-matching-chordal-bipartite/results/) | — |
+| [modular magnetization magic](modular-magnetization-magic/paper.en.md) | [code](modular-magnetization-magic/code/) | [results](modular-magnetization-magic/results/) | [figures](modular-magnetization-magic/figures/) |
+| [moment conformal misspecification](moment-conformal-misspecification/paper.zh.md) | [code](moment-conformal-misspecification/code/) | [results](moment-conformal-misspecification/results/) | — |
+| [near linear edge open packing](near-linear-edge-open-packing/paper.zh.md) | [code](near-linear-edge-open-packing/code/) | [results](near-linear-edge-open-packing/results/) | — |
+| [noiseless codes few binary measurements](noiseless-codes-few-binary-measurements/paper.en.md) | [code](noiseless-codes-few-binary-measurements/code/) | [results](noiseless-codes-few-binary-measurements/results/) | — |
+| [noisy qubit design parity](noisy-qubit-design-parity/paper.zh.md) | [code](noisy-qubit-design-parity/code/) | [results](noisy-qubit-design-parity/results/) | — |
+| [noisy smooth online sharp limit](noisy-smooth-online-sharp-limit/paper.en.md) | [code](noisy-smooth-online-sharp-limit/code/) | [results](noisy-smooth-online-sharp-limit/results/) | — |
+| [non overlapping unidomination threshold](non-overlapping-unidomination-threshold/paper.zh.md) | [code](non-overlapping-unidomination-threshold/code/) | [results](non-overlapping-unidomination-threshold/results/) | — |
+| [nonadaptive bernoulli moment characterization](nonadaptive-bernoulli-moment-characterization/paper.en.md) | [code](nonadaptive-bernoulli-moment-characterization/code/) | [results](nonadaptive-bernoulli-moment-characterization/results/) | — |
+| [noncommuting pell aliases](noncommuting-pell-aliases/paper.en.md) | [code](noncommuting-pell-aliases/code/) | [results](noncommuting-pell-aliases/results/) | — |
+| [odd cycle exact complexity](odd-cycle-exact-complexity/paper.en.md) | — | [results](odd-cycle-exact-complexity/results/) | — |
+| [odd qudit replica phase reflection](odd-qudit-replica-phase-reflection/paper.zh.md) | [code](odd-qudit-replica-phase-reflection/code/) | [results](odd-qudit-replica-phase-reflection/results/) | — |
+| [online conformal critical known oracle](online-conformal-critical-known-oracle/paper.zh.md) | [code](online-conformal-critical-known-oracle/code/) | [results](online-conformal-critical-known-oracle/results/) | — |
+| [online conformal critical variational limit](online-conformal-critical-variational-limit/paper.zh.md) | — | [results](online-conformal-critical-variational-limit/results/) | — |
+| [online conformal fixed corridor](online-conformal-fixed-corridor/paper.zh.md) | [code](online-conformal-fixed-corridor/code/) | [results](online-conformal-fixed-corridor/results/) | — |
+| [online conformal minimax dp](online-conformal-minimax-dp/paper.zh.md) | [code](online-conformal-minimax-dp/code/) | [results](online-conformal-minimax-dp/results/) | — |
+| [online conformal sharp constant](online-conformal-sharp-constant/paper.en.md) | [code](online-conformal-sharp-constant/code/) | [results](online-conformal-sharp-constant/results/) | — |
+| [online conformal wide corridor asymptotic](online-conformal-wide-corridor-asymptotic/paper.zh.md) | [code](online-conformal-wide-corridor-asymptotic/code/) | [results](online-conformal-wide-corridor-asymptotic/results/) | — |
+| [optimal resetting asymmetric](optimal-resetting-asymmetric/paper.en.md) | [code](optimal-resetting-asymmetric/code/) | — | — |
+| [optimal resetting logconcave](optimal-resetting-logconcave/paper.en.md) | [code](optimal-resetting-logconcave/code/) | [results](optimal-resetting-logconcave/results/) | — |
+| [order seven sharp erasure](order-seven-sharp-erasure/paper.en.md) | [code](order-seven-sharp-erasure/code/) | [results](order-seven-sharp-erasure/results/) | — |
+| [order six sharp erasure](order-six-sharp-erasure/paper.en.md) | [code](order-six-sharp-erasure/code/) | [results](order-six-sharp-erasure/results/) | — |
+| [ordinal causal benefit sharp bounds](ordinal-causal-benefit-sharp-bounds/paper.en.md) | [code](ordinal-causal-benefit-sharp-bounds/code/) | [results](ordinal-causal-benefit-sharp-bounds/results/) | — |
+| [ordinal only frontier](ordinal-only-frontier/paper.en.md) | — | [results](ordinal-only-frontier/results/) | — |
+| [ordinary ef1 three agent counterexample](ordinary-ef1-three-agent-counterexample/paper.en.md) | [code](ordinary-ef1-three-agent-counterexample/code/) | [results](ordinary-ef1-three-agent-counterexample/results/) | — |
+| [pairwise independent online crs sharp](pairwise-independent-online-crs-sharp/paper.en.md) | [code](pairwise-independent-online-crs-sharp/code/) | [results](pairwise-independent-online-crs-sharp/results/) | — |
+| [pauli lindblad pec parity](pauli-lindblad-pec-parity/paper.en.md) | [code](pauli-lindblad-pec-parity/code/) | [results](pauli-lindblad-pec-parity/results/) | [figures](pauli-lindblad-pec-parity/figures/) |
+| [pauli mub phase rigidity](pauli-mub-phase-rigidity/paper.en.md) | [code](pauli-mub-phase-rigidity/code/) | [results](pauli-mub-phase-rigidity/results/) | — |
+| [position matching cut width one](position-matching-cut-width-one/paper.zh.md) | [code](position-matching-cut-width-one/code/) | — | — |
+| [posthoc closed stake admissibility](posthoc-closed-stake-admissibility/paper.en.md) | [code](posthoc-closed-stake-admissibility/code/) | [results](posthoc-closed-stake-admissibility/results/) | — |
+| [posthoc finite stake admissibility](posthoc-finite-stake-admissibility/paper.en.md) | [code](posthoc-finite-stake-admissibility/code/) | [results](posthoc-finite-stake-admissibility/results/) | — |
+| [posthoc randomized admissibility](posthoc-randomized-admissibility/paper.en.md) | [code](posthoc-randomized-admissibility/code/) | [results](posthoc-randomized-admissibility/results/) | — |
+| [ppt squared toroidal mixing](ppt-squared-toroidal-mixing/paper.en.md) | [code](ppt-squared-toroidal-mixing/code/) | [results](ppt-squared-toroidal-mixing/results/) | — |
+| [precise mergers without symmetry](precise-mergers-without-symmetry/paper.en.md) | [code](precise-mergers-without-symmetry/code/) | [results](precise-mergers-without-symmetry/results/) | — |
+| [processing oracle two phase](processing-oracle-two-phase/paper.en.md) | [code](processing-oracle-two-phase/code/) | [results](processing-oracle-two-phase/results/) | — |
+| [prophet secretary stockout](prophet-secretary-stockout/paper.en.md) | [code](prophet-secretary-stockout/code/) | [results](prophet-secretary-stockout/results/) | [figures](prophet-secretary-stockout/figures/) |
+| [pspin curie weiss spinodal](pspin-curie-weiss-spinodal/paper.zh.md) | [code](pspin-curie-weiss-spinodal/code/) | [results](pspin-curie-weiss-spinodal/results/) | — |
+| [pure entanglement three measurement exclusion](pure-entanglement-three-measurement-exclusion/paper.en.md) | [code](pure-entanglement-three-measurement-exclusion/code/) | [results](pure-entanglement-three-measurement-exclusion/results/) | — |
+| [quantum battery separable initialization](quantum-battery-separable-initialization/paper.en.md) | [code](quantum-battery-separable-initialization/code/) | [results](quantum-battery-separable-initialization/results/) | [figures](quantum-battery-separable-initialization/figures/) |
+| [quantum renyi45 erasure bound](quantum-renyi45-erasure-bound/paper.en.md) | [code](quantum-renyi45-erasure-bound/code/) | [results](quantum-renyi45-erasure-bound/results/) | — |
+| [quantum transport polygon exactness](quantum-transport-polygon-exactness/paper.en.md) | [code](quantum-transport-polygon-exactness/code/) | [results](quantum-transport-polygon-exactness/results/) | — |
+| [qubit cooling arbitrary machine](qubit-cooling-arbitrary-machine/paper.zh.md) | [code](qubit-cooling-arbitrary-machine/code/) | [results](qubit-cooling-arbitrary-machine/results/) | — |
+| [qubit cooling bernstein certificate](qubit-cooling-bernstein-certificate/paper.en.md) | [code](qubit-cooling-bernstein-certificate/code/) | [results](qubit-cooling-bernstein-certificate/results/) | — |
+| [qubit cooling bounded degeneracy](qubit-cooling-bounded-degeneracy/paper.en.md) | [code](qubit-cooling-bounded-degeneracy/code/) | [results](qubit-cooling-bounded-degeneracy/results/) | — |
+| [ququart swapping fixed resource range](ququart-swapping-fixed-resource-range/paper.zh.md) | [code](ququart-swapping-fixed-resource-range/code/) | [results](ququart-swapping-fixed-resource-range/results/) | — |
+| [qutrit ecqc sharp bound](qutrit-ecqc-sharp-bound/paper.en.md) | [code](qutrit-ecqc-sharp-bound/code/) | [results](qutrit-ecqc-sharp-bound/results/) | [figures](qutrit-ecqc-sharp-bound/figures/) |
+| [random occupancy threshold](random-occupancy-threshold/paper.en.md) | — | [results](random-occupancy-threshold/results/) | — |
+| [randomized weighted two job robustness](randomized-weighted-two-job-robustness/paper.en.md) | [code](randomized-weighted-two-job-robustness/code/) | [results](randomized-weighted-two-job-robustness/results/) | — |
+| [rank two permutation sharp constant](rank-two-permutation-sharp-constant/paper.en.md) | [code](rank-two-permutation-sharp-constant/code/) | [results](rank-two-permutation-sharp-constant/results/) | — |
+| [rank two scale classification](rank-two-scale-classification/paper.en.md) | — | [results](rank-two-scale-classification/results/) | — |
+| [rb all tensor contractivity](rb-all-tensor-contractivity/paper.zh.md) | [code](rb-all-tensor-contractivity/code/) | [results](rb-all-tensor-contractivity/results/) | — |
+| [reciprocal reward counterexamples](reciprocal-reward-counterexamples/paper.en.md) | [code](reciprocal-reward-counterexamples/code/) | [results](reciprocal-reward-counterexamples/results/) | [figures](reciprocal-reward-counterexamples/figures/) |
+| [record constrained prophet gap](record-constrained-prophet-gap/paper.en.md) | [code](record-constrained-prophet-gap/code/) | [results](record-constrained-prophet-gap/results/) | — |
+| [reflecting diffusion frequency classification](reflecting-diffusion-frequency-classification/paper.zh.md) | [code](reflecting-diffusion-frequency-classification/code/) | [results](reflecting-diffusion-frequency-classification/results/) | — |
+| [renyi product order phase](renyi-product-order-phase/paper.en.md) | [code](renyi-product-order-phase/code/) | [results](renyi-product-order-phase/results/) | — |
+| [renyi three channel frontier](renyi-three-channel-frontier/paper.en.md) | — | [results](renyi-three-channel-frontier/results/) | — |
+| [replicable conformal pilot ranks](replicable-conformal-pilot-ranks/paper.en.md) | [code](replicable-conformal-pilot-ranks/code/) | [results](replicable-conformal-pilot-ranks/results/) | — |
+| [reversible environment weak response](reversible-environment-weak-response/paper.en.md) | — | [results](reversible-environment-weak-response/results/) | — |
+| [risk sensitive ski rental](risk-sensitive-ski-rental/paper.en.md) | [code](risk-sensitive-ski-rental/code/) | [results](risk-sensitive-ski-rental/results/) | [figures](risk-sensitive-ski-rental/figures/) |
+| [risk transfer and finite horizon](risk-transfer-and-finite-horizon/paper.en.md) | [code](risk-transfer-and-finite-horizon/code/) | [results](risk-transfer-and-finite-horizon/results/) | [figures](risk-transfer-and-finite-horizon/figures/) |
+| [robust crt fixed channel exact design](robust-crt-fixed-channel-exact-design/paper.en.md) | [code](robust-crt-fixed-channel-exact-design/code/) | [results](robust-crt-fixed-channel-exact-design/results/) | — |
+| [robust secretary acceptance thinning](robust-secretary-acceptance-thinning/paper.zh.md) | [code](robust-secretary-acceptance-thinning/code/) | [results](robust-secretary-acceptance-thinning/results/) | — |
+| [schmidt reference renyi half counterexample](schmidt-reference-renyi-half-counterexample/paper.en.md) | [code](schmidt-reference-renyi-half-counterexample/code/) | [results](schmidt-reference-renyi-half-counterexample/results/) | — |
+| [selection audit information](selection-audit-information/paper.en.md) | [code](selection-audit-information/code/) | [results](selection-audit-information/results/) | [figures](selection-audit-information/figures/) |
+| [self deleting path derandomization](self-deleting-path-derandomization/paper.en.md) | [code](self-deleting-path-derandomization/code/) | [results](self-deleting-path-derandomization/results/) | — |
+| [sequential ldp autocovariance minimax](sequential-ldp-autocovariance-minimax/paper.en.md) | [code](sequential-ldp-autocovariance-minimax/code/) | [results](sequential-ldp-autocovariance-minimax/results/) | — |
+| [sequential target recalculation](sequential-target-recalculation/paper.en.md) | [code](sequential-target-recalculation/code/) | [results](sequential-target-recalculation/results/) | — |
+| [sharp minimal failures](sharp-minimal-failures/paper.en.md) | [code](sharp-minimal-failures/code/) | [results](sharp-minimal-failures/results/) | — |
+| [sharp nonmonotone correlation gap](sharp-nonmonotone-correlation-gap/paper.en.md) | [code](sharp-nonmonotone-correlation-gap/code/) | [results](sharp-nonmonotone-correlation-gap/results/) | [figures](sharp-nonmonotone-correlation-gap/figures/) |
+| [sharp two step activity](sharp-two-step-activity/paper.en.md) | [code](sharp-two-step-activity/code/) | [results](sharp-two-step-activity/results/) | — |
+| [sibuya quantum reset rate](sibuya-quantum-reset-rate/paper.en.md) | [code](sibuya-quantum-reset-rate/code/) | [results](sibuya-quantum-reset-rate/results/) | [figures](sibuya-quantum-reset-rate/figures/) |
+| [simes band curvature](simes-band-curvature/paper.zh.md) | [code](simes-band-curvature/code/) | [results](simes-band-curvature/results/) | — |
+| [single qubit fixed angle all orders](single-qubit-fixed-angle-all-orders/paper.zh.md) | [code](single-qubit-fixed-angle-all-orders/code/) | [results](single-qubit-fixed-angle-all-orders/results/) | — |
+| [single qubit marginal first passage ep3](single-qubit-marginal-first-passage-ep3/paper.zh.md) | [code](single-qubit-marginal-first-passage-ep3/code/) | [results](single-qubit-marginal-first-passage-ep3/results/) | — |
+| [six cycle even replica factorization](six-cycle-even-replica-factorization/paper.zh.md) | [code](six-cycle-even-replica-factorization/code/) | [results](six-cycle-even-replica-factorization/results/) | — |
+| [six cycle odd index entropy rises](six-cycle-odd-index-entropy-rises/paper.zh.md) | — | [results](six-cycle-odd-index-entropy-rises/results/) | — |
+| [six cycle replica arithmetic](six-cycle-replica-arithmetic/paper.zh.md) | [code](six-cycle-replica-arithmetic/code/) | [results](six-cycle-replica-arithmetic/results/) | — |
+| [slack null induction complexity](slack-null-induction-complexity/paper.en.md) | — | [results](slack-null-induction-complexity/results/) | — |
+| [speed limited harmonic equilibration](speed-limited-harmonic-equilibration/paper.en.md) | [code](speed-limited-harmonic-equilibration/code/) | [results](speed-limited-harmonic-equilibration/results/) | — |
+| [stroboscopic three state entropy range](stroboscopic-three-state-entropy-range/paper.en.md) | [code](stroboscopic-three-state-entropy-range/code/) | [results](stroboscopic-three-state-entropy-range/results/) | [figures](stroboscopic-three-state-entropy-range/figures/) |
+| [subsampled max power lqrt](subsampled-max-power-lqrt/paper.zh.md) | [code](subsampled-max-power-lqrt/code/) | [results](subsampled-max-power-lqrt/results/) | — |
+| [three qubit depolarizing majorization](three-qubit-depolarizing-majorization/paper.en.md) | [code](three-qubit-depolarizing-majorization/code/) | [results](three-qubit-depolarizing-majorization/results/) | — |
+| [three state mlsi certificate](three-state-mlsi-certificate/paper.zh.md) | — | [results](three-state-mlsi-certificate/results/) | — |
+| [topology constrained markov reconstruction](topology-constrained-markov-reconstruction/paper.en.md) | [code](topology-constrained-markov-reconstruction/code/) | [results](topology-constrained-markov-reconstruction/results/) | [figures](topology-constrained-markov-reconstruction/figures/) |
+| [triangular windmill proper hat](triangular-windmill-proper-hat/paper.en.md) | [code](triangular-windmill-proper-hat/code/) | [results](triangular-windmill-proper-hat/results/) | — |
+| [tripartite nearest spectral](tripartite-nearest-spectral/paper.zh.md) | [code](tripartite-nearest-spectral/code/) | [results](tripartite-nearest-spectral/results/) | — |
+| [tripartite spectral rank](tripartite-spectral-rank/paper.zh.md) | — | [results](tripartite-spectral-rank/results/) | — |
+| [two agent sd ef1 market](two-agent-sd-ef1-market/paper.en.md) | [code](two-agent-sd-ef1-market/code/) | [results](two-agent-sd-ef1-market/results/) | [figures](two-agent-sd-ef1-market/figures/) |
+| [two box pure search conjecture21](two-box-pure-search-conjecture21/paper.en.md) | [code](two-box-pure-search-conjecture21/code/) | [results](two-box-pure-search-conjecture21/results/) | [figures](two-box-pure-search-conjecture21/figures/) |
+| [two visits duplicate midpoint](two-visits-duplicate-midpoint/paper.zh.md) | [code](two-visits-duplicate-midpoint/code/) | [results](two-visits-duplicate-midpoint/results/) | — |
+| [unidomination thresholds planar bipartite](unidomination-thresholds-planar-bipartite/paper.zh.md) | [code](unidomination-thresholds-planar-bipartite/code/) | [results](unidomination-thresholds-planar-bipartite/results/) | — |
+| [unknown scale onebit mean minimax](unknown-scale-onebit-mean-minimax/paper.en.md) | [code](unknown-scale-onebit-mean-minimax/code/) | — | — |
+| [upper clique transversal helly circular arc](upper-clique-transversal-helly-circular-arc/paper.zh.md) | [code](upper-clique-transversal-helly-circular-arc/code/) | [results](upper-clique-transversal-helly-circular-arc/results/) | — |
+| [upper clique transversal incidence equality](upper-clique-transversal-incidence-equality/paper.zh.md) | [code](upper-clique-transversal-incidence-equality/code/) | [results](upper-clique-transversal-incidence-equality/results/) | — |
+| [upper clique transversal strongly chordal](upper-clique-transversal-strongly-chordal/paper.zh.md) | [code](upper-clique-transversal-strongly-chordal/code/) | [results](upper-clique-transversal-strongly-chordal/results/) | — |
+| [variety jump subcubic potential](variety-jump-subcubic-potential/paper.en.md) | [code](variety-jump-subcubic-potential/code/) | [results](variety-jump-subcubic-potential/results/) | [figures](variety-jump-subcubic-potential/figures/) |
+| [wasserstein barycenter threshold two](wasserstein-barycenter-threshold-two/paper.en.md) | [code](wasserstein-barycenter-threshold-two/code/) | [results](wasserstein-barycenter-threshold-two/results/) | — |
+| [weighted conformal explicit sample threshold](weighted-conformal-explicit-sample-threshold/paper.en.md) | [code](weighted-conformal-explicit-sample-threshold/code/) | [results](weighted-conformal-explicit-sample-threshold/results/) | — |
+| [weighted conformal fixed cap curvature](weighted-conformal-fixed-cap-curvature/paper.en.md) | [code](weighted-conformal-fixed-cap-curvature/code/) | [results](weighted-conformal-fixed-cap-curvature/results/) | — |
+| [weighted conformal global null linear fdr](weighted-conformal-global-null-linear-fdr/paper.en.md) | [code](weighted-conformal-global-null-linear-fdr/code/) | [results](weighted-conformal-global-null-linear-fdr/results/) | — |
+| [weighted conformal poisson transfer](weighted-conformal-poisson-transfer/paper.en.md) | [code](weighted-conformal-poisson-transfer/code/) | [results](weighted-conformal-poisson-transfer/results/) | — |
+| [weighted conformal spectral rkhs](weighted-conformal-spectral-rkhs/paper.zh.md) | [code](weighted-conformal-spectral-rkhs/code/) | [results](weighted-conformal-spectral-rkhs/results/) | — |

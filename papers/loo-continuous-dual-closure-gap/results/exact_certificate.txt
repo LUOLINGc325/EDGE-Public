@@ -1,0 +1,4 @@
+Pairwise label and feasible-law checks: 192 parameters.
+Exact all-count certificate telescopes: 3586.
+At dimension 4000, count cutoff 1417: exact continuous-dual gap exceeds 999/1000.
+All checks passed.

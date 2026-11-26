@@ -1,0 +1,382 @@
+{
+  "scope": "Exact finite implementation checks; not an all-parameter statistical-risk proof.",
+  "arithmetic": "Python arbitrary-precision integers and fractions only",
+  "number_of_tuning_cases": 40,
+  "proof_file": "manuscript/implementation_supplement.md",
+  "proof_sha256_at_run": "e337dcc5e1d21e2c164c3186a7e3adb4883293fc1f812355524e1fef36e6b010",
+  "tuning_cases": [
+    {
+      "r": 2,
+      "n": 1,
+      "Q_is_power_of_two_with_exponent": 0,
+      "Q_bit_length": 1,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1,
+      "Q_is_power_of_two_with_exponent": 1,
+      "Q_bit_length": 2,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1,
+      "Q_is_power_of_two_with_exponent": 16,
+      "Q_bit_length": 17,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1,
+      "Q_is_power_of_two_with_exponent": 1,
+      "Q_bit_length": 2,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1023,
+      "Q_is_power_of_two_with_exponent": 0,
+      "Q_bit_length": 1,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1023,
+      "Q_is_power_of_two_with_exponent": 1,
+      "Q_bit_length": 2,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1023,
+      "Q_is_power_of_two_with_exponent": 16,
+      "Q_bit_length": 17,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1023,
+      "Q_is_power_of_two_with_exponent": 1023,
+      "Q_bit_length": 1024,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1024,
+      "Q_is_power_of_two_with_exponent": 0,
+      "Q_bit_length": 1,
+      "odd_m": 1,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1024,
+      "Q_is_power_of_two_with_exponent": 1,
+      "Q_bit_length": 2,
+      "odd_m": 1,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1024,
+      "Q_is_power_of_two_with_exponent": 16,
+      "Q_bit_length": 17,
+      "odd_m": 3,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1024,
+      "Q_is_power_of_two_with_exponent": 1024,
+      "Q_bit_length": 1025,
+      "odd_m": 31,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1025,
+      "Q_is_power_of_two_with_exponent": 0,
+      "Q_bit_length": 1,
+      "odd_m": 1,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1025,
+      "Q_is_power_of_two_with_exponent": 1,
+      "Q_bit_length": 2,
+      "odd_m": 1,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1025,
+      "Q_is_power_of_two_with_exponent": 16,
+      "Q_bit_length": 17,
+      "odd_m": 3,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 1025,
+      "Q_is_power_of_two_with_exponent": 1025,
+      "Q_bit_length": 1026,
+      "odd_m": 31,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 4096,
+      "Q_is_power_of_two_with_exponent": 0,
+      "Q_bit_length": 1,
+      "odd_m": 1,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 4096,
+      "Q_is_power_of_two_with_exponent": 1,
+      "Q_bit_length": 2,
+      "odd_m": 1,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 4096,
+      "Q_is_power_of_two_with_exponent": 16,
+      "Q_bit_length": 17,
+      "odd_m": 7,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 2,
+      "n": 4096,
+      "Q_is_power_of_two_with_exponent": 4096,
+      "Q_bit_length": 4097,
+      "odd_m": 127,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 1,
+      "Q_is_power_of_two_with_exponent": 0,
+      "Q_bit_length": 1,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 1,
+      "Q_is_power_of_two_with_exponent": 1,
+      "Q_bit_length": 2,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 1,
+      "Q_is_power_of_two_with_exponent": 16,
+      "Q_bit_length": 17,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 1,
+      "Q_is_power_of_two_with_exponent": 1,
+      "Q_bit_length": 2,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 2303,
+      "Q_is_power_of_two_with_exponent": 0,
+      "Q_bit_length": 1,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 2303,
+      "Q_is_power_of_two_with_exponent": 1,
+      "Q_bit_length": 2,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 2303,
+      "Q_is_power_of_two_with_exponent": 16,
+      "Q_bit_length": 17,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 2303,
+      "Q_is_power_of_two_with_exponent": 2303,
+      "Q_bit_length": 2304,
+      "odd_m": null,
+      "zero_estimator": true,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 2304,
+      "Q_is_power_of_two_with_exponent": 0,
+      "Q_bit_length": 1,
+      "odd_m": 1,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 2304,
+      "Q_is_power_of_two_with_exponent": 1,
+      "Q_bit_length": 2,
+      "odd_m": 1,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 2304,
+      "Q_is_power_of_two_with_exponent": 16,
+      "Q_bit_length": 17,
+      "odd_m": 3,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 2304,
+      "Q_is_power_of_two_with_exponent": 2304,
+      "Q_bit_length": 2305,
+      "odd_m": 47,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 2305,
+      "Q_is_power_of_two_with_exponent": 0,
+      "Q_bit_length": 1,
+      "odd_m": 1,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 2305,
+      "Q_is_power_of_two_with_exponent": 1,
+      "Q_bit_length": 2,
+      "odd_m": 1,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 2305,
+      "Q_is_power_of_two_with_exponent": 16,
+      "Q_bit_length": 17,
+      "odd_m": 3,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 2305,
+      "Q_is_power_of_two_with_exponent": 2305,
+      "Q_bit_length": 2306,
+      "odd_m": 47,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 9216,
+      "Q_is_power_of_two_with_exponent": 0,
+      "Q_bit_length": 1,
+      "odd_m": 1,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 9216,
+      "Q_is_power_of_two_with_exponent": 1,
+      "Q_bit_length": 2,
+      "odd_m": 1,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 9216,
+      "Q_is_power_of_two_with_exponent": 16,
+      "Q_bit_length": 17,
+      "odd_m": 7,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    },
+    {
+      "r": 3,
+      "n": 9216,
+      "Q_is_power_of_two_with_exponent": 9216,
+      "Q_bit_length": 9217,
+      "odd_m": 191,
+      "zero_estimator": false,
+      "all_integer_rounding_invariants_passed": true
+    }
+  ],
+  "exact_tie_case": {
+    "n": 1024,
+    "r": 2,
+    "counts": [
+      0,
+      256,
+      512,
+      768,
+      1024
+    ],
+    "estimate": "0",
+    "decision": 1
+  }
+}

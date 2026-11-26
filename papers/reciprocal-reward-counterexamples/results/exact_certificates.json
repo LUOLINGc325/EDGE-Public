@@ -1,0 +1,1909 @@
+{
+  "status": "passed",
+  "arithmetic": "fractions.Fraction; no floating point",
+  "four_vertex_hypergraph": {
+    "vertices": 4,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "matrix": [
+      [
+        "0",
+        "0",
+        "2",
+        "2"
+      ],
+      [
+        "0",
+        "2",
+        "0",
+        "2"
+      ],
+      [
+        "0",
+        "2",
+        "2",
+        "0"
+      ],
+      [
+        "3",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "searcher": [
+      "3/13",
+      "3/13",
+      "3/13",
+      "4/13"
+    ],
+    "hider": [
+      "4/13",
+      "3/13",
+      "3/13",
+      "3/13"
+    ],
+    "column_payoffs": [
+      "12/13",
+      "12/13",
+      "12/13",
+      "12/13"
+    ],
+    "row_payoffs": [
+      "12/13",
+      "12/13",
+      "12/13",
+      "12/13"
+    ],
+    "value": "12/13",
+    "best_reciprocal_value": "3/4",
+    "ratio": "13/16",
+    "supports": [
+      {
+        "support": [
+          0
+        ],
+        "probabilities": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "0",
+          "0",
+          "2",
+          "2"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          1
+        ],
+        "probabilities": [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "0",
+          "2",
+          "0",
+          "2"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          2
+        ],
+        "probabilities": [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "0",
+          "2",
+          "2",
+          "0"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "pure_hider_payoffs": [
+          "3",
+          "0",
+          "0",
+          "0"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          0,
+          1
+        ],
+        "probabilities": [
+          "1/2",
+          "1/2",
+          "0",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "0",
+          "1",
+          "1",
+          "2"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          0,
+          2
+        ],
+        "probabilities": [
+          "1/2",
+          "0",
+          "1/2",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "0",
+          "1",
+          "2",
+          "1"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          0,
+          3
+        ],
+        "probabilities": [
+          "3/5",
+          "0",
+          "0",
+          "2/5"
+        ],
+        "pure_hider_payoffs": [
+          "6/5",
+          "0",
+          "6/5",
+          "6/5"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          1,
+          2
+        ],
+        "probabilities": [
+          "0",
+          "1/2",
+          "1/2",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "0",
+          "2",
+          "1",
+          "1"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          "0",
+          "3/5",
+          "0",
+          "2/5"
+        ],
+        "pure_hider_payoffs": [
+          "6/5",
+          "6/5",
+          "0",
+          "6/5"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          2,
+          3
+        ],
+        "probabilities": [
+          "0",
+          "0",
+          "3/5",
+          "2/5"
+        ],
+        "pure_hider_payoffs": [
+          "6/5",
+          "6/5",
+          "6/5",
+          "0"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "probabilities": [
+          "1/3",
+          "1/3",
+          "1/3",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "0",
+          "4/3",
+          "4/3",
+          "4/3"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          0,
+          1,
+          3
+        ],
+        "probabilities": [
+          "3/8",
+          "3/8",
+          "0",
+          "1/4"
+        ],
+        "pure_hider_payoffs": [
+          "3/4",
+          "3/4",
+          "3/4",
+          "3/2"
+        ],
+        "guarantee": "3/4"
+      },
+      {
+        "support": [
+          0,
+          2,
+          3
+        ],
+        "probabilities": [
+          "3/8",
+          "0",
+          "3/8",
+          "1/4"
+        ],
+        "pure_hider_payoffs": [
+          "3/4",
+          "3/4",
+          "3/2",
+          "3/4"
+        ],
+        "guarantee": "3/4"
+      },
+      {
+        "support": [
+          1,
+          2,
+          3
+        ],
+        "probabilities": [
+          "0",
+          "3/8",
+          "3/8",
+          "1/4"
+        ],
+        "pure_hider_payoffs": [
+          "3/4",
+          "3/2",
+          "3/4",
+          "3/4"
+        ],
+        "guarantee": "3/4"
+      },
+      {
+        "support": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "probabilities": [
+          "3/11",
+          "3/11",
+          "3/11",
+          "2/11"
+        ],
+        "pure_hider_payoffs": [
+          "6/11",
+          "12/11",
+          "12/11",
+          "12/11"
+        ],
+        "guarantee": "6/11"
+      }
+    ]
+  },
+  "five_vertex_connected_graph": {
+    "vertices": 5,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "matrix": [
+      [
+        "0",
+        "0",
+        "2",
+        "2",
+        "2"
+      ],
+      [
+        "0",
+        "2",
+        "0",
+        "2",
+        "2"
+      ],
+      [
+        "2",
+        "0",
+        "0",
+        "2",
+        "2"
+      ],
+      [
+        "2",
+        "2",
+        "0",
+        "0",
+        "2"
+      ],
+      [
+        "2",
+        "2",
+        "2",
+        "0",
+        "0"
+      ]
+    ],
+    "searcher": [
+      "1/5",
+      "1/5",
+      "1/5",
+      "0",
+      "2/5"
+    ],
+    "hider": [
+      "1/5",
+      "1/5",
+      "1/5",
+      "1/5",
+      "1/5"
+    ],
+    "column_payoffs": [
+      "6/5",
+      "6/5",
+      "6/5",
+      "6/5",
+      "6/5"
+    ],
+    "row_payoffs": [
+      "6/5",
+      "6/5",
+      "6/5",
+      "6/5",
+      "6/5"
+    ],
+    "value": "6/5",
+    "best_reciprocal_value": "1",
+    "ratio": "5/6",
+    "supports": [
+      {
+        "support": [
+          0
+        ],
+        "probabilities": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "0",
+          "0",
+          "2",
+          "2",
+          "2"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          1
+        ],
+        "probabilities": [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "0",
+          "2",
+          "0",
+          "2",
+          "2"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          2
+        ],
+        "probabilities": [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "2",
+          "0",
+          "0",
+          "2",
+          "2"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "2",
+          "2",
+          "0",
+          "0",
+          "2"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          4
+        ],
+        "probabilities": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "pure_hider_payoffs": [
+          "2",
+          "2",
+          "2",
+          "0",
+          "0"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          0,
+          1
+        ],
+        "probabilities": [
+          "1/2",
+          "1/2",
+          "0",
+          "0",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "0",
+          "1",
+          "1",
+          "2",
+          "2"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          0,
+          2
+        ],
+        "probabilities": [
+          "1/2",
+          "0",
+          "1/2",
+          "0",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "1",
+          "0",
+          "1",
+          "2",
+          "2"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          0,
+          3
+        ],
+        "probabilities": [
+          "1/2",
+          "0",
+          "0",
+          "1/2",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "2"
+        ],
+        "guarantee": "1"
+      },
+      {
+        "support": [
+          0,
+          4
+        ],
+        "probabilities": [
+          "1/2",
+          "0",
+          "0",
+          "0",
+          "1/2"
+        ],
+        "pure_hider_payoffs": [
+          "1",
+          "1",
+          "2",
+          "1",
+          "1"
+        ],
+        "guarantee": "1"
+      },
+      {
+        "support": [
+          1,
+          2
+        ],
+        "probabilities": [
+          "0",
+          "1/2",
+          "1/2",
+          "0",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "1",
+          "1",
+          "0",
+          "2",
+          "2"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          "0",
+          "1/2",
+          "0",
+          "1/2",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "1",
+          "2",
+          "0",
+          "1",
+          "2"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          1,
+          4
+        ],
+        "probabilities": [
+          "0",
+          "1/2",
+          "0",
+          "0",
+          "1/2"
+        ],
+        "pure_hider_payoffs": [
+          "1",
+          "2",
+          "1",
+          "1",
+          "1"
+        ],
+        "guarantee": "1"
+      },
+      {
+        "support": [
+          2,
+          3
+        ],
+        "probabilities": [
+          "0",
+          "0",
+          "1/2",
+          "1/2",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "2",
+          "1",
+          "0",
+          "1",
+          "2"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          2,
+          4
+        ],
+        "probabilities": [
+          "0",
+          "0",
+          "1/2",
+          "0",
+          "1/2"
+        ],
+        "pure_hider_payoffs": [
+          "2",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "guarantee": "1"
+      },
+      {
+        "support": [
+          3,
+          4
+        ],
+        "probabilities": [
+          "0",
+          "0",
+          "0",
+          "1/2",
+          "1/2"
+        ],
+        "pure_hider_payoffs": [
+          "2",
+          "2",
+          "1",
+          "0",
+          "1"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "probabilities": [
+          "1/3",
+          "1/3",
+          "1/3",
+          "0",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "2/3",
+          "2/3",
+          "2/3",
+          "2",
+          "2"
+        ],
+        "guarantee": "2/3"
+      },
+      {
+        "support": [
+          0,
+          1,
+          3
+        ],
+        "probabilities": [
+          "1/3",
+          "1/3",
+          "0",
+          "1/3",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "2/3",
+          "4/3",
+          "2/3",
+          "4/3",
+          "2"
+        ],
+        "guarantee": "2/3"
+      },
+      {
+        "support": [
+          0,
+          1,
+          4
+        ],
+        "probabilities": [
+          "1/3",
+          "1/3",
+          "0",
+          "0",
+          "1/3"
+        ],
+        "pure_hider_payoffs": [
+          "2/3",
+          "4/3",
+          "4/3",
+          "4/3",
+          "4/3"
+        ],
+        "guarantee": "2/3"
+      },
+      {
+        "support": [
+          0,
+          2,
+          3
+        ],
+        "probabilities": [
+          "1/3",
+          "0",
+          "1/3",
+          "1/3",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "4/3",
+          "2/3",
+          "2/3",
+          "4/3",
+          "2"
+        ],
+        "guarantee": "2/3"
+      },
+      {
+        "support": [
+          0,
+          2,
+          4
+        ],
+        "probabilities": [
+          "1/3",
+          "0",
+          "1/3",
+          "0",
+          "1/3"
+        ],
+        "pure_hider_payoffs": [
+          "4/3",
+          "2/3",
+          "4/3",
+          "4/3",
+          "4/3"
+        ],
+        "guarantee": "2/3"
+      },
+      {
+        "support": [
+          0,
+          3,
+          4
+        ],
+        "probabilities": [
+          "1/3",
+          "0",
+          "0",
+          "1/3",
+          "1/3"
+        ],
+        "pure_hider_payoffs": [
+          "4/3",
+          "4/3",
+          "4/3",
+          "2/3",
+          "4/3"
+        ],
+        "guarantee": "2/3"
+      },
+      {
+        "support": [
+          1,
+          2,
+          3
+        ],
+        "probabilities": [
+          "0",
+          "1/3",
+          "1/3",
+          "1/3",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "4/3",
+          "4/3",
+          "0",
+          "4/3",
+          "2"
+        ],
+        "guarantee": "0"
+      },
+      {
+        "support": [
+          1,
+          2,
+          4
+        ],
+        "probabilities": [
+          "0",
+          "1/3",
+          "1/3",
+          "0",
+          "1/3"
+        ],
+        "pure_hider_payoffs": [
+          "4/3",
+          "4/3",
+          "2/3",
+          "4/3",
+          "4/3"
+        ],
+        "guarantee": "2/3"
+      },
+      {
+        "support": [
+          1,
+          3,
+          4
+        ],
+        "probabilities": [
+          "0",
+          "1/3",
+          "0",
+          "1/3",
+          "1/3"
+        ],
+        "pure_hider_payoffs": [
+          "4/3",
+          "2",
+          "2/3",
+          "2/3",
+          "4/3"
+        ],
+        "guarantee": "2/3"
+      },
+      {
+        "support": [
+          2,
+          3,
+          4
+        ],
+        "probabilities": [
+          "0",
+          "0",
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "pure_hider_payoffs": [
+          "2",
+          "4/3",
+          "2/3",
+          "2/3",
+          "4/3"
+        ],
+        "guarantee": "2/3"
+      },
+      {
+        "support": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "probabilities": [
+          "1/4",
+          "1/4",
+          "1/4",
+          "1/4",
+          "0"
+        ],
+        "pure_hider_payoffs": [
+          "1",
+          "1",
+          "1/2",
+          "3/2",
+          "2"
+        ],
+        "guarantee": "1/2"
+      },
+      {
+        "support": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "probabilities": [
+          "1/4",
+          "1/4",
+          "1/4",
+          "0",
+          "1/4"
+        ],
+        "pure_hider_payoffs": [
+          "1",
+          "1",
+          "1",
+          "3/2",
+          "3/2"
+        ],
+        "guarantee": "1"
+      },
+      {
+        "support": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "probabilities": [
+          "1/4",
+          "1/4",
+          "0",
+          "1/4",
+          "1/4"
+        ],
+        "pure_hider_payoffs": [
+          "1",
+          "3/2",
+          "1",
+          "1",
+          "3/2"
+        ],
+        "guarantee": "1"
+      },
+      {
+        "support": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "probabilities": [
+          "1/4",
+          "0",
+          "1/4",
+          "1/4",
+          "1/4"
+        ],
+        "pure_hider_payoffs": [
+          "3/2",
+          "1",
+          "1",
+          "1",
+          "3/2"
+        ],
+        "guarantee": "1"
+      },
+      {
+        "support": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "probabilities": [
+          "0",
+          "1/4",
+          "1/4",
+          "1/4",
+          "1/4"
+        ],
+        "pure_hider_payoffs": [
+          "3/2",
+          "3/2",
+          "1/2",
+          "1",
+          "3/2"
+        ],
+        "guarantee": "1/2"
+      },
+      {
+        "support": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "probabilities": [
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5"
+        ],
+        "pure_hider_payoffs": [
+          "6/5",
+          "6/5",
+          "4/5",
+          "6/5",
+          "8/5"
+        ],
+        "guarantee": "4/5"
+      }
+    ]
+  },
+  "family_parameter_checks": [
+    {
+      "m": 2,
+      "value": "2/3",
+      "best_reciprocal": "2/3",
+      "ratio": "1"
+    },
+    {
+      "m": 3,
+      "value": "12/13",
+      "best_reciprocal": "3/4",
+      "ratio": "13/16"
+    },
+    {
+      "m": 4,
+      "value": "12/11",
+      "best_reciprocal": "4/5",
+      "ratio": "11/15"
+    },
+    {
+      "m": 5,
+      "value": "40/33",
+      "best_reciprocal": "5/6",
+      "ratio": "11/16"
+    },
+    {
+      "m": 6,
+      "value": "30/23",
+      "best_reciprocal": "6/7",
+      "ratio": "23/35"
+    },
+    {
+      "m": 7,
+      "value": "84/61",
+      "best_reciprocal": "7/8",
+      "ratio": "61/96"
+    },
+    {
+      "m": 8,
+      "value": "56/39",
+      "best_reciprocal": "8/9",
+      "ratio": "13/21"
+    },
+    {
+      "m": 9,
+      "value": "144/97",
+      "best_reciprocal": "9/10",
+      "ratio": "97/160"
+    },
+    {
+      "m": 10,
+      "value": "90/59",
+      "best_reciprocal": "10/11",
+      "ratio": "59/99"
+    },
+    {
+      "m": 11,
+      "value": "220/141",
+      "best_reciprocal": "11/12",
+      "ratio": "47/80"
+    },
+    {
+      "m": 12,
+      "value": "132/83",
+      "best_reciprocal": "12/13",
+      "ratio": "83/143"
+    },
+    {
+      "m": 13,
+      "value": "312/193",
+      "best_reciprocal": "13/14",
+      "ratio": "193/336"
+    },
+    {
+      "m": 14,
+      "value": "182/111",
+      "best_reciprocal": "14/15",
+      "ratio": "37/65"
+    },
+    {
+      "m": 15,
+      "value": "420/253",
+      "best_reciprocal": "15/16",
+      "ratio": "253/448"
+    },
+    {
+      "m": 16,
+      "value": "240/143",
+      "best_reciprocal": "16/17",
+      "ratio": "143/255"
+    },
+    {
+      "m": 17,
+      "value": "544/321",
+      "best_reciprocal": "17/18",
+      "ratio": "107/192"
+    },
+    {
+      "m": 18,
+      "value": "306/179",
+      "best_reciprocal": "18/19",
+      "ratio": "179/323"
+    },
+    {
+      "m": 19,
+      "value": "684/397",
+      "best_reciprocal": "19/20",
+      "ratio": "397/720"
+    },
+    {
+      "m": 20,
+      "value": "380/219",
+      "best_reciprocal": "20/21",
+      "ratio": "73/133"
+    },
+    {
+      "m": 21,
+      "value": "840/481",
+      "best_reciprocal": "21/22",
+      "ratio": "481/880"
+    },
+    {
+      "m": 22,
+      "value": "462/263",
+      "best_reciprocal": "22/23",
+      "ratio": "263/483"
+    },
+    {
+      "m": 23,
+      "value": "1012/573",
+      "best_reciprocal": "23/24",
+      "ratio": "191/352"
+    },
+    {
+      "m": 24,
+      "value": "552/311",
+      "best_reciprocal": "24/25",
+      "ratio": "311/575"
+    },
+    {
+      "m": 25,
+      "value": "1200/673",
+      "best_reciprocal": "25/26",
+      "ratio": "673/1248"
+    },
+    {
+      "m": 26,
+      "value": "650/363",
+      "best_reciprocal": "26/27",
+      "ratio": "121/225"
+    },
+    {
+      "m": 27,
+      "value": "1404/781",
+      "best_reciprocal": "27/28",
+      "ratio": "781/1456"
+    },
+    {
+      "m": 28,
+      "value": "756/419",
+      "best_reciprocal": "28/29",
+      "ratio": "419/783"
+    },
+    {
+      "m": 29,
+      "value": "1624/897",
+      "best_reciprocal": "29/30",
+      "ratio": "299/560"
+    },
+    {
+      "m": 30,
+      "value": "870/479",
+      "best_reciprocal": "30/31",
+      "ratio": "479/899"
+    },
+    {
+      "m": 31,
+      "value": "1860/1021",
+      "best_reciprocal": "31/32",
+      "ratio": "1021/1920"
+    },
+    {
+      "m": 32,
+      "value": "992/543",
+      "best_reciprocal": "32/33",
+      "ratio": "181/341"
+    },
+    {
+      "m": 33,
+      "value": "2112/1153",
+      "best_reciprocal": "33/34",
+      "ratio": "1153/2176"
+    },
+    {
+      "m": 34,
+      "value": "1122/611",
+      "best_reciprocal": "34/35",
+      "ratio": "611/1155"
+    },
+    {
+      "m": 35,
+      "value": "2380/1293",
+      "best_reciprocal": "35/36",
+      "ratio": "431/816"
+    },
+    {
+      "m": 36,
+      "value": "1260/683",
+      "best_reciprocal": "36/37",
+      "ratio": "683/1295"
+    },
+    {
+      "m": 37,
+      "value": "2664/1441",
+      "best_reciprocal": "37/38",
+      "ratio": "1441/2736"
+    },
+    {
+      "m": 38,
+      "value": "1406/759",
+      "best_reciprocal": "38/39",
+      "ratio": "253/481"
+    },
+    {
+      "m": 39,
+      "value": "2964/1597",
+      "best_reciprocal": "39/40",
+      "ratio": "1597/3040"
+    },
+    {
+      "m": 40,
+      "value": "1560/839",
+      "best_reciprocal": "40/41",
+      "ratio": "839/1599"
+    },
+    {
+      "m": 41,
+      "value": "3280/1761",
+      "best_reciprocal": "41/42",
+      "ratio": "587/1120"
+    },
+    {
+      "m": 42,
+      "value": "1722/923",
+      "best_reciprocal": "42/43",
+      "ratio": "923/1763"
+    },
+    {
+      "m": 43,
+      "value": "3612/1933",
+      "best_reciprocal": "43/44",
+      "ratio": "1933/3696"
+    },
+    {
+      "m": 44,
+      "value": "1892/1011",
+      "best_reciprocal": "44/45",
+      "ratio": "337/645"
+    },
+    {
+      "m": 45,
+      "value": "3960/2113",
+      "best_reciprocal": "45/46",
+      "ratio": "2113/4048"
+    },
+    {
+      "m": 46,
+      "value": "2070/1103",
+      "best_reciprocal": "46/47",
+      "ratio": "1103/2115"
+    },
+    {
+      "m": 47,
+      "value": "4324/2301",
+      "best_reciprocal": "47/48",
+      "ratio": "767/1472"
+    },
+    {
+      "m": 48,
+      "value": "2256/1199",
+      "best_reciprocal": "48/49",
+      "ratio": "1199/2303"
+    },
+    {
+      "m": 49,
+      "value": "4704/2497",
+      "best_reciprocal": "49/50",
+      "ratio": "2497/4800"
+    },
+    {
+      "m": 50,
+      "value": "2450/1299",
+      "best_reciprocal": "50/51",
+      "ratio": "433/833"
+    },
+    {
+      "m": 51,
+      "value": "5100/2701",
+      "best_reciprocal": "51/52",
+      "ratio": "2701/5200"
+    },
+    {
+      "m": 52,
+      "value": "2652/1403",
+      "best_reciprocal": "52/53",
+      "ratio": "1403/2703"
+    },
+    {
+      "m": 53,
+      "value": "5512/2913",
+      "best_reciprocal": "53/54",
+      "ratio": "971/1872"
+    },
+    {
+      "m": 54,
+      "value": "2862/1511",
+      "best_reciprocal": "54/55",
+      "ratio": "1511/2915"
+    },
+    {
+      "m": 55,
+      "value": "5940/3133",
+      "best_reciprocal": "55/56",
+      "ratio": "3133/6048"
+    },
+    {
+      "m": 56,
+      "value": "3080/1623",
+      "best_reciprocal": "56/57",
+      "ratio": "541/1045"
+    },
+    {
+      "m": 57,
+      "value": "6384/3361",
+      "best_reciprocal": "57/58",
+      "ratio": "3361/6496"
+    },
+    {
+      "m": 58,
+      "value": "3306/1739",
+      "best_reciprocal": "58/59",
+      "ratio": "1739/3363"
+    },
+    {
+      "m": 59,
+      "value": "6844/3597",
+      "best_reciprocal": "59/60",
+      "ratio": "1199/2320"
+    },
+    {
+      "m": 60,
+      "value": "3540/1859",
+      "best_reciprocal": "60/61",
+      "ratio": "1859/3599"
+    },
+    {
+      "m": 61,
+      "value": "7320/3841",
+      "best_reciprocal": "61/62",
+      "ratio": "3841/7440"
+    },
+    {
+      "m": 62,
+      "value": "3782/1983",
+      "best_reciprocal": "62/63",
+      "ratio": "661/1281"
+    },
+    {
+      "m": 63,
+      "value": "7812/4093",
+      "best_reciprocal": "63/64",
+      "ratio": "4093/7936"
+    },
+    {
+      "m": 64,
+      "value": "4032/2111",
+      "best_reciprocal": "64/65",
+      "ratio": "2111/4095"
+    },
+    {
+      "m": 65,
+      "value": "8320/4353",
+      "best_reciprocal": "65/66",
+      "ratio": "1451/2816"
+    },
+    {
+      "m": 66,
+      "value": "4290/2243",
+      "best_reciprocal": "66/67",
+      "ratio": "2243/4355"
+    },
+    {
+      "m": 67,
+      "value": "8844/4621",
+      "best_reciprocal": "67/68",
+      "ratio": "4621/8976"
+    },
+    {
+      "m": 68,
+      "value": "4556/2379",
+      "best_reciprocal": "68/69",
+      "ratio": "793/1541"
+    },
+    {
+      "m": 69,
+      "value": "9384/4897",
+      "best_reciprocal": "69/70",
+      "ratio": "4897/9520"
+    },
+    {
+      "m": 70,
+      "value": "4830/2519",
+      "best_reciprocal": "70/71",
+      "ratio": "2519/4899"
+    },
+    {
+      "m": 71,
+      "value": "9940/5181",
+      "best_reciprocal": "71/72",
+      "ratio": "1727/3360"
+    },
+    {
+      "m": 72,
+      "value": "5112/2663",
+      "best_reciprocal": "72/73",
+      "ratio": "2663/5183"
+    },
+    {
+      "m": 73,
+      "value": "10512/5473",
+      "best_reciprocal": "73/74",
+      "ratio": "5473/10656"
+    },
+    {
+      "m": 74,
+      "value": "5402/2811",
+      "best_reciprocal": "74/75",
+      "ratio": "937/1825"
+    },
+    {
+      "m": 75,
+      "value": "11100/5773",
+      "best_reciprocal": "75/76",
+      "ratio": "5773/11248"
+    },
+    {
+      "m": 76,
+      "value": "5700/2963",
+      "best_reciprocal": "76/77",
+      "ratio": "2963/5775"
+    },
+    {
+      "m": 77,
+      "value": "11704/6081",
+      "best_reciprocal": "77/78",
+      "ratio": "2027/3952"
+    },
+    {
+      "m": 78,
+      "value": "6006/3119",
+      "best_reciprocal": "78/79",
+      "ratio": "3119/6083"
+    },
+    {
+      "m": 79,
+      "value": "12324/6397",
+      "best_reciprocal": "79/80",
+      "ratio": "6397/12480"
+    },
+    {
+      "m": 80,
+      "value": "6320/3279",
+      "best_reciprocal": "80/81",
+      "ratio": "1093/2133"
+    },
+    {
+      "m": 81,
+      "value": "12960/6721",
+      "best_reciprocal": "81/82",
+      "ratio": "6721/13120"
+    },
+    {
+      "m": 82,
+      "value": "6642/3443",
+      "best_reciprocal": "82/83",
+      "ratio": "3443/6723"
+    },
+    {
+      "m": 83,
+      "value": "13612/7053",
+      "best_reciprocal": "83/84",
+      "ratio": "2351/4592"
+    },
+    {
+      "m": 84,
+      "value": "6972/3611",
+      "best_reciprocal": "84/85",
+      "ratio": "3611/7055"
+    },
+    {
+      "m": 85,
+      "value": "14280/7393",
+      "best_reciprocal": "85/86",
+      "ratio": "7393/14448"
+    },
+    {
+      "m": 86,
+      "value": "7310/3783",
+      "best_reciprocal": "86/87",
+      "ratio": "1261/2465"
+    },
+    {
+      "m": 87,
+      "value": "14964/7741",
+      "best_reciprocal": "87/88",
+      "ratio": "7741/15136"
+    },
+    {
+      "m": 88,
+      "value": "7656/3959",
+      "best_reciprocal": "88/89",
+      "ratio": "3959/7743"
+    },
+    {
+      "m": 89,
+      "value": "15664/8097",
+      "best_reciprocal": "89/90",
+      "ratio": "2699/5280"
+    },
+    {
+      "m": 90,
+      "value": "8010/4139",
+      "best_reciprocal": "90/91",
+      "ratio": "4139/8099"
+    },
+    {
+      "m": 91,
+      "value": "16380/8461",
+      "best_reciprocal": "91/92",
+      "ratio": "8461/16560"
+    },
+    {
+      "m": 92,
+      "value": "8372/4323",
+      "best_reciprocal": "92/93",
+      "ratio": "1441/2821"
+    },
+    {
+      "m": 93,
+      "value": "17112/8833",
+      "best_reciprocal": "93/94",
+      "ratio": "8833/17296"
+    },
+    {
+      "m": 94,
+      "value": "8742/4511",
+      "best_reciprocal": "94/95",
+      "ratio": "4511/8835"
+    },
+    {
+      "m": 95,
+      "value": "17860/9213",
+      "best_reciprocal": "95/96",
+      "ratio": "3071/6016"
+    },
+    {
+      "m": 96,
+      "value": "9120/4703",
+      "best_reciprocal": "96/97",
+      "ratio": "4703/9215"
+    },
+    {
+      "m": 97,
+      "value": "18624/9601",
+      "best_reciprocal": "97/98",
+      "ratio": "9601/18816"
+    },
+    {
+      "m": 98,
+      "value": "9506/4899",
+      "best_reciprocal": "98/99",
+      "ratio": "1633/3201"
+    },
+    {
+      "m": 99,
+      "value": "19404/9997",
+      "best_reciprocal": "99/100",
+      "ratio": "9997/19600"
+    },
+    {
+      "m": 100,
+      "value": "9900/5099",
+      "best_reciprocal": "100/101",
+      "ratio": "5099/9999"
+    },
+    {
+      "m": 101,
+      "value": "20200/10401",
+      "best_reciprocal": "101/102",
+      "ratio": "3467/6800"
+    },
+    {
+      "m": 102,
+      "value": "10302/5303",
+      "best_reciprocal": "102/103",
+      "ratio": "5303/10403"
+    },
+    {
+      "m": 103,
+      "value": "21012/10813",
+      "best_reciprocal": "103/104",
+      "ratio": "10813/21216"
+    },
+    {
+      "m": 104,
+      "value": "10712/5511",
+      "best_reciprocal": "104/105",
+      "ratio": "1837/3605"
+    },
+    {
+      "m": 105,
+      "value": "21840/11233",
+      "best_reciprocal": "105/106",
+      "ratio": "11233/22048"
+    },
+    {
+      "m": 106,
+      "value": "11130/5723",
+      "best_reciprocal": "106/107",
+      "ratio": "5723/11235"
+    },
+    {
+      "m": 107,
+      "value": "22684/11661",
+      "best_reciprocal": "107/108",
+      "ratio": "3887/7632"
+    },
+    {
+      "m": 108,
+      "value": "11556/5939",
+      "best_reciprocal": "108/109",
+      "ratio": "5939/11663"
+    },
+    {
+      "m": 109,
+      "value": "23544/12097",
+      "best_reciprocal": "109/110",
+      "ratio": "12097/23760"
+    },
+    {
+      "m": 110,
+      "value": "11990/6159",
+      "best_reciprocal": "110/111",
+      "ratio": "2053/4033"
+    },
+    {
+      "m": 111,
+      "value": "24420/12541",
+      "best_reciprocal": "111/112",
+      "ratio": "12541/24640"
+    },
+    {
+      "m": 112,
+      "value": "12432/6383",
+      "best_reciprocal": "112/113",
+      "ratio": "6383/12543"
+    },
+    {
+      "m": 113,
+      "value": "25312/12993",
+      "best_reciprocal": "113/114",
+      "ratio": "4331/8512"
+    },
+    {
+      "m": 114,
+      "value": "12882/6611",
+      "best_reciprocal": "114/115",
+      "ratio": "6611/12995"
+    },
+    {
+      "m": 115,
+      "value": "26220/13453",
+      "best_reciprocal": "115/116",
+      "ratio": "13453/26448"
+    },
+    {
+      "m": 116,
+      "value": "13340/6843",
+      "best_reciprocal": "116/117",
+      "ratio": "2281/4485"
+    },
+    {
+      "m": 117,
+      "value": "27144/13921",
+      "best_reciprocal": "117/118",
+      "ratio": "13921/27376"
+    },
+    {
+      "m": 118,
+      "value": "13806/7079",
+      "best_reciprocal": "118/119",
+      "ratio": "7079/13923"
+    },
+    {
+      "m": 119,
+      "value": "28084/14397",
+      "best_reciprocal": "119/120",
+      "ratio": "4799/9440"
+    },
+    {
+      "m": 120,
+      "value": "14280/7319",
+      "best_reciprocal": "120/121",
+      "ratio": "7319/14399"
+    },
+    {
+      "m": 121,
+      "value": "29040/14881",
+      "best_reciprocal": "121/122",
+      "ratio": "14881/29280"
+    },
+    {
+      "m": 122,
+      "value": "14762/7563",
+      "best_reciprocal": "122/123",
+      "ratio": "2521/4961"
+    },
+    {
+      "m": 123,
+      "value": "30012/15373",
+      "best_reciprocal": "123/124",
+      "ratio": "15373/30256"
+    },
+    {
+      "m": 124,
+      "value": "15252/7811",
+      "best_reciprocal": "124/125",
+      "ratio": "7811/15375"
+    },
+    {
+      "m": 125,
+      "value": "31000/15873",
+      "best_reciprocal": "125/126",
+      "ratio": "5291/10416"
+    },
+    {
+      "m": 126,
+      "value": "15750/8063",
+      "best_reciprocal": "126/127",
+      "ratio": "8063/15875"
+    },
+    {
+      "m": 127,
+      "value": "32004/16381",
+      "best_reciprocal": "127/128",
+      "ratio": "16381/32256"
+    },
+    {
+      "m": 128,
+      "value": "16256/8319",
+      "best_reciprocal": "128/129",
+      "ratio": "2773/5461"
+    }
+  ],
+  "distinct_rewards": {
+    "weights": [
+      "19/20",
+      "39/40",
+      "41/40",
+      "21/20"
+    ],
+    "fixed_strategy_lower_bound": "9/10",
+    "all_reciprocal_supports_upper_bound": "9638/12859",
+    "gap": "19351/128590"
+  },
+  "graph_bound_parameter_checks": 4400,
+  "scope": "Exact finite witnesses and finite parameter checks; universal proofs are in the manuscript."
+}

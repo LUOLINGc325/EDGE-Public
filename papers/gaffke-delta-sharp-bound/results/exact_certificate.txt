@@ -1,0 +1,4 @@
+Exact vectors checked, including repeated and neutral coordinates: 2994
+Independent partial-fraction confirmations: 1075
+0,1/2,2,4: K=121/336, Delta=53/336
+0,0,1,3: K=19/27, Delta=4/27

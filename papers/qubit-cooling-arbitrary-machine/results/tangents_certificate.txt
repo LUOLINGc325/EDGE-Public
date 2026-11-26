@@ -1,0 +1,6 @@
+k=2: anchor 1, alpha=7/20; rigorous exp(anchor) < 20/7
+k=3: anchor 4/3, alpha=1/4; rigorous exp(anchor) < 4
+k=4: anchor 62/33, alpha=1/7; rigorous exp(anchor) < 7
+k=5: anchor 2, alpha=1/8; rigorous exp(anchor) < 8
+k=6: anchor 8/3, alpha=1/16; rigorous exp(anchor) < 16
+k=7: anchor 8/3, alpha=1/16; rigorous exp(anchor) < 16

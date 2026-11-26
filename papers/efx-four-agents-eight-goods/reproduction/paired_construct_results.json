@@ -1,0 +1,482 @@
+{
+  "scope": "Exact implementation checks of a conditional theorem; not a proof of the unrestricted 4/8 problem",
+  "four_agent_examples": [
+    {
+      "id": "direct_additive",
+      "status": "constructed",
+      "common_good": 0,
+      "recipient": 0,
+      "initial_allocation": [
+        1,
+        14,
+        48,
+        192
+      ],
+      "residual_allocations_examined": 22,
+      "preferred_residual_shape": null,
+      "preferred_shape_found": false,
+      "full_four_agent_allocations_enumerated": 0,
+      "route": "direct_extension",
+      "allocation": [
+        1,
+        14,
+        48,
+        192
+      ],
+      "trace": [],
+      "exact_efx_check": true
+    },
+    {
+      "id": "quartet_synergy",
+      "status": "constructed",
+      "common_good": 0,
+      "recipient": 0,
+      "initial_allocation": [
+        1,
+        2,
+        4,
+        248
+      ],
+      "residual_allocations_examined": 391,
+      "preferred_residual_shape": [
+        5,
+        1,
+        1
+      ],
+      "preferred_shape_found": true,
+      "full_four_agent_allocations_enumerated": 0,
+      "route": "five_to_four_exchange",
+      "allocation": [
+        240,
+        10,
+        4,
+        1
+      ],
+      "trace": [
+        {
+          "large_holder": 3,
+          "removed_good": 3,
+          "transferred_quartet": 240
+        },
+        {
+          "lemma": "A",
+          "swapped_singletons": false,
+          "extra_item_receiver": 1
+        }
+      ],
+      "exact_efx_check": true
+    },
+    {
+      "id": "recipient_triple_synergy",
+      "status": "constructed",
+      "common_good": 0,
+      "recipient": 0,
+      "initial_allocation": [
+        1,
+        2,
+        4,
+        248
+      ],
+      "residual_allocations_examined": 391,
+      "preferred_residual_shape": [
+        5,
+        1,
+        1
+      ],
+      "preferred_shape_found": true,
+      "full_four_agent_allocations_enumerated": 0,
+      "route": "five_to_triple_exchange",
+      "allocation": [
+        56,
+        66,
+        132,
+        1
+      ],
+      "trace": [
+        {
+          "large_holder": 3,
+          "high_triple_holder": 0,
+          "transferred_triple": 56
+        },
+        {
+          "lemma": "C",
+          "steps": [
+            {
+              "lemma": "A",
+              "swapped_singletons": false,
+              "extra_item_receiver": 1
+            },
+            {
+              "lemma": "B",
+              "branch": "B1_pair_beats_other_singleton"
+            }
+          ]
+        }
+      ],
+      "exact_efx_check": true
+    },
+    {
+      "id": "residual_holder_triple_synergy",
+      "status": "constructed",
+      "common_good": 0,
+      "recipient": 0,
+      "initial_allocation": [
+        1,
+        2,
+        4,
+        248
+      ],
+      "residual_allocations_examined": 391,
+      "preferred_residual_shape": [
+        5,
+        1,
+        1
+      ],
+      "preferred_shape_found": true,
+      "full_four_agent_allocations_enumerated": 0,
+      "route": "five_to_triple_exchange",
+      "allocation": [
+        1,
+        66,
+        132,
+        56
+      ],
+      "trace": [
+        {
+          "large_holder": 3,
+          "high_triple_holder": 3,
+          "transferred_triple": 56
+        },
+        {
+          "lemma": "C",
+          "steps": [
+            {
+              "lemma": "A",
+              "swapped_singletons": false,
+              "extra_item_receiver": 1
+            },
+            {
+              "lemma": "B",
+              "branch": "B1_pair_beats_other_singleton"
+            }
+          ]
+        }
+      ],
+      "exact_efx_check": true
+    },
+    {
+      "id": "four_pair_singleton",
+      "status": "constructed",
+      "common_good": 0,
+      "recipient": 0,
+      "initial_allocation": [
+        1,
+        2,
+        116,
+        136
+      ],
+      "residual_allocations_examined": 352,
+      "preferred_residual_shape": [
+        4,
+        2,
+        1
+      ],
+      "preferred_shape_found": true,
+      "full_four_agent_allocations_enumerated": 0,
+      "route": "four_to_three_exchange",
+      "allocation": [
+        112,
+        2,
+        1,
+        140
+      ],
+      "trace": [
+        {
+          "large_holder": 2,
+          "removed_good": 2,
+          "transferred_bundle": 112
+        },
+        {
+          "lemma": "B",
+          "branch": "B4_pair_holder_takes_triple"
+        }
+      ],
+      "exact_efx_check": true
+    }
+  ],
+  "local_lemma_checks": [
+    {
+      "id": "B1",
+      "valuations": [
+        [
+          0,
+          1,
+          2,
+          3,
+          2,
+          3,
+          4,
+          5,
+          1,
+          2,
+          3,
+          4,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          5,
+          1,
+          6,
+          1,
+          6,
+          2,
+          7,
+          1,
+          6,
+          2,
+          7,
+          2,
+          7,
+          3,
+          8
+        ]
+      ],
+      "initial_allocation": [
+        6,
+        1
+      ],
+      "incoming_good": 3,
+      "allocation": [
+        6,
+        9
+      ],
+      "trace": {
+        "lemma": "B",
+        "branch": "B1_pair_beats_other_singleton"
+      },
+      "exact_efx_check": true,
+      "utility_floors_preserved": true
+    },
+    {
+      "id": "B2",
+      "valuations": [
+        [
+          0,
+          5,
+          1,
+          6,
+          1,
+          6,
+          2,
+          7,
+          1,
+          6,
+          12,
+          17,
+          2,
+          7,
+          13,
+          18
+        ],
+        [
+          0,
+          5,
+          1,
+          6,
+          1,
+          6,
+          2,
+          7,
+          1,
+          6,
+          2,
+          7,
+          2,
+          7,
+          3,
+          8
+        ]
+      ],
+      "initial_allocation": [
+        6,
+        1
+      ],
+      "incoming_good": 3,
+      "allocation": [
+        10,
+        5
+      ],
+      "trace": {
+        "lemma": "B",
+        "branch": "B2_cross_pair_beats_singleton"
+      },
+      "exact_efx_check": true,
+      "utility_floors_preserved": true
+    },
+    {
+      "id": "B3",
+      "valuations": [
+        [
+          0,
+          10,
+          1,
+          11,
+          1,
+          11,
+          2,
+          12,
+          1,
+          11,
+          2,
+          12,
+          2,
+          12,
+          3,
+          13
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          1,
+          3,
+          2,
+          4,
+          1,
+          3,
+          2,
+          4,
+          2,
+          4,
+          3,
+          5
+        ]
+      ],
+      "initial_allocation": [
+        6,
+        1
+      ],
+      "incoming_good": 3,
+      "allocation": [
+        1,
+        14
+      ],
+      "trace": {
+        "lemma": "B",
+        "branch": "B3_singleton_holder_takes_triple"
+      },
+      "exact_efx_check": true,
+      "utility_floors_preserved": true
+    },
+    {
+      "id": "B4",
+      "valuations": [
+        [
+          0,
+          10,
+          1,
+          11,
+          1,
+          11,
+          2,
+          12,
+          1,
+          11,
+          2,
+          12,
+          2,
+          12,
+          3,
+          13
+        ],
+        [
+          0,
+          10,
+          1,
+          11,
+          1,
+          11,
+          2,
+          12,
+          1,
+          11,
+          2,
+          12,
+          2,
+          12,
+          3,
+          13
+        ]
+      ],
+      "initial_allocation": [
+        6,
+        1
+      ],
+      "incoming_good": 3,
+      "allocation": [
+        14,
+        1
+      ],
+      "trace": {
+        "lemma": "B",
+        "branch": "B4_pair_holder_takes_triple"
+      },
+      "exact_efx_check": true,
+      "utility_floors_preserved": true
+    },
+    {
+      "id": "A_swap",
+      "valuations": [
+        [
+          0,
+          1,
+          3,
+          4,
+          1,
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          3,
+          1,
+          4,
+          1,
+          4,
+          2,
+          5
+        ]
+      ],
+      "initial_allocation": [
+        1,
+        2
+      ],
+      "incoming_good": 2,
+      "allocation": [
+        6,
+        1
+      ],
+      "trace": {
+        "lemma": "A",
+        "swapped_singletons": true,
+        "extra_item_receiver": 0
+      },
+      "exact_efx_check": true,
+      "utility_floors_preserved": true
+    }
+  ],
+  "coverage_routes": [
+    "direct_extension",
+    "five_to_four_exchange",
+    "five_to_triple_exchange",
+    "four_to_three_exchange"
+  ],
+  "full_four_agent_allocations_enumerated": 0,
+  "all_outputs_exactly_checked": true
+}

@@ -1,0 +1,5 @@
+Reflecting disk: 4 symbolic boundary, divergence and harmonic-mode identities
+Sector resolvent: exact positive imaginary part
+Cycle overlap: exact non-symmetric 2x2 four-phase identity
+Positive half-angle rational controls: 200
+Exponential dwell: exact Laplace factor

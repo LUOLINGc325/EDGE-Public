@@ -1,0 +1,11 @@
+{
+  "two_point_or_zero_profiles": 11100,
+  "branches": {
+    "with_floor": 3729,
+    "last_down_winner": 1504,
+    "earlier_down_winner": 5867
+  },
+  "mixture_profiles_with_data_dependent_ties": 500,
+  "prescribed_probability_cascades": 837,
+  "arithmetic": "exact rational"
+}

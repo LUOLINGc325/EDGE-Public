@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "arithmetic": "fractions.Fraction (exact)",
+  "imports_dynamic_program": false,
+  "dimension_min": 2,
+  "dimension_max": 12,
+  "multi_layer_compositions_checked": 4083,
+  "height_blocks_checked": 15402,
+  "counts_by_dimension": {
+    "2": 1,
+    "3": 3,
+    "4": 7,
+    "5": 15,
+    "6": 31,
+    "7": 63,
+    "8": 127,
+    "9": 255,
+    "10": 511,
+    "11": 1023,
+    "12": 2047
+  },
+  "verified": [
+    "direct Bernstein coefficient equals the analytic expansion",
+    "coarea sum lower-bounds the analytic expression",
+    "each nonempty height block is strictly positive when U > 0",
+    "the penultimate coefficient vanishes exactly for all-ones compositions"
+  ],
+  "scope": "finite independent audit of an analytically proved boundary theorem"
+}

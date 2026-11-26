@@ -1,0 +1,10 @@
+Noncommuting spectral example
+operator HS squared = 73/200
+filtered HS squared = 72/125
+Lipschitz bound squared = 222066/15625
+Hard rank-one deletion witness for ridge λ=1/2
+n=4: change at e1 is 4/7 (>1/2)
+n=20: change at e1 is 20/39 (>1/2)
+n=200: change at e1 is 200/399 (>1/2)
+n=2000: change at e1 is 2000/3999 (>1/2)
+All checks used exact rational arithmetic.

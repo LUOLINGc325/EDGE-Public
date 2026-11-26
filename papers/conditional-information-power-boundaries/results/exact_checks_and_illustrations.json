@@ -1,0 +1,43 @@
+{
+  "conditional_size_checks": 15620,
+  "deterministic_prefix_checks": 5239,
+  "exponential_shape_numerics": {
+    "downward": [
+      {
+        "L": 8,
+        "scaled_evidence": 0.7775432536506742
+      },
+      {
+        "L": 32,
+        "scaled_evidence": 0.8984899041340498
+      },
+      {
+        "L": 128,
+        "scaled_evidence": 0.9627104736475641
+      },
+      {
+        "L": 512,
+        "scaled_evidence": 0.9877965158939587
+      }
+    ],
+    "upward": [
+      {
+        "d": 16,
+        "evidence_minus_log": -0.5767549153709779
+      },
+      {
+        "d": 256,
+        "evidence_minus_log": -0.57724123317647
+      },
+      {
+        "d": 4096,
+        "evidence_minus_log": -0.5772680819110798
+      },
+      {
+        "d": 65536,
+        "evidence_minus_log": -0.5771437415130336
+      }
+    ]
+  },
+  "scope": "Exact rational size checks and floating-point illustrations for shape k=1."
+}

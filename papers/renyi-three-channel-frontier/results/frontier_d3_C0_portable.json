@@ -1,0 +1,32 @@
+{
+  "schema": "renyi-three-portable-frontier-v1",
+  "family": "all_two_level_orbits",
+  "dimension": 3,
+  "budget": "0",
+  "tolerance": "1/1000000000",
+  "primal_lower": "0",
+  "dual_upper": "0",
+  "certified_gap": "0",
+  "mixture": [
+    {
+      "weight": "1",
+      "high_count": 0,
+      "ratio": "1",
+      "low": "1",
+      "high": "1",
+      "signal": "0",
+      "cost": "0"
+    }
+  ],
+  "iterations": 0,
+  "verification": {
+    "verified": true,
+    "exact_budget_used": "0",
+    "certified_gap": "0",
+    "gap_decimal": 0,
+    "primal_lower_decimal": 0,
+    "dual_upper_decimal": 0,
+    "family": "all_two_level_orbits",
+    "method": "BigInt rational arithmetic; exhaustive Sturm root counts; exact rational derivative polynomial identity; primal channel reconstruction"
+  }
+}

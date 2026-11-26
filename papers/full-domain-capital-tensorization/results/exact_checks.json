@@ -1,0 +1,8 @@
+{
+  "script": "code/checks.py",
+  "arithmetic": "fractions.Fraction",
+  "status": "pass",
+  "one_step_mesh_inequalities": 3186,
+  "finite_bellman_product_laws": 9,
+  "two_input_capital_comparisons": 13456
+}

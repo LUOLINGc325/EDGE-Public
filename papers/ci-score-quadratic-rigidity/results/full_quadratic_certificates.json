@@ -1,0 +1,981 @@
+{
+  "method": "Exact principal minors, exact Bayes enumeration, rational log-series enclosures",
+  "floating_point_used_for_certification": false,
+  "formal_proof_assistant_used": false,
+  "scope_warning": "Listed finite certificates do not replace the analytic all-parameter classification.",
+  "admissible_lmi_certificates": [
+    {
+      "coefficients": [
+        "3/8",
+        "3/8",
+        "3/8"
+      ],
+      "lambda": "1",
+      "h": "1/8",
+      "matrix": [
+        [
+          "1/4",
+          "-1/8",
+          "-1/8"
+        ],
+        [
+          "-1/8",
+          "1/4",
+          "-1/8"
+        ],
+        [
+          "-1/8",
+          "-1/8",
+          "1/4"
+        ]
+      ],
+      "all_principal_minors": [
+        {
+          "indices_zero_based": [
+            0
+          ],
+          "determinant": "1/4"
+        },
+        {
+          "indices_zero_based": [
+            1
+          ],
+          "determinant": "1/4"
+        },
+        {
+          "indices_zero_based": [
+            2
+          ],
+          "determinant": "1/4"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1
+          ],
+          "determinant": "3/64"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            2
+          ],
+          "determinant": "3/64"
+        },
+        {
+          "indices_zero_based": [
+            1,
+            2
+          ],
+          "determinant": "3/64"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1,
+            2
+          ],
+          "determinant": "0"
+        }
+      ],
+      "positive_semidefinite_certified": true,
+      "name": "equal_n3_endpoint"
+    },
+    {
+      "coefficients": [
+        "11/93",
+        "22/93",
+        "11/31"
+      ],
+      "lambda": "1",
+      "h": "2/31",
+      "matrix": [
+        [
+          "5/93",
+          "-2/31",
+          "-2/31"
+        ],
+        [
+          "-2/31",
+          "16/93",
+          "-2/31"
+        ],
+        [
+          "-2/31",
+          "-2/31",
+          "9/31"
+        ]
+      ],
+      "all_principal_minors": [
+        {
+          "indices_zero_based": [
+            0
+          ],
+          "determinant": "5/93"
+        },
+        {
+          "indices_zero_based": [
+            1
+          ],
+          "determinant": "16/93"
+        },
+        {
+          "indices_zero_based": [
+            2
+          ],
+          "determinant": "9/31"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1
+          ],
+          "determinant": "44/8649"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            2
+          ],
+          "determinant": "11/961"
+        },
+        {
+          "indices_zero_based": [
+            1,
+            2
+          ],
+          "determinant": "44/961"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1,
+            2
+          ],
+          "determinant": "0"
+        }
+      ],
+      "positive_semidefinite_certified": true,
+      "name": "unequal_positive_endpoint"
+    },
+    {
+      "coefficients": [
+        "-1/20",
+        "1/5",
+        "1/5"
+      ],
+      "lambda": "1",
+      "h": "-2/5",
+      "matrix": [
+        [
+          "7/20",
+          "2/5",
+          "2/5"
+        ],
+        [
+          "2/5",
+          "3/5",
+          "2/5"
+        ],
+        [
+          "2/5",
+          "2/5",
+          "3/5"
+        ]
+      ],
+      "all_principal_minors": [
+        {
+          "indices_zero_based": [
+            0
+          ],
+          "determinant": "7/20"
+        },
+        {
+          "indices_zero_based": [
+            1
+          ],
+          "determinant": "3/5"
+        },
+        {
+          "indices_zero_based": [
+            2
+          ],
+          "determinant": "3/5"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1
+          ],
+          "determinant": "1/20"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            2
+          ],
+          "determinant": "1/20"
+        },
+        {
+          "indices_zero_based": [
+            1,
+            2
+          ],
+          "determinant": "1/5"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1,
+            2
+          ],
+          "determinant": "3/500"
+        }
+      ],
+      "positive_semidefinite_certified": true,
+      "name": "signed_interior"
+    },
+    {
+      "coefficients": [
+        "-1/14",
+        "2/7",
+        "2/7"
+      ],
+      "lambda": "1",
+      "h": "-1/7",
+      "matrix": [
+        [
+          "1/14",
+          "1/7",
+          "1/7"
+        ],
+        [
+          "1/7",
+          "3/7",
+          "1/7"
+        ],
+        [
+          "1/7",
+          "1/7",
+          "3/7"
+        ]
+      ],
+      "all_principal_minors": [
+        {
+          "indices_zero_based": [
+            0
+          ],
+          "determinant": "1/14"
+        },
+        {
+          "indices_zero_based": [
+            1
+          ],
+          "determinant": "3/7"
+        },
+        {
+          "indices_zero_based": [
+            2
+          ],
+          "determinant": "3/7"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1
+          ],
+          "determinant": "1/98"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            2
+          ],
+          "determinant": "1/98"
+        },
+        {
+          "indices_zero_based": [
+            1,
+            2
+          ],
+          "determinant": "8/49"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1,
+            2
+          ],
+          "determinant": "0"
+        }
+      ],
+      "positive_semidefinite_certified": true,
+      "name": "signed_endpoint"
+    },
+    {
+      "coefficients": [
+        "1/3",
+        "0",
+        "1/7"
+      ],
+      "lambda": "1",
+      "h": "0",
+      "matrix": [
+        [
+          "1/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/7"
+        ]
+      ],
+      "all_principal_minors": [
+        {
+          "indices_zero_based": [
+            0
+          ],
+          "determinant": "1/3"
+        },
+        {
+          "indices_zero_based": [
+            1
+          ],
+          "determinant": "0"
+        },
+        {
+          "indices_zero_based": [
+            2
+          ],
+          "determinant": "1/7"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1
+          ],
+          "determinant": "0"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            2
+          ],
+          "determinant": "1/21"
+        },
+        {
+          "indices_zero_based": [
+            1,
+            2
+          ],
+          "determinant": "0"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1,
+            2
+          ],
+          "determinant": "0"
+        }
+      ],
+      "positive_semidefinite_certified": true,
+      "name": "zero_coefficient_endpoint"
+    },
+    {
+      "coefficients": [
+        "0",
+        "0",
+        "0"
+      ],
+      "lambda": "0",
+      "h": "0",
+      "matrix": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "all_principal_minors": [
+        {
+          "indices_zero_based": [
+            0
+          ],
+          "determinant": "0"
+        },
+        {
+          "indices_zero_based": [
+            1
+          ],
+          "determinant": "0"
+        },
+        {
+          "indices_zero_based": [
+            2
+          ],
+          "determinant": "0"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1
+          ],
+          "determinant": "0"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            2
+          ],
+          "determinant": "0"
+        },
+        {
+          "indices_zero_based": [
+            1,
+            2
+          ],
+          "determinant": "0"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1,
+            2
+          ],
+          "determinant": "0"
+        }
+      ],
+      "positive_semidefinite_certified": true,
+      "name": "affine_trivial_lambda_zero"
+    },
+    {
+      "coefficients": [
+        "4/11",
+        "4/11",
+        "4/11",
+        "4/11"
+      ],
+      "lambda": "1",
+      "h": "1/11",
+      "matrix": [
+        [
+          "3/11",
+          "-1/11",
+          "-1/11",
+          "-1/11"
+        ],
+        [
+          "-1/11",
+          "3/11",
+          "-1/11",
+          "-1/11"
+        ],
+        [
+          "-1/11",
+          "-1/11",
+          "3/11",
+          "-1/11"
+        ],
+        [
+          "-1/11",
+          "-1/11",
+          "-1/11",
+          "3/11"
+        ]
+      ],
+      "all_principal_minors": [
+        {
+          "indices_zero_based": [
+            0
+          ],
+          "determinant": "3/11"
+        },
+        {
+          "indices_zero_based": [
+            1
+          ],
+          "determinant": "3/11"
+        },
+        {
+          "indices_zero_based": [
+            2
+          ],
+          "determinant": "3/11"
+        },
+        {
+          "indices_zero_based": [
+            3
+          ],
+          "determinant": "3/11"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1
+          ],
+          "determinant": "8/121"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            2
+          ],
+          "determinant": "8/121"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            3
+          ],
+          "determinant": "8/121"
+        },
+        {
+          "indices_zero_based": [
+            1,
+            2
+          ],
+          "determinant": "8/121"
+        },
+        {
+          "indices_zero_based": [
+            1,
+            3
+          ],
+          "determinant": "8/121"
+        },
+        {
+          "indices_zero_based": [
+            2,
+            3
+          ],
+          "determinant": "8/121"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1,
+            2
+          ],
+          "determinant": "16/1331"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1,
+            3
+          ],
+          "determinant": "16/1331"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            2,
+            3
+          ],
+          "determinant": "16/1331"
+        },
+        {
+          "indices_zero_based": [
+            1,
+            2,
+            3
+          ],
+          "determinant": "16/1331"
+        },
+        {
+          "indices_zero_based": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "determinant": "0"
+        }
+      ],
+      "positive_semidefinite_certified": true,
+      "name": "equal_n4_endpoint"
+    }
+  ],
+  "cross_perturbation_finite_witnesses": [
+    {
+      "dimension": 4,
+      "lambda": "1",
+      "matrix_C": [
+        [
+          "0",
+          "0",
+          "1/4",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/4",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "prior": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "a_plus_likelihoods": [
+        "7/10",
+        "3/10",
+        "81/160",
+        "79/160"
+      ],
+      "b_plus_likelihoods": [
+        "1/2",
+        "1/2",
+        "7/10",
+        "3/10"
+      ],
+      "joint_masses_00_01_10_11": [
+        "401/1600",
+        "399/1600",
+        "399/1600",
+        "401/1600"
+      ],
+      "correlation_r": "1/400",
+      "quadratic_interaction": {
+        "exact": "-619/48761600",
+        "decimal_display_only": "-0.00001269441527759548497178107363"
+      },
+      "log_mi_lower": {
+        "exact": "384000400001/122880000000000000",
+        "decimal_display_only": "0.000003125003255216471354166666667"
+      },
+      "log_mi_upper": {
+        "exact": "191145671110364443/61166551040000000000000",
+        "decimal_display_only": "0.000003125003255216471381414674578"
+      },
+      "interaction_lower": {
+        "exact": "197091128889635557/61166551040000000000000",
+        "decimal_display_only": "0.000003222204383581271104475862238"
+      },
+      "interaction_upper": {
+        "exact": "3016700952392381/936222720000000000000",
+        "decimal_display_only": "0.000003222204383581271131723870149"
+      },
+      "strict_submodularity_violation_certified": true,
+      "half_matrix_curvature": {
+        "exact": "33/512",
+        "decimal_display_only": "0.064453125"
+      },
+      "split_s": "1/10",
+      "split_t": "1/10",
+      "shrink_count": 0,
+      "epsilon": "1/4",
+      "tau": "1/8",
+      "four_point_residual_C13_C14_C23_C24": "1/4",
+      "global_strict_convexity_lower_bound": "3/4"
+    },
+    {
+      "dimension": 4,
+      "lambda": "100",
+      "matrix_C": [
+        [
+          "0",
+          "0",
+          "1/4",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/4",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "prior": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "a_plus_likelihoods": [
+        "7/10",
+        "3/10",
+        "4041/8080",
+        "4039/8080"
+      ],
+      "b_plus_likelihoods": [
+        "1/2",
+        "1/2",
+        "7/10",
+        "3/10"
+      ],
+      "joint_masses_00_01_10_11": [
+        "20201/80800",
+        "20199/80800",
+        "20199/80800",
+        "20201/80800"
+      ],
+      "correlation_r": "1/20200",
+      "quadratic_interaction": {
+        "exact": "-10884433/43959509225600",
+        "decimal_display_only": "-2.476013311281784265944132124E-7"
+      },
+      "log_mi_lower": {
+        "exact": "2497449625020100001/2038118689153920000000000000",
+        "decimal_display_only": "1.225370062259161709211464784E-9"
+      },
+      "log_mi_upper": {
+        "exact": "3170406843320117269206924443/2587305615639879019343360000000000000",
+        "decimal_display_only": "1.225370062259161709211464785E-9"
+      },
+      "interaction_lower": {
+        "exact": "32694729019108854793075557/25873056156398790193433600000000000",
+        "decimal_display_only": "1.263659338173042376060127718E-9"
+      },
+      "interaction_upper": {
+        "exact": "3503006680618805870686667/2772113159614156092153600000000000",
+        "decimal_display_only": "1.263659338173042376060127782E-9"
+      },
+      "strict_submodularity_violation_certified": true,
+      "half_matrix_curvature": {
+        "exact": "33/1305728",
+        "decimal_display_only": "0.00002527325752377217919811783159"
+      },
+      "split_s": "1/10",
+      "split_t": "1/10",
+      "shrink_count": 0,
+      "epsilon": "1/4",
+      "tau": "1/404",
+      "four_point_residual_C13_C14_C23_C24": "1/4",
+      "global_strict_convexity_lower_bound": "399/4"
+    }
+  ],
+  "positive_unequal_finite_witness": {
+    "dimension": 3,
+    "lambda": "1",
+    "matrix_C": [
+      [
+        "7/20",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/100",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/5"
+      ]
+    ],
+    "prior": [
+      "499/500",
+      "1/1000",
+      "1/1000"
+    ],
+    "a_plus_likelihoods": [
+      "297991/595684",
+      "74478/148921",
+      "74535/297842"
+    ],
+    "b_plus_likelihoods": [
+      "1976065404757750526489/3950152823812487551060",
+      "1980038766449495011/7916137923471918940",
+      "3958113454008922011/7916137923471918940"
+    ],
+    "joint_masses_00_01_10_11": [
+      "147359915667489160779983/589439587850680820231870",
+      "73679939128925624667976/294719793925340410115935",
+      "73679939128925624667976/294719793925340410115935",
+      "147359915667489160779983/589439587850680820231870"
+    ],
+    "correlation_r": "37409637911444031/294719793925340410115935",
+    "quadratic_interaction": {
+      "exact": "-50399795640514035024110685068872807582693241907230429056211337914625289970901121074439359/3017846949672368282054642649457672660987881221849491321878354294999195599933856585365459148160000000000",
+      "decimal_display_only": "-1.670058040749404964811172305E-14"
+    },
+    "log_mi_lower": {
+      "exact": "105585487328130416614409830001127915449792678753245796945322338044199485224271437702824479385359834190798442649356887390750345079/13106472625234916422548835336841230842184384152773353990725329176118916743262762546735716455992414432623066525699051537958768563854512877812500",
+      "decimal_display_only": "8.055980456926177305874882607E-15"
+    },
+    "log_mi_upper": {
+      "exact": "128395816707258234378728804079243705864250296173211403747310535471401248614822211009432355457015582205375373127565943417804263150920273996134680499797379763048106051885178829189/15937950370382187834284964650856031915816587274901635871687151848874905020417161475474574632399206999031121681482089704988983725231438647152644977854068043364498612890352326038234524520000000",
+      "decimal_display_only": "8.055980456926177305874882607E-15"
+    },
+    "interaction_lower": {
+      "exact": "150102212427213268187280980999312787182336594470330504646261660937558982993573102796175841863912350031107042752409030427096344924227830752242952376551624515500766119713253176097993/510014411852230010697118868827393021306130792796852347893988859163996960653349167215186388236774623968995893807426870559647479207406036708884639291330177387663955612491274433223504784640000000000",
+      "decimal_display_only": "2.943097468208475181809789186E-16"
+    },
+    "interaction_upper": {
+      "exact": "21443173203887609741040140142758969597476744030772195697174948429723042846030638441797569067053177403992373130889433688398022003055861118332985354256540436338237589591706098093999/72859201693175715813874124118199003043732970399550335413426979880570994379049881030740912605253517709856556258203838651378211315343719529840662755904311055380565087498753490460500683520000000000",
+      "decimal_display_only": "2.943097468208475181809789186E-16"
+    },
+    "strict_submodularity_violation_certified": true,
+    "half_matrix_curvature": {
+      "exact": "458623369528793781673/12553569768940950000000",
+      "decimal_display_only": "0.03653330311378708148412642380"
+    },
+    "split_s": "149/297842",
+    "split_t": "502142790757638/1979034480867979735",
+    "shrink_count": 0,
+    "diagonal_coefficients": [
+      "7/20",
+      "1/100",
+      "1/5"
+    ],
+    "harmonic_beta": "7/755",
+    "exact_minimum_lambda": "3143/3020"
+  },
+  "critical_signed_finite_witness_lambda_100": {
+    "dimension": 3,
+    "lambda": "100",
+    "matrix_C": [
+      [
+        "2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "2"
+      ]
+    ],
+    "prior": [
+      "49/50",
+      "1/100",
+      "1/100"
+    ],
+    "a_plus_likelihoods": [
+      "20897/41588",
+      "10497/20794",
+      "2625/10397"
+    ],
+    "b_plus_likelihoods": [
+      "407308627320716963/818833940246163576",
+      "12532361398731437/16710896739717624",
+      "2798406981905279/5570298913239208"
+    ],
+    "joint_masses_00_01_10_11": [
+      "173743109853770288285/694972773611376546912",
+      "173743276951917985171/694972773611376546912",
+      "173743276951917985171/694972773611376546912",
+      "173743109853770288285/694972773611376546912"
+    ],
+    "correlation_r": "-83549073848443/173743193402844136728",
+    "quadratic_interaction": {
+      "exact": "-107304600426484009878066248799901016780677276147034921975863242435684603623/2278091727733646613957371945525525730414768671825715720878853869581220496492405600000",
+      "decimal_display_only": "-4.710284450803730410851190782E-11"
+    },
+    "log_mi_lower": {
+      "exact": "95412601526998957788654150043690429149925956303011972736587216645591572159230282567834675150886965072173011369/825216783618466901583154235644600401905961945614881964177012496653044077312836469470042042256806962674496096765901859717120",
+      "decimal_display_only": "1.156212566455898624566697730E-13"
+    },
+    "log_mi_upper": {
+      "exact": "2304153053195227436606002526888817736784890237884305056005348359106509187865931960122592830513293609896395990496377376297412901748481104610724932267601/19928455372683537303740723232268662471310520704972429673925283905116125807622114291543617155994616695029253456876123478938392347968322335694179880771025095161282560",
+      "decimal_display_only": "1.156212566455898624566697730E-13"
+    },
+    "interaction_lower": {
+      "exact": "37332525317642794863282316153948667444286689071695895255543781534504394185142514407867174327500186789089244434615804280540183518194970732829213417371837991/3113821151981802703709488005041978511142268860151942136550825610174394657440955358053690180624158858598320852636894293584123804370050364952215606370472671118950400000",
+      "decimal_display_only": "1.198929658945966580858897661E-11"
+    },
+    "interaction_upper": {
+      "exact": "9333131329410698715820579038487166861075647077887568984406425614660287330214887456552744573776510268722533095179710974210155291726628695709780036309479029/778455287995450675927372001260494627785567215037985534137706402543598664360238839513422545156039714649580213159223573396030951092512591238053901592618167779737600000",
+      "decimal_display_only": "1.198929658945966580858897661E-11"
+    },
+    "strict_submodularity_violation_certified": true,
+    "half_matrix_curvature": {
+      "exact": "682284272850911515004782390351/6579741484525008960819610000",
+      "decimal_display_only": "103.6946929382538750245466592"
+    },
+    "split_s": "103/20794",
+    "split_t": "811156056781/8355448369858812",
+    "shrink_count": 0,
+    "reciprocal_sum": "0",
+    "unbounded_beta_family": "q=((1-T)/2,T,(1-T)/2); q^T Cq=1-2T",
+    "q_at_T_100": [
+      "-99/2",
+      "100",
+      "-99/2"
+    ],
+    "q_lmi_quadratic_value": "-105"
+  },
+  "affine_gauge_direct_enumeration_check": {
+    "matrix_C": [
+      [
+        "33/140",
+        "-5/63",
+        "32/77"
+      ],
+      [
+        "-5/63",
+        "-11/45",
+        "5/99"
+      ],
+      [
+        "32/77",
+        "5/99",
+        "41/55"
+      ]
+    ],
+    "recovered_gauge": [
+      "1/7",
+      "-2/9",
+      "3/11"
+    ],
+    "recovered_diagonal": [
+      "-1/20",
+      "1/5",
+      "1/5"
+    ],
+    "direct_bayes_interaction_difference": "0"
+  },
+  "all_certificates_pass": true
+}

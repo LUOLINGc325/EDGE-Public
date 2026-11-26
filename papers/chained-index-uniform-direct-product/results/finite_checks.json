@@ -1,0 +1,56 @@
+{
+  "scope": "Finite consistency checks only; written proofs establish universal claims.",
+  "norms": {
+    "kind": "floating_point_spot_checks_not_a_proof",
+    "seed": 20261125,
+    "norm_cases": 1268,
+    "all_nonempty_indicator_cells_N4": 63,
+    "max_norm_ratio": 1.0,
+    "max_normalized_KL_ratio": 1.0,
+    "absolute_tolerance": 5e-12
+  },
+  "adaptive_protocol": {
+    "kind": "exact_rational_enumeration_with_float_power_comparisons",
+    "N": 4,
+    "copies": 2,
+    "stages": 2,
+    "worst_case_cost": 2,
+    "reference_leaf_count": 896,
+    "all_probability_masses_exactly_one": true,
+    "optimal_guess_probability_exact": "5485/13824",
+    "optimal_guess_probability": 0.39677372685185186,
+    "strong_product_bound": 0.7937005259840997,
+    "per_B_second_moments_exact": [
+      "23568895481/19339689600",
+      "1243701563/1017878400",
+      "23606005037/19339689600",
+      "11747607007/9669844800"
+    ],
+    "discounted_second_moments_by_stage": [
+      [
+        0.5843067965678861,
+        0.5843067965678861,
+        0.584306796567886,
+        0.5843067965678861
+      ],
+      [
+        0.5432061535191006,
+        0.5323795843309675,
+        0.5344705565402944,
+        0.5460110671576701
+      ]
+    ]
+  },
+  "message_tuple_count": {
+    "kind": "exact_integer_checks",
+    "cases": 72,
+    "independent_dynamic_count_matches_formula": true
+  },
+  "silent_upper_bound": {
+    "kind": "finite_parameter_spot_checks_not_a_proof",
+    "cases": 3139,
+    "largest_observed_cost_over_F": 10.0,
+    "claimed_universal_upper_factor": 18,
+    "error_bound_exp_minus_2_plus_exp_minus_4": 0.15365092212534687
+  }
+}

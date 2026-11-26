@@ -1,0 +1,81 @@
+{
+  "seed": 20261125,
+  "status": "pass",
+  "checks": {
+    "slice_norm_and_correlated_tensor": {
+      "tests": 1960,
+      "N": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "r": [
+        1,
+        2
+      ],
+      "max_lhs_minus_rhs": 2.220446049250313e-16
+    },
+    "KL_contraction_and_correlated_tensor": {
+      "tests": 1560,
+      "max_lhs_minus_rhs": 3.203426503814918e-16
+    },
+    "arbitrary_prior_stochastic_encoder_budget": {
+      "tests": 240,
+      "N": [
+        2,
+        4,
+        6
+      ],
+      "r": [
+        1,
+        2
+      ],
+      "includes_correlated_supported_prior": true,
+      "max_lhs_minus_rhs": 0.0,
+      "max_reference_identity_error": 4.440892098500626e-16
+    },
+    "all_N4_binary_message_cells": {
+      "tests": 124,
+      "max_discounted_second_moment": 0.8399473665965822
+    },
+    "reference_support_cost_counterexample": {
+      "N": 2,
+      "k": 3,
+      "legal_cost_cap": 2,
+      "Q_max_cost": 103,
+      "positive_likelihood_max_cost": 2,
+      "E_joint_Q_L_squared": 4.0,
+      "E_joint_Q_discounted_L_squared": 1.0,
+      "purpose": "Q need not obey legal-input cost cap; positive likelihood support does."
+    },
+    "slot_tuple_count_bound": {
+      "tests": 650,
+      "max_k": 25,
+      "max_C": 25
+    },
+    "silent_upper_parameter_grid": {
+      "tests": 26855,
+      "max_n": 10000,
+      "includes_exponential_chain_regime": true,
+      "maximum_cost_over_F": 10.868678432391038,
+      "failure_bound": 0.15365092212534687
+    },
+    "silent_lower_uniform_inversion": {
+      "tests": 1001,
+      "log2_k_over_n_range": [
+        -100,
+        100
+      ],
+      "max_f_value": 0.004871238059277798,
+      "proved_comparison": 0.0078125,
+      "required_threshold": 0.022222222222222223
+    }
+  },
+  "scope": "Independent finite diagnostics, not exhaustive theorem verification or Lean.",
+  "source_sha256": {
+    "manuscript/strong_direct_product.en.md": "f211c663081a6de58636f597abe3bbdfba5a3818a77ac1c2c4fe3929b882dd1d",
+    "manuscript/free_slots.en.md": "3c49db40463ab9308ae1383aa108f1e58851b9dcb2a713ad379ca7d409861f81",
+    "manuscript/information_budget.en.md": "21eb649cb5229862046ad8c3748e73166411bd966d0f9b3ff58cc0fd67aae9de"
+  }
+}

@@ -1,0 +1,2 @@
+Verified 258,720 candidate mass vectors and 109,760 boxes against all 3,003 tables at denominator 6.
+Verified the weak-DTD and two-sided strict examples at denominator 9.

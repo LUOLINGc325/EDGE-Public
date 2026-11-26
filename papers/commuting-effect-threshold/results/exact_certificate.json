@@ -1,0 +1,103 @@
+{
+  "arithmetic": "exact fractions; no float operations",
+  "fine": {
+    "count": 512,
+    "max_squared": "49/5120",
+    "witness": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "distinct_squared_values": [
+      "0",
+      "49/25600",
+      "49/6400",
+      "49/5120"
+    ]
+  },
+  "coarse": {
+    "count": 64,
+    "max_squared": "81/6400",
+    "witness": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "distinct_squared_values": [
+      "0",
+      "13/5120",
+      "1/256",
+      "49/6400",
+      "49/5120",
+      "81/6400"
+    ]
+  },
+  "same_plus_input_fine_tv": "7/80",
+  "same_plus_input_coarse_tv": "9/80",
+  "family_checks": [
+    {
+      "s": "1/4",
+      "fine_squared": "45/1024",
+      "coarse_squared": "45/1024",
+      "strict_increase": false
+    },
+    {
+      "s": "1/3",
+      "fine_squared": "16/405",
+      "coarse_squared": "16/405",
+      "strict_increase": false
+    },
+    {
+      "s": "2/5",
+      "fine_squared": "441/12500",
+      "coarse_squared": "441/12500",
+      "strict_increase": false
+    },
+    {
+      "s": "1/2",
+      "fine_squared": "9/320",
+      "coarse_squared": "49/1600",
+      "strict_increase": true
+    },
+    {
+      "s": "2/3",
+      "fine_squared": "5/324",
+      "coarse_squared": "25/1296",
+      "strict_increase": true
+    },
+    {
+      "s": "3/4",
+      "fine_squared": "49/5120",
+      "coarse_squared": "81/6400",
+      "strict_increase": true
+    },
+    {
+      "s": "4/5",
+      "fine_squared": "81/12500",
+      "coarse_squared": "2209/250000",
+      "strict_increase": true
+    },
+    {
+      "s": "9/10",
+      "fine_squared": "361/200000",
+      "coarse_squared": "2601/1000000",
+      "strict_increase": true
+    },
+    {
+      "s": "1",
+      "fine_squared": "0",
+      "coarse_squared": "0",
+      "strict_increase": false
+    }
+  ],
+  "scope": "Finite rational record matrices and event enumeration. General all-density and all-parameter claims are supported by the accompanying analytic proof and require separate Lean verification."
+}

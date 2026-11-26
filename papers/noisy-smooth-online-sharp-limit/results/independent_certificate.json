@@ -1,0 +1,2825 @@
+{
+  "all_checks_passed": true,
+  "arithmetic": "Python integers with Fraction value comparison and independent replay",
+  "case_count": 44,
+  "cases": [
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 2,
+        "numerator": 3,
+        "text": "3/2"
+      },
+      "distance_power_denominator": 4,
+      "endpoint_initial_optimum": {
+        "denominator": 4,
+        "numerator": 5,
+        "text": "5/4"
+      },
+      "exact_grid_optimum": {
+        "denominator": 4,
+        "numerator": 5,
+        "text": "5/4"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 3,
+      "k": 1,
+      "maximum_scaled_integer_energy": 5,
+      "nonzero_reward_transitions": 9,
+      "s": 2,
+      "state_space_size": 8,
+      "states_with_at_least_k_observations": 7,
+      "strict_slack": {
+        "denominator": 4,
+        "numerator": 1,
+        "text": "1/4"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 4,
+          "numerator": 5,
+          "text": "5/4"
+        },
+        "initial_counts": [
+          1,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 6,
+        "numerator": 7,
+        "text": "7/6"
+      },
+      "distance_power_denominator": 8,
+      "endpoint_initial_optimum": {
+        "denominator": 8,
+        "numerator": 9,
+        "text": "9/8"
+      },
+      "exact_grid_optimum": {
+        "denominator": 8,
+        "numerator": 9,
+        "text": "9/8"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 3,
+      "k": 1,
+      "maximum_scaled_integer_energy": 9,
+      "nonzero_reward_transitions": 9,
+      "s": 3,
+      "state_space_size": 8,
+      "states_with_at_least_k_observations": 7,
+      "strict_slack": {
+        "denominator": 24,
+        "numerator": 1,
+        "text": "1/24"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 8,
+          "numerator": 9,
+          "text": "9/8"
+        },
+        "initial_counts": [
+          1,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 14,
+        "numerator": 15,
+        "text": "15/14"
+      },
+      "distance_power_denominator": 16,
+      "endpoint_initial_optimum": {
+        "denominator": 16,
+        "numerator": 17,
+        "text": "17/16"
+      },
+      "exact_grid_optimum": {
+        "denominator": 16,
+        "numerator": 17,
+        "text": "17/16"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 3,
+      "k": 1,
+      "maximum_scaled_integer_energy": 17,
+      "nonzero_reward_transitions": 9,
+      "s": 4,
+      "state_space_size": 8,
+      "states_with_at_least_k_observations": 7,
+      "strict_slack": {
+        "denominator": 112,
+        "numerator": 1,
+        "text": "1/112"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 16,
+          "numerator": 17,
+          "text": "17/16"
+        },
+        "initial_counts": [
+          1,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 254,
+        "numerator": 255,
+        "text": "255/254"
+      },
+      "distance_power_denominator": 256,
+      "endpoint_initial_optimum": {
+        "denominator": 256,
+        "numerator": 257,
+        "text": "257/256"
+      },
+      "exact_grid_optimum": {
+        "denominator": 256,
+        "numerator": 257,
+        "text": "257/256"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 3,
+      "k": 1,
+      "maximum_scaled_integer_energy": 257,
+      "nonzero_reward_transitions": 9,
+      "s": 8,
+      "state_space_size": 8,
+      "states_with_at_least_k_observations": 7,
+      "strict_slack": {
+        "denominator": 32512,
+        "numerator": 1,
+        "text": "1/32512"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 256,
+          "numerator": 257,
+          "text": "257/256"
+        },
+        "initial_counts": [
+          1,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 1,
+        "numerator": 3,
+        "text": "3"
+      },
+      "distance_power_denominator": 4,
+      "endpoint_initial_optimum": {
+        "denominator": 2,
+        "numerator": 5,
+        "text": "5/2"
+      },
+      "exact_grid_optimum": {
+        "denominator": 2,
+        "numerator": 5,
+        "text": "5/2"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 6,
+      "k": 2,
+      "maximum_scaled_integer_energy": 10,
+      "nonzero_reward_transitions": 42,
+      "s": 2,
+      "state_space_size": 27,
+      "states_with_at_least_k_observations": 23,
+      "strict_slack": {
+        "denominator": 2,
+        "numerator": 1,
+        "text": "1/2"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 2,
+          "numerator": 5,
+          "text": "5/2"
+        },
+        "initial_counts": [
+          2,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          2,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 3,
+        "numerator": 7,
+        "text": "7/3"
+      },
+      "distance_power_denominator": 8,
+      "endpoint_initial_optimum": {
+        "denominator": 4,
+        "numerator": 9,
+        "text": "9/4"
+      },
+      "exact_grid_optimum": {
+        "denominator": 4,
+        "numerator": 9,
+        "text": "9/4"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 6,
+      "k": 2,
+      "maximum_scaled_integer_energy": 18,
+      "nonzero_reward_transitions": 42,
+      "s": 3,
+      "state_space_size": 27,
+      "states_with_at_least_k_observations": 23,
+      "strict_slack": {
+        "denominator": 12,
+        "numerator": 1,
+        "text": "1/12"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 4,
+          "numerator": 9,
+          "text": "9/4"
+        },
+        "initial_counts": [
+          2,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          2,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 7,
+        "numerator": 15,
+        "text": "15/7"
+      },
+      "distance_power_denominator": 16,
+      "endpoint_initial_optimum": {
+        "denominator": 8,
+        "numerator": 17,
+        "text": "17/8"
+      },
+      "exact_grid_optimum": {
+        "denominator": 8,
+        "numerator": 17,
+        "text": "17/8"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 6,
+      "k": 2,
+      "maximum_scaled_integer_energy": 34,
+      "nonzero_reward_transitions": 42,
+      "s": 4,
+      "state_space_size": 27,
+      "states_with_at_least_k_observations": 23,
+      "strict_slack": {
+        "denominator": 56,
+        "numerator": 1,
+        "text": "1/56"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 8,
+          "numerator": 17,
+          "text": "17/8"
+        },
+        "initial_counts": [
+          2,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          2,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 127,
+        "numerator": 255,
+        "text": "255/127"
+      },
+      "distance_power_denominator": 256,
+      "endpoint_initial_optimum": {
+        "denominator": 128,
+        "numerator": 257,
+        "text": "257/128"
+      },
+      "exact_grid_optimum": {
+        "denominator": 128,
+        "numerator": 257,
+        "text": "257/128"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 6,
+      "k": 2,
+      "maximum_scaled_integer_energy": 514,
+      "nonzero_reward_transitions": 42,
+      "s": 8,
+      "state_space_size": 27,
+      "states_with_at_least_k_observations": 23,
+      "strict_slack": {
+        "denominator": 16256,
+        "numerator": 1,
+        "text": "1/16256"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 128,
+          "numerator": 257,
+          "text": "257/128"
+        },
+        "initial_counts": [
+          2,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          2,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 2,
+        "numerator": 9,
+        "text": "9/2"
+      },
+      "distance_power_denominator": 4,
+      "endpoint_initial_optimum": {
+        "denominator": 4,
+        "numerator": 15,
+        "text": "15/4"
+      },
+      "exact_grid_optimum": {
+        "denominator": 4,
+        "numerator": 15,
+        "text": "15/4"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 10,
+      "k": 3,
+      "maximum_scaled_integer_energy": 15,
+      "nonzero_reward_transitions": 114,
+      "s": 2,
+      "state_space_size": 64,
+      "states_with_at_least_k_observations": 54,
+      "strict_slack": {
+        "denominator": 4,
+        "numerator": 3,
+        "text": "3/4"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 4,
+          "numerator": 15,
+          "text": "15/4"
+        },
+        "initial_counts": [
+          3,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 2,
+        "numerator": 7,
+        "text": "7/2"
+      },
+      "distance_power_denominator": 8,
+      "endpoint_initial_optimum": {
+        "denominator": 8,
+        "numerator": 27,
+        "text": "27/8"
+      },
+      "exact_grid_optimum": {
+        "denominator": 8,
+        "numerator": 27,
+        "text": "27/8"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 10,
+      "k": 3,
+      "maximum_scaled_integer_energy": 27,
+      "nonzero_reward_transitions": 114,
+      "s": 3,
+      "state_space_size": 64,
+      "states_with_at_least_k_observations": 54,
+      "strict_slack": {
+        "denominator": 8,
+        "numerator": 1,
+        "text": "1/8"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 8,
+          "numerator": 27,
+          "text": "27/8"
+        },
+        "initial_counts": [
+          3,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 14,
+        "numerator": 45,
+        "text": "45/14"
+      },
+      "distance_power_denominator": 16,
+      "endpoint_initial_optimum": {
+        "denominator": 16,
+        "numerator": 51,
+        "text": "51/16"
+      },
+      "exact_grid_optimum": {
+        "denominator": 16,
+        "numerator": 51,
+        "text": "51/16"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 10,
+      "k": 3,
+      "maximum_scaled_integer_energy": 51,
+      "nonzero_reward_transitions": 114,
+      "s": 4,
+      "state_space_size": 64,
+      "states_with_at_least_k_observations": 54,
+      "strict_slack": {
+        "denominator": 112,
+        "numerator": 3,
+        "text": "3/112"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 16,
+          "numerator": 51,
+          "text": "51/16"
+        },
+        "initial_counts": [
+          3,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 254,
+        "numerator": 765,
+        "text": "765/254"
+      },
+      "distance_power_denominator": 256,
+      "endpoint_initial_optimum": {
+        "denominator": 256,
+        "numerator": 771,
+        "text": "771/256"
+      },
+      "exact_grid_optimum": {
+        "denominator": 256,
+        "numerator": 771,
+        "text": "771/256"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 10,
+      "k": 3,
+      "maximum_scaled_integer_energy": 771,
+      "nonzero_reward_transitions": 114,
+      "s": 8,
+      "state_space_size": 64,
+      "states_with_at_least_k_observations": 54,
+      "strict_slack": {
+        "denominator": 32512,
+        "numerator": 3,
+        "text": "3/32512"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 256,
+          "numerator": 771,
+          "text": "771/256"
+        },
+        "initial_counts": [
+          3,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 2,
+        "numerator": 15,
+        "text": "15/2"
+      },
+      "distance_power_denominator": 4,
+      "endpoint_initial_optimum": {
+        "denominator": 4,
+        "numerator": 25,
+        "text": "25/4"
+      },
+      "exact_grid_optimum": {
+        "denominator": 4,
+        "numerator": 25,
+        "text": "25/4"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 21,
+      "k": 5,
+      "maximum_scaled_integer_energy": 25,
+      "nonzero_reward_transitions": 435,
+      "s": 2,
+      "state_space_size": 216,
+      "states_with_at_least_k_observations": 181,
+      "strict_slack": {
+        "denominator": 4,
+        "numerator": 5,
+        "text": "5/4"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 4,
+          "numerator": 25,
+          "text": "25/4"
+        },
+        "initial_counts": [
+          5,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 6,
+        "numerator": 35,
+        "text": "35/6"
+      },
+      "distance_power_denominator": 8,
+      "endpoint_initial_optimum": {
+        "denominator": 8,
+        "numerator": 45,
+        "text": "45/8"
+      },
+      "exact_grid_optimum": {
+        "denominator": 8,
+        "numerator": 45,
+        "text": "45/8"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 21,
+      "k": 5,
+      "maximum_scaled_integer_energy": 45,
+      "nonzero_reward_transitions": 435,
+      "s": 3,
+      "state_space_size": 216,
+      "states_with_at_least_k_observations": 181,
+      "strict_slack": {
+        "denominator": 24,
+        "numerator": 5,
+        "text": "5/24"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 8,
+          "numerator": 45,
+          "text": "45/8"
+        },
+        "initial_counts": [
+          5,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 14,
+        "numerator": 75,
+        "text": "75/14"
+      },
+      "distance_power_denominator": 16,
+      "endpoint_initial_optimum": {
+        "denominator": 16,
+        "numerator": 85,
+        "text": "85/16"
+      },
+      "exact_grid_optimum": {
+        "denominator": 16,
+        "numerator": 85,
+        "text": "85/16"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 21,
+      "k": 5,
+      "maximum_scaled_integer_energy": 85,
+      "nonzero_reward_transitions": 435,
+      "s": 4,
+      "state_space_size": 216,
+      "states_with_at_least_k_observations": 181,
+      "strict_slack": {
+        "denominator": 112,
+        "numerator": 5,
+        "text": "5/112"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 16,
+          "numerator": 85,
+          "text": "85/16"
+        },
+        "initial_counts": [
+          5,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 254,
+        "numerator": 1275,
+        "text": "1275/254"
+      },
+      "distance_power_denominator": 256,
+      "endpoint_initial_optimum": {
+        "denominator": 256,
+        "numerator": 1285,
+        "text": "1285/256"
+      },
+      "exact_grid_optimum": {
+        "denominator": 256,
+        "numerator": 1285,
+        "text": "1285/256"
+      },
+      "grid": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "grid_size": 3,
+      "initial_occupancy_states": 21,
+      "k": 5,
+      "maximum_scaled_integer_energy": 1285,
+      "nonzero_reward_transitions": 435,
+      "s": 8,
+      "state_space_size": 216,
+      "states_with_at_least_k_observations": 181,
+      "strict_slack": {
+        "denominator": 32512,
+        "numerator": 5,
+        "text": "5/32512"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 256,
+          "numerator": 1285,
+          "text": "1285/256"
+        },
+        "initial_counts": [
+          5,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 2,
+        "numerator": 3,
+        "text": "3/2"
+      },
+      "distance_power_denominator": 16,
+      "endpoint_initial_optimum": {
+        "denominator": 8,
+        "numerator": 11,
+        "text": "11/8"
+      },
+      "exact_grid_optimum": {
+        "denominator": 8,
+        "numerator": 11,
+        "text": "11/8"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 5,
+      "k": 1,
+      "maximum_scaled_integer_energy": 22,
+      "nonzero_reward_transitions": 75,
+      "s": 2,
+      "state_space_size": 32,
+      "states_with_at_least_k_observations": 31,
+      "strict_slack": {
+        "denominator": 8,
+        "numerator": 1,
+        "text": "1/8"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 8,
+          "numerator": 11,
+          "text": "11/8"
+        },
+        "initial_counts": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          2,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 6,
+        "numerator": 7,
+        "text": "7/6"
+      },
+      "distance_power_denominator": 64,
+      "endpoint_initial_optimum": {
+        "denominator": 32,
+        "numerator": 37,
+        "text": "37/32"
+      },
+      "exact_grid_optimum": {
+        "denominator": 32,
+        "numerator": 37,
+        "text": "37/32"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 5,
+      "k": 1,
+      "maximum_scaled_integer_energy": 74,
+      "nonzero_reward_transitions": 75,
+      "s": 3,
+      "state_space_size": 32,
+      "states_with_at_least_k_observations": 31,
+      "strict_slack": {
+        "denominator": 96,
+        "numerator": 1,
+        "text": "1/96"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 32,
+          "numerator": 37,
+          "text": "37/32"
+        },
+        "initial_counts": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          2,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 14,
+        "numerator": 15,
+        "text": "15/14"
+      },
+      "distance_power_denominator": 256,
+      "endpoint_initial_optimum": {
+        "denominator": 128,
+        "numerator": 137,
+        "text": "137/128"
+      },
+      "exact_grid_optimum": {
+        "denominator": 128,
+        "numerator": 137,
+        "text": "137/128"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 5,
+      "k": 1,
+      "maximum_scaled_integer_energy": 274,
+      "nonzero_reward_transitions": 75,
+      "s": 4,
+      "state_space_size": 32,
+      "states_with_at_least_k_observations": 31,
+      "strict_slack": {
+        "denominator": 896,
+        "numerator": 1,
+        "text": "1/896"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 128,
+          "numerator": 137,
+          "text": "137/128"
+        },
+        "initial_counts": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          2,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 254,
+        "numerator": 255,
+        "text": "255/254"
+      },
+      "distance_power_denominator": 65536,
+      "endpoint_initial_optimum": {
+        "denominator": 32768,
+        "numerator": 32897,
+        "text": "32897/32768"
+      },
+      "exact_grid_optimum": {
+        "denominator": 32768,
+        "numerator": 32897,
+        "text": "32897/32768"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 5,
+      "k": 1,
+      "maximum_scaled_integer_energy": 65794,
+      "nonzero_reward_transitions": 75,
+      "s": 8,
+      "state_space_size": 32,
+      "states_with_at_least_k_observations": 31,
+      "strict_slack": {
+        "denominator": 4161536,
+        "numerator": 1,
+        "text": "1/4161536"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 32768,
+          "numerator": 32897,
+          "text": "32897/32768"
+        },
+        "initial_counts": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          2,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 1,
+        "numerator": 3,
+        "text": "3"
+      },
+      "distance_power_denominator": 16,
+      "endpoint_initial_optimum": {
+        "denominator": 4,
+        "numerator": 11,
+        "text": "11/4"
+      },
+      "exact_grid_optimum": {
+        "denominator": 4,
+        "numerator": 11,
+        "text": "11/4"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 15,
+      "k": 2,
+      "maximum_scaled_integer_energy": 44,
+      "nonzero_reward_transitions": 780,
+      "s": 2,
+      "state_space_size": 243,
+      "states_with_at_least_k_observations": 237,
+      "strict_slack": {
+        "denominator": 4,
+        "numerator": 1,
+        "text": "1/4"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 4,
+          "numerator": 11,
+          "text": "11/4"
+        },
+        "initial_counts": [
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          4,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 3,
+        "numerator": 7,
+        "text": "7/3"
+      },
+      "distance_power_denominator": 64,
+      "endpoint_initial_optimum": {
+        "denominator": 16,
+        "numerator": 37,
+        "text": "37/16"
+      },
+      "exact_grid_optimum": {
+        "denominator": 16,
+        "numerator": 37,
+        "text": "37/16"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 15,
+      "k": 2,
+      "maximum_scaled_integer_energy": 148,
+      "nonzero_reward_transitions": 780,
+      "s": 3,
+      "state_space_size": 243,
+      "states_with_at_least_k_observations": 237,
+      "strict_slack": {
+        "denominator": 48,
+        "numerator": 1,
+        "text": "1/48"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 16,
+          "numerator": 37,
+          "text": "37/16"
+        },
+        "initial_counts": [
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          4,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 7,
+        "numerator": 15,
+        "text": "15/7"
+      },
+      "distance_power_denominator": 256,
+      "endpoint_initial_optimum": {
+        "denominator": 64,
+        "numerator": 137,
+        "text": "137/64"
+      },
+      "exact_grid_optimum": {
+        "denominator": 64,
+        "numerator": 137,
+        "text": "137/64"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 15,
+      "k": 2,
+      "maximum_scaled_integer_energy": 548,
+      "nonzero_reward_transitions": 780,
+      "s": 4,
+      "state_space_size": 243,
+      "states_with_at_least_k_observations": 237,
+      "strict_slack": {
+        "denominator": 448,
+        "numerator": 1,
+        "text": "1/448"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 64,
+          "numerator": 137,
+          "text": "137/64"
+        },
+        "initial_counts": [
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          4,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 127,
+        "numerator": 255,
+        "text": "255/127"
+      },
+      "distance_power_denominator": 65536,
+      "endpoint_initial_optimum": {
+        "denominator": 16384,
+        "numerator": 32897,
+        "text": "32897/16384"
+      },
+      "exact_grid_optimum": {
+        "denominator": 16384,
+        "numerator": 32897,
+        "text": "32897/16384"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 15,
+      "k": 2,
+      "maximum_scaled_integer_energy": 131588,
+      "nonzero_reward_transitions": 780,
+      "s": 8,
+      "state_space_size": 243,
+      "states_with_at_least_k_observations": 237,
+      "strict_slack": {
+        "denominator": 2080768,
+        "numerator": 1,
+        "text": "1/2080768"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 16384,
+          "numerator": 32897,
+          "text": "32897/16384"
+        },
+        "initial_counts": [
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          4,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 2,
+        "numerator": 9,
+        "text": "9/2"
+      },
+      "distance_power_denominator": 16,
+      "endpoint_initial_optimum": {
+        "denominator": 8,
+        "numerator": 33,
+        "text": "33/8"
+      },
+      "exact_grid_optimum": {
+        "denominator": 8,
+        "numerator": 33,
+        "text": "33/8"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 35,
+      "k": 3,
+      "maximum_scaled_integer_energy": 66,
+      "nonzero_reward_transitions": 3735,
+      "s": 2,
+      "state_space_size": 1024,
+      "states_with_at_least_k_observations": 1003,
+      "strict_slack": {
+        "denominator": 8,
+        "numerator": 3,
+        "text": "3/8"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 8,
+          "numerator": 33,
+          "text": "33/8"
+        },
+        "initial_counts": [
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          4,
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 2,
+        "numerator": 7,
+        "text": "7/2"
+      },
+      "distance_power_denominator": 64,
+      "endpoint_initial_optimum": {
+        "denominator": 32,
+        "numerator": 111,
+        "text": "111/32"
+      },
+      "exact_grid_optimum": {
+        "denominator": 32,
+        "numerator": 111,
+        "text": "111/32"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 35,
+      "k": 3,
+      "maximum_scaled_integer_energy": 222,
+      "nonzero_reward_transitions": 3735,
+      "s": 3,
+      "state_space_size": 1024,
+      "states_with_at_least_k_observations": 1003,
+      "strict_slack": {
+        "denominator": 32,
+        "numerator": 1,
+        "text": "1/32"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 32,
+          "numerator": 111,
+          "text": "111/32"
+        },
+        "initial_counts": [
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          4,
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 14,
+        "numerator": 45,
+        "text": "45/14"
+      },
+      "distance_power_denominator": 256,
+      "endpoint_initial_optimum": {
+        "denominator": 128,
+        "numerator": 411,
+        "text": "411/128"
+      },
+      "exact_grid_optimum": {
+        "denominator": 128,
+        "numerator": 411,
+        "text": "411/128"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 35,
+      "k": 3,
+      "maximum_scaled_integer_energy": 822,
+      "nonzero_reward_transitions": 3735,
+      "s": 4,
+      "state_space_size": 1024,
+      "states_with_at_least_k_observations": 1003,
+      "strict_slack": {
+        "denominator": 896,
+        "numerator": 3,
+        "text": "3/896"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 128,
+          "numerator": 411,
+          "text": "411/128"
+        },
+        "initial_counts": [
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          4,
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 254,
+        "numerator": 765,
+        "text": "765/254"
+      },
+      "distance_power_denominator": 65536,
+      "endpoint_initial_optimum": {
+        "denominator": 32768,
+        "numerator": 98691,
+        "text": "98691/32768"
+      },
+      "exact_grid_optimum": {
+        "denominator": 32768,
+        "numerator": 98691,
+        "text": "98691/32768"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 35,
+      "k": 3,
+      "maximum_scaled_integer_energy": 197382,
+      "nonzero_reward_transitions": 3735,
+      "s": 8,
+      "state_space_size": 1024,
+      "states_with_at_least_k_observations": 1003,
+      "strict_slack": {
+        "denominator": 4161536,
+        "numerator": 3,
+        "text": "3/4161536"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 32768,
+          "numerator": 98691,
+          "text": "98691/32768"
+        },
+        "initial_counts": [
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          4,
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 2,
+        "numerator": 15,
+        "text": "15/2"
+      },
+      "distance_power_denominator": 16,
+      "endpoint_initial_optimum": {
+        "denominator": 8,
+        "numerator": 55,
+        "text": "55/8"
+      },
+      "exact_grid_optimum": {
+        "denominator": 8,
+        "numerator": 55,
+        "text": "55/8"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 126,
+      "k": 5,
+      "maximum_scaled_integer_energy": 110,
+      "nonzero_reward_transitions": 31770,
+      "s": 2,
+      "state_space_size": 7776,
+      "states_with_at_least_k_observations": 7650,
+      "strict_slack": {
+        "denominator": 8,
+        "numerator": 5,
+        "text": "5/8"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 8,
+          "numerator": 55,
+          "text": "55/8"
+        },
+        "initial_counts": [
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 6,
+        "numerator": 35,
+        "text": "35/6"
+      },
+      "distance_power_denominator": 64,
+      "endpoint_initial_optimum": {
+        "denominator": 32,
+        "numerator": 185,
+        "text": "185/32"
+      },
+      "exact_grid_optimum": {
+        "denominator": 32,
+        "numerator": 185,
+        "text": "185/32"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 126,
+      "k": 5,
+      "maximum_scaled_integer_energy": 370,
+      "nonzero_reward_transitions": 31770,
+      "s": 3,
+      "state_space_size": 7776,
+      "states_with_at_least_k_observations": 7650,
+      "strict_slack": {
+        "denominator": 96,
+        "numerator": 5,
+        "text": "5/96"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 32,
+          "numerator": 185,
+          "text": "185/32"
+        },
+        "initial_counts": [
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 14,
+        "numerator": 75,
+        "text": "75/14"
+      },
+      "distance_power_denominator": 256,
+      "endpoint_initial_optimum": {
+        "denominator": 128,
+        "numerator": 685,
+        "text": "685/128"
+      },
+      "exact_grid_optimum": {
+        "denominator": 128,
+        "numerator": 685,
+        "text": "685/128"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 126,
+      "k": 5,
+      "maximum_scaled_integer_energy": 1370,
+      "nonzero_reward_transitions": 31770,
+      "s": 4,
+      "state_space_size": 7776,
+      "states_with_at_least_k_observations": 7650,
+      "strict_slack": {
+        "denominator": 896,
+        "numerator": 5,
+        "text": "5/896"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 128,
+          "numerator": 685,
+          "text": "685/128"
+        },
+        "initial_counts": [
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 254,
+        "numerator": 1275,
+        "text": "1275/254"
+      },
+      "distance_power_denominator": 65536,
+      "endpoint_initial_optimum": {
+        "denominator": 32768,
+        "numerator": 164485,
+        "text": "164485/32768"
+      },
+      "exact_grid_optimum": {
+        "denominator": 32768,
+        "numerator": 164485,
+        "text": "164485/32768"
+      },
+      "grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "grid_size": 5,
+      "initial_occupancy_states": 126,
+      "k": 5,
+      "maximum_scaled_integer_energy": 328970,
+      "nonzero_reward_transitions": 31770,
+      "s": 8,
+      "state_space_size": 7776,
+      "states_with_at_least_k_observations": 7650,
+      "strict_slack": {
+        "denominator": 4161536,
+        "numerator": 5,
+        "text": "5/4161536"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 32768,
+          "numerator": 164485,
+          "text": "164485/32768"
+        },
+        "initial_counts": [
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 2,
+        "numerator": 3,
+        "text": "3/2"
+      },
+      "distance_power_denominator": 36,
+      "endpoint_initial_optimum": {
+        "denominator": 36,
+        "numerator": 49,
+        "text": "49/36"
+      },
+      "exact_grid_optimum": {
+        "denominator": 36,
+        "numerator": 49,
+        "text": "49/36"
+      },
+      "grid": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6",
+        "1"
+      ],
+      "grid_size": 7,
+      "initial_occupancy_states": 7,
+      "k": 1,
+      "maximum_scaled_integer_energy": 49,
+      "nonzero_reward_transitions": 441,
+      "s": 2,
+      "state_space_size": 128,
+      "states_with_at_least_k_observations": 127,
+      "strict_slack": {
+        "denominator": 36,
+        "numerator": 5,
+        "text": "5/36"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 36,
+          "numerator": 49,
+          "text": "49/36"
+        },
+        "initial_counts": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          6,
+          3,
+          1,
+          2,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 6,
+        "numerator": 7,
+        "text": "7/6"
+      },
+      "distance_power_denominator": 216,
+      "endpoint_initial_optimum": {
+        "denominator": 216,
+        "numerator": 247,
+        "text": "247/216"
+      },
+      "exact_grid_optimum": {
+        "denominator": 216,
+        "numerator": 247,
+        "text": "247/216"
+      },
+      "grid": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6",
+        "1"
+      ],
+      "grid_size": 7,
+      "initial_occupancy_states": 7,
+      "k": 1,
+      "maximum_scaled_integer_energy": 247,
+      "nonzero_reward_transitions": 441,
+      "s": 3,
+      "state_space_size": 128,
+      "states_with_at_least_k_observations": 127,
+      "strict_slack": {
+        "denominator": 216,
+        "numerator": 5,
+        "text": "5/216"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 216,
+          "numerator": 247,
+          "text": "247/216"
+        },
+        "initial_counts": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          6,
+          3,
+          1,
+          2,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 14,
+        "numerator": 15,
+        "text": "15/14"
+      },
+      "distance_power_denominator": 1296,
+      "endpoint_initial_optimum": {
+        "denominator": 1296,
+        "numerator": 1381,
+        "text": "1381/1296"
+      },
+      "exact_grid_optimum": {
+        "denominator": 1296,
+        "numerator": 1381,
+        "text": "1381/1296"
+      },
+      "grid": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6",
+        "1"
+      ],
+      "grid_size": 7,
+      "initial_occupancy_states": 7,
+      "k": 1,
+      "maximum_scaled_integer_energy": 1381,
+      "nonzero_reward_transitions": 441,
+      "s": 4,
+      "state_space_size": 128,
+      "states_with_at_least_k_observations": 127,
+      "strict_slack": {
+        "denominator": 9072,
+        "numerator": 53,
+        "text": "53/9072"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 1296,
+          "numerator": 1381,
+          "text": "1381/1296"
+        },
+        "initial_counts": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          6,
+          3,
+          1,
+          2,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 254,
+        "numerator": 255,
+        "text": "255/254"
+      },
+      "distance_power_denominator": 1679616,
+      "endpoint_initial_optimum": {
+        "denominator": 1679616,
+        "numerator": 1686181,
+        "text": "1686181/1679616"
+      },
+      "exact_grid_optimum": {
+        "denominator": 1679616,
+        "numerator": 1686181,
+        "text": "1686181/1679616"
+      },
+      "grid": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6",
+        "1"
+      ],
+      "grid_size": 7,
+      "initial_occupancy_states": 7,
+      "k": 1,
+      "maximum_scaled_integer_energy": 1686181,
+      "nonzero_reward_transitions": 441,
+      "s": 8,
+      "state_space_size": 128,
+      "states_with_at_least_k_observations": 127,
+      "strict_slack": {
+        "denominator": 213311232,
+        "numerator": 6053,
+        "text": "6053/213311232"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 1679616,
+          "numerator": 1686181,
+          "text": "1686181/1679616"
+        },
+        "initial_counts": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          6,
+          3,
+          1,
+          2,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 1,
+        "numerator": 3,
+        "text": "3"
+      },
+      "distance_power_denominator": 36,
+      "endpoint_initial_optimum": {
+        "denominator": 18,
+        "numerator": 49,
+        "text": "49/18"
+      },
+      "exact_grid_optimum": {
+        "denominator": 18,
+        "numerator": 49,
+        "text": "49/18"
+      },
+      "grid": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6",
+        "1"
+      ],
+      "grid_size": 7,
+      "initial_occupancy_states": 28,
+      "k": 2,
+      "maximum_scaled_integer_energy": 98,
+      "nonzero_reward_transitions": 10150,
+      "s": 2,
+      "state_space_size": 2187,
+      "states_with_at_least_k_observations": 2179,
+      "strict_slack": {
+        "denominator": 18,
+        "numerator": 5,
+        "text": "5/18"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 18,
+          "numerator": 49,
+          "text": "49/18"
+        },
+        "initial_counts": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          6,
+          6,
+          3,
+          3,
+          1,
+          1,
+          2,
+          2,
+          4,
+          4,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 3,
+        "numerator": 7,
+        "text": "7/3"
+      },
+      "distance_power_denominator": 216,
+      "endpoint_initial_optimum": {
+        "denominator": 108,
+        "numerator": 247,
+        "text": "247/108"
+      },
+      "exact_grid_optimum": {
+        "denominator": 108,
+        "numerator": 247,
+        "text": "247/108"
+      },
+      "grid": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6",
+        "1"
+      ],
+      "grid_size": 7,
+      "initial_occupancy_states": 28,
+      "k": 2,
+      "maximum_scaled_integer_energy": 494,
+      "nonzero_reward_transitions": 10150,
+      "s": 3,
+      "state_space_size": 2187,
+      "states_with_at_least_k_observations": 2179,
+      "strict_slack": {
+        "denominator": 108,
+        "numerator": 5,
+        "text": "5/108"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 108,
+          "numerator": 247,
+          "text": "247/108"
+        },
+        "initial_counts": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          6,
+          6,
+          3,
+          3,
+          1,
+          1,
+          2,
+          2,
+          4,
+          4,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 7,
+        "numerator": 15,
+        "text": "15/7"
+      },
+      "distance_power_denominator": 1296,
+      "endpoint_initial_optimum": {
+        "denominator": 648,
+        "numerator": 1381,
+        "text": "1381/648"
+      },
+      "exact_grid_optimum": {
+        "denominator": 648,
+        "numerator": 1381,
+        "text": "1381/648"
+      },
+      "grid": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6",
+        "1"
+      ],
+      "grid_size": 7,
+      "initial_occupancy_states": 28,
+      "k": 2,
+      "maximum_scaled_integer_energy": 2762,
+      "nonzero_reward_transitions": 10150,
+      "s": 4,
+      "state_space_size": 2187,
+      "states_with_at_least_k_observations": 2179,
+      "strict_slack": {
+        "denominator": 4536,
+        "numerator": 53,
+        "text": "53/4536"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 648,
+          "numerator": 1381,
+          "text": "1381/648"
+        },
+        "initial_counts": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          6,
+          6,
+          3,
+          3,
+          1,
+          1,
+          2,
+          2,
+          4,
+          4,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 127,
+        "numerator": 255,
+        "text": "255/127"
+      },
+      "distance_power_denominator": 1679616,
+      "endpoint_initial_optimum": {
+        "denominator": 839808,
+        "numerator": 1686181,
+        "text": "1686181/839808"
+      },
+      "exact_grid_optimum": {
+        "denominator": 839808,
+        "numerator": 1686181,
+        "text": "1686181/839808"
+      },
+      "grid": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6",
+        "1"
+      ],
+      "grid_size": 7,
+      "initial_occupancy_states": 28,
+      "k": 2,
+      "maximum_scaled_integer_energy": 3372362,
+      "nonzero_reward_transitions": 10150,
+      "s": 8,
+      "state_space_size": 2187,
+      "states_with_at_least_k_observations": 2179,
+      "strict_slack": {
+        "denominator": 106655616,
+        "numerator": 6053,
+        "text": "6053/106655616"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 839808,
+          "numerator": 1686181,
+          "text": "1686181/839808"
+        },
+        "initial_counts": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          6,
+          6,
+          3,
+          3,
+          1,
+          1,
+          2,
+          2,
+          4,
+          4,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 2,
+        "numerator": 9,
+        "text": "9/2"
+      },
+      "distance_power_denominator": 36,
+      "endpoint_initial_optimum": {
+        "denominator": 12,
+        "numerator": 49,
+        "text": "49/12"
+      },
+      "exact_grid_optimum": {
+        "denominator": 12,
+        "numerator": 49,
+        "text": "49/12"
+      },
+      "grid": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6",
+        "1"
+      ],
+      "grid_size": 7,
+      "initial_occupancy_states": 84,
+      "k": 3,
+      "maximum_scaled_integer_energy": 147,
+      "nonzero_reward_transitions": 85764,
+      "s": 2,
+      "state_space_size": 16384,
+      "states_with_at_least_k_observations": 16348,
+      "strict_slack": {
+        "denominator": 12,
+        "numerator": 5,
+        "text": "5/12"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 12,
+          "numerator": 49,
+          "text": "49/12"
+        },
+        "initial_counts": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          6,
+          6,
+          6,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 2,
+        "numerator": 7,
+        "text": "7/2"
+      },
+      "distance_power_denominator": 216,
+      "endpoint_initial_optimum": {
+        "denominator": 72,
+        "numerator": 247,
+        "text": "247/72"
+      },
+      "exact_grid_optimum": {
+        "denominator": 72,
+        "numerator": 247,
+        "text": "247/72"
+      },
+      "grid": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6",
+        "1"
+      ],
+      "grid_size": 7,
+      "initial_occupancy_states": 84,
+      "k": 3,
+      "maximum_scaled_integer_energy": 741,
+      "nonzero_reward_transitions": 85764,
+      "s": 3,
+      "state_space_size": 16384,
+      "states_with_at_least_k_observations": 16348,
+      "strict_slack": {
+        "denominator": 72,
+        "numerator": 5,
+        "text": "5/72"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 72,
+          "numerator": 247,
+          "text": "247/72"
+        },
+        "initial_counts": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          6,
+          6,
+          6,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 14,
+        "numerator": 45,
+        "text": "45/14"
+      },
+      "distance_power_denominator": 1296,
+      "endpoint_initial_optimum": {
+        "denominator": 432,
+        "numerator": 1381,
+        "text": "1381/432"
+      },
+      "exact_grid_optimum": {
+        "denominator": 432,
+        "numerator": 1381,
+        "text": "1381/432"
+      },
+      "grid": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6",
+        "1"
+      ],
+      "grid_size": 7,
+      "initial_occupancy_states": 84,
+      "k": 3,
+      "maximum_scaled_integer_energy": 4143,
+      "nonzero_reward_transitions": 85764,
+      "s": 4,
+      "state_space_size": 16384,
+      "states_with_at_least_k_observations": 16348,
+      "strict_slack": {
+        "denominator": 3024,
+        "numerator": 53,
+        "text": "53/3024"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 432,
+          "numerator": 1381,
+          "text": "1381/432"
+        },
+        "initial_counts": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          6,
+          6,
+          6,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "checks_passed": true,
+      "continuum_bound": {
+        "denominator": 254,
+        "numerator": 765,
+        "text": "765/254"
+      },
+      "distance_power_denominator": 1679616,
+      "endpoint_initial_optimum": {
+        "denominator": 559872,
+        "numerator": 1686181,
+        "text": "1686181/559872"
+      },
+      "exact_grid_optimum": {
+        "denominator": 559872,
+        "numerator": 1686181,
+        "text": "1686181/559872"
+      },
+      "grid": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6",
+        "1"
+      ],
+      "grid_size": 7,
+      "initial_occupancy_states": 84,
+      "k": 3,
+      "maximum_scaled_integer_energy": 5058543,
+      "nonzero_reward_transitions": 85764,
+      "s": 8,
+      "state_space_size": 16384,
+      "states_with_at_least_k_observations": 16348,
+      "strict_slack": {
+        "denominator": 71103744,
+        "numerator": 6053,
+        "text": "6053/71103744"
+      },
+      "witness": {
+        "independent_fraction_replay": {
+          "denominator": 559872,
+          "numerator": 1686181,
+          "text": "1686181/559872"
+        },
+        "initial_counts": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "scored_position_indices": [
+          6,
+          6,
+          6,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5
+        ]
+      }
+    }
+  ],
+  "certificate_kind": "exact exhaustive finite-grid Bellman optimization",
+  "geometric_bound": "k * (1 + 1 / (2**s - 2))",
+  "independence": "No imports from the main verifier; no coloring argument used in the DP",
+  "scope": "For each listed grid, k, and s, exactly optimizes the sum of the s-th powers of the k-th nearest prior-observation distances over every initial block of k observations and every subsequent sequence, including repeated positions and arbitrarily long zero-reward tails. This does not prove the real-interval theorem.",
+  "script_sha256": "504dd552d4da371d258e0ff2fa75589fc47c86edf783fc4ae6bf241a93356486",
+  "source_attribution": "The k=1 geometric constant is known from Kimber--Long (1995), as restated in Geneson--Zhou (2023), Lemma 2.18. No novelty is claimed by this verifier."
+}

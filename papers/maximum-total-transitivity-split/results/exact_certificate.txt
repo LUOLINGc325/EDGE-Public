@@ -1,0 +1,3 @@
+Labelled source graphs at orders 2 through 4 with 1 to 3 edges: [1, 7, 41]
+Seeded order-5 source graphs: 32. Complete source graphs: 3.
+Exact optimum and constructed partitions both verified.

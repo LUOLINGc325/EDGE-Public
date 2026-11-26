@@ -1,0 +1,24 @@
+{
+  "arithmetic": "exact rational",
+  "certificate_verified": true,
+  "delta": "8/3",
+  "n": 5,
+  "polygon_indices": [
+    0,
+    2,
+    4
+  ],
+  "potential": [
+    "0",
+    "11/3",
+    "20/3",
+    "31/3",
+    "40/3"
+  ],
+  "tail_cut_weights": [
+    "11/3",
+    "3",
+    "11/3",
+    "3"
+  ]
+}

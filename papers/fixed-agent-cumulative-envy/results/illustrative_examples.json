@@ -1,0 +1,431 @@
+{
+  "schema_version": 1,
+  "method": "exact labelled load-state DP; least cost then lexicographically least recipients",
+  "scope": "two illustrative inputs only; not a proof of the general theorem",
+  "agents": 4,
+  "T": 3,
+  "m": 3,
+  "M": 4,
+  "zero_tail_threshold": 12,
+  "positive_scale_Q": 13,
+  "positive_error_bound_H": 6,
+  "positive_threshold": 162,
+  "examples": [
+    {
+      "partition_answer": "yes",
+      "source_values": [
+        1,
+        2,
+        3
+      ],
+      "zero_tail": {
+        "values": [
+          3,
+          1,
+          2,
+          3,
+          3,
+          0,
+          0,
+          0
+        ],
+        "optimal_cost": 12,
+        "optimal_recipients_one_based": [
+          1,
+          2,
+          2,
+          3,
+          4,
+          1,
+          1,
+          1
+        ],
+        "prefix_loads": [
+          [
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0,
+            0
+          ],
+          [
+            3,
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            3,
+            3,
+            0
+          ],
+          [
+            3,
+            3,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            3,
+            3
+          ]
+        ],
+        "prefix_ranges": [
+          3,
+          3,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "prefix_cumulative_costs": [
+          3,
+          6,
+          9,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "final_loads": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "terminal_load_states_considered": 275
+      },
+      "strictly_positive": {
+        "values": [
+          39,
+          13,
+          26,
+          39,
+          39,
+          1,
+          1,
+          1
+        ],
+        "optimal_cost": 159,
+        "optimal_recipients_one_based": [
+          1,
+          2,
+          2,
+          3,
+          4,
+          1,
+          2,
+          3
+        ],
+        "prefix_loads": [
+          [
+            39,
+            0,
+            0,
+            0
+          ],
+          [
+            39,
+            13,
+            0,
+            0
+          ],
+          [
+            39,
+            39,
+            0,
+            0
+          ],
+          [
+            39,
+            39,
+            39,
+            0
+          ],
+          [
+            39,
+            39,
+            39,
+            39
+          ],
+          [
+            40,
+            39,
+            39,
+            39
+          ],
+          [
+            40,
+            40,
+            39,
+            39
+          ],
+          [
+            40,
+            40,
+            40,
+            39
+          ]
+        ],
+        "prefix_ranges": [
+          39,
+          39,
+          39,
+          39,
+          0,
+          1,
+          1,
+          1
+        ],
+        "prefix_cumulative_costs": [
+          39,
+          78,
+          117,
+          156,
+          156,
+          157,
+          158,
+          159
+        ],
+        "final_loads": [
+          40,
+          40,
+          40,
+          39
+        ],
+        "terminal_load_states_considered": 5500
+      }
+    },
+    {
+      "partition_answer": "no",
+      "source_values": [
+        2,
+        2,
+        2
+      ],
+      "zero_tail": {
+        "values": [
+          3,
+          2,
+          2,
+          2,
+          3,
+          0,
+          0,
+          0
+        ],
+        "optimal_cost": 21,
+        "optimal_recipients_one_based": [
+          1,
+          2,
+          3,
+          2,
+          4,
+          1,
+          1,
+          1
+        ],
+        "prefix_loads": [
+          [
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            2,
+            2,
+            0
+          ],
+          [
+            3,
+            4,
+            2,
+            0
+          ],
+          [
+            3,
+            4,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            2,
+            3
+          ]
+        ],
+        "prefix_ranges": [
+          3,
+          3,
+          3,
+          4,
+          2,
+          2,
+          2,
+          2
+        ],
+        "prefix_cumulative_costs": [
+          3,
+          6,
+          9,
+          13,
+          15,
+          17,
+          19,
+          21
+        ],
+        "final_loads": [
+          3,
+          4,
+          2,
+          3
+        ],
+        "terminal_load_states_considered": 194
+      },
+      "strictly_positive": {
+        "values": [
+          39,
+          26,
+          26,
+          26,
+          39,
+          1,
+          1,
+          1
+        ],
+        "optimal_cost": 267,
+        "optimal_recipients_one_based": [
+          1,
+          2,
+          3,
+          2,
+          4,
+          3,
+          3,
+          3
+        ],
+        "prefix_loads": [
+          [
+            39,
+            0,
+            0,
+            0
+          ],
+          [
+            39,
+            26,
+            0,
+            0
+          ],
+          [
+            39,
+            26,
+            26,
+            0
+          ],
+          [
+            39,
+            52,
+            26,
+            0
+          ],
+          [
+            39,
+            52,
+            26,
+            39
+          ],
+          [
+            39,
+            52,
+            27,
+            39
+          ],
+          [
+            39,
+            52,
+            28,
+            39
+          ],
+          [
+            39,
+            52,
+            29,
+            39
+          ]
+        ],
+        "prefix_ranges": [
+          39,
+          39,
+          39,
+          52,
+          26,
+          25,
+          24,
+          23
+        ],
+        "prefix_cumulative_costs": [
+          39,
+          78,
+          117,
+          169,
+          195,
+          220,
+          244,
+          267
+        ],
+        "final_loads": [
+          39,
+          52,
+          29,
+          39
+        ],
+        "terminal_load_states_considered": 3880
+      }
+    }
+  ]
+}

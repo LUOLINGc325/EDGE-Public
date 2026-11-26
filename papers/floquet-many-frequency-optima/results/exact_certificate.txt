@@ -1,0 +1,5 @@
+Three-cycle rational response comparisons: 12.
+Intervals with both slope signs and center gain: 31.
+Uniform derivative interference <1/90, individual slopes >1/20 in magnitude.
+Single-harmonic gain 29/939 exceeds all later baseline loss 1/891.
+All checks passed.

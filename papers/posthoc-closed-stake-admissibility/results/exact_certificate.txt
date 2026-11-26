@@ -1,0 +1,3 @@
+Tied, fractional gap: 1341 budgets, 0 strict dominators.
+Ordered, suboptimal gap: 1341 budgets, 1 strict dominators.
+Exact gap gain 1/96 and positive cutoff on a full cut verified.

@@ -1,0 +1,4747 @@
+{
+  "summary": {
+    "all_checks_passed": true,
+    "dicke_exact_cases": 20,
+    "modular_exact_cases": 165,
+    "arbitrary_positive_sector_cases": 100,
+    "phase_scope_counterexample_certified": true,
+    "arithmetic": "Python integers and fractions.Fraction; no tolerance or float-based pass/fail"
+  },
+  "dicke": [
+    {
+      "N": 1,
+      "n": 0,
+      "column_count": "1",
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 1,
+      "n": 1,
+      "column_count": "1",
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "n": 0,
+      "column_count": "1",
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "n": 1,
+      "column_count": "16",
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "n": 2,
+      "column_count": "1",
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 3,
+      "n": 0,
+      "column_count": "1",
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 3,
+      "n": 1,
+      "column_count": "45",
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "n": 2,
+      "column_count": "45",
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "n": 3,
+      "column_count": "1",
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 4,
+      "n": 0,
+      "column_count": "1",
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 4,
+      "n": 1,
+      "column_count": "88",
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "n": 2,
+      "column_count": "720",
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 4,
+      "n": 3,
+      "column_count": "88",
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "n": 4,
+      "column_count": "1",
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 5,
+      "n": 0,
+      "column_count": "1",
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 5,
+      "n": 1,
+      "column_count": "145",
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "n": 2,
+      "column_count": "3160",
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "n": 3,
+      "column_count": "3160",
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "n": 4,
+      "column_count": "145",
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "n": 5,
+      "column_count": "1",
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    }
+  ],
+  "modular": [
+    {
+      "N": 1,
+      "K": 1,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "8"
+      }
+    },
+    {
+      "N": 1,
+      "K": 1,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "481",
+        "denominator": "625"
+      },
+      "diagonal": {
+        "numerator": "257",
+        "denominator": "625"
+      }
+    },
+    {
+      "N": 1,
+      "K": 1,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "481",
+        "denominator": "625"
+      },
+      "diagonal": {
+        "numerator": "3281",
+        "denominator": "5000"
+      }
+    },
+    {
+      "N": 1,
+      "K": 2,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 1,
+      "K": 2,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 1,
+      "K": 2,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 1,
+      "K": 2,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 1,
+      "K": 2,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 1,
+      "K": 2,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "K": 1,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 3,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "9",
+        "denominator": "128"
+      }
+    },
+    {
+      "N": 2,
+      "K": 1,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 3,
+      "W": {
+        "numerator": "231361",
+        "denominator": "390625"
+      },
+      "diagonal": {
+        "numerator": "69633",
+        "denominator": "390625"
+      }
+    },
+    {
+      "N": 2,
+      "K": 1,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 3,
+      "W": {
+        "numerator": "231361",
+        "denominator": "390625"
+      },
+      "diagonal": {
+        "numerator": "21575849",
+        "denominator": "50000000"
+      }
+    },
+    {
+      "N": 2,
+      "K": 2,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "8"
+      }
+    },
+    {
+      "N": 2,
+      "K": 2,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "69121",
+        "denominator": "83521"
+      },
+      "diagonal": {
+        "numerator": "65537",
+        "denominator": "83521"
+      }
+    },
+    {
+      "N": 2,
+      "K": 2,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "2696161",
+        "denominator": "2825761"
+      },
+      "diagonal": {
+        "numerator": "21523361",
+        "denominator": "22606088"
+      }
+    },
+    {
+      "N": 2,
+      "K": 2,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "K": 2,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "K": 2,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "K": 3,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "K": 3,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "K": 3,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "K": 3,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "K": 3,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "K": 3,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "K": 3,
+      "r": 2,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "K": 3,
+      "r": 2,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "K": 3,
+      "r": 2,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 3,
+      "K": 1,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 4,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "23",
+        "denominator": "1024"
+      }
+    },
+    {
+      "N": 3,
+      "K": 1,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 4,
+      "W": {
+        "numerator": "111284641",
+        "denominator": "244140625"
+      },
+      "diagonal": {
+        "numerator": "19737857",
+        "denominator": "244140625"
+      }
+    },
+    {
+      "N": 3,
+      "K": 1,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 4,
+      "W": {
+        "numerator": "111284641",
+        "denominator": "244140625"
+      },
+      "diagonal": {
+        "numerator": "71091733543",
+        "denominator": "250000000000"
+      }
+    },
+    {
+      "N": 3,
+      "K": 2,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "23",
+        "denominator": "128"
+      }
+    },
+    {
+      "N": 3,
+      "K": 2,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "4159",
+        "denominator": "6859"
+      },
+      "diagonal": {
+        "numerator": "65581",
+        "denominator": "130321"
+      }
+    },
+    {
+      "N": 3,
+      "K": 2,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "129781",
+        "denominator": "226981"
+      },
+      "diagonal": {
+        "numerator": "968551223",
+        "denominator": "1772267648"
+      }
+    },
+    {
+      "N": 3,
+      "K": 2,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "23",
+        "denominator": "128"
+      }
+    },
+    {
+      "N": 3,
+      "K": 2,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "74449",
+        "denominator": "117649"
+      },
+      "diagonal": {
+        "numerator": "421303",
+        "denominator": "823543"
+      }
+    },
+    {
+      "N": 3,
+      "K": 2,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "2687",
+        "denominator": "3087"
+      },
+      "diagonal": {
+        "numerator": "341641",
+        "denominator": "395136"
+      }
+    },
+    {
+      "N": 3,
+      "K": 3,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "8"
+      }
+    },
+    {
+      "N": 3,
+      "K": 3,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "16834561",
+        "denominator": "17850625"
+      },
+      "diagonal": {
+        "numerator": "16777217",
+        "denominator": "17850625"
+      }
+    },
+    {
+      "N": 3,
+      "K": 3,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "17652311041",
+        "denominator": "17748900625"
+      },
+      "diagonal": {
+        "numerator": "141214768241",
+        "denominator": "141991205000"
+      }
+    },
+    {
+      "N": 3,
+      "K": 3,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "K": 3,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "K": 3,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "K": 3,
+      "r": 2,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "K": 3,
+      "r": 2,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "K": 3,
+      "r": 2,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "K": 4,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 3,
+      "K": 4,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 3,
+      "K": 4,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 3,
+      "K": 4,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "K": 4,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "K": 4,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "K": 4,
+      "r": 2,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "K": 4,
+      "r": 2,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "K": 4,
+      "r": 2,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 3,
+      "K": 4,
+      "r": 3,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 3,
+      "K": 4,
+      "r": 3,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 3,
+      "K": 4,
+      "r": 3,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 4,
+      "K": 1,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 5,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "449",
+        "denominator": "32768"
+      }
+    },
+    {
+      "N": 4,
+      "K": 1,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 5,
+      "W": {
+        "numerator": "53527912321",
+        "denominator": "152587890625"
+      },
+      "diagonal": {
+        "numerator": "5818570753",
+        "denominator": "152587890625"
+      }
+    },
+    {
+      "N": 4,
+      "K": 1,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 5,
+      "W": {
+        "numerator": "53527912321",
+        "denominator": "152587890625"
+      },
+      "diagonal": {
+        "numerator": "938952491139329",
+        "denominator": "5000000000000000"
+      }
+    },
+    {
+      "N": 4,
+      "K": 2,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 3,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "361",
+        "denominator": "2048"
+      }
+    },
+    {
+      "N": 4,
+      "K": 2,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 3,
+      "W": {
+        "numerator": "6580884481",
+        "denominator": "15527402881"
+      },
+      "diagonal": {
+        "numerator": "4342153217",
+        "denominator": "15527402881"
+      }
+    },
+    {
+      "N": 4,
+      "K": 2,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 3,
+      "W": {
+        "numerator": "458788792321",
+        "denominator": "602425897921"
+      },
+      "diagonal": {
+        "numerator": "926525591245481",
+        "denominator": "1233768238942208"
+      }
+    },
+    {
+      "N": 4,
+      "K": 2,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "11",
+        "denominator": "256"
+      }
+    },
+    {
+      "N": 4,
+      "K": 2,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "1148747",
+        "denominator": "2672672"
+      },
+      "diagonal": {
+        "numerator": "720907",
+        "denominator": "2672672"
+      }
+    },
+    {
+      "N": 4,
+      "K": 2,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "1016161",
+        "denominator": "2825761"
+      },
+      "diagonal": {
+        "numerator": "236756971",
+        "denominator": "723394816"
+      }
+    },
+    {
+      "N": 4,
+      "K": 3,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "89",
+        "denominator": "625"
+      }
+    },
+    {
+      "N": 4,
+      "K": 3,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "2125835",
+        "denominator": "2672672"
+      },
+      "diagonal": {
+        "numerator": "2097163",
+        "denominator": "2672672"
+      }
+    },
+    {
+      "N": 4,
+      "K": 3,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "24853828971025",
+        "denominator": "72401192014321"
+      },
+      "diagonal": {
+        "numerator": "24853799210329",
+        "denominator": "72401192014321"
+      }
+    },
+    {
+      "N": 4,
+      "K": 3,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "89",
+        "denominator": "625"
+      }
+    },
+    {
+      "N": 4,
+      "K": 3,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "1476624385",
+        "denominator": "4362470401"
+      },
+      "diagonal": {
+        "numerator": "1476395009",
+        "denominator": "4362470401"
+      }
+    },
+    {
+      "N": 4,
+      "K": 3,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "282459297265",
+        "denominator": "288679469521"
+      },
+      "diagonal": {
+        "numerator": "282429536569",
+        "denominator": "288679469521"
+      }
+    },
+    {
+      "N": 4,
+      "K": 3,
+      "r": 2,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 4,
+      "K": 3,
+      "r": 2,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 4,
+      "K": 3,
+      "r": 2,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 4,
+      "K": 4,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "8"
+      }
+    },
+    {
+      "N": 4,
+      "K": 4,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "4295884801",
+        "denominator": "4362470401"
+      },
+      "diagonal": {
+        "numerator": "4294967297",
+        "denominator": "4362470401"
+      }
+    },
+    {
+      "N": 4,
+      "K": 4,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "115813799469121",
+        "denominator": "115884385331521"
+      },
+      "diagonal": {
+        "numerator": "926510094425921",
+        "denominator": "927075082652168"
+      }
+    },
+    {
+      "N": 4,
+      "K": 4,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      },
+      "diagonal": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "K": 4,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      },
+      "diagonal": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "K": 4,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      },
+      "diagonal": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "K": 4,
+      "r": 2,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 4,
+      "K": 4,
+      "r": 2,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 4,
+      "K": 4,
+      "r": 2,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 4,
+      "K": 4,
+      "r": 3,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      },
+      "diagonal": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "K": 4,
+      "r": 3,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      },
+      "diagonal": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "K": 4,
+      "r": 3,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      },
+      "diagonal": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      },
+      "diagonal": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      },
+      "diagonal": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      },
+      "diagonal": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 2,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 2,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 2,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "5",
+        "denominator": "9"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 3,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      },
+      "diagonal": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 3,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      },
+      "diagonal": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 3,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "11",
+        "denominator": "32"
+      },
+      "diagonal": {
+        "numerator": "11",
+        "denominator": "32"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 4,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 4,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 4,
+      "K": 5,
+      "r": 4,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 5,
+      "K": 1,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 6,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1653",
+        "denominator": "262144"
+      }
+    },
+    {
+      "N": 5,
+      "K": 1,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 6,
+      "W": {
+        "numerator": "25746925826401",
+        "denominator": "95367431640625"
+      },
+      "diagonal": {
+        "numerator": "1775505019137",
+        "denominator": "95367431640625"
+      }
+    },
+    {
+      "N": 5,
+      "K": 1,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 6,
+      "W": {
+        "numerator": "25746925826401",
+        "denominator": "95367431640625"
+      },
+      "diagonal": {
+        "numerator": "3106811499951078853",
+        "denominator": "25000000000000000000"
+      }
+    },
+    {
+      "N": 5,
+      "K": 2,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 3,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1653",
+        "denominator": "32768"
+      }
+    },
+    {
+      "N": 5,
+      "K": 2,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 3,
+      "W": {
+        "numerator": "9377224081",
+        "denominator": "31414372081"
+      },
+      "diagonal": {
+        "numerator": "4502061201",
+        "denominator": "31414372081"
+      }
+    },
+    {
+      "N": 5,
+      "K": 2,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 3,
+      "W": {
+        "numerator": "4741965026401",
+        "denominator": "19485170468401"
+      },
+      "diagonal": {
+        "numerator": "134344031705577653",
+        "denominator": "638490065908563968"
+      }
+    },
+    {
+      "N": 5,
+      "K": 2,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 3,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1653",
+        "denominator": "32768"
+      }
+    },
+    {
+      "N": 5,
+      "K": 2,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 3,
+      "W": {
+        "numerator": "1322365455361",
+        "denominator": "4311773343361"
+      },
+      "diagonal": {
+        "numerator": "622977351681",
+        "denominator": "4311773343361"
+      }
+    },
+    {
+      "N": 5,
+      "K": 2,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 3,
+      "W": {
+        "numerator": "28976053441",
+        "denominator": "45165175441"
+      },
+      "diagonal": {
+        "numerator": "926578108245173",
+        "denominator": "1479972468850688"
+      }
+    },
+    {
+      "N": 5,
+      "K": 3,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "3301",
+        "denominator": "14641"
+      },
+      "diagonal": {
+        "numerator": "3161",
+        "denominator": "14641"
+      }
+    },
+    {
+      "N": 5,
+      "K": 3,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "2169227",
+        "denominator": "3748322"
+      },
+      "diagonal": {
+        "numerator": "2097547",
+        "denominator": "3748322"
+      }
+    },
+    {
+      "N": 5,
+      "K": 3,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "892477409681701",
+        "denominator": "2825845365659761"
+      },
+      "diagonal": {
+        "numerator": "892477335279961",
+        "denominator": "2825845365659761"
+      }
+    },
+    {
+      "N": 5,
+      "K": 3,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "29",
+        "denominator": "1000"
+      }
+    },
+    {
+      "N": 5,
+      "K": 3,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "488202269",
+        "denominator": "2231328125"
+      },
+      "diagonal": {
+        "numerator": "486539293",
+        "denominator": "2231328125"
+      }
+    },
+    {
+      "N": 5,
+      "K": 3,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "511917020189",
+        "denominator": "2218612578125"
+      },
+      "diagonal": {
+        "numerator": "4095228278989",
+        "denominator": "17748900625000"
+      }
+    },
+    {
+      "N": 5,
+      "K": 3,
+      "r": 2,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "3301",
+        "denominator": "14641"
+      },
+      "diagonal": {
+        "numerator": "3161",
+        "denominator": "14641"
+      }
+    },
+    {
+      "N": 5,
+      "K": 3,
+      "r": 2,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "53016576001",
+        "denominator": "168823196161"
+      },
+      "diagonal": {
+        "numerator": "53016002561",
+        "denominator": "168823196161"
+      }
+    },
+    {
+      "N": 5,
+      "K": 3,
+      "r": 2,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "282503941381",
+        "denominator": "298248146641"
+      },
+      "diagonal": {
+        "numerator": "282429539641",
+        "denominator": "298248146641"
+      }
+    },
+    {
+      "N": 5,
+      "K": 4,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "6"
+      },
+      "diagonal": {
+        "numerator": "73",
+        "denominator": "648"
+      }
+    },
+    {
+      "N": 5,
+      "K": 4,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "477728329",
+        "denominator": "515607849"
+      },
+      "diagonal": {
+        "numerator": "4294967441",
+        "denominator": "4640470641"
+      }
+    },
+    {
+      "N": 5,
+      "K": 4,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "33585991299598427",
+        "denominator": "144784854907222562"
+      },
+      "diagonal": {
+        "numerator": "134343963691758473",
+        "denominator": "579139419628890248"
+      }
+    },
+    {
+      "N": 5,
+      "K": 4,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "6"
+      },
+      "diagonal": {
+        "numerator": "73",
+        "denominator": "648"
+      }
+    },
+    {
+      "N": 5,
+      "K": 4,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "9885315007",
+        "denominator": "42742111167"
+      },
+      "diagonal": {
+        "numerator": "88967179703",
+        "denominator": "384679000503"
+      }
+    },
+    {
+      "N": 5,
+      "K": 4,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "33089700037901",
+        "denominator": "33190629283406"
+      },
+      "diagonal": {
+        "numerator": "132358584917999",
+        "denominator": "132762517133624"
+      }
+    },
+    {
+      "N": 5,
+      "K": 4,
+      "r": 2,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 4,
+      "r": 2,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 4,
+      "r": 2,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 4,
+      "r": 3,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 4,
+      "r": 3,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 4,
+      "r": 3,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "8"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 2,
+      "W": {
+        "numerator": "1099526307841",
+        "denominator": "1103812890625"
+      },
+      "diagonal": {
+        "numerator": "1099511627777",
+        "denominator": "1103812890625"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 2,
+      "W": {
+        "numerator": "759854094241994401",
+        "denominator": "759905565281640625"
+      },
+      "diagonal": {
+        "numerator": "6078832729528464401",
+        "denominator": "6079244522253125000"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 2,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 2,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 2,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 3,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 3,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 3,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 4,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 4,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "K": 5,
+      "r": 4,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 0,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 0,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 0,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 1,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 1,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 1,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 2,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 2,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 2,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 3,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 3,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 3,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "79",
+        "denominator": "250"
+      },
+      "diagonal": {
+        "numerator": "79",
+        "denominator": "250"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 4,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 4,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 4,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "29",
+        "denominator": "125"
+      },
+      "diagonal": {
+        "numerator": "29",
+        "denominator": "125"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 5,
+      "a": 1,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 5,
+      "a": 2,
+      "b": 1,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 5,
+      "K": 6,
+      "r": 5,
+      "a": 1,
+      "b": 3,
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    }
+  ],
+  "positive_sectors": [
+    {
+      "N": 1,
+      "trial": 0,
+      "sector_basis_amplitudes": [
+        1,
+        0
+      ],
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 1,
+      "sector_basis_amplitudes": [
+        0,
+        1
+      ],
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 2,
+      "sector_basis_amplitudes": [
+        4,
+        3
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "362401",
+        "denominator": "390625"
+      },
+      "diagonal": {
+        "numerator": "72097",
+        "denominator": "390625"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 3,
+      "sector_basis_amplitudes": [
+        3,
+        1
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "481",
+        "denominator": "625"
+      },
+      "diagonal": {
+        "numerator": "3281",
+        "denominator": "5000"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 4,
+      "sector_basis_amplitudes": [
+        3,
+        3
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "8"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 5,
+      "sector_basis_amplitudes": [
+        4,
+        1
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "69121",
+        "denominator": "83521"
+      },
+      "diagonal": {
+        "numerator": "65537",
+        "denominator": "83521"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 6,
+      "sector_basis_amplitudes": [
+        1,
+        0
+      ],
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 7,
+      "sector_basis_amplitudes": [
+        4,
+        4
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "8"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 8,
+      "sector_basis_amplitudes": [
+        0,
+        1
+      ],
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 9,
+      "sector_basis_amplitudes": [
+        3,
+        2
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "24961",
+        "denominator": "28561"
+      },
+      "diagonal": {
+        "numerator": "6817",
+        "denominator": "28561"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 10,
+      "sector_basis_amplitudes": [
+        0,
+        4
+      ],
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 11,
+      "sector_basis_amplitudes": [
+        2,
+        4
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "481",
+        "denominator": "625"
+      },
+      "diagonal": {
+        "numerator": "257",
+        "denominator": "625"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 12,
+      "sector_basis_amplitudes": [
+        2,
+        0
+      ],
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 13,
+      "sector_basis_amplitudes": [
+        0,
+        4
+      ],
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 14,
+      "sector_basis_amplitudes": [
+        2,
+        1
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "481",
+        "denominator": "625"
+      },
+      "diagonal": {
+        "numerator": "257",
+        "denominator": "625"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 15,
+      "sector_basis_amplitudes": [
+        3,
+        4
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "362401",
+        "denominator": "390625"
+      },
+      "diagonal": {
+        "numerator": "72097",
+        "denominator": "390625"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 16,
+      "sector_basis_amplitudes": [
+        2,
+        1
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "481",
+        "denominator": "625"
+      },
+      "diagonal": {
+        "numerator": "257",
+        "denominator": "625"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 17,
+      "sector_basis_amplitudes": [
+        2,
+        4
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "481",
+        "denominator": "625"
+      },
+      "diagonal": {
+        "numerator": "257",
+        "denominator": "625"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 18,
+      "sector_basis_amplitudes": [
+        2,
+        2
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "8"
+      }
+    },
+    {
+      "N": 1,
+      "trial": 19,
+      "sector_basis_amplitudes": [
+        2,
+        4
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "481",
+        "denominator": "625"
+      },
+      "diagonal": {
+        "numerator": "257",
+        "denominator": "625"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 0,
+      "sector_basis_amplitudes": [
+        1,
+        4,
+        2
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "1342945",
+        "denominator": "1874161"
+      },
+      "diagonal": {
+        "numerator": "1048833",
+        "denominator": "1874161"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 1,
+      "sector_basis_amplitudes": [
+        0,
+        2,
+        0
+      ],
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 2,
+      "sector_basis_amplitudes": [
+        1,
+        0,
+        2
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "481",
+        "denominator": "625"
+      },
+      "diagonal": {
+        "numerator": "257",
+        "denominator": "625"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 3,
+      "sector_basis_amplitudes": [
+        4,
+        3,
+        3
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "74215",
+        "denominator": "79507"
+      },
+      "diagonal": {
+        "numerator": "177073",
+        "denominator": "3418801"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 4,
+      "sector_basis_amplitudes": [
+        3,
+        3,
+        4
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "74215",
+        "denominator": "79507"
+      },
+      "diagonal": {
+        "numerator": "177073",
+        "denominator": "3418801"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 5,
+      "sector_basis_amplitudes": [
+        4,
+        3,
+        1
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "139243",
+        "denominator": "214375"
+      },
+      "diagonal": {
+        "numerator": "24359",
+        "denominator": "214375"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 6,
+      "sector_basis_amplitudes": [
+        2,
+        1,
+        1
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "235",
+        "denominator": "343"
+      },
+      "diagonal": {
+        "numerator": "39",
+        "denominator": "343"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 7,
+      "sector_basis_amplitudes": [
+        0,
+        1,
+        3
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "8845",
+        "denominator": "14641"
+      },
+      "diagonal": {
+        "numerator": "6577",
+        "denominator": "14641"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 8,
+      "sector_basis_amplitudes": [
+        3,
+        1,
+        0
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "8845",
+        "denominator": "14641"
+      },
+      "diagonal": {
+        "numerator": "6577",
+        "denominator": "14641"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 9,
+      "sector_basis_amplitudes": [
+        3,
+        1,
+        4
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "44005",
+        "denominator": "59049"
+      },
+      "diagonal": {
+        "numerator": "72113",
+        "denominator": "531441"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 10,
+      "sector_basis_amplitudes": [
+        3,
+        3,
+        3
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "9",
+        "denominator": "128"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 11,
+      "sector_basis_amplitudes": [
+        0,
+        3,
+        0
+      ],
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 12,
+      "sector_basis_amplitudes": [
+        3,
+        3,
+        4
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "74215",
+        "denominator": "79507"
+      },
+      "diagonal": {
+        "numerator": "177073",
+        "denominator": "3418801"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 13,
+      "sector_basis_amplitudes": [
+        0,
+        0,
+        3
+      ],
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 14,
+      "sector_basis_amplitudes": [
+        1,
+        4,
+        2
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "1342945",
+        "denominator": "1874161"
+      },
+      "diagonal": {
+        "numerator": "1048833",
+        "denominator": "1874161"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 15,
+      "sector_basis_amplitudes": [
+        3,
+        1,
+        1
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "3289",
+        "denominator": "10368"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 16,
+      "sector_basis_amplitudes": [
+        3,
+        2,
+        0
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "46945",
+        "denominator": "83521"
+      },
+      "diagonal": {
+        "numerator": "10657",
+        "denominator": "83521"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 17,
+      "sector_basis_amplitudes": [
+        2,
+        3,
+        3
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "27091",
+        "denominator": "29791"
+      },
+      "diagonal": {
+        "numerator": "111793",
+        "denominator": "923521"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 18,
+      "sector_basis_amplitudes": [
+        2,
+        4,
+        2
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "481",
+        "denominator": "625"
+      },
+      "diagonal": {
+        "numerator": "2049",
+        "denominator": "5000"
+      }
+    },
+    {
+      "N": 2,
+      "trial": 19,
+      "sector_basis_amplitudes": [
+        4,
+        0,
+        0
+      ],
+      "M": 1,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 0,
+      "sector_basis_amplitudes": [
+        0,
+        1,
+        4,
+        2
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "3800173",
+        "denominator": "9150625"
+      },
+      "diagonal": {
+        "numerator": "2949421",
+        "denominator": "9150625"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 1,
+      "sector_basis_amplitudes": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "6543251",
+        "denominator": "8954912"
+      },
+      "diagonal": {
+        "numerator": "1654951",
+        "denominator": "35819648"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 2,
+      "sector_basis_amplitudes": [
+        0,
+        1,
+        0,
+        3
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "367",
+        "denominator": "1152"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 3,
+      "sector_basis_amplitudes": [
+        0,
+        0,
+        2,
+        3
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "1151",
+        "denominator": "3087"
+      },
+      "diagonal": {
+        "numerator": "41",
+        "denominator": "441"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 4,
+      "sector_basis_amplitudes": [
+        2,
+        3,
+        3,
+        1
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "9412357",
+        "denominator": "12117361"
+      },
+      "diagonal": {
+        "numerator": "590747",
+        "denominator": "12117361"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 5,
+      "sector_basis_amplitudes": [
+        3,
+        1,
+        1,
+        3
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "5",
+        "denominator": "9"
+      },
+      "diagonal": {
+        "numerator": "367",
+        "denominator": "9216"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 6,
+      "sector_basis_amplitudes": [
+        2,
+        1,
+        2,
+        2
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "207853",
+        "denominator": "279841"
+      },
+      "diagonal": {
+        "numerator": "12077",
+        "denominator": "279841"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 7,
+      "sector_basis_amplitudes": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "diagonal": {
+        "numerator": "23",
+        "denominator": "128"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 8,
+      "sector_basis_amplitudes": [
+        3,
+        2,
+        4,
+        3
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "197213",
+        "denominator": "257049"
+      },
+      "diagonal": {
+        "numerator": "165209",
+        "denominator": "2056392"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 9,
+      "sector_basis_amplitudes": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "211",
+        "denominator": "343"
+      },
+      "diagonal": {
+        "numerator": "13",
+        "denominator": "343"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 10,
+      "sector_basis_amplitudes": [
+        1,
+        4,
+        3,
+        1
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "3050911",
+        "denominator": "5021863"
+      },
+      "diagonal": {
+        "numerator": "463481",
+        "denominator": "5021863"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 11,
+      "sector_basis_amplitudes": [
+        0,
+        4,
+        1,
+        0
+      ],
+      "M": 2,
+      "W": {
+        "numerator": "345605",
+        "denominator": "751689"
+      },
+      "diagonal": {
+        "numerator": "327685",
+        "denominator": "751689"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 12,
+      "sector_basis_amplitudes": [
+        2,
+        0,
+        3,
+        3
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "142511",
+        "denominator": "320000"
+      },
+      "diagonal": {
+        "numerator": "151031",
+        "denominator": "1280000"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 13,
+      "sector_basis_amplitudes": [
+        2,
+        4,
+        2,
+        1
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "10165633",
+        "denominator": "17850625"
+      },
+      "diagonal": {
+        "numerator": "2960897",
+        "denominator": "17850625"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 14,
+      "sector_basis_amplitudes": [
+        0,
+        2,
+        4,
+        4
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "3487",
+        "denominator": "6859"
+      },
+      "diagonal": {
+        "numerator": "11821",
+        "denominator": "130321"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 15,
+      "sector_basis_amplitudes": [
+        2,
+        1,
+        0,
+        4
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "137293",
+        "denominator": "279841"
+      },
+      "diagonal": {
+        "numerator": "65837",
+        "denominator": "279841"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 16,
+      "sector_basis_amplitudes": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "239",
+        "denominator": "512"
+      },
+      "diagonal": {
+        "numerator": "5783",
+        "denominator": "32768"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 17,
+      "sector_basis_amplitudes": [
+        3,
+        1,
+        3,
+        0
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "197213",
+        "denominator": "257049"
+      },
+      "diagonal": {
+        "numerator": "33539",
+        "denominator": "257049"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 18,
+      "sector_basis_amplitudes": [
+        3,
+        0,
+        2,
+        4
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "697153",
+        "denominator": "1874161"
+      },
+      "diagonal": {
+        "numerator": "83617",
+        "denominator": "1874161"
+      }
+    },
+    {
+      "N": 3,
+      "trial": 19,
+      "sector_basis_amplitudes": [
+        1,
+        4,
+        4,
+        2
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "72840673",
+        "denominator": "104060401"
+      },
+      "diagonal": {
+        "numerator": "5898497",
+        "denominator": "104060401"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 0,
+      "sector_basis_amplitudes": [
+        3,
+        3,
+        4,
+        1,
+        1
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "14916121",
+        "denominator": "28398241"
+      },
+      "diagonal": {
+        "numerator": "23884969",
+        "denominator": "227185928"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 1,
+      "sector_basis_amplitudes": [
+        4,
+        0,
+        1,
+        1,
+        3
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "15527",
+        "denominator": "42875"
+      },
+      "diagonal": {
+        "numerator": "2083",
+        "denominator": "42875"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 2,
+      "sector_basis_amplitudes": [
+        1,
+        2,
+        2,
+        2,
+        4
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "21633601",
+        "denominator": "28398241"
+      },
+      "diagonal": {
+        "numerator": "294913",
+        "denominator": "28398241"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 3,
+      "sector_basis_amplitudes": [
+        4,
+        1,
+        2,
+        1,
+        4
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "4391",
+        "denominator": "8192"
+      },
+      "diagonal": {
+        "numerator": "19723",
+        "denominator": "1048576"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 4,
+      "sector_basis_amplitudes": [
+        4,
+        0,
+        3,
+        3,
+        2
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "1472143",
+        "denominator": "3660250"
+      },
+      "diagonal": {
+        "numerator": "134177",
+        "denominator": "3660250"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 5,
+      "sector_basis_amplitudes": [
+        2,
+        3,
+        1,
+        2,
+        3
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "14540821",
+        "denominator": "25411681"
+      },
+      "diagonal": {
+        "numerator": "607433",
+        "denominator": "25411681"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 6,
+      "sector_basis_amplitudes": [
+        0,
+        4,
+        4,
+        2,
+        0
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "229595",
+        "denominator": "468512"
+      },
+      "diagonal": {
+        "numerator": "25867",
+        "denominator": "468512"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 7,
+      "sector_basis_amplitudes": [
+        2,
+        1,
+        2,
+        4,
+        0
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "155521",
+        "denominator": "393216"
+      },
+      "diagonal": {
+        "numerator": "247993",
+        "denominator": "3538944"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 8,
+      "sector_basis_amplitudes": [
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "8306987",
+        "denominator": "9759362"
+      },
+      "diagonal": {
+        "numerator": "398669",
+        "denominator": "39037448"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 9,
+      "sector_basis_amplitudes": [
+        2,
+        4,
+        1,
+        2,
+        3
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "5035069",
+        "denominator": "10673289"
+      },
+      "diagonal": {
+        "numerator": "644137",
+        "denominator": "10673289"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 10,
+      "sector_basis_amplitudes": [
+        2,
+        0,
+        3,
+        4,
+        1
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "2807647",
+        "denominator": "8477283"
+      },
+      "diagonal": {
+        "numerator": "1165705",
+        "denominator": "25431849"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 11,
+      "sector_basis_amplitudes": [
+        3,
+        0,
+        2,
+        2,
+        2
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "3255361",
+        "denominator": "7890481"
+      },
+      "diagonal": {
+        "numerator": "213665",
+        "denominator": "7890481"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 12,
+      "sector_basis_amplitudes": [
+        2,
+        3,
+        2,
+        0,
+        2
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "929003",
+        "denominator": "2672672"
+      },
+      "diagonal": {
+        "numerator": "95275",
+        "denominator": "2672672"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 13,
+      "sector_basis_amplitudes": [
+        1,
+        4,
+        2,
+        4,
+        4
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "570749761",
+        "denominator": "815730721"
+      },
+      "diagonal": {
+        "numerator": "11784193",
+        "denominator": "815730721"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 14,
+      "sector_basis_amplitudes": [
+        4,
+        1,
+        3,
+        0,
+        4
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "716243",
+        "denominator": "911250"
+      },
+      "diagonal": {
+        "numerator": "40459",
+        "denominator": "546750"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 15,
+      "sector_basis_amplitudes": [
+        3,
+        0,
+        4,
+        3,
+        4
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "291783985",
+        "denominator": "607573201"
+      },
+      "diagonal": {
+        "numerator": "47835385",
+        "denominator": "607573201"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 16,
+      "sector_basis_amplitudes": [
+        3,
+        2,
+        0,
+        1,
+        3
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "73307",
+        "denominator": "260642"
+      },
+      "diagonal": {
+        "numerator": "17869",
+        "denominator": "1042568"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 17,
+      "sector_basis_amplitudes": [
+        1,
+        4,
+        4,
+        4,
+        3
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "17836825",
+        "denominator": "20820969"
+      },
+      "diagonal": {
+        "numerator": "3262601",
+        "denominator": "166567752"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 18,
+      "sector_basis_amplitudes": [
+        4,
+        2,
+        3,
+        1,
+        1
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "814789",
+        "denominator": "1399489"
+      },
+      "diagonal": {
+        "numerator": "687439",
+        "denominator": "9796423"
+      }
+    },
+    {
+      "N": 4,
+      "trial": 19,
+      "sector_basis_amplitudes": [
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "82403",
+        "denominator": "118098"
+      },
+      "diagonal": {
+        "numerator": "11861",
+        "denominator": "472392"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 0,
+      "sector_basis_amplitudes": [
+        0,
+        4,
+        3,
+        1,
+        0,
+        4
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "392621",
+        "denominator": "1647086"
+      },
+      "diagonal": {
+        "numerator": "270573",
+        "denominator": "13176688"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 1,
+      "sector_basis_amplitudes": [
+        4,
+        0,
+        3,
+        2,
+        0,
+        3
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "174233221",
+        "denominator": "577200625"
+      },
+      "diagonal": {
+        "numerator": "21613817",
+        "denominator": "577200625"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 2,
+      "sector_basis_amplitudes": [
+        2,
+        4,
+        2,
+        1,
+        1,
+        2
+      ],
+      "M": 6,
+      "W": {
+        "numerator": "156082741",
+        "denominator": "418161601"
+      },
+      "diagonal": {
+        "numerator": "10315497",
+        "denominator": "418161601"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 3,
+      "sector_basis_amplitudes": [
+        1,
+        2,
+        2,
+        1,
+        3,
+        4
+      ],
+      "M": 6,
+      "W": {
+        "numerator": "15987",
+        "denominator": "29282"
+      },
+      "diagonal": {
+        "numerator": "933061",
+        "denominator": "151797888"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 4,
+      "sector_basis_amplitudes": [
+        0,
+        2,
+        2,
+        2,
+        3,
+        2
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "389006641",
+        "denominator": "492884401"
+      },
+      "diagonal": {
+        "numerator": "2606641",
+        "denominator": "492884401"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 5,
+      "sector_basis_amplitudes": [
+        2,
+        2,
+        2,
+        1,
+        0,
+        3
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "17532661",
+        "denominator": "47458321"
+      },
+      "diagonal": {
+        "numerator": "856057",
+        "denominator": "47458321"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 6,
+      "sector_basis_amplitudes": [
+        4,
+        1,
+        4,
+        3,
+        3,
+        1
+      ],
+      "M": 6,
+      "W": {
+        "numerator": "6656229841",
+        "denominator": "10098039121"
+      },
+      "diagonal": {
+        "numerator": "228843547",
+        "denominator": "10098039121"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 7,
+      "sector_basis_amplitudes": [
+        2,
+        2,
+        4,
+        2,
+        3,
+        3
+      ],
+      "M": 6,
+      "W": {
+        "numerator": "549877907",
+        "denominator": "746602082"
+      },
+      "diagonal": {
+        "numerator": "104449001",
+        "denominator": "2986408328"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 8,
+      "sector_basis_amplitudes": [
+        0,
+        2,
+        2,
+        4,
+        3,
+        3
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "444861467",
+        "denominator": "704550722"
+      },
+      "diagonal": {
+        "numerator": "104448873",
+        "denominator": "2818202888"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 9,
+      "sector_basis_amplitudes": [
+        1,
+        2,
+        1,
+        4,
+        2,
+        2
+      ],
+      "M": 6,
+      "W": {
+        "numerator": "1130948341",
+        "denominator": "2136750625"
+      },
+      "diagonal": {
+        "numerator": "207171417",
+        "denominator": "2136750625"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 10,
+      "sector_basis_amplitudes": [
+        1,
+        2,
+        1,
+        1,
+        4,
+        3
+      ],
+      "M": 6,
+      "W": {
+        "numerator": "5178721",
+        "denominator": "17850625"
+      },
+      "diagonal": {
+        "numerator": "4776361",
+        "denominator": "142805000"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 11,
+      "sector_basis_amplitudes": [
+        0,
+        0,
+        2,
+        1,
+        0,
+        1
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "534887",
+        "denominator": "2255067"
+      },
+      "diagonal": {
+        "numerator": "270707",
+        "denominator": "2255067"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 12,
+      "sector_basis_amplitudes": [
+        4,
+        2,
+        1,
+        3,
+        1,
+        2
+      ],
+      "M": 6,
+      "W": {
+        "numerator": "236715001",
+        "denominator": "442050625"
+      },
+      "diagonal": {
+        "numerator": "20838977",
+        "denominator": "442050625"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 13,
+      "sector_basis_amplitudes": [
+        0,
+        2,
+        3,
+        3,
+        2,
+        0
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "2539279",
+        "denominator": "3660250"
+      },
+      "diagonal": {
+        "numerator": "519247",
+        "denominator": "29282000"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 14,
+      "sector_basis_amplitudes": [
+        2,
+        1,
+        0,
+        2,
+        1,
+        4
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "77923",
+        "denominator": "214375"
+      },
+      "diagonal": {
+        "numerator": "8929",
+        "denominator": "245000"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 15,
+      "sector_basis_amplitudes": [
+        4,
+        3,
+        4,
+        3,
+        1,
+        1
+      ],
+      "M": 6,
+      "W": {
+        "numerator": "6435296401",
+        "denominator": "10098039121"
+      },
+      "diagonal": {
+        "numerator": "228843547",
+        "denominator": "10098039121"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 16,
+      "sector_basis_amplitudes": [
+        0,
+        3,
+        2,
+        0,
+        3,
+        4
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "6159961",
+        "denominator": "28398241"
+      },
+      "diagonal": {
+        "numerator": "1388593",
+        "denominator": "227185928"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 17,
+      "sector_basis_amplitudes": [
+        4,
+        2,
+        0,
+        4,
+        2,
+        3
+      ],
+      "M": 5,
+      "W": {
+        "numerator": "117527449",
+        "denominator": "284765625"
+      },
+      "diagonal": {
+        "numerator": "207240097",
+        "denominator": "2562890625"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 18,
+      "sector_basis_amplitudes": [
+        2,
+        4,
+        3,
+        0,
+        0,
+        0
+      ],
+      "M": 3,
+      "W": {
+        "numerator": "2362643",
+        "denominator": "12731058"
+      },
+      "diagonal": {
+        "numerator": "3779467",
+        "denominator": "114579522"
+      }
+    },
+    {
+      "N": 5,
+      "trial": 19,
+      "sector_basis_amplitudes": [
+        1,
+        0,
+        2,
+        3,
+        0,
+        3
+      ],
+      "M": 4,
+      "W": {
+        "numerator": "969163",
+        "denominator": "3430000"
+      },
+      "diagonal": {
+        "numerator": "1539163",
+        "denominator": "27440000"
+      }
+    }
+  ],
+  "phase_scope_guard": {
+    "N": 96,
+    "K": 1,
+    "p": "1/2",
+    "phase": "pi/4",
+    "state": "T tensor power 96",
+    "one_admissible_type_count": "190130025855986503728175134637676944891231668992503309884597697097984770789697050769809965041319936000000",
+    "comparison_12_power_N": "39939223824273992215667642551956428337968885602521915290518994217942463316460321327052965050967304175616",
+    "strict_integer_inequality": true,
+    "interpretation": "The diagonal lower bound fails without the nonnegative-amplitude assumption."
+  }
+}

@@ -1,0 +1,2 @@
+interval representations: 8008 exhaustive + 550 seeded passed
+chordal reductions: 256 exhaustive + 120 seeded passed; 167 satisfiable cases

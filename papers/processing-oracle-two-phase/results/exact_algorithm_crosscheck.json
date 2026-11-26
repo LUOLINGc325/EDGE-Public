@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "n": 1,
+      "p": "1/7",
+      "x": "3/2",
+      "optimal_competitive_ratio": "1",
+      "threshold_residual": 0,
+      "root_optimal_actions": [
+        "execute_unknown"
+      ],
+      "state_count": 4,
+      "denominator_bound": 23,
+      "bisection_lower": "1",
+      "bisection_upper": "1",
+      "threshold_evaluations": 1,
+      "input_scaling": {
+        "scale_q": 14,
+        "integer_p": 2,
+        "integer_x": 21,
+        "threshold_numerator": 1,
+        "threshold_denominator": 1
+      },
+      "known_long_execution_included": true,
+      "two_phase_assumption": false
+    },
+    {
+      "n": 2,
+      "p": "1",
+      "x": "4",
+      "optimal_competitive_ratio": "11/7",
+      "threshold_residual": 0,
+      "root_optimal_actions": [
+        "execute_unknown"
+      ],
+      "state_count": 10,
+      "denominator_bound": 15,
+      "bisection_lower": "201/128",
+      "bisection_upper": "805/512",
+      "threshold_evaluations": 10,
+      "input_scaling": {
+        "scale_q": 1,
+        "integer_p": 1,
+        "integer_x": 4,
+        "threshold_numerator": 11,
+        "threshold_denominator": 7
+      },
+      "known_long_execution_included": true,
+      "two_phase_assumption": false
+    },
+    {
+      "n": 30,
+      "p": "100",
+      "x": "4",
+      "optimal_competitive_ratio": "11928/11761",
+      "threshold_residual": 0,
+      "root_optimal_actions": [
+        "execute_unknown"
+      ],
+      "state_count": 5456,
+      "denominator_bound": 48360,
+      "bisection_lower": "34847628539/34359738368",
+      "bisection_upper": "139390514185/137438953472",
+      "threshold_evaluations": 38,
+      "input_scaling": {
+        "scale_q": 1,
+        "integer_p": 100,
+        "integer_x": 4,
+        "threshold_numerator": 11928,
+        "threshold_denominator": 11761
+      },
+      "known_long_execution_included": true,
+      "two_phase_assumption": false
+    }
+  ],
+  "comparison": "n=2 matches original paper; n=30 matches separately written recursive Fraction game; n=1 checks boundary"
+}

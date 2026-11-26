@@ -1,0 +1,608 @@
+[
+  {
+    "N": 2,
+    "eta": 0.5,
+    "rho": -0.35,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 30.650005076538115,
+    "coefficient_minus_proposed": 5.076538116099982e-06,
+    "minimum_primal_inequality_residual": -2.783306740639091e-08,
+    "minimum_gram_eigenvalue": -2.1064560331095327e-07,
+    "minimum_dual_slack_eigenvalue": -4.390937974191697e-08,
+    "theory": 30.65,
+    "active": "E_eta",
+    "step_duals": {
+      "step_2": 15.32500277124076
+    }
+  },
+  {
+    "N": 3,
+    "eta": 0.5,
+    "rho": -0.35,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 126.65009364981134,
+    "coefficient_minus_proposed": 9.36498113333073e-05,
+    "minimum_primal_inequality_residual": -2.9476771956638004e-07,
+    "minimum_gram_eigenvalue": -2.4700143549490287e-06,
+    "minimum_dual_slack_eigenvalue": -3.250475224670792e-07,
+    "theory": 126.65,
+    "active": "E_eta",
+    "step_duals": {
+      "step_3": 63.325050186687136
+    }
+  },
+  {
+    "N": 4,
+    "eta": 0.5,
+    "rho": -0.35,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 510.6622688499856,
+    "coefficient_minus_proposed": 0.012268849985616725,
+    "minimum_primal_inequality_residual": -2.5234135136997793e-06,
+    "minimum_gram_eigenvalue": -2.213528180863274e-06,
+    "minimum_dual_slack_eigenvalue": -3.1265537185547078e-06,
+    "theory": 510.65,
+    "active": "E_eta",
+    "step_duals": {
+      "step_2": 1.9835325582057017e-05,
+      "step_3": 0.00016168817100863846,
+      "step_4": 255.33116932982878
+    }
+  },
+  {
+    "N": 2,
+    "eta": 0.5,
+    "rho": -0.45,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 16.678639773827655,
+    "coefficient_minus_proposed": 8.468348156043248e-07,
+    "minimum_primal_inequality_residual": -1.3142216204187207e-08,
+    "minimum_gram_eigenvalue": -1.696482677187359e-08,
+    "minimum_dual_slack_eigenvalue": -1.3432050620094143e-08,
+    "theory": 16.67863892699284,
+    "active": "E_rho",
+    "step_duals": {
+      "step_2": 8.339319960103927
+    }
+  },
+  {
+    "N": 3,
+    "eta": 0.5,
+    "rho": -0.45,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 82.91365225446482,
+    "coefficient_minus_proposed": 3.2322779901505783e-06,
+    "minimum_primal_inequality_residual": -3.2783276537884376e-08,
+    "minimum_gram_eigenvalue": -1.594241645203827e-07,
+    "minimum_dual_slack_eigenvalue": -2.6549497224885363e-08,
+    "theory": 82.91364902218683,
+    "active": "E_rho",
+    "step_duals": {
+      "step_3": 41.456825946070104
+    }
+  },
+  {
+    "N": 4,
+    "eta": 0.5,
+    "rho": -0.45,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 410.0002347915431,
+    "coefficient_minus_proposed": 0.00011616345989295951,
+    "minimum_primal_inequality_residual": -1.195764411932032e-07,
+    "minimum_gram_eigenvalue": -1.3206094006063395e-07,
+    "minimum_dual_slack_eigenvalue": -1.146922567529515e-07,
+    "theory": 410.0001186280832,
+    "active": "E_rho",
+    "step_duals": {
+      "step_3": 1.2663819010326158e-05,
+      "step_4": 205.00011065768345
+    }
+  },
+  {
+    "N": 2,
+    "eta": 0.8,
+    "rho": -0.5,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 7.707031957650212,
+    "coefficient_minus_proposed": 7.07650213982447e-07,
+    "minimum_primal_inequality_residual": -2.6867524205442805e-08,
+    "minimum_gram_eigenvalue": -2.082566727457596e-07,
+    "minimum_dual_slack_eigenvalue": -2.6175255963021622e-08,
+    "theory": 7.707031249999998,
+    "active": "E_eta",
+    "step_duals": {
+      "step_2": 3.8535159280456406
+    }
+  },
+  {
+    "N": 3,
+    "eta": 0.8,
+    "rho": -0.5,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 14.573488091049922,
+    "coefficient_minus_proposed": 1.7629249260409097e-06,
+    "minimum_primal_inequality_residual": -1.258028703432501e-08,
+    "minimum_gram_eigenvalue": -1.768686726881548e-08,
+    "minimum_dual_slack_eigenvalue": -1.8668215696725135e-08,
+    "theory": 14.573486328124996,
+    "active": "E_eta",
+    "step_duals": {
+      "step_3": 7.286743955138044
+    }
+  },
+  {
+    "N": 4,
+    "eta": 0.8,
+    "rho": -0.5,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 25.302392794840493,
+    "coefficient_minus_proposed": 7.040714519135349e-05,
+    "minimum_primal_inequality_residual": -2.034803685546649e-07,
+    "minimum_gram_eigenvalue": -2.564636072807216e-07,
+    "minimum_dual_slack_eigenvalue": -2.7154409669966435e-07,
+    "theory": 25.302322387695302,
+    "active": "E_eta",
+    "step_duals": {
+      "step_4": 12.651194062704532
+    }
+  },
+  {
+    "N": 2,
+    "eta": 0.8,
+    "rho": -0.7,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 2.161724282212539,
+    "coefficient_minus_proposed": 6.631841742432698e-10,
+    "minimum_primal_inequality_residual": -2.784923402998629e-10,
+    "minimum_gram_eigenvalue": -4.897159135108519e-10,
+    "minimum_dual_slack_eigenvalue": -3.3255806923755813e-10,
+    "theory": 2.161724281549355,
+    "active": "E_rho",
+    "step_duals": {
+      "step_2": 1.0808621411762358
+    }
+  },
+  {
+    "N": 3,
+    "eta": 0.8,
+    "rho": -0.7,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 4.711682238967641,
+    "coefficient_minus_proposed": 3.172405893536734e-08,
+    "minimum_primal_inequality_residual": -1.5578027756646406e-09,
+    "minimum_gram_eigenvalue": -3.852914639278286e-09,
+    "minimum_dual_slack_eigenvalue": -2.5325261913127682e-09,
+    "theory": 4.711682207243582,
+    "active": "E_rho",
+    "step_duals": {
+      "step_3": 2.355841116551131
+    }
+  },
+  {
+    "N": 4,
+    "eta": 0.8,
+    "rho": -0.7,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 9.915679181010901,
+    "coefficient_minus_proposed": 1.2070444039835593e-06,
+    "minimum_primal_inequality_residual": -9.577652448911067e-09,
+    "minimum_gram_eigenvalue": -3.679803477283097e-08,
+    "minimum_dual_slack_eigenvalue": -1.378489550475944e-08,
+    "theory": 9.915677973966497,
+    "active": "E_rho",
+    "step_duals": {
+      "step_4": 4.957839545681975
+    }
+  },
+  {
+    "N": 2,
+    "eta": 1.0,
+    "rho": -0.55,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 4.450000241672836,
+    "coefficient_minus_proposed": 2.416728355214559e-07,
+    "minimum_primal_inequality_residual": -5.451726181604499e-09,
+    "minimum_gram_eigenvalue": -7.366017979597387e-09,
+    "minimum_dual_slack_eigenvalue": -1.1650410362274554e-08,
+    "theory": 4.45,
+    "active": "E_eta",
+    "step_duals": {
+      "step_0": 0.03203706869958235,
+      "step_1": 0.11998770259691009,
+      "step_2": 2.072975378503858
+    }
+  },
+  {
+    "N": 3,
+    "eta": 1.0,
+    "rho": -0.55,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 6.450004903401757,
+    "coefficient_minus_proposed": 4.9034017566285115e-06,
+    "minimum_primal_inequality_residual": -4.964595312628717e-08,
+    "minimum_gram_eigenvalue": -6.39397152640529e-08,
+    "minimum_dual_slack_eigenvalue": -9.181590842784464e-08,
+    "theory": 6.45,
+    "active": "E_eta",
+    "step_duals": {
+      "step_0": 0.04067669634870388,
+      "step_1": 0.12102809756569315,
+      "step_2": 0.2952498136825541,
+      "step_3": 2.7680481335787284
+    }
+  },
+  {
+    "N": 4,
+    "eta": 1.0,
+    "rho": -0.55,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 8.450044469230388,
+    "coefficient_minus_proposed": 4.446923038869954e-05,
+    "minimum_primal_inequality_residual": -2.477542260237442e-07,
+    "minimum_gram_eigenvalue": -2.9776725386887834e-07,
+    "minimum_dual_slack_eigenvalue": -3.953416127110343e-07,
+    "theory": 8.45,
+    "active": "E_eta",
+    "step_duals": {
+      "step_0": 0.03303409778160943,
+      "step_1": 0.07887195873158105,
+      "step_2": 0.20858301051614286,
+      "step_3": 0.41426168349844955,
+      "step_4": 3.490273024716383
+    }
+  },
+  {
+    "N": 2,
+    "eta": 1.0,
+    "rho": -0.85,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 0.6449653592259363,
+    "coefficient_minus_proposed": 2.1167244401709695e-08,
+    "minimum_primal_inequality_residual": -1.7220689318975246e-09,
+    "minimum_gram_eigenvalue": -3.494798318626043e-09,
+    "minimum_dual_slack_eigenvalue": -4.015165050335979e-09,
+    "theory": 0.6449653380586919,
+    "active": "E_rho",
+    "step_duals": {
+      "step_2": 0.32248268240427747
+    }
+  },
+  {
+    "N": 3,
+    "eta": 1.0,
+    "rho": -0.85,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 1.042685609952538,
+    "coefficient_minus_proposed": 2.0943967671271935e-08,
+    "minimum_primal_inequality_residual": -1.440279229214525e-09,
+    "minimum_gram_eigenvalue": -2.7331288263135356e-09,
+    "minimum_dual_slack_eigenvalue": -3.5189246806304657e-09,
+    "theory": 1.0426855890085702,
+    "active": "E_rho",
+    "step_duals": {
+      "step_3": 0.5213427901783411
+    }
+  },
+  {
+    "N": 4,
+    "eta": 1.0,
+    "rho": -0.85,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 1.5931634749646506,
+    "coefficient_minus_proposed": 2.9970089743258654e-08,
+    "minimum_primal_inequality_residual": -1.4239234236157472e-09,
+    "minimum_gram_eigenvalue": -2.7897310042594577e-09,
+    "minimum_dual_slack_eigenvalue": -3.1385861688564175e-09,
+    "theory": 1.5931634449945609,
+    "active": "E_rho",
+    "step_duals": {
+      "step_4": 0.796581723604383
+    }
+  },
+  {
+    "N": 2,
+    "eta": 1.25,
+    "rho": -0.6,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 3.0707692219805747,
+    "coefficient_minus_proposed": -8.788656025160435e-09,
+    "minimum_primal_inequality_residual": -3.4502793955226707e-09,
+    "minimum_gram_eigenvalue": -2.6630070616179488e-08,
+    "minimum_dual_slack_eigenvalue": -1.4582802294442735e-10,
+    "theory": 3.0707692307692307,
+    "active": "P_N",
+    "step_duals": {
+      "step_1": 0.4294017092554279,
+      "step_2": 1.1059829018827967
+    }
+  },
+  {
+    "N": 3,
+    "eta": 1.25,
+    "rho": -0.6,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 4.455384621397361,
+    "coefficient_minus_proposed": 6.012744968586503e-09,
+    "minimum_primal_inequality_residual": -2.0394463895456738e-10,
+    "minimum_gram_eigenvalue": -8.027164824678647e-09,
+    "minimum_dual_slack_eigenvalue": -5.134726642027156e-10,
+    "theory": 4.455384615384616,
+    "active": "P_N",
+    "step_duals": {
+      "step_1": 0.42940170871735267,
+      "step_2": 0.82905982532502,
+      "step_3": 0.9692307771175503
+    }
+  },
+  {
+    "N": 4,
+    "eta": 1.25,
+    "rho": -0.6,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 5.840000085163448,
+    "coefficient_minus_proposed": 8.516344784936791e-08,
+    "minimum_primal_inequality_residual": -9.90492576846691e-10,
+    "minimum_gram_eigenvalue": -7.0049588133884706e-09,
+    "minimum_dual_slack_eigenvalue": -3.2085077199456186e-09,
+    "theory": 5.84,
+    "active": "P_N",
+    "step_duals": {
+      "step_1": 0.4294017135804713,
+      "step_2": 0.829059818601338,
+      "step_3": 0.6923076541866928,
+      "step_4": 0.9692308599064297
+    }
+  },
+  {
+    "N": 2,
+    "eta": 1.25,
+    "rho": -0.8,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 1.0007812507342326,
+    "coefficient_minus_proposed": 7.342328967041567e-10,
+    "minimum_primal_inequality_residual": -1.282813855141285e-10,
+    "minimum_gram_eigenvalue": -1.8621877637764933e-10,
+    "minimum_dual_slack_eigenvalue": -1.6553155358362142e-10,
+    "theory": 1.0007812499999997,
+    "active": "E_rho",
+    "step_duals": {
+      "step_2": 0.5003906254475221
+    }
+  },
+  {
+    "N": 3,
+    "eta": 1.25,
+    "rho": -0.8,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 1.7637207121234602,
+    "coefficient_minus_proposed": 8.998461087372789e-09,
+    "minimum_primal_inequality_residual": -1.82836812356868e-09,
+    "minimum_gram_eigenvalue": -3.2269446304658224e-09,
+    "minimum_dual_slack_eigenvalue": -3.732527304336884e-09,
+    "theory": 1.763720703124999,
+    "active": "E_rho",
+    "step_duals": {
+      "step_3": 0.8818603512185783
+    }
+  },
+  {
+    "N": 4,
+    "eta": 1.25,
+    "rho": -0.8,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 2.9558137638578925,
+    "coefficient_minus_proposed": 1.652250816164269e-07,
+    "minimum_primal_inequality_residual": -3.6027374417102465e-09,
+    "minimum_gram_eigenvalue": -5.371399865450971e-09,
+    "minimum_dual_slack_eigenvalue": -5.705512888229197e-09,
+    "theory": 2.955813598632811,
+    "active": "E_rho",
+    "step_duals": {
+      "step_4": 1.477906879295794
+    }
+  },
+  {
+    "N": 2,
+    "eta": 2.0,
+    "rho": -0.7,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 1.6245682911994903,
+    "coefficient_minus_proposed": 2.3454869158001657e-09,
+    "minimum_primal_inequality_residual": -1.820423534137916e-10,
+    "minimum_gram_eigenvalue": -2.68513767432463e-09,
+    "minimum_dual_slack_eigenvalue": -4.696770993764598e-10,
+    "theory": 1.6245682888540034,
+    "active": "P_N",
+    "step_duals": {
+      "step_1": 0.2580455272500931,
+      "step_2": 0.5542386187328942
+    }
+  },
+  {
+    "N": 3,
+    "eta": 2.0,
+    "rho": -0.7,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 2.3168759812661204,
+    "coefficient_minus_proposed": 1.0442491316098312e-10,
+    "minimum_primal_inequality_residual": -1.268940508225569e-11,
+    "minimum_gram_eigenvalue": -1.6090651401546304e-09,
+    "minimum_dual_slack_eigenvalue": -3.034858818121824e-11,
+    "theory": 2.3168759811616955,
+    "active": "P_N",
+    "step_duals": {
+      "step_1": 0.2580455259854265,
+      "step_2": 0.36577708013757354,
+      "step_3": 0.5346153845459177
+    }
+  },
+  {
+    "N": 4,
+    "eta": 2.0,
+    "rho": -0.7,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 3.0091836798825535,
+    "coefficient_minus_proposed": 6.4131655541643795e-09,
+    "minimum_primal_inequality_residual": -3.191328035168084e-10,
+    "minimum_gram_eigenvalue": -1.0144189773492715e-09,
+    "minimum_dual_slack_eigenvalue": -9.769213839886479e-10,
+    "theory": 3.009183673469388,
+    "active": "P_N",
+    "step_duals": {
+      "step_1": 0.2580455281601192,
+      "step_2": 0.36577708235544115,
+      "step_3": 0.3461538432529622,
+      "step_4": 0.5346153875719277
+    }
+  },
+  {
+    "N": 2,
+    "eta": 2.0,
+    "rho": -0.9,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 0.3758725817452486,
+    "coefficient_minus_proposed": 1.3459193759501886e-09,
+    "minimum_primal_inequality_residual": -7.258801915099866e-08,
+    "minimum_gram_eigenvalue": -4.776456992750917e-08,
+    "minimum_dual_slack_eigenvalue": -6.148100550532088e-10,
+    "theory": 0.37587258039932925,
+    "active": "E_rho",
+    "step_duals": {
+      "step_2": 0.1879362895597632
+    }
+  },
+  {
+    "N": 3,
+    "eta": 2.0,
+    "rho": -0.9,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 0.5640402226461454,
+    "coefficient_minus_proposed": -6.907585614612799e-11,
+    "minimum_primal_inequality_residual": -3.7063274671567115e-10,
+    "minimum_gram_eigenvalue": -1.482882572427728e-09,
+    "minimum_dual_slack_eigenvalue": -2.9198997871088364e-10,
+    "theory": 0.5640402227152213,
+    "active": "E_rho",
+    "step_duals": {
+      "step_3": 0.28202011081312905
+    }
+  },
+  {
+    "N": 4,
+    "eta": 2.0,
+    "rho": -0.9,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 0.7963460243546947,
+    "coefficient_minus_proposed": 7.038528571090552e-08,
+    "minimum_primal_inequality_residual": -4.3986824183051e-09,
+    "minimum_gram_eigenvalue": -7.382396702327555e-09,
+    "minimum_dual_slack_eigenvalue": -8.556491267921794e-09,
+    "theory": 0.796345953969409,
+    "active": "E_rho",
+    "step_duals": {
+      "step_4": 0.3981729897607704
+    }
+  },
+  {
+    "N": 2,
+    "eta": 4.0,
+    "rho": -0.85,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 0.597612874279531,
+    "coefficient_minus_proposed": 5.602648345259809e-09,
+    "minimum_primal_inequality_residual": -6.920375383856481e-10,
+    "minimum_gram_eigenvalue": -7.437949770237721e-10,
+    "minimum_dual_slack_eigenvalue": -1.785092641282262e-09,
+    "theory": 0.5976128686768827,
+    "active": "P_N",
+    "step_duals": {
+      "step_1": 0.0616435357809889,
+      "step_2": 0.23716290183707692
+    }
+  },
+  {
+    "N": 3,
+    "eta": 4.0,
+    "rho": -0.85,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 0.8357081078204677,
+    "coefficient_minus_proposed": 1.0483469647937227e-09,
+    "minimum_primal_inequality_residual": -2.408342969495436e-10,
+    "minimum_gram_eigenvalue": -3.1827471760446066e-10,
+    "minimum_dual_slack_eigenvalue": -6.308748941502237e-10,
+    "theory": 0.8357081067721207,
+    "active": "P_N",
+    "step_duals": {
+      "step_1": 0.06164353145344529,
+      "step_2": 0.12248036646416141,
+      "step_3": 0.23373015640503653
+    }
+  },
+  {
+    "N": 4,
+    "eta": 4.0,
+    "rho": -0.85,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 1.0738033445047046,
+    "coefficient_minus_proposed": -3.626543509938074e-10,
+    "minimum_primal_inequality_residual": -1.2777146007891815e-10,
+    "minimum_gram_eigenvalue": -7.745525604384267e-09,
+    "minimum_dual_slack_eigenvalue": -2.566155124464694e-10,
+    "theory": 1.073803344867359,
+    "active": "P_N",
+    "step_duals": {
+      "step_1": 0.061643530981059354,
+      "step_2": 0.1224803651770628,
+      "step_3": 0.11904761777764927,
+      "step_4": 0.2337301585548731
+    }
+  },
+  {
+    "N": 2,
+    "eta": 4.0,
+    "rho": -0.95,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 0.16678854959784117,
+    "coefficient_minus_proposed": 4.39023825626883e-09,
+    "minimum_primal_inequality_residual": -5.917196732596608e-10,
+    "minimum_gram_eigenvalue": -5.733991294946022e-10,
+    "minimum_dual_slack_eigenvalue": -8.20441840772664e-10,
+    "theory": 0.16678854520760292,
+    "active": "E_rho",
+    "step_duals": {
+      "step_2": 0.08339427262568276
+    }
+  },
+  {
+    "N": 3,
+    "eta": 4.0,
+    "rho": -0.95,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 0.234807264966923,
+    "coefficient_minus_proposed": 1.265932966787453e-08,
+    "minimum_primal_inequality_residual": -1.5148325926972461e-09,
+    "minimum_gram_eigenvalue": -1.6850817583400066e-09,
+    "minimum_dual_slack_eigenvalue": -2.6769446140383587e-09,
+    "theory": 0.23480725230759333,
+    "active": "E_rho",
+    "step_duals": {
+      "step_3": 0.11740362434042212
+    }
+  },
+  {
+    "N": 4,
+    "eta": 4.0,
+    "rho": -0.95,
+    "status": "optimal_inaccurate",
+    "coefficient_numerical": 0.31017425520169595,
+    "coefficient_minus_proposed": 1.4417658955601098e-08,
+    "minimum_primal_inequality_residual": -8.508431736942157e-10,
+    "minimum_gram_eigenvalue": -9.047744775875123e-10,
+    "minimum_dual_slack_eigenvalue": -1.365467700168006e-09,
+    "theory": 0.310174240784037,
+    "active": "E_rho",
+    "step_duals": {
+      "step_4": 0.1550871234351103
+    }
+  }
+]

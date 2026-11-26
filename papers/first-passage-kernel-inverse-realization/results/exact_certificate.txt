@@ -1,0 +1,7 @@
+Inverse rate consistency with noncommuting Hamiltonian verified.
+d=2, Jordan order=3, ordinary coefficient=1/8388608
+  Choi perturbation norm squared / gap squared=598749534945856/91193097521838601
+  fixed-kernel characteristic derivative=5355/2251799813685248
+d=3, Jordan order=8, ordinary coefficient=1/9007199254740992
+  Choi perturbation norm squared / gap squared=1597884051791337615/46692093271194994688
+  fixed-kernel characteristic derivative=21*sqrt(6)/604462909807314587353088

@@ -1,0 +1,78 @@
+{
+  "amplitude_interval": [
+    "-323223304703363119/2625000000000000000",
+    "-2585786437626904951/21000000000000000000"
+  ],
+  "arithmetic": "exact rational pairs representing Q(sqrt(2))",
+  "c": "1/2",
+  "checks": 1377,
+  "effective_bloch_x": {
+    "rational": "3/7",
+    "sqrt2": "1/7"
+  },
+  "error_samples": [
+    {
+      "bloch_error": {
+        "rational": "0",
+        "sqrt2": "0"
+      },
+      "time": 0
+    },
+    {
+      "bloch_error": {
+        "rational": "1/7",
+        "sqrt2": "-1/28"
+      },
+      "time": 1
+    },
+    {
+      "bloch_error": {
+        "rational": "1/56",
+        "sqrt2": "-1/28"
+      },
+      "time": 2
+    },
+    {
+      "bloch_error": {
+        "rational": "1437/229376",
+        "sqrt2": "-4701/229376"
+      },
+      "time": 8
+    },
+    {
+      "bloch_error": {
+        "rational": "62740885/15032385536",
+        "sqrt2": "-222074077/15032385536"
+      },
+      "time": 16
+    },
+    {
+      "bloch_error": {
+        "rational": "184998369662515973/64563604257983430656",
+        "sqrt2": "-681007142826643165/64563604257983430656"
+      },
+      "time": 32
+    },
+    {
+      "bloch_error": {
+        "rational": "45886371333032611167143751/19807040628566084398385987584",
+        "sqrt2": "-171137447875214781902316479/19807040628566084398385987584"
+      },
+      "time": 48
+    }
+  ],
+  "gamma": "1/2",
+  "horizon": 48,
+  "initial_state": "rho_eff",
+  "leading_bloch_amplitude": {
+    "rational": "-4/21",
+    "sqrt2": "1/21"
+  },
+  "schema_version": 1,
+  "scope": "Finite exact identities, density feasibility, noncommutation, (W) sufficient certificate, and nonzero asymptotic coefficient; not a proof of the asymptotic theorem.",
+  "sqrt2_interval": [
+    "176776695296636881/125000000000000000",
+    "1414213562373095049/1000000000000000000"
+  ],
+  "status": "passed"
+}

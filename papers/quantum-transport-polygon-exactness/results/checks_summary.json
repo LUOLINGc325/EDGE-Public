@@ -1,0 +1,58 @@
+{
+  "commands": [
+    {
+      "command": "python3 code/verify_polygon_exact.py --output results/exact_verification.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout": "{\n  \"arithmetic\": \"Python fractions.Fraction; no floating-point tolerances\",\n  \"case_count\": 111,\n  \"local_identity_counts\": {\n    \"anti_monge\": 1064,\n    \"curvature\": 1061,\n    \"peak_lift\": 1064,\n    \"shortcut\": 2660,\n    \"superadditive\": 1330\n  },\n  \"negative_control\": false,\n  \"peak_split_checks\": 23560,\n  \"scope\": \"Finite deterministic cases only; does not replace either universal proof\",\n  \"simple_cycles_checked\": 54793,\n  \"status\": \"passed\"\n}\n"
+    },
+    {
+      "command": "python3 -O code/verify_polygon_exact.py --output results/exact_verification_optimized.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout": "{\n  \"arithmetic\": \"Python fractions.Fraction; no floating-point tolerances\",\n  \"case_count\": 111,\n  \"local_identity_counts\": {\n    \"anti_monge\": 1064,\n    \"curvature\": 1061,\n    \"peak_lift\": 1064,\n    \"shortcut\": 2660,\n    \"superadditive\": 1330\n  },\n  \"negative_control\": false,\n  \"peak_split_checks\": 23560,\n  \"scope\": \"Finite deterministic cases only; does not replace either universal proof\",\n  \"simple_cycles_checked\": 54793,\n  \"status\": \"passed\"\n}\n"
+    },
+    {
+      "command": "python3 -O code/verify_polygon_exact.py --negative-control --output results/negative_control.json",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stderr": "",
+      "stdout": "{\n  \"error\": \"cycle/polygon mismatch in power_n3_s0_q2: 2/3 != 191/291\",\n  \"negative_control\": true,\n  \"status\": \"failed\"\n}\n"
+    },
+    {
+      "command": "python3 code/verify_algorithm.py results/algorithm_verification.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout": "{\n  \"status\": \"passed\",\n  \"cases\": 113,\n  \"arithmetic\": \"fractions.Fraction\",\n  \"oracle\": \"exhaustive increasing chains, independently implemented\",\n  \"negative_controls_rejected\": [\n    \"violated_structure\",\n    \"bad_certificate\"\n  ]\n}\n"
+    },
+    {
+      "command": "python3 code/polygon_solver.py --points 0 1 2 3 --q 2 --output results/example_four_levels.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout": "{\n  \"arithmetic\": \"exact rational\",\n  \"certificate_verified\": true,\n  \"delta\": \"3/2\",\n  \"n\": 4,\n  \"polygon_indices\": [\n    0,\n    1,\n    2,\n    3\n  ],\n  \"potential\": [\n    \"0\",\n    \"5/2\",\n    \"5\",\n    \"15/2\"\n  ],\n  \"tail_cut_weights\": [\n    \"5/2\",\n    \"5/2\",\n    \"5/2\"\n  ]\n}\n"
+    },
+    {
+      "command": "python3 code/polygon_solver.py --points 0 1 2 3 4 --q 2 --output results/example_five_levels.json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout": "{\n  \"arithmetic\": \"exact rational\",\n  \"certificate_verified\": true,\n  \"delta\": \"8/3\",\n  \"n\": 5,\n  \"polygon_indices\": [\n    0,\n    2,\n    4\n  ],\n  \"potential\": [\n    \"0\",\n    \"11/3\",\n    \"20/3\",\n    \"31/3\",\n    \"40/3\"\n  ],\n  \"tail_cut_weights\": [\n    \"11/3\",\n    \"3\",\n    \"11/3\",\n    \"3\"\n  ]\n}\n"
+    }
+  ],
+  "exact_verification_sha256": "a3d6ff5d203a13340118fadef638bdcab2c92b2f116a46cd0dcf7c3a324f9040",
+  "normal_and_optimized_outputs_identical": true,
+  "python": "3.12.14",
+  "scope": "Finite rational checks and code verification; no claim of universal machine proof.",
+  "standard_library_only": true,
+  "status": "passed"
+}
