@@ -4,6 +4,10 @@
 
 [上级学科 / Parent](../)
 
+- [统计逆问题 / Statistical inverse problems](statistical-inverse-problems/)
+- [多重检验 / Multiple testing](multiple-testing/)
+- [随机过程 / Stochastic processes](stochastic-processes/)
+
 - [A Poisson-to-Gaussian crossover for nearly coincident threshold counts](../../../papers/high-overlap-crossover/)
 - [A Vanishing Second Spike in a Real Haar Interaction Graph](../../../papers/real-haar-mst-singular-regularization/)
 - [Dispersion at the Gray distortion endpoint for binary Markov sources](../../../papers/gray-critical-endpoint/)

@@ -4,6 +4,8 @@
 
 [上级学科 / Parent](../)
 
+- [排队论 / Queueing theory](queueing-theory/)
+
 - [A Common Revenue Threshold for Regular Proportional Choice](../../../papers/rank-cutoff-common-threshold-half/)
 - [A Sharp Reward Threshold for Faster, More Patient Jobs in a Two-Class Clearing System](../../../papers/two-class-clearing-reward-threshold/)
 - [An order \(1/n\) horizon bound for record-constrained prophet inequalities](../../../papers/uniform-bin-minimum-rate/)
@@ -16,6 +18,7 @@
 - [Quantitative gains from refunds under finite valuation uncertainty](../../../papers/finite-value-robust-refund-gain/)
 - [Serial service and the exact ordinal scheduling frontier](../../../papers/serial-service-frontier/)
 - [Sharp demand-shape and information boundaries in random-capacity inventory control](../../../papers/discount-replenishment-full-capacity/)
+- [Sharp finite-size inefficiency on common-slope exponential parallel links](../../../papers/log-convex-routing-efficiency/) · 交叉 / Cross-listed ([算法博弈论 / Algorithmic game theory](../../computing-information-sciences/computer-science/algorithmic-game-theory/))
 - [Sharp Monotone Support Paths in Finite Moment Optimization](../../../papers/mlr-moment-support-paths/) · 交叉 / Cross-listed ([数学 / Mathematics](../mathematics/))
 - [Stable FCFS queues with maximal total-variation separation](../../../papers/ergodic-queue-total-variation-separation/)
 - [Strict Priority in Nonpreemptive Clearing Systems with Common Exponential Patience](../../../papers/equal-patience-priority-classification/)

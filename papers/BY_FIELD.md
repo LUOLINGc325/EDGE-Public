@@ -163,6 +163,12 @@
 - [非负次模函数在边际概率上限下的精确相关间隙](sharp-nonmonotone-correlation-gap/)
 - [非重叠唯一支配平方根阈值的复杂度](non-overlapping-unidomination-threshold/)
 
+#### 几何分析 / Geometric analysis
+
+[学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/mathematics/geometric-analysis/)
+
+- [A square-to-clipped-square transition in high-privacy noise](additive-privacy-bv-minimax/) · 交叉 / Cross-listed
+
 ### 概率与统计 / Probability and statistics
 
 [学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/probability-statistics/)
@@ -220,6 +226,25 @@
 - [高斯频率模型的梯度方差精确渐近](gaussian-frequency-gradient-variance/)
 - [高温 Gibbs 态在弱局域量子信道下的一致 Markov 性：定量补全稿](high-temperature-gibbs-weak-noise/)
 
+#### 统计逆问题 / Statistical inverse problems
+
+[学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/probability-statistics/statistical-inverse-problems/)
+
+- [Gaussian mixing recovery under response-dependent repeat measurements](gaussian-mixture-finite-design-minimax/)
+- [Pointwise minimax rates for sampled birth–death trees under vanishing intervention contrast](controlled-birth-death-inverse-design/)
+
+#### 多重检验 / Multiple testing
+
+[学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/probability-statistics/multiple-testing/)
+
+- [Exact Simes calibration under finite-order independence](pairwise-simes-sharp-calibration/)
+
+#### 随机过程 / Stochastic processes
+
+[学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/probability-statistics/stochastic-processes/)
+
+- [Persistence exponents for ordered families of Brownian and Ornstein–Uhlenbeck walkers](tasep-real-renyi-persistence/)
+
 ### 优化与运筹 / Optimization and operations research
 
 [学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/optimization-operations/)
@@ -236,6 +261,7 @@
 - [Quantitative gains from refunds under finite valuation uncertainty](finite-value-robust-refund-gain/)
 - [Serial service and the exact ordinal scheduling frontier](serial-service-frontier/)
 - [Sharp demand-shape and information boundaries in random-capacity inventory control](discount-replenishment-full-capacity/)
+- [Sharp finite-size inefficiency on common-slope exponential parallel links](log-convex-routing-efficiency/) · 交叉 / Cross-listed
 - [Sharp Monotone Support Paths in Finite Moment Optimization](mlr-moment-support-paths/) · 交叉 / Cross-listed
 - [Stable FCFS queues with maximal total-variation separation](ergodic-queue-total-variation-separation/)
 - [Strict Priority in Nonpreemptive Clearing Systems with Common Exponential Patience](equal-patience-priority-classification/)
@@ -254,6 +280,12 @@
 - [连续时间 CVaR 滑雪租赁的精确高风险首项](continuous-high-risk-prefactor/)
 - [随机接受在线选择的秩稀疏化、稀有接受锐极限与异质率信息边界](robust-secretary-acceptance-thinning/)
 - [风险敏感一次在线卖出的精确最优值](cvar-one-max-exact-optimality/)
+
+#### 排队论 / Queueing theory
+
+[学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/optimization-operations/queueing-theory/)
+
+- [Exact feedback thresholds and critical scaling in compound-geometric FIFO timing channels](block-geometric-finite-feedback/) · 交叉 / Cross-listed
 
 ## 计算与信息科学 / Computing and information sciences
 
@@ -329,6 +361,12 @@
 - [自适应指数核回归的尖锐同时置信宽度 · Sharp simultaneous confidence widths for adaptive exponential-kernel regression](adaptive-exponential-kernel-confidence/)
 - [错报外部矩时的保形预测覆盖偏差](moment-conformal-misspecification/)
 
+#### 算法博弈论 / Algorithmic game theory
+
+[学科目录 / Field directory](../disciplines/computing-information-sciences/computer-science/algorithmic-game-theory/)
+
+- [Sharp finite-size inefficiency on common-slope exponential parallel links](log-convex-routing-efficiency/)
+
 ### 信息科学 / Information science
 
 [学科目录 / Field directory](../disciplines/computing-information-sciences/information-science/)
@@ -341,11 +379,13 @@
 - [A nonvanishing privacy floor for Gaussian-product post-processing](gaussian-product-privacy-floor/)
 - [A predictive floor for hierarchical Poisson mixtures with growing support](poisson-universal-prior-predictive-floor/)
 - [A sharp privacy–communication frontier for Gaussian Fisher information](gaussian-ldp-information-frontier/)
+- [A square-to-clipped-square transition in high-privacy noise](additive-privacy-bv-minimax/)
 - [Approximate Local Privacy: Blackwell Structure, Exact Pearson Information, and Minimax Estimation](approximate-ldp-blackwell-structure/)
 - [Critical Risk under Hard Erasure Budgets](hard-erasure-critical-testing/)
 - [Exact Capacity of the Laplace Channel under an Absolute Input Cost](laplace-absolute-cost-capacity/)
 - [Exact capacity of the quadratic-cost Laplace channel](laplace-quadratic-cost-capacity/)
 - [Exact erasure resilience with adaptively scheduled feedback](adaptive-erasure-feedback-law/)
+- [Exact feedback thresholds and critical scaling in compound-geometric FIFO timing channels](block-geometric-finite-feedback/)
 - [Exact minimax one-bit quantization and the cost of shared randomness](onebit-minimax-shared-randomness/)
 - [Feasible-output frontiers and covert communication over Gamma noise](gamma-covert-feasible-frontier/)
 - [Finite Certificates and Memory Penalties for Binary POST Channels](binary-post-channel-certificates/)
@@ -356,9 +396,9 @@
 - [Information loss and sharp power limits for conditional Gamma calibration](conditional-information-power-boundaries/)
 - [Local support-rank classification of feedback gain in POST channels](post-channel-feedback-support-rank/)
 - [Minimum-distinct couplings: a sharp support threshold](pair-supported-leakage-coupling/)
-- [Nonmonotonicity and sharp high-privacy limits for additive privacy](additive-privacy-bv-minimax/)
 - [One-bit guessing at growing moment orders](bec-guessing-moment-blocklength-phase/)
 - [Optimal fibers in information bottlenecks: stability, tensor products, and regular continuation](ib-canonical-strict-concavity/)
+- [Persistent memory is required to observe schedule-induced indivisibility](renewal-resetting-divisibility-frontier/) · 交叉 / Cross-listed
 - [Polynomial forward length for growing-round adaptive erasure feedback](growing-round-blocklength/)
 - [Reliability exponents for binary noisy-permutation channels](binary-reliability-exponents/)
 - [Rényi contraction of repeated symmetric channels](renyi-product-order-phase/)
@@ -392,6 +432,7 @@
 
 [学科目录 / Field directory](../disciplines/physical-sciences/physics/theoretical-physics/)
 
+- [Persistence exponents for ordered families of Brownian and Ornstein–Uhlenbeck walkers](tasep-real-renyi-persistence/) · 交叉 / Cross-listed
 - [Sharp Spectral Dissipation and Unstable Thermodynamic Identification](abelian-two-layer-reversible-sampling/)
 - [The least dissipation of linear relaxation: spectral determinacy and exact acceleration frontiers](ou-entropy-spectral-frontier/) · 交叉 / Cross-listed
 
@@ -399,6 +440,7 @@
 
 [学科目录 / Field directory](../disciplines/physical-sciences/physics/quantum-physics/)
 
+- [Blind first-count calibration with singular quantum jump maps](first-passage-ray-channel-threshold/)
 - [Computational complexity of optimal Pauli error cancellation on odd cycles](odd-cycle-exact-complexity/)
 - [Entanglement required for optimal charging in a Clifford battery](optimal-charging-entanglement/)
 - [Extremal visibility of logical Pauli operators under product measurements](stabilizer-logical-pauli-visibility/)
@@ -410,6 +452,7 @@
 - [Optimizer rigidity and a sharp tree resource boundary for optimal Clifford shadows](optimal-shadow-cnot-rigidity/)
 - [Parity under anisotropic noise applied after qubit Haar conjugation](post-conjugation-anisotropic-parity/)
 - [Pauli–Lindblad 误差缓解的奇偶判据与开销渐近](pauli-lindblad-pec-parity/)
+- [Persistent memory is required to observe schedule-induced indivisibility](renewal-resetting-divisibility-frontier/)
 - [Rigidity and stability of optimal quantum polygon approximations](minimizer-rigidity-stability/)
 - [Schmidt 稳定子熵的随机极限与单项局部酉极小态](haar-schmidt-magic/)
 - [Sharp Jordan-order limits for monitored qubit first-passage kernels](dominant-jordan-order-limit/)
@@ -495,6 +538,7 @@
 [学科目录 / Field directory](../disciplines/life-sciences/biology/mathematical-biology/)
 
 - [Global and Stable Recovery of Compositional Lotka–Volterra Dynamics](compositional-glv-convex-recovery/) · 交叉 / Cross-listed
+- [Pointwise minimax rates for sampled birth–death trees under vanishing intervention contrast](controlled-birth-death-inverse-design/) · 交叉 / Cross-listed
 - [Universal convex-order bounds for coalescent tree lengths and exact merger-cost criteria](coalescent-convex-order/) · 交叉 / Cross-listed
 
 ### 神经科学 / Neuroscience
@@ -517,6 +561,7 @@
 
 [学科目录 / Field directory](../disciplines/engineering-systems/control-dynamics/)
 
+- [Blind first-count calibration with singular quantum jump maps](first-passage-ray-channel-threshold/) · 交叉 / Cross-listed
 - [Exact Geometry and Uniform Recovery of Congestion Monotonicity on AC Lines](ac-line-congestion-geometry/)
 - [Exact headway and gain limits for positive actuation kernels with bounded mean](mean-bounded-lag-headway/) · 交叉 / Cross-listed
 - [Exact phase realization and strong stability for matrix-valued distributed delays](distributed-delay-phase-boundary/)

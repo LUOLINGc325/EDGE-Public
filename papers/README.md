@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**388 research entries / 成果条目 · 490 manuscript versions / 论文版本**
+**396 research entries / 成果条目 · 498 manuscript versions / 论文版本**
 
 [按学科浏览](BY_FIELD.md) · [导出单项成果](EXPORT.md) · [项目清单](CATALOG.json)
 
@@ -19,6 +19,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | A Sharp Reward Threshold for Faster, More Patient Jobs in a Two-Class Clearing System | — | [Read](two-class-clearing-reward-threshold/paper.en.md) |
 | A Sharp Tail Criterion and Starting-Point Cutoff for Radial Stereographic Bouncy Particle Sampling | — | [Read](sbps-radial-tail-cutoff/paper.en.md) |
 | A square-root mixed-null inflation for weighted conformal BH | — | [Read](mixed-null-square-root-boundary/paper.en.md) |
+| A square-to-clipped-square transition in high-privacy noise | — | [Read](additive-privacy-bv-minimax/paper.en.md) |
 | A two-quadrant complexity boundary for domination in split rectangle graphs | — | [Read](two-quadrant-complexity/paper.en.md) |
 | A universal boundary kernel for cross-validation after two-model selection | — | [Read](two-model-cv-boundary-universality/paper.en.md) |
 | A Vanishing Second Spike in a Real Haar Interaction Graph | — | [Read](real-haar-mst-singular-regularization/paper.en.md) |
@@ -26,6 +27,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | An order \(1/n\) horizon bound for record-constrained prophet inequalities | — | [Read](uniform-bin-minimum-rate/paper.en.md) |
 | Approximate Local Privacy: Blackwell Structure, Exact Pearson Information, and Minimax Estimation | — | [Read](approximate-ldp-blackwell-structure/paper.en.md) |
 | Assignment bounds and constant-factor algorithms for bounded-hop independent-set reconfiguration | [阅读](bounded-hop-independent-set-approximation/paper.zh.md) | [Read](bounded-hop-independent-set-approximation/paper.en.md) |
+| Blind first-count calibration with singular quantum jump maps · [正文 / Manuscript](first-passage-ray-channel-threshold/paper.md) | — | — |
 | Computational complexity of optimal Pauli error cancellation on odd cycles | — | [Read](odd-cycle-exact-complexity/paper.en.md) |
 | Critical Risk under Hard Erasure Budgets | — | [Read](hard-erasure-critical-testing/paper.en.md) |
 | Cumulative envy is weakly NP-complete with two and three identical agents | — | [Read](two-three-agent-complexity/paper.en.md) |
@@ -44,6 +46,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Exact cumulative envy is already hard for two agents | — | [Read](complete-fixed-count-classification/paper.en.md) |
 | Exact CVaR One-Max Search at a Fixed Announced Horizon | — | [Read](announced-fixed-horizon/paper.en.md) |
 | Exact erasure resilience with adaptively scheduled feedback | [阅读](adaptive-erasure-feedback-law/paper.zh.md) | [Read](adaptive-erasure-feedback-law/paper.en.md) |
+| Exact feedback thresholds and critical scaling in compound-geometric FIFO timing channels · [正文 / Manuscript](block-geometric-finite-feedback/paper.md) | — | — |
 | Exact finite-decision realizations in strictly feasible convex scenario optimization | — | [Read](convex-scenario-finite-decision-realizations/paper.en.md) |
 | Exact finite-power prediction with corrupted smooth feedback | — | [Read](exact-finite-power-plateau/paper.en.md) |
 | Exact Geometry and Uniform Recovery of Congestion Monotonicity on AC Lines | — | [Read](ac-line-congestion-geometry/paper.en.md) |
@@ -54,6 +57,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Exact phase realization and strong stability for matrix-valued distributed delays · [正文 / Manuscript](distributed-delay-phase-boundary/paper.md) | — | — |
 | Exact pivotalization for finite composite tests · [正文 / Manuscript](finite-null-exact-pivotalization/paper.md) | — | — |
 | Exact power thresholds for noncyclic Gaussian sources and their discontinuity at pole coalescence | — | [Read](noncyclic-mimo-power-elimination/paper.en.md) |
+| Exact Simes calibration under finite-order independence · [正文 / Manuscript](pairwise-simes-sharp-calibration/paper.md) | — | — |
 | Exact tail phases of intermittent Kalman filtering: Jordan corrections and scalar shape classification · [正文 / Manuscript](intermittent-kalman-tail-phase/paper.md) | — | — |
 | Exact Two-Sided Coverage of the Bivariate Gaffke Intervals | — | [Read](exact-coverage-and-risk-transitions/paper.en.md) |
 | Extremal visibility of logical Pauli operators under product measurements | — | [Read](stabilizer-logical-pauli-visibility/paper.en.md) |
@@ -66,6 +70,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Fractional neural kernels: radial spectral laws, threshold interference, and inverse limits · [正文 / Manuscript](fractional-neural-threshold-spectral-transition/paper.md) | — | — |
 | Full-support unbounded service times with a quantitative feedback capacity gap · [正文 / Manuscript](unbounded-queue-feedback-separation/paper.md) | — | — |
 | Gaffke 统计量留一系数的尖锐下界 | [阅读](gaffke-delta-sharp-bound/paper.zh.md) | [Read](gaffke-delta-sharp-bound/paper.en.md) |
+| Gaussian mixing recovery under response-dependent repeat measurements · [正文 / Manuscript](gaussian-mixture-finite-design-minimax/paper.md) | — | — |
 | Glauber 退火中过量活动度的桥结构机制 | [阅读](glauber-annealing-activity-counterexample/paper.zh.md) | [Read](glauber-annealing-activity-counterexample/paper.en.md) |
 | Global and Stable Recovery of Compositional Lotka–Volterra Dynamics | — | [Read](compositional-glv-convex-recovery/paper.en.md) |
 | Global entropy support for binary symmetric sources and the absence of an interactive key-rate gain · [正文 / Manuscript](dsbs-interactive-key-support/paper.md) | — | — |
@@ -93,7 +98,6 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Minimum-distinct couplings: a sharp support threshold | — | [Read](pair-supported-leakage-coupling/paper.en.md) |
 | Narrow corridors in critical online conformal prediction | — | [Read](narrow-corridor-expansion/paper.en.md) |
 | Noncommuting Markov aliases on a fixed cubic graph of girth six | — | [Read](noncommuting-pell-aliases/paper.en.md) |
-| Nonmonotonicity and sharp high-privacy limits for additive privacy | — | [Read](additive-privacy-bv-minimax/paper.en.md) |
 | One versus two long-time queries for affine Hamiltonian encoding | — | [Read](long-time-hamiltonian-affine-state/paper.en.md) |
 | One-bit guessing at growing moment orders · [正文 / Manuscript](bec-guessing-moment-blocklength-phase/paper.md) | — | — |
 | Optimal centroid partitions in one-trap games on finite metric trees | — | [Read](continuous-star-partition-optimality/paper.en.md) |
@@ -109,6 +113,9 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | p-spin Curie–Weiss 模型在驻拐点边界上的混合时间 | [阅读](pspin-curie-weiss-spinodal/paper.zh.md) | — |
 | Parity under anisotropic noise applied after qubit Haar conjugation | — | [Read](post-conjugation-anisotropic-parity/paper.en.md) |
 | Pauli–Lindblad 误差缓解的奇偶判据与开销渐近 | [阅读](pauli-lindblad-pec-parity/paper.zh.md) | [Read](pauli-lindblad-pec-parity/paper.en.md) |
+| Persistence exponents for ordered families of Brownian and Ornstein–Uhlenbeck walkers · [正文 / Manuscript](tasep-real-renyi-persistence/paper.md) | — | — |
+| Persistent memory is required to observe schedule-induced indivisibility · [正文 / Manuscript](renewal-resetting-divisibility-frontier/paper.md) | — | — |
+| Pointwise minimax rates for sampled birth–death trees under vanishing intervention contrast · [正文 / Manuscript](controlled-birth-death-inverse-design/paper.md) | — | — |
 | Polynomial forward length for growing-round adaptive erasure feedback | — | [Read](growing-round-blocklength/paper.en.md) |
 | Precise independent e-merging beyond reordered martingales | [阅读](independent-e-merging-beyond-martingales/paper.zh.md) | [Read](independent-e-merging-beyond-martingales/paper.en.md) |
 | Precise independent e-value mergers without symmetry | — | [Read](precise-mergers-without-symmetry/paper.en.md) |
@@ -130,6 +137,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Sharp contamination and inference frontiers for the optimal sub-Gaussian variance proxy | — | [Read](optimal-proxy-tail-envelope-minimax/paper.en.md) |
 | Sharp demand-shape and information boundaries in random-capacity inventory control | — | [Read](discount-replenishment-full-capacity/paper.en.md) |
 | Sharp Finite-Horizon Descent for the Difference-of-Convex Algorithm | — | [Read](dca-sharp-finite-horizon/paper.en.md) |
+| Sharp finite-size inefficiency on common-slope exponential parallel links · [正文 / Manuscript](log-convex-routing-efficiency/paper.md) | — | — |
 | Sharp fixed-statistic sensitivity envelopes for Gaffke's statistic | — | [Read](fixed-statistic-sensitivity-envelope/paper.en.md) |
 | Sharp Jordan-order limits for monitored qubit first-passage kernels | — | [Read](dominant-jordan-order-limit/paper.en.md) |
 | Sharp limits of repeated majority cross-validation | — | [Read](repeated-majority-cross-validation/paper.en.md) |

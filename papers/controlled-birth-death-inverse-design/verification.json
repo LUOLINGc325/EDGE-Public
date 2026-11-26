@@ -1,0 +1,1 @@
+{"external_peer_review":false,"formalization_status":"written version","manuscript_sha256":"8c08899800b7054bc4a84a06ded44621e0e104e9fd02d57de8c83537b8ee9cd4","paper_path":"paper.md","reproduction_command":"python3 code/check.py","reproduction_result":"finite examples checked","scope":"written mathematical proofs","verification_status":"written proofs supplied"}

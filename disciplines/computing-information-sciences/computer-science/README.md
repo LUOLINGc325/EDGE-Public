@@ -6,3 +6,4 @@
 
 - [理论计算机科学 / Theoretical computer science](theoretical-computer-science/)
 - [机器学习与推断 / Machine learning and inference](learning-inference/)
+- [算法博弈论 / Algorithmic game theory](algorithmic-game-theory/)

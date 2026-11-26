@@ -4,6 +4,7 @@
 
 [上级学科 / Parent](../)
 
+- [Blind first-count calibration with singular quantum jump maps](../../../papers/first-passage-ray-channel-threshold/) · 交叉 / Cross-listed ([量子信息与物理 / Quantum information and physics](../../physical-sciences/physics/quantum-physics/))
 - [Exact Geometry and Uniform Recovery of Congestion Monotonicity on AC Lines](../../../papers/ac-line-congestion-geometry/)
 - [Exact headway and gain limits for positive actuation kernels with bounded mean](../../../papers/mean-bounded-lag-headway/) · 交叉 / Cross-listed ([交通工程 / Transportation engineering](../transportation-engineering/))
 - [Exact phase realization and strong stability for matrix-valued distributed delays](../../../papers/distributed-delay-phase-boundary/)

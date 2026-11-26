@@ -4,6 +4,7 @@
 
 [上级学科 / Parent](../)
 
+- [Blind first-count calibration with singular quantum jump maps](../../../../papers/first-passage-ray-channel-threshold/)
 - [Computational complexity of optimal Pauli error cancellation on odd cycles](../../../../papers/odd-cycle-exact-complexity/)
 - [Entanglement required for optimal charging in a Clifford battery](../../../../papers/optimal-charging-entanglement/)
 - [Extremal visibility of logical Pauli operators under product measurements](../../../../papers/stabilizer-logical-pauli-visibility/)
@@ -15,6 +16,7 @@
 - [Optimizer rigidity and a sharp tree resource boundary for optimal Clifford shadows](../../../../papers/optimal-shadow-cnot-rigidity/)
 - [Parity under anisotropic noise applied after qubit Haar conjugation](../../../../papers/post-conjugation-anisotropic-parity/)
 - [Pauli–Lindblad 误差缓解的奇偶判据与开销渐近](../../../../papers/pauli-lindblad-pec-parity/)
+- [Persistent memory is required to observe schedule-induced indivisibility](../../../../papers/renewal-resetting-divisibility-frontier/)
 - [Rigidity and stability of optimal quantum polygon approximations](../../../../papers/minimizer-rigidity-stability/)
 - [Schmidt 稳定子熵的随机极限与单项局部酉极小态](../../../../papers/haar-schmidt-magic/)
 - [Sharp Jordan-order limits for monitored qubit first-passage kernels](../../../../papers/dominant-jordan-order-limit/)

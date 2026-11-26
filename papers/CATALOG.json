@@ -197,6 +197,48 @@
       "en": "Transportation engineering",
       "level": "discipline",
       "parent": "engineering-systems"
+    },
+    {
+      "id": "geometric-analysis",
+      "zh": "几何分析",
+      "en": "Geometric analysis",
+      "level": "specialty",
+      "parent": "mathematics"
+    },
+    {
+      "id": "queueing-theory",
+      "zh": "排队论",
+      "en": "Queueing theory",
+      "level": "specialty",
+      "parent": "optimization-operations"
+    },
+    {
+      "id": "statistical-inverse-problems",
+      "zh": "统计逆问题",
+      "en": "Statistical inverse problems",
+      "level": "specialty",
+      "parent": "probability-statistics"
+    },
+    {
+      "id": "algorithmic-game-theory",
+      "zh": "算法博弈论",
+      "en": "Algorithmic game theory",
+      "level": "specialty",
+      "parent": "computer-science"
+    },
+    {
+      "id": "multiple-testing",
+      "zh": "多重检验",
+      "en": "Multiple testing",
+      "level": "specialty",
+      "parent": "probability-statistics"
+    },
+    {
+      "id": "stochastic-processes",
+      "zh": "随机过程",
+      "en": "Stochastic processes",
+      "level": "specialty",
+      "parent": "probability-statistics"
     }
   ],
   "projects": [
@@ -254,14 +296,17 @@
     },
     {
       "slug": "additive-privacy-bv-minimax",
-      "title": "Nonmonotonicity and sharp high-privacy limits for additive privacy",
+      "title": "A square-to-clipped-square transition in high-privacy noise",
       "category": "information-communication",
       "manuscripts": [
         "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
-      "legacy_paths": {}
+      "legacy_paths": {},
+      "related_categories": [
+        "geometric-analysis"
+      ]
     },
     {
       "slug": "aipw-treatment-dependent-delay",
@@ -485,6 +530,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "block-geometric-finite-feedback",
+      "title": "Exact feedback thresholds and critical scaling in compound-geometric FIFO timing channels",
+      "category": "information-communication",
+      "related_categories": [
+        "queueing-theory"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "bottleneck-spectral-neighbor",
@@ -893,6 +952,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "controlled-birth-death-inverse-design",
+      "title": "Pointwise minimax rates for sampled birth–death trees under vanishing intervention contrast",
+      "category": "statistical-inverse-problems",
+      "related_categories": [
+        "mathematical-biology"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "convex-scenario-compression-transfer",
@@ -1465,6 +1538,20 @@
       "legacy_paths": {}
     },
     {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "first-passage-ray-channel-threshold",
+      "title": "Blind first-count calibration with singular quantum jump maps",
+      "category": "quantum-physics",
+      "related_categories": [
+        "control-dynamics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
       "slug": "fixed-agent-cumulative-envy",
       "title": "固定至少四个代理时，累计嫉妒最小化的弱 NP 完全性",
       "category": "mathematics",
@@ -1698,6 +1785,18 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "gaussian-mixture-finite-design-minimax",
+      "title": "Gaussian mixing recovery under response-dependent repeat measurements",
+      "category": "statistical-inverse-problems",
+      "related_categories": [],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "gaussian-product-privacy-floor",
@@ -2174,6 +2273,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "log-convex-routing-efficiency",
+      "title": "Sharp finite-size inefficiency on common-slope exponential parallel links",
+      "category": "algorithmic-game-theory",
+      "related_categories": [
+        "optimization-operations"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "logconcave-band-smooth-minimax",
@@ -2970,6 +3083,18 @@
       "legacy_paths": {}
     },
     {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "pairwise-simes-sharp-calibration",
+      "title": "Exact Simes calibration under finite-order independence",
+      "category": "multiple-testing",
+      "related_categories": [],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
       "slug": "path-drift-switch-budget",
       "title": "路径漂移与实际切换预算遗憾",
       "category": "mathematics",
@@ -3503,6 +3628,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "renewal-resetting-divisibility-frontier",
+      "title": "Persistent memory is required to observe schedule-induced indivisibility",
+      "category": "quantum-physics",
+      "related_categories": [
+        "information-communication"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "renewal-snapshot-wasserstein-minimax",
@@ -4130,6 +4269,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "tasep-real-renyi-persistence",
+      "title": "Persistence exponents for ordered families of Brownian and Ornstein–Uhlenbeck walkers",
+      "category": "stochastic-processes",
+      "related_categories": [
+        "theoretical-physics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "temporal-ef1-nine-chores-threshold",
