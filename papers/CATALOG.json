@@ -2,44 +2,173 @@
   "version": 1,
   "categories": [
     {
+      "id": "mathematical-statistical-sciences",
+      "zh": "数学与统计科学",
+      "en": "Mathematical and statistical sciences",
+      "level": "domain"
+    },
+    {
+      "id": "computing-information-sciences",
+      "zh": "计算与信息科学",
+      "en": "Computing and information sciences",
+      "level": "domain"
+    },
+    {
+      "id": "physical-sciences",
+      "zh": "物质科学",
+      "en": "Physical sciences",
+      "level": "domain"
+    },
+    {
+      "id": "economics-finance",
+      "zh": "经济与金融科学",
+      "en": "Economics and finance",
+      "level": "domain"
+    },
+    {
+      "id": "life-sciences",
+      "zh": "生命科学",
+      "en": "Life sciences",
+      "level": "domain"
+    },
+    {
+      "id": "engineering-systems",
+      "zh": "工程与系统科学",
+      "en": "Engineering and systems sciences",
+      "level": "domain"
+    },
+    {
       "id": "mathematics",
       "zh": "数学",
-      "en": "Mathematics"
+      "en": "Mathematics",
+      "level": "discipline",
+      "parent": "mathematical-statistical-sciences"
     },
     {
       "id": "probability-statistics",
       "zh": "概率与统计",
-      "en": "Probability and statistics"
-    },
-    {
-      "id": "information-communication",
-      "zh": "信息与通信",
-      "en": "Information and communication"
+      "en": "Probability and statistics",
+      "level": "discipline",
+      "parent": "mathematical-statistical-sciences"
     },
     {
       "id": "optimization-operations",
       "zh": "优化与运筹",
-      "en": "Optimization and operations research"
+      "en": "Optimization and operations research",
+      "level": "discipline",
+      "parent": "mathematical-statistical-sciences"
+    },
+    {
+      "id": "computer-science",
+      "zh": "计算机科学",
+      "en": "Computer science",
+      "level": "discipline",
+      "parent": "computing-information-sciences"
+    },
+    {
+      "id": "information-science",
+      "zh": "信息科学",
+      "en": "Information science",
+      "level": "discipline",
+      "parent": "computing-information-sciences"
+    },
+    {
+      "id": "information-communication",
+      "zh": "信息与通信",
+      "en": "Information and communication",
+      "level": "specialty",
+      "parent": "information-science"
     },
     {
       "id": "theoretical-computer-science",
       "zh": "理论计算机科学",
-      "en": "Theoretical computer science"
-    },
-    {
-      "id": "quantum-physics",
-      "zh": "量子信息与物理",
-      "en": "Quantum information and physics"
-    },
-    {
-      "id": "control-dynamics",
-      "zh": "控制与动力系统",
-      "en": "Control and dynamical systems"
+      "en": "Theoretical computer science",
+      "level": "specialty",
+      "parent": "computer-science"
     },
     {
       "id": "learning-inference",
       "zh": "机器学习与推断",
-      "en": "Machine learning and inference"
+      "en": "Machine learning and inference",
+      "level": "specialty",
+      "parent": "computer-science"
+    },
+    {
+      "id": "physics",
+      "zh": "物理学",
+      "en": "Physics",
+      "level": "discipline",
+      "parent": "physical-sciences"
+    },
+    {
+      "id": "chemistry",
+      "zh": "化学",
+      "en": "Chemistry",
+      "level": "discipline",
+      "parent": "physical-sciences"
+    },
+    {
+      "id": "theoretical-chemistry",
+      "zh": "理论化学",
+      "en": "Theoretical chemistry",
+      "level": "specialty",
+      "parent": "chemistry"
+    },
+    {
+      "id": "quantum-physics",
+      "zh": "量子信息与物理",
+      "en": "Quantum information and physics",
+      "level": "specialty",
+      "parent": "physics"
+    },
+    {
+      "id": "economics",
+      "zh": "经济学",
+      "en": "Economics",
+      "level": "discipline",
+      "parent": "economics-finance"
+    },
+    {
+      "id": "theoretical-economics",
+      "zh": "理论经济学",
+      "en": "Theoretical economics",
+      "level": "specialty",
+      "parent": "economics"
+    },
+    {
+      "id": "biology",
+      "zh": "生物学",
+      "en": "Biology",
+      "level": "discipline",
+      "parent": "life-sciences"
+    },
+    {
+      "id": "mathematical-biology",
+      "zh": "数理生物学",
+      "en": "Mathematical biology",
+      "level": "specialty",
+      "parent": "biology"
+    },
+    {
+      "id": "control-dynamics",
+      "zh": "控制与动力系统",
+      "en": "Control and dynamical systems",
+      "level": "discipline",
+      "parent": "engineering-systems"
+    },
+    {
+      "id": "electrical-engineering",
+      "zh": "电气工程",
+      "en": "Electrical engineering",
+      "level": "discipline",
+      "parent": "engineering-systems"
+    },
+    {
+      "id": "electrical-power-engineering",
+      "zh": "电力工程",
+      "en": "Electric power engineering",
+      "level": "specialty",
+      "parent": "electrical-engineering"
     }
   ],
   "projects": [
@@ -52,7 +181,10 @@
       ],
       "dependencies": [],
       "unavailable_links": 0,
-      "legacy_paths": {}
+      "legacy_paths": {},
+      "related_categories": [
+        "electrical-power-engineering"
+      ]
     },
     {
       "slug": "adaptive-erasure-feedback-law",
@@ -627,7 +759,10 @@
       ],
       "dependencies": [],
       "unavailable_links": 0,
-      "legacy_paths": {}
+      "legacy_paths": {},
+      "related_categories": [
+        "mathematical-biology"
+      ]
     },
     {
       "slug": "conditional-information-power-boundaries",
@@ -720,7 +855,10 @@
       ],
       "dependencies": [],
       "unavailable_links": 0,
-      "legacy_paths": {}
+      "legacy_paths": {},
+      "related_categories": [
+        "theoretical-chemistry"
+      ]
     },
     {
       "slug": "critical-sparse-audit-stopping-limits",
@@ -918,7 +1056,10 @@
       ],
       "dependencies": [],
       "unavailable_links": 0,
-      "legacy_paths": {}
+      "legacy_paths": {},
+      "related_categories": [
+        "theoretical-economics"
+      ]
     },
     {
       "slug": "equal-patience-priority-classification",
@@ -3189,7 +3330,10 @@
       ],
       "dependencies": [],
       "unavailable_links": 0,
-      "legacy_paths": {}
+      "legacy_paths": {},
+      "related_categories": [
+        "probability-statistics"
+      ]
     },
     {
       "slug": "robust-secretary-acceptance-thinning",

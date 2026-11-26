@@ -1,8 +1,17 @@
 # 按学科浏览 / Browse by field
 
-[论文目录](README.md) · [复现索引](REPRODUCIBILITY.md) · [导出单项成果](EXPORT.md)
+[论文目录](README.md) · [导出单项成果](EXPORT.md)
 
-## 数学 / Mathematics
+交叉成果可由多个学科入口访问。 / Cross-listed entries link to the same research project.
+
+## 数学与统计科学 / Mathematical and statistical sciences
+
+[学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/)
+
+
+### 数学 / Mathematics
+
+[学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/mathematics/)
 
 - [A linear threshold for optimal burning of long path forests](linear-threshold-path-forest-burning/)
 - [A Sharp Tail Criterion and Starting-Point Cutoff for Radial Stereographic Bouncy Particle Sampling](sbps-radial-tail-cutoff/)
@@ -151,7 +160,9 @@
 - [非负次模函数在边际概率上限下的精确相关间隙](sharp-nonmonotone-correlation-gap/)
 - [非重叠唯一支配平方根阈值的复杂度](non-overlapping-unidomination-threshold/)
 
-## 概率与统计 / Probability and statistics
+### 概率与统计 / Probability and statistics
+
+[学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/probability-statistics/)
 
 - [A Poisson-to-Gaussian crossover for nearly coincident threshold counts](high-overlap-crossover/)
 - [A Vanishing Second Spike in a Real Haar Interaction Graph](real-haar-mst-singular-regularization/)
@@ -170,6 +181,7 @@
 - [The exact Gaussian threshold noise-stability phase curve](gaussian-threshold-phase-curve/)
 - [The finite-population effect for Euclidean coordinate medians](fixed-population-sharp-deficit/)
 - [The sharp random EFX threshold for two-class nullity chores](random-occupancy-threshold/)
+- [The statistical price of robust LQR depends on its comparator](robust-lqr-regret-efficiency/) · 交叉 / Cross-listed
 - [The trivariate Gaussian Simes inequality uniformly near level one](uniform-endpoint-singular-correlations/)
 - [The trivariate two-sided Gaussian Simes inequality without a high-level correlation cap](unrestricted-correlation-boundary/)
 - [The weak-response frequency boundary for reversible Markov environments](reversible-environment-weak-response/)
@@ -192,7 +204,116 @@
 - [高斯频率模型的梯度方差精确渐近](gaussian-frequency-gradient-variance/)
 - [高温 Gibbs 态在弱局域量子信道下的一致 Markov 性：定量补全稿](high-temperature-gibbs-weak-noise/)
 
-## 信息与通信 / Information and communication
+### 优化与运筹 / Optimization and operations research
+
+[学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/optimization-operations/)
+
+- [A Common Revenue Threshold for Regular Proportional Choice](rank-cutoff-common-threshold-half/)
+- [A Sharp Reward Threshold for Faster, More Patient Jobs in a Two-Class Clearing System](two-class-clearing-reward-threshold/)
+- [An order \(1/n\) horizon bound for record-constrained prophet inequalities](uniform-bin-minimum-rate/)
+- [Equal-Reward Strict Priority with Heterogeneous Exponential Patience](equal-reward-priority-classification/)
+- [Exact CVaR One-Max Search at a Fixed Announced Horizon](announced-fixed-horizon/)
+- [Exact phase complexity of discrete CVaR ski rental](polynomial-exact-phase-sweep/)
+- [Ordinal predictions attain the exact finite-job scheduling frontier](ordinal-only-frontier/)
+- [Quantitative gains from refunds under finite valuation uncertainty](finite-value-robust-refund-gain/)
+- [Serial service and the exact ordinal scheduling frontier](serial-service-frontier/)
+- [Sharp demand-shape and information boundaries in random-capacity inventory control](discount-replenishment-full-capacity/)
+- [Stable FCFS queues with maximal total-variation separation](ergodic-queue-total-variation-separation/)
+- [Strict Priority in Nonpreemptive Clearing Systems with Common Exponential Patience](equal-patience-priority-classification/)
+- [Synchronization, relaxation gaps, and uniform planning horizons in heterogeneous restless bandits](heterogeneous-rmab-uniform-horizon/)
+- [The exact finite-job consistency–robustness frontier for non-clairvoyant scheduling](finite-n-prediction-scheduling/)
+- [一次查询秘书问题的排列层级及有理界](ordinal-query-secretary-upper-bound/)
+- [以缺货概率校准在线阈值](prophet-secretary-stockout/)
+- [单次在线择价的全风险 CVaR 精确最优竞争比](risk-transfer-and-finite-horizon/)
+- [在线无界背包的指定随机源与公平位](online-unbounded-knapsack-minimax/)
+- [完工反馈队列路由与双临界极小极大](queue-routing-logarithmic-regret/)
+- [未知污染预算定价的全前缀保证](unknown-budget-robust-pricing/)
+- [独立同分布先知选择中的记录约束](record-constrained-prophet-gap/)
+- [离散滑雪租赁的 CVaR 最优解与精确相变](risk-sensitive-ski-rental/)
+- [第二高估值的稳健拍卖机制与唯一等化轨道](second-statistic-auction-sharp-ratio/)
+- [连续时间 CVaR 滑雪租赁的精确高风险首项](continuous-high-risk-prefactor/)
+- [随机接受在线选择的秩稀疏化、稀有接受锐极限与异质率信息边界](robust-secretary-acceptance-thinning/)
+- [风险敏感一次在线卖出的精确最优值](cvar-one-max-exact-optimality/)
+
+## 计算与信息科学 / Computing and information sciences
+
+[学科目录 / Field directory](../disciplines/computing-information-sciences/)
+
+
+### 计算机科学 / Computer science
+
+[学科目录 / Field directory](../disciplines/computing-information-sciences/computer-science/)
+
+
+#### 理论计算机科学 / Theoretical computer science
+
+[学科目录 / Field directory](../disciplines/computing-information-sciences/computer-science/theoretical-computer-science/)
+
+- [Assignment bounds and constant-factor algorithms for bounded-hop independent-set reconfiguration](bounded-hop-independent-set-approximation/)
+- [Helly 圆弧图的最大极小团横截与锐利比例界](upper-clique-transversal-helly-circular-arc/)
+- [Hitting and cover-time robustness separate on bounded-degree graphs](bounded-degree-cover-hitting-separation/)
+- [Optimal half guarantees for dynamic matching with NBUE lifetimes](nbue-dynamic-matching-half/)
+- [Proper hat-guessing saturation of windmills and cone bouquets](all-clique-saturation/)
+- [Upper Clique Transversal on simultaneous interval representations](upper-clique-transversal-simultaneous-xp/)
+- [两参与者的主观 SD-EF1 与共同市场 EF1](two-agent-sd-ef1-market/)
+- [两类拟阵零度家务的最坏近似 EFX 因子](efx-binary-partition-nullity/)
+- [二次访问排程在切口宽度一时的线性算法](position-matching-cut-width-one/)
+- [共同最高单件下的完整 EFX：构造、束型困难性和四人核](common-top-good-constructive-efx/)
+- [共同独立集如何保证拟阵秩费用下的杂务 EFX](efx-matroid-rank-chores/)
+- [加性外部性下 EF1 的最小三参与者反例](ordinary-ef1-three-agent-counterexample/)
+- [四人八物品 EFX 存在性的共同双件支配充分条件](efx-four-agents-eight-goods/)
+- [团横截与团关联图诱导匹配相等的判定复杂性](upper-clique-transversal-incidence-equality/)
+- [实权最大割的稳定性、单中心度与弥散外围](weighted-maxcut-feedback/)
+- [弦二分图上的最小极大无环匹配是 NP 完全的](minimum-maximal-acyclic-matching-chordal-bipartite/)
+- [强弦图上最大极小团横截的多项式算法](upper-clique-transversal-strongly-chordal/)
+- [时序 EF1 九件失败阈值与单参算法](temporal-ef1-nine-chores-threshold/)
+- [有限 Pinwheel 排程的期限障碍与两访参数算法](finite-pinwheel-three-task/)
+- [极大无环匹配的最小化：弦图的 NP 完全性与区间图算法](minimum-maximal-acyclic-matching-chordal/)
+- [稳定匹配的有限信息安全操纵与精确信息组成](stable-matching-rat-barrier/)
+- [色类支配着色按团簇顶点删除数固定参数可解](class-domination-coloring-cluster-deletion/)
+- [色类支配着色的显式树宽参数算法](class-domination-coloring-treewidth/)
+- [长路径森林燃烧阈值的构造性近线性上界](graph-burning-long-path-forests/)
+- [隐藏三正则图的相干恢复与指数级预言机分离](spired-graph-oracle-separation/)
+
+#### 机器学习与推断 / Machine learning and inference
+
+[学科目录 / Field directory](../disciplines/computing-information-sciences/computer-science/learning-inference/)
+
+- [A square-root mixed-null inflation for weighted conformal BH](mixed-null-square-root-boundary/)
+- [A universal boundary kernel for cross-validation after two-model selection](two-model-cv-boundary-universality/)
+- [Narrow corridors in critical online conformal prediction](narrow-corridor-expansion/)
+- [Sharp contamination and inference frontiers for the optimal sub-Gaussian variance proxy](optimal-proxy-tail-envelope-minimax/)
+- [Sharp limits of repeated majority cross-validation](repeated-majority-cross-validation/)
+- [The sharp cost of online conformal coverage in subdiffusive corridors](online-conformal-sharp-constant/)
+- [Transient learning at a common reward threshold in finite-state Markov decision processes](finite-worst-models-transient-learning/)
+- [临界共形预测首项的固定区间抛物方程求值](online-conformal-parabolic-evaluation/)
+- [临界覆盖约束的精确已知分布代价](online-conformal-critical-known-oracle/)
+- [以共享样本秩实现可复现的共形校准](replicable-conformal-pilot-ranks/)
+- [任意类别数随机响应的精确 zCDP：全局相变、唯一最优阶与锐渐近](krr-exact-zcdp/)
+- [加权共形 BH 的 Poisson 转移与共享阈值格点](weighted-conformal-poisson-transfer/)
+- [加权共形 BH 的有限样本误报率线性上界](weighted-conformal-global-null-linear-fdr/)
+- [加权回归选择的风险边界与有限最坏实例](weighted-regression-selection-frontier/)
+- [协变量偏移下谱截断核回归的训练条件共形覆盖](weighted-conformal-spectral-rkhs/)
+- [固定分布加权共形 BH 的显式样本量门槛](weighted-conformal-explicit-sample-threshold/)
+- [固定双边覆盖约束下的精确在线预言机分歧率](online-conformal-fixed-corridor/)
+- [固定权重上界下全零加权共形 Simes 检验的尖锐曲率](weighted-conformal-fixed-cap-curvature/)
+- [对称宽走廊下临界共形代价的精确渐近](online-conformal-wide-corridor-asymptotic/)
+- [平方根走廊内，向内调节秩阈值严格改善共形预测首项](online-conformal-minimax-feedback/)
+- [未知分布下在线共形覆盖的精确有限时域极小极大值](online-conformal-minimax-dp/)
+- [未知分布临界共形预测的精确渐近变分极限](online-conformal-critical-variational-limit/)
+- [每个有限图都有团对偶共形的诱导扩张 · Every finite graph has a clique dually conformal induced extension](clique-dually-conformal-induced-extension/)
+- [纵向硬预算协方差与低秩异质风险](hard-budget-covariance-fourth-moment/)
+- [自适应指数核回归的尖锐同时置信宽度 · Sharp simultaneous confidence widths for adaptive exponential-kernel regression](adaptive-exponential-kernel-confidence/)
+- [错报外部矩时的保形预测覆盖偏差](moment-conformal-misspecification/)
+
+### 信息科学 / Information science
+
+[学科目录 / Field directory](../disciplines/computing-information-sciences/information-science/)
+
+
+#### 信息与通信 / Information and communication
+
+[学科目录 / Field directory](../disciplines/computing-information-sciences/information-science/information-communication/)
 
 - [A nonvanishing privacy floor for Gaussian-product post-processing](gaussian-product-privacy-floor/)
 - [A predictive floor for hierarchical Poisson mixtures with growing support](poisson-universal-prior-predictive-floor/)
@@ -229,64 +350,19 @@
 - [顺序局部隐私下的高斯自协方差估计](sequential-ldp-autocovariance-minimax/)
 - [鲁棒 CRT 的固定通道精确设计：有限窗口、容量准多项式与五六通道最优证书](robust-crt-fixed-channel-exact-design/)
 
-## 优化与运筹 / Optimization and operations research
+## 物质科学 / Physical sciences
 
-- [A Common Revenue Threshold for Regular Proportional Choice](rank-cutoff-common-threshold-half/)
-- [A Sharp Reward Threshold for Faster, More Patient Jobs in a Two-Class Clearing System](two-class-clearing-reward-threshold/)
-- [An order \(1/n\) horizon bound for record-constrained prophet inequalities](uniform-bin-minimum-rate/)
-- [Equal-Reward Strict Priority with Heterogeneous Exponential Patience](equal-reward-priority-classification/)
-- [Exact CVaR One-Max Search at a Fixed Announced Horizon](announced-fixed-horizon/)
-- [Exact phase complexity of discrete CVaR ski rental](polynomial-exact-phase-sweep/)
-- [Ordinal predictions attain the exact finite-job scheduling frontier](ordinal-only-frontier/)
-- [Quantitative gains from refunds under finite valuation uncertainty](finite-value-robust-refund-gain/)
-- [Serial service and the exact ordinal scheduling frontier](serial-service-frontier/)
-- [Sharp demand-shape and information boundaries in random-capacity inventory control](discount-replenishment-full-capacity/)
-- [Stable FCFS queues with maximal total-variation separation](ergodic-queue-total-variation-separation/)
-- [Strict Priority in Nonpreemptive Clearing Systems with Common Exponential Patience](equal-patience-priority-classification/)
-- [Synchronization, relaxation gaps, and uniform planning horizons in heterogeneous restless bandits](heterogeneous-rmab-uniform-horizon/)
-- [The exact finite-job consistency–robustness frontier for non-clairvoyant scheduling](finite-n-prediction-scheduling/)
-- [一次查询秘书问题的排列层级及有理界](ordinal-query-secretary-upper-bound/)
-- [以缺货概率校准在线阈值](prophet-secretary-stockout/)
-- [单次在线择价的全风险 CVaR 精确最优竞争比](risk-transfer-and-finite-horizon/)
-- [在线无界背包的指定随机源与公平位](online-unbounded-knapsack-minimax/)
-- [完工反馈队列路由与双临界极小极大](queue-routing-logarithmic-regret/)
-- [未知污染预算定价的全前缀保证](unknown-budget-robust-pricing/)
-- [独立同分布先知选择中的记录约束](record-constrained-prophet-gap/)
-- [离散滑雪租赁的 CVaR 最优解与精确相变](risk-sensitive-ski-rental/)
-- [第二高估值的稳健拍卖机制与唯一等化轨道](second-statistic-auction-sharp-ratio/)
-- [连续时间 CVaR 滑雪租赁的精确高风险首项](continuous-high-risk-prefactor/)
-- [随机接受在线选择的秩稀疏化、稀有接受锐极限与异质率信息边界](robust-secretary-acceptance-thinning/)
-- [风险敏感一次在线卖出的精确最优值](cvar-one-max-exact-optimality/)
+[学科目录 / Field directory](../disciplines/physical-sciences/)
 
-## 理论计算机科学 / Theoretical computer science
 
-- [Assignment bounds and constant-factor algorithms for bounded-hop independent-set reconfiguration](bounded-hop-independent-set-approximation/)
-- [Helly 圆弧图的最大极小团横截与锐利比例界](upper-clique-transversal-helly-circular-arc/)
-- [Hitting and cover-time robustness separate on bounded-degree graphs](bounded-degree-cover-hitting-separation/)
-- [Optimal half guarantees for dynamic matching with NBUE lifetimes](nbue-dynamic-matching-half/)
-- [Proper hat-guessing saturation of windmills and cone bouquets](all-clique-saturation/)
-- [Upper Clique Transversal on simultaneous interval representations](upper-clique-transversal-simultaneous-xp/)
-- [两参与者的主观 SD-EF1 与共同市场 EF1](two-agent-sd-ef1-market/)
-- [两类拟阵零度家务的最坏近似 EFX 因子](efx-binary-partition-nullity/)
-- [二次访问排程在切口宽度一时的线性算法](position-matching-cut-width-one/)
-- [共同最高单件下的完整 EFX：构造、束型困难性和四人核](common-top-good-constructive-efx/)
-- [共同独立集如何保证拟阵秩费用下的杂务 EFX](efx-matroid-rank-chores/)
-- [加性外部性下 EF1 的最小三参与者反例](ordinary-ef1-three-agent-counterexample/)
-- [四人八物品 EFX 存在性的共同双件支配充分条件](efx-four-agents-eight-goods/)
-- [团横截与团关联图诱导匹配相等的判定复杂性](upper-clique-transversal-incidence-equality/)
-- [实权最大割的稳定性、单中心度与弥散外围](weighted-maxcut-feedback/)
-- [弦二分图上的最小极大无环匹配是 NP 完全的](minimum-maximal-acyclic-matching-chordal-bipartite/)
-- [强弦图上最大极小团横截的多项式算法](upper-clique-transversal-strongly-chordal/)
-- [时序 EF1 九件失败阈值与单参算法](temporal-ef1-nine-chores-threshold/)
-- [有限 Pinwheel 排程的期限障碍与两访参数算法](finite-pinwheel-three-task/)
-- [极大无环匹配的最小化：弦图的 NP 完全性与区间图算法](minimum-maximal-acyclic-matching-chordal/)
-- [稳定匹配的有限信息安全操纵与精确信息组成](stable-matching-rat-barrier/)
-- [色类支配着色按团簇顶点删除数固定参数可解](class-domination-coloring-cluster-deletion/)
-- [色类支配着色的显式树宽参数算法](class-domination-coloring-treewidth/)
-- [长路径森林燃烧阈值的构造性近线性上界](graph-burning-long-path-forests/)
-- [隐藏三正则图的相干恢复与指数级预言机分离](spired-graph-oracle-separation/)
+### 物理学 / Physics
 
-## 量子信息与物理 / Quantum information and physics
+[学科目录 / Field directory](../disciplines/physical-sciences/physics/)
+
+
+#### 量子信息与物理 / Quantum information and physics
+
+[学科目录 / Field directory](../disciplines/physical-sciences/physics/quantum-physics/)
 
 - [Computational complexity of optimal Pauli error cancellation on odd cycles](odd-cycle-exact-complexity/)
 - [Entanglement required for optimal charging in a Clifford battery](optimal-charging-entanglement/)
@@ -334,13 +410,63 @@
 - [完全图量子电池中可分初态的精确充电功率](quantum-battery-separable-initialization/)
 - [平衡完全三部图的唯一最近谱邻居](tripartite-nearest-spectral/)
 - [循环 Bell 纠缠交换链的尖锐乘法系数](bell-chain-sharp-parity/)
-- [排序 Schmidt 参考态在 $0<\alpha<1$ 的失效与两种最小置换维数](low-order-failure-and-minimal-permutation-dimension/)
+- [排序 Schmidt 参考态在 $0&lt;\alpha&lt;1$ 的失效与两种最小置换维数](low-order-failure-and-minimal-permutation-dimension/)
 - [排序 Schmidt 参考态最优性的半阶精确反例](schmidt-reference-renyi-half-counterexample/)
 - [有界简并量子冷却的超水平集解析证明与显式余量](qubit-cooling-bounded-degeneracy/)
 - [量子 χ² 的异质张量化与精确区域](quantum-chi2-tensorization-regions/)
 - [量子输运代价的精确多边形逼近](quantum-transport-polygon-exactness/)
 
-## 控制与动力系统 / Control and dynamical systems
+### 化学 / Chemistry
+
+[学科目录 / Field directory](../disciplines/physical-sciences/chemistry/)
+
+
+#### 理论化学 / Theoretical chemistry
+
+[学科目录 / Field directory](../disciplines/physical-sciences/chemistry/theoretical-chemistry/)
+
+- [Finite-resource response of reversible covalent switches](covalent-switch-finite-resource-response/) · 交叉 / Cross-listed
+
+## 经济与金融科学 / Economics and finance
+
+[学科目录 / Field directory](../disciplines/economics-finance/)
+
+
+### 经济学 / Economics
+
+[学科目录 / Field directory](../disciplines/economics-finance/economics/)
+
+
+#### 理论经济学 / Theoretical economics
+
+[学科目录 / Field directory](../disciplines/economics-finance/economics/theoretical-economics/)
+
+- [Truthful reports break the optimal report-independent envy-ratio barrier](envy-ratio-truthful-report-separation/) · 交叉 / Cross-listed
+
+## 生命科学 / Life sciences
+
+[学科目录 / Field directory](../disciplines/life-sciences/)
+
+
+### 生物学 / Biology
+
+[学科目录 / Field directory](../disciplines/life-sciences/biology/)
+
+
+#### 数理生物学 / Mathematical biology
+
+[学科目录 / Field directory](../disciplines/life-sciences/biology/mathematical-biology/)
+
+- [Global and Stable Recovery of Compositional Lotka–Volterra Dynamics](compositional-glv-convex-recovery/) · 交叉 / Cross-listed
+
+## 工程与系统科学 / Engineering and systems sciences
+
+[学科目录 / Field directory](../disciplines/engineering-systems/)
+
+
+### 控制与动力系统 / Control and dynamical systems
+
+[学科目录 / Field directory](../disciplines/engineering-systems/control-dynamics/)
 
 - [Exact Geometry and Uniform Recovery of Congestion Monotonicity on AC Lines](ac-line-congestion-geometry/)
 - [Exact power thresholds for noncyclic Gaussian sources and their discontinuity at pole coalescence](noncyclic-mimo-power-elimination/)
@@ -363,31 +489,13 @@
 - [重球周期轨道的最小维数和开集稳定性](heavy-ball-planar-cycle-domain/)
 - [限速谐势阱的精确最省功控制](speed-limited-harmonic-equilibration/)
 
-## 机器学习与推断 / Machine learning and inference
+### 电气工程 / Electrical engineering
 
-- [A square-root mixed-null inflation for weighted conformal BH](mixed-null-square-root-boundary/)
-- [A universal boundary kernel for cross-validation after two-model selection](two-model-cv-boundary-universality/)
-- [Narrow corridors in critical online conformal prediction](narrow-corridor-expansion/)
-- [Sharp contamination and inference frontiers for the optimal sub-Gaussian variance proxy](optimal-proxy-tail-envelope-minimax/)
-- [Sharp limits of repeated majority cross-validation](repeated-majority-cross-validation/)
-- [The sharp cost of online conformal coverage in subdiffusive corridors](online-conformal-sharp-constant/)
-- [Transient learning at a common reward threshold in finite-state Markov decision processes](finite-worst-models-transient-learning/)
-- [临界共形预测首项的固定区间抛物方程求值](online-conformal-parabolic-evaluation/)
-- [临界覆盖约束的精确已知分布代价](online-conformal-critical-known-oracle/)
-- [以共享样本秩实现可复现的共形校准](replicable-conformal-pilot-ranks/)
-- [任意类别数随机响应的精确 zCDP：全局相变、唯一最优阶与锐渐近](krr-exact-zcdp/)
-- [加权共形 BH 的 Poisson 转移与共享阈值格点](weighted-conformal-poisson-transfer/)
-- [加权共形 BH 的有限样本误报率线性上界](weighted-conformal-global-null-linear-fdr/)
-- [加权回归选择的风险边界与有限最坏实例](weighted-regression-selection-frontier/)
-- [协变量偏移下谱截断核回归的训练条件共形覆盖](weighted-conformal-spectral-rkhs/)
-- [固定分布加权共形 BH 的显式样本量门槛](weighted-conformal-explicit-sample-threshold/)
-- [固定双边覆盖约束下的精确在线预言机分歧率](online-conformal-fixed-corridor/)
-- [固定权重上界下全零加权共形 Simes 检验的尖锐曲率](weighted-conformal-fixed-cap-curvature/)
-- [对称宽走廊下临界共形代价的精确渐近](online-conformal-wide-corridor-asymptotic/)
-- [平方根走廊内，向内调节秩阈值严格改善共形预测首项](online-conformal-minimax-feedback/)
-- [未知分布下在线共形覆盖的精确有限时域极小极大值](online-conformal-minimax-dp/)
-- [未知分布临界共形预测的精确渐近变分极限](online-conformal-critical-variational-limit/)
-- [每个有限图都有团对偶共形的诱导扩张 · Every finite graph has a clique dually conformal induced extension](clique-dually-conformal-induced-extension/)
-- [纵向硬预算协方差与低秩异质风险](hard-budget-covariance-fourth-moment/)
-- [自适应指数核回归的尖锐同时置信宽度 · Sharp simultaneous confidence widths for adaptive exponential-kernel regression](adaptive-exponential-kernel-confidence/)
-- [错报外部矩时的保形预测覆盖偏差](moment-conformal-misspecification/)
+[学科目录 / Field directory](../disciplines/engineering-systems/electrical-engineering/)
+
+
+#### 电力工程 / Electric power engineering
+
+[学科目录 / Field directory](../disciplines/engineering-systems/electrical-engineering/electrical-power-engineering/)
+
+- [Exact Geometry and Uniform Recovery of Congestion Monotonicity on AC Lines](ac-line-congestion-geometry/) · 交叉 / Cross-listed

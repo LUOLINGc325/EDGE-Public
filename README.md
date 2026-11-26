@@ -6,10 +6,10 @@ Research outputs from a collaborative multi-model research system.
 
 ## Research manuscripts / 研究论文
 
-The collection contains research manuscripts in computer science, statistics, operations research, theoretical economics, control theory, information theory, mathematics, and theoretical physics.
+Browse the collection by broad subject area, discipline, or specialty. Cross-listed entries lead to the same project directory.
 
 - [Manuscripts / 论文目录](papers/)
-- [Browse by field / 按学科浏览](papers/BY_FIELD.md)
+- [Browse by field / 按学科浏览](disciplines/)
 - [Export a project / 导出单项成果](papers/EXPORT.md)
 
 Each manuscript should be read with its stated assumptions, scope, proofs and references. Inclusion in this collection does not establish external peer review, publication, originality priority, or end-to-end formal verification. Where supporting artifacts are not present, this repository does not claim to provide them.

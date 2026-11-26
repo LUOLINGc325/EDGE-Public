@@ -1,0 +1,26 @@
+# 控制与动力系统 / Control and dynamical systems
+
+[按学科浏览 / Browse by field](../../../papers/BY_FIELD.md)
+
+[上级学科 / Parent](../)
+
+- [Exact Geometry and Uniform Recovery of Congestion Monotonicity on AC Lines](../../../papers/ac-line-congestion-geometry/)
+- [Exact power thresholds for noncyclic Gaussian sources and their discontinuity at pole coalescence](../../../papers/noncyclic-mimo-power-elimination/)
+- [Finite-resource response of reversible covalent switches](../../../papers/covalent-switch-finite-resource-response/)
+- [Global and Stable Recovery of Compositional Lotka–Volterra Dynamics](../../../papers/compositional-glv-convex-recovery/)
+- [Global optimality and uniqueness for conjugate-target renewal resetting](../../../papers/conjugate-resetting-global-optimality/)
+- [Optimal finite preparation for delayed Newton cooling](../../../papers/finite-common-preparation/)
+- [Spurious Local Minima and Certified Global Optimization in Two-Sensor Switched-Linear Scheduling](../../../papers/switched-linear-scheduling-global-certificate/)
+- [Stability boundaries of divisive-normalization circuits: norm-one counterexamples and sharp spectral repairs](../../../papers/divisive-normalization-stability-boundary/)
+- [The Exact Statistical Price of a Robust-Regret Certificate in LQR](../../../papers/lqr-certificate-efficiency-frontier/)
+- [The statistical price of robust LQR depends on its comparator](../../../papers/robust-lqr-regret-efficiency/)
+- [一维对数凹目标的精确布朗重置分布](../../../papers/optimal-resetting-asymmetric/)
+- [共同扰动分布下的仿射最优性：时域精确边界、暴露面刚性与矩证书](../../../papers/common-law-lqr-affine-boundary/)
+- [定时观测下马尔可夫生成元的拓扑刚性](../../../papers/topology-constrained-markov-reconstruction/)
+- [对称严格对数凹目标下的最优重置位置](../../../papers/optimal-resetting-logconcave/)
+- [时滞牛顿冷却中的全历史最优制备](../../../papers/delayed-newton-cooling-optimal-preparation/)
+- [有边界重置的布朗搜索：内部不重置的全局最优性](../../../papers/boundary-resetting-global-optimality/)
+- [标量 LQ 全局学习与自治离散临界步](../../../papers/scalar-lq-global-learning-bifurcations/)
+- [重抽样最大幂分样本似然比的水平反例](../../../papers/subsampled-max-power-lqrt/)
+- [重球周期轨道的最小维数和开集稳定性](../../../papers/heavy-ball-planar-cycle-domain/)
+- [限速谐势阱的精确最省功控制](../../../papers/speed-limited-harmonic-equilibration/)
