@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "arithmetic": "exact rational",
+  "inverse_and_reversal_cases": 60,
+  "transport_mode_entries": 290,
+  "regularized_coordinate_estimates": 180,
+  "scalar_collision": {
+    "frequency": "3",
+    "reversible_rates": [
+      "2",
+      "9/2"
+    ],
+    "response": "2/13"
+  }
+}

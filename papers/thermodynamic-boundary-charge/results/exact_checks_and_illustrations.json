@@ -1,0 +1,92 @@
+{
+  "status": "pass",
+  "exact_integer_crossing_word_comparisons": 738,
+  "normalized_oriented_second_order_numerator": "15",
+  "normalized_coefficient_denominator": "25",
+  "numerical_note": "Finite matrices and the Fourier integral below are evaluated in floating point.",
+  "pinned_parameter_example": {
+    "r": 3,
+    "epsilon": 0.25,
+    "delta": 2.5,
+    "limit": 0.04290095744738134,
+    "sizes": [
+      {
+        "L": 2,
+        "imbalance": 0.04324324324324347,
+        "absolute_limit_error": 0.00034228579586213087
+      },
+      {
+        "L": 4,
+        "imbalance": 0.042848982108008915,
+        "absolute_limit_error": 0.00005197533937242177
+      },
+      {
+        "L": 6,
+        "imbalance": 0.0429012457242004,
+        "absolute_limit_error": 2.882768190617946e-7
+      },
+      {
+        "L": 10,
+        "imbalance": 0.04290095802636018,
+        "absolute_limit_error": 5.789788440346832e-10
+      },
+      {
+        "L": 16,
+        "imbalance": 0.04290095744625355,
+        "absolute_limit_error": 1.1277853650959457e-12
+      },
+      {
+        "L": 24,
+        "imbalance": 0.04290095744738465,
+        "absolute_limit_error": 3.309852392163748e-15
+      },
+      {
+        "L": 40,
+        "imbalance": 0.04290095744738465,
+        "absolute_limit_error": 3.309852392163748e-15
+      },
+      {
+        "L": 64,
+        "imbalance": 0.04290095744738465,
+        "absolute_limit_error": 3.309852392163748e-15
+      }
+    ]
+  },
+  "finite_bias_examples_L6": [
+    {
+      "r": 1,
+      "q": 0.2,
+      "imbalance": -1.1102230246251565e-15
+    },
+    {
+      "r": 1.5,
+      "q": 0.21666666666666665,
+      "imbalance": 0.008838094981899802
+    },
+    {
+      "r": 2,
+      "q": 0.25,
+      "imbalance": 0.018290633845868154
+    },
+    {
+      "r": 3,
+      "q": 0.33333333333333337,
+      "imbalance": 0.0429012457242004
+    },
+    {
+      "r": 6,
+      "q": 0.6166666666666667,
+      "imbalance": 0.16626729721504718
+    },
+    {
+      "r": 10,
+      "q": 1.01,
+      "imbalance": 0.4485940497068934
+    },
+    {
+      "r": 14,
+      "q": 1.407142857142857,
+      "imbalance": 0.9210915457477342
+    }
+  ]
+}

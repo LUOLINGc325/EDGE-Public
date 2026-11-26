@@ -1,0 +1,7 @@
+{
+  "time_inclusive": 64,
+  "rational_gamma_delta_pairs": 12,
+  "independent_coefficient_comparisons": 780,
+  "half_gamma_half_delta_exact_identity": "f_t=2*s_(t+1)",
+  "half_case_checks": 65
+}

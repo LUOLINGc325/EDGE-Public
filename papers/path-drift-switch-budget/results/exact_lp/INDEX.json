@@ -1,0 +1,35 @@
+{
+  "schema": "certificate-index-v2",
+  "certificates": [
+    {
+      "file": "linear_T2_P0_B0.json",
+      "value": "1/2",
+      "nvars": 28
+    },
+    {
+      "file": "linear_T3_P0_B1over2.json",
+      "value": "3/8",
+      "nvars": 76
+    },
+    {
+      "file": "linear_T4_P1over2_B1over2.json",
+      "value": "83/128",
+      "nvars": 172
+    },
+    {
+      "file": "linear_T4_P1_B1.json",
+      "value": "13/16",
+      "nvars": 172
+    },
+    {
+      "file": "quadratic_T3_P1over2_B1over2.json",
+      "value": "5/16",
+      "nvars": 76
+    },
+    {
+      "file": "quadratic_T4_P0_B1over2.json",
+      "value": "47/144",
+      "nvars": 172
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "monitored_example": {
+    "resolved_physical_example": true,
+    "exact_iterates": 64
+  },
+  "abstract_normal_form": {
+    "third_order": 36,
+    "second_order": 6,
+    "scalar": 6
+  }
+}

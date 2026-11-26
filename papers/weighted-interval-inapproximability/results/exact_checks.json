@@ -1,0 +1,58 @@
+{
+  "status": "pass",
+  "arithmetic": "exact integers",
+  "forward_bijections": 45,
+  "forward_cut_comparisons": 147,
+  "reverse_bijections": 70,
+  "reverse_cut_comparisons": 92,
+  "coloring_gap_examples": [
+    {
+      "name": "path-four",
+      "n": 4,
+      "multiplicity": 10,
+      "colorable": true,
+      "representative_paths": 192,
+      "optimal_deletions": 8
+    },
+    {
+      "name": "triangle",
+      "n": 3,
+      "multiplicity": 8,
+      "colorable": true,
+      "representative_paths": 51,
+      "optimal_deletions": 6
+    },
+    {
+      "name": "complete-four",
+      "n": 4,
+      "multiplicity": 10,
+      "colorable": false,
+      "representative_paths": 219,
+      "optimal_deletions": 14
+    },
+    {
+      "name": "complete-four-minus-edge",
+      "n": 4,
+      "multiplicity": 10,
+      "colorable": true,
+      "representative_paths": 168,
+      "optimal_deletions": 8
+    },
+    {
+      "name": "odd-cycle",
+      "n": 5,
+      "multiplicity": 12,
+      "colorable": true,
+      "representative_paths": 771,
+      "optimal_deletions": 10
+    },
+    {
+      "name": "five-wheel",
+      "n": 6,
+      "multiplicity": 14,
+      "colorable": false,
+      "representative_paths": 3339,
+      "optimal_deletions": 18
+    }
+  ]
+}

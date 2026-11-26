@@ -1,0 +1,100 @@
+{
+  "altered_certificate_rejected": true,
+  "families": [
+    {
+      "alphabet_size": 2,
+      "instances": 16,
+      "kind": "exhaustive_graph_pairs",
+      "raw_brute_force_depth": 2,
+      "source_nodes": 1,
+      "target_nodes": 1
+    },
+    {
+      "alphabet_size": 2,
+      "instances": 1024,
+      "kind": "exhaustive_graph_pairs",
+      "raw_brute_force_depth": 2,
+      "source_nodes": 1,
+      "target_nodes": 2
+    },
+    {
+      "alphabet_size": 2,
+      "instances": 1024,
+      "kind": "exhaustive_graph_pairs",
+      "raw_brute_force_depth": 2,
+      "source_nodes": 2,
+      "target_nodes": 1
+    },
+    {
+      "alphabet_size": 1,
+      "instances": 256,
+      "kind": "exhaustive_graph_pairs",
+      "raw_brute_force_depth": 2,
+      "source_nodes": 2,
+      "target_nodes": 2
+    },
+    {
+      "kind": "curated_boundary",
+      "minimum_depth": 0,
+      "name": "empty_both",
+      "result": "sat"
+    },
+    {
+      "kind": "curated_boundary",
+      "minimum_depth": null,
+      "name": "empty_source_nonempty_target",
+      "result": "unsat"
+    },
+    {
+      "kind": "curated_boundary",
+      "minimum_depth": 0,
+      "name": "isolated_target",
+      "result": "sat"
+    },
+    {
+      "kind": "curated_boundary",
+      "minimum_depth": 2,
+      "name": "empty_source_paths_chain",
+      "result": "sat"
+    },
+    {
+      "kind": "curated_boundary",
+      "minimum_depth": null,
+      "name": "inconsistent_parallel_labels",
+      "result": "unsat"
+    },
+    {
+      "kind": "curated_boundary",
+      "minimum_depth": 2,
+      "name": "anchored_source_path_three",
+      "result": "sat"
+    },
+    {
+      "kind": "curated_boundary",
+      "minimum_depth": 3,
+      "name": "anchored_source_path_wrong_first",
+      "result": "sat"
+    },
+    {
+      "kind": "curated_boundary",
+      "minimum_depth": 2,
+      "name": "unary_anchored_path",
+      "result": "sat"
+    },
+    {
+      "instances": 120,
+      "kind": "seeded_random_graph_pairs",
+      "raw_brute_force_depth": 2,
+      "seed": 20261125
+    }
+  ],
+  "finite_testing_is_not_a_general_proof": true,
+  "graph_instances": 2448,
+  "largest_minimum_depth_seen": 3,
+  "method": "explicit automaton BFS versus independent bounded raw-equation search",
+  "records_sha256": "c9759e50643b74226e7b8082b9572ac7187b0e183d1133fb7d50c7b4e7799c00",
+  "resource_limit_check": "passed",
+  "sat": 1332,
+  "status": "passed",
+  "unsat": 1116
+}

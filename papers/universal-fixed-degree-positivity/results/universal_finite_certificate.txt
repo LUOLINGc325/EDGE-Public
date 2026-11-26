@@ -1,0 +1,3 @@
+Small dimension composition-coefficient checks 45056
+Counts 16453 21000 383383 72628 36
+Failures 0

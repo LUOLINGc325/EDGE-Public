@@ -1,0 +1,3334 @@
+{
+  "schema": "smooth-gibbs-finite-event-lp-v1",
+  "status": "passed",
+  "discovery_solver": "scipy.optimize.linprog / HiGHS",
+  "scipy_version": "1.17.0",
+  "sympy_version": "1.14.0",
+  "certificate_arithmetic": "exact rational primal and dual feasibility and equal objectives",
+  "cases": [
+    {
+      "M": 2,
+      "n": 1,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "1/48",
+      "leaf_event_probabilities": [
+        "23/48",
+        "11/48"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "1/2"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/4"
+        },
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "1/4"
+        }
+      ],
+      "discovery_objective_float": 0.02083333333333337,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/4",
+        "-1/2",
+        "1/4"
+      ]
+    },
+    {
+      "M": 2,
+      "n": 1,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "1/24",
+      "leaf_event_probabilities": [
+        "11/24",
+        "1/8"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "1/2"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/4"
+        },
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "1/4"
+        }
+      ],
+      "discovery_objective_float": 0.04166666666666663,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/4",
+        "-1/2",
+        "1/4"
+      ]
+    },
+    {
+      "M": 2,
+      "n": 1,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "3/22",
+      "leaf_event_probabilities": [
+        "4/11",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 8,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.1363636363636364,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0"
+      ]
+    },
+    {
+      "M": 2,
+      "n": 1,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "33/202",
+      "leaf_event_probabilities": [
+        "34/101",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 8,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.16336633663366334,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0"
+      ]
+    },
+    {
+      "M": 3,
+      "n": 1,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "1/30",
+      "leaf_event_probabilities": [
+        "7/15",
+        "1/6"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "1/2"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 7,
+          "label": "event_lower_k3",
+          "weight": "1/6"
+        }
+      ],
+      "discovery_objective_float": 0.033333333333333326,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-1/2",
+        "0",
+        "1/6"
+      ]
+    },
+    {
+      "M": 3,
+      "n": 1,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "1/16",
+      "leaf_event_probabilities": [
+        "7/16",
+        "1/16"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "1/2"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 7,
+          "label": "event_lower_k3",
+          "weight": "1/6"
+        }
+      ],
+      "discovery_objective_float": 0.0625,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-1/2",
+        "0",
+        "1/6"
+      ]
+    },
+    {
+      "M": 3,
+      "n": 1,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "19/110",
+      "leaf_event_probabilities": [
+        "18/55",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 10,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.17272727272727273,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 3,
+      "n": 1,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "199/1010",
+      "leaf_event_probabilities": [
+        "153/505",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 10,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.19702970297029698,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 3,
+      "n": 2,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "1/160",
+      "leaf_event_probabilities": [
+        "79/160",
+        "21/80",
+        "33/160"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "3/8"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/8"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/8"
+        },
+        {
+          "constraint_index": 6,
+          "label": "event_upper_k3",
+          "weight": "1/8"
+        }
+      ],
+      "discovery_objective_float": 0.006250000000000089,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/8",
+        "-3/8",
+        "3/8",
+        "-1/8"
+      ]
+    },
+    {
+      "M": 3,
+      "n": 2,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "1/64",
+      "leaf_event_probabilities": [
+        "31/64",
+        "5/32",
+        "9/64"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "3/8"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/8"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/8"
+        },
+        {
+          "constraint_index": 6,
+          "label": "event_upper_k3",
+          "weight": "1/8"
+        }
+      ],
+      "discovery_objective_float": 0.015625000000000056,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/8",
+        "-3/8",
+        "3/8",
+        "-1/8"
+      ]
+    },
+    {
+      "M": 3,
+      "n": 2,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "1/11",
+      "leaf_event_probabilities": [
+        "9/22",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/4"
+        },
+        {
+          "constraint_index": 10,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/2"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/4"
+        }
+      ],
+      "discovery_objective_float": 0.09090909090909094,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/4",
+        "-3/4",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 3,
+      "n": 2,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "49/404",
+      "leaf_event_probabilities": [
+        "153/404",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/4"
+        },
+        {
+          "constraint_index": 10,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/2"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/4"
+        }
+      ],
+      "discovery_objective_float": 0.12128712871287128,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/4",
+        "-3/4",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 4,
+      "n": 2,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "1/90",
+      "leaf_event_probabilities": [
+        "22/45",
+        "1/5",
+        "8/45"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 7,
+          "label": "event_lower_k3",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/6"
+        },
+        {
+          "constraint_index": 8,
+          "label": "event_upper_k4",
+          "weight": "1/6"
+        }
+      ],
+      "discovery_objective_float": 0.011111111111111127,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/6",
+        "-1/3",
+        "0",
+        "1/3",
+        "-1/6"
+      ]
+    },
+    {
+      "M": 4,
+      "n": 2,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "1/40",
+      "leaf_event_probabilities": [
+        "19/40",
+        "3/40",
+        "1/8"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 7,
+          "label": "event_lower_k3",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/6"
+        },
+        {
+          "constraint_index": 8,
+          "label": "event_upper_k4",
+          "weight": "1/6"
+        }
+      ],
+      "discovery_objective_float": 0.024999999999999967,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/6",
+        "-1/3",
+        "0",
+        "1/3",
+        "-1/6"
+      ]
+    },
+    {
+      "M": 4,
+      "n": 2,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "3/22",
+      "leaf_event_probabilities": [
+        "4/11",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 12,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.1363636363636364,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 4,
+      "n": 2,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "33/202",
+      "leaf_event_probabilities": [
+        "34/101",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 12,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.16336633663366334,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 6,
+      "n": 2,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "1/48",
+      "leaf_event_probabilities": [
+        "23/48",
+        "5/48",
+        "7/48"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/4"
+        },
+        {
+          "constraint_index": 9,
+          "label": "event_lower_k4",
+          "weight": "1/4"
+        },
+        {
+          "constraint_index": 12,
+          "label": "event_upper_k6",
+          "weight": "1/10"
+        }
+      ],
+      "discovery_objective_float": 0.020833333333333315,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/4",
+        "-2/5",
+        "0",
+        "0",
+        "1/4",
+        "0",
+        "-1/10"
+      ]
+    },
+    {
+      "M": 6,
+      "n": 2,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "1/20",
+      "leaf_event_probabilities": [
+        "9/20",
+        "0",
+        "1/20"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 16,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.04999999999999993,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 6,
+      "n": 2,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "19/110",
+      "leaf_event_probabilities": [
+        "18/55",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 16,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.17272727272727273,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 6,
+      "n": 2,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "199/1010",
+      "leaf_event_probabilities": [
+        "153/505",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 16,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.19702970297029698,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 4,
+      "n": 3,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "1/480",
+      "leaf_event_probabilities": [
+        "239/480",
+        "9/32",
+        "103/480",
+        "79/480"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "3/8"
+        },
+        {
+          "constraint_index": 6,
+          "label": "event_upper_k3",
+          "weight": "1/4"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "1/4"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/16"
+        },
+        {
+          "constraint_index": 9,
+          "label": "event_lower_k4",
+          "weight": "1/16"
+        }
+      ],
+      "discovery_objective_float": 0.002083333333333326,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/16",
+        "-1/4",
+        "3/8",
+        "-1/4",
+        "1/16"
+      ]
+    },
+    {
+      "M": 4,
+      "n": 3,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "1/160",
+      "leaf_event_probabilities": [
+        "79/160",
+        "17/96",
+        "23/160",
+        "3/32"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "3/8"
+        },
+        {
+          "constraint_index": 6,
+          "label": "event_upper_k3",
+          "weight": "1/4"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "1/4"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/16"
+        },
+        {
+          "constraint_index": 9,
+          "label": "event_lower_k4",
+          "weight": "1/16"
+        }
+      ],
+      "discovery_objective_float": 0.006249999999999978,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/16",
+        "-1/4",
+        "3/8",
+        "-1/4",
+        "1/16"
+      ]
+    },
+    {
+      "M": 4,
+      "n": 3,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "7/110",
+      "leaf_event_probabilities": [
+        "24/55",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "4/5"
+        },
+        {
+          "constraint_index": 12,
+          "label": "leaf_nonnegative_j1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.06363636363636366,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/5",
+        "-4/5",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 4,
+      "n": 3,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "97/1010",
+      "leaf_event_probabilities": [
+        "204/505",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "4/5"
+        },
+        {
+          "constraint_index": 12,
+          "label": "leaf_nonnegative_j1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.09603960396039601,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/5",
+        "-4/5",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 6,
+      "n": 3,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "1/168",
+      "leaf_event_probabilities": [
+        "83/168",
+        "31/168",
+        "5/28",
+        "5/42"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 7,
+          "label": "event_lower_k3",
+          "weight": "5/18"
+        },
+        {
+          "constraint_index": 10,
+          "label": "event_upper_k5",
+          "weight": "1/4"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "1/4"
+        },
+        {
+          "constraint_index": 13,
+          "label": "event_lower_k6",
+          "weight": "1/9"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/9"
+        }
+      ],
+      "discovery_objective_float": 0.005952380952380958,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/9",
+        "-1/4",
+        "0",
+        "5/18",
+        "0",
+        "-1/4",
+        "1/9"
+      ]
+    },
+    {
+      "M": 6,
+      "n": 3,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "5/336",
+      "leaf_event_probabilities": [
+        "163/336",
+        "5/112",
+        "47/336",
+        "19/336"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/8"
+        },
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "5/16"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/8"
+        },
+        {
+          "constraint_index": 10,
+          "label": "event_upper_k5",
+          "weight": "1/8"
+        },
+        {
+          "constraint_index": 13,
+          "label": "event_lower_k6",
+          "weight": "1/16"
+        }
+      ],
+      "discovery_objective_float": 0.014880952380952378,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/8",
+        "-3/8",
+        "5/16",
+        "0",
+        "0",
+        "-1/8",
+        "1/16"
+      ]
+    },
+    {
+      "M": 6,
+      "n": 3,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "3/22",
+      "leaf_event_probabilities": [
+        "4/11",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 16,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.1363636363636364,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 6,
+      "n": 3,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "33/202",
+      "leaf_event_probabilities": [
+        "34/101",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 16,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.16336633663366334,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 9,
+      "n": 3,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "14/1089",
+      "leaf_event_probabilities": [
+        "1061/2178",
+        "70/1089",
+        "125/726",
+        "85/1089"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "7/22"
+        },
+        {
+          "constraint_index": 9,
+          "label": "event_lower_k4",
+          "weight": "14/55"
+        },
+        {
+          "constraint_index": 14,
+          "label": "event_upper_k7",
+          "weight": "2/11"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/11"
+        },
+        {
+          "constraint_index": 19,
+          "label": "event_lower_k9",
+          "weight": "7/110"
+        }
+      ],
+      "discovery_objective_float": 0.01285583103764921,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/11",
+        "-7/22",
+        "0",
+        "0",
+        "14/55",
+        "0",
+        "0",
+        "-2/11",
+        "0",
+        "7/110"
+      ]
+    },
+    {
+      "M": 9,
+      "n": 3,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "1/20",
+      "leaf_event_probabilities": [
+        "9/20",
+        "0",
+        "13/700",
+        "9/350"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 22,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.04999999999999993,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 9,
+      "n": 3,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "19/110",
+      "leaf_event_probabilities": [
+        "18/55",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 22,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.17272727272727273,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 9,
+      "n": 3,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "199/1010",
+      "leaf_event_probabilities": [
+        "153/505",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 22,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.19702970297029698,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 5,
+      "n": 4,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "1/1344",
+      "leaf_event_probabilities": [
+        "671/1344",
+        "787/2688",
+        "37/168",
+        "461/2688",
+        "193/1344"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "5/16"
+        },
+        {
+          "constraint_index": 6,
+          "label": "event_upper_k3",
+          "weight": "5/16"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "5/32"
+        },
+        {
+          "constraint_index": 9,
+          "label": "event_lower_k4",
+          "weight": "5/32"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/32"
+        },
+        {
+          "constraint_index": 10,
+          "label": "event_upper_k5",
+          "weight": "1/32"
+        }
+      ],
+      "discovery_objective_float": 0.0007440476190476164,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/32",
+        "-5/32",
+        "5/16",
+        "-5/16",
+        "5/32",
+        "-1/32"
+      ]
+    },
+    {
+      "M": 5,
+      "n": 4,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "1/384",
+      "leaf_event_probabilities": [
+        "191/384",
+        "49/256",
+        "7/48",
+        "77/768",
+        "11/128"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "5/16"
+        },
+        {
+          "constraint_index": 6,
+          "label": "event_upper_k3",
+          "weight": "5/16"
+        },
+        {
+          "constraint_index": 9,
+          "label": "event_lower_k4",
+          "weight": "5/32"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "5/32"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/32"
+        },
+        {
+          "constraint_index": 10,
+          "label": "event_upper_k5",
+          "weight": "1/32"
+        }
+      ],
+      "discovery_objective_float": 0.0026041666666666297,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/32",
+        "-5/32",
+        "5/16",
+        "-5/16",
+        "5/32",
+        "-1/32"
+      ]
+    },
+    {
+      "M": 5,
+      "n": 4,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "1/22",
+      "leaf_event_probabilities": [
+        "5/11",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "5/6"
+        },
+        {
+          "constraint_index": 14,
+          "label": "leaf_nonnegative_j1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/6"
+        }
+      ],
+      "discovery_objective_float": 0.04545454545454547,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/6",
+        "-5/6",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 5,
+      "n": 4,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "8/101",
+      "leaf_event_probabilities": [
+        "85/202",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "5/6"
+        },
+        {
+          "constraint_index": 14,
+          "label": "leaf_nonnegative_j1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/6"
+        }
+      ],
+      "discovery_objective_float": 0.07920792079207917,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/6",
+        "-5/6",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 8,
+      "n": 4,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "1/294",
+      "leaf_event_probabilities": [
+        "73/147",
+        "26/147",
+        "23/126",
+        "247/2205",
+        "76/735"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "15/49"
+        },
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "2/7"
+        },
+        {
+          "constraint_index": 10,
+          "label": "event_upper_k5",
+          "weight": "1/7"
+        },
+        {
+          "constraint_index": 15,
+          "label": "event_lower_k7",
+          "weight": "6/49"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "9/98"
+        },
+        {
+          "constraint_index": 16,
+          "label": "event_upper_k8",
+          "weight": "5/98"
+        }
+      ],
+      "discovery_objective_float": 0.003401360544217697,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "9/98",
+        "-15/49",
+        "2/7",
+        "0",
+        "0",
+        "-1/7",
+        "0",
+        "6/49",
+        "-5/98"
+      ]
+    },
+    {
+      "M": 8,
+      "n": 4,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "5/504",
+      "leaf_event_probabilities": [
+        "247/504",
+        "5/168",
+        "35/216",
+        "5/126",
+        "11/168"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "15/49"
+        },
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "2/7"
+        },
+        {
+          "constraint_index": 10,
+          "label": "event_upper_k5",
+          "weight": "1/7"
+        },
+        {
+          "constraint_index": 15,
+          "label": "event_lower_k7",
+          "weight": "6/49"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "9/98"
+        },
+        {
+          "constraint_index": 16,
+          "label": "event_upper_k8",
+          "weight": "5/98"
+        }
+      ],
+      "discovery_objective_float": 0.009920634920634917,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "9/98",
+        "-15/49",
+        "2/7",
+        "0",
+        "0",
+        "-1/7",
+        "0",
+        "6/49",
+        "-5/98"
+      ]
+    },
+    {
+      "M": 8,
+      "n": 4,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "3/22",
+      "leaf_event_probabilities": [
+        "4/11",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 20,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.1363636363636364,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 8,
+      "n": 4,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "33/202",
+      "leaf_event_probabilities": [
+        "34/101",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 20,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.16336633663366334,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 12,
+      "n": 4,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "1/120",
+      "leaf_event_probabilities": [
+        "59/120",
+        "1/24",
+        "4621/22680",
+        "353/7560",
+        "67/840"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "7/22"
+        },
+        {
+          "constraint_index": 7,
+          "label": "event_lower_k3",
+          "weight": "1/4"
+        },
+        {
+          "constraint_index": 14,
+          "label": "event_upper_k7",
+          "weight": "3/20"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "3/20"
+        },
+        {
+          "constraint_index": 21,
+          "label": "event_lower_k10",
+          "weight": "1/10"
+        },
+        {
+          "constraint_index": 24,
+          "label": "event_upper_k12",
+          "weight": "7/220"
+        }
+      ],
+      "discovery_objective_float": 0.008333333333333347,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "3/20",
+        "-7/22",
+        "0",
+        "1/4",
+        "0",
+        "0",
+        "0",
+        "-3/20",
+        "0",
+        "0",
+        "1/10",
+        "0",
+        "-7/220"
+      ]
+    },
+    {
+      "M": 12,
+      "n": 4,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "1/20",
+      "leaf_event_probabilities": [
+        "9/20",
+        "0",
+        "1/70",
+        "3/560",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 28,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.04999999999999993,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 12,
+      "n": 4,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "19/110",
+      "leaf_event_probabilities": [
+        "18/55",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 28,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.17272727272727273,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 12,
+      "n": 4,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "199/1010",
+      "leaf_event_probabilities": [
+        "153/505",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 28,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.19702970297029698,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 6,
+      "n": 5,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "1/3584",
+      "leaf_event_probabilities": [
+        "1791/3584",
+        "769/2560",
+        "4021/17920",
+        "451/2560",
+        "2631/17920",
+        "447/3584"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 6,
+          "label": "event_upper_k3",
+          "weight": "5/16"
+        },
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "15/64"
+        },
+        {
+          "constraint_index": 9,
+          "label": "event_lower_k4",
+          "weight": "15/64"
+        },
+        {
+          "constraint_index": 10,
+          "label": "event_upper_k5",
+          "weight": "3/32"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/32"
+        },
+        {
+          "constraint_index": 13,
+          "label": "event_lower_k6",
+          "weight": "1/64"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/64"
+        }
+      ],
+      "discovery_objective_float": 0.00027901785714285843,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/64",
+        "-3/32",
+        "15/64",
+        "-5/16",
+        "15/64",
+        "-3/32",
+        "1/64"
+      ]
+    },
+    {
+      "M": 6,
+      "n": 5,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "1/896",
+      "leaf_event_probabilities": [
+        "447/896",
+        "129/640",
+        "661/4480",
+        "67/640",
+        "391/4480",
+        "9/128"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 6,
+          "label": "event_upper_k3",
+          "weight": "5/16"
+        },
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "15/64"
+        },
+        {
+          "constraint_index": 9,
+          "label": "event_lower_k4",
+          "weight": "15/64"
+        },
+        {
+          "constraint_index": 10,
+          "label": "event_upper_k5",
+          "weight": "3/32"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/32"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/64"
+        },
+        {
+          "constraint_index": 13,
+          "label": "event_lower_k6",
+          "weight": "1/64"
+        }
+      ],
+      "discovery_objective_float": 0.0011160714285714311,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/64",
+        "-3/32",
+        "15/64",
+        "-5/16",
+        "15/64",
+        "-3/32",
+        "1/64"
+      ]
+    },
+    {
+      "M": 6,
+      "n": 5,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "5/154",
+      "leaf_event_probabilities": [
+        "36/77",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "6/7"
+        },
+        {
+          "constraint_index": 16,
+          "label": "leaf_nonnegative_j1",
+          "weight": "5/7"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/7"
+        }
+      ],
+      "discovery_objective_float": 0.032467532467532534,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/7",
+        "-6/7",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 6,
+      "n": 5,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "95/1414",
+      "leaf_event_probabilities": [
+        "306/707",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "6/7"
+        },
+        {
+          "constraint_index": 16,
+          "label": "leaf_nonnegative_j1",
+          "weight": "5/7"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/7"
+        }
+      ],
+      "discovery_objective_float": 0.06718528995756723,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/7",
+        "-6/7",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 10,
+      "n": 5,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "7/3432",
+      "leaf_event_probabilities": [
+        "1709/3432",
+        "593/3432",
+        "29/156",
+        "89/858",
+        "359/3432",
+        "93/1144"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "81/260"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "7/26"
+        },
+        {
+          "constraint_index": 8,
+          "label": "event_upper_k4",
+          "weight": "21/130"
+        },
+        {
+          "constraint_index": 15,
+          "label": "event_lower_k7",
+          "weight": "6/65"
+        },
+        {
+          "constraint_index": 18,
+          "label": "event_upper_k9",
+          "weight": "9/130"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "9/130"
+        },
+        {
+          "constraint_index": 21,
+          "label": "event_lower_k10",
+          "weight": "7/260"
+        }
+      ],
+      "discovery_objective_float": 0.002039627039627012,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "9/130",
+        "-7/26",
+        "81/260",
+        "0",
+        "-21/130",
+        "0",
+        "0",
+        "6/65",
+        "0",
+        "-9/130",
+        "7/260"
+      ]
+    },
+    {
+      "M": 10,
+      "n": 5,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "189/28600",
+      "leaf_event_probabilities": [
+        "14111/28600",
+        "567/28600",
+        "461/2600",
+        "43/2600",
+        "2127/28600",
+        "101/2600"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "81/260"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "7/26"
+        },
+        {
+          "constraint_index": 8,
+          "label": "event_upper_k4",
+          "weight": "21/130"
+        },
+        {
+          "constraint_index": 15,
+          "label": "event_lower_k7",
+          "weight": "6/65"
+        },
+        {
+          "constraint_index": 18,
+          "label": "event_upper_k9",
+          "weight": "9/130"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "9/130"
+        },
+        {
+          "constraint_index": 21,
+          "label": "event_lower_k10",
+          "weight": "7/260"
+        }
+      ],
+      "discovery_objective_float": 0.006608391608391551,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "9/130",
+        "-7/26",
+        "81/260",
+        "0",
+        "-21/130",
+        "0",
+        "0",
+        "6/65",
+        "0",
+        "-9/130",
+        "7/260"
+      ]
+    },
+    {
+      "M": 10,
+      "n": 5,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "3/22",
+      "leaf_event_probabilities": [
+        "4/11",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 24,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.1363636363636364,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 10,
+      "n": 5,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "33/202",
+      "leaf_event_probabilities": [
+        "34/101",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 24,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.16336633663366334,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 15,
+      "n": 5,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "693/125120",
+      "leaf_event_probabilities": [
+        "61867/125120",
+        "693/25024",
+        "28531/125120",
+        "173/15640",
+        "2441/25024",
+        "6667/125120"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "396/1495"
+        },
+        {
+          "constraint_index": 7,
+          "label": "event_lower_k3",
+          "weight": "6/23"
+        },
+        {
+          "constraint_index": 12,
+          "label": "event_upper_k6",
+          "weight": "77/460"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "66/575"
+        },
+        {
+          "constraint_index": 21,
+          "label": "event_lower_k10",
+          "weight": "99/1150"
+        },
+        {
+          "constraint_index": 28,
+          "label": "event_upper_k14",
+          "weight": "81/1196"
+        },
+        {
+          "constraint_index": 31,
+          "label": "event_lower_k15",
+          "weight": "22/575"
+        }
+      ],
+      "discovery_objective_float": 0.005538682864450131,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "66/575",
+        "-396/1495",
+        "0",
+        "6/23",
+        "0",
+        "0",
+        "-77/460",
+        "0",
+        "0",
+        "0",
+        "99/1150",
+        "0",
+        "0",
+        "0",
+        "-81/1196",
+        "22/575"
+      ]
+    },
+    {
+      "M": 15,
+      "n": 5,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "1/20",
+      "leaf_event_probabilities": [
+        "9/20",
+        "0",
+        "47/4480",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 34,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.04999999999999993,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 15,
+      "n": 5,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "19/110",
+      "leaf_event_probabilities": [
+        "18/55",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 34,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.17272727272727273,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 15,
+      "n": 5,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "199/1010",
+      "leaf_event_probabilities": [
+        "153/505",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 34,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.19702970297029698,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 7,
+      "n": 6,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "1/9216",
+      "leaf_event_probabilities": [
+        "4607/9216",
+        "2113/6912",
+        "31459/138240",
+        "517/2880",
+        "2293/15360",
+        "293/2304",
+        "1025/9216"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 6,
+          "label": "event_upper_k3",
+          "weight": "35/128"
+        },
+        {
+          "constraint_index": 9,
+          "label": "event_lower_k4",
+          "weight": "35/128"
+        },
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "21/128"
+        },
+        {
+          "constraint_index": 10,
+          "label": "event_upper_k5",
+          "weight": "21/128"
+        },
+        {
+          "constraint_index": 13,
+          "label": "event_lower_k6",
+          "weight": "7/128"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "7/128"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/128"
+        },
+        {
+          "constraint_index": 14,
+          "label": "event_upper_k7",
+          "weight": "1/128"
+        }
+      ],
+      "discovery_objective_float": 0.00010850694444444272,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/128",
+        "-7/128",
+        "21/128",
+        "-35/128",
+        "35/128",
+        "-21/128",
+        "7/128",
+        "-1/128"
+      ]
+    },
+    {
+      "M": 7,
+      "n": 6,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "1/2048",
+      "leaf_event_probabilities": [
+        "1023/2048",
+        "107/512",
+        "4579/30720",
+        "69/640",
+        "2717/30720",
+        "37/512",
+        "129/2048"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 6,
+          "label": "event_upper_k3",
+          "weight": "35/128"
+        },
+        {
+          "constraint_index": 9,
+          "label": "event_lower_k4",
+          "weight": "35/128"
+        },
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "21/128"
+        },
+        {
+          "constraint_index": 10,
+          "label": "event_upper_k5",
+          "weight": "21/128"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "7/128"
+        },
+        {
+          "constraint_index": 13,
+          "label": "event_lower_k6",
+          "weight": "7/128"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/128"
+        },
+        {
+          "constraint_index": 14,
+          "label": "event_upper_k7",
+          "weight": "1/128"
+        }
+      ],
+      "discovery_objective_float": 0.00048828124999999686,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/128",
+        "-7/128",
+        "21/128",
+        "-35/128",
+        "35/128",
+        "-21/128",
+        "7/128",
+        "-1/128"
+      ]
+    },
+    {
+      "M": 7,
+      "n": 6,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "1/44",
+      "leaf_event_probabilities": [
+        "21/44",
+        "0",
+        "1/660",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "7/8"
+        },
+        {
+          "constraint_index": 18,
+          "label": "leaf_nonnegative_j1",
+          "weight": "3/4"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/8"
+        }
+      ],
+      "discovery_objective_float": 0.022727272727272763,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/8",
+        "-7/8",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 7,
+      "n": 6,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "47/808",
+      "leaf_event_probabilities": [
+        "357/808",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "7/8"
+        },
+        {
+          "constraint_index": 18,
+          "label": "leaf_nonnegative_j1",
+          "weight": "3/4"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/8"
+        }
+      ],
+      "discovery_objective_float": 0.058168316831683164,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/8",
+        "-7/8",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 12,
+      "n": 6,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "25/19734",
+      "leaf_event_probabilities": [
+        "4921/9867",
+        "1682/9867",
+        "18409/98670",
+        "12113/125580",
+        "25121/230230",
+        "1810/23023",
+        "5021/69069"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "6/23"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "105/506"
+        },
+        {
+          "constraint_index": 8,
+          "label": "event_upper_k4",
+          "weight": "15/92"
+        },
+        {
+          "constraint_index": 15,
+          "label": "event_lower_k7",
+          "weight": "3/23"
+        },
+        {
+          "constraint_index": 18,
+          "label": "event_upper_k9",
+          "weight": "5/46"
+        },
+        {
+          "constraint_index": 23,
+          "label": "event_lower_k11",
+          "weight": "15/253"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "25/506"
+        },
+        {
+          "constraint_index": 24,
+          "label": "event_upper_k12",
+          "weight": "21/1012"
+        }
+      ],
+      "discovery_objective_float": 0.0012668490929360575,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "25/506",
+        "-105/506",
+        "6/23",
+        "0",
+        "-15/92",
+        "0",
+        "0",
+        "3/23",
+        "0",
+        "-5/46",
+        "0",
+        "15/253",
+        "-21/1012"
+      ]
+    },
+    {
+      "M": 12,
+      "n": 6,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "4291/925080",
+      "leaf_event_probabilities": [
+        "458249/925080",
+        "4291/308360",
+        "851837/4625400",
+        "0",
+        "5971/71160",
+        "1799/42696",
+        "31289/925080"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "1122/2965"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "189/593"
+        },
+        {
+          "constraint_index": 8,
+          "label": "event_upper_k4",
+          "weight": "231/1186"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "47/593"
+        },
+        {
+          "constraint_index": 32,
+          "label": "leaf_nonnegative_j3",
+          "weight": "70/1779"
+        },
+        {
+          "constraint_index": 15,
+          "label": "event_lower_k7",
+          "weight": "66/2965"
+        },
+        {
+          "constraint_index": 18,
+          "label": "event_upper_k9",
+          "weight": "11/1779"
+        },
+        {
+          "constraint_index": 25,
+          "label": "event_lower_k12",
+          "weight": "7/17790"
+        }
+      ],
+      "discovery_objective_float": 0.004638517749816273,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "47/593",
+        "-189/593",
+        "1122/2965",
+        "0",
+        "-231/1186",
+        "0",
+        "0",
+        "66/2965",
+        "0",
+        "-11/1779",
+        "0",
+        "0",
+        "7/17790"
+      ]
+    },
+    {
+      "M": 12,
+      "n": 6,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "3/22",
+      "leaf_event_probabilities": [
+        "4/11",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 28,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.1363636363636364,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 12,
+      "n": 6,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "33/202",
+      "leaf_event_probabilities": [
+        "34/101",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 28,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.16336633663366334,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 18,
+      "n": 6,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "267/62348",
+      "leaf_event_probabilities": [
+        "30907/62348",
+        "1335/62348",
+        "1643201/7014150",
+        "0",
+        "113786/1169025",
+        "42362/701415",
+        "3563/77935"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2655/8393"
+        },
+        {
+          "constraint_index": 7,
+          "label": "event_lower_k3",
+          "weight": "34340/109109"
+        },
+        {
+          "constraint_index": 12,
+          "label": "event_upper_k6",
+          "weight": "680/3597"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "487/3597"
+        },
+        {
+          "constraint_index": 21,
+          "label": "event_lower_k10",
+          "weight": "306/8393"
+        },
+        {
+          "constraint_index": 44,
+          "label": "leaf_nonnegative_j3",
+          "weight": "375/15587"
+        },
+        {
+          "constraint_index": 30,
+          "label": "event_upper_k15",
+          "weight": "2176/327327"
+        },
+        {
+          "constraint_index": 37,
+          "label": "event_lower_k18",
+          "weight": "5/3597"
+        }
+      ],
+      "discovery_objective_float": 0.004282414832873553,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "487/3597",
+        "-2655/8393",
+        "0",
+        "34340/109109",
+        "0",
+        "0",
+        "-680/3597",
+        "0",
+        "0",
+        "0",
+        "306/8393",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-2176/327327",
+        "0",
+        "0",
+        "5/3597"
+      ]
+    },
+    {
+      "M": 18,
+      "n": 6,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "1/20",
+      "leaf_event_probabilities": [
+        "9/20",
+        "0",
+        "0",
+        "23/5500",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 40,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.04999999999999993,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 18,
+      "n": 6,
+      "t": "10",
+      "volume": "1/2",
+      "optimal_event_error": "19/110",
+      "leaf_event_probabilities": [
+        "18/55",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 40,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.17272727272727273,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "M": 18,
+      "n": 6,
+      "t": "100",
+      "volume": "1/2",
+      "optimal_event_error": "199/1010",
+      "leaf_event_probabilities": [
+        "153/505",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "3/5"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "2/5"
+        },
+        {
+          "constraint_index": 40,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/5"
+        }
+      ],
+      "discovery_objective_float": 0.19702970297029698,
+      "certificate_status": "exact_primal_dual_equality",
+      "signed_event_dual": [
+        "2/5",
+        "-3/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "scope_limits": [
+    "Finite Boolean-coordinate oracle, one specified output event.",
+    "Primal solutions do not give full-law Gibbs sampling upper bounds.",
+    "No numerical value alone certifies a continuum transition formula."
+  ]
+}

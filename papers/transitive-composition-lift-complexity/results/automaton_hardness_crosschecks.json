@@ -1,0 +1,27 @@
+{
+  "instances": [
+    {
+      "assignments_tested": 343,
+      "max_word_depth": 4,
+      "name": "direct_counter_2",
+      "ordinary_states_visited": 315,
+      "result": "sat"
+    },
+    {
+      "assignments_tested": 512,
+      "max_word_depth": null,
+      "name": "direct_disjoint_singletons",
+      "ordinary_states_visited": 128,
+      "result": "unsat"
+    },
+    {
+      "assignments_tested": 3375,
+      "max_word_depth": 3,
+      "name": "fixed_four_singleton",
+      "ordinary_states_visited": 1050,
+      "result": "sat"
+    }
+  ],
+  "method": "general synchronous BFS, independent of hardness gadget interpretation; positive raw-path verification",
+  "status": "passed"
+}

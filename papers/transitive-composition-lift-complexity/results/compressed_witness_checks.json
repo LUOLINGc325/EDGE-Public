@@ -1,0 +1,287 @@
+{
+  "exhaustive": [
+    {
+      "accepted": 2,
+      "k": 2,
+      "maximum_length": 16,
+      "words_checked": 131071
+    },
+    {
+      "accepted": 0,
+      "k": 3,
+      "maximum_length": 12,
+      "words_checked": 8191
+    }
+  ],
+  "families": [
+    {
+      "accepts_per_dfa": 4,
+      "dfa_count": 2,
+      "independent_raw_certificate": {
+        "max_word_depth": 17,
+        "scope": "existence and exact raw equations; not minimality or unsatisfiability",
+        "status": "verified",
+        "target_edges": 7,
+        "target_vertices": 3,
+        "total_source_path_length": 41
+      },
+      "k": 2,
+      "product": {
+        "accepting_positions_before_repetition": [
+          8
+        ],
+        "period": 8,
+        "preperiod": 2,
+        "reachable_states": 10
+      },
+      "single_bit_mutations_rejected": 8,
+      "source_edges": 127,
+      "source_vertices": 99,
+      "states_per_dfa": 16,
+      "target_edges": 7,
+      "target_vertices": 3,
+      "transitions_per_dfa": 24
+    },
+    {
+      "accepts_per_dfa": 4,
+      "dfa_count": 3,
+      "independent_raw_certificate": {
+        "max_word_depth": 49,
+        "scope": "existence and exact raw equations; not minimality or unsatisfiability",
+        "status": "verified",
+        "target_edges": 11,
+        "target_vertices": 4,
+        "total_source_path_length": 158
+      },
+      "k": 3,
+      "product": {
+        "accepting_positions_before_repetition": [
+          24
+        ],
+        "period": 24,
+        "preperiod": 3,
+        "reachable_states": 27
+      },
+      "single_bit_mutations_rejected": 21,
+      "source_edges": 287,
+      "source_vertices": 220,
+      "states_per_dfa": 24,
+      "target_edges": 11,
+      "target_vertices": 4,
+      "transitions_per_dfa": 40
+    },
+    {
+      "accepts_per_dfa": 4,
+      "dfa_count": 4,
+      "independent_raw_certificate": {
+        "max_word_depth": 129,
+        "scope": "existence and exact raw equations; not minimality or unsatisfiability",
+        "status": "verified",
+        "target_edges": 15,
+        "target_vertices": 5,
+        "total_source_path_length": 531
+      },
+      "k": 4,
+      "product": {
+        "accepting_positions_before_repetition": [
+          64
+        ],
+        "period": 64,
+        "preperiod": 4,
+        "reachable_states": 68
+      },
+      "single_bit_mutations_rejected": 38,
+      "source_edges": 511,
+      "source_vertices": 389,
+      "states_per_dfa": 32,
+      "target_edges": 15,
+      "target_vertices": 5,
+      "transitions_per_dfa": 56
+    },
+    {
+      "accepts_per_dfa": 4,
+      "dfa_count": 5,
+      "independent_raw_certificate": {
+        "max_word_depth": 321,
+        "scope": "existence and exact raw equations; not minimality or unsatisfiability",
+        "status": "verified",
+        "target_edges": 19,
+        "target_vertices": 6,
+        "total_source_path_length": 1624
+      },
+      "k": 5,
+      "product": {
+        "accepting_positions_before_repetition": [
+          160
+        ],
+        "period": 160,
+        "preperiod": 5,
+        "reachable_states": 165
+      },
+      "single_bit_mutations_rejected": 54,
+      "source_edges": 799,
+      "source_vertices": 606,
+      "states_per_dfa": 40,
+      "target_edges": 19,
+      "target_vertices": 6,
+      "transitions_per_dfa": 72
+    },
+    {
+      "accepts_per_dfa": 4,
+      "dfa_count": 6,
+      "independent_raw_certificate": {
+        "max_word_depth": 769,
+        "scope": "existence and exact raw equations; not minimality or unsatisfiability",
+        "status": "verified",
+        "target_edges": 23,
+        "target_vertices": 7,
+        "total_source_path_length": 4637
+      },
+      "k": 6,
+      "product": {
+        "accepting_positions_before_repetition": [
+          384
+        ],
+        "period": 384,
+        "preperiod": 6,
+        "reachable_states": 390
+      },
+      "single_bit_mutations_rejected": 60,
+      "source_edges": 1151,
+      "source_vertices": 871,
+      "states_per_dfa": 48,
+      "target_edges": 23,
+      "target_vertices": 7,
+      "transitions_per_dfa": 88
+    },
+    {
+      "accepts_per_dfa": 4,
+      "dfa_count": 7,
+      "independent_raw_certificate": {
+        "max_word_depth": 1793,
+        "scope": "existence and exact raw equations; not minimality or unsatisfiability",
+        "status": "verified",
+        "target_edges": 27,
+        "target_vertices": 8,
+        "total_source_path_length": 12578
+      },
+      "k": 7,
+      "product": {
+        "accepting_positions_before_repetition": [
+          896
+        ],
+        "period": 896,
+        "preperiod": 7,
+        "reachable_states": 903
+      },
+      "single_bit_mutations_rejected": 59,
+      "source_edges": 1567,
+      "source_vertices": 1184,
+      "states_per_dfa": 56,
+      "target_edges": 27,
+      "target_vertices": 8,
+      "transitions_per_dfa": 104
+    },
+    {
+      "accepts_per_dfa": 4,
+      "dfa_count": 8,
+      "independent_raw_certificate": {
+        "max_word_depth": 4097,
+        "scope": "existence and exact raw equations; not minimality or unsatisfiability",
+        "status": "verified",
+        "target_edges": 31,
+        "target_vertices": 9,
+        "total_source_path_length": 32807
+      },
+      "k": 8,
+      "product": {
+        "accepting_positions_before_repetition": [
+          2048
+        ],
+        "period": 2048,
+        "preperiod": 8,
+        "reachable_states": 2056
+      },
+      "single_bit_mutations_rejected": 63,
+      "source_edges": 2047,
+      "source_vertices": 1545,
+      "states_per_dfa": 64,
+      "target_edges": 31,
+      "target_vertices": 9,
+      "transitions_per_dfa": 120
+    },
+    {
+      "accepts_per_dfa": 4,
+      "dfa_count": 9,
+      "independent_raw_certificate": {
+        "max_word_depth": 9217,
+        "scope": "existence and exact raw equations; not minimality or unsatisfiability",
+        "status": "verified",
+        "target_edges": 35,
+        "target_vertices": 10,
+        "total_source_path_length": 82988
+      },
+      "k": 9,
+      "product": {
+        "accepting_positions_before_repetition": [
+          4608
+        ],
+        "period": 4608,
+        "preperiod": 9,
+        "reachable_states": 4617
+      },
+      "single_bit_mutations_rejected": 64,
+      "source_edges": 2591,
+      "source_vertices": 1954,
+      "states_per_dfa": 72,
+      "target_edges": 35,
+      "target_vertices": 10,
+      "transitions_per_dfa": 136
+    },
+    {
+      "accepts_per_dfa": 4,
+      "dfa_count": 10,
+      "independent_raw_certificate": {
+        "max_word_depth": 20481,
+        "scope": "existence and exact raw equations; not minimality or unsatisfiability",
+        "status": "verified",
+        "target_edges": 39,
+        "target_vertices": 11,
+        "total_source_path_length": 204849
+      },
+      "k": 10,
+      "product": {
+        "accepting_positions_before_repetition": [
+          10240
+        ],
+        "period": 10240,
+        "preperiod": 10,
+        "reachable_states": 10250
+      },
+      "single_bit_mutations_rejected": 64,
+      "source_edges": 3199,
+      "source_vertices": 2411,
+      "states_per_dfa": 80,
+      "target_edges": 39,
+      "target_vertices": 11,
+      "transitions_per_dfa": 152
+    }
+  ],
+  "not_certified_by_finite_tests": [
+    "All-k language characterization",
+    "Every-certificate statement",
+    "Minimum SLP lower bound",
+    "Polynomial compressed equality implementation",
+    "Minimum graph depth from a complete unanchored graph search"
+  ],
+  "records_sha256": "842fd4dc290534bcf412cdbd3e63323a6a105cfbc0485b1c140685e006edc112",
+  "scope": [
+    "Exact entire reachable product component for k=2,...,10",
+    "Exhaustive bounded binary membership checks for the recorded small ranges",
+    "Exact gadget counts and partial determinism",
+    "Independent literal source-path/word-equation verification of positive graph witnesses"
+  ],
+  "script_sha256": "957b0dc5a324c69db30e3ccefff8003c4a5119966ebf6bddfea85382e981552b",
+  "seed": 20261125,
+  "status": "passed"
+}

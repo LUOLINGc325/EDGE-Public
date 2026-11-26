@@ -1,0 +1,77 @@
+{
+  "frontier": {
+    "positive_points": 71,
+    "negative_lift_certificates": 294,
+    "principal_orbit_comparisons": 9514
+  },
+  "finite_length_augmentations": {
+    "nontrivial_orbits_per_length": {
+      "1": 4,
+      "2": 19,
+      "3": 67,
+      "4": 188,
+      "5": 457,
+      "6": 1001
+    },
+    "conflict_counts": [
+      4,
+      5,
+      5,
+      6
+    ]
+  },
+  "actual_null_obstruction": {
+    "marginal_numerators": [
+      0,
+      11,
+      22,
+      33,
+      44,
+      55,
+      66,
+      77,
+      88,
+      99,
+      110,
+      121,
+      132,
+      143,
+      147,
+      165,
+      176,
+      187,
+      198,
+      209,
+      220,
+      231,
+      242,
+      253
+    ],
+    "orbit_counts": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "union_rejection_probability": "133/528"
+  },
+  "rounding_repair_cases": 24,
+  "all_length_conflict_examples": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

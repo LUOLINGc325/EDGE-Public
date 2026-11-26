@@ -1,0 +1,1182 @@
+{
+  "schema": "smooth-gibbs-finite-event-lp-v1",
+  "status": "passed_certified_cases_only",
+  "cases": [
+    {
+      "M": 8,
+      "n": 4,
+      "t": "1/8",
+      "volume": "1/2",
+      "optimal_event_error": "1/10296",
+      "leaf_event_probabilities": [
+        "5147/10296",
+        "4007/10296",
+        "50747/154440",
+        "1619/5720",
+        "2575/10296"
+      ],
+      "signed_event_dual": [
+        "1/14",
+        "-5/28",
+        "0",
+        "1/4",
+        "0",
+        "-1/4",
+        "0",
+        "5/28",
+        "-1/14"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 7,
+          "label": "event_lower_k3",
+          "weight": "1/4"
+        },
+        {
+          "constraint_index": 10,
+          "label": "event_upper_k5",
+          "weight": "1/4"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "5/28"
+        },
+        {
+          "constraint_index": 15,
+          "label": "event_lower_k7",
+          "weight": "5/28"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/14"
+        },
+        {
+          "constraint_index": 16,
+          "label": "event_upper_k8",
+          "weight": "1/14"
+        }
+      ],
+      "discovery_objective_float": 9.712509712511375e-05,
+      "certificate_status": "exact_primal_dual_equality"
+    },
+    {
+      "M": 8,
+      "n": 4,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "1/294",
+      "leaf_event_probabilities": [
+        "73/147",
+        "26/147",
+        "23/126",
+        "247/2205",
+        "76/735"
+      ],
+      "signed_event_dual": [
+        "9/98",
+        "-15/49",
+        "2/7",
+        "0",
+        "0",
+        "-1/7",
+        "0",
+        "6/49",
+        "-5/98"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "15/49"
+        },
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "2/7"
+        },
+        {
+          "constraint_index": 10,
+          "label": "event_upper_k5",
+          "weight": "1/7"
+        },
+        {
+          "constraint_index": 15,
+          "label": "event_lower_k7",
+          "weight": "6/49"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "9/98"
+        },
+        {
+          "constraint_index": 16,
+          "label": "event_upper_k8",
+          "weight": "5/98"
+        }
+      ],
+      "discovery_objective_float": 0.003401360544217697,
+      "certificate_status": "exact_primal_dual_equality"
+    },
+    {
+      "M": 8,
+      "n": 4,
+      "t": "2",
+      "volume": "1/2",
+      "optimal_event_error": "1/18",
+      "leaf_event_probabilities": [
+        "4/9",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 20,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.05555555555555558,
+      "certificate_status": "exact_primal_dual_equality"
+    },
+    {
+      "M": 8,
+      "n": 4,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "5/504",
+      "leaf_event_probabilities": [
+        "247/504",
+        "5/168",
+        "35/216",
+        "5/126",
+        "11/168"
+      ],
+      "signed_event_dual": [
+        "9/98",
+        "-15/49",
+        "2/7",
+        "0",
+        "0",
+        "-1/7",
+        "0",
+        "6/49",
+        "-5/98"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "15/49"
+        },
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "2/7"
+        },
+        {
+          "constraint_index": 10,
+          "label": "event_upper_k5",
+          "weight": "1/7"
+        },
+        {
+          "constraint_index": 15,
+          "label": "event_lower_k7",
+          "weight": "6/49"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "9/98"
+        },
+        {
+          "constraint_index": 16,
+          "label": "event_upper_k8",
+          "weight": "5/98"
+        }
+      ],
+      "discovery_objective_float": 0.009920634920634917,
+      "certificate_status": "exact_primal_dual_equality"
+    },
+    {
+      "M": 8,
+      "n": 4,
+      "t": "4",
+      "volume": "1/2",
+      "optimal_event_error": "1/10",
+      "leaf_event_probabilities": [
+        "2/5",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 20,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.10000000000000003,
+      "certificate_status": "exact_primal_dual_equality"
+    },
+    {
+      "M": 16,
+      "n": 8,
+      "t": "1/16",
+      "volume": "1/2",
+      "optimal_event_error": "63/857007400",
+      "leaf_event_probabilities": [
+        "428503637/857007400",
+        "378091689/857007400",
+        "7133312881/17997155400",
+        "32429851819/89985777000",
+        "49608638199/149976295000",
+        "9174159613/29995259000",
+        "1707107923/5999051800",
+        "228074361/857007400",
+        "214251913/857007400"
+      ],
+      "signed_event_dual": [
+        "385/16262",
+        "-12096/105703",
+        "17820/105703",
+        "0",
+        "-1323/8131",
+        "0",
+        "1078/8131",
+        "0",
+        "0",
+        "-704/8131",
+        "0",
+        "0",
+        "735/8131",
+        "0",
+        "-12474/105703",
+        "8960/105703",
+        "-297/16262"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "17820/105703"
+        },
+        {
+          "constraint_index": 8,
+          "label": "event_upper_k4",
+          "weight": "1323/8131"
+        },
+        {
+          "constraint_index": 13,
+          "label": "event_lower_k6",
+          "weight": "1078/8131"
+        },
+        {
+          "constraint_index": 28,
+          "label": "event_upper_k14",
+          "weight": "12474/105703"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "12096/105703"
+        },
+        {
+          "constraint_index": 25,
+          "label": "event_lower_k12",
+          "weight": "735/8131"
+        },
+        {
+          "constraint_index": 18,
+          "label": "event_upper_k9",
+          "weight": "704/8131"
+        },
+        {
+          "constraint_index": 31,
+          "label": "event_lower_k15",
+          "weight": "8960/105703"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "385/16262"
+        },
+        {
+          "constraint_index": 32,
+          "label": "event_upper_k16",
+          "weight": "297/16262"
+        }
+      ],
+      "discovery_objective_float": 7.35116172727894e-08,
+      "certificate_status": "exact_primal_dual_equality"
+    },
+    {
+      "M": 16,
+      "n": 8,
+      "t": "1/4",
+      "volume": "1/2",
+      "optimal_event_error": "4851/80334280",
+      "leaf_event_probabilities": [
+        "40162289/80334280",
+        "24114837/80334280",
+        "27244771/112467992",
+        "845264939/4498719680",
+        "35651067/216284600",
+        "186965479/1349615904",
+        "11025241/88790520",
+        "8864499/80334280",
+        "8038279/80334280"
+      ],
+      "signed_event_dual": [
+        "385/16262",
+        "-12096/105703",
+        "17820/105703",
+        "0",
+        "-1323/8131",
+        "0",
+        "1078/8131",
+        "0",
+        "0",
+        "-704/8131",
+        "0",
+        "0",
+        "735/8131",
+        "0",
+        "-12474/105703",
+        "8960/105703",
+        "-297/16262"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "17820/105703"
+        },
+        {
+          "constraint_index": 8,
+          "label": "event_upper_k4",
+          "weight": "1323/8131"
+        },
+        {
+          "constraint_index": 13,
+          "label": "event_lower_k6",
+          "weight": "1078/8131"
+        },
+        {
+          "constraint_index": 28,
+          "label": "event_upper_k14",
+          "weight": "12474/105703"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "12096/105703"
+        },
+        {
+          "constraint_index": 25,
+          "label": "event_lower_k12",
+          "weight": "735/8131"
+        },
+        {
+          "constraint_index": 18,
+          "label": "event_upper_k9",
+          "weight": "704/8131"
+        },
+        {
+          "constraint_index": 31,
+          "label": "event_lower_k15",
+          "weight": "8960/105703"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "385/16262"
+        },
+        {
+          "constraint_index": 32,
+          "label": "event_upper_k16",
+          "weight": "297/16262"
+        }
+      ],
+      "discovery_objective_float": 6.0385180523179764e-05,
+      "certificate_status": "exact_primal_dual_equality"
+    },
+    {
+      "M": 16,
+      "n": 8,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "252963/82070560",
+      "leaf_event_probabilities": [
+        "40782317/82070560",
+        "758889/82070560",
+        "15020781/82070560",
+        "0",
+        "30442701/410352800",
+        "33529547/574493920",
+        "1483159/82070560",
+        "3474459/82070560",
+        "2160877/82070560"
+      ],
+      "signed_event_dual": [
+        "1863/27430",
+        "-4012/13715",
+        "11178/30173",
+        "0",
+        "-490/2321",
+        "0",
+        "0",
+        "7/211",
+        "0",
+        "0",
+        "-14/1055",
+        "0",
+        "0",
+        "196/30173",
+        "0",
+        "-567/150865",
+        "7/5486"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "11178/30173"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "4012/13715"
+        },
+        {
+          "constraint_index": 8,
+          "label": "event_upper_k4",
+          "weight": "490/2321"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1863/27430"
+        },
+        {
+          "constraint_index": 40,
+          "label": "leaf_nonnegative_j3",
+          "weight": "567/13715"
+        },
+        {
+          "constraint_index": 15,
+          "label": "event_lower_k7",
+          "weight": "7/211"
+        },
+        {
+          "constraint_index": 20,
+          "label": "event_upper_k10",
+          "weight": "14/1055"
+        },
+        {
+          "constraint_index": 27,
+          "label": "event_lower_k13",
+          "weight": "196/30173"
+        },
+        {
+          "constraint_index": 30,
+          "label": "event_upper_k15",
+          "weight": "567/150865"
+        },
+        {
+          "constraint_index": 33,
+          "label": "event_lower_k16",
+          "weight": "7/5486"
+        }
+      ],
+      "discovery_objective_float": 0.0030822623849526324,
+      "certificate_status": "exact_primal_dual_equality"
+    },
+    {
+      "M": 16,
+      "n": 8,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "252963/82070560",
+      "leaf_event_probabilities": [
+        "40782317/82070560",
+        "758889/82070560",
+        "15020781/82070560",
+        "0",
+        "30442701/410352800",
+        "33529547/574493920",
+        "1483159/82070560",
+        "3474459/82070560",
+        "2160877/82070560"
+      ],
+      "signed_event_dual": [
+        "1863/27430",
+        "-4012/13715",
+        "11178/30173",
+        "0",
+        "-490/2321",
+        "0",
+        "0",
+        "7/211",
+        "0",
+        "0",
+        "-14/1055",
+        "0",
+        "0",
+        "196/30173",
+        "0",
+        "-567/150865",
+        "7/5486"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "11178/30173"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "4012/13715"
+        },
+        {
+          "constraint_index": 8,
+          "label": "event_upper_k4",
+          "weight": "490/2321"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1863/27430"
+        },
+        {
+          "constraint_index": 40,
+          "label": "leaf_nonnegative_j3",
+          "weight": "567/13715"
+        },
+        {
+          "constraint_index": 15,
+          "label": "event_lower_k7",
+          "weight": "7/211"
+        },
+        {
+          "constraint_index": 20,
+          "label": "event_upper_k10",
+          "weight": "14/1055"
+        },
+        {
+          "constraint_index": 27,
+          "label": "event_lower_k13",
+          "weight": "196/30173"
+        },
+        {
+          "constraint_index": 30,
+          "label": "event_upper_k15",
+          "weight": "567/150865"
+        },
+        {
+          "constraint_index": 33,
+          "label": "event_lower_k16",
+          "weight": "7/5486"
+        }
+      ],
+      "discovery_objective_float": 0.0030822623849526324,
+      "certificate_status": "exact_primal_dual_equality"
+    },
+    {
+      "M": 16,
+      "n": 8,
+      "t": "4",
+      "volume": "1/2",
+      "optimal_event_error": "1/10",
+      "leaf_event_probabilities": [
+        "2/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 36,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.10000000000000003,
+      "certificate_status": "exact_primal_dual_equality"
+    },
+    {
+      "M": 32,
+      "n": 16,
+      "t": "1/8",
+      "volume": "1/2",
+      "optimal_event_error": "145314/8215262861245",
+      "leaf_event_probabilities": [
+        "8215262570617/16430525722490",
+        "57506847875671/147874731502410",
+        "65273963639507/201647361139650",
+        "1436777743295029/5175615602584350",
+        "5465792057827943/22427667611198850",
+        "601337467908129684059/2768709023203064751810",
+        "398258646427894032247/2030386617015580817994",
+        "2507092601513656397/14025881576509953150",
+        "18209690454930405449/110802083150256047550",
+        "1102346078845324242533/7251380775055645778550",
+        "4309421033269274938261/30455799255233712269910",
+        "69437949196033967/524807422102053090",
+        "108699156818707681/874679036836755150",
+        "2627499381745111/22427667611198850",
+        "96830188173233/873805231605150",
+        "67365121458733/640790503177110",
+        "1643052862877/16430525722490"
+      ],
+      "signed_event_dual": [
+        "15576561/6161712737",
+        "-2304540315/98587403792",
+        "52840216/596294781",
+        "-134213625/795059708",
+        "999702/6853963",
+        "0",
+        "-486486/6853963",
+        "0",
+        "0",
+        "7369245/109663408",
+        "0",
+        "-3634345/54831704",
+        "0",
+        "0",
+        "321195/6853963",
+        "0",
+        "0",
+        "-4542615/109663408",
+        "0",
+        "0",
+        "272090/6853963",
+        "0",
+        "0",
+        "-697125/13707926",
+        "0",
+        "6283251/109663408",
+        "0",
+        "-2462229/54831704",
+        "0",
+        "24895871/596294781",
+        "-6386985/198764927",
+        "125623953/12323425474",
+        "-7621185/6161712737"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 6,
+          "label": "event_upper_k3",
+          "weight": "134213625/795059708"
+        },
+        {
+          "constraint_index": 9,
+          "label": "event_lower_k4",
+          "weight": "999702/6853963"
+        },
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "52840216/596294781"
+        },
+        {
+          "constraint_index": 12,
+          "label": "event_upper_k6",
+          "weight": "486486/6853963"
+        },
+        {
+          "constraint_index": 19,
+          "label": "event_lower_k9",
+          "weight": "7369245/109663408"
+        },
+        {
+          "constraint_index": 22,
+          "label": "event_upper_k11",
+          "weight": "3634345/54831704"
+        },
+        {
+          "constraint_index": 51,
+          "label": "event_lower_k25",
+          "weight": "6283251/109663408"
+        },
+        {
+          "constraint_index": 46,
+          "label": "event_upper_k23",
+          "weight": "697125/13707926"
+        },
+        {
+          "constraint_index": 29,
+          "label": "event_lower_k14",
+          "weight": "321195/6853963"
+        },
+        {
+          "constraint_index": 54,
+          "label": "event_upper_k27",
+          "weight": "2462229/54831704"
+        },
+        {
+          "constraint_index": 59,
+          "label": "event_lower_k29",
+          "weight": "24895871/596294781"
+        },
+        {
+          "constraint_index": 34,
+          "label": "event_upper_k17",
+          "weight": "4542615/109663408"
+        },
+        {
+          "constraint_index": 41,
+          "label": "event_lower_k20",
+          "weight": "272090/6853963"
+        },
+        {
+          "constraint_index": 60,
+          "label": "event_upper_k30",
+          "weight": "6386985/198764927"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2304540315/98587403792"
+        },
+        {
+          "constraint_index": 63,
+          "label": "event_lower_k31",
+          "weight": "125623953/12323425474"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "15576561/6161712737"
+        },
+        {
+          "constraint_index": 64,
+          "label": "event_upper_k32",
+          "weight": "7621185/6161712737"
+        }
+      ],
+      "discovery_objective_float": 1.7688295890369827e-08,
+      "certificate_status": "exact_primal_dual_equality"
+    },
+    {
+      "M": 32,
+      "n": 16,
+      "t": "1/2",
+      "volume": "1/2",
+      "optimal_event_error": "49447125/2512474683392",
+      "leaf_event_probabilities": [
+        "1256187894571/2512474683392",
+        "1256682365821/7537424050176",
+        "20078584650511/113061360752640",
+        "24035986904599/263809841756160",
+        "57915951334337/489932563261440",
+        "45227323453535869/860125608061784064",
+        "154651122030293717/1576896948113270784",
+        "1190252230533488773/38296068739893719040",
+        "15335032112272321/191693336295352320",
+        "578377077485386097/19148034369946859520",
+        "3000177510577134605/53614496235851206656",
+        "2202982918961909/61437543432984576",
+        "2810481178009/69997201176903",
+        "101169210482947/2901908259317760",
+        "41532143591131/1243674968279040",
+        "43885087447985/1409498297382912",
+        "1257077942821/42712069617664"
+      ],
+      "signed_event_dual": [
+        "209373255/78514833856",
+        "-862242975/34350239812",
+        "46235189/474888108",
+        "-15136875/79148018",
+        "26381025/152837552",
+        "0",
+        "-8860995/87335744",
+        "0",
+        "10456875/152837552",
+        "0",
+        "0",
+        "-1651975/38209388",
+        "0",
+        "0",
+        "3441375/87335744",
+        "0",
+        "0",
+        "-216315/5458484",
+        "0",
+        "0",
+        "1068925/21833936",
+        "0",
+        "-26761995/611350208",
+        "0",
+        "0",
+        "616005/19104694",
+        "0",
+        "-166617/5458484",
+        "0",
+        "25403950/831054189",
+        "-60966675/2532736576",
+        "9536670/1226794279",
+        "-525861765/549603836992"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 6,
+          "label": "event_upper_k3",
+          "weight": "15136875/79148018"
+        },
+        {
+          "constraint_index": 9,
+          "label": "event_lower_k4",
+          "weight": "26381025/152837552"
+        },
+        {
+          "constraint_index": 12,
+          "label": "event_upper_k6",
+          "weight": "8860995/87335744"
+        },
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "46235189/474888108"
+        },
+        {
+          "constraint_index": 17,
+          "label": "event_lower_k8",
+          "weight": "10456875/152837552"
+        },
+        {
+          "constraint_index": 41,
+          "label": "event_lower_k20",
+          "weight": "1068925/21833936"
+        },
+        {
+          "constraint_index": 44,
+          "label": "event_upper_k22",
+          "weight": "26761995/611350208"
+        },
+        {
+          "constraint_index": 22,
+          "label": "event_upper_k11",
+          "weight": "1651975/38209388"
+        },
+        {
+          "constraint_index": 34,
+          "label": "event_upper_k17",
+          "weight": "216315/5458484"
+        },
+        {
+          "constraint_index": 29,
+          "label": "event_lower_k14",
+          "weight": "3441375/87335744"
+        },
+        {
+          "constraint_index": 51,
+          "label": "event_lower_k25",
+          "weight": "616005/19104694"
+        },
+        {
+          "constraint_index": 59,
+          "label": "event_lower_k29",
+          "weight": "25403950/831054189"
+        },
+        {
+          "constraint_index": 54,
+          "label": "event_upper_k27",
+          "weight": "166617/5458484"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "862242975/34350239812"
+        },
+        {
+          "constraint_index": 60,
+          "label": "event_upper_k30",
+          "weight": "60966675/2532736576"
+        },
+        {
+          "constraint_index": 63,
+          "label": "event_lower_k31",
+          "weight": "9536670/1226794279"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "209373255/78514833856"
+        },
+        {
+          "constraint_index": 64,
+          "label": "event_upper_k32",
+          "weight": "525861765/549603836992"
+        }
+      ],
+      "discovery_objective_float": 1.9680646068511117e-05,
+      "certificate_status": "exact_primal_dual_equality"
+    },
+    {
+      "M": 32,
+      "n": 16,
+      "t": "1",
+      "volume": "1/2",
+      "optimal_event_error": "17/13548",
+      "leaf_event_probabilities": [
+        "6757/13548",
+        "17/4516",
+        "799/4516",
+        "0",
+        "1350244278951725793197/17148838049159980363200",
+        "1162987291479958919449/25723257073739970544800",
+        "1986227442429841931741/47159304635189945998800",
+        "0",
+        "6803292072221491367/99808052137968139680",
+        "0",
+        "47670322064676953143/3929942052932495499900",
+        "471853241726190249083/8574419024579990181600",
+        "0",
+        "238382762664702833/13741056129134599650",
+        "142031216656945079/5889024055343399850",
+        "14705/1192224",
+        "815/49676"
+      ],
+      "signed_event_dual": [
+        "51/1129",
+        "-272/1129",
+        "496/1129",
+        "-310/1129",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 5,
+          "label": "event_lower_k2",
+          "weight": "496/1129"
+        },
+        {
+          "constraint_index": 6,
+          "label": "event_upper_k3",
+          "weight": "310/1129"
+        },
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "272/1129"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "51/1129"
+        },
+        {
+          "constraint_index": 72,
+          "label": "leaf_nonnegative_j3",
+          "weight": "35/1129"
+        }
+      ],
+      "discovery_objective_float": 0.0012547977561263614,
+      "certificate_status": "exact_primal_dual_equality"
+    },
+    {
+      "M": 32,
+      "n": 16,
+      "t": "4",
+      "volume": "1/2",
+      "optimal_event_error": "1/10",
+      "leaf_event_probabilities": [
+        "2/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "signed_event_dual": [
+        "1/3",
+        "-2/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "dual_support": [
+        {
+          "constraint_index": 2,
+          "label": "event_upper_k1",
+          "weight": "2/3"
+        },
+        {
+          "constraint_index": 1,
+          "label": "event_lower_k0",
+          "weight": "1/3"
+        },
+        {
+          "constraint_index": 68,
+          "label": "leaf_nonnegative_j1",
+          "weight": "1/3"
+        }
+      ],
+      "discovery_objective_float": 0.10000000000000003,
+      "certificate_status": "exact_primal_dual_equality"
+    }
+  ],
+  "uncertified_attempts": [
+    {
+      "M": 32,
+      "n": 16,
+      "t": "1/32",
+      "error": "No exact certificate reconstructed: M=32, n=16, t=1/32"
+    }
+  ],
+  "scope_limits": [
+    "Exact optimum only for the finite one-event problem; not a full-law Gibbs upper bound."
+  ]
+}

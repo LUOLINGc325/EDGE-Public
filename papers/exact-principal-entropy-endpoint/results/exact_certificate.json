@@ -1,0 +1,10 @@
+{
+  "scale": "L t M_epsilon / 4",
+  "leading_optimizer": "eta/2 - 1",
+  "cubic_optimizer": "5*eta**3/8 - eta/6",
+  "quartic_endpoint": "5*eta**2/4 - eta/2 + 1/3",
+  "sextic_endpoint": "117*eta**4/40 - 15*eta**3/8 + 7*eta**2/6 - 5*eta/12 + 8/45",
+  "eta_zero_check": "8*r**6/45 + r**4/3 + r**2",
+  "explicit_relative_radius": "1/4096",
+  "scope": "Exact symbolic and rational checks of intermediate coefficients and thresholds."
+}

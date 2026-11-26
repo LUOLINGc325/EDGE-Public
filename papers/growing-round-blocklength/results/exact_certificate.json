@@ -1,0 +1,7 @@
+{
+  "exact_timing_checks": 840,
+  "archived_envelope_checks": 840,
+  "unanimity_bound_checks": 496,
+  "integer_branch_checks": 24,
+  "scope": "Exact finite rational checks. Length and coding proofs are in the manuscript."
+}

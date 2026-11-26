@@ -1,0 +1,9 @@
+{
+  "script": "code/checks.py",
+  "arithmetic": "fractions.Fraction",
+  "status": "pass",
+  "rational_triangles": 328,
+  "attaining_isosceles_families": 10,
+  "ordered_radius_profile_values": 250,
+  "equilateral_radius_squared": "1/3"
+}

@@ -1,0 +1,71 @@
+{
+  "status": "pass",
+  "arithmetic": "exact rational except display-only scaled losses",
+  "adaptive_stopping_cases": 40392,
+  "concave_hull_comparisons": 8550,
+  "witnesses": [
+    {
+      "k": 32,
+      "width": 12,
+      "high_probability": "11/556",
+      "exact_loss": "1089/4448",
+      "scaled_loss": 0.7772840582703999
+    },
+    {
+      "k": 128,
+      "width": 30,
+      "high_probability": "38/6535",
+      "exact_loss": "81795/460064",
+      "scaled_loss": 0.8960078795658964
+    },
+    {
+      "k": 512,
+      "width": 74,
+      "high_probability": "143/85285",
+      "exact_loss": "5814809/46616320",
+      "scaled_loss": 0.9979009926137455
+    },
+    {
+      "k": 2048,
+      "width": 185,
+      "high_probability": "548/1216745",
+      "exact_loss": "185/2233",
+      "scaled_loss": 1.0521063846452914
+    },
+    {
+      "k": 8192,
+      "width": 466,
+      "high_probability": "2139/18431465",
+      "exact_loss": "233/4329",
+      "scaled_loss": 1.0850047757006438
+    },
+    {
+      "k": 32768,
+      "width": 1173,
+      "high_probability": "8423/284413009",
+      "exact_loss": "1173/33941",
+      "scaled_loss": 1.1059190948999735
+    },
+    {
+      "k": 131072,
+      "width": 2954,
+      "high_probability": "33329/4446208669",
+      "exact_loss": "1477/67013",
+      "scaled_loss": 1.119587592261576
+    },
+    {
+      "k": 524288,
+      "width": 7443,
+      "high_probability": "132503/70228131261",
+      "exact_loss": "7443/531731",
+      "scaled_loss": 1.1287021293840733
+    },
+    {
+      "k": 2097152,
+      "width": 18755,
+      "high_probability": "263929/557264539260",
+      "exact_loss": "18755/2115907",
+      "scaled_loss": 1.1345678236330803
+    }
+  ]
+}

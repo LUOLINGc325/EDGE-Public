@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "arithmetic": "exact support, chord, and p=2 checks; display-only p=1 trials",
+  "incidence_cases": 300,
+  "radial_norm_checks": 2937,
+  "endpoint_chord_points": 10710,
+  "p2_equality_cases": 200,
+  "rounded_p1_trials": [
+    {
+      "n": 101,
+      "trial_ratio": 1.5323701002662466,
+      "n_times_trial_deficit": 1.448102019188709,
+      "analytic_first_order_coefficient": 1.4198884250736612
+    },
+    {
+      "n": 1001,
+      "trial_ratio": 1.5452893325615802,
+      "n_times_trial_deficit": 1.4198298704691261,
+      "analytic_first_order_coefficient": 1.4198884250736612
+    },
+    {
+      "n": 10001,
+      "trial_ratio": 1.5465657609448493,
+      "n_times_trial_deficit": 1.4199727404855533,
+      "analytic_first_order_coefficient": 1.4198884250736612
+    },
+    {
+      "n": 100001,
+      "trial_ratio": 1.546693545400393,
+      "n_times_trial_deficit": 1.419876218356071,
+      "analytic_first_order_coefficient": 1.4198884250736612
+    }
+  ]
+}

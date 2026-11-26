@@ -1,0 +1,225 @@
+{
+  "status": "pass",
+  "exact_finite_cases": 720,
+  "numerical_note": "Crossover and sampled maxima are illustrations in floating point.",
+  "weak_noise_plateau_threshold": 2.020657858576995,
+  "weak_noise_plateau_value": 0.36787944117144233,
+  "examples": [
+    {
+      "family": "zero contraction factor",
+      "k": 32,
+      "contraction_deficit": 1,
+      "crossing_radius": 0.14625943285604498,
+      "rescaled_crossing_squared": 0.6845382943799018,
+      "rescaled_max_gap": 0.6299250155064106,
+      "max_gap_over_deficit": 0.009842578367287665
+    },
+    {
+      "family": "fixed contraction factor 1/2",
+      "k": 32,
+      "contraction_deficit": 0.5,
+      "crossing_radius": 0.16754602221732323,
+      "rescaled_crossing_squared": 0.6737200694603463,
+      "rescaled_max_gap": 0.5710309473177106,
+      "max_gap_over_deficit": 0.017844717103678458
+    },
+    {
+      "family": "deficit 1/k^2",
+      "k": 32,
+      "contraction_deficit": 0.0009765625,
+      "crossing_radius": 0.4911431489122554,
+      "rescaled_crossing_squared": 0.015068988046413994,
+      "rescaled_max_gap": 0.020072357056420694,
+      "max_gap_over_deficit": 0.3211577129027311
+    },
+    {
+      "family": "rescaled deficit 1/2",
+      "k": 32,
+      "contraction_deficit": 0.015625,
+      "crossing_radius": 0.43332068426358783,
+      "rescaled_crossing_squared": 0.18629988716526819,
+      "rescaled_max_gap": 0.22504072625196087,
+      "max_gap_over_deficit": 0.22504072625196087
+    },
+    {
+      "family": "rescaled deficit 4",
+      "k": 32,
+      "contraction_deficit": 0.125,
+      "crossing_radius": 0.2717600331052633,
+      "rescaled_crossing_squared": 0.5539013669503037,
+      "rescaled_max_gap": 0.41080860991505574,
+      "max_gap_over_deficit": 0.05135107623938197
+    },
+    {
+      "family": "deficit 1/sqrt(k)",
+      "k": 32,
+      "contraction_deficit": 0.17677669529663687,
+      "crossing_radius": 0.2411901308138436,
+      "rescaled_crossing_squared": 0.599976055894371,
+      "rescaled_max_gap": 0.4364828205166374,
+      "max_gap_over_deficit": 0.03857999528234313
+    },
+    {
+      "family": "zero contraction factor",
+      "k": 256,
+      "contraction_deficit": 1,
+      "crossing_radius": 0.05199946070900034,
+      "rescaled_crossing_squared": 0.6922096419908788,
+      "rescaled_max_gap": 0.6333399549462457,
+      "max_gap_over_deficit": 0.0012369920995043862
+    },
+    {
+      "family": "fixed contraction factor 1/2",
+      "k": 256,
+      "contraction_deficit": 0.5,
+      "crossing_radius": 0.06001674759724632,
+      "rescaled_crossing_squared": 0.6915859184931017,
+      "rescaled_max_gap": 0.5767535161753852,
+      "max_gap_over_deficit": 0.0022529434225600983
+    },
+    {
+      "family": "deficit 1/k^2",
+      "k": 256,
+      "contraction_deficit": 0.0000152587890625,
+      "crossing_radius": 0.4988648736040272,
+      "rescaled_crossing_squared": 0.0019442520579517639,
+      "rescaled_max_gap": 0.0025918040793661973,
+      "max_gap_over_deficit": 0.33175092215887325
+    },
+    {
+      "family": "rescaled deficit 1/2",
+      "k": 256,
+      "contraction_deficit": 0.001953125,
+      "crossing_radius": 0.43388508219705024,
+      "rescaled_crossing_squared": 0.18807242054478837,
+      "rescaled_max_gap": 0.22378684773117014,
+      "max_gap_over_deficit": 0.22378684773117014
+    },
+    {
+      "family": "rescaled deficit 4",
+      "k": 256,
+      "contraction_deficit": 0.015625,
+      "crossing_radius": 0.2639405904625213,
+      "rescaled_crossing_squared": 0.5529630426437785,
+      "rescaled_max_gap": 0.3726271752575085,
+      "max_gap_over_deficit": 0.04657839690718856
+    },
+    {
+      "family": "deficit 1/sqrt(k)",
+      "k": 256,
+      "contraction_deficit": 0.0625,
+      "crossing_radius": 0.14708665025129541,
+      "rescaled_crossing_squared": 0.670668963146554,
+      "rescaled_max_gap": 0.39125853401999877,
+      "max_gap_over_deficit": 0.012226829188124962
+    },
+    {
+      "family": "zero contraction factor",
+      "k": 4096,
+      "contraction_deficit": 1,
+      "crossing_radius": 0.013008115469618838,
+      "rescaled_crossing_squared": 0.6930885348185576,
+      "rescaled_max_gap": 0.6338031488272359,
+      "max_gap_over_deficit": 0.00007736854844082469
+    },
+    {
+      "family": "fixed contraction factor 1/2",
+      "k": 4096,
+      "contraction_deficit": 0.5,
+      "crossing_radius": 0.01502005434880142,
+      "rescaled_crossing_squared": 0.6930494442729935,
+      "rescaled_max_gap": 0.5775262939261879,
+      "max_gap_over_deficit": 0.00014099763035307322
+    },
+    {
+      "family": "deficit 1/k^2",
+      "k": 4096,
+      "contraction_deficit": 5.960464477539063e-8,
+      "crossing_radius": 0.49992880879961143,
+      "rescaled_crossing_squared": 0.00012203555000944304,
+      "rescaled_max_gap": 0.00016271186721959627,
+      "max_gap_over_deficit": 0.33323390406573317
+    },
+    {
+      "family": "rescaled deficit 1/2",
+      "k": 4096,
+      "contraction_deficit": 0.0001220703125,
+      "crossing_radius": 0.43394809113753674,
+      "rescaled_crossing_squared": 0.18829945221391128,
+      "rescaled_max_gap": 0.2236147563294068,
+      "max_gap_over_deficit": 0.2236147563294068
+    },
+    {
+      "family": "rescaled deficit 4",
+      "k": 4096,
+      "contraction_deficit": 0.0009765625,
+      "crossing_radius": 0.26292741469344894,
+      "rescaled_crossing_squared": 0.5527765608923384,
+      "rescaled_max_gap": 0.3681716356072415,
+      "max_gap_over_deficit": 0.046021454450905185
+    },
+    {
+      "family": "deficit 1/sqrt(k)",
+      "k": 4096,
+      "contraction_deficit": 0.015625,
+      "crossing_radius": 0.07367550386717572,
+      "rescaled_crossing_squared": 0.6893661435004426,
+      "rescaled_max_gap": 0.37365038018475305,
+      "max_gap_over_deficit": 0.002919143595193383
+    },
+    {
+      "family": "zero contraction factor",
+      "k": 65536,
+      "contraction_deficit": 1,
+      "crossing_radius": 0.003252157850648667,
+      "rescaled_crossing_squared": 0.6931435150072713,
+      "rescaled_max_gap": 0.6338321448040733,
+      "max_gap_over_deficit": 0.000004835755499298655
+    },
+    {
+      "family": "fixed contraction factor 1/2",
+      "k": 65536,
+      "contraction_deficit": 0.5,
+      "crossing_radius": 0.003755261801437214,
+      "rescaled_crossing_squared": 0.6931410713313347,
+      "rescaled_max_gap": 0.5775746428738414,
+      "max_gap_over_deficit": 0.000008813089643460715
+    },
+    {
+      "family": "deficit 1/k^2",
+      "k": 65536,
+      "contraction_deficit": 2.3283064365386963e-10,
+      "crossing_radius": 0.49999554958426096,
+      "rescaled_crossing_squared": 0.0000076292587150562695,
+      "rescaled_max_gap": 0.000010172336331898836,
+      "max_gap_over_deficit": 0.33332711692366107
+    },
+    {
+      "family": "rescaled deficit 1/2",
+      "k": 65536,
+      "contraction_deficit": 0.00000762939453125,
+      "crossing_radius": 0.4339519349465133,
+      "rescaled_crossing_squared": 0.18831356348184689,
+      "rescaled_max_gap": 0.2236039714911878,
+      "max_gap_over_deficit": 0.2236039714911878
+    },
+    {
+      "family": "rescaled deficit 4",
+      "k": 65536,
+      "contraction_deficit": 0.00006103515625,
+      "crossing_radius": 0.26286435696135557,
+      "rescaled_crossing_squared": 0.5527644917372767,
+      "rescaled_max_gap": 0.3678976858682738,
+      "max_gap_over_deficit": 0.04598721073353423
+    },
+    {
+      "family": "deficit 1/sqrt(k)",
+      "k": 65536,
+      "contraction_deficit": 0.00390625,
+      "crossing_radius": 0.03680519092284951,
+      "rescaled_crossing_squared": 0.6922118823012433,
+      "rescaled_max_gap": 0.36931787914284403,
+      "max_gap_over_deficit": 0.0007213239827008672
+    }
+  ]
+}

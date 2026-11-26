@@ -1,0 +1,6 @@
+{
+  "serial_simulations": 54,
+  "exact_epoch_checks": 4900,
+  "replay_coordinates": 17142,
+  "scope": "Exact rational checks for round-robin and fixed-priority virtual trajectories."
+}

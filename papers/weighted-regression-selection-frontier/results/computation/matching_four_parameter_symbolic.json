@@ -1,0 +1,1030 @@
+{
+  "schema": "matching-four-parameter-symbolic-v1",
+  "assumptions": "c_u,c_a,c_b,c_h strictly positive",
+  "fixed_gradient_scales": [
+    8,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "root_matrix_rows": [
+    [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-1",
+      "-1",
+      "-1",
+      "-1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "-1",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "-1",
+      "-1"
+    ],
+    [
+      "-2",
+      "-1",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0"
+    ],
+    [
+      "-2",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "-1",
+      "0"
+    ],
+    [
+      "-2",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "-1"
+    ],
+    [
+      "0",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ]
+  ],
+  "evaluation_masses": [
+    "c_u",
+    "c_a",
+    "c_a",
+    "c_a",
+    "c_a",
+    "c_b",
+    "c_b",
+    "c_b",
+    "c_b",
+    "c_h",
+    "c_h",
+    "c_h",
+    "c_h"
+  ],
+  "total_mass": "4*c_a + 4*c_b + 4*c_h + c_u",
+  "features": "x_i = fixed_gradient_scale_i * root_i / evaluation_mass_i",
+  "labels": "all equal one",
+  "full_mean_zero_verified": true,
+  "full_rank_minor_rows": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7
+  ],
+  "full_rank_minor": "8/(c_a**3*c_b**3*c_u)",
+  "selections": [
+    {
+      "anchor": "A",
+      "m": 0,
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        9,
+        10,
+        11
+      ],
+      "training_weights_unnormalized": [
+        "c_u/8",
+        "c_a",
+        "c_a",
+        "c_a",
+        "c_a",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "-c_h",
+        "-c_h",
+        "-c_h"
+      ],
+      "independent_selected_rows": [
+        0,
+        1,
+        2,
+        3,
+        9,
+        10,
+        11
+      ],
+      "nonzero_minor": "-8/(c_a**3*c_h**3*c_u)",
+      "selected_residuals": [
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "normal_equations": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "pair_parameters": [
+        "c_b",
+        "c_h"
+      ],
+      "Q_m": "12*c_h**2",
+      "exact_excess": "12*c_h*(c_b + c_h)/(c_b*(4*c_a + 4*c_b + 4*c_h + c_u))",
+      "claimed_excess_formula_verified": true
+    },
+    {
+      "anchor": "A",
+      "m": 1,
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        11
+      ],
+      "training_weights_unnormalized": [
+        "c_u/8",
+        "c_a",
+        "c_a",
+        "c_a",
+        "c_a",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "c_b",
+        "-c_h",
+        "-c_h"
+      ],
+      "independent_selected_rows": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        10,
+        11
+      ],
+      "nonzero_minor": "8/(c_a**3*c_b*c_h**2*c_u)",
+      "selected_residuals": [
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "normal_equations": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "pair_parameters": [
+        "c_b",
+        "c_h"
+      ],
+      "Q_m": "2*c_b**2 - 4*c_b*c_h + 6*c_h**2",
+      "exact_excess": "2*(c_b + c_h)*(c_b**2 - 2*c_b*c_h + 3*c_h**2)/(c_b*c_h*(4*c_a + 4*c_b + 4*c_h + c_u))",
+      "claimed_excess_formula_verified": true
+    },
+    {
+      "anchor": "A",
+      "m": 2,
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        11
+      ],
+      "training_weights_unnormalized": [
+        "c_u/8",
+        "c_a",
+        "c_a",
+        "c_a",
+        "c_a",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "c_b",
+        "c_b",
+        "-c_h"
+      ],
+      "independent_selected_rows": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        11
+      ],
+      "nonzero_minor": "-8/(c_a**3*c_b**2*c_h*c_u)",
+      "selected_residuals": [
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "normal_equations": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "pair_parameters": [
+        "c_b",
+        "c_h"
+      ],
+      "Q_m": "6*c_b**2 - 4*c_b*c_h + 2*c_h**2",
+      "exact_excess": "2*(c_b + c_h)*(3*c_b**2 - 2*c_b*c_h + c_h**2)/(c_b*c_h*(4*c_a + 4*c_b + 4*c_h + c_u))",
+      "claimed_excess_formula_verified": true
+    },
+    {
+      "anchor": "A",
+      "m": 3,
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "training_weights_unnormalized": [
+        "c_u/8",
+        "c_a",
+        "c_a",
+        "c_a",
+        "c_a",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "c_b",
+        "c_b",
+        "c_b"
+      ],
+      "independent_selected_rows": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "nonzero_minor": "8/(c_a**3*c_b**3*c_u)",
+      "selected_residuals": [
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "normal_equations": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "pair_parameters": [
+        "c_b",
+        "c_h"
+      ],
+      "Q_m": "12*c_b**2",
+      "exact_excess": "12*c_b*(c_b + c_h)/(c_h*(4*c_a + 4*c_b + 4*c_h + c_u))",
+      "claimed_excess_formula_verified": true
+    },
+    {
+      "anchor": "B",
+      "m": 0,
+      "support": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "training_weights_unnormalized": [
+        "c_u/8",
+        "c_b",
+        "c_b",
+        "c_b",
+        "c_b",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "-c_h",
+        "-c_h",
+        "-c_h",
+        "0",
+        "0",
+        "0"
+      ],
+      "independent_selected_rows": [
+        0,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "nonzero_minor": "8/(c_b**3*c_h**3*c_u)",
+      "selected_residuals": [
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "normal_equations": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "pair_parameters": [
+        "c_a",
+        "c_h"
+      ],
+      "Q_m": "12*c_h**2",
+      "exact_excess": "12*c_h*(c_a + c_h)/(c_a*(4*c_a + 4*c_b + 4*c_h + c_u))",
+      "claimed_excess_formula_verified": true
+    },
+    {
+      "anchor": "B",
+      "m": 1,
+      "support": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        1,
+        10,
+        11
+      ],
+      "training_weights_unnormalized": [
+        "c_u/8",
+        "c_b",
+        "c_b",
+        "c_b",
+        "c_b",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "c_a",
+        "-c_h",
+        "-c_h",
+        "0",
+        "0",
+        "0"
+      ],
+      "independent_selected_rows": [
+        0,
+        5,
+        6,
+        7,
+        1,
+        10,
+        11
+      ],
+      "nonzero_minor": "-8/(c_a*c_b**3*c_h**2*c_u)",
+      "selected_residuals": [
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "normal_equations": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "pair_parameters": [
+        "c_a",
+        "c_h"
+      ],
+      "Q_m": "2*c_a**2 - 4*c_a*c_h + 6*c_h**2",
+      "exact_excess": "2*(c_a + c_h)*(c_a**2 - 2*c_a*c_h + 3*c_h**2)/(c_a*c_h*(4*c_a + 4*c_b + 4*c_h + c_u))",
+      "claimed_excess_formula_verified": true
+    },
+    {
+      "anchor": "B",
+      "m": 2,
+      "support": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        1,
+        2,
+        11
+      ],
+      "training_weights_unnormalized": [
+        "c_u/8",
+        "c_b",
+        "c_b",
+        "c_b",
+        "c_b",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "c_a",
+        "c_a",
+        "-c_h",
+        "0",
+        "0",
+        "0"
+      ],
+      "independent_selected_rows": [
+        0,
+        5,
+        6,
+        7,
+        1,
+        2,
+        11
+      ],
+      "nonzero_minor": "8/(c_a**2*c_b**3*c_h*c_u)",
+      "selected_residuals": [
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "normal_equations": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "pair_parameters": [
+        "c_a",
+        "c_h"
+      ],
+      "Q_m": "6*c_a**2 - 4*c_a*c_h + 2*c_h**2",
+      "exact_excess": "2*(c_a + c_h)*(3*c_a**2 - 2*c_a*c_h + c_h**2)/(c_a*c_h*(4*c_a + 4*c_b + 4*c_h + c_u))",
+      "claimed_excess_formula_verified": true
+    },
+    {
+      "anchor": "B",
+      "m": 3,
+      "support": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        1,
+        2,
+        3
+      ],
+      "training_weights_unnormalized": [
+        "c_u/8",
+        "c_b",
+        "c_b",
+        "c_b",
+        "c_b",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "c_a",
+        "c_a",
+        "c_a",
+        "0",
+        "0",
+        "0"
+      ],
+      "independent_selected_rows": [
+        0,
+        5,
+        6,
+        7,
+        1,
+        2,
+        3
+      ],
+      "nonzero_minor": "-8/(c_a**3*c_b**3*c_u)",
+      "selected_residuals": [
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "normal_equations": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "pair_parameters": [
+        "c_a",
+        "c_h"
+      ],
+      "Q_m": "12*c_a**2",
+      "exact_excess": "12*c_a*(c_a + c_h)/(c_h*(4*c_a + 4*c_b + 4*c_h + c_u))",
+      "claimed_excess_formula_verified": true
+    },
+    {
+      "anchor": "H",
+      "m": 0,
+      "support": [
+        0,
+        9,
+        10,
+        11,
+        12,
+        5,
+        6,
+        7
+      ],
+      "training_weights_unnormalized": [
+        "3*c_u/4",
+        "c_h",
+        "c_h",
+        "c_h",
+        "c_h",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "-c_b",
+        "-c_b",
+        "-c_b",
+        "c_b",
+        "c_b",
+        "c_b"
+      ],
+      "independent_selected_rows": [
+        0,
+        9,
+        10,
+        11,
+        5,
+        6,
+        7
+      ],
+      "nonzero_minor": "-8/(c_b**3*c_h**3*c_u)",
+      "selected_residuals": [
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "normal_equations": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "pair_parameters": [
+        "c_a",
+        "c_b"
+      ],
+      "Q_m": "12*c_b**2",
+      "exact_excess": "12*c_b*(c_a + c_b)/(c_a*(4*c_a + 4*c_b + 4*c_h + c_u))",
+      "claimed_excess_formula_verified": true
+    },
+    {
+      "anchor": "H",
+      "m": 1,
+      "support": [
+        0,
+        9,
+        10,
+        11,
+        12,
+        1,
+        6,
+        7
+      ],
+      "training_weights_unnormalized": [
+        "3*c_u/4",
+        "c_h",
+        "c_h",
+        "c_h",
+        "c_h",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "c_a",
+        "-c_b",
+        "-c_b",
+        "-c_a",
+        "c_b",
+        "c_b"
+      ],
+      "independent_selected_rows": [
+        0,
+        9,
+        10,
+        11,
+        1,
+        6,
+        7
+      ],
+      "nonzero_minor": "8/(c_a*c_b**2*c_h**3*c_u)",
+      "selected_residuals": [
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "normal_equations": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "pair_parameters": [
+        "c_a",
+        "c_b"
+      ],
+      "Q_m": "2*c_a**2 - 4*c_a*c_b + 6*c_b**2",
+      "exact_excess": "2*(c_a + c_b)*(c_a**2 - 2*c_a*c_b + 3*c_b**2)/(c_a*c_b*(4*c_a + 4*c_b + 4*c_h + c_u))",
+      "claimed_excess_formula_verified": true
+    },
+    {
+      "anchor": "H",
+      "m": 2,
+      "support": [
+        0,
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        7
+      ],
+      "training_weights_unnormalized": [
+        "3*c_u/4",
+        "c_h",
+        "c_h",
+        "c_h",
+        "c_h",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "c_a",
+        "c_a",
+        "-c_b",
+        "-c_a",
+        "-c_a",
+        "c_b"
+      ],
+      "independent_selected_rows": [
+        0,
+        9,
+        10,
+        11,
+        1,
+        2,
+        7
+      ],
+      "nonzero_minor": "-8/(c_a**2*c_b*c_h**3*c_u)",
+      "selected_residuals": [
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "normal_equations": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "pair_parameters": [
+        "c_a",
+        "c_b"
+      ],
+      "Q_m": "6*c_a**2 - 4*c_a*c_b + 2*c_b**2",
+      "exact_excess": "2*(c_a + c_b)*(3*c_a**2 - 2*c_a*c_b + c_b**2)/(c_a*c_b*(4*c_a + 4*c_b + 4*c_h + c_u))",
+      "claimed_excess_formula_verified": true
+    },
+    {
+      "anchor": "H",
+      "m": 3,
+      "support": [
+        0,
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "training_weights_unnormalized": [
+        "3*c_u/4",
+        "c_h",
+        "c_h",
+        "c_h",
+        "c_h",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "c_a",
+        "c_a",
+        "c_a",
+        "-c_a",
+        "-c_a",
+        "-c_a"
+      ],
+      "independent_selected_rows": [
+        0,
+        9,
+        10,
+        11,
+        1,
+        2,
+        3
+      ],
+      "nonzero_minor": "8/(c_a**3*c_h**3*c_u)",
+      "selected_residuals": [
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "normal_equations": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "pair_parameters": [
+        "c_a",
+        "c_b"
+      ],
+      "Q_m": "12*c_a**2",
+      "exact_excess": "12*c_a*(c_a + c_b)/(c_b*(4*c_a + 4*c_b + 4*c_h + c_u))",
+      "claimed_excess_formula_verified": true
+    }
+  ],
+  "scalar_sign_cases": [
+    {
+      "m": 3,
+      "positive_parameter_region": "0 < x <= y/3",
+      "Q_m_minus_4xy_factored": "4*x*(3*x - y)",
+      "sign_on_region": "nonpositive"
+    },
+    {
+      "m": 2,
+      "positive_parameter_region": "y/3 <= x <= y",
+      "Q_m_minus_4xy_factored": "(x - y)*(6*x - 2*y)",
+      "sign_on_region": "nonpositive"
+    },
+    {
+      "m": 1,
+      "positive_parameter_region": "y <= x <= 3*y",
+      "Q_m_minus_4xy_factored": "(x - 3*y)*(2*x - 2*y)",
+      "sign_on_region": "nonpositive"
+    },
+    {
+      "m": 0,
+      "positive_parameter_region": "3*y <= x",
+      "Q_m_minus_4xy_factored": "4*y*(-x + 3*y)",
+      "sign_on_region": "nonpositive"
+    }
+  ],
+  "pair_cost_bound": "J(x,y) <= 4*(x+y)",
+  "averaging_identity": "(c_a+c_b)+(c_a+c_h)+(c_b+c_h)=2*(c_a+c_b+c_h)",
+  "actual_feasible_excess_upper_bound": "(8*c_a + 8*c_b + 8*c_h)/(12*c_a + 12*c_b + 12*c_h + 3*c_u)",
+  "two_thirds_minus_bound": "2*c_u/(3*(4*c_a + 4*c_b + 4*c_h + c_u))",
+  "conclusion": "Every member of this fixed-G four-parameter family admits a positive-weight full-rank 8-row fit with excess <2/3<12/7.",
+  "scope_exclusions": "No assertion for arbitrary individual row scaling, arbitrary positive kernel vector, or the general Gamma frontier.",
+  "canonical_excess": "2/5"
+}

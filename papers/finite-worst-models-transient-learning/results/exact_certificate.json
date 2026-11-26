@@ -1,0 +1,4347 @@
+{
+  "arithmetic": "Python standard-library Fraction; no numerical tolerance or random simulation",
+  "cases": [
+    {
+      "bellman_checks": {
+        "action_inequalities_checked": 36,
+        "biases": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -2,
+            0,
+            -1
+          ],
+          [
+            -2,
+            0,
+            -1
+          ]
+        ],
+        "state_equalities_checked": 9
+      },
+      "benchmark": "1",
+      "enumerated_runs": [
+        {
+          "expected_regret": "1",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "3",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "7",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "11",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "2",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "4",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "8",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "12",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "3",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "7",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "11",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "0",
+          "expected_switches": "1",
+          "horizon": 2,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "2",
+          "expected_switches": "1",
+          "horizon": 4,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "6",
+          "expected_switches": "1",
+          "horizon": 8,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "10",
+          "expected_switches": "1",
+          "horizon": 12,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "2",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "4",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "8",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "12",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "0",
+          "expected_switches": "1",
+          "horizon": 2,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "2",
+          "expected_switches": "1",
+          "horizon": 4,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "6",
+          "expected_switches": "1",
+          "horizon": 8,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "10",
+          "expected_switches": "1",
+          "horizon": 12,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "0",
+          "expected_switches": "1",
+          "horizon": 2,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "3",
+          "expected_reward": "1",
+          "expected_switches": "2",
+          "horizon": 4,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "3",
+          "expected_reward": "5",
+          "expected_switches": "2",
+          "horizon": 8,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "3",
+          "expected_reward": "9",
+          "expected_switches": "2",
+          "horizon": 12,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "2",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "4",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "8",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "12",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "0",
+          "expected_switches": "1",
+          "horizon": 2,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "3",
+          "expected_reward": "1",
+          "expected_switches": "2",
+          "horizon": 4,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "3",
+          "expected_reward": "5",
+          "expected_switches": "2",
+          "horizon": 8,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "3",
+          "expected_reward": "9",
+          "expected_switches": "2",
+          "horizon": 12,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        }
+      ],
+      "models": [
+        [
+          [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ]
+          ]
+        ]
+      ],
+      "name": "communicating_three_model_witness",
+      "pair_certificates": [
+        {
+          "c": "0",
+          "candidate": 0,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "0"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1"
+          ],
+          "kernel": [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          "potential": [
+            "1",
+            "0",
+            "1"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 0
+        },
+        {
+          "c": "1",
+          "candidate": 1,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "0",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "1"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 0
+        },
+        {
+          "c": "1",
+          "candidate": 2,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "0",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "1"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 0
+        },
+        {
+          "c": "1",
+          "candidate": 0,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "0",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "1",
+            "0",
+            "1"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1"
+          ],
+          "slack": [
+            "1",
+            "0",
+            "0"
+          ],
+          "true_model": 1
+        },
+        {
+          "c": "0",
+          "candidate": 1,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "0"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 1
+        },
+        {
+          "c": "1",
+          "candidate": 2,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "0",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "1"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 1
+        },
+        {
+          "c": "1",
+          "candidate": 0,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "0",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "1",
+            "0",
+            "1"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1"
+          ],
+          "slack": [
+            "1",
+            "0",
+            "0"
+          ],
+          "true_model": 2
+        },
+        {
+          "c": "1",
+          "candidate": 1,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "0",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "1"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 2
+        },
+        {
+          "c": "0",
+          "candidate": 2,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "0"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 2
+        }
+      ],
+      "policies": [
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        ]
+      ],
+      "rewards": [
+        "0",
+        "1",
+        "0"
+      ],
+      "safe_policy_checks": [
+        {
+          "all_start_gain": [
+            "1",
+            "1",
+            "1"
+          ],
+          "classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "model": 0
+        },
+        {
+          "all_start_gain": [
+            "1",
+            "1",
+            "1"
+          ],
+          "classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "model": 1
+        },
+        {
+          "all_start_gain": [
+            "1",
+            "1",
+            "1"
+          ],
+          "classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "model": 2
+        }
+      ],
+      "switch_bound": "12"
+    },
+    {
+      "bellman_checks": {
+        "action_inequalities_checked": 48,
+        "biases": [
+          [
+            -1,
+            0,
+            -1,
+            0
+          ],
+          [
+            -2,
+            0,
+            -1,
+            0
+          ],
+          [
+            -2,
+            0,
+            -1,
+            0
+          ]
+        ],
+        "state_equalities_checked": 12
+      },
+      "benchmark": "1",
+      "enumerated_runs": [
+        {
+          "expected_regret": "1",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "3",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "7",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "11",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "2",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "4",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "8",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "12",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "3",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "7",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "11",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "2",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "4",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "8",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "12",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "0",
+          "expected_switches": "1",
+          "horizon": 2,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "2",
+          "expected_switches": "1",
+          "horizon": 4,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "6",
+          "expected_switches": "1",
+          "horizon": 8,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "10",
+          "expected_switches": "1",
+          "horizon": 12,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "2",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "4",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "8",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "12",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "0",
+          "expected_switches": "1",
+          "horizon": 2,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "2",
+          "expected_switches": "1",
+          "horizon": 4,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "6",
+          "expected_switches": "1",
+          "horizon": 8,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "10",
+          "expected_switches": "1",
+          "horizon": 12,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "2",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "4",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "8",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "12",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "0",
+          "expected_switches": "1",
+          "horizon": 2,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "3",
+          "expected_reward": "1",
+          "expected_switches": "2",
+          "horizon": 4,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "3",
+          "expected_reward": "5",
+          "expected_switches": "2",
+          "horizon": 8,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "3",
+          "expected_reward": "9",
+          "expected_switches": "2",
+          "horizon": 12,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "2",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "4",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "8",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "12",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "2",
+          "expected_reward": "0",
+          "expected_switches": "1",
+          "horizon": 2,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "3",
+          "expected_reward": "1",
+          "expected_switches": "2",
+          "horizon": 4,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "3",
+          "expected_reward": "5",
+          "expected_switches": "2",
+          "horizon": 8,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "3",
+          "expected_reward": "9",
+          "expected_switches": "2",
+          "horizon": 12,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "2",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "4",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "8",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "12",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 3,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "38",
+          "terminal_nodes": 1,
+          "true_model": 2
+        }
+      ],
+      "models": [
+        [
+          [
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ]
+        ]
+      ],
+      "name": "four_state_noncommunicating_multichain_reference",
+      "pair_certificates": [
+        {
+          "c": "0",
+          "candidate": 0,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                3
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "kernel": [
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 0
+        },
+        {
+          "c": "1",
+          "candidate": 1,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "0",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                3
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1",
+            "0"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 0
+        },
+        {
+          "c": "1",
+          "candidate": 2,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "0",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                3
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1",
+            "0"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 0
+        },
+        {
+          "c": "1",
+          "candidate": 0,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "0",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                3
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1",
+            "0"
+          ],
+          "slack": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 1
+        },
+        {
+          "c": "0",
+          "candidate": 1,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                3
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1",
+            "0"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 1
+        },
+        {
+          "c": "1",
+          "candidate": 2,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "0",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                3
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1",
+            "0"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 1
+        },
+        {
+          "c": "1",
+          "candidate": 0,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "0",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                3
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1",
+            "0"
+          ],
+          "slack": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 2
+        },
+        {
+          "c": "1",
+          "candidate": 1,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "0",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                3
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1",
+            "0"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 2
+        },
+        {
+          "c": "0",
+          "candidate": 2,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                3
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "deficit": [
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "2",
+            "0",
+            "1",
+            "0"
+          ],
+          "slack": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "true_model": 2
+        }
+      ],
+      "policies": [
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        ]
+      ],
+      "rewards": [
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "safe_policy_checks": [
+        {
+          "all_start_gain": [
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                3
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "model": 0
+        },
+        {
+          "all_start_gain": [
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                3
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "model": 1
+        },
+        {
+          "all_start_gain": [
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                3
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "model": 2
+        }
+      ],
+      "switch_bound": "12"
+    },
+    {
+      "bellman_checks": null,
+      "benchmark": "1/2",
+      "enumerated_runs": [
+        {
+          "expected_regret": "1/2",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1/2",
+          "expected_reward": "1/2",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1/2",
+          "expected_reward": "3/2",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1/2",
+          "expected_reward": "7/2",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1/2",
+          "expected_reward": "11/2",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "-1/2",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "-1",
+          "expected_reward": "2",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "-2",
+          "expected_reward": "4",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "-4",
+          "expected_reward": "8",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "-6",
+          "expected_reward": "12",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "1/2",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "2",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "4",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "6",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 0
+        },
+        {
+          "expected_regret": "1/2",
+          "expected_reward": "0",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "0",
+          "expected_switches": "1",
+          "horizon": 2,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "1",
+          "expected_switches": "1",
+          "horizon": 4,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "3",
+          "expected_switches": "1",
+          "horizon": 8,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "1",
+          "expected_reward": "5",
+          "expected_switches": "1",
+          "horizon": 12,
+          "initial_state": 0,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "-1/2",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "-1",
+          "expected_reward": "2",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "-2",
+          "expected_reward": "4",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "-4",
+          "expected_reward": "8",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "-6",
+          "expected_reward": "12",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 1,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "1/2",
+          "expected_switches": "0",
+          "horizon": 1,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 1,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "1",
+          "expected_switches": "0",
+          "horizon": 2,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 2,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "2",
+          "expected_switches": "0",
+          "horizon": 4,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 4,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "4",
+          "expected_switches": "0",
+          "horizon": 8,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 8,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        },
+        {
+          "expected_regret": "0",
+          "expected_reward": "6",
+          "expected_switches": "0",
+          "horizon": 12,
+          "initial_state": 2,
+          "max_nodes": 1,
+          "positive_transition_branches": 12,
+          "rational_certificate_bound": "9/2",
+          "terminal_nodes": 1,
+          "true_model": 1
+        }
+      ],
+      "models": [
+        [
+          [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ]
+        ]
+      ],
+      "name": "multichain_model_safe_signed_deficit",
+      "pair_certificates": [
+        {
+          "c": "0",
+          "candidate": 0,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1/2",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "0"
+          ],
+          "deficit": [
+            "1/2",
+            "-1/2",
+            "0"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "1/2",
+            "0",
+            "0"
+          ],
+          "slack": [
+            "0",
+            "1/2",
+            "0"
+          ],
+          "true_model": 0
+        },
+        {
+          "c": "1/2",
+          "candidate": 1,
+          "closed_classes": [
+            {
+              "mean": "0",
+              "states": [
+                0
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1/2",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "1",
+            "0",
+            "0"
+          ],
+          "deficit": [
+            "1/2",
+            "-1/2",
+            "0"
+          ],
+          "kernel": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "0",
+            "0",
+            "0"
+          ],
+          "slack": [
+            "0",
+            "1/2",
+            "0"
+          ],
+          "true_model": 0
+        },
+        {
+          "c": "1/2",
+          "candidate": 0,
+          "closed_classes": [
+            {
+              "mean": "0",
+              "states": [
+                0
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1/2",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "1",
+            "0",
+            "0"
+          ],
+          "deficit": [
+            "1/2",
+            "-1/2",
+            "0"
+          ],
+          "kernel": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "0",
+            "0",
+            "0"
+          ],
+          "slack": [
+            "0",
+            "1/2",
+            "0"
+          ],
+          "true_model": 1
+        },
+        {
+          "c": "0",
+          "candidate": 1,
+          "closed_classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1/2",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "d": [
+            "0",
+            "0",
+            "0"
+          ],
+          "deficit": [
+            "1/2",
+            "-1/2",
+            "0"
+          ],
+          "kernel": [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "potential": [
+            "1/2",
+            "0",
+            "0"
+          ],
+          "slack": [
+            "0",
+            "1/2",
+            "0"
+          ],
+          "true_model": 1
+        }
+      ],
+      "policies": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "rewards": [
+        "0",
+        "1",
+        "1/2"
+      ],
+      "safe_policy_checks": [
+        {
+          "all_start_gain": [
+            "1/2",
+            "1",
+            "1/2"
+          ],
+          "classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1/2",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "model": 0
+        },
+        {
+          "all_start_gain": [
+            "1/2",
+            "1",
+            "1/2"
+          ],
+          "classes": [
+            {
+              "mean": "1",
+              "states": [
+                1
+              ],
+              "stationary": [
+                "1"
+              ]
+            },
+            {
+              "mean": "1/2",
+              "states": [
+                2
+              ],
+              "stationary": [
+                "1"
+              ]
+            }
+          ],
+          "model": 1
+        }
+      ],
+      "switch_bound": "4"
+    }
+  ],
+  "evidence_scope": "Finite examples, controller semantics, short-horizon complete laws, and exact finite Green identities; not a general or Lean proof",
+  "posterior_semantics": {
+    "action_conditioned_posterior": [
+      "3/5",
+      "2/5"
+    ],
+    "below_threshold_switches": true,
+    "exact_joint_likelihood_posterior": [
+      "3/5",
+      "2/5"
+    ],
+    "floating_point_input_not_used": true,
+    "randomized_policy_exact_runs": [
+      {
+        "expected_regret": "-7/3",
+        "expected_reward": "7/3",
+        "expected_switches": "11/128",
+        "horizon": 5,
+        "initial_state": 0,
+        "max_nodes": 16,
+        "positive_transition_branches": 140,
+        "terminal_nodes": 16,
+        "true_model": 0
+      },
+      {
+        "expected_regret": "-2",
+        "expected_reward": "2",
+        "expected_switches": "3/8",
+        "horizon": 5,
+        "initial_state": 0,
+        "max_nodes": 16,
+        "positive_transition_branches": 140,
+        "terminal_nodes": 16,
+        "true_model": 1
+      }
+    ],
+    "threshold_equality_retains": true,
+    "zero_evidence_raises": true
+  },
+  "schema_version": 1,
+  "source_sha256": {
+    "controller.py": "e28ea006e4f179845a6aa7386e571ce42a9f67366133a937692ea619a694ebeb",
+    "verify_certificate.py": "04c9a675db684364d330d0f4f68844fdc16facedb7bc27dc6d116ed3c5366cca"
+  },
+  "status": "PASS",
+  "two_model_green": {
+    "parameter_cases": [
+      {
+        "delta": "1/5",
+        "exact_remaining_potential": "70636308175060992/11920928955078125",
+        "sum_25_errors": "156750607526831141/23841857910156250",
+        "tested_n": [
+          0,
+          24
+        ],
+        "tested_potential_states": [
+          -30,
+          30
+        ],
+        "theoretical_infinite_error_sum": "25/2",
+        "theoretical_learning_regret": "5/2"
+      },
+      {
+        "delta": "1/3",
+        "exact_remaining_potential": "20179156592/31381059609",
+        "sum_25_errors": "242071223297/62762119218",
+        "tested_n": [
+          0,
+          24
+        ],
+        "tested_potential_states": [
+          -30,
+          30
+        ],
+        "theoretical_infinite_error_sum": "9/2",
+        "theoretical_learning_regret": "3/2"
+      },
+      {
+        "delta": "1/2",
+        "exact_remaining_potential": "109734070929/4398046511104",
+        "sum_25_errors": "8686358951279/4398046511104",
+        "tested_n": [
+          0,
+          24
+        ],
+        "tested_potential_states": [
+          -30,
+          30
+        ],
+        "theoretical_infinite_error_sum": "2",
+        "theoretical_learning_regret": "1"
+      },
+      {
+        "delta": "3/5",
+        "exact_remaining_potential": "208957943242456/107288360595703125",
+        "sum_25_errors": "33067256443385357/23841857910156250",
+        "tested_n": [
+          0,
+          24
+        ],
+        "tested_potential_states": [
+          -30,
+          30
+        ],
+        "theoretical_infinite_error_sum": "25/18",
+        "theoretical_learning_regret": "5/6"
+      },
+      {
+        "delta": "3/4",
+        "exact_remaining_potential": "2493140370933559/332041393326771929088",
+        "sum_25_errors": "32793934670997988033/36893488147419103232",
+        "tested_n": [
+          0,
+          24
+        ],
+        "tested_potential_states": [
+          -30,
+          30
+        ],
+        "theoretical_infinite_error_sum": "8/9",
+        "theoretical_learning_regret": "2/3"
+      }
+    ],
+    "scope": "Finite exact identities; the infinite limit is justified in the manuscript, not by truncation."
+  }
+}

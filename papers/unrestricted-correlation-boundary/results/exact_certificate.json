@@ -1,0 +1,7 @@
+{
+  "exact_equality_parameter_pairs": 2016,
+  "exact_strip_geometry": 820,
+  "collapsed_baseline_containments": 7636,
+  "cluster_containments": 3462,
+  "scope": "Exact checks of equality arithmetic and interval geometry. The paper proves the Gaussian bounds."
+}

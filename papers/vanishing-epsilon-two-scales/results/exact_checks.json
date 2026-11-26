@@ -1,0 +1,66 @@
+{
+  "status": "pass",
+  "arithmetic": "exact rational except displayed illustrations",
+  "geometric_endpoint_cases": 45,
+  "bernoulli_ordered_inequalities": 1400,
+  "binary_evalue_budget_cases": 100,
+  "examples": [
+    {
+      "n": 64,
+      "multiplier": "9/8",
+      "delta": "1/16",
+      "null_event": 0.01601691188664822,
+      "alternative_event": 0.4999999998446534,
+      "success_evidence": 31.217003838390095
+    },
+    {
+      "n": 64,
+      "multiplier": "9/8",
+      "delta": "1/256",
+      "null_event": 0.0010329671877888065,
+      "alternative_event": 0.48766615956043124,
+      "success_evidence": 472.1022751984414
+    },
+    {
+      "n": 64,
+      "multiplier": "9/8",
+      "delta": "1/4096",
+      "null_event": 0.0000645604492369606,
+      "alternative_event": 0.05538398722961327,
+      "success_evidence": 857.8624821263816
+    },
+    {
+      "n": 64,
+      "multiplier": "9/8",
+      "delta": "1/65536",
+      "null_event": 0.000004035028077310037,
+      "alternative_event": 0.0034614992018508293,
+      "success_evidence": 857.8624821263816
+    },
+    {
+      "n": 64,
+      "multiplier": "9/8",
+      "delta": "1/1048576",
+      "null_event": 2.5218925483187733e-7,
+      "alternative_event": 0.00021634370011567683,
+      "success_evidence": 857.8624821263816
+    }
+  ],
+  "critical_estimate_factors": {
+    "log_n": [
+      4096,
+      16384,
+      65536
+    ],
+    "plus_scale_factor": [
+      371643846083379000000,
+      1.4482842408100565e+47,
+      3.519066760791697e+101
+    ],
+    "minus_slack_over_epsilon": [
+      4.359610000063081e-28,
+      6.991989996645917e-56,
+      1.7984862202794635e-111
+    ]
+  }
+}

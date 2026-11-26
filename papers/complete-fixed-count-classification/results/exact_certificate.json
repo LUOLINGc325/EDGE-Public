@@ -1,0 +1,55 @@
+{
+  "optimum_identity_checks": 95,
+  "positive_tail_rounding_checks": 26,
+  "low_scale_decision_checks": 95,
+  "integer_dynamic_program_transitions": 143431,
+  "block_lower_bound_checks": {
+    "blocks": 2100,
+    "blocks_with_repeated_recipients": 1355
+  },
+  "examples": [
+    {
+      "agents": 2,
+      "low_values": [
+        1,
+        2,
+        4
+      ],
+      "baseline": 105,
+      "optimum": 106,
+      "excess": 1
+    },
+    {
+      "agents": 3,
+      "low_values": [
+        1,
+        1,
+        1
+      ],
+      "baseline": 220,
+      "optimum": 220,
+      "excess": 0
+    },
+    {
+      "agents": 4,
+      "low_values": [
+        2,
+        1,
+        3
+      ],
+      "baseline": 1125,
+      "optimum": 1131,
+      "excess": 6
+    },
+    {
+      "agents": 5,
+      "low_values": [
+        2,
+        1
+      ],
+      "baseline": 896,
+      "optimum": 902,
+      "excess": 6
+    }
+  ]
+}

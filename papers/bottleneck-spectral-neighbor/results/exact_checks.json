@@ -1,0 +1,29 @@
+{
+  "script": "code/checks.py",
+  "arithmetic": "integers_and_fractions.Fraction",
+  "status": "pass",
+  "invertible_labelled_graphs": {
+    "5": 268,
+    "6": 15848
+  },
+  "finite_competing_paw_expansions": 7715,
+  "margin_upper_bounds_in_units_of_1_over_10000": {
+    "3": 6094,
+    "4": 5795,
+    "5": 5624,
+    "6": 5514,
+    "7": 5437,
+    "8": 5380,
+    "9": 5336,
+    "10": 5302,
+    "11": 5273,
+    "12": 5250,
+    "13": 5230,
+    "14": 5214,
+    "15": 5199,
+    "16": 5186,
+    "17": 5175,
+    "18": 5165,
+    "19": 5157
+  }
+}

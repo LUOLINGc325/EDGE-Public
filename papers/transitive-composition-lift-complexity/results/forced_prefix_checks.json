@@ -1,0 +1,57 @@
+{
+  "false_promise_rejected": true,
+  "families": [
+    {
+      "instances": 260,
+      "kind": "all_sources_one_vertex_complete_target"
+    },
+    {
+      "instances": 392,
+      "kind": "all_promised_two_vertex_targets_all_one_vertex_sources",
+      "targets": 98
+    },
+    {
+      "instances": 1024,
+      "kind": "all_two_vertex_sources_four_promised_targets"
+    },
+    {
+      "kind": "fixed_binary_coloring",
+      "minimum_depth": 0,
+      "result": "sat",
+      "target_clique": 3
+    },
+    {
+      "kind": "fixed_binary_coloring",
+      "minimum_depth": null,
+      "result": "unsat",
+      "target_clique": 4
+    },
+    {
+      "chain_length": 1,
+      "explicit_checked_witness_depth": 1,
+      "finite_graph_edges": 12,
+      "finite_graph_vertices": 4,
+      "kind": "nonempty_word_reset_chain",
+      "minimum_depth": 1
+    },
+    {
+      "chain_length": 3,
+      "explicit_checked_witness_depth": 3,
+      "finite_graph_edges": 34,
+      "finite_graph_vertices": 8,
+      "kind": "nonempty_word_reset_chain",
+      "minimum_depth": 1
+    },
+    {
+      "kind": "incompatible_anchor",
+      "result": "unsat"
+    }
+  ],
+  "finite_testing_is_not_a_general_proof": true,
+  "graph_instances": 1681,
+  "method": "forced-prefix CSP versus general synchronous BFS",
+  "records_sha256": "a8dec5db02afbaf61e84e07432d07cfae2ef5b68bf8f6a017a3be4d93ae2efb7",
+  "sat": 674,
+  "status": "passed",
+  "unsat": 1007
+}

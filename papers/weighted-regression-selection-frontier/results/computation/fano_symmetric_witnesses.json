@@ -1,0 +1,231 @@
+{
+  "family": "Fano roots, common positive scale 1 and negative scale beta>0",
+  "evaluation": "p_positive=3 beta/[7(3 beta+1)], p_negative=1/[7(3 beta+1)]",
+  "budget": 9,
+  "dimension": 7,
+  "Gamma": "4/5",
+  "symbolic_witnesses": [
+    {
+      "beta": "b",
+      "mode": "positive_positive",
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        5,
+        6
+      ],
+      "training_weights_unnormalized": [
+        "2*b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "excess": "2*b*(4*b + 3)/(7*(3*b + 1))"
+    },
+    {
+      "beta": "b",
+      "mode": "mixed",
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        5,
+        11
+      ],
+      "training_weights_unnormalized": [
+        "2*b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "-1/b"
+      ],
+      "excess": "(3*b**3 + b**2 + 3*b + 3)/(7*b*(3*b + 1))"
+    },
+    {
+      "beta": "b",
+      "mode": "negative_negative",
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        10,
+        11
+      ],
+      "training_weights_unnormalized": [
+        "2*b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1/b",
+        "-1/b"
+      ],
+      "excess": "2*(4*b + 3)/(7*b*(3*b + 1))"
+    }
+  ],
+  "concrete_witnesses": [
+    {
+      "beta": "1/2",
+      "mode": "mixed",
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        5,
+        11
+      ],
+      "training_weights_unnormalized": [
+        "1",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "-2"
+      ],
+      "excess": "41/70"
+    },
+    {
+      "beta": "1",
+      "mode": "mixed",
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        5,
+        11
+      ],
+      "training_weights_unnormalized": [
+        "2",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "-1"
+      ],
+      "excess": "5/14"
+    },
+    {
+      "beta": "2",
+      "mode": "mixed",
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        5,
+        11
+      ],
+      "training_weights_unnormalized": [
+        "4",
+        "2",
+        "2",
+        "2",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "output": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "-1/2"
+      ],
+      "excess": "37/98"
+    }
+  ],
+  "conclusion": "Every beta>0 has an explicitly weighted full-rank selector with excess <=1/2; this family cannot refute Gamma=4/5.",
+  "proof": "Use positive_positive for 0<beta<=1 and negative_negative for beta>=1; the two displayed factorizations have nonnegative signs.",
+  "half_minus_positive_positive": "-(b - 1)*(16*b + 7)/(14*(3*b + 1))",
+  "half_minus_negative_negative": "3*(b - 1)*(7*b + 4)/(14*b*(3*b + 1))"
+}

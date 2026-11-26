@@ -1,0 +1,8 @@
+{
+  "local_three_prefix_checks": 4500,
+  "two_agent_discrepancy_reduction_checks": 1364,
+  "three_agent_threshold_checks": 120,
+  "three_agent_yes_cases": 49,
+  "three_agent_no_cases": 71,
+  "scope": "Exact integer finite checks. The manuscript proves the universal statements."
+}

@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "arithmetic": "exact integer and rational",
+  "packet_checks": 8820,
+  "reduction_chains": 4094,
+  "late_frontier_identities": 175,
+  "lower_cutoff_cases": 1050,
+  "lower_prefix_states": 13267
+}

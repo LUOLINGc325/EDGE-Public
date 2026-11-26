@@ -1,0 +1,136 @@
+{
+  "counter_families": [
+    {
+      "distinct_selected_binary_factors": 1,
+      "distinct_selected_encoded_factors": 1,
+      "expanded_certificate_length": 17,
+      "k": 2,
+      "proved_rule_lower_bound": 1,
+      "rules": 14,
+      "word_sha256": "3ee71af56a6964381d50cf5c2f4e7c20a72938ef44cdfdce16742b6457452c55"
+    },
+    {
+      "distinct_selected_binary_factors": 6,
+      "distinct_selected_encoded_factors": 6,
+      "expanded_certificate_length": 49,
+      "k": 3,
+      "proved_rule_lower_bound": 1,
+      "rules": 26,
+      "word_sha256": "8451941927cbc17e947fe63c9573fb42be38bf85d22019664bfb248811b10c8b"
+    },
+    {
+      "distinct_selected_binary_factors": 21,
+      "distinct_selected_encoded_factors": 21,
+      "expanded_certificate_length": 129,
+      "k": 4,
+      "proved_rule_lower_bound": 2,
+      "rules": 50,
+      "word_sha256": "b101e4dee485df88a6594f790fd37f399a98ee04fea9bc222fd14265e743a3f6"
+    },
+    {
+      "distinct_selected_binary_factors": 60,
+      "distinct_selected_encoded_factors": 60,
+      "expanded_certificate_length": 321,
+      "k": 5,
+      "proved_rule_lower_bound": 4,
+      "rules": 98,
+      "word_sha256": "c3253aec5648908b2f65f7ab7ba981b09fc788e3279e38776b2c6d0f2fb023d9"
+    },
+    {
+      "distinct_selected_binary_factors": 155,
+      "distinct_selected_encoded_factors": 155,
+      "expanded_certificate_length": 769,
+      "k": 6,
+      "proved_rule_lower_bound": 7,
+      "rules": 194,
+      "word_sha256": "3b52773f81bace8cab222feea4d39a6549fa253ee8f8778150e7ea00b2c342bc"
+    },
+    {
+      "distinct_selected_binary_factors": 378,
+      "distinct_selected_encoded_factors": 378,
+      "expanded_certificate_length": 1793,
+      "k": 7,
+      "proved_rule_lower_bound": 14,
+      "rules": 386,
+      "word_sha256": "cc06d637db694cc39993eb7ff2cc9071ca47a1d083c6b871b04edcdfa7124172"
+    },
+    {
+      "distinct_selected_binary_factors": 889,
+      "distinct_selected_encoded_factors": 889,
+      "expanded_certificate_length": 4097,
+      "k": 8,
+      "proved_rule_lower_bound": 29,
+      "rules": 770,
+      "word_sha256": "69e35dd6ae13129f36aa7806cce948b48c5c1cd0620d6ee98d88401c3e852e33"
+    },
+    {
+      "distinct_selected_binary_factors": 2040,
+      "distinct_selected_encoded_factors": 2040,
+      "expanded_certificate_length": 9217,
+      "k": 9,
+      "proved_rule_lower_bound": 59,
+      "rules": 1538,
+      "word_sha256": "edc53c796d3890c81d46a71ffeb47935580f59acb5414cdc4d8f0c91d6163686"
+    },
+    {
+      "distinct_selected_binary_factors": 4599,
+      "distinct_selected_encoded_factors": 4599,
+      "expanded_certificate_length": 20481,
+      "k": 10,
+      "proved_rule_lower_bound": 118,
+      "rules": 3074,
+      "word_sha256": "f4b43e7b3967e83b54934d5113b304fc26937a0b0417f6ea3381839d7d1a4e13"
+    },
+    {
+      "distinct_selected_binary_factors": 10230,
+      "distinct_selected_encoded_factors": 10230,
+      "expanded_certificate_length": 45057,
+      "k": 11,
+      "proved_rule_lower_bound": 238,
+      "rules": 6146,
+      "word_sha256": "fcd8333f9b1f2733bf3014876598c2c016670c8914404108efd74de417e7044c"
+    },
+    {
+      "distinct_selected_binary_factors": 22517,
+      "distinct_selected_encoded_factors": 22517,
+      "expanded_certificate_length": 98305,
+      "k": 12,
+      "proved_rule_lower_bound": 480,
+      "rules": 12290,
+      "word_sha256": "7c4f824d984104d611c852e730560d2c7d52fd6b30af599ed1759b4b4ae690f5"
+    }
+  ],
+  "expansion_cap": 200000,
+  "limitations": [
+    "No implementation of Plandowski equality",
+    "No complete polynomial compressed certificate verifier",
+    "Expansion-dependent checks have a cap and are not polynomial in grammar size",
+    "General lower bounds and complexity classifications require manuscript proofs"
+  ],
+  "random_grammar_checks": {
+    "boolean_relation_comparisons": 8684,
+    "empty_root_occurrences": 2281,
+    "explicit_expansion_cap_test": "passed",
+    "factor_bound_comparisons": 12202,
+    "grammars": 400,
+    "graph_vertex_counts": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "malformed_grammar_tests": 3,
+    "reused_root_occurrences": 800,
+    "seed": 20261125,
+    "summary_sha256": "f4b18927c34a7fde1f056c9aa05a9942a49e37fcaae7e47ed138b7b9cc8c3949"
+  },
+  "scope": [
+    "Finite checks of exact displayed grammar and factor injection",
+    "Explicit-factor checks of classical binary-rule mk bound",
+    "Direct grammar Boolean-relation evaluation against explicit path simulation"
+  ],
+  "script_sha256": "bd97fb7124f756579ad7de747c452872f21df19124360bbebea751d6ad85a8de",
+  "status": "passed"
+}

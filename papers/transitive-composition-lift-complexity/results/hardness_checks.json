@@ -1,0 +1,231 @@
+{
+  "status": "PASS",
+  "script_sha256": "f0f35358137fefdec205763a8c36ae6ceca9f0713b0d4a52ed33be0874ebcaaa",
+  "chronological_equation": "u_a ++ p = [label] ++ u_b",
+  "verification_scope": "Finite checks support, but do not replace, the manuscript proofs.",
+  "direct_gadget_exhaustive_unary_partial_dfa_pairs": {
+    "automata": 36,
+    "ordered_pairs": 1296,
+    "maximum_composition_depth": 2,
+    "positive": 387,
+    "domain": "All source states and all full-alphabet words up to the bound."
+  },
+  "four_letter_gadget_exhaustive_unary_partial_dfa_pairs": {
+    "ordered_pairs": 1296,
+    "maximum_composition_depth": 3,
+    "positive": 387,
+    "domain": "All source states and all four-letter words up to the bound."
+  },
+  "one_state_nfa_pairs_with_empty_initial_sets": {
+    "ordered_pairs": 64,
+    "maximum_composition_depth": 2,
+    "positive": 4
+  },
+  "randomized_two_state_nfas": {
+    "seed": 20261125,
+    "instances": 160,
+    "copies": "Two or three",
+    "maximum_composition_depth": 2,
+    "positive": 27
+  },
+  "additional_four_letter_coded_words": [
+    {
+      "input_word": [
+        "a",
+        "b"
+      ],
+      "coded_word": [
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "depth": 5
+    },
+    {
+      "input_word": [
+        "d",
+        "c",
+        "a"
+      ],
+      "coded_word": [
+        "1",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "depth": 7
+    },
+    {
+      "input_word": [],
+      "coded_word": [],
+      "depth": 1
+    },
+    {
+      "input_word": [
+        "b"
+      ],
+      "coded_word": [
+        "0",
+        "1"
+      ],
+      "depth": 3
+    }
+  ],
+  "path_complete_padding_generic_csp_checks": [
+    {
+      "first_singleton_word_length": 0,
+      "second_singleton_word_length": 0,
+      "bounded_depth": 3,
+      "satisfiable": true,
+      "all_source_images_and_words_enumerated": true
+    },
+    {
+      "first_singleton_word_length": 1,
+      "second_singleton_word_length": 1,
+      "bounded_depth": 3,
+      "satisfiable": true,
+      "all_source_images_and_words_enumerated": true
+    },
+    {
+      "first_singleton_word_length": 0,
+      "second_singleton_word_length": 1,
+      "bounded_depth": 3,
+      "satisfiable": false,
+      "all_source_images_and_words_enumerated": true
+    },
+    {
+      "first_singleton_word_length": 1,
+      "second_singleton_word_length": 2,
+      "bounded_depth": 3,
+      "satisfiable": false,
+      "all_source_images_and_words_enumerated": true
+    }
+  ],
+  "binary_counter_families": [
+    {
+      "k": 2,
+      "product_states_visited": 4,
+      "common_word_length": 3,
+      "composition_depth": 4,
+      "source_vertices": 7,
+      "source_edges": 13,
+      "target_vertices": 3,
+      "target_edges": 6,
+      "alphabet_size": 8
+    },
+    {
+      "k": 3,
+      "product_states_visited": 8,
+      "common_word_length": 7,
+      "composition_depth": 8,
+      "source_vertices": 10,
+      "source_edges": 24,
+      "target_vertices": 4,
+      "target_edges": 9,
+      "alphabet_size": 11
+    },
+    {
+      "k": 4,
+      "product_states_visited": 16,
+      "common_word_length": 15,
+      "composition_depth": 16,
+      "source_vertices": 13,
+      "source_edges": 38,
+      "target_vertices": 5,
+      "target_edges": 12,
+      "alphabet_size": 14
+    },
+    {
+      "k": 5,
+      "product_states_visited": 32,
+      "common_word_length": 31,
+      "composition_depth": 32,
+      "source_vertices": 16,
+      "source_edges": 55,
+      "target_vertices": 6,
+      "target_edges": 15,
+      "alphabet_size": 17
+    },
+    {
+      "k": 6,
+      "product_states_visited": 64,
+      "common_word_length": 63,
+      "composition_depth": 64,
+      "source_vertices": 19,
+      "source_edges": 75,
+      "target_vertices": 7,
+      "target_edges": 18,
+      "alphabet_size": 20
+    },
+    {
+      "k": 7,
+      "product_states_visited": 128,
+      "common_word_length": 127,
+      "composition_depth": 128,
+      "source_vertices": 22,
+      "source_edges": 98,
+      "target_vertices": 8,
+      "target_edges": 21,
+      "alphabet_size": 23
+    },
+    {
+      "k": 8,
+      "product_states_visited": 256,
+      "common_word_length": 255,
+      "composition_depth": 256,
+      "source_vertices": 25,
+      "source_edges": 124,
+      "target_vertices": 9,
+      "target_edges": 24,
+      "alphabet_size": 26
+    },
+    {
+      "k": 9,
+      "product_states_visited": 512,
+      "common_word_length": 511,
+      "composition_depth": 512,
+      "source_vertices": 28,
+      "source_edges": 153,
+      "target_vertices": 10,
+      "target_edges": 27,
+      "alphabet_size": 29
+    },
+    {
+      "k": 10,
+      "product_states_visited": 1024,
+      "common_word_length": 1023,
+      "composition_depth": 1024,
+      "source_vertices": 31,
+      "source_edges": 185,
+      "target_vertices": 11,
+      "target_edges": 30,
+      "alphabet_size": 32
+    },
+    {
+      "k": 11,
+      "product_states_visited": 2048,
+      "common_word_length": 2047,
+      "composition_depth": 2048,
+      "source_vertices": 34,
+      "source_edges": 220,
+      "target_vertices": 12,
+      "target_edges": 33,
+      "alphabet_size": 35
+    },
+    {
+      "k": 12,
+      "product_states_visited": 4096,
+      "common_word_length": 4095,
+      "composition_depth": 4096,
+      "source_vertices": 37,
+      "source_edges": 258,
+      "target_vertices": 13,
+      "target_edges": 36,
+      "alphabet_size": 38
+    }
+  ],
+  "parameter_warning": "Depth 2^k; explicit binary input size Theta(k^2 log k), not Theta(k)."
+}

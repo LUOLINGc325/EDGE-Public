@@ -1,0 +1,23 @@
+{
+  "stationary_quadratic_term": {
+    "lower": 60331044193,
+    "upper": 60331044194,
+    "unit_denominator": 1000000000000
+  },
+  "heat_transient_analytic_lower": {
+    "lower": 29931374036,
+    "upper": 29931374037,
+    "unit_denominator": 1000000000000
+  },
+  "heat_transient_analytic_upper": {
+    "lower": 66002529394,
+    "upper": 66002529395,
+    "unit_denominator": 1000000000000
+  },
+  "full_quadratic_coefficient": {
+    "lower": 90262418229,
+    "upper": 126333573588,
+    "unit_denominator": 1000000000000
+  },
+  "exact_oracle_center_checks": 17
+}

@@ -1,0 +1,8 @@
+{
+  "frozen_before_execution": true,
+  "scope": "Tests of the newly derived heterogeneous branch geometry and sharp construction; not a proof of the universal bound or degenerate minimum classification.",
+  "sharp_instances": "N=2,...,12, the explicit perturbation construction (N=2 uses sigma=(1,2), gamma=1, a=4); require exact predicted count, positive Hessian eigenvalues and BR residual below 1e-7.",
+  "generic_instances": "Seed 730125; 160 heterogeneous instances with N=2,...,9, gamma sampled in [0.15,1], costs log-uniform in [0.2,4], a sampled in [0.1,12]. Report ambiguities instead of forcing classifications.",
+  "exact_checks": ["interior cusp F'=F''=0 with positive F'''", "two-maximal-cost rational sixth-order endpoint and coefficient 25/72", "transverse-elimination polynomial identity"],
+  "no_hidden_retries": true
+}

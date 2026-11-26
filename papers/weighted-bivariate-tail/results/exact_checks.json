@@ -1,0 +1,7 @@
+{
+  "budget_pairs": 70,
+  "pointwise_dual_checks": 73246,
+  "tight_high_points": 80,
+  "candidate_laws": 210,
+  "tie_mixtures": 10
+}

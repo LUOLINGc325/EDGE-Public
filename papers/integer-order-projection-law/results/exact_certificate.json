@@ -1,0 +1,7 @@
+{
+  "exact_columns": 1360,
+  "exact_Dicke_array_checks": 28,
+  "complex_off_diagonal_checks": 64,
+  "positivity_checks": 4,
+  "scope": "Selected exact finite identities and inequalities. The paper gives the general proof."
+}

@@ -1,0 +1,47 @@
+{
+  "strict_unequal_profiles": 96,
+  "strict_shape_comparisons": 75,
+  "sharp_limit_example": {
+    "scaled_gaps": [
+      {
+        "q": 8,
+        "scaled_gap_times_1000000": [
+          171522,
+          171523
+        ]
+      },
+      {
+        "q": 16,
+        "scaled_gap_times_1000000": [
+          177492,
+          177493
+        ]
+      },
+      {
+        "q": 32,
+        "scaled_gap_times_1000000": [
+          180652,
+          180653
+        ]
+      },
+      {
+        "q": 64,
+        "scaled_gap_times_1000000": [
+          182279,
+          182280
+        ]
+      },
+      {
+        "q": 128,
+        "scaled_gap_times_1000000": [
+          183105,
+          183106
+        ]
+      }
+    ],
+    "limiting_coefficient_times_1000000": [
+      183939,
+      183940
+    ]
+  }
+}

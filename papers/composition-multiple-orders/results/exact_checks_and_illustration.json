@@ -1,0 +1,16 @@
+{
+  "exact_peak_and_ratio_checks": 315,
+  "finite_example": {
+    "alphabets": "2^64 and 2^192",
+    "second_epsilon": 1.0056999551064192,
+    "approximate_orders": [
+      88.21998859307008,
+      176.43997705962585
+    ],
+    "approximate_scaled_values": [
+      0.252858099925263,
+      0.25285809992526326
+    ],
+    "scope": "Floating-point illustration, not a certificate of exact equality."
+  }
+}

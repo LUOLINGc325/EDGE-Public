@@ -1,0 +1,60 @@
+{
+  "exhaustive_selected_patterns": 426,
+  "constructed_margin_patterns": 500,
+  "finite_q_lower_bound_checks": [
+    {
+      "corruptions": 0,
+      "q": 2,
+      "p": "3/2",
+      "strict_excess_lower_bound": "1/221184"
+    },
+    {
+      "corruptions": 1,
+      "q": 2,
+      "p": "3/2",
+      "strict_excess_lower_bound": "1/5971968"
+    },
+    {
+      "corruptions": 2,
+      "q": 2,
+      "p": "3/2",
+      "strict_excess_lower_bound": "1/27648000"
+    },
+    {
+      "corruptions": 3,
+      "q": 2,
+      "p": "3/2",
+      "strict_excess_lower_bound": "1/75866112"
+    },
+    {
+      "corruptions": 4,
+      "q": 2,
+      "p": "3/2",
+      "strict_excess_lower_bound": "1/161243136"
+    },
+    {
+      "corruptions": 5,
+      "q": 2,
+      "p": "3/2",
+      "strict_excess_lower_bound": "1/294395904"
+    },
+    {
+      "corruptions": 0,
+      "q": "16/15",
+      "p": 2,
+      "ramp_lower_bound": "5/4"
+    },
+    {
+      "corruptions": 0,
+      "q": "64/63",
+      "p": 2,
+      "ramp_lower_bound": "17/4"
+    },
+    {
+      "corruptions": 0,
+      "q": "256/255",
+      "p": 2,
+      "ramp_lower_bound": "65/4"
+    }
+  ]
+}

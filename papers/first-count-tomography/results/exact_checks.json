@@ -1,0 +1,12 @@
+{
+  "script": "code/checks.py",
+  "arithmetic": "fractions.Fraction",
+  "status": "pass",
+  "three_frequency_commutant_rank_checks": 8,
+  "krylov_dimensions_by_hilbert_dimension": {
+    "2": 3,
+    "3": 5,
+    "4": 9
+  },
+  "boundary_nontrivial_rate_direction_offdiagonal": "-6/625"
+}

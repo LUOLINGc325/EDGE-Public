@@ -1,0 +1,297 @@
+[
+  {
+    "field": 2,
+    "sites": 1,
+    "settings": 3,
+    "data": [
+      {
+        "rank": 0,
+        "stabilizer_spaces": 1,
+        "visible_setting_histogram": {
+          "1": 3
+        },
+        "phase_setting_histogram": {}
+      }
+    ]
+  },
+  {
+    "field": 2,
+    "sites": 2,
+    "settings": 9,
+    "data": [
+      {
+        "rank": 0,
+        "stabilizer_spaces": 1,
+        "visible_setting_histogram": {
+          "1": 9,
+          "3": 6
+        },
+        "phase_setting_histogram": {
+          "2": 36,
+          "4": 72,
+          "6": 12
+        }
+      },
+      {
+        "rank": 1,
+        "stabilizer_spaces": 15,
+        "visible_setting_histogram": {
+          "2": 18,
+          "3": 18,
+          "5": 9
+        },
+        "phase_setting_histogram": {
+          "4": 18,
+          "6": 36,
+          "7": 36
+        }
+      }
+    ]
+  },
+  {
+    "field": 2,
+    "sites": 3,
+    "settings": 27,
+    "data": [
+      {
+        "rank": 0,
+        "stabilizer_spaces": 1,
+        "visible_setting_histogram": {
+          "1": 27,
+          "3": 27,
+          "9": 9
+        },
+        "phase_setting_histogram": {
+          "2": 378,
+          "4": 648,
+          "6": 432,
+          "10": 324,
+          "12": 216,
+          "18": 18
+        }
+      },
+      {
+        "rank": 1,
+        "stabilizer_spaces": 63,
+        "visible_setting_histogram": {
+          "2": 162,
+          "3": 81,
+          "4": 324,
+          "5": 81,
+          "6": 54,
+          "9": 135,
+          "11": 81,
+          "15": 27
+        },
+        "phase_setting_histogram": {
+          "4": 486,
+          "6": 324,
+          "7": 324,
+          "8": 2268,
+          "10": 162,
+          "11": 972,
+          "12": 702,
+          "14": 324,
+          "15": 1296,
+          "17": 324,
+          "18": 270,
+          "21": 108
+        }
+      },
+      {
+        "rank": 2,
+        "stabilizer_spaces": 315,
+        "visible_setting_histogram": {
+          "4": 54,
+          "6": 162,
+          "7": 324,
+          "9": 135,
+          "13": 162,
+          "15": 81,
+          "19": 27
+        },
+        "phase_setting_histogram": {
+          "8": 54,
+          "12": 162,
+          "14": 324,
+          "18": 270,
+          "20": 648,
+          "21": 324,
+          "23": 108
+        }
+      }
+    ]
+  },
+  {
+    "field": 2,
+    "sites": 4,
+    "settings": 81,
+    "data": [
+      {
+        "rank": 0,
+        "stabilizer_spaces": 1,
+        "visible_setting_histogram": {
+          "1": 81,
+          "3": 108,
+          "9": 54,
+          "27": 12
+        },
+        "phase_setting_histogram": {}
+      },
+      {
+        "rank": 1,
+        "stabilizer_spaces": 255,
+        "visible_setting_histogram": {
+          "2": 1620,
+          "3": 324,
+          "4": 3888,
+          "5": 486,
+          "6": 2592,
+          "9": 810,
+          "10": 1944,
+          "11": 972,
+          "12": 1296,
+          "15": 324,
+          "17": 243,
+          "18": 108,
+          "27": 756,
+          "29": 324,
+          "33": 324,
+          "45": 54
+        },
+        "phase_setting_histogram": {}
+      },
+      {
+        "rank": 2,
+        "stabilizer_spaces": 5355,
+        "visible_setting_histogram": {
+          "4": 1620,
+          "6": 1944,
+          "7": 3888,
+          "8": 11664,
+          "9": 810,
+          "10": 972,
+          "11": 7776,
+          "12": 5400,
+          "13": 1944,
+          "14": 1944,
+          "15": 16524,
+          "17": 3888,
+          "18": 1620,
+          "19": 2268,
+          "21": 3240,
+          "25": 1215,
+          "27": 3780,
+          "31": 1944,
+          "33": 972,
+          "35": 3888,
+          "37": 972,
+          "39": 648,
+          "45": 810,
+          "49": 486,
+          "57": 108
+        },
+        "phase_setting_histogram": {}
+      },
+      {
+        "rank": 3,
+        "stabilizer_spaces": 11475,
+        "visible_setting_histogram": {
+          "8": 162,
+          "12": 648,
+          "14": 1944,
+          "18": 1620,
+          "20": 8748,
+          "21": 3888,
+          "23": 1296,
+          "27": 5508,
+          "29": 972,
+          "32": 972,
+          "35": 648,
+          "39": 1944,
+          "41": 3888,
+          "45": 810,
+          "53": 972,
+          "57": 324,
+          "65": 81
+        },
+        "phase_setting_histogram": {}
+      }
+    ]
+  },
+  {
+    "field": 3,
+    "sites": 1,
+    "settings": 4,
+    "data": [
+      {
+        "rank": 0,
+        "stabilizer_spaces": 1,
+        "visible_setting_histogram": {
+          "1": 8
+        },
+        "phase_setting_histogram": {}
+      }
+    ]
+  },
+  {
+    "field": 3,
+    "sites": 2,
+    "settings": 16,
+    "data": [
+      {
+        "rank": 0,
+        "stabilizer_spaces": 1,
+        "visible_setting_histogram": {
+          "1": 64,
+          "4": 16
+        },
+        "phase_setting_histogram": {
+          "3": 1920,
+          "6": 2304,
+          "12": 96
+        }
+      },
+      {
+        "rank": 1,
+        "stabilizer_spaces": 40,
+        "visible_setting_histogram": {
+          "3": 192,
+          "4": 64,
+          "7": 64
+        },
+        "phase_setting_histogram": {
+          "9": 384,
+          "12": 384,
+          "13": 1152
+        }
+      }
+    ]
+  },
+  {
+    "field": 5,
+    "sites": 2,
+    "settings": 36,
+    "data": [
+      {
+        "rank": 0,
+        "stabilizer_spaces": 1,
+        "visible_setting_histogram": {
+          "1": 576,
+          "6": 48
+        },
+        "phase_setting_histogram": {}
+      },
+      {
+        "rank": 1,
+        "stabilizer_spaces": 156,
+        "visible_setting_histogram": {
+          "5": 2880,
+          "6": 288,
+          "11": 576
+        },
+        "phase_setting_histogram": {}
+      }
+    ]
+  }
+]

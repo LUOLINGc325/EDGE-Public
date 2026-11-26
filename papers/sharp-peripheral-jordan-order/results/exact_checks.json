@@ -1,0 +1,11 @@
+{
+  "physical_and_abstract_shifts": {
+    "max_hilbert_dimension": 11,
+    "matrix_units": 385,
+    "ordinary_trace_iterations": 240
+  },
+  "rigidity_grid": {
+    "max_dimension": 8,
+    "saturated_paths_checked": 4706
+  }
+}

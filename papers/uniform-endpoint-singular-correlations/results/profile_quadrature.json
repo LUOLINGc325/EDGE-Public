@@ -1,0 +1,65 @@
+{
+  "method": "deterministic Gaussian conditional-strip quadrature",
+  "checks": [
+    {
+      "scenario": "pair-r0.40-scale0.2",
+      "h": 0.002,
+      "finite_slope": 1.121212,
+      "limit": 1.1209776
+    },
+    {
+      "scenario": "pair-r0.40-scale2",
+      "h": 0.002,
+      "finite_slope": 1.4935096,
+      "limit": 1.4923462
+    },
+    {
+      "scenario": "pair-r0.40-scale7",
+      "h": 0.002,
+      "finite_slope": 1.6956985,
+      "limit": 1.6897291
+    },
+    {
+      "scenario": "pair-r0.35-scale2",
+      "h": 0.002,
+      "finite_slope": 1.3842881,
+      "limit": 1.3821528
+    },
+    {
+      "scenario": "triple-all-finite-ratios",
+      "h": 0.002,
+      "finite_slope": 1.7337584,
+      "limit": 1.7337593
+    },
+    {
+      "scenario": "pair-r0.40-scale0.2",
+      "h": 0.0002,
+      "finite_slope": 1.1209816,
+      "limit": 1.1209776
+    },
+    {
+      "scenario": "pair-r0.40-scale2",
+      "h": 0.0002,
+      "finite_slope": 1.4926713,
+      "limit": 1.4923462
+    },
+    {
+      "scenario": "pair-r0.40-scale7",
+      "h": 0.0002,
+      "finite_slope": 1.6903235,
+      "limit": 1.6897291
+    },
+    {
+      "scenario": "pair-r0.35-scale2",
+      "h": 0.0002,
+      "finite_slope": 1.3823656,
+      "limit": 1.3821528
+    },
+    {
+      "scenario": "triple-all-finite-ratios",
+      "h": 0.0002,
+      "finite_slope": 1.7337593,
+      "limit": 1.7337593
+    }
+  ]
+}

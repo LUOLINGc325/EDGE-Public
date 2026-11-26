@@ -1,0 +1,189 @@
+{
+  "kind": "recovered_historical_execution_summary_not_original_full_output",
+  "algorithm": "partial_decrement_persistent_macro_filler_v1",
+  "source_sha256": "775ef2fab938c4f3ff1e42026de64087c23d4062baf9f4b45259478f522cf910",
+  "original_source_recovered_byte_identical": true,
+  "rerun_after_environment_loss": false,
+  "date": "2026-11-24",
+  "case_count": 19,
+  "total_states": 4002,
+  "max_states": 884,
+  "fractional_counter_states": 25,
+  "all_theorem_bound_numeric_comparisons_passed": true,
+  "regret_arithmetic": "exact fractions.Fraction",
+  "bound_comparison": "floating-point comparison only, not proof",
+  "missing_fields": "Original per-case runtimes and three filler state counts were not printed in preserved output. Null entries are not inferred.",
+  "cases": [
+    {
+      "T": 16,
+      "C": 0,
+      "v": "0",
+      "a": "8",
+      "expected_regret": "0",
+      "states": 16,
+      "fractional_counter_states": 0
+    },
+    {
+      "T": 16,
+      "C": 0,
+      "v": "1/2",
+      "a": "8",
+      "expected_regret": "9/2",
+      "states": 16,
+      "fractional_counter_states": 0
+    },
+    {
+      "T": 16,
+      "C": 0,
+      "v": "1",
+      "a": "8",
+      "expected_regret": "17/4",
+      "states": 15,
+      "fractional_counter_states": 0
+    },
+    {
+      "T": 16,
+      "C": 0,
+      "v": "3/8",
+      "a": "8",
+      "expected_regret": "29/8",
+      "states": 16,
+      "fractional_counter_states": 0
+    },
+    {
+      "T": 16,
+      "C": 2,
+      "v": "0",
+      "a": "8",
+      "expected_regret": "0",
+      "states": 215,
+      "fractional_counter_states": 0
+    },
+    {
+      "T": 16,
+      "C": 2,
+      "v": "1/2",
+      "a": "8",
+      "expected_regret": "6",
+      "states": 227,
+      "fractional_counter_states": 0
+    },
+    {
+      "T": 16,
+      "C": 2,
+      "v": "1",
+      "a": "8",
+      "expected_regret": "59/8",
+      "states": 181,
+      "fractional_counter_states": 0
+    },
+    {
+      "T": 16,
+      "C": 2,
+      "v": "3/8",
+      "a": "8",
+      "expected_regret": "19/4",
+      "states": 233,
+      "fractional_counter_states": 0
+    },
+    {
+      "T": 32,
+      "C": 0,
+      "v": "0",
+      "a": "8",
+      "expected_regret": "0",
+      "states": 32,
+      "fractional_counter_states": 0
+    },
+    {
+      "T": 32,
+      "C": 0,
+      "v": "1/2",
+      "a": "8",
+      "expected_regret": "161/18",
+      "states": 31,
+      "fractional_counter_states": 0
+    },
+    {
+      "T": 32,
+      "C": 0,
+      "v": "1",
+      "a": "8",
+      "expected_regret": "73/16",
+      "states": 31,
+      "fractional_counter_states": 0
+    },
+    {
+      "T": 32,
+      "C": 0,
+      "v": "3/8",
+      "a": "8",
+      "expected_regret": "167/24",
+      "states": 31,
+      "fractional_counter_states": 0
+    },
+    {
+      "T": 32,
+      "C": 2,
+      "v": "0",
+      "a": "8",
+      "expected_regret": "0",
+      "states": 814,
+      "fractional_counter_states": 21
+    },
+    {
+      "T": 32,
+      "C": 2,
+      "v": "1/2",
+      "a": "8",
+      "expected_regret": "21/2",
+      "states": 878,
+      "fractional_counter_states": 2
+    },
+    {
+      "T": 32,
+      "C": 2,
+      "v": "1",
+      "a": "8",
+      "expected_regret": "63/8",
+      "states": 378,
+      "fractional_counter_states": 0
+    },
+    {
+      "T": 32,
+      "C": 2,
+      "v": "3/8",
+      "a": "8",
+      "expected_regret": "65/8",
+      "states": 884,
+      "fractional_counter_states": 2
+    },
+    {
+      "T": 1,
+      "C": 0,
+      "v": "1/2",
+      "a": "8",
+      "expected_regret": "1/2",
+      "states": null,
+      "fractional_counter_states": null
+    },
+    {
+      "T": 2,
+      "C": 0,
+      "v": "1/2",
+      "a": "8",
+      "expected_regret": "1",
+      "states": null,
+      "fractional_counter_states": null
+    },
+    {
+      "T": 3,
+      "C": 0,
+      "v": "1/2",
+      "a": "8",
+      "expected_regret": "1",
+      "states": null,
+      "fractional_counter_states": null
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "cutoff_grid": {
+    "profiles": 48,
+    "raw_cutoffs": 311,
+    "eligible_early_cutoffs": 854,
+    "late_integrals": 336
+  },
+  "sharp_order_witness": {
+    "horizons": [
+      1,
+      2,
+      3,
+      8,
+      32,
+      128,
+      512,
+      4096
+    ],
+    "limit_enclosure": [
+      "39/1000",
+      "41/1000"
+    ],
+    "strict_increase_on_sample": true
+  },
+  "certificate_budget": [
+    {
+      "epsilon": "1/2",
+      "r": 4,
+      "n": 24,
+      "labels": 24
+    },
+    {
+      "epsilon": "1/9",
+      "r": 7,
+      "n": 108,
+      "labels": 189
+    },
+    {
+      "epsilon": "1/100",
+      "r": 10,
+      "n": 1200,
+      "labels": 3000
+    },
+    {
+      "epsilon": "1/1000",
+      "r": 13,
+      "n": 12000,
+      "labels": 39000
+    },
+    {
+      "epsilon": "1/10000",
+      "r": 17,
+      "n": 120000,
+      "labels": 510000
+    }
+  ]
+}

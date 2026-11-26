@@ -1,0 +1,54 @@
+{
+  "status": "pass",
+  "exact_grid_cases": {
+    "single_side": 889987,
+    "two_orthants": 84333,
+    "mixed_and_orthant": 192
+  },
+  "alpha_c_enclosure": [
+    "0.477157528632466",
+    "0.477157528632469"
+  ],
+  "bernoulli_witnesses": [
+    {
+      "alpha": "1/10",
+      "bernoulli_loss": "999999999367494294104772489/10000000000000000000000000000"
+    },
+    {
+      "alpha": "1/4",
+      "bernoulli_loss": "24999999990000000001/100000000000000000000"
+    },
+    {
+      "alpha": "250001/1000000",
+      "bernoulli_loss": "250000000000999798010201/500000000000000000000000"
+    },
+    {
+      "alpha": "2/5",
+      "bernoulli_loss": "2675444679398314731292796689/5000000000000000000000000000"
+    },
+    {
+      "alpha": "47/100",
+      "bernoulli_loss": "28443453992278085789558801/50000000000000000000000000"
+    }
+  ],
+  "asymmetric_witnesses": [
+    {
+      "alpha": "477271/1000000",
+      "loss_decimal": 0.8777139796,
+      "root_upper_error_below": "1/1000000"
+    },
+    {
+      "alpha": "301/625",
+      "loss_decimal": 0.9210290892,
+      "root_upper_error_below": "1/1000000"
+    },
+    {
+      "alpha": "4959/10000",
+      "loss_decimal": 0.9855438194,
+      "root_upper_error_below": "1/1000000"
+    }
+  ],
+  "illustrative_asymmetric_loss": "436/495",
+  "expected_gain_enclosures": 92,
+  "scope": "Rational evaluations and brackets. General coverage uses the written proof."
+}

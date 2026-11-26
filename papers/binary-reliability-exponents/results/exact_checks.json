@@ -1,0 +1,16 @@
+{
+  "pair_tests": {
+    "channel_horizon_pairs": 30,
+    "composition_pairs": 3521,
+    "thresholds_enumerated": 69631
+  },
+  "composed_codebooks": {
+    "ordered_codebooks": 8506,
+    "with_repeated_types": 4461
+  },
+  "symmetric_crossing": {
+    "even_horizons": 32,
+    "first_row": "1/4",
+    "last_row": "3/4"
+  }
+}

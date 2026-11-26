@@ -1,0 +1,8 @@
+{
+  "matrix_checks": 16,
+  "posterior_path_checks": 5456,
+  "switch_error_checks": 12744,
+  "exact_shell_checks": 640,
+  "marked_zeros": 2,
+  "scope": "Exact finite rational checks at p=4/9, D=1/5 and D=1/10, n<=5."
+}

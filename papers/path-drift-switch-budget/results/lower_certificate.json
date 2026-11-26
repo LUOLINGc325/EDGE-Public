@@ -1,0 +1,18 @@
+{
+  "all_passed": true,
+  "arithmetic": "exact integers and fractions.Fraction",
+  "counts": {
+    "budget_parameter_cases": 54574,
+    "causal_bellman_cases": 88,
+    "feasible_blocks": 12715,
+    "infeasible_blocks": 41859,
+    "jensen_checks": 720,
+    "penalty_parameter_cases": 59128,
+    "quadratic_run_identities": 512,
+    "rademacher_assertions": 768
+  },
+  "limitations": "Finite checks supplement the analytic proof; no Lean or infinite-family enumeration claim.",
+  "proof_sha256": "929e2dfb289cfba51af48ad9919abc63e6ae4e51ba30869c9f19ad400f185e9a",
+  "schema": "path-drift-lower-exact-v2",
+  "script_sha256": "246d990aba33a9b7acf5e66aa890c742429e622fa31a95a03f6e9d5c9c27ed92"
+}

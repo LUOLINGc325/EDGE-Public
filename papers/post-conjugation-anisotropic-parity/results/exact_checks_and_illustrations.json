@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "exact_spectral_cases": 840,
+  "exact_spectral_entries": 54110,
+  "exact_spin_block_invariants": 343,
+  "exact_bell_comparisons": 7203,
+  "illustrative_crossover_constants": [
+    {
+      "lambda": 0,
+      "b": 0.6931471805599452
+    },
+    {
+      "lambda": 0.25,
+      "b": 0.7078064154999861
+    },
+    {
+      "lambda": 0.5,
+      "b": 0.7544567250192225
+    },
+    {
+      "lambda": 0.75,
+      "b": 0.8412392671569189
+    },
+    {
+      "lambda": 1,
+      "b": 0.9799793877378589
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "majority_deletion_and_symmetry_pairs": 230,
+  "conditional_chi_square_enumerations": 18,
+  "rational_exponential_tail_grid": 6,
+  "result": "passed",
+  "scope": "Finite exact checks of auxiliary identities. Uniform inequalities are proved in the manuscript."
+}

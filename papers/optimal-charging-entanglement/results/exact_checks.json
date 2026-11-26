@@ -1,0 +1,19 @@
+{
+  "physical_sectors": {
+    "max_m": 8,
+    "parity_conditioned_sectors": 510,
+    "spectral_layers": 24,
+    "partial_constructions": 40,
+    "restricted_central_signs": 20
+  },
+  "bell_vectors": {
+    "max_generators": 8,
+    "exact_eigenvalue_checks": 3586
+  },
+  "strict_cap_example": {
+    "m": 4,
+    "rank": 1,
+    "cap": "5/8",
+    "separable_optimum": "1/2"
+  }
+}
