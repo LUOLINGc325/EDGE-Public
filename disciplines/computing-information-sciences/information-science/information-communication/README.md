@@ -30,6 +30,7 @@
 - [Polynomial forward length for growing-round adaptive erasure feedback](../../../../papers/growing-round-blocklength/)
 - [Reliability exponents for binary noisy-permutation channels](../../../../papers/binary-reliability-exponents/)
 - [Rényi contraction of repeated symmetric channels](../../../../papers/renyi-product-order-phase/)
+- [Sharp constellation size for stretched-exponential accuracy on the amplitude-constrained Gaussian channel](../../../../papers/awgn-constellation-cardinality-frontier/)
 - [Sharp Rare-Erasure Asymptotics for Remote Estimation with Distinguishable Silence](../../../../papers/visible-erasure-sharp-reliability/)
 - [Tail-Sensitive and Robust Capacity Laws for Random-Rank Matrix Channels](../../../../papers/gamma-random-rank-capacity-transitions/)
 - [The additive cost of counted feedback at the growing-round erasure frontier](../../../../papers/counted-feedback-additive-frontier/)

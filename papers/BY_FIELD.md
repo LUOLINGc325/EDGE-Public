@@ -231,6 +231,7 @@
 [学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/probability-statistics/statistical-inverse-problems/)
 
 - [Gaussian mixing recovery under response-dependent repeat measurements](gaussian-mixture-finite-design-minimax/)
+- [Gaussian scale calibration with finite affine-sign and offset budgets](gaussian-affine-sign-identifiability/)
 - [Pointwise minimax rates for sampled birth–death trees under vanishing intervention contrast](controlled-birth-death-inverse-design/)
 
 #### 多重检验 / Multiple testing
@@ -244,6 +245,19 @@
 [学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/probability-statistics/stochastic-processes/)
 
 - [Persistence exponents for ordered families of Brownian and Ornstein–Uhlenbeck walkers](tasep-real-renyi-persistence/)
+- [The exact majorization radius of stationary LRU caching](lru-near-uniform-schur-radius/) · 交叉 / Cross-listed
+
+#### 统计校准 / Statistical calibration
+
+[学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/probability-statistics/statistical-calibration/)
+
+- [Sharp finite-mixture calibration in natural exponential families](finite-mixture-e-calibration/)
+
+#### 统计实验 / Statistical experiments
+
+[学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/probability-statistics/statistical-experiments/)
+
+- [Sharp deficiency and the size of least-favourable restrictions for Poisson signals](poisson-background-experiment-transition/)
 
 ### 优化与运筹 / Optimization and operations research
 
@@ -286,6 +300,12 @@
 [学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/optimization-operations/queueing-theory/)
 
 - [Exact feedback thresholds and critical scaling in compound-geometric FIFO timing channels](block-geometric-finite-feedback/) · 交叉 / Cross-listed
+
+#### 风险优化 / Risk optimization
+
+[学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/optimization-operations/risk-optimization/)
+
+- [Computing the additive discrepancy between flat and nested coherent risk](coherent-risk-binary-tower-rigidity/)
 
 ## 计算与信息科学 / Computing and information sciences
 
@@ -333,6 +353,7 @@
 
 - [A square-root mixed-null inflation for weighted conformal BH](mixed-null-square-root-boundary/)
 - [A universal boundary kernel for cross-validation after two-model selection](two-model-cv-boundary-universality/)
+- [Exact causal quantum log-loss at short horizons and a Gram-matrix reduction](quantum-logloss-minimax-frontier/) · 交叉 / Cross-listed
 - [Fractional neural kernels: radial spectral laws, threshold interference, and inverse limits](fractional-neural-threshold-spectral-transition/)
 - [Good-Turing is asymptotically minimax for missing-mass estimation](iid-missing-mass-exact-minimax/) · 交叉 / Cross-listed
 - [Narrow corridors in critical online conformal prediction](narrow-corridor-expansion/)
@@ -366,6 +387,12 @@
 [学科目录 / Field directory](../disciplines/computing-information-sciences/computer-science/algorithmic-game-theory/)
 
 - [Sharp finite-size inefficiency on common-slope exponential parallel links](log-convex-routing-efficiency/)
+
+#### 缓存与性能分析 / Caching and performance analysis
+
+[学科目录 / Field directory](../disciplines/computing-information-sciences/computer-science/cache-performance/)
+
+- [The exact majorization radius of stationary LRU caching](lru-near-uniform-schur-radius/)
 
 ### 信息科学 / Information science
 
@@ -402,6 +429,7 @@
 - [Polynomial forward length for growing-round adaptive erasure feedback](growing-round-blocklength/)
 - [Reliability exponents for binary noisy-permutation channels](binary-reliability-exponents/)
 - [Rényi contraction of repeated symmetric channels](renyi-product-order-phase/)
+- [Sharp constellation size for stretched-exponential accuracy on the amplitude-constrained Gaussian channel](awgn-constellation-cardinality-frontier/)
 - [Sharp Rare-Erasure Asymptotics for Remote Estimation with Distinguishable Silence](visible-erasure-sharp-reliability/)
 - [Tail-Sensitive and Robust Capacity Laws for Random-Rank Matrix Channels](gamma-random-rank-capacity-transitions/)
 - [The additive cost of counted feedback at the growing-round erasure frontier](counted-feedback-additive-frontier/)
@@ -417,6 +445,13 @@
 - [链式索引的统一通信下界与强直接积](chained-index-uniform-direct-product/)
 - [顺序局部隐私下的高斯自协方差估计](sequential-ldp-autocovariance-minimax/)
 - [鲁棒 CRT 的固定通道精确设计：有限窗口、容量准多项式与五六通道最优证书](robust-crt-fixed-channel-exact-design/)
+
+#### 信号处理理论 / Signal processing theory
+
+[学科目录 / Field directory](../disciplines/computing-information-sciences/information-science/signal-processing/)
+
+- [Gaussian scale calibration with finite affine-sign and offset budgets](gaussian-affine-sign-identifiability/) · 交叉 / Cross-listed
+- [The exact loss of covariance intersection under graph-structured uncertainty](covariance-intersection-sharp-loss/) · 交叉 / Cross-listed
 
 ## 物质科学 / Physical sciences
 
@@ -443,6 +478,7 @@
 - [Blind first-count calibration with singular quantum jump maps](first-passage-ray-channel-threshold/)
 - [Computational complexity of optimal Pauli error cancellation on odd cycles](odd-cycle-exact-complexity/)
 - [Entanglement required for optimal charging in a Clifford battery](optimal-charging-entanglement/)
+- [Exact causal quantum log-loss at short horizons and a Gram-matrix reduction](quantum-logloss-minimax-frontier/)
 - [Extremal visibility of logical Pauli operators under product measurements](stabilizer-logical-pauli-visibility/)
 - [High-order parity gaps and crossover radii for noisy qubit designs](high-order-parity-gap/)
 - [KCBS 五角环的标量及算子重叠锐界](kcbs-rank-one-all-dimensions/)
@@ -573,6 +609,7 @@
 - [Optimal finite preparation for delayed Newton cooling](finite-common-preparation/)
 - [Spurious Local Minima and Certified Global Optimization in Two-Sensor Switched-Linear Scheduling](switched-linear-scheduling-global-certificate/)
 - [Stability boundaries of divisive-normalization circuits: exact recurrence classifications and norm-one counterexamples](divisive-normalization-stability-boundary/)
+- [The exact loss of covariance intersection under graph-structured uncertainty](covariance-intersection-sharp-loss/)
 - [The Exact Statistical Price of a Robust-Regret Certificate in LQR](lqr-certificate-efficiency-frontier/)
 - [The statistical price of robust LQR depends on its comparator](robust-lqr-regret-efficiency/)
 - [一维对数凹目标的精确布朗重置分布](optimal-resetting-asymmetric/)

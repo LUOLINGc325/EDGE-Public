@@ -7,6 +7,7 @@
 - [Blind first-count calibration with singular quantum jump maps](../../../../papers/first-passage-ray-channel-threshold/)
 - [Computational complexity of optimal Pauli error cancellation on odd cycles](../../../../papers/odd-cycle-exact-complexity/)
 - [Entanglement required for optimal charging in a Clifford battery](../../../../papers/optimal-charging-entanglement/)
+- [Exact causal quantum log-loss at short horizons and a Gram-matrix reduction](../../../../papers/quantum-logloss-minimax-frontier/)
 - [Extremal visibility of logical Pauli operators under product measurements](../../../../papers/stabilizer-logical-pauli-visibility/)
 - [High-order parity gaps and crossover radii for noisy qubit designs](../../../../papers/high-order-parity-gap/)
 - [KCBS 五角环的标量及算子重叠锐界](../../../../papers/kcbs-rank-one-all-dimensions/)

@@ -80,6 +80,13 @@
       "parent": "information-science"
     },
     {
+      "id": "signal-processing",
+      "zh": "信号处理理论",
+      "en": "Signal processing theory",
+      "level": "specialty",
+      "parent": "information-science"
+    },
+    {
       "id": "theoretical-computer-science",
       "zh": "理论计算机科学",
       "en": "Theoretical computer science",
@@ -239,6 +246,34 @@
       "en": "Stochastic processes",
       "level": "specialty",
       "parent": "probability-statistics"
+    },
+    {
+      "id": "risk-optimization",
+      "zh": "风险优化",
+      "en": "Risk optimization",
+      "parent": "optimization-operations",
+      "level": "specialty"
+    },
+    {
+      "id": "statistical-calibration",
+      "zh": "统计校准",
+      "en": "Statistical calibration",
+      "parent": "probability-statistics",
+      "level": "specialty"
+    },
+    {
+      "id": "statistical-experiments",
+      "zh": "统计实验",
+      "en": "Statistical experiments",
+      "parent": "probability-statistics",
+      "level": "specialty"
+    },
+    {
+      "id": "cache-performance",
+      "zh": "缓存与性能分析",
+      "en": "Caching and performance analysis",
+      "parent": "computer-science",
+      "level": "specialty"
     }
   ],
   "projects": [
@@ -410,6 +445,18 @@
       "related_categories": [
         "theoretical-economics"
       ],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "awgn-constellation-cardinality-frontier",
+      "title": "Sharp constellation size for stretched-exponential accuracy on the amplitude-constrained Gaussian channel",
+      "category": "information-communication",
+      "related_categories": [],
       "manuscripts": [
         "paper.md"
       ]
@@ -786,6 +833,18 @@
       ]
     },
     {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "coherent-risk-binary-tower-rigidity",
+      "title": "Computing the additive discrepancy between flat and nested coherent risk",
+      "category": "risk-optimization",
+      "related_categories": [],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
       "slug": "collapsing-bandit-global-indexability",
       "title": "二态 Collapsing Bandit 的全参数阈值结构、可指数性与精确指数",
       "category": "mathematics",
@@ -1013,6 +1072,20 @@
       "legacy_paths": {},
       "related_categories": [
         "theoretical-chemistry"
+      ]
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "covariance-intersection-sharp-loss",
+      "title": "The exact loss of covariance intersection under graph-structured uncertainty",
+      "category": "control-dynamics",
+      "related_categories": [
+        "signal-processing"
+      ],
+      "manuscripts": [
+        "paper.md"
       ]
     },
     {
@@ -1446,6 +1519,18 @@
       "legacy_paths": {}
     },
     {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "finite-mixture-e-calibration",
+      "title": "Sharp finite-mixture calibration in natural exponential families",
+      "category": "statistical-calibration",
+      "related_categories": [],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
       "slug": "finite-n-prediction-scheduling",
       "title": "The exact finite-job consistency–robustness frontier for non-clairvoyant scheduling",
       "category": "optimization-operations",
@@ -1748,6 +1833,20 @@
       "category": "information-communication",
       "related_categories": [
         "probability-statistics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "gaussian-affine-sign-identifiability",
+      "title": "Gaussian scale calibration with finite affine-sign and offset budgets",
+      "category": "statistical-inverse-problems",
+      "related_categories": [
+        "signal-processing"
       ],
       "manuscripts": [
         "paper.md"
@@ -2374,6 +2473,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "lru-near-uniform-schur-radius",
+      "title": "The exact majorization radius of stationary LRU caching",
+      "category": "cache-performance",
+      "related_categories": [
+        "stochastic-processes"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "lueders-coarse-graining-tv",
@@ -3154,6 +3267,18 @@
       "legacy_paths": {}
     },
     {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "poisson-background-experiment-transition",
+      "title": "Sharp deficiency and the size of least-favourable restrictions for Poisson signals",
+      "category": "statistical-experiments",
+      "related_categories": [],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
       "slug": "poisson-threshold-noise-sharp",
       "title": "泊松阈值噪声稳定性的精确强度边界",
       "category": "probability-statistics",
@@ -3403,6 +3528,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "quantum-logloss-minimax-frontier",
+      "title": "Exact causal quantum log-loss at short horizons and a Gram-matrix reduction",
+      "category": "quantum-physics",
+      "related_categories": [
+        "learning-inference"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "quantum-renyi45-erasure-bound",

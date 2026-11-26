@@ -7,6 +7,8 @@
 - [统计逆问题 / Statistical inverse problems](statistical-inverse-problems/)
 - [多重检验 / Multiple testing](multiple-testing/)
 - [随机过程 / Stochastic processes](stochastic-processes/)
+- [统计校准 / Statistical calibration](statistical-calibration/)
+- [统计实验 / Statistical experiments](statistical-experiments/)
 
 - [A Poisson-to-Gaussian crossover for nearly coincident threshold counts](../../../papers/high-overlap-crossover/)
 - [A Vanishing Second Spike in a Real Haar Interaction Graph](../../../papers/real-haar-mst-singular-regularization/)

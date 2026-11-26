@@ -5,6 +5,7 @@
 [上级学科 / Parent](../)
 
 - [排队论 / Queueing theory](queueing-theory/)
+- [风险优化 / Risk optimization](risk-optimization/)
 
 - [A Common Revenue Threshold for Regular Proportional Choice](../../../papers/rank-cutoff-common-threshold-half/)
 - [A Sharp Reward Threshold for Faster, More Patient Jobs in a Two-Class Clearing System](../../../papers/two-class-clearing-reward-threshold/)

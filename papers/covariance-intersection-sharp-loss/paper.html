@@ -1,0 +1,1352 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The exact loss of covariance intersection under graph-structured uncertainty</title>
+<style>body{max-width:76ch;margin:2rem auto;padding:0 1rem;font:1.1rem/1.55 Georgia,serif}h1,h2,h3{line-height:1.25}pre,math[display="block"]{max-width:100%;overflow-x:auto}.equation{display:flex;align-items:center;justify-content:space-between;gap:1em;overflow-x:auto}.equation>math{flex:1 0 auto}.equation-number{white-space:nowrap}pre{padding:.8rem;background:#f1f2f3}a{overflow-wrap:anywhere}</style></head>
+<body><main>
+<h1
+id="the-exact-loss-of-covariance-intersection-under-graph-structured-uncertainty">The
+exact loss of covariance intersection under graph-structured
+uncertainty</h1>
+<h2 id="abstract">Abstract</h2>
+<p>An undirected graph specifies which sensor-error cross-covariances
+may be nonzero. We determine the worst loss of safe scalar covariance
+inflation against all conservative linear unbiased estimators. For every
+fixed graph the worst optimized trace ratio equals the least uniform
+Loewner factor. Both equal an explicit finite-dimensional maximum of a
+mixed-to-directional quadratic ratio, stabilize in a dimension of order
+the square root of the number of sensors, and are computable real
+algebraic numbers. A state-coordinate change converts an extremal mixed
+covariance witness into an ordinary trace example without rounding.
+Clique inequalities characterize safety precisely on perfect graphs.
+Over the class of perfect graphs with clique number at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>,
+the sharp universal factor is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn><mi>/</mi><mi>π</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">k/(1+(k-1)2/\pi)</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">k\ge2</annotation></semantics></math>
+this factor is sharp even over connected graphs with intersecting
+maximal cliques. For any fixed graph the limit over disjoint copies is
+an exact finite Gaussian variational formula and is attained
+asymptotically in dimension at most the size of one copy. The scalar
+inflation family is lossless precisely for one complete bipartite
+component with arbitrary isolated vertices, including the graph with no
+edges. The three minimal obstructions already have strict trace loss in
+dimension two.</p>
+<h2 id="reading-guide">Reading guide</h2>
+<p>Covariance intersection estimates a common state from measurements
+whose errors can be correlated. Each scalar weight inflates one known
+sensor covariance before applying the best linear unbiased rule. A
+weight is safe when its inflated independent model dominates every joint
+covariance permitted by the graph. The four-vertex path gives a concrete
+example with overlapping groups. For nonnegative weights, its three edge
+inequalities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>+</mo><msub><mi>w</mi><mn>2</mn></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">w_1+w_2\le1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mn>2</mn></msub><mo>+</mo><msub><mi>w</mi><mn>3</mn></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">w_2+w_3\le1</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mn>3</mn></msub><mo>+</mo><msub><mi>w</mi><mn>4</mn></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">w_3+w_4\le1</annotation></semantics></math>
+describe all safe weights. Nevertheless, Section 4 constructs a
+conservative estimator whose reported trace is strictly smaller than
+that of any safe inflation.</p>
+<p>The exact price of a graph compares the two optimized traces over all
+admissible observation models. The same number is the least factor for
+which each conservative estimator can be matched by some safe inflation
+rule in every state direction at once. Section 2 compares a single state
+direction with a positive semidefinite mixture of directions. Section 6
+shows how to turn a worst mixture into an actual observation model and
+makes the two meanings of the price agree. Sections 7 and 8 determine
+sharp bounds for overlapping cliques and for many disjoint copies of an
+arbitrary graph, respectively. The auxiliary Gaussian vectors in these
+proofs describe state directions. The sensor errors themselves only need
+the stated covariance constraints.</p>
+<h2 id="covariance-uncertainty-and-the-inflation-family">1. Covariance
+uncertainty and the inflation family</h2>
+<p>For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">i=1,\ldots,m</annotation></semantics></math>,
+observe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>=</mo><msub><mi>H</mi><mi>i</mi></msub><mi>x</mi><mo>+</mo><msub><mi>e</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">y_i=H_i x+e_i</annotation></semantics></math>
+in a finite-dimensional real space. The errors have zero mean and fixed
+marginals
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub><mo>≻</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_i\succ0</annotation></semantics></math>.
+The stacked observation matrices have full column rank
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+An undirected simple graph
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+specifies that a cross block
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔼</mi><msub><mi>e</mi><mi>i</mi></msub><msubsup><mi>e</mi><mi>j</mi><mi>⊤</mi></msubsup></mrow><annotation encoding="application/x-tex">\mathbb E e_i e_j^\top</annotation></semantics></math>
+is zero for each nonedge. The other cross blocks can be arbitrary
+subject to positive semidefiniteness of the joint covariance. An
+unbiased estimator uses gains
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>i</mi></msub><annotation encoding="application/x-tex">K_i</annotation></semantics></math>
+satisfying
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>K</mi><mi>i</mi></msub><msub><mi>H</mi><mi>i</mi></msub><mo>=</mo><msub><mi>I</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\sum_iK_iH_i=I_n</annotation></semantics></math>.
+A conservative pair
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo>,</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(K,B)</annotation></semantics></math>
+has a reported covariance
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+that dominates
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>P</mi><msup><mi>K</mi><mi>⊤</mi></msup></mrow><annotation encoding="application/x-tex">K P K^\top</annotation></semantics></math>
+for every admissible joint covariance
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>.
+Since the independent covariance is admissible and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+has full row rank,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>≻</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B\succ0</annotation></semantics></math>.</p>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ℛ</mi><mi>G</mi></msub><annotation encoding="application/x-tex">\mathcal R_G</annotation></semantics></math>
+be the set of real positive-semidefinite correlation matrices with unit
+diagonal and zero entries on the nonedges of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.
+For positive weights
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>w</mi><mi>i</mi></msub><annotation encoding="application/x-tex">w_i</annotation></semantics></math>,
+call a weight vector safe if
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>≼</mo><mo>diag</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><msub><mi>w</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="2.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>R</mi><mo>∈</mo><msub><mi>ℛ</mi><mi>G</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ R\preceq\operatorname{diag}(1/w_i)\qquad(R\in\mathcal R_G).
+\tag{1}
+</annotation></semantics></math><span class="equation-number">(1)</span></span> A zero weight discards that observation
+and applies (1) to the active principal subgraph. The reported
+covariance is
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>w</mi><mi>i</mi></msub><msubsup><mi>H</mi><mi>i</mi><mi>⊤</mi></msubsup><msubsup><mi>P</mi><mi>i</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><msub><mi>H</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">
+ B_G(w)=\left(\sum_i w_i H_i^\top P_i^{-1}H_i\right)^{-1}
+\tag{2}
+</annotation></semantics></math><span class="equation-number">(2)</span></span> whenever the information matrix is
+positive definite. The estimator is the best linear unbiased rule in the
+fictitious independent observation model with active covariances
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub><mi>/</mi><msub><mi>w</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">P_i/w_i</annotation></semantics></math>.
+Safety of (1) for vector observation blocks follows below. For the
+complete graph this is ordinary covariance intersection.</p>
+<p><strong>Theorem 1.</strong> The following conditions on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+are equivalent.</p>
+<ol type="1">
+<li>For every state dimension, every observation model and every
+conservative unbiased pair
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo>,</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(K,B)</annotation></semantics></math>,
+a safe weight in (2) satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≼</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">B_G(w)\preceq B</annotation></semantics></math>.</li>
+<li>For every observation model in state dimension two, the infimum of
+the reported trace in (2) equals the infimum over conservative unbiased
+pairs.</li>
+<li>The graph has at most one component with edges, and that component
+is complete bipartite.</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+has no induced triangle, four-vertex path or pair of disjoint
+edges.</li>
+</ol>
+<p>Each forbidden graph has a two-dimensional strict witness. The ratio
+of the optimal inflated trace to the optimal conservative trace is at
+least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mi>/</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">9/8</annotation></semantics></math>
+on the triangle and at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>112</mn><mi>/</mi><mn>111</mn></mrow><annotation encoding="application/x-tex">112/111</annotation></semantics></math>
+on the path and disjoint edges. All three witnesses extend to graphs
+containing them as induced subgraphs. In dimension one every graph is
+lossless.</p>
+<h2 id="exact-relaxation-and-witness-rank">2. Exact relaxation and
+witness rank</h2>
+<p>For nonnegative
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">a=(a_i)</annotation></semantics></math>
+put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mo>max</mo><mrow><mi>R</mi><mo>∈</mo><msub><mi>ℛ</mi><mi>G</mi></msub></mrow></msub><msqrt><mrow><msup><mi>a</mi><mi>⊤</mi></msup><mi>R</mi><mi>a</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">f_G(a)=\max_{R\in\mathcal R_G}\sqrt{a^\top R a}</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>=</mo><mo stretchy="false" form="postfix">∥</mo><msubsup><mi>P</mi><mi>i</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><msubsup><mi>K</mi><mi>i</mi><mi>⊤</mi></msubsup><mi>v</mi><mo stretchy="false" form="postfix">∥</mo></mrow><annotation encoding="application/x-tex">a_i=\|P_i^{1/2}K_i^\top v\|</annotation></semantics></math>,
+the worst variance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mi>⊤</mi></msup><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>K</mi><mi>i</mi></msub><msub><mi>e</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">v^\top\sum_iK_i e_i</annotation></semantics></math>
+equals
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>G</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f_G(a)^2</annotation></semantics></math>.
+Indeed, the covariance of the unit marginal projections is a member of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ℛ</mi><mi>G</mi></msub><annotation encoding="application/x-tex">\mathcal R_G</annotation></semantics></math>.
+Conversely, choose any such scalar correlation for those projections and
+fill the remaining whitened coordinates with independent noise of
+identity covariance on the orthogonal complements. This realizes all the
+scalar correlations. Zero
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>i</mi></msub><annotation encoding="application/x-tex">a_i</annotation></semantics></math>
+can use any unit projection. The same argument for a vector on the
+stacked observation space shows that (1) is equivalent to domination of
+the active joint covariance by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>diag</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>P</mi><mi>i</mi></msub><mi>/</mi><msub><mi>w</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{diag}(P_i/w_i)</annotation></semantics></math>
+for any given block dimensions and positive-definite marginals. Equation
+(2) is consequently conservative.</p>
+<p>Define the theta body, in the convention with orthogonality on
+nonedges, by
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝒯</mi><mi>G</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>z</mi><mo>:</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><msup><mi>z</mi><mi>⊤</mi></msup></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>z</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>Z</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>≽</mo><mn>0</mn><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>Z</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub><mo>=</mo><msub><mi>z</mi><mi>i</mi></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>Z</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> on nonedges</mtext></mrow><mo stretchy="true" form="postfix">}</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \mathcal T_G=\left\{z:\begin{pmatrix}1&amp;z^\top\\z&amp;Z\end{pmatrix}\succeq0,\
+              Z_{ii}=z_i,\ Z_{ij}=0\text{ on nonedges}\right\}.
+</annotation></semantics></math> It is convex and compact with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msub><mi>z</mi><mi>i</mi></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\le z_i\le1</annotation></semantics></math>.
+Let the leading Gram vector be a unit vector
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>i</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">z_i&gt;0</annotation></semantics></math>
+divide the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>th
+Gram vector by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><msub><mi>z</mi><mi>i</mi></msub></msqrt><annotation encoding="application/x-tex">\sqrt{z_i}</annotation></semantics></math>
+to get a unit vector
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>u</mi><mi>i</mi></msub><annotation encoding="application/x-tex">u_i</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>h</mi><mo>,</mo><msub><mi>u</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">⟩</mo><mo>=</mo><msqrt><msub><mi>z</mi><mi>i</mi></msub></msqrt></mrow><annotation encoding="application/x-tex">\langle h,u_i\rangle=\sqrt{z_i}</annotation></semantics></math>.
+Zero coordinates can be assigned fresh orthogonal unit vectors.
+Conversely, any unit Gram representation on nonedges gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>i</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">⟨</mo><mi>h</mi><mo>,</mo><msub><mi>u</mi><mi>i</mi></msub><msup><mo stretchy="false" form="postfix">⟩</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">z_i=\langle h,u_i\rangle^2</annotation></semantics></math>,
+using signed multiples of the unit vectors in the Gram matrix defining
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝒯</mi><mi>G</mi></msub><annotation encoding="application/x-tex">\mathcal T_G</annotation></semantics></math>.
+Maximizing over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+in the norm of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>a</mi><mi>i</mi></msub><msub><mi>u</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\sum_i a_i u_i</annotation></semantics></math>,
+with signs free, gives
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>max</mo><mrow><mi>z</mi><mo>∈</mo><msub><mi>𝒯</mi><mi>G</mi></msub></mrow></munder><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>a</mi><mi>i</mi></msub><msqrt><msub><mi>z</mi><mi>i</mi></msub></msqrt><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ f_G(a)=\max_{z\in\mathcal T_G}\sum_i a_i\sqrt{z_i}.
+\tag{3}
+</annotation></semantics></math><span class="equation-number">(3)</span></span> For a fixed representation (1) means
+the operator norm of the map with columns
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msub><mi>w</mi><mi>i</mi></msub></msqrt><msub><mi>u</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\sqrt{w_i}u_i</annotation></semantics></math>
+is at most one. Equivalently, every unit
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>w</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">⟨</mo><mi>h</mi><mo>,</mo><msub><mi>u</mi><mi>i</mi></msub><msup><mo stretchy="false" form="postfix">⟩</mo><mn>2</mn></msup><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\sum_iw_i\langle h,u_i\rangle^2\le1</annotation></semantics></math>.
+Thus the full safe set, including its zero weights, is
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝒲</mi><mi>G</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo>≥</mo><mn>0</mn><mo>:</mo><mspace width="0.222em"></mspace><msup><mi>w</mi><mi>⊤</mi></msup><mi>z</mi><mo>≤</mo><mn>1</mn><mspace width="0.222em"></mspace><mrow><mtext mathvariant="normal">for every </mtext><mspace width="0.333em"></mspace></mrow><mi>z</mi><mo>∈</mo><msub><mi>𝒯</mi><mi>G</mi></msub><mo stretchy="false" form="postfix">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \mathcal W_G=\{w\ge0:\ w^\top z\le1\ \text{for every }z\in\mathcal T_G\}.
+\tag{4}
+</annotation></semantics></math><span class="equation-number">(4)</span></span> The projection onto an induced subgraph
+gives exactly its safe set when all other weights are zero. To check
+necessity in the restriction, extend its Gram vectors with fresh
+orthogonal directions for the omitted vertices.</p>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>≽</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A_i\succeq0</annotation></semantics></math>
+be real
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-by-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+matrices with at least one nonzero block. Write
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup><mo>=</mo><munder><mo>max</mo><mrow><mo stretchy="false" form="postfix">∥</mo><mi>v</mi><mo stretchy="false" form="postfix">∥</mo><mo>=</mo><mn>1</mn></mrow></munder><msub><mi>f</mi><mi>G</mi></msub><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msqrt><mrow><msup><mi>v</mi><mi>⊤</mi></msup><msub><mi>A</mi><mi>i</mi></msub><mi>v</mi></mrow></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><msup><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>M</mi><mi>G</mi><mn>2</mn></msubsup><mo>=</mo><munder><mo>max</mo><mrow><mi>X</mi><mo>≽</mo><mn>0</mn><mo>,</mo><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></munder><msub><mi>f</mi><mi>G</mi></msub><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msqrt><mrow><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>i</mi></msub><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><msup><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ D_G^2=\max_{\|v\|=1} f_G\bigl((\sqrt{v^\top A_i v})_i\bigr)^2,\qquad
+ M_G^2=\max_{X\succeq0,\ {\mathrm{tr}}(X)=1} f_G\bigl((\sqrt{{\mathrm{tr}}(A_iX)})_i\bigr)^2 .
+</annotation></semantics></math> The exact relaxation is
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mi>G</mi><mn>2</mn></msubsup><mo>=</mo><munder><mo>min</mo><mrow><mi>w</mi><mo>∈</mo><msub><mi>𝒲</mi><mi>G</mi></msub></mrow></munder><msub><mi>λ</mi><mo>max</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><munder><mo>∑</mo><mrow><mi>i</mi><mo>:</mo><msub><mi>A</mi><mi>i</mi></msub><mo>≠</mo><mn>0</mn></mrow></munder><msub><mi>A</mi><mi>i</mi></msub><mi>/</mi><msub><mi>w</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ M_G^2=\min_{w\in\mathcal W_G}\lambda_{\max}\left(\sum_{i:A_i\ne0} A_i/w_i\right).
+\tag{5}
+</annotation></semantics></math><span class="equation-number">(5)</span></span> For positive definite matrices, let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>X</mi><mo>*</mo></msub><mo>,</mo><msub><mi>z</mi><mo>*</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(X_*,z_*)</annotation></semantics></math>
+maximize
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msqrt><mrow><msub><mi>s</mi><mi>i</mi></msub><msub><mi>z</mi><mi>i</mi></msub></mrow></msqrt></mrow><annotation encoding="application/x-tex">\sum_i\sqrt{s_i z_i}</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub><mo>=</mo><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>i</mi></msub><msub><mi>X</mi><mo>*</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">s_i={\mathrm{tr}}(A_iX_*)</annotation></semantics></math>.
+Every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>z</mi><mi>i</mi></msub><annotation encoding="application/x-tex">z_i</annotation></semantics></math>
+is positive. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">z_i=0</annotation></semantics></math>,
+moving toward the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>th
+coordinate vector in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝒯</mi><mi>G</mi></msub><annotation encoding="application/x-tex">\mathcal T_G</annotation></semantics></math>
+gives square-root gain against losses of order of the mixing mass.
+Differentiation in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+shows that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub><mo>=</mo><msqrt><mrow><msub><mi>s</mi><mi>i</mi></msub><mi>/</mi><msub><mi>z</mi><mi>i</mi></msub></mrow></msqrt><mi>/</mi><msub><mi>M</mi><mi>G</mi></msub></mrow><annotation encoding="application/x-tex">w_i=\sqrt{s_i/z_i}/M_G</annotation></semantics></math>
+satisfies (4). Differentiation in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+gives
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msqrt><mrow><msub><mi>z</mi><mi>i</mi></msub><mi>/</mi><msub><mi>s</mi><mi>i</mi></msub></mrow></msqrt><mspace width="0.167em"></mspace><msub><mi>A</mi><mi>i</mi></msub><mo>≼</mo><msub><mi>M</mi><mi>G</mi></msub><mi>I</mi><mo>,</mo><mspace width="2.0em"></mspace><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><msub><mi>X</mi><mo>*</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>M</mi><mi>G</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ S=\sum_i\sqrt{z_i/s_i}\,A_i\preceq M_G I,\qquad {\mathrm{tr}}(SX_*)=M_G .
+</annotation></semantics></math> Hence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>A</mi><mi>i</mi></msub><mi>/</mi><msub><mi>w</mi><mi>i</mi></msub><mo>=</mo><msub><mi>M</mi><mi>G</mi></msub><mi>S</mi><mo>≼</mo><msubsup><mi>M</mi><mi>G</mi><mn>2</mn></msubsup><mi>I</mi></mrow><annotation encoding="application/x-tex">\sum_i A_i/w_i=M_GS\preceq M_G^2 I</annotation></semantics></math>.
+For every safe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+Cauchy–Schwarz gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>s</mi><mi>i</mi></msub><mi>/</mi><msub><mi>w</mi><mi>i</mi></msub><mo>≥</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>∑</mo><mi>i</mi></msub><msqrt><mrow><msub><mi>s</mi><mi>i</mi></msub><msub><mi>z</mi><mi>i</mi></msub></mrow></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\sum_i s_i/w_i\ge(\sum_i\sqrt{s_i z_i})^2</annotation></semantics></math>
+since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>w</mi><mi>⊤</mi></msup><mi>z</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">w^\top z\le1</annotation></semantics></math>.
+This proves (5). In the general case omit zero blocks and then add
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">\epsilon I</annotation></semantics></math>
+to the others. The augmented objectives converge uniformly in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">X,z</annotation></semantics></math>.
+Bounded objective values force weights of original nonzero
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_i</annotation></semantics></math>
+away from zero because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mo>max</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>∑</mo><mi>j</mi></msub><msub><mi>A</mi><mi>j</mi></msub><mi>/</mi><msub><mi>w</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><msub><mi>λ</mi><mo>max</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msub><mi>w</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\lambda_{\max}(\sum_j A_j/w_j)\ge\lambda_{\max}(A_i)/w_i</annotation></semantics></math>.
+Compactness proves (5) and attainment.</p>
+<p>A maximizing witness can be chosen of rank
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+satisfying
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mn>2</mn><mo>≤</mo><msub><mi>m</mi><mi mathvariant="normal">a</mi></msub></mrow><annotation encoding="application/x-tex">r(r+1)/2\le m_{\mathrm{a}}</annotation></semantics></math>,
+the number of nonzero blocks. In the regularized problem it is supported
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>ker</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>M</mi><mi>G</mi></msub><mi>I</mi><mo>−</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\ker(M_G I-S)</annotation></semantics></math>.
+Inside that eigenspace, fix the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mi mathvariant="normal">a</mi></msub><annotation encoding="application/x-tex">m_{\mathrm{a}}</annotation></semantics></math>
+moments
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mi>i</mi></msub><annotation encoding="application/x-tex">s_i</annotation></semantics></math>.
+The trace condition follows from the linear combination
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+The resulting positive-semidefinite moment set is compact. An extreme
+point of larger rank would allow a nonzero symmetric perturbation on its
+support preserving every moment, since the dimension of the symmetric
+matrices on that support exceeds the constraint count. Both signs of a
+sufficiently small perturbation preserve positive semidefiniteness,
+contrary to extremality. The rank bound passes to the limit, by
+closedness of the upper rank constraint.</p>
+<p>For a witness of rank
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+put
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>r</mi></msub><mo>=</mo><mfrac><mrow><mi>π</mi><mi>Γ</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><mrow><mi>r</mi><mi>Γ</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ C_r=\frac{\pi\Gamma((r+1)/2)^2}{r\Gamma(r/2)^2}.
+</annotation></semantics></math> Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mi>G</mi><mn>2</mn></msubsup><mo>≤</mo><msub><mi>C</mi><mi>r</mi></msub><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">M_G^2\le C_rD_G^2</annotation></semantics></math>.
+Use the same maximizing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+from (3) and a centered Gaussian
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+of covariance
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mo>*</mo></msub><annotation encoding="application/x-tex">X_*</annotation></semantics></math>.
+Concavity on the simplex of normalized eigenvalues of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>X</mi><mo>*</mo><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><msub><mi>A</mi><mi>i</mi></msub><msubsup><mi>X</mi><mo>*</mo><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup></mrow><annotation encoding="application/x-tex">X_*^{1/2}A_iX_*^{1/2}</annotation></semantics></math>
+gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔼</mi><msqrt><mrow><msup><mi>g</mi><mi>⊤</mi></msup><msub><mi>A</mi><mi>i</mi></msub><mi>g</mi></mrow></msqrt><mo>≥</mo><msqrt><mrow><mn>2</mn><mi>/</mi><mi>π</mi></mrow></msqrt><msqrt><msub><mi>s</mi><mi>i</mi></msub></msqrt></mrow><annotation encoding="application/x-tex">\mathbb E\sqrt{g^\top A_i g}\ge\sqrt{2/\pi}\sqrt{s_i}</annotation></semantics></math>.
+At every simplex vertex the corresponding expectation is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔼</mi><mrow><mo stretchy="true" form="prefix">|</mo><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb E|N(0,1)|</annotation></semantics></math>.
+Also permutation averaging the eigenvalues of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mo>*</mo></msub><annotation encoding="application/x-tex">X_*</annotation></semantics></math>
+gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔼</mi><mo stretchy="false" form="postfix">∥</mo><mi>g</mi><mo stretchy="false" form="postfix">∥</mo><mo>≤</mo><mi>𝔼</mi><mo stretchy="false" form="postfix">∥</mo><msub><mi>N</mi><mi>r</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>I</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">∥</mo><mi>/</mi><msqrt><mi>r</mi></msqrt></mrow><annotation encoding="application/x-tex">\mathbb E\|g\|\le \mathbb E\|N_r(0,I)\|/\sqrt r</annotation></semantics></math>.
+By (3),
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msqrt><msub><mi>z</mi><mi>i</mi></msub></msqrt><msqrt><mrow><msup><mi>g</mi><mi>⊤</mi></msup><msub><mi>A</mi><mi>i</mi></msub><mi>g</mi></mrow></msqrt><mo>≤</mo><msub><mi>D</mi><mi>G</mi></msub><mo stretchy="false" form="postfix">∥</mo><mi>g</mi><mo stretchy="false" form="postfix">∥</mo></mrow><annotation encoding="application/x-tex">\sum_i \sqrt{z_i}\sqrt{g^\top A_ig}\le D_G\|g\|</annotation></semantics></math>.
+The Gaussian mean norm gives the bound, with a zero moment contributing
+zero.</p>
+<p>For a conservative pair use
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>=</mo><msup><mi>B</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msub><mi>K</mi><mi>i</mi></msub><msub><mi>P</mi><mi>i</mi></msub><msubsup><mi>K</mi><mi>i</mi><mi>⊤</mi></msubsup><msup><mi>B</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">A_i=B^{-1/2}K_iP_iK_i^\top B^{-1/2}</annotation></semantics></math>.
+The directional identity gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">D_G^2\le1</annotation></semantics></math>.
+Use the minimizing weights from (5) and the best linear unbiased rule
+(2). Completing the square using unbiasedness shows its inflated
+covariance is at most the covariance of the original gains under the
+same inflated model. Hence
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≼</mo><msubsup><mi>M</mi><mi>G</mi><mn>2</mn></msubsup><mi>B</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ B_G(w)\preceq M_G^2B .
+\tag{6}
+</annotation></semantics></math><span class="equation-number">(6)</span></span> The active observations identify the
+state because the omitted gains vanish and the remaining gains satisfy
+unbiasedness. A rank-one witness gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>G</mi></msub><mo>=</mo><msub><mi>D</mi><mi>G</mi></msub></mrow><annotation encoding="application/x-tex">M_G=D_G</annotation></semantics></math>,
+so (6) is lossless. This proves the assertion in state dimension
+one.</p>
+<h2 id="complete-multipartite-components-and-independent-pairs">3.
+Complete multipartite components and independent pairs</h2>
+<p>Suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+has one nontrivial complete multipartite component with parts
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>I</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">I_1,\ldots,I_k</annotation></semantics></math>
+and arbitrary isolated vertices. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>=</mo><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><msub><mi>I</mi><mi>j</mi></msub></mrow></msub><msub><mi>A</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">A^{(j)}=\sum_{i\in I_j}A_i</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><msub><mo>∑</mo><mrow><mi>i</mi><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi></mrow></mrow></msub><msub><mi>A</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">C=\sum_{i\ {\mathrm{isolated}}}A_i</annotation></semantics></math>.
+Projection squares sum to at most one in each part by orthogonality. A
+clique with one representative from each part can have all its vectors
+aligned. Thus (4) on the component is equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>j</mi></msub><msub><mo>max</mo><mrow><mi>i</mi><mo>∈</mo><msub><mi>I</mi><mi>j</mi></msub></mrow></msub><msub><mi>w</mi><mi>i</mi></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\sum_j\max_{i\in I_j}w_i\le1</annotation></semantics></math>,
+with separate bounds
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">w_i\le1</annotation></semantics></math>
+on isolates. For the graph directional norm on the component, Bessel’s
+inequality gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>j</mi></msub><msqrt><mrow><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><msub><mi>I</mi><mi>j</mi></msub></mrow></msub><msubsup><mi>a</mi><mi>i</mi><mn>2</mn></msubsup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\sum_j\sqrt{\sum_{i\in I_j}a_i^2}</annotation></semantics></math>.
+It is attained by choosing an orthonormal family in each part whose
+projections on a common handle are proportional to the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>i</mi></msub><annotation encoding="application/x-tex">a_i</annotation></semantics></math>
+in that part. The different parts can use disjoint auxiliary spaces off
+the handle, and the isolated vectors contribute independently. Therefore
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mi>G</mi><mn>2</mn></msubsup><mo>=</mo><munder><mo>max</mo><mrow><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="0.222em"></mspace><mi>X</mi><mo>≽</mo><mn>0</mn></mrow></munder><mrow><mo stretchy="true" form="prefix">[</mo><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>C</mi><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><msqrt><mrow><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo stretchy="true" form="postfix">]</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ M_G^2=\max_{{\mathrm{tr}}(X)=1,\ X\succeq0}
+ \left[{\mathrm{tr}}(CX)+\left(\sum_{j=1}^k\sqrt{{\mathrm{tr}}(A^{(j)}X)}\right)^2\right].
+\tag{7}
+</annotation></semantics></math><span class="equation-number">(7)</span></span> When there are no isolates, this is
+ordinary covariance intersection on the pooled observations, both at the
+conservative and inflated levels. The original uncertainty and grouped
+uncertainty are identical after pooling. All weights in a part can be
+raised to the part maximum without changing feasibility, and the part’s
+marginal is the known block-diagonal covariance.</p>
+<p>An optimizing witness in (7) can be chosen with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mn>2</mn><mo>≤</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">r(r+1)/2\le k</annotation></semantics></math>.
+To see it, regularize the group matrices so that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>j</mi></msub><mo>=</mo><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s_j={\mathrm{tr}}(A^{(j)}X)&gt;0</annotation></semantics></math>
+at a maximizer. Put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mi>j</mi></msub><mo>=</mo><msqrt><msub><mi>s</mi><mi>j</mi></msub></msqrt><mi>/</mi><msub><mo>∑</mo><mi>i</mi></msub><msqrt><msub><mi>s</mi><mi>i</mi></msub></msqrt></mrow><annotation encoding="application/x-tex">w_j=\sqrt{s_j}/\sum_i\sqrt{s_i}</annotation></semantics></math>.
+Its first-order linear matrix is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>+</mo><msub><mo>∑</mo><mi>j</mi></msub><msup><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mi>/</mi><msub><mi>w</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">C+\sum_j A^{(j)}/w_j</annotation></semantics></math>,
+whose top eigenspace supports the maximizer. Inside that eigenspace keep
+the trace one and the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k-1</annotation></semantics></math>
+ratios
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>j</mi></msub><mi>/</mi><msub><mi>s</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">s_j/s_1</annotation></semantics></math>
+by linear equations. In this compact set the optimal group weights stay
+fixed and the expression in (7) is the same linear evaluation. The
+extreme-point proof uses at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+constraints. Remove regularization by compactness. Zero groups can be
+deleted. The case
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">k=2</annotation></semantics></math>
+gives a rank-one witness and hence (6) is lossless. The edgeless case is
+independent least squares. This proves
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>3</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>⇒</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">(3)\Rightarrow(1)</annotation></semantics></math>
+in Theorem 1.</p>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+instead consists of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+disjoint edges and isolated vertices, the corresponding mixed objective
+is
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>max</mo><mrow><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="0.222em"></mspace><mi>X</mi><mo>≽</mo><mn>0</mn></mrow></munder><mrow><mo stretchy="true" form="prefix">[</mo><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>C</mi><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><munder><mo>∑</mo><mrow><mi>i</mi><mi>j</mi><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">e</mi></mrow></mrow></munder><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><msqrt><mrow><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>i</mi></msub><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msqrt><mo>+</mo><msqrt><mrow><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>j</mi></msub><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msqrt><msup><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo stretchy="true" form="postfix">]</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \max_{{\mathrm{tr}}(X)=1,\ X\succeq0}
+ \left[{\mathrm{tr}}(CX)+\sum_{ij\ {\mathrm{edge}}}
+ \bigl(\sqrt{{\mathrm{tr}}(A_iX)}+\sqrt{{\mathrm{tr}}(A_jX)}\bigr)^2\right].
+</annotation></semantics></math> Both the scalar covariance and the safe
+weights separate by component. The top-eigenspace argument now keeps one
+moment ratio per edge and the trace. It gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mn>2</mn><mo>≤</mo><mi>k</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">r(r+1)/2\le k+1</annotation></semantics></math>.
+As proved next, two independent edges can force rank two and a positive
+gap, although every single edge can be rounded exactly.</p>
+<h2 id="three-minimal-obstructions">4. Three minimal obstructions</h2>
+<p>Suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>w</mi><mo>*</mo></msup><annotation encoding="application/x-tex">w^*</annotation></semantics></math>
+is positive and safe,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>A</mi><mi>i</mi></msub><mi>/</mi><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup><mo>=</mo><mi>κ</mi><msub><mi>I</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\sum_i A_i/w_i^*=\kappa I_n</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>w</mi><mo>*</mo></msup><annotation encoding="application/x-tex">w^*</annotation></semantics></math>
+minimizes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><msub><mi>w</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_i{\mathrm{tr}}(A_i)/(n w_i)</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝒲</mi><mi>G</mi></msub><annotation encoding="application/x-tex">\mathcal W_G</annotation></semantics></math>.
+Put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">P_i=I</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>i</mi></msub><mo>=</mo><msubsup><mi>A</mi><mi>i</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><mi>/</mi><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup></mrow><annotation encoding="application/x-tex">H_i=A_i^{1/2}/w_i^*</annotation></semantics></math>.
+The minimum reported trace is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>/</mi><mi>κ</mi></mrow><annotation encoding="application/x-tex">n/\kappa</annotation></semantics></math>.
+Indeed, the first-order condition for the convex scalar weight objective
+gives
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>w</mi><mi>i</mi></msub><mfrac><mrow><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mfrac><mo>≤</mo><munder><mo>∑</mo><mi>i</mi></munder><mfrac><mrow><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup></mfrac><mo>=</mo><mi>n</mi><mi>κ</mi><mspace width="2.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo>∈</mo><msub><mi>𝒲</mi><mi>G</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \sum_i w_i\frac{{\mathrm{tr}}(A_i)}{(w_i^*)^2}\le
+ \sum_i\frac{{\mathrm{tr}}(A_i)}{w_i^*}=n\kappa \qquad(w\in\mathcal W_G).
+</annotation></semantics></math> The left side is the trace of the
+information matrix in (2). Its inverse has trace at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>/</mi><mi>κ</mi></mrow><annotation encoding="application/x-tex">n/\kappa</annotation></semantics></math>,
+and equality holds at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>w</mi><mo>*</mo></msup><annotation encoding="application/x-tex">w^*</annotation></semantics></math>.
+The gains
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>i</mi></msub><mo>=</mo><msubsup><mi>A</mi><mi>i</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><mi>/</mi><mi>κ</mi></mrow><annotation encoding="application/x-tex">K_i=A_i^{1/2}/\kappa</annotation></semantics></math>
+are unbiased and their conservative covariance can be taken as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup><mi>/</mi><msup><mi>κ</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>I</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">(D_G^2/\kappa^2)I_n</annotation></semantics></math>.
+This gives a trace ratio of at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mi>/</mi><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\kappa/D_G^2</annotation></semantics></math>.
+For positive-definite
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_i</annotation></semantics></math>,
+invert the corresponding observation matrix to obtain a full-state
+observation with marginal
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><msubsup><mi>A</mi><mi>i</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup></mrow><annotation encoding="application/x-tex">(w_i^*)^2 A_i^{-1}</annotation></semantics></math>.
+These transformations preserve the known zero cross-covariances.</p>
+<p><strong>Triangle.</strong> Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo>,</mo><msub><mi>v</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">v_1,v_2,v_3</annotation></semantics></math>
+have projective angles
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mi>π</mi><mi>/</mi><mn>3</mn><mo>,</mo><mn>2</mn><mi>π</mi><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">0,\pi/3,2\pi/3</annotation></semantics></math>,
+and set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>v</mi><mi>i</mi></msub><msubsup><mi>v</mi><mi>i</mi><mi>⊤</mi></msubsup></mrow><annotation encoding="application/x-tex">A_i=(2/3)v_iv_i^\top</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup><mo>=</mo><mn>1</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">w_i^*=1/3</annotation></semantics></math>.
+Their sum is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mn>2</mn></msub><annotation encoding="application/x-tex">I_2</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\kappa=3</annotation></semantics></math>.
+Equal traces give the optimal scalar weights on the simplex. The largest
+squared length of a signed sum of the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>i</mi></msub><annotation encoding="application/x-tex">v_i</annotation></semantics></math>
+is four, by evaluating the four sign patterns modulo common sign. The
+directional maximum is thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup><mo>=</mo><mn>8</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">D_G^2=8/3</annotation></semantics></math>,
+giving
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mi>/</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">9/8</annotation></semantics></math>.</p>
+<p><strong>Path and disjoint edges.</strong> Number the path
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mn>2</mn><mo>−</mo><mn>3</mn><mo>−</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">1-2-3-4</annotation></semantics></math>
+and use edges
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mo>,</mo><mn>34</mn></mrow><annotation encoding="application/x-tex">12,34</annotation></semantics></math>
+for the disjoint-edge graph. Put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">p=1/4</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">q=3/4</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mo>diag</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>,</mo><mi>−</mi><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">H=\operatorname{diag}(1,-1)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">J=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix}</annotation></semantics></math>.
+Define
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtable><mtr><mtd columnalign="left" style="text-align: left"><msub><mi>A</mi><mn>1</mn></msub><mo>=</mo><msup><mi>q</mi><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>I</mi><mo>+</mo><mi>H</mi><mi>/</mi><mn>6</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mtd><mtd columnalign="left" style="text-align: left"><msub><mi>A</mi><mn>2</mn></msub><mo>=</mo><msup><mi>p</mi><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>I</mi><mo>−</mo><mi>H</mi><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><msub><mi>A</mi><mn>3</mn></msub><mo>=</mo><msup><mi>p</mi><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>I</mi><mo>−</mo><mi>J</mi><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mtd><mtd columnalign="left" style="text-align: left"><msub><mi>A</mi><mn>4</mn></msub><mo>=</mo><msup><mi>q</mi><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>I</mi><mo>+</mo><mi>J</mi><mi>/</mi><mn>6</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mtd></mtr></mtable><mspace width="2.0em"></mspace><msup><mi>w</mi><mo>*</mo></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo>,</mo><mi>p</mi><mo>,</mo><mi>p</mi><mo>,</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \begin{array}{ll}
+ A_1=q^2(I+H/6),&amp; A_2=p^2(I-H/2),\\
+ A_3=p^2(I-J/2),&amp; A_4=q^2(I+J/6),
+ \end{array}
+ \qquad w^*=(q,p,p,q).
+\tag{8}
+</annotation></semantics></math><span class="equation-number">(8)</span></span> The two inflated edge sums separately
+equal
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mn>2</mn></msub><annotation encoding="application/x-tex">I_2</annotation></semantics></math>.
+The weights are safe for both graphs. In fact on a forest the safe
+weights are precisely
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">w_i\le1</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub><mo>+</mo><msub><mi>w</mi><mi>j</mi></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">w_i+w_j\le1</annotation></semantics></math>
+on edges. For sufficiency, peel a leaf of a positive-semidefinite matrix
+supported on a forest. When the leaf diagonal is positive, subtract the
+rank-one positive-semidefinite matrix on the leaf and its neighbor that
+agrees with the leaf row. The Schur complement of the leaf is positive
+semidefinite and supported on the smaller forest. If the leaf diagonal
+vanishes, its row is zero. Repetition decomposes the matrix into
+positive-semidefinite edge and singleton pieces. On an edge,
+Cauchy–Schwarz bounds a quadratic form by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>w</mi><mi>i</mi></msub><mo>+</mo><msub><mi>w</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>∑</mo><mrow><mo>ℓ</mo><mo>=</mo><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><msub><mi>R</mi><mrow><mo>ℓ</mo><mo>ℓ</mo></mrow></msub><msubsup><mi>a</mi><mo>ℓ</mo><mn>2</mn></msubsup><mi>/</mi><msub><mi>w</mi><mo>ℓ</mo></msub></mrow><annotation encoding="application/x-tex">(w_i+w_j)\sum_{\ell=i,j}R_{\ell\ell}a_\ell^2/w_\ell</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mrow><mo>ℓ</mo><mo>ℓ</mo></mrow></msub><annotation encoding="application/x-tex">R_{\ell\ell}</annotation></semantics></math>
+is the diagonal of the piece. Sum over the pieces and use the original
+unit diagonals. Necessity follows from perfect correlation of a single
+edge and from the singleton constraints. Restriction covers zero
+weights.</p>
+<p>By (8),
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>tr</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\operatorname{tr}(A_i)/(2(w_i^*)^2)=1</annotation></semantics></math>.
+The edges
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mo>,</mo><mn>34</mn></mrow><annotation encoding="application/x-tex">12,34</annotation></semantics></math>
+imply
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>w</mi><mi>i</mi></msub><mo>≤</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\sum_iw_i\le2</annotation></semantics></math>,
+with equality at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>w</mi><mo>*</mo></msup><annotation encoding="application/x-tex">w^*</annotation></semantics></math>.
+By the scalar convex first-order condition, the scalar objective in the
+transfer is minimized at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>w</mi><mo>*</mo></msup><annotation encoding="application/x-tex">w^*</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\kappa=2</annotation></semantics></math>.
+For a unit
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>,
+write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><msup><mi>v</mi><mi>⊤</mi></msup><mi>H</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">h=v^\top H v</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><msup><mi>v</mi><mi>⊤</mi></msup><mi>J</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">j=v^\top Jv</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>h</mi><mn>2</mn></msup><mo>+</mo><msup><mi>j</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">h^2+j^2=1</annotation></semantics></math>.
+The two-edge optimum uses, within each edge, weights proportional to the
+square roots of the two directional numerators
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mi>⊤</mi></msup><msub><mi>A</mi><mi>i</mi></msub><mi>v</mi></mrow><annotation encoding="application/x-tex">v^\top A_i v</annotation></semantics></math>.
+Each low endpoint has numerator at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>/</mi><mn>32</mn></mrow><annotation encoding="application/x-tex">3/32</annotation></semantics></math>
+and its high partner has numerator at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mi>/</mi><mn>32</mn></mrow><annotation encoding="application/x-tex">15/32</annotation></semantics></math>.
+Thus each low endpoint has weight at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">1/(1+\sqrt5)</annotation></semantics></math>,
+and the joining edge
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>23</mn><annotation encoding="application/x-tex">23</annotation></semantics></math>
+also satisfies its weight constraint. These directional choices give the
+same bound on both graphs. For the first edge, the difference between
+its inflated quadratic form at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>w</mi><mo>*</mo></msup><annotation encoding="application/x-tex">w^*</annotation></semantics></math>
+and the optimized form is
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>q</mi><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><msqrt><mrow><mn>1</mn><mo>+</mo><mi>h</mi><mi>/</mi><mn>6</mn></mrow></msqrt><mo>−</mo><msqrt><mrow><mn>1</mn><mo>−</mo><mi>h</mi><mi>/</mi><mn>2</mn></mrow></msqrt><msup><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mi>p</mi><mi>q</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>h</mi><mi>/</mi><mn>3</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><msqrt><mrow><mn>1</mn><mo>+</mo><mi>h</mi><mi>/</mi><mn>6</mn></mrow></msqrt><mo>+</mo><msqrt><mrow><mn>1</mn><mo>−</mo><mi>h</mi><mi>/</mi><mn>2</mn></mrow></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mfrac><mspace width="0.222em"></mspace><mo>≥</mo><mspace width="0.222em"></mspace><mfrac><msup><mi>h</mi><mn>2</mn></msup><mn>56</mn></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ pq\bigl(\sqrt{1+h/6}-\sqrt{1-h/2}\bigr)^2
+ = \frac{pq (2h/3)^2}{(\sqrt{1+h/6}+\sqrt{1-h/2})^2}
+ \ \ge\ \frac{h^2}{56}.
+</annotation></semantics></math> The denominator is at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>−</mo><mi>h</mi><mi>/</mi><mn>3</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>14</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">2(2-h/3)\le14/3</annotation></semantics></math>.
+The other edge gives the same inequality with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+in place of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>.
+Summing yields
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup><mo>≤</mo><mn>2</mn><mo>−</mo><mn>1</mn><mi>/</mi><mn>56</mn><mo>=</mo><mn>111</mn><mi>/</mi><mn>56</mn></mrow><annotation encoding="application/x-tex">D_G^2\le2-1/56=111/56</annotation></semantics></math>,
+so the trace ratio is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>112</mn><mi>/</mi><mn>111</mn></mrow><annotation encoding="application/x-tex">112/111</annotation></semantics></math>.
+All four matrices are positive definite, and the full-state marginals
+obtained by inverting the observations are rational.</p>
+<p>For any graph containing a forbidden induced subgraph, set the extra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>H</mi><mi>i</mi></msub><annotation encoding="application/x-tex">H_i</annotation></semantics></math>
+to zero. The achievable information matrices on the informative vertices
+are unchanged by the exact projection property of (4). The candidate
+conservative estimate still ignores all other observations. This proves
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>⇒</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">(2)\Rightarrow(4)</annotation></semantics></math>.
+Also
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>⇒</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">(1)\Rightarrow(2)</annotation></semantics></math>
+by conservativeness and matrix order.</p>
+<p>Finally, a connected triangle-free graph with edge
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">ab</annotation></semantics></math>
+and no induced four-vertex path is complete bipartite. If a vertex is
+adjacent to neither
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+nor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>,
+take a shortest path to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{a,b\}</annotation></semantics></math>.
+A distance of at least three gives a four-vertex induced path. At
+distance two, append the other vertex of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">ab</annotation></semantics></math>
+to the shortest path. Its intermediate vertex cannot be adjacent to both
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a,b</annotation></semantics></math>
+by triangle-freeness. Thus the appended path is induced. All remaining
+vertices are adjacent to exactly one of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a,b</annotation></semantics></math>
+and can be assigned to the corresponding side. Triangle-freeness forbids
+edges within each side. A missing cross edge gives an induced path
+through
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">ab</annotation></semantics></math>.
+Two distinct components containing edges would give two disjoint induced
+edges. This proves
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>⇒</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>3</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">(4)\Rightarrow(3)</annotation></semantics></math>.</p>
+<h2 id="a-sharp-price-for-independent-correlation-groups">5. A sharp
+price for independent correlation groups</h2>
+<p>For a union of cliques, errors in different groups have zero
+cross-covariance; within a group all admissible cross-covariances are
+unknown. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k\ge1</annotation></semantics></math>
+be an upper bound for the number of sensors in any group. We allow any
+finite number of groups, any observation dimension and positive-definite
+marginals.</p>
+<p><strong>Theorem 2.</strong> For every conservative unbiased pair
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo>,</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(K,B)</annotation></semantics></math>,
+some safe scalar inflation has
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≼</mo><msub><mi>κ</mi><mi>k</mi></msub><mi>B</mi><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>κ</mi><mi>k</mi></msub><mo>=</mo><mfrac><mi>k</mi><mrow><mn>1</mn><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn><mi>/</mi><mi>π</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ B_G(w)\preceq \kappa_k B,\qquad
+ \kappa_k=\frac{k}{1+(k-1)2/\pi}.
+</annotation></semantics></math> This constant is sharp even for the
+ratio of the two optimized reported traces. For any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+and any positive tolerance it can be approached by finitely many groups
+of exactly
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+sensors in state dimension
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.
+One may restrict all sensors to invertible full-state observations with
+positive-definite marginal covariances. Thus two correlated sensors in
+each of many mutually uncorrelated groups have exact uniform price
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>π</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>π</mi><mo>+</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">2\pi/(\pi+2)</annotation></semantics></math>;
+a single pair on its own is lossless. As the allowed group size grows
+the prices increase to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\pi/2</annotation></semantics></math>.</p>
+<p><em>Upper bound.</em> Within one clique the scalar Gram vectors may
+all be equal, and different cliques use mutually orthogonal
+representations. Thus
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>G</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><munder><mo>∑</mo><mi>C</mi></munder><mo minsize="1.8" maxsize="1.8" stretchy="false" form="prefix">(</mo><munder><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>C</mi></mrow></munder><msub><mi>a</mi><mi>i</mi></msub><msup><mo minsize="1.8" maxsize="1.8" stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ f_G(a)^2=\sum_C\Big(\sum_{i\in C}a_i\Big)^2.
+</annotation></semantics></math> For a mixed witness
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>≽</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">X\succeq0</annotation></semantics></math>
+with trace one, write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub><mo>=</mo><mo>tr</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>i</mi></msub><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">s_i=\operatorname{tr}(A_iX)</annotation></semantics></math>
+and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><msup><mi>X</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mi>Z</mi></mrow><annotation encoding="application/x-tex">g=X^{1/2}Z</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math>
+a standard normal vector. For each nonzero moment diagonalize
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>X</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msub><mi>A</mi><mi>i</mi></msub><msup><mi>X</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mo>=</mo><msub><mo>∑</mo><mi>a</mi></msub><msub><mi>λ</mi><mrow><mi>i</mi><mi>a</mi></mrow></msub><msub><mi>u</mi><mrow><mi>i</mi><mi>a</mi></mrow></msub><msubsup><mi>u</mi><mrow><mi>i</mi><mi>a</mi></mrow><mi>⊤</mi></msubsup></mrow><annotation encoding="application/x-tex">X^{1/2}A_iX^{1/2}=\sum_a\lambda_{ia}u_{ia}u_{ia}^\top</annotation></semantics></math>.
+Set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>i</mi><mi>a</mi></mrow></msub><mo>=</mo><msub><mi>λ</mi><mrow><mi>i</mi><mi>a</mi></mrow></msub><mi>/</mi><msub><mi>s</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">p_{ia}=\lambda_{ia}/s_i</annotation></semantics></math>.
+By root mean square versus arithmetic mean,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><msup><mi>g</mi><mi>⊤</mi></msup><msub><mi>A</mi><mi>i</mi></msub><mi>g</mi></mrow></msqrt><mo>≥</mo><msqrt><msub><mi>s</mi><mi>i</mi></msub></msqrt><munder><mo>∑</mo><mi>a</mi></munder><msub><mi>p</mi><mrow><mi>i</mi><mi>a</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">|</mo><msubsup><mi>u</mi><mrow><mi>i</mi><mi>a</mi></mrow><mi>⊤</mi></msubsup><mi>Z</mi><mo stretchy="true" form="postfix">|</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \sqrt{g^\top A_i g}\ge\sqrt{s_i}\sum_a p_{ia}|u_{ia}^\top Z|.
+</annotation></semantics></math> For any unit vectors with correlation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>,
+the absolute product of their Gaussian projections has expectation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>/</mi><mi>π</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt><mo>+</mo><mi>c</mi><mo>arcsin</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mn>2</mn><mi>/</mi><mi>π</mi></mrow><annotation encoding="application/x-tex">(2/\pi)(\sqrt{1-c^2}+c\arcsin c)\ge2/\pi</annotation></semantics></math>.
+Indeed in their plane use polar Gaussian coordinates: average
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">|</mo><mo>cos</mo><mi>θ</mi><mo>cos</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>θ</mi><mo>−</mo><mo>arccos</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><annotation encoding="application/x-tex">|\cos\theta\cos(\theta-\arccos c)|</annotation></semantics></math>
+on one period and multiply by the mean squared radius two. Splitting at
+the two zeros gives the formula, including
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>c</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|c|=1</annotation></semantics></math>
+by continuity. It follows that each mixed product in a clique has
+expectation at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>/</mi><mi>π</mi><mo stretchy="true" form="postfix">)</mo></mrow><msqrt><mrow><msub><mi>s</mi><mi>i</mi></msub><msub><mi>s</mi><mi>j</mi></msub></mrow></msqrt></mrow><annotation encoding="application/x-tex">(2/\pi)\sqrt{s_i s_j}</annotation></semantics></math>.
+Each diagonal expectation is exactly
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mi>i</mi></msub><annotation encoding="application/x-tex">s_i</annotation></semantics></math>.
+Since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>C</mi></mrow></msub><msub><mi>s</mi><mi>i</mi></msub><mo>≥</mo><msup><mi>k</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>C</mi></mrow></msub><msqrt><msub><mi>s</mi><mi>i</mi></msub></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\sum_{i\in C}s_i\ge k^{-1}(\sum_{i\in C}\sqrt{s_i})^2</annotation></semantics></math>,
+we obtain
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup><mi>E</mi><mo stretchy="false" form="postfix">∥</mo><mi>g</mi><msup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msup><mspace width="0.222em"></mspace><mo>≥</mo><mspace width="0.222em"></mspace><mi>E</mi><msub><mi>f</mi><mi>G</mi></msub><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msqrt><mrow><msup><mi>g</mi><mi>⊤</mi></msup><msub><mi>A</mi><mi>i</mi></msub><mi>g</mi></mrow></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><msup><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mspace width="0.222em"></mspace><mo>≥</mo><mspace width="0.222em"></mspace><msubsup><mi>κ</mi><mi>k</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><munder><mo>∑</mo><mi>C</mi></munder><mo minsize="1.8" maxsize="1.8" stretchy="false" form="prefix">(</mo><munder><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>C</mi></mrow></munder><msqrt><msub><mi>s</mi><mi>i</mi></msub></msqrt><msup><mo minsize="1.8" maxsize="1.8" stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ D_G^2 E\|g\|^2\ \ge\ E f_G\big((\sqrt{g^\top A_i g})_i\big)^2
+ \ \ge\ \kappa_k^{-1}\sum_C\Big(\sum_{i\in C}\sqrt{s_i}\Big)^2 .
+</annotation></semantics></math> Zero moments follow directly.
+Maximizing over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+and applying (6) proves the claimed matrix guarantee.</p>
+<p><em>Sharpness after optimizing the estimator.</em> For fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mi>k</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n=k\ge2</annotation></semantics></math>,
+let a single clique correspond to an orthonormal frame
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>u</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">u_1,\ldots,u_k</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>k</mi></msup><annotation encoding="application/x-tex">\mathbb R^k</annotation></semantics></math>,
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>=</mo><msub><mi>u</mi><mi>i</mi></msub><msubsup><mi>u</mi><mi>i</mi><mi>⊤</mi></msubsup></mrow><annotation encoding="application/x-tex">A_i=u_i u_i^\top</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+a unit vector and a Haar-random frame,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo minsize="1.8" maxsize="1.8" stretchy="false" form="prefix">(</mo><munder><mo>∑</mo><mi>i</mi></munder><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="false" form="prefix">⟨</mo><mi>v</mi><mo>,</mo><msub><mi>u</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="true" form="postfix">|</mo></mrow><msup><mo minsize="1.8" maxsize="1.8" stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn><mi>/</mi><mi>π</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ E\Big(\sum_i |\langle v,u_i\rangle|\Big)^2
+ =1+(k-1)2/\pi .
+</annotation></semantics></math> The squared projections sum to one. For
+two distinct projections their absolute product has expectation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>π</mi><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">2/(\pi k)</annotation></semantics></math>,
+by dividing the corresponding independent Gaussian absolute product
+moment by its independent squared radial expectation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.
+There are finite uniform multisets of frames for which the empirical
+means of these continuous functions converge uniformly in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+to the displayed constant: apply the strong law on a countable dense set
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+and the uniform Lipschitz bound
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>k</mi></mrow><annotation encoding="application/x-tex">2k</annotation></semantics></math>
+on the compact sphere. Each frame already has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>A</mi><mi>i</mi></msub><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">\sum_iA_i=I</annotation></semantics></math>,
+so no isotropy correction to the first moment is needed.</p>
+<p>For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+such cliques choose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup><mo>=</mo><mn>1</mn><mi>/</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">w_i^*=1/k</annotation></semantics></math>.
+The feasible weights are exactly those with group sums at most one.
+Equal traces imply that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>w</mi><mo>*</mo></msup><annotation encoding="application/x-tex">w^*</annotation></semantics></math>
+minimizes the scalar trace objective of Section 4 and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>A</mi><mi>i</mi></msub><mi>/</mi><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup><mo>=</mo><mi>k</mi><mi>L</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">\sum_i A_i/w_i^*=kL I</annotation></semantics></math>.
+That section realizes a linear observation model in which the optimized
+trace ratio is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mi>L</mi><mi>/</mi><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">kL/D_G^2</annotation></semantics></math>.
+The preceding uniform convergence sends
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup><mi>/</mi><mi>L</mi></mrow><annotation encoding="application/x-tex">D_G^2/L</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn><mi>/</mi><mi>π</mi></mrow><annotation encoding="application/x-tex">1+(k-1)2/\pi</annotation></semantics></math>.
+This proves sharpness for optimized traces and hence also for uniform
+Loewner domination. The case
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k=1</annotation></semantics></math>
+follows from independent estimation. To enforce positive definiteness
+replace every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_i</annotation></semantics></math>
+in the finite construction by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>+</mo><mi>ϵ</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">A_i+\epsilon I</annotation></semantics></math>.
+Every trace is still equal and the inflated sum is scalar. The
+directional objective is continuous uniformly on the compact sphere as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\epsilon\downarrow0</annotation></semantics></math>.
+The observation transformation of Section 4 then gives invertible
+full-state measurements with positive-definite marginals. Take small
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math>
+after fixing the finite family.</p>
+<p>Gaussian rounding and the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>/</mi><mi>π</mi></mrow><annotation encoding="application/x-tex">2/\pi</annotation></semantics></math>
+constant are classical in positive semidefinite Grothendieck problems.
+Here keeping the exact diagonal term produces a finite-group
+interpolation, and frame witnesses survive the optimization over all
+unbiased estimation rules. Fixed-size group interpolation concerns
+arbitrarily many independent groups. It does not give the optimal
+constant for a prescribed single finite graph. <a
+href="https://arxiv.org/abs/0910.5765">Briët, de Oliveira Filho and
+Vallentin, The positive semidefinite Grothendieck problem with rank
+constraint</a></p>
+<h2 id="the-exact-factor-for-a-fixed-graph">6. The exact factor for a
+fixed graph</h2>
+<p>For a positive integer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>,
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo>;</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">C_{\mathrm{tr}}(G;n)</annotation></semantics></math>
+be the supremum over observation models of state dimension at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+of the ratio
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><munder><mo>inf</mo><mrow><mi>w</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> safe</mtext></mrow></mrow></munder><mo>tr</mo><msub><mi>B</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><munder><mo>inf</mo><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo>,</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> conservative</mtext></mrow></mrow></munder><mo>tr</mo><mi>B</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \frac{\inf_{w\text{ safe}}\operatorname{tr} B_G(w)}
+      {\inf_{(K,B)\text{ conservative}}\operatorname{tr} B}.
+</annotation></semantics></math> The numerator uses weights with
+nonsingular information and the denominator uses unbiased gains. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mo>≼</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo>;</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">C_{\preceq}(G;n)</annotation></semantics></math>
+be the least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+such that, in all these models, every conservative pair is matched by
+some safe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≼</mo><mi>c</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">B_G(w)\preceq cB</annotation></semantics></math>.
+The independent admissible joint covariance gives a positive lower bound
+on the denominator, and positive safe weights give finite values. Write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>f</mi><mi>G</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msqrt><msub><mi>s</mi><mi>i</mi></msub></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">F_G(s)=f_G((\sqrt{s_i})_i)^2</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s\ge0</annotation></semantics></math>.
+In particular
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>G</mi></msub><annotation encoding="application/x-tex">F_G</annotation></semantics></math>
+is continuous, nonnegative and homogeneous of degree one. By (5) in
+state dimension one,
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>inf</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>w</mi><mo>∈</mo><msub><mi>𝒲</mi><mi>G</mi></msub></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mrow><msub><mi>w</mi><mi>i</mi></msub><mo>&gt;</mo><mn>0</mn></mrow></mtd></mtr></mtable></munder><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>s</mi><mi>i</mi></msub><mi>/</mi><msub><mi>w</mi><mi>i</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ F_G(s)=\inf_{\substack{w\in\mathcal W_G\\ w_i&gt;0}}\sum_i s_i/w_i .
+\tag{9}
+</annotation></semantics></math><span class="equation-number">(9)</span></span> Weights zero on zero moments can be
+approximated by mixing with small strictly positive safe weights.
+Equation (9) also establishes concavity of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>G</mi></msub><annotation encoding="application/x-tex">F_G</annotation></semantics></math>.</p>
+<p><strong>Theorem 3.</strong> Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>m</mi></msub><mo>=</mo><mo>max</mo><mo stretchy="false" form="prefix">{</mo><mi>r</mi><mo>:</mo><mi>r</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mn>2</mn><mo>≤</mo><mi>m</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">r_m=\max\{r:r(r+1)/2\le m\}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mo>min</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>,</mo><msub><mi>r</mi><mi>m</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">d=\min(n,r_m)</annotation></semantics></math>.
+Then
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo>;</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>C</mi><mo>≼</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo>;</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>max</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>≽</mo><mn>0</mn><mspace width="0.222em"></mspace><mrow><mtext mathvariant="normal">in </mtext><mspace width="0.333em"></mspace></mrow><msup><mi>ℝ</mi><mrow><mi>d</mi><mo>×</mo><mi>d</mi></mrow></msup></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mrow><munder><mo>∑</mo><mi>i</mi></munder><mo>tr</mo><msub><mi>A</mi><mi>i</mi></msub><mo>=</mo><mn>1</mn></mrow></mtd></mtr></mtable></munder><mfrac><mrow><msub><mi>M</mi><mi>G</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><mrow><msub><mi>D</mi><mi>G</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ C_{\mathrm{tr}}(G;n)=C_{\preceq}(G;n)=
+ \max_{\substack{A_i\succeq0\ \text{in }\mathbb R^{d\times d}\\
+                   \sum_i\operatorname{tr} A_i=1}}
+              \frac{M_G(A)^2}{D_G(A)^2}.
+\tag{10}
+</annotation></semantics></math><span class="equation-number">(10)</span></span> The ratio on the right is attained by a
+linear observation model of state dimension at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>.
+It can be approached in this dimension bound with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>i</mi></msub><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">H_i=I</annotation></semantics></math>
+and positive-definite marginals at every sensor. In particular the two
+constants stabilize at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msub><mi>r</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">n=r_m</annotation></semantics></math>
+for every fixed graph. Their common unrestricted value
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">C(G)</annotation></semantics></math>,
+as well as each dimension-restricted value, is a computable real
+algebraic number.</p>
+<p><em>Upper bound and dimension.</em> Equation (6) gives the upper
+bound by the corresponding matrix ratio in any given dimension. For an
+arbitrary tuple restrict all the matrices to the support of a maximizing
+witness
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mo>*</mo></msub><annotation encoding="application/x-tex">X_*</annotation></semantics></math>
+of the rank asserted in Section 2. This restriction preserves
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>M</mi><mi>G</mi><mn>2</mn></msubsup><annotation encoding="application/x-tex">M_G^2</annotation></semantics></math>
+because the same witness is feasible, and it can only decrease
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup><annotation encoding="application/x-tex">D_G^2</annotation></semantics></math>.
+Pad with zero directions up to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+and normalize the total trace if necessary. Homogeneity and projection
+onto the nonzero directions show that padding preserves both objectives.
+On normalized tuples
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup><mo>≥</mo><mn>1</mn><mi>/</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">D_G^2\ge1/d</annotation></semantics></math>,
+by the admissibility of the independent scalar covariance and the
+largest eigenvalue of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>A</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\sum_i A_i</annotation></semantics></math>.
+Both objectives are maxima of continuous functions over compact witness
+sets and therefore continuous. The normalized maximum in (10)
+exists.</p>
+<p><em>Realization for optimized ordinary traces.</em> Take a tuple and
+a maximizing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mo>*</mo></msub><annotation encoding="application/x-tex">X_*</annotation></semantics></math>
+for its mixed objective. Set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><msubsup><mi>M</mi><mi>G</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\kappa=M_G^2</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub><mo>=</mo><mo>tr</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>X</mi><mo>*</mo></msub><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">s_i=\operatorname{tr}(X_*A_i)</annotation></semantics></math>,
+and choose a minimizer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>w</mi><mo>*</mo></msup><annotation encoding="application/x-tex">w^*</annotation></semantics></math>
+of (5). We omit zero blocks when forming quotients. For every safe
+weight
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+(9) gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>s</mi><mi>i</mi></msub><mi>/</mi><msub><mi>w</mi><mi>i</mi></msub><mo>≥</mo><mi>κ</mi></mrow><annotation encoding="application/x-tex">\sum_i s_i/w_i\ge\kappa</annotation></semantics></math>.
+The inequality
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>A</mi><mi>i</mi></msub><mi>/</mi><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup><mo>≼</mo><mi>κ</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">\sum_i A_i/w_i^*\preceq\kappa I</annotation></semantics></math>
+therefore has equality when traced against
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mo>*</mo></msub><annotation encoding="application/x-tex">X_*</annotation></semantics></math>.
+The difference is positive semidefinite and annihilates the support
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mo>*</mo></msub><annotation encoding="application/x-tex">X_*</annotation></semantics></math>.
+In addition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>w</mi><mo>*</mo></msup><annotation encoding="application/x-tex">w^*</annotation></semantics></math>
+minimizes the scalar convex objective
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>s</mi><mi>i</mi></msub><mi>/</mi><msub><mi>w</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\sum_i s_i/w_i</annotation></semantics></math>.
+Taking the one-sided derivative along the segment from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>w</mi><mo>*</mo></msup><annotation encoding="application/x-tex">w^*</annotation></semantics></math>
+to any safe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+gives
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>∑</mo><mi>i</mi></munder><mfrac><mrow><msub><mi>s</mi><mi>i</mi></msub><msub><mi>w</mi><mi>i</mi></msub></mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mfrac><mo>≤</mo><munder><mo>∑</mo><mi>i</mi></munder><mfrac><msub><mi>s</mi><mi>i</mi></msub><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup></mfrac><mo>=</mo><mi>κ</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \sum_i \frac{s_i w_i}{(w_i^*)^2}\le\sum_i\frac{s_i}{w_i^*}
+   =\kappa .
+\tag{11}
+</annotation></semantics></math><span class="equation-number">(11)</span></span> Every originally nonzero
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_i</annotation></semantics></math>
+has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">w_i^*&gt;0</annotation></semantics></math>.
+The derivative is valid even if the endpoint
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">w_i=0</annotation></semantics></math>.</p>
+<p>Restrict to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>,
+denote the compressed matrices by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>A</mi><mo accent="true">̂</mo></mover><mi>i</mi></msub><annotation encoding="application/x-tex">\widehat A_i</annotation></semantics></math>
+and keep the same notation for the trace-one matrix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mo>*</mo></msub><annotation encoding="application/x-tex">X_*</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>.
+It is positive definite there. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s_i=0</annotation></semantics></math>
+exactly when the compressed block is zero. We may project the weights to
+the remaining sensors using (4), with omitted coordinates extended by
+zero as needed. On
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+we have
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>∑</mo><mi>i</mi></munder><msub><mover><mi>A</mi><mo accent="true">̂</mo></mover><mi>i</mi></msub><mi>/</mi><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup><mo>=</mo><mi>κ</mi><msub><mi>I</mi><mi>U</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \sum_i\widehat A_i/w_i^*=\kappa I_U .
+</annotation></semantics></math> Use
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub><mo>=</mo><msub><mi>I</mi><mi>U</mi></msub></mrow><annotation encoding="application/x-tex">P_i=I_U</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>i</mi></msub><mo>=</mo><msubsup><mover><mi>A</mi><mo accent="true">̂</mo></mover><mi>i</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><mi>/</mi><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup></mrow><annotation encoding="application/x-tex">H_i=\widehat A_i^{1/2}/w_i^*</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>i</mi></msub><mo>=</mo><msubsup><mover><mi>A</mi><mo accent="true">̂</mo></mover><mi>i</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><mi>/</mi><mi>κ</mi></mrow><annotation encoding="application/x-tex">K_i=\widehat A_i^{1/2}/\kappa</annotation></semantics></math>
+on the retained sensors. Omitted sensors have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>i</mi></msub><mo>=</mo><msub><mi>K</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">H_i=K_i=0</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub><mo>=</mo><msub><mi>I</mi><mi>U</mi></msub></mrow><annotation encoding="application/x-tex">P_i=I_U</annotation></semantics></math>.
+The gains are unbiased. Write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mover><mi>D</mi><mo accent="true">̂</mo></mover><mn>2</mn></msup><mo>=</mo><msub><mi>D</mi><mi>G</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mover><mi>A</mi><mo accent="true">̂</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\widehat D^2=D_G(\widehat A)^2</annotation></semantics></math>.
+The directional worst-variance identity proves conservativeness of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mover><mi>D</mi><mo accent="true">̂</mo></mover><mn>2</mn></msup><mi>/</mi><msup><mi>κ</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>I</mi><mi>U</mi></msub></mrow><annotation encoding="application/x-tex">B=(\widehat D^2/\kappa^2)I_U</annotation></semantics></math>.
+For any inflation with positive information
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>w</mi><mi>i</mi></msub><msub><mover><mi>A</mi><mo accent="true">̂</mo></mover><mi>i</mi></msub><mi>/</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>w</mi><mi>i</mi><mo>*</mo></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">Q=\sum_i w_i\widehat A_i/(w_i^*)^2</annotation></semantics></math>,
+(11) gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>tr</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>X</mi><mo>*</mo></msub><mi>Q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>κ</mi></mrow><annotation encoding="application/x-tex">\operatorname{tr}(X_*Q)\le\kappa</annotation></semantics></math>.
+In a spectral basis for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>,
+Cauchy–Schwarz on the diagonal entries of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mo>*</mo></msub><annotation encoding="application/x-tex">X_*</annotation></semantics></math>
+gives
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>tr</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>X</mi><mo>*</mo></msub><msup><mi>Q</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><mo>tr</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>X</mi><mo>*</mo></msub><mi>Q</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo>≥</mo><mn>1</mn><mi>/</mi><mi>κ</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \operatorname{tr}(X_*Q^{-1})\ge
+ \big(\operatorname{tr}(X_*Q)\big)^{-1}\ge1/\kappa .
+\tag{12}
+</annotation></semantics></math><span class="equation-number">(12)</span></span> At
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>w</mi><mo>*</mo></msup><annotation encoding="application/x-tex">w^*</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mi>κ</mi><msub><mi>I</mi><mi>U</mi></msub></mrow><annotation encoding="application/x-tex">Q=\kappa I_U</annotation></semantics></math>
+attains this weighted trace bound. Finally apply the invertible state
+change
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mi>′</mi><mo>=</mo><msubsup><mi>X</mi><mo>*</mo><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><mi>x</mi></mrow><annotation encoding="application/x-tex">x&#39;=X_*^{1/2}x</annotation></semantics></math>.
+Ordinary traces of reported covariances in the new coordinates are their
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mo>*</mo></msub><annotation encoding="application/x-tex">X_*</annotation></semantics></math>-weighted
+traces in the old coordinates. The observation covariance uncertainty is
+unchanged and unbiasedness and conservativeness are preserved by this
+change of state. The trace ratio in the new model is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mi>/</mi><msup><mover><mi>D</mi><mo accent="true">̂</mo></mover><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\kappa/\widehat D^2</annotation></semantics></math>,
+which is at least the original mixed-to-directional ratio. Apply this to
+a maximizer in (10) to obtain the lower bound and attainment, since
+always
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi></mrow></msub><mo>≤</mo><msub><mi>C</mi><mo>≼</mo></msub></mrow><annotation encoding="application/x-tex">C_{\mathrm{tr}}\le C_{\preceq}</annotation></semantics></math>.
+Adding
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">\epsilon I</annotation></semantics></math>
+to all
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_i</annotation></semantics></math>
+perturbs the ratio continuously and makes every compressed block
+positive definite. In that case each square
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>H</mi><mi>i</mi></msub><annotation encoding="application/x-tex">H_i</annotation></semantics></math>
+in the transformed state coordinates is invertible. Inverting it on the
+corresponding observation yields
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>i</mi></msub><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">H_i=I</annotation></semantics></math>,
+transforms the marginal covariance by congruence and preserves its
+positive definiteness and all graph constraints.</p>
+<p><em>Exact computation.</em> The predicate that the right side of (10)
+is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+has a finite formula over rational real polynomials with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+a free variable. Existentially choose the normalized tuple,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>≽</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">X\succeq0</annotation></semantics></math>
+of trace one, a lifted witness for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>∈</mo><msub><mi>𝒯</mi><mi>G</mi></msub></mrow><annotation encoding="application/x-tex">z\in\mathcal T_G</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>i</mi></msub><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">u_i\ge0</annotation></semantics></math>
+satisfying
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>u</mi><mi>i</mi><mn>2</mn></msubsup><mo>=</mo><msub><mi>z</mi><mi>i</mi></msub><mo>tr</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>i</mi></msub><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">u_i^2=z_i\operatorname{tr}(A_iX)</annotation></semantics></math>.
+For every unit
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>,
+every lifted witness for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mi>′</mi><mo>∈</mo><msub><mi>𝒯</mi><mi>G</mi></msub></mrow><annotation encoding="application/x-tex">z&#39;\in\mathcal T_G</annotation></semantics></math>,
+and every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>i</mi></msub><mi>′</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">u_i&#39;\ge0</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>u</mi><mi>i</mi></msub><mi>′</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><msub><mi>z</mi><mi>i</mi></msub><mi>′</mi><msup><mi>v</mi><mi>⊤</mi></msup><msub><mi>A</mi><mi>i</mi></msub><mi>v</mi></mrow><annotation encoding="application/x-tex">(u_i&#39;)^2=z_i&#39;v^\top A_i v</annotation></semantics></math>,
+require
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>u</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>≥</mo><mi>c</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>u</mi><mi>i</mi></msub><mi>′</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(\sum_i u_i)^2\ge c(\sum_i u_i&#39;)^2</annotation></semantics></math>.
+Positive semidefiniteness is a finite set of principal-minor
+inequalities. Equation (3) proves equivalence to the desired predicate.
+Real quantifier elimination produces its finite endpoint as a real
+algebraic number. This computation places no polynomial-time bound in
+the number of sensors. Formula (10) also gives induced-subgraph
+monotonicity by adding zero matrices. For example, on two independent
+edges the two orthonormal frames at relative angle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\pi/4</annotation></semantics></math>
+give
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mi>G</mi><mn>2</mn></msubsup><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">M_G^2=4</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup><mo>=</mo><mn>2</mn><mo>+</mo><msqrt><mn>2</mn></msqrt></mrow><annotation encoding="application/x-tex">D_G^2=2+\sqrt 2</annotation></semantics></math>.
+For the latter identity the extra directional term is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo>sin</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>+</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo>cos</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">|\sin(2\theta)|+|\cos(2\theta)|</annotation></semantics></math>;
+for the former,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mi>I</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">X=I/2</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">w_i=1/2</annotation></semantics></math>
+show matching lower and upper bounds. The trace price of that fixed
+graph is therefore at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>+</mo><msqrt><mn>2</mn></msqrt><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">4/(2+\sqrt 2)</annotation></semantics></math>.</p>
+<h2 id="overlapping-cliques-and-perfect-graphs">7. Overlapping cliques
+and perfect graphs</h2>
+<p><strong>Theorem 4.</strong> Clique inequalities
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>≥</mo><mn>0</mn><mo>,</mo><mspace width="2.0em"></mspace><munder><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>C</mi></mrow></munder><msub><mi>w</mi><mi>i</mi></msub><mo>≤</mo><mn>1</mn><mspace width="1.0em"></mspace><mrow><mtext mathvariant="normal">for every clique </mtext><mspace width="0.333em"></mspace></mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">
+ w\ge0,\qquad \sum_{i\in C}w_i\le1
+       \quad\text{for every clique }C
+\tag{13}
+</annotation></semantics></math><span class="equation-number">(13)</span></span> characterize safety exactly if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is perfect. These are also exactly the graphs where every directional
+worst scalar variance can be attained by a sum of positive semidefinite
+rank-one matrices supported on individual cliques. Every perfect graph
+with clique number at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>κ</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">C(G)\le\kappa_k</annotation></semantics></math>
+of Theorem 2. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">k\ge2</annotation></semantics></math>
+the bound is sharp over the class even if the graph is connected, has
+intersecting maximal cliques, and every observation is an invertible
+full-state observation.</p>
+<p><em>Safety.</em> In the usual theta body convention with zeros on
+edges,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝒯</mi><mi>G</mi></msub><mo>=</mo><mo>TH</mo><mrow><mo stretchy="true" form="prefix">(</mo><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal T_G=\operatorname{TH}(\bar G)</annotation></semantics></math>,
+so the theta-body antiblocker identity gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝒲</mi><mi>G</mi></msub><mo>=</mo><mo>TH</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal W_G=\operatorname{TH}(G)</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is perfect, the stable-set polytope and the polytope (13) coincide, and
+the theta body lies between them. Conversely, if the safe set equals
+(13), its theta body is polyhedral, which characterizes perfect graphs
+by the theorem of Grötschel, Lovász and Schrijver. For a concrete
+failure on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mn>5</mn></msub><annotation encoding="application/x-tex">C_5</annotation></semantics></math>,
+the weights
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">w_i=1/2</annotation></semantics></math>
+meet the clique inequalities, whereas
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>I</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><msqrt><mn>5</mn></msqrt><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>A</mi><msub><mi>C</mi><mn>5</mn></msub></msub><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">R=I+(\sqrt 5-1)A_{C_5}/2</annotation></semantics></math>
+is an admissible correlation matrix with largest eigenvalue
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>5</mn></msqrt><mo>&gt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\sqrt 5&gt;2</annotation></semantics></math>.
+Its eigenvalues follow from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>cos</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>π</mi><mi>j</mi><mi>/</mi><mn>5</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">2\cos(2\pi j/5)</annotation></semantics></math>,
+the eigenvalues of the cycle adjacency matrix. <a
+href="https://doi.org/10.1016/0095-8956(86)90087-0">Grötschel, Lovász
+and Schrijver</a> · <a
+href="https://doi.org/10.1007/s10107-016-1041-3">de Carli Silva and
+Tunçel</a></p>
+<p><em>Directional representation.</em> Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mrow><mi>C</mi><mi>i</mi></mrow></msub><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">d_{Ci}\ge0</annotation></semantics></math>
+for every clique
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+containing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>,
+including the singletons, and impose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mrow><mi>C</mi><mo>∋</mo><mi>i</mi></mrow></msub><msub><mi>d</mi><mrow><mi>C</mi><mi>i</mi></mrow></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\sum_{C\ni i}d_{Ci}=1</annotation></semantics></math>.
+Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>F</mi><mo accent="true">̃</mo></mover><mi>G</mi></msub><annotation encoding="application/x-tex">\widetilde F_G</annotation></semantics></math>,
+the worst quadratic form among sums of clique-supported positive
+semidefinite rank-one matrices with unit total diagonal, is
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>F</mi><mo accent="true">̃</mo></mover><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>max</mo><mi>d</mi></munder><munder><mo>∑</mo><mi>C</mi></munder><msup><mrow><mo stretchy="true" form="prefix">(</mo><munder><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>C</mi></mrow></munder><msqrt><mrow><msub><mi>s</mi><mi>i</mi></msub><msub><mi>d</mi><mrow><mi>C</mi><mi>i</mi></mrow></msub></mrow></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \widetilde F_G(s)=\max_d\sum_C
+                \left(\sum_{i\in C}\sqrt{s_i d_{Ci}}\right)^2 .
+\tag{14}
+</annotation></semantics></math><span class="equation-number">(14)</span></span> For nonnegative direction coordinates a
+sign choice with every summand nonnegative suffices to maximize. Put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi></mrow></msub><mo>=</mo><mo>conv</mo><mo stretchy="false" form="prefix">{</mo><msub><mn>1</mn><mi>C</mi></msub><mo>:</mo><mi>C</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> a clique</mtext></mrow><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">T_{\mathrm{cl}}=\operatorname{conv}\{1_C:C\text{ a clique}\}</annotation></semantics></math>,
+including the empty clique. The value of (14) equals
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>max</mo><mrow><mi>z</mi><mo>∈</mo><msub><mi>T</mi><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi></mrow></msub></mrow></msub><msub><mo>∑</mo><mi>i</mi></msub><msqrt><mrow><msub><mi>s</mi><mi>i</mi></msub><msub><mi>z</mi><mi>i</mi></msub></mrow></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><annotation encoding="application/x-tex">(\max_{z\in T_{\mathrm{cl}}}\sum_i\sqrt{s_i z_i})^2</annotation></semantics></math>.
+To see the upper bound, apply Cauchy–Schwarz within each clique at
+positive weights satisfying (13), then sum over cliques. This bounds
+(14) by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>inf</mo><mi>w</mi></msub><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>s</mi><mi>i</mi></msub><mi>/</mi><msub><mi>w</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\inf_w\sum_i s_i/w_i</annotation></semantics></math>
+over those weights. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s&gt;0</annotation></semantics></math>,
+a maximizing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+has positive coordinates, by the same square-root improvement argument
+as in Section 2 using singleton indicators. Its derivative shows that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub><mo>=</mo><msqrt><mrow><msub><mi>s</mi><mi>i</mi></msub><mi>/</mi><msub><mi>z</mi><mi>i</mi></msub></mrow></msqrt><mi>/</mi><msub><mo>∑</mo><mi>j</mi></msub><msqrt><mrow><msub><mi>s</mi><mi>j</mi></msub><msub><mi>z</mi><mi>j</mi></msub></mrow></msqrt></mrow><annotation encoding="application/x-tex">w_i=\sqrt{s_i/z_i}/\sum_j\sqrt{s_j z_j}</annotation></semantics></math>
+satisfies (13) and attains the scalar infimum at the squared maximum.
+For the lower bound write this
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><msub><mo>∑</mo><mi>C</mi></msub><msub><mi>p</mi><mi>C</mi></msub><msub><mn>1</mn><mi>C</mi></msub></mrow><annotation encoding="application/x-tex">z=\sum_C p_C1_C</annotation></semantics></math>
+as a convex combination. Assign
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mrow><mi>C</mi><mi>i</mi></mrow></msub><mo>=</mo><msub><mi>p</mi><mi>C</mi></msub><mi>/</mi><msub><mi>z</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">d_{Ci}=p_C/z_i</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>∈</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">i\in C</annotation></semantics></math>,
+and apply Jensen to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>C</mi></msub><msub><mi>p</mi><mi>C</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>C</mi></mrow></msub><msqrt><mrow><msub><mi>s</mi><mi>i</mi></msub><mi>/</mi><msub><mi>z</mi><mi>i</mi></msub></mrow></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\sum_C p_C(\sum_{i\in C}\sqrt{s_i/z_i})^2</annotation></semantics></math>.
+This gives the squared maximum as a lower bound. The identity extends to
+nonnegative
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+by continuity on the compact sets in each representation.</p>
+<p>For a perfect graph, the polytope
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi></mrow></msub><annotation encoding="application/x-tex">T_{\mathrm{cl}}</annotation></semantics></math>
+equals
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝒯</mi><mi>G</mi></msub><annotation encoding="application/x-tex">\mathcal T_G</annotation></semantics></math>
+because the complement of a perfect graph is perfect. Thus (3) gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>G</mi></msub><mo>=</mo><msub><mover><mi>F</mi><mo accent="true">̃</mo></mover><mi>G</mi></msub></mrow><annotation encoding="application/x-tex">F_G=\widetilde F_G</annotation></semantics></math>.
+Conversely, if these two functions coincide, (14) shows that every
+positive clique-feasible weight bounds every nonnegative directional
+variance. Sign invariance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ℛ</mi><mi>G</mi></msub><annotation encoding="application/x-tex">\mathcal R_G</annotation></semantics></math>
+gives the same inequality for arbitrary directions, so the weight is
+safe. Taking a limit gives safety for all clique-feasible weights. Every
+safe weight already meets the clique inequalities by considering
+perfectly correlated scalar errors on the clique, so the safety
+characterization implies perfection.</p>
+<p><em>Sharp factor.</em> For any mixed witness
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+of trace one put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub><mo>=</mo><mo>tr</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>i</mi></msub><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">s_i=\operatorname{tr}(A_iX)</annotation></semantics></math>
+and fix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mrow><mi>C</mi><mi>i</mi></mrow></msub><annotation encoding="application/x-tex">d_{Ci}</annotation></semantics></math>
+maximizing (14). At a Gaussian
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+with covariance
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>,
+the same assignment
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+is feasible in (14). Apply the cross-product estimate from Section 5
+with each energy scaled by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mrow><mi>C</mi><mi>i</mi></mrow></msub><annotation encoding="application/x-tex">d_{Ci}</annotation></semantics></math>.
+The diagonal contribution is exact and in each clique is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">1/k</annotation></semantics></math>
+times the whole squared sum at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>.
+Consequently
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mi>G</mi><mn>2</mn></msubsup><mspace width="0.222em"></mspace><mo>≥</mo><mspace width="0.222em"></mspace><mi>𝔼</mi><msub><mi>F</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>g</mi><mi>⊤</mi></msup><msub><mi>A</mi><mi>i</mi></msub><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.222em"></mspace><mo>≥</mo><mspace width="0.222em"></mspace><msubsup><mi>κ</mi><mi>k</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><munder><mo>∑</mo><mi>C</mi></munder><msup><mrow><mo stretchy="true" form="prefix">(</mo><munder><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>C</mi></mrow></munder><msqrt><mrow><msub><mi>s</mi><mi>i</mi></msub><msub><mi>d</mi><mrow><mi>C</mi><mi>i</mi></mrow></msub></mrow></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><msubsup><mi>κ</mi><mi>k</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><msub><mi>F</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ D_G^2\ \ge\ \mathbb E F_G((g^\top A_i g)_i)
+ \ \ge\ \kappa_k^{-1}\sum_C
+       \left(\sum_{i\in C}\sqrt{s_i d_{Ci}}\right)^2
+ = \kappa_k^{-1}F_G(s).
+</annotation></semantics></math> The first inequality uses
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔼</mi><mo stretchy="false" form="postfix">∥</mo><mi>g</mi><msup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mathbb E\|g\|^2=1</annotation></semantics></math>.
+Theorem 3 gives the claimed guarantee. For sharpness, start with the
+arbitrarily large finite disjoint unions of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-cliques
+in Theorem 2. Attach a new vertex to one vertex in each clique and
+connect the new vertices by a path. With at least two original cliques
+the graph is connected and has intersecting maximal cliques. All the new
+edges are bridges, so every induced cycle lies in an original clique.
+The graph is chordal, hence perfect, and its largest clique still has
+size
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.
+The old union is an induced subgraph, which preserves its lower bound.
+The full-state approximation in Theorem 3 allows all the added sensors
+to be full-state as well. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k=1</annotation></semantics></math>,
+the exact factor is one by independence.</p>
+<h2 id="replicating-a-correlation-graph">8. Replicating a correlation
+graph</h2>
+<p>For a finite graph
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi>G</mi></mrow><annotation encoding="application/x-tex">NG</annotation></semantics></math>
+denote the disjoint union of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+copies. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Δ</mi><mi>m</mi></msub><annotation encoding="application/x-tex">\Delta_m</annotation></semantics></math>
+be the probability simplex and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ℰ</mi><mi>m</mi></msub><annotation encoding="application/x-tex">\mathcal E_m</annotation></semantics></math>
+the real correlation matrices on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+coordinates without any zero constraints.</p>
+<p><strong>Theorem 5.</strong> For every graph
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>,
+including imperfect graphs,
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>lim</mo><mrow><mi>N</mi><mo>→</mo><mi>∞</mi></mrow></munder><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mi>G</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>max</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>s</mi><mo>∈</mo><msub><mi>Δ</mi><mi>m</mi></msub></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>T</mi><mo>∈</mo><msub><mi>ℰ</mi><mi>m</mi></msub></mrow></mtd></mtr></mtable></munder><mfrac><mrow><msub><mi>F</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><msub><mi>𝔼</mi><mrow><mi>Z</mi><mo>∼</mo><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>T</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msub><msub><mi>F</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>s</mi><mi>i</mi></msub><msubsup><mi>Z</mi><mi>i</mi><mn>2</mn></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>=</mo><mo>:</mo><mi>Γ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \lim_{N\to\infty} C(NG)=
+ \max_{\substack{s\in\Delta_m\\ T\in\mathcal E_m}}
+ \frac{F_G(s)}
+ {\mathbb E_{Z\sim N(0,T)} F_G((s_i Z_i^2)_i)}=:\Gamma(G).
+\tag{15}
+</annotation></semantics></math><span class="equation-number">(15)</span></span> The limit is unchanged if the state
+dimension is restricted to at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>,
+or if in addition all observations are required to be full-state with
+positive-definite marginals. For a perfect graph it equals
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>κ</mi><mrow><mi>ω</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msub><annotation encoding="application/x-tex">\kappa_{\omega(G)}</annotation></semantics></math>.</p>
+<p>The denominator is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>s</mi><mi>i</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\sum_i s_i=1</annotation></semantics></math>
+because the independent scalar covariance is allowed. Both numerator and
+denominator are continuous in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo>,</mo><mi>T</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(s,T)</annotation></semantics></math>.
+For the denominator, take
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mo>=</mo><msup><mi>T</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msub><mi>Z</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">Z=T^{1/2}Z_0</annotation></semantics></math>
+with standard
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Z</mi><mn>0</mn></msub><annotation encoding="application/x-tex">Z_0</annotation></semantics></math>,
+use continuity of the positive semidefinite square root and dominate by
+a constant times
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><msub><mi>Z</mi><mn>0</mn></msub><msup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\|Z_0\|^2</annotation></semantics></math>.
+Here
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>s</mi><mi>i</mi></msub><mo>≤</mo><msub><mi>F</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>m</mi><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>s</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\sum_i s_i\le F_G(s)\le m\sum_i s_i</annotation></semantics></math>.
+Thus the maximum exists. Induced monotonicity makes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mi>G</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">C(NG)</annotation></semantics></math>
+nondecreasing.</p>
+<p><em>Upper bound.</em> For trace-one
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>≽</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">X\succeq0</annotation></semantics></math>
+and any tuple
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+on one copy put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mi>i</mi></msub><mo>=</mo><msup><mi>X</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msub><mi>A</mi><mi>i</mi></msub><msup><mi>X</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">Q_i=X^{1/2}A_i X^{1/2}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub><mo>=</mo><mo>tr</mo><msub><mi>Q</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">s_i=\operatorname{tr}Q_i</annotation></semantics></math>,
+and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Z</mi><mn>0</mn></msub><annotation encoding="application/x-tex">Z_0</annotation></semantics></math>
+be standard normal in its state dimension. The map
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>Q</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><mo>↦</mo><mi>𝔼</mi><msub><mi>F</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>Z</mi><mn>0</mn><mi>⊤</mi></msubsup><msub><mi>Q</mi><mi>i</mi></msub><msub><mi>Z</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+ (Q_i)_i\longmapsto
+ \mathbb E F_G((Z_0^\top Q_i Z_0)_i)
+</annotation></semantics></math> is jointly concave by (9). Each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Q</mi><mi>i</mi></msub><annotation encoding="application/x-tex">Q_i</annotation></semantics></math>
+is a convex combination of rank-one matrices
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub><msub><mi>u</mi><mi>i</mi></msub><msubsup><mi>u</mi><mi>i</mi><mi>⊤</mi></msubsup></mrow><annotation encoding="application/x-tex">s_i u_i u_i^\top</annotation></semantics></math>
+at the same trace, with the zero matrix when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s_i=0</annotation></semantics></math>.
+Taking product combinations across sensors, the expectation at the
+original tuple is at least the minimum of these rank-one expectations.
+At each rank-one tuple the projections
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>u</mi><mi>i</mi><mi>⊤</mi></msubsup><msub><mi>Z</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">u_i^\top Z_0</annotation></semantics></math>
+have some correlation matrix in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ℰ</mi><mi>m</mi></msub><annotation encoding="application/x-tex">\mathcal E_m</annotation></semantics></math>,
+independent of the constraints on the sensor errors. By (15)’s maximand
+and homogeneity, each such expectation is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>Γ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F_G(s)/\Gamma(G)</annotation></semantics></math>.
+Across disjoint copies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mrow><mi>N</mi><mi>G</mi></mrow></msub><annotation encoding="application/x-tex">F_{NG}</annotation></semantics></math>
+adds the copy objectives because the admissible scalar correlation
+matrix is block diagonal. Apply the inequality on each copy with the
+same
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><msup><mi>X</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msub><mi>Z</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">g=X^{1/2}Z_0</annotation></semantics></math>.
+Directional maximality gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔼</mi><msub><mi>F</mi><mrow><mi>N</mi><mi>G</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>g</mi><mi>⊤</mi></msup><msub><mi>A</mi><mi>i</mi></msub><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msubsup><mi>D</mi><mrow><mi>N</mi><mi>G</mi></mrow><mn>2</mn></msubsup><mi>𝔼</mi><mo stretchy="false" form="postfix">∥</mo><mi>g</mi><msup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msup><mo>=</mo><msubsup><mi>D</mi><mrow><mi>N</mi><mi>G</mi></mrow><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\mathbb E F_{NG}((g^\top A_i g)_i)\le D_{NG}^2\mathbb E\|g\|^2=D_{NG}^2</annotation></semantics></math>.
+Maximizing the resulting bound over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>N</mi><mi>G</mi></mrow><mn>2</mn></msubsup><mo>≤</mo><mi>Γ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo stretchy="true" form="postfix">)</mo></mrow><msubsup><mi>D</mi><mrow><mi>N</mi><mi>G</mi></mrow><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">M_{NG}^2\le \Gamma(G)D_{NG}^2</annotation></semantics></math>.</p>
+<p><em>Matching construction.</em> Choose a maximizing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo>,</mo><mi>T</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(s,T)</annotation></semantics></math>
+in (15). Write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mo stretchy="false" form="prefix">⟨</mo><msub><mi>u</mi><mi>i</mi></msub><mo>,</mo><msub><mi>u</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">T_{ij}=\langle u_i,u_j\rangle</annotation></semantics></math>
+with unit vectors in dimension
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>T</mi></msub><mo>=</mo><mo>rank</mo><mi>T</mi><mo>≤</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">d_T=\operatorname{rank} T\le m</annotation></semantics></math>.
+Independently rotate this tuple by Haar orthogonal
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>U</mi><mo>ℓ</mo></msub><annotation encoding="application/x-tex">U_\ell</annotation></semantics></math>
+for copy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>ℓ</mo><annotation encoding="application/x-tex">\ell</annotation></semantics></math>,
+and set
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mrow><mo>ℓ</mo><mi>i</mi></mrow></msub><mo>=</mo><msub><mi>d</mi><mi>T</mi></msub><msub><mi>s</mi><mi>i</mi></msub><mspace width="0.167em"></mspace><msub><mi>U</mi><mo>ℓ</mo></msub><msub><mi>u</mi><mi>i</mi></msub><msubsup><mi>u</mi><mi>i</mi><mi>⊤</mi></msubsup><msubsup><mi>U</mi><mo>ℓ</mo><mi>⊤</mi></msubsup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ A_{\ell i}=d_T s_i\,U_\ell u_i u_i^\top U_\ell^\top .
+</annotation></semantics></math> The mixed witness
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mi>/</mi><msub><mi>d</mi><mi>T</mi></msub></mrow><annotation encoding="application/x-tex">I/d_T</annotation></semantics></math>
+gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>N</mi><mi>G</mi></mrow><mn>2</mn></msubsup><mo>≥</mo><mi>N</mi><msub><mi>F</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">M_{NG}^2\ge NF_G(s)</annotation></semantics></math>.
+For every fixed unit direction
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>,
+the expected directional contribution of one copy is the denominator in
+(15). Indeed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>U</mi><mo>ℓ</mo><mi>⊤</mi></msubsup><mi>v</mi></mrow><annotation encoding="application/x-tex">U_\ell^\top v</annotation></semantics></math>
+has the distribution of a uniform direction on the unit sphere. Multiply
+it by the independent Gaussian radial length whose mean square is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>T</mi></msub><annotation encoding="application/x-tex">d_T</annotation></semantics></math>
+and use homogeneity of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>G</mi></msub><annotation encoding="application/x-tex">F_G</annotation></semantics></math>.
+The empirical directional means converge uniformly on the sphere to this
+expectation for a sequence of rotations: the strong law gives
+simultaneous convergence on a countable dense set, and the functions are
+uniformly equicontinuous because the fixed quadratic forms and
+continuous
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>G</mi></msub><annotation encoding="application/x-tex">F_G</annotation></semantics></math>
+have uniform moduli on their compact domains. It follows that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mrow><mi>N</mi><mi>G</mi></mrow><mn>2</mn></msubsup><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">D_{NG}^2/N</annotation></semantics></math>
+converges to that denominator. Theorem 3 converts the ratio to optimized
+trace and uniform Loewner factors in dimension at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>T</mi></msub><annotation encoding="application/x-tex">d_T</annotation></semantics></math>,
+with the same full-state approximation. This proves (15). For a perfect
+graph, disjoint copies remain perfect, so Theorem 4 gives the upper
+bound
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>κ</mi><mrow><mi>ω</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msub><annotation encoding="application/x-tex">\kappa_{\omega(G)}</annotation></semantics></math>.
+For the lower bound take
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+uniform on one maximum clique and zero elsewhere, and independent
+Gaussian coordinates on that clique. The squared-sum expectation then
+gives exactly
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>κ</mi><mrow><mi>ω</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msub><annotation encoding="application/x-tex">\kappa_{\omega(G)}</annotation></semantics></math>.</p>
+<h2 id="pooling-and-relation-to-prior-fusion-bounds">9. Pooling and
+relation to prior fusion bounds</h2>
+<p>A sensor can be cloned into mutually uncorrelated sensors with the
+same neighbors without changing the worst constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>G</mi><mo>;</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">C(G;n)</annotation></semantics></math>
+for any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+More generally, let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>G</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">G[G_i]</annotation></semantics></math>
+be the graph obtained by replacing each vertex
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+by a nonempty graph
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>G</mi><mi>i</mi></msub><annotation encoding="application/x-tex">G_i</annotation></semantics></math>
+and joining all pairs across modules
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i,j</annotation></semantics></math>
+precisely when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mi>j</mi></mrow><annotation encoding="application/x-tex">ij</annotation></semantics></math>
+is an edge of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.
+For a vector
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+of nonnegative coordinates grouped by modules,
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>G</mi><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>G</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">]</mo></mrow></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>f</mi><mi>G</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><msub><mi>G</mi><mi>i</mi></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ f_{G[G_i]}(a)=f_G((f_{G_i}(a_i))_i).
+\tag{16}
+</annotation></semantics></math><span class="equation-number">(16)</span></span> For the upper bound take a Gram
+representation for the whole graph and sum the weighted vectors in each
+module. Module sums for nonadjacent modules are orthogonal, and the norm
+of each sum is bounded by its
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><msub><mi>G</mi><mi>i</mi></msub></msub><annotation encoding="application/x-tex">f_{G_i}</annotation></semantics></math>.
+Coordinates that vanish can be given fresh orthogonal unit vectors, and
+monotonicity of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>G</mi></msub><annotation encoding="application/x-tex">f_G</annotation></semantics></math>
+follows from (3). For the lower bound take maximizing representations
+inside the modules and for the base graph. Map each normalized module
+sum to the corresponding base vector by a linear isometry, putting the
+residual components in private mutually orthogonal spaces off the span
+of the base vectors. This preserves all required orthogonalities and
+attains the base maximum. A module with zero norm has all its direction
+coordinates zero and can use a fresh representation. For an uncorrelated
+module,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><msub><mi>G</mi><mi>i</mi></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo stretchy="false" form="postfix">∥</mo><msub><mi>a</mi><mi>i</mi></msub><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">f_{G_i}(a_i)=\|a_i\|_2</annotation></semantics></math>,
+so (16) identifies both matrix objectives with those of the base graph
+after replacing the module matrices by their sum. This establishes
+equality of the factors via Theorem 3, using zero matrices to represent
+any base tuple in the enlarged graph and the same equality for each
+fixed state dimension before taking the supremum.</p>
+<p>General conservative linear unbiased estimation under partially
+specified covariance is established. Partitioned covariance intersection
+uses known cross-covariance information. Overlapping covariance
+intersection handles supplied bounds on overlapping projected covariance
+blocks. In the cited author version, Theorem 1 proves equivalence
+between the original problem (6) and its inverse-covariance formulation
+(9), Theorem 2 gives the necessary and sufficient feasibility condition,
+and Corollary 2 provides a semidefinite program for the Kahan-family
+optimum. The companion paper specializes family-optimal semidefinite
+formulations to several covariance intersection variants. Here the
+uncertainty is the full positive semidefinite cone with fixed marginals
+and exact graph zeros. Theorems 3 and 5 compute the sharp cross-instance
+loss of the whole safe scalar marginal-inflation family against
+optimization over unrestricted conservative unbiased gains. In
+particular the ordinary trace loss is achieved by an actual observation
+model, equates to the uniform matrix factor, and is stable at a bounded
+state dimension. The graph-specific optimization and the exact Gaussian
+replication formula answer different questions from computing an optimum
+within a chosen family for a supplied observation model. Split
+covariance intersection for two estimators can use further known
+decomposition of the errors. The complete-graph two-source theorem and
+the three-source counterexample used for comparison in Section 4 are
+established results. <a
+href="https://doi.org/10.1109/TSP.2022.3179841">Forsling et al.</a> · <a
+href="https://doi.org/10.1109/TAC.2026.3728727">Pedroso, Batista and
+Heemels, overlapping covariance intersection</a> · <a
+href="https://doi.org/10.1109/LCSYS.2026.3698437">Pedroso, Heemels and
+Batista, family-optimal fusion</a> · <a
+href="https://doi.org/10.1109/TAC.2025.3530854">Cros et al.</a> · <a
+href="https://doi.org/10.1109/LSP.2015.2390417">Reinhardt et al.</a> ·
+<a href="https://doi.org/10.2478/amcs-2018-0040">Ajgl and Straka</a></p>
+<p>The theta-body identities, semidefinite extreme-point rank argument
+and Gaussian product estimate used here have classical precedents.
+Positive semidefinite Grothendieck problems optimize a fixed quadratic
+objective over Gram matrices with rank constraints. In (15) the graph
+response is itself a maximum over admissible covariance matrices and the
+Gaussian projection correlation is optimized separately. Theorem 3 gives
+a finite computation for each graph. Simple closed forms for the factors
+of many individual graphs, including the complete graph on six sensors,
+remain to be determined. <a
+href="https://doi.org/10.1109/TIT.1979.1055985">Lovász</a> · <a
+href="https://doi.org/10.1287/moor.23.2.339">Pataki</a> · <a
+href="https://doi.org/10.1007/978-3-642-14165-2_4">Briët, de Oliveira
+Filho and Vallentin</a></p>
+</main></body></html>

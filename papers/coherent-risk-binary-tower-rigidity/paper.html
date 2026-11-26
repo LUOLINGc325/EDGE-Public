@@ -1,0 +1,1191 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Computing the additive discrepancy between flat and nested coherent risk</title>
+<style>body{max-width:76ch;margin:2rem auto;padding:0 1rem;font:1.1rem/1.55 Georgia,serif}h1,h2,h3{line-height:1.25}pre,math[display="block"]{max-width:100%;overflow-x:auto}.equation{display:flex;align-items:center;justify-content:space-between;gap:1em;overflow-x:auto}.equation>math{flex:1 0 auto}.equation-number{white-space:nowrap}pre{padding:.8rem;background:#f1f2f3}a{overflow-wrap:anywhere}</style></head>
+<body><main>
+<h1
+id="computing-the-additive-discrepancy-between-flat-and-nested-coherent-risk">Computing
+the additive discrepancy between flat and nested coherent risk</h1>
+<h2 id="abstract">Abstract</h2>
+<p>Given one finite scenario tree and specified risk functionals, we
+compute how far nested evaluation can differ from a flat evaluation of
+the same terminal loss. For arbitrary law-invariant coherent risk
+functionals with the Fatou property, bounded branching admits a
+two-sided additive approximation scheme with certified values and
+witness losses. Its probability resolution depends on the bit length of
+the masses. The scheme relies on a comparison of risks under
+multiplicatively close tail probabilities, which also applies when the
+risk is sensitive to arbitrarily small positive masses. For mean–maximum
+risks on an arbitrary tree, the flat-minus-nested discrepancy is exactly
+computable by one path linear program per leaf. A common mean–maximum
+preference gives a closed product formula with singleton witnesses. In
+the opposite direction a one-dimensional tree algorithm gives a fully
+polynomial additive approximation scheme for arbitrary weights, and
+exact polynomial computation for equiprobable leaves.</p>
+<h2 id="reader-guide">Reader guide</h2>
+<p>A scenario tree represents information revealed over time. Flat risk
+evaluates the distribution of the final loss once. Nested risk first
+evaluates each conditional distribution and then evaluates the resulting
+numbers at the preceding stage. An additive discrepancy bounds how much
+this change in evaluation can alter any loss between zero and one. The
+two directions matter when the nested evaluation is used as a
+conservative or an optimistic substitute for the flat one.</p>
+<p>For a concrete example, take two stages with two equally likely
+children at every node and use half the mean plus half the maximum at
+every step. A loss of one on a single leaf and zero elsewhere has flat
+risk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mi>/</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">5/8</annotation></semantics></math>
+and nested risk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>3</mn><mi>/</mi><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>9</mn><mi>/</mi><mn>16</mn></mrow><annotation encoding="application/x-tex">(3/4)^2=9/16</annotation></semantics></math>.
+The global flat-minus-nested discrepancy is exactly
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>16</mn></mrow><annotation encoding="application/x-tex">1/16</annotation></semantics></math>
+by (5). For the reverse direction use a loss of one on three leaves and
+zero on the remaining leaf. Its flat and nested risks are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mi>/</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">7/8</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mi>/</mi><mn>16</mn></mrow><annotation encoding="application/x-tex">15/16</annotation></semantics></math>.
+Formula (11) certifies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>16</mn></mrow><annotation encoding="application/x-tex">1/16</annotation></semantics></math>
+as the global nested-minus-flat discrepancy as well.</p>
+<p>Section 2 discretizes losses and groups their tail probabilities by
+relative size. The comparison (1) shows why two such probability records
+give similar flat values even for preferences sensitive to rare
+outcomes. Section 3 handles the mean–maximum family by reducing the
+downward discrepancy to one path and the upward discrepancy to a search
+over events. Section 4 gives a closed product computation for the upward
+discrepancy when each layer repeats the same branching law. Appendix A
+studies uniform error bounds when the tree itself may vary.</p>
+<h2 id="fixed-tree-model">1. Fixed-tree model</h2>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+be a finite rooted tree with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+nodes, leaf set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℒ</mi><annotation encoding="application/x-tex">\mathcal L</annotation></semantics></math>
+and height
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>.
+Nominal conditional probabilities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>v</mi><mi>i</mi></mrow></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p_{vi} &gt; 0</annotation></semantics></math>
+at each interior node
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+sum to one over its children
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>.
+Write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>v</mi></msub><annotation encoding="application/x-tex">P_v</annotation></semantics></math>
+for the product of these probabilities along the path to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>,
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>o</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">P_o=1</annotation></semantics></math>
+at the root. Thus the unconditional probability of leaf
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>ℓ</mo><annotation encoding="application/x-tex">\ell</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mo>ℓ</mo></msub><annotation encoding="application/x-tex">P_\ell</annotation></semantics></math>.
+Unary nodes are allowed. All complexities below refer to an explicitly
+supplied tree. The probabilities are given as rationals when discussing
+bit complexity.</p>
+<p>At each interior node
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+fix a law-invariant coherent risk functional
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ρ</mi><mi>v</mi></msub><annotation encoding="application/x-tex">\rho_v</annotation></semantics></math>
+on bounded losses on a standard atomless probability space, with the
+Fatou property. We use the loss convention. Thus the functionals are
+monotone, normalized, translation equivariant, positively homogeneous
+and subadditive, and can evaluate any finite probability law. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msub><mi>X</mi><mo>ℓ</mo></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\le X_\ell\le1</annotation></semantics></math>,
+set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mo>ℓ</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>X</mi><mo>ℓ</mo></msub></mrow><annotation encoding="application/x-tex">N_\ell(X)=X_\ell</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>v</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>ρ</mi><mi>v</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>N</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><mo>;</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>p</mi><mrow><mi>v</mi><mi>i</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">N_v(X)=\rho_v((N_i(X))_i;(p_{vi})_i)</annotation></semantics></math>
+recursively. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><msub><mi>N</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">N=N_o</annotation></semantics></math>.
+Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>ρ</mi><mi>f</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>X</mi><mo>ℓ</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>ℓ</mo></msub><mo>;</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>P</mi><mo>ℓ</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>ℓ</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F(X)=\rho_f((X_\ell)_\ell;(P_\ell)_\ell)</annotation></semantics></math>
+be a fixed flat risk, with the same assumptions, for which
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mi>f</mi></msub><mo>=</mo><msub><mi>ρ</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">\rho_f=\rho_o</annotation></semantics></math>
+is permitted. Define
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Δ</mi><mo>+</mo></msub><mo>=</mo><munder><mo>max</mo><mrow><mi>X</mi><mo>∈</mo><msup><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><mi>ℒ</mi></msup></mrow></munder><mo stretchy="false" form="prefix">{</mo><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">}</mo><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>Δ</mi><mo>−</mo></msub><mo>=</mo><munder><mo>max</mo><mrow><mi>X</mi><mo>∈</mo><msup><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><mi>ℒ</mi></msup></mrow></munder><mo stretchy="false" form="prefix">{</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \Delta_+=\max_{X\in[0,1]^{\mathcal L}}\{N(X)-F(X)\},\qquad
+ \Delta_-=\max_{X\in[0,1]^{\mathcal L}}\{F(X)-N(X)\}.
+</annotation></semantics></math> Monotonicity and translation
+equivariance imply that each risk is 1-Lipschitz in the sup norm on
+losses at fixed probabilities. The same is true of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+by induction. Both maxima are attained and lie in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>.
+The errors are conditional on all the specified inputs. The zero-height
+case has two zero errors.</p>
+<p>For a general risk functional we allow an oracle for a finite law
+with rational losses and masses. Given a requested absolute precision,
+it returns a rational value within that precision. Oracle complexity is
+stated separately. In the mean–maximum model all operations use given
+rational coefficients and no general risk oracle.</p>
+<h2 id="two-sided-approximation-for-law-invariant-coherent-risk">2.
+Two-sided approximation for law-invariant coherent risk</h2>
+<p><strong>Theorem 1.</strong> For maximum branching
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+and rational accuracy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>ε</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\varepsilon\le1</annotation></semantics></math>,
+one can return a witness loss for each directed discrepancy, within
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+of its optimum, and intervals of width at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+containing both optimal values. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">H\ge1</annotation></semantics></math>,
+the number of oracle calls is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><msup><mi>B</mi><mrow><mi>b</mi><mi>J</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(n B^{bJ})</annotation></semantics></math>,
+where
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mo>=</mo><mo stretchy="false" form="prefix">⌈</mo><mn>8</mn><mi>/</mi><mi>ε</mi><mo stretchy="false" form="postfix">⌉</mo><mo>,</mo><mspace width="2.0em"></mspace><mi>B</mi><mo>=</mo><mi>O</mi><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ε</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><msub><mi>P</mi><mo>*</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>P</mi><mo>*</mo></msub><mo>=</mo><munder><mo>min</mo><mrow><mo>ℓ</mo><mo>∈</mo><mi>ℒ</mi></mrow></munder><msub><mi>P</mi><mo>ℓ</mo></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ J=\lceil 8/\varepsilon\rceil,\qquad
+ B=O\bigl(1+(H+1)\varepsilon^{-1}\log(1/P_*)\bigr),\qquad
+ P_*=\min_{\ell\in\mathcal L} P_\ell .
+</annotation></semantics></math> The requested evaluation precision is
+of order
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mi>/</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\varepsilon/(H+1)^2</annotation></semantics></math>.
+The arithmetic outside the oracles is polynomial in these bounds and the
+input bit length. In particular this is an additive polynomial-time
+approximation scheme for fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+and polynomial-time risk evaluators.</p>
+<p><strong>A tail comparison.</strong> Suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>,</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">U,V</annotation></semantics></math>
+lie in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>Pr</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mo>&gt;</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>a</mi><mo>Pr</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>V</mi><mo>&gt;</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Pr(U&gt;x)\le a\Pr(V&gt;x)</annotation></semantics></math>
+for every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x\ge0</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a\ge1</annotation></semantics></math>.
+Then
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>a</mi><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>V</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \rho(U)\le a\rho(V).
+ \tag{1}
+</annotation></semantics></math><span class="equation-number">(1)</span></span> To prove this, let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>B</mi><mn>0</mn></msub><annotation encoding="application/x-tex">B_0</annotation></semantics></math>
+be an independent Bernoulli variable of mean
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">1/a</annotation></semantics></math>.
+The tail condition gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mn>0</mn></msub><mi>U</mi><msub><mo>≤</mo><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi></mrow></msub><mi>V</mi></mrow><annotation encoding="application/x-tex">B_0 U\le_{\mathrm{st}}V</annotation></semantics></math>.
+Coupling by quantiles, monotonicity and law invariance give
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>B</mi><mn>0</mn></msub><mi>U</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>V</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\rho(B_0 U)\le\rho(V)</annotation></semantics></math>.
+Conditional averaging gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mi>/</mi><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>B</mi><mn>0</mn></msub><mi>U</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\rho(U/a)\le\rho(B_0 U)</annotation></semantics></math>.
+For finite
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>,
+this averaging property follows by using conditionally independent
+copies of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mn>0</mn></msub><mi>U</mi></mrow><annotation encoding="application/x-tex">B_0 U</annotation></semantics></math>
+given
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>,
+applying convexity to their averages and passing to the almost-sure
+conditional mean using Fatou. This finite case suffices below.
+Homogeneity now proves (1). If both tails are within a factor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+of each other, the two risk values differ by at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a-1</annotation></semantics></math>.
+In particular the comparison allows risk functionals with an atom at the
+essential supremum in a spectral representation.</p>
+<p><strong>The tables.</strong> Use the grid
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mi>/</mi><mi>J</mi><mo>,</mo><mi>…</mi><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{0,1/J,\ldots,1\}</annotation></semantics></math>.
+For a grid assignment in the subtree of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>,
+record the actual unconditional tail vector
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>v</mi></msub><msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>j</mi></msub><mo>=</mo><mi>P</mi><mo stretchy="false" form="prefix">{</mo><mo>ℓ</mo><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> below </mtext><mspace width="0.333em"></mspace></mrow><mi>v</mi><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>X</mi><mo>ℓ</mo></msub><mo>≥</mo><mi>j</mi><mi>/</mi><mi>J</mi><mo stretchy="false" form="postfix">}</mo><mo>,</mo><mspace width="2.0em"></mspace><mn>1</mn><mo>≤</mo><mi>j</mi><mo>≤</mo><mi>J</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ m_v(X)_j=P\{\ell\text{ below }v,\ X_\ell\ge j/J\},\qquad 1\le j\le J .
+ \tag{2}
+</annotation></semantics></math><span class="equation-number">(2)</span></span> These vectors add across children.
+Every positive coordinate lies between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mo>*</mo></msub><annotation encoding="application/x-tex">P_*</annotation></semantics></math>
+and one. Keep zero as one bin, and divide the positive range into bins
+with endpoints
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mo>*</mo></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>δ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">P_*(1+\delta)^k</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><mi>ε</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">[</mo><mn>16</mn><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\delta=\varepsilon/[16(H+1)]</annotation></semantics></math>.
+At any shared boundary assign consistently to one bin. A pair in the
+same bin has the same zero status, and positive entries differ by a
+factor at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>δ</mi></mrow><annotation encoding="application/x-tex">1+\delta</annotation></semantics></math>.
+There are at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+bins, and each key is a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>-tuple
+of bins.</p>
+<p>At each node keep two tables, one for each direction, with one
+representative per occupied key. Records contain their actual vector
+(2), a nested value estimate and pointers to the chosen children. At a
+leaf insert all
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">J+1</annotation></semantics></math>
+assignments. At an interior node generate every tuple of its children’s
+representatives in the same direction, add their vectors, and form the
+candidate’s nested value estimate by applying the node oracle to the
+estimates from those children. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Δ</mi><mo>+</mo></msub><annotation encoding="application/x-tex">\Delta_+</annotation></semantics></math>
+keep the largest estimated value in each key. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Δ</mi><mo>−</mo></msub><annotation encoding="application/x-tex">\Delta_-</annotation></semantics></math>
+keep the smallest. Ties may be resolved deterministically. Values may be
+clipped to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>.</p>
+<p><strong>Preservation under pruning.</strong> Let the height of the
+subtree at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>.
+For each grid assignment
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+below
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>,
+the appropriate table contains a representative
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>
+whose vector is within
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>δ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>h</mi></msup><annotation encoding="application/x-tex">(1+\delta)^h</annotation></semantics></math>
+coordinatewise in both directions, with zeros preserved, and such that
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><msub><mi>N</mi><mi>v</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>Y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><msub><mi>N</mi><mi>v</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>h</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>τ</mi></mtd><mtd columnalign="left" style="text-align: left"><mtext mathvariant="normal">in the upper table</mtext><mo>,</mo></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><msub><mi>N</mi><mi>v</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>Y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>N</mi><mi>v</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>h</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>τ</mi></mtd><mtd columnalign="left" style="text-align: left"><mtext mathvariant="normal">in the lower table</mtext><mi>.</mi></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">
+ \begin{cases}
+ N_v(Y)\ge N_v(X)-h(h+1)\tau &amp;\text{in the upper table},\\
+ N_v(Y)\le N_v(X)+h(h+1)\tau &amp;\text{in the lower table}.
+ \end{cases}
+ \tag{3}
+</annotation></semantics></math><span class="equation-number">(3)</span></span> Here
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>=</mo><mi>ε</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">[</mo><mn>64</mn><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\tau=\varepsilon/[64(H+1)^2]</annotation></semantics></math>
+is the absolute error of each evaluation. If needed an oracle answer can
+be requested at half precision and then rounded to a rational of
+controlled bit length.</p>
+<p>For each record its nested value estimate is within
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mi>τ</mi></mrow><annotation encoding="application/x-tex">h\tau</annotation></semantics></math>
+of its true value, by Lipschitz continuity along the actual recorded
+tree. To prove (3) use the induction representatives for the children.
+Summing the vectors preserves the common relative factor, because all
+coordinates are nonnegative. Monotonicity and translation at the parent
+transfer the children’s one-sided value errors with a maximum over the
+children. Replacing the resulting candidate by its retained
+representative in the same key loses at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>h</mi><mi>τ</mi></mrow><annotation encoding="application/x-tex">2h\tau</annotation></semantics></math>
+in the selected direction and introduces at most one more factor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>δ</mi></mrow><annotation encoding="application/x-tex">1+\delta</annotation></semantics></math>
+in the vectors. The error recursion
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>h</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>h</mi><mi>τ</mi><mo>+</mo><mn>2</mn><mi>h</mi><mi>τ</mi><mo>=</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>h</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>τ</mi></mrow><annotation encoding="application/x-tex">(h-1)h\tau+2h\tau=h(h+1)\tau</annotation></semantics></math>
+proves (3). The leaf assertion is exact.</p>
+<p>At the root compare the estimated values of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>Y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>Y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">N(Y)-F(Y)</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>Y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>Y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F(Y)-N(Y)</annotation></semantics></math>
+over the respective records. The flat risk is evaluated directly from
+the actual grid tail vector. Its evaluation error is at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>,
+so the estimated signed discrepancy differs from its true value by at
+most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>τ</mi></mrow><annotation encoding="application/x-tex">e=(H+1)\tau</annotation></semantics></math>.
+For the optimal continuous loss, rounding down to the grid changes a
+signed discrepancy by at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>/</mi><mi>J</mi></mrow><annotation encoding="application/x-tex">2/J</annotation></semantics></math>.
+For a grid optimum, (1) and (3) lose at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>δ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>H</mi></msup><mo>−</mo><mn>1</mn><mo>+</mo><mi>H</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>τ</mi></mrow><annotation encoding="application/x-tex">(1+\delta)^H-1+H(H+1)\tau</annotation></semantics></math>.
+Maximizing the approximate discrepancy over the table adds at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>e</mi></mrow><annotation encoding="application/x-tex">2e</annotation></semantics></math>
+to the loss. The total is at most
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>/</mi><mi>J</mi><mo>+</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>δ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>H</mi></msup><mo>−</mo><mn>1</mn><mo>+</mo><mi>H</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>τ</mi><mo>+</mo><mn>2</mn><mi>e</mi><mo>&lt;</mo><mi>ε</mi><mi>/</mi><mn>2</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ 2/J+(1+\delta)^H-1+H(H+1)\tau+2e &lt; \varepsilon/2 .
+</annotation></semantics></math> Thus if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+is the estimated score of the returned loss,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mi>s</mi><mo>−</mo><mi>e</mi><mo>,</mo><mi>s</mi><mo>+</mo><mi>e</mi><mo>+</mo><mi>ε</mi><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[s-e,s+e+\varepsilon/2]</annotation></semantics></math>,
+intersected with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>,
+is a valid interval of width at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>.
+The representative itself is the promised witness.</p>
+<p>Each table has at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>B</mi><mi>J</mi></msup><annotation encoding="application/x-tex">B^J</annotation></semantics></math>
+entries. A node with at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+children uses at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>B</mi><mrow><mi>b</mi><mi>J</mi></mrow></msup><annotation encoding="application/x-tex">B^{bJ}</annotation></semantics></math>
+oracle calls to form its candidates. Bin choices use rational
+comparisons against successive rational powers. Products of input
+probabilities, their sums over leaf sets, and these bin endpoints all
+have bit lengths polynomial in the stated bounds and input size.
+Consequently a tiny
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mo>*</mo></msub><annotation encoding="application/x-tex">P_*</annotation></semantics></math>
+affects the computation through its logarithm and introduces no loss
+multiplier in the accuracy guarantee.</p>
+<h2 id="meanmaximum-preferences-on-an-arbitrary-weighted-tree">3.
+Mean–maximum preferences on an arbitrary weighted tree</h2>
+<p>Write
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mi>v</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>Z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>c</mi><mi>v</mi></msub><mspace width="0.167em"></mspace><mi>𝔼</mi><mi>Z</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>c</mi><mi>v</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>max</mo><mi>Z</mi><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>ρ</mi><mi>f</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>Z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>c</mi><mi>f</mi></msub><mspace width="0.167em"></mspace><mi>𝔼</mi><mi>Z</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>c</mi><mi>f</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>max</mo><mi>Z</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">
+ \rho_v(Z)=c_v\,\mathbb E Z+(1-c_v)\max Z,\qquad
+ \rho_f(Z)=c_f\,\mathbb E Z+(1-c_f)\max Z ,
+ \tag{4}
+</annotation></semantics></math><span class="equation-number">(4)</span></span> with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msub><mi>c</mi><mi>v</mi></msub><mo>,</mo><msub><mi>c</mi><mi>f</mi></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\le c_v,c_f\le1</annotation></semantics></math>.
+The node probabilities may be arbitrary. The computational statements
+use rational coefficients.</p>
+<p><strong>Theorem 2.</strong> In the setting (4) the flat-minus-nested
+error is computable exactly by a linear program with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(H+1)</annotation></semantics></math>
+variables and constraints per leaf. It has a witness constant on the
+exit cells of a single path. When
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>v</mi></msub><mo>=</mo><msub><mi>c</mi><mi>f</mi></msub><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">c_v=c_f=c</annotation></semantics></math>
+for every node, the exact formula is
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Δ</mi><mo>−</mo></msub><mo>=</mo><munder><mo>max</mo><mrow><mo>ℓ</mo><mo>∈</mo><mi>ℒ</mi></mrow></munder><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mo>−</mo><mi>c</mi><mo>+</mo><mi>c</mi><msub><mi>P</mi><mo>ℓ</mo></msub><mo>−</mo><munder><mo>∏</mo><mrow><mi>v</mi><mo>→</mo><mi>i</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> on path to </mtext><mspace width="0.333em"></mspace></mrow><mo>ℓ</mo></mrow></munder><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>c</mi><mo>+</mo><mi>c</mi><msub><mi>p</mi><mrow><mi>v</mi><mi>i</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \Delta_-=\max_{\ell\in\mathcal L}
+ \left[1-c+cP_\ell-\prod_{v\to i\text{ on path to }\ell}(1-c+c p_{vi})\right].
+ \tag{5}
+</annotation></semantics></math><span class="equation-number">(5)</span></span> A singleton indicator attains it, and a
+single traversal computes all terms of (5). In the opposite direction
+there is a fully polynomial additive approximation scheme, with a
+witness event and an additive certificate. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><msub><mi>P</mi><mo>ℓ</mo></msub></mrow><annotation encoding="application/x-tex">M P_\ell</annotation></semantics></math>
+are integers for a common positive integer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>,
+there is an exact algorithm using
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>M</mi><mn>2</mn></msup><msub><mo>∑</mo><mi>v</mi></msub><msubsup><mi>b</mi><mi>v</mi><mn>2</mn></msubsup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(M^2\sum_v b_v^2)</annotation></semantics></math>
+rational operations, where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>b</mi><mi>v</mi></msub><annotation encoding="application/x-tex">b_v</annotation></semantics></math>
+is the number of children at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>.
+In particular arbitrary trees with equiprobable leaves admit exact
+polynomial computation of both directed errors.</p>
+<h3 id="flat-minus-nested">Flat minus nested</h3>
+<p>A risk in (4) is the support function of the local probability set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>v</mi></msub><msub><mi>p</mi><mi>v</mi></msub><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>c</mi><mi>v</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>𝒟</mi><mi>v</mi></msub></mrow><annotation encoding="application/x-tex">c_v p_v+(1-c_v)\mathcal D_v</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝒟</mi><mi>v</mi></msub><annotation encoding="application/x-tex">\mathcal D_v</annotation></semantics></math>
+is the child probability simplex. Its condition on every child is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><msub><mi>c</mi><mi>v</mi></msub><msub><mi>p</mi><mrow><mi>v</mi><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">q(i)\ge c_v p_{vi}</annotation></semantics></math>.
+Thus the nested envelope
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℛ</mi><annotation encoding="application/x-tex">\mathcal R</annotation></semantics></math>
+consists exactly of the terminal distributions
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+whose subtree masses satisfy
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mi>o</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>Q</mi><mi>v</mi></msub><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>Q</mi><mi>i</mi></msub><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>Q</mi><mi>i</mi></msub><mo>≥</mo><msub><mi>c</mi><mi>v</mi></msub><msub><mi>p</mi><mrow><mi>v</mi><mi>i</mi></mrow></msub><msub><mi>Q</mi><mi>v</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ Q_o=1,\qquad Q_v=\sum_i Q_i,\qquad Q_i\ge c_v p_{vi} Q_v .
+ \tag{6}
+</annotation></semantics></math><span class="equation-number">(6)</span></span> The equivalence follows by dividing by
+the parent mass when positive and choosing any admissible local law at a
+zero-mass node. It is a compact convex polytope. Backward maximization
+gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mo>max</mo><mrow><mi>Q</mi><mo>∈</mo><mi>ℛ</mi></mrow></msub><mi>Q</mi><mo>⋅</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">N(X)=\max_{Q\in\mathcal R}Q\cdot X</annotation></semantics></math>,
+with a choice of one maximizer per node. The flat envelope is the convex
+hull of the finitely many
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>q</mi><mo>ℓ</mo></msup><mo>=</mo><msub><mi>c</mi><mi>f</mi></msub><mi>P</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>c</mi><mi>f</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>e</mi><mo>ℓ</mo></msub></mrow><annotation encoding="application/x-tex">q^\ell=c_f P+(1-c_f)e_\ell</annotation></semantics></math>.</p>
+<p>For each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>ℓ</mo><annotation encoding="application/x-tex">\ell</annotation></semantics></math>,
+finite-dimensional minimax interchanges the unit-cube maximization and
+the nested-envelope minimization in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>q</mi><mo>ℓ</mo></msup><mo>−</mo><mi>Q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>⋅</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">(q^\ell-Q)\cdot X</annotation></semantics></math>.
+Maximizing this linear expression on the cube gives total variation, so
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Δ</mi><mo>−</mo></msub><mo>=</mo><munder><mo>max</mo><mo accent="false">ℓ</mo></munder><munder><mo>min</mo><mrow><mi>Q</mi><mo>∈</mo><mi>ℛ</mi></mrow></munder><mo>TV</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>q</mi><mo>ℓ</mo></msup><mo>,</mo><mi>Q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \Delta_-=\max_\ell\min_{Q\in\mathcal R}\operatorname{TV}(q^\ell,Q).
+ \tag{7}
+</annotation></semantics></math><span class="equation-number">(7)</span></span> Here
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>TV</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo>,</mo><mi>Q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><msub><mo>∑</mo><mrow><mo>ℓ</mo><mi>′</mi></mrow></msub><mo>min</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>q</mi><mrow><mo>ℓ</mo><mi>′</mi></mrow></msub><mo>,</mo><msub><mi>Q</mi><mrow><mo>ℓ</mo><mi>′</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{TV}(q,Q)=1-\sum_{\ell&#39;}\min(q_{\ell&#39;},Q_{\ell&#39;})</annotation></semantics></math>.
+We next reduce the inner computation to the selected path.</p>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mi>o</mi><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>v</mi><mi>h</mi></msub><mo>=</mo><mo>ℓ</mo></mrow><annotation encoding="application/x-tex">v_0=o,\ldots,v_h=\ell</annotation></semantics></math>
+be its nodes, write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>j</mi></msub><mo>=</mo><msub><mi>p</mi><mrow><msub><mi>v</mi><mi>j</mi></msub><msub><mi>v</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></msub></mrow><annotation encoding="application/x-tex">p_j=p_{v_j v_{j+1}}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>j</mi></msub><mo>=</mo><msub><mi>P</mi><msub><mi>v</mi><mi>j</mi></msub></msub></mrow><annotation encoding="application/x-tex">P_j=P_{v_j}</annotation></semantics></math>,
+and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>j</mi></msub><mo>=</mo><msub><mi>Q</mi><msub><mi>v</mi><mi>j</mi></msub></msub></mrow><annotation encoding="application/x-tex">r_j=Q_{v_j}</annotation></semantics></math>.
+The feasible path-mass constraints are
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>c</mi><msub><mi>v</mi><mi>j</mi></msub></msub><msub><mi>p</mi><mi>j</mi></msub><msub><mi>r</mi><mi>j</mi></msub><mo>≤</mo><msub><mi>r</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≤</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mo>−</mo><msub><mi>c</mi><msub><mi>v</mi><mi>j</mi></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>p</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><msub><mi>r</mi><mi>j</mi></msub><mspace width="1.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>≤</mo><mi>j</mi><mo>&lt;</mo><mi>h</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ r_0=1,\qquad c_{v_j}p_j r_j\le r_{j+1}
+                 \le [1-c_{v_j}(1-p_j)]r_j \quad (0\le j\lt h).
+ \tag{8}
+</annotation></semantics></math><span class="equation-number">(8)</span></span> The exit cell at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>j</mi></msub><annotation encoding="application/x-tex">v_j</annotation></semantics></math>
+is the set of leaves below
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>j</mi></msub><annotation encoding="application/x-tex">v_j</annotation></semantics></math>
+and outside
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">v_{j+1}</annotation></semantics></math>.
+Its two total masses are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>j</mi></msub><mo>−</mo><msub><mi>r</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">r_j-r_{j+1}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>f</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>P</mi><mi>j</mi></msub><mo>−</mo><msub><mi>P</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">c_f(P_j-P_{j+1})</annotation></semantics></math>.
+For fixed feasible path masses the greatest possible overlap on that
+cell is the minimum of these two numbers. To attain it allocate the cell
+mass proportionally to nominal probability among the other children, and
+follow nominal probabilities thereafter. This respects every floor in
+(6) by (8). Within the cell
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+is then proportional to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>,
+as is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>q</mi><mo>ℓ</mo></msup><annotation encoding="application/x-tex">q^\ell</annotation></semantics></math>,
+so the overlap bound is exact. A unary node has an empty exit cell and
+no side allocation. The same argument proves that every path vector
+satisfying (8) is attainable.</p>
+<p>It follows that the closest distance in (7) is one minus the maximum
+over (8) of
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>∑</mo><mrow><mi>j</mi><mo>&lt;</mo><mi>h</mi></mrow></munder><mo>min</mo><mo stretchy="false" form="prefix">{</mo><msub><mi>r</mi><mi>j</mi></msub><mo>−</mo><msub><mi>r</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>c</mi><mi>f</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>P</mi><mi>j</mi></msub><mo>−</mo><msub><mi>P</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">}</mo><mo>+</mo><mo>min</mo><mo stretchy="false" form="prefix">{</mo><msub><mi>r</mi><mi>h</mi></msub><mo>,</mo><mn>1</mn><mo>−</mo><msub><mi>c</mi><mi>f</mi></msub><mo>+</mo><msub><mi>c</mi><mi>f</mi></msub><msub><mi>P</mi><mo>ℓ</mo></msub><mo stretchy="false" form="postfix">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \sum_{j\lt h}\min\{r_j-r_{j+1},c_f(P_j-P_{j+1})\}
+  +\min\{r_h,1-c_f+c_fP_\ell\}.
+ \tag{9}
+</annotation></semantics></math><span class="equation-number">(9)</span></span> One auxiliary variable below each pair
+in a minimum yields the claimed linear program. In the space with one
+coordinate for each exit cell and one for the distinguished leaf, the
+distance from the collapsed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>q</mi><mo>ℓ</mo></msup><annotation encoding="application/x-tex">q^\ell</annotation></semantics></math>
+to the collapsed envelope is precisely (9)’s complement. Apply the same
+finite-dimensional minimax in these coordinates to obtain a cube witness
+constant on cells, using an optimizing linear-program dual. Choose a
+maximizing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>ℓ</mo><annotation encoding="application/x-tex">\ell</annotation></semantics></math>
+in (7). For that witness
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><msup><mi>q</mi><mo>ℓ</mo></msup><mo>⋅</mo><mi>X</mi><mo>−</mo><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>Δ</mi><mo>−</mo></msub></mrow><annotation encoding="application/x-tex">F(X)-N(X)\ge q^\ell\cdot X-N(X)=\Delta_-</annotation></semantics></math>,
+so equality holds. This also proves the computational witness assertion
+when probabilities and coefficients are rational.</p>
+<p>In the homogeneous case, allocate as much mass as possible along the
+selected path,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>c</mi><mo>+</mo><mi>c</mi><msub><mi>p</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>r</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">r_{j+1}=(1-c+cp_j)r_j</annotation></semantics></math>.
+Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>j</mi></msub><mo>≥</mo><msub><mi>P</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">r_j\ge P_j</annotation></semantics></math>,
+and the off-path masses
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>p</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>r</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">c(1-p_j)r_j</annotation></semantics></math>
+dominate their targets. In the final cell,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>h</mi></msub><mo>=</mo><munder><mo>∏</mo><mrow><mi>j</mi><mo>&lt;</mo><mi>h</mi></mrow></munder><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>c</mi><mo>+</mo><mi>c</mi><msub><mi>p</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>1</mn><mo>−</mo><mi>c</mi><mo>+</mo><mi>c</mi><munder><mo>∏</mo><mrow><mi>j</mi><mo>&lt;</mo><mi>h</mi></mrow></munder><msub><mi>p</mi><mi>j</mi></msub><mo>=</mo><msup><mi>q</mi><mo>ℓ</mo></msup><mrow><mo stretchy="true" form="prefix">(</mo><mo>ℓ</mo><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ r_h=\prod_{j\lt h}(1-c+cp_j)\le 1-c+c\prod_{j\lt h}p_j=q^\ell(\ell).
+</annotation></semantics></math> The inequality follows by induction
+from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>c</mi><mo>+</mo><mi>c</mi><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>c</mi><mo>+</mo><mi>c</mi><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>1</mn><mo>−</mo><mi>c</mi><mo>+</mo><mi>c</mi><mi>u</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">(1-c+cu)(1-c+cv)\le1-c+cuv</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><mn>2</mn></msup><annotation encoding="application/x-tex">[0,1]^2</annotation></semantics></math>.
+Thus only the distinguished leaf has a deficit, equal to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>q</mi><mo>ℓ</mo></msup><mrow><mo stretchy="true" form="prefix">(</mo><mo>ℓ</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>r</mi><mi>h</mi></msub></mrow><annotation encoding="application/x-tex">q^\ell(\ell)-r_h</annotation></semantics></math>.
+No feasible
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+can allocate more than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mi>h</mi></msub><annotation encoding="application/x-tex">r_h</annotation></semantics></math>
+there, by (8). This proves (5) and the singleton witness.</p>
+<h3 id="nested-minus-flat">Nested minus flat</h3>
+<p>More generally, when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is comonotone additive, a maximizing loss for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Δ</mi><mo>+</mo></msub><annotation encoding="application/x-tex">\Delta_+</annotation></semantics></math>
+can be taken to be an indicator. Write any loss as the nonnegative sum
+of layers of its nested upper level sets, with the total of the
+coefficients at most one. The flat value adds over these comonotone
+indicators. The nested risk is subadditive by induction using
+monotonicity and subadditivity at every node. The gap is therefore at
+most the largest indicator gap. The empty event supplies gap zero.</p>
+<p>In (4), let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+be such an event and use its unconditional nominal mass as the table
+coordinate. At an interior node, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>i</mi></msub><annotation encoding="application/x-tex">x_i</annotation></semantics></math>
+are child event values, the nesting takes the form
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>v</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mn>𝟏</mn><mi>E</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>max</mo><mi>j</mi></munder><munder><mo>∑</mo><mi>i</mi></munder><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><msub><mi>c</mi><mi>v</mi></msub><msub><mi>p</mi><mrow><mi>v</mi><mi>i</mi></mrow></msub><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>c</mi><mi>v</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><msub><mn>𝟏</mn><mrow><mi>i</mi><mo>=</mo><mi>j</mi></mrow></msub><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo><msub><mi>x</mi><mi>i</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ N_v(\mathbf 1_E)=
+   \max_j\sum_i \bigl(c_v p_{vi}+(1-c_v)\mathbf 1_{i=j}\bigr)x_i .
+ \tag{10}
+</annotation></semantics></math><span class="equation-number">(10)</span></span> For each possible distinguished child
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>,
+the coefficients in the sum are fixed and nonnegative. For that choice,
+merge the child event tables one at a time, adding their unconditional
+nominal masses and the weighted child values. After each merge, retain
+the greatest partial weighted sum for each mass key. At the end of the
+merges, recover the actual nested value of each representative by (10).
+Pool the representatives from all choices of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+and retain the greatest actual nested value at each key. Leaves have
+just the empty and singleton event choices.</p>
+<p>If masses are integer multiples of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">1/M</annotation></semantics></math>,
+use their exact integer counts as keys. For a fixed total count at a
+node, the greatest nested value follows from (10) and the nonnegative
+coefficients. Induction on the tree verifies it: for each target event
+pick a maximizing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>,
+and prune partial configurations only in favor of another with the same
+mass and at least as large a weighted sum. The final actual nested value
+is at least that retained weighted sum. The number of pairs to merge is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>M</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(M^2)</annotation></semantics></math>
+for each child and choice of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>.
+At the root subtract
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mn>𝟏</mn><mi>E</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><msub><mi>c</mi><mi>f</mi></msub><mo>+</mo><msub><mi>c</mi><mi>f</mi></msub><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>E</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F(\mathbf 1_E)=1-c_f+c_f P(E)</annotation></semantics></math>
+for a nonempty event, and use value zero for the empty event. This
+proves exactness and the stated operation count.</p>
+<p>For arbitrary rational masses use one-dimensional multiplicative bins
+as in (2), with zero separate and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><mi>ε</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>8</mn><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\delta=\varepsilon/(8n)</annotation></semantics></math>.
+When a configuration is replaced in a bin, its mass changes by at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>δ</mi></mrow><annotation encoding="application/x-tex">1+\delta</annotation></semantics></math>
+and its objective for that merge does not fall. For each target event
+one may inductively follow a retained witness whose nested value is at
+least that target’s value and whose mass is within a factor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>δ</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>ℓ</mo><mi>v</mi></msub></msup><annotation encoding="application/x-tex">(1+\delta)^{\ell_v}</annotation></semantics></math>.
+At a leaf
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>ℓ</mo><mi>v</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\ell_v=0</annotation></semantics></math>.
+At a node use
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>ℓ</mo><mi>v</mi></msub><mo>=</mo><munder><mo>max</mo><mi>i</mi></munder><msub><mo>ℓ</mo><mi>i</mi></msub><mo>+</mo><msub><mi>b</mi><mi>v</mi></msub><mo>+</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \ell_v=\max_i\ell_i+b_v+1 .
+</annotation></semantics></math> Indeed, choose the index
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+in (10) for the target. Replace the child events by their witnesses, sum
+the weighted values, and preserve this sum using one pruning operation
+per merge. Addition of positive masses preserves the largest existing
+relative factor. The final pooling operation adds at most one more
+factor and retains at least the actual nested value. At the root
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>ℓ</mo><mi>o</mi></msub><mo>≤</mo><mn>2</mn><mi>n</mi></mrow><annotation encoding="application/x-tex">\ell_o\le 2n</annotation></semantics></math>,
+since outdegrees sum to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math>
+and the number of interior nodes on a path is at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math>.
+Consequently the relative mass factor is at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>ε</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1+\varepsilon/2</annotation></semantics></math>,
+and the change in the flat value of a nonempty event is at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\varepsilon/2</annotation></semantics></math>.
+This certifies the returned gap within
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>,
+using the true witness score and its increment by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+as bounds.</p>
+<p>There are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>n</mi><msup><mi>ε</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><msub><mi>P</mi><mo>*</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(1+n\varepsilon^{-1}\log(1/P_*))</annotation></semantics></math>
+bins. Pairwise merges and the loop over possible
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+use time polynomial in this number and the input length, with
+back-pointers for the final event. Every nested value in (10) is a
+finite weighted sum of unit losses with coefficients that are products
+of the rational local coefficients. Common denominators can be bounded
+by products of the input coefficient denominators over all nodes and
+children. Thus its exact numerator and denominator, and the masses and
+partial scores actually used, have polynomial bit length. This proves
+the fully polynomial additive claim.</p>
+<h2 id="an-exact-product-calculation-for-the-upward-error">4. An exact
+product calculation for the upward error</h2>
+<p>Suppose additionally that the nominal branching law is the same at
+all nodes of each layer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>v</mi></msub><mo>=</mo><msub><mi>c</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">c_v=c_j</annotation></semantics></math>
+there. A path has one step from each layer, with unary layers allowed.
+At layer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>j</mi></msub><annotation encoding="application/x-tex">a_j</annotation></semantics></math>
+denote the smallest nominal child probability in that layer. Take
+independent Bernoulli variables
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>B</mi><mi>j</mi></msub><annotation encoding="application/x-tex">B_j</annotation></semantics></math>
+of probabilities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>j</mi></msub><annotation encoding="application/x-tex">a_j</annotation></semantics></math>.
+Then
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Δ</mi><mo>+</mo></msub><mo>=</mo><mi>𝔼</mi><mrow><mo stretchy="true" form="prefix">[</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>c</mi><mi>f</mi></msub><mo>−</mo><munderover><mo>∏</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>H</mi></munderover><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>c</mi><mi>j</mi></msub><mo>+</mo><mfrac><mrow><mn>1</mn><mo>−</mo><msub><mi>c</mi><mi>j</mi></msub></mrow><msub><mi>a</mi><mi>j</mi></msub></mfrac><msub><mi>B</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo></msub><mo stretchy="true" form="postfix">]</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \Delta_+=
+  \mathbb E\left[\left(c_f-\prod_{j=1}^H
+       \left(c_j+\frac{1-c_j}{a_j}B_j\right)\right)_+\right].
+ \tag{11}
+</annotation></semantics></math><span class="equation-number">(11)</span></span> With the same
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mi>j</mi></msub><annotation encoding="application/x-tex">c_j</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>j</mi></msub><annotation encoding="application/x-tex">a_j</annotation></semantics></math>
+at all layers, this is a binomial sum with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">H+1</annotation></semantics></math>
+terms.</p>
+<p>To prove (11), the distance of a terminal probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+to the flat envelope
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>r</mi><mo>:</mo><msub><mi>r</mi><mo>ℓ</mo></msub><mo>≥</mo><msub><mi>c</mi><mi>f</mi></msub><msub><mi>P</mi><mo>ℓ</mo></msub><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{r:r_\ell\ge c_f P_\ell\}</annotation></semantics></math>
+equals
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mo>ℓ</mo></msub><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>c</mi><mi>f</mi></msub><msub><mi>P</mi><mo>ℓ</mo></msub><mo>−</mo><msub><mi>Q</mi><mo>ℓ</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo></msub></mrow><annotation encoding="application/x-tex">\sum_\ell(c_fP_\ell-Q_\ell)_+</annotation></semantics></math>.
+The lower bound is the total deficit of the constrained coordinates. For
+equality transfer that mass from the remaining coordinates, whose
+aggregate excess over their floors is sufficient. Minimax as in (7), now
+in the other direction, gives the largest such distance over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℛ</mi><annotation encoding="application/x-tex">\mathcal R</annotation></semantics></math>.
+Every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>∈</mo><mi>ℛ</mi></mrow><annotation encoding="application/x-tex">Q\in\mathcal R</annotation></semantics></math>
+is a convex combination of terminal measures obtained by taking one
+preferred child at each node and using the corresponding local vertex of
+(4). To see this, write every local conditional as a mixture of its
+vertices, select all vertices independently, and average their path
+products. The distance to the flat envelope is convex in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>,
+so one of the deterministic choices attains its maximum.</p>
+<p>Under the nominal law, if the probability of the preferred child at a
+node in layer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+the multiplier of the path likelihood ratio at this layer is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>j</mi></msub><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>c</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi><mi>/</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">c_j+(1-c_j)B/p</annotation></semantics></math>,
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+Bernoulli of parameter
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Future optimal costs are identical functions of the current ratio
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+at every node in a layer, by the product assumptions. Starting at the
+leaves with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>c</mi><mi>f</mi></msub><mo>−</mo><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo></msub></mrow><annotation encoding="application/x-tex">\varphi(r)=(c_f-r)_+</annotation></semantics></math>,
+each backward cost remains convex as a maximum of nonnegative weighted
+sums of convex functions composed with nonnegative linear maps. For a
+given convex future cost
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math>
+and ratio
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>,
+the candidate expectation is
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><msub><mi>c</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>p</mi><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">[</mo><mi>φ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><msub><mi>c</mi><mi>j</mi></msub><mo>+</mo><mi>r</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>c</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>φ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><msub><mi>c</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">]</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \varphi(rc_j)+p\big[\varphi(rc_j+r(1-c_j)/p)-\varphi(rc_j)\big].
+</annotation></semantics></math> It is nonincreasing in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+since the secant slope of a convex function from a fixed left endpoint
+is nondecreasing in the length of the interval. When
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>c</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r(1-c_j)=0</annotation></semantics></math>
+all choices have the same value. Thus a child of smallest nominal
+probability is optimal throughout, producing the independent factors in
+(11). The formula includes zero mean coefficients, with a product
+evaluated directly when a factor is zero.</p>
+<h2 id="relation-to-earlier-work-and-scope">5. Relation to earlier work
+and scope</h2>
+<p>Rectangular sets, their conditional pasting interpretation and
+support-function comparisons are established. Shapiro characterizes
+rectangularity by dynamic decomposition in robust optimization. In his
+finite scenario-tree time-consistency analysis, equality of
+probabilities on specified levels and symmetry give rigidity of
+recursive law invariance. We fix the entire tree and measure the
+additive change for all losses in the unit cube. The tail comparison
+allows the certificate to use a single tractable table at each stored
+probability key even for a noncomonotone risk. <a
+href="https://doi.org/10.1287/opre.2015.1466">Shapiro, Operations
+Research</a> <a
+href="https://doi.org/10.1016/j.orl.2012.08.007">Shapiro, Operations
+Research Letters</a></p>
+<p>Xin and Shapiro study the conditional analogues of law-invariant
+coherent risks. Their Propositions 3.1 and 3.2 bound nested AVaR by flat
+AVaR at the same or multiplied tail levels, and Proposition 4.2
+integrates the product-tail bound for a comonotone risk. These
+comparisons apply for all losses in their domains and give general upper
+bounds. Our algorithms compute extremizing losses and numerical
+discrepancies for specified scenario probabilities and risk evaluators.
+This is the additional fixed-tree question addressed in Sections 2–4. <a
+href="https://doi.org/10.1016/j.orl.2012.09.002">Xin–Shapiro, Operations
+Research Letters</a> <a
+href="https://optimization-online.org/wp-content/uploads/2012/08/3553.pdf">Author
+text, §§3–4</a></p>
+<p>Iancu, Petrik and Subramanian study multiplicative domination of
+static and dynamic risks over nonnegative losses. Their general hardness
+results and their exact algorithms for selected ratios refer to that
+scale-invariant comparison. The objectives here are two unit-cube
+additive discrepancies for fixed preferences. The new computations are
+the certified oracle scheme from tail masses, the one-dimensional event
+optimization for the positive direction in (4), and the exact reverse
+formulas and witness reduction to one path. The general oracle result is
+polynomial for fixed branching and fixed requested accuracy. Exact
+computation on arbitrary weighted trees outside the stated cases is
+unresolved here. <a
+href="https://doi.org/10.1287/moor.2014.0689">Iancu–Petrik–Subramanian,
+Mathematics of Operations Research</a></p>
+<h2
+id="appendix-a.-uniform-propagation-and-synchronized-rigidity">Appendix
+A. Uniform propagation and synchronized rigidity</h2>
+<p>This appendix gives risk envelopes and rigidity results over classes
+of risks or all trees. Sections 2–4 quantify the errors for one
+specified tree and specified risks.</p>
+<h3 id="a.1-model-and-statements">A.1 Model and statements</h3>
+<p>Let each risk functional
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>
+act on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mi>∞</mi></msup><annotation encoding="application/x-tex">L^\infty</annotation></semantics></math>
+of a standard atomless probability space. It is finite, normalized, law
+invariant, monotone in losses, translation equivariant, positively
+homogeneous, subadditive, and has the Fatou property for bounded almost
+surely convergent sequences. Thus it acts on every bounded probability
+law. Write
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>sup</mo><mrow><mn>0</mn><mo>≤</mo><mi>X</mi><mo>≤</mo><mn>1</mn></mrow></munder><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>𝔼</mi><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><mi>a</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>inf</mo><mrow><mi>p</mi><mo>&gt;</mo><mn>0</mn></mrow></munder><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mo>Ber</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mi>a</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>min</mo><mo stretchy="false" form="prefix">{</mo><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+A(\rho)=\sup_{0\le X\le1}(\rho(X)-\mathbb EX),\quad
+a(\rho)=\inf_{p&gt;0}\rho(\operatorname{Ber}(p)),\quad
+B(\rho)=1-a(\rho),\quad d(\rho)=\min\{A(\rho),B(\rho)\}.
+</annotation></semantics></math> Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A,B</annotation></semantics></math>
+are the uniform distances to expectation and essential supremum,
+respectively.</p>
+<p>A scenario tree is finite, with finitely many nodes and finitely many
+children at each interior node. Its depth is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">H\ge1</annotation></semantics></math>,
+all existing edges have positive conditional probability, and every
+interior node is assigned a risk functional
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ρ</mi><mi>v</mi></msub><annotation encoding="application/x-tex">\rho_v</annotation></semantics></math>.
+One-child nodes are permitted and may be used to extend all terminal
+paths to depth
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>.
+A terminal loss
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+lies in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>.
+Denote the bottom-up nested value by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">N(X)</annotation></semantics></math>
+and the root functional evaluated directly on the terminal law by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>ρ</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F(X)=\rho_o(X)</annotation></semantics></math>.</p>
+<p><strong>Theorem A.1.</strong> Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>h</mi></msub><mo>=</mo><msub><mo>max</mo><mrow><mi>v</mi><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mspace width="0.222em"></mspace><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">e</mi></mrow><mspace width="0.222em"></mspace><mi>h</mi></mrow></msub><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>ρ</mi><mi>v</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A_h=\max_{v\ {\mathrm{at\ stage}}\ h}A(\rho_v)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>h</mi></msub><mo>=</mo><msub><mo>min</mo><mrow><mi>v</mi><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mspace width="0.222em"></mspace><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">e</mi></mrow><mspace width="0.222em"></mspace><mi>h</mi></mrow></msub><mi>a</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>ρ</mi><mi>v</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">a_h=\min_{v\ {\mathrm{at\ stage}}\ h}a(\rho_v)</annotation></semantics></math>,
+where the root is stage one. For any such tree and loss,
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>≤</mo><mo>min</mo><mspace width="-0.167em"></mspace><mrow><mo stretchy="true" form="prefix">{</mo><mn>1</mn><mo>−</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mn>1</mn><mo>−</mo><munderover><mo>∏</mo><mrow><mi>h</mi><mo>=</mo><mn>2</mn></mrow><mi>H</mi></munderover><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>A</mi><mi>h</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">}</mo></mrow><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>≤</mo><mo>min</mo><mspace width="-0.167em"></mspace><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mn>1</mn><mo>−</mo><munderover><mo>∏</mo><mrow><mi>h</mi><mo>=</mo><mn>2</mn></mrow><mi>H</mi></munderover><msub><mi>a</mi><mi>h</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{split}
+N(X)-F(X)&amp;\le
+\min\!\left\{1-a_1,\ 1-\prod_{h=2}^H(1-A_h)\right\},\\
+F(X)-N(X)&amp;\le
+\min\!\left\{A_1,\ 1-\prod_{h=2}^H a_h\right\}.
+\end{split}
+\tag{A.1}
+</annotation></semantics></math><span class="equation-number">(A.1)</span></span> The proof gives tighter certificates
+for the individual tree. The two product terms are sharp over the
+indicated stagewise envelopes. More precisely, for any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>A</mi><mi>H</mi></msub><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">A_1,\ldots,A_H &lt; 1</annotation></semantics></math>
+the upper product term is achieved with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ρ</mi><mi>h</mi></msub><annotation encoding="application/x-tex">\rho_h</annotation></semantics></math>
+equal to CVaR of tail mass
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><msub><mi>A</mi><mi>h</mi></msub></mrow><annotation encoding="application/x-tex">1-A_h</annotation></semantics></math>.
+For any specified
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>H</mi></msub><mo>∈</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">a_2,\ldots,a_H\in[0,1]</annotation></semantics></math>,
+the lower product term is approached with a maximum at the root and
+conditional mean–maximum mixtures downstream.</p>
+<p><strong>Corollary A.2.</strong> Suppose that the same
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>
+is used everywhere, and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Δ</mi><mi>H</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mo>sup</mo><mrow><mi>T</mi><mo>,</mo><mspace width="0.167em"></mspace><mn>0</mn><mo>≤</mo><mi>X</mi><mo>≤</mo><mn>1</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">|</mo><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\Delta_H(\rho)=\sup_{T,\,0\le X\le1}|N(X)-\rho(X)|</annotation></semantics></math>.
+For each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>0</mn></msub><mo>∈</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">d_0\in[0,1]</annotation></semantics></math>,
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>sup</mo><mrow><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>d</mi><mn>0</mn></msub></mrow></munder><msub><mi>Δ</mi><mi>H</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>d</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>H</mi><mo>−</mo><mn>1</mn></mrow></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\sup_{d(\rho)\le d_0}\Delta_H(\rho)=1-(1-d_0)^{H-1}.
+\tag{A.2}
+</annotation></semantics></math><span class="equation-number">(A.2)</span></span> At
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">H=1</annotation></semantics></math>
+the value is zero. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>0</mn></msub><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">d_0 &lt; 1</annotation></semantics></math>
+the supremum is attained by CVaR, on a finite binary tree if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><msub><mi>d</mi><mn>0</mn></msub><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0 &lt; d_0 &lt; 1</annotation></semantics></math>.</p>
+<p><strong>Theorem A.3.</strong> Suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">H\ge2</annotation></semantics></math>
+and one risk functional
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ρ</mi><mi>h</mi></msub><annotation encoding="application/x-tex">\rho_h</annotation></semantics></math>
+is specified per stage, with arbitrary scenario trees allowed. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><mo>=</mo><msub><mo>sup</mo><mrow><mi>T</mi><mo>,</mo><mi>X</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">|</mo><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>ρ</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\Delta=\sup_{T,X}|N(X)-\rho_1(X)|</annotation></semantics></math>.
+There exists a single functional
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mo>⋆</mo></msub><mo>∈</mo><mo stretchy="false" form="prefix">{</mo><mi>𝔼</mi><mo>,</mo><mo>esssup</mo><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\rho_\star\in\{\mathbb E,\operatorname{esssup}\}</annotation></semantics></math>
+such that
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>max</mo><mrow><mn>1</mn><mo>≤</mo><mi>h</mi><mo>≤</mo><mi>H</mi></mrow></munder><munder><mo>sup</mo><mrow><mn>0</mn><mo>≤</mo><mi>X</mi><mo>≤</mo><mn>1</mn></mrow></munder><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>ρ</mi><mi>h</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>ρ</mi><mo>⋆</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><mn>17</mn><mi>Δ</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\max_{1\le h\le H}\sup_{0\le X\le1}|\rho_h(X)-\rho_\star(X)|\le17\Delta .
+\tag{A.3}
+</annotation></semantics></math><span class="equation-number">(A.3)</span></span> Conversely, if the distance to a common
+extreme is at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>∈</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\epsilon\in[0,1]</annotation></semantics></math>
+at all stages, then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><mo>≤</mo><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>H</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\Delta\le1-(1-\epsilon)^{H-1}</annotation></semantics></math>.
+Different extremes at different stages give no nontrivial bound based
+solely on those individual distances.</p>
+<h3 id="a.2-finite-envelopes">A.2 Finite envelopes</h3>
+<p>For every finite partition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℱ</mi><annotation encoding="application/x-tex">\mathcal F</annotation></semantics></math>
+one has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝔼</mi><mrow><mo stretchy="true" form="prefix">[</mo><mi>X</mi><mo>∣</mo><mi>ℱ</mi><mo stretchy="true" form="postfix">]</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\rho(\mathbb E[X\mid\mathcal F])\le \rho(X)</annotation></semantics></math>.
+To see this, construct conditionally independent copies of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+on each positive-probability atom of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℱ</mi><annotation encoding="application/x-tex">\mathcal F</annotation></semantics></math>
+using its atomless probability space. The unconditional laws are all the
+law of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.
+Convexity bounds the risk of their average by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\rho(X)</annotation></semantics></math>,
+and the conditional strong law and Fatou property give the assertion.
+The trivial partition gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mi>𝔼</mi><mi>X</mi></mrow><annotation encoding="application/x-tex">\rho(X)\ge\mathbb EX</annotation></semantics></math>.
+Monotonicity gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mo>esssup</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">\rho(X)\le\operatorname{esssup}X</annotation></semantics></math>.
+On unit losses
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mi>a</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>esssup</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">\rho(X)\ge a(\rho)\operatorname{esssup}X</annotation></semantics></math>
+by testing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>≥</mo><mi>t</mi><msub><mn>𝟏</mn><mrow><mo stretchy="false" form="prefix">{</mo><mi>X</mi><mo>&gt;</mo><mi>t</mi><mo stretchy="false" form="postfix">}</mo></mrow></msub></mrow><annotation encoding="application/x-tex">X\ge t\mathbf1_{\{X&gt;t\}}</annotation></semantics></math>
+and taking
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+up to the essential supremum. Applying this bound to rare Bernoulli
+losses shows that the uniform distance to the maximum is exactly
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>a</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">1-a(\rho)</annotation></semantics></math>.</p>
+<p>For a node with child law
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>v</mi></msub><annotation encoding="application/x-tex">p_v</annotation></semantics></math>,
+the function of finitely many child values is sublinear, monotone and
+translation equivariant. The finite-dimensional supporting-hyperplane
+theorem gives a compact convex probability envelope
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Q</mi><mi>v</mi></msub><annotation encoding="application/x-tex">Q_v</annotation></semantics></math>
+such that
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mi>v</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>max</mo><mrow><msub><mi>q</mi><mi>v</mi></msub><mo>∈</mo><msub><mi>Q</mi><mi>v</mi></msub></mrow></munder><msub><mi>q</mi><mi>v</mi></msub><mo>⋅</mo><mi>x</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\rho_v(x)=\max_{q_v\in Q_v}q_v\cdot x .
+</annotation></semantics></math> Indeed any supporting linear functional
+is nonnegative by monotonicity and has mass one by translation
+equivariance. The nominal vector
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>v</mi></msub><annotation encoding="application/x-tex">p_v</annotation></semantics></math>
+belongs to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Q</mi><mi>v</mi></msub><annotation encoding="application/x-tex">Q_v</annotation></semantics></math>
+because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mi>v</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><msub><mi>p</mi><mi>v</mi></msub><mo>⋅</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\rho_v(x)\ge p_v\cdot x</annotation></semantics></math>.
+For each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>v</mi></msub><mo>∈</mo><msub><mi>Q</mi><mi>v</mi></msub></mrow><annotation encoding="application/x-tex">q_v\in Q_v</annotation></semantics></math>,
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><msub><mi>q</mi><mi>v</mi></msub><mo>−</mo><msub><mi>p</mi><mi>v</mi></msub><msub><mo stretchy="false" form="postfix">∥</mo><mrow><mi mathvariant="normal">T</mi><mi mathvariant="normal">V</mi></mrow></msub><mo>=</mo><munder><mo>max</mo><mi>S</mi></munder><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>q</mi><mi>v</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>p</mi><mi>v</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>ρ</mi><mi>v</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\|q_v-p_v\|_{\mathrm{TV}}=\max_{S}(q_v(S)-p_v(S))\le A(\rho_v).
+\tag{A.4}
+</annotation></semantics></math><span class="equation-number">(A.4)</span></span> Fresh choices at each node give the
+terminal product-law envelope
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ℛ</mi><mi>T</mi></msub><annotation encoding="application/x-tex">\mathcal R_T</annotation></semantics></math>.
+Maximizing the expected terminal loss by backward induction gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mo>max</mo><mrow><mi>Q</mi><mo>∈</mo><msub><mi>ℛ</mi><mi>T</mi></msub></mrow></msub><msub><mi>E</mi><mi>Q</mi></msub><mi>X</mi></mrow><annotation encoding="application/x-tex">N(X)=\max_{Q\in\mathcal R_T}E_QX</annotation></semantics></math>.
+The set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ℛ</mi><mi>T</mi></msub><annotation encoding="application/x-tex">\mathcal R_T</annotation></semantics></math>
+is compact by continuity of products and convex because the conditional
+law of a mixture at each visited node is a mixture of its component
+conditionals. At an unvisited node one may choose any permitted
+kernel.</p>
+<h3 id="a.3-the-two-directions">A.3 The two directions</h3>
+<h3 id="change-in-probability-below-the-root">Change in probability
+below the root</h3>
+<p>For a given
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>∈</mo><msub><mi>ℛ</mi><mi>T</mi></msub></mrow><annotation encoding="application/x-tex">Q\in\mathcal R_T</annotation></semantics></math>,
+keep its root kernel and replace every downstream kernel with the
+nominal one. Call the resulting terminal law
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mi>′</mi></mrow><annotation encoding="application/x-tex">Q&#39;</annotation></semantics></math>
+and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mi>i</mi></msub><annotation encoding="application/x-tex">m_i</annotation></semantics></math>
+be the nominal conditional mean loss under root child
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>.
+Then
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>Q</mi><mi>′</mi></mrow></msub><mi>X</mi><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>q</mi><mrow><mi>o</mi><mo>,</mo><mi>i</mi></mrow></msub><msub><mi>m</mi><mi>i</mi></msub><mo>≤</mo><msub><mi>ρ</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>ρ</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+E_{Q&#39;}X=\sum_i q_{o,i}m_i\le \rho_o(m)\le \rho_o(X).
+\tag{A.5}
+</annotation></semantics></math><span class="equation-number">(A.5)</span></span> The last inequality is the conditional
+averaging property. Along synchronized paths in the two laws, couple
+each conditional pair of child laws with common mass
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>min</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>p</mi><mrow><mi>v</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>,</mo><msub><mi>q</mi><mrow><mi>v</mi><mo>,</mo><mi>i</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\min(p_{v,i},q_{v,i})</annotation></semantics></math>
+on child
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>.
+Both marginals of this coupling are the required transition laws. If
+paths differ, their continuations can be coupled arbitrarily. With
+leaves assigned
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>v</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">g_v=1</annotation></semantics></math>,
+define for nonroot interior nodes
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>v</mi></msub><mo>=</mo><munder><mo>min</mo><mrow><msub><mi>q</mi><mi>v</mi></msub><mo>∈</mo><msub><mi>Q</mi><mi>v</mi></msub></mrow></munder><munder><mo>∑</mo><mi>i</mi></munder><mo>min</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>p</mi><mrow><mi>v</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>,</mo><msub><mi>q</mi><mrow><mi>v</mi><mo>,</mo><mi>i</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>g</mi><mi>i</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+g_v=\min_{q_v\in Q_v}\sum_i\min(p_{v,i},q_{v,i})g_i .
+\tag{A.6}
+</annotation></semantics></math><span class="equation-number">(A.6)</span></span> Induction shows that the probability
+that the two paths agree at the terminal leaf is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>min</mo><mrow><msub><mi>q</mi><mi>o</mi></msub><mo>∈</mo><msub><mi>Q</mi><mi>o</mi></msub></mrow></msub><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>q</mi><mrow><mi>o</mi><mo>,</mo><mi>i</mi></mrow></msub><msub><mi>g</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\min_{q_o\in Q_o}\sum_iq_{o,i}g_i</annotation></semantics></math>.
+For losses between zero and one the resulting certificate is
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>1</mn><mo>−</mo><munder><mo>min</mo><mrow><msub><mi>q</mi><mi>o</mi></msub><mo>∈</mo><msub><mi>Q</mi><mi>o</mi></msub></mrow></munder><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>q</mi><mrow><mi>o</mi><mo>,</mo><mi>i</mi></mrow></msub><msub><mi>g</mi><mi>i</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+N(X)-F(X)\le1-\min_{q_o\in Q_o}\sum_i q_{o,i}g_i.
+\tag{A.7}
+</annotation></semantics></math><span class="equation-number">(A.7)</span></span> This bound can be evaluated node by
+node from the envelopes. In (A.6) the weighted sum of minima is the
+minimum of finitely many affine forms, obtained by deciding for each
+child which of its two terms to use. Taking the minimum over the
+envelope requires only its support values in those directions.</p>
+<p>By (A.4),
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><mo>min</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>p</mi><mrow><mi>v</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>,</mo><msub><mi>q</mi><mrow><mi>v</mi><mo>,</mo><mi>i</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mn>1</mn><mo>−</mo><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>ρ</mi><mi>v</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_i\min(p_{v,i},q_{v,i})\ge1-A(\rho_v)</annotation></semantics></math>.
+Thus (A.7) gives the first product in (A.1). Also
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><msub><mi>a</mi><mn>1</mn></msub><mo>max</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">F(X)\ge a_1\max X</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mo>max</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">N(X)\le\max X</annotation></semantics></math>,
+giving the other bound in that direction.</p>
+<h3 id="retaining-a-subtree-maximum">Retaining a subtree maximum</h3>
+<p>For an edge
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>→</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">v\to i</annotation></semantics></math>,
+write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>θ</mi><mrow><mi>v</mi><mi>i</mi></mrow></msub><mo>=</mo><msub><mo>max</mo><mrow><msub><mi>q</mi><mi>v</mi></msub><mo>∈</mo><msub><mi>Q</mi><mi>v</mi></msub></mrow></msub><msub><mi>q</mi><mrow><mi>v</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>=</mo><msub><mi>ρ</mi><mi>v</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mo>Ber</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>p</mi><mrow><mi>v</mi><mo>,</mo><mi>i</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\theta_{vi}=\max_{q_v\in Q_v}q_{v,i}=\rho_v(\operatorname{Ber}(p_{v,i}))</annotation></semantics></math>.
+Set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>v</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">s_v=1</annotation></semantics></math>
+at leaves and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>v</mi></msub><mo>=</mo><msub><mo>min</mo><mi>i</mi></msub><msub><mi>θ</mi><mrow><mi>v</mi><mi>i</mi></mrow></msub><msub><mi>s</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">s_v=\min_i\theta_{vi}s_i</annotation></semantics></math>
+at each nonroot interior node. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mi>v</mi></msub><annotation encoding="application/x-tex">M_v</annotation></semantics></math>
+is the largest terminal loss below
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>,
+its recursively evaluated value is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>v</mi></msub><msub><mi>M</mi><mi>v</mi></msub></mrow><annotation encoding="application/x-tex">s_vM_v</annotation></semantics></math>.
+Indeed a child attaining the largest terminal loss can be assigned mass
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>θ</mi><mrow><mi>v</mi><mi>i</mi></mrow></msub><annotation encoding="application/x-tex">\theta_{vi}</annotation></semantics></math>
+by a permissible kernel, and all other child values are nonnegative. The
+flat root value obeys
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>ρ</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>M</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F(X)\le\rho_o((M_i)_i)</annotation></semantics></math>
+by monotonicity. The nested root value is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>s</mi><mi>i</mi></msub><msub><mi>M</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\rho_o((s_iM_i)_i)</annotation></semantics></math>.
+Subadditivity yields
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>ρ</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>s</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><munder><mo>min</mo><mrow><msub><mi>q</mi><mi>o</mi></msub><mo>∈</mo><msub><mi>Q</mi><mi>o</mi></msub></mrow></munder><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>q</mi><mrow><mi>o</mi><mo>,</mo><mi>i</mi></mrow></msub><msub><mi>s</mi><mi>i</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+F(X)-N(X)\le \rho_o((1-s_i)_i)
+=1-\min_{q_o\in Q_o}\sum_iq_{o,i}s_i.
+\tag{A.8}
+</annotation></semantics></math><span class="equation-number">(A.8)</span></span> Each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>θ</mi><mrow><mi>v</mi><mi>i</mi></mrow></msub><mo>≥</mo><mi>a</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>ρ</mi><mi>v</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\theta_{vi}\ge a(\rho_v)</annotation></semantics></math>,
+giving the second product in (A.1). The root also satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>𝔼</mi><mi>X</mi><mo>+</mo><msub><mi>A</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">F(X)\le\mathbb EX+A_1</annotation></semantics></math>
+and the nested evaluation is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔼</mi><mi>X</mi></mrow><annotation encoding="application/x-tex">\mathbb EX</annotation></semantics></math>,
+completing the proof.</p>
+<p>The certificates apply to two trees with the same terminal
+probability space and the same root functional, even if their
+intermediate partitions differ. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>U</mi><mi>T</mi></msub><mo>,</mo><msub><mi>L</mi><mi>T</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(U_T,L_T)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>U</mi><mrow><mi>T</mi><mi>′</mi></mrow></msub><mo>,</mo><msub><mi>L</mi><mrow><mi>T</mi><mi>′</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(U_{T&#39;},L_{T&#39;})</annotation></semantics></math>
+bound the respective directed errors, then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>T</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>N</mi><mrow><mi>T</mi><mi>′</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>U</mi><mi>T</mi></msub><mo>+</mo><msub><mi>L</mi><mrow><mi>T</mi><mi>′</mi></mrow></msub></mrow><annotation encoding="application/x-tex">N_T(X)-N_{T&#39;}(X)\le U_T+L_{T&#39;}</annotation></semantics></math>.
+They also bound optimization error for replacing a flat criterion with
+its nested version. If the bounds hold on the entire feasible family of
+losses, a minimizer under the nested criterion has flat regret at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mi>T</mi></msub><mo>+</mo><msub><mi>L</mi><mi>T</mi></msub></mrow><annotation encoding="application/x-tex">U_T+L_T</annotation></semantics></math>,
+by comparing its nested value and that of a flat minimizer.</p>
+<p>For given full envelopes there is also an exact description of the
+worst directed error. For compact convex probability envelopes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>,</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">C,D</annotation></semantics></math>
+on a common finite space, let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>C</mi></msub><mo>,</mo><msub><mi>h</mi><mi>D</mi></msub></mrow><annotation encoding="application/x-tex">h_C,h_D</annotation></semantics></math>
+be their support functions. Then
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>sup</mo><mrow><mn>0</mn><mo>≤</mo><mi>X</mi><mo>≤</mo><mn>1</mn></mrow></munder><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>h</mi><mi>C</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>h</mi><mi>D</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>max</mo><mrow><mi>q</mi><mo>∈</mo><mi>C</mi></mrow></munder><munder><mo>min</mo><mrow><mi>r</mi><mo>∈</mo><mi>D</mi></mrow></munder><mo stretchy="false" form="postfix">∥</mo><mi>q</mi><mo>−</mo><mi>r</mi><msub><mo stretchy="false" form="postfix">∥</mo><mrow><mi mathvariant="normal">T</mi><mi mathvariant="normal">V</mi></mrow></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\sup_{0\le X\le1}(h_C(X)-h_D(X))
+=\max_{q\in C}\min_{r\in D}\|q-r\|_{\mathrm{TV}} .
+\tag{A.9}
+</annotation></semantics></math><span class="equation-number">(A.9)</span></span> For each fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>,
+finite-dimensional minimax interchanges
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>max</mo><mrow><mi>X</mi><mo>∈</mo><msup><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><mi>L</mi></msup></mrow></msub><annotation encoding="application/x-tex">\max_{X\in[0,1]^L}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>min</mo><mrow><mi>r</mi><mo>∈</mo><mi>D</mi></mrow></msub><annotation encoding="application/x-tex">\min_{r\in D}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo>−</mo><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>⋅</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">(q-r)\cdot X</annotation></semantics></math>.
+Maximizing this linear expression over the unit cube gives total
+variation. This identity works for the flat and rectangular envelopes
+and for the envelopes of two different trees.</p>
+<h3 id="a.4-sharpness">A.4 Sharpness</h3>
+<p>For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>∈</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\eta\in(0,1]</annotation></semantics></math>
+write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>η</mi></msub><annotation encoding="application/x-tex">C_\eta</annotation></semantics></math>
+for upper-tail CVaR of mass
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>.
+Its dual probabilities have likelihood ratio at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>η</mi></mrow><annotation encoding="application/x-tex">1/\eta</annotation></semantics></math>
+with respect to the nominal probabilities. Equivalently it is the
+average of the highest
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
+portion of the loss distribution, with partial mass at ties. For
+Bernoulli losses its value is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>min</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mi>/</mi><mi>η</mi><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\min(p/\eta,1)</annotation></semantics></math>.
+The dual likelihood ratio cap gives overlap at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
+with the nominal law, so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>C</mi><mi>η</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>1</mn><mo>−</mo><mi>η</mi></mrow><annotation encoding="application/x-tex">A(C_\eta)\le1-\eta</annotation></semantics></math>,
+with equality at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mi>η</mi></mrow><annotation encoding="application/x-tex">p=\eta</annotation></semantics></math>.
+Also
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>C</mi><mi>η</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a(C_\eta)=0</annotation></semantics></math>.</p>
+<p>Assign
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><msub><mi>η</mi><mi>h</mi></msub></msub><annotation encoding="application/x-tex">C_{\eta_h}</annotation></semantics></math>
+to stage
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+and use independent successes of probabilities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>η</mi><mi>h</mi></msub><annotation encoding="application/x-tex">\eta_h</annotation></semantics></math>,
+with terminal loss one when every trial succeeds and zero otherwise. At
+every live node the evaluation of success is one. The nested value is
+one and the flat value is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∏</mo><mrow><mi>h</mi><mo>=</mo><mn>2</mn></mrow><mi>H</mi></msubsup><msub><mi>η</mi><mi>h</mi></msub></mrow><annotation encoding="application/x-tex">\prod_{h=2}^H\eta_h</annotation></semantics></math>.
+Deterministic stages with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>η</mi><mi>h</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\eta_h=1</annotation></semantics></math>
+can use one child. This proves upper product sharpness. For the other
+direction choose maximum at the root and use
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>h</mi></msub><mo>max</mo><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>a</mi><mi>h</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝔼</mi></mrow><annotation encoding="application/x-tex">a_h\max+(1-a_h)\mathbb E</annotation></semantics></math>
+at stages
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">h\ge2</annotation></semantics></math>.
+Take independent successes of probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p&gt;0</annotation></semantics></math>
+in all those stages and count their conjunction as terminal loss. The
+root may have one child. The flat value is one while the nested value is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∏</mo><mrow><mi>h</mi><mo>=</mo><mn>2</mn></mrow><mi>H</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mi>h</mi></msub><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>a</mi><mi>h</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\prod_{h=2}^H(a_h+(1-a_h)p)</annotation></semantics></math>.
+Taking
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p\downarrow0</annotation></semantics></math>
+gives the lower product result.</p>
+<p>For a homogeneous functional, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">d=A</annotation></semantics></math>,
+the first product bounds upward error and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+bounds downward error. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>1</mn><mo>−</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">d=1-a</annotation></semantics></math>,
+the second product bounds downward error and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">1-a</annotation></semantics></math>
+bounds upward error. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">H\ge2</annotation></semantics></math>
+the relevant geometric expression is at least the one-stage bound. This
+proves the upper bound in (A.2), and the CVaR construction with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>η</mi><mi>h</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><msub><mi>d</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\eta_h=1-d_0</annotation></semantics></math>
+gives equality for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>0</mn></msub><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">d_0 &lt; 1</annotation></semantics></math>.
+Letting
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mn>0</mn></msub><annotation encoding="application/x-tex">d_0</annotation></semantics></math>
+increase to one supplies the endpoint supremum.</p>
+<p>These examples also describe uniform guarantees over arbitrarily long
+finite truncations. For example, with fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">A_1 &lt; 1</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mrow><mi>h</mi><mo>≥</mo><mn>2</mn></mrow></msub><msub><mi>A</mi><mi>h</mi></msub><mo>&lt;</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">\sum_{h\ge2} A_h &lt; \infty</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>h</mi></msub><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">A_h &lt; 1</annotation></semantics></math>
+individually, the upward gap is bounded by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><msub><mo>∏</mo><mrow><mi>h</mi><mo>≥</mo><mn>2</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>A</mi><mi>h</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">1-\prod_{h\ge2}(1-A_h) &lt; 1</annotation></semantics></math>.
+If the sums diverge, the finite-truncation supremum can be one even when
+each level uses CVaR and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>h</mi></msub><mo>→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A_h\to0</annotation></semantics></math>.
+The corresponding downward statement holds for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><msub><mi>a</mi><mi>h</mi></msub></mrow><annotation encoding="application/x-tex">1-a_h</annotation></semantics></math>
+with a maximum root. No convergence of infinite-stream risk functionals
+is required for these statements.</p>
+<h3 id="a.5-rigidity-under-changes-of-stage-preference">A.5 Rigidity
+under changes of stage preference</h3>
+<p>First, for any one risk functional let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mo>Ber</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">v(p)=\rho(\operatorname{Ber}(p))</annotation></semantics></math>.
+Finite-layer approximations of an arbitrary
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>∈</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">X\in[0,1]</annotation></semantics></math>,
+subadditivity, and uniform continuity of the risk imply
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><munder><mo>sup</mo><mrow><mi>p</mi><mo>∈</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow></munder><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+A=\sup_{p\in[0,1]}(v(p)-p).
+</annotation></semantics></math> Indeed represent a lower uniform-step
+approximation of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+as a sum of scaled level-set indicators, subtract its expectation and
+pass to the uniform limit. A Bernoulli loss supplies the reverse
+inequality. The conditional averaging property gives
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mi>y</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mn>0</mn><mo>≤</mo><mi>y</mi><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+v(y+(x-y)p)\ge y+(x-y)v(p),\qquad 0\le y\le x\le1.
+\tag{A.10}
+</annotation></semantics></math><span class="equation-number">(A.10)</span></span> This is obtained by taking the
+conditional mean of a success indicator whose probabilities on the two
+branches of masses
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>,</mo><mn>1</mn><mo>−</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">p,1-p</annotation></semantics></math>
+are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x,y</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>p</mi><mo>&lt;</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">0 &lt; p &lt; q</annotation></semantics></math>,
+take
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>p</mi><mi>/</mi><mi>q</mi><mo>,</mo><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=p/q,y=0</annotation></semantics></math>
+in (A.10) to see
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mi>/</mi><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">v(p)\ge (p/q)v(q)</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+is continuous on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">(0,1]</annotation></semantics></math>.
+Write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">r=v(1/2)</annotation></semantics></math>.
+To bound
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">v(p)-p</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≤</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">p\le1/2</annotation></semantics></math>,
+use
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x=1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo>−</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">y=(1/2-p)/(1-p)</annotation></semantics></math>
+in (A.10). For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≥</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">p\ge1/2</annotation></semantics></math>
+use
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">x=1/(2p)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y=0</annotation></semantics></math>.
+Both give
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>p</mi><mo>≤</mo><mn>2</mn><mi>r</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">v(p)-p\le2r-1</annotation></semantics></math>,
+hence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≤</mo><mn>2</mn><mi>r</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">A\le2r-1</annotation></semantics></math>.</p>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mn>2</mn></msub><annotation encoding="application/x-tex">D_2</annotation></semantics></math>
+be the supremum absolute discrepancy for success indicators on two
+successive binary branches when both stages use
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>.
+At
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>∈</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">t\in(0,1)</annotation></semantics></math>
+set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">c=v(t)</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>t</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">u=v(t^2)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>=</mo><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>t</mi><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">w=v(2t-t^2)</annotation></semantics></math>.
+The three signed flat-minus-nested residuals
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>−</mo><msup><mi>c</mi><mn>2</mn></msup><mo>,</mo><mspace width="2.0em"></mspace><mi>w</mi><mo>−</mo><mn>2</mn><mi>c</mi><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup><mo>,</mo><mspace width="2.0em"></mspace><mi>c</mi><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>u</mi><mo>−</mo><mi>r</mi><mi>w</mi></mrow><annotation encoding="application/x-tex">
+u-c^2,\qquad w-2c+c^2,\qquad c-(1-r)u-rw
+</annotation></semantics></math> are legitimate tests. The first is an
+intersection, the second a union, and the third uses a half-mass split
+between conditional success probabilities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>t</mi><mn>2</mn></msup><annotation encoding="application/x-tex">t^2</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>t</mi><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">2t-t^2</annotation></semantics></math>.
+Weight their sum by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>r</mi><mo>,</mo><mi>r</mi><mo>,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">1-r,r,1</annotation></semantics></math>,
+respectively, to obtain
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>r</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>c</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">-(2r-1)c(1-c)</annotation></semantics></math>.
+Each residual is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><msub><mi>D</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">-D_2</annotation></semantics></math>,
+so when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≤</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">a\le1/2</annotation></semantics></math>
+one can take or approach
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">c=1/2</annotation></semantics></math>
+to get
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≤</mo><mn>8</mn><msub><mi>D</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">A\le8D_2</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">a&gt;1/2</annotation></semantics></math>,
+the union residual tends to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>a</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">-a(1-a)</annotation></semantics></math>
+as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t\downarrow0</annotation></semantics></math>,
+giving
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>a</mi><mo>≤</mo><mn>2</mn><msub><mi>D</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">1-a\le2D_2</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>8</mn><msub><mi>D</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">d(\rho)\le8D_2</annotation></semantics></math>.</p>
+<p>For stagewise varying preferences, a tree with randomness only at
+stage
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+has nested risk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ρ</mi><mi>h</mi></msub><annotation encoding="application/x-tex">\rho_h</annotation></semantics></math>
+and flat risk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ρ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\rho_1</annotation></semantics></math>.
+Therefore
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><msub><mi>ρ</mi><mi>h</mi></msub><mo>−</mo><msub><mi>ρ</mi><mn>1</mn></msub><msub><mo stretchy="false" form="postfix">∥</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></msub><mo>≤</mo><mi>Δ</mi></mrow><annotation encoding="application/x-tex">\|\rho_h-\rho_1\|_{[0,1]}\le\Delta</annotation></semantics></math>,
+first on finite laws and then by uniform discretization. Use a
+two-live-stage tree with stages one and two. Substituting
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ρ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\rho_1</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ρ</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\rho_2</annotation></semantics></math>
+changes the first-stage nested result by at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Δ</mi><annotation encoding="application/x-tex">\Delta</annotation></semantics></math>
+since a normalized monotone translation-equivariant risk is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>-Lipschitz
+in the sup norm. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>ρ</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>2</mn><mi>Δ</mi></mrow><annotation encoding="application/x-tex">D_2(\rho_1)\le2\Delta</annotation></semantics></math>
+and the single-functional inverse just proved gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>ρ</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>16</mn><mi>Δ</mi></mrow><annotation encoding="application/x-tex">d(\rho_1)\le16\Delta</annotation></semantics></math>.
+The triangle inequality gives (A.3). The converse follows from (A.1). To
+see why stagewise synchronization is essential, take expectation at the
+root and maximum at stage two, with the same rare-success conditional
+law on both first-stage branches. The nested value is one and the flat
+value tends to zero. For maximum followed by expectation, the opposite
+directed discrepancy tends to one.</p>
+<h3 id="a.6-relation-to-existing-theory">A.6 Relation to existing
+theory</h3>
+<p>The finite probability-envelope and pasting constructions are
+established. Shapiro uses rectangular sets to characterize dynamic
+decomposition, and proves the expectation/maximum restriction under
+symmetry in equal-probability finite scenarios. The new estimates use
+the probability mass preserved by each transition to give sharp additive
+quantitative control for bounded losses across depth, independently of
+minimum atom mass. The alignment result uses the uniform family of
+trees, including one-live-stage trees. It does not infer rigidity from
+one fixed filtration. <a
+href="https://doi.org/10.1287/opre.2015.1466">Shapiro, Operations
+Research 64(2), 528–541, DOI 10.1287/opre.2015.1466</a> <a
+href="https://doi.org/10.1016/j.orl.2012.08.007">Shapiro, Operations
+Research Letters 40(6), 436–439, DOI 10.1016/j.orl.2012.08.007</a></p>
+<p>Iancu, Petrik and Subramanian characterize multiplicative
+approximation factors for given static and dynamic risk measures, with
+multiperiod results for comonotone risks and CVaR calculations in §4.3
+and Theorem 8 of their author manuscript. Their nested CVaR envelope
+analysis anticipates the product of tail masses for that family. Here
+the product is a sharp additive stability modulus across the whole
+law-invariant coherent class, plus directed certificates for
+heterogeneous preferences. The fixed-envelope identity (A.9) is ordinary
+support-function duality. The present bounds do not supply their
+multiplicative domination factors or solve the general exact envelope
+optimization efficiently. <a
+href="https://doi.org/10.1287/moor.2014.0689">Iancu, Petrik and
+Subramanian, Mathematics of Operations Research 40(3), 655–682, DOI
+10.1287/moor.2014.0689</a></p>
+</main></body></html>

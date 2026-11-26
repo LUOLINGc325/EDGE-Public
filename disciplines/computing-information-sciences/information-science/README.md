@@ -5,3 +5,4 @@
 [上级学科 / Parent](../)
 
 - [信息与通信 / Information and communication](information-communication/)
+- [信号处理理论 / Signal processing theory](signal-processing/)

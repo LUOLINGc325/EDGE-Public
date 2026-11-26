@@ -16,6 +16,7 @@
 - [Optimal finite preparation for delayed Newton cooling](../../../papers/finite-common-preparation/)
 - [Spurious Local Minima and Certified Global Optimization in Two-Sensor Switched-Linear Scheduling](../../../papers/switched-linear-scheduling-global-certificate/)
 - [Stability boundaries of divisive-normalization circuits: exact recurrence classifications and norm-one counterexamples](../../../papers/divisive-normalization-stability-boundary/)
+- [The exact loss of covariance intersection under graph-structured uncertainty](../../../papers/covariance-intersection-sharp-loss/)
 - [The Exact Statistical Price of a Robust-Regret Certificate in LQR](../../../papers/lqr-certificate-efficiency-frontier/)
 - [The statistical price of robust LQR depends on its comparator](../../../papers/robust-lqr-regret-efficiency/)
 - [一维对数凹目标的精确布朗重置分布](../../../papers/optimal-resetting-asymmetric/)

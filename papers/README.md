@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**396 research entries / 成果条目 · 498 manuscript versions / 论文版本**
+**404 research entries / 成果条目 · 506 manuscript versions / 论文版本**
 
 [按学科浏览](BY_FIELD.md) · [导出单项成果](EXPORT.md) · [项目清单](CATALOG.json)
 
@@ -29,6 +29,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Assignment bounds and constant-factor algorithms for bounded-hop independent-set reconfiguration | [阅读](bounded-hop-independent-set-approximation/paper.zh.md) | [Read](bounded-hop-independent-set-approximation/paper.en.md) |
 | Blind first-count calibration with singular quantum jump maps · [正文 / Manuscript](first-passage-ray-channel-threshold/paper.md) | — | — |
 | Computational complexity of optimal Pauli error cancellation on odd cycles | — | [Read](odd-cycle-exact-complexity/paper.en.md) |
+| Computing the additive discrepancy between flat and nested coherent risk · [正文 / Manuscript](coherent-risk-binary-tower-rigidity/paper.md) | — | — |
 | Critical Risk under Hard Erasure Budgets | — | [Read](hard-erasure-critical-testing/paper.en.md) |
 | Cumulative envy is weakly NP-complete with two and three identical agents | — | [Read](two-three-agent-complexity/paper.en.md) |
 | Dispersion at the Gray distortion endpoint for binary Markov sources | — | [Read](gray-critical-endpoint/paper.en.md) |
@@ -43,6 +44,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Exact Capacity of the Laplace Channel under an Absolute Input Cost | — | [Read](laplace-absolute-cost-capacity/paper.en.md) |
 | Exact capacity of the quadratic-cost Laplace channel | — | [Read](laplace-quadratic-cost-capacity/paper.en.md) |
 | Exact capital for convex-profile e-value mergers | — | [Read](exact-convex-profile-capital/paper.en.md) |
+| Exact causal quantum log-loss at short horizons and a Gram-matrix reduction · [正文 / Manuscript](quantum-logloss-minimax-frontier/paper.md) | — | — |
 | Exact cumulative envy is already hard for two agents | — | [Read](complete-fixed-count-classification/paper.en.md) |
 | Exact CVaR One-Max Search at a Fixed Announced Horizon | — | [Read](announced-fixed-horizon/paper.en.md) |
 | Exact erasure resilience with adaptively scheduled feedback | [阅读](adaptive-erasure-feedback-law/paper.zh.md) | [Read](adaptive-erasure-feedback-law/paper.en.md) |
@@ -71,6 +73,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Full-support unbounded service times with a quantitative feedback capacity gap · [正文 / Manuscript](unbounded-queue-feedback-separation/paper.md) | — | — |
 | Gaffke 统计量留一系数的尖锐下界 | [阅读](gaffke-delta-sharp-bound/paper.zh.md) | [Read](gaffke-delta-sharp-bound/paper.en.md) |
 | Gaussian mixing recovery under response-dependent repeat measurements · [正文 / Manuscript](gaussian-mixture-finite-design-minimax/paper.md) | — | — |
+| Gaussian scale calibration with finite affine-sign and offset budgets · [正文 / Manuscript](gaussian-affine-sign-identifiability/paper.md) | — | — |
 | Glauber 退火中过量活动度的桥结构机制 | [阅读](glauber-annealing-activity-counterexample/paper.zh.md) | [Read](glauber-annealing-activity-counterexample/paper.en.md) |
 | Global and Stable Recovery of Compositional Lotka–Volterra Dynamics | — | [Read](compositional-glv-convex-recovery/paper.en.md) |
 | Global entropy support for binary symmetric sources and the absence of an interactive key-rate gain · [正文 / Manuscript](dsbs-interactive-key-support/paper.md) | — | — |
@@ -134,9 +137,12 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Serial service and the exact ordinal scheduling frontier | — | [Read](serial-service-frontier/paper.en.md) |
 | Several optimal Rényi orders under randomized-response composition | — | [Read](composition-multiple-orders/paper.en.md) |
 | Sharp coarse-graining bounds for Lüders order scores | — | [Read](sharp-amplification-and-pointwise-monotonicity/paper.en.md) |
+| Sharp constellation size for stretched-exponential accuracy on the amplitude-constrained Gaussian channel · [正文 / Manuscript](awgn-constellation-cardinality-frontier/paper.md) | — | — |
 | Sharp contamination and inference frontiers for the optimal sub-Gaussian variance proxy | — | [Read](optimal-proxy-tail-envelope-minimax/paper.en.md) |
+| Sharp deficiency and the size of least-favourable restrictions for Poisson signals · [正文 / Manuscript](poisson-background-experiment-transition/paper.md) | — | — |
 | Sharp demand-shape and information boundaries in random-capacity inventory control | — | [Read](discount-replenishment-full-capacity/paper.en.md) |
 | Sharp Finite-Horizon Descent for the Difference-of-Convex Algorithm | — | [Read](dca-sharp-finite-horizon/paper.en.md) |
+| Sharp finite-mixture calibration in natural exponential families · [正文 / Manuscript](finite-mixture-e-calibration/paper.md) | — | — |
 | Sharp finite-size inefficiency on common-slope exponential parallel links · [正文 / Manuscript](log-convex-routing-efficiency/paper.md) | — | — |
 | Sharp fixed-statistic sensitivity envelopes for Gaffke's statistic | — | [Read](fixed-statistic-sensitivity-envelope/paper.en.md) |
 | Sharp Jordan-order limits for monitored qubit first-passage kernels | — | [Read](dominant-jordan-order-limit/paper.en.md) |
@@ -170,6 +176,8 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | The exact asymptotic privacy gain of the Gaussian-product mechanism | [阅读](gaussian-product-sharp-zcdp/paper.zh.md) | [Read](gaussian-product-sharp-zcdp/paper.en.md) |
 | The exact finite-job consistency–robustness frontier for non-clairvoyant scheduling | [阅读](finite-n-prediction-scheduling/paper.zh.md) | [Read](finite-n-prediction-scheduling/paper.en.md) |
 | The exact Gaussian threshold noise-stability phase curve | — | [Read](gaussian-threshold-phase-curve/paper.en.md) |
+| The exact loss of covariance intersection under graph-structured uncertainty · [正文 / Manuscript](covariance-intersection-sharp-loss/paper.md) | — | — |
+| The exact majorization radius of stationary LRU caching · [正文 / Manuscript](lru-near-uniform-schur-radius/paper.md) | — | — |
 | The exact principal entropy endpoint near a three-state sampling resonance | — | [Read](exact-principal-entropy-endpoint/paper.en.md) |
 | The Exact Statistical Price of a Robust-Regret Certificate in LQR | — | [Read](lqr-certificate-efficiency-frontier/paper.en.md) |
 | The finite-population effect for Euclidean coordinate medians | — | [Read](fixed-population-sharp-deficit/paper.en.md) |

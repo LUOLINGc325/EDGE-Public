@@ -1,0 +1,1155 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sharp deficiency and the size of least-favourable restrictions for Poisson signals</title>
+<style>body{max-width:76ch;margin:2rem auto;padding:0 1rem;font:1.1rem/1.55 Georgia,serif}h1,h2,h3{line-height:1.25}pre,math[display="block"]{max-width:100%;overflow-x:auto}.equation{display:flex;align-items:center;justify-content:space-between;gap:1em;overflow-x:auto}.equation>math{flex:1 0 auto}.equation-number{white-space:nowrap}pre{padding:.8rem;background:#f1f2f3}a{overflow-wrap:anywhere}</style></head>
+<body><main>
+<h1
+id="sharp-deficiency-and-the-size-of-least-favourable-restrictions-for-poisson-signals">Sharp
+deficiency and the size of least-favourable restrictions for Poisson
+signals</h1>
+<h2 id="abstract">Abstract</h2>
+<p>A Poisson count with a large known background can convey bounded
+information about a signal whose clean count becomes arbitrarily
+informative. We determine the first-order gap between the one-sided
+deficiency and one. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+be the largest clean intensity,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_n</annotation></semantics></math>
+the source background mean, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>B</mi><mi>n</mi></msub><annotation encoding="application/x-tex">B_n</annotation></semantics></math>
+the source exposure multiplier. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>A</mi><mi>n</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><mo>=</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><msqrt><mrow><mo>log</mo><mi>n</mi><mi>/</mi><mi>n</mi></mrow></msqrt><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A_n^{-1/2}=o(\sqrt{\log n/n})</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>n</mi></msub><mi>n</mi><mi>/</mi><msqrt><msub><mi>A</mi><mi>n</mi></msub></msqrt><mo>→</mo><mi>κ</mi><mo>∈</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>∞</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">B_n n/\sqrt{A_n}\to\kappa\in[0,\infty)</annotation></semantics></math>,
+the gap is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>κ</mi></msub><msqrt><mrow><mo>log</mo><mi>n</mi><mi>/</mi><mi>n</mi></mrow></msqrt><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">c_\kappa\sqrt{\log n/n}(1+o(1))</annotation></semantics></math>.
+The latter ratio measures the source signal range in background standard
+deviations. A scalar boundary-value equation gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mi>κ</mi></msub><annotation encoding="application/x-tex">c_\kappa</annotation></semantics></math>,
+and its solution specifies an asymptotically attaining simulator and a
+matching prior bound. More generally the source can follow a
+nondecreasing continuously differentiable path of exponential tilts of a
+positive continuous density on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb R</annotation></semantics></math>,
+with its moment-generating function finite on an open interval
+containing the tilt range. The worst deficiency on at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+parameter states tends to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mn>1</mn><mi>/</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">1-1/k</annotation></semantics></math>
+for each fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.
+To recover the full deficiency within a prescribed multiple of its gap
+from one, the number of states must grow on the order of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><mi>n</mi><mi>/</mi><mo>log</mo><mi>n</mi></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{n/\log n}</annotation></semantics></math>.
+A separate finite-intensity example has an exact two-state
+least-favourable restriction with one interior intensity.</p>
+<h2 id="guide-for-readers">Guide for readers</h2>
+<p>Imagine measuring a weak signal on top of a large, known background.
+A simulator sees one noisy count and tries to produce a count
+distributed as if it came from the clean signal. The deficiency is the
+smallest worst-case discrepancy that any simulator can achieve. A
+deficiency near one means that even the best simulator has very little
+uniform overlap with the clean count law.</p>
+<p>The main theorem tells us how much overlap remains to first order as
+the largest clean intensity grows. Using the square root of intensity
+makes the natural comparison windows approximately equal in width.
+Section 2 constructs a simulator whose local output density is equal at
+every interior signal level and a prior that matches it in the limit.
+Sections 3 and 4 turn that calculation into matching bounds for Poisson
+counts, including signals close to zero. The finite-state results
+explain how densely the signal interval must be sampled to detect the
+same discrepancy.</p>
+<h2 id="poisson-comparison">1. Poisson comparison</h2>
+<p>For experiments
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>F</mi><mi>t</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F=(F_t)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>E</mi><mi>t</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">E=(E_t)</annotation></semantics></math>
+indexed by the same set, write
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>F</mi><mo>,</mo><mi>E</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>inf</mo><mi>K</mi></munder><munder><mo>sup</mo><mi>t</mi></munder><mo stretchy="false" form="postfix">∥</mo><mi>K</mi><msub><mi>F</mi><mi>t</mi></msub><mo>−</mo><msub><mi>E</mi><mi>t</mi></msub><msub><mo stretchy="false" form="postfix">∥</mo><mrow><mi mathvariant="normal">T</mi><mi mathvariant="normal">V</mi></mrow></msub><mo>,</mo><mspace width="2.0em"></mspace><mo stretchy="false" form="postfix">∥</mo><mi>Q</mi><mo>−</mo><mi>P</mi><msub><mo stretchy="false" form="postfix">∥</mo><mrow><mi mathvariant="normal">T</mi><mi mathvariant="normal">V</mi></mrow></msub><mo>=</mo><munder><mo>sup</mo><mi>A</mi></munder><mrow><mo stretchy="true" form="prefix">|</mo><mi>Q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \delta(F,E)=\inf_K\sup_t\|KF_t-E_t\|_{\mathrm{TV}},
+ \qquad \|Q-P\|_{\mathrm{TV}}=\sup_A |Q(A)-P(A)| .
+</annotation></semantics></math> The infimum runs over all
+parameter-independent Markov kernels. For a subset
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+of the parameter space let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mi>S</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>F</mi><mo>,</mo><mi>E</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\delta_S(F,E)</annotation></semantics></math>
+be the same infimum with the supremum over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+The kernel may depend on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+Fix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>∈</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">t\in[0,1]</annotation></semantics></math>
+and consider
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>E</mi><mi>t</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></msubsup><mo>=</mo><mo>Pois</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><msup><mi>t</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>F</mi><mi>t</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></msubsup><mo>=</mo><mo>Pois</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo>+</mo><msub><mi>B</mi><mi>n</mi></msub><mi>n</mi><msup><mi>t</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><msub><mo>ℓ</mo><mi>n</mi></msub><mo>=</mo><msqrt><mfrac><mrow><mo>log</mo><mi>n</mi></mrow><mi>n</mi></mfrac></msqrt><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ E^{(n)}_t=\operatorname{Pois}(nt^2),\qquad
+ F^{(n)}_t=\operatorname{Pois}(A_n+B_nnt^2),\qquad
+ \ell_n=\sqrt{\frac{\log n}{n}}.
+</annotation></semantics></math> Here
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>n</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">u=nt^2</annotation></semantics></math>
+is the clean intensity,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A_n&gt;0</annotation></semantics></math>
+is a known background, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>n</mi></msub><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B_n\ge0</annotation></semantics></math>
+is a known exposure multiplier in the source.</p>
+<p><strong>Theorem 1.</strong> Suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">n\to\infty</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>A</mi><mi>n</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><mo>=</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>ℓ</mo><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A_n^{-1/2}=o(\ell_n)</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>n</mi></msub><mi>n</mi><mi>/</mi><msqrt><msub><mi>A</mi><mi>n</mi></msub></msqrt><mo>→</mo><mi>κ</mi><mo>∈</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>∞</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">B_n n/\sqrt{A_n}\to\kappa\in[0,\infty)</annotation></semantics></math>.
+Then
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>δ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>,</mo><msup><mi>E</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>∼</mo><msub><mi>c</mi><mi>κ</mi></msub><mspace width="0.167em"></mspace><msub><mo>ℓ</mo><mi>n</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ 1-\delta(F^{(n)},E^{(n)})\sim c_\kappa\,\ell_n.
+ \tag{1}
+</annotation></semantics></math><span class="equation-number">(1)</span></span> Writing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>,</mo><mi>Φ</mi></mrow><annotation encoding="application/x-tex">\phi,\Phi</annotation></semantics></math>
+for the standard normal density and distribution function,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mi>κ</mi></msub><annotation encoding="application/x-tex">c_\kappa</annotation></semantics></math>
+is the unique
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">c\ge1</annotation></semantics></math>
+for which the equation
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>c</mi><mo>−</mo><mn>2</mn><mi>κ</mi><mi>t</mi><mspace width="0.167em"></mspace><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>Φ</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mi>U</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+ U&#39;(t)=c-2\kappa t\,\phi(\Phi^{-1}(U(t))),\qquad U(0)=0
+ \tag{2}
+</annotation></semantics></math><span class="equation-number">(2)</span></span> reaches
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">U(1)=1</annotation></semantics></math>
+and has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>U</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\lt U(t)\lt 1</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>t</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\lt t\lt 1</annotation></semantics></math>.
+The density term is interpreted as zero at 0 and 1. In particular,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">c_0=1</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>&lt;</mo><msub><mi>c</mi><mi>κ</mi></msub><mo>≤</mo><mn>1</mn><mo>+</mo><mi>κ</mi><mi>/</mi><msqrt><mrow><mn>2</mn><mi>π</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">1\lt c_\kappa\le1+\kappa/\sqrt{2\pi}</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\kappa&gt;0</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>n</mi></msub><mo>≡</mo><mi>B</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B_n\equiv B&gt;0</annotation></semantics></math>,
+the condition on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>A</mi><mi>n</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><annotation encoding="application/x-tex">A_n^{-1/2}</annotation></semantics></math>
+follows from the boundedness of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>n</mi></msub><mi>n</mi><mi>/</mi><msqrt><msub><mi>A</mi><mi>n</mi></msub></msqrt></mrow><annotation encoding="application/x-tex">B_n n/\sqrt{A_n}</annotation></semantics></math>.</p>
+<p>For a fixed integer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k\ge1</annotation></semantics></math>,
+define
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>=</mo><msub><mo>sup</mo><mrow><mn>1</mn><mo>≤</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>S</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><mi>k</mi></mrow></msub><msub><mi>δ</mi><mi>S</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>,</mo><msup><mi>E</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\delta_{n,k}=\sup_{1\le |S|\le k}\delta_S(F^{(n)},E^{(n)})</annotation></semantics></math>.
+Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>→</mo><mn>1</mn><mo>−</mo><mn>1</mn><mi>/</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">\delta_{n,k}\to1-1/k</annotation></semantics></math>.
+For each fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\alpha&gt;0</annotation></semantics></math>,
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>n</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">m_n(\alpha)</annotation></semantics></math>
+be the smallest cardinality of a finite
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⊂</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">S\subset[0,1]</annotation></semantics></math>
+for which
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>,</mo><msup><mi>E</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>δ</mi><mi>S</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>,</mo><msup><mi>E</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>α</mi><msub><mo>ℓ</mo><mi>n</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \delta(F^{(n)},E^{(n)})-\delta_S(F^{(n)},E^{(n)})\le \alpha\ell_n .
+ \tag{3}
+</annotation></semantics></math><span class="equation-number">(3)</span></span> For all sufficiently large
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+such a set exists. Moreover
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>liminf</mo><mrow><mi>n</mi><mo>→</mo><mi>∞</mi></mrow></munder><msub><mi>m</mi><mi>n</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>ℓ</mo><mi>n</mi></msub><mo>≥</mo><mfrac><mn>1</mn><mrow><msub><mi>c</mi><mi>κ</mi></msub><mo>+</mo><mi>α</mi></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><munder><mo>limsup</mo><mrow><mi>n</mi><mo>→</mo><mi>∞</mi></mrow></munder><msub><mi>m</mi><mi>n</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>ℓ</mo><mi>n</mi></msub><mo>&lt;</mo><mi>∞</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \liminf_{n\to\infty} m_n(\alpha)\ell_n\ge \frac{1}{c_\kappa+\alpha},
+ \qquad
+ \limsup_{n\to\infty} m_n(\alpha)\ell_n\lt \infty .
+ \tag{4}
+</annotation></semantics></math><span class="equation-number">(4)</span></span> Thus no uniform finite cardinality can
+capture the full deficiency in this affine Poisson class. Equations (1)
+and (4) concern the direction from the background count to the clean
+count, and the regime of bounded
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>n</mi></msub><mi>n</mi><mi>/</mi><msqrt><msub><mi>A</mi><mi>n</mi></msub></msqrt></mrow><annotation encoding="application/x-tex">B_n n/\sqrt{A_n}</annotation></semantics></math>.</p>
+<h2 id="a-scalar-construction-for-smooth-source-experiments">2. A scalar
+construction for smooth source experiments</h2>
+<p>The constant arises from a construction that applies beyond the
+Gaussian source. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+be a strictly positive continuous probability density on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb R</annotation></semantics></math>.
+Suppose its moment generating function is finite on an open interval
+containing the range of a nondecreasing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>C</mi><mn>1</mn></msup><annotation encoding="application/x-tex">C^1</annotation></semantics></math>
+function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>:</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\eta:[0,1]\to\mathbb R</annotation></semantics></math>.
+Set
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>e</mi><mrow><mi>η</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>x</mi><mo>−</mo><mi>b</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>η</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msup><mo>,</mo><mspace width="2.0em"></mspace><mi>b</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>log</mo><mo>∫</mo><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>e</mi><mrow><mi>a</mi><mi>x</mi></mrow></msup><mspace width="0.167em"></mspace><mi>d</mi><mi>x</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ f_t(x)=g(x)e^{\eta(t)x-b(\eta(t))},\qquad b(a)=\log\int g(x)e^{ax}\,dx.
+</annotation></semantics></math> Write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F_t(x)</annotation></semantics></math>
+for the distribution function,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">Q_t(u)</annotation></semantics></math>
+for its quantile, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>x</mi><mo accent="true">‾</mo></mover><mi>t</mi></msub><mo>=</mo><mi>b</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>η</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\bar x_t=b&#39;(\eta(t))</annotation></semantics></math>
+for the mean. Define for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>u</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\lt u\lt 1</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msubsup><mo>∫</mo><mrow><mi>−</mi><mi>∞</mi></mrow><mrow><msub><mi>Q</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mover><mi>x</mi><mo accent="true">‾</mo></mover><mi>t</mi></msub><mo>−</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>f</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>d</mi><mi>x</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ H_t(u)=\int_{-\infty}^{Q_t(u)}(\bar x_t-x)f_t(x)\,dx .
+</annotation></semantics></math> This is positive in the interior, since
+the mean of the lower part of a distribution with positive density is
+strictly less than the full mean. Extend
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>H</mi><mi>t</mi></msub><annotation encoding="application/x-tex">H_t</annotation></semantics></math>
+by zero for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>∉</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">u\notin(0,1)</annotation></semantics></math>.</p>
+<p><strong>Proposition 2.</strong> There is a unique
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">c\ge1</annotation></semantics></math>
+such that the solution of
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>c</mi><mo>−</mo><mi>η</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>H</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mi>U</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+ U&#39;(t)=c-\eta&#39;(t)H_t(U(t)),\qquad U(0)=0
+ \tag{5}
+</annotation></semantics></math><span class="equation-number">(5)</span></span> satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">U(1)=1</annotation></semantics></math>.
+The function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>Q</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">M(t)=Q_t(U(t))</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>t</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\lt t\lt 1</annotation></semantics></math>
+is increasing, maps that interval onto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb R</annotation></semantics></math>,
+and satisfies
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>f</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>c</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ M&#39;(t)f_t(M(t))=c.
+ \tag{6}
+</annotation></semantics></math><span class="equation-number">(6)</span></span> There is a continuous positive density
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">w(t)</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+such that
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>M</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><msub><mi>f</mi><mrow><msup><mi>M</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>sup</mo><mrow><mn>0</mn><mo>≤</mo><mi>t</mi><mo>≤</mo><mn>1</mn></mrow></munder><mi>w</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>f</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><msub><mo>∫</mo><mi>ℝ</mi></msub><munder><mo>sup</mo><mrow><mn>0</mn><mo>≤</mo><mi>t</mi><mo>≤</mo><mn>1</mn></mrow></munder><mi>w</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>f</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>d</mi><mi>x</mi><mo>=</mo><mi>c</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ w(M^{-1}(x))\,f_{M^{-1}(x)}(x)=\sup_{0\le t\le1}w(t) f_t(x),
+ \qquad
+ \int_{\mathbb R}\sup_{0\le t\le1} w(t) f_t(x)\,dx=c.
+ \tag{7}
+</annotation></semantics></math><span class="equation-number">(7)</span></span> The law under
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>r</mi></msub><annotation encoding="application/x-tex">f_r</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>M</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">T(X)=M^{-1}(X)</annotation></semantics></math>
+has density
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mi>r</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>M</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>f</mi><mi>r</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>ρ</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>c</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \rho_r(t)=M&#39;(t)f_r(M(t)),\qquad \rho_t(t)=c .
+ \tag{8}
+</annotation></semantics></math><span class="equation-number">(8)</span></span></p>
+<p><strong>Proof.</strong> Exponential moments are uniformly bounded on
+the parameter path for some positive exponential rate in both tails. It
+follows that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+is jointly continuous on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><mo>×</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">[0,1]\times\mathbb R</annotation></semantics></math>,
+bounded, and uniformly small near
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">u=0,1</annotation></semantics></math>.
+In the interior
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>∂</mi><mi>u</mi></msub><msub><mi>H</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mover><mi>x</mi><mo accent="true">‾</mo></mover><mi>t</mi></msub><mo>−</mo><msub><mi>Q</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\partial_u H_t(u)=\bar x_t-Q_t(u)</annotation></semantics></math>.
+The quantile is continuous and locally bounded for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>∈</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">t\in[0,1]</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>∈</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">u\in(0,1)</annotation></semantics></math>,
+by strict positivity and continuity of the distribution functions. The
+exponential tail bounds also give
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>Q</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo>log</mo><mi>u</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>+</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">|Q_t(u)|\le C(1+|\log u|+|\log(1-u)|)</annotation></semantics></math>.</p>
+<p>For each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">c\ge1</annotation></semantics></math>
+the continuous bounded right side of (5) gives a solution on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>.
+Near
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">u=0</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
+its derivative is positive and at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math>
+uniformly in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>.
+Two solutions starting at zero satisfy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>≥</mo><mi>t</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">u\ge t/2</annotation></semantics></math>
+for small positive
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>,
+with the quantile bound giving a uniform Lipschitz coefficient
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo>log</mo><mi>t</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">C(1+|\log t|)</annotation></semantics></math>
+along the interval between them. Its integral near zero is finite, so
+Gronwall’s inequality gives uniqueness there. Ordinary local uniqueness
+applies away from the boundary values. A solution stays positive after
+time zero and, after reaching one, increases linearly, since the
+extended
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+vanishes above one. These facts give uniqueness up to time one. Bounded
+derivatives, subsequence compactness and uniqueness give continuous
+dependence at time one on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>′</mi><mo>&gt;</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">c&#39;&gt;c</annotation></semantics></math>
+the corresponding solutions satisfy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mrow><mi>c</mi><mi>′</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><msub><mi>U</mi><mi>c</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">U_{c&#39;}(t)&gt;U_c(t)</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t&gt;0</annotation></semantics></math>.
+It holds initially by their initial derivatives, and at a putative first
+crossing their derivative difference would be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>′</mi><mo>−</mo><mi>c</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c&#39;-c&gt;0</annotation></semantics></math>.
+At
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">c=1</annotation></semantics></math>
+the terminal value is at most one, since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">H\ge0</annotation></semantics></math>.
+At
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>1</mn><mo>+</mo><msub><mo>sup</mo><mrow><mi>t</mi><mo>,</mo><mi>u</mi></mrow></msub><mi>η</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>H</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">c=1+\sup_{t,u}\eta&#39;(t)H_t(u)</annotation></semantics></math>
+the derivative is at least one. This proves existence and uniqueness of
+the desired
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>.
+For this solution,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>t</mi><mo>→</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">U(t)/t\to c</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>U</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>→</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">(1-U(t))/(1-t)\to c</annotation></semantics></math>
+at the respective endpoints.</p>
+<p>Differentiating
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>F</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">U(t)=F_t(M(t))</annotation></semantics></math>,
+the partial
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>-derivative
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F_t(x)</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">x=M(t)</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>η</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>H</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">-\eta&#39;(t)H_t(U(t))</annotation></semantics></math>.
+Equation (6) follows. It also gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>′</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">M&#39;&gt;0</annotation></semantics></math>,
+and the limits of the quantiles are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>∞</mi></mrow><annotation encoding="application/x-tex">-\infty</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mi>∞</mi></mrow><annotation encoding="application/x-tex">+\infty</annotation></semantics></math>
+at the respective endpoints. Define
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mo>exp</mo><mo stretchy="false" form="prefix">{</mo><mi>−</mi><msubsup><mo>∫</mo><mn>0</mn><mi>t</mi></msubsup><mi>η</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mover><mi>x</mi><mo accent="true">‾</mo></mover><mi>v</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>d</mi><mi>v</mi><mo stretchy="false" form="postfix">}</mo></mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mo>exp</mo><mo stretchy="false" form="prefix">{</mo><mi>−</mi><msubsup><mo>∫</mo><mn>0</mn><mi>s</mi></msubsup><mi>η</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mover><mi>x</mi><mo accent="true">‾</mo></mover><mi>v</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>d</mi><mi>v</mi><mo stretchy="false" form="postfix">}</mo><mspace width="0.167em"></mspace><mi>d</mi><mi>s</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ w(t)=\frac{\exp\{-\int_0^t\eta&#39;(v)(M(v)-\bar x_v)\,dv\}}
+ {\int_0^1\exp\{-\int_0^s\eta&#39;(v)(M(v)-\bar x_v)\,dv\}\,ds}.
+ \tag{9}
+</annotation></semantics></math><span class="equation-number">(9)</span></span> The quantile bound and the endpoint
+behaviour of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+make the integrand integrable. For fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+the derivative of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>f</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\log(w(t)f_t(x))</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\eta&#39;(t)(x-M(t))</annotation></semantics></math>.
+The function therefore attains its maximum at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">M^{-1}(x)</annotation></semantics></math>,
+also if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
+is locally flat. Changing variables in the integral of the maximum and
+using (6) gives (7). The same change of variables gives (8).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>The Gaussian experiment
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>κ</mi><msup><mi>t</mi><mn>2</mn></msup><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">N(\kappa t^2,1)</annotation></semantics></math>
+has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">g=\phi</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>κ</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\eta(t)=\kappa t^2</annotation></semantics></math>.
+Integration of the centered standard normal density gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>Φ</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">H_t(u)=\phi(\Phi^{-1}(u))</annotation></semantics></math>.
+Integrating (5) over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+yields
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>κ</mi></msub><mo>=</mo><mn>1</mn><mo>+</mo><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mn>2</mn><mi>κ</mi><mi>t</mi><mspace width="0.167em"></mspace><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>Φ</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>d</mi><mi>t</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">
+ c_\kappa=1+\int_0^1 2\kappa t\,\phi(\Phi^{-1}(U(t)))\,dt,
+</annotation></semantics></math> giving the bounds in Theorem 1. The
+same construction for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mi>t</mi><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">N(a t,1)</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a\ge0</annotation></semantics></math>,
+gives the simpler formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><msup><mrow><mo stretchy="true" form="prefix">[</mo><mi>c</mi><mo>−</mo><mi>a</mi><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>Φ</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>d</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">1=\int_0^1[c-a\phi(\Phi^{-1}(u))]^{-1}du</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&gt;</mo><mi>a</mi><mi>/</mi><msqrt><mrow><mn>2</mn><mi>π</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">c&gt;a/\sqrt{2\pi}</annotation></semantics></math>.
+Indeed a solution to the autonomous equation that reaches one cannot
+cross an interior zero of its right side. The formula follows by
+separation of variables.</p>
+<h2 id="sharp-simulation-with-a-poisson-target">3. Sharp simulation with
+a Poisson target</h2>
+<p><strong>Theorem 3.</strong> Fix a source family
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>t</mi></msub><annotation encoding="application/x-tex">f_t</annotation></semantics></math>
+as in Proposition 2. With
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>t</mi></msub><annotation encoding="application/x-tex">f_t</annotation></semantics></math>
+in place of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>F</mi><mi>t</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></msubsup><annotation encoding="application/x-tex">F_t^{(n)}</annotation></semantics></math>,
+the conclusions (1), (3), and (4), and the
+fixed-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+limit in Theorem 1, hold with the constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+from (5). The same conclusions hold for a sequence of source densities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><annotation encoding="application/x-tex">f_{n,t}</annotation></semantics></math>
+satisfying
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∫</mo><mi>ℝ</mi></msub><munder><mo>sup</mo><mi>t</mi></munder><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>f</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mspace width="0.167em"></mspace><mi>d</mi><mi>x</mi><mo>→</mo><mn>0</mn><mo>,</mo><mspace width="2.0em"></mspace><munder><mo>sup</mo><mrow><mi>t</mi><mo>,</mo><mspace width="0.278em"></mspace><mi>x</mi><mo>∈</mo><mi>J</mi></mrow></munder><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>f</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>→</mo><mn>0</mn><mspace width="1.0em"></mspace><mrow><mtext mathvariant="normal">for every compact </mtext><mspace width="0.333em"></mspace></mrow><mi>J</mi><mo>⊂</mo><mi>ℝ</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \int_{\mathbb R}\sup_t |f_{n,t}(x)-f_t(x)|\,dx\longrightarrow0,\qquad
+ \sup_{t,\;x\in J}|f_{n,t}(x)-f_t(x)|\longrightarrow0
+ \quad\text{for every compact }J\subset\mathbb R .
+ \tag{10}
+</annotation></semantics></math><span class="equation-number">(10)</span></span> All the families in (10) are assumed
+jointly measurable. No rate of convergence in (10) is needed.</p>
+<p><strong>Proof of the upper bound on overlap.</strong> For a simulator
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>q</mi><mi>t</mi></msub><annotation encoding="application/x-tex">q_t</annotation></semantics></math>
+be its count output distribution and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><annotation encoding="application/x-tex">p_{n,t}</annotation></semantics></math>
+the target mass function. Its overlap at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+is
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>O</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>∑</mo><mrow><mi>j</mi><mo>≥</mo><mn>0</mn></mrow></munder><mo>min</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>p</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><msub><mi>q</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ O_t(K)=\sum_{j\ge0}\min(p_{n,t}(j),q_t(j)).
+</annotation></semantics></math> Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>δ</mi><mo>=</mo><msub><mo>sup</mo><mi>K</mi></msub><msub><mo>inf</mo><mi>t</mi></msub><msub><mi>O</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">1-\delta=\sup_K\inf_t O_t(K)</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math>,
+put
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>j</mi><mo>:</mo><mrow><mo stretchy="true" form="prefix">|</mo><msqrt><mrow><mi>j</mi><mi>/</mi><mi>n</mi></mrow></msqrt><mo>−</mo><mi>t</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>ℓ</mo><mi>n</mi></msub><mi>/</mi><mn>2</mn><mo stretchy="false" form="postfix">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ D_{n,t}=\{j:|\sqrt{j/n}-t|\le (1+\varepsilon)\ell_n/2\}.
+</annotation></semantics></math> On any fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">[</mo><mi>d</mi><mo>,</mo><mn>1</mn><mo>−</mo><mi>d</mi><mo stretchy="true" form="postfix">]</mo></mrow><mo>⊂</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">[d,1-d]\subset(0,1)</annotation></semantics></math>,
+the target probability outside
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><annotation encoding="application/x-tex">D_{n,t}</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>ℓ</mo><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">o(\ell_n)</annotation></semantics></math>
+uniformly. To see this, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>∼</mo><mo>Pois</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>λ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">Y\sim\operatorname{Pois}(\lambda)</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>=</mo><mi>n</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\lambda=nt^2</annotation></semantics></math>,
+the two boundary deviations in the count coordinate have size at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>ε</mi><mo>−</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><msqrt><mrow><mi>λ</mi><mo>log</mo><mi>n</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">(1+\varepsilon-o(1))\sqrt{\lambda\log n}</annotation></semantics></math>.
+The exponential Markov bound for a Poisson count at a deviation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>λ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">z=o(\lambda)</annotation></semantics></math>
+has exponent
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><msup><mi>z</mi><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mi>/</mi><mi>λ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>λ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">-z^2(1+O(z/\lambda))/(2\lambda)</annotation></semantics></math>,
+by Taylor expansion of the Poisson rate function at its mean. Here
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>≥</mo><mi>n</mi><msup><mi>d</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\lambda\ge nd^2</annotation></semantics></math>,
+so both tails are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>ℓ</mo><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">o(\ell_n)</annotation></semantics></math>.</p>
+<p>Take
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+from (9), and put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mi>d</mi></msub><mo>=</mo><msubsup><mo>∫</mo><mi>d</mi><mrow><mn>1</mn><mo>−</mo><mi>d</mi></mrow></msubsup><mi>w</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">W_d=\int_d^{1-d}w(t)\,dt</annotation></semantics></math>.
+Nonnegativity and the bound
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>O</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><msub><mi>f</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>D</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>ℓ</mo><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O_t(K)\le (Kf_{n,t})(D_{n,t})+o(\ell_n)</annotation></semantics></math>
+yield
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>W</mi><mi>d</mi></msub><munder><mo>inf</mo><mi>t</mi></munder><msub><mi>O</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>≤</mo><munder><mo>∑</mo><mrow><mi>j</mi><mo>≥</mo><mn>0</mn></mrow></munder><msub><mo>∫</mo><mi>ℝ</mi></msub><mi>K</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mo stretchy="false" form="prefix">{</mo><mi>j</mi><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">)</mo></mrow><msubsup><mo>∫</mo><mi>d</mi><mrow><mn>1</mn><mo>−</mo><mi>d</mi></mrow></msubsup><msub><mn>𝟏</mn><mrow><mo stretchy="false" form="prefix">{</mo><mi>j</mi><mo>∈</mo><msub><mi>D</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><mo stretchy="false" form="postfix">}</mo></mrow></msub><mspace width="0.167em"></mspace><mi>w</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>f</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>d</mi><mi>t</mi><mspace width="0.167em"></mspace><mi>d</mi><mi>x</mi><mo>+</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>ℓ</mo><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"></mtd><mtd columnalign="left" style="text-align: left"><mo>≤</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>ℓ</mo><mi>n</mi></msub><msub><mo>∫</mo><mi>ℝ</mi></msub><munder><mo>sup</mo><mi>t</mi></munder><mi>w</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>f</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>d</mi><mi>x</mi><mo>+</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>ℓ</mo><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
+ \begin{split}
+ W_d\inf_t O_t(K)
+ &amp;\le \sum_{j\ge0}\int_{\mathbb R} K(x,\{j\})
+       \int_d^{1-d}\mathbf 1_{\{j\in D_{n,t}\}}\,w(t)f_{n,t}(x)\,dt\,dx
+       +o(\ell_n)\\
+ &amp;\le (1+\varepsilon)\ell_n\int_{\mathbb R}\sup_t w(t)f_{n,t}(x)\,dx +o(\ell_n).
+ \end{split}
+ \tag{11}
+</annotation></semantics></math><span class="equation-number">(11)</span></span> In the last step, the band at a given
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+has length at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>ℓ</mo><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">(1+\varepsilon)\ell_n</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>,
+and the row probabilities sum to one. The integral converges to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+by (7) and (10). Send
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">n\to\infty</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>,</mo><mi>ε</mi><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">d,\varepsilon\downarrow0</annotation></semantics></math>
+to get the upper bound in (1).</p>
+<p><strong>Proof of the lower bound on overlap.</strong> Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mrow><mi>n</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>=</mo><mo stretchy="false" form="prefix">[</mo><msqrt><mrow><mi>j</mi><mi>/</mi><mi>n</mi></mrow></msqrt><mo>,</mo><msqrt><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>n</mi></mrow></msqrt><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">I_{n,j}=[\sqrt{j/n},\sqrt{(j+1)/n})</annotation></semantics></math>.
+Fix small
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">d&gt;0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>ε</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\lt \varepsilon\lt 1</annotation></semantics></math>,
+and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>n</mi></msub><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mo>log</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">L_n=(\log n)^3</annotation></semantics></math>.
+We will use target counts whose bins are wholly contained in the
+narrower band
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">[</mo><mi>t</mi><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>ℓ</mo><mi>n</mi></msub><mi>/</mi><mn>2</mn><mo>,</mo><mspace width="0.222em"></mspace><mi>t</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>ℓ</mo><mi>n</mi></msub><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">]</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ [t-(1-\varepsilon)\ell_n/2,\ t+(1-\varepsilon)\ell_n/2].
+ \tag{12}
+</annotation></semantics></math><span class="equation-number">(12)</span></span> Uniformly for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>n</mi></msub><mo>≤</mo><mi>λ</mi><mo>=</mo><mi>n</mi><msup><mi>t</mi><mn>2</mn></msup><mo>≤</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">L_n\le\lambda=nt^2\le n</annotation></semantics></math>,
+the eligible bins have total length
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>ℓ</mo><mi>n</mi></msub><mo>+</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>ℓ</mo><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">(1-\varepsilon)\ell_n+o(\ell_n)</annotation></semantics></math>.
+The left end of the band is positive for large
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Each bin meeting it has length
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mi>λ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>ℓ</mo><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O((n\lambda)^{-1/2})=o(\ell_n)</annotation></semantics></math>,
+so at most the two end bins are lost. Also
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>inf</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mrow><msub><mi>L</mi><mi>n</mi></msub><mo>≤</mo><mi>n</mi><msup><mi>t</mi><mn>2</mn></msup><mo>≤</mo><mi>n</mi></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mrow><msub><mi>I</mi><mrow><mi>n</mi><mo>,</mo><mi>j</mi></mrow></msub><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> contained in </mtext><mspace width="0.333em"></mspace></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>12</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mtd></mtr></mtable></munder><mfrac><mrow><msub><mi>p</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>I</mi><mrow><mi>n</mi><mo>,</mo><mi>j</mi></mrow></msub><mo stretchy="true" form="postfix">|</mo></mrow></mfrac><mspace width="0.222em"></mspace><mo>→</mo><mspace width="0.222em"></mspace><mi>∞</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ \inf_{\substack{L_n\le nt^2\le n\\ I_{n,j}\text{ contained in }(12)}}
+ \frac{p_{n,t}(j)}{|I_{n,j}|}\ \longrightarrow\ \infty .
+ \tag{13}
+</annotation></semantics></math><span class="equation-number">(13)</span></span> In fact, such indices satisfy
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><mi>j</mi><mo>−</mo><mi>λ</mi><mo stretchy="true" form="postfix">|</mo></mrow><msqrt><mi>λ</mi></msqrt></mfrac><mo>≤</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow><msqrt><mrow><mo>log</mo><mi>n</mi></mrow></msqrt><mo>+</mo><mi>O</mi><mspace width="-0.167em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mo>log</mo><mi>n</mi></mrow><msqrt><mi>λ</mi></msqrt></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mi>j</mi><mi>/</mi><mi>λ</mi><mo>→</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
+ \frac{|j-\lambda|}{\sqrt\lambda}
+ \le (1-\varepsilon)\sqrt{\log n}+O\!\left(\frac{\log n}{\sqrt\lambda}\right),
+ \qquad j/\lambda\longrightarrow1
+</annotation></semantics></math> uniformly. Stirling’s formula and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mi>/</mi><mi>λ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>j</mi><mo>+</mo><mi>λ</mi><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mo>−</mo><mi>λ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>λ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">j\log(j/\lambda)-j+\lambda=(j-\lambda)^2(1+o(1))/(2\lambda)</annotation></semantics></math>
+give
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><msub><mi>C</mi><mi>ε</mi></msub><msup><mi>λ</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msup><mi>n</mi><mrow><mi>−</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ε</mi><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">p_{n,t}(j)\ge C_\varepsilon\lambda^{-1/2}n^{-(1-\varepsilon/2)^2/2}</annotation></semantics></math>
+for all sufficiently large
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Division by the bin length proves (13).</p>
+<p>Use the source observation to output
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⌊</mo><mi>n</mi><mi>T</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo stretchy="false" form="postfix">⌋</mo></mrow><annotation encoding="application/x-tex">\lfloor nT(X)^2\rfloor</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><msup><mi>M</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">T=M^{-1}</annotation></semantics></math>,
+reserving a small probability for two additional outputs. First, take
+the pushforward, by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>↦</mo><mo stretchy="false" form="prefix">⌊</mo><mi>n</mi><msup><mi>s</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">⌋</mo></mrow><annotation encoding="application/x-tex">s\mapsto\lfloor ns^2\rfloor</annotation></semantics></math>,
+of the subprobability density
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>d</mi><mo stretchy="true" form="postfix">]</mo></mrow><mo>∪</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>d</mi><mo>,</mo><mn>1</mn><mo>+</mo><mn>2</mn><mi>d</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">[0,2d]\cup[1-2d,1+2d]</annotation></semantics></math>.
+This uses mass
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mi>c</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">6cd</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&lt;</mo><mn>1</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">d\lt 1/4</annotation></semantics></math>.
+Second, assign mass
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><msub><mo>ℓ</mo><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">c\ell_n</annotation></semantics></math>
+to every integer from 0 to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⌈</mo><mn>2</mn><msub><mi>L</mi><mi>n</mi></msub><mo stretchy="false" form="postfix">⌉</mo></mrow><annotation encoding="application/x-tex">\lceil 2L_n\rceil</annotation></semantics></math>,
+using total mass
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">o(1)</annotation></semantics></math>.
+Use the main rule with the remaining probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mn>6</mn><mi>c</mi><mi>d</mi><mo>−</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">1-6cd-o(1)&gt;0</annotation></semantics></math>
+for fixed small
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>.
+Both reserves are parameter independent.</p>
+<p>For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>≤</mo><mi>t</mi><mo>≤</mo><mn>1</mn><mo>−</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">d\le t\le1-d</annotation></semantics></math>,
+on every eligible bin the density of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">T(X)</annotation></semantics></math>
+for the main rule is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>−</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">c-o(1)</annotation></semantics></math>
+uniformly. Indeed, it is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>f</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">M&#39;(s)f_{n,t}(M(s))</annotation></semantics></math>,
+converges uniformly to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>f</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">M&#39;(s)f_t(M(s))</annotation></semantics></math>
+on a fixed compact subinterval of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>s</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\lt s\lt 1</annotation></semantics></math>,
+and (8) gives the diagonal value
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>.
+Uniform continuity and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>s</mi><mo>−</mo><mi>t</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>ℓ</mo><mi>n</mi></msub><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">|s-t|\le(1-\varepsilon)\ell_n/2</annotation></semantics></math>
+finish the estimate. Equation (13) shows that each eligible bin
+contributes at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>6</mn><mi>c</mi><mi>d</mi><mo>−</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mo>−</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">(1-6cd-o(1))(c-o(1))</annotation></semantics></math>
+times its length to the overlap. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≤</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">t\le d</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≥</mo><mn>1</mn><mo>−</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">t\ge1-d</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>≥</mo><msub><mi>L</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\lambda\ge L_n</annotation></semantics></math>,
+the eligible bins lie in the first reserve for large
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>,
+so each contributes at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+times its length by (13). If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>≤</mo><msub><mi>L</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\lambda\le L_n</annotation></semantics></math>,
+the target has probability at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math>
+on the first
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⌈</mo><mn>2</mn><msub><mi>L</mi><mi>n</mi></msub><mo stretchy="false" form="postfix">⌉</mo><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\lceil 2L_n\rceil+1</annotation></semantics></math>
+integers by Markov’s inequality. The second reserve guarantees overlap
+at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><msub><mo>ℓ</mo><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">c\ell_n</annotation></semantics></math>
+there, since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>j</mi></msub><mo>min</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mi>j</mi></msub><mo>,</mo><mi>h</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mo>min</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>∑</mo><mi>j</mi></msub><msub><mi>a</mi><mi>j</mi></msub><mo>,</mo><mi>h</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_j\min(a_j,h)\ge\min(\sum_j a_j,h)</annotation></semantics></math>
+for nonnegative
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>j</mi></msub><mo>,</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">a_j,h</annotation></semantics></math>.
+Thus the infimum of the overlap is at least
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>6</mn><mi>c</mi><mi>d</mi><mo>−</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mo>−</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>ℓ</mo><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">
+ (1-6cd-o(1))(c-o(1))(1-\varepsilon)\ell_n
+</annotation></semantics></math> up to an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>ℓ</mo><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">o(\ell_n)</annotation></semantics></math>
+bin error. Sending
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>,</mo><mi>ε</mi><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">d,\varepsilon\downarrow0</annotation></semantics></math>
+gives the lower bound in (1), including the degenerate clean state at
+zero.</p>
+<p><strong>Proof of the restriction statements.</strong> For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+states, a constant simulator using the uniform mixture of their
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+target laws has overlap at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">1/k</annotation></semantics></math>
+at every state. This bounds
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>δ</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><annotation encoding="application/x-tex">\delta_{n,k}</annotation></semantics></math>
+by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mn>1</mn><mi>/</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">1-1/k</annotation></semantics></math>.
+For the matching limit, choose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+states with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mi>i</mi></msub><mo>=</mo><msub><mi>t</mi><mn>0</mn></msub><mo>+</mo><mi>i</mi><msup><mi>n</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>4</mn></mrow></msup></mrow><annotation encoding="application/x-tex">t_i=t_0+i n^{-1/4}</annotation></semantics></math>
+for a fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><msub><mi>t</mi><mn>0</mn></msub><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\lt t_0\lt 1</annotation></semantics></math>.
+For each fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>,
+their source laws approach each other in total variation by (10) and
+continuity of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>t</mi></msub><annotation encoding="application/x-tex">f_t</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mn>1</mn></msup><annotation encoding="application/x-tex">L^1</annotation></semantics></math>.
+Their targets concentrate on pairwise disjoint count sets
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mrow><mi>n</mi><mo>,</mo><msub><mi>t</mi><mi>i</mi></msub></mrow></msub><annotation encoding="application/x-tex">D_{n,t_i}</annotation></semantics></math>,
+with errors
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">o(1)</annotation></semantics></math>,
+by the preceding tail bound. For every kernel the average probability of
+outputting in those
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+sets is at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>k</mi><mo>+</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">1/k+o(1)</annotation></semantics></math>:
+replace its input law at each selected state by the same law at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>,
+using contraction of total variation, and sum the resulting
+probabilities of disjoint events. The average overlap is at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>k</mi><mo>+</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">1/k+o(1)</annotation></semantics></math>.
+This proves the
+fixed-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+claim.</p>
+<p>For (4), a set of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+states obeying (3) must satisfy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>k</mi><mo>≤</mo><mn>1</mn><mo>−</mo><mi>δ</mi><mo>+</mo><mi>α</mi><msub><mo>ℓ</mo><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">1/k\le 1-\delta+\alpha\ell_n</annotation></semantics></math>,
+giving the lower bound. For the upper bound repeat (11) on a midpoint
+grid in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mi>d</mi><mo>,</mo><mn>1</mn><mo>−</mo><mi>d</mi><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[d,1-d]</annotation></semantics></math>
+of spacing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>n</mi></msub><mo>≤</mo><mi>b</mi><msub><mo>ℓ</mo><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">h_n\le b\ell_n</annotation></semantics></math>,
+taking the mass at each midpoint
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mi>i</mi></msub><annotation encoding="application/x-tex">t_i</annotation></semantics></math>
+equal to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>n</mi></msub><mi>w</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">h_n w(t_i)</annotation></semantics></math>.
+Choose equal subintervals with the smallest integer number making the
+spacing at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><msub><mo>ℓ</mo><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">b\ell_n</annotation></semantics></math>,
+so the number is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><msub><mo>ℓ</mo><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(1/\ell_n)</annotation></semantics></math>.
+Total mass tends to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>d</mi></msub><annotation encoding="application/x-tex">W_d</annotation></semantics></math>.
+At each count
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>,
+the number of admissible grid points times
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>n</mi></msub><annotation encoding="application/x-tex">h_n</annotation></semantics></math>
+is at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>ℓ</mo><mi>n</mi></msub><mo>+</mo><msub><mi>h</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">(1+\varepsilon)\ell_n+h_n</annotation></semantics></math>.
+The same estimate now gives
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><msub><mi>δ</mi><mi>S</mi></msub><mo>≤</mo><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><mi>c</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>ε</mi><mo>+</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msub><mi>W</mi><mi>d</mi></msub><mo>+</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo><msub><mo>ℓ</mo><mi>n</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+ 1-\delta_S\le \bigl(c(1+\varepsilon+b)/W_d+o(1)\bigr)\ell_n .
+</annotation></semantics></math> Choose fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>,</mo><mi>ε</mi><mo>,</mo><mi>b</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">d,\varepsilon,b&gt;0</annotation></semantics></math>
+sufficiently small that the coefficient is strictly below
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>+</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">c+\alpha</annotation></semantics></math>.
+Together with (1) this yields (3) and the upper bound in (4).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<h2 id="transfer-to-the-poisson-source">4. Transfer to the Poisson
+source</h2>
+<p>Set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>κ</mi><mi>n</mi></msub><mo>=</mo><msub><mi>B</mi><mi>n</mi></msub><mi>n</mi><mi>/</mi><msqrt><msub><mi>A</mi><mi>n</mi></msub></msqrt></mrow><annotation encoding="application/x-tex">\kappa_n=B_n n/\sqrt{A_n}</annotation></semantics></math>.
+Adding independent uniform noise on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn><mo>,</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(-1/2,1/2)</annotation></semantics></math>
+to a Poisson source count, then centering at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_n</annotation></semantics></math>
+and scaling by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><msub><mi>A</mi><mi>n</mi></msub></msqrt><annotation encoding="application/x-tex">\sqrt{A_n}</annotation></semantics></math>,
+produces a law within
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>A</mi><mi>n</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(A_n^{-1/2})</annotation></semantics></math>
+in total variation of
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mspace width="-0.167em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>κ</mi><mi>n</mi></msub><msup><mi>t</mi><mn>2</mn></msup><mo>,</mo><mspace width="0.167em"></mspace><mn>1</mn><mo>+</mo><mfrac><mrow><msub><mi>κ</mi><mi>n</mi></msub><msup><mi>t</mi><mn>2</mn></msup></mrow><msqrt><msub><mi>A</mi><mi>n</mi></msub></msqrt></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+ N\!\left(\kappa_n t^2,\,1+\frac{\kappa_n t^2}{\sqrt{A_n}}\right)
+</annotation></semantics></math> uniformly in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>,
+by Ouimet’s jittered Poisson bound (Theorems 3.1 and 3.2). Replacing the
+variance by one adds
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>A</mi><mi>n</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(A_n^{-1/2})</annotation></semantics></math>,
+by the explicit normal relative entropy and Pinsker’s inequality, since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>κ</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\kappa_n</annotation></semantics></math>
+is bounded. Rounding the inverse affine transform to the nearest
+nonnegative integer exactly inverts jittering on the original count, so
+the reverse approximation has the same total variation bound. Composing
+either kernel with any simulator into
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>E</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><annotation encoding="application/x-tex">E^{(n)}</annotation></semantics></math>
+proves that its optimal deficiency changes by at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>A</mi><mi>n</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>ℓ</mo><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(A_n^{-1/2})=o(\ell_n)</annotation></semantics></math>,
+for the full parameter set and for every restriction. The normal
+densities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mrow><mi>n</mi><mo>,</mo><mi>t</mi></mrow></msub><annotation encoding="application/x-tex">f_{n,t}</annotation></semantics></math>
+satisfy (10) with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>t</mi></msub><annotation encoding="application/x-tex">f_t</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>κ</mi><msup><mi>t</mi><mn>2</mn></msup><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">N(\kappa t^2,1)</annotation></semantics></math>,
+by uniform continuity on compacts and an integrable Gaussian tail
+envelope for bounded means. Applying Theorem 3 proves all assertions of
+Theorem 1. For (3), choose the grid in the proof with strict margin in
+its coefficient to absorb the transfer error.</p>
+<h2
+id="relation-to-experiment-comparison-and-small-tolerance-estimation">5.
+Relation to experiment comparison and small-tolerance estimation</h2>
+<p>Ouimet proves Poisson-to-normal and normal-to-Poisson approximation
+when the mean is large. This comparison supplies the source
+approximation in Section 4. The clean experiment has a degenerate
+endpoint and ranges over means from zero to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Its effect on the leading deficiency is obtained directly from the
+Poisson masses and the two simulator reserves in Section 3. <a
+href="https://doi.org/10.1016/j.jmaa.2021.125033">Ouimet, Journal of
+Mathematical Analysis and Applications 499(1), 125033, 2021</a> · <a
+href="https://arxiv.org/abs/2010.05146">Author text</a>.</p>
+<p>Axelrod, Garg, Han, Sharan and Valiant formulate sample amplification
+in Le Cam’s total variation simulation framework. Their §3 and Example
+A.14 give rate-optimal product-Poisson amplification by combining
+sufficient statistics and a learned increment. Their simulator appends
+observations from the same unknown law. The source here has a competing
+background. The leading overlap, its matching prior, and the number of
+parameter states required to certify it are the subject of (1)–(4). <a
+href="https://doi.org/10.1214/24-AOS2444">Axelrod et al., Annals of
+Statistics 52(6), 2024, DOI 10.1214/24-AOS2444</a> · <a
+href="https://arxiv.org/html/2201.04315v2">Author text, §3 and Example
+A.14</a>.</p>
+<p>Zeytinoglu and Mintz study optimal fixed-size confidence procedures
+for a bounded location parameter under monotone likelihood ratios.
+Kamberova and Mintz develop equalizer and Bayes constructions under
+fixed-tolerance zero–one loss for a wider class of bounded location
+families. Our comparison with the 1984 paper uses its accessible
+abstract. The diagonal identity (8) concerns shrinking tolerance and a
+path of exponential tilts. For example, if the loss is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mn>𝟏</mn><mrow><mo stretchy="false" form="prefix">{</mo><mrow><mo stretchy="true" form="prefix">|</mo><mover><mi>t</mi><mo accent="true">̂</mo></mover><mo>−</mo><mi>t</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>&gt;</mo><mi>h</mi><mo stretchy="false" form="postfix">}</mo></mrow></msub><annotation encoding="application/x-tex">\mathbf1_{\{|\hat t-t|&gt;h\}}</annotation></semantics></math>
+in the source experiment of Proposition 2, the maximal minimax success
+probability is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>c</mi><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">2ch(1+o(1))</annotation></semantics></math>
+as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h\downarrow0</annotation></semantics></math>.
+To verify this, prior averaging over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">w(t)\,dt</annotation></semantics></math>
+bounds the success probability by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>h</mi><mo>∫</mo><msub><mo>sup</mo><mi>t</mi></msub><mi>w</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>f</mi><mi>t</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>d</mi><mi>x</mi><mo>=</mo><mn>2</mn><mi>c</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">2h\int\sup_t w(t)f_t(x)\,dx=2ch</annotation></semantics></math>.
+For the reverse bound use
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><msup><mi>M</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">T=M^{-1}</annotation></semantics></math>
+and reserve a parameter-independent density
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">[</mo><mi>−</mi><mi>d</mi><mo>,</mo><mn>2</mn><mi>d</mi><mo stretchy="true" form="postfix">]</mo></mrow><mo>∪</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>d</mi><mo>,</mo><mn>1</mn><mo>+</mo><mi>d</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">[-d,2d]\cup[1-2d,1+d]</annotation></semantics></math>,
+of mass
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mi>c</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">6cd</annotation></semantics></math>.
+On the interior
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mi>d</mi><mo>,</mo><mn>1</mn><mo>−</mo><mi>d</mi><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[d,1-d]</annotation></semantics></math>,
+the main rule has density
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>+</mo><mi>o</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">c+o(1)</annotation></semantics></math>
+uniformly on the success window by (8), and for the two boundary strips
+the reserve covers the full window for small
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>.
+Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h\downarrow0</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">d\downarrow0</annotation></semantics></math>.
+Clipping estimates to the parameter interval can only increase success
+if that action space is required. In (1), the window size comes from the
+intersection of the simulated density and the target count mass. The
+Poisson tail contributes the extra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><mo>log</mo><mi>n</mi></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{\log n}</annotation></semantics></math>
+factor. <a href="https://doi.org/10.1214/aos/1176346713">Zeytinoglu and
+Mintz, Annals of Statistics 12(3), 1984</a> · <a
+href="https://doi.org/10.1016/S0378-3758(98)00237-7">Kamberova and
+Mintz, Journal of Statistical Planning and Inference 79(2), 205–221,
+1999</a>.</p>
+<p>The finite example in the appendix has a two-state least-favourable
+restriction that includes a strict interior state. Equations (3)–(4)
+quantify a contrasting phenomenon elsewhere in the same affine count
+family. Binary trade-off comparisons and ordered thinning remain
+applicable to their respective restrictions and parameter regimes. <a
+href="https://doi.org/10.1109/TIT.2012.2217191">Laourine and Wagner,
+IEEE Transactions on Information Theory 58(12), 2012, Lemma 1</a> · <a
+href="https://arxiv.org/abs/2512.00734v1">Pandey, Maleki and Kulkarni,
+Sections 2.1 and 4, Lemma 21 and Theorem 13</a>.</p>
+<h2
+id="appendix.-exact-comparison-on-a-finite-intensity-interval">Appendix.
+Exact comparison on a finite-intensity interval</h2>
+<p>To keep the two-state result in the same notation as the main
+theorem, parameterize here by the clean intensity (u) itself. The
+argument uses a finite rational certificate for strict inequalities
+between smooth functions on a compact interval.</p>
+<h3 id="a.1.-statement">A.1. Statement</h3>
+<p>Write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>u</mi></msub><mo>=</mo><mo>Pois</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">E_u=\operatorname{Pois}(u)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>u</mi></msub><mo>=</mo><mo>Pois</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F_u=\operatorname{Pois}(2+2u)</annotation></semantics></math>.
+The directional deficiency is
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>F</mi><mo>,</mo><mi>E</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>inf</mo><mi>K</mi></munder><munder><mo>sup</mo><mrow><mn>0</mn><mo>≤</mo><mi>u</mi><mo>≤</mo><mn>1</mn></mrow></munder><munder><mo>sup</mo><mrow><mi>A</mi><mo>⊆</mo><msub><mi>ℤ</mi><mrow><mo>≥</mo><mn>0</mn></mrow></msub></mrow></munder><mrow><mo stretchy="true" form="prefix">|</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><msub><mi>F</mi><mi>u</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>E</mi><mi>u</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+\delta(F,E)=\inf_K\sup_{0\le u\le1}\sup_{A\subseteq\mathbb Z_{\ge0}}
+              |(KF_u)(A)-E_u(A)|,
+</annotation></semantics></math> where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+ranges over all parameter-independent Markov kernels between count
+observations. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>∈</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\gamma\in[0,1]</annotation></semantics></math>
+put
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mi>u</mi><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>h</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>λ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mn>3</mn></munderover><mfrac><mrow><mi>λ</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>j</mi></msup></mrow><mrow><mi>j</mi><mi>!</mi></mrow></mfrac><mo>+</mo><mi>γ</mi><mfrac><mrow><mi>λ</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>4</mn></msup></mrow><mn>24</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>f</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>u</mi></mrow></msup><mo>−</mo><msub><mi>h</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\lambda(u)=2+2u,\qquad
+h_\gamma(u)=1-e^{-\lambda(u)}
+\left(\sum_{j=0}^3\frac{\lambda(u)^j}{j!}+\gamma\frac{\lambda(u)^4}{24}\right),
+\qquad
+f_\gamma(u)=1-e^{-u}-h_\gamma(u).
+</annotation></semantics></math></p>
+<p><strong>Theorem.</strong> There is a unique
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>γ</mi><mo>*</mo></msub><mo>∈</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>266</mn><mi>/</mi><mn>1000</mn><mo>,</mo><mn>267</mn><mi>/</mi><mn>1000</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\gamma_*\in(266/1000,267/1000)</annotation></semantics></math>
+solving
+<span class="equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><msub><mi>γ</mi><mo>*</mo></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>max</mo><mrow><mi>u</mi><mo>∈</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow></munder><msub><mi>f</mi><msub><mi>γ</mi><mo>*</mo></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+h_{\gamma_*}(0)=\max_{u\in[0,1]} f_{\gamma_*}(u).
+\tag{A.1}
+</annotation></semantics></math><span class="equation-number">(A.1)</span></span> The maximum on the right is attained at
+a unique
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mo>*</mo></msub><mo>∈</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>909</mn><mi>/</mi><mn>1000</mn><mo>,</mo><mn>910</mn><mi>/</mi><mn>1000</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">s_*\in(909/1000,910/1000)</annotation></semantics></math>.
+The deficiency is exactly
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>F</mi><mo>,</mo><mi>E</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>h</mi><msub><mi>γ</mi><mo>*</mo></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\delta(F,E)=h_{\gamma_*}(0)</annotation></semantics></math>,
+approximately
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.11879834</mn><annotation encoding="application/x-tex">0.11879834</annotation></semantics></math>.
+The restriction to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo>,</mo><msub><mi>s</mi><mo>*</mo></msub><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{0,s_*\}</annotation></semantics></math>
+has this same deficiency, and the restriction to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{0,1\}</annotation></semantics></math>
+has strictly smaller deficiency.</p>
+<p>A minimax kernel outputs zero for input
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≤</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">x\le3</annotation></semantics></math>,
+outputs zero with probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>γ</mi><mo>*</mo></msub><annotation encoding="application/x-tex">\gamma_*</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">x=4</annotation></semantics></math>,
+and has positive output otherwise. Conditional on a positive output, it
+gives one with probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mi>/</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">7/10</annotation></semantics></math>
+and two with probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>/</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">3/10</annotation></semantics></math>.</p>
+<h3 id="a.2.-the-threshold-and-the-lower-bound">A.2. The threshold and
+the lower bound</h3>
+<p>Differentiation gives
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><msub><mi>′</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi>e</mi><mrow><mi>−</mi><mi>λ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>γ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mfrac><mrow><mi>λ</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>3</mn></msup></mrow><mn>6</mn></mfrac><mo>+</mo><mi>γ</mi><mfrac><mrow><mi>λ</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>4</mn></msup></mrow><mn>24</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+h&#39;_\gamma(u)=2e^{-\lambda(u)}
+ \left((1-\gamma)\frac{\lambda(u)^3}{6}
+             +\gamma\frac{\lambda(u)^4}{24}\right).
+</annotation></semantics></math> The ratio
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><msub><mi>′</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msup><mi>e</mi><mrow><mi>−</mi><mi>u</mi></mrow></msup></mrow><annotation encoding="application/x-tex">h&#39;_\gamma(u)/e^{-u}</annotation></semantics></math>
+has strictly positive logarithmic derivative
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn><mo>+</mo><mfrac><mn>6</mn><mrow><mi>λ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>2</mn><mi>γ</mi></mrow><mrow><mn>4</mn><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>γ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>γ</mi><mi>λ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>&gt;</mo><mn>0</mn><mspace width="1.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>≤</mo><mi>u</mi><mo>≤</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+-1+\frac6{\lambda(u)}+\frac{2\gamma}{4(1-\gamma)+\gamma\lambda(u)}&gt;0
+\quad(0\le u\le1).
+</annotation></semantics></math> Thus, when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>γ</mi></msub><mi>′</mi></mrow><annotation encoding="application/x-tex">f_\gamma&#39;</annotation></semantics></math>
+changes sign from positive to negative, the unique stationary point
+maximizes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>γ</mi></msub><annotation encoding="application/x-tex">f_\gamma</annotation></semantics></math>.
+Write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mn>909</mn><mi>/</mi><mn>1000</mn></mrow><annotation encoding="application/x-tex">l=909/1000</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>910</mn><mi>/</mi><mn>1000</mn></mrow><annotation encoding="application/x-tex">r=910/1000</annotation></semantics></math>.
+At both endpoints of the specified
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+interval,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>γ</mi></msub><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>l</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn><mo>&gt;</mo><msub><mi>f</mi><mi>γ</mi></msub><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f_\gamma&#39;(l)&gt;0&gt;f_\gamma&#39;(r)</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>266</mn><mi>/</mi><mn>1000</mn></mrow><annotation encoding="application/x-tex">\gamma=266/1000</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>l</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo>−</mo><mi>l</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>f</mi><mi>γ</mi></msub><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>l</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&lt;</mo><msub><mi>h</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+f_\gamma(l)+(r-l)f_\gamma&#39;(l) \lt  h_\gamma(0).
+</annotation></semantics></math> This is an upper bound on the maximum
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>γ</mi></msub><annotation encoding="application/x-tex">f_\gamma</annotation></semantics></math>,
+since its positive derivative on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mi>l</mi><mo>,</mo><mi>r</mi><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[l,r]</annotation></semantics></math>
+is at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>γ</mi></msub><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>l</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f_\gamma&#39;(l)</annotation></semantics></math>
+by the ratio monotonicity. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>267</mn><mi>/</mi><mn>1000</mn></mrow><annotation encoding="application/x-tex">\gamma=267/1000</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><msub><mi>h</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f_\gamma(r)&gt;h_\gamma(0)</annotation></semantics></math>.
+Appendix A.4 verifies these strict inequalities. The derivative signs
+extend to the entire
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+interval by affinity. The maximum of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>γ</mi></msub><annotation encoding="application/x-tex">f_\gamma</annotation></semantics></math>
+is continuous and nondecreasing in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+while
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">h_\gamma(0)</annotation></semantics></math>
+is strictly decreasing. These facts give (A.1) and the stated
+bracket.</p>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>s</mi><mo>*</mo></msub></mrow><annotation encoding="application/x-tex">s=s_*</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><msub><mi>h</mi><msub><mi>γ</mi><mo>*</mo></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">D=h_{\gamma_*}(0)</annotation></semantics></math>.
+The probability that the proposed kernel gives a positive count at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><msub><mi>γ</mi><mo>*</mo></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">h_{\gamma_*}(u)</annotation></semantics></math>.
+On the pair
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>F</mi><mn>0</mn></msub><mo>,</mo><msub><mi>F</mi><mi>s</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(F_0,F_s)</annotation></semantics></math>
+the likelihood ratio at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>e</mi><mrow><mi>−</mi><mn>2</mn><mi>s</mi></mrow></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>x</mi></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+L(x)=e^{-2s}(1+s)^x .
+</annotation></semantics></math> It is strictly increasing, so the
+randomized testing rule
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mo>*</mo></msub><annotation encoding="application/x-tex">k_*</annotation></semantics></math>
+with output probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math>
+up to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><msub><mi>γ</mi><mo>*</mo></msub></mrow><annotation encoding="application/x-tex">1-\gamma_*</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn><annotation encoding="application/x-tex">4</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
+from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math>
+onwards maximizes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><msub><mi>F</mi><mi>s</mi></msub></msub><mi>k</mi></mrow><annotation encoding="application/x-tex">E_{F_s} k</annotation></semantics></math>
+subject to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><msub><mi>F</mi><mn>0</mn></msub></msub><mi>k</mi><mo>≤</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">E_{F_0}k\le D</annotation></semantics></math>.
+Indeed,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>F</mi><mi>s</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>L</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>F</mi><mn>0</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>k</mi><mo>*</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(F_s(x)-L(4)F_0(x))(k(x)-k_*(x))\le0</annotation></semantics></math>
+for every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+and summing proves the claim. A kernel with error strictly below
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+at both states, applied to the event of positive output, would give a
+rule with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><msub><mi>F</mi><mn>0</mn></msub></msub><mi>k</mi><mo>&lt;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">E_{F_0}k \lt  D</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><msub><mi>F</mi><mi>s</mi></msub></msub><mi>k</mi><mo>&gt;</mo><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>s</mi></mrow></msup><mo>−</mo><mi>D</mi><mo>=</mo><msub><mi>h</mi><msub><mi>γ</mi><mo>*</mo></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">E_{F_s}k&gt;1-e^{-s}-D=h_{\gamma_*}(s)</annotation></semantics></math>.
+Therefore even the pair has deficiency at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>.</p>
+<h3 id="a.3.-continuous-upper-bound">A.3. Continuous upper bound</h3>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><msub><mi>h</mi><msub><mi>γ</mi><mo>*</mo></msub></msub></mrow><annotation encoding="application/x-tex">h=h_{\gamma_*}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>u</mi></mrow></msup><msup><mi>u</mi><mi>j</mi></msup><mi>/</mi><mi>j</mi><mi>!</mi></mrow><annotation encoding="application/x-tex">p_j(u)=e^{-u}u^j/j!</annotation></semantics></math>.
+The proposed output law has vector
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>h</mi><mo>,</mo><mn>7</mn><mi>h</mi><mi>/</mi><mn>10</mn><mo>,</mo><mn>3</mn><mi>h</mi><mi>/</mi><mn>10</mn><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1-h,7h/10,3h/10)</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{0,1,2\}</annotation></semantics></math>.
+Total variation is the largest signed surplus of output over target on
+any subset of these three indices. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{0\}</annotation></semantics></math>
+it is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><msub><mi>γ</mi><mo>*</mo></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">f_{\gamma_*}(u)\le D</annotation></semantics></math>.
+The nontrivial surplus on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,2\}</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>−</mo><msub><mi>p</mi><mn>1</mn></msub><mo>−</mo><msub><mi>p</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">h-p_1-p_2</annotation></semantics></math>.
+On
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>u</mi><mo>≤</mo><mn>1</mn><mi>/</mi><mn>50</mn></mrow><annotation encoding="application/x-tex">0\le u\le1/50</annotation></semantics></math>,
+we have
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>2</mn><msup><mi>e</mi><mrow><mi>−</mi><mn>2</mn></mrow></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>51</mn><mi>/</mi><mn>25</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>3</mn></msup><mi>/</mi><mn>6</mn><mo>&lt;</mo><mn>2</mn><mi>/</mi><mn>5</mn><mo>,</mo><mspace width="2.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>p</mi><mn>1</mn></msub><mo>+</mo><msub><mi>p</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>u</mi></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>9</mn><mi>/</mi><mn>10</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+h&#39;(u)\le 2e^{-2}(51/25)^3/6 \lt  2/5,\qquad
+(p_1+p_2)&#39;(u)=e^{-u}(1-u^2/2)&gt;9/10.
+</annotation></semantics></math> Consequently this surplus is at most
+its value
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+at zero throughout that interval.</p>
+<p>For all five other nonempty subsets and for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,2\}</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mi>/</mi><mn>50</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[1/50,1]</annotation></semantics></math>,
+a finite rational certificate gives a uniform bound strictly below
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1187</mn><mi>/</mi><mn>10000</mn><mo>&lt;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">1187/10000 \lt   D</annotation></semantics></math>.
+An event probability for the target is 1-Lipschitz in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+by the independent-increment coupling. The derivative of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+is at most 2, so all the surpluses are 3-Lipschitz. They are affine in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+at fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>.
+It therefore suffices at both rational endpoints of the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+interval to verify a bound of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1187</mn><mi>/</mi><mn>10000</mn><mo>−</mo><mn>3</mn><mi>/</mi><mn>1000</mn></mrow><annotation encoding="application/x-tex">1187/10000-3/1000</annotation></semantics></math>
+on the mesh
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>j</mi><mi>/</mi><mn>1000</mn></mrow><annotation encoding="application/x-tex">u=j/1000</annotation></semantics></math>,
+starting at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mn>20</mn></mrow><annotation encoding="application/x-tex">j=20</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,2\}</annotation></semantics></math>.
+Appendix A.4 verifies precisely those inequalities. This proves the
+upper bound at every real
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>∈</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">u\in[0,1]</annotation></semantics></math>.</p>
+<p>On
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{0,1\}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><msub><mi>γ</mi><mo>*</mo></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>&lt;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">f_{\gamma_*}(1) \lt  D</annotation></semantics></math>
+by strict maximization at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mo>*</mo></msub><annotation encoding="application/x-tex">s_*</annotation></semantics></math>.
+Increase
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>γ</mi><mo>*</mo></msub><annotation encoding="application/x-tex">\gamma_*</annotation></semantics></math>
+slightly, keeping
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>γ</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0 \lt  \gamma \lt  1</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>&lt;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">h_\gamma(0) \lt  D</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>&lt;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">|f_\gamma(1)| \lt  D</annotation></semantics></math>.
+The second strict inequality holds at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>γ</mi><mo>*</mo></msub><annotation encoding="application/x-tex">\gamma_*</annotation></semantics></math>
+initially because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><msub><mi>f</mi><msub><mi>γ</mi><mo>*</mo></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>&lt;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">0 \lt  f_{\gamma_*}(1) \lt  D</annotation></semantics></math>
+(also verified in Appendix A.4). Replace the conditional positive output
+distribution by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mn>1</mn></msub><annotation encoding="application/x-tex">E_1</annotation></semantics></math>
+conditioned on positivity. At zero the error is then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">h_\gamma(0)</annotation></semantics></math>,
+and at one it equals
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><annotation encoding="application/x-tex">|f_\gamma(1)|</annotation></semantics></math>.
+Both are strictly smaller than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>.</p>
+<h3 id="a.4.-rational-certificate">A.4. Rational certificate</h3>
+<p>For nonnegative rational
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+use the bounds
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mn>33</mn></munderover><mfrac><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>k</mi></msup><mrow><mi>k</mi><mi>!</mi></mrow></mfrac><mo>≤</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>x</mi></mrow></msup><mo>≤</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mn>32</mn></munderover><mfrac><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>k</mi></msup><mrow><mi>k</mi><mi>!</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\sum_{k=0}^{33}\frac{(-x)^k}{k!}\le e^{-x}
+   \le \sum_{k=0}^{32}\frac{(-x)^k}{k!}.
+</annotation></semantics></math> Taylor’s theorem gives both signs,
+including equality at zero. Generate enclosures of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>γ</mi></msub><annotation encoding="application/x-tex">h_\gamma</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>γ</mi></msub><annotation encoding="application/x-tex">f_\gamma</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><msub><mi>′</mi><mi>γ</mi></msub></mrow><annotation encoding="application/x-tex">f&#39;_\gamma</annotation></semantics></math>
+by substitution with sign-aware interval endpoints. The accompanying
+rational certificate <code>check-finite.py</code> makes the rational
+tests in Appendices A.2 and A.3. Its procedure can be reproduced
+directly from the following pseudocode. It uses only exact integer and
+rational arithmetic.</p>
+<ol type="1">
+<li>At both
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+endpoints test the signs of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>γ</mi></msub><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>l</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f_\gamma&#39;(l)</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>γ</mi></msub><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f_\gamma&#39;(r)</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f_\gamma(1)</annotation></semantics></math>
+via their enclosures. Test the two sign inequalities for (A.1) with
+upper bounds for left sides in the less-than comparisons and lower
+bounds for right sides.</li>
+<li>Test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mn>267</mn><mi>/</mi><mn>1000</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>1187</mn><mi>/</mi><mn>10000</mn></mrow><annotation encoding="application/x-tex">h_{267/1000}(0)&gt;1187/10000</annotation></semantics></math>
+and the two derivative inequalities in Appendix A.3 with the enclosures
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mi>−</mi><mn>2</mn></mrow></msup><annotation encoding="application/x-tex">e^{-2}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>50</mn></mrow></msup><annotation encoding="application/x-tex">e^{-1/50}</annotation></semantics></math>.</li>
+<li>For each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mn>0</mn><mo>,</mo><mi>…</mi><mo>,</mo><mn>1000</mn></mrow><annotation encoding="application/x-tex">j=0,\ldots,1000</annotation></semantics></math>
+at each endpoint
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>,
+form an upper bound for each surplus by summing upper output coordinate
+masses and subtracting lower
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mi>/</mi><mn>1000</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">p_i(j/1000)</annotation></semantics></math>
+for included indices. For the whole set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{0,1,2\}</annotation></semantics></math>
+the upper output mass is one. Omit
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{0\}</annotation></semantics></math>
+and omit
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,2\}</annotation></semantics></math>
+when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&lt;</mo><mn>20</mn></mrow><annotation encoding="application/x-tex">j \lt  20</annotation></semantics></math>.
+Check that each upper bound plus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>/</mi><mn>1000</mn></mrow><annotation encoding="application/x-tex">3/1000</annotation></semantics></math>
+is below
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1187</mn><mi>/</mi><mn>10000</mn></mrow><annotation encoding="application/x-tex">1187/10000</annotation></semantics></math>.</li>
+</ol>
+<p>The finite verification concerns inequalities within a proved
+continuum envelope. It avoids optimizing a discretized Markov kernel or
+assuming that a parameter mesh contains the worst case.</p>
+<h3 id="a.5.-persistence-under-changes-in-exposure-and-background">A.5.
+Persistence under changes in exposure and background</h3>
+<p>Keep
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>u</mi></msub><mo>=</mo><mo>Pois</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">E_u=\operatorname{Pois}(u)</annotation></semantics></math>
+and put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>F</mi><mi>u</mi><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></msubsup><mo>=</mo><mo>Pois</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F^{A,B}_u=\operatorname{Pois}(A+Bu)</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A,B&gt;0</annotation></semantics></math>.
+There is an open neighborhood of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">(A,B)=(2,2)</annotation></semantics></math>
+on which the formula in (A.1) remains exact after replacing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda(u)</annotation></semantics></math>
+by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>+</mo><mi>B</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">A+Bu</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>γ</mi></msub><annotation encoding="application/x-tex">h_\gamma</annotation></semantics></math>.
+The same count threshold and positive output distribution achieve it.
+The optimal randomization and the interior least-favourable intensity
+vary smoothly with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(A,B)</annotation></semantics></math>.</p>
+<p>Indeed the ratio
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>γ</mi></msub><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msup><mi>e</mi><mrow><mi>−</mi><mi>u</mi></mrow></msup></mrow><annotation encoding="application/x-tex">h_\gamma&#39;(u)/e^{-u}</annotation></semantics></math>
+now has log derivative
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>B</mi><mo>+</mo><mfrac><mrow><mn>3</mn><mi>B</mi></mrow><mrow><mi>A</mi><mo>+</mo><mi>B</mi><mi>u</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><mi>γ</mi><mi>B</mi></mrow><mrow><mn>4</mn><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>γ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>γ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+1-B+\frac{3B}{A+Bu}+
+       \frac{\gamma B}{4(1-\gamma)+\gamma(A+Bu)}.
+</annotation></semantics></math> Its minimum is strictly positive at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(2,2)</annotation></semantics></math>
+on the compact rectangle of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+used above, so it remains positive nearby. The stationarity brackets and
+both inequalities bracketing (A.1) are strict. The latter inequalities
+continue to bracket the maximum: the upper proof uses only the known
+derivative signs and positive ratio monotonicity. The derivative
+inequality for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>−</mo><msub><mi>p</mi><mn>1</mn></msub><mo>−</mo><msub><mi>p</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">h-p_1-p_2</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mi>/</mi><mn>50</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1/50]</annotation></semantics></math>
+is also strict and uniform. In Appendix A.4 the last comparison remains
+strict if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>/</mi><mn>1000</mn></mrow><annotation encoding="application/x-tex">3/1000</annotation></semantics></math>
+is replaced by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>/</mi><mn>1000</mn></mrow><annotation encoding="application/x-tex">4/1000</annotation></semantics></math>
+(the rational test includes this margin). For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>&lt;</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">B \lt  3</annotation></semantics></math>,
+the surplus Lipschitz constants are at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>B</mi><mo>&lt;</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">1+B \lt  4</annotation></semantics></math>.
+Thus finite-grid continuity and the original argument prove the full
+continuum upper bound throughout some neighborhood. The testing argument
+still applies because the likelihood ratio on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0,s)</annotation></semantics></math>
+is strictly increasing when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mi>s</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">Bs&gt;0</annotation></semantics></math>.
+Strict maximization and positivity of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f_\gamma(1)</annotation></semantics></math>
+preserve the separation from the two endpoints.</p>
+<p>Finally apply the implicit function theorem to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>h</mi><mi>γ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f_\gamma(s)-h_\gamma(0)=0</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>γ</mi></msub><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f_\gamma&#39;(s)=0</annotation></semantics></math>.
+The derivative of the first with respect to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+is the sum of the positive count-four masses at intensities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>+</mo><mi>B</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">A+Bs</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
+and its derivative with respect to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+is zero there. The derivative of the second with respect to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>γ</mi></msub><mi>″</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f_\gamma&#39;&#39;(s) \lt  0</annotation></semantics></math>
+by strict ratio monotonicity. The Jacobian in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>γ</mi><mo>,</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\gamma,s)</annotation></semantics></math>
+is therefore nonsingular.</p>
+<h3 id="a.6.-relation-to-binary-poisson-comparison">A.6. Relation to
+binary Poisson comparison</h3>
+<p>Thinning plus independent Poisson superposition is a classical
+comparison for ordered signal and background parameters, as in Laourine
+and Wagner, Lemma 1. Binary testing characterizations of Poisson
+experiment comparison appear in Pandey, Maleki and Kulkarni, Sections
+2.1 and 4, Lemma 21 and Theorem 13. Here the signal increase and
+background increase point in opposite directions, and the deficiency is
+positive. A new issue is to justify a single kernel across a continuum
+of intensity values. The finite positive-output distribution makes this
+possible, while the worst-state proof selects an interior intensity. In
+a first-moment fiber on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>,
+every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+occurs as the mean and the family can equivalently be indexed by the
+underlying mixing law. The pair here is the clean unit-exposure limit
+and the competing source with exposure multiplier two and total
+background mean two. The local persistence result does not classify all
+exposure and background regimes.</p>
+<ul>
+<li>A. Laourine and A. B. Wagner. <em>The degraded Poisson wiretap
+channel</em>. IEEE Transactions on Information Theory 58(12), 7073–7085
+(2012). <a href="https://doi.org/10.1109/TIT.2012.2217191">DOI</a></li>
+<li>A. Pandey, A. Maleki and S. Kulkarni. <em>Infinitely divisible
+privacy and beyond I: resolution of the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><mi>k</mi></mrow><annotation encoding="application/x-tex">s^2=2k</annotation></semantics></math>
+conjecture</em>. Sections 2.1 and 4, Lemma 21 and Theorem 13. <a
+href="https://arxiv.org/abs/2512.00734">Author preprint</a></li>
+</ul>
+</main></body></html>
