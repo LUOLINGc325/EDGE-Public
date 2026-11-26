@@ -1,0 +1,13 @@
+{
+  "seed": 20261125,
+  "purpose": "Reproduce algebraic certificates and try to falsify implementation/theorem boundary handling; numerical experiments do not prove universal claims.",
+  "symbolic": [
+    "one-coordinate excess polynomial identity",
+    "two-player coalescence sum-of-squares identity",
+    "normalized symmetric derivative",
+    "six-player simultaneous BR infeasibility"
+  ],
+  "enumeration": "N=2,...,10; all fold values, coalescence, one point between successive thresholds and above coalescence; verify all representatives by independent first-order residual and Hessian eigenvalues.",
+  "learning": "72 seeded heterogeneous instances; N in 2,3,4,6,9,12; gamma in 0.1,0.5,1; sigma_i log-uniform from 0.05 to 5; a uniform from -8 to 8; initial closed loop uniform in [-0.8,0.8]/sqrt(gamma). Maximum 10000 cycles; residual target 1e-9.",
+  "failure_policy": "Report every nonconvergence, feasibility failure, descent violation above roundoff or failed identity; do not silently remove samples or change acceptance criteria after seeing outputs."
+}

@@ -1,0 +1,12 @@
+{
+  "source_sha256": "a78bc11cd466b0668eaa0414f959e97637d084f8abd35b727a71f97cf6f7b94d",
+  "scope": "Archived compilation and axiom check for the matching Lean source.",
+  "status": "passed",
+  "declaration_count": 165,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "lean_version": "4.19.0"
+}

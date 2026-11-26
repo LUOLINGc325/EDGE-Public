@@ -1,0 +1,706 @@
+{
+  "source_sha256": "f3ced58f271bea630e5814c6600979a546e3f1e4740a45bdb268a44c1a57e1b5",
+  "scope": "Archived compilation and axiom check for the matching Lean source.",
+  "status": "passed",
+  "declaration_count": 127,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "declarations": [
+    {
+      "axioms": [],
+      "name": "CDCInduced.CDC"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Clique"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Cooccur"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Dual"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Dual._proof_1"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Dual._proof_2"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Extension"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Extension._proof_4"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Extension._proof_5"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Extension.eq_1"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph.Adj"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph._sizeOf_1"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph._sizeOf_inst"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph.casesOn"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph.loopless"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph.mk"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph.mk._flat_ctor"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph.mk.inj"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "CDCInduced.Graph.mk.injEq"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph.mk.sizeOf_spec"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph.noConfusion"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph.noConfusionType"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph.rec"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph.recOn"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Graph.symm"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.InducedEmbedding"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.MC"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.MaxClique"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.MinTransversal"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.MinimalTransversals"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Transversal"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.Vertex"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.cdc_iff_dual_maxClique"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.cellSet"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.cellSet_clique"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.cellSet_maxClique"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.clique_has_container"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.clique_mono"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.clique_singleton"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.clique_subset_cell"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.clique_subset_pair"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.completeGraph"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.completeGraph._proof_16"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.completeMCUnique"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.completeMCUnique._proof_17"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.complete_maxClique_card"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.complete_maxClique_iff"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.complete_univ_clique"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.complete_univ_maxClique"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.dual_clique_subset_selected"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.every_finite_graph_has_cdc_induced_extension"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.exists_maxClique"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.extAdj"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.extAdj.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.extension_card"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.extension_card._proof_7"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.extension_cdc"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.extension_dual_maxClique_iff"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.extension_dual_maxClique_iff_minTransversal"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.extension_loopless"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.extension_maxClique_iff"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.extension_minTransversal_iff"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.extension_minTransversal_unique"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.extension_nonempty"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.extension_symmetric"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.leaf"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.leaf._cstage1"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.leaf._cstage2"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.leaf._rarg._cstage2"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.leaf.eq_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.leaf_adj_iff"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "CDCInduced.leaf_adj_iff._proof_7"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.leaf_mem_pair"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.leaf_mem_selected"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.mcFintype"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.mcFintype._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.minTransversal_eq_selected"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.minTransversal_is_dual_clique"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.minimalTransversalsEquiv"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.minimalTransversalsEquiv._proof_13"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.minimalTransversalsEquiv._proof_14"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.minimalTransversalsEquiv._proof_15"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.minimalTransversalsFintype"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.minimalTransversalsFintype._proof_12"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.minimalTransversals_card"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.not_cooccur_old_leaf"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.not_cooccur_old_tip"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.old"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.old._cstage1"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.old._cstage2"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.old._rarg._cstage2"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.old.eq_1"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.old_adj_iff"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.old_inducedEmbedding"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.old_injective"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.old_mem_pair"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.old_mem_selected"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.pairSet"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.pairSet_clique"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.pairSet_maxClique"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.selected"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.selected.match_1"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.selected.match_1._cstage1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.selected_injective"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.selected_minTransversal"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.selected_trace_subset"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.selected_transversal"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.tip"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.tip._cstage1"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.tip._cstage2"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.tip._rarg._cstage2"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.tip.eq_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.tip_adj_iff"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.tip_mem_cell"
+    },
+    {
+      "axioms": [],
+      "name": "CDCInduced.tip_mem_selected"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.transversal_iff"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.triangle_extension_card"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "CDCInduced.triangle_extension_cdc"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "CDCInduced.triangle_original_edges"
+    },
+    {
+      "axioms": [],
+      "name": "Sum.elim.eq_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "_private.Result.0._proof_10"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "_private.Result.0._proof_11"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "_private.Result.0._proof_6"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "_private.Result.0._proof_7"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "name": "_private.Result.0._proof_8"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "_private.Result.0._proof_9"
+    }
+  ]
+}

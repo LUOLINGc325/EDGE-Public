@@ -548,3 +548,29 @@ The table gives the local check status of each supplement. Compiled entries cove
 | [schmidt reference renyi half counterexample](schmidt-reference-renyi-half-counterexample/paper.en.md) | [full_pauli_certificate.json](schmidt-reference-renyi-half-counterexample/results/full_pauli_certificate.json) |
 | [temporal ef1 nine chores threshold](temporal-ef1-nine-chores-threshold/paper.en.md) | [teh_nine.json](temporal-ef1-nine-chores-threshold/results/teh_nine.json) |
 | [two weight qutrit sharp cooling](two-weight-qutrit-sharp-cooling/paper.en.md) | [verify_product.py](two-weight-qutrit-sharp-cooling/code/verify_product.py) |
+
+## Additional verification and reproducibility files
+
+| Research project | Files |
+|---|---|
+| [cactus replica rationality](cactus-replica-rationality/paper.zh.md) | [certificate_cactus.py](cactus-replica-rationality/code/certificate_cactus.py) |
+| [clique dually conformal induced extension](clique-dually-conformal-induced-extension/paper.en.md) | [archived-lean-verification.json](clique-dually-conformal-induced-extension/results/archived-lean-verification.json) |
+| [complete bipartite tar rigidity](complete-bipartite-tar-rigidity/paper.zh.md) | [verify_boundary.py](complete-bipartite-tar-rigidity/code/verify_boundary.py) |
+| [fractional advice paw transfer](fractional-advice-paw-transfer/paper.en.md) | [verify_independent.py](fractional-advice-paw-transfer/code/verify_independent.py) |
+| [heavy ball planar cycle domain](heavy-ball-planar-cycle-domain/paper.zh.md) | [reproduce_certificates.py](heavy-ball-planar-cycle-domain/code/reproduce_certificates.py) |
+| [krr exact zcdp](krr-exact-zcdp/paper.en.md) | [verify_all.py](krr-exact-zcdp/code/verify_all.py) |
+| [modular magnetization magic](modular-magnetization-magic/paper.en.md) | [verify_primary.py](modular-magnetization-magic/code/verify_primary.py) |
+| [online conformal critical variational limit](online-conformal-critical-variational-limit/paper.zh.md) | [dp_crosscheck.py](online-conformal-critical-variational-limit/code/dp_crosscheck.py) |
+| [pauli mub phase rigidity](pauli-mub-phase-rigidity/paper.en.md) | [archived-lean-verification.json](pauli-mub-phase-rigidity/results/archived-lean-verification.json) |
+| [quantum chi2 tensorization regions](quantum-chi2-tensorization-regions/paper.en.md) | [reproduce.py](quantum-chi2-tensorization-regions/code/reproduce.py) |
+| [quantum code n23 m3 b2](quantum-code-n23-m3-b2/paper.zh.md) | [run_b2_hxrx_reference6.py](quantum-code-n23-m3-b2/code/run_b2_hxrx_reference6.py), [run_b2_reference6.py](quantum-code-n23-m3-b2/code/run_b2_reference6.py), [scale_hxrx_diagnostic.py](quantum-code-n23-m3-b2/code/scale_hxrx_diagnostic.py), [comparison.md](quantum-code-n23-m3-b2/reproduction/comparison.md) |
+| [quantum transport polygon exactness](quantum-transport-polygon-exactness/paper.en.md) | [run_checks.py](quantum-transport-polygon-exactness/code/run_checks.py) |
+| [qubit cooling arbitrary machine](qubit-cooling-arbitrary-machine/paper.zh.md) | [check_staircase_independent.py](qubit-cooling-arbitrary-machine/code/check_staircase_independent.py) |
+| [rank two permutation sharp constant](rank-two-permutation-sharp-constant/paper.en.md) | [rank2_codec.py](rank-two-permutation-sharp-constant/code/rank2_codec.py) |
+| [renyi product order phase](renyi-product-order-phase/paper.en.md) | [runtime_versions.json](renyi-product-order-phase/results/runtime_versions.json) |
+| [risk transfer and finite horizon](risk-transfer-and-finite-horizon/paper.en.md) | [make_figures.py](risk-transfer-and-finite-horizon/code/make_figures.py) |
+| [robust crt fixed channel exact design](robust-crt-fixed-channel-exact-design/paper.en.md) | [compare.py](robust-crt-fixed-channel-exact-design/code/compare.py), [independent_reference.json](robust-crt-fixed-channel-exact-design/results/independent_reference.json) |
+| [scalar lq global learning bifurcations](scalar-lq-global-learning-bifurcations/paper.en.md) | [experiment-design.json](scalar-lq-global-learning-bifurcations/results/experiment-design.json) |
+| [selection audit information](selection-audit-information/paper.en.md) | [generate_certificates.py](selection-audit-information/code/generate_certificates.py) |
+| [six cycle odd index entropy rises](six-cycle-odd-index-entropy-rises/paper.zh.md) | [certificate_odd_rises.py](six-cycle-odd-index-entropy-rises/code/certificate_odd_rises.py) |
+| [temporal ef1 nine chores threshold](temporal-ef1-nine-chores-threshold/paper.en.md) | [REPRODUCTION.md](temporal-ef1-nine-chores-threshold/REPRODUCTION.md), [verify_exact_certificate.py](temporal-ef1-nine-chores-threshold/code/verify_exact_certificate.py), [exact-certificate-problem.txt](temporal-ef1-nine-chores-threshold/results/exact-certificate-problem.txt), [exact-proof-certificate.json](temporal-ef1-nine-chores-threshold/results/exact-proof-certificate.json) |

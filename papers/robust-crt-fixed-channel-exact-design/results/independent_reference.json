@@ -1,0 +1,1605 @@
+{
+  "schema": "robust-crt-independent-finite-audit/v1",
+  "python": "3.12.14",
+  "script_sha256": "f4492e92969ce305cd53c83fbfd1d53c4c12f3084691da102167b7710300c588",
+  "independent_from_author_search": true,
+  "polynomials": {
+    "status": "pass_exact_integer_polynomial_identities",
+    "method": "independent coefficient convolution and binomial translation; no symbolic library and no author-generated coefficients read at runtime",
+    "five_base_difference_coefficients_low_to_high": [
+      1764,
+      -936,
+      132
+    ],
+    "five_base_discriminant": -55296,
+    "six_base_difference_coefficients_low_to_high": [
+      -89130,
+      44985,
+      -8250,
+      555
+    ],
+    "six_base_difference_after_M_equals_t_plus_13": [
+      320760,
+      111870,
+      13395,
+      555
+    ]
+  },
+  "templates": {
+    "status": "pass_finite_coprimality_check",
+    "start_min": 5,
+    "start_max": 10000,
+    "tuple_counts": {
+      "five": 3332,
+      "six_branch_A": 1332,
+      "six_branch_B": 334
+    },
+    "scope_limit": "Finite diagnostic only; universal coprimality remains a written-proof obligation."
+  },
+  "exhaustive_capacity": [
+    {
+      "L": 5,
+      "M_min": 2,
+      "M_max": 35,
+      "all_tuples_tested": 278256,
+      "pairwise_coprime_tuples": 9361,
+      "reference_method": "Enumerate every L-subset of [2,M_max]; group by its actual maximum; take cumulative product maxima. No localization, pattern templates, residue classes, root bounds or author solver are used.",
+      "localization_check": {
+        "width": 20,
+        "status": "pass_for_every_capacity_maximizer_in_finite_domain",
+        "scope_limit": "Only the listed finite budgets; not an unbounded localization proof."
+      },
+      "elapsed_seconds": 0.1713777119985025,
+      "capacity_table": [
+        {
+          "M": 2,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 3,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 4,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 5,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 6,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 7,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 8,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 9,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 10,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 11,
+          "capacity": 2520,
+          "witness": [
+            5,
+            7,
+            8,
+            9,
+            11
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 5,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 12,
+          "capacity": 2520,
+          "witness": [
+            5,
+            7,
+            8,
+            9,
+            11
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 5,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 13,
+          "capacity": 6930,
+          "witness": [
+            7,
+            9,
+            10,
+            11,
+            13
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 7,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 14,
+          "capacity": 6930,
+          "witness": [
+            7,
+            9,
+            10,
+            11,
+            13
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 7,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 15,
+          "capacity": 8008,
+          "witness": [
+            7,
+            8,
+            11,
+            13,
+            15
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 7,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 16,
+          "capacity": 15015,
+          "witness": [
+            7,
+            11,
+            13,
+            15,
+            16
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 7,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 17,
+          "capacity": 34320,
+          "witness": [
+            11,
+            13,
+            15,
+            16,
+            17
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 11,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 18,
+          "capacity": 34320,
+          "witness": [
+            11,
+            13,
+            15,
+            16,
+            17
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 11,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 19,
+          "capacity": 53040,
+          "witness": [
+            13,
+            15,
+            16,
+            17,
+            19
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 13,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 20,
+          "capacity": 53040,
+          "witness": [
+            13,
+            15,
+            16,
+            17,
+            19
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 13,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 21,
+          "capacity": 83980,
+          "witness": [
+            13,
+            17,
+            19,
+            20,
+            21
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 13,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 22,
+          "capacity": 88179,
+          "witness": [
+            13,
+            17,
+            19,
+            21,
+            22
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 13,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 23,
+          "capacity": 149226,
+          "witness": [
+            17,
+            19,
+            21,
+            22,
+            23
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 17,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 24,
+          "capacity": 149226,
+          "witness": [
+            17,
+            19,
+            21,
+            22,
+            23
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 17,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 25,
+          "capacity": 201894,
+          "witness": [
+            19,
+            21,
+            22,
+            23,
+            25
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 19,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 26,
+          "capacity": 229425,
+          "witness": [
+            19,
+            21,
+            23,
+            25,
+            26
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 19,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 27,
+          "capacity": 284050,
+          "witness": [
+            19,
+            23,
+            25,
+            26,
+            27
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 19,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 28,
+          "capacity": 294975,
+          "witness": [
+            19,
+            23,
+            25,
+            27,
+            28
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 19,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 29,
+          "capacity": 434700,
+          "witness": [
+            23,
+            25,
+            27,
+            28,
+            29
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 23,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 30,
+          "capacity": 434700,
+          "witness": [
+            23,
+            25,
+            27,
+            28,
+            29
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 23,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 31,
+          "capacity": 548100,
+          "witness": [
+            25,
+            27,
+            28,
+            29,
+            31
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 25,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 32,
+          "capacity": 606825,
+          "witness": [
+            25,
+            27,
+            29,
+            31,
+            32
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 25,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 33,
+          "capacity": 719200,
+          "witness": [
+            25,
+            29,
+            31,
+            32,
+            33
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 25,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 34,
+          "capacity": 741675,
+          "witness": [
+            25,
+            29,
+            31,
+            33,
+            34
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 25,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 35,
+          "capacity": 1008678,
+          "witness": [
+            29,
+            31,
+            33,
+            34,
+            35
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 29,
+          "capacity_maximizer_count": 1
+        }
+      ],
+      "inverse_threshold_queries": [
+        {
+          "R": 1,
+          "optimal_maximum": 11
+        },
+        {
+          "R": 1260,
+          "optimal_maximum": 11
+        },
+        {
+          "R": 2520,
+          "optimal_maximum": 11
+        },
+        {
+          "R": 2521,
+          "optimal_maximum": 13
+        },
+        {
+          "R": 4725,
+          "optimal_maximum": 13
+        },
+        {
+          "R": 6930,
+          "optimal_maximum": 13
+        },
+        {
+          "R": 6931,
+          "optimal_maximum": 15
+        },
+        {
+          "R": 7469,
+          "optimal_maximum": 15
+        },
+        {
+          "R": 8008,
+          "optimal_maximum": 15
+        },
+        {
+          "R": 8009,
+          "optimal_maximum": 16
+        },
+        {
+          "R": 11512,
+          "optimal_maximum": 16
+        },
+        {
+          "R": 15015,
+          "optimal_maximum": 16
+        },
+        {
+          "R": 15016,
+          "optimal_maximum": 17
+        },
+        {
+          "R": 24668,
+          "optimal_maximum": 17
+        },
+        {
+          "R": 34320,
+          "optimal_maximum": 17
+        },
+        {
+          "R": 34321,
+          "optimal_maximum": 19
+        },
+        {
+          "R": 43680,
+          "optimal_maximum": 19
+        },
+        {
+          "R": 53040,
+          "optimal_maximum": 19
+        },
+        {
+          "R": 53041,
+          "optimal_maximum": 21
+        },
+        {
+          "R": 68510,
+          "optimal_maximum": 21
+        },
+        {
+          "R": 83980,
+          "optimal_maximum": 21
+        },
+        {
+          "R": 83981,
+          "optimal_maximum": 22
+        },
+        {
+          "R": 86080,
+          "optimal_maximum": 22
+        },
+        {
+          "R": 88179,
+          "optimal_maximum": 22
+        },
+        {
+          "R": 88180,
+          "optimal_maximum": 23
+        },
+        {
+          "R": 118703,
+          "optimal_maximum": 23
+        },
+        {
+          "R": 149226,
+          "optimal_maximum": 23
+        },
+        {
+          "R": 149227,
+          "optimal_maximum": 25
+        },
+        {
+          "R": 175560,
+          "optimal_maximum": 25
+        },
+        {
+          "R": 201894,
+          "optimal_maximum": 25
+        },
+        {
+          "R": 201895,
+          "optimal_maximum": 26
+        },
+        {
+          "R": 215660,
+          "optimal_maximum": 26
+        },
+        {
+          "R": 229425,
+          "optimal_maximum": 26
+        },
+        {
+          "R": 229426,
+          "optimal_maximum": 27
+        },
+        {
+          "R": 256738,
+          "optimal_maximum": 27
+        },
+        {
+          "R": 284050,
+          "optimal_maximum": 27
+        },
+        {
+          "R": 284051,
+          "optimal_maximum": 28
+        },
+        {
+          "R": 289513,
+          "optimal_maximum": 28
+        },
+        {
+          "R": 294975,
+          "optimal_maximum": 28
+        },
+        {
+          "R": 294976,
+          "optimal_maximum": 29
+        },
+        {
+          "R": 364838,
+          "optimal_maximum": 29
+        },
+        {
+          "R": 434700,
+          "optimal_maximum": 29
+        },
+        {
+          "R": 434701,
+          "optimal_maximum": 31
+        },
+        {
+          "R": 491400,
+          "optimal_maximum": 31
+        },
+        {
+          "R": 548100,
+          "optimal_maximum": 31
+        },
+        {
+          "R": 548101,
+          "optimal_maximum": 32
+        },
+        {
+          "R": 577463,
+          "optimal_maximum": 32
+        },
+        {
+          "R": 606825,
+          "optimal_maximum": 32
+        },
+        {
+          "R": 606826,
+          "optimal_maximum": 33
+        },
+        {
+          "R": 663013,
+          "optimal_maximum": 33
+        },
+        {
+          "R": 719200,
+          "optimal_maximum": 33
+        },
+        {
+          "R": 719201,
+          "optimal_maximum": 34
+        },
+        {
+          "R": 730438,
+          "optimal_maximum": 34
+        },
+        {
+          "R": 741675,
+          "optimal_maximum": 34
+        },
+        {
+          "R": 741676,
+          "optimal_maximum": 35
+        },
+        {
+          "R": 875177,
+          "optimal_maximum": 35
+        },
+        {
+          "R": 1008678,
+          "optimal_maximum": 35
+        }
+      ]
+    },
+    {
+      "L": 6,
+      "M_min": 2,
+      "M_max": 50,
+      "all_tuples_tested": 13983816,
+      "pairwise_coprime_tuples": 161973,
+      "reference_method": "Enumerate every L-subset of [2,M_max]; group by its actual maximum; take cumulative product maxima. No localization, pattern templates, residue classes, root bounds or author solver are used.",
+      "localization_check": {
+        "width": 39,
+        "status": "pass_for_every_capacity_maximizer_in_finite_domain",
+        "scope_limit": "Only the listed finite budgets; not an unbounded localization proof."
+      },
+      "elapsed_seconds": 10.360667495000598,
+      "capacity_table": [
+        {
+          "M": 2,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 3,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 4,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 5,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 6,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 7,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 8,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 9,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 10,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 11,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 12,
+          "capacity": 0,
+          "witness": null,
+          "smallest_first_coordinate_among_all_capacity_maximizers": null,
+          "capacity_maximizer_count": 0
+        },
+        {
+          "M": 13,
+          "capacity": 27720,
+          "witness": [
+            5,
+            7,
+            8,
+            9,
+            11,
+            13
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 5,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 14,
+          "capacity": 27720,
+          "witness": [
+            5,
+            7,
+            8,
+            9,
+            11,
+            13
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 5,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 15,
+          "capacity": 27720,
+          "witness": [
+            5,
+            7,
+            8,
+            9,
+            11,
+            13
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 5,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 16,
+          "capacity": 45045,
+          "witness": [
+            5,
+            7,
+            9,
+            11,
+            13,
+            16
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 5,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 17,
+          "capacity": 240240,
+          "witness": [
+            7,
+            11,
+            13,
+            15,
+            16,
+            17
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 7,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 18,
+          "capacity": 240240,
+          "witness": [
+            7,
+            11,
+            13,
+            15,
+            16,
+            17
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 7,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 19,
+          "capacity": 583440,
+          "witness": [
+            11,
+            13,
+            15,
+            16,
+            17,
+            19
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 11,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 20,
+          "capacity": 583440,
+          "witness": [
+            11,
+            13,
+            15,
+            16,
+            17,
+            19
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 11,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 21,
+          "capacity": 923780,
+          "witness": [
+            11,
+            13,
+            17,
+            19,
+            20,
+            21
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 11,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 22,
+          "capacity": 923780,
+          "witness": [
+            11,
+            13,
+            17,
+            19,
+            20,
+            21
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 11,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 23,
+          "capacity": 1939938,
+          "witness": [
+            13,
+            17,
+            19,
+            21,
+            22,
+            23
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 13,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 24,
+          "capacity": 1939938,
+          "witness": [
+            13,
+            17,
+            19,
+            21,
+            22,
+            23
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 13,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 25,
+          "capacity": 3432198,
+          "witness": [
+            17,
+            19,
+            21,
+            22,
+            23,
+            25
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 17,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 26,
+          "capacity": 3900225,
+          "witness": [
+            17,
+            19,
+            21,
+            23,
+            25,
+            26
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 17,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 27,
+          "capacity": 4828850,
+          "witness": [
+            17,
+            19,
+            23,
+            25,
+            26,
+            27
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 17,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 28,
+          "capacity": 5014575,
+          "witness": [
+            17,
+            19,
+            23,
+            25,
+            27,
+            28
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 17,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 29,
+          "capacity": 8259300,
+          "witness": [
+            19,
+            23,
+            25,
+            27,
+            28,
+            29
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 19,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 30,
+          "capacity": 8259300,
+          "witness": [
+            19,
+            23,
+            25,
+            27,
+            28,
+            29
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 19,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 31,
+          "capacity": 12606300,
+          "witness": [
+            23,
+            25,
+            27,
+            28,
+            29,
+            31
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 23,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 32,
+          "capacity": 13956975,
+          "witness": [
+            23,
+            25,
+            27,
+            29,
+            31,
+            32
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 23,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 33,
+          "capacity": 16541600,
+          "witness": [
+            23,
+            25,
+            29,
+            31,
+            32,
+            33
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 23,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 34,
+          "capacity": 17058525,
+          "witness": [
+            23,
+            25,
+            29,
+            31,
+            33,
+            34
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 23,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 35,
+          "capacity": 23199594,
+          "witness": [
+            23,
+            29,
+            31,
+            33,
+            34,
+            35
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 23,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 36,
+          "capacity": 23199594,
+          "witness": [
+            23,
+            29,
+            31,
+            33,
+            34,
+            35
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 23,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 37,
+          "capacity": 35303730,
+          "witness": [
+            29,
+            31,
+            33,
+            34,
+            35,
+            37
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 29,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 38,
+          "capacity": 38418765,
+          "witness": [
+            29,
+            31,
+            33,
+            35,
+            37,
+            38
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 29,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 39,
+          "capacity": 44239790,
+          "witness": [
+            29,
+            31,
+            35,
+            37,
+            38,
+            39
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 29,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 40,
+          "capacity": 44239790,
+          "witness": [
+            29,
+            31,
+            35,
+            37,
+            38,
+            39
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 29,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 41,
+          "capacity": 59494890,
+          "witness": [
+            31,
+            35,
+            37,
+            38,
+            39,
+            41
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 31,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 42,
+          "capacity": 59494890,
+          "witness": [
+            31,
+            35,
+            37,
+            38,
+            39,
+            41
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 31,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 43,
+          "capacity": 78686790,
+          "witness": [
+            35,
+            37,
+            38,
+            39,
+            41,
+            43
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 35,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 44,
+          "capacity": 89040315,
+          "witness": [
+            35,
+            37,
+            39,
+            41,
+            43,
+            44
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 35,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 45,
+          "capacity": 89040315,
+          "witness": [
+            35,
+            37,
+            39,
+            41,
+            43,
+            44
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 35,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 46,
+          "capacity": 90997245,
+          "witness": [
+            31,
+            37,
+            41,
+            43,
+            45,
+            46
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 31,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 47,
+          "capacity": 135028170,
+          "witness": [
+            37,
+            41,
+            43,
+            45,
+            46,
+            47
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 37,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 48,
+          "capacity": 135028170,
+          "witness": [
+            37,
+            41,
+            43,
+            45,
+            46,
+            47
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 37,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 49,
+          "capacity": 171522270,
+          "witness": [
+            41,
+            43,
+            45,
+            46,
+            47,
+            49
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 41,
+          "capacity_maximizer_count": 1
+        },
+        {
+          "M": 50,
+          "capacity": 171522270,
+          "witness": [
+            41,
+            43,
+            45,
+            46,
+            47,
+            49
+          ],
+          "smallest_first_coordinate_among_all_capacity_maximizers": 41,
+          "capacity_maximizer_count": 1
+        }
+      ],
+      "inverse_threshold_queries": [
+        {
+          "R": 1,
+          "optimal_maximum": 13
+        },
+        {
+          "R": 13860,
+          "optimal_maximum": 13
+        },
+        {
+          "R": 27720,
+          "optimal_maximum": 13
+        },
+        {
+          "R": 27721,
+          "optimal_maximum": 16
+        },
+        {
+          "R": 36383,
+          "optimal_maximum": 16
+        },
+        {
+          "R": 45045,
+          "optimal_maximum": 16
+        },
+        {
+          "R": 45046,
+          "optimal_maximum": 17
+        },
+        {
+          "R": 142643,
+          "optimal_maximum": 17
+        },
+        {
+          "R": 240240,
+          "optimal_maximum": 17
+        },
+        {
+          "R": 240241,
+          "optimal_maximum": 19
+        },
+        {
+          "R": 411840,
+          "optimal_maximum": 19
+        },
+        {
+          "R": 583440,
+          "optimal_maximum": 19
+        },
+        {
+          "R": 583441,
+          "optimal_maximum": 21
+        },
+        {
+          "R": 753610,
+          "optimal_maximum": 21
+        },
+        {
+          "R": 923780,
+          "optimal_maximum": 21
+        },
+        {
+          "R": 923781,
+          "optimal_maximum": 23
+        },
+        {
+          "R": 1431859,
+          "optimal_maximum": 23
+        },
+        {
+          "R": 1939938,
+          "optimal_maximum": 23
+        },
+        {
+          "R": 1939939,
+          "optimal_maximum": 25
+        },
+        {
+          "R": 2686068,
+          "optimal_maximum": 25
+        },
+        {
+          "R": 3432198,
+          "optimal_maximum": 25
+        },
+        {
+          "R": 3432199,
+          "optimal_maximum": 26
+        },
+        {
+          "R": 3666212,
+          "optimal_maximum": 26
+        },
+        {
+          "R": 3900225,
+          "optimal_maximum": 26
+        },
+        {
+          "R": 3900226,
+          "optimal_maximum": 27
+        },
+        {
+          "R": 4364538,
+          "optimal_maximum": 27
+        },
+        {
+          "R": 4828850,
+          "optimal_maximum": 27
+        },
+        {
+          "R": 4828851,
+          "optimal_maximum": 28
+        },
+        {
+          "R": 4921713,
+          "optimal_maximum": 28
+        },
+        {
+          "R": 5014575,
+          "optimal_maximum": 28
+        },
+        {
+          "R": 5014576,
+          "optimal_maximum": 29
+        },
+        {
+          "R": 6636938,
+          "optimal_maximum": 29
+        },
+        {
+          "R": 8259300,
+          "optimal_maximum": 29
+        },
+        {
+          "R": 8259301,
+          "optimal_maximum": 31
+        },
+        {
+          "R": 10432800,
+          "optimal_maximum": 31
+        },
+        {
+          "R": 12606300,
+          "optimal_maximum": 31
+        },
+        {
+          "R": 12606301,
+          "optimal_maximum": 32
+        },
+        {
+          "R": 13281638,
+          "optimal_maximum": 32
+        },
+        {
+          "R": 13956975,
+          "optimal_maximum": 32
+        },
+        {
+          "R": 13956976,
+          "optimal_maximum": 33
+        },
+        {
+          "R": 15249288,
+          "optimal_maximum": 33
+        },
+        {
+          "R": 16541600,
+          "optimal_maximum": 33
+        },
+        {
+          "R": 16541601,
+          "optimal_maximum": 34
+        },
+        {
+          "R": 16800063,
+          "optimal_maximum": 34
+        },
+        {
+          "R": 17058525,
+          "optimal_maximum": 34
+        },
+        {
+          "R": 17058526,
+          "optimal_maximum": 35
+        },
+        {
+          "R": 20129060,
+          "optimal_maximum": 35
+        },
+        {
+          "R": 23199594,
+          "optimal_maximum": 35
+        },
+        {
+          "R": 23199595,
+          "optimal_maximum": 37
+        },
+        {
+          "R": 29251662,
+          "optimal_maximum": 37
+        },
+        {
+          "R": 35303730,
+          "optimal_maximum": 37
+        },
+        {
+          "R": 35303731,
+          "optimal_maximum": 38
+        },
+        {
+          "R": 36861248,
+          "optimal_maximum": 38
+        },
+        {
+          "R": 38418765,
+          "optimal_maximum": 38
+        },
+        {
+          "R": 38418766,
+          "optimal_maximum": 39
+        },
+        {
+          "R": 41329278,
+          "optimal_maximum": 39
+        },
+        {
+          "R": 44239790,
+          "optimal_maximum": 39
+        },
+        {
+          "R": 44239791,
+          "optimal_maximum": 41
+        },
+        {
+          "R": 51867340,
+          "optimal_maximum": 41
+        },
+        {
+          "R": 59494890,
+          "optimal_maximum": 41
+        },
+        {
+          "R": 59494891,
+          "optimal_maximum": 43
+        },
+        {
+          "R": 69090840,
+          "optimal_maximum": 43
+        },
+        {
+          "R": 78686790,
+          "optimal_maximum": 43
+        },
+        {
+          "R": 78686791,
+          "optimal_maximum": 44
+        },
+        {
+          "R": 83863553,
+          "optimal_maximum": 44
+        },
+        {
+          "R": 89040315,
+          "optimal_maximum": 44
+        },
+        {
+          "R": 89040316,
+          "optimal_maximum": 46
+        },
+        {
+          "R": 90018780,
+          "optimal_maximum": 46
+        },
+        {
+          "R": 90997245,
+          "optimal_maximum": 46
+        },
+        {
+          "R": 90997246,
+          "optimal_maximum": 47
+        },
+        {
+          "R": 113012708,
+          "optimal_maximum": 47
+        },
+        {
+          "R": 135028170,
+          "optimal_maximum": 47
+        },
+        {
+          "R": 135028171,
+          "optimal_maximum": 49
+        },
+        {
+          "R": 153275220,
+          "optimal_maximum": 49
+        },
+        {
+          "R": 171522270,
+          "optimal_maximum": 49
+        }
+      ]
+    }
+  ],
+  "author_solver_comparison": "not_yet_performed",
+  "scope": "Exact polynomial identities and finite exhaustive numerical verification only; neither final mathematical audit nor actual-value certification.",
+  "total_elapsed_seconds": 10.538525535999725
+}
