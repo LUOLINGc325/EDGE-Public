@@ -1,0 +1,3 @@
+Exhaustive graph-modulator pairs through n=4: 951
+Seeded cluster-modulator graph pairs: 300
+Open and closed optimum values and every recovered feasible coloring agree with the oracle.

@@ -1,0 +1,6 @@
+{
+  "external_peer_review": "not_asserted",
+  "formalization_status": "No Lean proof is supplied with this manuscript.",
+  "manuscript_sha256": "942d0e9cae9020449e278f6cadec9688d3697e698f09a8fbd25f62082d52e8cf",
+  "paper_path": "papers/cauchy-channel-capacity-transition/paper.en.md"
+}

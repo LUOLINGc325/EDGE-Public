@@ -1,0 +1,1 @@
+selected symbols in heavy, dense and sparse examples: 1, 1, 1

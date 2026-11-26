@@ -1,0 +1,5 @@
+n=2 e4=9 sum_e3=22 sum_e31=4 sum_e22=5 I3/log(k)=-1 Delta/log(k)=0
+n=3 e4=38 sum_e3=64 sum_e31=8 sum_e22=10 I3/log(k)=-1 Delta/log(k)=0
+n=4 e4=99 sum_e3=126 sum_e31=12 sum_e22=15 I3/log(k)=-1 Delta/log(k)=1/24
+n=5 e4=204 sum_e3=208 sum_e31=16 sum_e22=20 I3/log(k)=-1 Delta/log(k)=2/25
+n=6 e4=365 sum_e3=310 sum_e31=20 sum_e22=25 I3/log(k)=-1 Delta/log(k)=1/9

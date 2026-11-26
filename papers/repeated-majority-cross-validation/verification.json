@@ -1,0 +1,6 @@
+{
+  "external_peer_review": "not_asserted",
+  "formalization_status": "No Lean proof is supplied with this manuscript.",
+  "manuscript_sha256": "f47eb1d73ebf3f0303d69c290005ec4a2dfd92b37779e773b99b74181b557d5f",
+  "paper_path": "papers/repeated-majority-cross-validation/paper.en.md"
+}

@@ -1,0 +1,3 @@
+Exhaustive labelled graphs through n=4: 76, two elimination orders each
+Seeded width-at-most-two separator instances: 100
+Exact dynamic-programming and partition optima agree.

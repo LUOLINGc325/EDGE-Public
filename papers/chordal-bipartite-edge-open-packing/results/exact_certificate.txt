@@ -1,0 +1,3 @@
+Exhaustive chordal bipartite labelled inputs: [(2, 2, 16), (2, 3, 64), (3, 3, 506), (3, 4, 3940), (4, 4, 57832)]
+Additional seeded chordal bipartite inputs: 1267
+No long hole or antihole in the oriented graph; all packing witnesses passed.

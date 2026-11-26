@@ -1,0 +1,5 @@
+{
+  "paired_mixture_second_moment_checks": 60,
+  "poisson_padding_convolution_checks": 160,
+  "balanced_accuracy_and_complement_checks": 10415
+}

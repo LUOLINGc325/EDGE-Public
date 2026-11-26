@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**312 research entries / 成果条目 · 413 manuscript versions / 论文版本**
+**315 research entries / 成果条目 · 416 manuscript versions / 论文版本**
 
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
@@ -320,6 +320,9 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Exact finite-decision realizations in strictly feasible convex scenario optimization | — | [Read](convex-scenario-finite-decision-realizations/paper.en.md) |
 | Local support-rank classification of feedback gain in POST channels | — | [Read](post-channel-feedback-support-rank/paper.en.md) |
 | Finite Certificates and Memory Penalties for Binary POST Channels | — | [Read](binary-post-channel-certificates/paper.en.md) |
+| A Sharp Reward Threshold for Faster, More Patient Jobs in a Two-Class Clearing System | — | [Read](two-class-clearing-reward-threshold/paper.en.md) |
+| Sharp limits of repeated majority cross-validation | — | [Read](repeated-majority-cross-validation/paper.en.md) |
+| The first capacity transition of the power-constrained Cauchy channel | — | [Read](cauchy-channel-capacity-transition/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
 

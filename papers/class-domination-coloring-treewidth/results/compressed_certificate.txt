@@ -1,0 +1,1 @@
+Independent compressed algorithm agrees with partition oracle on 531 seeded graph/decompositions including joins and infeasible isolates

@@ -1,0 +1,790 @@
+{
+  "kind": "floating_point_asymptotic_diagnostic",
+  "scope": "finite complete-average MSE only; not a universal proof or exact interval certificate",
+  "rows": [
+    {
+      "n": 500,
+      "k": 20,
+      "m": 25,
+      "mu": 0.044625828251226685,
+      "n_mu_squared_minus_log_k": -2.0,
+      "complete_mse_numeric": 0.0010508410606364352,
+      "asymptotic_prediction": 0.0011118283705187626,
+      "risk_to_prediction": 0.9451468306624774,
+      "peak_second_to_A": 1.0312411836313753,
+      "twice_cross_term": -7.910582008303534e-05,
+      "n_times_mse": 0.5254205303182176,
+      "critical_limit": 0.5559141852593812,
+      "included_mass": 0.9999999999999997,
+      "count_range": [
+        124,
+        399
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 500,
+      "k": 20,
+      "m": 25,
+      "mu": -0.044625828251226685,
+      "n_mu_squared_minus_log_k": -2.0,
+      "complete_mse_numeric": 0.0012028984302876633,
+      "asymptotic_prediction": 0.0011118283705187626,
+      "risk_to_prediction": 1.0819101780308131,
+      "peak_second_to_A": 1.0312411836313757,
+      "twice_cross_term": 7.295154956819274e-05,
+      "n_times_mse": 0.6014492151438317,
+      "critical_limit": 0.5559141852593812,
+      "included_mass": 1.0,
+      "count_range": [
+        101,
+        376
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 500,
+      "k": 20,
+      "m": 25,
+      "mu": 0.07740455120409899,
+      "n_mu_squared_minus_log_k": 4.440892098500626e-16,
+      "complete_mse_numeric": 0.0007479093648040814,
+      "asymptotic_prediction": 0.0007250790790392765,
+      "risk_to_prediction": 1.0314866149428208,
+      "peak_second_to_A": 1.054063815408449,
+      "twice_cross_term": 1.3657384256875842e-05,
+      "n_times_mse": 0.3739546824020407,
+      "critical_limit": 0.36253953951963824,
+      "included_mass": 0.9999999999999999,
+      "count_range": [
+        132,
+        407
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 500,
+      "k": 20,
+      "m": 25,
+      "mu": -0.07740455120409899,
+      "n_mu_squared_minus_log_k": 4.440892098500626e-16,
+      "complete_mse_numeric": 0.0008445483131276628,
+      "asymptotic_prediction": 0.0007250790790392765,
+      "risk_to_prediction": 1.164767178563036,
+      "peak_second_to_A": 1.0540638154084543,
+      "twice_cross_term": 0.00011029633258045598,
+      "n_times_mse": 0.4222741565638314,
+      "critical_limit": 0.36253953951963824,
+      "included_mass": 0.9999999999999998,
+      "count_range": [
+        93,
+        368
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 500,
+      "k": 20,
+      "m": 25,
+      "mu": 0.09995731362490681,
+      "n_mu_squared_minus_log_k": 1.9999999999999996,
+      "complete_mse_numeric": 0.0006083323118521154,
+      "asymptotic_prediction": 0.000582801965816352,
+      "risk_to_prediction": 1.043806211257373,
+      "peak_second_to_A": 1.0731661854731551,
+      "twice_cross_term": 2.446777432085646e-05,
+      "n_times_mse": 0.30416615592605767,
+      "critical_limit": 0.29140098290817595,
+      "included_mass": 1.0,
+      "count_range": [
+        138,
+        412
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 500,
+      "k": 20,
+      "m": 25,
+      "mu": -0.09995731362490681,
+      "n_mu_squared_minus_log_k": 1.9999999999999996,
+      "complete_mse_numeric": 0.0006538737342653338,
+      "asymptotic_prediction": 0.000582801965816352,
+      "risk_to_prediction": 1.1219484020604304,
+      "peak_second_to_A": 1.073166185473155,
+      "twice_cross_term": 7.000919673407486e-05,
+      "n_times_mse": 0.3269368671326669,
+      "critical_limit": 0.29140098290817595,
+      "included_mass": 0.9999999999999999,
+      "count_range": [
+        88,
+        362
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 500,
+      "k": 20,
+      "m": 25,
+      "mu": 0.0,
+      "n_mu_squared_minus_log_k": -2.995732273553991,
+      "complete_mse_numeric": 0.0013860086570636576,
+      "asymptotic_prediction": 0.0015065842420897407,
+      "risk_to_prediction": 0.9199675785412198,
+      "peak_second_to_A": 1.0185798677448872,
+      "twice_cross_term": -0.00013927778711819776,
+      "n_times_mse": 0.6930043285318288,
+      "critical_limit": 0.7532921210448703,
+      "included_mass": 1.0000000000000002,
+      "count_range": [
+        112,
+        388
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 4080,
+      "k": 80,
+      "m": 51,
+      "mu": 0.02416257555638695,
+      "n_mu_squared_minus_log_k": -2.0000000000000004,
+      "complete_mse_numeric": 0.00013586576207085405,
+      "asymptotic_prediction": 0.00013625347677926014,
+      "risk_to_prediction": 0.9971544600727201,
+      "peak_second_to_A": 1.0155066368237757,
+      "twice_cross_term": -1.5146124181313342e-06,
+      "n_times_mse": 0.5543323092490845,
+      "critical_limit": 0.5559141852593814,
+      "included_mass": 1.0000000000000002,
+      "count_range": [
+        1703,
+        2476
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 4080,
+      "k": 80,
+      "m": 51,
+      "mu": -0.02416257555638695,
+      "n_mu_squared_minus_log_k": -2.0000000000000004,
+      "complete_mse_numeric": 0.00014609706334471915,
+      "asymptotic_prediction": 0.00013625347677926014,
+      "risk_to_prediction": 1.0722446633887097,
+      "peak_second_to_A": 1.0155066368237808,
+      "twice_cross_term": 8.716688855733407e-06,
+      "n_times_mse": 0.5960760184464542,
+      "critical_limit": 0.5559141852593814,
+      "included_mass": 0.9999999999999989,
+      "count_range": [
+        1604,
+        2377
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 4080,
+      "k": 80,
+      "m": 51,
+      "mu": 0.03277233796892557,
+      "n_mu_squared_minus_log_k": 0.0,
+      "complete_mse_numeric": 9.009998333450458e-05,
+      "asymptotic_prediction": 8.885773027442114e-05,
+      "risk_to_prediction": 1.0139802474837807,
+      "peak_second_to_A": 1.0210495063389275,
+      "twice_cross_term": 7.274503109385434e-07,
+      "n_times_mse": 0.3676079320047787,
+      "critical_limit": 0.36253953951963824,
+      "included_mass": 1.0000000000000002,
+      "count_range": [
+        1720,
+        2493
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 4080,
+      "k": 80,
+      "m": 51,
+      "mu": -0.03277233796892557,
+      "n_mu_squared_minus_log_k": 0.0,
+      "complete_mse_numeric": 9.520080670134653e-05,
+      "asymptotic_prediction": 8.885773027442114e-05,
+      "risk_to_prediction": 1.07138463257317,
+      "peak_second_to_A": 1.0210495063389269,
+      "twice_cross_term": 5.8282736777804476e-06,
+      "n_times_mse": 0.38841929134149383,
+      "critical_limit": 0.36253953951963824,
+      "included_mass": 1.0000000000000004,
+      "count_range": [
+        1587,
+        2360
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 4080,
+      "k": 80,
+      "m": 51,
+      "mu": 0.03955024923285381,
+      "n_mu_squared_minus_log_k": 2.0,
+      "complete_mse_numeric": 7.239452624535992e-05,
+      "asymptotic_prediction": 7.142180953631764e-05,
+      "risk_to_prediction": 1.0136193232201385,
+      "peak_second_to_A": 1.026122211713376,
+      "twice_cross_term": 8.034937465240998e-07,
+      "n_times_mse": 0.2953696670810685,
+      "critical_limit": 0.29140098290817595,
+      "included_mass": 1.0000000000000004,
+      "count_range": [
+        1734,
+        2507
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 4080,
+      "k": 80,
+      "m": 51,
+      "mu": -0.03955024923285381,
+      "n_mu_squared_minus_log_k": 2.0,
+      "complete_mse_numeric": 7.465611662920204e-05,
+      "asymptotic_prediction": 7.142180953631764e-05,
+      "risk_to_prediction": 1.0452845862332816,
+      "peak_second_to_A": 1.0261222117134035,
+      "twice_cross_term": 3.0650841303659376e-06,
+      "n_times_mse": 0.3045969558471443,
+      "critical_limit": 0.29140098290817595,
+      "included_mass": 1.0000000000000004,
+      "count_range": [
+        1573,
+        2346
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 4080,
+      "k": 80,
+      "m": 51,
+      "mu": 0.0,
+      "n_mu_squared_minus_log_k": -4.382026634673881,
+      "complete_mse_numeric": 0.00030142275132761956,
+      "asymptotic_prediction": 0.0003079863338455247,
+      "risk_to_prediction": 0.9786887215547778,
+      "peak_second_to_A": 1.008303283530234,
+      "twice_cross_term": -8.612100743183782e-06,
+      "n_times_mse": 1.2298048254166878,
+      "critical_limit": 1.2565842420897406,
+      "included_mass": 1.0000000000000002,
+      "count_range": [
+        1653,
+        2427
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 32320,
+      "k": 320,
+      "m": 101,
+      "mu": 0.010797874337868146,
+      "n_mu_squared_minus_log_k": -2.000000000000001,
+      "complete_mse_numeric": 1.7204760041743287e-05,
+      "asymptotic_prediction": 1.720031513797591e-05,
+      "risk_to_prediction": 1.000258419902875,
+      "peak_second_to_A": 1.0068064765382339,
+      "twice_cross_term": -5.907765817962081e-08,
+      "n_times_mse": 0.556057844549143,
+      "critical_limit": 0.5559141852593814,
+      "included_mass": 1.0,
+      "count_range": [
+        15252,
+        17417
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 32320,
+      "k": 320,
+      "m": 101,
+      "mu": -0.010797874337868146,
+      "n_mu_squared_minus_log_k": -2.000000000000001,
+      "complete_mse_numeric": 1.778337879571176e-05,
+      "asymptotic_prediction": 1.720031513797591e-05,
+      "risk_to_prediction": 1.033898428782187,
+      "peak_second_to_A": 1.0068064765382199,
+      "twice_cross_term": 5.195410957889689e-07,
+      "n_times_mse": 0.5747588026774041,
+      "critical_limit": 0.5559141852593814,
+      "included_mass": 1.000000000000001,
+      "count_range": [
+        14903,
+        17068
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 32320,
+      "k": 320,
+      "m": 101,
+      "mu": 0.013359463998798879,
+      "n_mu_squared_minus_log_k": 0.0,
+      "complete_mse_numeric": 1.1259019834995976e-05,
+      "asymptotic_prediction": 1.1217188722761085e-05,
+      "risk_to_prediction": 1.0037291975082856,
+      "peak_second_to_A": 1.0082294369962836,
+      "twice_cross_term": 1.4556414509530004e-08,
+      "n_times_mse": 0.36389152106706996,
+      "critical_limit": 0.36253953951963824,
+      "included_mass": 0.9999999999999992,
+      "count_range": [
+        15294,
+        17458
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 32320,
+      "k": 320,
+      "m": 101,
+      "mu": -0.013359463998798879,
+      "n_mu_squared_minus_log_k": 0.0,
+      "complete_mse_numeric": 1.1522340355994149e-05,
+      "asymptotic_prediction": 1.1217188722761085e-05,
+      "risk_to_prediction": 1.0272039314640282,
+      "peak_second_to_A": 1.0082294369962737,
+      "twice_cross_term": 2.7787693550773886e-07,
+      "n_times_mse": 0.3724020403057309,
+      "critical_limit": 0.36253953951963824,
+      "included_mass": 0.9999999999999996,
+      "count_range": [
+        14862,
+        17026
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 32320,
+      "k": 320,
+      "m": 101,
+      "mu": 0.015503434021339118,
+      "n_mu_squared_minus_log_k": 2.0,
+      "complete_mse_numeric": 9.046855858630912e-06,
+      "asymptotic_prediction": 9.016119520673762e-06,
+      "risk_to_prediction": 1.0034090428689053,
+      "peak_second_to_A": 1.0095920290641782,
+      "twice_cross_term": 2.0308419803461503e-08,
+      "n_times_mse": 0.2923943813509511,
+      "critical_limit": 0.29140098290817595,
+      "included_mass": 0.9999999999999998,
+      "count_range": [
+        15328,
+        17493
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 32320,
+      "k": 320,
+      "m": 101,
+      "mu": -0.015503434021339118,
+      "n_mu_squared_minus_log_k": 2.0,
+      "complete_mse_numeric": 9.159248564709329e-06,
+      "asymptotic_prediction": 9.016119520673762e-06,
+      "risk_to_prediction": 1.0158747944398225,
+      "peak_second_to_A": 1.0095920290641653,
+      "twice_cross_term": 1.3270112588190423e-07,
+      "n_times_mse": 0.29602691361140554,
+      "critical_limit": 0.29140098290817595,
+      "included_mass": 0.9999999999999993,
+      "count_range": [
+        14827,
+        16992
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 32320,
+      "k": 320,
+      "m": 101,
+      "mu": 0.0,
+      "n_mu_squared_minus_log_k": -5.768320995793772,
+      "complete_mse_numeric": 6.97238366148655e-05,
+      "asymptotic_prediction": 7.002377735703842e-05,
+      "risk_to_prediction": 0.9957165872294553,
+      "peak_second_to_A": 1.0039623162594802,
+      "twice_cross_term": -5.467479890150124e-07,
+      "n_times_mse": 2.253474399392453,
+      "critical_limit": 2.2631684841794812,
+      "included_mass": 0.9999999999999991,
+      "count_range": [
+        15078,
+        17242
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 257280,
+      "k": 1280,
+      "m": 201,
+      "mu": 0.004476051947060054,
+      "n_mu_squared_minus_log_k": -2.0,
+      "complete_mse_numeric": 2.1599964595339328e-06,
+      "asymptotic_prediction": 2.1607361056412517e-06,
+      "risk_to_prediction": 0.9996576879030309,
+      "peak_second_to_A": 1.002911429957393,
+      "twice_cross_term": -4.181961728811205e-09,
+      "n_times_mse": 0.5557238891088903,
+      "critical_limit": 0.5559141852593812,
+      "included_mass": 0.9999999999999999,
+      "count_range": [
+        126169,
+        132263
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 257280,
+      "k": 1280,
+      "m": 201,
+      "mu": -0.004476051947060054,
+      "n_mu_squared_minus_log_k": -2.0,
+      "complete_mse_numeric": 2.1901281403177394e-06,
+      "asymptotic_prediction": 2.1607361056412517e-06,
+      "risk_to_prediction": 1.0136027877720704,
+      "peak_second_to_A": 1.0029114299575443,
+      "twice_cross_term": 2.5949719054815658e-08,
+      "n_times_mse": 0.563476167940948,
+      "critical_limit": 0.5559141852593812,
+      "included_mass": 0.9999999999999997,
+      "count_range": [
+        125017,
+        131111
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 257280,
+      "k": 1280,
+      "m": 201,
+      "mu": 0.005273392918565438,
+      "n_mu_squared_minus_log_k": -8.881784197001252e-16,
+      "complete_mse_numeric": 1.409936626647582e-06,
+      "asymptotic_prediction": 1.4091244539786937e-06,
+      "risk_to_prediction": 1.0005763668827088,
+      "peak_second_to_A": 1.0032786082987653,
+      "twice_cross_term": -5.949359287092296e-10,
+      "n_times_mse": 0.3627484953038899,
+      "critical_limit": 0.3625395395196383,
+      "included_mass": 0.9999999999999998,
+      "count_range": [
+        126272,
+        132365
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 257280,
+      "k": 1280,
+      "m": 201,
+      "mu": -0.005273392918565438,
+      "n_mu_squared_minus_log_k": -8.881784197001252e-16,
+      "complete_mse_numeric": 1.422995734243612e-06,
+      "asymptotic_prediction": 1.4091244539786937e-06,
+      "risk_to_prediction": 1.0098439000371844,
+      "peak_second_to_A": 1.0032786082988396,
+      "twice_cross_term": 1.2464171667290504e-08,
+      "n_times_mse": 0.36610834250619645,
+      "critical_limit": 0.3625395395196383,
+      "included_mass": 0.9999999999999991,
+      "count_range": [
+        124915,
+        131008
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 257280,
+      "k": 1280,
+      "m": 201,
+      "mu": 0.005965090503451908,
+      "n_mu_squared_minus_log_k": 2.0,
+      "complete_mse_numeric": 1.1333499237560908e-06,
+      "asymptotic_prediction": 1.1326219795871268e-06,
+      "risk_to_prediction": 1.0006427070832842,
+      "peak_second_to_A": 1.0036381224586048,
+      "twice_cross_term": 1.7708024814719572e-10,
+      "n_times_mse": 0.29158826838396706,
+      "critical_limit": 0.29140098290817595,
+      "included_mass": 0.9999999999999987,
+      "count_range": [
+        126361,
+        132454
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 257280,
+      "k": 1280,
+      "m": 201,
+      "mu": -0.005965090503451908,
+      "n_mu_squared_minus_log_k": 2.0,
+      "complete_mse_numeric": 1.1387840804629953e-06,
+      "asymptotic_prediction": 1.1326219795871268e-06,
+      "risk_to_prediction": 1.005440562682807,
+      "peak_second_to_A": 1.0036381224583084,
+      "twice_cross_term": 5.611236955100511e-09,
+      "n_times_mse": 0.2929863682215194,
+      "critical_limit": 0.29140098290817595,
+      "included_mass": 0.9999999999999982,
+      "count_range": [
+        124826,
+        130919
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 257280,
+      "k": 1280,
+      "m": 201,
+      "mu": 0.0,
+      "n_mu_squared_minus_log_k": -7.154615356913663,
+      "complete_mse_numeric": 1.6617079286945736e-05,
+      "asymptotic_prediction": 1.662133460960418e-05,
+      "risk_to_prediction": 0.999743984297387,
+      "peak_second_to_A": 1.0019298283946931,
+      "twice_cross_term": -3.4456424213718976e-08,
+      "n_times_mse": 4.275242158945399,
+      "critical_limit": 4.276336968358963,
+      "included_mass": 0.9999999999999993,
+      "count_range": [
+        125593,
+        131687
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 2053120,
+      "k": 5120,
+      "m": 401,
+      "mu": 0.0017848918667020205,
+      "n_mu_squared_minus_log_k": -2.000000000000001,
+      "complete_mse_numeric": 2.7065650579770767e-07,
+      "asymptotic_prediction": 2.707655593727504e-07,
+      "risk_to_prediction": 0.9995972398583653,
+      "peak_second_to_A": 1.001265627405869,
+      "twice_cross_term": -2.9724370370785254e-10,
+      "n_times_mse": 0.5556902851833896,
+      "critical_limit": 0.5559141852593814,
+      "included_mass": 1.0000000000000004,
+      "count_range": [
+        1019792,
+        1036993
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 2053120,
+      "k": 5120,
+      "m": 401,
+      "mu": -0.0017848918667020205,
+      "n_mu_squared_minus_log_k": -2.000000000000001,
+      "complete_mse_numeric": 2.721617200207658e-07,
+      "asymptotic_prediction": 2.707655593727504e-07,
+      "risk_to_prediction": 1.0051563450360885,
+      "peak_second_to_A": 1.0012656274058358,
+      "twice_cross_term": 1.2079705193552108e-09,
+      "n_times_mse": 0.5587806706090347,
+      "critical_limit": 0.5559141852593814,
+      "included_mass": 1.0000000000000004,
+      "count_range": [
+        1016127,
+        1033328
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 2053120,
+      "k": 5120,
+      "m": 401,
+      "mu": 0.002039599509184073,
+      "n_mu_squared_minus_log_k": 0.0,
+      "complete_mse_numeric": 1.7656546824376756e-07,
+      "asymptotic_prediction": 1.765798100060582e-07,
+      "risk_to_prediction": 0.9999187802824674,
+      "peak_second_to_A": 1.0013596315898452,
+      "twice_cross_term": -8.836194693585355e-11,
+      "n_times_mse": 0.36251009416064406,
+      "critical_limit": 0.36253953951963824,
+      "included_mass": 1.0000000000000018,
+      "count_range": [
+        1020053,
+        1037254
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 2053120,
+      "k": 5120,
+      "m": 401,
+      "mu": -0.002039599509184073,
+      "n_mu_squared_minus_log_k": 0.0,
+      "complete_mse_numeric": 1.771982227177272e-07,
+      "asymptotic_prediction": 1.765798100060582e-07,
+      "risk_to_prediction": 1.0035021711239116,
+      "peak_second_to_A": 1.001359631589585,
+      "twice_cross_term": 5.443925270378194e-10,
+      "n_times_mse": 0.3638092150262201,
+      "critical_limit": 0.36253953951963824,
+      "included_mass": 1.000000000000002,
+      "count_range": [
+        1015866,
+        1033067
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 2053120,
+      "k": 5120,
+      "m": 401,
+      "mu": 0.002265853777256776,
+      "n_mu_squared_minus_log_k": 1.9999999999999982,
+      "complete_mse_numeric": 1.419363208566216e-07,
+      "asymptotic_prediction": 1.4193080916272599e-07,
+      "risk_to_prediction": 1.000038833667814,
+      "peak_second_to_A": 1.0014526691657326,
+      "twice_cross_term": -2.3156093650501852e-11,
+      "n_times_mse": 0.29141229907714694,
+      "critical_limit": 0.291400982908176,
+      "included_mass": 1.0000000000000002,
+      "count_range": [
+        1020285,
+        1037487
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 2053120,
+      "k": 5120,
+      "m": 401,
+      "mu": -0.002265853777256776,
+      "n_mu_squared_minus_log_k": 1.9999999999999982,
+      "complete_mse_numeric": 1.4219491918055305e-07,
+      "asymptotic_prediction": 1.4193080916272599e-07,
+      "risk_to_prediction": 1.001860836413074,
+      "peak_second_to_A": 1.0014526691659253,
+      "twice_cross_term": 2.3544223027669706e-10,
+      "n_times_mse": 0.2919432324679771,
+      "critical_limit": 0.291400982908176,
+      "included_mass": 1.0000000000000016,
+      "count_range": [
+        1015633,
+        1032835
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 2053120,
+      "k": 5120,
+      "m": 401,
+      "mu": 0.0,
+      "n_mu_squared_minus_log_k": -8.540909718033554,
+      "complete_mse_numeric": 4.045499178535955e-06,
+      "asymptotic_prediction": 4.043930182706283e-06,
+      "risk_to_prediction": 1.0003879878629907,
+      "peak_second_to_A": 1.0009514443948901,
+      "twice_cross_term": -2.162725395082351e-09,
+      "n_times_mse": 8.30589527343574,
+      "critical_limit": 8.302673936717927,
+      "included_mass": 0.9999999999999987,
+      "count_range": [
+        1017959,
+        1035161
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 512,
+      "k": 128,
+      "m": 4,
+      "mu": 0.09734794096034081,
+      "n_mu_squared_minus_log_k": 0.0,
+      "complete_mse_numeric": 0.0007713260064170396,
+      "asymptotic_prediction": 0.0007080850381242934,
+      "risk_to_prediction": 1.0893126741673154,
+      "peak_second_to_A": 1.2209119981015322,
+      "twice_cross_term": 1.9310930913048422e-05,
+      "n_times_mse": 0.39491891528552425,
+      "critical_limit": 0.36253953951963824,
+      "included_mass": 1.0000000000000007,
+      "count_range": [
+        142,
+        420
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 6144,
+      "k": 1024,
+      "m": 6,
+      "mu": 0.033588230664812035,
+      "n_mu_squared_minus_log_k": 1.7763568394002505e-15,
+      "complete_mse_numeric": 6.11771862317046e-05,
+      "asymptotic_prediction": 5.900708651035777e-05,
+      "risk_to_prediction": 1.0367769339190456,
+      "peak_second_to_A": 1.1047317144319184,
+      "twice_cross_term": 2.976360811332557e-07,
+      "n_times_mse": 0.3758726322075931,
+      "critical_limit": 0.36253953951963813,
+      "included_mass": 1.0,
+      "count_range": [
+        2702,
+        3649
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 65536,
+      "k": 8192,
+      "m": 8,
+      "mu": 0.011725852891222901,
+      "n_mu_squared_minus_log_k": 0.0,
+      "complete_mse_numeric": 5.643359961720072e-06,
+      "asymptotic_prediction": 5.531914360346043e-06,
+      "risk_to_prediction": 1.0201459375750455,
+      "peak_second_to_A": 1.0624918214959687,
+      "twice_cross_term": 4.658081409531437e-09,
+      "n_times_mse": 0.36984323845128664,
+      "critical_limit": 0.36253953951963824,
+      "included_mass": 1.0000000000000004,
+      "count_range": [
+        31613,
+        34692
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    },
+    {
+      "n": 655360,
+      "k": 65536,
+      "m": 10,
+      "mu": 0.004113701324584624,
+      "n_mu_squared_minus_log_k": 0.0,
+      "complete_mse_numeric": 5.607867245701595e-07,
+      "asymptotic_prediction": 5.531914360346044e-07,
+      "risk_to_prediction": 1.0137299459839795,
+      "peak_second_to_A": 1.0438413105538888,
+      "twice_cross_term": 7.323917791271076e-11,
+      "n_times_mse": 0.3675171878142997,
+      "critical_limit": 0.36253953951963824,
+      "included_mass": 1.0000000000000007,
+      "count_range": [
+        324167,
+        333889
+      ],
+      "precision": "IEEE binary64; SciPy binomial/hypergeometric functions"
+    }
+  ],
+  "case_count": 39,
+  "all_finite": true,
+  "minimum_included_mass": 0.9999999999999982,
+  "interpretation": "Convergence is supported by these finite diagnostics; rigorous uniformity and constants are proved analytically."
+}

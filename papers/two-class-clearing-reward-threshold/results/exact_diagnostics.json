@@ -1,0 +1,1890 @@
+{
+  "schema": "weighted-priority-exact-finite-diagnostics-v1",
+  "arithmetic": "Python fractions.Fraction; all comparisons are exact; no numerical tolerance",
+  "scope": {
+    "parameter_families": 15,
+    "reward_positions_per_family": 3,
+    "parameter_reward_runs": 45,
+    "maximum_each_class_count": 6,
+    "total_state_instances": 2205,
+    "total_interior_state_instances": 1620
+  },
+  "method": "Integrate the survivor distribution at the actual completion time of a nonpreemptive exponential service; compute optimal Bellman values and SP1 values independently of the manuscript's first-event recurrences; compare exact identities and relevant inequalities.",
+  "limitations": "Finite diagnostics support error detection and reproducibility. They do not establish a theorem for all populations or all real parameters. The written proof provides that argument. No Lean compilation or formal verification is performed.",
+  "outcome": "all_requested_finite_checks_satisfied",
+  "check_counts": {
+    "completion_distribution_mass_one": 1260,
+    "completion_probability_nonnegative": 17640,
+    "completion_vs_first_event_priority": 2205,
+    "deviation_first_event_identity": 1620,
+    "deviation_nonnegative_above_or_at_threshold": 1080,
+    "deviation_strictly_positive_above_threshold": 540,
+    "deviation_zero_high_boundary": 270,
+    "initial_low_first_event_identity": 1620,
+    "marginal_first_event_identity": 1620,
+    "marginal_independent_of_reward": 1260,
+    "marginal_product_boundary": 270,
+    "marginal_zero_high_boundary": 270,
+    "parameter_in_strict_wedge": 15,
+    "priority_equals_optimal_above_or_at_threshold": 1470,
+    "residual_nonnegative_above_or_at_threshold": 1080,
+    "residual_two_formulas": 1620,
+    "threshold_exceeds_one": 15,
+    "two_job_necessity_identity": 45,
+    "two_job_strict_counterexample_below_threshold": 15,
+    "two_job_threshold_tie": 15
+  },
+  "total_exact_checks": 33930,
+  "runs": [
+    {
+      "parameter_name": "slow_half",
+      "region": "a<1",
+      "parameters": {
+        "a": "1/2",
+        "b": "1/4",
+        "c": "3",
+        "r": "15/14",
+        "r_star": "15/14"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "17/14",
+      "two_job_initial_low_value": "17/14",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "slow_half",
+      "region": "a<1",
+      "parameters": {
+        "a": "1/2",
+        "b": "1/4",
+        "c": "3",
+        "r": "59/42",
+        "r_star": "15/14"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "4/15",
+      "two_job_priority_value": "65/42",
+      "two_job_initial_low_value": "269/210",
+      "two_job_difference": "4/15"
+    },
+    {
+      "parameter_name": "slow_half",
+      "region": "a<1",
+      "parameters": {
+        "a": "1/2",
+        "b": "1/4",
+        "c": "3",
+        "r": "29/28",
+        "r_star": "15/14"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 18,
+      "source_R_signs": {
+        "negative": 1,
+        "zero": 0,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "-1/28",
+      "minimum_deviation_D": "-1/35",
+      "two_job_priority_value": "33/28",
+      "two_job_initial_low_value": "169/140",
+      "two_job_difference": "-1/35"
+    },
+    {
+      "parameter_name": "slow_three_quarters",
+      "region": "a<1",
+      "parameters": {
+        "a": "3/4",
+        "b": "1/2",
+        "c": "2",
+        "r": "12/11",
+        "r_star": "12/11"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "15/11",
+      "two_job_initial_low_value": "15/11",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "slow_three_quarters",
+      "region": "a<1",
+      "parameters": {
+        "a": "3/4",
+        "b": "1/2",
+        "c": "2",
+        "r": "47/33",
+        "r_star": "12/11"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "2/9",
+      "two_job_priority_value": "56/33",
+      "two_job_initial_low_value": "146/99",
+      "two_job_difference": "2/9"
+    },
+    {
+      "parameter_name": "slow_three_quarters",
+      "region": "a<1",
+      "parameters": {
+        "a": "3/4",
+        "b": "1/2",
+        "c": "2",
+        "r": "23/22",
+        "r_star": "12/11"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 18,
+      "source_R_signs": {
+        "negative": 1,
+        "zero": 0,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "-1/22",
+      "minimum_deviation_D": "-1/33",
+      "two_job_priority_value": "29/22",
+      "two_job_initial_low_value": "89/66",
+      "two_job_difference": "-1/33"
+    },
+    {
+      "parameter_name": "slow_small_rates",
+      "region": "a<1",
+      "parameters": {
+        "a": "1/10",
+        "b": "1/20",
+        "c": "3",
+        "r": "63/62",
+        "r_star": "63/62"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "65/62",
+      "two_job_initial_low_value": "65/62",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "slow_small_rates",
+      "region": "a<1",
+      "parameters": {
+        "a": "1/10",
+        "b": "1/20",
+        "c": "3",
+        "r": "251/186",
+        "r_star": "63/62"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "66968674158983434410974895848204187737024/633717579515966631540331857971248094173737",
+      "minimum_deviation_D": "20/63",
+      "two_job_priority_value": "257/186",
+      "two_job_initial_low_value": "4157/3906",
+      "two_job_difference": "20/63"
+    },
+    {
+      "parameter_name": "slow_small_rates",
+      "region": "a<1",
+      "parameters": {
+        "a": "1/10",
+        "b": "1/20",
+        "c": "3",
+        "r": "125/124",
+        "r_star": "63/62"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 18,
+      "source_R_signs": {
+        "negative": 1,
+        "zero": 0,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "-1/124",
+      "minimum_deviation_D": "-5/651",
+      "two_job_priority_value": "129/124",
+      "two_job_initial_low_value": "2729/2604",
+      "two_job_difference": "-5/651"
+    },
+    {
+      "parameter_name": "slow_near_equal_service",
+      "region": "a<1",
+      "parameters": {
+        "a": "9/10",
+        "b": "4/5",
+        "c": "3/2",
+        "r": "9/8",
+        "r_star": "9/8"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "3/2",
+      "two_job_initial_low_value": "3/2",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "slow_near_equal_service",
+      "region": "a<1",
+      "parameters": {
+        "a": "9/10",
+        "b": "4/5",
+        "c": "3/2",
+        "r": "35/24",
+        "r_star": "9/8"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "5/27",
+      "two_job_priority_value": "11/6",
+      "two_job_initial_low_value": "89/54",
+      "two_job_difference": "5/27"
+    },
+    {
+      "parameter_name": "slow_near_equal_service",
+      "region": "a<1",
+      "parameters": {
+        "a": "9/10",
+        "b": "4/5",
+        "c": "3/2",
+        "r": "17/16",
+        "r_star": "9/8"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 17,
+      "source_R_signs": {
+        "negative": 1,
+        "zero": 0,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "-1/16",
+      "minimum_deviation_D": "-5/144",
+      "two_job_priority_value": "23/16",
+      "two_job_initial_low_value": "53/36",
+      "two_job_difference": "-5/144"
+    },
+    {
+      "parameter_name": "unit_service_three",
+      "region": "a=1",
+      "parameters": {
+        "a": "1",
+        "b": "1/2",
+        "c": "3",
+        "r": "9/8",
+        "r_star": "9/8"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "11/8",
+      "two_job_initial_low_value": "11/8",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "unit_service_three",
+      "region": "a=1",
+      "parameters": {
+        "a": "1",
+        "b": "1/2",
+        "c": "3",
+        "r": "35/24",
+        "r_star": "9/8"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "2/9",
+      "two_job_priority_value": "41/24",
+      "two_job_initial_low_value": "107/72",
+      "two_job_difference": "2/9"
+    },
+    {
+      "parameter_name": "unit_service_three",
+      "region": "a=1",
+      "parameters": {
+        "a": "1",
+        "b": "1/2",
+        "c": "3",
+        "r": "17/16",
+        "r_star": "9/8"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 18,
+      "source_R_signs": {
+        "negative": 1,
+        "zero": 0,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "-1/16",
+      "minimum_deviation_D": "-1/24",
+      "two_job_priority_value": "21/16",
+      "two_job_initial_low_value": "65/48",
+      "two_job_difference": "-1/24"
+    },
+    {
+      "parameter_name": "unit_service_two",
+      "region": "a=1",
+      "parameters": {
+        "a": "1",
+        "b": "3/4",
+        "c": "2",
+        "r": "7/6",
+        "r_star": "7/6"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "3/2",
+      "two_job_initial_low_value": "3/2",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "unit_service_two",
+      "region": "a=1",
+      "parameters": {
+        "a": "1",
+        "b": "3/4",
+        "c": "2",
+        "r": "3/2",
+        "r_star": "7/6"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "4/21",
+      "two_job_priority_value": "11/6",
+      "two_job_initial_low_value": "23/14",
+      "two_job_difference": "4/21"
+    },
+    {
+      "parameter_name": "unit_service_two",
+      "region": "a=1",
+      "parameters": {
+        "a": "1",
+        "b": "3/4",
+        "c": "2",
+        "r": "13/12",
+        "r_star": "7/6"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 17,
+      "source_R_signs": {
+        "negative": 1,
+        "zero": 0,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 36
+      },
+      "minimum_source_R": "-1/12",
+      "minimum_deviation_D": "-1/21",
+      "two_job_priority_value": "17/12",
+      "two_job_initial_low_value": "41/28",
+      "two_job_difference": "-1/21"
+    },
+    {
+      "parameter_name": "mixed_2_1_3",
+      "region": "a>1,b<c",
+      "parameters": {
+        "a": "2",
+        "b": "1",
+        "c": "3",
+        "r": "6/5",
+        "r_star": "6/5"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 14,
+        "positive": 20,
+        "zero": 2
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "8/5",
+      "two_job_initial_low_value": "8/5",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "mixed_2_1_3",
+      "region": "a>1,b<c",
+      "parameters": {
+        "a": "2",
+        "b": "1",
+        "c": "3",
+        "r": "23/15",
+        "r_star": "6/5"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "negative": 14,
+        "positive": 20,
+        "zero": 2
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "1/6",
+      "two_job_priority_value": "29/15",
+      "two_job_initial_low_value": "53/30",
+      "two_job_difference": "1/6"
+    },
+    {
+      "parameter_name": "mixed_2_1_3",
+      "region": "a>1,b<c",
+      "parameters": {
+        "a": "2",
+        "b": "1",
+        "c": "3",
+        "r": "11/10",
+        "r_star": "6/5"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 18,
+      "source_R_signs": {
+        "negative": 1,
+        "zero": 0,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 14,
+        "positive": 20,
+        "zero": 2
+      },
+      "minimum_source_R": "-1/10",
+      "minimum_deviation_D": "-1/20",
+      "two_job_priority_value": "3/2",
+      "two_job_initial_low_value": "31/20",
+      "two_job_difference": "-1/20"
+    },
+    {
+      "parameter_name": "mixed_three_halves",
+      "region": "a>1,b<c",
+      "parameters": {
+        "a": "3/2",
+        "b": "1",
+        "c": "2",
+        "r": "8/7",
+        "r_star": "8/7"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 21,
+        "positive": 15
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "11/7",
+      "two_job_initial_low_value": "11/7",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "mixed_three_halves",
+      "region": "a>1,b<c",
+      "parameters": {
+        "a": "3/2",
+        "b": "1",
+        "c": "2",
+        "r": "31/21",
+        "r_star": "8/7"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "negative": 21,
+        "positive": 15
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "1/6",
+      "two_job_priority_value": "40/21",
+      "two_job_initial_low_value": "73/42",
+      "two_job_difference": "1/6"
+    },
+    {
+      "parameter_name": "mixed_three_halves",
+      "region": "a>1,b<c",
+      "parameters": {
+        "a": "3/2",
+        "b": "1",
+        "c": "2",
+        "r": "15/14",
+        "r_star": "8/7"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 18,
+      "source_R_signs": {
+        "negative": 1,
+        "zero": 0,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 21,
+        "positive": 15
+      },
+      "minimum_source_R": "-1/14",
+      "minimum_deviation_D": "-1/28",
+      "two_job_priority_value": "3/2",
+      "two_job_initial_low_value": "43/28",
+      "two_job_difference": "-1/28"
+    },
+    {
+      "parameter_name": "mixed_five_halves",
+      "region": "a>1,b<c",
+      "parameters": {
+        "a": "5/2",
+        "b": "3/2",
+        "c": "2",
+        "r": "10/9",
+        "r_star": "10/9"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 2,
+        "positive": 34
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "5/3",
+      "two_job_initial_low_value": "5/3",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "mixed_five_halves",
+      "region": "a>1,b<c",
+      "parameters": {
+        "a": "5/2",
+        "b": "3/2",
+        "c": "2",
+        "r": "13/9",
+        "r_star": "10/9"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "negative": 2,
+        "positive": 34
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "2/15",
+      "two_job_priority_value": "2",
+      "two_job_initial_low_value": "28/15",
+      "two_job_difference": "2/15"
+    },
+    {
+      "parameter_name": "mixed_five_halves",
+      "region": "a>1,b<c",
+      "parameters": {
+        "a": "5/2",
+        "b": "3/2",
+        "c": "2",
+        "r": "19/18",
+        "r_star": "10/9"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 18,
+      "source_R_signs": {
+        "negative": 1,
+        "zero": 0,
+        "positive": 35
+      },
+      "H_signs": {
+        "negative": 2,
+        "positive": 34
+      },
+      "minimum_source_R": "-1/18",
+      "minimum_deviation_D": "-1/45",
+      "two_job_priority_value": "29/18",
+      "two_job_initial_low_value": "49/30",
+      "two_job_difference": "-1/45"
+    },
+    {
+      "parameter_name": "boundary_b_equals_c_two",
+      "region": "b=c",
+      "parameters": {
+        "a": "3",
+        "b": "2",
+        "c": "2",
+        "r": "6/5",
+        "r_star": "6/5"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "9/5",
+      "two_job_initial_low_value": "9/5",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "boundary_b_equals_c_two",
+      "region": "b=c",
+      "parameters": {
+        "a": "3",
+        "b": "2",
+        "c": "2",
+        "r": "23/15",
+        "r_star": "6/5"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "1/9",
+      "two_job_priority_value": "32/15",
+      "two_job_initial_low_value": "91/45",
+      "two_job_difference": "1/9"
+    },
+    {
+      "parameter_name": "boundary_b_equals_c_two",
+      "region": "b=c",
+      "parameters": {
+        "a": "3",
+        "b": "2",
+        "c": "2",
+        "r": "11/10",
+        "r_star": "6/5"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 17,
+      "source_R_signs": {
+        "negative": 1,
+        "zero": 0,
+        "positive": 35
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "-1/10",
+      "minimum_deviation_D": "-1/30",
+      "two_job_priority_value": "17/10",
+      "two_job_initial_low_value": "26/15",
+      "two_job_difference": "-1/30"
+    },
+    {
+      "parameter_name": "boundary_b_equals_c_three_halves",
+      "region": "b=c",
+      "parameters": {
+        "a": "2",
+        "b": "3/2",
+        "c": "3/2",
+        "r": "15/14",
+        "r_star": "15/14"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "23/14",
+      "two_job_initial_low_value": "23/14",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "boundary_b_equals_c_three_halves",
+      "region": "b=c",
+      "parameters": {
+        "a": "2",
+        "b": "3/2",
+        "c": "3/2",
+        "r": "59/42",
+        "r_star": "15/14"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "2/15",
+      "two_job_priority_value": "83/42",
+      "two_job_initial_low_value": "129/70",
+      "two_job_difference": "2/15"
+    },
+    {
+      "parameter_name": "boundary_b_equals_c_three_halves",
+      "region": "b=c",
+      "parameters": {
+        "a": "2",
+        "b": "3/2",
+        "c": "3/2",
+        "r": "29/28",
+        "r_star": "15/14"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 18,
+      "source_R_signs": {
+        "negative": 1,
+        "zero": 0,
+        "positive": 35
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "-1/28",
+      "minimum_deviation_D": "-1/70",
+      "two_job_priority_value": "45/28",
+      "two_job_initial_low_value": "227/140",
+      "two_job_difference": "-1/70"
+    },
+    {
+      "parameter_name": "double_fast_4_3_2",
+      "region": "b>c",
+      "parameters": {
+        "a": "4",
+        "b": "3",
+        "c": "2",
+        "r": "4/3",
+        "r_star": "4/3"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "2",
+      "two_job_initial_low_value": "2",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "double_fast_4_3_2",
+      "region": "b>c",
+      "parameters": {
+        "a": "4",
+        "b": "3",
+        "c": "2",
+        "r": "5/3",
+        "r_star": "4/3"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "1/12",
+      "two_job_priority_value": "7/3",
+      "two_job_initial_low_value": "9/4",
+      "two_job_difference": "1/12"
+    },
+    {
+      "parameter_name": "double_fast_4_3_2",
+      "region": "b>c",
+      "parameters": {
+        "a": "4",
+        "b": "3",
+        "c": "2",
+        "r": "7/6",
+        "r_star": "4/3"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 16,
+      "source_R_signs": {
+        "negative": 2,
+        "zero": 0,
+        "positive": 34
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "-1/6",
+      "minimum_deviation_D": "-1/24",
+      "two_job_priority_value": "11/6",
+      "two_job_initial_low_value": "15/8",
+      "two_job_difference": "-1/24"
+    },
+    {
+      "parameter_name": "double_fast_seven_halves",
+      "region": "b>c",
+      "parameters": {
+        "a": "7/2",
+        "b": "3",
+        "c": "3/2",
+        "r": "6/5",
+        "r_star": "6/5"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "19/10",
+      "two_job_initial_low_value": "19/10",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "double_fast_seven_halves",
+      "region": "b>c",
+      "parameters": {
+        "a": "7/2",
+        "b": "3",
+        "c": "3/2",
+        "r": "23/15",
+        "r_star": "6/5"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "1/12",
+      "two_job_priority_value": "67/30",
+      "two_job_initial_low_value": "43/20",
+      "two_job_difference": "1/12"
+    },
+    {
+      "parameter_name": "double_fast_seven_halves",
+      "region": "b>c",
+      "parameters": {
+        "a": "7/2",
+        "b": "3",
+        "c": "3/2",
+        "r": "11/10",
+        "r_star": "6/5"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 16,
+      "source_R_signs": {
+        "negative": 3,
+        "zero": 1,
+        "positive": 32
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "-1/10",
+      "minimum_deviation_D": "-1/40",
+      "two_job_priority_value": "9/5",
+      "two_job_initial_low_value": "73/40",
+      "two_job_difference": "-1/40"
+    },
+    {
+      "parameter_name": "double_fast_ten",
+      "region": "b>c",
+      "parameters": {
+        "a": "10",
+        "b": "4",
+        "c": "3",
+        "r": "15/13",
+        "r_star": "15/13"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "25/13",
+      "two_job_initial_low_value": "25/13",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "double_fast_ten",
+      "region": "b>c",
+      "parameters": {
+        "a": "10",
+        "b": "4",
+        "c": "3",
+        "r": "58/39",
+        "r_star": "15/13"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "1/15",
+      "two_job_priority_value": "88/39",
+      "two_job_initial_low_value": "427/195",
+      "two_job_difference": "1/15"
+    },
+    {
+      "parameter_name": "double_fast_ten",
+      "region": "b>c",
+      "parameters": {
+        "a": "10",
+        "b": "4",
+        "c": "3",
+        "r": "14/13",
+        "r_star": "15/13"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 18,
+      "source_R_signs": {
+        "negative": 1,
+        "zero": 0,
+        "positive": 35
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "-1/13",
+      "minimum_deviation_D": "-1/65",
+      "two_job_priority_value": "24/13",
+      "two_job_initial_low_value": "121/65",
+      "two_job_difference": "-1/65"
+    },
+    {
+      "parameter_name": "double_fast_near_boundary",
+      "region": "b>c",
+      "parameters": {
+        "a": "9/8",
+        "b": "11/10",
+        "c": "21/20",
+        "r": "147/145",
+        "r_star": "147/145"
+      },
+      "reward_position": "at_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 1,
+        "positive": 35
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "0",
+      "minimum_deviation_D": "0",
+      "two_job_priority_value": "222/145",
+      "two_job_initial_low_value": "222/145",
+      "two_job_difference": "0"
+    },
+    {
+      "parameter_name": "double_fast_near_boundary",
+      "region": "b>c",
+      "parameters": {
+        "a": "9/8",
+        "b": "11/10",
+        "c": "21/20",
+        "r": "586/435",
+        "r_star": "147/145"
+      },
+      "reward_position": "above_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 49,
+      "source_R_signs": {
+        "negative": 0,
+        "zero": 0,
+        "positive": 36
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "1/3",
+      "minimum_deviation_D": "10/63",
+      "two_job_priority_value": "811/435",
+      "two_job_initial_low_value": "15581/9135",
+      "two_job_difference": "10/63"
+    },
+    {
+      "parameter_name": "double_fast_near_boundary",
+      "region": "b>c",
+      "parameters": {
+        "a": "9/8",
+        "b": "11/10",
+        "c": "21/20",
+        "r": "146/145",
+        "r_star": "147/145"
+      },
+      "reward_position": "below_threshold",
+      "grid_states": 49,
+      "interior_states": 36,
+      "priority_optimal_states": 17,
+      "source_R_signs": {
+        "negative": 1,
+        "zero": 0,
+        "positive": 35
+      },
+      "H_signs": {
+        "positive": 36
+      },
+      "minimum_source_R": "-1/145",
+      "minimum_deviation_D": "-2/609",
+      "two_job_priority_value": "221/145",
+      "two_job_initial_low_value": "4651/3045",
+      "two_job_difference": "-2/609"
+    }
+  ],
+  "examples": {
+    "mixed_2_1_3/at_threshold": {
+      "parameters": {
+        "a": "2",
+        "b": "1",
+        "c": "3",
+        "r": "6/5",
+        "r_star": "6/5"
+      },
+      "reward_position": "at_threshold",
+      "states": [
+        {
+          "n": 1,
+          "m": 1,
+          "optimal_value": "8/5",
+          "priority_value_F": "8/5",
+          "initial_low_value_G": "8/5",
+          "deviation_D": "0",
+          "marginal_q": "2/5",
+          "source_R": "0",
+          "optimal_action1_value": "8/5",
+          "optimal_action2_value": "8/5"
+        },
+        {
+          "n": 1,
+          "m": 2,
+          "optimal_value": "29/16",
+          "priority_value_F": "29/16",
+          "initial_low_value_G": "173/100",
+          "deviation_D": "33/400",
+          "marginal_q": "17/80",
+          "source_R": "33/80",
+          "optimal_action1_value": "29/16",
+          "optimal_action2_value": "173/100"
+        },
+        {
+          "n": 2,
+          "m": 1,
+          "optimal_value": "11/5",
+          "priority_value_F": "11/5",
+          "initial_low_value_G": "31/15",
+          "deviation_D": "2/15",
+          "marginal_q": "1/5",
+          "source_R": "2/5",
+          "optimal_action1_value": "11/5",
+          "optimal_action2_value": "31/15"
+        },
+        {
+          "n": 2,
+          "m": 2,
+          "optimal_value": "187/80",
+          "priority_value_F": "187/80",
+          "initial_low_value_G": "643/300",
+          "deviation_D": "233/1200",
+          "marginal_q": "11/80",
+          "source_R": "3/5",
+          "optimal_action1_value": "187/80",
+          "optimal_action2_value": "643/300"
+        },
+        {
+          "n": 3,
+          "m": 2,
+          "optimal_value": "157/56",
+          "priority_value_F": "157/56",
+          "initial_low_value_G": "6123/2450",
+          "deviation_D": "2983/9800",
+          "marginal_q": "5/56",
+          "source_R": "423/560",
+          "optimal_action1_value": "157/56",
+          "optimal_action2_value": "6123/2450"
+        },
+        {
+          "n": 2,
+          "m": 3,
+          "optimal_value": "15041/6160",
+          "priority_value_F": "15041/6160",
+          "initial_low_value_G": "222251/100800",
+          "deviation_D": "37517/158400",
+          "marginal_q": "321/3080",
+          "source_R": "2169/3080",
+          "optimal_action1_value": "15041/6160",
+          "optimal_action2_value": "222251/100800"
+        },
+        {
+          "n": 6,
+          "m": 6,
+          "optimal_value": "1897179901/475931456",
+          "priority_value_F": "1897179901/475931456",
+          "initial_low_value_G": "71449130627602373/21074812885526400",
+          "deviation_D": "288885971527867871/484720696367107200",
+          "marginal_q": "47019667/2099697600",
+          "source_R": "3931460227/3674470800",
+          "optimal_action1_value": "1897179901/475931456",
+          "optimal_action2_value": "71449130627602373/21074812885526400"
+        }
+      ]
+    },
+    "mixed_2_1_3/above_threshold": {
+      "parameters": {
+        "a": "2",
+        "b": "1",
+        "c": "3",
+        "r": "23/15",
+        "r_star": "6/5"
+      },
+      "reward_position": "above_threshold",
+      "states": [
+        {
+          "n": 1,
+          "m": 1,
+          "optimal_value": "29/15",
+          "priority_value_F": "29/15",
+          "initial_low_value_G": "53/30",
+          "deviation_D": "1/6",
+          "marginal_q": "2/5",
+          "source_R": "1/3",
+          "optimal_action1_value": "29/15",
+          "optimal_action2_value": "53/30"
+        },
+        {
+          "n": 1,
+          "m": 2,
+          "optimal_value": "103/48",
+          "priority_value_F": "103/48",
+          "initial_low_value_G": "569/300",
+          "deviation_D": "299/1200",
+          "marginal_q": "17/80",
+          "source_R": "179/240",
+          "optimal_action1_value": "103/48",
+          "optimal_action2_value": "569/300"
+        },
+        {
+          "n": 2,
+          "m": 1,
+          "optimal_value": "124/45",
+          "priority_value_F": "124/45",
+          "initial_low_value_G": "319/135",
+          "deviation_D": "53/135",
+          "marginal_q": "1/5",
+          "source_R": "38/45",
+          "optimal_action1_value": "124/45",
+          "optimal_action2_value": "319/135"
+        },
+        {
+          "n": 2,
+          "m": 2,
+          "optimal_value": "2083/720",
+          "priority_value_F": "2083/720",
+          "initial_low_value_G": "6587/2700",
+          "deviation_D": "4897/10800",
+          "marginal_q": "11/80",
+          "source_R": "47/45",
+          "optimal_action1_value": "2083/720",
+          "optimal_action2_value": "6587/2700"
+        },
+        {
+          "n": 3,
+          "m": 2,
+          "optimal_value": "1777/504",
+          "priority_value_F": "1777/504",
+          "initial_low_value_G": "255953/88200",
+          "deviation_D": "27511/44100",
+          "marginal_q": "5/56",
+          "source_R": "703/560",
+          "optimal_action1_value": "1777/504",
+          "optimal_action2_value": "255953/88200"
+        },
+        {
+          "n": 2,
+          "m": 3,
+          "optimal_value": "166169/55440",
+          "priority_value_F": "166169/55440",
+          "initial_low_value_G": "756353/302400",
+          "deviation_D": "235751/475200",
+          "marginal_q": "321/3080",
+          "source_R": "31841/27720",
+          "optimal_action1_value": "166169/55440",
+          "optimal_action2_value": "756353/302400"
+        },
+        {
+          "n": 6,
+          "m": 6,
+          "optimal_value": "36038606707/7138971840",
+          "priority_value_F": "36038606707/7138971840",
+          "initial_low_value_G": "84982888018035653/21074812885526400",
+          "deviation_D": "492336767213925791/484720696367107200",
+          "marginal_q": "47019667/2099697600",
+          "source_R": "6031157827/3674470800",
+          "optimal_action1_value": "36038606707/7138971840",
+          "optimal_action2_value": "84982888018035653/21074812885526400"
+        }
+      ]
+    },
+    "mixed_2_1_3/below_threshold": {
+      "parameters": {
+        "a": "2",
+        "b": "1",
+        "c": "3",
+        "r": "11/10",
+        "r_star": "6/5"
+      },
+      "reward_position": "below_threshold",
+      "states": [
+        {
+          "n": 1,
+          "m": 1,
+          "optimal_value": "31/20",
+          "priority_value_F": "3/2",
+          "initial_low_value_G": "31/20",
+          "deviation_D": "-1/20",
+          "marginal_q": "2/5",
+          "source_R": "-1/10",
+          "optimal_action1_value": "3/2",
+          "optimal_action2_value": "31/20"
+        },
+        {
+          "n": 1,
+          "m": 2,
+          "optimal_value": "137/80",
+          "priority_value_F": "137/80",
+          "initial_low_value_G": "42/25",
+          "deviation_D": "13/400",
+          "marginal_q": "17/80",
+          "source_R": "5/16",
+          "optimal_action1_value": "137/80",
+          "optimal_action2_value": "169/100"
+        },
+        {
+          "n": 2,
+          "m": 1,
+          "optimal_value": "41/20",
+          "priority_value_F": "61/30",
+          "initial_low_value_G": "89/45",
+          "deviation_D": "1/18",
+          "marginal_q": "1/5",
+          "source_R": "4/15",
+          "optimal_action1_value": "41/20",
+          "optimal_action2_value": "89/45"
+        },
+        {
+          "n": 2,
+          "m": 2,
+          "optimal_value": "1571/720",
+          "priority_value_F": "521/240",
+          "initial_low_value_G": "1849/900",
+          "deviation_D": "419/3600",
+          "marginal_q": "11/80",
+          "source_R": "7/15",
+          "optimal_action1_value": "1571/720",
+          "optimal_action2_value": "3709/1800"
+        },
+        {
+          "n": 3,
+          "m": 2,
+          "optimal_value": "32723/12600",
+          "priority_value_F": "2173/840",
+          "initial_low_value_G": "139847/58800",
+          "deviation_D": "12263/58800",
+          "marginal_q": "5/56",
+          "source_R": "339/560",
+          "optimal_action1_value": "32723/12600",
+          "optimal_action2_value": "140081/58800"
+        },
+        {
+          "n": 2,
+          "m": 3,
+          "optimal_value": "42197/18480",
+          "priority_value_F": "42043/18480",
+          "initial_low_value_G": "23699/11200",
+          "deviation_D": "8399/52800",
+          "marginal_q": "321/3080",
+          "source_R": "1055/1848",
+          "optimal_action1_value": "42197/18480",
+          "optimal_action2_value": "1925947/907200"
+        },
+        {
+          "n": 6,
+          "m": 6,
+          "optimal_value": "43723181693/11898286400",
+          "priority_value_F": "43639043429/11898286400",
+          "initial_low_value_G": "67389003410472389/21074812885526400",
+          "deviation_D": "45570146564410099/96944139273421440",
+          "marginal_q": "47019667/2099697600",
+          "source_R": "3301550947/3674470800",
+          "optimal_action1_value": "43723181693/11898286400",
+          "optimal_action2_value": "134961677148257173/42149625771052800"
+        }
+      ]
+    },
+    "double_fast_4_3_2/at_threshold": {
+      "parameters": {
+        "a": "4",
+        "b": "3",
+        "c": "2",
+        "r": "4/3",
+        "r_star": "4/3"
+      },
+      "reward_position": "at_threshold",
+      "states": [
+        {
+          "n": 1,
+          "m": 1,
+          "optimal_value": "2",
+          "priority_value_F": "2",
+          "initial_low_value_G": "2",
+          "deviation_D": "0",
+          "marginal_q": "2/3",
+          "source_R": "0",
+          "optimal_action1_value": "2",
+          "optimal_action2_value": "2"
+        },
+        {
+          "n": 1,
+          "m": 2,
+          "optimal_value": "37/15",
+          "priority_value_F": "37/15",
+          "initial_low_value_G": "73/30",
+          "deviation_D": "1/30",
+          "marginal_q": "7/15",
+          "source_R": "1/5",
+          "optimal_action1_value": "37/15",
+          "optimal_action2_value": "73/30"
+        },
+        {
+          "n": 2,
+          "m": 1,
+          "optimal_value": "302/105",
+          "priority_value_F": "302/105",
+          "initial_low_value_G": "71/25",
+          "deviation_D": "19/525",
+          "marginal_q": "10/21",
+          "source_R": "19/105",
+          "optimal_action1_value": "302/105",
+          "optimal_action2_value": "71/25"
+        },
+        {
+          "n": 2,
+          "m": 2,
+          "optimal_value": "1021/315",
+          "priority_value_F": "1021/315",
+          "initial_low_value_G": "11642/3675",
+          "deviation_D": "809/11025",
+          "marginal_q": "23/63",
+          "source_R": "118/315",
+          "optimal_action1_value": "1021/315",
+          "optimal_action2_value": "11642/3675"
+        },
+        {
+          "n": 3,
+          "m": 2,
+          "optimal_value": "248/63",
+          "priority_value_F": "248/63",
+          "initial_low_value_G": "674083/176400",
+          "deviation_D": "20317/176400",
+          "marginal_q": "61/210",
+          "source_R": "113/210",
+          "optimal_action1_value": "248/63",
+          "optimal_action2_value": "674083/176400"
+        },
+        {
+          "n": 2,
+          "m": 3,
+          "optimal_value": "817/231",
+          "priority_value_F": "817/231",
+          "initial_low_value_G": "454757/132300",
+          "deviation_D": "144773/1455300",
+          "marginal_q": "1024/3465",
+          "source_R": "8537/17325",
+          "optimal_action1_value": "817/231",
+          "optimal_action2_value": "454757/132300"
+        },
+        {
+          "n": 6,
+          "m": 6,
+          "optimal_value": "269328992/43648605",
+          "priority_value_F": "269328992/43648605",
+          "initial_low_value_G": "536870775351719/91189094216220",
+          "deviation_D": "1984742991613/7014545708940",
+          "marginal_q": "183516/1616615",
+          "source_R": "3268259/2909907",
+          "optimal_action1_value": "269328992/43648605",
+          "optimal_action2_value": "536870775351719/91189094216220"
+        }
+      ]
+    },
+    "double_fast_4_3_2/above_threshold": {
+      "parameters": {
+        "a": "4",
+        "b": "3",
+        "c": "2",
+        "r": "5/3",
+        "r_star": "4/3"
+      },
+      "reward_position": "above_threshold",
+      "states": [
+        {
+          "n": 1,
+          "m": 1,
+          "optimal_value": "7/3",
+          "priority_value_F": "7/3",
+          "initial_low_value_G": "9/4",
+          "deviation_D": "1/12",
+          "marginal_q": "2/3",
+          "source_R": "1/3",
+          "optimal_action1_value": "7/3",
+          "optimal_action2_value": "9/4"
+        },
+        {
+          "n": 1,
+          "m": 2,
+          "optimal_value": "14/5",
+          "priority_value_F": "14/5",
+          "initial_low_value_G": "161/60",
+          "deviation_D": "7/60",
+          "marginal_q": "7/15",
+          "source_R": "8/15",
+          "optimal_action1_value": "14/5",
+          "optimal_action2_value": "161/60"
+        },
+        {
+          "n": 2,
+          "m": 1,
+          "optimal_value": "73/21",
+          "priority_value_F": "73/21",
+          "initial_low_value_G": "33/10",
+          "deviation_D": "37/210",
+          "marginal_q": "10/21",
+          "source_R": "5/7",
+          "optimal_action1_value": "73/21",
+          "optimal_action2_value": "33/10"
+        },
+        {
+          "n": 2,
+          "m": 2,
+          "optimal_value": "242/63",
+          "priority_value_F": "242/63",
+          "initial_low_value_G": "5333/1470",
+          "deviation_D": "941/4410",
+          "marginal_q": "23/63",
+          "source_R": "286/315",
+          "optimal_action1_value": "242/63",
+          "optimal_action2_value": "5333/1470"
+        },
+        {
+          "n": 3,
+          "m": 2,
+          "optimal_value": "1499/315",
+          "priority_value_F": "1499/315",
+          "initial_low_value_G": "31487/7056",
+          "deviation_D": "10453/35280",
+          "marginal_q": "61/210",
+          "source_R": "253/210",
+          "optimal_action1_value": "1499/315",
+          "optimal_action2_value": "31487/7056"
+        },
+        {
+          "n": 2,
+          "m": 3,
+          "optimal_value": "4778/1155",
+          "priority_value_F": "4778/1155",
+          "initial_low_value_G": "103123/26460",
+          "deviation_D": "69703/291060",
+          "marginal_q": "1024/3465",
+          "source_R": "17777/17325",
+          "optimal_action1_value": "4778/1155",
+          "optimal_action2_value": "103123/26460"
+        },
+        {
+          "n": 6,
+          "m": 6,
+          "optimal_value": "130909237/17459442",
+          "priority_value_F": "130909237/17459442",
+          "initial_low_value_G": "1269037619766533/182378188432440",
+          "deviation_D": "7570515867139/14029091417880",
+          "marginal_q": "183516/1616615",
+          "source_R": "5854843/2909907",
+          "optimal_action1_value": "130909237/17459442",
+          "optimal_action2_value": "1269037619766533/182378188432440"
+        }
+      ]
+    },
+    "double_fast_4_3_2/below_threshold": {
+      "parameters": {
+        "a": "4",
+        "b": "3",
+        "c": "2",
+        "r": "7/6",
+        "r_star": "4/3"
+      },
+      "reward_position": "below_threshold",
+      "states": [
+        {
+          "n": 1,
+          "m": 1,
+          "optimal_value": "15/8",
+          "priority_value_F": "11/6",
+          "initial_low_value_G": "15/8",
+          "deviation_D": "-1/24",
+          "marginal_q": "2/3",
+          "source_R": "-1/6",
+          "optimal_action1_value": "11/6",
+          "optimal_action2_value": "15/8"
+        },
+        {
+          "n": 1,
+          "m": 2,
+          "optimal_value": "559/240",
+          "priority_value_F": "23/10",
+          "initial_low_value_G": "277/120",
+          "deviation_D": "-1/120",
+          "marginal_q": "7/15",
+          "source_R": "1/30",
+          "optimal_action1_value": "23/10",
+          "optimal_action2_value": "559/240"
+        },
+        {
+          "n": 2,
+          "m": 1,
+          "optimal_value": "261/100",
+          "priority_value_F": "541/210",
+          "initial_low_value_G": "261/100",
+          "deviation_D": "-71/2100",
+          "marginal_q": "10/21",
+          "source_R": "-3/35",
+          "optimal_action1_value": "13/5",
+          "optimal_action2_value": "261/100"
+        },
+        {
+          "n": 2,
+          "m": 2,
+          "optimal_value": "1601/540",
+          "priority_value_F": "1853/630",
+          "initial_low_value_G": "43187/14700",
+          "deviation_D": "149/44100",
+          "marginal_q": "23/63",
+          "source_R": "34/315",
+          "optimal_action1_value": "1601/540",
+          "optimal_action2_value": "71/24"
+        },
+        {
+          "n": 3,
+          "m": 2,
+          "optimal_value": "5323/1500",
+          "priority_value_F": "2221/630",
+          "initial_low_value_G": "617537/176400",
+          "deviation_D": "4343/176400",
+          "marginal_q": "61/210",
+          "source_R": "43/210",
+          "optimal_action1_value": "5323/1500",
+          "optimal_action2_value": "10129/2880"
+        },
+        {
+          "n": 2,
+          "m": 3,
+          "optimal_value": "1803313/554400",
+          "priority_value_F": "7477/2310",
+          "initial_low_value_G": "106082/33075",
+          "deviation_D": "21451/727650",
+          "marginal_q": "1024/3465",
+          "source_R": "3917/17325",
+          "optimal_action1_value": "1803313/554400",
+          "optimal_action2_value": "585869/181440"
+        },
+        {
+          "n": 6,
+          "m": 6,
+          "optimal_value": "50652197/9169875",
+          "priority_value_F": "961427767/174594420",
+          "initial_low_value_G": "1952187032343781/364756376864880",
+          "deviation_D": "4337942082539/28058182835760",
+          "marginal_q": "183516/1616615",
+          "source_R": "1974967/2909907",
+          "optimal_action1_value": "50652197/9169875",
+          "optimal_action2_value": "581993861858603137/108384751982707200"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+Two-stage optimum: 2/9 versus common-terminal induction 4/75
+Separate node maxima infeasible jointly: null stopping risk 169/600 > 1/4
+Three-leaf example: min of simple NP optima has power 0; joint optimum 3/25
+36 three-stage test families, each checked against all 26 stopping rules per null

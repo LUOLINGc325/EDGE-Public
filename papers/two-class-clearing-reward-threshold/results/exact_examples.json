@@ -1,0 +1,583 @@
+{
+  "schema": "weighted-priority-exact-examples-v1",
+  "arithmetic": "Python fractions.Fraction; all comparisons are exact; no numerical tolerance",
+  "limitations": "Finite diagnostics support error detection and reproducibility. They do not establish a theorem for all populations or all real parameters. The written proof provides that argument. No Lean compilation or formal verification is performed.",
+  "examples": {
+    "mixed_2_1_3/at_threshold": {
+      "parameters": {
+        "a": "2",
+        "b": "1",
+        "c": "3",
+        "r": "6/5",
+        "r_star": "6/5"
+      },
+      "reward_position": "at_threshold",
+      "states": [
+        {
+          "n": 1,
+          "m": 1,
+          "optimal_value": "8/5",
+          "priority_value_F": "8/5",
+          "initial_low_value_G": "8/5",
+          "deviation_D": "0",
+          "marginal_q": "2/5",
+          "source_R": "0",
+          "optimal_action1_value": "8/5",
+          "optimal_action2_value": "8/5"
+        },
+        {
+          "n": 1,
+          "m": 2,
+          "optimal_value": "29/16",
+          "priority_value_F": "29/16",
+          "initial_low_value_G": "173/100",
+          "deviation_D": "33/400",
+          "marginal_q": "17/80",
+          "source_R": "33/80",
+          "optimal_action1_value": "29/16",
+          "optimal_action2_value": "173/100"
+        },
+        {
+          "n": 2,
+          "m": 1,
+          "optimal_value": "11/5",
+          "priority_value_F": "11/5",
+          "initial_low_value_G": "31/15",
+          "deviation_D": "2/15",
+          "marginal_q": "1/5",
+          "source_R": "2/5",
+          "optimal_action1_value": "11/5",
+          "optimal_action2_value": "31/15"
+        },
+        {
+          "n": 2,
+          "m": 2,
+          "optimal_value": "187/80",
+          "priority_value_F": "187/80",
+          "initial_low_value_G": "643/300",
+          "deviation_D": "233/1200",
+          "marginal_q": "11/80",
+          "source_R": "3/5",
+          "optimal_action1_value": "187/80",
+          "optimal_action2_value": "643/300"
+        },
+        {
+          "n": 3,
+          "m": 2,
+          "optimal_value": "157/56",
+          "priority_value_F": "157/56",
+          "initial_low_value_G": "6123/2450",
+          "deviation_D": "2983/9800",
+          "marginal_q": "5/56",
+          "source_R": "423/560",
+          "optimal_action1_value": "157/56",
+          "optimal_action2_value": "6123/2450"
+        },
+        {
+          "n": 2,
+          "m": 3,
+          "optimal_value": "15041/6160",
+          "priority_value_F": "15041/6160",
+          "initial_low_value_G": "222251/100800",
+          "deviation_D": "37517/158400",
+          "marginal_q": "321/3080",
+          "source_R": "2169/3080",
+          "optimal_action1_value": "15041/6160",
+          "optimal_action2_value": "222251/100800"
+        },
+        {
+          "n": 6,
+          "m": 6,
+          "optimal_value": "1897179901/475931456",
+          "priority_value_F": "1897179901/475931456",
+          "initial_low_value_G": "71449130627602373/21074812885526400",
+          "deviation_D": "288885971527867871/484720696367107200",
+          "marginal_q": "47019667/2099697600",
+          "source_R": "3931460227/3674470800",
+          "optimal_action1_value": "1897179901/475931456",
+          "optimal_action2_value": "71449130627602373/21074812885526400"
+        }
+      ]
+    },
+    "mixed_2_1_3/above_threshold": {
+      "parameters": {
+        "a": "2",
+        "b": "1",
+        "c": "3",
+        "r": "23/15",
+        "r_star": "6/5"
+      },
+      "reward_position": "above_threshold",
+      "states": [
+        {
+          "n": 1,
+          "m": 1,
+          "optimal_value": "29/15",
+          "priority_value_F": "29/15",
+          "initial_low_value_G": "53/30",
+          "deviation_D": "1/6",
+          "marginal_q": "2/5",
+          "source_R": "1/3",
+          "optimal_action1_value": "29/15",
+          "optimal_action2_value": "53/30"
+        },
+        {
+          "n": 1,
+          "m": 2,
+          "optimal_value": "103/48",
+          "priority_value_F": "103/48",
+          "initial_low_value_G": "569/300",
+          "deviation_D": "299/1200",
+          "marginal_q": "17/80",
+          "source_R": "179/240",
+          "optimal_action1_value": "103/48",
+          "optimal_action2_value": "569/300"
+        },
+        {
+          "n": 2,
+          "m": 1,
+          "optimal_value": "124/45",
+          "priority_value_F": "124/45",
+          "initial_low_value_G": "319/135",
+          "deviation_D": "53/135",
+          "marginal_q": "1/5",
+          "source_R": "38/45",
+          "optimal_action1_value": "124/45",
+          "optimal_action2_value": "319/135"
+        },
+        {
+          "n": 2,
+          "m": 2,
+          "optimal_value": "2083/720",
+          "priority_value_F": "2083/720",
+          "initial_low_value_G": "6587/2700",
+          "deviation_D": "4897/10800",
+          "marginal_q": "11/80",
+          "source_R": "47/45",
+          "optimal_action1_value": "2083/720",
+          "optimal_action2_value": "6587/2700"
+        },
+        {
+          "n": 3,
+          "m": 2,
+          "optimal_value": "1777/504",
+          "priority_value_F": "1777/504",
+          "initial_low_value_G": "255953/88200",
+          "deviation_D": "27511/44100",
+          "marginal_q": "5/56",
+          "source_R": "703/560",
+          "optimal_action1_value": "1777/504",
+          "optimal_action2_value": "255953/88200"
+        },
+        {
+          "n": 2,
+          "m": 3,
+          "optimal_value": "166169/55440",
+          "priority_value_F": "166169/55440",
+          "initial_low_value_G": "756353/302400",
+          "deviation_D": "235751/475200",
+          "marginal_q": "321/3080",
+          "source_R": "31841/27720",
+          "optimal_action1_value": "166169/55440",
+          "optimal_action2_value": "756353/302400"
+        },
+        {
+          "n": 6,
+          "m": 6,
+          "optimal_value": "36038606707/7138971840",
+          "priority_value_F": "36038606707/7138971840",
+          "initial_low_value_G": "84982888018035653/21074812885526400",
+          "deviation_D": "492336767213925791/484720696367107200",
+          "marginal_q": "47019667/2099697600",
+          "source_R": "6031157827/3674470800",
+          "optimal_action1_value": "36038606707/7138971840",
+          "optimal_action2_value": "84982888018035653/21074812885526400"
+        }
+      ]
+    },
+    "mixed_2_1_3/below_threshold": {
+      "parameters": {
+        "a": "2",
+        "b": "1",
+        "c": "3",
+        "r": "11/10",
+        "r_star": "6/5"
+      },
+      "reward_position": "below_threshold",
+      "states": [
+        {
+          "n": 1,
+          "m": 1,
+          "optimal_value": "31/20",
+          "priority_value_F": "3/2",
+          "initial_low_value_G": "31/20",
+          "deviation_D": "-1/20",
+          "marginal_q": "2/5",
+          "source_R": "-1/10",
+          "optimal_action1_value": "3/2",
+          "optimal_action2_value": "31/20"
+        },
+        {
+          "n": 1,
+          "m": 2,
+          "optimal_value": "137/80",
+          "priority_value_F": "137/80",
+          "initial_low_value_G": "42/25",
+          "deviation_D": "13/400",
+          "marginal_q": "17/80",
+          "source_R": "5/16",
+          "optimal_action1_value": "137/80",
+          "optimal_action2_value": "169/100"
+        },
+        {
+          "n": 2,
+          "m": 1,
+          "optimal_value": "41/20",
+          "priority_value_F": "61/30",
+          "initial_low_value_G": "89/45",
+          "deviation_D": "1/18",
+          "marginal_q": "1/5",
+          "source_R": "4/15",
+          "optimal_action1_value": "41/20",
+          "optimal_action2_value": "89/45"
+        },
+        {
+          "n": 2,
+          "m": 2,
+          "optimal_value": "1571/720",
+          "priority_value_F": "521/240",
+          "initial_low_value_G": "1849/900",
+          "deviation_D": "419/3600",
+          "marginal_q": "11/80",
+          "source_R": "7/15",
+          "optimal_action1_value": "1571/720",
+          "optimal_action2_value": "3709/1800"
+        },
+        {
+          "n": 3,
+          "m": 2,
+          "optimal_value": "32723/12600",
+          "priority_value_F": "2173/840",
+          "initial_low_value_G": "139847/58800",
+          "deviation_D": "12263/58800",
+          "marginal_q": "5/56",
+          "source_R": "339/560",
+          "optimal_action1_value": "32723/12600",
+          "optimal_action2_value": "140081/58800"
+        },
+        {
+          "n": 2,
+          "m": 3,
+          "optimal_value": "42197/18480",
+          "priority_value_F": "42043/18480",
+          "initial_low_value_G": "23699/11200",
+          "deviation_D": "8399/52800",
+          "marginal_q": "321/3080",
+          "source_R": "1055/1848",
+          "optimal_action1_value": "42197/18480",
+          "optimal_action2_value": "1925947/907200"
+        },
+        {
+          "n": 6,
+          "m": 6,
+          "optimal_value": "43723181693/11898286400",
+          "priority_value_F": "43639043429/11898286400",
+          "initial_low_value_G": "67389003410472389/21074812885526400",
+          "deviation_D": "45570146564410099/96944139273421440",
+          "marginal_q": "47019667/2099697600",
+          "source_R": "3301550947/3674470800",
+          "optimal_action1_value": "43723181693/11898286400",
+          "optimal_action2_value": "134961677148257173/42149625771052800"
+        }
+      ]
+    },
+    "double_fast_4_3_2/at_threshold": {
+      "parameters": {
+        "a": "4",
+        "b": "3",
+        "c": "2",
+        "r": "4/3",
+        "r_star": "4/3"
+      },
+      "reward_position": "at_threshold",
+      "states": [
+        {
+          "n": 1,
+          "m": 1,
+          "optimal_value": "2",
+          "priority_value_F": "2",
+          "initial_low_value_G": "2",
+          "deviation_D": "0",
+          "marginal_q": "2/3",
+          "source_R": "0",
+          "optimal_action1_value": "2",
+          "optimal_action2_value": "2"
+        },
+        {
+          "n": 1,
+          "m": 2,
+          "optimal_value": "37/15",
+          "priority_value_F": "37/15",
+          "initial_low_value_G": "73/30",
+          "deviation_D": "1/30",
+          "marginal_q": "7/15",
+          "source_R": "1/5",
+          "optimal_action1_value": "37/15",
+          "optimal_action2_value": "73/30"
+        },
+        {
+          "n": 2,
+          "m": 1,
+          "optimal_value": "302/105",
+          "priority_value_F": "302/105",
+          "initial_low_value_G": "71/25",
+          "deviation_D": "19/525",
+          "marginal_q": "10/21",
+          "source_R": "19/105",
+          "optimal_action1_value": "302/105",
+          "optimal_action2_value": "71/25"
+        },
+        {
+          "n": 2,
+          "m": 2,
+          "optimal_value": "1021/315",
+          "priority_value_F": "1021/315",
+          "initial_low_value_G": "11642/3675",
+          "deviation_D": "809/11025",
+          "marginal_q": "23/63",
+          "source_R": "118/315",
+          "optimal_action1_value": "1021/315",
+          "optimal_action2_value": "11642/3675"
+        },
+        {
+          "n": 3,
+          "m": 2,
+          "optimal_value": "248/63",
+          "priority_value_F": "248/63",
+          "initial_low_value_G": "674083/176400",
+          "deviation_D": "20317/176400",
+          "marginal_q": "61/210",
+          "source_R": "113/210",
+          "optimal_action1_value": "248/63",
+          "optimal_action2_value": "674083/176400"
+        },
+        {
+          "n": 2,
+          "m": 3,
+          "optimal_value": "817/231",
+          "priority_value_F": "817/231",
+          "initial_low_value_G": "454757/132300",
+          "deviation_D": "144773/1455300",
+          "marginal_q": "1024/3465",
+          "source_R": "8537/17325",
+          "optimal_action1_value": "817/231",
+          "optimal_action2_value": "454757/132300"
+        },
+        {
+          "n": 6,
+          "m": 6,
+          "optimal_value": "269328992/43648605",
+          "priority_value_F": "269328992/43648605",
+          "initial_low_value_G": "536870775351719/91189094216220",
+          "deviation_D": "1984742991613/7014545708940",
+          "marginal_q": "183516/1616615",
+          "source_R": "3268259/2909907",
+          "optimal_action1_value": "269328992/43648605",
+          "optimal_action2_value": "536870775351719/91189094216220"
+        }
+      ]
+    },
+    "double_fast_4_3_2/above_threshold": {
+      "parameters": {
+        "a": "4",
+        "b": "3",
+        "c": "2",
+        "r": "5/3",
+        "r_star": "4/3"
+      },
+      "reward_position": "above_threshold",
+      "states": [
+        {
+          "n": 1,
+          "m": 1,
+          "optimal_value": "7/3",
+          "priority_value_F": "7/3",
+          "initial_low_value_G": "9/4",
+          "deviation_D": "1/12",
+          "marginal_q": "2/3",
+          "source_R": "1/3",
+          "optimal_action1_value": "7/3",
+          "optimal_action2_value": "9/4"
+        },
+        {
+          "n": 1,
+          "m": 2,
+          "optimal_value": "14/5",
+          "priority_value_F": "14/5",
+          "initial_low_value_G": "161/60",
+          "deviation_D": "7/60",
+          "marginal_q": "7/15",
+          "source_R": "8/15",
+          "optimal_action1_value": "14/5",
+          "optimal_action2_value": "161/60"
+        },
+        {
+          "n": 2,
+          "m": 1,
+          "optimal_value": "73/21",
+          "priority_value_F": "73/21",
+          "initial_low_value_G": "33/10",
+          "deviation_D": "37/210",
+          "marginal_q": "10/21",
+          "source_R": "5/7",
+          "optimal_action1_value": "73/21",
+          "optimal_action2_value": "33/10"
+        },
+        {
+          "n": 2,
+          "m": 2,
+          "optimal_value": "242/63",
+          "priority_value_F": "242/63",
+          "initial_low_value_G": "5333/1470",
+          "deviation_D": "941/4410",
+          "marginal_q": "23/63",
+          "source_R": "286/315",
+          "optimal_action1_value": "242/63",
+          "optimal_action2_value": "5333/1470"
+        },
+        {
+          "n": 3,
+          "m": 2,
+          "optimal_value": "1499/315",
+          "priority_value_F": "1499/315",
+          "initial_low_value_G": "31487/7056",
+          "deviation_D": "10453/35280",
+          "marginal_q": "61/210",
+          "source_R": "253/210",
+          "optimal_action1_value": "1499/315",
+          "optimal_action2_value": "31487/7056"
+        },
+        {
+          "n": 2,
+          "m": 3,
+          "optimal_value": "4778/1155",
+          "priority_value_F": "4778/1155",
+          "initial_low_value_G": "103123/26460",
+          "deviation_D": "69703/291060",
+          "marginal_q": "1024/3465",
+          "source_R": "17777/17325",
+          "optimal_action1_value": "4778/1155",
+          "optimal_action2_value": "103123/26460"
+        },
+        {
+          "n": 6,
+          "m": 6,
+          "optimal_value": "130909237/17459442",
+          "priority_value_F": "130909237/17459442",
+          "initial_low_value_G": "1269037619766533/182378188432440",
+          "deviation_D": "7570515867139/14029091417880",
+          "marginal_q": "183516/1616615",
+          "source_R": "5854843/2909907",
+          "optimal_action1_value": "130909237/17459442",
+          "optimal_action2_value": "1269037619766533/182378188432440"
+        }
+      ]
+    },
+    "double_fast_4_3_2/below_threshold": {
+      "parameters": {
+        "a": "4",
+        "b": "3",
+        "c": "2",
+        "r": "7/6",
+        "r_star": "4/3"
+      },
+      "reward_position": "below_threshold",
+      "states": [
+        {
+          "n": 1,
+          "m": 1,
+          "optimal_value": "15/8",
+          "priority_value_F": "11/6",
+          "initial_low_value_G": "15/8",
+          "deviation_D": "-1/24",
+          "marginal_q": "2/3",
+          "source_R": "-1/6",
+          "optimal_action1_value": "11/6",
+          "optimal_action2_value": "15/8"
+        },
+        {
+          "n": 1,
+          "m": 2,
+          "optimal_value": "559/240",
+          "priority_value_F": "23/10",
+          "initial_low_value_G": "277/120",
+          "deviation_D": "-1/120",
+          "marginal_q": "7/15",
+          "source_R": "1/30",
+          "optimal_action1_value": "23/10",
+          "optimal_action2_value": "559/240"
+        },
+        {
+          "n": 2,
+          "m": 1,
+          "optimal_value": "261/100",
+          "priority_value_F": "541/210",
+          "initial_low_value_G": "261/100",
+          "deviation_D": "-71/2100",
+          "marginal_q": "10/21",
+          "source_R": "-3/35",
+          "optimal_action1_value": "13/5",
+          "optimal_action2_value": "261/100"
+        },
+        {
+          "n": 2,
+          "m": 2,
+          "optimal_value": "1601/540",
+          "priority_value_F": "1853/630",
+          "initial_low_value_G": "43187/14700",
+          "deviation_D": "149/44100",
+          "marginal_q": "23/63",
+          "source_R": "34/315",
+          "optimal_action1_value": "1601/540",
+          "optimal_action2_value": "71/24"
+        },
+        {
+          "n": 3,
+          "m": 2,
+          "optimal_value": "5323/1500",
+          "priority_value_F": "2221/630",
+          "initial_low_value_G": "617537/176400",
+          "deviation_D": "4343/176400",
+          "marginal_q": "61/210",
+          "source_R": "43/210",
+          "optimal_action1_value": "5323/1500",
+          "optimal_action2_value": "10129/2880"
+        },
+        {
+          "n": 2,
+          "m": 3,
+          "optimal_value": "1803313/554400",
+          "priority_value_F": "7477/2310",
+          "initial_low_value_G": "106082/33075",
+          "deviation_D": "21451/727650",
+          "marginal_q": "1024/3465",
+          "source_R": "3917/17325",
+          "optimal_action1_value": "1803313/554400",
+          "optimal_action2_value": "585869/181440"
+        },
+        {
+          "n": 6,
+          "m": 6,
+          "optimal_value": "50652197/9169875",
+          "priority_value_F": "961427767/174594420",
+          "initial_low_value_G": "1952187032343781/364756376864880",
+          "deviation_D": "4337942082539/28058182835760",
+          "marginal_q": "183516/1616615",
+          "source_R": "1974967/2909907",
+          "optimal_action1_value": "50652197/9169875",
+          "optimal_action2_value": "581993861858603137/108384751982707200"
+        }
+      ]
+    }
+  }
+}

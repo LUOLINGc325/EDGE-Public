@@ -1,0 +1,6 @@
+k=3 signed-cycle links (1, 1, 0, 0, 1, 2)
+1:1:1:1 rank exponents (1 partitions): [40]
+2:1:1 rank exponents (6 partitions): [12, 12, 12, 12, 12, 12]
+3:1 rank exponents (4 partitions): [2, 2, 2, 2]
+2:2 rank exponents (3 partitions): [4, 4, 4]
+I3/log(3)=-2 GM(a=0)/log(3)=-4/9 Delta/log(3)=-2/9

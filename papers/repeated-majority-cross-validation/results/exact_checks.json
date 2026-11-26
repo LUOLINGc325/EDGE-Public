@@ -1,0 +1,6387 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "scope": {
+    "n_min": 2,
+    "n_max": 12,
+    "m": "every positive proper divisor of n (k=n/m >= 2)",
+    "ties": [
+      -1,
+      1
+    ],
+    "probabilities": [
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "mixture_weights": [
+      "1/3",
+      "2/3"
+    ],
+    "all_label_vectors": true,
+    "all_held_out_subsets": true,
+    "all_unordered_balanced_partitions_when_n_at_most": 8,
+    "arithmetic": "exact integers and fractions.Fraction only"
+  },
+  "limitations": [
+    "Finite checks do not prove the universal mathematical statements.",
+    "Finite checks do not prove asymptotic constants, uniformity, or limit laws.",
+    "The two-partition convex mixture is one finite example, not enumeration of all weights.",
+    "The all-partition definition is explicitly enumerated only through the stated smaller n cutoff.",
+    "No Lean code, compilation, or machine-checked formal proof is supplied."
+  ],
+  "independence_of_reference": "Reference CV values fit majority on each actual training complement and count actual held-out mistakes for every binary label vector. Complete CV enumerates held-out subsets directly. Hypergeometric expressions are evaluated only as formulas under test.",
+  "script_sha256": "c547abaab801f0811bc60b912e046c3d5f704cb9edf02751fb255e3e131cc546",
+  "python_version": "3.12.14",
+  "cases": [
+    {
+      "n": 2,
+      "m": 1,
+      "k": 2,
+      "training_parity": "odd",
+      "label_vectors": 4,
+      "held_out_subsets": 2,
+      "all_balanced_partitions_enumerated": 1,
+      "fixed_partition_masks": [
+        1,
+        2
+      ],
+      "shifted_partition_masks": [
+        2,
+        1
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 2,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/4",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/4"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 2,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/4",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/4"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "8/27",
+            "shifted": "8/27",
+            "mixture": "8/27",
+            "complete": "8/27",
+            "empirical": "1/9"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1/9"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "1/4",
+            "shifted": "1/4",
+            "mixture": "1/4",
+            "complete": "1/4",
+            "empirical": "1/8"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1/8"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "4/27",
+            "shifted": "4/27",
+            "mixture": "4/27",
+            "complete": "4/27",
+            "empirical": "1/9"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1/9"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "4/27",
+            "shifted": "4/27",
+            "mixture": "4/27",
+            "complete": "4/27",
+            "empirical": "1/9"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1/9"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "1/4",
+            "shifted": "1/4",
+            "mixture": "1/4",
+            "complete": "1/4",
+            "empirical": "1/8"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1/8"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "8/27",
+            "shifted": "8/27",
+            "mixture": "8/27",
+            "complete": "8/27",
+            "empirical": "1/9"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1/9"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "m": 1,
+      "k": 3,
+      "training_parity": "even",
+      "label_vectors": 8,
+      "held_out_subsets": 3,
+      "all_balanced_partitions_enumerated": 1,
+      "fixed_partition_masks": [
+        1,
+        2,
+        4
+      ],
+      "shifted_partition_masks": [
+        2,
+        4,
+        1
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -3,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -1,
+          "conditional_sample_count": 3,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 1,
+          "conditional_sample_count": 3,
+          "complete_excess": "2/3",
+          "two_fold_covariance": "-1/9",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "2/9"
+        },
+        {
+          "tie": -1,
+          "S": 3,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -3,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -1,
+          "conditional_sample_count": 3,
+          "complete_excess": "2/3",
+          "two_fold_covariance": "-1/9",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "2/9"
+        },
+        {
+          "tie": 1,
+          "S": 1,
+          "conditional_sample_count": 3,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 3,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "2/27",
+            "shifted": "2/27",
+            "mixture": "2/27",
+            "complete": "2/27",
+            "empirical": "2/27"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "4/81"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "1/6",
+            "shifted": "1/6",
+            "mixture": "1/6",
+            "complete": "1/6",
+            "empirical": "1/12"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1/12"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "22/81",
+            "shifted": "22/81",
+            "mixture": "22/81",
+            "complete": "22/81",
+            "empirical": "2/27"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "8/81"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "22/81",
+            "shifted": "22/81",
+            "mixture": "22/81",
+            "complete": "22/81",
+            "empirical": "2/27"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "8/81"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "1/6",
+            "shifted": "1/6",
+            "mixture": "1/6",
+            "complete": "1/6",
+            "empirical": "1/12"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1/12"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "2/27",
+            "shifted": "2/27",
+            "mixture": "2/27",
+            "complete": "2/27",
+            "empirical": "2/27"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "4/81"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "m": 1,
+      "k": 4,
+      "training_parity": "odd",
+      "label_vectors": 16,
+      "held_out_subsets": 4,
+      "all_balanced_partitions_enumerated": 1,
+      "fixed_partition_masks": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "shifted_partition_masks": [
+        2,
+        4,
+        8,
+        1
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 4,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 6,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/12",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/8"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 4,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 4,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 6,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/12",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/8"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 4,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "29/162",
+            "shifted": "29/162",
+            "mixture": "29/162",
+            "complete": "29/162",
+            "empirical": "1/18"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1/27"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "5/32",
+            "shifted": "5/32",
+            "mixture": "5/32",
+            "complete": "5/32",
+            "empirical": "1/16"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "3/64"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "13/162",
+            "shifted": "13/162",
+            "mixture": "13/162",
+            "complete": "13/162",
+            "empirical": "1/18"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1/27"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "13/162",
+            "shifted": "13/162",
+            "mixture": "13/162",
+            "complete": "13/162",
+            "empirical": "1/18"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1/27"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "5/32",
+            "shifted": "5/32",
+            "mixture": "5/32",
+            "complete": "5/32",
+            "empirical": "1/16"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "3/64"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "29/162",
+            "shifted": "29/162",
+            "mixture": "29/162",
+            "complete": "29/162",
+            "empirical": "1/18"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1/27"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "m": 2,
+      "k": 2,
+      "training_parity": "even",
+      "label_vectors": 16,
+      "held_out_subsets": 6,
+      "all_balanced_partitions_enumerated": 3,
+      "fixed_partition_masks": [
+        3,
+        12
+      ],
+      "shifted_partition_masks": [
+        6,
+        9
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 4,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 6,
+          "complete_excess": "1/6",
+          "two_fold_covariance": "-1/9",
+          "partition_variance": "1/18",
+          "partition_variance_bound": "1/12"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 4,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/4"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 4,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/4"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 6,
+          "complete_excess": "1/6",
+          "two_fold_covariance": "-1/9",
+          "partition_variance": "1/18",
+          "partition_variance_bound": "1/12"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 4,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "13/162",
+            "shifted": "13/162",
+            "mixture": "101/1458",
+            "complete": "31/486",
+            "empirical": "1/18"
+          },
+          "fixed_minus_complete": "4/243",
+          "variance_bound": "4/81"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "3/32",
+            "shifted": "3/32",
+            "mixture": "23/288",
+            "complete": "7/96",
+            "empirical": "1/16"
+          },
+          "fixed_minus_complete": "1/48",
+          "variance_bound": "3/32"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "7/54",
+            "shifted": "7/54",
+            "mixture": "173/1458",
+            "complete": "55/486",
+            "empirical": "1/18"
+          },
+          "fixed_minus_complete": "4/243",
+          "variance_bound": "10/81"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "7/54",
+            "shifted": "7/54",
+            "mixture": "173/1458",
+            "complete": "55/486",
+            "empirical": "1/18"
+          },
+          "fixed_minus_complete": "4/243",
+          "variance_bound": "10/81"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "3/32",
+            "shifted": "3/32",
+            "mixture": "23/288",
+            "complete": "7/96",
+            "empirical": "1/16"
+          },
+          "fixed_minus_complete": "1/48",
+          "variance_bound": "3/32"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "13/162",
+            "shifted": "13/162",
+            "mixture": "101/1458",
+            "complete": "31/486",
+            "empirical": "1/18"
+          },
+          "fixed_minus_complete": "4/243",
+          "variance_bound": "4/81"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "m": 1,
+      "k": 5,
+      "training_parity": "even",
+      "label_vectors": 32,
+      "held_out_subsets": 5,
+      "all_balanced_partitions_enumerated": 1,
+      "fixed_partition_masks": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "shifted_partition_masks": [
+        2,
+        4,
+        8,
+        16,
+        1
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -5,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -3,
+          "conditional_sample_count": 5,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -1,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 1,
+          "conditional_sample_count": 10,
+          "complete_excess": "3/5",
+          "two_fold_covariance": "-3/50",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "3/25"
+        },
+        {
+          "tie": -1,
+          "S": 3,
+          "conditional_sample_count": 5,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 5,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -5,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -3,
+          "conditional_sample_count": 5,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -1,
+          "conditional_sample_count": 10,
+          "complete_excess": "3/5",
+          "two_fold_covariance": "-3/50",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "3/25"
+        },
+        {
+          "tie": 1,
+          "S": 1,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 3,
+          "conditional_sample_count": 5,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 5,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "62/1215",
+            "shifted": "62/1215",
+            "mixture": "62/1215",
+            "complete": "62/1215",
+            "empirical": "2/45"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "8/405"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "1/8",
+            "shifted": "1/8",
+            "mixture": "1/8",
+            "complete": "1/8",
+            "empirical": "1/20"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "3/80"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "46/243",
+            "shifted": "46/243",
+            "mixture": "46/243",
+            "complete": "46/243",
+            "empirical": "2/45"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "16/405"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "46/243",
+            "shifted": "46/243",
+            "mixture": "46/243",
+            "complete": "46/243",
+            "empirical": "2/45"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "16/405"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "1/8",
+            "shifted": "1/8",
+            "mixture": "1/8",
+            "complete": "1/8",
+            "empirical": "1/20"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "3/80"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "62/1215",
+            "shifted": "62/1215",
+            "mixture": "62/1215",
+            "complete": "62/1215",
+            "empirical": "2/45"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "8/405"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "m": 1,
+      "k": 6,
+      "training_parity": "odd",
+      "label_vectors": 64,
+      "held_out_subsets": 6,
+      "all_balanced_partitions_enumerated": 1,
+      "fixed_partition_masks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "shifted_partition_masks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        1
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 6,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 15,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 20,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/20",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/12"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 15,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 6,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 6,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 15,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 20,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/20",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/12"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 15,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 6,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "281/2187",
+            "shifted": "281/2187",
+            "mixture": "281/2187",
+            "complete": "281/2187",
+            "empirical": "1/27"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "40/2187"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "23/192",
+            "shifted": "23/192",
+            "mixture": "23/192",
+            "complete": "23/192",
+            "empirical": "1/24"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "5/192"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "121/2187",
+            "shifted": "121/2187",
+            "mixture": "121/2187",
+            "complete": "121/2187",
+            "empirical": "1/27"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "40/2187"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "121/2187",
+            "shifted": "121/2187",
+            "mixture": "121/2187",
+            "complete": "121/2187",
+            "empirical": "1/27"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "40/2187"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "23/192",
+            "shifted": "23/192",
+            "mixture": "23/192",
+            "complete": "23/192",
+            "empirical": "1/24"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "5/192"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "281/2187",
+            "shifted": "281/2187",
+            "mixture": "281/2187",
+            "complete": "281/2187",
+            "empirical": "1/27"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "40/2187"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "m": 2,
+      "k": 3,
+      "training_parity": "even",
+      "label_vectors": 64,
+      "held_out_subsets": 15,
+      "all_balanced_partitions_enumerated": 15,
+      "fixed_partition_masks": [
+        3,
+        12,
+        48
+      ],
+      "shifted_partition_masks": [
+        6,
+        24,
+        33
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 6,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 15,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 20,
+          "complete_excess": "1/5",
+          "two_fold_covariance": "-4/25",
+          "partition_variance": "2/75",
+          "partition_variance_bound": "1/15"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 15,
+          "complete_excess": "2/5",
+          "two_fold_covariance": "-28/75",
+          "partition_variance": "4/225",
+          "partition_variance_bound": "2/15"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 6,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 6,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 15,
+          "complete_excess": "2/5",
+          "two_fold_covariance": "-28/75",
+          "partition_variance": "4/225",
+          "partition_variance_bound": "2/15"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 20,
+          "complete_excess": "1/5",
+          "two_fold_covariance": "-4/25",
+          "partition_variance": "2/75",
+          "partition_variance_bound": "1/15"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 15,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 6,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "43/729",
+            "shifted": "43/729",
+            "mixture": "1081/19683",
+            "complete": "113/2187",
+            "empirical": "1/27"
+          },
+          "fixed_minus_complete": "16/2187",
+          "variance_bound": "56/2187"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "7/96",
+            "shifted": "7/96",
+            "mixture": "19/288",
+            "complete": "29/480",
+            "empirical": "1/24"
+          },
+          "fixed_minus_complete": "1/80",
+          "variance_bound": "5/96"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "209/2187",
+            "shifted": "209/2187",
+            "mixture": "1753/19683",
+            "complete": "917/10935",
+            "empirical": "1/27"
+          },
+          "fixed_minus_complete": "128/10935",
+          "variance_bound": "128/2187"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "209/2187",
+            "shifted": "209/2187",
+            "mixture": "1753/19683",
+            "complete": "917/10935",
+            "empirical": "1/27"
+          },
+          "fixed_minus_complete": "128/10935",
+          "variance_bound": "128/2187"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "7/96",
+            "shifted": "7/96",
+            "mixture": "19/288",
+            "complete": "29/480",
+            "empirical": "1/24"
+          },
+          "fixed_minus_complete": "1/80",
+          "variance_bound": "5/96"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "43/729",
+            "shifted": "43/729",
+            "mixture": "1081/19683",
+            "complete": "113/2187",
+            "empirical": "1/27"
+          },
+          "fixed_minus_complete": "16/2187",
+          "variance_bound": "56/2187"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "m": 3,
+      "k": 2,
+      "training_parity": "odd",
+      "label_vectors": 64,
+      "held_out_subsets": 20,
+      "all_balanced_partitions_enumerated": 10,
+      "fixed_partition_masks": [
+        7,
+        56
+      ],
+      "shifted_partition_masks": [
+        14,
+        49
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 6,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 15,
+          "complete_excess": "1/5",
+          "two_fold_covariance": "-9/25",
+          "partition_variance": "3/50",
+          "partition_variance_bound": "1/10"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 20,
+          "complete_excess": "1/5",
+          "two_fold_covariance": "-9/25",
+          "partition_variance": "1/100",
+          "partition_variance_bound": "1/20"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 15,
+          "complete_excess": "1/5",
+          "two_fold_covariance": "-9/25",
+          "partition_variance": "3/50",
+          "partition_variance_bound": "1/10"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 6,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 6,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 15,
+          "complete_excess": "1/5",
+          "two_fold_covariance": "-9/25",
+          "partition_variance": "3/50",
+          "partition_variance_bound": "1/10"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 20,
+          "complete_excess": "1/5",
+          "two_fold_covariance": "-9/25",
+          "partition_variance": "1/100",
+          "partition_variance_bound": "1/20"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 15,
+          "complete_excess": "1/5",
+          "two_fold_covariance": "-9/25",
+          "partition_variance": "3/50",
+          "partition_variance_bound": "1/10"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 6,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "203/2187",
+            "shifted": "203/2187",
+            "mixture": "4697/59049",
+            "complete": "721/10935",
+            "empirical": "1/27"
+          },
+          "fixed_minus_complete": "98/3645",
+          "variance_bound": "38/729"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "7/96",
+            "shifted": "7/96",
+            "mixture": "149/2592",
+            "complete": "1/24",
+            "empirical": "1/24"
+          },
+          "fixed_minus_complete": "1/32",
+          "variance_bound": "1/16"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "139/2187",
+            "shifted": "139/2187",
+            "mixture": "2969/59049",
+            "complete": "401/10935",
+            "empirical": "1/27"
+          },
+          "fixed_minus_complete": "98/3645",
+          "variance_bound": "38/729"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "139/2187",
+            "shifted": "139/2187",
+            "mixture": "2969/59049",
+            "complete": "401/10935",
+            "empirical": "1/27"
+          },
+          "fixed_minus_complete": "98/3645",
+          "variance_bound": "38/729"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "7/96",
+            "shifted": "7/96",
+            "mixture": "149/2592",
+            "complete": "1/24",
+            "empirical": "1/24"
+          },
+          "fixed_minus_complete": "1/32",
+          "variance_bound": "1/16"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "203/2187",
+            "shifted": "203/2187",
+            "mixture": "4697/59049",
+            "complete": "721/10935",
+            "empirical": "1/27"
+          },
+          "fixed_minus_complete": "98/3645",
+          "variance_bound": "38/729"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "m": 1,
+      "k": 7,
+      "training_parity": "even",
+      "label_vectors": 128,
+      "held_out_subsets": 7,
+      "all_balanced_partitions_enumerated": 1,
+      "fixed_partition_masks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "shifted_partition_masks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        1
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -7,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -5,
+          "conditional_sample_count": 7,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -3,
+          "conditional_sample_count": 21,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -1,
+          "conditional_sample_count": 35,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 1,
+          "conditional_sample_count": 35,
+          "complete_excess": "4/7",
+          "two_fold_covariance": "-2/49",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "4/49"
+        },
+        {
+          "tie": -1,
+          "S": 3,
+          "conditional_sample_count": 21,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 5,
+          "conditional_sample_count": 7,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 7,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -7,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -5,
+          "conditional_sample_count": 7,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -3,
+          "conditional_sample_count": 21,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -1,
+          "conditional_sample_count": 35,
+          "complete_excess": "4/7",
+          "two_fold_covariance": "-2/49",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "4/49"
+        },
+        {
+          "tie": 1,
+          "S": 1,
+          "conditional_sample_count": 35,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 3,
+          "conditional_sample_count": 21,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 5,
+          "conditional_sample_count": 7,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 7,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "254/6561",
+            "shifted": "254/6561",
+            "mixture": "254/6561",
+            "complete": "254/6561",
+            "empirical": "2/63"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "160/15309"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "23/224",
+            "shifted": "23/224",
+            "mixture": "23/224",
+            "complete": "23/224",
+            "empirical": "1/28"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "5/224"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "6578/45927",
+            "shifted": "6578/45927",
+            "mixture": "6578/45927",
+            "complete": "6578/45927",
+            "empirical": "2/63"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "320/15309"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "6578/45927",
+            "shifted": "6578/45927",
+            "mixture": "6578/45927",
+            "complete": "6578/45927",
+            "empirical": "2/63"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "320/15309"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "23/224",
+            "shifted": "23/224",
+            "mixture": "23/224",
+            "complete": "23/224",
+            "empirical": "1/28"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "5/224"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "254/6561",
+            "shifted": "254/6561",
+            "mixture": "254/6561",
+            "complete": "254/6561",
+            "empirical": "2/63"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "160/15309"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "m": 1,
+      "k": 8,
+      "training_parity": "odd",
+      "label_vectors": 256,
+      "held_out_subsets": 8,
+      "all_balanced_partitions_enumerated": 1,
+      "fixed_partition_masks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "shifted_partition_masks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        1
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -8,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 8,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 28,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 56,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 70,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/28",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/16"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 56,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 28,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 8,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 8,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -8,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 8,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 28,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 56,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 70,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/28",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/16"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 56,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 28,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 8,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 8,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "7787/78732",
+            "shifted": "7787/78732",
+            "mixture": "7787/78732",
+            "complete": "7787/78732",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "70/6561"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "51/512",
+            "shifted": "51/512",
+            "mixture": "51/512",
+            "complete": "51/512",
+            "empirical": "1/32"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "35/2048"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "3307/78732",
+            "shifted": "3307/78732",
+            "mixture": "3307/78732",
+            "complete": "3307/78732",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "70/6561"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "3307/78732",
+            "shifted": "3307/78732",
+            "mixture": "3307/78732",
+            "complete": "3307/78732",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "70/6561"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "51/512",
+            "shifted": "51/512",
+            "mixture": "51/512",
+            "complete": "51/512",
+            "empirical": "1/32"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "35/2048"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "7787/78732",
+            "shifted": "7787/78732",
+            "mixture": "7787/78732",
+            "complete": "7787/78732",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "70/6561"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "m": 2,
+      "k": 4,
+      "training_parity": "even",
+      "label_vectors": 256,
+      "held_out_subsets": 28,
+      "all_balanced_partitions_enumerated": 105,
+      "fixed_partition_masks": [
+        3,
+        12,
+        48,
+        192
+      ],
+      "shifted_partition_masks": [
+        6,
+        24,
+        96,
+        129
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -8,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 8,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 28,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 56,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 70,
+          "complete_excess": "3/14",
+          "two_fold_covariance": "-31/245",
+          "partition_variance": "9/490",
+          "partition_variance_bound": "3/56"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 56,
+          "complete_excess": "5/14",
+          "two_fold_covariance": "-11/49",
+          "partition_variance": "3/196",
+          "partition_variance_bound": "5/56"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 28,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 8,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 8,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -8,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 8,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 28,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 56,
+          "complete_excess": "5/14",
+          "two_fold_covariance": "-11/49",
+          "partition_variance": "3/196",
+          "partition_variance_bound": "5/56"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 70,
+          "complete_excess": "3/14",
+          "two_fold_covariance": "-31/245",
+          "partition_variance": "9/490",
+          "partition_variance_bound": "3/56"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 56,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 28,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 8,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 8,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "3659/78732",
+            "shifted": "3659/78732",
+            "mixture": "10465/236196",
+            "complete": "23309/551124",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "64/15309",
+          "variance_bound": "100/6561"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "31/512",
+            "shifted": "31/512",
+            "mixture": "259/4608",
+            "complete": "187/3584",
+            "empirical": "1/32"
+          },
+          "fixed_minus_complete": "15/1792",
+          "variance_bound": "35/1024"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "5803/78732",
+            "shifted": "5803/78732",
+            "mixture": "16513/236196",
+            "complete": "5227/78732",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "16/2187",
+          "variance_bound": "220/6561"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "5803/78732",
+            "shifted": "5803/78732",
+            "mixture": "16513/236196",
+            "complete": "5227/78732",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "16/2187",
+          "variance_bound": "220/6561"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "31/512",
+            "shifted": "31/512",
+            "mixture": "259/4608",
+            "complete": "187/3584",
+            "empirical": "1/32"
+          },
+          "fixed_minus_complete": "15/1792",
+          "variance_bound": "35/1024"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "3659/78732",
+            "shifted": "3659/78732",
+            "mixture": "10465/236196",
+            "complete": "23309/551124",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "64/15309",
+          "variance_bound": "100/6561"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "m": 4,
+      "k": 2,
+      "training_parity": "even",
+      "label_vectors": 256,
+      "held_out_subsets": 70,
+      "all_balanced_partitions_enumerated": 35,
+      "fixed_partition_masks": [
+        15,
+        240
+      ],
+      "shifted_partition_masks": [
+        30,
+        225
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -8,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 8,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 28,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 56,
+          "complete_excess": "1/14",
+          "two_fold_covariance": "-4/49",
+          "partition_variance": "3/98",
+          "partition_variance_bound": "1/28"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 70,
+          "complete_excess": "9/70",
+          "two_fold_covariance": "-324/1225",
+          "partition_variance": "47/2450",
+          "partition_variance_bound": "1/28"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 56,
+          "complete_excess": "2/7",
+          "two_fold_covariance": "-64/49",
+          "partition_variance": "3/392",
+          "partition_variance_bound": "5/56"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 28,
+          "complete_excess": "3/14",
+          "two_fold_covariance": "-36/49",
+          "partition_variance": "3/49",
+          "partition_variance_bound": "3/28"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 8,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 8,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -8,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 8,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 28,
+          "complete_excess": "3/14",
+          "two_fold_covariance": "-36/49",
+          "partition_variance": "3/49",
+          "partition_variance_bound": "3/28"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 56,
+          "complete_excess": "2/7",
+          "two_fold_covariance": "-64/49",
+          "partition_variance": "3/392",
+          "partition_variance_bound": "5/56"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 70,
+          "complete_excess": "9/70",
+          "two_fold_covariance": "-324/1225",
+          "partition_variance": "47/2450",
+          "partition_variance_bound": "1/28"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 56,
+          "complete_excess": "1/14",
+          "two_fold_covariance": "-4/49",
+          "partition_variance": "3/98",
+          "partition_variance_bound": "1/28"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 28,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 8,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 8,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "403/8748",
+            "shifted": "403/8748",
+            "mixture": "9649/236196",
+            "complete": "30187/918540",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "3032/229635",
+          "variance_bound": "52/2187"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "25/512",
+            "shifted": "25/512",
+            "mixture": "47/1152",
+            "complete": "73/2560",
+            "empirical": "1/32"
+          },
+          "fixed_minus_complete": "13/640",
+          "variance_bound": "25/512"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "2009/26244",
+            "shifted": "2009/26244",
+            "mixture": "15841/236196",
+            "complete": "48107/918540",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "5552/229635",
+          "variance_bound": "136/2187"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "2009/26244",
+            "shifted": "2009/26244",
+            "mixture": "15841/236196",
+            "complete": "48107/918540",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "5552/229635",
+          "variance_bound": "136/2187"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "25/512",
+            "shifted": "25/512",
+            "mixture": "47/1152",
+            "complete": "73/2560",
+            "empirical": "1/32"
+          },
+          "fixed_minus_complete": "13/640",
+          "variance_bound": "25/512"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "403/8748",
+            "shifted": "403/8748",
+            "mixture": "9649/236196",
+            "complete": "30187/918540",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "3032/229635",
+          "variance_bound": "52/2187"
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "m": 1,
+      "k": 9,
+      "training_parity": "even",
+      "label_vectors": 512,
+      "held_out_subsets": 9,
+      "all_balanced_partitions_enumerated": 0,
+      "fixed_partition_masks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "shifted_partition_masks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        1
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -9,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -7,
+          "conditional_sample_count": 9,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -5,
+          "conditional_sample_count": 36,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -3,
+          "conditional_sample_count": 84,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -1,
+          "conditional_sample_count": 126,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 1,
+          "conditional_sample_count": 126,
+          "complete_excess": "5/9",
+          "two_fold_covariance": "-5/162",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "5/81"
+        },
+        {
+          "tie": -1,
+          "S": 3,
+          "conditional_sample_count": 84,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 5,
+          "conditional_sample_count": 36,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 7,
+          "conditional_sample_count": 9,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 9,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -9,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -7,
+          "conditional_sample_count": 9,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -5,
+          "conditional_sample_count": 36,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -3,
+          "conditional_sample_count": 84,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -1,
+          "conditional_sample_count": 126,
+          "complete_excess": "5/9",
+          "two_fold_covariance": "-5/162",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "5/81"
+        },
+        {
+          "tie": 1,
+          "S": 1,
+          "conditional_sample_count": 126,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 3,
+          "conditional_sample_count": 84,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 5,
+          "conditional_sample_count": 36,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 7,
+          "conditional_sample_count": 9,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 9,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "5494/177147",
+            "shifted": "5494/177147",
+            "mixture": "5494/177147",
+            "complete": "5494/177147",
+            "empirical": "2/81"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1120/177147"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "17/192",
+            "shifted": "17/192",
+            "mixture": "17/192",
+            "complete": "17/192",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "35/2304"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "20054/177147",
+            "shifted": "20054/177147",
+            "mixture": "20054/177147",
+            "complete": "20054/177147",
+            "empirical": "2/81"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "2240/177147"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "20054/177147",
+            "shifted": "20054/177147",
+            "mixture": "20054/177147",
+            "complete": "20054/177147",
+            "empirical": "2/81"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "2240/177147"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "17/192",
+            "shifted": "17/192",
+            "mixture": "17/192",
+            "complete": "17/192",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "35/2304"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "5494/177147",
+            "shifted": "5494/177147",
+            "mixture": "5494/177147",
+            "complete": "5494/177147",
+            "empirical": "2/81"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1120/177147"
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "m": 3,
+      "k": 3,
+      "training_parity": "even",
+      "label_vectors": 512,
+      "held_out_subsets": 84,
+      "all_balanced_partitions_enumerated": 0,
+      "fixed_partition_masks": [
+        7,
+        56,
+        448
+      ],
+      "shifted_partition_masks": [
+        14,
+        112,
+        385
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -9,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -7,
+          "conditional_sample_count": 9,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -5,
+          "conditional_sample_count": 36,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -3,
+          "conditional_sample_count": 84,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -1,
+          "conditional_sample_count": 126,
+          "complete_excess": "5/42",
+          "two_fold_covariance": "-25/196",
+          "partition_variance": "5/196",
+          "partition_variance_bound": "5/126"
+        },
+        {
+          "tie": -1,
+          "S": 1,
+          "conditional_sample_count": 126,
+          "complete_excess": "5/18",
+          "two_fold_covariance": "-85/252",
+          "partition_variance": "5/756",
+          "partition_variance_bound": "65/1134"
+        },
+        {
+          "tie": -1,
+          "S": 3,
+          "conditional_sample_count": 84,
+          "complete_excess": "5/21",
+          "two_fold_covariance": "-79/196",
+          "partition_variance": "3/98",
+          "partition_variance_bound": "5/63"
+        },
+        {
+          "tie": -1,
+          "S": 5,
+          "conditional_sample_count": 36,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 7,
+          "conditional_sample_count": 9,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 9,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -9,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -7,
+          "conditional_sample_count": 9,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -5,
+          "conditional_sample_count": 36,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -3,
+          "conditional_sample_count": 84,
+          "complete_excess": "5/21",
+          "two_fold_covariance": "-79/196",
+          "partition_variance": "3/98",
+          "partition_variance_bound": "5/63"
+        },
+        {
+          "tie": 1,
+          "S": -1,
+          "conditional_sample_count": 126,
+          "complete_excess": "5/18",
+          "two_fold_covariance": "-85/252",
+          "partition_variance": "5/756",
+          "partition_variance_bound": "65/1134"
+        },
+        {
+          "tie": 1,
+          "S": 1,
+          "conditional_sample_count": 126,
+          "complete_excess": "5/42",
+          "two_fold_covariance": "-25/196",
+          "partition_variance": "5/196",
+          "partition_variance_bound": "5/126"
+        },
+        {
+          "tie": 1,
+          "S": 3,
+          "conditional_sample_count": 84,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 5,
+          "conditional_sample_count": 36,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 7,
+          "conditional_sample_count": 9,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 9,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "1874/59049",
+            "shifted": "1874/59049",
+            "mixture": "138130/4782969",
+            "complete": "10246/413343",
+            "empirical": "2/81"
+          },
+          "fixed_minus_complete": "2872/413343",
+          "variance_bound": "2960/177147"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "7/144",
+            "shifted": "7/144",
+            "mixture": "337/7776",
+            "complete": "1151/32256",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "139/10752",
+          "variance_bound": "85/2304"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "4546/59049",
+            "shifted": "4546/59049",
+            "mixture": "344354/4782969",
+            "complete": "3818/59049",
+            "empirical": "2/81"
+          },
+          "fixed_minus_complete": "728/59049",
+          "variance_bound": "6640/177147"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "4546/59049",
+            "shifted": "4546/59049",
+            "mixture": "344354/4782969",
+            "complete": "3818/59049",
+            "empirical": "2/81"
+          },
+          "fixed_minus_complete": "728/59049",
+          "variance_bound": "6640/177147"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "7/144",
+            "shifted": "7/144",
+            "mixture": "337/7776",
+            "complete": "1151/32256",
+            "empirical": "1/36"
+          },
+          "fixed_minus_complete": "139/10752",
+          "variance_bound": "85/2304"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "1874/59049",
+            "shifted": "1874/59049",
+            "mixture": "138130/4782969",
+            "complete": "10246/413343",
+            "empirical": "2/81"
+          },
+          "fixed_minus_complete": "2872/413343",
+          "variance_bound": "2960/177147"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "m": 1,
+      "k": 10,
+      "training_parity": "odd",
+      "label_vectors": 1024,
+      "held_out_subsets": 10,
+      "all_balanced_partitions_enumerated": 0,
+      "fixed_partition_masks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "shifted_partition_masks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -10,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -8,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 45,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 120,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 210,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 252,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/36",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/20"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 210,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 120,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 45,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 8,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 10,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -10,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -8,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 45,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 120,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 210,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 252,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/36",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/20"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 210,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 120,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 45,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 8,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 10,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "7787/98415",
+            "shifted": "7787/98415",
+            "mixture": "7787/98415",
+            "complete": "7787/98415",
+            "empirical": "1/45"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "224/32805"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "443/5120",
+            "shifted": "443/5120",
+            "mixture": "443/5120",
+            "complete": "443/5120",
+            "empirical": "1/40"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "63/5120"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "3307/98415",
+            "shifted": "3307/98415",
+            "mixture": "3307/98415",
+            "complete": "3307/98415",
+            "empirical": "1/45"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "224/32805"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "3307/98415",
+            "shifted": "3307/98415",
+            "mixture": "3307/98415",
+            "complete": "3307/98415",
+            "empirical": "1/45"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "224/32805"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "443/5120",
+            "shifted": "443/5120",
+            "mixture": "443/5120",
+            "complete": "443/5120",
+            "empirical": "1/40"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "63/5120"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "7787/98415",
+            "shifted": "7787/98415",
+            "mixture": "7787/98415",
+            "complete": "7787/98415",
+            "empirical": "1/45"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "224/32805"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "m": 2,
+      "k": 5,
+      "training_parity": "even",
+      "label_vectors": 1024,
+      "held_out_subsets": 45,
+      "all_balanced_partitions_enumerated": 0,
+      "fixed_partition_masks": [
+        3,
+        12,
+        48,
+        192,
+        768
+      ],
+      "shifted_partition_masks": [
+        6,
+        24,
+        96,
+        384,
+        513
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -10,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -8,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 45,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 120,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 210,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 252,
+          "complete_excess": "2/9",
+          "two_fold_covariance": "-58/567",
+          "partition_variance": "8/567",
+          "partition_variance_bound": "2/45"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 210,
+          "complete_excess": "1/3",
+          "two_fold_covariance": "-10/63",
+          "partition_variance": "4/315",
+          "partition_variance_bound": "1/15"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 120,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 45,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 8,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 10,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -10,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -8,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 45,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 120,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 210,
+          "complete_excess": "1/3",
+          "two_fold_covariance": "-10/63",
+          "partition_variance": "4/315",
+          "partition_variance_bound": "1/15"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 252,
+          "complete_excess": "2/9",
+          "two_fold_covariance": "-58/567",
+          "partition_variance": "8/567",
+          "partition_variance_bound": "2/45"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 210,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 120,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 45,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 8,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 10,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "11201/295245",
+            "shifted": "11201/295245",
+            "mixture": "97289/2657205",
+            "complete": "93769/2657205",
+            "empirical": "1/45"
+          },
+          "fixed_minus_complete": "1408/531441",
+          "variance_bound": "2912/295245"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "67/1280",
+            "shifted": "67/1280",
+            "mixture": "71/1440",
+            "complete": "533/11520",
+            "empirical": "1/40"
+          },
+          "fixed_minus_complete": "7/1152",
+          "variance_bound": "63/2560"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "17441/295245",
+            "shifted": "17441/295245",
+            "mixture": "150569/2657205",
+            "complete": "144169/2657205",
+            "empirical": "1/45"
+          },
+          "fixed_minus_complete": "2560/531441",
+          "variance_bound": "6272/295245"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "17441/295245",
+            "shifted": "17441/295245",
+            "mixture": "150569/2657205",
+            "complete": "144169/2657205",
+            "empirical": "1/45"
+          },
+          "fixed_minus_complete": "2560/531441",
+          "variance_bound": "6272/295245"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "67/1280",
+            "shifted": "67/1280",
+            "mixture": "71/1440",
+            "complete": "533/11520",
+            "empirical": "1/40"
+          },
+          "fixed_minus_complete": "7/1152",
+          "variance_bound": "63/2560"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "11201/295245",
+            "shifted": "11201/295245",
+            "mixture": "97289/2657205",
+            "complete": "93769/2657205",
+            "empirical": "1/45"
+          },
+          "fixed_minus_complete": "1408/531441",
+          "variance_bound": "2912/295245"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "m": 5,
+      "k": 2,
+      "training_parity": "odd",
+      "label_vectors": 1024,
+      "held_out_subsets": 252,
+      "all_balanced_partitions_enumerated": 0,
+      "fixed_partition_masks": [
+        31,
+        992
+      ],
+      "shifted_partition_masks": [
+        62,
+        961
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -10,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -8,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 45,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 120,
+          "complete_excess": "1/12",
+          "two_fold_covariance": "-25/144",
+          "partition_variance": "5/144",
+          "partition_variance_bound": "1/24"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 210,
+          "complete_excess": "1/6",
+          "two_fold_covariance": "-25/36",
+          "partition_variance": "17/630",
+          "partition_variance_bound": "23/420"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 252,
+          "complete_excess": "1/7",
+          "two_fold_covariance": "-25/49",
+          "partition_variance": "13/1764",
+          "partition_variance_bound": "1/36"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 210,
+          "complete_excess": "1/6",
+          "two_fold_covariance": "-25/36",
+          "partition_variance": "17/630",
+          "partition_variance_bound": "23/420"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 120,
+          "complete_excess": "1/12",
+          "two_fold_covariance": "-25/144",
+          "partition_variance": "5/144",
+          "partition_variance_bound": "1/24"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 45,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 8,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 10,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -10,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -8,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 45,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 120,
+          "complete_excess": "1/12",
+          "two_fold_covariance": "-25/144",
+          "partition_variance": "5/144",
+          "partition_variance_bound": "1/24"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 210,
+          "complete_excess": "1/6",
+          "two_fold_covariance": "-25/36",
+          "partition_variance": "17/630",
+          "partition_variance_bound": "23/420"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 252,
+          "complete_excess": "1/7",
+          "two_fold_covariance": "-25/49",
+          "partition_variance": "13/1764",
+          "partition_variance_bound": "1/36"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 210,
+          "complete_excess": "1/6",
+          "two_fold_covariance": "-25/36",
+          "partition_variance": "17/630",
+          "partition_variance_bound": "23/420"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 120,
+          "complete_excess": "1/12",
+          "two_fold_covariance": "-25/144",
+          "partition_variance": "5/144",
+          "partition_variance_bound": "1/24"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 45,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 8,
+          "conditional_sample_count": 10,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 10,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "5627/98415",
+            "shifted": "5627/98415",
+            "mixture": "225791/4428675",
+            "complete": "80387/2066715",
+            "empirical": "1/45"
+          },
+          "fixed_minus_complete": "7556/413343",
+          "variance_bound": "608/19683"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "109/2560",
+            "shifted": "109/2560",
+            "mixture": "4073/115200",
+            "complete": "1159/53760",
+            "empirical": "1/40"
+          },
+          "fixed_minus_complete": "113/5376",
+          "variance_bound": "5/128"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "161/3645",
+            "shifted": "161/3645",
+            "mixture": "168191/4428675",
+            "complete": "53507/2066715",
+            "empirical": "1/45"
+          },
+          "fixed_minus_complete": "7556/413343",
+          "variance_bound": "608/19683"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "161/3645",
+            "shifted": "161/3645",
+            "mixture": "168191/4428675",
+            "complete": "53507/2066715",
+            "empirical": "1/45"
+          },
+          "fixed_minus_complete": "7556/413343",
+          "variance_bound": "608/19683"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "109/2560",
+            "shifted": "109/2560",
+            "mixture": "4073/115200",
+            "complete": "1159/53760",
+            "empirical": "1/40"
+          },
+          "fixed_minus_complete": "113/5376",
+          "variance_bound": "5/128"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "5627/98415",
+            "shifted": "5627/98415",
+            "mixture": "225791/4428675",
+            "complete": "80387/2066715",
+            "empirical": "1/45"
+          },
+          "fixed_minus_complete": "7556/413343",
+          "variance_bound": "608/19683"
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "m": 1,
+      "k": 11,
+      "training_parity": "even",
+      "label_vectors": 2048,
+      "held_out_subsets": 11,
+      "all_balanced_partitions_enumerated": 0,
+      "fixed_partition_masks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "shifted_partition_masks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        1
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -11,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -9,
+          "conditional_sample_count": 11,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -7,
+          "conditional_sample_count": 55,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -5,
+          "conditional_sample_count": 165,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -3,
+          "conditional_sample_count": 330,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -1,
+          "conditional_sample_count": 462,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 1,
+          "conditional_sample_count": 462,
+          "complete_excess": "6/11",
+          "two_fold_covariance": "-3/121",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "6/121"
+        },
+        {
+          "tie": -1,
+          "S": 3,
+          "conditional_sample_count": 330,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 5,
+          "conditional_sample_count": 165,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 7,
+          "conditional_sample_count": 55,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 9,
+          "conditional_sample_count": 11,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 11,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -11,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -9,
+          "conditional_sample_count": 11,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -7,
+          "conditional_sample_count": 55,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -5,
+          "conditional_sample_count": 165,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -3,
+          "conditional_sample_count": 330,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -1,
+          "conditional_sample_count": 462,
+          "complete_excess": "6/11",
+          "two_fold_covariance": "-3/121",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "6/121"
+        },
+        {
+          "tie": 1,
+          "S": 1,
+          "conditional_sample_count": 462,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 3,
+          "conditional_sample_count": 330,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 5,
+          "conditional_sample_count": 165,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 7,
+          "conditional_sample_count": 55,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 9,
+          "conditional_sample_count": 11,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 11,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "16706/649539",
+            "shifted": "16706/649539",
+            "mixture": "16706/649539",
+            "complete": "16706/649539",
+            "empirical": "2/99"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "896/216513"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "443/5632",
+            "shifted": "443/5632",
+            "mixture": "443/5632",
+            "complete": "443/5632",
+            "empirical": "1/44"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "63/5632"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "59714/649539",
+            "shifted": "59714/649539",
+            "mixture": "59714/649539",
+            "complete": "59714/649539",
+            "empirical": "2/99"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1792/216513"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "59714/649539",
+            "shifted": "59714/649539",
+            "mixture": "59714/649539",
+            "complete": "59714/649539",
+            "empirical": "2/99"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "1792/216513"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "443/5632",
+            "shifted": "443/5632",
+            "mixture": "443/5632",
+            "complete": "443/5632",
+            "empirical": "1/44"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "63/5632"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "16706/649539",
+            "shifted": "16706/649539",
+            "mixture": "16706/649539",
+            "complete": "16706/649539",
+            "empirical": "2/99"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "896/216513"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "m": 1,
+      "k": 12,
+      "training_parity": "odd",
+      "label_vectors": 4096,
+      "held_out_subsets": 12,
+      "all_balanced_partitions_enumerated": 0,
+      "fixed_partition_masks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048
+      ],
+      "shifted_partition_masks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        1
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 792,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 924,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/44",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/24"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 792,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 792,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 924,
+          "complete_excess": "1/2",
+          "two_fold_covariance": "-1/44",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "1/24"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 792,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "68963/1062882",
+            "shifted": "68963/1062882",
+            "mixture": "68963/1062882",
+            "complete": "68963/1062882",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "2464/531441"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "949/12288",
+            "shifted": "949/12288",
+            "mixture": "949/12288",
+            "complete": "949/12288",
+            "empirical": "1/48"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "77/8192"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "29539/1062882",
+            "shifted": "29539/1062882",
+            "mixture": "29539/1062882",
+            "complete": "29539/1062882",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "2464/531441"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "29539/1062882",
+            "shifted": "29539/1062882",
+            "mixture": "29539/1062882",
+            "complete": "29539/1062882",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "2464/531441"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "949/12288",
+            "shifted": "949/12288",
+            "mixture": "949/12288",
+            "complete": "949/12288",
+            "empirical": "1/48"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "77/8192"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "68963/1062882",
+            "shifted": "68963/1062882",
+            "mixture": "68963/1062882",
+            "complete": "68963/1062882",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "0/1",
+          "variance_bound": "2464/531441"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "m": 2,
+      "k": 6,
+      "training_parity": "even",
+      "label_vectors": 4096,
+      "held_out_subsets": 66,
+      "all_balanced_partitions_enumerated": 0,
+      "fixed_partition_masks": [
+        3,
+        12,
+        48,
+        192,
+        768,
+        3072
+      ],
+      "shifted_partition_masks": [
+        6,
+        24,
+        96,
+        384,
+        1536,
+        2049
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 792,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 924,
+          "complete_excess": "5/22",
+          "two_fold_covariance": "-31/363",
+          "partition_variance": "25/2178",
+          "partition_variance_bound": "5/132"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 792,
+          "complete_excess": "7/22",
+          "two_fold_covariance": "-133/1089",
+          "partition_variance": "35/3267",
+          "partition_variance_bound": "7/132"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 792,
+          "complete_excess": "7/22",
+          "two_fold_covariance": "-133/1089",
+          "partition_variance": "35/3267",
+          "partition_variance_bound": "7/132"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 924,
+          "complete_excess": "5/22",
+          "two_fold_covariance": "-31/363",
+          "partition_variance": "25/2178",
+          "partition_variance_bound": "5/132"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 792,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "101161/3188646",
+            "shifted": "101161/3188646",
+            "mixture": "885361/28697814",
+            "complete": "350017/11691702",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "31360/17537553",
+          "variance_bound": "3584/531441"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "571/12288",
+            "shifted": "571/12288",
+            "mixture": "181/4096",
+            "complete": "5651/135168",
+            "empirical": "1/48"
+          },
+          "fixed_minus_complete": "105/22528",
+          "variance_bound": "77/4096"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "154921/3188646",
+            "shifted": "154921/3188646",
+            "mixture": "1347697/28697814",
+            "complete": "529217/11691702",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "58240/17537553",
+          "variance_bound": "7616/531441"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "154921/3188646",
+            "shifted": "154921/3188646",
+            "mixture": "1347697/28697814",
+            "complete": "529217/11691702",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "58240/17537553",
+          "variance_bound": "7616/531441"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "571/12288",
+            "shifted": "571/12288",
+            "mixture": "181/4096",
+            "complete": "5651/135168",
+            "empirical": "1/48"
+          },
+          "fixed_minus_complete": "105/22528",
+          "variance_bound": "77/4096"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "101161/3188646",
+            "shifted": "101161/3188646",
+            "mixture": "885361/28697814",
+            "complete": "350017/11691702",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "31360/17537553",
+          "variance_bound": "3584/531441"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "m": 3,
+      "k": 4,
+      "training_parity": "odd",
+      "label_vectors": 4096,
+      "held_out_subsets": 220,
+      "all_balanced_partitions_enumerated": 0,
+      "fixed_partition_masks": [
+        7,
+        56,
+        448,
+        3584
+      ],
+      "shifted_partition_masks": [
+        14,
+        112,
+        896,
+        3073
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 792,
+          "complete_excess": "7/44",
+          "two_fold_covariance": "-309/1936",
+          "partition_variance": "39/1936",
+          "partition_variance_bound": "7/176"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 924,
+          "complete_excess": "5/22",
+          "two_fold_covariance": "-93/484",
+          "partition_variance": "5/968",
+          "partition_variance_bound": "3/88"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 792,
+          "complete_excess": "7/44",
+          "two_fold_covariance": "-309/1936",
+          "partition_variance": "39/1936",
+          "partition_variance_bound": "7/176"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 792,
+          "complete_excess": "7/44",
+          "two_fold_covariance": "-309/1936",
+          "partition_variance": "39/1936",
+          "partition_variance_bound": "7/176"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 924,
+          "complete_excess": "5/22",
+          "two_fold_covariance": "-93/484",
+          "partition_variance": "5/968",
+          "partition_variance_bound": "3/88"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 792,
+          "complete_excess": "7/44",
+          "two_fold_covariance": "-309/1936",
+          "partition_variance": "39/1936",
+          "partition_variance_bound": "7/176"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "48227/1062882",
+            "shifted": "48227/1062882",
+            "mixture": "3730067/86093442",
+            "complete": "467617/11691702",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "10480/1948617",
+          "variance_bound": "784/59049"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "1007/24576",
+            "shifted": "1007/24576",
+            "mixture": "24929/663552",
+            "complete": "541/16896",
+            "empirical": "1/48"
+          },
+          "fixed_minus_complete": "807/90112",
+          "variance_bound": "189/8192"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "30307/1062882",
+            "shifted": "30307/1062882",
+            "mixture": "2278547/86093442",
+            "complete": "270497/11691702",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "10480/1948617",
+          "variance_bound": "784/59049"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "30307/1062882",
+            "shifted": "30307/1062882",
+            "mixture": "2278547/86093442",
+            "complete": "270497/11691702",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "10480/1948617",
+          "variance_bound": "784/59049"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "1007/24576",
+            "shifted": "1007/24576",
+            "mixture": "24929/663552",
+            "complete": "541/16896",
+            "empirical": "1/48"
+          },
+          "fixed_minus_complete": "807/90112",
+          "variance_bound": "189/8192"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "48227/1062882",
+            "shifted": "48227/1062882",
+            "mixture": "3730067/86093442",
+            "complete": "467617/11691702",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "10480/1948617",
+          "variance_bound": "784/59049"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "m": 4,
+      "k": 3,
+      "training_parity": "even",
+      "label_vectors": 4096,
+      "held_out_subsets": 495,
+      "all_balanced_partitions_enumerated": 0,
+      "fixed_partition_masks": [
+        15,
+        240,
+        3840
+      ],
+      "shifted_partition_masks": [
+        30,
+        480,
+        3585
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 792,
+          "complete_excess": "7/99",
+          "two_fold_covariance": "-784/9801",
+          "partition_variance": "182/9801",
+          "partition_variance_bound": "7/297"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 924,
+          "complete_excess": "5/33",
+          "two_fold_covariance": "-2272/7623",
+          "partition_variance": "26/2541",
+          "partition_variance_bound": "1/33"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 792,
+          "complete_excess": "49/198",
+          "two_fold_covariance": "-5644/9801",
+          "partition_variance": "169/19602",
+          "partition_variance_bound": "7/132"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 495,
+          "complete_excess": "14/99",
+          "two_fold_covariance": "-14096/49005",
+          "partition_variance": "1396/49005",
+          "partition_variance_bound": "14/297"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 495,
+          "complete_excess": "14/99",
+          "two_fold_covariance": "-14096/49005",
+          "partition_variance": "1396/49005",
+          "partition_variance_bound": "14/297"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 792,
+          "complete_excess": "49/198",
+          "two_fold_covariance": "-5644/9801",
+          "partition_variance": "169/19602",
+          "partition_variance_bound": "7/132"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 924,
+          "complete_excess": "5/33",
+          "two_fold_covariance": "-2272/7623",
+          "partition_variance": "26/2541",
+          "partition_variance_bound": "1/33"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 792,
+          "complete_excess": "7/99",
+          "two_fold_covariance": "-784/9801",
+          "partition_variance": "182/9801",
+          "partition_variance_bound": "7/297"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 495,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "99881/3188646",
+            "shifted": "99881/3188646",
+            "mixture": "845489/28697814",
+            "complete": "2715593/105225318",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "290240/52612659",
+          "variance_bound": "17696/1594323"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "223/6144",
+            "shifted": "223/6144",
+            "mixture": "401/12288",
+            "complete": "1709/67584",
+            "empirical": "1/48"
+          },
+          "fixed_minus_complete": "31/2816",
+          "variance_bound": "7/256"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "155561/3188646",
+            "shifted": "155561/3188646",
+            "mixture": "1301489/28697814",
+            "complete": "4032713/105225318",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "550400/52612659",
+          "variance_bound": "41216/1594323"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "155561/3188646",
+            "shifted": "155561/3188646",
+            "mixture": "1301489/28697814",
+            "complete": "4032713/105225318",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "550400/52612659",
+          "variance_bound": "41216/1594323"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "223/6144",
+            "shifted": "223/6144",
+            "mixture": "401/12288",
+            "complete": "1709/67584",
+            "empirical": "1/48"
+          },
+          "fixed_minus_complete": "31/2816",
+          "variance_bound": "7/256"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "99881/3188646",
+            "shifted": "99881/3188646",
+            "mixture": "845489/28697814",
+            "complete": "2715593/105225318",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "290240/52612659",
+          "variance_bound": "17696/1594323"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "m": 6,
+      "k": 2,
+      "training_parity": "even",
+      "label_vectors": 4096,
+      "held_out_subsets": 924,
+      "all_balanced_partitions_enumerated": 0,
+      "fixed_partition_masks": [
+        63,
+        4032
+      ],
+      "shifted_partition_masks": [
+        126,
+        3969
+      ],
+      "conditional_checks": [
+        {
+          "tie": -1,
+          "S": -12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": -4,
+          "conditional_sample_count": 495,
+          "complete_excess": "1/33",
+          "two_fold_covariance": "-4/121",
+          "partition_variance": "31/2178",
+          "partition_variance_bound": "1/66"
+        },
+        {
+          "tie": -1,
+          "S": -2,
+          "conditional_sample_count": 792,
+          "complete_excess": "1/12",
+          "two_fold_covariance": "-1/4",
+          "partition_variance": "35/1584",
+          "partition_variance_bound": "23/792"
+        },
+        {
+          "tie": -1,
+          "S": 0,
+          "conditional_sample_count": 924,
+          "complete_excess": "25/231",
+          "two_fold_covariance": "-2500/5929",
+          "partition_variance": "2351/213444",
+          "partition_variance_bound": "1/44"
+        },
+        {
+          "tie": -1,
+          "S": 2,
+          "conditional_sample_count": 792,
+          "complete_excess": "83/396",
+          "two_fold_covariance": "-6889/4356",
+          "partition_variance": "965/156816",
+          "partition_variance_bound": "119/2376"
+        },
+        {
+          "tie": -1,
+          "S": 4,
+          "conditional_sample_count": 495,
+          "complete_excess": "19/99",
+          "two_fold_covariance": "-1444/1089",
+          "partition_variance": "631/19602",
+          "partition_variance_bound": "41/594"
+        },
+        {
+          "tie": -1,
+          "S": 6,
+          "conditional_sample_count": 220,
+          "complete_excess": "1/11",
+          "two_fold_covariance": "-36/121",
+          "partition_variance": "9/242",
+          "partition_variance_bound": "1/22"
+        },
+        {
+          "tie": -1,
+          "S": 8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": -1,
+          "S": 12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": -6,
+          "conditional_sample_count": 220,
+          "complete_excess": "1/11",
+          "two_fold_covariance": "-36/121",
+          "partition_variance": "9/242",
+          "partition_variance_bound": "1/22"
+        },
+        {
+          "tie": 1,
+          "S": -4,
+          "conditional_sample_count": 495,
+          "complete_excess": "19/99",
+          "two_fold_covariance": "-1444/1089",
+          "partition_variance": "631/19602",
+          "partition_variance_bound": "41/594"
+        },
+        {
+          "tie": 1,
+          "S": -2,
+          "conditional_sample_count": 792,
+          "complete_excess": "83/396",
+          "two_fold_covariance": "-6889/4356",
+          "partition_variance": "965/156816",
+          "partition_variance_bound": "119/2376"
+        },
+        {
+          "tie": 1,
+          "S": 0,
+          "conditional_sample_count": 924,
+          "complete_excess": "25/231",
+          "two_fold_covariance": "-2500/5929",
+          "partition_variance": "2351/213444",
+          "partition_variance_bound": "1/44"
+        },
+        {
+          "tie": 1,
+          "S": 2,
+          "conditional_sample_count": 792,
+          "complete_excess": "1/12",
+          "two_fold_covariance": "-1/4",
+          "partition_variance": "35/1584",
+          "partition_variance_bound": "23/792"
+        },
+        {
+          "tie": 1,
+          "S": 4,
+          "conditional_sample_count": 495,
+          "complete_excess": "1/33",
+          "two_fold_covariance": "-4/121",
+          "partition_variance": "31/2178",
+          "partition_variance_bound": "1/66"
+        },
+        {
+          "tie": 1,
+          "S": 6,
+          "conditional_sample_count": 220,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 8,
+          "conditional_sample_count": 66,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 10,
+          "conditional_sample_count": 12,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        },
+        {
+          "tie": 1,
+          "S": 12,
+          "conditional_sample_count": 1,
+          "complete_excess": "0/1",
+          "two_fold_covariance": "0/1",
+          "partition_variance": "0/1",
+          "partition_variance_bound": "0/1"
+        }
+      ],
+      "risks": [
+        {
+          "tie": -1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "106105/3188646",
+            "shifted": "106105/3188646",
+            "mixture": "2612099/86093442",
+            "complete": "5780917/245525742",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "1194584/122762871",
+          "variance_bound": "8104/531441"
+        },
+        {
+          "tie": -1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "203/6144",
+            "shifted": "203/6144",
+            "mixture": "4705/165888",
+            "complete": "49633/2838528",
+            "empirical": "1/48"
+          },
+          "fixed_minus_complete": "44153/2838528",
+          "variance_bound": "203/6144"
+        },
+        {
+          "tie": -1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "176825/3188646",
+            "shifted": "176825/3188646",
+            "mixture": "4282499/86093442",
+            "complete": "8895637/245525742",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "262216/13640319",
+          "variance_bound": "7048/177147"
+        },
+        {
+          "tie": 1,
+          "p": "1/3",
+          "mu": "-1/3",
+          "mse": {
+            "fixed": "176825/3188646",
+            "shifted": "176825/3188646",
+            "mixture": "4282499/86093442",
+            "complete": "8895637/245525742",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "262216/13640319",
+          "variance_bound": "7048/177147"
+        },
+        {
+          "tie": 1,
+          "p": "1/2",
+          "mu": "0/1",
+          "mse": {
+            "fixed": "203/6144",
+            "shifted": "203/6144",
+            "mixture": "4705/165888",
+            "complete": "49633/2838528",
+            "empirical": "1/48"
+          },
+          "fixed_minus_complete": "44153/2838528",
+          "variance_bound": "203/6144"
+        },
+        {
+          "tie": 1,
+          "p": "2/3",
+          "mu": "1/3",
+          "mse": {
+            "fixed": "106105/3188646",
+            "shifted": "106105/3188646",
+            "mixture": "2612099/86093442",
+            "complete": "5780917/245525742",
+            "empirical": "1/54"
+          },
+          "fixed_minus_complete": "1194584/122762871",
+          "variance_bound": "8104/531441"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "operations": {
+      "balanced_partitions_explicitly_enumerated": 175,
+      "explicit_partition_predictions": 266560,
+      "held_out_subset_predictions": 14896704,
+      "label_vectors_by_parameter_pair": 27788,
+      "parameter_pairs": 23,
+      "risk_instances": 138
+    },
+    "assertions_total": 562052,
+    "assertions_by_category": {
+      "B_plus_D_fixed_each_sample_probability": 166728,
+      "B_plus_D_shifted_each_sample_probability": 166728,
+      "all_balanced_partitions_vs_all_held_out_subsets": 2328,
+      "boundary_hypergeometric_binomial_ratio": 209,
+      "complete_mixture_fixed_risk_sandwich": 138,
+      "conditional_fixed_mean_vs_formula": 418,
+      "conditional_partition_variance_bound": 418,
+      "conditional_sample_count": 418,
+      "conditional_two_fold_covariance_nonpositive": 418,
+      "direct_complete_vs_hypergeometric_formula": 55576,
+      "direct_cv_empirical_excess_identity": 55576,
+      "direct_fold_histogram_vs_hypergeometric_law": 1396,
+      "exact_empirical_risk_identity": 138,
+      "integrated_partition_variance_bound": 138,
+      "label_reflection_and_tie_swap_risk": 69,
+      "nonnegative_local_excess": 55576,
+      "odd_even_loo_identity": 66,
+      "partition_exchangeability_risk": 138,
+      "shifted_cv_empirical_excess_identity": 55576
+    },
+    "completed_parameter_pairs": 23,
+    "conditional_rows": 418
+  }
+}

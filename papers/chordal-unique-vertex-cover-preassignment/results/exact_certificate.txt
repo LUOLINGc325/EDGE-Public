@@ -1,0 +1,4 @@
+Five-vertex gadget: maximum independent size 2, inactive cost 1, active cost 2.
+Chordal labelled inputs through n=5: [1, 1, 2, 8, 61, 822] total 895
+Reduction checked on 87 exhaustive and 21 seeded covered set systems.
+All single-exchange and exact optimum checks passed.

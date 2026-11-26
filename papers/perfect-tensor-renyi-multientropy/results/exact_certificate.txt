@@ -1,0 +1,15 @@
+p=3 n=2 r=2 m=1 additive_pairs=1 exponent=10 S/log(p)=5/2
+p=3 n=3 r=1 m=3 additive_pairs=0 exponent=40 S/log(p)=20/9
+p=3 n=4 r=4 m=1 additive_pairs=9 exponent=108 S/log(p)=9/4
+p=3 n=5 r=5 m=1 additive_pairs=4 exponent=232 S/log(p)=58/25
+p=3 n=6 r=2 m=3 additive_pairs=1 exponent=382 S/log(p)=191/90
+p=3 n=7 r=7 m=1 additive_pairs=6 exponent=660 S/log(p)=110/49
+p=3 n=8 r=8 m=1 additive_pairs=37 exponent=964 S/log(p)=241/112
+p=3 n=9 r=1 m=9 additive_pairs=0 exponent=1336 S/log(p)=167/81
+p=3 n=10 r=10 m=1 additive_pairs=81 exponent=1890 S/log(p)=21/10
+p=5 n=2 r=2 m=1 additive_pairs=1 exponent=10 S/log(p)=5/2
+p=5 n=3 r=3 m=1 additive_pairs=2 exponent=44 S/log(p)=22/9
+p=5 n=4 r=4 m=1 additive_pairs=5 exponent=112 S/log(p)=7/3
+p=5 n=5 r=1 m=5 additive_pairs=0 exponent=212 S/log(p)=53/25
+p=5 n=6 r=6 m=1 additive_pairs=25 exponent=390 S/log(p)=13/6
+p=5 n=8 r=8 m=1 additive_pairs=17 exponent=984 S/log(p)=123/56

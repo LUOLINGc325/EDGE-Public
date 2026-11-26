@@ -1,0 +1,4 @@
+Exact overlaps: 49/43, 225/196, 81/80.
+Weighted cycle projector, overlap lower bound and fast witness: 1080 cases.
+Exact quartic identity: 128 rational amplitudes.
+All checks passed.

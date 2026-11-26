@@ -1,0 +1,3 @@
+alpha=1/2, M=2: drift truncation strictly below 0.000336
+R=20 log 2: discount tail strictly below 0.000977
+These are bounds on analytic truncation, excluding any PDE discretization.

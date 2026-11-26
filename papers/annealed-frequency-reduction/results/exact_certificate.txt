@@ -1,0 +1,19 @@
+Distinct symmetric frozen graphs
+  speed 1/4: [35819069/10000000, 3581907/1000000]
+  speed 1/2: [6711129/2000000, 16777823/5000000]
+  speed 1: [30132799/10000000, 18833/6250]
+  speed 2: [2681249/1000000, 26812491/10000000]
+  speed 4: [24576277/10000000, 12288139/5000000]
+Common eigenvector, distinct eigenvalues
+  speed 1/4: [19106629/5000000, 38213259/10000000]
+  speed 1/2: [3697713/1000000, 36977131/10000000]
+  speed 1: [4415111/1250000, 35320889/10000000]
+  speed 2: [33553013/10000000, 6710603/2000000]
+  speed 4: [32102299/10000000, 321023/100000]
+Common eigenvector and common eigenvalue
+  speed 1/4: [1, 1]
+  speed 1/2: [1, 1]
+  speed 1: [1, 1]
+  speed 2: [1, 1]
+  speed 4: [1, 1]
+All 15 exact spectral enclosures passed.

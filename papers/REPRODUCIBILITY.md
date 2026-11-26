@@ -12,6 +12,37 @@ The Python programs below use the standard library for finite exact-arithmetic c
 
 Run the selected script with Python 3.10 or newer, e.g. `python3 certificate_ame.py` in its code directory.
 
+## Calculations accompanying the research manuscripts
+
+- [Two-class clearing-system reward threshold](two-class-clearing-reward-threshold/REPRODUCTION.md)
+- [Repeated majority cross-validation](repeated-majority-cross-validation/REPRODUCTION.md)
+- [First capacity transition of the Cauchy channel](cauchy-channel-capacity-transition/REPRODUCTION.md)
+
+## Supplementary calculations and data
+
+These files document finite exact-arithmetic checks and numerical examples. The imbalance calculation and the classifier reference implementation use NumPy. Run companion scripts from their code directory.
+
+| Manuscript | Programs | Recorded outputs |
+|---|---|---|
+| [annealed frequency reduction](annealed-frequency-reduction/paper.en.md) | — | [exact_certificate.txt](annealed-frequency-reduction/results/exact_certificate.txt) |
+| [cactus replica rationality](cactus-replica-rationality/paper.zh.md) | — | [exact_certificate.txt](cactus-replica-rationality/results/exact_certificate.txt) |
+| [chern simons four cycle](chern-simons-four-cycle/paper.zh.md) | — | [exact_certificate.txt](chern-simons-four-cycle/results/exact_certificate.txt) |
+| [chern simons order three](chern-simons-order-three/paper.zh.md) | — | [exact_certificate.txt](chern-simons-order-three/results/exact_certificate.txt) |
+| [chordal bipartite edge open packing](chordal-bipartite-edge-open-packing/paper.zh.md) | — | [exact_certificate.txt](chordal-bipartite-edge-open-packing/results/exact_certificate.txt) |
+| [chordal unique vertex cover preassignment](chordal-unique-vertex-cover-preassignment/paper.zh.md) | — | [exact_certificate.txt](chordal-unique-vertex-cover-preassignment/results/exact_certificate.txt), [interval_certificate.txt](chordal-unique-vertex-cover-preassignment/results/interval_certificate.txt) |
+| [class domination coloring cluster deletion](class-domination-coloring-cluster-deletion/paper.zh.md) | — | [exact_certificate.txt](class-domination-coloring-cluster-deletion/results/exact_certificate.txt) |
+| [class domination coloring treewidth](class-domination-coloring-treewidth/paper.zh.md) | — | [compressed_certificate.txt](class-domination-coloring-treewidth/results/compressed_certificate.txt), [exact_certificate.txt](class-domination-coloring-treewidth/results/exact_certificate.txt) |
+| [classifier accuracy augmented gof](classifier-accuracy-augmented-gof/paper.en.md) | — | [exact_certificate.txt](classifier-accuracy-augmented-gof/results/exact_certificate.txt) |
+| [complete bipartite tar rigidity](complete-bipartite-tar-rigidity/paper.zh.md) | — | [exact_certificate.txt](complete-bipartite-tar-rigidity/results/exact_certificate.txt) |
+| [composite sequential test induction](composite-sequential-test-induction/paper.en.md) | — | [exact_certificate.txt](composite-sequential-test-induction/results/exact_certificate.txt) |
+| [detailed balance frequency reduction](detailed-balance-frequency-reduction/paper.en.md) | — | [exact_certificate.txt](detailed-balance-frequency-reduction/results/exact_certificate.txt) |
+| [directed cycle two season witness](directed-cycle-two-season-witness/paper.en.md) | — | [exact_certificate.txt](directed-cycle-two-season-witness/results/exact_certificate.txt) |
+| [nonhermitian skin imbalance](nonhermitian-skin-imbalance/paper.zh.md) | [certificate.py](nonhermitian-skin-imbalance/code/certificate.py), [verify_imbalance.py](nonhermitian-skin-imbalance/code/verify_imbalance.py) | [exact_certificate.txt](nonhermitian-skin-imbalance/results/exact_certificate.txt), [numerical_check.csv](nonhermitian-skin-imbalance/results/numerical_check.csv) |
+| [online conformal parabolic evaluation](online-conformal-parabolic-evaluation/paper.zh.md) | [check_truncation.py](online-conformal-parabolic-evaluation/code/check_truncation.py) | [exact_certificate.txt](online-conformal-parabolic-evaluation/results/exact_certificate.txt) |
+| [original alphabet hard classifier](original-alphabet-hard-classifier/paper.en.md) | [check_protocol.py](original-alphabet-hard-classifier/code/check_protocol.py), [hard_classifier.py](original-alphabet-hard-classifier/code/hard_classifier.py), [verify_exact.py](original-alphabet-hard-classifier/code/verify_exact.py) | [exact_certificate.json](original-alphabet-hard-classifier/results/exact_certificate.json), [protocol_examples.txt](original-alphabet-hard-classifier/results/protocol_examples.txt) |
+| [perfect tensor renyi multientropy](perfect-tensor-renyi-multientropy/paper.zh.md) | — | [exact_certificate.txt](perfect-tensor-renyi-multientropy/results/exact_certificate.txt) |
+| [risk transfer and finite horizon](risk-transfer-and-finite-horizon/paper.en.md) | [independent_identity_check.py](risk-transfer-and-finite-horizon/code/independent_identity_check.py) | — |
+
 ## Complete formal proof packages
 
 - [clique-dually-conformal-induced-extension](clique-dually-conformal-induced-extension/formalization/) — The archived release records full coverage of the induced CDC extension theorem, maximal cliques, minimal transversals, dual clique characterization, and exact vertex count. Its 127 module declarations were reported to depend only on propext, Classical.choice and Quot.sound.
@@ -61,3 +92,7 @@ These packages preserve the original Lean sources and dependencies; migration is
 Each Lean directory contains a toolchain and a pinned mathlib dependency. Run `lake build` from the corresponding directory. No new execution or Lean compilation result is asserted by this page.
 
 以上程序为有限精确算术校验；完整证明包与辅助引理包的数学范围见各项说明。迁移不代表在本仓库重新编译或重新完成公理核验。
+
+## Partial formal proof packages
+
+- [Three-task pinwheel scheduling](finite-pinwheel-three-task/formalization/README.md) — Rank formula for positive integers excluding multiples of 3 and the three deadline inequalities for the (2, 3, c) family.

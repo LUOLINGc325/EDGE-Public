@@ -1,0 +1,8 @@
+Slow coefficient in (13/100,7/50).
+1 stage(s) per season, target exponent 1/1000:
+  speed 1/1000: radius in [0.50487,0.50489]
+  speed 1/50: radius in [1.04108,1.04358]
+4 stage(s) per season, target exponent 1/200:
+  speed 1/100: radius in [0.70149,0.70150]
+  speed 1/10: radius in [1.01474,1.01643]
+Both strict annealed increases passed in exact arithmetic.

@@ -1,0 +1,17 @@
+square with leaf, n=3: half-rank sum=140
+square with leaf, n=5: half-rank sum=1184
+square with leaf, n=7: half-rank sum=4668
+square with triangle, n=3: half-rank sum=530
+square with triangle, n=5: half-rank sum=7764
+two squares at root, n=3: half-rank sum=1856
+two squares at root, n=5: half-rank sum=43944
+hexagon with leaf, n=3: half-rank sum=1898
+hexagon with leaf, n=5: half-rank sum=44468
+hexagon with leaf, n=7: half-rank sum=343710
+hexagon with length-two attachment, n=3: half-rank sum=6788
+hexagon with length-two attachment, n=5: half-rank sum=272728
+hexagon with triangle, n=3: half-rank sum=6788
+hexagon with triangle, n=5: half-rank sum=272728
+hexagon with square, n=3: half-rank sum=22550
+two hexagons at root, n=3: half-rank sum=254888
+All direct ranks, formal branch separations and attachment checks passed.

@@ -1,0 +1,64 @@
+{
+  "schema": "weighted-priority-symbolic-identities-v1",
+  "dependency": {
+    "name": "SymPy",
+    "version": "1.14.0"
+  },
+  "identity_count": 13,
+  "outcome": "all_listed_algebraic_differences_zero",
+  "limitations": "Optional symbolic identity checks only. Nonzero denominators, signs, quantifiers, the stochastic model, and the infinite family of populations are justified in the written proof. No Lean kernel or proof-assistant validation is claimed.",
+  "identities": [
+    {
+      "identity": "upper_function_recurrence_residual",
+      "cleared_numerator": "0"
+    },
+    {
+      "identity": "product_lower_function_recurrence_residual",
+      "cleared_numerator": "0"
+    },
+    {
+      "identity": "mixed_upper_comparison",
+      "cleared_numerator": "0"
+    },
+    {
+      "identity": "mixed_lower_comparison",
+      "cleared_numerator": "0"
+    },
+    {
+      "identity": "five_term_polynomial_certificate",
+      "cleared_numerator": "0"
+    },
+    {
+      "identity": "rational_function_recurrence_residual",
+      "cleared_numerator": "0"
+    },
+    {
+      "identity": "Pn_left_endpoint",
+      "cleared_numerator": "0"
+    },
+    {
+      "identity": "Pn_right_endpoint",
+      "cleared_numerator": "0"
+    },
+    {
+      "identity": "Pm_left_endpoint",
+      "cleared_numerator": "0"
+    },
+    {
+      "identity": "Pm_right_endpoint",
+      "cleared_numerator": "0"
+    },
+    {
+      "identity": "Pm_Bernstein_middle",
+      "cleared_numerator": "0"
+    },
+    {
+      "identity": "two_job_threshold_value",
+      "cleared_numerator": "0"
+    },
+    {
+      "identity": "m1_denominator_boundary",
+      "cleared_numerator": "0"
+    }
+  ]
+}
