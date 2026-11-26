@@ -1,0 +1,3730 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "mathematics",
+      "zh": "数学",
+      "en": "Mathematics"
+    },
+    {
+      "id": "probability-statistics",
+      "zh": "概率与统计",
+      "en": "Probability and statistics"
+    },
+    {
+      "id": "information-communication",
+      "zh": "信息与通信",
+      "en": "Information and communication"
+    },
+    {
+      "id": "optimization-operations",
+      "zh": "优化与运筹",
+      "en": "Optimization and operations research"
+    },
+    {
+      "id": "theoretical-computer-science",
+      "zh": "理论计算机科学",
+      "en": "Theoretical computer science"
+    },
+    {
+      "id": "quantum-physics",
+      "zh": "量子信息与物理",
+      "en": "Quantum information and physics"
+    },
+    {
+      "id": "control-dynamics",
+      "zh": "控制与动力系统",
+      "en": "Control and dynamical systems"
+    },
+    {
+      "id": "learning-inference",
+      "zh": "机器学习与推断",
+      "en": "Machine learning and inference"
+    }
+  ],
+  "projects": [
+    {
+      "slug": "adaptive-erasure-feedback-law",
+      "title": "Exact erasure resilience with adaptively scheduled feedback",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "adaptive-exponential-kernel-confidence",
+      "title": "自适应指数核回归的尖锐同时置信宽度 · Sharp simultaneous confidence widths for adaptive exponential-kernel regression",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "aipw-treatment-dependent-delay",
+      "title": "处理相关延迟下实用 AIPW 的时间一致误差与积压周转前沿",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "all-clique-saturation",
+      "title": "Proper hat-guessing saturation of windmills and cone bouquets",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "anisotropic-qubit-fidelity-composition",
+      "title": "固定输入保真度和切换收缩的短词校准",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "annealed-frequency-reduction",
+      "title": "不可逆环境切换下的平均增长频率单调性 · Annealed frequency reduction under irreversible environmental switching",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "announced-fixed-horizon",
+      "title": "Exact CVaR One-Max Search at a Fixed Announced Horizon",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {
+        "papers/announced-fixed-horizon/evidence/code/verify_exact.py": "papers/announced-fixed-horizon/code/verify_exact.py"
+      }
+    },
+    {
+      "slug": "aoj-general-service-indexability",
+      "title": "任意整数服务的工件年龄指数",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "approximate-dp-epower-exponent",
+      "title": "近似差分隐私下最优 e-power 的指数预算相图 · The Privacy-Failure Exponent in Optimal Differentially Private E-Power",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "approximate-ldp-blackwell-structure",
+      "title": "Approximate Local Privacy: Blackwell Structure, Exact Pearson Information, and Minimax Estimation",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "bandit-view-table-sharp-conversion",
+      "title": "固定自适应前缀的精确 Bandit 隐私转换",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 3,
+      "legacy_paths": {
+        "papers/bandit-view-table-sharp-conversion/evidence/code/binary_verify.py": "papers/bandit-view-table-sharp-conversion/code/binary_verify.py",
+        "papers/bandit-view-table-sharp-conversion/evidence/code/verify_rich_lower.py": "papers/bandit-view-table-sharp-conversion/code/verify_rich_lower.py"
+      }
+    },
+    {
+      "slug": "bell-chain-sharp-parity",
+      "title": "循环 Bell 纠缠交换链的尖锐乘法系数",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "binary-markov-gray-dispersion",
+      "title": "Gray 区间内部二元 Markov 源的操作色散",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "binary-post-channel-certificates",
+      "title": "Finite Certificates and Memory Penalties for Binary POST Channels",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "binary-reliability-exponents",
+      "title": "Reliability exponents for binary noisy-permutation channels",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "binary-renyi-order-monotonicity",
+      "title": "一阶以上二元 Rényi 熵的最优跨阶幂界",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "binomial-sign-margin-minimax",
+      "title": "二项混合符号泛函的全参数极小极大风险",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "bottleneck-spectral-neighbor",
+      "title": "The bottleneck spectral neighbor of a balanced complete tripartite graph",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "boundary-resetting-global-optimality",
+      "title": "有边界重置的布朗搜索：内部不重置的全局最优性",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "bounded-edge-deleters",
+      "title": "Self-deleting paths with bounded deleters per edge",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "bounded-hop-independent-set-approximation",
+      "title": "Assignment bounds and constant-factor algorithms for bounded-hop independent-set reconfiguration",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "cactus-ising-stabilizer",
+      "title": "图伊辛演化的稳定子 Rényi 矩：连续角分解、整数阶消元与二元割谱",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "cactus-replica-rationality",
+      "title": "仙人掌图态的奇复制有理延拓分类",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "cartesian-algebraic-squares",
+      "title": "笛卡尔积何时成为代数平方",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "cauchy-channel-capacity-transition",
+      "title": "The first capacity transition of the power-constrained Cauchy channel",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "certified-symmetric-corridor",
+      "title": "对称临界共形走廊的严格数值夹界",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "chained-index-uniform-direct-product",
+      "title": "链式索引的统一通信下界与强直接积",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "chern-simons-four-cycle",
+      "title": "用同一个四环链接解释所有级数的多重熵坍缩违反",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "chern-simons-order-three",
+      "title": "四分量 Abelian Chern–Simons 链接态的三阶多重熵坍缩",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "chordal-bipartite-edge-open-packing",
+      "title": "弦二分图上最大边开堆积的多项式算法",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "chordal-unique-vertex-cover-preassignment",
+      "title": "唯一最小顶点覆盖预指派在弦图与区间图上的复杂度",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "ci-score-quadratic-rigidity",
+      "title": "条件独立信息评分的结构刚性、精确 Shannon 修复预算与二元最小修复",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "class-domination-coloring-cluster-deletion",
+      "title": "色类支配着色按团簇顶点删除数固定参数可解",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "class-domination-coloring-treewidth",
+      "title": "色类支配着色的显式树宽参数算法",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "classifier-accuracy-augmented-gof",
+      "title": "用单个扩充字母表二值分类器消除稀疏拟合度检验的额外对数损失 · Log-free sparse goodness-of-fit by one augmented binary classifier",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "clique-dually-conformal-induced-extension",
+      "title": "每个有限图都有团对偶共形的诱导扩张 · Every finite graph has a clique dually conformal induced extension",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "collapsing-bandit-global-indexability",
+      "title": "二态 Collapsing Bandit 的全参数阈值结构、可指数性与精确指数",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "common-law-lqr-affine-boundary",
+      "title": "共同扰动分布下的仿射最优性：时域精确边界、暴露面刚性与矩证书",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "common-top-good-constructive-efx",
+      "title": "共同最高单件下的完整 EFX：构造、束型困难性和四人核",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/efx-four-agents-eight-goods/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "commuting-effect-threshold",
+      "title": "Lüders 粗粒化可以增大测量顺序分数",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "complete-bipartite-tar-rigidity",
+      "title": "完全二分图的功率支配重配置刚性",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "complete-fixed-count-classification",
+      "title": "Exact cumulative envy is already hard for two agents",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "complete-multipartite-potentials-and-weighted-cycles",
+      "title": "完全多分图上的多样性跳跃博弈：共享权重势与个别权重循环",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {
+        "papers/complete-multipartite-potentials-and-weighted-cycles/evidence/code/verify.py": "papers/complete-multipartite-potentials-and-weighted-cycles/code/verify.py"
+      }
+    },
+    {
+      "slug": "composite-sequential-test-induction",
+      "title": "Optimal induction of bounded composite sequential tests on finite trees",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "composition-multiple-orders",
+      "title": "Several optimal Rényi orders under randomized-response composition",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "conditional-information-power-boundaries",
+      "title": "Information loss and sharp power limits for conditional Gamma calibration",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "conjugate-resetting-global-optimality",
+      "title": "Global optimality and uniqueness for conjugate-target renewal resetting",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "continuous-high-risk-prefactor",
+      "title": "连续时间 CVaR 滑雪租赁的精确高风险首项",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/risk-sensitive-ski-rental/paper.en.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "continuous-star-partition-optimality",
+      "title": "Optimal centroid partitions in one-trap games on finite metric trees",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "convex-scenario-compression-transfer",
+      "title": "严格可行凸场景优化的全参数风险下界与极小极大样本校准",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "convex-scenario-finite-decision-realizations",
+      "title": "Exact finite-decision realizations in strictly feasible convex scenario optimization",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "counted-feedback-additive-frontier",
+      "title": "The additive cost of counted feedback at the growing-round erasure frontier",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "critical-sparse-audit-stopping-limits",
+      "title": "Exact and local minimax stopping costs for critical sparse audits",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {
+        "papers/critical-sparse-audit-stopping-limits/evidence/code/verify_exact.py": "papers/critical-sparse-audit-stopping-limits/code/verify_exact.py"
+      }
+    },
+    {
+      "slug": "cvar-one-max-exact-optimality",
+      "title": "风险敏感一次在线卖出的精确最优值",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "dca-sharp-finite-horizon",
+      "title": "Sharp Finite-Horizon Descent for the Difference-of-Convex Algorithm",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "delayed-newton-cooling-optimal-preparation",
+      "title": "时滞牛顿冷却中的全历史最优制备",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "deletion-intersection-counterexample",
+      "title": "距离三删除球交集精确值猜想的有限反例",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "detailed-balance-frequency-reduction",
+      "title": "平均增长频率单调性的细致平衡判据 · The detailed-balance boundary for annealed frequency reduction",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/annealed-frequency-reduction/paper.en.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "directed-cycle-two-season-witness",
+      "title": "Two-season frequency witnesses on directed cycles",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "dominant-jordan-order-limit",
+      "title": "Sharp Jordan-order limits for monitored qubit first-passage kernels",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "domination-packing-split-rectangle",
+      "title": "分裂矩形相交图的支配与打包之比至多为四",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "efx-binary-partition-nullity",
+      "title": "两类拟阵零度家务的最坏近似 EFX 因子",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "efx-four-agents-eight-goods",
+      "title": "四人八物品 EFX 存在性的共同双件支配充分条件",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "efx-matroid-rank-chores",
+      "title": "共同独立集如何保证拟阵秩费用下的杂务 EFX",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "euclidean-median-all-p-sharp",
+      "title": "所有有限社会成本指数下欧氏坐标中位数的尖锐保证",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "even-cycle-replica-branch-separation",
+      "title": "任意偶环图态的两条精确复制算术分支",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "exact-convex-profile-capital",
+      "title": "Exact capital for convex-profile e-value mergers",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "exact-coverage-and-risk-transitions",
+      "title": "Exact Two-Sided Coverage of the Bivariate Gaffke Intervals",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {
+        "papers/exact-coverage-and-risk-transitions/evidence/code/verify_comparisons.py": "papers/exact-coverage-and-risk-transitions/code/verify_comparisons.py",
+        "papers/exact-coverage-and-risk-transitions/evidence/code/verify_exact.py": "papers/exact-coverage-and-risk-transitions/code/verify_exact.py",
+        "papers/exact-coverage-and-risk-transitions/evidence/results/comparisons.json": "papers/exact-coverage-and-risk-transitions/results/comparisons.json",
+        "papers/exact-coverage-and-risk-transitions/evidence/results/main.json": "papers/exact-coverage-and-risk-transitions/results/main.json"
+      }
+    },
+    {
+      "slug": "exact-finite-power-plateau",
+      "title": "Exact finite-power prediction with corrupted smooth feedback",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "exact-principal-entropy-endpoint",
+      "title": "The exact principal entropy endpoint near a three-state sampling resonance",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "exchangeable-arithmetic-merging-improvement",
+      "title": "可交换算术合并规则的严格改进",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "faster-edge-open-packing",
+      "title": "弦图与凸二分图上更快的最大边开堆积算法",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "faster-isometric-paths-chain",
+      "title": "链图等距路径划分与覆盖的更快算法",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "faster-isometric-paths-cographs",
+      "title": "余图等距路径覆盖与划分的更快算法",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "finite-cardinality-profile",
+      "title": "Finite-size nonmonotone submodular correlation gaps",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "finite-common-preparation",
+      "title": "Optimal finite preparation for delayed Newton cooling",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "finite-n-prediction-scheduling",
+      "title": "The exact finite-job consistency–robustness frontier for non-clairvoyant scheduling",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "finite-pinwheel-three-task",
+      "title": "有限 Pinwheel 排程的期限障碍与两访参数算法",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "finite-reversible-certificates-and-spectral-criteria",
+      "title": "有限可逆链的修正对数 Sobolev 常数：重心证书与谱隙分岔",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {
+        "papers/finite-reversible-certificates-and-spectral-criteria/evidence/code/verify.py": "papers/finite-reversible-certificates-and-spectral-criteria/code/verify.py"
+      }
+    },
+    {
+      "slug": "finite-worst-models-transient-learning",
+      "title": "Transient learning at a common reward threshold in finite-state Markov decision processes",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "first-count-tomography",
+      "title": "Three Laplace samples generically identify a quantum no-jump generator",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "first-passage-kernel-inverse-realization",
+      "title": "量子首次通过核的逆实现与任意维可见例外点",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "fixed-agent-cumulative-envy",
+      "title": "固定至少四个代理时，累计嫉妒最小化的弱 NP 完全性",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "fixed-angle-mbqc-unitary-design",
+      "title": "任意量子比特数的固定角测量型精确酉二设计",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "fixed-population-sharp-deficit",
+      "title": "The finite-population effect for Euclidean coordinate medians",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "fixed-statistic-sensitivity-envelope",
+      "title": "Sharp fixed-statistic sensitivity envelopes for Gaffke's statistic",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "floquet-many-frequency-optima",
+      "title": "固定不可逆生成元的任意多重频率峰",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "four-qubit-fredkin-exact-entangling-power",
+      "title": "多控制 Fredkin 门的精确纠缠能力",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "four-qubit-pauli-mub-obstruction-and-robustness",
+      "title": "Two-level Pauli spectra and the four-qubit obstruction to mutually unbiased orbits",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [
+        "papers/pauli-mub-phase-rigidity/paper.en.md",
+        "papers/three-qubit-pauli-mub-obstruction/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "fractional-advice-paw-transfer",
+      "title": "分数建议在线匹配的无损 PAW 保证转移与因果有限实现",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "full-cover-unidomination-chordal",
+      "title": "全覆盖唯一支配在弦图上的困难性及区间图算法",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "full-domain-capital-tensorization",
+      "title": "Finite-grid witnesses and full-domain tensorization for read-once e-value capital",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "gaffke-bivariate-interval-inversion",
+      "title": "双变量 Gaffke 改进规则的精确反演与最大区间缩减",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "gaffke-delta-sharp-bound",
+      "title": "Gaffke 统计量留一系数的尖锐下界",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "gaffke-ordered-iid-interval",
+      "title": "利用观测顺序确定性缩短 Gaffke 置信区间",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "gamma-calibration-unknown-dispersion",
+      "title": "未知离散度下 Gamma 均值检验的有限样本条件似然",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "gaussian-frequency-gradient-variance",
+      "title": "高斯频率模型的梯度方差精确渐近",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "gaussian-product-privacy-floor",
+      "title": "A nonvanishing privacy floor for Gaussian-product post-processing",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "gaussian-product-sharp-zcdp",
+      "title": "The exact asymptotic privacy gain of the Gaussian-product mechanism",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/gaussian-product-privacy-floor/paper.en.md",
+        "papers/gaussian-product-privacy-floor/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "gaussian-simes-high-level-trivariate",
+      "title": "三维双侧高斯 Simes 检验在水平一附近的精确控制",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "gaussian-threshold-phase-curve",
+      "title": "The exact Gaussian threshold noise-stability phase curve",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "general-qutrit-cooling",
+      "title": "三态机器在任意有限系统上的锐冷却耗散界",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "ghz-pauli-readout-depth",
+      "title": "一维随机 Pauli 读出恢复 GHZ 相位的最优对数深度",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "glauber-activity-counterexample",
+      "title": "降温可使 Glauber 活动度超过二分之一",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "glauber-annealing-activity-counterexample",
+      "title": "Glauber 退火中过量活动度的桥结构机制",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "graph-burning-long-path-forests",
+      "title": "长路径森林燃烧阈值的构造性近线性上界",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "gray-critical-endpoint",
+      "title": "Dispersion at the Gray distortion endpoint for binary Markov sources",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "growing-round-blocklength",
+      "title": "Polynomial forward length for growing-round adaptive erasure feedback",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "haar-schmidt-magic",
+      "title": "Schmidt 稳定子熵的随机极限与单项局部酉极小态",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "hard-budget-covariance-fourth-moment",
+      "title": "纵向硬预算协方差与低秩异质风险",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "heavy-ball-planar-cycle-domain",
+      "title": "重球周期轨道的最小维数和开集稳定性",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "high-order-parity-gap",
+      "title": "High-order parity gaps and crossover radii for noisy qubit designs",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "high-overlap-crossover",
+      "title": "A Poisson-to-Gaussian crossover for nearly coincident threshold counts",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "high-temperature-gibbs-weak-noise",
+      "title": "高温 Gibbs 态在弱局域量子信道下的一致 Markov 性：定量补全稿",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "independent-e-merging-beyond-martingales",
+      "title": "Precise independent e-merging beyond reordered martingales",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "independent-winners-bias-extremizers",
+      "title": "独立评分赢家偏差的取等结构",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "integer-order-projection-law",
+      "title": "Magnetization projection at every integer stabilizer Rényi order",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "isometric-path-cover-split",
+      "title": "分裂图上的等距路径覆盖是 NP 完全的",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "johnson-representation-size",
+      "title": "诱导 Johnson 表示的地面规模与中位图最小秩",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "johnson-triangle-chain-parity",
+      "title": "闭合三角链的 Johnson 诱导表示",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "kcbs-rank-one-all-dimensions",
+      "title": "KCBS 五角环的标量及算子重叠锐界",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "krr-exact-zcdp",
+      "title": "任意类别数随机响应的精确 zCDP：全局相变、唯一最优阶与锐渐近",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "leave-one-out-mean-strong-duality",
+      "title": "非参数均值检验的留一强对偶与有限网格计算",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "lexicographic-swap-rounding-counterexample",
+      "title": "Lexicographic Swap Rounding Need Not Be 1-Negatively Associated",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "linear-threshold-path-forest-burning",
+      "title": "A linear threshold for optimal burning of long path forests",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "logconcave-band-smooth-minimax",
+      "title": "对数凹密度均匀置信带的量化分辨率",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {
+        "papers/logconcave-band-smooth-minimax/evidence/code/exact_bump_certificate.py": "papers/logconcave-band-smooth-minimax/code/exact_bump_certificate.py"
+      }
+    },
+    {
+      "slug": "loo-continuous-dual-closure-gap",
+      "title": "留一对偶的闭包效应与近单位间隙",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/leave-one-out-mean-strong-duality/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "loo-countable-measurable-duality",
+      "title": "可数收益的留一可测强对偶",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/loo-continuous-dual-closure-gap/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "low-order-failure-and-minimal-permutation-dimension",
+      "title": "排序 Schmidt 参考态在 $0<\\alpha<1$ 的失效与两种最小置换维数",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 2,
+      "legacy_paths": {
+        "papers/low-order-failure-and-minimal-permutation-dimension/evidence/code/verify.py": "papers/low-order-failure-and-minimal-permutation-dimension/code/verify.py"
+      }
+    },
+    {
+      "slug": "lueders-coarse-graining-tv",
+      "title": "Lüders 总变差顺序分数在测量粗粒化下增加的量子比特反例",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "markov-missing-mass-minimax",
+      "title": "可见再生词的未见平稳质量",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "maximum-total-transitivity-split",
+      "title": "独立侧度数为二的分裂图上最大总传递性为 NP 完全",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "mbqc-nine-measurement-five-design",
+      "title": "九次固定测量构造单量子比特精确酉五设计",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "minimizer-rigidity-stability",
+      "title": "Rigidity and stability of optimal quantum polygon approximations",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "minimum-fill-in-chordal-bipartite",
+      "title": "弦二分图上的近二次时间最小填边算法",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "minimum-fill-in-perfect-elimination-bipartite",
+      "title": "完全边消除二分图上的最小填边是 NP 完全的",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "minimum-maximal-acyclic-matching-chordal",
+      "title": "极大无环匹配的最小化：弦图的 NP 完全性与区间图算法",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "minimum-maximal-acyclic-matching-chordal-bipartite",
+      "title": "弦二分图上的最小极大无环匹配是 NP 完全的",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "mixed-null-square-root-boundary",
+      "title": "A square-root mixed-null inflation for weighted conformal BH",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "modular-magnetization-magic",
+      "title": "模磁化投影态的魔性分辨率定律",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "moment-bayes-minimax-geometry",
+      "title": "矩约束 Bayes 错误率的极值、达到及奇阶删阶",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "moment-conformal-misspecification",
+      "title": "错报外部矩时的保形预测覆盖偏差",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "multimachine-two-swap",
+      "title": "多机器二交换的持久临界作业",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "narrow-corridor-expansion",
+      "title": "Narrow corridors in critical online conformal prediction",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "near-linear-edge-open-packing",
+      "title": "区间图与排列图上的近线性最大边开堆积算法",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "noiseless-codes-few-binary-measurements",
+      "title": "用更少的二元测量认证无噪声量子编码",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "noisy-qubit-design-parity",
+      "title": "单量子比特酉设计偶奇噪声平台的精确判定",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "noisy-smooth-online-sharp-limit",
+      "title": "含恶意反馈的平滑函数在线学习：大幂次极小极大常数",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "non-overlapping-unidomination-threshold",
+      "title": "非重叠唯一支配平方根阈值的复杂度",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "nonadaptive-bernoulli-moment-characterization",
+      "title": "非自适应 Bernoulli 工厂的有限矩：精确的逼近判据",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "noncommuting-pell-aliases",
+      "title": "Noncommuting Markov aliases on a fixed cubic graph of girth six",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "nongreedy-exchangeable-rank-optimality",
+      "title": "Prefix constraints and optimal rank protection in online contention resolution",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "nonhermitian-skin-imbalance",
+      "title": "周期谱线隙与多体趋肤效应：一个严格反例",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "odd-cycle-exact-complexity",
+      "title": "Computational complexity of optimal Pauli error cancellation on odd cycles",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "odd-qudit-replica-phase-reflection",
+      "title": "奇素数稳定子多重 Rényi 复制收缩的正相位",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "one-fast-many-slow-threshold",
+      "title": "异质服务器折扣派工的全动作有限归约",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {
+        "papers/one-fast-many-slow-threshold/evidence/code/assignment_probe.py": "papers/one-fast-many-slow-threshold/code/assignment_probe.py",
+        "papers/one-fast-many-slow-threshold/evidence/code/tail_bound_certificate.py": "papers/one-fast-many-slow-threshold/code/tail_bound_certificate.py",
+        "papers/one-fast-many-slow-threshold/evidence/results/rational_policy_certificate.json": "papers/one-fast-many-slow-threshold/results/rational_policy_certificate.json",
+        "papers/one-fast-many-slow-threshold/evidence/results/tail_bound_certificate.json": "papers/one-fast-many-slow-threshold/results/tail_bound_certificate.json"
+      }
+    },
+    {
+      "slug": "online-conformal-critical-known-oracle",
+      "title": "临界覆盖约束的精确已知分布代价",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "online-conformal-critical-variational-limit",
+      "title": "未知分布临界共形预测的精确渐近变分极限",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/online-conformal-critical-known-oracle/paper.zh.md",
+        "papers/online-conformal-minimax-dp/paper.zh.md",
+        "papers/online-conformal-minimax-feedback/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "online-conformal-fixed-corridor",
+      "title": "固定双边覆盖约束下的精确在线预言机分歧率",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "online-conformal-minimax-dp",
+      "title": "未知分布下在线共形覆盖的精确有限时域极小极大值",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/online-conformal-critical-known-oracle/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "online-conformal-minimax-feedback",
+      "title": "平方根走廊内，向内调节秩阈值严格改善共形预测首项",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "online-conformal-parabolic-evaluation",
+      "title": "临界共形预测首项的固定区间抛物方程求值",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/online-conformal-critical-known-oracle/paper.zh.md",
+        "papers/online-conformal-critical-variational-limit/paper.zh.md",
+        "papers/online-conformal-minimax-dp/paper.zh.md",
+        "papers/online-conformal-minimax-feedback/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "online-conformal-sharp-constant",
+      "title": "The sharp cost of online conformal coverage in subdiffusive corridors",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "online-conformal-wide-corridor-asymptotic",
+      "title": "对称宽走廊下临界共形代价的精确渐近",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/online-conformal-critical-known-oracle/paper.zh.md",
+        "papers/online-conformal-critical-variational-limit/paper.zh.md",
+        "papers/online-conformal-minimax-dp/paper.zh.md",
+        "papers/online-conformal-minimax-feedback/paper.zh.md",
+        "papers/online-conformal-parabolic-evaluation/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "online-unbounded-knapsack-minimax",
+      "title": "在线无界背包的指定随机源与公平位",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "optimal-charging-entanglement",
+      "title": "Entanglement required for optimal charging in a Clifford battery",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "optimal-resetting-asymmetric",
+      "title": "一维对数凹目标的精确布朗重置分布",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/optimal-resetting-logconcave/paper.en.md",
+        "papers/optimal-resetting-logconcave/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "optimal-resetting-logconcave",
+      "title": "对称严格对数凹目标下的最优重置位置",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "order-seven-sharp-erasure",
+      "title": "The sharp seventh-order quantum Rényi erasure bound",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "order-six-sharp-erasure",
+      "title": "The sharp sixth-order quantum Rényi erasure bound",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "ordinal-causal-benefit-sharp-bounds",
+      "title": "局部对角尾占优下的有序因果获益锐界",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "ordinal-only-frontier",
+      "title": "Ordinal predictions attain the exact finite-job scheduling frontier",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "ordinal-query-secretary-upper-bound",
+      "title": "一次查询秘书问题的排列层级及有理界",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 11,
+      "legacy_paths": {
+        "papers/ordinal-query-secretary-upper-bound/evidence/code/verify_certificate.py": "papers/ordinal-query-secretary-upper-bound/code/verify_certificate.py",
+        "papers/ordinal-query-secretary-upper-bound/evidence/results/all_policy_coefficients.json": "papers/ordinal-query-secretary-upper-bound/results/all_policy_coefficients.json"
+      }
+    },
+    {
+      "slug": "ordinary-ef1-three-agent-counterexample",
+      "title": "加性外部性下 EF1 的最小三参与者反例",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "original-alphabet-hard-classifier",
+      "title": "Optimal identity testing with one hard classifier",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "pairwise-independent-online-crs-sharp",
+      "title": "有限独立激活下贪心在线冲突消解的最优损失指数",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "pairwise-independent-uniform-crs-sharp",
+      "title": "有限独立争用消解的精确异质保证区域",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "path-drift-switch-budget",
+      "title": "路径漂移与实际切换预算遗憾",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "pauli-lindblad-pec-parity",
+      "title": "Pauli–Lindblad 误差缓解的奇偶判据与开销渐近",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "pauli-mub-phase-rigidity",
+      "title": "乘积 Pauli 相互无偏基的奇偶障碍与相位刚性",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/three-qubit-pauli-mub-obstruction/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "perfect-tensor-renyi-multientropy",
+      "title": "四方完美张量的全整数 Rényi 多重熵",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "periodic-infinite-counterexamples",
+      "title": "Exact binary deletion-ball intersections with a growing alternating middle",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 3,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "poisson-threshold-noise-sharp",
+      "title": "泊松阈值噪声稳定性的精确强度边界",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "polynomial-exact-phase-sweep",
+      "title": "Exact phase complexity of discrete CVaR ski rental",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "position-matching-cut-width-one",
+      "title": "二次访问排程在切口宽度一时的线性算法",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "post-channel-feedback-support-rank",
+      "title": "Local support-rank classification of feedback gain in POST channels",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "post-conjugation-anisotropic-parity",
+      "title": "Parity under anisotropic noise applied after qubit Haar conjugation",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "posthoc-closed-stake-admissibility",
+      "title": "任意赌注集合下随机化事后检验的可容许性",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "posthoc-finite-stake-admissibility",
+      "title": "有限赌注事后检验的可容许性刻画",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "posthoc-randomized-admissibility",
+      "title": "似然比单调事后检验的可容许性",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "power-domination-token-jumping",
+      "title": "最小功率支配重配置的表示、宿主规模与可达性",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "ppt-squared-toroidal-mixing",
+      "title": "When pinching makes a Schur channel mixed unitary",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "precise-mergers-without-symmetry",
+      "title": "Precise independent e-value mergers without symmetry",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "private-slot-coalescence",
+      "title": "Private-chain silence does not reduce chained index below linear payload",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "processing-oracle-two-phase",
+      "title": "两阶段预言机调度中的持续差距与无条件自适应优化",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "proper-interval-linear-weighted",
+      "title": "Linear weighted full-cover unique domination on proper intervals",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "prophet-secretary-stockout",
+      "title": "以缺货概率校准在线阈值",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "pspin-curie-weiss-spinodal",
+      "title": "p-spin Curie–Weiss 模型在驻拐点边界上的混合时间",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "pure-entanglement-three-measurement-exclusion",
+      "title": "Three Projective Measurements Witness an Exclusion Advantage for Every Pure Entangled State",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "quantum-battery-separable-initialization",
+      "title": "完全图量子电池中可分初态的精确充电功率",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "quantum-channel-product-bound-universality",
+      "title": "Singular-value product bounds for quantum channels and the optimal qubit count",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "quantum-chi2-tensorization-regions",
+      "title": "量子 χ² 的异质张量化与精确区域",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "quantum-code-n23-m3-b2",
+      "title": "一个 23 量子比特 M₃ 候选权重枚举式的非实现性",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "quantum-renyi45-erasure-bound",
+      "title": "四阶与五阶量子 Rényi 信息合并的最优擦除界",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "quantum-transport-polygon-exactness",
+      "title": "量子输运代价的精确多边形逼近",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "quaternary-sum-entropy",
+      "title": "Entropy of independent four-letter sums: exact ray classes and unrestricted asymptotics",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "qubit-cooling-arbitrary-machine",
+      "title": "任意维热机器下双能级系统的二阶耗散下界",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "qubit-cooling-bernstein-certificate",
+      "title": "双能级冷却壳容量的多项式时间精确证书",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/qubit-cooling-arbitrary-machine/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "qubit-cooling-bounded-degeneracy",
+      "title": "有界简并量子冷却的超水平集解析证明与显式余量",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/qubit-cooling-arbitrary-machine/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "queue-routing-logarithmic-regret",
+      "title": "完工反馈队列路由与双临界极小极大",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {
+        "papers/queue-routing-logarithmic-regret/evidence/code/check_counterexample_bases.py": "papers/queue-routing-logarithmic-regret/code/check_counterexample_bases.py",
+        "papers/queue-routing-logarithmic-regret/evidence/code/robust_certificate.py": "papers/queue-routing-logarithmic-regret/code/robust_certificate.py",
+        "papers/queue-routing-logarithmic-regret/evidence/code/simulate.py": "papers/queue-routing-logarithmic-regret/code/simulate.py"
+      }
+    },
+    {
+      "slug": "ququart-swapping-fixed-resource-range",
+      "title": "四能级纠缠交换的固定资源精确可达区间",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "qutrit-ecqc-sharp-bound",
+      "title": "三维纯态 ECQC 的精确最优界",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "random-occupancy-threshold",
+      "title": "The sharp random EFX threshold for two-class nullity chores",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "randomized-weighted-two-job-robustness",
+      "title": "Sharp randomized robustness for two weighted nonclairvoyant jobs",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "rank-two-permutation-sharp-constant",
+      "title": "秩二有噪声置换信道的精确固定错误率定律",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "rank-two-scale-classification",
+      "title": "Which scalings of a rank-two quantum first-passage kernel are realizable?",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "rb-all-tensor-contractivity",
+      "title": "量子通道高阶张量矩的精确谱半径",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "reciprocal-reward-counterexamples",
+      "title": "超图搜索中的逆奖励策略：最小反例与锐5/6保证",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "record-constrained-prophet-gap",
+      "title": "独立同分布先知选择中的记录约束",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "reflecting-diffusion-frequency-classification",
+      "title": "反射扩散的周期与 Markov 切换频率分类",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "renyi-product-order-phase",
+      "title": "Rényi contraction of repeated symmetric channels",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "renyi-three-channel-frontier",
+      "title": "三阶 Rényi 约束下的最优通道设计",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "repeated-majority-cross-validation",
+      "title": "Sharp limits of repeated majority cross-validation",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "replicable-conformal-pilot-ranks",
+      "title": "以共享样本秩实现可复现的共形校准",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "reversible-environment-weak-response",
+      "title": "The weak-response frequency boundary for reversible Markov environments",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "risk-sensitive-ski-rental",
+      "title": "离散滑雪租赁的 CVaR 最优解与精确相变",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "risk-transfer-and-finite-horizon",
+      "title": "单次在线择价的全风险 CVaR 精确最优竞争比",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "robust-crt-fixed-channel-exact-design",
+      "title": "鲁棒 CRT 的固定通道精确设计：有限窗口、容量准多项式与五六通道最优证书",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "robust-secretary-acceptance-thinning",
+      "title": "随机接受在线选择的秩稀疏化、稀有接受锐极限与异质率信息边界",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "scalar-lq-global-learning-bifurcations",
+      "title": "标量 LQ 全局学习与自治离散临界步",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 2,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "schmidt-reference-renyi-half-counterexample",
+      "title": "排序 Schmidt 参考态最优性的半阶精确反例",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "second-statistic-auction-sharp-ratio",
+      "title": "第二高估值的稳健拍卖机制与唯一等化轨道",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 5,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "selection-audit-information",
+      "title": "选择性缺失下的稀疏随机复核",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "self-deleting-path-derandomization",
+      "title": "自删除图寻路的确定性参数界",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "sequential-ldp-autocovariance-minimax",
+      "title": "顺序局部隐私下的高斯自协方差估计",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "sequential-target-recalculation",
+      "title": "重算投注目标能带来多少收益",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "serial-service-frontier",
+      "title": "Serial service and the exact ordinal scheduling frontier",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "sharp-amplification-and-pointwise-monotonicity",
+      "title": "Sharp coarse-graining bounds for Lüders order scores",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {
+        "papers/sharp-amplification-and-pointwise-monotonicity/evidence/code/verify.py": "papers/sharp-amplification-and-pointwise-monotonicity/code/verify.py"
+      }
+    },
+    {
+      "slug": "sharp-conditional-ranks-under-tilts",
+      "title": "Sharp ordered Gaffke intervals under bounded likelihood tilts",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 2,
+      "legacy_paths": {
+        "papers/sharp-conditional-ranks-under-tilts/evidence/code/verify_exact.py": "papers/sharp-conditional-ranks-under-tilts/code/verify_exact.py",
+        "papers/sharp-conditional-ranks-under-tilts/evidence/code/verify_permanent_boundary.py": "papers/sharp-conditional-ranks-under-tilts/code/verify_permanent_boundary.py"
+      }
+    },
+    {
+      "slug": "sharp-minimal-failures",
+      "title": "Minimal negative-association failures of swap rounding",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "sharp-nonmonotone-correlation-gap",
+      "title": "非负次模函数在边际概率上限下的精确相关间隙",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "sharp-peripheral-jordan-order",
+      "title": "The sharp peripheral Jordan order of monitored quantum kernels",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "sharp-poisson-binomial-density-ratio",
+      "title": "异质伯努利和的泊松密度比及二阶损失",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "sharp-qubit-separable-gap",
+      "title": "Optimal separable gaps for perfect exclusion with a pure two-qubit probe",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "sharp-two-step-activity",
+      "title": "The sharp two-step activity bound for Glauber annealing on regular graphs",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "shell-capacity-spectral-bound",
+      "title": "共振权重层数给出的量子比特耗散下界",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "shifted-coefficient-boundary",
+      "title": "移位系数逐项非负法的适用边界",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "shuffle-rr-hamming-extremality",
+      "title": "联合 RR 洗牌的真实隐私上端包络",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 3,
+      "legacy_paths": {
+        "papers/shuffle-rr-hamming-extremality/evidence/code/cases.json": "papers/shuffle-rr-hamming-extremality/code/cases.json"
+      }
+    },
+    {
+      "slug": "sibuya-quantum-reset-rate",
+      "title": "Sibuya 时钟下量子重置归约的最优收敛速率",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "sibuya-reset-error-certificates",
+      "title": "Effective error certificates for Sibuya quantum resetting",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "simes-band-curvature",
+      "title": "Simes 带曲率的精确变号与全零假设线性系数的反例",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "single-frequency-inverse-identification",
+      "title": "Single-frequency identification of a reflected diffusion from weak Floquet response",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "single-qubit-fixed-angle-all-orders",
+      "title": "任意阶的单量子比特固定角测量型精确酉设计",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "single-qubit-marginal-first-passage-ep3",
+      "title": "单 qubit 普通首次通过时间的三阶例外点",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "six-cycle-even-replica-factorization",
+      "title": "六环图态偶阶复制秩的二素数分解",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "six-cycle-odd-index-entropy-rises",
+      "title": "六 qubit 多重熵在奇数指标上的无限次上升",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/six-cycle-replica-arithmetic/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "six-cycle-replica-arithmetic",
+      "title": "六环图态的奇阶复制秩及两条算术分支",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "slack-null-induction-complexity",
+      "title": "The complexity of exact terminal induction with slack composite nulls",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "smooth-gibbs-oracle-minimax",
+      "title": "光滑 Gibbs 有限查询的有界误差高温风险",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "speed-limited-harmonic-equilibration",
+      "title": "限速谐势阱的精确最省功控制",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "spired-graph-oracle-separation",
+      "title": "隐藏三正则图的相干恢复与指数级预言机分离",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "stabilizer-logical-pauli-visibility",
+      "title": "Extremal visibility of logical Pauli operators under product measurements",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [
+        "papers/ghz-pauli-readout-depth/paper.zh.md"
+      ],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "stable-matching-rat-barrier",
+      "title": "稳定匹配的有限信息安全操纵与精确信息组成",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "stroboscopic-three-state-entropy-range",
+      "title": "三态马尔可夫链有限精度观测下的熵产生双区间定理",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "strong-product-algebraic-squares",
+      "title": "强积代数平方与定核等翼修复",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [
+        "papers/cartesian-algebraic-squares/paper.zh.md"
+      ],
+      "unavailable_links": 2,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "subsampled-max-power-lqrt",
+      "title": "重抽样最大幂分样本似然比的水平反例",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "temporal-ef1-nine-chores-threshold",
+      "title": "时序 EF1 九件失败阈值与单参算法",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 4,
+      "legacy_paths": {
+        "papers/temporal-ef1-nine-chores-threshold/evidence/code/recovery_2026_11_25/construct_allocation.py": "papers/temporal-ef1-nine-chores-threshold/code/recovery_2026_11_25/construct_allocation.py"
+      }
+    },
+    {
+      "slug": "ternary-pairwise-moment",
+      "title": "两两独立的三水平乘积矩：完整最优分区与二进制耦合损失",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "thermodynamic-boundary-charge",
+      "title": "Thermodynamic boundary charge in the two-track non-Hermitian fermion chain",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "three-coordinate-extension-frontier",
+      "title": "The pointwise extension frontier of the exchangeable arithmetic prefix rule",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "three-item-obstructions-and-binary-existence",
+      "title": "Three Items with Additive Externalities: Oriented Obstructions and Binary Existence",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 8,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "three-qubit-depolarizing-majorization",
+      "title": "三量子比特的精确输出主序与最优经典通信",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "three-qubit-pauli-mub-obstruction",
+      "title": "三量子比特张量 Pauli 单轨道互无偏基的不存在性",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "three-state-mlsi-certificate",
+      "title": "三态热弛豫的全局熵衰减常数",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "topology-constrained-markov-reconstruction",
+      "title": "定时观测下马尔可夫生成元的拓扑刚性",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "transitive-composition-lift-complexity",
+      "title": "传递复合提升的复杂性与精确同步深度",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 4,
+      "legacy_paths": {
+        "papers/transitive-composition-lift-complexity/evidence/code/certificate_solver.py": "papers/transitive-composition-lift-complexity/code/certificate_solver.py",
+        "papers/transitive-composition-lift-complexity/evidence/code/forced_prefix.py": "papers/transitive-composition-lift-complexity/code/forced_prefix.py",
+        "papers/transitive-composition-lift-complexity/evidence/code/instances/compressed_counter_k3_slp.json": "papers/transitive-composition-lift-complexity/code/instances/compressed_counter_k3_slp.json",
+        "papers/transitive-composition-lift-complexity/evidence/code/instances/forced_prefix_nonempty.json": "papers/transitive-composition-lift-complexity/code/instances/forced_prefix_nonempty.json",
+        "papers/transitive-composition-lift-complexity/evidence/code/verify_certificate.py": "papers/transitive-composition-lift-complexity/code/verify_certificate.py",
+        "papers/transitive-composition-lift-complexity/evidence/results/automaton_checks.json": "papers/transitive-composition-lift-complexity/results/automaton_checks.json",
+        "papers/transitive-composition-lift-complexity/evidence/results/automaton_hardness_crosschecks.json": "papers/transitive-composition-lift-complexity/results/automaton_hardness_crosschecks.json",
+        "papers/transitive-composition-lift-complexity/evidence/results/compressed_witness_checks.json": "papers/transitive-composition-lift-complexity/results/compressed_witness_checks.json",
+        "papers/transitive-composition-lift-complexity/evidence/results/forced_prefix_checks.json": "papers/transitive-composition-lift-complexity/results/forced_prefix_checks.json",
+        "papers/transitive-composition-lift-complexity/evidence/results/forced_prefix_finite_graph.json": "papers/transitive-composition-lift-complexity/results/forced_prefix_finite_graph.json",
+        "papers/transitive-composition-lift-complexity/evidence/results/forced_prefix_nonempty_certificate.json": "papers/transitive-composition-lift-complexity/results/forced_prefix_nonempty_certificate.json",
+        "papers/transitive-composition-lift-complexity/evidence/results/hardness_checks.json": "papers/transitive-composition-lift-complexity/results/hardness_checks.json",
+        "papers/transitive-composition-lift-complexity/evidence/results/slp_checks.json": "papers/transitive-composition-lift-complexity/results/slp_checks.json"
+      }
+    },
+    {
+      "slug": "triangular-windmill-proper-hat",
+      "title": "合法着色猜帽中的三角风车图：精确值与三瓣饱和 · Proper hat guessing on triangular windmills",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "tripartite-nearest-spectral",
+      "title": "平衡完全三部图的唯一最近谱邻居",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [
+        "papers/tripartite-spectral-rank/paper.zh.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "tripartite-spectral-rank",
+      "title": "完全三部图的邻接谱秩间隙",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "two-agent-sd-ef1-market",
+      "title": "两参与者的主观 SD-EF1 与共同市场 EF1",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 15,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "two-box-pure-search-conjecture21",
+      "title": "两处位置的确定性搜索：一个参数族的最优性与唯一性",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "two-class-clearing-reward-threshold",
+      "title": "A Sharp Reward Threshold for Faster, More Patient Jobs in a Two-Class Clearing System",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "two-quadrant-complexity",
+      "title": "A two-quadrant complexity boundary for domination in split rectangle graphs",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "two-three-agent-complexity",
+      "title": "Cumulative envy is weakly NP-complete with two and three identical agents",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "two-visits-duplicate-midpoint",
+      "title": "二次访问排程的重复副本与单端点扫描",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "two-weight-qutrit-sharp-cooling",
+      "title": "Sharp local cooling capacity of resonant finite machines",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 2,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "unidomination-thresholds-planar-bipartite",
+      "title": "平面二分图上两种唯一支配的固定阈值",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "uniform-bin-minimum-rate",
+      "title": "An order \\(1/n\\) horizon bound for record-constrained prophet inequalities",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "uniform-endpoint-singular-correlations",
+      "title": "The trivariate Gaussian Simes inequality uniformly near level one",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "universal-fixed-degree-positivity",
+      "title": "Universal Bernstein positivity for qubit shell capacity",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "unknown-budget-robust-pricing",
+      "title": "未知污染预算定价的全前缀保证",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {
+        "papers/unknown-budget-robust-pricing/evidence/code/adversarial_pricing_partial_dp.py": "papers/unknown-budget-robust-pricing/code/adversarial_pricing_partial_dp.py",
+        "papers/unknown-budget-robust-pricing/evidence/results/FINAL_ALGORITHM_DP_RECOVERED_SUMMARY.json": "papers/unknown-budget-robust-pricing/results/FINAL_ALGORITHM_DP_RECOVERED_SUMMARY.json"
+      }
+    },
+    {
+      "slug": "unknown-gap-adaptation-boundary",
+      "title": "未知间距适应前沿与似然重尾分界",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {
+        "papers/unknown-gap-adaptation-boundary/evidence/code/reference_policy.py": "papers/unknown-gap-adaptation-boundary/code/reference_policy.py"
+      }
+    },
+    {
+      "slug": "unknown-reference-hard-sign-classifier",
+      "title": "Optimal two-sample closeness testing with one hard classifier",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "unknown-scale-onebit-mean-minimax",
+      "title": "未知尺度非自适应一比特均值估计的尖锐样本复杂度",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "unrestricted-correlation-boundary",
+      "title": "The trivariate two-sided Gaussian Simes inequality without a high-level correlation cap",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "upper-clique-transversal-helly-circular-arc",
+      "title": "Helly 圆弧图的最大极小团横截与锐利比例界",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "upper-clique-transversal-incidence-equality",
+      "title": "团横截与团关联图诱导匹配相等的判定复杂性",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "upper-clique-transversal-simultaneous-xp",
+      "title": "Upper Clique Transversal on simultaneous interval representations",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "upper-clique-transversal-strongly-chordal",
+      "title": "强弦图上最大极小团横截的多项式算法",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "vanishing-epsilon-two-scales",
+      "title": "Two scales of private e-power when epsilon tends to zero",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "variety-jump-subcubic-potential",
+      "title": "次三次图上双空位多样类型偏好跳跃博弈的度数修正势函数",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "wasserstein-barycenter-threshold-two",
+      "title": "经验 Wasserstein 重心二阈值猜想的有限反例",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "weak-order-and-common-anchors",
+      "title": "拟阵秩家务的公平分配与共同独立包的计算边界",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 2,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "weak-partial-swap-factorization",
+      "title": "变角部分交换中的全环境解耦、残差乘积与浴谱相界",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "weighted-ball-removal-gaussian-optimum",
+      "title": "带权移球的 Gaussian 最优偏移与余球分布",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "weighted-bernoulli-entropy-curvature",
+      "title": "加权伯努利熵的最终全参数严格凹性",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "weighted-bivariate-tail",
+      "title": "Sharp weighted bivariate tails under leave-one-out mean constraints",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "weighted-conformal-explicit-sample-threshold",
+      "title": "固定分布加权共形 BH 的显式样本量门槛",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "weighted-conformal-fixed-cap-curvature",
+      "title": "固定权重上界下全零加权共形 Simes 检验的尖锐曲率",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "weighted-conformal-global-null-linear-fdr",
+      "title": "加权共形 BH 的有限样本误报率线性上界",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "weighted-conformal-poisson-transfer",
+      "title": "加权共形 BH 的 Poisson 转移与共享阈值格点",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md",
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "weighted-conformal-spectral-rkhs",
+      "title": "协变量偏移下谱截断核回归的训练条件共形覆盖",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "weighted-interval-inapproximability",
+      "title": "Weighting makes unique-cover preassignment hard on interval graphs",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "weighted-maxcut-feedback",
+      "title": "实权最大割的稳定性、单中心度与弥散外围",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 5,
+      "legacy_paths": {
+        "papers/weighted-maxcut-feedback/evidence/code/exceptional_cut_distributions.py": "papers/weighted-maxcut-feedback/code/exceptional_cut_distributions.py",
+        "papers/weighted-maxcut-feedback/evidence/code/verify_chambers.py": "papers/weighted-maxcut-feedback/code/verify_chambers.py"
+      }
+    },
+    {
+      "slug": "weighted-regression-selection-frontier",
+      "title": "加权回归选择的风险边界与有限最坏实例",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 5,
+      "legacy_paths": {
+        "papers/weighted-regression-selection-frontier/evidence/code/computation/petersen_span_obstruction.py": "papers/weighted-regression-selection-frontier/code/computation/petersen_span_obstruction.py",
+        "papers/weighted-regression-selection-frontier/evidence/results/computation/petersen_span_certificate.json": "papers/weighted-regression-selection-frontier/results/computation/petersen_span_certificate.json",
+        "papers/weighted-regression-selection-frontier/evidence/results/geometry/matching_tetrahedra_d7.json": "papers/weighted-regression-selection-frontier/results/geometry/matching_tetrahedra_d7.json"
+      }
+    }
+  ]
+}

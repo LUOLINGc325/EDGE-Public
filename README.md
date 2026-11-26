@@ -9,6 +9,8 @@ Research outputs from a collaborative multi-model research system.
 The collection contains research manuscripts in computer science, statistics, operations research, theoretical economics, control theory, information theory, mathematics, and theoretical physics.
 
 - [Manuscripts / 论文目录](papers/)
+- [Browse by field / 按学科浏览](papers/BY_FIELD.md)
+- [Export a project / 导出单项成果](papers/EXPORT.md)
 
 Each manuscript should be read with its stated assumptions, scope, proofs and references. Inclusion in this collection does not establish external peer review, publication, originality priority, or end-to-end formal verification. Where supporting artifacts are not present, this repository does not claim to provide them.
 

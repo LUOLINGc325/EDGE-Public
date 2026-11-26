@@ -6,6 +6,8 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 **315 research entries / 成果条目 · 416 manuscript versions / 论文版本**
 
+[按学科浏览](BY_FIELD.md) · [导出单项成果](EXPORT.md) · [项目清单](CATALOG.json)
+
 | Research project / 研究项目 | 中文 | English |
 |---|:---:|:---:|
 | Exact erasure resilience with adaptively scheduled feedback | [阅读](adaptive-erasure-feedback-law/paper.zh.md) | [Read](adaptive-erasure-feedback-law/paper.en.md) |
