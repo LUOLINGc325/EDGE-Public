@@ -1,0 +1,58 @@
+{
+  "code_sha256": "94d001b6e57070f7a8257678e21c632bb37bb8135032225592088261d0748d55",
+  "compiler_command": "g++ -O3 -std=c++17 code/new_lmc_tight_search.cpp -o /tmp/new_lmc_tight_search",
+  "commands": [
+    "/tmp/new_lmc_tight_search 1 8 10000000",
+    "/tmp/new_lmc_tight_search 2 8 10000000"
+  ],
+  "heuristic_source": "Jorgensen, arXiv:2609.16208v1, Theorem 6.3",
+  "checks": [
+    {
+      "target_class": "exceptional_k5",
+      "bound": 8,
+      "initial_heuristic": 8,
+      "visited": 3393061,
+      "interrupted": false,
+      "found": false,
+      "exhaustive_failure": true,
+      "elapsed_seconds": 56.7602,
+      "failed_states_by_remaining": [
+        0,
+        0,
+        0,
+        0,
+        1852620,
+        152940,
+        4755,
+        90,
+        1
+      ],
+      "quotient_path_pauli_masks": []
+    },
+    {
+      "target_class": "dual_axis",
+      "bound": 8,
+      "initial_heuristic": 8,
+      "visited": 3655981,
+      "interrupted": false,
+      "found": false,
+      "exhaustive_failure": true,
+      "elapsed_seconds": 61.2043,
+      "failed_states_by_remaining": [
+        0,
+        0,
+        0,
+        0,
+        2001120,
+        161580,
+        4815,
+        90,
+        1
+      ],
+      "quotient_path_pauli_masks": []
+    }
+  ],
+  "scope": "Complete bounded search for both five-qubit optimal classes modulo free output locals and permutations. The all-optima conclusion additionally requires the separate complete k=5 classification.",
+  "kernel_certificate": false,
+  "independent_review": "formal_review independently audited the quotient and source heuristic, recompiled, and reproduced both exact visit/failed-state counts; separate review file binds source hash"
+}

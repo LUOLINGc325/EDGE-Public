@@ -1,0 +1,135 @@
+{
+  "adversarial": [
+    {
+      "example": "even_k6_same_rank_pattern",
+      "rejection": {
+        "accepted": false,
+        "reason": "off-matching block factorization failed",
+        "witness": {
+          "actual": 9,
+          "column": 4,
+          "expected": 14,
+          "row": 3
+        }
+      },
+      "symplectic": true
+    },
+    {
+      "example": "odd_k9_all_blocks_invertible",
+      "rejection": {
+        "accepted": false,
+        "reason": "row-ratio multiplicities are not k-2,1,1",
+        "witness": {
+          "counts": {
+            "7": 3,
+            "9": 3,
+            "14": 3
+          },
+          "rows": [
+            0,
+            1
+          ]
+        }
+      },
+      "symplectic": true
+    }
+  ],
+  "centralizers": {
+    "even": [
+      6,
+      9
+    ],
+    "odd": [
+      7,
+      9,
+      14
+    ]
+  },
+  "dense_dephasing_exhaustion": [
+    {
+      "distinct_dense_dephased_matrices": 2,
+      "equivalent_to_identity_matching": 6,
+      "k": 3,
+      "relative_matchings_tested": 6
+    },
+    {
+      "distinct_dense_dephased_matrices": 240,
+      "equivalent_to_identity_matching": 1,
+      "k": 5,
+      "relative_matchings_tested": 120
+    },
+    {
+      "distinct_dense_dephased_matrices": 10080,
+      "equivalent_to_identity_matching": 1,
+      "k": 7,
+      "relative_matchings_tested": 5040
+    }
+  ],
+  "even_fixed_shift_exhaustion": [
+    {
+      "distinct_matrices": 128,
+      "k": 4,
+      "local_factor_tuples_tested": 256
+    },
+    {
+      "distinct_matrices": 2048,
+      "k": 6,
+      "local_factor_tuples_tested": 4096
+    }
+  ],
+  "optimizer_counts": {
+    "10": 6633733873650263654400,
+    "11": 1751305742643669604761600,
+    "12": 1134846121233097903885516800,
+    "6": 783641640960,
+    "7": 131651795681280,
+    "8": 56873575734312960,
+    "9": 12284692358611599360
+  },
+  "recognition": [
+    {
+      "altered_matrix_rejected_by_original_certificate": 80,
+      "k": 6,
+      "mutations_accepted_with_valid_new_certificate": 0,
+      "mutations_rejected": 80,
+      "random_orbit_members_accepted": 80
+    },
+    {
+      "altered_matrix_rejected_by_original_certificate": 80,
+      "k": 7,
+      "mutations_accepted_with_valid_new_certificate": 0,
+      "mutations_rejected": 80,
+      "random_orbit_members_accepted": 80
+    },
+    {
+      "altered_matrix_rejected_by_original_certificate": 80,
+      "k": 8,
+      "mutations_accepted_with_valid_new_certificate": 0,
+      "mutations_rejected": 80,
+      "random_orbit_members_accepted": 80
+    },
+    {
+      "altered_matrix_rejected_by_original_certificate": 80,
+      "k": 9,
+      "mutations_accepted_with_valid_new_certificate": 0,
+      "mutations_rejected": 80,
+      "random_orbit_members_accepted": 80
+    },
+    {
+      "altered_matrix_rejected_by_original_certificate": 80,
+      "k": 12,
+      "mutations_accepted_with_valid_new_certificate": 0,
+      "mutations_rejected": 80,
+      "random_orbit_members_accepted": 80
+    },
+    {
+      "altered_matrix_rejected_by_original_certificate": 80,
+      "k": 17,
+      "mutations_accepted_with_valid_new_certificate": 0,
+      "mutations_rejected": 80,
+      "random_orbit_members_accepted": 80
+    }
+  ],
+  "scope": "all optimizer matrices k>=6; matrix count excludes Clifford phases; no CNOT optimum claim",
+  "status": "passed"
+}

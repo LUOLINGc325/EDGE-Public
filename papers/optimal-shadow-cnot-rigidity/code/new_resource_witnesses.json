@@ -1,0 +1,1740 @@
+{
+  "schema_version": 1,
+  "gate_model": "no ancillas; H/S free; every actual CNOT counted; no wire permutation operations",
+  "witnesses": [
+    {
+      "name": "k4_path_7",
+      "k": 4,
+      "connectivity": "labelled_path",
+      "cnot_count": 7,
+      "score": 449,
+      "final_rows": [
+        21,
+        106,
+        118,
+        189,
+        81,
+        183,
+        103,
+        159
+      ],
+      "search_seed": 731,
+      "search_iterations": 456,
+      "search_method": "bounded heuristic over weight-two transvections and free output local frames",
+      "minimality_claim": "exact, conditional on independently checked resource_path_timing theorem",
+      "physical_gates": [
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "CNOT",
+          "control": 1,
+          "target": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "CNOT",
+          "control": 2,
+          "target": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "CNOT",
+          "control": 0,
+          "target": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "CNOT",
+          "control": 1,
+          "target": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "CNOT",
+          "control": 2,
+          "target": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "CNOT",
+          "control": 0,
+          "target": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "CNOT",
+          "control": 1,
+          "target": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        }
+      ],
+      "transvection_word_with_free_canonical_locals": [
+        [
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          3,
+          2
+        ],
+        [
+          0,
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          3
+        ],
+        [
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          1,
+          3
+        ]
+      ],
+      "free_wire_permutation_used": false
+    },
+    {
+      "name": "k5_complete_9",
+      "k": 5,
+      "connectivity": "complete",
+      "cnot_count": 9,
+      "score": 2403,
+      "final_rows": [
+        426,
+        757,
+        443,
+        749,
+        358,
+        729,
+        409,
+        630,
+        494,
+        695
+      ],
+      "search_seed": 732,
+      "search_iterations": 8729,
+      "search_method": "bounded heuristic over weight-two transvections and free output local frames",
+      "minimality_claim": "none; constructive upper bound only",
+      "physical_gates": [
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "CNOT",
+          "control": 2,
+          "target": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "CNOT",
+          "control": 1,
+          "target": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "CNOT",
+          "control": 3,
+          "target": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "CNOT",
+          "control": 0,
+          "target": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "CNOT",
+          "control": 0,
+          "target": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "CNOT",
+          "control": 0,
+          "target": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "CNOT",
+          "control": 2,
+          "target": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "CNOT",
+          "control": 1,
+          "target": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "CNOT",
+          "control": 3,
+          "target": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        }
+      ],
+      "transvection_word_with_free_canonical_locals": [
+        [
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          1,
+          4,
+          1,
+          1
+        ],
+        [
+          3,
+          4,
+          2,
+          1
+        ],
+        [
+          0,
+          4,
+          2,
+          2
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          3,
+          3
+        ],
+        [
+          2,
+          3,
+          3,
+          3
+        ],
+        [
+          1,
+          2,
+          3,
+          3
+        ],
+        [
+          3,
+          4,
+          3,
+          3
+        ]
+      ],
+      "free_wire_permutation_used": false
+    },
+    {
+      "name": "k5_path_12",
+      "k": 5,
+      "connectivity": "labelled_path",
+      "cnot_count": 12,
+      "score": 2403,
+      "final_rows": [
+        501,
+        603,
+        511,
+        598,
+        487,
+        634,
+        439,
+        730,
+        346,
+        685
+      ],
+      "search_seed": 732,
+      "search_iterations": 224442,
+      "search_method": "bounded heuristic over weight-two transvections and free output local frames",
+      "minimality_claim": "none; constructive upper bound only",
+      "physical_gates": [
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "CNOT",
+          "control": 3,
+          "target": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "CNOT",
+          "control": 0,
+          "target": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "CNOT",
+          "control": 2,
+          "target": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "CNOT",
+          "control": 1,
+          "target": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "CNOT",
+          "control": 2,
+          "target": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "CNOT",
+          "control": 3,
+          "target": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "CNOT",
+          "control": 0,
+          "target": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "CNOT",
+          "control": 1,
+          "target": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "CNOT",
+          "control": 2,
+          "target": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "CNOT",
+          "control": 1,
+          "target": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "S",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 2
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "CNOT",
+          "control": 0,
+          "target": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 0
+        },
+        {
+          "gate": "S",
+          "qubit": 0
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 1
+        },
+        {
+          "gate": "H",
+          "qubit": 1
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "CNOT",
+          "control": 3,
+          "target": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "H",
+          "qubit": 3
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        },
+        {
+          "gate": "H",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 4
+        },
+        {
+          "gate": "S",
+          "qubit": 3
+        }
+      ],
+      "transvection_word_with_free_canonical_locals": [
+        [
+          3,
+          4,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3,
+          3
+        ],
+        [
+          2,
+          3,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          1,
+          3
+        ],
+        [
+          3,
+          4,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          3,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          3,
+          4,
+          3,
+          3
+        ]
+      ],
+      "free_wire_permutation_used": false
+    }
+  ]
+}

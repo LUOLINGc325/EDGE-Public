@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "arithmetic": "symbolic rational identities and exact algebraic numbers",
+  "sympy_version": "1.14.0",
+  "schur_identity_residual": "0",
+  "schur_identity_domain": "0<|s|<1, 0<c<s^2, |t|<1, |u|<1, t!=s, u!=s",
+  "objective_first_derivative": "-D*nu2/q**2 + nu1",
+  "objective_second_derivative": "2*D*nu2/q**3",
+  "global_minimizer": "q=min(D,max(L,sqrt(D*nu2/nu1)))",
+  "objective_domain": "D=product(singleton_pole^2), L=max(1,singleton_pole^2), 0<nu1<=nu2, q in [max(L,sqrt(D)),D]",
+  "threshold_cases": [
+    {
+      "name": "empty_tail",
+      "poles": [],
+      "noise_variances": [
+        "1",
+        "1"
+      ],
+      "D": "1",
+      "L": "1",
+      "q": "1",
+      "gamma2": "1",
+      "tail_threshold": "0"
+    },
+    {
+      "name": "one_singleton",
+      "poles": [
+        "2"
+      ],
+      "noise_variances": [
+        "1",
+        "1"
+      ],
+      "D": "4",
+      "L": "4",
+      "q": "4",
+      "gamma2": "1",
+      "tail_threshold": "3"
+    },
+    {
+      "name": "negative_singleton_same_power",
+      "poles": [
+        "-2"
+      ],
+      "noise_variances": [
+        "1",
+        "1"
+      ],
+      "D": "4",
+      "L": "4",
+      "q": "4",
+      "gamma2": "1",
+      "tail_threshold": "3"
+    },
+    {
+      "name": "dominant_pole_equal_noise",
+      "poles": [
+        "3",
+        "2"
+      ],
+      "noise_variances": [
+        "1",
+        "1"
+      ],
+      "D": "36",
+      "L": "9",
+      "q": "9",
+      "gamma2": "4",
+      "tail_threshold": "11"
+    },
+    {
+      "name": "interior_water_filling_known_old_example",
+      "poles": [
+        "2",
+        "5/4"
+      ],
+      "noise_variances": [
+        "1",
+        "4"
+      ],
+      "D": "25/4",
+      "L": "4",
+      "q": "5",
+      "gamma2": "5/4",
+      "tail_threshold": "5"
+    },
+    {
+      "name": "interior_equal_noise_three_distinct_poles",
+      "poles": [
+        "2",
+        "3",
+        "4"
+      ],
+      "noise_variances": [
+        "1",
+        "1"
+      ],
+      "D": "576",
+      "L": "16",
+      "q": "24",
+      "gamma2": "24",
+      "tail_threshold": "46"
+    },
+    {
+      "name": "pole_water_filling_switch",
+      "poles": [
+        "3",
+        "2"
+      ],
+      "noise_variances": [
+        "1",
+        "9/4"
+      ],
+      "D": "36",
+      "L": "9",
+      "q": "9",
+      "gamma2": "4",
+      "tail_threshold": "59/4"
+    },
+    {
+      "name": "water_filling_shutoff_switch",
+      "poles": [
+        "3",
+        "2"
+      ],
+      "noise_variances": [
+        "1",
+        "36"
+      ],
+      "D": "36",
+      "L": "9",
+      "q": "36",
+      "gamma2": "1",
+      "tail_threshold": "35"
+    },
+    {
+      "name": "strict_weak_channel_shutoff",
+      "poles": [
+        "3",
+        "2"
+      ],
+      "noise_variances": [
+        "1",
+        "49"
+      ],
+      "D": "36",
+      "L": "9",
+      "q": "36",
+      "gamma2": "1",
+      "tail_threshold": "35"
+    }
+  ],
+  "transition_identities": {
+    "dominant_to_water_filling": "0",
+    "water_filling_to_shutoff": "0"
+  },
+  "merger": {
+    "repeated_threshold": "a**2*(b**2 + 1) - 2",
+    "cyclic_limit": "2*a**2*b - 2",
+    "gap": "a**2*(b - 1)**2",
+    "a_equals_b_squared_ratio": "(b + 1)*(b**4 + 2*b**2 + 2)/(2*(b**4 + b**3 + b**2 + b + 1))",
+    "ratio_divided_by_b_limit": "1/2",
+    "family_positivity_domain": "b>1; a=b^2>b",
+    "three_two_example_repeated": "43",
+    "three_two_example_simple_spectrum_limit": "34"
+  },
+  "limits": [
+    "The scalar Schur identity does not by itself prove the all-dynamic-LTI converse.",
+    "The closed-form calculation assumes the established cyclic feasibility conditions.",
+    "All thresholds are infima; boundary strict-feasibility and covariance closure need their mathematical proofs."
+  ]
+}

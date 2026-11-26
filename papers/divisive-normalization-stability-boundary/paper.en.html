@@ -1,0 +1,1228 @@
+<h1
+id="stability-boundaries-of-divisive-normalization-circuits-norm-one-counterexamples-and-sharp-spectral-repairs">Stability
+boundaries of divisive-normalization circuits: norm-one counterexamples
+and sharp spectral repairs</h1>
+<p><strong>Research draft — 26 November 2026.</strong> The results below
+are written mathematical arguments, subject to independent scrutiny.
+External peer review and formal proof-assistant verification have not
+been completed.</p>
+<h2 id="abstract">Abstract</h2>
+<p>We study the main ORGaNICs differential equation of Rawat, Heeger and
+Martiniani and its conjectured existence of an asymptotically stable
+equilibrium under a unit spectral-norm constraint on recurrence. Two
+rational examples with strictly positive dense recurrent and
+normalization matrices disprove that conjecture: one has no equilibrium,
+while the other has a unique hyperbolic unstable equilibrium despite
+positive input and positive equilibrium coordinates. The second
+obstruction persists in a relative-open set of the full admissible
+parameter space. For symmetric contractive recurrence with shared
+uniform pooling and common time constants, we prove an exact
+replacement: universal existence of a unique locally exponentially
+stable equilibrium is equivalent to positive definiteness of recurrence.
+For singular positive semidefinite recurrence, an exact input-energy
+budget in its kernel is necessary and sufficient. For recurrence fixing
+the constant vector and a constant input, we classify every equilibrium,
+including negative-eigenspace spheres, and obtain a sharp
+stable-equilibrium threshold. Its equality case is nonlinearly unstable.
+Finally, a coordinate threshold excludes every stable equilibrium for
+negative identity recurrence with arbitrary nonnegative pooling of
+positive diagonal and arbitrary positive heterogeneous time constants.
+These are equilibrium and local stability statements; no claim of global
+attraction or improved learning performance is made.</p>
+<h2 id="problem-model-and-contribution-boundary">1. Problem, model and
+contribution boundary</h2>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq1</annotation></semantics></math>,
+write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>𝟏</mn><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>⊤</mi></msup></mrow><annotation encoding="application/x-tex">\mathbf1=(1,\ldots,1)^\top</annotation></semantics></math>,
+and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mo>+</mo></msub><annotation encoding="application/x-tex">a_+</annotation></semantics></math>
+denote coordinatewise positive part. Products and powers of vectors are
+coordinatewise unless explicitly indicated. We consider</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>y</mi></msub><mover><mi>y</mi><mo accent="true">̇</mo></mover><mo>=</mo><mi>−</mi><mi>y</mi><mo>+</mo><mi>u</mi><mo>+</mo><mi>D</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>𝟏</mn><mo>−</mo><msqrt><msub><mi>a</mi><mo>+</mo></msub></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mi>R</mi><mi>y</mi><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>T</mi><mi>a</mi></msub><mover><mi>a</mi><mo accent="true">̇</mo></mover><mo>=</mo><mi>−</mi><mi>a</mi><mo>+</mo><mi>c</mi><mo>+</mo><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mo>+</mo></msub><mo>⊙</mo><msup><mi>y</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+T_y\dot y=-y+u+D(\mathbf1-\sqrt{a_+})Ry,
+\qquad
+T_a\dot a=-a+c+W(a_+\odot y^2),                       \tag{1}
+</annotation></semantics></math></p>
+<p>where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>,</mo><mi>a</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">y,a\in\mathbb R^n</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>y</mi></msub><mo>,</mo><msub><mi>T</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">T_y,T_a</annotation></semantics></math>
+are positive diagonal matrices,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c_i&gt;0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">W_{ij}\geq0</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is real. Here
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">D(v)</annotation></semantics></math>
+is the diagonal matrix with diagonal
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>.
+In the source notation,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>b</mi><mo>⊙</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">u=b\odot z</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><msubsup><mi>b</mi><mn>0</mn><mn>2</mn></msubsup><mo>⊙</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">c=b_0^2\odot\sigma^2</annotation></semantics></math>,
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>,</mo><msub><mi>b</mi><mn>0</mn></msub><mo>,</mo><mi>σ</mi></mrow><annotation encoding="application/x-tex">b,b_0,\sigma</annotation></semantics></math>
+strictly positive. There are no upper bounds on those positive
+parameters in the stated conjecture. Any finite input
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+is representable with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>z</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|z\|_2\leq1</annotation></semantics></math>:
+choose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mi>B</mi><mn>𝟏</mn></mrow><annotation encoding="application/x-tex">b=B\mathbf1</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>≥</mo><mo>max</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>,</mo><mo stretchy="false" form="postfix">∥</mo><mi>u</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">B\geq\max(1,\|u\|_2)</annotation></semantics></math>
+and put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mi>u</mi><mi>/</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">z=u/B</annotation></semantics></math>.</p>
+<p>Rawat, Heeger and Martiniani [1, Eq. (15), Conjecture 5.3] ask
+whether
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>R</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|R\|_2=1</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>z</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|z\|_2\leq1</annotation></semantics></math>
+guarantee at least one asymptotically stable fixed point for all
+remaining admissible parameters. Their established identity-recurrence
+result and positive-scalar-recurrence results remain intact. We address
+their main equation (1), not the different recurrence-rectified vector
+field in their Appendix F.</p>
+<p><strong>Lemma 1 (equilibrium positivity).</strong> Every equilibrium
+of (1) satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>≥</mo><msub><mi>c</mi><mi>i</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_i\geq c_i&gt;0</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">W_{ii}&gt;0</annotation></semantics></math>,
+it also satisfies</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>&lt;</mo><msubsup><mi>W</mi><mrow><mi>i</mi><mi>i</mi></mrow><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>a</mi><mi>i</mi></msub><mo>≥</mo><mfrac><msub><mi>c</mi><mi>i</mi></msub><mrow><mn>1</mn><mo>−</mo><msub><mi>W</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub><msubsup><mi>y</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+|y_i| \lt W_{ii}^{-1/2},\qquad
+a_i\geq\frac{c_i}{1-W_{ii}y_i^2}.                    \tag{2}
+</annotation></semantics></math></p>
+<p><em>Proof.</em> At equilibrium,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>=</mo><msub><mi>c</mi><mi>i</mi></msub><mo>+</mo><msub><mo>∑</mo><mi>j</mi></msub><msub><mi>W</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo></msub><msubsup><mi>y</mi><mi>j</mi><mn>2</mn></msubsup><mo>≥</mo><msub><mi>c</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_i=c_i+\sum_jW_{ij}(a_j)_+y_j^2\geq c_i</annotation></semantics></math>.
+The rectifier can therefore be removed in all equilibrium equations.
+Keeping just the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j=i</annotation></semantics></math>
+summand gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>W</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub><msubsup><mi>y</mi><mi>i</mi><mn>2</mn></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>a</mi><mi>i</mi></msub><mo>≥</mo><msub><mi>c</mi><mi>i</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(1-W_{ii}y_i^2)a_i\geq c_i&gt;0</annotation></semantics></math>,
+which proves (2). In particular, the vector field is smooth in a
+neighborhood of every equilibrium.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>Throughout, <strong>locally exponentially stable</strong> means
+exponential attraction for all sufficiently small perturbations of the
+full state
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>,</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(y,a)</annotation></semantics></math>.
+A <strong>Hurwitz</strong> matrix has every eigenvalue in the open left
+half-plane. A positive-real-part eigenvalue implies Lyapunov instability
+of these smooth local systems. A zero eigenvalue alone implies neither
+stability nor instability.</p>
+<p>Our structural theorems use the explicitly restricted shared-pooling
+family</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>y</mi></msub><mo>=</mo><msub><mi>τ</mi><mi>y</mi></msub><mi>I</mi><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>T</mi><mi>a</mi></msub><mo>=</mo><msub><mi>τ</mi><mi>a</mi></msub><mi>I</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>c</mi><mo>=</mo><msub><mi>c</mi><mn>0</mn></msub><mn>𝟏</mn><mo>,</mo><mspace width="1.0em"></mspace><mi>W</mi><mo>=</mo><mi>k</mi><mn>𝟏</mn><msup><mn>𝟏</mn><mi>⊤</mi></msup><mo>,</mo><mspace width="1.0em"></mspace><mi>k</mi><mo>=</mo><mfrac><mi>w</mi><mi>n</mi></mfrac><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>c</mi><mn>0</mn></msub><mo>,</mo><mi>w</mi><mo>,</mo><msub><mi>τ</mi><mi>y</mi></msub><mo>,</mo><msub><mi>τ</mi><mi>a</mi></msub><mo>&gt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+T_y=\tau_y I,\quad T_a=\tau_a I,\quad c=c_0\mathbf1,
+\quad W=k\mathbf1\mathbf1^\top,\quad k=\frac wn,
+\quad c_0,w,\tau_y,\tau_a&gt;0.                         \tag{3}
+</annotation></semantics></math></p>
+<p>We subsequently write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+for the scalar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mn>0</mn></msub><annotation encoding="application/x-tex">c_0</annotation></semantics></math>.
+This is still the full
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>n</mi></mrow><annotation encoding="application/x-tex">2n</annotation></semantics></math>-state
+system: a common inhibitory state is an invariant manifold, not an
+assumption imposed on every initial condition. Theorems 5–8 require (3).
+Theorem 4 allows general nearby parameters, and Theorem 10 allows
+arbitrary positive heterogeneous time constants and general pooling as
+stated there.</p>
+<h3 id="relation-to-earlier-work">1.1 Relation to earlier work</h3>
+<p>The normalization architecture, its biological motivation and the
+identity-recurrence stability theorem belong to [1]; the earlier
+ORGaNICs framework is due to Heeger and Mackey [2]. Morone et al. [3,4]
+already study instability, critical slowing and loss of normalization.
+In particular, [4, Eq. (3)] has the same shared-inhibitor reduction as
+(3), with symmetric random recurrent perturbations. Its full preprint
+and supplement were examined; the final publication [3] was available
+only at abstract, metadata and reference level. Thus neither shared
+inhibition nor the observation that normalization may coexist with
+instability is new.</p>
+<p>McClain et al. [5, Eqs. (2)–(8)] use eigenmode coordinates,
+active-mode branches and block Jacobians for a different shared-gain
+model: its gain is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">1-a</annotation></semantics></math>,
+deterministic input is zero, and the analyzed positive leading-mode
+regime has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><msup><mi>σ</mi><mn>2</mn></msup><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\sigma^2&lt;1</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mo>*</mo></msub><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a_*&lt;1</annotation></semantics></math>.
+Those spectral methods are close predecessors. Pal et al. [6] study
+hierarchical rectified circuits and communication subspaces, with
+numerically determined fixed points. These works do not supply the
+particular finite-dimensional norm-one counterexamples or
+necessary-and-sufficient statements proved here in the sources
+inspected. Our proposed increments are the exact conjecture’s
+refutation, the kernel-energy budget, the universal
+positive-definiteness classification, and the complete negative-mode
+boundary under their stated hypotheses. No priority claim is made for
+shared pooling, modal decomposition or instability in general. The
+spectral theorem, Perron–Frobenius theory, Brouwer’s theorem, the
+implicit-function theorem and elementary local ODE theory are classical
+tools, not claimed contributions.</p>
+<h2 id="two-positive-dense-counterexamples">2. Two positive dense
+counterexamples</h2>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mn>2</mn></msub><mo>=</mo><mn>𝟏</mn><msup><mn>𝟏</mn><mi>⊤</mi></msup><mo>∈</mo><msup><mi>ℝ</mi><mrow><mn>2</mn><mo>×</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">J_2=\mathbf1\mathbf1^\top\in\mathbb R^{2\times2}</annotation></semantics></math>.</p>
+<p><strong>Theorem 2 (two distinct failures within the conjectured
+domain).</strong> Both of the following parameter choices satisfy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>R</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|R\|_2=1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>z</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|z\|_2&lt;1</annotation></semantics></math>,
+strict positivity of every entry of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>,
+and strict positivity of all required scalar parameters. Set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>y</mi></msub><mo>=</mo><msub><mi>T</mi><mi>a</mi></msub><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">T_y=T_a=I</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><msub><mi>b</mi><mn>0</mn></msub><mo>=</mo><mi>σ</mi><mo>=</mo><mn>𝟏</mn></mrow><annotation encoding="application/x-tex">b=b_0=\sigma=\mathbf1</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">u=z</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>𝟏</mn></mrow><annotation encoding="application/x-tex">c=\mathbf1</annotation></semantics></math>.</p>
+<p><strong>(a) No equilibrium.</strong> Take</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>J</mi><mn>2</mn></msub><mo>,</mo><mspace width="2.0em"></mspace><mi>W</mi><mo>=</mo><mn>16</mn><msub><mi>J</mi><mn>2</mn></msub><mo>,</mo><mspace width="2.0em"></mspace><mi>z</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>3</mn><mi>/</mi><mn>4</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn><mi>/</mi><mn>4</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+R=\frac12J_2,\qquad W=16J_2,\qquad
+z=\begin{pmatrix}3/4\\1/4\end{pmatrix}.              \tag{4}
+</annotation></semantics></math></p>
+<p><strong>(b) A unique unstable equilibrium.</strong> Take</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn><mi>/</mi><mn>4</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>3</mn><mi>/</mi><mn>4</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>3</mn><mi>/</mi><mn>4</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn><mi>/</mi><mn>4</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mi>W</mi><mo>=</mo><mn>30</mn><msub><mi>J</mi><mn>2</mn></msub><mo>,</mo><mspace width="2.0em"></mspace><mi>z</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mn>𝟏</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+R=\begin{pmatrix}1/4&amp;3/4\\3/4&amp;1/4\end{pmatrix},
+\qquad W=30J_2,\qquad z=\frac12\mathbf1.             \tag{5}
+</annotation></semantics></math></p>
+<p>The only equilibrium in (b) is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mo>*</mo></msub><mo>=</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mn>𝟏</mn><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>a</mi><mo>*</mo></msub><mo>=</mo><mn>16</mn><mn>𝟏</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+y_* =\frac18\mathbf1,\qquad a_*=16\mathbf1.          \tag{6}
+</annotation></semantics></math></p>
+<p>Its Jacobian has eigenvalues</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mo>−</mo><mn>1</mn><mo>,</mo><mspace width="1.0em"></mspace><mfrac><mrow><mi>−</mi><mn>65</mn><mo>+</mo><msqrt><mn>129</mn></msqrt></mrow><mn>32</mn></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mfrac><mrow><mi>−</mi><mn>65</mn><mo>−</mo><msqrt><mn>129</mn></msqrt></mrow><mn>32</mn></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\frac12,\quad -1,\quad
+\frac{-65+\sqrt{129}}{32},\quad
+\frac{-65-\sqrt{129}}{32}.                           \tag{7}
+</annotation></semantics></math></p>
+<p><em>Proof.</em> In both examples the pooling rows and baseline
+coordinates are equal. Every equilibrium therefore has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><msup><mi>s</mi><mn>2</mn></msup><mn>𝟏</mn></mrow><annotation encoding="application/x-tex">a=s^2\mathbf1</annotation></semantics></math>
+for some
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s&gt;0</annotation></semantics></math>.</p>
+<p>For (a),
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is the orthogonal projection onto the constant vectors. Projecting the
+first equilibrium equation onto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>ker</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">\ker R</annotation></semantics></math>
+gives</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mo>ker</mo><mi>R</mi></mrow></msub><mi>y</mi><mo>=</mo><msub><mi>P</mi><mrow><mo>ker</mo><mi>R</mi></mrow></msub><mi>u</mi><mo>=</mo><mfrac displaystyle="false"><mn>1</mn><mn>4</mn></mfrac><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>,</mo><mi>−</mi><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>⊤</mi></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+P_{\ker R}y=P_{\ker R}u=\tfrac14(1,-1)^\top.
+</annotation></semantics></math></p>
+<p>Hence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>y</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>≥</mo><mn>1</mn><mi>/</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">\|y\|_2^2\geq1/8</annotation></semantics></math>.
+The second equilibrium equation would require</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mfrac><mn>1</mn><msup><mi>s</mi><mn>2</mn></msup></mfrac><mo>+</mo><mn>16</mn><mo stretchy="false" form="postfix">∥</mo><mi>y</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>&gt;</mo><mn>2</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">
+1=\frac1{s^2}+16\|y\|_2^2&gt;2,
+</annotation></semantics></math></p>
+<p>an impossibility. The recurrence eigenvalues are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">1,0</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>z</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>=</mo><mn>5</mn><mi>/</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">\|z\|_2^2=5/8</annotation></semantics></math>.</p>
+<p>For (b), write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi><mn>𝟏</mn><mo>+</mo><mi>r</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>,</mo><mi>−</mi><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>⊤</mi></msup></mrow><annotation encoding="application/x-tex">y=x\mathbf1+r(1,-1)^\top</annotation></semantics></math>.
+The recurrence eigenvalues are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1,-1/2</annotation></semantics></math>,
+and the first equilibrium equation becomes</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>x</mi><mo>=</mo><mfrac displaystyle="false"><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mfrac><mrow><mn>3</mn><mo>−</mo><mi>s</mi></mrow><mn>2</mn></mfrac><mi>r</mi><mo>=</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+sx=\tfrac12,\qquad \frac{3-s}{2}r=0.                \tag{8}
+</annotation></semantics></math></p>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≠</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">s\ne3</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r=0</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>+</mo><mn>60</mn><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>16</mn></mrow><annotation encoding="application/x-tex">s^2=1+60(1/2)^2=16</annotation></semantics></math>,
+which gives (6). If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">s=3</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">x=1/6</annotation></semantics></math>
+and the second equation would imply</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>=</mo><mn>1</mn><mo>+</mo><mn>60</mn><mo>⋅</mo><mn>9</mn><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>r</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>16</mn><mo>+</mo><mn>540</mn><msup><mi>r</mi><mn>2</mn></msup><mo>,</mo></mrow><annotation encoding="application/x-tex">
+9=1+60\cdot9(x^2+r^2)=16+540r^2,
+</annotation></semantics></math></p>
+<p>again impossible. This proves uniqueness over the entire state space,
+not only over positive
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>.</p>
+<p>At (6), the common-inhibitor and constant-response block of the
+Jacobian is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>−</mi><mn>4</mn></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mn>1</mn><mi>/</mi><mn>64</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>240</mn></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mn>1</mn><mi>/</mi><mn>16</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+\begin{pmatrix}-4&amp;-1/64\\240&amp;-1/16\end{pmatrix},     \tag{9}
+</annotation></semantics></math></p>
+<p>with characteristic polynomial
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>65</mn><mi>/</mi><mn>16</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>t</mi><mo>+</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">t^2+(65/16)t+4</annotation></semantics></math>.
+The response-difference eigenvalue is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math>
+and the inhibitor-difference eigenvalue is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math>.
+This gives (7). Finally
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>z</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\|z\|_2^2=1/2</annotation></semantics></math>
+in (b). All remaining assertions are visible in (4)–(5).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>The second example has a positive, nonsingular recurrent matrix. Its
+destabilizing mode is a negative <strong>eigenvalue</strong>, not a
+negative matrix entry. Equal input gains and baseline gains are already
+present:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><msub><mi>b</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">b=b_0=1</annotation></semantics></math>.
+These examples disprove the original existence conjecture without
+altering the source model or its input-norm constraint.</p>
+<h2 id="robustness-in-the-full-parameter-space">3. Robustness in the
+full parameter space</h2>
+<p>The rank-one pooling and exact symmetry in (5) permit an explicit
+calculation. They are not necessary for the obstruction to persist.</p>
+<p><strong>Lemma 3 (uniform compactness of all equilibria).</strong>
+Consider any set of parameters in (1) for which</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><msub><mi>c</mi><mo>−</mo></msub><mo>≤</mo><msub><mi>c</mi><mi>i</mi></msub><mo>≤</mo><msub><mi>c</mi><mo>+</mo></msub><mo>,</mo><mspace width="1.0em"></mspace><mn>0</mn><mo>&lt;</mo><mi>m</mi><mo>≤</mo><msub><mi>W</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>≤</mo><mi>M</mi><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>σ</mi><mo>min</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>R</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><msub><mi>r</mi><mn>0</mn></msub><mo>&gt;</mo><mn>0</mn><mo>,</mo><mspace width="1.0em"></mspace><mo stretchy="false" form="postfix">∥</mo><mi>u</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>≤</mo><mi>U</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+0 \lt c_-\leq c_i\leq c_+,\quad
+0 \lt m\leq W_{ij}\leq M,\quad
+\sigma_{\min}(R)\geq r_0&gt;0,\quad \|u\|_2\leq U.
+                                                               \tag{10}
+</annotation></semantics></math></p>
+<p>Put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mi>m</mi><mi>/</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">\eta=m/M</annotation></semantics></math>
+and</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msqrt><mrow><mn>2</mn><mi>M</mi></mrow></msqrt><mspace width="0.167em"></mspace><mi>U</mi></mrow><msub><mi>r</mi><mn>0</mn></msub></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>C</mi><mo>=</mo><mo>max</mo><mo stretchy="false" form="prefix">{</mo><mn>2</mn><msub><mi>c</mi><mo>+</mo></msub><mo>,</mo><mspace width="0.167em"></mspace><mn>2</mn><msup><mi>T</mi><mn>2</mn></msup><mi>/</mi><mi>η</mi><mo stretchy="false" form="postfix">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+T=1+\frac{1+\sqrt{2M}\,U}{r_0},\qquad
+C=\max\{2c_+,\,2T^2/\eta\}.                         \tag{11}
+</annotation></semantics></math></p>
+<p>Every equilibrium belongs to the same compact box</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><msup><mi>m</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>c</mi><mo>−</mo></msub><mo>≤</mo><msub><mi>a</mi><mi>i</mi></msub><mo>≤</mo><mi>C</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+|y_i|\leq m^{-1/2},\qquad c_-\leq a_i\leq C.         \tag{12}
+</annotation></semantics></math></p>
+<p><em>Proof.</em> The response bound follows from Lemma 1. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><msub><mo>max</mo><mi>i</mi></msub><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">A=\max_i a_i</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><msub><mo>∑</mo><mi>j</mi></msub><msub><mi>a</mi><mi>j</mi></msub><msubsup><mi>y</mi><mi>j</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">Q=\sum_j a_jy_j^2</annotation></semantics></math>.
+The equilibrium equations give
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≤</mo><msub><mi>c</mi><mo>+</mo></msub><mo>+</mo><mi>M</mi><mi>Q</mi></mrow><annotation encoding="application/x-tex">A\leq c_++MQ</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>min</mo><mi>i</mi></msub><msub><mi>a</mi><mi>i</mi></msub><mo>≥</mo><msub><mi>c</mi><mo>−</mo></msub><mo>+</mo><mi>m</mi><mi>Q</mi></mrow><annotation encoding="application/x-tex">\min_i a_i\geq c_-+mQ</annotation></semantics></math>.
+Therefore, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&gt;</mo><mn>2</mn><msub><mi>c</mi><mo>+</mo></msub></mrow><annotation encoding="application/x-tex">A&gt;2c_+</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>min</mo><mi>i</mi></munder><msub><mi>a</mi><mi>i</mi></msub><mo>≥</mo><msub><mi>c</mi><mo>−</mo></msub><mo>+</mo><mi>η</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>−</mo><msub><mi>c</mi><mo>+</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mi>η</mi><mi>A</mi><mi>/</mi><mn>2</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\min_i a_i\geq c_-+\eta(A-c_+)&gt;\eta A/2.             \tag{13}
+</annotation></semantics></math></p>
+<p>Suppose also that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&gt;</mo><mn>2</mn><msup><mi>T</mi><mn>2</mn></msup><mi>/</mi><mi>η</mi></mrow><annotation encoding="application/x-tex">A&gt;2T^2/\eta</annotation></semantics></math>.
+Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mo>min</mo></msub><mo>:=</mo><msub><mo>min</mo><mi>i</mi></msub><msqrt><msub><mi>a</mi><mi>i</mi></msub></msqrt><mo>&gt;</mo><mi>T</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">s_{\min}:=\min_i\sqrt{a_i}&gt;T&gt;1</annotation></semantics></math>.
+The first equilibrium equation is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mrow><mo stretchy="true" form="prefix">(</mo><msqrt><mi>a</mi></msqrt><mo>−</mo><mn>𝟏</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>R</mi><mi>y</mi><mo>=</mo><mi>u</mi><mo>−</mo><mi>y</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+D(\sqrt a-\mathbf1)Ry=u-y.
+</annotation></semantics></math></p>
+<p>Consequently</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>r</mi><mn>0</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>s</mi><mo>min</mo></msub><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><mo stretchy="false" form="postfix">∥</mo><mi>y</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>≤</mo><mi>U</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+[r_0(s_{\min}-1)-1]\|y\|_2\leq U.                   \tag{14}
+</annotation></semantics></math></p>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">U&gt;0</annotation></semantics></math>,
+(11)–(14) imply
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo stretchy="false" form="postfix">∥</mo><mi>y</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>&lt;</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">M\|y\|_2^2&lt;1/2</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">U=0</annotation></semantics></math>,
+the positive coefficient in (14) gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y=0</annotation></semantics></math>,
+so the same strict inequality holds. But then</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≤</mo><msub><mi>c</mi><mo>+</mo></msub><mo>+</mo><mi>M</mi><mi>A</mi><mo stretchy="false" form="postfix">∥</mo><mi>y</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>&lt;</mo><msub><mi>c</mi><mo>+</mo></msub><mo>+</mo><mi>A</mi><mi>/</mi><mn>2</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">
+A\leq c_++MA\|y\|_2^2 \lt c_++A/2,
+</annotation></semantics></math></p>
+<p>contradicting
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&gt;</mo><mn>2</mn><msub><mi>c</mi><mo>+</mo></msub></mrow><annotation encoding="application/x-tex">A&gt;2c_+</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≤</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">A\leq C</annotation></semantics></math>.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Theorem 4 (an open family with no stable
+equilibrium).</strong> Fix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n=2</annotation></semantics></math>.
+There is a neighborhood of the parameters (5) in the full parameter
+space of (1) such that every system in that neighborhood has exactly one
+equilibrium and that equilibrium is hyperbolic with one unstable and
+three stable directions. The neighborhood permits nonsymmetric
+recurrence, unequal baselines, arbitrary positive dense pooling and
+heterogeneous positive time constants. Its intersection with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>R</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|R\|_2=1</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>z</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|z\|_2&lt;1</annotation></semantics></math>
+is a nonempty relative-open family of counterexamples to Conjecture
+5.3.</p>
+<p><em>Proof.</em> Strict positivity and invertibility at (5) allow a
+sufficiently small parameter neighborhood satisfying common bounds (10),
+as well as uniform positive lower and finite upper bounds on the time
+constants and gains. Lemma 3 bounds <strong>every</strong> equilibrium
+of every such system in a common compact subset of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_i&gt;0</annotation></semantics></math>.</p>
+<p>The full vector field is smooth on that subset. Its state derivative
+at (6) is nonsingular by (7). The implicit-function theorem therefore
+gives a unique nearby equilibrium for every sufficiently close parameter
+vector. Suppose there were additional equilibria for parameters
+converging to (5). Compactness would yield a convergent subsequence.
+Continuity makes its limit an equilibrium of the base system, hence (6)
+by Theorem 2. Eventually that subsequence lies in the neighborhood of
+uniqueness given by the implicit-function theorem, a contradiction. Thus
+the nearby equilibrium is the only one.</p>
+<p>Hyperbolicity and the count of eigenvalues in the right half-plane
+persist under sufficiently small matrix perturbations. This proves the
+stated instability. The original source parameters map continuously to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>,</mo><mi>c</mi><mo>,</mo><msub><mi>T</mi><mi>y</mi></msub><mo>,</mo><msub><mi>T</mi><mi>a</mi></msub><mo>,</mo><mi>R</mi><mo>,</mo><mi>W</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(u,c,T_y,T_a,R,W)</annotation></semantics></math>,
+and the base input lies strictly inside its unit ball. Intersect the
+neighborhood with the exact spectral-norm constraint. This relative-open
+set contains nonsymmetric and non-rank-one pooling perturbations: for
+instance, small arbitrary recurrence perturbations can be rescaled by
+their positive spectral norm, and sufficiently small positive pooling
+perturbations preserve positivity.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>This proof establishes the existence of a neighborhood. It does not
+certify a numerical perturbation radius. It also does not claim
+divergence, oscillation, or chaos for every trajectory.</p>
+<h2 id="shared-pooling-the-exact-reduction">4. Shared pooling: the exact
+reduction</h2>
+<p>Assume (3). The inhibitor differences satisfy the exact
+identities</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>τ</mi><mi>a</mi></msub><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo>−</mo><msub><mi>a</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>−</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo>−</mo><msub><mi>a</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\tau_a\frac{d}{dt}(a_i-a_j)=-(a_i-a_j).              \tag{15}
+</annotation></semantics></math></p>
+<p>Thus all equilibria have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><msup><mi>s</mi><mn>2</mn></msup><mn>𝟏</mn></mrow><annotation encoding="application/x-tex">a=s^2\mathbf1</annotation></semantics></math>,
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≥</mo><msqrt><mi>c</mi></msqrt></mrow><annotation encoding="application/x-tex">s\geq\sqrt c</annotation></semantics></math>,
+and the common-inhibitor manifold is invariant. At equilibrium,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>y</mi><mo>=</mo><mi>u</mi><mo>,</mo><mspace width="2.0em"></mspace><mi>K</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>:=</mo><mi>I</mi><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>R</mi><mo>,</mo><mspace width="2.0em"></mspace><mn>1</mn><mo>=</mo><mfrac><mi>c</mi><msup><mi>s</mi><mn>2</mn></msup></mfrac><mo>+</mo><mi>k</mi><mo stretchy="false" form="postfix">∥</mo><mi>y</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+K(s)y=u,\qquad
+K(s):=I-(1-s)R,\qquad
+1=\frac c{s^2}+k\|y\|_2^2.                         \tag{16}
+</annotation></semantics></math></p>
+<p>Assume now that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><msup><mi>R</mi><mi>⊤</mi></msup></mrow><annotation encoding="application/x-tex">R=R^\top</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>R</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|R\|_2\leq1</annotation></semantics></math>.
+Choose an orthonormal eigenbasis and write its eigenvalues as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mi>j</mi></msub><mo>∈</mo><mrow><mo stretchy="true" form="prefix">[</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda_j\in[-1,1]</annotation></semantics></math>
+and input coordinates as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>u</mi><mi>j</mi></msub><annotation encoding="application/x-tex">u_j</annotation></semantics></math>.
+The scalar multipliers of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">K(s)</annotation></semantics></math>
+are</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><msub><mi>λ</mi><mi>j</mi></msub><mo>+</mo><msub><mi>λ</mi><mi>j</mi></msub><mi>s</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+g_j(s)=1-\lambda_j+\lambda_j s.                     \tag{17}
+</annotation></semantics></math></p>
+<p>When
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msub><mi>λ</mi><mi>j</mi></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\leq\lambda_j\leq1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g_j(s)&gt;0</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s&gt;0</annotation></semantics></math>.
+A negative eigenvalue has exactly one positive zero,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>λ</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mi>λ</mi></mfrac><mo>≥</mo><mn>2</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+s_\lambda=1-\frac1\lambda\geq2.                    \tag{18}
+</annotation></semantics></math></p>
+<p>The quotient dynamics (15) contributes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math>
+eigenvalues
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn><mi>/</mi><msub><mi>τ</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">-1/\tau_a</annotation></semantics></math>
+to every equilibrium linearization. This statement concerns an invariant
+subspace and its quotient; no invariance of its orthogonal complement is
+being assumed. On the common-inhibitor manifold, the Jacobian is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝒥</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>−</mi><mi>K</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msub><mi>τ</mi><mi>y</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mi>R</mi><mi>y</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>s</mi><msub><mi>τ</mi><mi>y</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn><mi>k</mi><msup><mi>s</mi><mn>2</mn></msup><msup><mi>y</mi><mi>⊤</mi></msup><mi>/</mi><msub><mi>τ</mi><mi>a</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mi>c</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>s</mi><mn>2</mn></msup><msub><mi>τ</mi><mi>a</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\mathcal J=
+\begin{pmatrix}
+-K(s)/\tau_y&amp;-Ry/(2s\tau_y)\\
+2ks^2y^\top/\tau_a&amp;-c/(s^2\tau_a)
+\end{pmatrix}.                                    \tag{19}
+</annotation></semantics></math></p>
+<p>The last entry follows from the equilibrium identity in (16).</p>
+<h2 id="positive-spectra-and-the-exact-kernel-drive-budget">5. Positive
+spectra and the exact kernel-drive budget</h2>
+<p><strong>Theorem 5 (sharp semidefinite criterion).</strong> Under (3),
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be symmetric positive semidefinite with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>R</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|R\|_2\leq1</annotation></semantics></math>,
+and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mn>0</mn></msub><annotation encoding="application/x-tex">P_0</annotation></semantics></math>
+be its orthogonal kernel projection. Define</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mi>k</mi><mo stretchy="false" form="postfix">∥</mo><msub><mi>P</mi><mn>0</mn></msub><mi>u</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\beta=k\|P_0u\|_2^2.                               \tag{20}
+</annotation></semantics></math></p>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\beta\geq1</annotation></semantics></math>,
+the system has no equilibrium. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\beta&lt;1</annotation></semantics></math>,
+it has exactly one equilibrium, and this equilibrium is locally
+exponentially stable in the full
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>n</mi></mrow><annotation encoding="application/x-tex">2n</annotation></semantics></math>-state
+system for every pair
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>τ</mi><mi>y</mi></msub><mo>,</mo><msub><mi>τ</mi><mi>a</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\tau_y,\tau_a&gt;0</annotation></semantics></math>.
+It is obtained from the unique root
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≥</mo><msqrt><mi>c</mi></msqrt></mrow><annotation encoding="application/x-tex">s\geq\sqrt c</annotation></semantics></math>
+of</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>:=</mo><mfrac><mi>c</mi><msup><mi>s</mi><mn>2</mn></msup></mfrac><mo>+</mo><mi>k</mi><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><msubsup><mi>u</mi><mi>j</mi><mn>2</mn></msubsup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>λ</mi><mi>j</mi></msub><mo>+</mo><msub><mi>λ</mi><mi>j</mi></msub><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>y</mi><mi>j</mi></msub><mo>=</mo><mfrac><msub><mi>u</mi><mi>j</mi></msub><mrow><mn>1</mn><mo>−</mo><msub><mi>λ</mi><mi>j</mi></msub><mo>+</mo><msub><mi>λ</mi><mi>j</mi></msub><mi>s</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+F(s):=\frac c{s^2}+
+k\sum_{j=1}^n\frac{u_j^2}{(1-\lambda_j+\lambda_js)^2}=1,
+\qquad y_j=\frac{u_j}{1-\lambda_j+\lambda_js}.       \tag{21}
+</annotation></semantics></math></p>
+<p><em>Proof of existence and uniqueness.</em> Each denominator is
+positive. The term
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>/</mi><msup><mi>s</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">c/s^2</annotation></semantics></math>
+is strictly decreasing, and all other terms are nonincreasing. Hence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is strictly decreasing. Its value at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mi>c</mi></msqrt><annotation encoding="application/x-tex">\sqrt c</annotation></semantics></math>
+is at least one, with equality exactly when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">u=0</annotation></semantics></math>.
+Its limit at infinity is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\beta&lt;1</annotation></semantics></math>,
+the intermediate-value theorem gives one and only one root, including
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msqrt><mi>c</mi></msqrt></mrow><annotation encoding="application/x-tex">s=\sqrt c</annotation></semantics></math>
+when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">u=0</annotation></semantics></math>.
+Conversely, projecting
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>y</mi><mo>=</mo><mi>u</mi></mrow><annotation encoding="application/x-tex">K(s)y=u</annotation></semantics></math>
+onto the kernel gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mn>0</mn></msub><mi>y</mi><mo>=</mo><msub><mi>P</mi><mn>0</mn></msub><mi>u</mi></mrow><annotation encoding="application/x-tex">P_0y=P_0u</annotation></semantics></math>,
+so every equilibrium must satisfy</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mfrac><mi>c</mi><msup><mi>s</mi><mn>2</mn></msup></mfrac><mo>+</mo><mi>k</mi><mo stretchy="false" form="postfix">∥</mo><mi>y</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>&gt;</mo><mi>β</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+1=\frac c{s^2}+k\|y\|_2^2&gt;\beta.
+</annotation></semantics></math></p>
+<p>This rules out equality as well as supercritical budgets.</p>
+<p><em>Proof of local stability.</em> Work in the eigenbasis of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+in (19). A zero-eigenvalue coordinate has upper coupling to the common
+inhibitor equal to zero and its own eigenvalue
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn><mi>/</mi><msub><mi>τ</mi><mi>y</mi></msub></mrow><annotation encoding="application/x-tex">-1/\tau_y</annotation></semantics></math>.
+After separating those coordinates the matrix is block triangular,
+leaving the positive-eigenvalue coordinates and the common
+inhibitor.</p>
+<p>For each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mi>j</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda_j&gt;0</annotation></semantics></math>,
+choose</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>j</mi></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mi>k</mi><msup><mi>s</mi><mn>3</mn></msup><msub><mi>τ</mi><mi>y</mi></msub></mrow><mrow><msub><mi>λ</mi><mi>j</mi></msub><msub><mi>τ</mi><mi>a</mi></msub></mrow></mfrac><mo>&gt;</mo><mn>0</mn><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>p</mi><mi>a</mi></msub><mo>=</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+p_j=\frac{4ks^3\tau_y}{\lambda_j\tau_a}&gt;0,
+\qquad p_a=1.                                     \tag{22}
+</annotation></semantics></math></p>
+<p>The diagonal matrix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+with these entries cancels every response–inhibitor off-diagonal pair in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mi>𝒥</mi><mo>+</mo><msup><mi>𝒥</mi><mi>⊤</mi></msup><mi>P</mi></mrow><annotation encoding="application/x-tex">P\mathcal J+\mathcal J^\top P</annotation></semantics></math>.
+Its diagonal entries are</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mfrac><mrow><mn>2</mn><msub><mi>p</mi><mi>j</mi></msub><msub><mi>g</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><msub><mi>τ</mi><mi>y</mi></msub></mfrac><mo>&lt;</mo><mn>0</mn><mo>,</mo><mspace width="2.0em"></mspace><mo>−</mo><mfrac><mrow><mn>2</mn><mi>c</mi></mrow><mrow><msup><mi>s</mi><mn>2</mn></msup><msub><mi>τ</mi><mi>a</mi></msub></mrow></mfrac><mo>&lt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+-\frac{2p_jg_j(s)}{\tau_y}&lt;0,
+\qquad -\frac{2c}{s^2\tau_a}&lt;0.                     \tag{23}
+</annotation></semantics></math></p>
+<p>Thus this remaining block is Hurwitz by the strict quadratic Lyapunov
+criterion. The separated zero modes and inhibitor quotient modes are
+also strictly stable. Smooth nonlinear linearization then proves local
+exponential stability. The proof allows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>j</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">u_j=0</annotation></semantics></math>
+without division by that coordinate and also covers
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">R=0</annotation></semantics></math>
+with an empty positive-eigenvalue block.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">R=0</annotation></semantics></math>
+the threshold reduces to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false" form="postfix">∥</mo><mi>u</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k\|u\|_2^2&lt;1</annotation></semantics></math>,
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>u</mi></mrow><annotation encoding="application/x-tex">y=u</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mi>c</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>k</mi><mo stretchy="false" form="postfix">∥</mo><mi>u</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">s^2=c/(1-k\|u\|_2^2)</annotation></semantics></math>.
+At the threshold the missing equilibrium is not a finite nonhyperbolic
+point; no finite equilibrium exists.</p>
+<p><strong>Theorem 6 (universal spectral classification).</strong> Fix a
+real symmetric
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>R</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|R\|_2\leq1</annotation></semantics></math>.
+The following are equivalent:</p>
+<ol type="1">
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is positive definite.</li>
+<li>For every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">u\in\mathbb R^n</annotation></semantics></math>
+and every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>,</mo><mi>w</mi><mo>,</mo><msub><mi>τ</mi><mi>y</mi></msub><mo>,</mo><msub><mi>τ</mi><mi>a</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c,w,\tau_y,\tau_a&gt;0</annotation></semantics></math>,
+the system (1), (3) has a unique locally exponentially stable
+equilibrium.</li>
+<li>For every such parameter choice, the system has at least one
+asymptotically stable equilibrium.</li>
+</ol>
+<p><em>Proof.</em> If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is positive definite,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_0=0</annotation></semantics></math>,
+so Theorem 5 gives statement 2; statement 2 implies statement 3.</p>
+<p>For the converse, first suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is positive semidefinite but singular. Choose a nonzero
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>∈</mo><mo>ker</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">u\in\ker R</annotation></semantics></math>
+and choose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+so that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false" form="postfix">∥</mo><mi>u</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k\|u\|_2^2\geq1</annotation></semantics></math>.
+Theorem 5 gives no equilibrium, contradicting statement 3.</p>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+has a negative eigenvalue, choose</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>c</mi></msqrt><mo>&gt;</mo><munder><mo>max</mo><mrow><msub><mi>λ</mi><mi>j</mi></msub><mo>&lt;</mo><mn>0</mn></mrow></munder><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>1</mn><mi>/</mi><msub><mi>λ</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mi>u</mi><mo>=</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\sqrt c&gt;\max_{\lambda_j&lt;0}(1-1/\lambda_j),\qquad u=0. \tag{24}
+</annotation></semantics></math></p>
+<p>At every possible equilibrium
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≥</mo><msqrt><mi>c</mi></msqrt></mrow><annotation encoding="application/x-tex">s\geq\sqrt c</annotation></semantics></math>,
+so no
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">g_j(s)</annotation></semantics></math>
+vanishes. Equations (16) force
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y=0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msqrt><mi>c</mi></msqrt></mrow><annotation encoding="application/x-tex">s=\sqrt c</annotation></semantics></math>:
+this is the unique equilibrium. Every negative eigenvalue of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+gives a strictly positive eigenvalue
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><msub><mi>g</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msqrt><mi>c</mi></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msub><mi>τ</mi><mi>y</mi></msub></mrow><annotation encoding="application/x-tex">-g_j(\sqrt c)/\tau_y</annotation></semantics></math>
+of the full Jacobian. All other modes are strictly negative. Hence no
+stable equilibrium exists.</p>
+<p>This converse does not intrinsically rely on zero input. For the same
+choice (24), every denominator has fixed sign and nondecreasing absolute
+value on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≥</mo><msqrt><mi>c</mi></msqrt></mrow><annotation encoding="application/x-tex">s\geq\sqrt c</annotation></semantics></math>,
+strictly increasing off the kernel. Consequently the left side of (21)
+is strictly decreasing to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false" form="postfix">∥</mo><msub><mi>P</mi><mn>0</mn></msub><mi>u</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">k\|P_0u\|_2^2</annotation></semantics></math>,
+with strict decrease already supplied by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>/</mi><msup><mi>s</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">c/s^2</annotation></semantics></math>.
+For all sufficiently small
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+that limit is below one, giving one unique equilibrium continuously
+approaching the hyperbolic unstable point just found. Its instability
+persists. One can in particular take
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>ε</mi><mn>𝟏</mn></mrow><annotation encoding="application/x-tex">u=\varepsilon\mathbf1</annotation></semantics></math>
+with sufficiently small
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math>.
+In the singular semidefinite case one can also choose a strictly
+positive input with nonzero kernel projection, then increase
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>:
+the positive orthant spans
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathbb R^n</annotation></semantics></math>,
+so it cannot be contained in the proper subspace
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="true" form="prefix">(</mo><mo>ker</mo><mi>R</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>⊥</mo></msup><annotation encoding="application/x-tex">(\ker R)^\perp</annotation></semantics></math>.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>The classification concerns fixed <strong>symmetric
+contractive</strong> recurrence with shared uniform pooling and common
+time constants. It is not a theorem that positive definiteness alone
+stabilizes every normalization matrix or every nonsymmetric circuit.</p>
+<h2 id="complete-equilibrium-geometry-for-constant-inputs">6. Complete
+equilibrium geometry for constant inputs</h2>
+<p>Assume (3) and additionally</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><msup><mi>R</mi><mi>⊤</mi></msup><mo>,</mo><mspace width="1.0em"></mspace><mi>R</mi><mn>𝟏</mn><mo>=</mo><mn>𝟏</mn><mo>,</mo><mspace width="1.0em"></mspace><mo stretchy="false" form="postfix">∥</mo><mi>R</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>≤</mo><mn>1</mn><mo>,</mo><mspace width="2.0em"></mspace><mi>u</mi><mo>=</mo><msub><mi>u</mi><mn>0</mn></msub><mn>𝟏</mn><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>u</mi><mn>0</mn></msub><mo>∈</mo><mi>ℝ</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+R=R^\top,\quad R\mathbf1=\mathbf1,\quad \|R\|_2\leq1,
+\qquad u=u_0\mathbf1,\quad u_0\in\mathbb R.        \tag{25}
+</annotation></semantics></math></p>
+<p>These conditions include every symmetric stochastic matrix; entrywise
+nonnegativity is not needed for the theorem. Since one is an eigenvalue,
+the spectral norm in (25) equals one. Let</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>0</mn></msub><mo>=</mo><msqrt><mrow><mi>c</mi><mo>+</mo><mi>w</mi><msubsup><mi>u</mi><mn>0</mn><mn>2</mn></msubsup></mrow></msqrt><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>E</mi><mi>λ</mi></msub><mo>=</mo><mo>ker</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>R</mi><mo>−</mo><mi>λ</mi><mi>I</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>m</mi><mi>λ</mi></msub><mo>=</mo><mo>dim</mo><msub><mi>E</mi><mi>λ</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+s_0=\sqrt{c+wu_0^2},\qquad
+E_\lambda=\ker(R-\lambda I),\quad m_\lambda=\dim E_\lambda.
+                                                               \tag{26}
+</annotation></semantics></math></p>
+<p><strong>Theorem 7 (all equilibrium components).</strong> The complete
+equilibrium set consists of the synchronous point</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>=</mo><mfrac><msub><mi>u</mi><mn>0</mn></msub><msub><mi>s</mi><mn>0</mn></msub></mfrac><mn>𝟏</mn><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><msubsup><mi>s</mi><mn>0</mn><mn>2</mn></msubsup><mn>𝟏</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">
+y_0=\frac{u_0}{s_0}\mathbf1,\qquad a_0=s_0^2\mathbf1, \tag{27}
+</annotation></semantics></math></p>
+<p>and, for each distinct negative eigenvalue
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>λ</mi></msub><mo>&gt;</mo><msub><mi>s</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">s_\lambda&gt;s_0</annotation></semantics></math>,
+the sphere</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><msubsup><mi>s</mi><mi>λ</mi><mn>2</mn></msubsup><mn>𝟏</mn><mo>,</mo><mspace width="2.0em"></mspace><mi>y</mi><mo>=</mo><mfrac><msub><mi>u</mi><mn>0</mn></msub><msub><mi>s</mi><mi>λ</mi></msub></mfrac><mn>𝟏</mn><mo>+</mo><mi>v</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>v</mi><mo>∈</mo><msub><mi>E</mi><mi>λ</mi></msub><mo>,</mo><mspace width="2.0em"></mspace><mfrac><mrow><mo stretchy="false" form="postfix">∥</mo><mi>v</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup></mrow><mi>n</mi></mfrac><mo>=</mo><mfrac><mrow><msubsup><mi>s</mi><mi>λ</mi><mn>2</mn></msubsup><mo>−</mo><msubsup><mi>s</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mrow><mi>w</mi><msubsup><mi>s</mi><mi>λ</mi><mn>2</mn></msubsup></mrow></mfrac><mo>&gt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+a=s_\lambda^2\mathbf1,\qquad
+y=\frac{u_0}{s_\lambda}\mathbf1+v,\quad v\in E_\lambda,
+\qquad
+\frac{\|v\|_2^2}{n}
+=\frac{s_\lambda^2-s_0^2}{w s_\lambda^2}&gt;0.          \tag{28}
+</annotation></semantics></math></p>
+<p>This sphere has dimension
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>λ</mi></msub><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">m_\lambda-1</annotation></semantics></math>,
+with two points when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>λ</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">m_\lambda=1</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>λ</mi></msub><mo>=</mo><msub><mi>s</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">s_\lambda=s_0</annotation></semantics></math>,
+(28) contributes only (27). If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>λ</mi></msub><mo>&lt;</mo><msub><mi>s</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">s_\lambda \lt s_0</annotation></semantics></math>,
+it contributes no equilibrium.</p>
+<p><em>Proof.</em> Equations (16)–(18) apply. The component of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+in the direction of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>𝟏</mn><annotation encoding="application/x-tex">\mathbf1</annotation></semantics></math>
+is always
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>u</mi><mn>0</mn></msub><mi>/</mi><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>𝟏</mn></mrow><annotation encoding="application/x-tex">(u_0/s)\mathbf1</annotation></semantics></math>.
+Every orthogonal component vanishes unless
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g_j(s)=0</annotation></semantics></math>.
+Such a zero is possible only at a negative pole, and distinct negative
+eigenvalues have distinct poles. At
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>s</mi><mi>λ</mi></msub></mrow><annotation encoding="application/x-tex">s=s_\lambda</annotation></semantics></math>,
+the extra component belongs exactly to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>λ</mi></msub><annotation encoding="application/x-tex">E_\lambda</annotation></semantics></math>
+and is orthogonal to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>𝟏</mn><annotation encoding="application/x-tex">\mathbf1</annotation></semantics></math>.
+Substitution into the second equation of (16) gives (28). In the absence
+of such a component it gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>s</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">s=s_0</annotation></semantics></math>.
+This lists every possibility, including repeated eigenvalues and
+equality cases.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Theorem 8 (sharp stable-equilibrium boundary and unstable
+branches).</strong> Under (25), set</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mo>*</mo></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><mn>1</mn><mo>−</mo><mn>1</mn><mi>/</mi><msub><mi>λ</mi><mo>min</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>R</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mtd><mtd columnalign="left" style="text-align: left"><msub><mi>λ</mi><mo>min</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>R</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&lt;</mo><mn>0</mn><mo>,</mo></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mi>+</mi><mi>∞</mi><mo>,</mo></mtd><mtd columnalign="left" style="text-align: left"><msub><mi>λ</mi><mo>min</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>R</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mn>0</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">
+s_* =
+\begin{cases}
+1-1/\lambda_{\min}(R),&amp;\lambda_{\min}(R)&lt;0,\\
++\infty,&amp;\lambda_{\min}(R)\geq0.
+\end{cases}                                       \tag{29}
+</annotation></semantics></math></p>
+<p>An asymptotically stable equilibrium exists if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>0</mn></msub><mo>&lt;</mo><msub><mi>s</mi><mo>*</mo></msub></mrow><annotation encoding="application/x-tex">s_0 \lt s_*</annotation></semantics></math>.
+When it exists, it is (27) and is locally exponentially stable. Every
+nonsynchronous equilibrium is unstable. At
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>0</mn></msub><mo>=</mo><msub><mi>s</mi><mo>*</mo></msub><mo>&lt;</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">s_0=s_*&lt;\infty</annotation></semantics></math>,
+the synchronous equilibrium is <strong>nonlinearly Lyapunov
+unstable</strong>.</p>
+<p><em>Synchronous spectrum.</em> The common-inhibitor and
+constant-response block is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>−</mi><msub><mi>s</mi><mn>0</mn></msub><mi>/</mi><msub><mi>τ</mi><mi>y</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><msub><mi>x</mi><mn>0</mn></msub><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><msub><mi>s</mi><mn>0</mn></msub><msub><mi>τ</mi><mi>y</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn><mi>w</mi><msubsup><mi>s</mi><mn>0</mn><mn>2</mn></msubsup><msub><mi>x</mi><mn>0</mn></msub><mi>/</mi><msub><mi>τ</mi><mi>a</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mi>c</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>s</mi><mn>0</mn><mn>2</mn></msubsup><msub><mi>τ</mi><mi>a</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><msub><mi>u</mi><mn>0</mn></msub><mi>/</mi><msub><mi>s</mi><mn>0</mn></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+J_2=\begin{pmatrix}
+-s_0/\tau_y&amp;-x_0/(2s_0\tau_y)\\
+2ws_0^2x_0/\tau_a&amp;-c/(s_0^2\tau_a)
+\end{pmatrix},\qquad x_0=u_0/s_0.                   \tag{30}
+</annotation></semantics></math></p>
+<p>It has negative trace and determinant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>0</mn></msub><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>τ</mi><mi>y</mi></msub><msub><mi>τ</mi><mi>a</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s_0/(\tau_y\tau_a)&gt;0</annotation></semantics></math>.
+One copy of the eigenvalue
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is represented in this block. Every remaining eigenvalue
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+contributes</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>α</mi><mi>μ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>s</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msub><mi>τ</mi><mi>y</mi></msub><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>α</mi><mi>μ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>−</mi><mn>1</mn><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>μ</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\alpha_\mu(s_0)/\tau_y,
+\qquad \alpha_\mu(s)=-1+(1-s)\mu.                  \tag{31}
+</annotation></semantics></math></p>
+<p>Additional copies of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mu=1</annotation></semantics></math>
+are therefore stable, as are all nonnegative modes. A negative mode is
+stable exactly when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>0</mn></msub><mo>&lt;</mo><msub><mi>s</mi><mi>μ</mi></msub></mrow><annotation encoding="application/x-tex">s_0 \lt s_\mu</annotation></semantics></math>.
+Together with the inhibitor quotient (15), this proves the strict
+stability and strict instability claims for the synchronous point, apart
+from the first-pole equality case addressed below.</p>
+<p><em>Nonsynchronous branches.</em> At (28), choose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ν</mi><mo>∈</mo><msub><mi>E</mi><mi>λ</mi></msub></mrow><annotation encoding="application/x-tex">\nu\in E_\lambda</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>ν</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\|\nu\|_2^2=n</annotation></semantics></math>
+and write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>r</mi><mi>ν</mi></mrow><annotation encoding="application/x-tex">v=r\nu</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r&gt;0</annotation></semantics></math>.
+The subspace</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>A</mi><mn>𝟏</mn><mo>,</mo><mspace width="2.0em"></mspace><mi>y</mi><mo>=</mo><mi>x</mi><mn>𝟏</mn><mo>+</mo><mi>r</mi><mi>ν</mi></mrow><annotation encoding="application/x-tex">
+a=A\mathbf1,\qquad y=x\mathbf1+r\nu
+</annotation></semantics></math></p>
+<p>is invariant. Its equations are</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>τ</mi><mi>y</mi></msub><mover><mi>x</mi><mo accent="true">̇</mo></mover><mo>=</mo><mi>−</mi><msqrt><mi>A</mi></msqrt><mspace width="0.167em"></mspace><mi>x</mi><mo>+</mo><msub><mi>u</mi><mn>0</mn></msub><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>τ</mi><mi>y</mi></msub><mover><mi>r</mi><mo accent="true">̇</mo></mover><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><mi>−</mi><mn>1</mn><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msqrt><mi>A</mi></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mi>λ</mi><mo stretchy="true" form="postfix">]</mo></mrow><mi>r</mi><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>τ</mi><mi>a</mi></msub><mover><mi>A</mi><mo accent="true">̇</mo></mover><mo>=</mo><mi>c</mi><mo>−</mo><mi>A</mi><mo>+</mo><mi>w</mi><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>r</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\tau_y\dot x=-\sqrt A\,x+u_0,\qquad
+\tau_y\dot r=[-1+(1-\sqrt A)\lambda]r,\qquad
+\tau_a\dot A=c-A+wA(x^2+r^2).                       \tag{32}
+</annotation></semantics></math></p>
+<p>At the branch equilibrium, with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>s</mi><mi>λ</mi></msub></mrow><annotation encoding="application/x-tex">s=s_\lambda</annotation></semantics></math>,
+its Jacobian is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mn>3</mn></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>−</mi><mi>s</mi><mi>/</mi><msub><mi>τ</mi><mi>y</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mi>x</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>s</mi><msub><mi>τ</mi><mi>y</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mi>λ</mi><mi>r</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>s</mi><msub><mi>τ</mi><mi>y</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn><mi>w</mi><msup><mi>s</mi><mn>2</mn></msup><mi>x</mi><mi>/</mi><msub><mi>τ</mi><mi>a</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn><mi>w</mi><msup><mi>s</mi><mn>2</mn></msup><mi>r</mi><mi>/</mi><msub><mi>τ</mi><mi>a</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mi>c</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>s</mi><mn>2</mn></msup><msub><mi>τ</mi><mi>a</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+J_3=\begin{pmatrix}
+-s/\tau_y&amp;0&amp;-x/(2s\tau_y)\\
+0&amp;0&amp;-\lambda r/(2s\tau_y)\\
+2ws^2x/\tau_a&amp;2ws^2r/\tau_a&amp;-c/(s^2\tau_a)
+\end{pmatrix}.                                    \tag{33}
+</annotation></semantics></math></p>
+<p>Its determinant is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mi>λ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>w</mi><msup><mi>s</mi><mn>2</mn></msup><msup><mi>r</mi><mn>2</mn></msup><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>τ</mi><mi>y</mi><mn>2</mn></msubsup><msub><mi>τ</mi><mi>a</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(-\lambda)ws^2r^2/(\tau_y^2\tau_a)&gt;0</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>det</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mi>I</mi><mo>−</mo><msub><mi>J</mi><mn>3</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\det(tI-J_3)</annotation></semantics></math>
+is negative at zero and positive for sufficiently large positive
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>,
+proving a positive real eigenvalue and instability in the full
+system.</p>
+<p>For completeness, this block has exactly one positive eigenvalue and
+two eigenvalues with negative real parts. Indeed, put</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mi>s</mi><mi>/</mi><msub><mi>τ</mi><mi>y</mi></msub><mo>,</mo><mspace width="1.0em"></mspace><mi>d</mi><mo>=</mo><mi>c</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>s</mi><mn>2</mn></msup><msub><mi>τ</mi><mi>a</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><mi>g</mi><mo>=</mo><mi>w</mi><mi>s</mi><msup><mi>x</mi><mn>2</mn></msup><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>τ</mi><mi>y</mi></msub><msub><mi>τ</mi><mi>a</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><mi>h</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mi>λ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>w</mi><mi>s</mi><msup><mi>r</mi><mn>2</mn></msup><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>τ</mi><mi>y</mi></msub><msub><mi>τ</mi><mi>a</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+L=s/\tau_y,\quad d=c/(s^2\tau_a),\quad
+g=wsx^2/(\tau_y\tau_a),\quad h=(-\lambda)wsr^2/(\tau_y\tau_a).
+</annotation></semantics></math></p>
+<p>Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>h</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">L,d,h&gt;0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g\geq0</annotation></semantics></math>,
+and its characteristic polynomial is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>t</mi><mn>3</mn></msup><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>L</mi><mo>+</mo><mi>d</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>L</mi><mi>d</mi><mo>+</mo><mi>g</mi><mo>−</mo><mi>h</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>t</mi><mo>−</mo><mi>L</mi><mi>h</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+t^3+(L+d)t^2+(Ld+g-h)t-Lh.                          \tag{34}
+</annotation></semantics></math></p>
+<p>Its coefficient sequence has exactly one sign change, so Descartes’
+rule gives one positive real root. The other two roots have positive
+product and negative sum, hence negative real parts. All remaining
+response directions decouple, giving the full characteristic
+polynomial</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>+</mo><mn>1</mn><mi>/</mi><msub><mi>τ</mi><mi>a</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>det</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mi>I</mi><mo>−</mo><msub><mi>J</mi><mn>3</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><munder><mo>∏</mo><mrow><mi>μ</mi><mo>∈</mo><mo>spec</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>R</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>\</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mi>λ</mi><mo stretchy="false" form="postfix">}</mo></mrow></munder><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>−</mo><mfrac><mrow><mi>μ</mi><mi>/</mi><mi>λ</mi><mo>−</mo><mn>1</mn></mrow><msub><mi>τ</mi><mi>y</mi></msub></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+(t+1/\tau_a)^{n-1}\det(tI-J_3)
+\prod_{\mu\in\operatorname{spec}(R)\setminus\{1,\lambda\}}
+\left(t-\frac{\mu/\lambda-1}{\tau_y}\right),         \tag{35}
+</annotation></semantics></math></p>
+<p>where one copy of each indicated eigenvalue is deleted. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>q</mi><mi>λ</mi></msub><annotation encoding="application/x-tex">q_\lambda</annotation></semantics></math>
+counts eigenvalues
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>&lt;</mo><mi>λ</mi></mrow><annotation encoding="application/x-tex">\mu&lt;\lambda</annotation></semantics></math>
+with multiplicity, a branch point has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>λ</mi></msub><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">q_\lambda+1</annotation></semantics></math>
+unstable eigenvalues,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>λ</mi></msub><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">m_\lambda-1</annotation></semantics></math>
+zero tangent eigenvalues and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>n</mi><mo>−</mo><msub><mi>q</mi><mi>λ</mi></msub><mo>−</mo><msub><mi>m</mi><mi>λ</mi></msub></mrow><annotation encoding="application/x-tex">2n-q_\lambda-m_\lambda</annotation></semantics></math>
+stable eigenvalues. When
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>λ</mi></msub><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">m_\lambda&gt;1</annotation></semantics></math>
+the points are not individually hyperbolic; the zero directions are
+tangent to their equilibrium sphere.</p>
+<p><em>The critical equality case.</em> Suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>0</mn></msub><mo>=</mo><mi>S</mi><mo>=</mo><msub><mi>s</mi><mo>*</mo></msub><mo>=</mo><mn>1</mn><mo>−</mo><mn>1</mn><mi>/</mi><msub><mi>λ</mi><mo>*</mo></msub></mrow><annotation encoding="application/x-tex">s_0=S=s_*=1-1/\lambda_*</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mo>*</mo></msub><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda_*&lt;0</annotation></semantics></math>
+minimal. Choose any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ν</mi><mo>∈</mo><msub><mi>E</mi><msub><mi>λ</mi><mo>*</mo></msub></msub></mrow><annotation encoding="application/x-tex">\nu\in E_{\lambda_*}</annotation></semantics></math>
+of squared norm
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+and restrict to (32). Set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msqrt><mi>A</mi></msqrt></mrow><annotation encoding="application/x-tex">s=\sqrt A</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><msub><mi>u</mi><mn>0</mn></msub><mi>/</mi><mi>S</mi></mrow><annotation encoding="application/x-tex">x_0=u_0/S</annotation></semantics></math>.
+The equations become</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">̇</mo></mover><mo>=</mo><mfrac><mrow><mi>−</mi><mi>s</mi><mi>x</mi><mo>+</mo><msub><mi>u</mi><mn>0</mn></msub></mrow><msub><mi>τ</mi><mi>y</mi></msub></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mover><mi>r</mi><mo accent="true">̇</mo></mover><mo>=</mo><mfrac><mrow><mi>−</mi><msub><mi>λ</mi><mo>*</mo></msub></mrow><msub><mi>τ</mi><mi>y</mi></msub></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo>−</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>r</mi><mo>,</mo><mspace width="2.0em"></mspace><mover><mi>s</mi><mo accent="true">̇</mo></mover><mo>=</mo><mfrac><mrow><mi>c</mi><mo>−</mo><msup><mi>s</mi><mn>2</mn></msup><mo>+</mo><mi>w</mi><msup><mi>s</mi><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>r</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>2</mn><msub><mi>τ</mi><mi>a</mi></msub><mi>s</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\dot x=\frac{-sx+u_0}{\tau_y},\qquad
+\dot r=\frac{-\lambda_*}{\tau_y}(s-S)r,\qquad
+\dot s=\frac{c-s^2+ws^2(x^2+r^2)}{2\tau_a s}.        \tag{36}
+</annotation></semantics></math></p>
+<p>We give an elementary first-exit proof, including the nonhyperbolic
+boundary. Put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><msub><mi>λ</mi><mo>*</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msub><mi>τ</mi><mi>y</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\theta=(-\lambda_*)/\tau_y&gt;0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>=</mo><mi>−</mi><mi>w</mi><msub><mi>x</mi><mn>0</mn></msub><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">A_2=-wx_0/2</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mn>2</mn></msub><mo>=</mo><mi>w</mi><mi>S</mi><mi>/</mi><mn>2</mn><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B_2=wS/2&gt;0</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><mi>θ</mi><msub><mi>B</mi><mn>2</mn></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\kappa=\theta B_2&gt;0</annotation></semantics></math>.
+Use the explicit smooth coordinates</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>=</mo><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub><mo>−</mo><msub><mi>A</mi><mn>2</mn></msub><msup><mi>r</mi><mn>2</mn></msup><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>z</mi><mn>2</mn></msub><mo>=</mo><mi>s</mi><mo>−</mo><mi>S</mi><mo>−</mo><msub><mi>B</mi><mn>2</mn></msub><msup><mi>r</mi><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+z_1=x-x_0-A_2r^2,\qquad z_2=s-S-B_2r^2.           \tag{37}
+</annotation></semantics></math></p>
+<p>The linear block in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><mi>s</mi><mo>−</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(x-x_0,s-S)</annotation></semantics></math>
+is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>−</mi><mi>S</mi><mi>/</mi><msub><mi>τ</mi><mi>y</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><msub><mi>x</mi><mn>0</mn></msub><mi>/</mi><msub><mi>τ</mi><mi>y</mi></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>w</mi><mi>S</mi><msub><mi>x</mi><mn>0</mn></msub><mi>/</mi><msub><mi>τ</mi><mi>a</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mi>c</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>τ</mi><mi>a</mi></msub><msup><mi>S</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+M=\begin{pmatrix}-S/\tau_y&amp;-x_0/\tau_y\\
+wSx_0/\tau_a&amp;-c/(\tau_aS^2)\end{pmatrix}.
+</annotation></semantics></math></p>
+<p>Since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><msup><mi>S</mi><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>w</mi><msubsup><mi>x</mi><mn>0</mn><mn>2</mn></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c=S^2(1-wx_0^2)&gt;0</annotation></semantics></math>,
+substitution in (36) cancels the pure
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>r</mi><mn>2</mn></msup><annotation encoding="application/x-tex">r^2</annotation></semantics></math>
+terms and yields</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>z</mi><mo accent="true">̇</mo></mover><mo>=</mo><mi>M</mi><mi>z</mi><mo>+</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo>,</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mover><mi>r</mi><mo accent="true">̇</mo></mover><mo>=</mo><mi>κ</mi><msup><mi>r</mi><mn>3</mn></msup><mo>+</mo><mi>θ</mi><msub><mi>z</mi><mn>2</mn></msub><mi>r</mi><mo>,</mo><mspace width="2.0em"></mspace><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo>,</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">∥</mo><mo>≤</mo><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>r</mi><mn>4</mn></msup><mo>+</mo><msup><mi>r</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">∥</mo><mi>z</mi><mo stretchy="false" form="postfix">∥</mo><mi>+</mi><mo stretchy="false" form="postfix">∥</mo><mi>z</mi><msup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+\dot z=Mz+F(r,z),\qquad
+\dot r=\kappa r^3+\theta z_2r,\qquad
+\|F(r,z)\|\leq C(r^4+r^2\|z\|+\|z\|^2)            \tag{38}
+</annotation></semantics></math></p>
+<p>on a sufficiently small neighborhood with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≥</mo><mi>S</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">s\geq S/2</annotation></semantics></math>.
+Here
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+is finite. To verify the remainder, the original
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(x,s)</annotation></semantics></math>
+field is smooth and even in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>;
+its pure quadratic terms cancel because</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><msub><mi>A</mi><mn>2</mn></msub><mo>+</mo><msub><mi>x</mi><mn>0</mn></msub><msub><mi>B</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mspace width="2.0em"></mspace><mn>2</mn><mi>w</mi><msup><mi>S</mi><mn>2</mn></msup><msub><mi>x</mi><mn>0</mn></msub><msub><mi>A</mi><mn>2</mn></msub><mo>−</mo><mn>2</mn><mi>S</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>w</mi><msubsup><mi>x</mi><mn>0</mn><mn>2</mn></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>B</mi><mn>2</mn></msub><mo>+</mo><mi>w</mi><msup><mi>S</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+SA_2+x_0B_2=0,\qquad
+2wS^2x_0A_2-2S(1-wx_0^2)B_2+wS^2=0.
+</annotation></semantics></math></p>
+<p>The derivative of the subtracted quadratic graph is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><msub><mi>B</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>r</mi><mover><mi>r</mi><mo accent="true">̇</mo></mover></mrow><annotation encoding="application/x-tex">2(A_2,B_2)r\dot r</annotation></semantics></math>,
+of order
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>r</mi><mn>4</mn></msup><mo>+</mo><msup><mi>r</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">∥</mo><mi>z</mi><mo stretchy="false" form="postfix">∥</mo></mrow><annotation encoding="application/x-tex">r^4+r^2\|z\|</annotation></semantics></math>.
+All remaining terms have the order bounded in (38). A Taylor bound
+exists on a compact neighborhood because the only denominator
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+stays positive.</p>
+<p>The positive diagonal matrix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mo>diag</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mi>S</mi><msub><mi>τ</mi><mi>y</mi></msub><mo>,</mo><msub><mi>τ</mi><mi>a</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P=\operatorname{diag}(wS\tau_y,\tau_a)</annotation></semantics></math>
+satisfies the exact identity</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mi>⊤</mi></msup><mi>P</mi><mo>+</mo><mi>P</mi><mi>M</mi><mo>=</mo><mo>diag</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mn>2</mn><mi>w</mi><msup><mi>S</mi><mn>2</mn></msup><mo>,</mo><mi>−</mi><mn>2</mn><mi>c</mi><mi>/</mi><msup><mi>S</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>≺</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+M^\top P+PM=\operatorname{diag}(-2wS^2,-2c/S^2)\prec0.
+</annotation></semantics></math></p>
+<p>Set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>z</mi><mi>⊤</mi></msup><mi>P</mi><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\rho=(z^\top Pz)^{1/2}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mo>min</mo><mo stretchy="false" form="prefix">{</mo><mi>S</mi><mi>/</mi><msub><mi>τ</mi><mi>y</mi></msub><mo>,</mo><mi>c</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mn>2</mn></msup><msub><mi>τ</mi><mi>a</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">}</mo><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\alpha=\min\{S/\tau_y,c/(S^2\tau_a)\}&gt;0</annotation></semantics></math>.
+At
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\rho&gt;0</annotation></semantics></math>,
+(38) gives a finite
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mn>1</mn></msub><annotation encoding="application/x-tex">C_1</annotation></semantics></math>
+such that</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>ρ</mi><mo accent="true">̇</mo></mover><mo>≤</mo><mi>−</mi><mi>α</mi><mi>ρ</mi><mo>+</mo><msub><mi>C</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>r</mi><mn>4</mn></msup><mo>+</mo><msup><mi>r</mi><mn>2</mn></msup><mi>ρ</mi><mo>+</mo><msup><mi>ρ</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\dot\rho\leq-\alpha\rho+C_1(r^4+r^2\rho+\rho^2).
+</annotation></semantics></math></p>
+<p>Choose a sufficiently small fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math>
+so that the region
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>r</mi><mo>≤</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">0 \lt r\leq\varepsilon</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>≤</mo><msup><mi>r</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho\leq r^3</annotation></semantics></math>
+stays in that neighborhood,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>≤</mo><msub><mi>B</mi><mn>2</mn></msub><msqrt><msub><mi>τ</mi><mi>a</mi></msub></msqrt><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\varepsilon\leq B_2\sqrt{\tau_a}/2</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>ε</mi><mo>+</mo><msup><mi>ε</mi><mn>2</mn></msup><mo>+</mo><msup><mi>ε</mi><mn>3</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>&lt;</mo><mi>α</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">C_1(\varepsilon+\varepsilon^2+\varepsilon^3)&lt;\alpha/2</annotation></semantics></math>.
+Inside this region,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>z</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><msup><mi>r</mi><mn>3</mn></msup><mi>/</mi><msqrt><msub><mi>τ</mi><mi>a</mi></msub></msqrt></mrow><annotation encoding="application/x-tex">|z_2|\leq r^3/\sqrt{\tau_a}</annotation></semantics></math>
+and therefore
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>r</mi><mo accent="true">̇</mo></mover><mo>≥</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>κ</mi><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>r</mi><mn>3</mn></msup><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\dot r\geq(\kappa/2)r^3&gt;0</annotation></semantics></math>.
+On its lateral boundary
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><msup><mi>r</mi><mn>3</mn></msup><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\rho=r^3&gt;0</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mi>ρ</mi><mo>−</mo><msup><mi>r</mi><mn>3</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>−</mi><mfrac><mi>α</mi><mn>2</mn></mfrac><msup><mi>r</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>r</mi><mn>2</mn></msup><mover><mi>r</mi><mo accent="true">̇</mo></mover><mo>&lt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\frac{d}{dt}(\rho-r^3)
+\leq-\frac\alpha2 r^3-3r^2\dot r&lt;0.
+</annotation></semantics></math></p>
+<p>A trajectory starting at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">z=0</annotation></semantics></math>
+and any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><msub><mi>r</mi><mn>0</mn></msub><mo>&lt;</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">0 \lt r_0&lt;\varepsilon</annotation></semantics></math>
+cannot exit through that side or through
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r=0</annotation></semantics></math>.
+Before reaching
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">r=\varepsilon</annotation></semantics></math>,
+it stays in a compact smooth region, so local existence and continuation
+apply. But
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>r</mi><mrow><mi>−</mi><mn>2</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>d</mi><mi>t</mi><mo>≤</mo><mi>−</mi><mi>κ</mi></mrow><annotation encoding="application/x-tex">d(r^{-2})/dt\leq-\kappa</annotation></semantics></math>
+forces it to reach
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">r=\varepsilon</annotation></semantics></math>
+in finite time. The physical starting points
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><msub><mi>A</mi><mn>2</mn></msub><msubsup><mi>r</mi><mn>0</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">x=x_0+A_2r_0^2</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>S</mi><mo>+</mo><msub><mi>B</mi><mn>2</mn></msub><msubsup><mi>r</mi><mn>0</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">s=S+B_2r_0^2</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi><mn>𝟏</mn><mo>+</mo><msub><mi>r</mi><mn>0</mn></msub><mi>ν</mi></mrow><annotation encoding="application/x-tex">y=x\mathbf1+r_0\nu</annotation></semantics></math>
+approach the equilibrium as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>0</mn></msub><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r_0\downarrow0</annotation></semantics></math>.
+At exit the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ν</mi><annotation encoding="application/x-tex">\nu</annotation></semantics></math>
+component of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>−</mo><msub><mi>y</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">y-y_0</annotation></semantics></math>
+has norm
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>n</mi></msqrt><mspace width="0.167em"></mspace><mi>ε</mi></mrow><annotation encoding="application/x-tex">\sqrt n\,\varepsilon</annotation></semantics></math>,
+independent of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mn>0</mn></msub><annotation encoding="application/x-tex">r_0</annotation></semantics></math>.
+This proves Lyapunov instability. Differentiation of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>
+is used on the lateral boundary only, where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\rho&gt;0</annotation></semantics></math>;
+the initial
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">z=0</annotation></semantics></math>
+creates no differentiability gap.</p>
+<p>This proof never divides by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>u</mi><mn>0</mn></msub><annotation encoding="application/x-tex">u_0</annotation></semantics></math>
+and includes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">u_0=0</annotation></semantics></math>.
+Repeated
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>λ</mi><mo>*</mo></msub><annotation encoding="application/x-tex">\lambda_*</annotation></semantics></math>
+causes no difficulty because one invariant radial subsystem already
+supplies escaping trajectories. At any later pole a more negative mode
+already has a positive eigenvalue. This completes the proof.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>The branches (28) lie on the side of their collision where the
+associated
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>
+response mode of the synchronous point is stable; other more negative
+modes may already be unstable. Every branch has an unstable radial
+direction. Equations (28) and (38) give this subcritical orientation
+directly, without a claim that an arbitrary perturbation preserves the
+same symmetric bifurcation diagram.</p>
+<h2 id="arbitrary-pooling-with-negative-identity-recurrence">7.
+Arbitrary pooling with negative identity recurrence</h2>
+<p>The spectral classifications above depend on shared uniform pooling.
+A separate obstruction needs neither that assumption nor common time
+constants.</p>
+<p>Define, for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>,</mo><mi>d</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c,d&gt;0</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mn>2</mn><msqrt><mi>d</mi></msqrt></mfrac><msubsup><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mi>/</mi><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>1</mn><mi>/</mi><mn>3</mn></mrow></msup><mo stretchy="true" form="postfix">]</mo></mrow><mo>+</mo><mrow><mn>3</mn><mi>/</mi><mn>2</mn></mrow></msubsup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+H(c,d)=\frac2{\sqrt d}
+\left[1-(c/4)^{1/3}\right]_+^{3/2}.                 \tag{39}
+</annotation></semantics></math></p>
+<p><strong>Lemma 9 (positive-response input ceiling).</strong> For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>,</mo><mi>d</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c,d&gt;0</annotation></semantics></math>,
+the supremum over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>q</mi><mo>&lt;</mo><msup><mi>d</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">0 \lt q \lt d^{-1/2}</annotation></semantics></math>
+of the positive part of</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>−</mo><mfrac><msqrt><mi>c</mi></msqrt><msqrt><mrow><mn>1</mn><mo>−</mo><mi>d</mi><msup><mi>q</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+h(q)=q\left(2-\frac{\sqrt c}{\sqrt{1-dq^2}}\right)
+</annotation></semantics></math></p>
+<p>is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">H(c,d)</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>c</mi><mo>&lt;</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">0 \lt c&lt;4</annotation></semantics></math>,
+its positive maximum is attained at</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mo>*</mo></msub><mo>=</mo><msup><mi>d</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mi>/</mi><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>1</mn><mi>/</mi><mn>3</mn></mrow></msup></mrow></msqrt><mi>.</mi></mrow><annotation encoding="application/x-tex">
+q_*=d^{-1/2}\sqrt{1-(c/4)^{1/3}}.                   \tag{40}
+</annotation></semantics></math></p>
+<p><em>Proof.</em> The derivative is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>2</mn><mo>−</mo><msqrt><mi>c</mi></msqrt><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>d</mi><msup><mi>q</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>−</mi><mn>3</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">h&#39;(q)=2-\sqrt c(1-dq^2)^{-3/2}</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>≥</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">c\geq4</annotation></semantics></math>,
+the function is nonpositive for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">q&gt;0</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&lt;</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">c&lt;4</annotation></semantics></math>,
+its derivative decreases strictly from a positive value to negative
+infinity and vanishes exactly at (40). Substitution gives (39).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Theorem 10 (general-pooling all-equilibria
+obstruction).</strong> In (1), set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>−</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">R=-I</annotation></semantics></math>.
+Assume
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>i</mi></msub><mo>,</mo><msub><mi>c</mi><mi>i</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">u_i,c_i&gt;0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">W\geq0</annotation></semantics></math>
+entrywise,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">W_{ii}&gt;0</annotation></semantics></math>,
+and arbitrary positive diagonal
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>y</mi></msub><mo>,</mo><msub><mi>T</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">T_y,T_a</annotation></semantics></math>.
+If</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>i</mi></msub><mo>&gt;</mo><mi>H</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>c</mi><mi>i</mi></msub><mo>,</mo><msub><mi>W</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="1.0em"></mspace><mrow><mtext mathvariant="normal">for every </mtext><mspace width="0.333em"></mspace></mrow><mi>i</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">
+u_i&gt;H(c_i,W_{ii})\quad\text{for every }i,             \tag{41}
+</annotation></semantics></math></p>
+<p>then at least one equilibrium exists, and every equilibrium has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y_i&lt;0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>&gt;</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">a_i&gt;4</annotation></semantics></math>
+and is linearly unstable. Its spectral abscissa obeys</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>J</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><munder><mo>max</mo><mi>i</mi></munder><mfrac><mrow><msqrt><msub><mi>a</mi><mi>i</mi></msub></msqrt><mo>−</mo><mn>2</mn></mrow><msub><mi>τ</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi></mrow></msub></mfrac><mo>&gt;</mo><munder><mo>max</mo><mi>i</mi></munder><mfrac><mrow><msub><mi>u</mi><mi>i</mi></msub><msqrt><msub><mi>W</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub></msqrt></mrow><msub><mi>τ</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi></mrow></msub></mfrac><mo>&gt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\alpha(J)\geq\max_i\frac{\sqrt{a_i}-2}{\tau_{y,i}}
+&gt;\max_i\frac{u_i\sqrt{W_{ii}}}{\tau_{y,i}}&gt;0.         \tag{42}
+</annotation></semantics></math></p>
+<p><em>Exclusion of nonnegative responses.</em> At equilibrium,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>i</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>−</mo><msqrt><msub><mi>a</mi><mi>i</mi></msub></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>y</mi><mi>i</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+u_i=(2-\sqrt{a_i})y_i.                              \tag{43}
+</annotation></semantics></math></p>
+<p>No
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>y</mi><mi>i</mi></msub><annotation encoding="application/x-tex">y_i</annotation></semantics></math>
+can be zero. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y_i&gt;0</annotation></semantics></math>,
+Lemma 1 bounds the right side by the function in Lemma 9 with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><msub><mi>W</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">d=W_{ii}</annotation></semantics></math>,
+contradicting (41). Hence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y_i&lt;0</annotation></semantics></math>
+and (43) gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msub><mi>a</mi><mi>i</mi></msub></msqrt><mo>&gt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\sqrt{a_i}&gt;2</annotation></semantics></math>.</p>
+<p><em>Instability of every equilibrium.</em> The Jacobian blocks
+are</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>A</mi></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><msubsup><mi>T</mi><mi>y</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><mi>D</mi><mrow><mo stretchy="true" form="prefix">(</mo><msqrt><mi>a</mi></msqrt><mo>−</mo><mn>2</mn><mn>𝟏</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mtd><mtd columnalign="right" style="text-align: right"><mi>B</mi></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><msubsup><mi>T</mi><mi>y</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><mi>D</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><msqrt><mi>a</mi></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>C</mi></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mn>2</mn><msubsup><mi>T</mi><mi>a</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><mi>W</mi><mi>D</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>⊙</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mtd><mtd columnalign="right" style="text-align: right"><msub><mi>D</mi><mn>0</mn></msub></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><msubsup><mi>T</mi><mi>a</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><mrow><mo stretchy="true" form="prefix">[</mo><mi>−</mi><mi>I</mi><mo>+</mo><mi>W</mi><mi>D</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>y</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+A&amp;=T_y^{-1}D(\sqrt a-2\mathbf1),&amp;
+B&amp;=T_y^{-1}D(y/(2\sqrt a)),\\
+C&amp;=2T_a^{-1}W D(a\odot y),&amp;
+D_0&amp;=T_a^{-1}[-I+W D(y^2)].
+\end{aligned}                                     \tag{44}
+</annotation></semantics></math></p>
+<p>The conjugation by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>diag</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>I</mi><mo>,</mo><mi>−</mi><mi>I</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{diag}(I,-I)</annotation></semantics></math>
+makes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+a Metzler matrix: all off-diagonal entries are nonnegative. For a
+Metzler matrix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>,
+shift by a sufficiently large scalar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+so that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>+</mo><mi>q</mi><mi>I</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">M+qI\geq0</annotation></semantics></math>.
+Perron–Frobenius theory gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>M</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>M</mi><mo>+</mo><mi>q</mi><mi>I</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>q</mi><mo>≥</mo><msub><mo>max</mo><mi>i</mi></msub><msub><mi>M</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\alpha(M)=\rho(M+qI)-q\geq\max_i M_{ii}</annotation></semantics></math>
+[7]. Applying this to the positive response diagonal gives the first
+inequality in (42). Equation (2) and (43) imply
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msub><mi>a</mi><mi>i</mi></msub></msqrt><mo>−</mo><mn>2</mn><mo>=</mo><msub><mi>u</mi><mi>i</mi></msub><mi>/</mi><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>&gt;</mo><msub><mi>u</mi><mi>i</mi></msub><msqrt><msub><mi>W</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{a_i}-2=u_i/|y_i|&gt;u_i\sqrt{W_{ii}}</annotation></semantics></math>,
+giving the strict lower bound.</p>
+<p><em>Existence.</em> In fact, existence of a negative-response
+equilibrium holds for every positive
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>,</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">u,c</annotation></semantics></math>
+under the pooling assumptions, without (41). Put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mi>y</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=-y&gt;0</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>+</mo><msub><mi>u</mi><mi>i</mi></msub><mi>/</mi><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">a_i=(2+u_i/x_i)^2</annotation></semantics></math>.
+The first equilibrium equation is automatic, and the second is
+equivalent to</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>+</mo><msub><mi>u</mi><mi>i</mi></msub><mi>/</mi><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>−</mo><msub><mi>c</mi><mi>i</mi></msub><mo>−</mo><munder><mo>∑</mo><mi>j</mi></munder><msub><mi>W</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><msub><mi>x</mi><mi>j</mi></msub><mo>+</mo><msub><mi>u</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+F_i(x)=(2+u_i/x_i)^2-c_i-\sum_jW_{ij}(2x_j+u_j)^2=0. \tag{45}
+</annotation></semantics></math></p>
+<p>Write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mo>−</mo></msub><mo>=</mo><msub><mo>min</mo><mi>i</mi></msub><msub><mi>u</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">u_-=\min_i u_i</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mo>+</mo></msub><mo>=</mo><msub><mo>max</mo><mi>i</mi></msub><msub><mi>u</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">u_+=\max_i u_i</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mo>+</mo></msub><mo>=</mo><msub><mo>max</mo><mi>i</mi></msub><msub><mi>c</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">c_+=\max_i c_i</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mo>−</mo></msub><mo>=</mo><msub><mo>min</mo><mi>i</mi></msub><msub><mi>W</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">d_-=\min_i W_{ii}&gt;0</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><msub><mo>max</mo><mi>i</mi></msub><msub><mo>∑</mo><mi>j</mi></msub><msub><mi>W</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">L=\max_i\sum_jW_{ij}</annotation></semantics></math>.
+Choose</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>=</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mn>3</mn><mo>+</mo><msub><mi>u</mi><mo>+</mo></msub></mrow><mrow><mn>2</mn><msqrt><msub><mi>d</mi><mo>−</mo></msub></msqrt></mrow></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mi>K</mi><mo>=</mo><mn>1</mn><mo>+</mo><msub><mi>c</mi><mo>+</mo></msub><mo>+</mo><mi>L</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>U</mi><mo>+</mo><msub><mi>u</mi><mo>+</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>,</mo><mspace width="1.0em"></mspace><mo>ℓ</mo><mo>=</mo><mo>min</mo><mo stretchy="false" form="prefix">{</mo><mi>U</mi><mi>/</mi><mn>2</mn><mo>,</mo><mspace width="0.167em"></mspace><msub><mi>u</mi><mo>−</mo></msub><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><msqrt><mi>K</mi></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+U=1+\frac{3+u_+}{2\sqrt{d_-}},\quad
+K=1+c_++L(2U+u_+)^2,\quad
+\ell=\min\{U/2,\,u_-/(2\sqrt K)\}.                 \tag{46}
+</annotation></semantics></math></p>
+<p>On the face
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">x_i=U</annotation></semantics></math>,
+(45) satisfies</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>+</mo><msub><mi>u</mi><mo>+</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>−</mo><msub><mi>d</mi><mo>−</mo></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>U</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>&lt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+F_i(x)\leq(2+u_+)^2-d_-(2U)^2&lt;0.
+</annotation></semantics></math></p>
+<p>On
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mo>ℓ</mo></mrow><annotation encoding="application/x-tex">x_i=\ell</annotation></semantics></math>,
+it satisfies</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><msubsup><mi>u</mi><mo>−</mo><mn>2</mn></msubsup><mi>/</mi><msup><mo>ℓ</mo><mn>2</mn></msup><mo>−</mo><msub><mi>c</mi><mo>+</mo></msub><mo>−</mo><mi>L</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>U</mi><mo>+</mo><msub><mi>u</mi><mo>+</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>&gt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+F_i(x)\geq u_-^2/\ell^2-c_+-L(2U+u_+)^2&gt;0.
+</annotation></semantics></math></p>
+<p>Apply Brouwer’s fixed-point theorem to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mo>clip</mo><mrow><mo stretchy="true" form="prefix">[</mo><mo>ℓ</mo><mo>,</mo><mi>U</mi><mo stretchy="true" form="postfix">]</mo></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><msub><mi>F</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">G_i(x)=\operatorname{clip}_{[\ell,U]}(x_i+F_i(x))</annotation></semantics></math>.
+Strict face signs exclude boundary fixed points. An interior fixed point
+has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">F(x)=0</annotation></semantics></math>.
+Reconstructing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>,</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(y,a)</annotation></semantics></math>
+proves existence and completes the argument.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>Condition (41) is sufficient for general coupled pooling; it is not
+claimed necessary there. For a scalar circuit the ceiling in Lemma 9 is
+exact. To see the strict regimes, assume
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>c</mi><mo>&lt;</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">0 \lt c&lt;4</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">w&gt;0</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">u&gt;0</annotation></semantics></math>.
+The graph
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">u=h(y)</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>y</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>&lt;</mo><mn>1</mn><mi>/</mi><msqrt><mi>w</mi></msqrt></mrow><annotation encoding="application/x-tex">|y|&lt;1/\sqrt w</annotation></semantics></math>
+has one negative root for every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>,
+and two positive roots exactly when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>u</mi><mo>&lt;</mo><mi>H</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mo>,</mo><mi>w</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">0 \lt u \lt H(c,w)</annotation></semantics></math>.
+At the smaller positive root, both Jacobian diagonal entries are
+negative and</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>det</mo><mi>J</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mi>w</mi><msup><mi>y</mi><mn>2</mn></msup></mrow><mrow><msub><mi>τ</mi><mi>y</mi></msub><msub><mi>τ</mi><mi>a</mi></msub></mrow></mfrac><mrow><mo stretchy="true" form="prefix">[</mo><mn>2</mn><mo>−</mo><msqrt><mi>c</mi></msqrt><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>w</mi><msup><mi>y</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>−</mi><mn>3</mn><mi>/</mi><mn>2</mn></mrow></msup><mo stretchy="true" form="postfix">]</mo></mrow><mo>&gt;</mo><mn>0</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">
+\det J=\frac{1-wy^2}{\tau_y\tau_a}
+\left[2-\sqrt c(1-wy^2)^{-3/2}\right]&gt;0,             \tag{47}
+</annotation></semantics></math></p>
+<p>so it is locally exponentially stable. The larger positive root and
+the negative root have negative determinant and are saddles. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>&gt;</mo><mi>H</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mo>,</mo><mi>w</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">u&gt;H(c,w)</annotation></semantics></math>,
+only the negative saddle remains. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>≥</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">c\geq4</annotation></semantics></math>,
+every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">u&gt;0</annotation></semantics></math>
+has only that negative saddle. We make no scalar fold-equality stability
+claim here; the independent critical equality result of Theorem 8
+concerns its own specified family.</p>
+<h2 id="reproducible-certificates-and-interpretation">8. Reproducible
+certificates and interpretation</h2>
+<p>The two counterexamples use rational coefficients. Their equilibrium
+obstructions and the full characteristic polynomial in (7) can be
+verified using exact arithmetic. The accompanying certificate script
+checks those identities, the shared-pool projection budget, the
+characteristic polynomial of (33), the cancellation in (22)–(23), the
+quadratic-coordinate cancellation and Lyapunov identity in (37)–(38),
+and the threshold derivative in Lemma 9. A separate numerical program
+samples positive semidefinite recurrences and several negative spectral
+configurations to check the predicted finite-dimensional equilibria and
+eigenvalue counts. Finite numerical diagnostics illustrate the claims;
+the general proofs are those above.</p>
+<p>The relevant distinction is between an upper bound on singular values
+and control over the entire recurrent spectrum. A zero mode leaves an
+unattenuated input component; that component can exceed the exact
+pooling budget. A negative mode can reverse the effect of the gain
+factor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><msqrt><mi>a</mi></msqrt></mrow><annotation encoding="application/x-tex">1-\sqrt a</annotation></semantics></math>,
+turning an otherwise suppressive feedback into amplification. In the
+shared symmetric family, positive definiteness removes both mechanisms,
+while the kernel budget in Theorem 5 gives the exact exception allowed
+for singular recurrence.</p>
+<p>A positive dense matrix can have a negative eigenvalue, and a
+positive dense matrix can be singular. Entrywise positivity and
+spectral-norm normalization therefore do not repair the conjecture.
+Conversely, Theorem 6 does not prescribe a universal stability test for
+an arbitrary learned nonsymmetric network. It supplies a proved design
+condition in one precisely defined family and shows why the general
+norm-only statement is insufficient.</p>
+<h2 id="limitations-and-open-directions">9. Limitations and open
+directions</h2>
+<p>The shared-pooling positive-definiteness classification requires real
+symmetric contraction, equal baseline coordinates and one common time
+constant per neuronal population. It does not extend automatically to
+general normalization matrices, heterogeneous time constants or
+nonsymmetric recurrence. The open-family counterexample does allow small
+perturbations in all those directions; that negative result and the
+positive classification have different scopes.</p>
+<p>All stability assertions concern equilibria and their local dynamics.
+We do not prove global convergence, global boundedness, absence of
+periodic attractors, robustness to arbitrary input variation, or a
+numerical basin of attraction. No biological experiment, learning
+benchmark improvement, or training-code failure is inferred from these
+theorems. The main equation and the separately rectified model must
+remain distinct.</p>
+<p>The original source and its conjecture were inspected in the official
+NeurIPS publication and the full author version. The final novelty
+comparison includes the 2026 PNAS follow-up and the 2026 hierarchical
+ORGaNICs work. Any unavailable final text or supplement is documented
+individually in the accompanying source record; no global priority or
+exhaustive-literature claim is made. Proposed further problems are a
+deterministic nonsymmetric stability classification, sharp
+general-pooling positive criteria, and quantitative perturbation radii
+for Theorem 4. They are not used as evidence for results claimed
+here.</p>
+<h2 id="references">References</h2>
+<ol type="1">
+<li>S. Rawat, D. J. Heeger and S. Martiniani. <em>Unconditional
+stability of a recurrent neural circuit implementing divisive
+normalization</em>. Advances in Neural Information Processing Systems
+<strong>37</strong> (NeurIPS 2024, Main Conference Track), 14712–14750.
+DOI: <a
+href="https://doi.org/10.52202/079017-0470">10.52202/079017-0470</a>.
+Author version: <a
+href="https://arxiv.org/html/2409.18946v3">arXiv:2409.18946v3</a>, 15
+January 2025. The model and target conjecture are Eq. (15) and
+Conjecture 5.3.</li>
+<li>D. J. Heeger and W. E. Mackey. <em>Oscillatory recurrent gated
+neural integrator circuits (ORGaNICs), a unifying theoretical framework
+for neural dynamics</em>. Proceedings of the National Academy of
+Sciences <strong>116</strong> (2019), 22783–22794. DOI: <a
+href="https://doi.org/10.1073/pnas.1911633116">10.1073/pnas.1911633116</a>.</li>
+<li>F. Morone, S. Rawat, D. J. Heeger and S. Martiniani.
+<em>Stabilization of recurrent neural networks through divisive
+normalization</em>. Proceedings of the National Academy of Sciences
+<strong>123</strong>(30) (2026), e2601841123. DOI: <a
+href="https://doi.org/10.1073/pnas.2601841123">10.1073/pnas.2601841123</a>.</li>
+<li>F. Morone, S. Rawat, D. J. Heeger and S. Martiniani.
+<em>Stabilization of recurrent neural networks through divisive
+normalization</em>. Author preprint, 2025. DOI: <a
+href="https://doi.org/10.1101/2025.05.16.654567">10.1101/2025.05.16.654567</a>.
+This is an earlier version of [3], not an independent discovery.</li>
+<li>K. McClain, S. Rawat, M. Morrell, S. Martiniani, D. J. Heeger and F.
+Morone. <em>A minimal mechanism to generate long timescales without fine
+tuning</em>. Author preprint, 2026. <a
+href="https://arxiv.org/abs/2608.21586v1">arXiv:2608.21586v1</a>, 21
+August 2026.</li>
+<li>A. Pal, S. Rawat, D. J. Heeger and S. Martiniani. <em>Hierarchical
+neural circuit theory of normalization and inter-areal
+communication</em>. eLife <strong>15</strong>, RP111297, Version of
+Record, 17 November 2026. DOI: <a
+href="https://doi.org/10.7554/eLife.111297">10.7554/eLife.111297</a>.</li>
+<li>A. Berman and R. J. Plemmons. <em>Nonnegative Matrices in the
+Mathematical Sciences</em>. Classics in Applied Mathematics
+<strong>9</strong>, SIAM, 1994. DOI: <a
+href="https://doi.org/10.1137/1.9781611971262">10.1137/1.9781611971262</a>.
+Used only for classical nonnegative-matrix spectral facts.</li>
+</ol>

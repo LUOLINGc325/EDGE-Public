@@ -1,0 +1,1120 @@
+<h1
+id="finite-resource-response-of-reversible-covalent-switches">Finite-resource
+response of reversible covalent switches</h1>
+<h2 id="abstract">Abstract</h2>
+<p>We study the steady logarithmic response of the free
+modified/unmodified substrate ratio to a conserved enzyme total in a
+reversible covalent-modification cycle. The kinetic coefficients are
+positive, and the dimensionless chemical affinity is fixed. An exact
+response decomposition yields a sharp envelope conditional on the free
+concentrations and enzyme occupancies. It also determines the signs of
+both total-enzyme responses. For fixed positive substrate and enzyme
+totals
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">S,e,f</annotation></semantics></math>,
+and affinity
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>log</mo><mi>χ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\log\chi&gt;0</annotation></semantics></math>,
+the supremum of the forward-enzyme sensitivity over compatible kinetics
+is finite if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>≠</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S\ne e</annotation></semantics></math>.
+When
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&gt;</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S&gt;e</annotation></semantics></math>,
+its exact value is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msqrt><mi>χ</mi></msqrt><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>S</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">[</mo><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>−</mo><mi>e</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">(\sqrt\chi-1)S/[2(S-e)]</annotation></semantics></math>.
+When
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&lt;</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S \lt e</annotation></semantics></math>,
+we give a finite bound without claiming optimality. At
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S=e</annotation></semantics></math>,
+an explicit family of elementary, completely reversible mechanisms has
+unbounded sensitivity while all three totals and the affinity remain
+fixed. Every finite member has a locally asymptotically stable steady
+state. The family refutes a published conjecture extending a
+high-substrate thermodynamic bound to arbitrary substrate abundance. It
+does not contradict the established high- or low-substrate limits, which
+keep kinetics fixed. The results identify the concentration constraint
+needed to supplement affinity in finite-resource response bounds.</p>
+<p><strong>Status.</strong> This manuscript supplies written proofs.
+Numerical and symbolic diagnostics are auxiliary. External peer review
+and formal proof-assistant verification have not been completed.</p>
+<h1 id="question-contribution-and-scope">1. Question, contribution, and
+scope</h1>
+<p>Owen, Talla, Biddle, and Gunawardena [1] study a reversible
+two-enzyme covalent switch. Their response observable is the logarithm
+of the ratio of the two <em>free</em> substrate concentrations. They
+prove a bound after taking a high-substrate limit and ask whether the
+same bound holds at every finite substrate abundance. Their discussion
+also asks for monotonicity with respect to conserved enzyme totals. We
+address those two questions in the positive reduced model used in that
+work.</p>
+<p>The distinction between a free concentration and a conserved total is
+central. Perturbing a total redistributes substrate among free forms and
+enzyme-bound complexes. The resulting input conversion can become
+arbitrarily steep, even though the chemical affinity is fixed and every
+elementary reaction is reversible. Our main result identifies the exact
+resource surface where an unbounded kinetic supremum is possible.</p>
+<p>The new claims are the finite-resource response sign theorem, the
+sharp occupancy-conditioned envelope, the classification of the singular
+resource surface, and the exact above-critical supremum with admissible
+constructions. The general existence and uniqueness of the steady state
+are known [1,3]; we give an elementary proof to make the analysis
+self-contained. Enzyme sequestration as a source of ultrasensitivity is
+also established [4,5,8]. We do not claim to introduce that
+mechanism.</p>
+<p>The related thermodynamic response inequalities of Owen, Gingrich,
+and Horowitz [2] concern controlled changes of transition rates. Their
+covalent-switch application treats free enzyme concentrations as inputs
+or takes a low-substrate regime. Our total-concentration response has an
+additional conservation feedback. Qian [6] already treated a reversible
+elementary covalent cycle and its thermodynamic driving. The present
+result concerns the exact finite-total constraints, rather than
+introducing that kinetic model. Response-fluctuation inequalities for
+reaction-rate perturbations [7] likewise use a different perturbation
+class.</p>
+<p>Two further distinctions are relevant. The support-size bound of Owen
+and Horowitz [9] concerns a fixed finite Markov scheme in which the
+input multiplies specified transition rates. The Hill sharpness barrier
+of Martinez-Corral et al. [10] assumes, among other conditions, an
+undepleted free-ligand reservoir and equilibrium. A conserved
+enzyme-total perturbation with self-consistent sequestration is not
+either parameterization. We do not claim to violate those theorems.</p>
+<p>Throughout, kinetic optimization allows arbitrary positive rate
+constants constrained by the stated cycle affinity. It does not fix
+every step’s equilibrium constant or the full standard
+chemical-potential landscape. In a derivative, however, all rate
+constants are held fixed. The upper bounds do not imply uniform bounds
+for a different output, such as the absolute concentration of all
+modified substrate, or under a finite-time observation rule. The
+unbounded family has vanishing free substrate and flux. No claim of
+unlimited speed, power, dynamic range, molecular precision, or
+experimental attainability is made.</p>
+<h1 id="exact-steady-model-and-response-variables">2. Exact steady model
+and response variables</h1>
+<h2 id="positive-reduced-model">2.1 Positive reduced model</h2>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x,y&gt;0</annotation></semantics></math>
+denote the free concentrations of unmodified and modified substrate. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>,</mo><mi>f</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">e,f&gt;0</annotation></semantics></math>
+denote the conserved totals of the forward and reverse enzymes, and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">S&gt;0</annotation></semantics></math>
+be total substrate. All eight kinetic coefficients</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">
+a,b,c,d,A,B,C,D
+</annotation></semantics></math></p>
+<p>are strictly positive. Put</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>E</mi></msub><mo>=</mo><mn>1</mn><mo>+</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>D</mi><mi>F</mi></msub><mo>=</mo><mn>1</mn><mo>+</mo><mi>c</mi><mi>x</mi><mo>+</mo><mi>d</mi><mi>y</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+D_E=1+ax+by,\qquad D_F=1+cx+dy.
+\tag{1}
+</annotation></semantics></math></p>
+<p>The steady equations are</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>e</mi><mfrac><mrow><mi>A</mi><mi>x</mi><mo>−</mo><mi>B</mi><mi>y</mi></mrow><msub><mi>D</mi><mi>E</mi></msub></mfrac><mo>−</mo><mi>f</mi><mfrac><mrow><mi>D</mi><mi>y</mi><mo>−</mo><mi>C</mi><mi>x</mi></mrow><msub><mi>D</mi><mi>F</mi></msub></mfrac><mo>=</mo><mn>0</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">
+G(x,y)=e\frac{Ax-By}{D_E}-f\frac{Dy-Cx}{D_F}=0,
+\tag{2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>e</mi><mfrac><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi></mrow><msub><mi>D</mi><mi>E</mi></msub></mfrac><mo>+</mo><mi>f</mi><mfrac><mrow><mi>c</mi><mi>x</mi><mo>+</mo><mi>d</mi><mi>y</mi></mrow><msub><mi>D</mi><mi>F</mi></msub></mfrac><mo>=</mo><mi>S</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+T(x,y)=x+y+e\frac{ax+by}{D_E}
+              +f\frac{cx+dy}{D_F}=S.
+\tag{3}
+</annotation></semantics></math></p>
+<p>For comparison with [1],
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">a,b,c,d</annotation></semantics></math>
+are the reciprocals of its four total generalized Michaelis-Menten
+constants, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(A,B,C,D)</annotation></semantics></math>
+correspond to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>c</mi><mn>0</mn><mi>E</mi></msubsup><mo>,</mo><msubsup><mi>c</mi><mn>1</mn><mi>E</mi></msubsup><mo>,</mo><msubsup><mi>c</mi><mn>0</mn><mi>F</mi></msubsup><mo>,</mo><msubsup><mi>c</mi><mn>1</mn><mi>F</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(c_0^E,c_1^E,c_0^F,c_1^F)</annotation></semantics></math>.
+Equations (2)-(3) are its steady reduction. Our mathematical theorems
+are stated for this explicit positive coefficient model. Their
+interpretation for more elaborate mechanisms uses the established
+reduction in [1,3]; we do not assert a new graph-theoretic reduction.
+Section 3 derives an elementary realization directly, so all extremal
+constructions are independent of that external reduction.</p>
+<p>The dimensionless cycle affinity and the common steady flux are</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝒜</mi><mo>=</mo><mo>log</mo><mi>χ</mi><mo>,</mo><mspace width="2.0em"></mspace><mi>χ</mi><mo>=</mo><mfrac><mrow><mi>A</mi><mi>D</mi></mrow><mrow><mi>B</mi><mi>C</mi></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>J</mi><mo>=</mo><mi>e</mi><mfrac><mrow><mi>A</mi><mi>x</mi><mo>−</mo><mi>B</mi><mi>y</mi></mrow><msub><mi>D</mi><mi>E</mi></msub></mfrac><mo>=</mo><mi>f</mi><mfrac><mrow><mi>D</mi><mi>y</mi><mo>−</mo><mi>C</mi><mi>x</mi></mrow><msub><mi>D</mi><mi>F</mi></msub></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\mathcal A=\log\chi,\qquad \chi=\frac{AD}{BC},\qquad
+J=e\frac{Ax-By}{D_E}=f\frac{Dy-Cx}{D_F}.
+\tag{4}
+</annotation></semantics></math></p>
+<p>Physical chemical work per completed cycle is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi><mi>𝒜</mi></mrow><annotation encoding="application/x-tex">k_BT\mathcal A</annotation></semantics></math>.
+Fuel and waste activities are chemostatted and absorbed into effective
+rates; the driven cycle is not a closed fuel-free equilibrium
+system.</p>
+<p>The response of interest is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>e</mi></msub><mo>=</mo><msub><mrow><mfrac><mrow><mi>∂</mi><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mi>/</mi><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mi>∂</mi><mo>log</mo><mi>e</mi></mrow></mfrac><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mi>S</mi><mo>,</mo><mi>f</mi><mo>,</mo><mspace width="0.167em"></mspace><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">s</mi></mrow></mrow></msub><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>H</mi><mi>f</mi></msub><mo>=</mo><msub><mrow><mfrac><mrow><mi>∂</mi><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mi>/</mi><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mi>∂</mi><mo>log</mo><mi>f</mi></mrow></mfrac><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mi>S</mi><mo>,</mo><mi>e</mi><mo>,</mo><mspace width="0.167em"></mspace><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">s</mi></mrow></mrow></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+H_e=\left.\frac{\partial\log(y/x)}{\partial\log e}\right|_{S,f,\,\mathrm{kinetics}},\qquad
+H_f=\left.\frac{\partial\log(y/x)}{\partial\log f}\right|_{S,e,\,\mathrm{kinetics}}.
+\tag{5}
+</annotation></semantics></math></p>
+<p>These are derivatives along the locally unique steady branch. The
+next result establishes that this branch is globally well defined.</p>
+<h2 id="existence-uniqueness-and-smoothness">2.2 Existence, uniqueness,
+and smoothness</h2>
+<p><strong>Proposition 1 (known uniqueness, self-contained
+proof).</strong> For every positive choice of coefficients and totals,
+(2)-(3) has exactly one positive solution. This solution is a smooth
+function of the positive parameters.</p>
+<p><strong>Proof.</strong> Direct differentiation gives</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>x</mi></msub><mo>=</mo><mfrac><mrow><mi>e</mi><mrow><mo stretchy="true" form="prefix">[</mo><mi>A</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>b</mi><mo>+</mo><mi>a</mi><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>y</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><msubsup><mi>D</mi><mi>E</mi><mn>2</mn></msubsup></mfrac><mo>+</mo><mfrac><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">[</mo><mi>C</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>C</mi><mi>d</mi><mo>+</mo><mi>c</mi><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>y</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><msubsup><mi>D</mi><mi>F</mi><mn>2</mn></msubsup></mfrac><mo>&gt;</mo><mn>0</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">
+G_x=\frac{e[A+(Ab+aB)y]}{D_E^2}
+    +\frac{f[C+(Cd+cD)y]}{D_F^2}&gt;0,
+\tag{6}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>y</mi></msub><mo>=</mo><mi>−</mi><mfrac><mrow><mi>e</mi><mrow><mo stretchy="true" form="prefix">[</mo><mi>B</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>b</mi><mo>+</mo><mi>a</mi><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>x</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><msubsup><mi>D</mi><mi>E</mi><mn>2</mn></msubsup></mfrac><mo>−</mo><mfrac><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">[</mo><mi>D</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>C</mi><mi>d</mi><mo>+</mo><mi>c</mi><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>x</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><msubsup><mi>D</mi><mi>F</mi><mn>2</mn></msubsup></mfrac><mo>&lt;</mo><mn>0</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">
+G_y=-\frac{e[B+(Ab+aB)x]}{D_E^2}
+    -\frac{f[D+(Cd+cD)x]}{D_F^2}&lt;0,
+\tag{7}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>x</mi></msub><mo>=</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mi>e</mi><mi>a</mi></mrow><msubsup><mi>D</mi><mi>E</mi><mn>2</mn></msubsup></mfrac><mo>+</mo><mfrac><mrow><mi>f</mi><mi>c</mi></mrow><msubsup><mi>D</mi><mi>F</mi><mn>2</mn></msubsup></mfrac><mo>&gt;</mo><mn>0</mn><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>T</mi><mi>y</mi></msub><mo>=</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mi>e</mi><mi>b</mi></mrow><msubsup><mi>D</mi><mi>E</mi><mn>2</mn></msubsup></mfrac><mo>+</mo><mfrac><mrow><mi>f</mi><mi>d</mi></mrow><msubsup><mi>D</mi><mi>F</mi><mn>2</mn></msubsup></mfrac><mo>&gt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+T_x=1+\frac{ea}{D_E^2}+\frac{fc}{D_F^2}&gt;0,\qquad
+T_y=1+\frac{eb}{D_E^2}+\frac{fd}{D_F^2}&gt;0.
+\tag{8}
+</annotation></semantics></math></p>
+<p>The conservation curve in the closed first quadrant connects a unique
+positive point on each coordinate axis. Indeed,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">T(x,0)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">T(0,y)</annotation></semantics></math>
+increase continuously from zero to infinity. Between the intercepts, the
+implicit function theorem makes the curve a graph
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>y</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">y=y(x)</annotation></semantics></math>
+with derivative
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><msub><mi>T</mi><mi>x</mi></msub><mi>/</mi><msub><mi>T</mi><mi>y</mi></msub><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">-T_x/T_y&lt;0</annotation></semantics></math>.
+Along it,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+has derivative
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>x</mi></msub><mo>−</mo><msub><mi>G</mi><mi>y</mi></msub><msub><mi>T</mi><mi>x</mi></msub><mi>/</mi><msub><mi>T</mi><mi>y</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">G_x-G_yT_x/T_y&gt;0</annotation></semantics></math>.
+At the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-axis
+intercept
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">G&lt;0</annotation></semantics></math>;
+at the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-axis
+intercept
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">G&gt;0</annotation></semantics></math>.
+The intermediate value theorem and strict increase give exactly one
+zero, and it lies in the positive quadrant. Finally,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><mo>:=</mo><msub><mi>G</mi><mi>x</mi></msub><msub><mi>T</mi><mi>y</mi></msub><mo>−</mo><msub><mi>G</mi><mi>y</mi></msub><msub><mi>T</mi><mi>x</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+\Delta:=G_xT_y-G_yT_x&gt;0
+\tag{9}
+</annotation></semantics></math></p>
+<p>at every positive point. The implicit function theorem gives smooth
+parameter dependence near each solution, and uniqueness joins these
+local branches.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Lemma 2 (flux sign and ratio interval).</strong> The sign of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+is the sign of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>D</mi><mo>−</mo><mi>B</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">AD-BC</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>χ</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\chi&gt;1</annotation></semantics></math>,
+then</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>C</mi><mi>D</mi></mfrac><mo>&lt;</mo><mi>r</mi><mo>:=</mo><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>&lt;</mo><mfrac><mi>A</mi><mi>B</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\frac CD \lt r:=\frac yx&lt;\frac AB.
+\tag{10}
+</annotation></semantics></math></p>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>χ</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\chi&lt;1</annotation></semantics></math>,
+the inequalities reverse. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>χ</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\chi=1</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>A</mi><mi>/</mi><mi>B</mi><mo>=</mo><mi>C</mi><mi>/</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">r=A/B=C/D</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">J=0</annotation></semantics></math>.</p>
+<p><strong>Proof.</strong> Equation (2) rearranges to</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mfrac><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mi>/</mi><msub><mi>D</mi><mi>E</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>A</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mi>/</mi><msub><mi>D</mi><mi>F</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>C</mi></mrow><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mi>/</mi><msub><mi>D</mi><mi>E</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mi>/</mi><msub><mi>D</mi><mi>F</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>D</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+r=\frac{(e/D_E)A+(f/D_F)C}{(e/D_E)B+(f/D_F)D}.
+\tag{11}
+</annotation></semantics></math></p>
+<p>This is a strictly weighted average of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>/</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">A/B</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mi>/</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">C/D</annotation></semantics></math>,
+with weights
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mi>/</mi><msub><mi>D</mi><mi>E</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">(e/D_E)B</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mi>/</mi><msub><mi>D</mi><mi>F</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">(f/D_F)D</annotation></semantics></math>.
+The sign assertion follows from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mo>=</mo><mi>e</mi><mi>x</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msub><mi>D</mi><mi>E</mi></msub></mrow><annotation encoding="application/x-tex">J=ex(A-Br)/D_E</annotation></semantics></math>.
+The coincident-ratio case follows directly.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<h1 id="elementary-reversible-realization-and-affinity">3. Elementary
+reversible realization and affinity</h1>
+<p><strong>Proposition 3 (no hidden feasibility relaxation).</strong>
+Every positive eight-tuple in Section 2 is realized by two elementary
+one-complex reversible enzyme mechanisms. Their effective cycle
+forward/reverse rate-product ratio is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>D</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">AD/(BC)</annotation></semantics></math>.</p>
+<p><strong>Proof.</strong> For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>,
+use</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>+</mo><mi>X</mi><mspace width="0.222em"></mspace><mo>⇌</mo><mspace width="0.222em"></mspace><msub><mi>Z</mi><mi>E</mi></msub><mspace width="0.222em"></mspace><mo>⇌</mo><mspace width="0.222em"></mspace><mi>E</mi><mo>+</mo><mi>Y</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+E+X\ \rightleftharpoons\ Z_E\ \rightleftharpoons\ E+Y.
+\tag{12}
+</annotation></semantics></math></p>
+<p>Write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><mo>,</mo><msub><mi>p</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">p_{E0},p_{E1}</annotation></semantics></math>
+for association rates from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X,Y</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><mo>,</mo><msub><mi>q</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">q_{E0},q_{E1}</annotation></semantics></math>
+for releases to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X,Y</annotation></semantics></math>.
+Choose</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><mo>=</mo><mi>B</mi><mi>/</mi><mi>b</mi><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>q</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub><mo>=</mo><mi>A</mi><mi>/</mi><mi>a</mi><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>p</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><mo>=</mo><mi>a</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>q</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>q</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>p</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub><mo>=</mo><mi>b</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>q</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>q</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+q_{E0}=B/b,\quad q_{E1}=A/a,\quad
+p_{E0}=a(q_{E0}+q_{E1}),\quad
+p_{E1}=b(q_{E0}+q_{E1}).
+\tag{13}
+</annotation></semantics></math></p>
+<p>At steady state,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Z</mi><mi>E</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>E</mi><mrow><mi mathvariant="normal">f</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">e</mi></mrow></msub><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>E</mi><mrow><mi mathvariant="normal">f</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">e</mi></mrow></msub><mo>=</mo><mi>e</mi><mi>/</mi><msub><mi>D</mi><mi>E</mi></msub><mo>,</mo></mrow><annotation encoding="application/x-tex">
+Z_E=(ax+by)E_{\mathrm{free}},\quad
+E_{\mathrm{free}}=e/D_E,
+\tag{14}
+</annotation></semantics></math></p>
+<p>and net production of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>
+through this enzyme equals
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub><msub><mi>Z</mi><mi>E</mi></msub><mo>−</mo><msub><mi>p</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub><msub><mi>E</mi><mrow><mi mathvariant="normal">f</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">e</mi></mrow></msub><mi>y</mi><mo>=</mo><mi>e</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>x</mi><mo>−</mo><mi>B</mi><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msub><mi>D</mi><mi>E</mi></msub></mrow><annotation encoding="application/x-tex">q_{E1}Z_E-p_{E1}E_{\mathrm{free}}y=e(Ax-By)/D_E</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>+</mo><mi>X</mi><mo>⇌</mo><msub><mi>Z</mi><mi>F</mi></msub><mo>⇌</mo><mi>F</mi><mo>+</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">F+X\rightleftharpoons Z_F\rightleftharpoons F+Y</annotation></semantics></math>,
+choose</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mrow><mi>F</mi><mn>0</mn></mrow></msub><mo>=</mo><mi>D</mi><mi>/</mi><mi>d</mi><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>q</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub><mo>=</mo><mi>C</mi><mi>/</mi><mi>c</mi><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>p</mi><mrow><mi>F</mi><mn>0</mn></mrow></msub><mo>=</mo><mi>c</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>q</mi><mrow><mi>F</mi><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>q</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>p</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub><mo>=</mo><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>q</mi><mrow><mi>F</mi><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>q</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+q_{F0}=D/d,\quad q_{F1}=C/c,\quad
+p_{F0}=c(q_{F0}+q_{F1}),\quad
+p_{F1}=d(q_{F0}+q_{F1}).
+\tag{15}
+</annotation></semantics></math></p>
+<p>Its net production of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>D</mi><mi>y</mi><mo>−</mo><mi>C</mi><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msub><mi>D</mi><mi>F</mi></msub></mrow><annotation encoding="application/x-tex">f(Dy-Cx)/D_F</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Z</mi><mi>F</mi></msub><mo>=</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mi>x</mi><mo>+</mo><mi>d</mi><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msub><mi>D</mi><mi>F</mi></msub></mrow><annotation encoding="application/x-tex">Z_F=f(cx+dy)/D_F</annotation></semantics></math>.
+Conservation of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi><mo>,</mo><msub><mi>Z</mi><mi>E</mi></msub><mo>,</mo><msub><mi>Z</mi><mi>F</mi></msub></mrow><annotation encoding="application/x-tex">X,Y,Z_E,Z_F</annotation></semantics></math>
+gives (3). Every displayed rate is positive. Around the forward
+catalytic cycle,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msub><mi>p</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><msub><mi>q</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub><msub><mi>p</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub><msub><mi>q</mi><mrow><mi>F</mi><mn>0</mn></mrow></msub></mrow><mrow><msub><mi>q</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><msub><mi>p</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub><msub><mi>q</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub><msub><mi>p</mi><mrow><mi>F</mi><mn>0</mn></mrow></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>A</mi><mi>D</mi></mrow><mrow><mi>B</mi><mi>C</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\frac{p_{E0}q_{E1}p_{F1}q_{F0}}
+     {q_{E0}p_{E1}q_{F1}p_{F0}}
+=\frac{AD}{BC}.
+\tag{16}
+</annotation></semantics></math></p>
+<p>Thus the extremal constructions below are genuine elementary
+mechanisms.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>For clarity, local detailed balance can be imposed explicitly. In
+fixed reference concentration units define</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><mo>=</mo><msub><mi>p</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><mi>/</mi><msub><mi>q</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>K</mi><mn>2</mn></msub><mo>=</mo><msub><mi>q</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub><mi>/</mi><msub><mi>p</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>K</mi><mn>3</mn></msub><mo>=</mo><msub><mi>p</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub><mi>/</mi><msub><mi>q</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>K</mi><mn>4</mn></msub><mo>=</mo><msub><mi>q</mi><mrow><mi>F</mi><mn>0</mn></mrow></msub><mi>/</mi><msub><mi>p</mi><mrow><mi>F</mi><mn>0</mn></mrow></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+K_1=p_{E0}/q_{E0},\quad K_2=q_{E1}/p_{E1},\quad
+K_3=p_{F1}/q_{F1},\quad K_4=q_{F0}/p_{F0}.
+</annotation></semantics></math></p>
+<p>Measure standard chemical potentials in units of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi></mrow><annotation encoding="application/x-tex">k_BT</annotation></semantics></math>.
+Set those of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>E</mi><mo>,</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">X,E,F</annotation></semantics></math>
+to zero, and take</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><msub><mi>Z</mi><mi>F</mi></msub></msub><mo>=</mo><mo>log</mo><msub><mi>K</mi><mn>4</mn></msub><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>μ</mi><mi>Y</mi></msub><mo>=</mo><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>K</mi><mn>3</mn></msub><msub><mi>K</mi><mn>4</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>μ</mi><msub><mi>Z</mi><mi>E</mi></msub></msub><mo>=</mo><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>K</mi><mn>2</mn></msub><msub><mi>K</mi><mn>3</mn></msub><msub><mi>K</mi><mn>4</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\mu_{Z_F}=\log K_4,\quad
+\mu_Y=\log(K_3K_4),\quad
+\mu_{Z_E}=\log(K_2K_3K_4).
+\tag{17}
+</annotation></semantics></math></p>
+<p>Couple the first oriented association step to a chemostatted
+fuel-to-waste conversion with chemical-potential difference
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>log</mo><mi>χ</mi></mrow><annotation encoding="application/x-tex">\log\chi</annotation></semantics></math>.
+For that step the reactant-minus-product potential is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>log</mo><mi>χ</mi><mo>−</mo><msub><mi>μ</mi><msub><mi>Z</mi><mi>E</mi></msub></msub><mo>=</mo><mo>log</mo><msub><mi>K</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\log\chi-\mu_{Z_E}=\log K_1</annotation></semantics></math>;
+the other three differences are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>log</mo><msub><mi>K</mi><mn>2</mn></msub><mo>,</mo><mo>log</mo><msub><mi>K</mi><mn>3</mn></msub><mo>,</mo><mo>log</mo><msub><mi>K</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">\log K_2,\log K_3,\log K_4</annotation></semantics></math>.
+This verifies local detailed balance on every edge. Standard potentials
+may vary between mechanisms; a fixed cycle affinity does not impose a
+fixed potential landscape. In particular
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><mi>Y</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>X</mi></msub><mo>=</mo><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>D</mi><mi>/</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mu_Y-\mu_X=\log(D/C)</annotation></semantics></math>.
+The general sharpness families below need not preserve this difference.
+The critical family in Section 7 does preserve it, as well as the fuel
+driving. No sharpness claim is made for the additional constraint of
+fixing every standard potential.</p>
+<h1 id="monotonicity-for-every-affinity">4. Monotonicity for every
+affinity</h1>
+<p><strong>Theorem 4 (total-enzyme response signs).</strong> At every
+positive steady state,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>sign</mo><msub><mi>H</mi><mi>e</mi></msub><mo>=</mo><mo>sign</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>χ</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mo>sign</mo><msub><mi>H</mi><mi>f</mi></msub><mo>=</mo><mi>−</mi><mo>sign</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>χ</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\operatorname{sign}H_e=\operatorname{sign}(\chi-1),\qquad
+\operatorname{sign}H_f=-\operatorname{sign}(\chi-1).
+\tag{18}
+</annotation></semantics></math></p>
+<p>Consequently the free substrate ratio is strictly increasing in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+and strictly decreasing in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>χ</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\chi&gt;1</annotation></semantics></math>,
+throughout the positive parameter domain. At equilibrium
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>χ</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\chi=1</annotation></semantics></math>,
+both responses vanish identically. Opposite driving reverses the
+signs.</p>
+<p><strong>Proof.</strong> Define
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mi>E</mi></msub><mo>=</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">U_E=ax+by</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mi>F</mi></msub><mo>=</mo><mi>c</mi><mi>x</mi><mo>+</mo><mi>d</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">U_F=cx+dy</annotation></semantics></math>.
+Differentiate the two original equations with respect to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>,
+while keeping
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>,</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">S,f</annotation></semantics></math>
+and kinetics fixed. Cramer’s rule and (9) give</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>e</mi></msub><mo>=</mo><mfrac><mi>J</mi><mrow><mi>x</mi><mi>y</mi><mi>Δ</mi></mrow></mfrac><mrow><mo stretchy="true" form="prefix">[</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mfrac><mrow><mi>f</mi><msub><mi>U</mi><mi>F</mi></msub></mrow><msubsup><mi>D</mi><mi>F</mi><mn>2</mn></msubsup></mfrac><mo>+</mo><mfrac><mrow><mi>e</mi><msub><mi>U</mi><mi>E</mi></msub></mrow><mrow><msub><mi>D</mi><mi>E</mi></msub><msub><mi>D</mi><mi>F</mi></msub></mrow></mfrac><mo stretchy="true" form="postfix">]</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+H_e=\frac{J}{xy\Delta}
+\left[x+y+\frac{fU_F}{D_F^2}+\frac{eU_E}{D_ED_F}\right].
+\tag{19}
+</annotation></semantics></math></p>
+<p>Here is a direct algebraic verification. With
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>E</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>x</mi><mo>−</mo><mi>B</mi><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msub><mi>D</mi><mi>E</mi></msub></mrow><annotation encoding="application/x-tex">v_E=(Ax-By)/D_E</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><msub><mi>U</mi><mi>E</mi></msub><mi>/</mi><msub><mi>D</mi><mi>E</mi></msub></mrow><annotation encoding="application/x-tex">u=U_E/D_E</annotation></semantics></math>,
+implicit differentiation yields</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>e</mi></msub><mo>=</mo><mfrac><mrow><mi>−</mi><msub><mi>v</mi><mi>E</mi></msub><msub><mi>T</mi><mi>y</mi></msub><mo>+</mo><msub><mi>G</mi><mi>y</mi></msub><mi>u</mi></mrow><mi>Δ</mi></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>y</mi><mi>e</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mi>E</mi></msub><msub><mi>T</mi><mi>x</mi></msub><mo>−</mo><msub><mi>G</mi><mi>x</mi></msub><mi>u</mi></mrow><mi>Δ</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+x_e=\frac{-v_ET_y+G_yu}{\Delta},\qquad
+y_e=\frac{v_ET_x-G_xu}{\Delta}.
+</annotation></semantics></math></p>
+<p>The identities</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><msub><mi>T</mi><mi>x</mi></msub><mo>+</mo><mi>y</mi><msub><mi>T</mi><mi>y</mi></msub><mo>=</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mfrac><mrow><mi>e</mi><msub><mi>U</mi><mi>E</mi></msub></mrow><msubsup><mi>D</mi><mi>E</mi><mn>2</mn></msubsup></mfrac><mo>+</mo><mfrac><mrow><mi>f</mi><msub><mi>U</mi><mi>F</mi></msub></mrow><msubsup><mi>D</mi><mi>F</mi><mn>2</mn></msubsup></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">
+xT_x+yT_y=x+y+\frac{eU_E}{D_E^2}+\frac{fU_F}{D_F^2},
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><msub><mi>G</mi><mi>x</mi></msub><mo>+</mo><mi>y</mi><msub><mi>G</mi><mi>y</mi></msub><mo>=</mo><mi>J</mi><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>D</mi><mi>E</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><mo>−</mo><msubsup><mi>D</mi><mi>F</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+xG_x+yG_y=J(D_E^{-1}-D_F^{-1})
+</annotation></semantics></math></p>
+<p>reduce
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>y</mi><mi>e</mi></msub><mi>/</mi><mi>y</mi><mo>−</mo><msub><mi>x</mi><mi>e</mi></msub><mi>/</mi><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">e(y_e/y-x_e/x)</annotation></semantics></math>
+to (19). The corresponding calculation for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+gives</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>f</mi></msub><mo>=</mo><mi>−</mi><mfrac><mi>J</mi><mrow><mi>x</mi><mi>y</mi><mi>Δ</mi></mrow></mfrac><mrow><mo stretchy="true" form="prefix">[</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mfrac><mrow><mi>e</mi><msub><mi>U</mi><mi>E</mi></msub></mrow><msubsup><mi>D</mi><mi>E</mi><mn>2</mn></msubsup></mfrac><mo>+</mo><mfrac><mrow><mi>f</mi><msub><mi>U</mi><mi>F</mi></msub></mrow><mrow><msub><mi>D</mi><mi>E</mi></msub><msub><mi>D</mi><mi>F</mi></msub></mrow></mfrac><mo stretchy="true" form="postfix">]</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+H_f=-\frac{J}{xy\Delta}
+\left[x+y+\frac{eU_E}{D_E^2}+\frac{fU_F}{D_ED_F}\right].
+\tag{20}
+</annotation></semantics></math></p>
+<p>All factors except
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+and the displayed minus sign are strictly positive. Lemma 2 proves (18).
+Global strict monotonicity follows because Proposition 1 provides a
+smooth branch for every positive total and its derivative has the
+specified strict sign.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<h1 id="exact-response-decomposition-and-sharp-occupancy-envelope">5.
+Exact response decomposition and sharp occupancy envelope</h1>
+<p>From now through Section 8, assume
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>χ</mi><mo>=</mo><msup><mi>k</mi><mn>2</mn></msup><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\chi=k^2&gt;1</annotation></semantics></math>,
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k&gt;1</annotation></semantics></math>.
+Define the enzyme occupancies and the conditional binding
+contributions</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mfrac><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi></mrow><msub><mi>D</mi><mi>E</mi></msub></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mi>v</mi><mo>=</mo><mfrac><mrow><mi>c</mi><mi>x</mi><mo>+</mo><mi>d</mi><mi>y</mi></mrow><msub><mi>D</mi><mi>F</mi></msub></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>β</mi><mi>E</mi></msub><mo>=</mo><mfrac><mrow><mi>b</mi><mi>y</mi></mrow><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi></mrow></mfrac><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>β</mi><mi>F</mi></msub><mo>=</mo><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>c</mi><mi>x</mi><mo>+</mo><mi>d</mi><mi>y</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+u=\frac{ax+by}{D_E},\quad v=\frac{cx+dy}{D_F},\qquad
+\beta_E=\frac{by}{ax+by},\quad \beta_F=\frac{dy}{cx+dy}.
+\tag{21}
+</annotation></semantics></math></p>
+<p>All four quantities lie strictly between zero and one. Occupancy is
+not a substrate modification fraction. Put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>=</mo><mi>x</mi><mo>+</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">w=x+y</annotation></semantics></math>
+and</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mi>w</mi><mo>+</mo><mi>e</mi><mi>u</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>f</mi><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mi>Λ</mi><mo>=</mo><mi>w</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mi>u</mi><mo>+</mo><mi>f</mi><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+M=w+eu(1-u)+fv(1-v),\qquad
+\Lambda=w+(1-v)(eu+fv),
+\tag{22}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mo>=</mo><mi>e</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>P</mi><mi>E</mi></msub><mo>=</mo><mi>u</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo>+</mo><mi>v</mi><mi>Z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>P</mi><mi>F</mi></msub><mo>=</mo><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo>+</mo><mi>u</mi><mi>Z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+Z=e(1-u)+f(1-v),\quad
+P_E=u(w+vZ),\quad P_F=v(w+uZ),
+\tag{23}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>v</mi><mi>x</mi><mo>+</mo><mi>u</mi><mi>y</mi><mo>+</mo><mi>u</mi><mi>v</mi><mi>Z</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+R=vx+uy+uvZ.
+\tag{24}
+</annotation></semantics></math></p>
+<p>The flux contribution to logarithmic inverse response is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><mfrac><mrow><mi>D</mi><mi>r</mi></mrow><mrow><mi>D</mi><mi>r</mi><mo>−</mo><mi>C</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><mi>B</mi><mi>r</mi></mrow><mrow><mi>A</mi><mo>−</mo><mi>B</mi><mi>r</mi></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>κ</mi><mo>*</mo></msub><mo>:=</mo><mfrac><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\kappa=\frac{Dr}{Dr-C}+\frac{Br}{A-Br},\qquad
+\kappa_*:=\frac{k+1}{k-1}.
+\tag{25}
+</annotation></semantics></math></p>
+<p><strong>Lemma 5 (affinity contribution).</strong> One has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>≥</mo><msub><mi>κ</mi><mo>*</mo></msub><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\kappa\ge\kappa_*&gt;1</annotation></semantics></math>,
+with equality exactly when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><msqrt><mrow><mi>A</mi><mi>C</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msqrt></mrow><annotation encoding="application/x-tex">r=\sqrt{AC/(BD)}</annotation></semantics></math>.</p>
+<p><strong>Proof.</strong> Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>ℓ</mo><mo>=</mo><mi>C</mi><mi>/</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">\ell=C/D</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mi>r</mi><mi>/</mi><mo>ℓ</mo></mrow><annotation encoding="application/x-tex">t=r/\ell</annotation></semantics></math>.
+Lemma 2 gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>&lt;</mo><mi>t</mi><mo>&lt;</mo><msup><mi>k</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1 \lt t \lt k^2</annotation></semantics></math>.
+Elementary algebra yields</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>−</mo><msub><mi>κ</mi><mo>*</mo></msub><mo>=</mo><mfrac><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mspace width="0.167em"></mspace><mfrac><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>−</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>k</mi><mn>2</mn></msup><mo>−</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>≥</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\kappa-\kappa_*=
+\frac{k+1}{k-1}\,
+\frac{(t-k)^2}{(t-1)(k^2-t)}\ge0.
+\tag{26}
+</annotation></semantics></math></p>
+<p>Equality is equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">t=k</annotation></semantics></math>.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Lemma 6 (exact finite-resource response).</strong> The
+response equals</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>e</mi></msub><mo>=</mo><mfrac><mi>Λ</mi><mi>N</mi></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>N</mi><mo>=</mo><mi>κ</mi><mi>M</mi><mo>+</mo><msub><mi>P</mi><mi>E</mi></msub><msub><mi>β</mi><mi>E</mi></msub><mo>−</mo><msub><mi>P</mi><mi>F</mi></msub><msub><mi>β</mi><mi>F</mi></msub><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>y</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+H_e=\frac{\Lambda}{N},\qquad
+N=\kappa M+P_E\beta_E-P_F\beta_F-(u-v)y.
+\tag{27}
+</annotation></semantics></math></p>
+<p>Equivalently,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mi>κ</mi><mi>M</mi><mo>−</mo><mi>R</mi><mo>+</mo><msub><mi>P</mi><mi>E</mi></msub><msub><mi>β</mi><mi>E</mi></msub><mo>+</mo><msub><mi>P</mi><mi>F</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>β</mi><mi>F</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+N=\kappa M-R+P_E\beta_E+P_F(1-\beta_F).
+\tag{28}
+</annotation></semantics></math></p>
+<p><strong>Proof.</strong> Use differentials
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>t</mi><mo>=</mo><mi>d</mi><mo>log</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">dt=d\log r</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>z</mi><mo>=</mo><mi>d</mi><mo>log</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">dz=d\log x</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>q</mi><mo>=</mo><mi>d</mi><mo>log</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">dq=d\log e</annotation></semantics></math>.
+The logarithm of the flux relation is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mi>/</mi><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>log</mo><mfrac><mrow><mi>D</mi><mi>r</mi><mo>−</mo><mi>C</mi></mrow><mrow><mi>A</mi><mo>−</mo><mi>B</mi><mi>r</mi></mrow></mfrac><mo>+</mo><mo>log</mo><msub><mi>D</mi><mi>E</mi></msub><mo>−</mo><mo>log</mo><msub><mi>D</mi><mi>F</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\log(e/f)=\log\frac{Dr-C}{A-Br}+\log D_E-\log D_F.
+</annotation></semantics></math></p>
+<p>Its differential is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>q</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>κ</mi><mo>+</mo><mi>u</mi><msub><mi>β</mi><mi>E</mi></msub><mo>−</mo><mi>v</mi><msub><mi>β</mi><mi>F</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>t</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>z</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+dq=(\kappa+u\beta_E-v\beta_F)dt+(u-v)dz.
+\tag{29}
+</annotation></semantics></math></p>
+<p>The conservation differential at fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>,</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">S,f</annotation></semantics></math>
+is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mi>M</mi><mi>d</mi><mi>z</mi><mo>+</mo><mi>Q</mi><mi>d</mi><mi>t</mi><mo>+</mo><mi>e</mi><mi>u</mi><mspace width="0.167em"></mspace><mi>d</mi><mi>q</mi><mo>,</mo><mspace width="2.0em"></mspace><mi>Q</mi><mo>=</mo><mi>y</mi><mo>+</mo><mi>e</mi><mi>u</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>β</mi><mi>E</mi></msub><mo>+</mo><mi>f</mi><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>β</mi><mi>F</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+0=Mdz+Qdt+eu\,dq,
+\qquad Q=y+eu(1-u)\beta_E+fv(1-v)\beta_F.
+\tag{30}
+</annotation></semantics></math></p>
+<p>Eliminating
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>z</mi></mrow><annotation encoding="application/x-tex">dz</annotation></semantics></math>
+gives</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">[</mo><mi>M</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>e</mi><mi>u</mi><mo stretchy="true" form="postfix">]</mo></mrow><mi>d</mi><mi>q</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><mi>κ</mi><mi>M</mi><mo>+</mo><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><msub><mi>β</mi><mi>E</mi></msub><mo>−</mo><mi>v</mi><msub><mi>β</mi><mi>F</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>Q</mi><mo stretchy="true" form="postfix">]</mo></mrow><mi>d</mi><mi>t</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+[M+(u-v)eu]dq=
+[\kappa M+M(u\beta_E-v\beta_F)-(u-v)Q]dt.
+</annotation></semantics></math></p>
+<p>The first bracket is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Λ</mi><annotation encoding="application/x-tex">\Lambda</annotation></semantics></math>.
+Expanding the second gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+in (27). The identity
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>F</mi></msub><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>y</mi><mo>=</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">P_F+(u-v)y=R</annotation></semantics></math>
+gives (28).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Lemma 7 (positive denominator margin).</strong> The
+quantities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>,</mo><mi>Λ</mi><mo>,</mo><msub><mi>P</mi><mi>E</mi></msub><mo>,</mo><msub><mi>P</mi><mi>F</mi></msub></mrow><annotation encoding="application/x-tex">M,\Lambda,P_E,P_F</annotation></semantics></math>
+are positive, and</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>−</mo><mi>R</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>x</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>y</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mi>u</mi><mo>+</mo><mi>f</mi><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+M-R=(1-v)x+(1-u)y+(1-u)(1-v)(eu+fv)&gt;0.
+\tag{31}
+</annotation></semantics></math></p>
+<p>In particular
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>&gt;</mo><msub><mi>κ</mi><mo>*</mo></msub><mi>M</mi><mo>−</mo><mi>R</mi><mo>&gt;</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>κ</mi><mo>*</mo></msub><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>M</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">N&gt;\kappa_*M-R&gt;(\kappa_*-1)M&gt;0</annotation></semantics></math>.</p>
+<p><strong>Proof.</strong> Positivity follows from (21)-(23). Expanding
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>−</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">M-R</annotation></semantics></math>
+gives (31); (28) and Lemma 5 then prove the strict inequalities.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Theorem 8 (sharp envelope at fixed occupancies).</strong> Fix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x,y,e,f&gt;0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>,</mo><mi>v</mi><mo>∈</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">u,v\in(0,1)</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k&gt;1</annotation></semantics></math>,
+and set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>e</mi><mi>u</mi><mo>+</mo><mi>f</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">S=x+y+eu+fv</annotation></semantics></math>.
+Over all positive kinetic coefficients for which these data form the
+steady state and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>D</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>k</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">AD/(BC)=k^2</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mo>sup</mo><msub><mi>H</mi><mi>e</mi></msub><mo>=</mo><mfrac><mi>Λ</mi><mrow><msub><mi>κ</mi><mo>*</mo></msub><mi>M</mi><mo>−</mo><mi>R</mi></mrow></mfrac><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">
+\boxed{\displaystyle\sup H_e=
+\frac{\Lambda}{\kappa_*M-R}.}
+\tag{32}
+</annotation></semantics></math></p>
+<p>No finite positive coefficient choice attains this supremum.
+Elementary reversible one-complex mechanisms approach it while all the
+stated data remain fixed.</p>
+<p><strong>Proof.</strong> Lemma 7 gives the strict upper bound. For the
+matching construction choose arbitrary
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>β</mi><mi>E</mi></msub><mo>,</mo><msub><mi>β</mi><mi>F</mi></msub><mo>∈</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\beta_E,\beta_F\in(0,1)</annotation></semantics></math>
+and reconstruct</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>u</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>β</mi><mi>E</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>x</mi></mrow></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mi>b</mi><mo>=</mo><mfrac><mrow><mi>u</mi><msub><mi>β</mi><mi>E</mi></msub></mrow><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>y</mi></mrow></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mi>c</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>β</mi><mi>F</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>x</mi></mrow></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mi>d</mi><mo>=</mo><mfrac><mrow><mi>v</mi><msub><mi>β</mi><mi>F</mi></msub></mrow><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>y</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+a=\frac{u(1-\beta_E)}{(1-u)x},\quad
+b=\frac{u\beta_E}{(1-u)y},\quad
+c=\frac{v(1-\beta_F)}{(1-v)x},\quad
+d=\frac{v\beta_F}{(1-v)y}.
+\tag{33}
+</annotation></semantics></math></p>
+<p>Set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>y</mi><mi>/</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">r=y/x</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mi>/</mi><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">h=(e/f)(1-u)/(1-v)</annotation></semantics></math>,
+and take</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>k</mi><mi>r</mi><mo>,</mo><mspace width="2.0em"></mspace><mi>B</mi><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="2.0em"></mspace><mi>C</mi><mo>=</mo><mi>h</mi><mi>r</mi><mo>,</mo><mspace width="2.0em"></mspace><mi>D</mi><mo>=</mo><mi>k</mi><mi>h</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+A=kr,\qquad B=1,\qquad C=hr,\qquad D=kh.
+\tag{34}
+</annotation></semantics></math></p>
+<p>These coefficients satisfy (2), have affinity
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>k</mi><mn>2</mn></msup><annotation encoding="application/x-tex">k^2</annotation></semantics></math>,
+and have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><msub><mi>κ</mi><mo>*</mo></msub></mrow><annotation encoding="application/x-tex">\kappa=\kappa_*</annotation></semantics></math>.
+The occupancies and conservation equation are exactly the prescribed
+ones. Proposition 1 ensures that this constructed state is the actual
+unique steady state. Taking
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>β</mi><mi>E</mi></msub><mo>=</mo><mi>δ</mi></mrow><annotation encoding="application/x-tex">\beta_E=\delta</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>β</mi><mi>F</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><mi>δ</mi></mrow><annotation encoding="application/x-tex">\beta_F=1-\delta</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>δ</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\delta&lt;1</annotation></semantics></math>
+gives the exact response</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>e</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>δ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mi>Λ</mi><mrow><msub><mi>κ</mi><mo>*</mo></msub><mi>M</mi><mo>−</mo><mi>R</mi><mo>+</mo><mi>δ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>P</mi><mi>E</mi></msub><mo>+</mo><msub><mi>P</mi><mi>F</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+H_e(\delta)=
+\frac{\Lambda}{\kappa_*M-R+\delta(P_E+P_F)}.
+\tag{35}
+</annotation></semantics></math></p>
+<p>Letting
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta\downarrow0</annotation></semantics></math>
+proves (32). Proposition 3 realizes every member by positive elementary
+rates. Strict nonattainment follows because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>E</mi></msub><msub><mi>β</mi><mi>E</mi></msub><mo>+</mo><msub><mi>P</mi><mi>F</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>β</mi><mi>F</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_E\beta_E+P_F(1-\beta_F)&gt;0</annotation></semantics></math>.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<h1 id="fixed-total-bounds-and-the-critical-resource-surface">6.
+Fixed-total bounds and the critical resource surface</h1>
+<p>Define</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>∞</mi></msub><mo>=</mo><mfrac><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>κ</mi><mo>*</mo></msub><mo>−</mo><mn>1</mn></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+h_\infty=\frac{k-1}{2}=\frac1{\kappa_*-1}.
+\tag{36}
+</annotation></semantics></math></p>
+<p>For fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo>,</mo><mi>k</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">S,e,f,k&gt;0</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k&gt;1</annotation></semantics></math>,
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℋ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo>;</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal H(S,e,f;k)</annotation></semantics></math>
+be the supremum of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>H</mi><mi>e</mi></msub><annotation encoding="application/x-tex">H_e</annotation></semantics></math>
+over all positive eight-tuples with affinity
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>k</mi><mn>2</mn></msup><annotation encoding="application/x-tex">k^2</annotation></semantics></math>,
+evaluated at their unique steady states with those totals. This set of
+mechanisms is nonempty: choose any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>,</mo><mi>v</mi><mo>∈</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">u,v\in(0,1)</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mi>u</mi><mo>+</mo><mi>f</mi><mi>v</mi><mo>&lt;</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">eu+fv \lt S</annotation></semantics></math>,
+split the positive remainder into
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x,y</annotation></semantics></math>,
+and use (33)-(34).</p>
+<p><strong>Lemma 9 (conservation amplification).</strong> At every such
+steady state,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><msub><mi>H</mi><mi>e</mi></msub><mo>&lt;</mo><msub><mi>h</mi><mi>∞</mi></msub><mspace width="0.167em"></mspace><mi>Γ</mi><mo>,</mo><mspace width="2.0em"></mspace><mi>Γ</mi><mo>:=</mo><mfrac><mi>Λ</mi><mi>M</mi></mfrac><mo>=</mo><mfrac><mrow><mi>S</mi><mo>−</mo><mi>e</mi><mi>u</mi><mi>v</mi><mo>−</mo><mi>f</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mrow><mi>S</mi><mo>−</mo><mi>e</mi><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mi>f</mi><msup><mi>v</mi><mn>2</mn></msup></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+0 \lt H_e \lt h_\infty\,\Gamma,\qquad
+\Gamma:=\frac{\Lambda}{M}
+=\frac{S-euv-fv^2}{S-eu^2-fv^2}.
+\tag{37}
+</annotation></semantics></math></p>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&gt;</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S&gt;e</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Γ</mi><mo>&lt;</mo><mi>S</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>−</mo><mi>e</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Gamma \lt S/(S-e)</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&lt;</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S \lt e</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Γ</mi><mo>&lt;</mo><mi>e</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mo>−</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Gamma \lt e/(e-S)</annotation></semantics></math>.</p>
+<p><strong>Proof.</strong> The first inequality is Lemma 7, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>w</mi><mo>+</mo><mi>e</mi><mi>u</mi><mo>+</mo><mi>f</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">S=w+eu+fv</annotation></semantics></math>
+gives the rational expression. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&gt;</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S&gt;e</annotation></semantics></math>,
+the exact identity</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>M</mi><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>−</mo><mi>e</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>Λ</mi><mo>=</mo><mi>e</mi><mo stretchy="false" form="prefix">{</mo><mi>S</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>u</mi><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>w</mi><mi>v</mi><mo stretchy="false" form="postfix">}</mo><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+SM-(S-e)\Lambda
+=e\{S(1-u)(1+u-v)+wv\}&gt;0
+\tag{38}
+</annotation></semantics></math></p>
+<p>proves the claim. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&lt;</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S \lt e</annotation></semantics></math>,
+conservation implies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>&lt;</mo><mi>S</mi><mi>/</mi><mi>e</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">u \lt S/e&lt;1</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>≤</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">u\le v</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Γ</mi><mo>=</mo><mn>1</mn><mo>+</mo><mi>e</mi><mi>u</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>M</mi><mo>≤</mo><mn>1</mn><mo>&lt;</mo><mi>e</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mo>−</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Gamma=1+eu(u-v)/M\le1 \lt e/(e-S)</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>&gt;</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">u&gt;v</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&gt;</mo><mi>e</mi><mi>u</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">M&gt;eu(1-u)</annotation></semantics></math>
+and</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Γ</mi><mo>&lt;</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mi>u</mi><mo>−</mo><mi>v</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>u</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mi>v</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>u</mi></mrow></mfrac><mo>&lt;</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>u</mi></mrow></mfrac><mo>&lt;</mo><mfrac><mi>e</mi><mrow><mi>e</mi><mo>−</mo><mi>S</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\Gamma&lt;1+\frac{u-v}{1-u}
+=\frac{1-v}{1-u}&lt;\frac1{1-u}&lt;\frac e{e-S}.
+\tag{39}
+</annotation></semantics></math></p>
+<p>This proves both cases.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Theorem 10 (fixed-total response classification).</strong>
+For every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>,</mo><mi>f</mi><mo>,</mo><mi>S</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">e,f,S&gt;0</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k&gt;1</annotation></semantics></math>:</p>
+<ol type="1">
+<li>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&gt;</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S&gt;e</annotation></semantics></math>,
+then
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℋ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo>;</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>h</mi><mi>∞</mi></msub><mfrac><mi>S</mi><mrow><mi>S</mi><mo>−</mo><mi>e</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\mathcal H(S,e,f;k)=h_\infty\frac S{S-e}.
+\tag{40}
+</annotation></semantics></math></li>
+<li>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&lt;</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S \lt e</annotation></semantics></math>,
+then
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℋ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo>;</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>h</mi><mi>∞</mi></msub><mfrac><mi>e</mi><mrow><mi>e</mi><mo>−</mo><mi>S</mi></mrow></mfrac><mo>&lt;</mo><mi>∞</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\mathcal H(S,e,f;k)\le h_\infty\frac e{e-S}&lt;\infty.
+\tag{41}
+</annotation></semantics></math> We do not claim that (41) is
+sharp.</li>
+<li>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S=e</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℋ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo>;</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>+</mi><mi>∞</mi></mrow><annotation encoding="application/x-tex">\mathcal H(S,e,f;k)=+\infty</annotation></semantics></math>.</li>
+</ol>
+<p>Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℋ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo>;</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal H(S,e,f;k)</annotation></semantics></math>
+is finite if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>≠</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S\ne e</annotation></semantics></math>.
+The supremum in (40) is not attained by finite positive
+coefficients.</p>
+<p><strong>Proof.</strong> Lemma 9 gives finiteness, the upper bounds,
+and strictness for each finite mechanism. We prove the matching
+above-critical construction now; Section 7 proves the critical
+assertion.</p>
+<p>Fix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&gt;</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S&gt;e</annotation></semantics></math>.
+For sufficiently small
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta&gt;0</annotation></semantics></math>
+set</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>1</mn><mo>−</mo><mi>δ</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>v</mi><mo>=</mo><mi>δ</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>w</mi><mo>=</mo><mi>S</mi><mo>−</mo><mi>e</mi><mo>+</mo><mi>δ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mo>−</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">
+u=1-\delta,\quad v=\delta,\quad
+w=S-e+\delta(e-f)&gt;0,
+\tag{42}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mi>w</mi><mi>δ</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>δ</mi></mrow></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mi>y</mi><mo>=</mo><mfrac><mi>w</mi><mrow><mn>1</mn><mo>+</mo><mi>δ</mi></mrow></mfrac><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>β</mi><mi>E</mi></msub><mo>=</mo><mi>δ</mi><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>β</mi><mi>F</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><mi>δ</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+x=\frac{w\delta}{1+\delta},\quad y=\frac w{1+\delta},\quad
+\beta_E=\delta,\quad\beta_F=1-\delta.
+\tag{43}
+</annotation></semantics></math></p>
+<p>For example,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><mo>min</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo>,</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>−</mo><mi>e</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">[</mo><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mo>+</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\delta&lt;\min\{1/2,(S-e)/[2(e+f)]\}</annotation></semantics></math>
+suffices for positivity. Construct the coefficients by (33)-(34). All
+three totals and the affinity remain fixed. As
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta\downarrow0</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>→</mo><mi>S</mi><mo>−</mo><mi>e</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>Λ</mi><mo>→</mo><mi>S</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>R</mi><mo>→</mo><mi>S</mi><mo>−</mo><mi>e</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+M\longrightarrow S-e,\quad
+\Lambda\longrightarrow S,\quad
+R\longrightarrow S-e.
+\tag{44}
+</annotation></semantics></math></p>
+<p>The term
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>P</mi><mi>E</mi></msub><mo>+</mo><msub><mi>P</mi><mi>F</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\delta(P_E+P_F)</annotation></semantics></math>
+tends to zero: the occupancies, concentrations, and totals in (42)-(43)
+stay bounded. Equation (35), now applied to each varying geometry,
+therefore gives</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>e</mi></msub><mo>→</mo><mfrac><mi>S</mi><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>κ</mi><mo>*</mo></msub><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>−</mo><mi>e</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+H_e\longrightarrow\frac S{(\kappa_*-1)(S-e)}.
+</annotation></semantics></math></p>
+<p>This is (40). Strictness in Lemma 9 rules out finite attainment.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Corollary 11 (a measurable free-substrate
+safeguard).</strong> If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>S</mi><mo>≥</mo><mi>η</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(x+y)/S\ge\eta&gt;0</annotation></semantics></math>,
+then</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>e</mi></msub><mo>&lt;</mo><msub><mi>h</mi><mi>∞</mi></msub><mi>/</mi><mi>η</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+H_e \lt h_\infty/\eta.
+\tag{45}
+</annotation></semantics></math></p>
+<p><strong>Proof.</strong> Since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Λ</mi><mo>&lt;</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">\Lambda \lt S</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&gt;</mo><mi>x</mi><mo>+</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">M&gt;x+y</annotation></semantics></math>,
+equation (37) gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>e</mi></msub><mo>&lt;</mo><msub><mi>h</mi><mi>∞</mi></msub><mi>S</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>h</mi><mi>∞</mi></msub><mi>/</mi><mi>η</mi></mrow><annotation encoding="application/x-tex">H_e \lt h_\infty S/(x+y)\le h_\infty/\eta</annotation></semantics></math>.
+No optimality assertion is made for this simplified bound.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>Theorem 10 classifies a supremum over kinetic models. A single fixed
+positive model always has a finite, smooth response, including when its
+totals satisfy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S=e</annotation></semantics></math>.
+The singularity occurs only along sequences of models. At equilibrium
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k=1</annotation></semantics></math>,
+Theorem 4 gives zero response everywhere; the assumption
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k&gt;1</annotation></semantics></math>
+is essential to the critical classification.</p>
+<h1 id="a-stable-reversible-family-with-fixed-totals-and-affinity">7. A
+stable, reversible family with fixed totals and affinity</h1>
+<h2 id="explicit-critical-family">7.1 Explicit critical family</h2>
+<p><strong>Theorem 12 (critical construction).</strong> Fix design
+constants
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>,</mo><msub><mi>F</mi><mn>0</mn></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E_0,F_0&gt;0</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k&gt;1</annotation></semantics></math>.
+For</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>ε</mi><mo>&lt;</mo><mo>min</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>E</mi><mn>0</mn></msub><mi>/</mi><mn>3</mn><mo>,</mo><msub><mi>F</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+0&lt;\varepsilon&lt;\min(E_0/3,F_0),
+\tag{46}
+</annotation></semantics></math></p>
+<p>set the baseline totals
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>e</mi><mo>=</mo><msub><mi>E</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">S=e=E_0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><msub><mi>F</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">f=F_0</annotation></semantics></math>,
+and choose</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi><mo>=</mo><mfrac><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><mn>3</mn><mi>ε</mi></mrow><mrow><mn>6</mn><msup><mi>ε</mi><mn>2</mn></msup></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>c</mi><mo>=</mo><mi>d</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>F</mi><mn>0</mn></msub><mo>−</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">
+a=b=\frac{E_0-3\varepsilon}{6\varepsilon^2},\qquad
+c=d=\frac1{2(F_0-\varepsilon)},
+\tag{47}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mrow><mn>3</mn><mi>ε</mi></mrow><mrow><msub><mi>F</mi><mn>0</mn></msub><mo>−</mo><mi>ε</mi></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>A</mi><mo>=</mo><mi>k</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>B</mi><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="1.0em"></mspace><mi>C</mi><mo>=</mo><mi>h</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>D</mi><mo>=</mo><mi>k</mi><mi>h</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+h=\frac{3\varepsilon}{F_0-\varepsilon},\qquad
+A=k,\quad B=1,\quad C=h,\quad D=kh.
+\tag{48}
+</annotation></semantics></math></p>
+<p>The unique steady state is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>y</mi><mo>=</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">x=y=\varepsilon</annotation></semantics></math>,
+and the affinity is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>log</mo><mi>χ</mi><mo>=</mo><mn>2</mn><mo>log</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">\log\chi=2\log k</annotation></semantics></math>.
+Its sensitivity is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>e</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>E</mi><mn>0</mn></msub><mi>/</mi><msub><mi>F</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>ε</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>/</mi><msub><mi>F</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ε</mi><mn>2</mn></msup></mrow><mrow><msub><mi>κ</mi><mo>*</mo></msub><mrow><mo stretchy="true" form="prefix">[</mo><mn>6</mn><mi>ε</mi><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>9</mn><mi>/</mi><msub><mi>E</mi><mn>0</mn></msub><mo>+</mo><mn>1</mn><mi>/</mi><msub><mi>F</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ε</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">]</mo></mrow></mrow></mfrac><mo>∼</mo><mfrac><msub><mi>E</mi><mn>0</mn></msub><mrow><mn>6</mn><msub><mi>κ</mi><mo>*</mo></msub><mi>ε</mi></mrow></mfrac><mo>→</mo><mi>∞</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+H_e=\frac{E_0-(E_0/F_0)\varepsilon+(2/F_0)\varepsilon^2}
+{\kappa_*[6\varepsilon-(9/E_0+1/F_0)\varepsilon^2]}
+\sim\frac{E_0}{6\kappa_*\varepsilon}\longrightarrow\infty.
+\tag{49}
+</annotation></semantics></math></p>
+<p>In computing this derivative,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>,</mo><msub><mi>F</mi><mn>0</mn></msub><mo>,</mo><mi>ε</mi><mo>,</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">E_0,F_0,\varepsilon,k</annotation></semantics></math>
+in the rate design (47)-(48) are frozen. Only the enzyme total
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+is perturbed around
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mn>0</mn></msub><annotation encoding="application/x-tex">E_0</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><msub><mi>E</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">S=E_0</annotation></semantics></math>
+remains fixed. The perturbation does not move along a path with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S=e</annotation></semantics></math>.</p>
+<p><strong>Proof.</strong> At the claimed state,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>1</mn><mo>−</mo><mn>3</mn><mi>ε</mi><mi>/</mi><msub><mi>E</mi><mn>0</mn></msub><mo>,</mo><mspace width="1.0em"></mspace><mi>v</mi><mo>=</mo><mi>ε</mi><mi>/</mi><msub><mi>F</mi><mn>0</mn></msub><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>Z</mi><mi>E</mi></msub><mo>=</mo><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><mn>3</mn><mi>ε</mi><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>Z</mi><mi>F</mi></msub><mo>=</mo><mi>ε</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+u=1-3\varepsilon/E_0,\quad v=\varepsilon/F_0,
+\quad Z_E=E_0-3\varepsilon,\quad Z_F=\varepsilon.
+\tag{50}
+</annotation></semantics></math></p>
+<p>Equation (3) follows by adding
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>ε</mi><mo>+</mo><msub><mi>Z</mi><mi>E</mi></msub><mo>+</mo><msub><mi>Z</mi><mi>F</mi></msub><mo>=</mo><msub><mi>E</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">2\varepsilon+Z_E+Z_F=E_0</annotation></semantics></math>.
+Both sides of (2) equal</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mo>=</mo><mn>3</mn><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ε</mi><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+J=3(k-1)\varepsilon^2.
+\tag{51}
+</annotation></semantics></math></p>
+<p>The affinity follows from (48), and Proposition 1 gives uniqueness.
+At this state
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">r=1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>β</mi><mi>E</mi></msub><mo>=</mo><msub><mi>β</mi><mi>F</mi></msub><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\beta_E=\beta_F=1/2</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><msub><mi>κ</mi><mo>*</mo></msub></mrow><annotation encoding="application/x-tex">\kappa=\kappa_*</annotation></semantics></math>,
+and</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mn>6</mn><mi>ε</mi><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>9</mn><mi>/</mi><msub><mi>E</mi><mn>0</mn></msub><mo>+</mo><mn>1</mn><mi>/</mi><msub><mi>F</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ε</mi><mn>2</mn></msup><mo>,</mo><mspace width="2.0em"></mspace><mi>Λ</mi><mo>=</mo><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>E</mi><mn>0</mn></msub><mi>/</mi><msub><mi>F</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>ε</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>/</mi><msub><mi>F</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ε</mi><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+M=6\varepsilon-(9/E_0+1/F_0)\varepsilon^2,\qquad
+\Lambda=E_0-(E_0/F_0)\varepsilon+(2/F_0)\varepsilon^2.
+\tag{52}
+</annotation></semantics></math></p>
+<p>In (30),
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mi>M</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">Q=M/2</annotation></semantics></math>.
+Equation (27) therefore reduces to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>e</mi></msub><mo>=</mo><mi>Λ</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>κ</mi><mo>*</mo></msub><mi>M</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">H_e=\Lambda/(\kappa_*M)</annotation></semantics></math>,
+proving (49). The positivity of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+also follows directly from (22); no sign assumption on a formal
+denominator is needed. Taking the elementary limit proves unboundedness,
+completing Theorem 10.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Example 13 (all totals equal to one).</strong> For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>=</mo><msub><mi>F</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">E_0=F_0=1</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>e</mi></msub><mo>=</mo><mfrac><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mspace width="0.167em"></mspace><mfrac><mrow><mn>1</mn><mo>−</mo><mi>ε</mi><mo>+</mo><mn>2</mn><msup><mi>ε</mi><mn>2</mn></msup></mrow><mrow><mn>6</mn><mi>ε</mi><mo>−</mo><mn>10</mn><msup><mi>ε</mi><mn>2</mn></msup></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+H_e=\frac{k-1}{k+1}\,
+\frac{1-\varepsilon+2\varepsilon^2}{6\varepsilon-10\varepsilon^2}.
+\tag{53}
+</annotation></semantics></math></p>
+<p>With
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">k=2</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">\varepsilon=1/10</annotation></semantics></math>,
+this is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>46</mn><mi>/</mi><mn>75</mn><mo>&gt;</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">46/75&gt;1/2</annotation></semantics></math>,
+whereas the conjectured affinity-only ceiling is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>∞</mi></msub><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">h_\infty=1/2</annotation></semantics></math>.
+Decreasing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+gives arbitrarily larger violations with the same three totals and the
+same affinity.</p>
+<h2 id="elementary-rates-and-local-stability">7.2 Elementary rates and
+local stability</h2>
+<p>For the family in Theorem 12, the rates from Proposition 3 can be
+written particularly simply:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Rate</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>p</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">p_{E0}=p_{E1}</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k+1</annotation></semantics></math></td>
+</tr>
+<tr class="even">
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>q</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><annotation encoding="application/x-tex">q_{E0}</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><msup><mi>ε</mi><mn>2</mn></msup><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><mn>3</mn><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">6\varepsilon^2/(E_0-3\varepsilon)</annotation></semantics></math></td>
+</tr>
+<tr class="odd">
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>q</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">q_{E1}</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mi>k</mi><msup><mi>ε</mi><mn>2</mn></msup><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><mn>3</mn><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">6k\varepsilon^2/(E_0-3\varepsilon)</annotation></semantics></math></td>
+</tr>
+<tr class="even">
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>F</mi><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>p</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">p_{F0}=p_{F1}</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>ε</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>F</mi><mn>0</mn></msub><mo>−</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">3\varepsilon(k+1)/(F_0-\varepsilon)</annotation></semantics></math></td>
+</tr>
+<tr class="odd">
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>q</mi><mrow><mi>F</mi><mn>0</mn></mrow></msub><annotation encoding="application/x-tex">q_{F0}</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mi>k</mi><mi>ε</mi></mrow><annotation encoding="application/x-tex">6k\varepsilon</annotation></semantics></math></td>
+</tr>
+<tr class="even">
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>q</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">q_{F1}</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mi>ε</mi></mrow><annotation encoding="application/x-tex">6\varepsilon</annotation></semantics></math></td>
+</tr>
+</tbody>
+</table>
+<p>Every rate is positive for every finite member. On any interval
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>ε</mi><mo>≤</mo><msub><mi>ε</mi><mn>0</mn></msub><mo>&lt;</mo><mo>min</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>E</mi><mn>0</mn></msub><mi>/</mi><mn>3</mn><mo>,</mo><msub><mi>F</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">0&lt;\varepsilon\le\varepsilon_0&lt;\min(E_0/3,F_0)</annotation></semantics></math>,
+all rates are uniformly bounded above; some approach zero. In the
+chemical-potential assignment (17),
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>3</mn></msub><msub><mi>K</mi><mn>4</mn></msub><mo>=</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">K_3K_4=k</annotation></semantics></math>,
+so both the substrate potential difference
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><mi>Y</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>X</mi></msub><mo>=</mo><mo>log</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">\mu_Y-\mu_X=\log k</annotation></semantics></math>
+and the fuel driving
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>log</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">2\log k</annotation></semantics></math>
+can be fixed along the family. Binding energies of the intermediate
+states vary.</p>
+<p><strong>Proposition 14 (local asymptotic stability).</strong> Every
+finite member of the critical family has a locally asymptotically stable
+steady state in the stoichiometric compatibility class of the full
+elementary mass-action system.</p>
+<p><strong>Proof.</strong> Write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><msub><mi>Z</mi><mi>E</mi></msub></mrow><annotation encoding="application/x-tex">z=Z_E</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><msub><mi>Z</mi><mi>F</mi></msub></mrow><annotation encoding="application/x-tex">q=Z_F</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mi>S</mi><mo>−</mo><mi>z</mi><mo>−</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">s=x+y=S-z-q</annotation></semantics></math>.
+Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><msub><mi>p</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>p</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\alpha=p_{E0}=p_{E1}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><msub><mi>p</mi><mrow><mi>F</mi><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>p</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\gamma=p_{F0}=p_{F1}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>=</mo><msub><mi>q</mi><mrow><mi>E</mi><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>q</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\lambda=q_{E0}+q_{E1}</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><msub><mi>q</mi><mrow><mi>F</mi><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>q</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\mu=q_{F0}+q_{F1}</annotation></semantics></math>.
+The complex concentrations obey the closed system</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>z</mi><mo accent="true">̇</mo></mover><mo>=</mo><mi>α</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mo>−</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>−</mo><mi>z</mi><mo>−</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>λ</mi><mi>z</mi><mo>,</mo><mspace width="2.0em"></mspace><mover><mi>q</mi><mo accent="true">̇</mo></mover><mo>=</mo><mi>γ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>−</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>−</mo><mi>z</mi><mo>−</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>μ</mi><mi>q</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\dot z=\alpha(e-z)(S-z-q)-\lambda z,\qquad
+\dot q=\gamma(f-q)(S-z-q)-\mu q.
+\tag{54}
+</annotation></semantics></math></p>
+<p>At its positive steady state set</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mi>α</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mo>−</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn><mo>,</mo><mspace width="1.0em"></mspace><mi>t</mi><mo>=</mo><mi>γ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>−</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>L</mi><mi>E</mi></msub><mo>=</mo><mi>α</mi><mi>s</mi><mo>+</mo><mi>λ</mi><mo>&gt;</mo><mn>0</mn><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>L</mi><mi>F</mi></msub><mo>=</mo><mi>γ</mi><mi>s</mi><mo>+</mo><mi>μ</mi><mo>&gt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+p=\alpha(e-z)&gt;0,\quad t=\gamma(f-q)&gt;0,\quad
+L_E=\alpha s+\lambda&gt;0,\quad L_F=\gamma s+\mu&gt;0.
+</annotation></semantics></math></p>
+<p>The Jacobian of (54) is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>−</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo>+</mo><msub><mi>L</mi><mi>E</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mi>p</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>−</mi><mi>t</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>+</mo><msub><mi>L</mi><mi>F</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\begin{pmatrix}-(p+L_E)&amp;-p\\-t&amp;-(t+L_F)\end{pmatrix}.
+\tag{55}
+</annotation></semantics></math></p>
+<p>Its trace is negative and its determinant is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><msub><mi>L</mi><mi>F</mi></msub><mo>+</mo><mi>t</mi><msub><mi>L</mi><mi>E</mi></msub><mo>+</mo><msub><mi>L</mi><mi>E</mi></msub><msub><mi>L</mi><mi>F</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">pL_F+tL_E+L_EL_F&gt;0</annotation></semantics></math>,
+so both eigenvalues have negative real parts. The remaining independent
+coordinate may be taken as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>,
+whose equation is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>y</mi><mo accent="true">̇</mo></mover><mo>=</mo><msub><mi>q</mi><mrow><mi>E</mi><mn>1</mn></mrow></msub><mi>z</mi><mo>+</mo><msub><mi>q</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub><mi>q</mi><mo>−</mo><mrow><mo stretchy="true" form="prefix">[</mo><mi>α</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>e</mi><mo>−</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>γ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>−</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mi>y</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\dot y=q_{E1}z+q_{F1}q-
+[\alpha(e-z)+\gamma(f-q)]y.
+\tag{56}
+</annotation></semantics></math></p>
+<p>Thus the full three-dimensional Jacobian is block triangular with the
+two eigenvalues above and the additional eigenvalue
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo>+</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">-(p+t)&lt;0</annotation></semantics></math>.
+The vector field is smooth and the steady state is interior to its
+compatibility class. The local linearization stability theorem therefore
+gives local asymptotic stability. This statement does not assert global
+convergence or a uniform relaxation rate.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<h2 id="a-second-exact-rational-witness">7.3 A second exact rational
+witness</h2>
+<p><strong>Example 15.</strong> Take</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>y</mi><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="1.0em"></mspace><mi>e</mi><mo>=</mo><mn>5</mn><mo>,</mo><mspace width="1.0em"></mspace><mi>f</mi><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="1.0em"></mspace><mi>S</mi><mo>=</mo><mn>7</mn><mo>,</mo><mspace width="2.0em"></mspace><mi>a</mi><mo>=</mo><mi>b</mi><mo>=</mo><mn>9</mn><mi>/</mi><mn>2</mn><mo>,</mo><mspace width="0.222em"></mspace><mi>c</mi><mo>=</mo><mi>d</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">
+x=y=1,\quad e=5,\quad f=1,\quad S=7,
+\qquad a=b=9/2,\ c=d=1/2,
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+(A,B,C,D)=(2,1,1,2).
+\tag{57}
+</annotation></semantics></math></p>
+<p>The affinity is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>log</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\log4</annotation></semantics></math>,
+occupancies are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>9</mn><mi>/</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">u=9/10</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">v=1/2</annotation></semantics></math>,
+and (2)-(3) hold exactly. Here
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mn>27</mn><mi>/</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">M=27/10</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Λ</mi><mo>=</mo><mn>9</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\Lambda=9/2</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\kappa=3</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>β</mi><mi>E</mi></msub><mo>=</mo><msub><mi>β</mi><mi>F</mi></msub><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\beta_E=\beta_F=1/2</annotation></semantics></math>,
+giving
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>e</mi></msub><mo>=</mo><mn>5</mn><mi>/</mi><mn>9</mn><mo>&gt;</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">H_e=5/9&gt;1/2</annotation></semantics></math>.
+As a check directly from the original equations,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>x</mi><mi>e</mi></msub><mo>,</mo><msub><mi>y</mi><mi>e</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mn>7</mn><mi>/</mi><mn>18</mn><mo>,</mo><mi>−</mi><mn>5</mn><mi>/</mi><mn>18</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>H</mi><mi>e</mi></msub><mo>=</mo><mi>e</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>y</mi><mi>e</mi></msub><mi>/</mi><mi>y</mi><mo>−</mo><msub><mi>x</mi><mi>e</mi></msub><mi>/</mi><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>5</mn><mrow><mo stretchy="true" form="prefix">[</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mn>5</mn><mi>/</mi><mn>18</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mn>7</mn><mi>/</mi><mn>18</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mo>=</mo><mn>5</mn><mi>/</mi><mn>9</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+(x_e,y_e)=(-7/18,-5/18),\qquad
+H_e=e(y_e/y-x_e/x)=5[(-5/18)-(-7/18)]=5/9.
+</annotation></semantics></math></p>
+<h1 id="interpretation-limitations-and-reproducibility">8.
+Interpretation, limitations, and reproducibility</h1>
+<p>The affinity-only high-substrate constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>∞</mi></msub><annotation encoding="application/x-tex">h_\infty</annotation></semantics></math>
+does not extend to arbitrary finite totals. More strongly, no finite
+ceiling depending only on the fixed affinity and the three fixed totals
+can hold at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">S=e</annotation></semantics></math>.
+Above that surface the exact repair is the factor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>−</mo><mi>e</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">S/(S-e)</annotation></semantics></math>.
+Below it we prove finiteness; determining the sharp subcritical supremum
+is outside the present result.</p>
+<p>These statements do not invalidate the established fixed-kinetics
+asymptotic theorems in [1]. Theorem 12 changes kinetics along a family
+and keeps substrate total fixed. The established low-substrate limit
+instead sends
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+to zero with kinetics fixed. Theorem 10 also gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℋ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo>;</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>→</mo><msub><mi>h</mi><mi>∞</mi></msub></mrow><annotation encoding="application/x-tex">\mathcal H(S,e,f;k)\to h_\infty</annotation></semantics></math>
+as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>→</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">S\to\infty</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>,</mo><mi>f</mi><mo>,</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">e,f,k</annotation></semantics></math>
+fixed, consistently recovering the high-substrate constant at the level
+of optimized suprema.</p>
+<p>The free-ratio observable matters: the construction has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>y</mi><mo>→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=y\to0</annotation></semantics></math>,
+while almost all substrate is bound to the forward enzyme. Its flux is
+exactly (51), which tends to zero. High stationary logarithmic
+sensitivity alone says nothing about a fixed-throughput, fixed-power,
+fixed-noise, or fixed-time sensing task. The elementary rates can be
+bounded above along the critical family, but cannot all remain bounded
+away from zero. These restrictions are part of the theorem’s scope, not
+hidden resources.</p>
+<figure>
+<img src="figures/response_frontier.png"
+alt="Analytic response families at affinity \log4. Left: the stable critical family with S=e=f=1 grows as 1/(18\varepsilon), crossing the high-substrate ceiling 1/2. Right: for e=f=1 and S&gt;1, the exact ceiling S/[2(S-1)] is approached by the positive-rate construction (42)-(43) with \delta=10^{-4}. Curves are model calculations, not experimental data." />
+<figcaption aria-hidden="true">Analytic response families at affinity
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>log</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\log4</annotation></semantics></math>.
+Left: the stable critical family with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>e</mi><mo>=</mo><mi>f</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">S=e=f=1</annotation></semantics></math>
+grows as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>18</mn><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">1/(18\varepsilon)</annotation></semantics></math>,
+crossing the high-substrate ceiling
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math>.
+Right: for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mi>f</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">e=f=1</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">S&gt;1</annotation></semantics></math>,
+the exact ceiling
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">[</mo><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">S/[2(S-1)]</annotation></semantics></math>
+is approached by the positive-rate construction (42)-(43) with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>4</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\delta=10^{-4}</annotation></semantics></math>.
+Curves are model calculations, not experimental data.</figcaption>
+</figure>
+<p>The mathematical results apply directly to the positive reduced model
+(1)-(3), with an explicit unconditional bridge to the elementary
+mass-action mechanisms. The previously published reduction from larger
+enzyme graphs is attributed to [1,3]. We do not include networks with
+multiple substrate molecules in one complex, additional feedback
+species, enzyme synthesis/degradation, or externally imposed
+total-substrate changes in the derivative.</p>
+<p>The associated reproducibility script evaluates identities from the
+original steady equations, checks exact rational witnesses, and compares
+the analytic response with perturbed-total steady solutions at high
+precision while holding the designed kinetics fixed. It also examines
+approach to the sharp envelopes. These finite checks can expose
+implementation and algebra mistakes; the proofs above establish the
+universal quantifiers and limiting claims.</p>
+<p>Qian and Reluga [11] study nonlinear feedback and hysteresis in a
+reversible phosphorylation cycle. The fixed-total response studied here
+is for a model without that feedback. The comparison with Roy and
+Gangopadhyay [12] uses the publisher preview and publicly accessible
+appendices. The article’s main full text was unavailable. The comparison
+with Qian [6] uses the complete accepted author manuscript. The novelty
+comparison is limited to the cited sources and the material available
+for comparison.</p>
+<h1 id="references">References</h1>
+<ol type="1">
+<li><p>J. A. Owen, P. Talla, J. W. Biddle, and J. Gunawardena.
+Thermodynamic bounds on ultrasensitivity in covalent switching.
+<em>Biophysical Journal</em> <strong>122</strong>(10), 1833-1845 (2023).
+<a
+href="https://doi.org/10.1016/j.bpj.2023.04.015">doi:10.1016/j.bpj.2023.04.015</a>.</p></li>
+<li><p>J. A. Owen, T. R. Gingrich, and J. M. Horowitz. Universal
+Thermodynamic Bounds on Nonequilibrium Response with Biochemical
+Applications. <em>Physical Review X</em> <strong>10</strong>, 011066
+(2020). <a
+href="https://doi.org/10.1103/PhysRevX.10.011066">doi:10.1103/PhysRevX.10.011066</a>.</p></li>
+<li><p>T. Dasgupta, D. H. Croll, J. A. Owen, M. G. Vander Heiden, J. W.
+Locasale, U. Alon, L. C. Cantley, and J. Gunawardena. A fundamental
+trade-off in covalent switching and its circumvention by enzyme
+bifunctionality in glucose homeostasis. <em>Journal of Biological
+Chemistry</em> <strong>289</strong>, 13010-13025 (2014). <a
+href="https://doi.org/10.1074/jbc.M113.546515">doi:10.1074/jbc.M113.546515</a>.</p></li>
+<li><p>B. M. C. Martins and P. S. Swain. Ultrasensitivity in
+Phosphorylation-Dephosphorylation Cycles with Little Substrate. <em>PLOS
+Computational Biology</em> <strong>9</strong>(8), e1003175 (2013). <a
+href="https://doi.org/10.1371/journal.pcbi.1003175">doi:10.1371/journal.pcbi.1003175</a>.</p></li>
+<li><p>S. Feng, J. F. Ollivier, and O. S. Soyer. Enzyme Sequestration as
+a Tuning Point in Controlling Response Dynamics of Signalling Networks.
+<em>PLOS Computational Biology</em> <strong>12</strong>(5), e1004918
+(2016). <a
+href="https://doi.org/10.1371/journal.pcbi.1004918">doi:10.1371/journal.pcbi.1004918</a>.</p></li>
+<li><p>H. Qian. Thermodynamic and kinetic analysis of sensitivity
+amplification in biological signal transduction. <em>Biophysical
+Chemistry</em> <strong>105</strong>, 585-593 (2003). <a
+href="https://doi.org/10.1016/S0301-4622(03)00068-1">doi:10.1016/S0301-4622(03)00068-1</a>.</p></li>
+<li><p>H.-M. Chun and J. M. Horowitz. Trade-offs between number
+fluctuations and response in nonequilibrium chemical reaction networks.
+<em>Journal of Chemical Physics</em> <strong>158</strong>, 174115
+(2023). <a
+href="https://doi.org/10.1063/5.0148662">doi:10.1063/5.0148662</a>.</p></li>
+<li><p>S. Legewie, N. Blüthgen, R. Schäfer, and H. Herzel.
+Ultrasensitization: Switch-Like Regulation of Cellular Signaling by
+Transcriptional Induction. <em>PLOS Computational Biology</em>
+<strong>1</strong>(5), e54 (2005). <a
+href="https://doi.org/10.1371/journal.pcbi.0010054">doi:10.1371/journal.pcbi.0010054</a>.</p></li>
+<li><p>J. A. Owen and J. M. Horowitz. Size limits the sensitivity of
+kinetic schemes. <em>Nature Communications</em> <strong>14</strong>,
+1280 (2023). <a
+href="https://doi.org/10.1038/s41467-023-36705-8">doi:10.1038/s41467-023-36705-8</a>.</p></li>
+<li><p>R. Martinez-Corral, K.-M. Nam, A. H. DePace, and J. Gunawardena.
+The Hill function is the universal Hopfield barrier for sharpness of
+input–output responses. <em>Proceedings of the National Academy of
+Sciences USA</em> <strong>121</strong>(22), e2318329121 (2024). <a
+href="https://doi.org/10.1073/pnas.2318329121">doi:10.1073/pnas.2318329121</a>.</p></li>
+<li><p>H. Qian and T. C. Reluga. Nonequilibrium Thermodynamics and
+Nonlinear Kinetics in a Cellular Signaling Switch. <em>Physical Review
+Letters</em> <strong>94</strong>, 028101 (2005). <a
+href="https://doi.org/10.1103/PhysRevLett.94.028101">doi:10.1103/PhysRevLett.94.028101</a>.
+<a href="https://reluga.org/Qian05.pdf">Author-hosted full
+text</a>.</p></li>
+<li><p>P. Roy and G. Gangopadhyay. Non-equilibrium thermodynamics of
+Phosphorylation–dephosphorylation ultrasensitive transition and critical
+behavior of MAPK cascade circuits. <em>Journal of Chemical Sciences</em>
+<strong>138</strong>, 95 (2026). <a
+href="https://doi.org/10.1007/s12039-026-02528-5">doi:10.1007/s12039-026-02528-5</a>.
+Publisher preview and appendices consulted.</p></li>
+</ol>

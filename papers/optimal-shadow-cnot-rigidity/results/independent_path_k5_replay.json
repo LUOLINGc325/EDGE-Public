@@ -1,0 +1,166 @@
+{
+  "source_sha256": "e0da408d3a360a4d6c1f9654870e6c7fa5e235b89e1047cb73c95c4d8dd67dcc",
+  "records": [
+    {
+      "command": [
+        "./path_exact_search",
+        "0",
+        "11",
+        "2000000"
+      ],
+      "exit_code": 0,
+      "result": {
+        "k": 5,
+        "target_class": "dual_axis",
+        "bound": 11,
+        "target_representatives": 3,
+        "completed_representatives": 3,
+        "visited": 10582,
+        "interrupted": false,
+        "found": false,
+        "exhaustive_failure": true,
+        "elapsed_seconds": 0.327655,
+        "failed_states_by_remaining": [
+          0,
+          0,
+          0,
+          0,
+          39,
+          50,
+          234,
+          309,
+          1318,
+          1158,
+          86,
+          3
+        ],
+        "canonical_start": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "quotient_path_pauli_masks": []
+      },
+      "progress_log": "finished target placement 1/3 visited 6055\nfinished target placement 2/3 visited 8680\nfinished target placement 3/3 visited 10582\n"
+    },
+    {
+      "command": [
+        "./path_exact_search",
+        "1",
+        "11",
+        "2000000"
+      ],
+      "exit_code": 0,
+      "result": {
+        "k": 5,
+        "target_class": "exceptional_k5",
+        "bound": 11,
+        "target_representatives": 18,
+        "completed_representatives": 18,
+        "visited": 1354,
+        "interrupted": false,
+        "found": false,
+        "exhaustive_failure": true,
+        "elapsed_seconds": 0.100751,
+        "failed_states_by_remaining": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          196,
+          151,
+          179,
+          368,
+          18
+        ],
+        "canonical_start": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "quotient_path_pauli_masks": []
+      },
+      "progress_log": "finished target placement 1/18 visited 129\nfinished target placement 2/18 visited 251\nfinished target placement 3/18 visited 340\nfinished target placement 4/18 visited 420\nfinished target placement 5/18 visited 538\nfinished target placement 6/18 visited 642\nfinished target placement 7/18 visited 753\nfinished target placement 8/18 visited 853\nfinished target placement 9/18 visited 892\nfinished target placement 10/18 visited 929\nfinished target placement 11/18 visited 1000\nfinished target placement 12/18 visited 1038\nfinished target placement 13/18 visited 1102\nfinished target placement 14/18 visited 1140\nfinished target placement 15/18 visited 1211\nfinished target placement 16/18 visited 1250\nfinished target placement 17/18 visited 1316\nfinished target placement 18/18 visited 1354\n"
+    },
+    {
+      "command": [
+        "./path_exact_search",
+        "0",
+        "12",
+        "2000000"
+      ],
+      "exit_code": 0,
+      "result": {
+        "k": 5,
+        "target_class": "dual_axis",
+        "bound": 12,
+        "target_representatives": 3,
+        "completed_representatives": 0,
+        "visited": 8089,
+        "interrupted": false,
+        "found": true,
+        "exhaustive_failure": false,
+        "elapsed_seconds": 0.323485,
+        "failed_states_by_remaining": [
+          0,
+          0,
+          0,
+          0,
+          41,
+          51,
+          205,
+          212,
+          1184,
+          1007,
+          60,
+          2,
+          0
+        ],
+        "canonical_start": [
+          407,
+          745,
+          413,
+          742,
+          437,
+          730,
+          490,
+          639,
+          341,
+          682
+        ],
+        "quotient_path_pauli_masks": [
+          7,
+          448,
+          240,
+          40,
+          6,
+          56,
+          208,
+          704,
+          96,
+          40,
+          10,
+          640
+        ]
+      },
+      "progress_log": ""
+    }
+  ]
+}

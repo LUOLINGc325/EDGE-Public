@@ -574,3 +574,36 @@ The table gives the local check status of each supplement. Compiled entries cove
 | [selection audit information](selection-audit-information/paper.en.md) | [generate_certificates.py](selection-audit-information/code/generate_certificates.py) |
 | [six cycle odd index entropy rises](six-cycle-odd-index-entropy-rises/paper.zh.md) | [certificate_odd_rises.py](six-cycle-odd-index-entropy-rises/code/certificate_odd_rises.py) |
 | [temporal ef1 nine chores threshold](temporal-ef1-nine-chores-threshold/paper.en.md) | [REPRODUCTION.md](temporal-ef1-nine-chores-threshold/REPRODUCTION.md), [verify_exact_certificate.py](temporal-ef1-nine-chores-threshold/code/verify_exact_certificate.py), [exact-certificate-problem.txt](temporal-ef1-nine-chores-threshold/results/exact-certificate-problem.txt), [exact-proof-certificate.json](temporal-ef1-nine-chores-threshold/results/exact-proof-certificate.json) |
+
+## Supplementary files for additional manuscripts
+
+The project pages link to the available scientific code, data, or figures.
+
+- [A Common Revenue Threshold for Regular Proportional Choice](rank-cutoff-common-threshold-half/README.md)
+- [A sharp privacy–communication frontier for Gaussian Fisher information](gaussian-ldp-information-frontier/README.md)
+- [A universal boundary kernel for cross-validation after two-model selection](two-model-cv-boundary-universality/README.md)
+- [A Vanishing Second Spike in a Real Haar Interaction Graph](real-haar-mst-singular-regularization/README.md)
+- [Exact Affinity Tensorization for Fully Interactive Testing under Local Bit Budgets](blackboard-testing-affinity-tensorization/README.md)
+- [Exact Geometry and Uniform Recovery of Congestion Monotonicity on AC Lines](ac-line-congestion-geometry/README.md)
+- [Exact minimax one-bit quantization and the cost of shared randomness](onebit-minimax-shared-randomness/README.md)
+- [Exact power thresholds for noncyclic Gaussian sources and their discontinuity at pole coalescence](noncyclic-mimo-power-elimination/README.md)
+- [Finite-resource response of reversible covalent switches](covalent-switch-finite-resource-response/README.md)
+- [Global and Stable Recovery of Compositional Lotka–Volterra Dynamics](compositional-glv-convex-recovery/README.md)
+- [Gradual stability transitions for nonregular median estimation](nonregular-median-stability-frontier/README.md)
+- [Hard Communication Budgets for Heavy-Tailed Mean Estimation](moment-hard-communication/README.md)
+- [Hawkes Processes with Missed and Spurious Events](hawkes-missed-spurious-recovery/README.md)
+- [Hitting and cover-time robustness separate on bounded-degree graphs](bounded-degree-cover-hitting-separation/README.md)
+- [Minimum-distinct couplings: a sharp support threshold](pair-supported-leakage-coupling/README.md)
+- [One versus two long-time queries for affine Hamiltonian encoding](long-time-hamiltonian-affine-state/README.md)
+- [Optimizer rigidity and a sharp tree resource boundary for optimal Clifford shadows](optimal-shadow-cnot-rigidity/README.md)
+- [Quantitative gains from refunds under finite valuation uncertainty](finite-value-robust-refund-gain/README.md)
+- [Sharp contamination and inference frontiers for the optimal sub-Gaussian variance proxy](optimal-proxy-tail-envelope-minimax/README.md)
+- [Sharp demand-shape and information boundaries in random-capacity inventory control](discount-replenishment-full-capacity/README.md)
+- [Sharp Rare-Erasure Asymptotics for Remote Estimation with Distinguishable Silence](visible-erasure-sharp-reliability/README.md)
+- [Sharp recovery limits for renewal waiting times from spatial count snapshots](renewal-snapshot-wasserstein-minimax/README.md)
+- [Stability boundaries of divisive-normalization circuits: norm-one counterexamples and sharp spectral repairs](divisive-normalization-stability-boundary/README.md)
+- [Strict Priority in Nonpreemptive Clearing Systems with Common Exponential Patience](equal-patience-priority-classification/README.md)
+- [The Exact Statistical Price of a Robust-Regret Certificate in LQR](lqr-certificate-efficiency-frontier/README.md)
+- [The statistical price of robust LQR depends on its comparator](robust-lqr-regret-efficiency/README.md)
+- [Truthful reports break the optimal report-independent envy-ratio barrier](envy-ratio-truthful-report-separation/README.md)
+- [Wideband Capacity of Dead-Time Detector Channels](dead-time-poisson-wideband-capacity/README.md)

@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**315 research entries / 成果条目 · 416 manuscript versions / 论文版本**
+**366 research entries / 成果条目 · 467 manuscript versions / 论文版本**
 
 [按学科浏览](BY_FIELD.md) · [导出单项成果](EXPORT.md) · [项目清单](CATALOG.json)
 
@@ -325,6 +325,57 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | A Sharp Reward Threshold for Faster, More Patient Jobs in a Two-Class Clearing System | — | [Read](two-class-clearing-reward-threshold/paper.en.md) |
 | Sharp limits of repeated majority cross-validation | — | [Read](repeated-majority-cross-validation/paper.en.md) |
 | The first capacity transition of the power-constrained Cauchy channel | — | [Read](cauchy-channel-capacity-transition/paper.en.md) |
+| A Common Revenue Threshold for Regular Proportional Choice | — | [Read](rank-cutoff-common-threshold-half/paper.en.md) |
+| A predictive floor for hierarchical Poisson mixtures with growing support | — | [Read](poisson-universal-prior-predictive-floor/paper.en.md) |
+| A sharp privacy–communication frontier for Gaussian Fisher information | — | [Read](gaussian-ldp-information-frontier/paper.en.md) |
+| A Sharp Tail Criterion and Starting-Point Cutoff for Radial Stereographic Bouncy Particle Sampling | — | [Read](sbps-radial-tail-cutoff/paper.en.md) |
+| A universal boundary kernel for cross-validation after two-model selection | — | [Read](two-model-cv-boundary-universality/paper.en.md) |
+| A Vanishing Second Spike in a Real Haar Interaction Graph | — | [Read](real-haar-mst-singular-regularization/paper.en.md) |
+| Critical Risk under Hard Erasure Budgets | — | [Read](hard-erasure-critical-testing/paper.en.md) |
+| Equal-Reward Strict Priority with Heterogeneous Exponential Patience | — | [Read](equal-reward-priority-classification/paper.en.md) |
+| Exact Affinity Tensorization for Fully Interactive Testing under Local Bit Budgets | — | [Read](blackboard-testing-affinity-tensorization/paper.en.md) |
+| Exact capacity of additive two-stage exponential noise | — | [Read](two-stage-exponential-capacity/paper.en.md) |
+| Exact Capacity of the Laplace Channel under an Absolute Input Cost | — | [Read](laplace-absolute-cost-capacity/paper.en.md) |
+| Exact capacity of the quadratic-cost Laplace channel | — | [Read](laplace-quadratic-cost-capacity/paper.en.md) |
+| Exact Geometry and Uniform Recovery of Congestion Monotonicity on AC Lines | — | [Read](ac-line-congestion-geometry/paper.en.md) |
+| Exact Geometry of Calibrated Confidence Sets | — | [Read](gaussian-evcs-prior-geometry/paper.en.md) |
+| Exact minimax one-bit quantization and the cost of shared randomness | — | [Read](onebit-minimax-shared-randomness/paper.en.md) |
+| Exact power thresholds for noncyclic Gaussian sources and their discontinuity at pole coalescence | — | [Read](noncyclic-mimo-power-elimination/paper.en.md) |
+| Feasible-output frontiers and covert communication over Gamma noise | — | [Read](gamma-covert-feasible-frontier/paper.en.md) |
+| Finite-resource response of reversible covalent switches | — | [Read](covalent-switch-finite-resource-response/paper.en.md) |
+| Fixed Block Perception Budgets | — | [Read](block-fdiv-perception-frontier/paper.en.md) |
+| Global and Stable Recovery of Compositional Lotka–Volterra Dynamics | — | [Read](compositional-glv-convex-recovery/paper.en.md) |
+| Gradual stability transitions for nonregular median estimation | — | [Read](nonregular-median-stability-frontier/paper.en.md) |
+| Hard Communication Budgets for Heavy-Tailed Mean Estimation | — | [Read](moment-hard-communication/paper.en.md) |
+| Hawkes Processes with Missed and Spurious Events | — | [Read](hawkes-missed-spurious-recovery/paper.en.md) |
+| Hitting and cover-time robustness separate on bounded-degree graphs | — | [Read](bounded-degree-cover-hitting-separation/paper.en.md) |
+| Loss geometry, evidence efficiency, and adaptive repair in multivariate mean testing | — | [Read](gue-loss-sign-growth-frontier/paper.en.md) |
+| Minimum-distinct couplings: a sharp support threshold | — | [Read](pair-supported-leakage-coupling/paper.en.md) |
+| Nonmonotonicity and sharp high-privacy limits for additive privacy | — | [Read](additive-privacy-bv-minimax/paper.en.md) |
+| One versus two long-time queries for affine Hamiltonian encoding | — | [Read](long-time-hamiltonian-affine-state/paper.en.md) |
+| Optimal fibers in information bottlenecks: stability, tensor products, and regular continuation | — | [Read](ib-canonical-strict-concavity/paper.en.md) |
+| Optimal half guarantees for dynamic matching with NBUE lifetimes | — | [Read](nbue-dynamic-matching-half/paper.en.md) |
+| Optimizer rigidity and a sharp tree resource boundary for optimal Clifford shadows | — | [Read](optimal-shadow-cnot-rigidity/paper.en.md) |
+| Quantitative gains from refunds under finite valuation uncertainty | — | [Read](finite-value-robust-refund-gain/paper.en.md) |
+| Reciprocal Haar spanning trees for arbitrary spectra | — | [Read](haar-mst-spectral-profile/paper.en.md) |
+| Sharp contamination and inference frontiers for the optimal sub-Gaussian variance proxy | — | [Read](optimal-proxy-tail-envelope-minimax/paper.en.md) |
+| Sharp demand-shape and information boundaries in random-capacity inventory control | — | [Read](discount-replenishment-full-capacity/paper.en.md) |
+| Sharp normalization and stability for one-sided tensorization of information divergences | — | [Read](subadditive-generator-rigidity/paper.en.md) |
+| Sharp Rare-Erasure Asymptotics for Remote Estimation with Distinguishable Silence | — | [Read](visible-erasure-sharp-reliability/paper.en.md) |
+| Sharp recovery limits for renewal waiting times from spatial count snapshots | — | [Read](renewal-snapshot-wasserstein-minimax/paper.en.md) |
+| Sharp resource laws for ancilla-assisted detector calibration | — | [Read](detector-calibration-ancilla-gap/paper.en.md) |
+| Sharp Wigner-negativity bounds, purity rigidity, and quantum correlations in spin systems | — | [Read](spin-wigner-uniform-negativity/paper.en.md) |
+| Spurious Local Minima and Certified Global Optimization in Two-Sensor Switched-Linear Scheduling | — | [Read](switched-linear-scheduling-global-certificate/paper.en.md) |
+| Stability boundaries of divisive-normalization circuits: norm-one counterexamples and sharp spectral repairs | — | [Read](divisive-normalization-stability-boundary/paper.en.md) |
+| Stable FCFS queues with maximal total-variation separation | — | [Read](ergodic-queue-total-variation-separation/paper.en.md) |
+| Strict Priority in Nonpreemptive Clearing Systems with Common Exponential Patience | — | [Read](equal-patience-priority-classification/paper.en.md) |
+| Synchronization, relaxation gaps, and uniform planning horizons in heterogeneous restless bandits | — | [Read](heterogeneous-rmab-uniform-horizon/paper.en.md) |
+| The Cost of Zeros in Exact Adaptive Rejection Sampling | — | [Read](nonnegative-holder-rejection-minimax/paper.en.md) |
+| The Exact Statistical Price of a Robust-Regret Certificate in LQR | — | [Read](lqr-certificate-efficiency-frontier/paper.en.md) |
+| The statistical price of robust LQR depends on its comparator | — | [Read](robust-lqr-regret-efficiency/paper.en.md) |
+| Truthful reports break the optimal report-independent envy-ratio barrier | — | [Read](envy-ratio-truthful-report-separation/paper.en.md) |
+| When Is LookAhead Globally Optimal? An Exact Boundary for Affine Age Costs | — | [Read](lookahead-full-information-boundary/paper.en.md) |
+| Wideband Capacity of Dead-Time Detector Channels | — | [Read](dead-time-poisson-wideband-capacity/paper.en.md) |
 
 [Reproducibility materials and auxiliary Lean source / 复现材料与辅助 Lean 源码](REPRODUCIBILITY.md)
 

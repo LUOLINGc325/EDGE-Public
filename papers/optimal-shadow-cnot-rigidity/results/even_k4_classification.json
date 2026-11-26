@@ -1,0 +1,84 @@
+{
+  "row_candidates_each": 56,
+  "normalized_symplectic_matrices": 896,
+  "quotient_by_output_I_J": 56,
+  "number_of_classes": 2,
+  "classes": [
+    {
+      "class": "dual_axis",
+      "representative_rows": [
+        87,
+        171,
+        93,
+        174,
+        117,
+        186,
+        213,
+        234
+      ],
+      "left_quotient_size": 8,
+      "normalized_matrix_count": 128
+    },
+    {
+      "class": "exceptional",
+      "representative_rows": [
+        87,
+        191,
+        173,
+        223,
+        185,
+        247,
+        214,
+        253
+      ],
+      "left_quotient_size": 48,
+      "normalized_matrix_count": 768
+    }
+  ],
+  "membership_checks": [
+    {
+      "name": "displayed_counterexample",
+      "normalized_rows": [
+        91,
+        191,
+        173,
+        223,
+        181,
+        251,
+        218,
+        253
+      ],
+      "rank_one_matching_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "class": "exceptional",
+      "class_left_quotient_size": 48
+    },
+    {
+      "name": "k4_path_7",
+      "normalized_rows": [
+        155,
+        239,
+        109,
+        191,
+        186,
+        253,
+        229,
+        251
+      ],
+      "rank_one_matching_zero_based": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "class": "exceptional",
+      "class_left_quotient_size": 48
+    }
+  ],
+  "resource_witness_file_sha256": "8b68797028029510e3253ca8842ccaba43ec53e53267c625f7331f1ecde3276a",
+  "scope": "complete k4 equivalence classification; permutations not free in physical circuits"
+}

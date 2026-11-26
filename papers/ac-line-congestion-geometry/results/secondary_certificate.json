@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "scope": "secondary exact identities and targeted rational witnesses; final full-manuscript audit is a separate step",
+  "convention": "C=diag(q)L+Ldiag(q); B=C_free; no half-C convention",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "script_sha256": "faac5473d73d9b1e3920675d771d9b47340d994b9168802200460276619ecd03",
+  "certificates": {
+    "arbitrary_path_geometry": {
+      "exact_rational_dimensions_checked": [
+        2,
+        3,
+        5
+      ],
+      "Dirichlet_scaling_and_all_cross_entries": "passed",
+      "terminal_adjacent_correction": "passed, including n=2",
+      "last_adjacent_condition_cannot_be_dropped": true,
+      "nominal_four_unit_resistances_K24": "-1/22",
+      "impedance_recovery_closed_endpoint": "passed",
+      "impedance_recovery_voltage_deficit": "263657940/128371553909",
+      "no_random_sampling": true
+    },
+    "dimension_free_relative_curvature": {
+      "sufficient_condition": "alpha > 8*v^2*(1-v)/(2*v-1)^3",
+      "simple_closed_sufficient_condition": "v >= max(3/4, 1-alpha/40)",
+      "v_19_over_20_threshold": "361/729 < 1/2",
+      "v_11_over_12_threshold": "121/125 < 1",
+      "threshold_derivative": "8*v*(v - 2)/(2*v - 1)**4",
+      "weighted_inverse_negative_factor": "1-4*t, exactly verified",
+      "exact_examples": [
+        {
+          "n": 4,
+          "v": "19/20",
+          "relative_curvature_lower_bound": "1/2",
+          "minimum_load_display": "0.00475000000000",
+          "actual_weighted_Neumann_t_display": "0.234685186657",
+          "all_cross_entries_strictly_negative_exact": true,
+          "zero_curvature_K24_sign": "positive",
+          "full_extension_and_projection_identity": "exactly verified"
+        },
+        {
+          "n": 5,
+          "v": "19/20",
+          "relative_curvature_lower_bound": "1/2",
+          "minimum_load_display": "2.45427946535e-25",
+          "actual_weighted_Neumann_t_display": "0.234587349865",
+          "all_cross_entries_strictly_negative_exact": true,
+          "zero_curvature_K24_sign": "nonpositive",
+          "full_extension_and_projection_identity": "exactly verified"
+        }
+      ],
+      "proof_scope": "the all-n, all-positive-impedance and no-minimum-load assertions are analytical; these examples check scalings and endpoint conventions"
+    },
+    "common_alpha_transition": {
+      "generic_D2_D4_numerator_independence": true,
+      "generic_cofactor_polynomial": "N0+alpha*N1+alpha^2*N2",
+      "N2_factor": "F13=-a*f*det(A_rows_1_2_3)<0",
+      "N0_positive_polynomial_identity": "passed",
+      "unique_positive_root": "2*N0/(sqrt(N1^2-4*N0*N2)-N1)",
+      "fixed_v_coefficient_orders": [
+        {
+          "power": -1,
+          "coefficient": "2*(2*v + 1)/v"
+        },
+        {
+          "power": -5,
+          "coefficient": "-2*v**2"
+        },
+        {
+          "power": -6,
+          "coefficient": "v**3/(v - 1)"
+        }
+      ],
+      "joint_v_equals_1_minus_6_epsilon_orders": [
+        {
+          "power": -1,
+          "coefficient": "6"
+        },
+        {
+          "power": -5,
+          "coefficient": "-2"
+        },
+        {
+          "power": -7,
+          "coefficient": "-1/3"
+        }
+      ],
+      "F1_actual_leading_order": {
+        "power": -3,
+        "coefficient": "-v**2*(4*v - 3)"
+      },
+      "fixed_v_alpha_star_over_epsilon4": "(2*v+1)/v^3",
+      "joint_alpha_star_over_epsilon4": "3",
+      "joint_alpha_star_over_deficit4": "1/432",
+      "fixed_v_K24_over_epsilon_at_alpha_theta_epsilon4": "-(theta*v**3 - 2*v - 1)/4",
+      "fixed_v_actual_derivative_over_epsilon5": "-theta*(theta*v**3 - 2*v - 1)/4",
+      "joint_K24_over_epsilon_at_alpha_theta_epsilon4": "(3-theta)/4",
+      "joint_actual_derivative_over_epsilon5": "theta*(3-theta)/4",
+      "sample_v": "9/10",
+      "sample_epsilon": "1/100",
+      "exact_positive_curvature_examples_on_both_sides": [
+        {
+          "alpha": "1/100000000",
+          "expected_sign": 1,
+          "actual_derivative_exact_sign_verified": true,
+          "derivative_display_only": "4.9498341959017e-11"
+        },
+        {
+          "alpha": "1/10000000",
+          "expected_sign": -1,
+          "actual_derivative_exact_sign_verified": true,
+          "derivative_display_only": "-1.1285960058346e-9"
+        }
+      ]
+    }
+  }
+}

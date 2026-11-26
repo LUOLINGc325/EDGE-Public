@@ -1,0 +1,230 @@
+{
+  "certificate_kind": "exact_rational_finite_jet_example",
+  "status": "passed",
+  "arithmetic": "exact rational and symbolic polynomial arithmetic",
+  "sympy_version": "1.14.0",
+  "dimension": 3,
+  "source_model": {
+    "r": [
+      [
+        "1"
+      ],
+      [
+        "3"
+      ],
+      [
+        "9"
+      ]
+    ],
+    "A": [
+      [
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-1"
+      ]
+    ],
+    "x_at_t_zero": [
+      [
+        "1/2"
+      ],
+      [
+        "1"
+      ],
+      [
+        "3"
+      ]
+    ],
+    "coordinate": "z = exp(t); d/dt = z d/dz",
+    "x_of_z": [
+      "z/(z + 1)",
+      "3*z**3/(z**3 + 2)",
+      "9*z**9/(z**9 + 2)"
+    ]
+  },
+  "observation": {
+    "z_nodes": [
+      "1",
+      "5/4",
+      "3/2",
+      "7/4",
+      "2",
+      "9/4",
+      "5/2",
+      "11/4",
+      "3"
+    ],
+    "time_nodes": [
+      "log(1)",
+      "log(5/4)",
+      "log(3/2)",
+      "log(7/4)",
+      "log(2)",
+      "log(9/4)",
+      "log(5/2)",
+      "log(11/4)",
+      "log(3)"
+    ],
+    "first_jet_nodes": 9,
+    "second_jet_node_indices_zero_based": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "effective_node_indices_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "positive_proportions_and_jet_normalizations_exact": true,
+    "symbolic_and_quotient_rule_jets_agree": true
+  },
+  "quadratic_excitation": {
+    "matrix_shape": [
+      9,
+      9
+    ],
+    "monomial_order": [
+      "X1",
+      "X2",
+      "X3",
+      "X1*X1",
+      "X1*X2",
+      "X1*X3",
+      "X2*X2",
+      "X2*X3",
+      "X3*X3"
+    ],
+    "rank": 9,
+    "determinant": {
+      "exact_value": "-565093072746131595237354930363419790197269447893991663154290709112039415800449667910712539165226552249888538624/651984200956199049357044891093462709839507128591620163369169364263389029089939696012689079923128254411804685390997037813016625",
+      "nonzero": true,
+      "numerator_digits": 111,
+      "denominator_digits": 126
+    },
+    "matrix_sha256": "5459d9973b43acad4d5d410c828f97755e96e7b6eeedb9f11ee2a0f37c6be06a"
+  },
+  "lift": {
+    "matrix_shape": [
+      9,
+      9
+    ],
+    "columns": [
+      "U11",
+      "U12",
+      "U13",
+      "U21",
+      "U22",
+      "U23",
+      "V12,1",
+      "V12,2",
+      "V12,3"
+    ],
+    "rank": 8,
+    "nullity": 1,
+    "matrix_sha256": "639507c81e69e99aae89017b1bd5ef263bbc4b4218e5f273c6743fdd416e8eed",
+    "normalization": "U11 = -2; positive recovered total",
+    "recovered_U": [
+      [
+        "-2",
+        "0",
+        "2"
+      ],
+      [
+        "0",
+        "-2",
+        "2"
+      ]
+    ],
+    "recovered_V12": [
+      [
+        "-12"
+      ],
+      [
+        "16"
+      ],
+      [
+        "-4"
+      ]
+    ],
+    "recovered_a": [
+      [
+        "-8"
+      ],
+      [
+        "-6"
+      ]
+    ],
+    "residual_exactly_zero": true
+  },
+  "affine_reconstruction": {
+    "design_shape": [
+      4,
+      4
+    ],
+    "determinant": {
+      "exact_value": "-28997363695140587703712/65665035502881833593516975",
+      "nonzero": true,
+      "numerator_digits": 23,
+      "denominator_digits": 26
+    },
+    "design_sha256": "c06a0eb71a5b3382060f2c21f22055b71bdcb69ce0c2df137c6e773afdb40253",
+    "recovered_common_scale": "2",
+    "recovered_r": [
+      [
+        "1"
+      ],
+      [
+        "3"
+      ],
+      [
+        "9"
+      ]
+    ],
+    "recovered_scaled_A": [
+      [
+        "-2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-2"
+      ]
+    ],
+    "all_state_and_parameter_comparisons_exact": true
+  },
+  "two_species_appendix_checks": {
+    "polynomial_factorization_identity_exact": true,
+    "exceptional_polynomial_nonzero_witness": "16"
+  },
+  "scope": [
+    "Checks one explicit three-species example and two symbolic identities.",
+    "Does not prove the general theorems or certify a proof assistant.",
+    "Does not evaluate integral quadrature, noisy inference, or biological fit.",
+    "Uses first derivatives at nine nodes and second derivatives at four nodes.",
+    "The separate continuous-path theorem is derivative-free."
+  ]
+}

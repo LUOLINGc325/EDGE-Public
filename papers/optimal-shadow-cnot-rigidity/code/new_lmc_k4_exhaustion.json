@@ -1,0 +1,52 @@
+{
+  "code_sha256": "ed365aa2c91cb1d6bc10c6f610136d4076ed48df85776bfb905bdb07242c5423",
+  "compiler_command": "g++ -O3 -std=c++17 code/new_lmc_four_search.cpp -o /tmp/new_lmc_four_search",
+  "commands": [
+    "/tmp/new_lmc_four_search 1 5 10000000",
+    "/tmp/new_lmc_four_search 2 5 10000000"
+  ],
+  "heuristic_source": "Jorgensen, arXiv:2609.16208v1, Theorem 6.2; exact 24-permutation minimization",
+  "checks": [
+    {
+      "target_class": "k4_first",
+      "bound": 5,
+      "initial_heuristic": 5,
+      "visited": 253,
+      "interrupted": false,
+      "found": false,
+      "exhaustive_failure": true,
+      "elapsed_seconds": 0.0123809,
+      "failed_states_by_remaining": [
+        0,
+        0,
+        0,
+        108,
+        36,
+        1
+      ],
+      "quotient_path_pauli_masks": []
+    },
+    {
+      "target_class": "k4_second",
+      "bound": 5,
+      "initial_heuristic": 5,
+      "visited": 133,
+      "interrupted": false,
+      "found": false,
+      "exhaustive_failure": true,
+      "elapsed_seconds": 0.00646894,
+      "failed_states_by_remaining": [
+        0,
+        0,
+        0,
+        54,
+        24,
+        1
+      ],
+      "quotient_path_pauli_masks": []
+    }
+  ],
+  "scope": "Complete bounded search for both four-qubit optimal classes modulo free output locals and permutations. The all-optima conclusion additionally requires the separate complete k=4 classification.",
+  "kernel_certificate": false,
+  "independent_review": "formal_review reports matching independent reruns; separate review file binds source hash"
+}

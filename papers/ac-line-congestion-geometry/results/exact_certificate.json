@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "scope": "exact algebraic certificates with one rational high-voltage positive-curvature witness; no numerical optimizer, no random sampling, no Lean",
+  "convention": "C=diag(q)L+Ldiag(q), B=C_free, K(D)=A(B+A^T D A)^(-1)A^T",
+  "script_sha256": "2345d23b04c3356edaf9e0f28efd5ba7b291e77a74a01ec7e1b4756a85c56350",
+  "certificates": {
+    "three_load_finite_at_zero": {
+      "voltages": [
+        "3/5",
+        "7/12",
+        "13/25"
+      ],
+      "loads": [
+        "23/25",
+        "217/9000",
+        "247/18750"
+      ],
+      "alpha": [
+        "1/2",
+        "1/100",
+        "1/2"
+      ],
+      "C_leading_principal_minors": [
+        "6240/2129",
+        "15964416/4532641",
+        "100232086656/48249963445"
+      ],
+      "terminal_normal": "-196123/1596750",
+      "dp3_dz1": "1709054997/1920098879500",
+      "middle_exponent_K13_identity": "(1903543158/25 - 97057441733*middle_exponent/25)/(89165968723*middle_exponent + 6469765100)",
+      "all_utilities_finite_at_zero": true
+    },
+    "three_load_three_quarters": {
+      "B12_positive_expansion_monomials": 84,
+      "B12_minimum_positive_coefficient": "1/4",
+      "B13_positive_gap_identity_verified": true,
+      "B23_current_slack_identity_verified": true,
+      "three_generic_curvature_numerators_verified": true,
+      "sharp_family_P13_over_epsilon_limit": "-v*(4*v - 3)",
+      "scope": "regular face with only terminal lower voltage active and slack caps"
+    },
+    "general_geometry": {
+      "M_positive_vector_identity": "(-J)(1-V)=(2V-1)*tau",
+      "C_positive_vector_identity": "CV=diag(q)b-J^Tq",
+      "rank_one_update": "K_new=K-d*K[:,ell]*K[ell,:]/(1+d*K[ell,ell])",
+      "rank_one_identity_checked_without_inverting_K": true,
+      "symmetric_Z_matrix_energy_identity_verified": true,
+      "arbitrary_curvature_realization": "u'(p)=q*(pstar/p)^a*exp(-b*(p-pstar)), a=min(1/2,z*d*pstar/(2*q)), b=z*d/q-a/pstar",
+      "arbitrary_curvature_marginal_and_second_derivative_identities_verified": true,
+      "arbitrary_curvature_endpoint_argument": "0<a<=1/2 makes the marginal integrable at zero; both branches have b>0, so u is strictly increasing, strictly concave and Inada",
+      "analytical_positivity_conditions": "1/2<V<1, tau>0, J^Tq=-mu*e_n, mu>0, connected path",
+      "analytical_argument": "positive-vector minimum principle gives q>0; connected weighted energy and positive endpoint row sums give C positive definite"
+    },
+    "four_load_arbitrary_high_voltage": {
+      "tau": [
+        "-6*epsilon**2 - 3*epsilon - v + 1",
+        "epsilon",
+        "epsilon",
+        "epsilon"
+      ],
+      "q_normalization": "q1=1; changing to q4=1 multiplies K by the old q4 and preserves the limit",
+      "P": "288*epsilon**6 + 432*epsilon**5 + epsilon**4*(192*v + 60) + epsilon**3*(288*v - 48) + epsilon**2*(24*v**2 + 50*v + 5) + epsilon*(32*v**2 - 22*v) + 4*v**2 + 2*v",
+      "scaled_cofactor_identity": "epsilon**2*v*(288*epsilon**6 + 432*epsilon**5 + epsilon**4*(192*v + 60) + epsilon**3*(288*v - 48) + epsilon**2*(24*v**2 + 50*v + 5) + epsilon*(32*v**2 - 22*v) + 4*v**2 + 2*v)/((epsilon**2 + v)*(3*epsilon**2 + v))",
+      "scaled_C_free_determinant_limit": 8,
+      "K0_24_over_epsilon_limit": "v/2 + 1/4",
+      "P_positive_certificate": "P>2-3*epsilon>0 for 1/2<v<1 and 0<epsilon<=(1-v)/6",
+      "common_alpha_asymptotic": "alpha=epsilon^5; max D_i=O(epsilon^4); ||K(D)-K0||=O(epsilon^2)",
+      "common_alpha_quantitative_choice": "min(1/2, K0_ij/(4*max(q/lambda)*tr(K0)^2))",
+      "exact_rational_sample": {
+        "v": "999/1000",
+        "epsilon": "1/10000",
+        "common_alpha": "1/100000000000000000000",
+        "all_C_leading_principal_minors_positive": true,
+        "normal_positive_terminal_multiplier_positive": true,
+        "K24_decimal_for_readability_only": "0.000074915027156571998063",
+        "dp4_dz2_decimal_for_readability_only": "7.4922515660361968525e-25",
+        "dp4_dz2_exact": "3696052079343483430423158191793277174166762861978616290064111367911998565278167751342277958306547611623/4933166013936840254448748957410996690105513208008968621463679266239620069615558833233891987007982604852919203374133540410000000",
+        "dp4_dz2_exact_sign": "strictly positive",
+        "safe_common_alpha_exact": "8410661996282825176180441204531979471207917389655379326009117592521067263807384033422148075265299251163330078125000000000000000000/4029584142204222453525420822526501793467438172690902838830355222813862931178737529048392580310882568612249018383480575812515613913586888200822458349",
+        "safe_common_alpha_K24_exact_sign": "strictly positive"
+      }
+    }
+  }
+}

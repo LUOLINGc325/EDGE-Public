@@ -1,0 +1,1108 @@
+<h1 id="a-common-revenue-threshold-for-regular-proportional-choice">A
+Common Revenue Threshold for Regular Proportional Choice</h1>
+<p>A sharp half-approximation for arbitrary utility rank cutoffs</p>
+<p><strong>Research manuscript, version 1.1.</strong> The mathematical
+arguments are written proofs. This manuscript is not an externally
+peer-reviewed publication, and no machine-checked formalization is
+claimed.</p>
+<h2 id="abstract">Abstract</h2>
+<p>We study unconstrained assortment optimization when the choice
+probability of each offered product is its fixed positive weight times a
+factor depending on the offered set. Suppose that adding products cannot
+increase an incumbent product’s choice probability or the probability of
+no purchase. We prove a simultaneous replacement theorem: every
+assortment has one revenue-threshold replacement earning at least half
+its revenue under every model with the same product weights and
+revenues. The replacement threshold is half the weight-averaged revenue
+of the comparison assortment. The argument uses a weighted-set
+inequality and the two regularity inequalities; it does not require the
+comparison assortment to be optimal. We give a self-contained
+finite-ranking derivation showing that utility-based multinomial-logit
+rank-cutoff models satisfy the hypotheses for every independent cutoff
+distribution. This resolves the larger-cutoff revenue-ordering question
+posed by Bai, Feldman, Topaloglu and Wagner. Their cutoff-two
+lower-bound construction already makes the universal factor sharp. The
+simultaneous witness also implies a half-approximation for worst-case
+revenue over arbitrary families sharing product weights. A separate
+exact family shows why singleton-probability upper bounds used in nearby
+approximation results cannot establish a positive constant guarantee
+throughout this class. The result is a finite candidate reduction;
+efficient evaluation of an arbitrary robust objective is not
+asserted.</p>
+<h2 id="problem-contribution-and-comparison">1. Problem, contribution,
+and comparison</h2>
+<p>An assortment is a subset of products offered to one arriving
+customer. A revenue-ordered assortment contains every product whose
+revenue is at least a common threshold, with equal-revenue products
+included together. Searching such assortments is attractive because
+their number is at most the number of products. Their performance
+depends strongly on the choice model.</p>
+<p>Bai et al. [1] study independent Gumbel utilities with an independent
+cutoff on global utility rank. Products unavailable for purchase still
+affect those ranks. Their Appendix D proves a sharp half guarantee when
+the cutoff is at most two and explicitly leaves larger cutoffs open.
+Their general approximation scheme and our revenue-threshold guarantee
+answer different algorithmic questions: we do not improve their
+approximation-scheme accuracy or its running time.</p>
+<p>The new mathematical statement is Theorem 2.2. It supplies one
+threshold that works for every scenario simultaneously, for an arbitrary
+comparison set. The rank-cutoff guarantee in Theorem 4.4 is its
+principal application. Corollary 3.2 is a direct robust consequence of
+the same witness, not an independent source of algorithmic difficulty.
+Section 5 credits and rederives the existing tightness mechanism.
+Proposition 6.1 provides a separation from a common alternative
+upper-bound approach.</p>
+<p>The statement is restricted to fixed product revenues and fixed
+relative product weights. Scenario-dependent scaling of all weights can
+be absorbed into the common factor, but arbitrary changes in relative
+weights cannot. We impose no display, capacity, inventory, or
+cardinality constraints. A threshold produced here need not satisfy such
+constraints.</p>
+<h3 id="related-results-and-the-exact-distinctions">Related results and
+the exact distinctions</h3>
+<p>Berbeglia and Joret [2] analyze revenue ordering for general regular
+discrete choice. Our additional proportionality assumption is
+substantial; the half guarantee below is not claimed for every regular
+model. Gallego and Berbeglia [3] obtain half guarantees for important
+models and provide sufficient conditions involving singleton purchase
+probabilities and purchase-to-outside odds. Gallego et al. [4] develop a
+broader independent-demand surrogate under bounding conditions.
+Proposition 6.1 shows that their singleton upper benchmark can be
+arbitrarily larger than the actual optimum in our class. Section 6.2
+gives a small instance outside the fixed affine-denominator family and
+violating the relevant singleton-odds sufficient inequality. These
+comparisons distinguish hypotheses and benchmarks; they do not dispute
+the validity of the earlier guarantees on their stated domains.</p>
+<p>Wang and Şahin [5, Theorem 3(b)] already prove a half guarantee in
+their homogeneous search-cost consideration model. That model and ours
+are not nested: their Example 2 violates outside-option regularity,
+while a two-product cutoff-one instance cannot be represented by their
+homogeneous deterministic-consideration model. We give the explicit
+comparison in Section 6.3. We do not claim to subsume that paper or
+exclude every heterogeneous search-cost mixture.</p>
+<p>Sun et al. [11, Corollary 2] establish a half guarantee for the
+marginal distribution model (MDM), while their Theorem 6 gives a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>G</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">1/(2G)</annotation></semantics></math>
+guarantee for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>-segment
+mixed MDM. These are essential close results. The representation used in
+their Proposition 2 and assortment formulation requires each product’s
+choice probability to be nondecreasing in the outside probability. The
+common-option ordering condition in Ruan et al. [12] gives a related
+necessary property. Section 6.4 supplies a rank-cutoff instance with
+positive probability of cutoff three that violates both tests, so the
+single-MDM half theorem cannot be applied by model inclusion. We do not
+claim that no mixed-MDM representation exists. The relevant full
+statements and proofs in both sources were examined.</p>
+<p>Guan et al. [13, Theorem 2(ii)] prove a half guarantee for
+markup-ordered assortments in the constant-parameter threshold focal MNL
+model (ctFMNL). Their broader regular threshold-FMNL result concerns
+joint assortment and price optimization. Section 6.5 gives a two-product
+rank-cutoff instance outside ctFMNL, so its static half theorem does not
+subsume ours by model inclusion. This comparison does not exclude
+representations in unrestricted set-dependent FMNL.</p>
+<p>For ordinary MNL, robust revenue-order optimality is established by
+Rusmevichientong and Topaloglu [6]. Our robust result concerns generally
+non-MNL choice with uncertain cutoff distributions and a shared
+product-weight vector. Sturt [7] studies uncertainty over ranking-based
+models constrained by historical assortment observations; the candidate
+structure there depends on the historical data. Lu et al. [8] analyze
+specified ambiguity sets around nominal MNL. Those uncertainty sets and
+exact-optimality results differ from the unrestricted family of regular
+proportional models used here.</p>
+<p>Recent inventory work by Feldman, Huang and Zhang [9] assumes an
+approximation oracle for a cardinality-constrained static assortment
+problem and transfers it to stochastic inventory decisions. Our
+unrestricted threshold theorem neither follows from nor supplies that
+stronger oracle. Sun and Udwani [10] optimize inventory sales at uniform
+prices; their nonuniform-price evaluation extension is explicitly
+distinct from a nonuniform-price optimization result. Neither inventory
+comparison changes the static benchmark studied below. Novelty claims
+are limited to the sources and versions audited through 26 November
+2026.</p>
+<h2 id="a-simultaneous-threshold-replacement-theorem">2. A simultaneous
+threshold replacement theorem</h2>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+be a nonempty finite set. Each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>∈</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">i\in N</annotation></semantics></math>
+has a weight
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>i</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_i&gt;0</annotation></semantics></math>
+and revenue
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>i</mi></msub><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r_i\ge0</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">A\subseteq N</annotation></semantics></math>,
+define</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>A</mi></mrow></munder><msub><mi>v</mi><mi>i</mi></msub><mo>,</mo><mspace width="2.0em"></mspace><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>A</mi></mrow></munder><msub><mi>r</mi><mi>i</mi></msub><msub><mi>v</mi><mi>i</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+V(A)=\sum_{i\in A}v_i,\qquad W(A)=\sum_{i\in A}r_iv_i.
+\tag{2.1}
+</annotation></semantics></math></p>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Θ</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math>
+be a nonempty set of scenarios. For every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>∈</mo><mi>Θ</mi></mrow><annotation encoding="application/x-tex">\theta\in\Theta</annotation></semantics></math>
+and nonempty
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">q_\theta(A)\ge0</annotation></semantics></math>
+satisfy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">V(A)q_\theta(A)\le1</annotation></semantics></math>.
+Product and outside probabilities are</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>p</mi><mi>i</mi><mi>θ</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>v</mi><mi>i</mi></msub><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo>∈</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>p</mi><mn>0</mn><mi>θ</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+p_i^\theta(A)=v_iq_\theta(A)\ (i\in A),\qquad
+p_0^\theta(A)=1-V(A)q_\theta(A).
+\tag{2.2}
+</annotation></semantics></math></p>
+<p>Unavailable products have probability zero. The empty set has
+no-purchase probability one and revenue zero; a value of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>⌀</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">q_\theta(\varnothing)</annotation></semantics></math>
+is unnecessary. For nonempty
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+define</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">R_\theta(A)=q_\theta(A)W(A).\tag{2.3}</annotation></semantics></math></p>
+<p>Our two assumptions, for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>⌀</mi><mo>≠</mo><mi>A</mi><mo>⊆</mo><mi>B</mi><mo>⊆</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">\varnothing\ne A\subseteq B\subseteq N</annotation></semantics></math>,
+are</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+q_\theta(B)\le q_\theta(A),\tag{P}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+V(B)q_\theta(B)\ge V(A)q_\theta(A).\tag{O}
+</annotation></semantics></math></p>
+<p>Condition (P) is equivalent to regularity for each incumbent product,
+since its weight is positive. Condition (O) says that the total purchase
+probability does not decrease; it is precisely regularity for the
+outside option. Both hold scenario by scenario. We call (2.2), (P), and
+(O) <strong>regular proportional choice</strong>. This terminology names
+the assumptions and does not assert a new behavioral
+characterization.</p>
+<p><strong>Lemma 2.1 (weighted threshold mass).</strong> Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>≠</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">S\ne\varnothing</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">W(S)&gt;0</annotation></semantics></math>.
+Put</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>2</mn><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>H</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>i</mi><mo>∈</mo><mi>N</mi><mo>:</mo><msub><mi>r</mi><mi>i</mi></msub><mo>≥</mo><mi>t</mi><mo stretchy="false" form="postfix">}</mo><mo>,</mo><mspace width="2.0em"></mspace><mi>U</mi><mo>=</mo><mi>S</mi><mo>∪</mo><mi>H</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+t=\frac{W(S)}{2V(S)},\qquad H=\{i\in N:r_i\ge t\},\qquad U=S\cup H.
+\tag{2.4}
+</annotation></semantics></math></p>
+<p>Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t&gt;0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>≠</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">H\ne\varnothing</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mi>t</mi><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">W(H)\ge tV(U)</annotation></semantics></math>.</p>
+<p><strong>Proof.</strong> Positivity of the weights gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">V(S)&gt;0</annotation></semantics></math>.
+At least one element of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+has revenue at least its weighted average
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>2</mn><mi>t</mi></mrow><annotation encoding="application/x-tex">W(S)/V(S)=2t</annotation></semantics></math>:
+otherwise summing the strict inequalities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>i</mi></msub><mo>&lt;</mo><mn>2</mn><mi>t</mi></mrow><annotation encoding="application/x-tex">r_i&lt;2t</annotation></semantics></math>
+against positive weights would contradict
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>2</mn><mi>t</mi><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">W(S)=2tV(S)</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+is nonempty. Set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mi>S</mi><mo>\</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">B=S\setminus H</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><mi>H</mi><mo>\</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">C=H\setminus S</annotation></semantics></math>.
+The threshold definition gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>t</mi><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">W(B)\le tV(B)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mi>t</mi><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">W(C)\ge tV(C)</annotation></semantics></math>.
+Disjoint finite sums yield</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"></mtd><mtd columnalign="left" style="text-align: left"><mo>≥</mo><mn>2</mn><mi>t</mi><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>t</mi><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>t</mi><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"></mtd><mtd columnalign="left" style="text-align: left"><mo>≥</mo><mi>t</mi><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>t</mi><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>t</mi><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+W(H)&amp;=W(S)-W(B)+W(C)\\
+&amp;\ge 2tV(S)-tV(B)+tV(C)\\
+&amp;\ge tV(S)+tV(C)=tV(U),
+\end{aligned}\tag{2.5}
+</annotation></semantics></math></p>
+<p>where the last inequality uses
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⊆</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">B\subseteq S</annotation></semantics></math>
+and positive weights. This includes empty
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+and ties at the threshold.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Theorem 2.2 (common-threshold replacement).</strong> Under
+(2.1)–(2.3), (P), and (O), every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⊆</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">S\subseteq N</annotation></semantics></math>
+admits a revenue-threshold set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+such that</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mfrac displaystyle="false"><mn>1</mn><mn>2</mn></mfrac><msub><mi>R</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="2.0em"></mspace><mrow><mtext mathvariant="normal">for every </mtext><mspace width="0.333em"></mspace></mrow><mi>θ</mi><mo>∈</mo><mi>Θ</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">R_\theta(H)\ge\tfrac12R_\theta(S)\qquad\text{for every }\theta\in\Theta.\tag{2.6}</annotation></semantics></math></p>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>≠</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">S\ne\varnothing</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">W(S)&gt;0</annotation></semantics></math>,
+the single set (2.4) works. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">S=\varnothing</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">W(S)=0</annotation></semantics></math>,
+take
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">H=N</annotation></semantics></math>.</p>
+<p><strong>Proof.</strong> In the positive case, both
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+are nonempty. Apply (P) to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>⊆</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">H\subseteq U</annotation></semantics></math>,
+Lemma 2.1, and then (O) to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⊆</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">S\subseteq U</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>R</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"></mtd><mtd columnalign="left" style="text-align: left"><mo>≥</mo><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"></mtd><mtd columnalign="left" style="text-align: left"><mo>≥</mo><mi>t</mi><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"></mtd><mtd columnalign="left" style="text-align: left"><mo>≥</mo><mi>t</mi><msub><mi>q</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac displaystyle="false"><mn>1</mn><mn>2</mn></mfrac><msub><mi>R</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+R_\theta(H)
+&amp;=q_\theta(H)W(H)\\
+&amp;\ge q_\theta(U)W(H)\\
+&amp;\ge t q_\theta(U)V(U)\\
+&amp;\ge t q_\theta(S)V(S)
+=\tfrac12R_\theta(S).
+\end{aligned}\tag{2.7}
+</annotation></semantics></math></p>
+<p>Every multiplier has the required nonnegative sign. Neither
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+nor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+depends on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is empty or has zero weighted revenue, its revenue is zero under every
+scenario, while
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">R_\theta(N)\ge0</annotation></semantics></math>.
+This proves all cases.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>The threshold in (2.4) is half the weight-averaged product revenue,
+not half the expected revenue
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">R_\theta(S)</annotation></semantics></math>.
+Confusing those quantities would generally destroy the simultaneous
+witness.</p>
+<h2 id="nominal-and-robust-finite-candidate-reductions">3. Nominal and
+robust finite candidate reductions</h2>
+<p>Let</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℋ</mi><mo>=</mo><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">{</mo><mi>i</mi><mo>:</mo><msub><mi>r</mi><mi>i</mi></msub><mo>≥</mo><msub><mi>r</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">}</mo><mo>:</mo><mi>j</mi><mo>∈</mo><mi>N</mi><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">}</mo><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathcal H=\bigl\{\{i:r_i\ge r_j\}:j\in N\bigr\},\tag{3.1}</annotation></semantics></math></p>
+<p>with repeated sets removed. This family has at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">|</mo><mi>N</mi><mo stretchy="true" form="postfix">|</mo></mrow><annotation encoding="application/x-tex">|N|</annotation></semantics></math>
+members and includes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>.
+Every nonempty set of the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>i</mi><mo>:</mo><msub><mi>r</mi><mi>i</mi></msub><mo>≥</mo><mi>t</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{i:r_i\ge t\}</annotation></semantics></math>
+belongs to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℋ</mi><annotation encoding="application/x-tex">\mathcal H</annotation></semantics></math>:
+choose a minimum-revenue member of that set; its revenue produces
+exactly the same set. No arbitrary tie breaking is needed.</p>
+<p><strong>Corollary 3.1 (nominal guarantee).</strong> For each
+scenario,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>max</mo><mrow><mi>H</mi><mo>∈</mo><mi>ℋ</mi></mrow></munder><msub><mi>R</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mfrac displaystyle="false"><mn>1</mn><mn>2</mn></mfrac><munder><mo>max</mo><mrow><mi>S</mi><mo>⊆</mo><mi>N</mi></mrow></munder><msub><mi>R</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">\max_{H\in\mathcal H}R_\theta(H)\ge\tfrac12\max_{S\subseteq N}R_\theta(S).\tag{3.2}</annotation></semantics></math></p>
+<p><strong>Proof.</strong> A maximizing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+exists because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>N</mi></msup><annotation encoding="application/x-tex">2^N</annotation></semantics></math>
+is finite. Apply Theorem 2.2 and (3.1).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Corollary 3.2 (worst-case guarantee).</strong> Define
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mo>inf</mo><mrow><mi>θ</mi><mo>∈</mo><mi>Θ</mi></mrow></msub><msub><mi>R</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F(S)=\inf_{\theta\in\Theta}R_\theta(S)</annotation></semantics></math>.
+Then</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>max</mo><mrow><mi>H</mi><mo>∈</mo><mi>ℋ</mi></mrow></munder><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mfrac displaystyle="false"><mn>1</mn><mn>2</mn></mfrac><munder><mo>max</mo><mrow><mi>S</mi><mo>⊆</mo><mi>N</mi></mrow></munder><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">\max_{H\in\mathcal H}F(H)\ge\tfrac12\max_{S\subseteq N}F(S).\tag{3.3}</annotation></semantics></math></p>
+<p>No compactness, convexity, finiteness, or attainment assumption on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Θ</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math>
+is required.</p>
+<p><strong>Proof.</strong> With
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mo>max</mo></msub><mo>=</mo><msub><mo>max</mo><mi>i</mi></msub><msub><mi>r</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">r_{\max}=\max_i r_i</annotation></semantics></math>,
+the probability interpretation gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msub><mi>R</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>r</mi><mo>max</mo></msub></mrow><annotation encoding="application/x-tex">0\le R_\theta(S)\le r_{\max}</annotation></semantics></math>.
+Thus each infimum is a finite real number. For the common
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+supplied for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>,
+(2.6) implies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">R_\theta(H)\ge F(S)/2</annotation></semantics></math>
+for every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math>,
+and hence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">F(H)\ge F(S)/2</annotation></semantics></math>.
+A maximizer of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+exists over the finite family
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>N</mi></msup><annotation encoding="application/x-tex">2^N</annotation></semantics></math>.
+Apply the previous sentence to it. This proof never exchanges a maximum
+and an infimum.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>Given an oracle for nominal revenue or for the specified worst-case
+revenue, evaluate each distinct set in (3.1) and select a maximum. This
+requires at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">|</mo><mi>N</mi><mo stretchy="true" form="postfix">|</mo></mrow><annotation encoding="application/x-tex">|N|</annotation></semantics></math>
+oracle evaluations after sorting revenues. The witness need not be
+computed from an unknown optimal
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+This is an oracle-count statement: computing a general worst-case
+revenue or a rank-cutoff revenue with growing cutoff can itself be
+difficult. We do not claim an unconditional polynomial-time robust
+algorithm.</p>
+<h2 id="embedding-arbitrary-utility-rank-cutoffs">4. Embedding arbitrary
+utility rank cutoffs</h2>
+<p>We develop the needed representation directly. Its role is to verify
+the hypotheses of Theorem 2.2, not to claim novelty for the rank-cutoff
+model or its probability factorization, which are due to [1].</p>
+<h3 id="a-finite-ranking-law-and-its-utility-interpretation">4.1 A
+finite ranking law and its utility interpretation</h3>
+<p>Add an outside alternative
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math>
+with weight
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_0&gt;0</annotation></semantics></math>.
+A random permutation of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">N\cup\{0\}</annotation></semantics></math>
+is generated sequentially: from the remaining alternatives, choose the
+next alternative with probability equal to its weight divided by their
+total weight. This defines a probability law, since at each node the
+transition probabilities sum to one; induction on the number of
+remaining alternatives normalizes the finite tree. Conditional on the
+first alternative, the remaining order has the same law on the reduced
+universe. This is the Plackett–Luce ranking law.</p>
+<p><strong>Lemma 4.1 (Gumbel-to-ranking bridge).</strong> Independent
+utilities with distribution functions</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>Pr</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>U</mi><mi>i</mi></msub><mo>≤</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>exp</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><msub><mi>v</mi><mi>i</mi></msub><msup><mi>e</mi><mrow><mi>−</mi><mi>u</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mi>i</mi><mo>∈</mo><mi>N</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo><mo>,</mo></mrow><annotation encoding="application/x-tex">\Pr(U_i\le u)=\exp(-v_i e^{-u}),\qquad i\in N\cup\{0\},\tag{4.1}</annotation></semantics></math></p>
+<p>rank the alternatives according to this finite law, in decreasing
+utility order.</p>
+<p><strong>Proof.</strong> Set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>i</mi></msub><mo>=</mo><msup><mi>e</mi><mrow><mi>−</mi><msub><mi>U</mi><mi>i</mi></msub></mrow></msup></mrow><annotation encoding="application/x-tex">E_i=e^{-U_i}</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t&gt;0</annotation></semantics></math>,
+continuity gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>Pr</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>E</mi><mi>i</mi></msub><mo>&gt;</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>exp</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><msub><mi>v</mi><mi>i</mi></msub><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Pr(E_i&gt;t)=\exp(-v_it)</annotation></semantics></math>;
+these variables are independent exponentials with rates
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>i</mi></msub><annotation encoding="application/x-tex">v_i</annotation></semantics></math>.
+They have no ties with probability one, and decreasing utilities
+correspond to increasing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>i</mi></msub><annotation encoding="application/x-tex">E_i</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+is the sum of all remaining rates, the probability that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+is the first arrival is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>∞</mi></msubsup><msub><mi>v</mi><mi>i</mi></msub><msup><mi>e</mi><mrow><mi>−</mi><mi>D</mi><mi>t</mi></mrow></msup><mspace width="0.167em"></mspace><mi>d</mi><mi>t</mi><mo>=</mo><msub><mi>v</mi><mi>i</mi></msub><mi>/</mi><mi>D</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\int_0^\infty v_i e^{-Dt}\,dt=v_i/D.\tag{4.2}</annotation></semantics></math></p>
+<p>The residual-law statement can be checked without conditioning on a
+zero-probability event. On the region where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+is first, write
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>i</mi></msub><mo>=</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">E_i=t</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>j</mi></msub><mo>=</mo><mi>t</mi><mo>+</mo><msub><mi>s</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">E_j=t+s_j</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>j</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s_j&gt;0</annotation></semantics></math>.
+The joint density is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>i</mi></msub><msup><mi>e</mi><mrow><mi>−</mi><mi>D</mi><mi>t</mi></mrow></msup><munder><mo>∏</mo><mrow><mi>j</mi><mo>≠</mo><mi>i</mi></mrow></munder><msub><mi>v</mi><mi>j</mi></msub><msup><mi>e</mi><mrow><mi>−</mi><msub><mi>v</mi><mi>j</mi></msub><msub><mi>s</mi><mi>j</mi></msub></mrow></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">v_i e^{-Dt}\prod_{j\ne i}v_j e^{-v_js_j}.</annotation></semantics></math></p>
+<p>Integrating
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>v</mi><mi>i</mi></msub><mi>/</mi><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>∏</mo><mrow><mi>j</mi><mo>≠</mo><mi>i</mi></mrow></msub><msub><mi>v</mi><mi>j</mi></msub><msup><mi>e</mi><mrow><mi>−</mi><msub><mi>v</mi><mi>j</mi></msub><msub><mi>s</mi><mi>j</mi></msub></mrow></msup></mrow><annotation encoding="application/x-tex">(v_i/D)\prod_{j\ne i}v_j e^{-v_js_j}</annotation></semantics></math>.
+After division by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>i</mi></msub><mi>/</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">v_i/D</annotation></semantics></math>,
+the residuals are independent exponentials with the unchanged remaining
+rates. Induction proves the sequential ranking law.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>The common-scale Gumbel location parameters are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>log</mo><msub><mi>v</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\log v_i</annotation></semantics></math>
+in this normalization; a common positive utility scale does not affect
+ranks. The original model [1] takes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">v_0=1</annotation></semantics></math>.</p>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a nonnegative integer-valued cutoff independent of the ranking. Only
+its truncated value
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>min</mo><mo stretchy="false" form="prefix">{</mo><mi>K</mi><mo>,</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>N</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\min\{K,|N|+1\}</annotation></semantics></math>
+matters; allowing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">K=0</annotation></semantics></math>
+simply adds a never-purchase type. For an offered set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>,
+inspect the first
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+alternatives in the global ranking. Select the first encountered element
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S\cup\{0\}</annotation></semantics></math>
+if there is one. Encountering
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math>,
+or reaching the cutoff before encountering any such element, means no
+purchase. This exactly expresses the utility-rank rule, including
+unavailable products in the ranking.</p>
+<h3 id="proportionality-and-the-two-regularities">4.2 Proportionality
+and the two regularities</h3>
+<p>For an auxiliary product universe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊇</mo><mi>S</mi><mo>≠</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">A\supseteq S\ne\varnothing</annotation></semantics></math>,
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>A</mi></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">D_A=v_0+V(A)</annotation></semantics></math>
+and define, for integer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k\ge0</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>q</mi><mn>0</mn><mi>A</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">q_0^A(S)=0,</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>q</mi><mi>k</mi><mi>A</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><msub><mi>D</mi><mi>A</mi></msub></mfrac><mo>+</mo><munder><mo>∑</mo><mrow><mi>j</mi><mo>∈</mo><mi>A</mi><mo>\</mo><mi>S</mi></mrow></munder><mfrac><msub><mi>v</mi><mi>j</mi></msub><msub><mi>D</mi><mi>A</mi></msub></mfrac><mspace width="0.167em"></mspace><msubsup><mi>q</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi>A</mi><mo>\</mo><mo stretchy="false" form="prefix">{</mo><mi>j</mi><mo stretchy="false" form="postfix">}</mo></mrow></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mi>k</mi><mo>≥</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">q_k^A(S)=\frac1{D_A}+\sum_{j\in A\setminus S}\frac{v_j}{D_A}\,q_{k-1}^{A\setminus\{j\}}(S),\qquad k\ge1.\tag{4.3}</annotation></semantics></math></p>
+<p><strong>Lemma 4.2 (common factor).</strong> With deterministic cutoff
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+on universe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
+the purchase probability of every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>∈</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">i\in S</annotation></semantics></math>
+equals
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>i</mi></msub><msubsup><mi>q</mi><mi>k</mi><mi>A</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">v_iq_k^A(S)</annotation></semantics></math>.
+For independent cutoff probabilities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>λ</mi><mi>k</mi></msub><annotation encoding="application/x-tex">\lambda_k</annotation></semantics></math>
+on the original universe,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>v</mi><mi>i</mi></msub><msub><mi>q</mi><mi>λ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>q</mi><mi>λ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>∑</mo><mi>k</mi></munder><msub><mi>λ</mi><mi>k</mi></msub><msubsup><mi>q</mi><mi>k</mi><mi>N</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">p_i(S)=v_iq_\lambda(S),\qquad q_\lambda(S)=\sum_k\lambda_k q_k^N(S).\tag{4.4}</annotation></semantics></math></p>
+<p>All probabilities are nonnegative and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>q</mi><mi>λ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">V(S)q_\lambda(S)\le1</annotation></semantics></math>.</p>
+<p><strong>Proof.</strong> At cutoff zero no product is selected. At a
+positive cutoff, the first alternative is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+with probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>i</mi></msub><mi>/</mi><msub><mi>D</mi><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">v_i/D_A</annotation></semantics></math>,
+which ends in purchase of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>.
+A first alternative in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo>\</mo><mo stretchy="false" form="prefix">{</mo><mi>i</mi><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">(S\setminus\{i\})\cup\{0\}</annotation></semantics></math>
+prevents that purchase. If the first alternative is an unavailable
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>∈</mo><mi>A</mi><mo>\</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">j\in A\setminus S</annotation></semantics></math>,
+delete
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+and reduce the cutoff by one. The conditional ranking law proved above
+is unchanged on the remaining alternatives. Induction on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+therefore gives (4.3) multiplied by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>i</mi></msub><annotation encoding="application/x-tex">v_i</annotation></semantics></math>.
+The expression is independent of the identity of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+except for this multiplier. Independence of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+permits the mixture in (4.4). The events of purchasing the different
+products are disjoint, proving the probability bound.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Lemma 4.3 (pathwise regularity).</strong> The factor in (4.4)
+satisfies (P) and (O).</p>
+<p><strong>Proof.</strong> Couple choices from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⊆</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">S\subseteq U</annotation></semantics></math>
+by the same ranking and cutoff. If a product
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>∈</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">i\in S</annotation></semantics></math>
+is selected from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>,
+no earlier offered product or outside alternative occurs before it, and
+its position is within the cutoff. The same is true after removing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>\</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">U\setminus S</annotation></semantics></math>,
+so it is also selected from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+Hence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>p</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">p_i(U)\le p_i(S)</annotation></semantics></math>;
+divide by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>i</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_i&gt;0</annotation></semantics></math>
+to obtain (P).</p>
+<p>If some product is purchased from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>,
+the first element of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S\cup\{0\}</annotation></semantics></math>
+is a product within the cutoff. The first element of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">U\cup\{0\}</annotation></semantics></math>
+occurs no later. It cannot be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math>,
+since that would also precede the purchased product in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+It is therefore a product within the cutoff, proving inclusion of the
+purchase events and (O). The second event argument holds for any fixed
+ranking law; proportionality is the extra input specific to (4.4).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p><strong>Theorem 4.4 (arbitrary-cutoff half guarantee).</strong> For
+every finite utility rank-cutoff instance of [1], with nonnegative
+revenues, positive product weights, and any cutoff distribution
+independent of the utilities, the best revenue-ordered assortment earns
+at least half the unconstrained optimal revenue. The guarantee is
+uniform in the maximum cutoff and in the number of products. More
+strongly, every comparison assortment has the witness of Theorem 2.2.
+For an arbitrary family of cutoff distributions and positive outside
+weights with the same product weights and revenues, Corollary 3.2
+holds.</p>
+<p><strong>Proof.</strong> Lemma 4.1 identifies the utility model with
+the finite law. Lemmas 4.2–4.3 verify every probability and regularity
+hypothesis; apply Theorem 2.2 and Corollaries 3.1–3.2. Changing the
+independent cutoff distribution or outside weight changes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>,
+but not the common product weights.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>For later calculations, two special cases follow directly. Cutoff one
+gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>q</mi><mn>1</mn><mi>N</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mi>/</mi><msub><mi>D</mi><mi>N</mi></msub></mrow><annotation encoding="application/x-tex">q_1^N(S)=1/D_N</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>≠</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">S\ne\varnothing</annotation></semantics></math>,
+cutoff
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>N</mi><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">k\ge |N|</annotation></semantics></math>
+gives ordinary MNL,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>q</mi><mi>k</mi><mi>N</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">q_k^N(S)=1/(v_0+V(S))</annotation></semantics></math>:
+among the first
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">|</mo><mi>N</mi><mo stretchy="true" form="postfix">|</mo></mrow><annotation encoding="application/x-tex">|N|</annotation></semantics></math>
+alternatives at least one belongs to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S\cup\{0\}</annotation></semantics></math>,
+and the earliest element of that set wins its exponential race. These
+facts also check the endpoint conventions. A cutoff depending on the
+realized ranking is not covered by the mixture argument.</p>
+<h2 id="sharpness-of-the-universal-constant">5. Sharpness of the
+universal constant</h2>
+<p>The cutoff-two tightness mechanism is already present in [1, Appendix
+D]. We give an explicit variant of that mechanism and compute its limit
+so that the upper bound is independently reproducible; no exact change
+of parameter from their displayed instance is asserted. This is
+attributed tightness, not a new lower-bound claim.</p>
+<p><strong>Proposition 5.1 (inherited sharpness).</strong> The constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math>
+in Theorem 4.4 cannot be increased uniformly over all cutoff
+distributions and product numbers. The same is true of Corollary 3.2,
+since a singleton scenario family is allowed.</p>
+<p><strong>Proof.</strong> Take
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>ε</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\varepsilon&lt;1</annotation></semantics></math>,
+three products,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">v_0=1</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">K=2</annotation></semantics></math>
+with probability one. Set</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>ε</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>−</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mi>v</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>,</mo><msup><mi>ε</mi><mrow><mi>−</mi><mn>2</mn></mrow></msup><mo>,</mo><msup><mi>ε</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mi>D</mi><mo>=</mo><mn>2</mn><mo>+</mo><msup><mi>ε</mi><mrow><mi>−</mi><mn>2</mn></mrow></msup><mo>+</mo><msup><mi>ε</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">r=(\varepsilon^{-1},1,1-\varepsilon),\qquad
+v=(1,\varepsilon^{-2},\varepsilon^{-1}),\qquad
+D=2+\varepsilon^{-2}+\varepsilon^{-1}.\tag{5.1}</annotation></semantics></math></p>
+<p>Formula (4.3) gives</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>R</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>W</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><munder><mo>∑</mo><mrow><mi>j</mi><mo>∉</mo><mi>S</mi></mrow></munder><mfrac><msub><mi>v</mi><mi>j</mi></msub><mrow><mi>D</mi><mo>−</mo><msub><mi>v</mi><mi>j</mi></msub></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">D R(S)=W(S)\left(1+\sum_{j\notin S}\frac{v_j}{D-v_j}\right).\tag{5.2}</annotation></semantics></math></p>
+<p>The distinct threshold sets are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1\}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,2\}</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>.
+Compare them with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">T=\{1,3\}</annotation></semantics></math>.
+Define
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>ε</mi><mn>2</mn></msup><mi>D</mi><mi>R</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A(S)=\varepsilon^2D R(S)</annotation></semantics></math>;
+direct substitution yields</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mi>ε</mi><mo>+</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mi>ε</mi></mrow></mfrac><mo>+</mo><mfrac><msup><mi>ε</mi><mn>2</mn></msup><mrow><mn>1</mn><mo>+</mo><mn>2</mn><msup><mi>ε</mi><mn>2</mn></msup></mrow></mfrac><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>ε</mi><mrow><mn>1</mn><mo>+</mo><mn>2</mn><msup><mi>ε</mi><mn>2</mn></msup></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mn>1</mn><mo>+</mo><mn>2</mn><mi>ε</mi><mo>−</mo><msup><mi>ε</mi><mn>2</mn></msup><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>T</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>−</mo><mi>ε</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>ε</mi><mo>+</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mi>ε</mi></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+A(\{1\})&amp;=\varepsilon+\frac1{1+2\varepsilon}
+                  +\frac{\varepsilon^2}{1+2\varepsilon^2},\\
+A(\{1,2\})&amp;=(1+\varepsilon)
+                  \left(1+\frac{\varepsilon}{1+2\varepsilon^2}\right),\\
+A(N)&amp;=1+2\varepsilon-\varepsilon^2,\\
+A(T)&amp;=(2-\varepsilon)
+                  \left(\varepsilon+\frac1{1+2\varepsilon}\right).
+\end{aligned}\tag{5.3}
+</annotation></semantics></math></p>
+<p>The first three expressions tend to one and the fourth tends to two
+as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon\downarrow0</annotation></semantics></math>.
+Since the optimum is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>T</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">R(T)&gt;0</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>≤</mo><mfrac><mrow><munder><mo>max</mo><mrow><mi>H</mi><mo>∈</mo><mi>ℋ</mi></mrow></munder><mi>R</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><munder><mo>max</mo><mrow><mi>S</mi><mo>⊆</mo><mi>N</mi></mrow></munder><mi>R</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>≤</mo><mfrac><mrow><munder><mo>max</mo><mrow><mi>H</mi><mo>∈</mo><mi>ℋ</mi></mrow></munder><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>T</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>→</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\frac12\le
+\frac{\max_{H\in\mathcal H}R(H)}{\max_{S\subseteq N}R(S)}
+\le\frac{\max_{H\in\mathcal H}A(H)}{A(T)}\longrightarrow\frac12.
+\tag{5.4}
+</annotation></semantics></math></p>
+<p>The first inequality follows from Theorem 4.4. A finite maximum
+preserves convergence, so the squeeze proves sharpness. It is
+unnecessary to prove that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+is optimal for every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>This establishes the best constant for the whole class. It does not
+establish the best constant separately for each fixed deterministic
+cutoff
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">k\ge3</annotation></semantics></math>.</p>
+<h2 id="separating-adjacent-half-guarantee-arguments">6. Separating
+adjacent half-guarantee arguments</h2>
+<h3 id="a-singleton-upper-benchmark-can-be-arbitrarily-loose">6.1 A
+singleton upper benchmark can be arbitrarily loose</h3>
+<p>For any regular model put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mi>i</mi></msub><mo>=</mo><msub><mi>p</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mo stretchy="false" form="prefix">{</mo><mi>i</mi><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\omega_i=p_i(\{i\})</annotation></semantics></math>
+and define</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mo>*</mo></msup><mo>=</mo><munder><mo>min</mo><mrow><mi>τ</mi><mo>≥</mo><mn>0</mn></mrow></munder><mrow><mo stretchy="true" form="prefix">{</mo><mi>τ</mi><mo>+</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>ω</mi><mi>i</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>r</mi><mi>i</mi></msub><mo>−</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo></msup><mo stretchy="true" form="postfix">}</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">U^*=\min_{\tau\ge0}\left\{\tau+\sum_i\omega_i(r_i-\tau)^+\right\}.\tag{6.1}</annotation></semantics></math></p>
+<p>This is the singleton benchmark used in [4] for the unrestricted
+setting. The minimum exists: the objective is continuous, piecewise
+linear, and at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>,
+so it suffices to minimize on a sufficiently large compact interval. It
+is an upper bound on every assortment revenue: for fixed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>,
+write revenue as the contribution up to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
+plus positive excess, use total purchase probability at most one, and
+use
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>ω</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">p_i(S)\le\omega_i</annotation></semantics></math>.
+Minimizing preserves the upper bound. Additional assumptions are needed
+to guarantee an assortment earns a fixed fraction of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>U</mi><mo>*</mo></msup><annotation encoding="application/x-tex">U^*</annotation></semantics></math>.</p>
+<p><strong>Proposition 6.1 (unbounded singleton-benchmark gap).</strong>
+Within the independent rank-cutoff model, no universal
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c&gt;0</annotation></semantics></math>
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>max</mo><mi>S</mi></msub><mi>R</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mi>c</mi><msup><mi>U</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">\max_S R(S)\ge cU^*</annotation></semantics></math>.</p>
+<p><strong>Proof.</strong> For an integer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>≥</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">m\ge3</annotation></semantics></math>,
+take
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+products with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>i</mi></msub><mo>=</mo><msub><mi>r</mi><mi>i</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">v_i=r_i=1</annotation></semantics></math>
+and one further product with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>M</mi><mo>=</mo><msup><mi>m</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">v=M=m^3</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>1</mn><mi>/</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">r=1/M</annotation></semantics></math>.
+Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">v_0=1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mi>m</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n=m+1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mn>1</mn><mo>+</mo><mi>m</mi><mo>+</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">D=1+m+M</annotation></semantics></math>,
+and</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>Pr</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo>=</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>/</mi><mi>m</mi><mo>,</mo><mspace width="2.0em"></mspace><mo>Pr</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo>=</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>2</mn><mi>/</mi><mi>m</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\Pr(K=1)=1-2/m,\qquad\Pr(K=n)=2/m.</annotation></semantics></math></p>
+<p>By the endpoint calculations after Theorem 4.4,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>a</mi><mo>+</mo><mfrac><mi>b</mi><mrow><mn>1</mn><mo>+</mo><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>a</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mn>2</mn><mi>/</mi><mi>m</mi></mrow><mi>D</mi></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mi>b</mi><mo>=</mo><mn>2</mn><mi>/</mi><mi>m</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">q(S)=a+\frac b{1+V(S)},\qquad a=\frac{1-2/m}{D},\quad b=2/m.\tag{6.2}</annotation></semantics></math></p>
+<p>Each high-revenue singleton has probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">a+b/2</annotation></semantics></math>,
+and</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><mo>−</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>D</mi><mo>&gt;</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">m(a+b/2)=1+(m-2)/D&gt;1.</annotation></semantics></math></p>
+<p>For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>τ</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\le\tau\le1</annotation></semantics></math>,
+the contribution of those
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+products alone makes the expression in (6.1) at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><mo>−</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>D</mi><mo stretchy="true" form="postfix">]</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\tau+[1+(m-2)/D](1-\tau)\ge1</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\tau\ge1</annotation></semantics></math>
+the expression is at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\tau\ge1</annotation></semantics></math>,
+while
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\tau=1</annotation></semantics></math>
+attains one. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mo>*</mo></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">U^*=1</annotation></semantics></math>.</p>
+<p>A set of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+high-revenue products without the low-revenue product earns
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mrow><mo stretchy="true" form="prefix">[</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">k[a+b/(1+k)]</annotation></semantics></math>.
+Its increment from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k+1</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">[</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>+</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a+b/[(k+1)(k+2)]&gt;0</annotation></semantics></math>.
+A set containing the low-revenue product and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+high-revenue products earns
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">[</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>M</mi><mo>+</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">(k+1)[a+b/(1+M+k)]</annotation></semantics></math>.
+Its increment is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mi>M</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">[</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>M</mi><mo>+</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>+</mo><mi>M</mi><mo>+</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a+bM/[(1+M+k)(2+M+k)]&gt;0</annotation></semantics></math>.
+Consequently the optimum is the larger of</p>
+<p><span class="math display">$$R_{\rm
+high}=\frac{m-2}{D}+\frac2{m+1},\qquad
+R_{\rm all}=\frac{m+1}{D}.\tag{6.3}$$</span></p>
+<p>Their difference is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mn>3</mn><mi>/</mi><mi>D</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2/(m+1)-3/D&gt;0</annotation></semantics></math>,
+because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>M</mi><mo>&gt;</mo><mi>m</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2M&gt;m+1</annotation></semantics></math>.
+Therefore the first is optimal, and it tends to zero as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>→</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">m\to\infty</annotation></semantics></math>.
+Combined with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mo>*</mo></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">U^*=1</annotation></semantics></math>,
+this proves the claim.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>An especially small rational certificate uses eight high-revenue
+products,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mn>1024</mn></mrow><annotation encoding="application/x-tex">M=1024</annotation></semantics></math>,
+and cutoff probabilities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>/</mi><mn>4</mn><mo>,</mo><mn>1</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">3/4,1/4</annotation></semantics></math>.
+The same calculation gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mo>*</mo></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">U^*=1</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mo>*</mo></msup><mo>=</mo><mn>2120</mn><mi>/</mi><mn>9297</mn><mo>&lt;</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">R^*=2120/9297&lt;1/2</annotation></semantics></math>.
+This certificate uses the same construction with a different
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>;
+it is not the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>m</mi><mn>3</mn></msup><annotation encoding="application/x-tex">m^3</annotation></semantics></math>
+specialization.</p>
+<p>This separation does not imply a bad revenue-ordered ratio: the
+high-revenue threshold set is optimal in the family above. It explains
+why a proof relative to actual optimal revenue can succeed where a fixed
+positive factor of the singleton upper bound is impossible.</p>
+<h3 id="a-small-nonlinear-denominator-and-odds-certificate">6.2 A small
+nonlinear-denominator and odds certificate</h3>
+<p>Take three products with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>97</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">v=(1,1,97)</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">v_0=1</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>Pr</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo>=</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>9</mn><mi>/</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">\Pr(K=1)=9/10</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>Pr</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo>=</mo><mn>3</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mi>/</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">\Pr(K=3)=1/10</annotation></semantics></math>.
+Equation (4.4) gives</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mn>9</mn><mn>1000</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>10</mn><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">q(S)=\frac9{1000}+\frac1{10(1+V(S))}.</annotation></semantics></math></p>
+<p>In particular, the values on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>,</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo><mo>,</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo><mo>,</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">N,\{1\},\{1,2\},\{1,3\}</annotation></semantics></math>
+are respectively</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>100</mn></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mfrac><mn>59</mn><mn>1000</mn></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mfrac><mn>127</mn><mn>3000</mn></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mfrac><mn>991</mn><mn>99000</mn></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac1{100},\quad\frac{59}{1000},\quad\frac{127}{3000},\quad\frac{991}{99000}.</annotation></semantics></math></p>
+<p>Their reciprocal mixed difference is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>=</mo><mi>−</mi><mfrac><mn>48800700</mn><mn>7425563</mn></mfrac><mo>≠</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac1{q(N)}+\frac1{q(\{1\})}-\frac1{q(\{1,2\})}-\frac1{q(\{1,3\})}
+=-\frac{48800700}{7425563}\ne0.\tag{6.4}</annotation></semantics></math></p>
+<p>Any fixed-numerator model with a denominator affine in
+product-inclusion indicators has zero mixed difference here. If its
+positive numerators represent the probabilities of this example on all
+assortments, the ratios on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+force those numerators to be one common multiple of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>i</mi></msub><annotation encoding="application/x-tex">v_i</annotation></semantics></math>;
+rescaling does not change the zero-difference condition. Thus this
+example has no such representation. This excludes the relevant fixed
+shadow-attraction denominator representation used for the GAM
+specialization in [3], without claiming to exclude arbitrary mixtures of
+those models.</p>
+<p>For revenues
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mi>/</mi><mn>100</mn><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1,1,1/100)</annotation></semantics></math>
+the singleton-based auxiliary MNL threshold is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>=</mo><mn>59</mn><mi>/</mi><mn>559</mn></mrow><annotation encoding="application/x-tex">\tau=59/559</annotation></semantics></math>,
+with set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,2\}</annotation></semantics></math>.
+Indeed, for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>=</mo><msub><mi>ω</mi><mn>1</mn></msub><mo>=</mo><msub><mi>ω</mi><mn>2</mn></msub><mo>=</mo><mn>59</mn><mi>/</mi><mn>1000</mn></mrow><annotation encoding="application/x-tex">w=\omega_1=\omega_2=59/1000</annotation></semantics></math>,
+we have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>w</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>τ</mi></mrow><annotation encoding="application/x-tex">2w(1-\tau)=\tau</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>3</mn></msub><mo>&lt;</mo><mi>τ</mi></mrow><annotation encoding="application/x-tex">r_3&lt;\tau</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>S</mi></mrow></msub><msub><mi>ω</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>r</mi><mi>i</mi></msub><mo>−</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>τ</mi></mrow><annotation encoding="application/x-tex">\sum_{i\in S}\omega_i(r_i-\tau)\le\tau</annotation></semantics></math>
+for every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>,
+with equality on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1,2\}</annotation></semantics></math>,
+which certifies auxiliary MNL optimality. On that set the product-1
+purchase-to-outside odds are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>127</mn><mi>/</mi><mn>2746</mn><mo>&lt;</mo><mn>59</mn><mi>/</mi><mn>1000</mn><mo>=</mo><msub><mi>ω</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">127/2746&lt;59/1000=\omega_1</annotation></semantics></math>.
+The sufficient inequality requiring those odds to dominate the singleton
+probability in [3, v3, Theorem 5] therefore fails here. Theorem 2.2
+still applies. Both (6.4) and the odds comparison are exact rational
+computations, not numerical fits.</p>
+<h3 id="the-search-cost-model-has-different-hypotheses">6.3 The
+search-cost model has different hypotheses</h3>
+<p>In the homogeneous model of Wang and Şahin [5], a deterministic
+consideration set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Ψ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>⊆</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">\Psi(S)\subseteq S</annotation></semantics></math>
+is chosen using expected utility and search cost before the random
+utilities are realized. Offered product
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+then has probability</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msub><mi>a</mi><mi>i</mi></msub><mn>𝟏</mn><mo stretchy="false" form="prefix">{</mo><mi>i</mi><mo>∈</mo><mi>Ψ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">}</mo></mrow><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><munder><mo>∑</mo><mrow><mi>j</mi><mo>∈</mo><mi>Ψ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></munder><msub><mi>a</mi><mi>j</mi></msub></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac{a_i\mathbf1\{i\in\Psi(S)\}}{a_0+\sum_{j\in\Psi(S)}a_j}.</annotation></semantics></math></p>
+<p>Their Example 2 has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a_0=1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>11</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>7</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">a=(11,8,7)</annotation></semantics></math>
+and transformed cost
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>w</mi><mo accent="true">̃</mo></mover><mo>=</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\widetilde w=3/4</annotation></semantics></math>.
+For completeness, normalize the utility scale to one, so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>=</mo><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>7</mn><mi>/</mi><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">w=\log(7/4)</annotation></semantics></math>,
+and maximize
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>T</mi></mrow></msub><msub><mi>a</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>w</mi><mrow><mo stretchy="true" form="prefix">|</mo><mi>T</mi><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\log(1+\sum_{i\in T}a_i)-w|T|</annotation></semantics></math>
+over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>⊆</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">T\subseteq S</annotation></semantics></math>.
+Equivalently maximize
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>T</mi></mrow></msub><msub><mi>a</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>7</mn><mi>/</mi><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>T</mi><mo stretchy="true" form="postfix">|</mo></mrow></msup></mrow><annotation encoding="application/x-tex">(1+\sum_{i\in T}a_i)/(7/4)^{|T|}</annotation></semantics></math>.
+On
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S=\{2,3\}</annotation></semantics></math>,
+the best values for cardinalities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">0,1,2</annotation></semantics></math>
+are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>36</mn><mi>/</mi><mn>7</mn><mo>,</mo><mn>256</mn><mi>/</mi><mn>49</mn></mrow><annotation encoding="application/x-tex">1,36/7,256/49</annotation></semantics></math>,
+respectively, so the unique maximizer is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{2,3\}</annotation></semantics></math>.
+On
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">S=N</annotation></semantics></math>,
+the corresponding values for cardinalities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">0,1,2,3</annotation></semantics></math>
+are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>48</mn><mi>/</mi><mn>7</mn><mo>,</mo><mn>320</mn><mi>/</mi><mn>49</mn><mo>,</mo><mn>1728</mn><mi>/</mi><mn>343</mn></mrow><annotation encoding="application/x-tex">1,48/7,320/49,1728/343</annotation></semantics></math>,
+so the unique maximizer is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1\}</annotation></semantics></math>.
+Purchase probability therefore decreases from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mi>/</mi><mn>16</mn></mrow><annotation encoding="application/x-tex">15/16</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><mi>/</mi><mn>12</mn></mrow><annotation encoding="application/x-tex">11/12</annotation></semantics></math>
+on expansion, violating (O).</p>
+<p>Conversely, with two products,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">v_0=v_1=v_2=1</annotation></semantics></math>
+and cutoff one, every offered product has probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">1/3</annotation></semantics></math>
+in every assortment containing it. A homogeneous search-cost
+representation would have to put every offered product in its
+consideration set, because every such probability is positive. It would
+then be ordinary positive-attraction MNL, where adding product 2
+strictly decreases product 1’s probability. That contradicts the
+constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">1/3</annotation></semantics></math>.
+Hence neither of these two model classes contains the other. The
+heterogeneous market-share guarantee in [5, Theorem 2] has a different
+objective from the nonuniform-revenue statement here.</p>
+<h3 id="a-rank-cutoff-instance-outside-single-mdm">6.4 A rank-cutoff
+instance outside single MDM</h3>
+<p>We use only the following necessary property of the MDM in [12]: for
+any two assortments, including the always-available outside alternative,
+the probabilities of their common alternatives cannot move in strictly
+opposite directions. To see the obstruction directly at positive
+probabilities, write the marginal optimality condition as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>p</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>λ</mi><mi>S</mi></msub></mrow><annotation encoding="application/x-tex">g_i(p_i(S))=\lambda_S</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>ν</mi><mi>i</mi></msub><mo>+</mo><msubsup><mi>F</mi><mi>i</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">g_i(x)=\nu_i+F_i^{-1}(1-x)</annotation></semantics></math>
+is strictly decreasing under the marginal assumptions of [12]. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><msub><mi>p</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">p_i(A)&gt;p_i(B)</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mi>A</mi></msub><mo>&lt;</mo><msub><mi>λ</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">\lambda_A&lt;\lambda_B</annotation></semantics></math>;
+if simultaneously
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&lt;</mo><msub><mi>p</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">p_j(A) \lt p_j(B)</annotation></semantics></math>
+for another common alternative, then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mi>A</mi></msub><mo>&gt;</mo><msub><mi>λ</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">\lambda_A&gt;\lambda_B</annotation></semantics></math>,
+a contradiction. The same no-reversal implication follows from the
+characterization in [12, Section 3].</p>
+<p>There is a direct link to the half theorem in [11]: the
+representation used in [11, Proposition 2 and (MDM-AO)] makes each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>j</mi></msub><annotation encoding="application/x-tex">p_j</annotation></semantics></math>
+nondecreasing in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mn>0</mn></msub><annotation encoding="application/x-tex">p_0</annotation></semantics></math>.
+Under their Assumption 1 it has the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>h</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>p</mi><mn>0</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">p_j(S)=h_j(p_0(S))</annotation></semantics></math>,
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><msub><mi>F</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>F</mi><mn>0</mn><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>ν</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">h_j(x)=1-F_j(F_0^{-1}(1-x)-\nu_j)</annotation></semantics></math>.
+Nondecreasing CDFs and quantiles imply that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>j</mi></msub><annotation encoding="application/x-tex">h_j</annotation></semantics></math>
+is nondecreasing; strict monotonicity is unnecessary. Thus an increase
+in the outside probability together with a strict decrease in a common
+product’s probability is also impossible for the representation used in
+[11, Corollary 2].</p>
+<p><strong>Proposition 6.2 (single-MDM exclusion).</strong> There is a
+rank-cutoff model satisfying Theorem 4.4, with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>Pr</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo>=</mo><mn>3</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Pr(K=3)&gt;0</annotation></semantics></math>,
+whose probabilities on all assortments have no single-MDM representation
+of the kind in [12].</p>
+<p><strong>Proof.</strong> Take
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">v_0=1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>5</mn><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">v=(1,1,1,5/2)</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>Pr</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo>=</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>9</mn><mi>/</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">\Pr(K=2)=9/10</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>Pr</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>K</mi><mo>=</mo><mn>3</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mi>/</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">\Pr(K=3)=1/10</annotation></semantics></math>.
+Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">A=\{1,2,3\}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>4</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">B=\{1,4\}</annotation></semantics></math>.
+Both cutoffs give
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">q(A)=1/4</annotation></semantics></math>,
+because there is only one unavailable product. Formula (4.3) gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>30</mn><mi>/</mi><mn>143</mn></mrow><annotation encoding="application/x-tex">q_2(B)=30/143</annotation></semantics></math>,
+while cutoff three reaches an available alternative and gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mn>3</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>2</mn><mi>/</mi><mn>9</mn></mrow><annotation encoding="application/x-tex">q_3(B)=2/9</annotation></semantics></math>.
+Therefore</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>p</mi><mn>0</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>p</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mn>1358</mn><mn>6435</mn></mfrac><mo>&lt;</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>p</mi><mn>0</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mn>1682</mn><mn>6435</mn></mfrac><mo>&gt;</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+p_1(A)=p_0(A)=\frac14,\qquad
+p_1(B)=q(B)=\frac{1358}{6435}&lt;\frac14,\qquad
+p_0(B)=\frac{1682}{6435}&gt;\frac14.
+\tag{6.5}
+</annotation></semantics></math></p>
+<p>Alternatives 1 and 0 occur in both augmented assortments and exhibit
+the prohibited strict reversal. Every probability used here lies
+strictly between zero and one. This proves the exclusion.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>The same strict reversal violates the direct necessary condition from
+[11, Proposition 2 and (MDM-AO)], excluding application of its
+single-MDM half theorem by model inclusion. This is a model-distinction
+certificate. It does not make the broader MDM literature obsolete, and
+an arbitrary mixture need not preserve the single-MDM order condition.
+In particular, the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>-dependent
+mixed-model guarantee in [11, Theorem 6] is not a uniform half guarantee
+when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is unrestricted.</p>
+<h3
+id="the-constant-threshold-focal-mnl-half-theorem-has-different-scope">6.5
+The constant-threshold focal-MNL half theorem has different scope</h3>
+<p>For the ctFMNL model in [13, equations (2) and (5)], put
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mo>+</mo></msup><mo>=</mo><mi>S</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S^+=S\cup\{0\}</annotation></semantics></math>.
+The attractions
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_i&gt;0</annotation></semantics></math>,
+focal parameter
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta\ge0</annotation></semantics></math>,
+and threshold parameter
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">w\ge0</annotation></semantics></math>
+are fixed across assortments. The focal set, effective attractions, and
+choice probabilities are</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mo>+</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>i</mi><mo>∈</mo><msup><mi>S</mi><mo>+</mo></msup><mo>:</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>w</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>a</mi><mi>i</mi></msub><mo>≥</mo><munder><mo>max</mo><mrow><mi>j</mi><mo>∈</mo><msup><mi>S</mi><mo>+</mo></msup></mrow></munder><msub><mi>a</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">}</mo><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>b</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><msub><mi>a</mi><mi>i</mi></msub><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>δ</mi><mn>𝟏</mn><mo stretchy="false" form="prefix">{</mo><mi>i</mi><mo>∈</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mo>+</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">}</mo><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>π</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mfrac><mrow><msub><mi>b</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><munder><mo>∑</mo><mrow><mi>j</mi><mo>∈</mo><msup><mi>S</mi><mo>+</mo></msup></mrow></munder><msub><mi>b</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+F(S^+)&amp;=\{i\in S^+:(1+w)a_i\ge\max_{j\in S^+}a_j\},\\
+b_i(S)&amp;=a_i\bigl(1+\delta\mathbf1\{i\in F(S^+)\}\bigr),\\
+\pi_i(S)&amp;=\frac{b_i(S)}{\sum_{j\in S^+}b_j(S)}.
+\end{aligned}
+\tag{6.6}
+</annotation></semantics></math></p>
+<p>The half guarantee in [13, Theorem 2(ii)] assumes this
+constant-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi><annotation encoding="application/x-tex">\delta</annotation></semantics></math>
+structure. Theorem 3 instead gives an FPTAS for linear focal parameters,
+extended to certain functions of their sum. The broader regular tFMNL
+class of Section 5 is used in Proposition 1 and Theorem 4 for adjustable
+prices: its conditions concern a nondecreasing focal parameter and the
+effect of price increases on focal membership. They are not (P) and
+(O).</p>
+<p><strong>Proposition 6.3 (ctFMNL exclusion).</strong> There is a
+two-product rank-cutoff model satisfying Theorem 4.4 whose probabilities
+on all assortments have no ctFMNL representation (6.6).</p>
+<p><strong>Proof.</strong> Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">v_0=v_1=v_2=1</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">K=1</annotation></semantics></math>
+surely. Formula (4.4) gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">q(S)=1/3</annotation></semantics></math>
+for every nonempty
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⊆</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S\subseteq\{1,2\}</annotation></semantics></math>.
+Each offered product therefore has probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">1/3</annotation></semantics></math>
+in its singleton assortment and in the two-product assortment.</p>
+<p>Suppose (6.6) represented these probabilities. In the two-product
+assortment, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>&gt;</mo><msub><mi>a</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">a_1&gt;a_2</annotation></semantics></math>,
+threshold membership implies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>𝟏</mn><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>∈</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mo>+</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">}</mo><mo>≥</mo><mn>𝟏</mn><mo stretchy="false" form="prefix">{</mo><mn>2</mn><mo>∈</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mo>+</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbf1\{1\in F(S^+)\}\ge\mathbf1\{2\in F(S^+)\}</annotation></semantics></math>,
+and hence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><msub><mi>b</mi><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">b_1(S)&gt;b_2(S)</annotation></semantics></math>
+because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta\ge0</annotation></semantics></math>.
+This contradicts equality of the two product probabilities. The reverse
+strict order gives the same contradiction, so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><msub><mi>a</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">a_1=a_2</annotation></semantics></math>.</p>
+<p>It follows that the maximum attraction among the offered products and
+the outside alternative is the same for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S=\{1\}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S=\{1,2\}</annotation></semantics></math>.
+The focal memberships and effective attractions of alternatives 0 and 1
+are unchanged; product 2 has the same effective attraction as product 1.
+Writing these positive effective attractions as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>b</mi><mn>0</mn></msub><annotation encoding="application/x-tex">b_0</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>,
+respectively, gives</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>π</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mi>b</mi><mrow><msub><mi>b</mi><mn>0</mn></msub><mo>+</mo><mi>b</mi></mrow></mfrac><mo>&gt;</mo><mfrac><mi>b</mi><mrow><msub><mi>b</mi><mn>0</mn></msub><mo>+</mo><mn>2</mn><mi>b</mi></mrow></mfrac><mo>=</mo><msub><mi>π</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+\pi_1(\{1\})=\frac{b}{b_0+b}
+&gt;\frac{b}{b_0+2b}=\pi_1(\{1,2\}),
+\tag{6.7}
+</annotation></semantics></math></p>
+<p>contradicting the required equality to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">1/3</annotation></semantics></math>.
+Thus no such representation exists.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>▫</mi><annotation encoding="application/x-tex">\square</annotation></semantics></math></p>
+<p>This proves non-containment in the specific class covered by the
+static ctFMNL half theorem. We make no exclusion claim for general FMNL
+with assortment-dependent focal parameters or focal sets, and no
+converse containment claim.</p>
+<h2 id="reproduction-and-scope">7. Reproduction and scope</h2>
+<p>The accompanying exact-arithmetic program enumerates finite
+Plackett–Luce rankings and independently evaluates the first-step
+recurrence. It checks proportionality, both regularities, the common
+threshold for every comparison subset in its finite test suite, and the
+robust optimum over finite scenario collections. It also checks the
+displayed rational separation certificates and several members of the
+tight family. These finite calculations detect implementation or
+transcription errors; the universal theorems rest on the written
+arguments above.</p>
+<p>All mathematical claims needed for Theorem 4.4 are explicit:
+normalization and conditioning of the finite ranking law, the Gumbel
+bridge, the factor recurrence, regularity, the weighted-set inequality,
+and finite candidate selection. Full future formalization must preserve
+those links rather than assume the desired model embedding as an
+unproved hypothesis. No Lean source, compilation result, kernel
+certificate, or external review is represented by the present
+manuscript.</p>
+<p>The limitations are substantive. Nonnegative revenues, positive
+weights, shared relative product weights across scenarios, and
+independence of the cutoff from the realized ranking are retained.
+Capacity restrictions, learning from data, changing product preferences,
+dynamic inventory decisions, and oracle complexity under arbitrary
+uncertainty are not solved here. The universal tightness result does not
+determine every fixed-cutoff subclass. Finally, the literature
+comparisons establish distinctions within a documented search; they are
+not a proof of worldwide priority.</p>
+<h2 id="references">References</h2>
+<ol type="1">
+<li>Y. Bai, J. Feldman, H. Topaloglu, L. Wagner. <em>Assortment
+Optimization Under the Multinomial Logit Model with Utility-Based Rank
+Cutoffs</em>. Operations Research 72(4), 1453–1474 (2024). <a
+href="https://doi.org/10.1287/opre.2021.0060">DOI:
+10.1287/opre.2021.0060</a>. Author manuscript, 29 September 2023,
+especially Theorem 3.1 and Appendix D: <a
+href="https://people.orie.cornell.edu/huseyin/publications/small_consideration_mnl.pdf">full
+text</a>.</li>
+<li>G. Berbeglia, G. Joret. <em>Assortment Optimisation under a General
+Discrete Choice Model: A Tight Analysis of Revenue-Ordered
+Assortments</em>. Algorithmica 82, 681–720 (2020). <a
+href="https://doi.org/10.1007/s00453-019-00610-8">DOI:
+10.1007/s00453-019-00610-8</a>; <a
+href="https://arxiv.org/abs/1606.01371">preprint</a>.</li>
+<li>G. Gallego, G. Berbeglia. <em>The Limits of Personalization in
+Assortment Optimization</em>. <a
+href="https://arxiv.org/abs/2109.14861v5">arXiv:2109.14861v5</a>, 2024.
+Earlier <a href="https://arxiv.org/abs/2109.14861v3">v3</a>, 2022:
+<em>Bounds, Heuristics, and Prophet Inequalities for Assortment
+Optimization</em>. Versions are compared explicitly; neither is cited as
+a newly verified journal publication.</li>
+<li>G. Gallego, P. Gao, S. Wang, G. Berbeglia. <em>Assortment
+Optimization with Downward Feasibility: Efficient Heuristics Based on
+Independent Demands</em>. Author preprint revised 11 January 2025. <a
+href="https://doi.org/10.2139/ssrn.5021867">DOI:
+10.2139/ssrn.5021867</a>. Full author-uploaded text examined, including
+the singleton benchmark and bounding conditions.</li>
+<li>R. Wang, Ö. Şahin. <em>The Impact of Consumer Search Cost on
+Assortment Planning and Pricing</em>. Management Science 64(8),
+3649–3666 (2018). <a href="https://doi.org/10.1287/mnsc.2017.2790">DOI:
+10.1287/mnsc.2017.2790</a>. Author PDF linked from <a
+href="https://sites.google.com/view/ruxianwang/research">research
+page</a>.</li>
+<li>P. Rusmevichientong, H. Topaloglu. <em>Robust Assortment
+Optimization in Revenue Management Under the Multinomial Logit Choice
+Model</em>. Operations Research 60(4), 865–882 (2012). <a
+href="https://doi.org/10.1287/opre.1120.1063">DOI:
+10.1287/opre.1120.1063</a>; <a
+href="https://people.orie.cornell.edu/huseyin/publications/logit_robust.pdf">author
+text</a>.</li>
+<li>B. Sturt. <em>The Value of Robust Assortment Optimization Under
+Ranking-Based Choice Models</em>. Management Science 71(5), 4246–4265
+(2025). <a href="https://doi.org/10.1287/mnsc.2021.04059">DOI:
+10.1287/mnsc.2021.04059</a>; <a
+href="https://arxiv.org/html/2112.05010v4">author preprint v4</a>.</li>
+<li>M. Lu, Y. Han, H. Zhong, Z. Zhou, J. Blanchet. <em>Robust Assortment
+Optimization from Observational Data</em>. <a
+href="https://arxiv.org/html/2602.10696v3">arXiv:2602.10696v3</a>, 2026.
+Preprint; nominal-MNL ambiguity-set comparison.</li>
+<li>J. Feldman, Y. Huang, H. Zhang. <em>Inventory and Assortment
+Optimization under General Choice: A Unified Approximation
+Framework</em>. <a
+href="https://arxiv.org/html/2611.05708v1">arXiv:2611.05708v1</a>, 2026.
+Preprint; static-oracle assumption in Section 2.2.</li>
+<li>S. Sun, R. Udwani. <em>Dynamic Assortment Optimization Under
+Arbitrary Demand Distributions: The Uniform Price Setting</em>. <a
+href="https://arxiv.org/pdf/2611.18421v1">arXiv:2611.18421v1</a>, 2026.
+Preprint; Theorems 1–3, Remark 9 and Section 5.</li>
+<li>Z. Sun, S. D. Ahipasaoglu, X. Li, Y. Ruan. <em>A Unified Analysis
+for Assortment Planning with Multi-Purchase Using Marginal Distribution
+Models</em>. Author preprint, revised 22 August 2026, 60 pages. <a
+href="https://doi.org/10.2139/ssrn.3638783">DOI:
+10.2139/ssrn.3638783</a>; <a
+href="https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=3638783">full
+author text</a>. Examined Section 2.2, Section 4, Section 5 including
+Assumption 1, Proposition 2, (MDM-AO), Theorem 6 and Corollary 2, and
+the complete proofs in Appendices C.6 and C.12.</li>
+<li>Y. Ruan, X. Li, K. Murthy, K. Natarajan. <em>A Nonparametric
+Approach with Marginals for Modeling Consumer Choice</em>. Management
+Science, published online 21 May 2026. <a
+href="https://doi.org/10.1287/mnsc.2023.02287">DOI:
+10.1287/mnsc.2023.02287</a>. Examined author version: <a
+href="https://arxiv.org/html/2208.06115v6">arXiv:2208.06115v6</a>, 14
+April 2025. Section 3 gives the MDM representation and common-option
+ordering conditions; the outside alternative is included as an
+always-available option.</li>
+<li>L. Guan, K. Nip, R. Wang, L. Zhang. <em>The Focal Multinomial Logit
+Model: Threshold Effects on Consumer Choice, Assortment, Pricing and
+Estimation</em>. Manufacturing &amp; Service Operations Management
+28(3), 822–840 (2026), published online 29 December 2025. <a
+href="https://doi.org/10.1287/msom.2023.0381">DOI:
+10.1287/msom.2023.0381</a>. Examined <a
+href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4495817">SSRN
+author manuscript 4495817</a>, written 2 December 2025, revised 13
+December 2025, 79 pages: Section 3.1, equations (2) and (5), Theorems
+2–4, Proposition 1, and the complete Appendix A proof of Theorem
+2(ii).</li>
+</ol>

@@ -1,0 +1,56 @@
+{
+  "source_sha256": "e0da408d3a360a4d6c1f9654870e6c7fa5e235b89e1047cb73c95c4d8dd67dcc",
+  "command": [
+    "./independent_path_k6_no_lmc",
+    "0",
+    "15",
+    "1000000"
+  ],
+  "exit_code": 0,
+  "result": {
+    "k": 6,
+    "target_class": "dual_axis",
+    "bound": 15,
+    "target_representatives": 1,
+    "completed_representatives": 1,
+    "visited": 486363,
+    "interrupted": false,
+    "found": false,
+    "exhaustive_failure": true,
+    "elapsed_seconds": 33.805,
+    "failed_states_by_remaining": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      243,
+      897,
+      1769,
+      5729,
+      7744,
+      26913,
+      47003,
+      17147,
+      1100,
+      43,
+      1
+    ],
+    "canonical_start": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "quotient_path_pauli_masks": []
+  },
+  "progress_log": "finished target placement 1/1 visited 486363\n"
+}

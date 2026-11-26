@@ -44,6 +44,17 @@
   ],
   "projects": [
     {
+      "slug": "ac-line-congestion-geometry",
+      "title": "Exact Geometry and Uniform Recovery of Congestion Monotonicity on AC Lines",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "adaptive-erasure-feedback-law",
       "title": "Exact erasure resilience with adaptively scheduled feedback",
       "category": "information-communication",
@@ -62,6 +73,17 @@
       "manuscripts": [
         "paper.en.md",
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "additive-privacy-bv-minimax",
+      "title": "Nonmonotonicity and sharp high-privacy limits for additive privacy",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
@@ -243,6 +265,28 @@
       "legacy_paths": {}
     },
     {
+      "slug": "blackboard-testing-affinity-tensorization",
+      "title": "Exact Affinity Tensorization for Fully Interactive Testing under Local Bit Budgets",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "block-fdiv-perception-frontier",
+      "title": "Fixed Block Perception Budgets",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "bottleneck-spectral-neighbor",
       "title": "The bottleneck spectral neighbor of a balanced complete tripartite graph",
       "category": "mathematics",
@@ -260,6 +304,17 @@
       "manuscripts": [
         "paper.en.md",
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "bounded-degree-cover-hitting-separation",
+      "title": "Hitting and cover-time robustness separate on bounded-degree graphs",
+      "category": "theoretical-computer-science",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
@@ -564,6 +619,17 @@
       "legacy_paths": {}
     },
     {
+      "slug": "compositional-glv-convex-recovery",
+      "title": "Global and Stable Recovery of Compositional Lotka–Volterra Dynamics",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "conditional-information-power-boundaries",
       "title": "Information loss and sharp power limits for conditional Gamma calibration",
       "category": "information-communication",
@@ -646,6 +712,17 @@
       "legacy_paths": {}
     },
     {
+      "slug": "covalent-switch-finite-resource-response",
+      "title": "Finite-resource response of reversible covalent switches",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "critical-sparse-audit-stopping-limits",
       "title": "Exact and local minimax stopping costs for critical sparse audits",
       "category": "probability-statistics",
@@ -674,6 +751,17 @@
       "slug": "dca-sharp-finite-horizon",
       "title": "Sharp Finite-Horizon Descent for the Difference-of-Convex Algorithm",
       "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "dead-time-poisson-wideband-capacity",
+      "title": "Wideband Capacity of Dead-Time Detector Channels",
+      "category": "probability-statistics",
       "manuscripts": [
         "paper.en.md"
       ],
@@ -720,12 +808,45 @@
       "legacy_paths": {}
     },
     {
+      "slug": "detector-calibration-ancilla-gap",
+      "title": "Sharp resource laws for ancilla-assisted detector calibration",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "directed-cycle-two-season-witness",
       "title": "Two-season frequency witnesses on directed cycles",
       "category": "mathematics",
       "manuscripts": [
         "paper.en.md",
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "discount-replenishment-full-capacity",
+      "title": "Sharp demand-shape and information boundaries in random-capacity inventory control",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "divisive-normalization-stability-boundary",
+      "title": "Stability boundaries of divisive-normalization circuits: norm-one counterexamples and sharp spectral repairs",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
@@ -783,6 +904,52 @@
       "manuscripts": [
         "paper.en.md",
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "envy-ratio-truthful-report-separation",
+      "title": "Truthful reports break the optimal report-independent envy-ratio barrier",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "equal-patience-priority-classification",
+      "title": "Strict Priority in Nonpreemptive Clearing Systems with Common Exponential Patience",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "equal-reward-priority-classification",
+      "title": "Equal-Reward Strict Priority with Heterogeneous Exponential Patience",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [
+        "papers/equal-patience-priority-classification/paper.en.md"
+      ],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "ergodic-queue-total-variation-separation",
+      "title": "Stable FCFS queues with maximal total-variation separation",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
@@ -961,6 +1128,17 @@
       "legacy_paths": {
         "papers/finite-reversible-certificates-and-spectral-criteria/evidence/code/verify.py": "papers/finite-reversible-certificates-and-spectral-criteria/code/verify.py"
       }
+    },
+    {
+      "slug": "finite-value-robust-refund-gain",
+      "title": "Quantitative gains from refunds under finite valuation uncertainty",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
     },
     {
       "slug": "finite-worst-models-transient-learning",
@@ -1159,11 +1337,44 @@
       "legacy_paths": {}
     },
     {
+      "slug": "gamma-covert-feasible-frontier",
+      "title": "Feasible-output frontiers and covert communication over Gamma noise",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "gaussian-evcs-prior-geometry",
+      "title": "Exact Geometry of Calibrated Confidence Sets",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "gaussian-frequency-gradient-variance",
       "title": "高斯频率模型的梯度方差精确渐近",
       "category": "probability-statistics",
       "manuscripts": [
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "gaussian-ldp-information-frontier",
+      "title": "A sharp privacy–communication frontier for Gaussian Fisher information",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
@@ -1300,6 +1511,28 @@
       "legacy_paths": {}
     },
     {
+      "slug": "gue-loss-sign-growth-frontier",
+      "title": "Loss geometry, evidence efficiency, and adaptive repair in multivariate mean testing",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "haar-mst-spectral-profile",
+      "title": "Reciprocal Haar spanning trees for arbitrary spectra",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "haar-schmidt-magic",
       "title": "Schmidt 稳定子熵的随机极限与单项局部酉极小态",
       "category": "quantum-physics",
@@ -1322,6 +1555,28 @@
       "legacy_paths": {}
     },
     {
+      "slug": "hard-erasure-critical-testing",
+      "title": "Critical Risk under Hard Erasure Budgets",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "hawkes-missed-spurious-recovery",
+      "title": "Hawkes Processes with Missed and Spurious Events",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "heavy-ball-planar-cycle-domain",
       "title": "重球周期轨道的最小维数和开集稳定性",
       "category": "control-dynamics",
@@ -1330,6 +1585,17 @@
       ],
       "dependencies": [],
       "unavailable_links": 1,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "heterogeneous-rmab-uniform-horizon",
+      "title": "Synchronization, relaxation gaps, and uniform planning horizons in heterogeneous restless bandits",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
       "legacy_paths": {}
     },
     {
@@ -1360,6 +1626,17 @@
       "category": "probability-statistics",
       "manuscripts": [
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "ib-canonical-strict-concavity",
+      "title": "Optimal fibers in information bottlenecks: stability, tensor products, and regular continuation",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
@@ -1457,6 +1734,28 @@
       "legacy_paths": {}
     },
     {
+      "slug": "laplace-absolute-cost-capacity",
+      "title": "Exact Capacity of the Laplace Channel under an Absolute Input Cost",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "laplace-quadratic-cost-capacity",
+      "title": "Exact capacity of the quadratic-cost Laplace channel",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "leave-one-out-mean-strong-duality",
       "title": "非参数均值检验的留一强对偶与有限网格计算",
       "category": "probability-statistics",
@@ -1505,6 +1804,17 @@
       }
     },
     {
+      "slug": "long-time-hamiltonian-affine-state",
+      "title": "One versus two long-time queries for affine Hamiltonian encoding",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "loo-continuous-dual-closure-gap",
       "title": "留一对偶的闭包效应与近单位间隙",
       "category": "mathematics",
@@ -1533,6 +1843,17 @@
       "legacy_paths": {}
     },
     {
+      "slug": "lookahead-full-information-boundary",
+      "title": "When Is LookAhead Globally Optimal? An Exact Boundary for Affine Age Costs",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "low-order-failure-and-minimal-permutation-dimension",
       "title": "排序 Schmidt 参考态在 $0<\\alpha<1$ 的失效与两种最小置换维数",
       "category": "quantum-physics",
@@ -1544,6 +1865,17 @@
       "legacy_paths": {
         "papers/low-order-failure-and-minimal-permutation-dimension/evidence/code/verify.py": "papers/low-order-failure-and-minimal-permutation-dimension/code/verify.py"
       }
+    },
+    {
+      "slug": "lqr-certificate-efficiency-frontier",
+      "title": "The Exact Statistical Price of a Robust-Regret Certificate in LQR",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
     },
     {
       "slug": "lueders-coarse-graining-tv",
@@ -1691,6 +2023,17 @@
       "legacy_paths": {}
     },
     {
+      "slug": "moment-hard-communication",
+      "title": "Hard Communication Budgets for Heavy-Tailed Mean Estimation",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "multimachine-two-swap",
       "title": "多机器二交换的持久临界作业",
       "category": "mathematics",
@@ -1705,6 +2048,17 @@
       "slug": "narrow-corridor-expansion",
       "title": "Narrow corridors in critical online conformal prediction",
       "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "nbue-dynamic-matching-half",
+      "title": "Optimal half guarantees for dynamic matching with NBUE lifetimes",
+      "category": "theoretical-computer-science",
       "manuscripts": [
         "paper.en.md"
       ],
@@ -1793,6 +2147,17 @@
       "legacy_paths": {}
     },
     {
+      "slug": "noncyclic-mimo-power-elimination",
+      "title": "Exact power thresholds for noncyclic Gaussian sources and their discontinuity at pole coalescence",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "nongreedy-exchangeable-rank-optimality",
       "title": "Prefix constraints and optimal rank protection in online contention resolution",
       "category": "mathematics",
@@ -1809,6 +2174,28 @@
       "category": "mathematics",
       "manuscripts": [
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "nonnegative-holder-rejection-minimax",
+      "title": "The Cost of Zeros in Exact Adaptive Rejection Sampling",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "nonregular-median-stability-frontier",
+      "title": "Gradual stability transitions for nonregular median estimation",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
@@ -1851,6 +2238,17 @@
         "papers/one-fast-many-slow-threshold/evidence/results/rational_policy_certificate.json": "papers/one-fast-many-slow-threshold/results/rational_policy_certificate.json",
         "papers/one-fast-many-slow-threshold/evidence/results/tail_bound_certificate.json": "papers/one-fast-many-slow-threshold/results/tail_bound_certificate.json"
       }
+    },
+    {
+      "slug": "onebit-minimax-shared-randomness",
+      "title": "Exact minimax one-bit quantization and the cost of shared randomness",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
     },
     {
       "slug": "online-conformal-critical-known-oracle",
@@ -1980,6 +2378,17 @@
       "legacy_paths": {}
     },
     {
+      "slug": "optimal-proxy-tail-envelope-minimax",
+      "title": "Sharp contamination and inference frontiers for the optimal sub-Gaussian variance proxy",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "optimal-resetting-asymmetric",
       "title": "一维对数凹目标的精确布朗重置分布",
       "category": "control-dynamics",
@@ -2001,6 +2410,17 @@
       "manuscripts": [
         "paper.en.md",
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "optimal-shadow-cnot-rigidity",
+      "title": "Optimizer rigidity and a sharp tree resource boundary for optimal Clifford shadows",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
@@ -2081,6 +2501,17 @@
       "slug": "original-alphabet-hard-classifier",
       "title": "Optimal identity testing with one hard classifier",
       "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "pair-supported-leakage-coupling",
+      "title": "Minimum-distinct couplings: a sharp support threshold",
+      "category": "information-communication",
       "manuscripts": [
         "paper.en.md"
       ],
@@ -2177,6 +2608,17 @@
       "manuscripts": [
         "paper.en.md",
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "poisson-universal-prior-predictive-floor",
+      "title": "A predictive floor for hierarchical Poisson mixtures with growing support",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
@@ -2545,6 +2987,17 @@
       "legacy_paths": {}
     },
     {
+      "slug": "rank-cutoff-common-threshold-half",
+      "title": "A Common Revenue Threshold for Regular Proportional Choice",
+      "category": "optimization-operations",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "rank-two-permutation-sharp-constant",
       "title": "秩二有噪声置换信道的精确固定错误率定律",
       "category": "mathematics",
@@ -2573,6 +3026,17 @@
       "category": "mathematics",
       "manuscripts": [
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "real-haar-mst-singular-regularization",
+      "title": "A Vanishing Second Spike in a Real Haar Interaction Graph",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
@@ -2608,6 +3072,17 @@
       "category": "probability-statistics",
       "manuscripts": [
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "renewal-snapshot-wasserstein-minimax",
+      "title": "Sharp recovery limits for renewal waiting times from spatial count snapshots",
+      "category": "probability-statistics",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
@@ -2706,11 +3181,33 @@
       "legacy_paths": {}
     },
     {
+      "slug": "robust-lqr-regret-efficiency",
+      "title": "The statistical price of robust LQR depends on its comparator",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "robust-secretary-acceptance-thinning",
       "title": "随机接受在线选择的秩稀疏化、稀有接受锐极限与异质率信息边界",
       "category": "optimization-operations",
       "manuscripts": [
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "sbps-radial-tail-cutoff",
+      "title": "A Sharp Tail Criterion and Starting-Point Cutoff for Radial Stereographic Bouncy Particle Sampling",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
@@ -3075,6 +3572,17 @@
       "legacy_paths": {}
     },
     {
+      "slug": "spin-wigner-uniform-negativity",
+      "title": "Sharp Wigner-negativity bounds, purity rigidity, and quantum correlations in spin systems",
+      "category": "quantum-physics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "spired-graph-oracle-separation",
       "title": "隐藏三正则图的相干恢复与指数级预言机分离",
       "category": "theoretical-computer-science",
@@ -3135,11 +3643,33 @@
       "legacy_paths": {}
     },
     {
+      "slug": "subadditive-generator-rigidity",
+      "title": "Sharp normalization and stability for one-sided tensorization of information divergences",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "subsampled-max-power-lqrt",
       "title": "重抽样最大幂分样本似然比的水平反例",
       "category": "control-dynamics",
       "manuscripts": [
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "switched-linear-scheduling-global-certificate",
+      "title": "Spurious Local Minima and Certified Global Optimization in Two-Sensor Switched-Linear Scheduling",
+      "category": "control-dynamics",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
@@ -3345,6 +3875,17 @@
       "legacy_paths": {}
     },
     {
+      "slug": "two-model-cv-boundary-universality",
+      "title": "A universal boundary kernel for cross-validation after two-model selection",
+      "category": "learning-inference",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
       "slug": "two-quadrant-complexity",
       "title": "A two-quadrant complexity boundary for domination in split rectangle graphs",
       "category": "mathematics",
@@ -3352,6 +3893,19 @@
         "paper.en.md"
       ],
       "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "two-stage-exponential-capacity",
+      "title": "Exact capacity of additive two-stage exponential noise",
+      "category": "mathematics",
+      "manuscripts": [
+        "paper.en.md"
+      ],
+      "dependencies": [
+        "papers/laplace-absolute-cost-capacity/paper.en.md"
+      ],
       "unavailable_links": 0,
       "legacy_paths": {}
     },
@@ -3555,6 +4109,17 @@
       "manuscripts": [
         "paper.en.md",
         "paper.zh.md"
+      ],
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {}
+    },
+    {
+      "slug": "visible-erasure-sharp-reliability",
+      "title": "Sharp Rare-Erasure Asymptotics for Remote Estimation with Distinguishable Silence",
+      "category": "information-communication",
+      "manuscripts": [
+        "paper.en.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,

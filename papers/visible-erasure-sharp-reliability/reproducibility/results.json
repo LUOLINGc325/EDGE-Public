@@ -1,0 +1,500 @@
+{
+  "kind": "diagnostic_not_proof",
+  "method": "Deterministic Gauss-Legendre integration of local moments; 32 vs 64 nodes in each direction; no optimization.",
+  "interpretation": "Each evaluated ball is the explicit fixed-profile design. Values are feasible gains, never asserted global numerical optima.",
+  "counterexample": {
+    "even_lower_bound": 0.5,
+    "sign_reduced_risk": 0.397535170724314,
+    "full_risk": 4.397535170724314,
+    "strict_gap": 0.10246482927568601,
+    "exact_gap": "3/(2*pi)-3/8"
+  },
+  "checks": {
+    "quadrature_refinement_max_scaled_difference": 1.2212453270876722e-14,
+    "tolerance": 1e-10,
+    "worst_relative_error_at_lambda_1e_4": 0.005089475204401062,
+    "diagnostic_tolerance": 0.02
+  },
+  "rows": [
+    {
+      "d": 1,
+      "kappa": 0,
+      "lambda": 0.01,
+      "design_center_norm": 1.7320508075688772,
+      "design_radius": 0.17320508075688773,
+      "normalized_design_gain": 0.6436467734723709,
+      "predicted_limit": 0.616721319215077,
+      "ratio": 1.0436590294811972
+    },
+    {
+      "d": 1,
+      "kappa": 0,
+      "lambda": 0.001,
+      "design_center_norm": 1.7320508075688772,
+      "design_radius": 0.054772255750516606,
+      "normalized_design_gain": 0.6255837311761232,
+      "predicted_limit": 0.616721319215077,
+      "ratio": 1.0143702052854695
+    },
+    {
+      "d": 1,
+      "kappa": 0,
+      "lambda": 0.0001,
+      "design_center_norm": 1.7320508075688772,
+      "design_radius": 0.017320508075688773,
+      "normalized_design_gain": 0.6195580586947733,
+      "predicted_limit": 0.616721319215077,
+      "ratio": 1.004599710422378
+    },
+    {
+      "d": 1,
+      "kappa": 1,
+      "lambda": 0.01,
+      "design_center_norm": 1.4142135623730951,
+      "design_radius": 0.17320508075688776,
+      "normalized_design_gain": 1.068680637892205,
+      "predicted_limit": 1.0168015570841413,
+      "ratio": 1.051021834542461
+    },
+    {
+      "d": 1,
+      "kappa": 1,
+      "lambda": 0.001,
+      "design_center_norm": 1.4142135623730951,
+      "design_radius": 0.05477225575051661,
+      "normalized_design_gain": 1.0331957780851944,
+      "predicted_limit": 1.0168015570841413,
+      "ratio": 1.0161233240516137
+    },
+    {
+      "d": 1,
+      "kappa": 1,
+      "lambda": 0.0001,
+      "design_center_norm": 1.4142135623730951,
+      "design_radius": 0.017320508075688773,
+      "normalized_design_gain": 1.0219765433967174,
+      "predicted_limit": 1.0168015570841413,
+      "ratio": 1.005089475204401
+    },
+    {
+      "d": 1,
+      "kappa": 3,
+      "lambda": 0.01,
+      "design_center_norm": 0,
+      "design_radius": 0.17320508075688773,
+      "normalized_design_gain": 2.7693839665429474,
+      "predicted_limit": 2.7639531957706835,
+      "ratio": 1.0019648562720143
+    },
+    {
+      "d": 1,
+      "kappa": 3,
+      "lambda": 0.001,
+      "design_center_norm": 0,
+      "design_radius": 0.054772255750516606,
+      "normalized_design_gain": 2.764505009746993,
+      "predicted_limit": 2.7639531957706835,
+      "ratio": 1.0001996466427703
+    },
+    {
+      "d": 1,
+      "kappa": 3,
+      "lambda": 0.0001,
+      "design_center_norm": 0,
+      "design_radius": 0.017320508075688773,
+      "normalized_design_gain": 2.764008465062642,
+      "predicted_limit": 2.7639531957706835,
+      "ratio": 1.0000199964645
+    },
+    {
+      "d": 1,
+      "kappa": 4,
+      "lambda": 0.01,
+      "design_center_norm": 0,
+      "design_radius": 0.2,
+      "normalized_design_gain": 4.259458879984785,
+      "predicted_limit": 4.255384324281948,
+      "ratio": 1.0009575059248084
+    },
+    {
+      "d": 1,
+      "kappa": 4,
+      "lambda": 0.001,
+      "design_center_norm": 0,
+      "design_radius": 0.06324555320336758,
+      "normalized_design_gain": 4.255808040530932,
+      "predicted_limit": 4.255384324281948,
+      "ratio": 1.000099571793449
+    },
+    {
+      "d": 1,
+      "kappa": 4,
+      "lambda": 0.0001,
+      "design_center_norm": 0,
+      "design_radius": 0.02,
+      "normalized_design_gain": 4.25542685988938,
+      "predicted_limit": 4.255384324281948,
+      "ratio": 1.00000999571465
+    },
+    {
+      "d": 2,
+      "kappa": 0,
+      "lambda": 0.01,
+      "design_center_norm": 2,
+      "design_radius": 0.2,
+      "normalized_design_gain": 0.5424219434112374,
+      "predicted_limit": 0.5413411329464508,
+      "ratio": 1.0019965422891548
+    },
+    {
+      "d": 2,
+      "kappa": 0,
+      "lambda": 0.001,
+      "design_center_norm": 2,
+      "design_radius": 0.06324555320336758,
+      "normalized_design_gain": 0.5414532750988753,
+      "predicted_limit": 0.5413411329464508,
+      "ratio": 1.00020715616383
+    },
+    {
+      "d": 2,
+      "kappa": 0,
+      "lambda": 0.0001,
+      "design_center_norm": 2,
+      "design_radius": 0.02,
+      "normalized_design_gain": 0.5413523886450229,
+      "predicted_limit": 0.5413411329464508,
+      "ratio": 1.0000207922470454
+    },
+    {
+      "d": 2,
+      "kappa": 1,
+      "lambda": 0.01,
+      "design_center_norm": 1.7320508075688772,
+      "design_radius": 0.19999999999999998,
+      "normalized_design_gain": 0.8969418378907303,
+      "predicted_limit": 0.8925206405937193,
+      "ratio": 1.0049536079009558
+    },
+    {
+      "d": 2,
+      "kappa": 1,
+      "lambda": 0.001,
+      "design_center_norm": 1.7320508075688772,
+      "design_radius": 0.06324555320336757,
+      "normalized_design_gain": 0.8929686672965197,
+      "predicted_limit": 0.8925206405937193,
+      "ratio": 1.00050197909429
+    },
+    {
+      "d": 2,
+      "kappa": 1,
+      "lambda": 0.0001,
+      "design_center_norm": 1.7320508075688772,
+      "design_radius": 0.019999999999999997,
+      "normalized_design_gain": 0.8925655030773577,
+      "predicted_limit": 0.8925206405937193,
+      "ratio": 1.0000502649256477
+    },
+    {
+      "d": 2,
+      "kappa": 4,
+      "lambda": 0.01,
+      "design_center_norm": 0,
+      "design_radius": 0.2,
+      "normalized_design_gain": 4.012936780527964,
+      "predicted_limit": 4,
+      "ratio": 1.003234195131991
+    },
+    {
+      "d": 2,
+      "kappa": 4,
+      "lambda": 0.001,
+      "design_center_norm": 0,
+      "design_radius": 0.06324555320336758,
+      "normalized_design_gain": 4.001329336798019,
+      "predicted_limit": 4,
+      "ratio": 1.0003323341995047
+    },
+    {
+      "d": 2,
+      "kappa": 4,
+      "lambda": 0.0001,
+      "design_center_norm": 0,
+      "design_radius": 0.02,
+      "normalized_design_gain": 4.000133293336791,
+      "predicted_limit": 4,
+      "ratio": 1.0000333233341978
+    },
+    {
+      "d": 2,
+      "kappa": 5,
+      "lambda": 0.01,
+      "design_center_norm": 0,
+      "design_radius": 0.223606797749979,
+      "normalized_design_gain": 6.259708600845188,
+      "predicted_limit": 6.25,
+      "ratio": 1.00155337613523
+    },
+    {
+      "d": 2,
+      "kappa": 5,
+      "lambda": 0.001,
+      "design_center_norm": 0,
+      "design_radius": 0.07071067811865475,
+      "normalized_design_gain": 6.251034513340545,
+      "predicted_limit": 6.25,
+      "ratio": 1.0001655221344872
+    },
+    {
+      "d": 2,
+      "kappa": 5,
+      "lambda": 0.0001,
+      "design_center_norm": 0,
+      "design_radius": 0.022360679774997897,
+      "normalized_design_gain": 6.25010409506024,
+      "predicted_limit": 6.25,
+      "ratio": 1.0000166552096383
+    },
+    {
+      "d": 3,
+      "kappa": 0,
+      "lambda": 0.01,
+      "design_center_norm": 2.23606797749979,
+      "design_radius": 0.223606797749979,
+      "normalized_design_gain": 0.48701162234737133,
+      "predicted_limit": 0.48816608539754963,
+      "ratio": 0.9976351018952123
+    },
+    {
+      "d": 3,
+      "kappa": 0,
+      "lambda": 0.001,
+      "design_center_norm": 2.23606797749979,
+      "design_radius": 0.07071067811865475,
+      "normalized_design_gain": 0.48803543996700005,
+      "predicted_limit": 0.48816608539754963,
+      "ratio": 0.9997323750369852
+    },
+    {
+      "d": 3,
+      "kappa": 0,
+      "lambda": 0.0001,
+      "design_center_norm": 2.23606797749979,
+      "design_radius": 0.022360679774997897,
+      "normalized_design_gain": 0.48815242977097634,
+      "predicted_limit": 0.48816608539754963,
+      "ratio": 0.9999720266790714
+    },
+    {
+      "d": 3,
+      "kappa": 1,
+      "lambda": 0.01,
+      "design_center_norm": 2,
+      "design_radius": 0.223606797749979,
+      "normalized_design_gain": 0.8042983208783187,
+      "predicted_limit": 0.8048498086293553,
+      "ratio": 0.9993147942074114
+    },
+    {
+      "d": 3,
+      "kappa": 1,
+      "lambda": 0.001,
+      "design_center_norm": 2,
+      "design_radius": 0.07071067811865475,
+      "normalized_design_gain": 0.8047548503564953,
+      "predicted_limit": 0.8048498086293553,
+      "ratio": 0.9998820174002132
+    },
+    {
+      "d": 3,
+      "kappa": 1,
+      "lambda": 0.0001,
+      "design_center_norm": 2,
+      "design_radius": 0.022360679774997897,
+      "normalized_design_gain": 0.8048389540395634,
+      "predicted_limit": 0.8048498086293553,
+      "ratio": 0.9999865135213111
+    },
+    {
+      "d": 3,
+      "kappa": 5,
+      "lambda": 0.01,
+      "design_center_norm": 0,
+      "design_radius": 0.223606797749979,
+      "normalized_design_gain": 5.971430443411424,
+      "predicted_limit": 5.947080387175904,
+      "ratio": 1.0040944555395666
+    },
+    {
+      "d": 3,
+      "kappa": 5,
+      "lambda": 0.001,
+      "design_center_norm": 0,
+      "design_radius": 0.07071067811865475,
+      "normalized_design_gain": 5.949617644275738,
+      "predicted_limit": 5.947080387175904,
+      "ratio": 1.0004266391127492
+    },
+    {
+      "d": 3,
+      "kappa": 5,
+      "lambda": 0.0001,
+      "design_center_norm": 0,
+      "design_radius": 0.022360679774997897,
+      "normalized_design_gain": 5.947335147015049,
+      "predicted_limit": 5.947080387175904,
+      "ratio": 1.000042837799821
+    },
+    {
+      "d": 3,
+      "kappa": 6,
+      "lambda": 0.01,
+      "design_center_norm": 0,
+      "design_radius": 0.2449489742783178,
+      "normalized_design_gain": 9.399289011729593,
+      "predicted_limit": 9.381168228536064,
+      "ratio": 1.001931612646963
+    },
+    {
+      "d": 3,
+      "kappa": 6,
+      "lambda": 0.001,
+      "design_center_norm": 0,
+      "design_radius": 0.07745966692414832,
+      "normalized_design_gain": 9.383158405125162,
+      "predicted_limit": 9.381168228536064,
+      "ratio": 1.0002121459226203
+    },
+    {
+      "d": 3,
+      "kappa": 6,
+      "lambda": 0.0001,
+      "design_center_norm": 0,
+      "design_radius": 0.02449489742783178,
+      "normalized_design_gain": 9.38136905257322,
+      "predicted_limit": 9.381168228536064,
+      "ratio": 1.0000214071459188
+    },
+    {
+      "d": 5,
+      "kappa": 0,
+      "lambda": 0.01,
+      "design_center_norm": 2.6457513110645907,
+      "design_radius": 0.2645751311064591,
+      "normalized_design_gain": 0.41549001269049046,
+      "predicted_limit": 0.416479099232688,
+      "ratio": 0.9976251232198211
+    },
+    {
+      "d": 5,
+      "kappa": 0,
+      "lambda": 0.001,
+      "design_center_norm": 2.6457513110645907,
+      "design_radius": 0.08366600265340755,
+      "normalized_design_gain": 0.4163858751345543,
+      "predicted_limit": 0.416479099232688,
+      "ratio": 0.9997761614008831
+    },
+    {
+      "d": 5,
+      "kappa": 0,
+      "lambda": 0.0001,
+      "design_center_norm": 2.6457513110645907,
+      "design_radius": 0.026457513110645908,
+      "normalized_design_gain": 0.4164698373271685,
+      "predicted_limit": 0.416479099232688,
+      "ratio": 0.9999777614157912
+    },
+    {
+      "d": 5,
+      "kappa": 1,
+      "lambda": 0.01,
+      "design_center_norm": 2.449489742783178,
+      "design_radius": 0.264575131106459,
+      "normalized_design_gain": 0.6858391853004207,
+      "predicted_limit": 0.686657949706962,
+      "ratio": 0.9988076095137458
+    },
+    {
+      "d": 5,
+      "kappa": 1,
+      "lambda": 0.001,
+      "design_center_norm": 2.449489742783178,
+      "design_radius": 0.08366600265340754,
+      "normalized_design_gain": 0.6865810310614389,
+      "predicted_limit": 0.686657949706962,
+      "ratio": 0.9998879811330285
+    },
+    {
+      "d": 5,
+      "kappa": 1,
+      "lambda": 0.0001,
+      "design_center_norm": 2.449489742783178,
+      "design_radius": 0.026457513110645904,
+      "normalized_design_gain": 0.6866503137704544,
+      "predicted_limit": 0.686657949706962,
+      "ratio": 0.9999888795629456
+    },
+    {
+      "d": 5,
+      "kappa": 7,
+      "lambda": 0.01,
+      "design_center_norm": 0,
+      "design_radius": 0.2645751311064591,
+      "normalized_design_gain": 13.862224694074838,
+      "predicted_limit": 13.791893602439528,
+      "ratio": 1.0050994514359413
+    },
+    {
+      "d": 5,
+      "kappa": 7,
+      "lambda": 0.001,
+      "design_center_norm": 0,
+      "design_radius": 0.08366600265340755,
+      "normalized_design_gain": 13.799491879229585,
+      "predicted_limit": 13.791893602439528,
+      "ratio": 1.000550923390876
+    },
+    {
+      "d": 5,
+      "kappa": 7,
+      "lambda": 0.0001,
+      "design_center_norm": 0,
+      "design_radius": 0.026457513110645908,
+      "normalized_design_gain": 13.792659178896285,
+      "predicted_limit": 13.791893602439528,
+      "ratio": 1.0000555091620358
+    },
+    {
+      "d": 5,
+      "kappa": 8,
+      "lambda": 0.01,
+      "design_center_norm": 0,
+      "design_radius": 0.28284271247461906,
+      "normalized_design_gain": 22.059229166810002,
+      "predicted_limit": 22.008766992491527,
+      "ratio": 1.002292821507706
+    },
+    {
+      "d": 5,
+      "kappa": 8,
+      "lambda": 0.001,
+      "design_center_norm": 0,
+      "design_radius": 0.08944271909999159,
+      "normalized_design_gain": 22.014771828976357,
+      "predicted_limit": 22.008766992491527,
+      "ratio": 1.0002728383869428
+    },
+    {
+      "d": 5,
+      "kappa": 8,
+      "lambda": 0.0001,
+      "design_center_norm": 0,
+      "design_radius": 0.028284271247461905,
+      "normalized_design_gain": 22.009377258030106,
+      "predicted_limit": 22.008766992491527,
+      "ratio": 1.0000277282929475
+    }
+  ]
+}
