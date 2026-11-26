@@ -1,0 +1,71 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndexAdjacentLineDifference",
+      "name": "AojGeneralServiceIndexabilityResearchProof2.adjacent_line_difference"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndexServiceMomentShift",
+      "name": "AojGeneralServiceIndexabilityResearchProof2.service_moment_shift"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WaitingQuadraticIncrement",
+      "name": "AojGeneralServiceIndexabilityResearchProof1.waiting_quadratic_increment"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WaitingQuadraticShift",
+      "name": "AojGeneralServiceIndexabilityResearchProof1.waiting_quadratic_shift"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/aoj-general-service-indexability/formalization/IndexAdjacentLineDifference.lean": "1a3b390775b5d075be9f0f4d10c149d8a7da36092a2606e5aebbd53f2d622499",
+    "papers/aoj-general-service-indexability/formalization/IndexServiceMomentShift.lean": "fef0513d8bd74a7f2a6542ed5350425bd9d3965209551600a52322c21d96420f",
+    "papers/aoj-general-service-indexability/formalization/WaitingQuadraticIncrement.lean": "1d156dd5af1cb11fa986a9005e07de969660c487854fbf117d2e1cead01a9e7f",
+    "papers/aoj-general-service-indexability/formalization/WaitingQuadraticShift.lean": "01e7fca5788443855c3cf027e285c385c2931130d5b9e5bffe149fe784907e30"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "67684570eddc2d0519d1e16b8a3b06df5eafc08df751f983176abd206f80d5ca",
+  "paper_path": "papers/aoj-general-service-indexability/paper.en.md"
+}

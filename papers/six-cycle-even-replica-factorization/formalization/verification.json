@@ -1,0 +1,50 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenReplicaIncrement",
+      "name": "SixCycleEvenReplicaFactorization.difference_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenReplicaIncrement",
+      "name": "SixCycleEvenReplicaFactorization.num_pos"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/six-cycle-even-replica-factorization/formalization/EvenReplicaIncrement.lean": "0d09cffd325ee3ef3c5cbd42305f36940aa257e887f657b965000020f8221866"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "6f20bf4f995a754bf4d41a13587abd5632bb38a6ce949be3f8b963e08b8437a0",
+  "paper_path": "papers/six-cycle-even-replica-factorization/paper.zh.md"
+}

@@ -1,0 +1,30 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+    "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+    "Qq": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+    "aesop": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+    "batteries": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+    "importGraph": "d768126816be17600904726ca7976b185786e6b9",
+    "mathlib": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+    "plausible": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+    "proofwidgets": "556caed0eadb7901e068131d1be208dd907d07a2"
+  },
+  "file_sha256": {
+    "papers/efx-four-agents-eight-goods/formalization/EFX.lean": "023fe13d25510180a5c4897e09679e498f0a601fa2b71cdb79dc4cdf1f2ec9f4",
+    "papers/efx-four-agents-eight-goods/formalization/EFX/D2.lean": "461e843f9a599b8de9aebd854625e1557fc45dd5b15276c47ff0e98d076cf2a2",
+    "papers/efx-four-agents-eight-goods/formalization/EFX/FiniteInsertion.lean": "b7146ca43e2e923e9a38d76ea8ba21a46cbaf16fb9e53c64089669686ce50333",
+    "papers/efx-four-agents-eight-goods/formalization/EFX/InsertionAC.lean": "8cce0351631a789a385abfd640cca45223a347045ea47523c4f1cc1905f44733",
+    "papers/efx-four-agents-eight-goods/formalization/EFX/InsertionB.lean": "9707c6e4dfcf56806672941e9e9296da5c1d15111ea1d0ef72332743711fc7e1",
+    "papers/efx-four-agents-eight-goods/formalization/EFX/ThreeAgentReduction.lean": "ad248f89b51c63cfaecfd89e1636bff59874c42ce3e7ce2ba4dcb8150cdc2a4c"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.24.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "0435a92c7990d8e5056cd65d41e9b738bae50bf396f1c97987bd9f180a623485",
+  "paper_path": "papers/efx-four-agents-eight-goods/paper.zh.md",
+  "verification_status": "source_snapshot"
+}

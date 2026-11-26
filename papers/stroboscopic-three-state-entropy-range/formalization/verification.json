@@ -1,0 +1,26 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/stroboscopic-three-state-entropy-range/formalization/ThreeStateGeneratorDeterminant.lean": "bc95011cf9d2f6b56fcdfa4f0f49c1d31b5da1f546e969f0f3cd852709b41f64",
+    "papers/stroboscopic-three-state-entropy-range/formalization/ThreeStateRateStrictCone.lean": "98e2a93b7c3556fdb60ad9000ae5cdc30942c4062dca23fc9df164909532a875"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "44d153202a715dcb1b7cd172bfab3b3497830d38a25dce77d0cbc9b86c3fe746",
+  "paper_path": "papers/stroboscopic-three-state-entropy-range/paper.en.md",
+  "verification_status": "source_snapshot"
+}

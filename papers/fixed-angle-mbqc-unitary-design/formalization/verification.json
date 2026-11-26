@@ -1,0 +1,27 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/fixed-angle-mbqc-unitary-design/formalization/DesignNegativeRotation.lean": "9f1e638dc0aed73735ecc8f4309229844d1efbd71f13f384804d653cccfc1643",
+    "papers/fixed-angle-mbqc-unitary-design/formalization/DesignPositiveRotation.lean": "d9ed0d3ad2ad83ad68e9956e626b888f6d3b337f16f50f05ec0dbac5ec12202c",
+    "papers/fixed-angle-mbqc-unitary-design/formalization/DesignTwoWireCounts.lean": "6d923585c3c8957a71b35adb238fffd8c5077e501e91ddd40ccc64bfea280982"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "8e9ed6a3cde9b074c9206ae6336eff53fa1d5fdc2ffa2deda77ac0db5b494f8e",
+  "paper_path": "papers/fixed-angle-mbqc-unitary-design/paper.zh.md",
+  "verification_status": "source_snapshot"
+}

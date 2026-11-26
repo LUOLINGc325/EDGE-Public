@@ -1,0 +1,30 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/prophet-secretary-stockout/formalization/NewtonPoissonTransfer.lean": "d2315314adf5711501f2370133ea4675d97f2af62be8c464f9d926b6b52a9b05",
+    "papers/prophet-secretary-stockout/formalization/PoissonNeighborV2.lean": "99d59b9f52760d4ca085df92fef0819621b34cfd4a9bbd9ef319630b13916553",
+    "papers/prophet-secretary-stockout/formalization/PoissonNormalization.lean": "9ca01f2ad5dfbe146a10f57df3241b6638c14aa24574f5db9bfb2ad549a7bf41",
+    "papers/prophet-secretary-stockout/formalization/PoissonStrictNeighborConcavity.lean": "e1de88e65ba5b7db8c76eb038f6d35ff009b00febe5184dc22f0eb23286f0e00",
+    "papers/prophet-secretary-stockout/formalization/StockoutCrossing.lean": "583163f75f2bc7296602d29c76def985bbb5cbd8ef708f9bf19efd8ae504bdc6",
+    "papers/prophet-secretary-stockout/formalization/StockoutLayerCake.lean": "06868cae3c2e356b86a29c57f1b163bd156437766661017afc4e5e60682034b4"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "30319993c63ddeca1ae8ab59b8bcf4fb7ea209d11d82869bbd232684ec939571",
+  "paper_path": "papers/prophet-secretary-stockout/paper.en.md",
+  "verification_status": "source_snapshot"
+}

@@ -1,0 +1,25 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+    "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+    "Qq": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+    "aesop": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+    "batteries": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+    "importGraph": "d768126816be17600904726ca7976b185786e6b9",
+    "mathlib": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+    "plausible": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+    "proofwidgets": "556caed0eadb7901e068131d1be208dd907d07a2"
+  },
+  "file_sha256": {
+    "papers/ordinal-causal-benefit-sharp-bounds/formalization/PrefixSaturation.lean": "fcd0793c04faed168a2ff9c6e6af05c923a2b382f42ba24a2482956cdce18419"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.24.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "66e8d14064e74cae8bdc38ba194dca53c05e85bc778c5a32c30fb7c3b527f48c",
+  "paper_path": "papers/ordinal-causal-benefit-sharp-bounds/paper.en.md",
+  "verification_status": "source_snapshot"
+}

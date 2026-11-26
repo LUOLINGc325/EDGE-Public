@@ -1,0 +1,58 @@
+{
+  "unlabeled_partitions": 1701,
+  "nonempty_labeled_allocations": 40824,
+  "all_labeled_allocations": 65536,
+  "by_shape": [
+    {
+      "sizes": [
+        1,
+        1,
+        1,
+        5
+      ],
+      "unlabeled": 56,
+      "labeled": 1344
+    },
+    {
+      "sizes": [
+        1,
+        1,
+        2,
+        4
+      ],
+      "unlabeled": 420,
+      "labeled": 10080
+    },
+    {
+      "sizes": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "unlabeled": 280,
+      "labeled": 6720
+    },
+    {
+      "sizes": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "unlabeled": 840,
+      "labeled": 20160
+    },
+    {
+      "sizes": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "unlabeled": 105,
+      "labeled": 2520
+    }
+  ],
+  "subsets_size_at_most_four": 163
+}

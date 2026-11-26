@@ -1,0 +1,31 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/gaffke-delta-sharp-bound/formalization/GaffkeCompressionGapOrder.lean": "204a2613bf69913f3d87fc1f46ffbab4edd9a538c14381d5d758644b9bd33670",
+    "papers/gaffke-delta-sharp-bound/formalization/GaffkeCompressionLaplaceProduct.lean": "d0619f2b7063fd5e78dd2d59e5b7c01fa2fdfb1e74a5129480cd69f61245a8de",
+    "papers/gaffke-delta-sharp-bound/formalization/GaffkeDeletionExponentOrder.lean": "2fbba2cd94d133becce737543ec1a856d20d99ba137a507ac8d4817cacfa6917",
+    "papers/gaffke-delta-sharp-bound/formalization/GaffkeDeletionPositiveGap.lean": "516c88e9ce4f0db8a749a58a514c0711fbf57156b98cae1e7a2182c9bd694290",
+    "papers/gaffke-delta-sharp-bound/formalization/GaffkeDeletionPowerComparison.lean": "fa84a94ab15cb63599a72b94e5d85221d826af6ad56df2986116033e33d4f87f",
+    "papers/gaffke-delta-sharp-bound/formalization/GaffkeDeletionRootExtraction.lean": "b6447b636326dc156214dec217c3f59a8287e1b5a3b77c9c407259774e284d44",
+    "papers/gaffke-delta-sharp-bound/formalization/GaffkeLaplaceProductComparison.lean": "5785a38f0210c5fa15515256cdf6132a81c9c07548598bf8c977f4d161293c8a"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "d2fd787e3ad25f2018eaa425a7a0466ab09665da12322f8d643bf2862b6d4e5f",
+  "paper_path": "papers/gaffke-delta-sharp-bound/paper.en.md",
+  "verification_status": "source_snapshot"
+}

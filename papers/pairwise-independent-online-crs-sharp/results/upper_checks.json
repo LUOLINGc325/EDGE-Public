@@ -1,0 +1,430 @@
+{
+  "status": "passed",
+  "arithmetic": "exact rational",
+  "scope": "Finite implementation checks, not a substitute for the general proof.",
+  "small_families": {
+    "instances": 24,
+    "actual_core_event_checks": 13824,
+    "samples": [
+      {
+        "law": "independent_fair",
+        "retention": "1/2",
+        "good_capacity": 2,
+        "bad_capacity": 0,
+        "bad_indices": [],
+        "conditional_selectability": [
+          "27/64",
+          "27/64",
+          "27/64",
+          "27/64"
+        ]
+      },
+      {
+        "law": "independent_fair",
+        "retention": "1/2",
+        "good_capacity": 1,
+        "bad_capacity": 1,
+        "bad_indices": [],
+        "conditional_selectability": [
+          "27/128",
+          "27/128",
+          "27/128",
+          "27/128"
+        ]
+      },
+      {
+        "law": "independent_fair",
+        "retention": "1/2",
+        "good_capacity": 0,
+        "bad_capacity": 2,
+        "bad_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "conditional_selectability": [
+          "27/64",
+          "27/64",
+          "27/64",
+          "27/64"
+        ]
+      },
+      {
+        "law": "independent_fair",
+        "retention": "2/3",
+        "good_capacity": 2,
+        "bad_capacity": 0,
+        "bad_indices": [],
+        "conditional_selectability": [
+          "40/81",
+          "40/81",
+          "40/81",
+          "40/81"
+        ]
+      },
+      {
+        "law": "independent_fair",
+        "retention": "2/3",
+        "good_capacity": 1,
+        "bad_capacity": 1,
+        "bad_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "conditional_selectability": [
+          "16/81",
+          "16/81",
+          "16/81",
+          "16/81"
+        ]
+      },
+      {
+        "law": "independent_fair",
+        "retention": "2/3",
+        "good_capacity": 0,
+        "bad_capacity": 2,
+        "bad_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "conditional_selectability": [
+          "40/81",
+          "40/81",
+          "40/81",
+          "40/81"
+        ]
+      },
+      {
+        "law": "even_parity",
+        "retention": "1/2",
+        "good_capacity": 2,
+        "bad_capacity": 0,
+        "bad_indices": [],
+        "conditional_selectability": [
+          "7/16",
+          "7/16",
+          "7/16",
+          "7/16"
+        ]
+      },
+      {
+        "law": "even_parity",
+        "retention": "1/2",
+        "good_capacity": 1,
+        "bad_capacity": 1,
+        "bad_indices": [],
+        "conditional_selectability": [
+          "13/64",
+          "13/64",
+          "13/64",
+          "13/64"
+        ]
+      },
+      {
+        "law": "even_parity",
+        "retention": "1/2",
+        "good_capacity": 0,
+        "bad_capacity": 2,
+        "bad_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "conditional_selectability": [
+          "7/16",
+          "7/16",
+          "7/16",
+          "7/16"
+        ]
+      },
+      {
+        "law": "even_parity",
+        "retention": "2/3",
+        "good_capacity": 2,
+        "bad_capacity": 0,
+        "bad_indices": [],
+        "conditional_selectability": [
+          "44/81",
+          "44/81",
+          "44/81",
+          "44/81"
+        ]
+      },
+      {
+        "law": "even_parity",
+        "retention": "2/3",
+        "good_capacity": 1,
+        "bad_capacity": 1,
+        "bad_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "conditional_selectability": [
+          "14/81",
+          "14/81",
+          "14/81",
+          "14/81"
+        ]
+      },
+      {
+        "law": "even_parity",
+        "retention": "2/3",
+        "good_capacity": 0,
+        "bad_capacity": 2,
+        "bad_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "conditional_selectability": [
+          "44/81",
+          "44/81",
+          "44/81",
+          "44/81"
+        ]
+      },
+      {
+        "law": "odd_parity",
+        "retention": "1/2",
+        "good_capacity": 2,
+        "bad_capacity": 0,
+        "bad_indices": [],
+        "conditional_selectability": [
+          "13/32",
+          "13/32",
+          "13/32",
+          "13/32"
+        ]
+      },
+      {
+        "law": "odd_parity",
+        "retention": "1/2",
+        "good_capacity": 1,
+        "bad_capacity": 1,
+        "bad_indices": [],
+        "conditional_selectability": [
+          "7/32",
+          "7/32",
+          "7/32",
+          "7/32"
+        ]
+      },
+      {
+        "law": "odd_parity",
+        "retention": "1/2",
+        "good_capacity": 0,
+        "bad_capacity": 2,
+        "bad_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "conditional_selectability": [
+          "13/32",
+          "13/32",
+          "13/32",
+          "13/32"
+        ]
+      },
+      {
+        "law": "odd_parity",
+        "retention": "2/3",
+        "good_capacity": 2,
+        "bad_capacity": 0,
+        "bad_indices": [],
+        "conditional_selectability": [
+          "4/9",
+          "4/9",
+          "4/9",
+          "4/9"
+        ]
+      },
+      {
+        "law": "odd_parity",
+        "retention": "2/3",
+        "good_capacity": 1,
+        "bad_capacity": 1,
+        "bad_indices": [],
+        "conditional_selectability": [
+          "2/9",
+          "2/9",
+          "2/9",
+          "2/9"
+        ]
+      },
+      {
+        "law": "odd_parity",
+        "retention": "2/3",
+        "good_capacity": 0,
+        "bad_capacity": 2,
+        "bad_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "conditional_selectability": [
+          "4/9",
+          "4/9",
+          "4/9",
+          "4/9"
+        ]
+      },
+      {
+        "law": "zero_and_unit_marginals",
+        "retention": "1/2",
+        "good_capacity": 2,
+        "bad_capacity": 0,
+        "bad_indices": [],
+        "conditional_selectability": [
+          "7/16",
+          "7/16",
+          "15/32",
+          null
+        ]
+      },
+      {
+        "law": "zero_and_unit_marginals",
+        "retention": "1/2",
+        "good_capacity": 1,
+        "bad_capacity": 1,
+        "bad_indices": [],
+        "conditional_selectability": [
+          "3/16",
+          "3/16",
+          "9/32",
+          null
+        ]
+      },
+      {
+        "law": "zero_and_unit_marginals",
+        "retention": "1/2",
+        "good_capacity": 0,
+        "bad_capacity": 2,
+        "bad_indices": [
+          0,
+          1,
+          2
+        ],
+        "conditional_selectability": [
+          "7/16",
+          "7/16",
+          "15/32",
+          null
+        ]
+      },
+      {
+        "law": "zero_and_unit_marginals",
+        "retention": "2/3",
+        "good_capacity": 2,
+        "bad_capacity": 0,
+        "bad_indices": [],
+        "conditional_selectability": [
+          "14/27",
+          "14/27",
+          "16/27",
+          null
+        ]
+      },
+      {
+        "law": "zero_and_unit_marginals",
+        "retention": "2/3",
+        "good_capacity": 1,
+        "bad_capacity": 1,
+        "bad_indices": [
+          0,
+          1
+        ],
+        "conditional_selectability": [
+          "4/9",
+          "4/9",
+          "2/3",
+          null
+        ]
+      },
+      {
+        "law": "zero_and_unit_marginals",
+        "retention": "2/3",
+        "good_capacity": 0,
+        "bad_capacity": 2,
+        "bad_indices": [
+          0,
+          1,
+          2
+        ],
+        "conditional_selectability": [
+          "14/27",
+          "14/27",
+          "16/27",
+          null
+        ]
+      }
+    ]
+  },
+  "nontrivial_affine_bad_set": {
+    "prime": 257,
+    "regular_items": 257,
+    "rare_items": 1,
+    "capacity": 129,
+    "regular_marginal": "128/257",
+    "rare_marginal": "1/257",
+    "pairwise_counts_representative_coordinates": [
+      32896,
+      32896,
+      257,
+      16384,
+      128,
+      128
+    ],
+    "retention": "3/5",
+    "delta": "1/5",
+    "good_capacity": 103,
+    "bad_capacity": 26,
+    "bad_set": [
+      "rare item"
+    ],
+    "total_overload_probability": {
+      "exact": "11055523661609146611502188185337408037709586058185170984605926795885641843348059212701430661596181760736106544618612804776618184501721038935909423396718123321241578551637122915959168/5704102968954329730621431541861035912726407080706519491994305905011653200070751447519600990968411650760975882178492391309179292903393032471690872464709087807932519353926181793212890625",
+      "decimal": 0.0019381704225503898
+    },
+    "conditional_overload_regular": {
+      "exact": "17273637153057047103954608314130682639488898841169452884721803817488874055380638714562191850969615371503814927713328603424626758533456221921563542309235329289764258236559430444493/4438990637318544537448584857479405379553624187320248631902183583666656186825487507797354856784756148452121309088320927088855480858671620600537643941407850434188731014728546142578125",
+      "decimal": 0.0038913434526844396
+    },
+    "conditional_overload_rare": {
+      "exact": "2210859150012951876694408079155955062572820107801752779623845868143677344029538983710856080312230136707010235222000837827588335223702473046966877882304133715251934429279607096895104/4438990637318544537448584857479405379553624187320248631902183583666656186825487507797354856784756148452121309088320927088855480858671620600537643941407850434188731014728546142578125",
+      "decimal": 0.49805447468762015
+    },
+    "regular_selectability": {
+      "exact": "530606040019902543530473882873969151011293623683817615304013319384611411899009350576009924980756789963988274524474014677871141483396583248222272757208593899050745345571241525772288/887798127463708907489716971495881075910724837464049726380436716733331237365097501559470971356951229690424261817664185417771096171734324120107528788281570086837746202945709228515625",
+      "decimal": 0.597665193928439
+    },
+    "rare_selectability": "3/5",
+    "proved_formula_lower_bound": "9/25"
+  },
+  "weighted_sufficient_event": {
+    "checks": 192,
+    "necessity_counterexample": {
+      "weights": [
+        "1/10",
+        "3/5",
+        "3/5"
+      ],
+      "capacity": "1",
+      "active_total_weight": "13/10",
+      "distinguished_item": 0,
+      "robust_core_contains_distinguished": true,
+      "interpretation": "Pathwise illustration only, outside the small-d theorem range."
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/ternary-pairwise-moment/formalization/TernaryAffineProductExpansion.lean": "6e08ac674c97f03475f7de2343d77f3e8a2ebbbe981a7f1fe4b62bb6165acc90",
+    "papers/ternary-pairwise-moment/formalization/TernaryBoundaryWitnessGaps.lean": "0ba69a4bde63804c7200f2429e0b15f354bf449142bbb3afe27b90eeae00e093",
+    "papers/ternary-pairwise-moment/formalization/TernaryComplementarySlackness.lean": "94cfda8c3102b4a9da0b701d7b1f83f286cd1d0959130c4b95518f2b33f723a9",
+    "papers/ternary-pairwise-moment/formalization/TernaryPairwiseAffineMoment.lean": "9371ed92797aab70868258ed2c30f09c91f53347306dc4fc84ba9b1d1a3a3882"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "d54cb3e5e90a63109c7e39045f4ff526d8aea4f28657e0cbc8aad08e4f3b3022",
+  "paper_path": "papers/ternary-pairwise-moment/paper.zh.md",
+  "verification_status": "source_snapshot"
+}

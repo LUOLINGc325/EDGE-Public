@@ -1,0 +1,66 @@
+name = "unknown_gap_adaptation_boundary"
+version = "0.1.0"
+defaultTargets = ["AdaptiveGapDyadicLogBoundary", "AdaptiveGapDyadicExponentialRatio", "AdaptiveGapFirstDyadicTerm", "AdaptiveGapDyadicGeometricComparison", "AdaptiveGapDyadicFiniteTail", "AdaptiveGapBaselineCycleBound", "AdaptiveGapCycleOddsComparison", "AdaptiveGapDyadicInfiniteTail", "AdaptiveGapBoundedOvershoot", "AdaptiveGapBaselineBudgetEquality", "AdaptiveGapHalfTailAdaptation", "AdaptiveGapDyadicRatioBelowOne", "AdaptiveGapDyadicTailScaling", "AdaptiveGapGaussianExponentRatio", "AdaptiveGapGaussianCompleteSquare", "AdaptiveGapGaussianNumericOvershoot", "AdaptiveGapTruncatedOvershootSum", "AdaptiveGapGaussianBudgetEquality", "AdaptiveGapGaussianExponentBudget"]
+moreLeanArgs = ["-j1", "-DElab.async=false"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "AdaptiveGapDyadicLogBoundary"
+
+[[lean_lib]]
+name = "AdaptiveGapDyadicExponentialRatio"
+
+[[lean_lib]]
+name = "AdaptiveGapFirstDyadicTerm"
+
+[[lean_lib]]
+name = "AdaptiveGapDyadicGeometricComparison"
+
+[[lean_lib]]
+name = "AdaptiveGapDyadicFiniteTail"
+
+[[lean_lib]]
+name = "AdaptiveGapBaselineCycleBound"
+
+[[lean_lib]]
+name = "AdaptiveGapCycleOddsComparison"
+
+[[lean_lib]]
+name = "AdaptiveGapDyadicInfiniteTail"
+
+[[lean_lib]]
+name = "AdaptiveGapBoundedOvershoot"
+
+[[lean_lib]]
+name = "AdaptiveGapBaselineBudgetEquality"
+
+[[lean_lib]]
+name = "AdaptiveGapHalfTailAdaptation"
+
+[[lean_lib]]
+name = "AdaptiveGapDyadicRatioBelowOne"
+
+[[lean_lib]]
+name = "AdaptiveGapDyadicTailScaling"
+
+[[lean_lib]]
+name = "AdaptiveGapGaussianExponentRatio"
+
+[[lean_lib]]
+name = "AdaptiveGapGaussianCompleteSquare"
+
+[[lean_lib]]
+name = "AdaptiveGapGaussianNumericOvershoot"
+
+[[lean_lib]]
+name = "AdaptiveGapTruncatedOvershootSum"
+
+[[lean_lib]]
+name = "AdaptiveGapGaussianBudgetEquality"
+
+[[lean_lib]]
+name = "AdaptiveGapGaussianExponentBudget"

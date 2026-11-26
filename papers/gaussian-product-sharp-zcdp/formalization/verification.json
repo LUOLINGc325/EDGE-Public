@@ -1,0 +1,93 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ForwardEnvelopeMonotone",
+      "name": "GaussianProductSharpZcdpResearchProof1.forward_envelope_antitone"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaussianProductSimplification",
+      "name": "GaussianProductAllOrders.F"
+    },
+    {
+      "axioms": [],
+      "module": "GaussianProductSimplification",
+      "name": "GaussianProductAllOrders.F._proof_2"
+    },
+    {
+      "axioms": [],
+      "module": "GaussianProductSimplification",
+      "name": "GaussianProductAllOrders.F._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaussianProductSimplification",
+      "name": "GaussianProductAllOrders.G"
+    },
+    {
+      "axioms": [],
+      "module": "GaussianProductSimplification",
+      "name": "GaussianProductAllOrders.G._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaussianProductSimplification",
+      "name": "GaussianProductAllOrders.G_eq_F"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaussianProductSimplification",
+      "name": "GaussianProductAllOrders.simplified_form"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/gaussian-product-sharp-zcdp/formalization/ForwardEnvelopeMonotone.lean": "a60c0aaca751ed6d75a50b2937c49a51f1ef9b29b20ff1f9cd0c6f4d8e5cf759",
+    "papers/gaussian-product-sharp-zcdp/formalization/GaussianProductSimplification.lean": "c4f41a57d1b8455710fd66c569ce18882df79395dc6d3f36f1a29e1e9f93f6c2"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "f193fd8ea7960e4e3f4a5f76ced66dd2a49cf0d5ee90472806f609a1ec46d05a",
+  "paper_path": "papers/gaussian-product-sharp-zcdp/paper.en.md"
+}

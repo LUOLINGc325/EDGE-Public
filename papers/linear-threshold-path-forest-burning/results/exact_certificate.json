@@ -1,0 +1,7 @@
+{
+  "seed": 20261125,
+  "square_partitions": 199,
+  "nonsquare_covers": 170,
+  "legal_ignition_sequences": 85,
+  "largest_number_of_paths": 257
+}

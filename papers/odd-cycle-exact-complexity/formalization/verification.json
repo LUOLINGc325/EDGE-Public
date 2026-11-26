@@ -1,0 +1,69 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteOddPairNormalization",
+      "name": "OddCyclePauliProductLaw.per_sign_normalized_product_term_abs"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteOddPairNormalization",
+      "name": "_private.FiniteOddPairNormalization.0.OddCyclePauliProductLaw.halfProduct"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddFiniteComplementParity",
+      "name": "OddCyclePauliProductLaw.card_parity_add_compl_parity_eq_one"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddFiniteComplementParity",
+      "name": "OddCyclePauliProductLaw.card_parity_add_compl_parity_eq_one._proof_1"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/odd-cycle-exact-complexity/formalization/FiniteOddPairNormalization.lean": "815f3111549e664691ea6d2f4fb2131696a14ca480eb270f6ca2c71001c4b4fd",
+    "papers/odd-cycle-exact-complexity/formalization/OddFiniteComplementParity.lean": "c89f9f91d48705e58d63d43c3830b0bdf1536404c6f0b62ef75a453b7521e438"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "41b265018fed8dee1db50e571f553b049960e52159b12caadb951194c116a7f1",
+  "paper_path": "papers/odd-cycle-exact-complexity/paper.en.md"
+}

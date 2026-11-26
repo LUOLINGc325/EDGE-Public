@@ -1,0 +1,24 @@
+name = "reversible_environment_weak_response"
+version = "0.1.0"
+defaultTargets = ["ModeDiscriminant", "AdjointCancellation", "AdjointInverseCongruence", "NormalModeAnalysis", "MarkovResolventSignCriterion"]
+moreLeanArgs = ["-j1", "-DElab.async=false"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "ModeDiscriminant"
+
+[[lean_lib]]
+name = "AdjointCancellation"
+
+[[lean_lib]]
+name = "AdjointInverseCongruence"
+
+[[lean_lib]]
+name = "NormalModeAnalysis"
+
+[[lean_lib]]
+name = "MarkovResolventSignCriterion"

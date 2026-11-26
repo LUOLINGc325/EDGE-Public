@@ -1,0 +1,60 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SharpEdgeRigidity",
+      "name": "PolygonRigidityStability.individual_edge_rigidity"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TightChainDefect",
+      "name": "PolygonRigidityStability.exact_closing_eq"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TightChainDefect",
+      "name": "PolygonRigidityStability.scalar_triangle_defect"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/minimizer-rigidity-stability/formalization/SharpEdgeRigidity.lean": "b451e504b07b9d0fcc83b5f359c11db664b0e93ae0cb43537889851c2cd8560a",
+    "papers/minimizer-rigidity-stability/formalization/TightChainDefect.lean": "67b1091c074e26eef3812e80fb840f27e34b8c2d901823d0e829a6e29eb2fa18"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "b4b286d3f55e9836165050de73b68b09e83ba54840cea8e82bf41f605b5a92df",
+  "paper_path": "papers/minimizer-rigidity-stability/paper.en.md"
+}

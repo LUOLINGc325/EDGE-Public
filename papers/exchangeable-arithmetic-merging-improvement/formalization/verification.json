@@ -1,0 +1,61 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ArithmeticMergeExclusiveOrdering",
+      "name": "ExchangeableArithmeticMergingImprovementResearchProof1.exclusive_extra_ordering"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ArithmeticMergeExtraBudget",
+      "name": "ExchangeableArithmeticMergingImprovementResearchProof1.extra_ordering_budget"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ArithmeticMergeTwoHighOrbit",
+      "name": "ExchangeableArithmeticMergingImprovementResearchProof1.two_high_orbit_budget"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/exchangeable-arithmetic-merging-improvement/formalization/ArithmeticMergeExclusiveOrdering.lean": "e2d873c18e97fb01ffa4ba0dd7f8aba6425d09ed4c3a7f3d733879b2f071133f",
+    "papers/exchangeable-arithmetic-merging-improvement/formalization/ArithmeticMergeExtraBudget.lean": "f0127b75fda0400f69bfdbfa762f3e77f2114999ba6bd356cfdcb661a419ab8c",
+    "papers/exchangeable-arithmetic-merging-improvement/formalization/ArithmeticMergeTwoHighOrbit.lean": "faf9677a933ddc61ea69a217ff02ebc81f3c253f3cbb954ed9d84fa4e0bd7477"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "d5647fe2f1affeefce58a2f81dc0e9f877f571ee1ba5ce0391448e837adbada0",
+  "paper_path": "papers/exchangeable-arithmetic-merging-improvement/paper.zh.md"
+}

@@ -1,0 +1,43 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapBaselineBudgetEquality.lean": "e053c8cb429cfd888d798c8dffad6512f8dbbd48a51f5e5f0e089f398ea00c59",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapBaselineCycleBound.lean": "b160571f4e393f389dd36f279bf521a72ca4591b2c7c645912406d66ac60d51f",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapBoundedOvershoot.lean": "79ac867b4cbe48bb16f29d1ac1ef0c25da60ba2c214998ef97fcf347e9b4ee1c",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapCycleOddsComparison.lean": "dfe7712ccd01c44ef27067a44b0e4d235e1bf9c494191ab97ef01a442893b070",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapDyadicExponentialRatio.lean": "f8b427954fc14cfd575a792d5d5216c635ea11b83ea6c3a2bccdda6f88042cbf",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapDyadicFiniteTail.lean": "f5e3264066d0c18e454e03782819a62559670d436c70fa6e60fa1dcd96f44236",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapDyadicGeometricComparison.lean": "e6dad38366b8e9f05f72cefa30975a2fde7131777e7a98204a3f10f1e4287e72",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapDyadicInfiniteTail.lean": "18bf2b1e89512c3d700717c9318e5880d4c35dfd998b737ae72f3aaa570d61fc",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapDyadicLogBoundary.lean": "349a637a0665338ed36df096ee539532c0155e6ce7ab363e2a98ae69e79775bc",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapDyadicRatioBelowOne.lean": "93a4504167c27e1c3bafcfe684bb86d5f85149be2ded93117d19e747d5c5ebd3",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapDyadicTailScaling.lean": "986a57eba7988f1ddece9f7b6a19e8406f95789ade08702b963210fbe7277a51",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapFirstDyadicTerm.lean": "47e52c90b89a2c9a288b0be517e499b499c52151fee93cfb71e5e781d8e37333",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapGaussianBudgetEquality.lean": "5c9b58d776910eed5f764dfaaf35d2de43b350c43a49e60e300387c8d9dd2c0d",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapGaussianCompleteSquare.lean": "d5550935627aa7da9e2fad18995eba04f17d9e7a70c46c4e06a1e226dd765dbb",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapGaussianExponentBudget.lean": "b96ec9c2160306a0f4fd7d427652b40b4c91e86ecc0372f68f1e3bc4cfbf7f08",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapGaussianExponentRatio.lean": "12cc366492f7aff754e006188013e18bf40a37a7c8478c72c6cebe76623e6b8b",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapGaussianNumericOvershoot.lean": "b112d61ea54e5cbb57124eb181f1aa2e01d833ca8a25d0abdf4c14af3ba08775",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapHalfTailAdaptation.lean": "62966831e7bb200245c100d63beba8e0e102c1bbea1ceaaed438e96d451c024e",
+    "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapTruncatedOvershootSum.lean": "eb33d7b9249d8b3fa175c7926f2d4fa48120e61b86be2f6b7540ea8406cab61b"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "e9d8a6a4b075e17c2e973275e5ca2d4c0346ccf044df65ecb4d6129b2c0ba528",
+  "paper_path": "papers/unknown-gap-adaptation-boundary/paper.en.md",
+  "verification_status": "source_snapshot"
+}

@@ -1,0 +1,29 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/reversible-environment-weak-response/formalization/AdjointCancellation.lean": "ad7c62fe08c86a6af1ba1f59156dffbfa8e0d62e87402d5cd1f2fa0b04215d12",
+    "papers/reversible-environment-weak-response/formalization/AdjointInverseCongruence.lean": "564d8e1c8b8303ceb4ed04463d422fbbee53aac8fb2ec406b11f06a416a8b91e",
+    "papers/reversible-environment-weak-response/formalization/MarkovResolventSignCriterion.lean": "5e431b3fece6ffe80376a6f63713346bd4f4894e69a82b1b3543f3f20edb19bf",
+    "papers/reversible-environment-weak-response/formalization/ModeDiscriminant.lean": "70a8b923ab2d366ac7ae16ae91a3afcea99e0e1bb9b688c4fae9d862418190a4",
+    "papers/reversible-environment-weak-response/formalization/NormalModeAnalysis.lean": "5ca6624762e658949fd1ec09b8e6ffb98e2196104c24a124d0d198bb6168db68"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "79719e3ff9a577b6e3686eaed1497fbe15a3a65be31a51a9f6d57d8592927161",
+  "paper_path": "papers/reversible-environment-weak-response/paper.en.md",
+  "verification_status": "source_snapshot"
+}

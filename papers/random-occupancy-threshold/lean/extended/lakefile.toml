@@ -1,0 +1,228 @@
+name = "sharp_random_efx_occupancy"
+version = "0.1.0"
+defaultTargets = [
+  "BinPowerApproximation",
+  "BinVarianceApproximation",
+  "ColorSupplyProbability",
+  "ColorSupplyTail",
+  "CriticalGapEstimates",
+  "CriticalRatioNumerics",
+  "DeterministicReservations",
+  "DyadicWindowCount",
+  "ExactProtectedOptimum",
+  "FallbackAllocation",
+  "FeasibilityIndependentBlocks",
+  "FiniteBoundedDifferences",
+  "GreedyColorReservations",
+  "HalfColorOccupancy",
+  "IndependentCoordinateGroups",
+  "LatticeConfinement",
+  "LatticeCorrection",
+  "LatticeLimitAttainment",
+  "LatticeScale",
+  "MeanScreening",
+  "OccupancyCurve",
+  "OccupancyFourthMoment",
+  "OccupancyLowerThreshold",
+  "OccupancyParity",
+  "OccupancySensitivity",
+  "OccupancyUpperGap",
+  "OccupancyUpperThreshold",
+  "OccupancyVariance",
+  "OccupancyVarianceLower",
+  "OddBinIdentity",
+  "OddRepresentatives",
+  "OneSidedMomentBound",
+  "OrderedPairPlacement",
+  "OwnerOccupancyLaw",
+  "OwnerSetUnion",
+  "PhaseSubsequences",
+  "ProjectionProbability",
+  "ProtectedAllocation",
+  "ProtectedColorEFX",
+  "RoundRobinAllocation",
+  "ScreenedAllocation",
+  "ScreenedAllocationProbability",
+  "ScreenedGroupSelection",
+  "ScreenedReservations",
+  "ScreeningArithmetic",
+  "SecondOrderParityPowers",
+  "SharpRandomThreshold",
+  "ThinTransition",
+  "ThinTransitionScale",
+  "ThinTransitionSubsequence",
+  "TransitionWindowDensity",
+  "TransitionWindowGeometry",
+  "UniformMeanMeasure",
+]
+moreLeanArgs = ["-j1"]
+
+[[lean_lib]]
+name = "BinPowerApproximation"
+
+[[lean_lib]]
+name = "BinVarianceApproximation"
+
+[[lean_lib]]
+name = "ColorSupplyProbability"
+
+[[lean_lib]]
+name = "ColorSupplyTail"
+
+[[lean_lib]]
+name = "CriticalGapEstimates"
+
+[[lean_lib]]
+name = "CriticalRatioNumerics"
+
+[[lean_lib]]
+name = "DeterministicReservations"
+
+[[lean_lib]]
+name = "DyadicWindowCount"
+
+[[lean_lib]]
+name = "ExactProtectedOptimum"
+
+[[lean_lib]]
+name = "FallbackAllocation"
+
+[[lean_lib]]
+name = "FeasibilityIndependentBlocks"
+
+[[lean_lib]]
+name = "FiniteBoundedDifferences"
+
+[[lean_lib]]
+name = "GreedyColorReservations"
+
+[[lean_lib]]
+name = "HalfColorOccupancy"
+
+[[lean_lib]]
+name = "IndependentCoordinateGroups"
+
+[[lean_lib]]
+name = "LatticeConfinement"
+
+[[lean_lib]]
+name = "LatticeCorrection"
+
+[[lean_lib]]
+name = "LatticeLimitAttainment"
+
+[[lean_lib]]
+name = "LatticeScale"
+
+[[lean_lib]]
+name = "MeanScreening"
+
+[[lean_lib]]
+name = "OccupancyCurve"
+
+[[lean_lib]]
+name = "OccupancyFourthMoment"
+
+[[lean_lib]]
+name = "OccupancyLowerThreshold"
+
+[[lean_lib]]
+name = "OccupancyParity"
+
+[[lean_lib]]
+name = "OccupancySensitivity"
+
+[[lean_lib]]
+name = "OccupancyUpperGap"
+
+[[lean_lib]]
+name = "OccupancyUpperThreshold"
+
+[[lean_lib]]
+name = "OccupancyVariance"
+
+[[lean_lib]]
+name = "OccupancyVarianceLower"
+
+[[lean_lib]]
+name = "OddBinIdentity"
+
+[[lean_lib]]
+name = "OddRepresentatives"
+
+[[lean_lib]]
+name = "OneSidedMomentBound"
+
+[[lean_lib]]
+name = "OrderedPairPlacement"
+
+[[lean_lib]]
+name = "OwnerOccupancyLaw"
+
+[[lean_lib]]
+name = "OwnerSetUnion"
+
+[[lean_lib]]
+name = "PhaseSubsequences"
+
+[[lean_lib]]
+name = "ProjectionProbability"
+
+[[lean_lib]]
+name = "ProtectedAllocation"
+
+[[lean_lib]]
+name = "ProtectedColorEFX"
+
+[[lean_lib]]
+name = "RoundRobinAllocation"
+
+[[lean_lib]]
+name = "ScreenedAllocation"
+
+[[lean_lib]]
+name = "ScreenedAllocationProbability"
+
+[[lean_lib]]
+name = "ScreenedGroupSelection"
+
+[[lean_lib]]
+name = "ScreenedReservations"
+
+[[lean_lib]]
+name = "ScreeningArithmetic"
+
+[[lean_lib]]
+name = "SecondOrderParityPowers"
+
+[[lean_lib]]
+name = "SharpRandomThreshold"
+
+[[lean_lib]]
+name = "ThinTransition"
+
+[[lean_lib]]
+name = "ThinTransitionScale"
+
+[[lean_lib]]
+name = "ThinTransitionSubsequence"
+
+[[lean_lib]]
+name = "TransitionWindowDensity"
+
+[[lean_lib]]
+name = "TransitionWindowGeometry"
+
+[[lean_lib]]
+name = "UniformMeanMeasure"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "f897ebcf72cd16f89ab4577d0c826cd14afaafc7"
+
+[[require]]
+name = "two_color_nullity"
+git = "https://github.com/LUOLINGc325/EDGE-Public"
+rev = "d95930a969d7df25b2c9c094a63b6cc92714d770"
+subDir = "papers/efx-binary-partition-nullity/formalization"

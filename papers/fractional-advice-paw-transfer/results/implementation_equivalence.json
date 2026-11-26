@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "runs": 9015,
+  "subarrival_comparisons": 109551,
+  "row_comparisons": 46191,
+  "seed": 20261126,
+  "arithmetic": "exact fractions; no floating tolerance",
+  "implementation_sha256": "5e6861b08e5da098d245af3e7f2a5cd0bb26c1dad4164d6aee00e3e2fd465376",
+  "coverage": [
+    "all original-edge row outputs",
+    "all subarrival aggregate loads",
+    "empty neighborhoods",
+    "zero remainder",
+    "repeated advice to same original vertex",
+    "advice to previously loaded residual",
+    "fully advised capacity",
+    "lambda endpoints"
+  ]
+}

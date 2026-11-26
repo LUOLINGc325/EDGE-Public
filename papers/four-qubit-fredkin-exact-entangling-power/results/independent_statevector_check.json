@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "evidence_scope": "Finite floating-point checks only; not a proof of a universal bound.",
+  "method": "Full 256-amplitude permutation followed by partial traces; independent of polynomial certificate code.",
+  "numpy_version": "2.3.5",
+  "seed": 20261124,
+  "tolerance": 2e-10,
+  "commuting_boundary_and_stationary_cases": 144,
+  "random_complex_four_party_with_ancilla_cases": 128,
+  "maximum_commuting_spectrum_error": 5.551115123125783e-16,
+  "maximum_twirled_spectrum_error": 1.2212453270876722e-15,
+  "minimum_twirl_entropy_gain": 7.770699470177611e-05,
+  "maximum_twirl_entropy_gain": 0.4538113573593784,
+  "prior_counterexample_source": "https://www.trureturing.org/the four-qubit Fredkin-gate derivation in the manuscript/",
+  "prior_counterexample_spectrum_error": 1.6653345369377348e-16,
+  "prior_counterexample_entropy_bits": 2.0003442154411326,
+  "original_baseline_entropy_bits": 2.0,
+  "fixed_half_controls_pure_opposite_targets_entropy_bits": 1.223813944146201,
+  "fixed_half_controls_mixed_targets_entropy_bits": 1.127225787632998,
+  "candidate_root_z": 0.034343152775026684,
+  "candidate_control_probability": 0.9819392163298091,
+  "candidate_optimum_spectrum_error": 1.942890293094024e-16,
+  "candidate_optimum_entropy_bits": 2.000521860156306,
+  "noncrossed_cut_maxima_in_random_sample": {
+    "A": 0.8416404716915977,
+    "B": 0.8577236681042983,
+    "C": 1.454365275116036,
+    "D": 1.3431168930273774,
+    "AB": 0.9455591421666665
+  }
+}

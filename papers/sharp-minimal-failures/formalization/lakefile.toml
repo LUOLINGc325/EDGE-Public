@@ -1,0 +1,21 @@
+name = "sharp_minimal_failures"
+version = "0.1.0"
+defaultTargets = ["SwapU36ActualTripleLaw", "SwapPairExplicitNoSums", "U25OneStepExact", "SwapMarginalsKernelFixed"]
+moreLeanArgs = ["-j1", "-DElab.async=false"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "SwapU36ActualTripleLaw"
+
+[[lean_lib]]
+name = "SwapPairExplicitNoSums"
+
+[[lean_lib]]
+name = "U25OneStepExact"
+
+[[lean_lib]]
+name = "SwapMarginalsKernelFixed"

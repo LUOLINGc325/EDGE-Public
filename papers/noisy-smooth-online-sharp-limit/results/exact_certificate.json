@@ -1,0 +1,121 @@
+{
+  "arithmetic": "Python standard-library Fraction, integer exponents; no floating-point acceptance thresholds",
+  "geometry": {
+    "colour_comparisons": 8352,
+    "integer_exponents": [
+      2,
+      3,
+      4,
+      8
+    ],
+    "potential_identities": 17524,
+    "sequence_count": 180,
+    "split_checks": 180,
+    "status": "passed"
+  },
+  "lower_transcript": {
+    "checks": [
+      {
+        "eta": 0,
+        "loss_for_every_p": 1,
+        "target_sign": -1
+      },
+      {
+        "eta": 0,
+        "loss_for_every_p": 1,
+        "target_sign": 1
+      },
+      {
+        "eta": 1,
+        "loss_for_every_p": 3,
+        "target_sign": -1
+      },
+      {
+        "eta": 1,
+        "loss_for_every_p": 3,
+        "target_sign": 1
+      },
+      {
+        "eta": 2,
+        "loss_for_every_p": 5,
+        "target_sign": -1
+      },
+      {
+        "eta": 2,
+        "loss_for_every_p": 5,
+        "target_sign": 1
+      },
+      {
+        "eta": 3,
+        "loss_for_every_p": 7,
+        "target_sign": -1
+      },
+      {
+        "eta": 3,
+        "loss_for_every_p": 7,
+        "target_sign": 1
+      },
+      {
+        "eta": 4,
+        "loss_for_every_p": 9,
+        "target_sign": -1
+      },
+      {
+        "eta": 4,
+        "loss_for_every_p": 9,
+        "target_sign": 1
+      },
+      {
+        "eta": 5,
+        "loss_for_every_p": 11,
+        "target_sign": -1
+      },
+      {
+        "eta": 5,
+        "loss_for_every_p": 11,
+        "target_sign": 1
+      }
+    ],
+    "status": "passed"
+  },
+  "median": {
+    "checked_multisets": 6836,
+    "eta": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "status": "passed"
+  },
+  "online": {
+    "eta": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "largest_checked_loss_over_bound": "4183/6144",
+    "p": 4,
+    "q": 2,
+    "runs": 420,
+    "scored_rounds": 23100,
+    "status": "passed",
+    "targets": 7
+  },
+  "schema": "noisy-smooth-online-sharp-limit/exact-certificate-v1",
+  "scope": "Finite checks of implementation, multiplicities, causal prediction, potential identities and sharpness witnesses. General real-parameter theorem is the written proof, not certified by these checks.",
+  "sharpness": {
+    "exact_equalities": 112,
+    "examples_sha256": "bd257e2f4f1482e4f0fb5b175fa68a687844a31c1c070f0e7149845b2d829fec",
+    "last_example": {
+      "depth": 6,
+      "energy": "44153616548485/8796093022208",
+      "k": 5,
+      "s": 8
+    },
+    "status": "passed"
+  },
+  "status": "passed"
+}

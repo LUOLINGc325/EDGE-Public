@@ -1,0 +1,82 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RenyiSix",
+      "name": "OrderSixSharpErasureResearchProof1.erasureCombine"
+    },
+    {
+      "axioms": [],
+      "module": "RenyiSix",
+      "name": "OrderSixSharpErasureResearchProof1.erasureCombine._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RenyiSix",
+      "name": "OrderSixSharpErasureResearchProof1.erasure_combine_ge_lower"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RenyiSix",
+      "name": "OrderSixSharpErasureResearchProof1.erasure_combine_le_left"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RenyiSix",
+      "name": "OrderSixSharpErasureResearchProof1.erasure_combine_mem"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RenyiSix",
+      "name": "OrderSixSharpErasureResearchProof1.erasure_combine_symmetric"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/order-six-sharp-erasure/formalization/RenyiSix.lean": "e62da97787b2ce2c415bfc4a4cb64c02b4fd2e67d47d7c965fe14ad2328ea777"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "c6ebcbd462f2f6822c888da8b0ea414424fe5d350f799ec6cd8539d0e9885f6d",
+  "paper_path": "papers/order-six-sharp-erasure/paper.en.md"
+}

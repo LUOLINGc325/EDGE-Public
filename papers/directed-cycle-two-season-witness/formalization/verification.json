@@ -1,0 +1,107 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CycleLeftCancellation",
+      "name": "DirectedCycleTwoSeasonWitnessResearchProof1.left_row_cancellation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CycleLeftNormalization",
+      "name": "DirectedCycleTwoSeasonWitnessResearchProof1.normalized_pairing"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UnitFourCycleOverlap",
+      "name": "DirectedCycleTwoSeasonWitness.overlap"
+    },
+    {
+      "axioms": [],
+      "module": "UnitFourCycleOverlap",
+      "name": "DirectedCycleTwoSeasonWitness.overlap._proof_1"
+    },
+    {
+      "axioms": [],
+      "module": "UnitFourCycleOverlap",
+      "name": "DirectedCycleTwoSeasonWitness.overlap._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UnitFourCycleOverlap",
+      "name": "DirectedCycleTwoSeasonWitness.overlap.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UnitFourCycleOverlap",
+      "name": "DirectedCycleTwoSeasonWitness.overlap_gap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UnitFourCycleOverlap",
+      "name": "DirectedCycleTwoSeasonWitness.overlap_gt_one"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UnitFourCycleOverlap",
+      "name": "DirectedCycleTwoSeasonWitness.overlap_two"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/directed-cycle-two-season-witness/formalization/CycleLeftCancellation.lean": "4e8beacdc8bf14a7088af0d6c3e1b6245086073ef655ff00cb2a0f42d2f945fd",
+    "papers/directed-cycle-two-season-witness/formalization/CycleLeftNormalization.lean": "ff70cf734ef9523a184550fa5c38b802299a4592fee15fc95f4ac27efbcfaaa0",
+    "papers/directed-cycle-two-season-witness/formalization/UnitFourCycleOverlap.lean": "b2c51e9ff8330c82167ee86c28bcd9464a73c8ed2ef537da3dd7f57f4c334169"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "ee2c7e0e3f4a430e1c5e4cf52fe6e2018b42da911cc45df9d959e6298fc4a68e",
+  "paper_path": "papers/directed-cycle-two-season-witness/paper.en.md"
+}

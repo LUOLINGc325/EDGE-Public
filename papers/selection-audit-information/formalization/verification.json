@@ -1,0 +1,30 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/selection-audit-information/formalization/KLOffsetFirstDerivative.lean": "bfcf9df1285db927a77621ea8e946972fa14152b185d3dd8697ba1ac2f3f6cf2",
+    "papers/selection-audit-information/formalization/KLOffsetSecondDerivative.lean": "baa0d66eb52f93705f0f48312e0113b8335755b44ecf7ad580a482408afa16d9",
+    "papers/selection-audit-information/formalization/KLStrictReference.lean": "df4e84d89dda14e58dbf232e9ce55230990fbf4c17886d6691e3f918c8d45ff7",
+    "papers/selection-audit-information/formalization/KLTangentAlternative.lean": "9b56e7527452216fcde5044ae3a6d320d1dfcaf64e0c4ec59e34a46da6daa2b0",
+    "papers/selection-audit-information/formalization/KLTangentNull.lean": "e7de035d6d746ac8efab212b16215adc4f5cc21e6f845adf92e22bb5e4247fdc",
+    "papers/selection-audit-information/formalization/SelectionAuditCurvature.lean": "150a6f625fd6ccdeb6875df109ed2326d9a7643c00624a7445ebed49a3c75e10"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "f35c1b1127702bb4b880ef80728ce59d5f37bb1b0db4b2064ab55e12a988287e",
+  "paper_path": "papers/selection-audit-information/paper.en.md",
+  "verification_status": "source_snapshot"
+}

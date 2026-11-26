@@ -1,0 +1,643 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState._sizeOf_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState._sizeOf_inst"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState.casesOn"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState.mk"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState.mk._flat_ctor"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState.mk.inj"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState.mk.injEq"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState.mk.sizeOf_spec"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState.noConfusion"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState.noConfusionType"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState.rec"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState.recOn"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState.x"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState.y"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.ExchangeState.z"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.expectedX"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.expectedX_eq"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.expectedY"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.expectedY_eq"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.expectedZX"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.expectedZX_eq"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.updateX"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.updateY"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.updateZ"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.updateZ._cstage1"
+    },
+    {
+      "axioms": [],
+      "module": "SwapMarginalsKernelFixed",
+      "name": "SwapRoundingMinimalFailures.updateZ._cstage2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapPairExplicitNoSums",
+      "name": "SwapRoundingMinimalFailures.swap_delta_mean_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapPairExplicitNoSums",
+      "name": "SwapRoundingMinimalFailures.swap_delta_second_moment"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapPairExplicitNoSums",
+      "name": "SwapRoundingMinimalFailures.swap_paired_product_expectation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Coin"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Coin.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Expectation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Expectation.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Ind"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Ind.eq_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Outcome"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Outcome.eq_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Outcome.eq_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Outcome.eq_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Outcome.eq_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Outcome.eq_5"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Outcome.eq_6"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Outcome.eq_7"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Outcome.eq_8"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Outcome.match_1"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36Outcome.match_1._cstage1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36_ambient_mass_one"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36_covariance"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36_mean_one"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36_mean_one._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36_mean_one._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36_mean_one_two_five"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36_mean_one_two_five._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36_mean_one_two_five._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36_mean_two_five"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36_mean_two_five._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36_mean_two_five._proof_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36_outcome_card"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "SwapRoundingMinimalFailures.U36_positive_covariance"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "_private.SwapU36ActualTripleLaw.0.SwapRoundingMinimalFailures.U36Outcome.match_1.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "_private.SwapU36ActualTripleLaw.0.SwapRoundingMinimalFailures.U36Outcome.match_1.eq_2"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "_private.SwapU36ActualTripleLaw.0.SwapRoundingMinimalFailures.U36Outcome.match_1.eq_3"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "_private.SwapU36ActualTripleLaw.0.SwapRoundingMinimalFailures.U36Outcome.match_1.eq_4"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "_private.SwapU36ActualTripleLaw.0.SwapRoundingMinimalFailures.U36Outcome.match_1.eq_5"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "_private.SwapU36ActualTripleLaw.0.SwapRoundingMinimalFailures.U36Outcome.match_1.eq_6"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "_private.SwapU36ActualTripleLaw.0.SwapRoundingMinimalFailures.U36Outcome.match_1.eq_7"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "_private.SwapU36ActualTripleLaw.0.SwapRoundingMinimalFailures.U36Outcome.match_1.eq_8"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "_private.SwapU36ActualTripleLaw.0.SwapRoundingMinimalFailures.U36Outcome.match_1.splitter"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "_private.SwapU36ActualTripleLaw.0.SwapRoundingMinimalFailures.U36Outcome.match_1.splitter._cstage1"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "_private.SwapU36ActualTripleLaw.0.SwapRoundingMinimalFailures.U36Outcome.match_1.splitter._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "SwapU36ActualTripleLaw",
+      "name": "_private.SwapU36ActualTripleLaw.0.SwapRoundingMinimalFailures.U36Outcome.match_1.splitter._rarg._cstage2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "U25OneStepExact",
+      "name": "SwapRoundingMinimalFailures.U25Failure"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "U25OneStepExact",
+      "name": "SwapRoundingMinimalFailures.U25LabelOne"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "U25OneStepExact",
+      "name": "SwapRoundingMinimalFailures.U25_covariance"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "U25OneStepExact",
+      "name": "SwapRoundingMinimalFailures.U25_marginals"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/sharp-minimal-failures/formalization/SwapMarginalsKernelFixed.lean": "5b6ee1a0e38f2bb9d6d23a6b9942ac4887ace440e4e8ef53f72abc3449b63dd3",
+    "papers/sharp-minimal-failures/formalization/SwapPairExplicitNoSums.lean": "557fe8800ba29502aca7024876fccf9cac8b1a87d8eb55e0a48aa9a1317ef050",
+    "papers/sharp-minimal-failures/formalization/SwapU36ActualTripleLaw.lean": "04c9c8f93a5e649995e7948b7179ded1df6351a7bbcace6dfe254a6d13804291",
+    "papers/sharp-minimal-failures/formalization/U25OneStepExact.lean": "5e01742fdb0d2f0a0f2b4731325d644dabc91f08a3fa4372cf17acf94800d8c2"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "eb141f4fb702a63a206b2df9e6767775606dacf93c9d00aadc0af634257cfdfc",
+  "paper_path": "papers/sharp-minimal-failures/paper.en.md"
+}

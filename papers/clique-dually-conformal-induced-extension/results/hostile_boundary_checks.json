@@ -1,0 +1,38 @@
+{
+  "K1": {
+    "original_order": 1,
+    "original_max_cliques": 1,
+    "extension_order": 3,
+    "extension_max_cliques": 2,
+    "minimal_transversals": 2,
+    "dual_max_cliques": 2,
+    "status": "pass"
+  },
+  "two_isolated_vertices": {
+    "original_order": 2,
+    "original_max_cliques": 2,
+    "extension_order": 6,
+    "extension_max_cliques": 4,
+    "minimal_transversals": 4,
+    "dual_max_cliques": 4,
+    "status": "pass"
+  },
+  "K3": {
+    "original_order": 3,
+    "original_max_cliques": 1,
+    "extension_order": 7,
+    "extension_max_cliques": 4,
+    "minimal_transversals": 8,
+    "dual_max_cliques": 8,
+    "status": "pass"
+  },
+  "two_disjoint_triangles": {
+    "original_order": 6,
+    "original_max_cliques": 2,
+    "extension_order": 14,
+    "extension_max_cliques": 8,
+    "minimal_transversals": 64,
+    "dual_max_cliques": 64,
+    "status": "pass"
+  }
+}

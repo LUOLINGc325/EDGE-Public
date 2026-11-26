@@ -1,0 +1,28 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/krr-exact-zcdp/formalization/KrrHyperbolicDenominator.lean": "0497e1739a6c401a76f6df95e5dab5ec9b429d67c32e8c7b36f1a8324b04e2e4",
+    "papers/krr-exact-zcdp/formalization/KrrHyperbolicNumerator.lean": "d8ef73e736e17f58d972ffa4917a4260bab6572633c8fbe06e37e4d0be2aedf3",
+    "papers/krr-exact-zcdp/formalization/KrrSlopeRatioDerivative.lean": "0c5aa18ef945d1e40307b8ee6d866a002491b7111f423ac3c703f2fe4b23f5ce",
+    "papers/krr-exact-zcdp/formalization/KrrStrictDenominator.lean": "3a594732b22b104ee350a630a8b224c0e0cc37e401f1bf337b350761d679819c"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "2db7b6148b5e59685cd1ce151093ca952942f7dcbf4d53f592f6cfd84469304a",
+  "paper_path": "papers/krr-exact-zcdp/paper.en.md",
+  "verification_status": "source_snapshot"
+}

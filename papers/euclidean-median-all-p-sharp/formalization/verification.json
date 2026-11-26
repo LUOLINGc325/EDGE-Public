@@ -1,0 +1,27 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/euclidean-median-all-p-sharp/formalization/MedianDistanceSquare.lean": "8fa7e56725dbb86e96bbe7ffdb24b0909f0d76015375ce477b96b26a9fca547f",
+    "papers/euclidean-median-all-p-sharp/formalization/MedianPowerGap.lean": "cfe217a2c622d133e2b34775fefec8e261c183e64bc90240cb7264c1721da457",
+    "papers/euclidean-median-all-p-sharp/formalization/MedianReverseDistance.lean": "808164ee0b32d51aed4dd94c91f9d676d985ebea39b4ea644b547b240be20534"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "fb9ac5a3e194093834a102b609db3420969e1d05576166dc56a2c94591a4ab59",
+  "paper_path": "papers/euclidean-median-all-p-sharp/paper.en.md",
+  "verification_status": "source_snapshot"
+}

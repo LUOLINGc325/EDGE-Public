@@ -1,0 +1,25 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+    "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+    "Qq": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+    "aesop": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+    "batteries": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+    "importGraph": "d768126816be17600904726ca7976b185786e6b9",
+    "mathlib": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+    "plausible": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+    "proofwidgets": "556caed0eadb7901e068131d1be208dd907d07a2"
+  },
+  "file_sha256": {
+    "papers/replicable-conformal-pilot-ranks/formalization/PilotRanks.lean": "f4e2fa426dbe4dba7f0fbd01fe54729dd97df880ef445167ffce70ac0f103195"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.24.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "4409d87a5df25e20f79ce2f530a50a5252ed3e248c52f9594612c6d930d8be55",
+  "paper_path": "papers/replicable-conformal-pilot-ranks/paper.en.md",
+  "verification_status": "source_snapshot"
+}

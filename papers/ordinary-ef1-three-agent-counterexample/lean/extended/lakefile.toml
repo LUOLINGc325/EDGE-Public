@@ -1,0 +1,31 @@
+name = "ordinary_ef1_full"
+version = "0.1.0"
+defaultTargets = ["Definitions", "Family", "TwoItems", "TwoAgents", "Semantics", "StabilityBounds", "Stability", "Numeric", "AllocationBridge", "Main"]
+moreLeanArgs = ["-j1", "-DElab.async=false"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "Definitions"
+[[lean_lib]]
+name = "Family"
+[[lean_lib]]
+name = "TwoItems"
+[[lean_lib]]
+name = "TwoAgents"
+[[lean_lib]]
+name = "Semantics"
+[[lean_lib]]
+name = "Stability"
+[[lean_lib]]
+name = "Main"
+
+[[lean_lib]]
+name = "StabilityBounds"
+[[lean_lib]]
+name = "Numeric"
+[[lean_lib]]
+name = "AllocationBridge"

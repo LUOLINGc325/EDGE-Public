@@ -1,0 +1,26 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/two-weight-qutrit-sharp-cooling/formalization/QutritAlternatingRunSharp.lean": "7538bd58718ecb77c879a45243c97e938f788257df51edc66d631282b3e49a61",
+    "papers/two-weight-qutrit-sharp-cooling/formalization/QutritCycleCostAttainment.lean": "44545edf96b1ceb378609ac4d4f423b938009d26eb1228874c76158c564635d1"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "bf169c19180a78cd43b2694d25fe5a0ef385e0253790a97582b74dfcead98ca0",
+  "paper_path": "papers/two-weight-qutrit-sharp-cooling/paper.en.md",
+  "verification_status": "source_snapshot"
+}

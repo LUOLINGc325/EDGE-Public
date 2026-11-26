@@ -1,0 +1,45 @@
+name = "record_constrained_prophet_gap"
+version = "0.1.0"
+defaultTargets = ["ProphetLabelMassTelescopes", "ProphetMaximumLabelPositive", "ProphetNormalizedRewardBound", "ProphetPerturbationStrictRatio", "ProphetNormalizedConstantReward", "ProphetBinDeficitExact", "ProphetLastBinFiniteDenominator", "ProphetLastBinRatioComparison", "ProphetBinDeficitConvexity", "ProphetBinBernoulliBound", "ProphetBinBernoulliSum", "ProphetTransferValueChain"]
+moreLeanArgs = ["-j1", "-DElab.async=false"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "ProphetLabelMassTelescopes"
+
+[[lean_lib]]
+name = "ProphetMaximumLabelPositive"
+
+[[lean_lib]]
+name = "ProphetNormalizedRewardBound"
+
+[[lean_lib]]
+name = "ProphetPerturbationStrictRatio"
+
+[[lean_lib]]
+name = "ProphetNormalizedConstantReward"
+
+[[lean_lib]]
+name = "ProphetBinDeficitExact"
+
+[[lean_lib]]
+name = "ProphetLastBinFiniteDenominator"
+
+[[lean_lib]]
+name = "ProphetLastBinRatioComparison"
+
+[[lean_lib]]
+name = "ProphetBinDeficitConvexity"
+
+[[lean_lib]]
+name = "ProphetBinBernoulliBound"
+
+[[lean_lib]]
+name = "ProphetBinBernoulliSum"
+
+[[lean_lib]]
+name = "ProphetTransferValueChain"

@@ -1,0 +1,36 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/record-constrained-prophet-gap/formalization/ProphetBinBernoulliBound.lean": "ae18dfcb23a58c7e343873f941ca0eba63d121f8e53e4d3bae043964b90e91e9",
+    "papers/record-constrained-prophet-gap/formalization/ProphetBinBernoulliSum.lean": "a7f2add3188cb317a06ece2cf91cb3837cde5850912faed366d27773986c0a06",
+    "papers/record-constrained-prophet-gap/formalization/ProphetBinDeficitConvexity.lean": "b2a4f3b8e381059339b239e6b958ab3e9928b10f14262157688c832f6e7c5150",
+    "papers/record-constrained-prophet-gap/formalization/ProphetBinDeficitExact.lean": "0342451c4993a3ca90d72f054dc48382d5aa955483b1106038d99ac22c27c485",
+    "papers/record-constrained-prophet-gap/formalization/ProphetLabelMassTelescopes.lean": "e43684a271793fcc538b43dc02389b03b939c4ec9bc9787f220a77fb91462410",
+    "papers/record-constrained-prophet-gap/formalization/ProphetLastBinFiniteDenominator.lean": "5d186383cff7cf2bc319e7cef39245d46eef243dee815b7d9506db60d35bada8",
+    "papers/record-constrained-prophet-gap/formalization/ProphetLastBinRatioComparison.lean": "4f2facc3a736636fc50fcd59248cff28179e449d85db4b98b9fca7f64ca26f45",
+    "papers/record-constrained-prophet-gap/formalization/ProphetMaximumLabelPositive.lean": "4efec2562847d4614bb5cda5139fccc53c00fc61e52a650f246fe74d50f5a72c",
+    "papers/record-constrained-prophet-gap/formalization/ProphetNormalizedConstantReward.lean": "998da0c084fff4572f9330186343b4582e55146151c8fff48c372f66e14b5344",
+    "papers/record-constrained-prophet-gap/formalization/ProphetNormalizedRewardBound.lean": "4134bb339bf11b7de1f930c05ef38271dd5e7abb557f696112bd0811e0e0740a",
+    "papers/record-constrained-prophet-gap/formalization/ProphetPerturbationStrictRatio.lean": "8bb2184d1aea585b5cc071d7c625ec0b8b0963fa87e557eaec365acd9ba9a365",
+    "papers/record-constrained-prophet-gap/formalization/ProphetTransferValueChain.lean": "2d4f0f4250044e51817511399bb68dd9f0503d6588fab1ca6e807a6696f37ddd"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "038982314686e953aef1ff5ef9039e2a46496cca0ab42aba4adc52e16eaf1f22",
+  "paper_path": "papers/record-constrained-prophet-gap/paper.en.md",
+  "verification_status": "source_snapshot"
+}

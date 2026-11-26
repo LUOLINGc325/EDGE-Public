@@ -1,0 +1,132 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DuplicateSuffixWidth",
+      "name": "TwoVisitsDuplicateMidpointResearchProof1.duplicate_suffix_width"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DuplicateSuffixWidth",
+      "name": "TwoVisitsDuplicateMidpointResearchProof1.duplicate_suffix_width._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DuplicateSuffixWidth",
+      "name": "TwoVisitsDuplicateMidpointResearchProof1.duplicate_suffix_width._proof_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DuplicateSuffixWidth",
+      "name": "TwoVisitsDuplicateMidpointResearchProof1.duplicate_suffix_width._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrictArcEventWindow",
+      "name": "TwoVisitsDuplicateMidpointResearchProof2.strict_arc_event_window"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrictArcEventWindow",
+      "name": "TwoVisitsDuplicateMidpointResearchProof2.strict_arc_event_window._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrictArcEventWindow",
+      "name": "TwoVisitsDuplicateMidpointResearchProof2.strict_arc_event_window._proof_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrictArcEventWindow",
+      "name": "TwoVisitsDuplicateMidpointResearchProof2.strict_arc_event_window._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrictArcEventWindow",
+      "name": "TwoVisitsDuplicateMidpointResearchProof2.strict_arc_event_window._proof_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrictArcEventWindow",
+      "name": "TwoVisitsDuplicateMidpointResearchProof2.strict_arc_event_window._proof_5"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrictArcEventWindow",
+      "name": "TwoVisitsDuplicateMidpointResearchProof2.strict_arc_event_window._proof_6"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrictArcEventWindow",
+      "name": "TwoVisitsDuplicateMidpointResearchProof2.strict_arc_event_window._proof_7"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/two-visits-duplicate-midpoint/formalization/DuplicateSuffixWidth.lean": "2997a683e8bf752adfbb52e5045671f54363ee3bab864ae4eaa60f92069bea52",
+    "papers/two-visits-duplicate-midpoint/formalization/StrictArcEventWindow.lean": "c2cb858ca9f89e4483fd718d1e463a4a9edab0796064a375468bdc8500a7c37c"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "a629f4b8c7d0844e510427801ce604a18648c584a737774f7643cec34ca86152",
+  "paper_path": "papers/two-visits-duplicate-midpoint/paper.zh.md"
+}

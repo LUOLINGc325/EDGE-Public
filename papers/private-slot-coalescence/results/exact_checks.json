@@ -1,0 +1,15 @@
+{
+  "coalescence": {
+    "pairs_of_suffix_marker_sets": 16141,
+    "sharp_lengths": 4
+  },
+  "prefix_codewords": 63,
+  "simulations": {
+    "protocol_inputs": 1800,
+    "long_chain_inputs": 1144,
+    "short_chain_inputs": 656,
+    "cuts_checked": 7558,
+    "canonical_good_cuts": 6375,
+    "one_answer_common_cuts": 295
+  }
+}

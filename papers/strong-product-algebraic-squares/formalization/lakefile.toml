@@ -1,0 +1,30 @@
+name = "strong_product_algebraic_squares"
+version = "0.1.0"
+defaultTargets = ["StrongRetractCrossCorner", "StrongProductTwoRectangleCover", "StrongProductRectangleIntersection", "StrongProductRectangleExclusiveCoordinate", "StrongProductRectangleProjectCore", "StrongProductRectangleExclusiveWidth", "StrongProductRectangleCommonHeight"]
+moreLeanArgs = ["-j1", "-DElab.async=false"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "StrongRetractCrossCorner"
+
+[[lean_lib]]
+name = "StrongProductTwoRectangleCover"
+
+[[lean_lib]]
+name = "StrongProductRectangleIntersection"
+
+[[lean_lib]]
+name = "StrongProductRectangleExclusiveCoordinate"
+
+[[lean_lib]]
+name = "StrongProductRectangleProjectCore"
+
+[[lean_lib]]
+name = "StrongProductRectangleExclusiveWidth"
+
+[[lean_lib]]
+name = "StrongProductRectangleCommonHeight"

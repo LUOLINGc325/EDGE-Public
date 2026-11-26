@@ -1,0 +1,26 @@
+name = "stockout_crossing"
+version = "0.1.0"
+defaultTargets = ["StockoutCrossing", "StockoutLayerCake", "PoissonNeighborV2", "PoissonNormalization", "PoissonStrictNeighborConcavity", "NewtonPoissonTransfer"]
+
+[[lean_lib]]
+name = "StockoutCrossing"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "StockoutLayerCake"
+
+[[lean_lib]]
+name = "PoissonNeighborV2"
+
+[[lean_lib]]
+name = "PoissonNormalization"
+
+[[lean_lib]]
+name = "PoissonStrictNeighborConcavity"
+
+[[lean_lib]]
+name = "NewtonPoissonTransfer"

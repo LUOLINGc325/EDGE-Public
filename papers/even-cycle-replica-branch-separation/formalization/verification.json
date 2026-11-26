@@ -1,0 +1,164 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenCycleBaseGainExact",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.scaledBranchGap"
+    },
+    {
+      "axioms": [],
+      "module": "EvenCycleBaseGainExact",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.scaledBranchGap._proof_1"
+    },
+    {
+      "axioms": [],
+      "module": "EvenCycleBaseGainExact",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.scaledBranchGap._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenCycleBaseGainExact",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.scaled_branch_positive"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenCycleBaseGainExact",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.scaled_branch_positive._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenCycleBaseGainExact",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.scaled_gap_two"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenCycleBaseGainExact",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.two_term_base_increment"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenCycleExactGain",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.incrementFactor"
+    },
+    {
+      "axioms": [],
+      "module": "EvenCycleExactGain",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.incrementFactor._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenCycleExactGain",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.incrementFactor_at_three"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenCycleExactGain",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.incrementFactor_nonneg"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenCycleExactGain",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.incrementFactor_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenCycleExactGain",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.incrementFactor_threshold_and_sign"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenCycleExactGain",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.quad_decomposition"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenCycleExactGain",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.quad_pos_of_three_lt"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EvenCycleExactGain",
+      "name": "EvenCycleReplicaBranchSeparationResearchProof1.sq_sub_three_add_one_decomp"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/even-cycle-replica-branch-separation/formalization/EvenCycleBaseGainExact.lean": "49616098b3895d36b57068e1841d686bf2447208fde56974ac12bd8ddde470e1",
+    "papers/even-cycle-replica-branch-separation/formalization/EvenCycleExactGain.lean": "0fadc60e11da4f6c4bfaf39d0257f25abef51f04b97e70c39ee9f2807d46a946"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "52ac3472bc952b1bf89d10cb7ef16550a9e92d8c5ef1f1aace43a57df5e74866",
+  "paper_path": "papers/even-cycle-replica-branch-separation/paper.zh.md"
+}

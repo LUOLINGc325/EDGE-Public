@@ -1,0 +1,6 @@
+name = "n23_certificate"
+version = "0.1.0"
+defaultTargets = ["N23Certificate"]
+
+[[lean_lib]]
+name = "N23Certificate"

@@ -1,0 +1,34 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/ordinary-ef1-three-agent-counterexample/lean/extended/AllocationBridge.lean": "a8af796c7451a64b8838c1f76876290fca13847cbad2b627b4ac5da7ae6d793f",
+    "papers/ordinary-ef1-three-agent-counterexample/lean/extended/Definitions.lean": "c5d7c675f0cd60131429c5f9fd7a2cb9addf035aee65d178ff9cbba968935902",
+    "papers/ordinary-ef1-three-agent-counterexample/lean/extended/Family.lean": "d06cfd28889f7de7d0c1ab3ea1669186209e91ef94dbbfca630757aea41a7051",
+    "papers/ordinary-ef1-three-agent-counterexample/lean/extended/Main.lean": "2b5f45f82cf4c8baf485407be9170351b1dcee3f1cea8bd8f4456691ba863291",
+    "papers/ordinary-ef1-three-agent-counterexample/lean/extended/Numeric.lean": "f359071dfe76020a7b5dea8fa092170609a8db16be0a97258d0caccec3021488",
+    "papers/ordinary-ef1-three-agent-counterexample/lean/extended/Semantics.lean": "44e07c292d87ef455dff8520c83357c97b6a6bb0216abca5b4a4082d52b48bb7",
+    "papers/ordinary-ef1-three-agent-counterexample/lean/extended/Stability.lean": "5b0a6a651e30d746592568115444ad871706cb0ebb48ed9c07515fb1ccc5d59b",
+    "papers/ordinary-ef1-three-agent-counterexample/lean/extended/StabilityBounds.lean": "1d3f465ae12fddff84cfbe107a3d004dcc032ca8dbb7ee55c0107278685cb838",
+    "papers/ordinary-ef1-three-agent-counterexample/lean/extended/TwoAgents.lean": "a5217391d1590f98e36807dfee04c84caafe4bec769d2a54163fb6587ee85a83",
+    "papers/ordinary-ef1-three-agent-counterexample/lean/extended/TwoItems.lean": "87957f527119e1c42dc11f2cb85ca3c25c5fffbcf153e324d64e95d5d9146c1d"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "84fec91b87abad4fca45d987abcbabd2a1205489b1a3f81e059095184b572dd1",
+  "paper_path": "papers/ordinary-ef1-three-agent-counterexample/paper.en.md",
+  "verification_status": "source_snapshot"
+}

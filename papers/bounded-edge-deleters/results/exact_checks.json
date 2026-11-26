@@ -1,0 +1,13 @@
+{
+  "color_search": {
+    "instances": 96,
+    "colorings": 2093,
+    "feasible": 58
+  },
+  "sat_reduction": {
+    "formulas": 60,
+    "satisfiable": 56,
+    "unsatisfiable": 4,
+    "max_frontier": 3
+  }
+}

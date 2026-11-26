@@ -1,0 +1,10 @@
+{
+  "N": 2,
+  "eta": 0.8,
+  "rho": -0.6,
+  "solver": "SCS",
+  "maximum_minimum_step_squared_at_gap_1": 0.435016111428265,
+  "coefficient_numerical": 4.597530867152271,
+  "formulation": "max-min step squared; F0-Fend<=1; PEPit function interpolation",
+  "numerical_only": true
+}

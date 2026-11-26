@@ -1,0 +1,189 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeThreeLeafOptimum",
+      "name": "CompositeSequentialTestInductionResearchProof1.three_leaf_Q_bound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeThreeLeafOptimum",
+      "name": "CompositeSequentialTestInductionResearchProof1.witness_Q_eq"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeThreeLeafOptimum",
+      "name": "CompositeSequentialTestInductionResearchProof1.witness_feasible"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeThreeLeafOptimum",
+      "name": "CompositeSequentialTestInductionResearchProof1.witness_in_unit"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.ValidExtension"
+    },
+    {
+      "axioms": [],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.ValidExtension._proof_1"
+    },
+    {
+      "axioms": [],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.ValidExtension._proof_2"
+    },
+    {
+      "axioms": [],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.ValidExtension._proof_3"
+    },
+    {
+      "axioms": [],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.ValidExtension._proof_4"
+    },
+    {
+      "axioms": [],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.ValidExtension._proof_5"
+    },
+    {
+      "axioms": [],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.ValidExtension._proof_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.cap_A_attained"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.cap_B_attained"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.extension_caps"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.no_greatest_extension"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.sharp_time_one_Q"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.sharp_time_one_Q_attained"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.sharp_witness_valid"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.stoppedMean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CompositeTreeStopping",
+      "name": "CompositeSequentialTestInductionResearchProof1.stoppedMean.eq_1"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/composite-sequential-test-induction/formalization/CompositeThreeLeafOptimum.lean": "2a18e3265b067f4dc0e51145d53d52fab7afb3ad4348dd089c02ce0700d68131",
+    "papers/composite-sequential-test-induction/formalization/CompositeTreeStopping.lean": "2bdcf382de66000b7423fb30d8b3fff6ced8e31f241a3e2d8780931de3a23aee"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "b62035abbe7db4df7e2cdaaf57c151d916dd5ff98da3312a4e94b231a44eafcf",
+  "paper_path": "papers/composite-sequential-test-induction/paper.en.md"
+}

@@ -1,0 +1,61 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ConformalExtremalWeights",
+      "name": "WeightedConformalFixedCapCurvatureResearchProof1.extremal_weight_reciprocal"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ConformalTwoBandMaximum",
+      "name": "WeightedConformalFixedCapCurvatureResearchProof2.two_band_parabolic_max"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ConformalWeightedCurvature",
+      "name": "WeightedConformalFixedCapCurvatureResearchProof1.extremal_weight_curvature"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/weighted-conformal-fixed-cap-curvature/formalization/ConformalExtremalWeights.lean": "1677905312ca2d0024dc1ce28ca0c40e5d3c9fd0c2c58617bf35c31023025617",
+    "papers/weighted-conformal-fixed-cap-curvature/formalization/ConformalTwoBandMaximum.lean": "a71e91c33b6b9c8a9d87f33cbc41d5b25fc9187ba20fa542a3ed46fc7b8f96c0",
+    "papers/weighted-conformal-fixed-cap-curvature/formalization/ConformalWeightedCurvature.lean": "d50a3b7069460ff417e63f957b33f97c858b2dc17ce28b944391240d829e857f"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "22788c6ca178a5595163928766d86e8385fed04c591ac019831f502bcee75029",
+  "paper_path": "papers/weighted-conformal-fixed-cap-curvature/paper.en.md"
+}

@@ -1,0 +1,27 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/quantum-channel-product-bound-universality/formalization/DistinctPairComplement.lean": "b0ca1e935094684adc1dd4c7210e84a8f591dfc142e08bcac04e6998105879c9",
+    "papers/quantum-channel-product-bound-universality/formalization/DistinctPairDiagonalBound.lean": "a9a55fa565aa230da33023e2a5d2ab8740b6805281ed3603a764df7d6ec0f648",
+    "papers/quantum-channel-product-bound-universality/formalization/QuantumProductFactorCount.lean": "3b621da3db324bcc744a6caedf0469a0725467a1caf229bb20679880a3137c2c"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "f142f7a55be89dbb23f6021430333ff23ce15d6b31ebebc5877efbe7260b6289",
+  "paper_path": "papers/quantum-channel-product-bound-universality/paper.en.md",
+  "verification_status": "source_snapshot"
+}

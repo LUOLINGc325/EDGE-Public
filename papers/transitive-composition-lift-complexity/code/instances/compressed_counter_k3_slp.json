@@ -1,0 +1,149 @@
+{
+  "alphabet": [
+    "0",
+    "1",
+    "$"
+  ],
+  "expected_expanded_z_length": 49,
+  "expected_rules": 26,
+  "k": 3,
+  "kind": "concatenation_slp_word_representation",
+  "roots": {
+    "certificate_word": 25,
+    "epsilon": 0
+  },
+  "rules": [
+    {
+      "kind": "epsilon"
+    },
+    {
+      "kind": "letter",
+      "letter": "0"
+    },
+    {
+      "kind": "letter",
+      "letter": "1"
+    },
+    {
+      "kind": "concat",
+      "left": 1,
+      "right": 1
+    },
+    {
+      "kind": "concat",
+      "left": 1,
+      "right": 2
+    },
+    {
+      "kind": "concat",
+      "left": 3,
+      "right": 3
+    },
+    {
+      "kind": "concat",
+      "left": 3,
+      "right": 4
+    },
+    {
+      "kind": "concat",
+      "left": 4,
+      "right": 3
+    },
+    {
+      "kind": "concat",
+      "left": 4,
+      "right": 4
+    },
+    {
+      "kind": "concat",
+      "left": 5,
+      "right": 3
+    },
+    {
+      "kind": "concat",
+      "left": 5,
+      "right": 4
+    },
+    {
+      "kind": "concat",
+      "left": 6,
+      "right": 3
+    },
+    {
+      "kind": "concat",
+      "left": 6,
+      "right": 4
+    },
+    {
+      "kind": "concat",
+      "left": 7,
+      "right": 3
+    },
+    {
+      "kind": "concat",
+      "left": 7,
+      "right": 4
+    },
+    {
+      "kind": "concat",
+      "left": 8,
+      "right": 3
+    },
+    {
+      "kind": "concat",
+      "left": 8,
+      "right": 4
+    },
+    {
+      "kind": "concat",
+      "left": 9,
+      "right": 13
+    },
+    {
+      "kind": "concat",
+      "left": 17,
+      "right": 11
+    },
+    {
+      "kind": "concat",
+      "left": 18,
+      "right": 15
+    },
+    {
+      "kind": "concat",
+      "left": 19,
+      "right": 10
+    },
+    {
+      "kind": "concat",
+      "left": 20,
+      "right": 14
+    },
+    {
+      "kind": "concat",
+      "left": 21,
+      "right": 12
+    },
+    {
+      "kind": "concat",
+      "left": 22,
+      "right": 16
+    },
+    {
+      "kind": "letter",
+      "letter": "$"
+    },
+    {
+      "kind": "concat",
+      "left": 23,
+      "right": 24
+    }
+  ],
+  "scope": "Word representation only; not a full graph/source-assignment certificate",
+  "target_word_roots": {
+    "x0": 0,
+    "x1": 0,
+    "x2": 0,
+    "z": 25
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "axioms": [
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "WalkCertificateComposition",
+      "name": "TransitiveCompositionLiftComplexityResearchProof1.compose_word_certificates"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "WalkCertificateLength",
+      "name": "TransitiveCompositionLiftComplexityResearchProof1.length_bound"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WalkCertificatePrefix",
+      "name": "TransitiveCompositionLiftComplexityResearchProof1.forced_prefix"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/transitive-composition-lift-complexity/formalization/WalkCertificateComposition.lean": "4f10fa0b155f41a4b3809f483e42c685291f76c8d39b4f224ebb2b44b71cc9ef",
+    "papers/transitive-composition-lift-complexity/formalization/WalkCertificateLength.lean": "d1db41ed7b262b0894222632c41ee9c0b9b71e19fc86500909e960f1e512170e",
+    "papers/transitive-composition-lift-complexity/formalization/WalkCertificatePrefix.lean": "dce8611fb7469fb7ff6200b958b415602f335b30202724871b8da91bc6ff7b4f"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "c8215be71dcea6de9748fa7176dcc78dd799463f2bbdfb6b3f5d2f5a0b914c09",
+  "paper_path": "papers/transitive-composition-lift-complexity/paper.en.md"
+}

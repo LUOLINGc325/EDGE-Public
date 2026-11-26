@@ -1,0 +1,51 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ResetPositiveRatioEquality",
+      "name": "ConjugateResettingGlobalOptimalityResearchProof1.positive_ratio_equality"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ResetSymmetricSquare",
+      "name": "ConjugateResettingGlobalOptimalityResearchProof1.reset_symmetric_square"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/conjugate-resetting-global-optimality/formalization/ResetPositiveRatioEquality.lean": "8e6de0125174d5b64f3d2d9b3f7a38839ef8c2fe4c22c315d65f351875f25a23",
+    "papers/conjugate-resetting-global-optimality/formalization/ResetSymmetricSquare.lean": "1ec5dea91fc3375251a93a669834d51201091540bbe90e8d2f957795533ecfab"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "b2d53a573ab9da45330040eb3dd30e4f7588fb837d95e5b1f73bc7662999ccb5",
+  "paper_path": "papers/conjugate-resetting-global-optimality/paper.en.md"
+}

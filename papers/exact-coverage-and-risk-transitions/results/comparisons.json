@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "classical_pairs": 195840,
+  "same_type_admissible_pairs": 40976,
+  "explicit_comparison": {
+    "classical": "92/165",
+    "admissible": "436/495",
+    "iid_equal_mixture": "323437/490050"
+  }
+}

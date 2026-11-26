@@ -1,0 +1,31 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/strong-product-algebraic-squares/formalization/StrongProductRectangleCommonHeight.lean": "3c2bab8457e346a970635ad4279fabdcb3535a85ced4e757a73070d6b630dee2",
+    "papers/strong-product-algebraic-squares/formalization/StrongProductRectangleExclusiveCoordinate.lean": "88ec8be68640e6aa707c2dd444f7837f599f7cdace29494264c0f7fac0152dd2",
+    "papers/strong-product-algebraic-squares/formalization/StrongProductRectangleExclusiveWidth.lean": "cb70be0dca48d2d22a0f4b441cfcb07058f48b7165085c12dddb8a5279b51e0d",
+    "papers/strong-product-algebraic-squares/formalization/StrongProductRectangleIntersection.lean": "be4202b2bf66b3c71c282596aed03bf9fe706f1d889bbe635a0ff63a089a53f4",
+    "papers/strong-product-algebraic-squares/formalization/StrongProductRectangleProjectCore.lean": "dff834f280f095a51af0b49956b53a437d9943ee710967ec3726b6cfedf11e82",
+    "papers/strong-product-algebraic-squares/formalization/StrongProductTwoRectangleCover.lean": "dc23f76aea62dbf51d8aad77203de0dfa65000f8a1e468b40a0997bf6b0a6269",
+    "papers/strong-product-algebraic-squares/formalization/StrongRetractCrossCorner.lean": "8ef28c2b1f11facc796a2bfbc9b0520322df8472396ea43f5a53021c4db023d7"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "506ee89886d9c39db0475b64e13b28c1e36de696d0920365a507069aef001fdc",
+  "paper_path": "papers/strong-product-algebraic-squares/paper.en.md",
+  "verification_status": "source_snapshot"
+}

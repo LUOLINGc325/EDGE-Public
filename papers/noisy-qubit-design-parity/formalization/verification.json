@@ -1,0 +1,96 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "NoisyParityWitness",
+      "name": "NoisyQubitDesignParity.eps4_lt_eps5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "NoisyParityWitness",
+      "name": "NoisyQubitDesignParity.eps4_value"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "NoisyParityWitness",
+      "name": "NoisyQubitDesignParity.eps5_value"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "NoisyParityWitness",
+      "name": "NoisyQubitDesignParity.h5"
+    },
+    {
+      "axioms": [],
+      "module": "NoisyParityWitness",
+      "name": "NoisyQubitDesignParity.h5._proof_1"
+    },
+    {
+      "axioms": [],
+      "module": "NoisyParityWitness",
+      "name": "NoisyQubitDesignParity.h5._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "NoisyParityWitness",
+      "name": "NoisyQubitDesignParity.h5_ratio"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "NoisyParityWitness",
+      "name": "NoisyQubitDesignParity.strict_parity_gap"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/noisy-qubit-design-parity/formalization/NoisyParityWitness.lean": "bb6988e242bbf1f60fd6ebbb67ec9143599bcf08cc534d066dab33d1f329159e"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "4b9b147e4c4c601dfdb54b5924f0a116370370b21e98cb75c1f4013b9c2ee278",
+  "paper_path": "papers/noisy-qubit-design-parity/paper.zh.md"
+}

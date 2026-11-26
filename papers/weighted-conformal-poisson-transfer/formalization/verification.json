@@ -1,0 +1,51 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedConformalLightScoreJump",
+      "name": "WeightedConformalPoissonTransferResearchProof1.light_score_jump_gap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedConformalRatioPerturbation",
+      "name": "WeightedConformalPoissonTransferResearchProof1.normalized_ratio_perturbation"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/weighted-conformal-poisson-transfer/formalization/WeightedConformalLightScoreJump.lean": "3bc36e69027c9755c435315146e043d86e1fd9487233b12d90a1c0437de6d023",
+    "papers/weighted-conformal-poisson-transfer/formalization/WeightedConformalRatioPerturbation.lean": "618331981f3f040c9987ca1ba679eff99072c7dd72827ba9b67f04a8bf953cce"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "8351b5717a0423a7c775f68b2ead41bb5c06e1655fb80974b78379cecdb048db",
+  "paper_path": "papers/weighted-conformal-poisson-transfer/paper.en.md"
+}

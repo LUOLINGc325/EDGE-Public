@@ -1,0 +1,27 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/gamma-calibration-unknown-dispersion/formalization/GammaBranchProbability.lean": "074deb969773c8ed912cbd4daeaa5e544b0dcf7313c6d986698fb1647ce90a67",
+    "papers/gamma-calibration-unknown-dispersion/formalization/GammaTiltCurvature.lean": "747ebb97d98d931caf98c9e10c21e142dc18f3ef21e9ca554103df8ce9cfa83c",
+    "papers/gamma-calibration-unknown-dispersion/formalization/GammaTiltNormalization.lean": "257a3c070f4210e8fc5a68abf735e5c8692f00083b420d7f8cdab6364ba4e072"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "3a051994c206a59dc2a21a2f0738b89570858a918f0fdd419862f663fd195c52",
+  "paper_path": "papers/gamma-calibration-unknown-dispersion/paper.zh.md",
+  "verification_status": "source_snapshot"
+}

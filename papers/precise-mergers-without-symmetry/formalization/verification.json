@@ -1,0 +1,206 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteTensorPrecision",
+      "name": "PreciseMergersWithoutSymmetry.centered_parts_balance"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteTensorPrecision",
+      "name": "PreciseMergersWithoutSymmetry.product_correction_finite_precision"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteTensorPrecision",
+      "name": "PreciseMergersWithoutSymmetry.product_correction_finite_precision._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteTensorPrecision",
+      "name": "PreciseMergersWithoutSymmetry.product_correction_finite_precision._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteTensorPrecision",
+      "name": "_private.FiniteTensorPrecision.0.PreciseMergersWithoutSymmetry.positive_negative_difference"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PositivePartMerger",
+      "name": "PreciseMergersWithoutSymmetry.M"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PositivePartMerger",
+      "name": "PreciseMergersWithoutSymmetry.M_mono"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PositivePartMerger",
+      "name": "PreciseMergersWithoutSymmetry.M_nonneg"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PositivePartMerger",
+      "name": "PreciseMergersWithoutSymmetry.posPart"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PositivePartMerger",
+      "name": "PreciseMergersWithoutSymmetry.posPart_nonneg"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PositivePartMerger",
+      "name": "PreciseMergersWithoutSymmetry.posPart_one_sub_mem"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PositivePartMerger",
+      "name": "PreciseMergersWithoutSymmetry.prod_negPart_anti"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PositivePartMerger",
+      "name": "PreciseMergersWithoutSymmetry.prod_neg_le_one"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PositivePartMerger",
+      "name": "PreciseMergersWithoutSymmetry.prod_posPart_mono"
+    },
+    {
+      "axioms": [],
+      "module": "ProjectionCommute",
+      "name": "PreciseMergersWithoutSymmetry.Pi"
+    },
+    {
+      "axioms": [],
+      "module": "ProjectionCommute",
+      "name": "PreciseMergersWithoutSymmetry.Pi._cstage1"
+    },
+    {
+      "axioms": [],
+      "module": "ProjectionCommute",
+      "name": "PreciseMergersWithoutSymmetry.Pi._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "ProjectionCommute",
+      "name": "PreciseMergersWithoutSymmetry.Pi._proof_1"
+    },
+    {
+      "axioms": [],
+      "module": "ProjectionCommute",
+      "name": "PreciseMergersWithoutSymmetry.Pi._rarg._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "ProjectionCommute",
+      "name": "PreciseMergersWithoutSymmetry.Pi.eq_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionCommute",
+      "name": "PreciseMergersWithoutSymmetry.Pi_comm"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoPointSlice",
+      "name": "PreciseMergersWithoutSymmetry.affine_of_two_point"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/precise-mergers-without-symmetry/formalization/FiniteTensorPrecision.lean": "d6f102e617df8d59b4b2329fa67fa232c15ed726aa0ca72759f9b5ef58726062",
+    "papers/precise-mergers-without-symmetry/formalization/PositivePartMerger.lean": "1184e9f2fad6888cd592165848cbf9e7a9b1900b789806d1480b645f151d0fdc",
+    "papers/precise-mergers-without-symmetry/formalization/ProjectionCommute.lean": "3a185050a6ae9d8b98c0096c9b00076ebed7db502a8b02e964ee4ef29573a8fe",
+    "papers/precise-mergers-without-symmetry/formalization/TwoPointSlice.lean": "688c4ebbfda967b3074a514cca449b5ac7119fa0941a822d8577289a3e20e83a"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "25f8cc3fd700dd1e2bd6d1adb182a68547d46152cb5d0a5f6ae8df2353e3b591",
+  "paper_path": "papers/precise-mergers-without-symmetry/paper.en.md"
+}

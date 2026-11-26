@@ -1,0 +1,225 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter._closed_1._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter._closed_2._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter._closed_3._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter._closed_4._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter._closed_5._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter._cstage1"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter._sunfold"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter._unsafe_rec"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter.eq_2"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter.match_1"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter.match_1._cstage1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter_coords_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter_coords_pos._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter_first_lt_succ"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter_first_strictMono"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter_first_strictMono._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter_injective"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pellIter_invariant"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PellFamily",
+      "name": "NoncommutingPellAliases.pell_family_spec"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "_private.PellFamily.0.NoncommutingPellAliases.pellIter.match_1.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "_private.PellFamily.0.NoncommutingPellAliases.pellIter.match_1.eq_2"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "_private.PellFamily.0.NoncommutingPellAliases.pellIter.match_1.splitter"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "_private.PellFamily.0.NoncommutingPellAliases.pellIter.match_1.splitter._cstage1"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "_private.PellFamily.0.NoncommutingPellAliases.pellIter.match_1.splitter._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "PellFamily",
+      "name": "_private.PellFamily.0.NoncommutingPellAliases.pellIter.match_1.splitter._rarg._cstage2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "PellUnitAliases",
+      "name": "NoncommutingPellAliases.pell_iterate_two"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "PellUnitAliases",
+      "name": "NoncommutingPellAliases.pell_seed"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PellUnitAliases",
+      "name": "NoncommutingPellAliases.pell_unit_identity"
+    }
+  ],
+  "dependency_versions": {
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904"
+  },
+  "file_sha256": {
+    "papers/noncommuting-pell-aliases/formalization/PellFamily.lean": "c85b2de964ef06ce550ddc33493fcb7cca928baf4ecd7a16d2f810bf320ac6de",
+    "papers/noncommuting-pell-aliases/formalization/PellUnitAliases.lean": "23fecc80e63bbe7c0ac799021007ef790ba3e9cc4059a25bfb1527ffb8abb944"
+  },
+  "lean_version": "4.19.0",
+  "limitations": [
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
+  ],
+  "manuscript_sha256": "a62c94af6b29c8d98180c1f05a6c1202f38c746399bdf3ac7a846d1d4ab3816e",
+  "paper_path": "papers/noncommuting-pell-aliases/paper.en.md"
+}

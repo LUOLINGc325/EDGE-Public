@@ -1,0 +1,25 @@
+{
+  "build_result": "not_verified",
+  "dependency_versions": {
+    "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+    "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+    "Qq": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+    "aesop": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+    "batteries": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+    "importGraph": "d768126816be17600904726ca7976b185786e6b9",
+    "mathlib": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+    "plausible": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+    "proofwidgets": "556caed0eadb7901e068131d1be208dd907d07a2"
+  },
+  "file_sha256": {
+    "papers/sequential-target-recalculation/formalization/FiniteHorizon.lean": "b270fee5b0d33fe2a401ff282b5d70e65cdc76094b9cdd2be4dea67e057bcb71"
+  },
+  "formalization_status": "Source snapshot with local build verification pending.",
+  "lean_version": "4.24.0",
+  "limitations": [
+    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+  ],
+  "manuscript_sha256": "daaf6f3e6ea2415de207f50cd13e0dec80385a619e4bf1ab7522f4954d7c4f3a",
+  "paper_path": "papers/sequential-target-recalculation/paper.en.md",
+  "verification_status": "source_snapshot"
+}
