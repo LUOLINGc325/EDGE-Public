@@ -455,7 +455,7 @@ The table gives the local check status of each supplement. Compiled entries cove
 | [gaussian frequency gradient variance](gaussian-frequency-gradient-variance/paper.zh.md) | [Modules](gaussian-frequency-gradient-variance/formalization/README.md) | Compiled and checked |
 | [gaussian product sharp zcdp](gaussian-product-sharp-zcdp/paper.en.md) | [Modules](gaussian-product-sharp-zcdp/formalization/README.md) | Compiled and checked |
 | [general qutrit cooling](general-qutrit-cooling/paper.zh.md) | [Modules](general-qutrit-cooling/formalization/README.md) | Compiled and checked |
-| [graph burning long path forests](graph-burning-long-path-forests/paper.en.md) | [Modules](graph-burning-long-path-forests/formalization/README.md) | Source snapshot |
+| [graph burning long path forests](graph-burning-long-path-forests/paper.en.md) | [Modules](graph-burning-long-path-forests/formalization/README.md) | Compiled and checked |
 | [haar schmidt magic](haar-schmidt-magic/paper.zh.md) | [Modules](haar-schmidt-magic/formalization/README.md) | Compiled and checked |
 | [hard budget covariance fourth moment](hard-budget-covariance-fourth-moment/paper.en.md) | [Modules](hard-budget-covariance-fourth-moment/formalization/README.md) | Compiled and checked |
 | [independent winners bias extremizers](independent-winners-bias-extremizers/paper.en.md) | [Modules](independent-winners-bias-extremizers/formalization/README.md) | Source snapshot |
@@ -495,7 +495,7 @@ The table gives the local check status of each supplement. Compiled entries cove
 | [randomized weighted two job robustness](randomized-weighted-two-job-robustness/paper.en.md) | [Modules](randomized-weighted-two-job-robustness/formalization/README.md) | Source snapshot |
 | [rank two scale classification](rank-two-scale-classification/paper.en.md) | [Modules](rank-two-scale-classification/formalization/README.md) | Compiled and checked |
 | [record constrained prophet gap](record-constrained-prophet-gap/paper.en.md) | [Modules](record-constrained-prophet-gap/formalization/README.md) | Source snapshot |
-| [replicable conformal pilot ranks](replicable-conformal-pilot-ranks/paper.en.md) | [Modules](replicable-conformal-pilot-ranks/formalization/README.md) | Source snapshot |
+| [replicable conformal pilot ranks](replicable-conformal-pilot-ranks/paper.en.md) | [Modules](replicable-conformal-pilot-ranks/formalization/README.md) | Compiled and checked |
 | [reversible environment weak response](reversible-environment-weak-response/paper.en.md) | [Modules](reversible-environment-weak-response/formalization/README.md) | Source snapshot |
 | [risk sensitive ski rental](risk-sensitive-ski-rental/paper.en.md) | [Modules](risk-sensitive-ski-rental/formalization/README.md) | Compiled and checked |
 | [selection audit information](selection-audit-information/paper.en.md) | [Modules](selection-audit-information/formalization/README.md) | Source snapshot |
@@ -507,13 +507,13 @@ The table gives the local check status of each supplement. Compiled entries cove
 | [sharp two step activity](sharp-two-step-activity/paper.en.md) | [Modules](sharp-two-step-activity/formalization/README.md) | Compiled and checked |
 | [shifted coefficient boundary](shifted-coefficient-boundary/paper.zh.md) | [Modules](shifted-coefficient-boundary/formalization/README.md) | Compiled and checked |
 | [six cycle even replica factorization](six-cycle-even-replica-factorization/paper.zh.md) | [Modules](six-cycle-even-replica-factorization/formalization/README.md) | Compiled and checked |
-| [six cycle replica arithmetic](six-cycle-replica-arithmetic/paper.zh.md) | [Modules](six-cycle-replica-arithmetic/formalization/README.md) | Source snapshot |
+| [six cycle replica arithmetic](six-cycle-replica-arithmetic/paper.zh.md) | [Modules](six-cycle-replica-arithmetic/formalization/README.md) | Compiled and checked |
 | [slack null induction complexity](slack-null-induction-complexity/paper.en.md) | [Modules](slack-null-induction-complexity/formalization/README.md) | Compiled and checked |
 | [speed limited harmonic equilibration](speed-limited-harmonic-equilibration/paper.en.md) | [Modules](speed-limited-harmonic-equilibration/formalization/README.md) | Source snapshot |
 | [stroboscopic three state entropy range](stroboscopic-three-state-entropy-range/paper.en.md) | [Modules](stroboscopic-three-state-entropy-range/formalization/README.md) | Source snapshot |
 | [strong product algebraic squares](strong-product-algebraic-squares/paper.en.md) | [Modules](strong-product-algebraic-squares/formalization/README.md) | Source snapshot |
 | [subsampled max power lqrt](subsampled-max-power-lqrt/paper.zh.md) | [Modules](subsampled-max-power-lqrt/formalization/README.md) | Source snapshot |
-| [ternary pairwise moment](ternary-pairwise-moment/paper.zh.md) | [Modules](ternary-pairwise-moment/formalization/README.md) | Source snapshot |
+| [ternary pairwise moment](ternary-pairwise-moment/paper.zh.md) | [Modules](ternary-pairwise-moment/formalization/README.md) | Compiled and checked |
 | [topology constrained markov reconstruction](topology-constrained-markov-reconstruction/paper.en.md) | [Modules](topology-constrained-markov-reconstruction/formalization/README.md) | Compiled and checked |
 | [transitive composition lift complexity](transitive-composition-lift-complexity/paper.en.md) | [Modules](transitive-composition-lift-complexity/formalization/README.md) | Compiled and checked |
 | [two visits duplicate midpoint](two-visits-duplicate-midpoint/paper.zh.md) | [Modules](two-visits-duplicate-midpoint/formalization/README.md) | Compiled and checked |

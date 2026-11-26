@@ -1,5 +1,255 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.bank_offsets"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.bank_offsets._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.bank_offsets._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.bank_offsets._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.bank_offsets._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.bank_offsets._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.bounded_prefix_deficit"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.bounded_prefix_deficit._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.bounded_prefix_deficit._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.bounded_prefix_deficit._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.bounded_prefix_deficit._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.correct_adjacent_prefix"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.correct_adjacent_prefix._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.disjoint_tiles_separate_ignitions"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.disjoint_tiles_separate_ignitions._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.disjoint_tiles_separate_ignitions._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.dyadic_reachability"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.dyadic_reachability._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.dyadic_reachability._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.exists_unused_pair"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.exists_unused_pair._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.exists_unused_pair._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.exists_unused_pair._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.exists_unused_pair._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.three_dyadic_reachability"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.three_dyadic_reachability._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.three_dyadic_reachability._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.three_dyadic_reachability._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PathForestBurning",
+      "name": "PathForestBurning.three_dyadic_reachability._proof_1_4"
+    }
+  ],
   "dependency_versions": {
     "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
     "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
@@ -14,12 +264,10 @@
   "file_sha256": {
     "papers/graph-burning-long-path-forests/formalization/PathForestBurning.lean": "6d875a7fcbcc473fcc329aace123162e81f35e43308cecaa6a2f64b84dd3e20a"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.24.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "b72820c1c69b83478f0b883a3042db944e5599f7c62568cf46b9803798597fbf",
-  "paper_path": "papers/graph-burning-long-path-forests/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/graph-burning-long-path-forests/paper.en.md"
 }

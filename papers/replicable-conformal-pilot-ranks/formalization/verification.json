@@ -1,5 +1,337 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [],
+      "module": "PilotRanks",
+      "name": "PilotRanks.block"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.block_ne_iff"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.block_ne_iff._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.block_ne_iff._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.disagree_count"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.disagree_count._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.disagree_count._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.disagree_count._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.disagree_count._proof_1_6"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.disagree_count._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.disagree_count._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.endpoint_identity"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.endpoint_identity._proof_1_1"
+    },
+    {
+      "axioms": [],
+      "module": "PilotRanks",
+      "name": "PilotRanks.nextRank"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.nextRank_bounds"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.nextRank_bounds._proof_1_1"
+    },
+    {
+      "axioms": [],
+      "module": "PilotRanks",
+      "name": "PilotRanks.outputRank"
+    },
+    {
+      "axioms": [],
+      "module": "PilotRanks",
+      "name": "PilotRanks.outputRank.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.outputRank_eq_iff"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.outputRank_eq_iff._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.outputRank_eq_iff._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.outputRank_eq_iff._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.outputRank_eq_iff._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.outputRank_eq_iff._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.outputRank_eq_iff._proof_1_6"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.outputRank_eq_iff._proof_1_7"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.outputRank_eq_iff._proof_1_8"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.outputRank_eq_iff._proof_1_9"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.output_disagree_count"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.output_disagree_count._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.output_disagree_count._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.output_disagree_count._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.unique_offset_for_wait"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.unique_offset_for_wait._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.unique_offset_for_wait._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "PilotRanks.unique_offset_for_wait._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "_private.PilotRanks.0.PilotRanks.nextRank_le_of_cross"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "_private.PilotRanks.0.PilotRanks.nextRank_le_of_cross._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "_private.PilotRanks.0.PilotRanks.nextRank_le_of_cross._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "_private.PilotRanks.0.PilotRanks.translate"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PilotRanks",
+      "name": "_private.PilotRanks.0.PilotRanks.translate_val"
+    }
+  ],
   "dependency_versions": {
     "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
     "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
@@ -14,12 +346,10 @@
   "file_sha256": {
     "papers/replicable-conformal-pilot-ranks/formalization/PilotRanks.lean": "f4e2fa426dbe4dba7f0fbd01fe54729dd97df880ef445167ffce70ac0f103195"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.24.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "4409d87a5df25e20f79ce2f530a50a5252ed3e248c52f9594612c6d930d8be55",
-  "paper_path": "papers/replicable-conformal-pilot-ranks/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/replicable-conformal-pilot-ranks/paper.en.md"
 }

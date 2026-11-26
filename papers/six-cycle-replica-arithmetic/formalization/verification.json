@@ -1,5 +1,318 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleInfiniteObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.minusNumerator"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleInfiniteObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.minusNumerator._proof_1"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleInfiniteObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.minusNumerator._proof_2"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleInfiniteObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.minusNumerator._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleInfiniteObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.minusNumerator.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleInfiniteObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.no_common_rational_function"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleInfiniteObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.plusNumerator"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleInfiniteObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.plusNumerator._proof_4"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleInfiniteObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.plusNumerator._proof_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleInfiniteObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.plusNumerator.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleRealTailObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.minusTail"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleRealTailObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.minusTail._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleRealTailObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.minus_tail_infinite"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleRealTailObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.minus_tail_infinite._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleRealTailObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.no_common_rational_on_tails"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleRealTailObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.no_common_rational_on_tails._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleRealTailObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.plusTail"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleRealTailObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.plus_tail_infinite"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleRealTailObstruction",
+      "name": "SixCycleReplicaArithmeticResearchProof1.plus_tail_infinite._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branchMinus"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branchMinus._closed_1._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branchMinus._closed_2._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branchMinus._closed_3._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branchMinus._closed_4._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branchMinus._cstage1"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branchMinus._cstage2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branchPlus"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branchPlus._closed_1._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branchPlus._closed_2._cstage2"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branchPlus._cstage1"
+    },
+    {
+      "axioms": [],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branchPlus._cstage2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branch_differ_of_ge_four"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branch_differ_of_ge_four._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branch_differ_of_ge_four._proof_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branch_differ_of_ge_four._proof_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branch_difference"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branch_difference_zero_iff"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branch_difference_zero_iff._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branch_difference_zero_iff._proof_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branch_difference_zero_iff._proof_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branch_difference_zero_iff._proof_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.branch_eq_at_three"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "SixCycleReplicaArithmetic",
+      "name": "SixCycleReplicaArithmeticResearchProof1.three_on_both_sequences"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -16,12 +329,10 @@
     "papers/six-cycle-replica-arithmetic/formalization/SixCycleRealTailObstruction.lean": "9e5e0ff0729c32c1ce3b57278c36c76de45aba889d2255a9441a1df9620b47d4",
     "papers/six-cycle-replica-arithmetic/formalization/SixCycleReplicaArithmetic.lean": "1fc6f3686d47c3056f43c0165c18dfd72481ef90dff7451a122c43f9bf240ad1"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "e7f79c8819bb8b623c319354f7efd173d4ff38c179b7125fb51f108a8c4081a9",
-  "paper_path": "papers/six-cycle-replica-arithmetic/paper.zh.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/six-cycle-replica-arithmetic/paper.zh.md"
 }
