@@ -597,3 +597,138 @@ Theorems 1-3 are mathematical statements under the scalar, real, independent, me
 [T22] Y. T. Trinh. *Option pricing and CVA calculations using the Monte Carlo-Tree (MC-Tree) method*. PhD thesis, University College Cork, 2022. Chapter 5, especially Theorem 5.2.1 and Section 5.6. Institutional record: [hdl.handle.net/10468/13565](https://hdl.handle.net/10468/13565). The present literature check verified the institutional metadata and relevant available theorem and section extracts; this citation does not claim a complete examination of the thesis.
 
 [S25] J. Stapmanns et al. *Phase Transitions of the Additive Uniform Noise Channel with Peak Amplitude and Cost Constraint*. Author manuscript, [arXiv:2510.12427v1](https://arxiv.org/html/2510.12427v1), 2025. The author record reports that part of the work was presented at ISIT 2025; this citation refers specifically to the arXiv manuscript.
+
+
+---
+
+## Radial tails in Gaussian observations and additive channels
+
+### Abstract
+
+For a Gaussian observation of a fixed-dimensional random vector at vanishing signal-to-noise ratio, we determine the exact first-order mutual information and mean squared error when the survival function of its norm is regularly varying with exponent \(-\alpha\), \(0<\alpha<2\). The result includes \(\alpha=2\) with infinite second moment and permits arbitrary angular laws, atoms and dependence. For a disturbance of finite differential entropy we obtain the matching high-power capacity correction uniformly over input distributions satisfying a total second-moment constraint. A radial hard threshold calibrated by one tail probability is first-order Bayes efficient. We determine the exact loss of using a common estimator on two tail indices under an efficiency constraint on the lighter tail.
+
+### 1. Gaussian smoothing
+
+Let \(G\) be a standard Gaussian in fixed dimension \(d\ge1\), independent of the Borel random vector \(Z\). Set \(W=\epsilon Z,\ Y=W+G,\ R=\|Z\|,\ s=\epsilon^2\). Write \(F(x)=\Pr(R>x)=x^{-\alpha}L(x)\), with \(L\) eventually positive and slowly varying at infinity. Logarithms are natural. Put
+\[
+ T_\alpha=\sqrt{2\alpha\log(1/\epsilon)},\quad p=F(T_\alpha/\epsilon),\quad
+ V(x)=\mathbb E[R^2\mathbf{1}_{R\le x}],\quad M_\alpha=\epsilon^2 V(T_\alpha/\epsilon).
+\]
+Write \(I(s)=I(Z;Y)\), \(\mathcal R_Z(b)=\mathbb E\|b(Y)-W\|^2\), and \(\mathcal R_Z^*(\epsilon)=\inf_b\mathcal R_Z(b)\). The squared-error target in \(\mathcal R\) includes the scale factor \(\epsilon\).
+
+**Theorem 1.** For \(0<\alpha<2\), or for \(\alpha=2\) and \(V(x)\to\infty\),
+\[
+ I(s)\sim \tfrac12\mathbb E\min(\|W\|^2,T_\alpha^2),\qquad
+ \mathcal R_Z^*(\epsilon)\sim M_\alpha\sim\alpha I(s).
+\]
+For \(0<\alpha<2\), the information equivalent is \(pT_\alpha^2/(2-\alpha)\). At index two it is \(M_2/2\). The MMSE for estimating the original \(Z\) is \(\mathcal R_Z^*(\epsilon)/s\). Finite second moment gives the classical slope \(I(s)/s\to\operatorname{tr}\operatorname{Cov}(Z)/2\).
+
+**Theorem 2.** Suppose additionally that the disturbance \(Z\) has density \(k\) with \(\int k|\log k|<\infty\). Let \(C(P)=\sup I(X;X+Z)\), with independent input and \(\mathbb E\|X\|^2\le P\). In the infinite-second-moment cases of Theorem 1, put \(\epsilon=\sqrt{d/P}\). Then
+\[
+ C(P)=\tfrac d2\log(P/d)+h(G)-h(Z)+I(d/P)+o(I(d/P)).
+\]
+The centered isotropic Gaussian input attains the three displayed terms. The remainder here is first-order relative to the smoothing gain.
+
+#### Tail estimates
+
+In the following \(T=T_\alpha\). Regular variation gives \(\log(1/p)\sim T^2/2\). For fixed \(u>0\), \(\Pr(\|W\|>uT)\sim u^{-\alpha}p\). Integration of \(2rF(r)\) followed by subtraction of \(r^2 F(r)\) (Karamata's theorem) gives, for \(\alpha<2\),
+\[
+ \mathbb E[\|W\|^2\mathbf{1}_{\|W\|\le uT}]
+ \sim \frac{\alpha}{2-\alpha}u^{2-\alpha}pT^2. \tag{1}
+\]
+At index two with divergent truncated moment, \(V(x)\) is slowly varying and \(L(x)=o(V(x))\). Indeed \(\int^x L(t)\,dt/t\) dominates any fixed multiple of \(L(x)\) by considering \([x/b,x]\) and then increasing \(b\). Its increment on each fixed multiplicative interval is \(O(L(x))\). Consequently \(pT^2=o(M_2)\) and \(\epsilon^2 V(uT/\epsilon)\sim M_2\). These estimates allow unrestricted slowly varying factors.
+
+#### A uniform entropy upper bound
+
+Let \(U\) be independent of \(W\) with \(\mathbb E\|U\|^2\le d\), and put \(E=\{\|W\|>T\}\). Whenever the conditional outputs have densities with finite entropy, mixing gives
+\[
+ h(U+W)-h(G)\le H_{\mathrm b}(p)+\tfrac12 M_\alpha+O(p\log T). \tag{2}
+\]
+On \(E^c\) bound the entropy by that of a Gaussian with the same covariance trace. The cross covariance vanishes by independence. The trace is at most \(d+M_\alpha/(1-p)\). Multiplication by \(1-p\) and \(\log(1+x)\le x\) gives the stated bulk term. On \(E\) use a reference density proportional to \(T^{-d}(1+\|y\|/T)^{-d-1}\). Its cross entropy is \(d\log T+O(1)\), uniformly in \(U\). Indeed the conditional expectation of \(\log(1+\|W\|/T)\) is bounded by integration of the conditional tail, using Potter's bound with any exponent between zero and \(\alpha\). The extra \(\log(1+\|U\|/T)\) has bounded expectation by Cauchy–Schwarz.
+
+For \(U=G\) each conditional output is a bounded density with a finite logarithmic moment. For Theorem 2 each conditional noise density has finite absolute entropy and logarithmic moment for fixed \(\epsilon\). Mixing its translations preserves a lower entropy bound by the conditional noise entropy. One justification is the log-sum inequality for relative entropy against the polynomial reference just used. The averaged cross entropies of the translations are finite, hence the mixed entropy is finite and bounded below by the entropy of the noise component. The same reasoning applies to the full output. Thus (2) applies in both settings. As \(H_{\mathrm b}(p)\sim pT^2/2\), (1) gives the claimed upper coefficients. Scaling the capacity output and subtracting \(h(Z)\) gives the upper side of Theorem 2.
+
+#### Lower bound below the critical index
+
+Fix \(0<\delta<1/2\). Separate the three input classes cut at \((1-\delta)T\) and \((1+\delta)T\), calling the first \(B\) and the last \(J\). The chain rule and nonnegativity give
+\[
+ I(s)\ge\Pr(B) I(W;Y\mid B)+I(\mathbf{1}_J;Y).
+\]
+The event \(\|Y\|>(1+\delta/2)T\) has conditional probability \(1-o(1)\) on \(J\). Its marginal is \(O_\delta(p)\) by splitting at \(\|W\|=\delta T/4\) and bounding the Gaussian norm tail above \((1+\delta/4)T\). The latter tail is \(o(p)\). Binary data processing and the conditional relative entropy for \(J\) give the lower bound \(\Pr(J)[(1-o(1))\log(1/p)-O_\delta(1)]\) for the indicator information.
+
+For the bulk write \(\phi\) for the standard Gaussian law and \(Q\) for the output given \(B\). The Gaussian shift identity gives
+\[
+ I(W;Y\mid B)=\tfrac12\mathbb E[\|W\|^2\mid B]-D(Q\|\phi).
+\]
+We show \(D(Q\|\phi)=o(pT^2)\). Its likelihood ratio is \(K(y)=\mathbb E[\exp(y\cdot W-\|W\|^2/2)\mid B]\). Fix \(0<\eta<1-\delta\). On the part \(\|W\|\le\eta T\) the conditional expectation of \(\log K(Y)\) is bounded by the divergence of its own output to \(\phi\), by subtracting its divergence to \(Q\). Convexity bounds this by half the conditional second moment. After weighting this contributes \(O(\eta^{2-\alpha})pT^2\) in the limiting ratio. For the remaining bulk inputs and \(\|y\|\le(1-\delta/2)T\),
+\[
+ K(y)\le e^{\eta T\|y\|}+O_\eta(p)e^{\|y\|^2/2}
+         \le e^{\eta T\|y\|}+o(1).
+\]
+Off this ball \(\|G\|>\delta T/2\), and the global bound \(\log K(y)\le\|y\|^2/2\) contributes \(o_\eta(pT^2)\) after weighting because the remaining input mass is \(O_\eta(p)\). On the ball the upper contribution is at most \((1+o(1))\eta T\,\mathbb E[\|W\|\mathbf{1}_{\eta T<\|W\|\le T}]+O_\eta(pT)+o_\eta(p)\). Dividing by \(pT^2\) bounds its limit superior by
+\[
+ \eta\left(\eta^{1-\alpha}+\int_\eta^1 u^{-\alpha}\,du\right).
+\]
+This follows by integration of the tail on the fixed interval. All these bounds tend to zero as \(\eta\downarrow0\) for \(\alpha<2\). From (1) the lower coefficient in units \(pT^2/2\) is at least \(\alpha(1-\delta)^{2-\alpha}/(2-\alpha)+(1+\delta)^{-\alpha}\). Letting \(\delta\downarrow0\) proves the information equivalent.
+
+#### The critical index and the derivative
+
+At \(\alpha=2\) take \(B=\{\|W\|\le\eta T\}\) with \(0<\eta<1/\sqrt2\) and write \(V_B,V'_B\) for independent copies of \(W\mid B\). Gaussian integration and Taylor's inequality give
+\[
+ D(Q\|\phi)\le\chi^2(Q\|\phi)=\mathbb E e^{V_B\cdot V'_B}-1
+ \le \|\mathbb E V_B\|^2+\tfrac12e^{\eta^2T^2}(\mathbb E\|V_B\|^2)^2=o(M_2).
+\]
+The first moment of \(R\) is finite. The last estimate follows from \(V(T/\epsilon)\to\infty\), its slow variation, and \(e^{\eta^2T^2}=\epsilon^{-4\eta^2}\). Conditioning on \(B\) now supplies \(I(s)\ge(1-o(1))M_2/2\). The Gaussian choice \(U=G\) in the capacity problem attains the lower bound in Theorem 2 exactly in terms of \(I(s)\).
+
+For \(s_0>0\) condition on \(Y_{s_0}=\sqrt{s_0}Z+G_0\). The residual \(Z-Y_{s_0}/\sqrt{s_0}\) has finite unconditional second moment \(d/s_0\). Apply the finite-energy I–MMSE integral to this residual conditionally using an independent Gaussian observation of additional SNR \(v\). An orthogonal rotation of the pair gives the observation at \(s_0+v\) and independent standard Gaussian noise. The chain rule and Tonelli therefore yield
+\[
+ I(s_1)-I(s_0)=\tfrac12\int_{s_0}^{s_1}\mathrm{mmse}_Z(t)\,dt,\qquad s_1>s_0>0 .
+\]
+The infimal risk is nonincreasing by Gaussian degradation, including when an unconditioned second moment is infinite. The established equivalents make \(I(s)\) regularly varying at zero with index \(\alpha/2\). Bound the integral on \([s,bs]\) and \([s/b,s]\) by its endpoint values, divide by \(I(s)\), and let \(b\downarrow1\). This gives \(s\,\mathrm{mmse}_Z(s)\sim\alpha I(s)\). It proves the risk part of Theorem 1.
+
+### 2. Exact price of simultaneous estimation
+
+Use \(\mathcal R_\gamma\) to denote risk under a particular law of exponent \(\gamma\), with the same scale and dimension. For a calibration law of exponent \(0<\beta\le2\), assume throughout this section that \(V_\beta(x)\to\infty\) when \(\beta=2\). Put
+\[
+ u=\log(1/F_\beta(1/\epsilon)),\quad
+ b_\epsilon=\sqrt{2u+2(d+6)\log(2+u)},\qquad
+ H_\epsilon(y)=y\mathbf{1}_{\|y\|>b_\epsilon}.
+\]
+Only an eventual definition for small \(\epsilon\) is needed.
+
+**Theorem 3.** The threshold \(H_\epsilon\) is first-order Bayes efficient on its calibration law. For any two such infinite-second-moment laws with \(0<\alpha<\beta\le2\), every common family of estimators \(A_\epsilon\) satisfying
+\(\liminf_{\epsilon\downarrow0}\log\mathcal R_\beta(A_\epsilon)/\log\epsilon\ge\beta\) obeys
+\[
+ \liminf_{\epsilon\downarrow0}\frac{\mathcal R_\alpha(A_\epsilon)}
+ {\mathcal R_\alpha^*(\epsilon)}
+ \ge (\beta/\alpha)^{1-\alpha/2}.
+\]
+The threshold calibrated on the lighter tail attains equality as a limit for every heavier law. No relation between the two angular distributions is required.
+
+*Achievability.* Write \(T=T_\beta,\ b=b_\epsilon\sim T\). For the calibrated or any heavier law, write \(F_\gamma,p_\gamma=F_\gamma(T/\epsilon)\) and \(M_{\gamma,T}=\epsilon^2 V_\gamma(T/\epsilon)\). For fixed \(0<\delta<1/4\), missed detections with \(\|W\|\le(1+\delta)T\) contribute at most \(M_{\gamma,(1+\delta)T}\). For larger \(r=\|W\|\), the conditional probability of a miss is at most \(\Pr(\|G\|\ge r-b)\). Uniformly over such \(r\), \(r^2\Pr(\|G\|\ge r-b)=o(T^2)\) by the Gaussian tail and \(r-b\ge c_\delta r\). The input mass there is \(O_\delta(p_\gamma)\).
+
+On detections the loss is \(\|G\|^2\). Split at input norms \(1/T\) and \(\delta T\). The largest class contributes \(O_\delta(p_\gamma)\) by independence. On the middle class the contribution is at most \(F_\gamma(1/(\epsilon T))\mathbb E[\|G\|^2\mathbf{1}_{\|G\|> b-\delta T}]\), which is \(o(p_\gamma T^2)\) by Potter's bound since the two tail arguments differ by \(T^2\). On the smallest class the bound is \(O(T^d e^{-b^2/2})\) by Gaussian radial integration at \(b-1/T\). For \(\gamma=\beta\), Potter gives \(p_\beta\ge c F_\beta(1/\epsilon)T^{-\beta-1}\); the added logarithm makes this contribution \(o(p_\beta T^2)\). For \(\gamma<\beta\) it is smaller by a power of \(\epsilon\) relative to \(p_\gamma T^2\). Taking \(\delta\downarrow0\) shows that the limit superior risk divided by \(M_{\gamma,T}\) is at most one, including the divergent critical case. For \(\gamma=\beta\), Theorem 1 supplies the converse. For \(\gamma=\alpha\), (1) gives \(M_{\alpha,T_\beta}/M_{\alpha,T_\alpha}\to(\beta/\alpha)^{1-\alpha/2}\).
+
+*Constrained-risk converse.* Choose \(K\) with \(\Pr_\beta(\|Z\|\le K)>0\). On \(\|y\|\le2T,\ \|z\|\le K\) the ratio \(\phi(y-\epsilon z)/\phi(y)\) is bounded below by a positive constant uniform in small \(\epsilon\). Integrate the inequality \(\|A_\epsilon(y)\|^2\le2\|A_\epsilon(y)-\epsilon z\|^2+2\epsilon^2 K^2\) on this product region. It follows that
+\[
+ \int_{\|y\|\le2T}\|A_\epsilon(y)\|^2\phi(y)\,dy
+   \le C(\mathcal R_\beta(A_\epsilon)+\epsilon^2).
+\]
+For every \(b_0<\beta\) the right side is \(O(\epsilon^{b_0})\) by hypothesis. Fix \(0<\delta<1/4\), and consider a shift \(w\) with \(\delta T\le\|w\|\le(1-\delta)T\). On \(\|G\|\le\delta T/4\), \(y=w+G\) belongs to the ball in the integral, and its shifted likelihood relative to \(\phi\) is at most \(\exp((1-c_\delta)T^2/2)\) for some \(c_\delta>0\), since its logarithm is \(\|w\|^2/2+w\cdot G\). Take \((1-c_\delta)\beta< b_0<\beta\). Markov's inequality and the integral bound show uniformly on this annulus that the probability of \(\|A_\epsilon(w+G)\|>\delta\|w\|\) tends to zero. The complement of the Gaussian event also has vanishing probability. Thus the conditional risk is at least \((1-o(1))(1-\delta)^2\|w\|^2\). Integrate under the heavier law, apply (1) at both annulus endpoints, and send \(\delta\downarrow0\). This gives the claimed converse and completes Theorem 3.
+
+### 3. Scope and literature
+
+Theorems 1 and 2 concern fixed dimension and first-order equivalents. Direction can vary with radius, including concentration on coordinate axes. Discrete priors are allowed in Theorems 1 and 3. For example, independent Cauchy coordinates give a radial tail of index one. In the scalar standard Cauchy case the information equivalent reduces to \((2/\pi)\epsilon\sqrt{2\log(1/\epsilon)}\). A radial tail \((1+r)^{-2}\) gives \(I(s)\sim\epsilon^2\log(1/\epsilon)\). An exponent-only fixed threshold generally needs extra calibration to handle arbitrary slowly varying factors. Theorem 3 quantifies the different obstruction arising from using the same rule on two indices.
+
+The Gaussian I–MMSE identity is due to Guo, Shamai and Verdú. Guo, Wu, Shamai and Verdú also establish positive-SNR estimation results for arbitrary scalar inputs. Wu, Guo and Verdú analyze the finite-power derivative at zero. We use the positive-SNR integral and regular variation to evaluate the infinite-energy singularity. The constrained-risk proof is related to the likelihood comparisons of Brown and Low and to the risk-constrained normal-mean problem of Donoho and Johnstone. DasGupta and Johnstone study asymptotic risks of threshold estimators and use regular variation to assess a Bayes-risk difference. The comparison in Theorem 3 is between the integrated risks of two fixed tail laws in a vanishing-scale Gaussian experiment. Its parameter is regular variation of a fixed prior under rescaling. Sparsity fractions or pointwise minimax smoothness classes are different experiments. Gavalakis, Kontoyiannis and Madiman study the robustness of Gaussian codebooks under finite variance. For additive stable channels Egan describes multivariate capacity bounds, and Pang and Zhang study the additive white Cauchy channel. The capacity comparison here uses the same output entropy for the Gaussian witness and a separate uniform upper bound over power-limited signals.
+
+- D. Guo, S. Shamai and S. Verdú, *Mutual information and minimum mean-square error in Gaussian channels*, IEEE Transactions on Information Theory (2005). <https://doi.org/10.1109/TIT.2005.844072>
+- D. Guo, Y. Wu, S. Shamai and S. Verdú, *Estimation in Gaussian noise: Properties of the minimum mean-square error*, IEEE Transactions on Information Theory (2011). <https://arxiv.org/abs/1004.3332>
+- Y. Wu, D. Guo and S. Verdú, *Derivative of mutual information at zero SNR: The Gaussian-noise case*, IEEE Transactions on Information Theory (2011). <https://doi.org/10.1109/TIT.2011.2161752>
+- L. D. Brown and M. G. Low, *A constrained risk inequality with applications to nonparametric functional estimation*, Annals of Statistics (1996). <https://doi.org/10.1214/aos/1032181166>
+- D. L. Donoho and I. M. Johnstone, *Neo-Classical Minimax Problems, Thresholding and Adaptive Function Estimation*, Bernoulli (1996). <https://doi.org/10.2307/3318568>
+- A. DasGupta and I. M. Johnstone, *Asymptotic Risk and Bayes Risk of Thresholding and Superefficient Estimates and Optimal Thresholding* (2014). <https://doi.org/10.1007/978-3-319-02651-0_4>
+- L. Gavalakis, I. Kontoyiannis and M. Madiman, *The Entropic Doubling Constant and Robustness of Gaussian Codebooks for Additive-Noise Channels*, IEEE Transactions on Information Theory. <https://doi.org/10.1109/TIT.2024.3460472>
+- M. Egan, *Isotropic and non-isotropic signaling in multivariate α-stable noise*, Frontiers in Communications and Networks (2021). <https://doi.org/10.3389/frcmn.2021.718945>
+- S. Pang and W. Zhang, *Information Rates of Channels With Additive White Cauchy Noise*, IEEE Communications Letters. <https://doi.org/10.1109/LCOMM.2024.3502753>
+- N. H. Bingham, C. M. Goldie and J. L. Teugels, *Regular Variation*, Cambridge University Press. <https://doi.org/10.1017/CBO9780511721434>

@@ -1,0 +1,84 @@
+{
+  "status": "all_exact_rational_assertions_passed",
+  "formalization_performed": false,
+  "moment_order": 1,
+  "eta": "1/4",
+  "input_comparison_matrix": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "rank_input_matrix": 0,
+  "support_size": 6,
+  "support_upper_bound_exact": "rank(A)+2r+4",
+  "support_lower_bound_exact_matrix_only": "rank(A)+r",
+  "support": [
+    "0",
+    "11",
+    "45/4",
+    "23/2",
+    "47/4",
+    "12"
+  ],
+  "baseline_probabilities": [
+    "9770419/10701900",
+    "1/55",
+    "4/225",
+    "2/115",
+    "4/235",
+    "1/60"
+  ],
+  "shared_moments_0_through_r": [
+    "1",
+    "1"
+  ],
+  "epsilon": "1/8",
+  "comparison_scale_lambda": "1/64",
+  "probability_columns_one_per_prior": [
+    [
+      "9770419/10701900",
+      "9770419/10701900"
+    ],
+    [
+      "1/55",
+      "1/55"
+    ],
+    [
+      "4/225",
+      "4/225"
+    ],
+    [
+      "2/115",
+      "2/115"
+    ],
+    [
+      "4/235",
+      "4/235"
+    ],
+    [
+      "1/60",
+      "1/60"
+    ]
+  ],
+  "exact_comparison_matrix": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "constraint_rank": 3,
+  "restricted_form_rank": 2,
+  "max_probability_numerator_or_denominator_bits": 24,
+  "lambda_numerator_or_denominator_bits": 7,
+  "epoch_simultaneous_gap_lower_bound": "17/640",
+  "first_action_simultaneous_gap_lower_bound": "17/960"
+}

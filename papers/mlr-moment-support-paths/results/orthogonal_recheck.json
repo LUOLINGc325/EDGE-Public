@@ -1,0 +1,24 @@
+{
+  "n": 12,
+  "k": 9,
+  "regime": 12,
+  "sample": "7/8",
+  "original_record_preserved": {
+    "regime": 12,
+    "sample": "7/8",
+    "lp_success": true,
+    "objective_absolute_error": 2.048906481422197e-07,
+    "moment_residual": 5.913158851456046e-11,
+    "numerical_check_passed": false
+  },
+  "original_report_sha256": "1b86edea6af227b5292d48120bd8ae5e2c8f8451cee6fb85f103745089b6d626",
+  "certificate_sha256": "da5f664dc6efe7e6fad4249ea8a8921e716569d0d1602e15ada7af5c2ff84881",
+  "original_matrix_condition_number": 91276.12061941749,
+  "orthogonal_matrix_condition_number": 1.0000000000000007,
+  "method": "QR row-space basis, RHS formed from binomial reference masses",
+  "lp_success": true,
+  "objective_absolute_error": 6.38378239159465e-16,
+  "moment_residual": 4.440892098500626e-16,
+  "passed_original_unchanged_tolerances": true,
+  "interpretation": "A single supplementary numerical conditioning check. Original floating-point failure remains recorded; exact certificates are the mathematical acceptance criterion."
+}

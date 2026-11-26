@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**378 research entries / 成果条目 · 480 manuscript versions / 论文版本**
+**388 research entries / 成果条目 · 490 manuscript versions / 论文版本**
 
 [按学科浏览](BY_FIELD.md) · [导出单项成果](EXPORT.md) · [项目清单](CATALOG.json)
 
@@ -63,11 +63,14 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Finite-resource response of reversible covalent switches | — | [Read](covalent-switch-finite-resource-response/paper.en.md) |
 | Finite-size nonmonotone submodular correlation gaps | — | [Read](finite-cardinality-profile/paper.en.md) |
 | Fixed Block Perception Budgets | — | [Read](block-fdiv-perception-frontier/paper.en.md) |
+| Fractional neural kernels: radial spectral laws, threshold interference, and inverse limits · [正文 / Manuscript](fractional-neural-threshold-spectral-transition/paper.md) | — | — |
 | Full-support unbounded service times with a quantitative feedback capacity gap · [正文 / Manuscript](unbounded-queue-feedback-separation/paper.md) | — | — |
 | Gaffke 统计量留一系数的尖锐下界 | [阅读](gaffke-delta-sharp-bound/paper.zh.md) | [Read](gaffke-delta-sharp-bound/paper.en.md) |
 | Glauber 退火中过量活动度的桥结构机制 | [阅读](glauber-annealing-activity-counterexample/paper.zh.md) | [Read](glauber-annealing-activity-counterexample/paper.en.md) |
 | Global and Stable Recovery of Compositional Lotka–Volterra Dynamics | — | [Read](compositional-glv-convex-recovery/paper.en.md) |
+| Global entropy support for binary symmetric sources and the absence of an interactive key-rate gain · [正文 / Manuscript](dsbs-interactive-key-support/paper.md) | — | — |
 | Global optimality and uniqueness for conjugate-target renewal resetting | [阅读](conjugate-resetting-global-optimality/paper.zh.md) | [Read](conjugate-resetting-global-optimality/paper.en.md) |
+| Good-Turing is asymptotically minimax for missing-mass estimation · [正文 / Manuscript](iid-missing-mass-exact-minimax/paper.md) | — | — |
 | Gradual stability transitions for nonregular median estimation | — | [Read](nonregular-median-stability-frontier/paper.en.md) |
 | Gray 区间内部二元 Markov 源的操作色散 | [阅读](binary-markov-gray-dispersion/paper.zh.md) | [Read](binary-markov-gray-dispersion/paper.en.md) |
 | Hard Communication Budgets for Heavy-Tailed Mean Estimation | — | [Read](moment-hard-communication/paper.en.md) |
@@ -76,6 +79,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Hidden-state complexity from excursion moments: inertia bounds and a quantitative dissipation penalty · [正文 / Manuscript](hidden-state-inertia-budget/paper.md) | — | — |
 | High-order parity gaps and crossover radii for noisy qubit designs | — | [Read](high-order-parity-gap/paper.en.md) |
 | Hitting and cover-time robustness separate on bounded-degree graphs | — | [Read](bounded-degree-cover-hitting-separation/paper.en.md) |
+| Indexability and local universality in assortment exploration · [正文 / Manuscript](assortment-prior-index-universality/paper.md) | — | — |
 | Information loss and sharp power limits for conditional Gamma calibration | — | [Read](conditional-information-power-boundaries/paper.en.md) |
 | KCBS 五角环的标量及算子重叠锐界 | — | [Read](kcbs-rank-one-all-dimensions/paper.en.md) |
 | Lexicographic Swap Rounding Need Not Be 1-Negatively Associated | [阅读](lexicographic-swap-rounding-counterexample/paper.zh.md) | [Read](lexicographic-swap-rounding-counterexample/paper.en.md) |
@@ -118,6 +122,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Rényi contraction of repeated symmetric channels | — | [Read](renyi-product-order-phase/paper.en.md) |
 | Scale thresholds, weak recovery, and stopping-design limits for heterogeneous repeated measurements · [正文 / Manuscript](heterogeneous-replication-scale-minimax/paper.md) | — | — |
 | Schmidt 稳定子熵的随机极限与单项局部酉极小态 | [阅读](haar-schmidt-magic/paper.zh.md) | — |
+| Self-calibration from heterogeneous convolution times · [正文 / Manuscript](heterogeneous-convolution-self-calibration/paper.md) | — | — |
 | Self-deleting paths with bounded deleters per edge | — | [Read](bounded-edge-deleters/paper.en.md) |
 | Serial service and the exact ordinal scheduling frontier | — | [Read](serial-service-frontier/paper.en.md) |
 | Several optimal Rényi orders under randomized-response composition | — | [Read](composition-multiple-orders/paper.en.md) |
@@ -129,13 +134,16 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Sharp Jordan-order limits for monitored qubit first-passage kernels | — | [Read](dominant-jordan-order-limit/paper.en.md) |
 | Sharp limits of repeated majority cross-validation | — | [Read](repeated-majority-cross-validation/paper.en.md) |
 | Sharp local cooling capacity of resonant finite machines | — | [Read](two-weight-qutrit-sharp-cooling/paper.en.md) |
+| Sharp Monotone Support Paths in Finite Moment Optimization · [正文 / Manuscript](mlr-moment-support-paths/paper.md) | — | — |
 | Sharp normalization and stability for one-sided tensorization of information divergences | — | [Read](subadditive-generator-rigidity/paper.en.md) |
 | Sharp ordered Gaffke intervals under bounded likelihood tilts | — | [Read](sharp-conditional-ranks-under-tilts/paper.en.md) |
 | Sharp randomized robustness for two weighted nonclairvoyant jobs | — | [Read](randomized-weighted-two-job-robustness/paper.en.md) |
 | Sharp Rare-Erasure Asymptotics for Remote Estimation with Distinguishable Silence | — | [Read](visible-erasure-sharp-reliability/paper.en.md) |
 | Sharp recovery limits for renewal waiting times from spatial count snapshots | — | [Read](renewal-snapshot-wasserstein-minimax/paper.en.md) |
 | Sharp resource laws for ancilla-assisted detector calibration | — | [Read](detector-calibration-ancilla-gap/paper.en.md) |
+| Sharp Spectral Dissipation and Unstable Thermodynamic Identification · [正文 / Manuscript](abelian-two-layer-reversible-sampling/paper.md) | — | — |
 | Sharp weighted bivariate tails under leave-one-out mean constraints | — | [Read](weighted-bivariate-tail/paper.en.md) |
+| Sharp welfare concentration and belief-reversal instability in sequential social learning · [正文 / Manuscript](equal-tail-social-learning-candidate/paper.md) | — | — |
 | Sharp Wigner-negativity bounds, purity rigidity, and quantum correlations in spin systems | — | [Read](spin-wigner-uniform-negativity/paper.en.md) |
 | Sibuya 时钟下量子重置归约的最优收敛速率 | [阅读](sibuya-quantum-reset-rate/paper.zh.md) | [Read](sibuya-quantum-reset-rate/paper.en.md) |
 | Simes 带曲率的精确变号与全零假设线性系数的反例 | [阅读](simes-band-curvature/paper.zh.md) | — |
@@ -181,6 +189,8 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Two-level Pauli spectra and the four-qubit obstruction to mutually unbiased orbits | — | [Read](four-qubit-pauli-mub-obstruction-and-robustness/paper.en.md) |
 | Two-season frequency witnesses on directed cycles | [阅读](directed-cycle-two-season-witness/paper.zh.md) | [Read](directed-cycle-two-season-witness/paper.en.md) |
 | Universal Bernstein positivity for qubit shell capacity | — | [Read](universal-fixed-degree-positivity/paper.en.md) |
+| Universal convex-order bounds for coalescent tree lengths and exact merger-cost criteria · [正文 / Manuscript](coalescent-convex-order/paper.md) | — | — |
+| Universal finite removal of negative-order common-information excess · [正文 / Manuscript](dsbs-negative-renyi-frontier/paper.md) | — | — |
 | Upper Clique Transversal on simultaneous interval representations | — | [Read](upper-clique-transversal-simultaneous-xp/paper.en.md) |
 | Weighting makes unique-cover preassignment hard on interval graphs | — | [Read](weighted-interval-inapproximability/paper.en.md) |
 | When Is LookAhead Globally Optimal? An Exact Boundary for Affine Age Costs | — | [Read](lookahead-full-information-boundary/paper.en.md) |

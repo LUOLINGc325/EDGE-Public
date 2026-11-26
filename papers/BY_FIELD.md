@@ -29,6 +29,7 @@
 - [Finite-grid witnesses and full-domain tensorization for read-once e-value capital](full-domain-capital-tensorization/)
 - [Finite-size nonmonotone submodular correlation gaps](finite-cardinality-profile/)
 - [Fixed Block Perception Budgets](block-fdiv-perception-frontier/)
+- [Fractional neural kernels: radial spectral laws, threshold interference, and inverse limits](fractional-neural-threshold-spectral-transition/) · 交叉 / Cross-listed
 - [Gaffke 统计量留一系数的尖锐下界](gaffke-delta-sharp-bound/)
 - [Glauber 退火中过量活动度的桥结构机制](glauber-annealing-activity-counterexample/)
 - [Hawkes Processes with Missed and Spurious Events](hawkes-missed-spurious-recovery/)
@@ -51,6 +52,7 @@
 - [Sharp coarse-graining bounds for Lüders order scores](sharp-amplification-and-pointwise-monotonicity/)
 - [Sharp Finite-Horizon Descent for the Difference-of-Convex Algorithm](dca-sharp-finite-horizon/)
 - [Sharp fixed-statistic sensitivity envelopes for Gaffke's statistic](fixed-statistic-sensitivity-envelope/)
+- [Sharp Monotone Support Paths in Finite Moment Optimization](mlr-moment-support-paths/)
 - [Sharp normalization and stability for one-sided tensorization of information divergences](subadditive-generator-rigidity/)
 - [Sharp ordered Gaffke intervals under bounded likelihood tilts](sharp-conditional-ranks-under-tilts/)
 - [Sharp randomized robustness for two weighted nonclairvoyant jobs](randomized-weighted-two-job-robustness/)
@@ -174,14 +176,18 @@
 - [Exact pivotalization for finite composite tests](finite-null-exact-pivotalization/)
 - [Exact tail phases of intermittent Kalman filtering: Jordan corrections and scalar shape classification](intermittent-kalman-tail-phase/) · 交叉 / Cross-listed
 - [Exact Two-Sided Coverage of the Bivariate Gaffke Intervals](exact-coverage-and-risk-transitions/)
+- [Good-Turing is asymptotically minimax for missing-mass estimation](iid-missing-mass-exact-minimax/)
 - [Gradual stability transitions for nonregular median estimation](nonregular-median-stability-frontier/)
 - [Hidden-state complexity from excursion moments: inertia bounds and a quantitative dissipation penalty](hidden-state-inertia-budget/)
 - [Loss geometry, evidence efficiency, and adaptive repair in multivariate mean testing](gue-loss-sign-growth-frontier/)
 - [Noncommuting Markov aliases on a fixed cubic graph of girth six](noncommuting-pell-aliases/)
 - [Precise independent e-merging beyond reordered martingales](independent-e-merging-beyond-martingales/)
 - [Scale thresholds, weak recovery, and stopping-design limits for heterogeneous repeated measurements](heterogeneous-replication-scale-minimax/)
+- [Self-calibration from heterogeneous convolution times](heterogeneous-convolution-self-calibration/)
 - [Sharp recovery limits for renewal waiting times from spatial count snapshots](renewal-snapshot-wasserstein-minimax/)
+- [Sharp Spectral Dissipation and Unstable Thermodynamic Identification](abelian-two-layer-reversible-sampling/) · 交叉 / Cross-listed
 - [Sharp weighted bivariate tails under leave-one-out mean constraints](weighted-bivariate-tail/)
+- [Sharp welfare concentration and belief-reversal instability in sequential social learning](equal-tail-social-learning-candidate/) · 交叉 / Cross-listed
 - [Tail-Sensitive and Robust Capacity Laws for Random-Rank Matrix Channels](gamma-random-rank-capacity-transitions/) · 交叉 / Cross-listed
 - [The Cost of Zeros in Exact Adaptive Rejection Sampling](nonnegative-holder-rejection-minimax/)
 - [The exact Gaussian threshold noise-stability phase curve](gaussian-threshold-phase-curve/)
@@ -193,6 +199,8 @@
 - [The trivariate two-sided Gaussian Simes inequality without a high-level correlation cap](unrestricted-correlation-boundary/)
 - [The weak-response frequency boundary for reversible Markov environments](reversible-environment-weak-response/)
 - [Two scales of heavy traffic in a scheduled queue](scheduled-queue-continuous-extremes/) · 交叉 / Cross-listed
+- [Universal convex-order bounds for coalescent tree lengths and exact merger-cost criteria](coalescent-convex-order/)
+- [Universal finite removal of negative-order common-information excess](dsbs-negative-renyi-frontier/) · 交叉 / Cross-listed
 - [Wideband Capacity of Dead-Time Detector Channels](dead-time-poisson-wideband-capacity/)
 - [三维双侧高斯 Simes 检验在水平一附近的精确控制](gaussian-simes-high-level-trivariate/)
 - [二项混合符号泛函的全参数极小极大风险](binomial-sign-margin-minimax/)
@@ -223,10 +231,12 @@
 - [Exact CVaR One-Max Search at a Fixed Announced Horizon](announced-fixed-horizon/)
 - [Exact phase complexity of discrete CVaR ski rental](polynomial-exact-phase-sweep/)
 - [Full-support unbounded service times with a quantitative feedback capacity gap](unbounded-queue-feedback-separation/) · 交叉 / Cross-listed
+- [Indexability and local universality in assortment exploration](assortment-prior-index-universality/)
 - [Ordinal predictions attain the exact finite-job scheduling frontier](ordinal-only-frontier/)
 - [Quantitative gains from refunds under finite valuation uncertainty](finite-value-robust-refund-gain/)
 - [Serial service and the exact ordinal scheduling frontier](serial-service-frontier/)
 - [Sharp demand-shape and information boundaries in random-capacity inventory control](discount-replenishment-full-capacity/)
+- [Sharp Monotone Support Paths in Finite Moment Optimization](mlr-moment-support-paths/) · 交叉 / Cross-listed
 - [Stable FCFS queues with maximal total-variation separation](ergodic-queue-total-variation-separation/)
 - [Strict Priority in Nonpreemptive Clearing Systems with Common Exponential Patience](equal-patience-priority-classification/)
 - [Synchronization, relaxation gaps, and uniform planning horizons in heterogeneous restless bandits](heterogeneous-rmab-uniform-horizon/)
@@ -291,6 +301,8 @@
 
 - [A square-root mixed-null inflation for weighted conformal BH](mixed-null-square-root-boundary/)
 - [A universal boundary kernel for cross-validation after two-model selection](two-model-cv-boundary-universality/)
+- [Fractional neural kernels: radial spectral laws, threshold interference, and inverse limits](fractional-neural-threshold-spectral-transition/)
+- [Good-Turing is asymptotically minimax for missing-mass estimation](iid-missing-mass-exact-minimax/) · 交叉 / Cross-listed
 - [Narrow corridors in critical online conformal prediction](narrow-corridor-expansion/)
 - [Scale thresholds, weak recovery, and stopping-design limits for heterogeneous repeated measurements](heterogeneous-replication-scale-minimax/) · 交叉 / Cross-listed
 - [Sharp contamination and inference frontiers for the optimal sub-Gaussian variance proxy](optimal-proxy-tail-envelope-minimax/)
@@ -338,6 +350,7 @@
 - [Feasible-output frontiers and covert communication over Gamma noise](gamma-covert-feasible-frontier/)
 - [Finite Certificates and Memory Penalties for Binary POST Channels](binary-post-channel-certificates/)
 - [Full-support unbounded service times with a quantitative feedback capacity gap](unbounded-queue-feedback-separation/)
+- [Global entropy support for binary symmetric sources and the absence of an interactive key-rate gain](dsbs-interactive-key-support/)
 - [Gray 区间内部二元 Markov 源的操作色散](binary-markov-gray-dispersion/)
 - [Hard Communication Budgets for Heavy-Tailed Mean Estimation](moment-hard-communication/)
 - [Information loss and sharp power limits for conditional Gamma calibration](conditional-information-power-boundaries/)
@@ -356,6 +369,7 @@
 - [The first capacity transition of the power-constrained Cauchy channel](cauchy-channel-capacity-transition/)
 - [The sharp seventh-order quantum Rényi erasure bound](order-seven-sharp-erasure/)
 - [The sharp sixth-order quantum Rényi erasure bound](order-six-sharp-erasure/)
+- [Universal finite removal of negative-order common-information excess](dsbs-negative-renyi-frontier/)
 - [When pinching makes a Schur channel mixed unitary](ppt-squared-toroidal-mixing/)
 - [三阶 Rényi 约束下的最优通道设计](renyi-three-channel-frontier/)
 - [未知尺度非自适应一比特均值估计的尖锐样本复杂度](unknown-scale-onebit-mean-minimax/)
@@ -378,6 +392,7 @@
 
 [学科目录 / Field directory](../disciplines/physical-sciences/physics/theoretical-physics/)
 
+- [Sharp Spectral Dissipation and Unstable Thermodynamic Identification](abelian-two-layer-reversible-sampling/)
 - [The least dissipation of linear relaxation: spectral determinacy and exact acceleration frontiers](ou-entropy-spectral-frontier/) · 交叉 / Cross-listed
 
 #### 量子信息与物理 / Quantum information and physics
@@ -461,6 +476,8 @@
 
 [学科目录 / Field directory](../disciplines/economics-finance/economics/theoretical-economics/)
 
+- [Indexability and local universality in assortment exploration](assortment-prior-index-universality/) · 交叉 / Cross-listed
+- [Sharp welfare concentration and belief-reversal instability in sequential social learning](equal-tail-social-learning-candidate/)
 - [Truthful reports break the optimal report-independent envy-ratio barrier](envy-ratio-truthful-report-separation/) · 交叉 / Cross-listed
 
 ## 生命科学 / Life sciences
@@ -478,6 +495,7 @@
 [学科目录 / Field directory](../disciplines/life-sciences/biology/mathematical-biology/)
 
 - [Global and Stable Recovery of Compositional Lotka–Volterra Dynamics](compositional-glv-convex-recovery/) · 交叉 / Cross-listed
+- [Universal convex-order bounds for coalescent tree lengths and exact merger-cost criteria](coalescent-convex-order/) · 交叉 / Cross-listed
 
 ### 神经科学 / Neuroscience
 

@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "claim": "For every s in [0,1], A_DSBS(1/4),c=1_second_derivative(s) <= -1/50.",
+  "consequence": "A(s) <= C_W(DSBS(1/4))*s - s^2/100; therefore d_* >= 1/100.",
+  "arithmetic": "outward rounded integer dyadic intervals; exp/log series with analytic tails; integer sqrt",
+  "bits": 160,
+  "exponential_terms": 100,
+  "logarithm_terms": 256,
+  "cells": 2048,
+  "u_domain": [
+    "1",
+    "2"
+  ],
+  "s_domain": [
+    "0",
+    "1"
+  ],
+  "log3_interval": [
+    "401405914670073218991105554610726763386968019105/365375409332725729550921208179070754913983135744",
+    "200702957335036609495552777305363381693484009683/182687704666362864775460604089535377456991567872"
+  ],
+  "global_second_derivative_interval": [
+    "-57367145282939756615469157288640675924522299981/1461501637330902918203684832716283019655932542976",
+    "-33303754919614762072516021955024106114335636163/1461501637330902918203684832716283019655932542976"
+  ],
+  "worst_cell": 0,
+  "acceptance": "50 * upper_endpoint_integer <= -2**160 on every closed interval",
+  "floating_point_used_for_acceptance": false
+}

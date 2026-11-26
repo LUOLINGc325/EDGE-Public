@@ -1,0 +1,62 @@
+{
+  "status": "high_precision_numerical_check_not_interval_certificate",
+  "checks": [
+    {
+      "boundary_k": 2,
+      "boundary_ell": 4,
+      "precision_decimal_digits": 120,
+      "s": "13.213063996776496420743595184207281",
+      "sample_min_entry": "0.099999635735111997762215052373962519",
+      "fisher_per_transition": "3.1816699328671292287372875830690467e-13",
+      "row_information_layer_0": "6.2788857650385315085309788698630134e-13",
+      "row_information_layer_1": "8.445410069572694894359629627507995e-15",
+      "max_sample_formula_residual": "1.0891664760513707642300711156117865e-121",
+      "max_derivative_formula_residual": "1.6157712581125037616328128834369459e-127",
+      "kl_over_quadratic_leading_term": {
+        "0.001": "0.99999992462429416526760359231374589",
+        "0.0001": "0.99999999924624291839031914917550476"
+      },
+      "fisher_over_refined_asymptotic": "1.0000001826787487822037889443794142",
+      "fisher_over_leading_asymptotic": "4.2947606880459081034541615932780548",
+      "entropy_prefactor_without_normal_quantiles": "42109799.82620415915191830048906758"
+    },
+    {
+      "boundary_k": 5,
+      "boundary_ell": 11,
+      "precision_decimal_digits": 120,
+      "s": "33.032659991941241051858987960518202",
+      "sample_min_entry": "0.099999651265759734822641629294110325",
+      "fisher_per_transition": "1.7000009958693939386483752909788042e-25",
+      "row_information_layer_0": "3.3925335452576853544127493555332811e-25",
+      "row_information_layer_1": "7.4684464811025228840012264243273373e-28",
+      "max_sample_formula_residual": "5.2037953855787714290992286634785353e-121",
+      "max_derivative_formula_residual": "2.3113793250739628242962067843965709e-133",
+      "kl_over_quadratic_leading_term": {
+        "0.001": "0.9999999246242941736427691898124663",
+        "0.0001": "0.99999999924624291923769846811076588"
+      },
+      "fisher_over_refined_asymptotic": "1.0000000305737823027999183297322416",
+      "fisher_over_leading_asymptotic": "1.8032766714142161005773607490000293",
+      "entropy_prefactor_without_normal_quantiles": "12609826400019872516.855267403048412"
+    },
+    {
+      "boundary_k": 13,
+      "boundary_ell": 29,
+      "precision_decimal_digits": 120,
+      "s": "85.884915979047226734833368697347324",
+      "sample_min_entry": "0.099999651265764379100450822473167208",
+      "fisher_per_transition": "2.2499823275713217194624021894189585e-57",
+      "row_information_layer_0": "4.4984941827703882926499233297616949e-57",
+      "row_information_layer_1": "1.470472372255146274881049076222057e-60",
+      "max_sample_formula_residual": "3.1464809308150710966646498895451609e-121",
+      "max_derivative_formula_residual": "2.8116679601603189355911355926025487e-137",
+      "kl_over_quadratic_leading_term": {
+        "0.001": "0.99999992462429417364276918981246657",
+        "0.0001": "0.99999999924624291923769846811076591"
+      },
+      "fisher_over_refined_asymptotic": "1.0000000045567887201501739460104695",
+      "fisher_over_leading_asymptotic": "1.255077500677780254580413490637902",
+      "entropy_prefactor_without_normal_quantiles": "1.409394201967331463677172007554771e+50"
+    }
+  ]
+}

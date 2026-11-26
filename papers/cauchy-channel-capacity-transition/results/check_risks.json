@@ -1,0 +1,100 @@
+{
+  "pareto_threshold_risks": [
+    {
+      "light": 1.7,
+      "heavy": 0.65,
+      "log_inverse_scale": 30,
+      "sharp_penalty": 1.9135354229360688,
+      "calibration_risk_over_own_asymptotic_oracle": 1.067961473677964,
+      "heavier_risk_over_own_asymptotic_oracle": 2.60460047996923
+    },
+    {
+      "light": 1.7,
+      "heavy": 0.65,
+      "log_inverse_scale": 150,
+      "sharp_penalty": 1.9135354229360688,
+      "calibration_risk_over_own_asymptotic_oracle": 1.021622856449277,
+      "heavier_risk_over_own_asymptotic_oracle": 2.114027463447288
+    },
+    {
+      "light": 1.7,
+      "heavy": 0.65,
+      "log_inverse_scale": 800,
+      "sharp_penalty": 1.9135354229360688,
+      "calibration_risk_over_own_asymptotic_oracle": 1.005511341389367,
+      "heavier_risk_over_own_asymptotic_oracle": 1.9628370871827174
+    },
+    {
+      "light": 1.7,
+      "heavy": 0.65,
+      "log_inverse_scale": 3500,
+      "sharp_penalty": 1.9135354229360688,
+      "calibration_risk_over_own_asymptotic_oracle": 1.0015331291198055,
+      "heavier_risk_over_own_asymptotic_oracle": 1.9270916906072875
+    },
+    {
+      "light": 2.0,
+      "heavy": 1.0,
+      "log_inverse_scale": 30,
+      "sharp_penalty": 1.4142135623730951,
+      "calibration_risk_over_own_asymptotic_oracle": 1.0060706924695675,
+      "heavier_risk_over_own_asymptotic_oracle": 1.7311866913122904
+    },
+    {
+      "light": 2.0,
+      "heavy": 1.0,
+      "log_inverse_scale": 150,
+      "sharp_penalty": 1.4142135623730951,
+      "calibration_risk_over_own_asymptotic_oracle": 1.000408294379877,
+      "heavier_risk_over_own_asymptotic_oracle": 1.5077094678665273
+    },
+    {
+      "light": 2.0,
+      "heavy": 1.0,
+      "log_inverse_scale": 800,
+      "sharp_penalty": 1.4142135623730951,
+      "calibration_risk_over_own_asymptotic_oracle": 1.000019758891828,
+      "heavier_risk_over_own_asymptotic_oracle": 1.4372952541540485
+    },
+    {
+      "light": 2.0,
+      "heavy": 1.0,
+      "log_inverse_scale": 3500,
+      "sharp_penalty": 1.4142135623730951,
+      "calibration_risk_over_own_asymptotic_oracle": 1.0000012575737875,
+      "heavier_risk_over_own_asymptotic_oracle": 1.4205610466700234
+    }
+  ],
+  "cauchy_information": [
+    {
+      "epsilon": 0.01,
+      "information": 0.027466975189942566,
+      "asymptotic_ratio": 1.421655743712919
+    },
+    {
+      "epsilon": 0.001,
+      "information": 0.003123559277772303,
+      "asymptotic_ratio": 1.3200371999043525
+    },
+    {
+      "epsilon": 0.0001,
+      "information": 0.00034402817091683247,
+      "asymptotic_ratio": 1.2591023824881653
+    },
+    {
+      "epsilon": 1e-05,
+      "information": 3.7230374804630983e-05,
+      "asymptotic_ratio": 1.218735442062651
+    },
+    {
+      "epsilon": 1e-06,
+      "information": 3.982089355369922e-06,
+      "asymptotic_ratio": 1.189960130741254
+    },
+    {
+      "epsilon": 1e-07,
+      "information": 4.222984946178343e-07,
+      "asymptotic_ratio": 1.1683354331371447
+    }
+  ]
+}

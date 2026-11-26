@@ -6,6 +6,8 @@
 
 - [A square-root mixed-null inflation for weighted conformal BH](../../../../papers/mixed-null-square-root-boundary/)
 - [A universal boundary kernel for cross-validation after two-model selection](../../../../papers/two-model-cv-boundary-universality/)
+- [Fractional neural kernels: radial spectral laws, threshold interference, and inverse limits](../../../../papers/fractional-neural-threshold-spectral-transition/)
+- [Good-Turing is asymptotically minimax for missing-mass estimation](../../../../papers/iid-missing-mass-exact-minimax/) · 交叉 / Cross-listed ([概率与统计 / Probability and statistics](../../../mathematical-statistical-sciences/probability-statistics/))
 - [Narrow corridors in critical online conformal prediction](../../../../papers/narrow-corridor-expansion/)
 - [Scale thresholds, weak recovery, and stopping-design limits for heterogeneous repeated measurements](../../../../papers/heterogeneous-replication-scale-minimax/) · 交叉 / Cross-listed ([概率与统计 / Probability and statistics](../../../mathematical-statistical-sciences/probability-statistics/))
 - [Sharp contamination and inference frontiers for the optimal sub-Gaussian variance proxy](../../../../papers/optimal-proxy-tail-envelope-minimax/)

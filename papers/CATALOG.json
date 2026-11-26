@@ -201,6 +201,20 @@
   ],
   "projects": [
     {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "abelian-two-layer-reversible-sampling",
+      "title": "Sharp Spectral Dissipation and Unstable Thermodynamic Identification",
+      "category": "theoretical-physics",
+      "related_categories": [
+        "probability-statistics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
       "slug": "ac-line-congestion-geometry",
       "title": "Exact Geometry and Uniform Recovery of Congestion Monotonicity on AC Lines",
       "category": "control-dynamics",
@@ -340,6 +354,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "assortment-prior-index-universality",
+      "title": "Indexability and local universality in assortment exploration",
+      "category": "optimization-operations",
+      "related_categories": [
+        "theoretical-economics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "bandit-view-table-sharp-conversion",
@@ -683,6 +711,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "coalescent-convex-order",
+      "title": "Universal convex-order bounds for coalescent tree lengths and exact merger-cost criteria",
+      "category": "probability-statistics",
+      "related_categories": [
+        "mathematical-biology"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "collapsing-bandit-global-indexability",
@@ -1069,6 +1111,32 @@
       "legacy_paths": {}
     },
     {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "dsbs-interactive-key-support",
+      "title": "Global entropy support for binary symmetric sources and the absence of an interactive key-rate gain",
+      "category": "information-communication",
+      "related_categories": [],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "dsbs-negative-renyi-frontier",
+      "title": "Universal finite removal of negative-order common-information excess",
+      "category": "information-communication",
+      "related_categories": [
+        "probability-statistics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
       "slug": "efx-binary-partition-nullity",
       "title": "两类拟阵零度家务的最坏近似 EFX 因子",
       "category": "theoretical-computer-science",
@@ -1140,6 +1208,20 @@
       ],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "equal-tail-social-learning-candidate",
+      "title": "Sharp welfare concentration and belief-reversal instability in sequential social learning",
+      "category": "theoretical-economics",
+      "related_categories": [
+        "probability-statistics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "ergodic-queue-total-variation-separation",
@@ -1475,6 +1557,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "fractional-neural-threshold-spectral-transition",
+      "title": "Fractional neural kernels: radial spectral laws, threshold interference, and inverse limits",
+      "category": "learning-inference",
+      "related_categories": [
+        "mathematics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "full-cover-unidomination-chordal",
@@ -1814,6 +1910,18 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {},
+      "slug": "heterogeneous-convolution-self-calibration",
+      "title": "Self-calibration from heterogeneous convolution times",
+      "category": "probability-statistics",
+      "related_categories": [],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
       "slug": "heterogeneous-replication-scale-minimax",
       "title": "Scale thresholds, weak recovery, and stopping-design limits for heterogeneous repeated measurements",
       "category": "probability-statistics",
@@ -1890,6 +1998,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "iid-missing-mass-exact-minimax",
+      "title": "Good-Turing is asymptotically minimax for missing-mass estimation",
+      "category": "probability-statistics",
+      "related_categories": [
+        "learning-inference"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "independent-e-merging-beyond-martingales",
@@ -2264,6 +2386,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "mlr-moment-support-paths",
+      "title": "Sharp Monotone Support Paths in Finite Moment Optimization",
+      "category": "mathematics",
+      "related_categories": [
+        "optimization-operations"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "modular-magnetization-magic",

@@ -1,0 +1,179 @@
+{
+  "kind": "finite_mathematical_diagnostics",
+  "infinite_horizon_proof": false,
+  "np": {
+    "neutral_law": "uniform(0,1)",
+    "intervals": 12,
+    "deterministic_rules": 4096,
+    "rational_randomized_rules": 200,
+    "checked": 4296,
+    "all_passed": true,
+    "arithmetic": "fractions.Fraction",
+    "minimum_squared_slack": "0"
+  },
+  "run_age": {
+    "arithmetic": "fractions.Fraction",
+    "horizons": [
+      {
+        "horizon": 1,
+        "full_histories_per_state": 2,
+        "expected_errors": "1/4",
+        "state_symmetry": true,
+        "dp_equals_full_enumeration": true
+      },
+      {
+        "horizon": 2,
+        "full_histories_per_state": 4,
+        "expected_errors": "4/9",
+        "state_symmetry": true,
+        "dp_equals_full_enumeration": true
+      },
+      {
+        "horizon": 3,
+        "full_histories_per_state": 8,
+        "expected_errors": "779/1296",
+        "state_symmetry": true,
+        "dp_equals_full_enumeration": true
+      },
+      {
+        "horizon": 5,
+        "full_histories_per_state": 32,
+        "expected_errors": "2203339/2624400",
+        "state_symmetry": true,
+        "dp_equals_full_enumeration": true
+      },
+      {
+        "horizon": 8,
+        "full_histories_per_state": 256,
+        "expected_errors": "20304994520257/18749238480000",
+        "state_symmetry": true,
+        "dp_equals_full_enumeration": true
+      },
+      {
+        "horizon": 12,
+        "full_histories_per_state": 4096,
+        "expected_errors": "3976023038859928206163723/3081497604709205682000000",
+        "state_symmetry": true,
+        "dp_equals_full_enumeration": true
+      }
+    ],
+    "wrong_run_index_checks": 200,
+    "all_passed": true,
+    "scope": "finite horizons and a telescoping single-run identity only"
+  },
+  "gaussian": {
+    "scipy_version": "1.17.0",
+    "rows": [
+      {
+        "v": 1.0,
+        "kappa": 1.4142135623730951,
+        "gamma": 0.5,
+        "zeta": 1.0,
+        "scale": 0.3,
+        "log_n": 1000.0,
+        "ratio_to_predicted_asymptotic_constant": 0.8684040402811064
+      },
+      {
+        "v": 1.0,
+        "kappa": 1.4142135623730951,
+        "gamma": 0.5,
+        "zeta": 1.0,
+        "scale": 0.3,
+        "log_n": 100000.0,
+        "ratio_to_predicted_asymptotic_constant": 0.9800633478318521
+      },
+      {
+        "v": 1.0,
+        "kappa": 1.4142135623730951,
+        "gamma": 0.5,
+        "zeta": 1.0,
+        "scale": 0.3,
+        "log_n": 100000000.0,
+        "ratio_to_predicted_asymptotic_constant": 0.9990843872536475
+      },
+      {
+        "v": 1.0,
+        "kappa": 1.4142135623730951,
+        "gamma": 0.5,
+        "zeta": 1.2,
+        "scale": 0.8,
+        "log_n": 1000.0,
+        "ratio_to_predicted_asymptotic_constant": 0.8802459952735203
+      },
+      {
+        "v": 1.0,
+        "kappa": 1.4142135623730951,
+        "gamma": 0.5,
+        "zeta": 1.2,
+        "scale": 0.8,
+        "log_n": 100000.0,
+        "ratio_to_predicted_asymptotic_constant": 0.9811448167055796
+      },
+      {
+        "v": 1.0,
+        "kappa": 1.4142135623730951,
+        "gamma": 0.5,
+        "zeta": 1.2,
+        "scale": 0.8,
+        "log_n": 100000000.0,
+        "ratio_to_predicted_asymptotic_constant": 0.9991125109503539
+      },
+      {
+        "v": 2.0,
+        "kappa": 2.0,
+        "gamma": 0.8,
+        "zeta": -1.0,
+        "scale": 0.5,
+        "log_n": 1000.0,
+        "ratio_to_predicted_asymptotic_constant": 0.9057166998125588
+      },
+      {
+        "v": 2.0,
+        "kappa": 2.0,
+        "gamma": 0.8,
+        "zeta": -1.0,
+        "scale": 0.5,
+        "log_n": 100000.0,
+        "ratio_to_predicted_asymptotic_constant": 0.9805363195165243
+      },
+      {
+        "v": 2.0,
+        "kappa": 2.0,
+        "gamma": 0.8,
+        "zeta": -1.0,
+        "scale": 0.5,
+        "log_n": 100000000.0,
+        "ratio_to_predicted_asymptotic_constant": 0.9988722291748271
+      },
+      {
+        "v": 0.5,
+        "kappa": 0.7,
+        "gamma": -0.3,
+        "zeta": 2.0,
+        "scale": 0.2,
+        "log_n": 1000.0,
+        "ratio_to_predicted_asymptotic_constant": 0.9371431721401097
+      },
+      {
+        "v": 0.5,
+        "kappa": 0.7,
+        "gamma": -0.3,
+        "zeta": 2.0,
+        "scale": 0.2,
+        "log_n": 100000.0,
+        "ratio_to_predicted_asymptotic_constant": 0.9941531257069226
+      },
+      {
+        "v": 0.5,
+        "kappa": 0.7,
+        "gamma": -0.3,
+        "zeta": 2.0,
+        "scale": 0.2,
+        "log_n": 100000000.0,
+        "ratio_to_predicted_asymptotic_constant": 0.9998682043262099
+      }
+    ],
+    "large_log_n_relative_error_below_one_percent": true,
+    "scope": "floating-point diagnostic of Gaussian ROC asymptotics; not an interval certificate"
+  }
+}

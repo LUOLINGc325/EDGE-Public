@@ -4,4 +4,5 @@
 
 [上级学科 / Parent](../)
 
+- [Sharp Spectral Dissipation and Unstable Thermodynamic Identification](../../../../papers/abelian-two-layer-reversible-sampling/)
 - [The least dissipation of linear relaxation: spectral determinacy and exact acceleration frontiers](../../../../papers/ou-entropy-spectral-frontier/) · 交叉 / Cross-listed ([概率与统计 / Probability and statistics](../../../mathematical-statistical-sciences/probability-statistics/))

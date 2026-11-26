@@ -1,0 +1,122 @@
+{
+  "n": 12,
+  "k": 9,
+  "exact_certificate_passed": true,
+  "coverage": "All p in [0,1], via exact open-cell certificates and continuity",
+  "regimes": 13,
+  "exact_identity_and_sign_checks": 582,
+  "numerical_checks": [
+    {
+      "regime": 0,
+      "sample": "1/8",
+      "lp_success": true,
+      "objective_absolute_error": 0.0,
+      "moment_residual": 6.661338147750939e-16,
+      "numerical_check_passed": true
+    },
+    {
+      "regime": 1,
+      "sample": "5/16",
+      "lp_success": true,
+      "objective_absolute_error": 3.3881317890172014e-21,
+      "moment_residual": 1.3877787807814457e-17,
+      "numerical_check_passed": true
+    },
+    {
+      "regime": 2,
+      "sample": "3/8",
+      "lp_success": true,
+      "objective_absolute_error": 1.0842021724855044e-19,
+      "moment_residual": 5.551115123125783e-17,
+      "numerical_check_passed": true
+    },
+    {
+      "regime": 3,
+      "sample": "13/32",
+      "lp_success": true,
+      "objective_absolute_error": 4.87890977618477e-19,
+      "moment_residual": 2.7755575615628914e-17,
+      "numerical_check_passed": true
+    },
+    {
+      "regime": 4,
+      "sample": "213/512",
+      "lp_success": true,
+      "objective_absolute_error": 1.4555414165617897e-17,
+      "moment_residual": 2.7755575615628914e-17,
+      "numerical_check_passed": true
+    },
+    {
+      "regime": 5,
+      "sample": "7/16",
+      "lp_success": true,
+      "objective_absolute_error": 1.5124620306172787e-17,
+      "moment_residual": 5.551115123125783e-17,
+      "numerical_check_passed": true
+    },
+    {
+      "regime": 6,
+      "sample": "1/2",
+      "lp_success": true,
+      "objective_absolute_error": 2.3327693943198113e-15,
+      "moment_residual": 9.992007221626409e-16,
+      "numerical_check_passed": true
+    },
+    {
+      "regime": 7,
+      "sample": "9/16",
+      "lp_success": true,
+      "objective_absolute_error": 3.8593260531794016e-15,
+      "moment_residual": 1.1102230246251565e-15,
+      "numerical_check_passed": true
+    },
+    {
+      "regime": 8,
+      "sample": "299/512",
+      "lp_success": true,
+      "objective_absolute_error": 4.659900937342698e-15,
+      "moment_residual": 1.1102230246251565e-16,
+      "numerical_check_passed": true
+    },
+    {
+      "regime": 9,
+      "sample": "19/32",
+      "lp_success": true,
+      "objective_absolute_error": 1.8560240150344853e-14,
+      "moment_residual": 6.661338147750939e-16,
+      "numerical_check_passed": true
+    },
+    {
+      "regime": 10,
+      "sample": "5/8",
+      "lp_success": true,
+      "objective_absolute_error": 1.0510863013291072e-13,
+      "moment_residual": 8.881784197001252e-16,
+      "numerical_check_passed": true
+    },
+    {
+      "regime": 11,
+      "sample": "11/16",
+      "lp_success": true,
+      "objective_absolute_error": 2.032783663619142e-13,
+      "moment_residual": 4.440892098500626e-16,
+      "numerical_check_passed": true
+    },
+    {
+      "regime": 12,
+      "sample": "7/8",
+      "lp_success": true,
+      "objective_absolute_error": 2.048906481422197e-07,
+      "moment_residual": 5.913158851456046e-11,
+      "numerical_check_passed": false
+    }
+  ],
+  "all_numerical_checks_passed": false,
+  "numeric_role": "Supplementary independent LP check; not proof and not certificate acceptance",
+  "verifier_seconds": 1.158619,
+  "versions": {
+    "sympy": "1.14.0",
+    "scipy": "1.17.0"
+  },
+  "certificate_sha256": "da5f664dc6efe7e6fad4249ea8a8921e716569d0d1602e15ada7af5c2ff84881"
+}

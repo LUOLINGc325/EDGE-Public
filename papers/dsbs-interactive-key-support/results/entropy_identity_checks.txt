@@ -1,0 +1,3 @@
+independent entropy/Hessian/derivative checks: 42
+maximum absolute identity residual: 7.3400524e-73
+All numerical checks support identities; no numerical proof claimed.

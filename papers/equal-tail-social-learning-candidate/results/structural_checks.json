@@ -1,0 +1,1419 @@
+{
+  "schema": "finite_structural_diagnostics_v1",
+  "claim": "Finite arithmetic diagnostics for the smooth unbounded-reversal and two-way-KL tail-splicing construction",
+  "proof_status": "Finite exact calculations for the specified parameter choices.",
+  "manuscript_sha256": "dcdb74e1419e476e1060cc57fbbf978dd29899fa6012e132c52c515d792cd53b",
+  "script_sha256": "0dc6ad90f6b9632f018f88662d92f22358f6e2aed5e04e76517d28c5c6325d80",
+  "runtime": {
+    "implementation": "Python standard library only",
+    "decimal_precision": 100
+  },
+  "exact_checks": {
+    "count": 136,
+    "passed": 136,
+    "checks": [
+      {
+        "label": "t_recurrence_0",
+        "passed": true
+      },
+      {
+        "label": "sqrt_identity_0",
+        "passed": true
+      },
+      {
+        "label": "three_quarter_identity_0",
+        "passed": true
+      },
+      {
+        "label": "positive_baseline_margin_0",
+        "passed": true
+      },
+      {
+        "label": "baseline_margin_exceeds_t_next_0",
+        "passed": true
+      },
+      {
+        "label": "q_baseline_log_negative_0",
+        "passed": true,
+        "details": {
+          "reason": "ln(1024)=10 ln(2)<10; the checked upper exponent is an integer."
+        }
+      },
+      {
+        "label": "good_run_integral_log_negative_0",
+        "passed": true
+      },
+      {
+        "label": "bump_tail_geometric_ratio_0",
+        "passed": true,
+        "details": {
+          "reason": "exp(-1)<1/2, so the entire later mass is <=2 times its first term."
+        }
+      },
+      {
+        "label": "t_recurrence_1",
+        "passed": true
+      },
+      {
+        "label": "sqrt_identity_1",
+        "passed": true
+      },
+      {
+        "label": "three_quarter_identity_1",
+        "passed": true
+      },
+      {
+        "label": "positive_baseline_margin_1",
+        "passed": true
+      },
+      {
+        "label": "baseline_margin_exceeds_t_next_1",
+        "passed": true
+      },
+      {
+        "label": "q_baseline_log_negative_1",
+        "passed": true,
+        "details": {
+          "reason": "ln(1024)=10 ln(2)<10; the checked upper exponent is an integer."
+        }
+      },
+      {
+        "label": "q_bump_log_negative_1",
+        "passed": true,
+        "details": {
+          "reason": "exp(sqrt(t))>=sqrt(t)^8/8!; ln(384)<9. Bumps start at k=1; k=0 is only a displayed diagnostic."
+        }
+      },
+      {
+        "label": "good_run_integral_log_negative_1",
+        "passed": true
+      },
+      {
+        "label": "bump_tail_geometric_ratio_1",
+        "passed": true,
+        "details": {
+          "reason": "exp(-1)<1/2, so the entire later mass is <=2 times its first term."
+        }
+      },
+      {
+        "label": "t_recurrence_2",
+        "passed": true
+      },
+      {
+        "label": "sqrt_identity_2",
+        "passed": true
+      },
+      {
+        "label": "three_quarter_identity_2",
+        "passed": true
+      },
+      {
+        "label": "positive_baseline_margin_2",
+        "passed": true
+      },
+      {
+        "label": "baseline_margin_exceeds_t_next_2",
+        "passed": true
+      },
+      {
+        "label": "q_baseline_log_negative_2",
+        "passed": true,
+        "details": {
+          "reason": "ln(1024)=10 ln(2)<10; the checked upper exponent is an integer."
+        }
+      },
+      {
+        "label": "q_bump_log_negative_2",
+        "passed": true,
+        "details": {
+          "reason": "exp(sqrt(t))>=sqrt(t)^8/8!; ln(384)<9. Bumps start at k=1; k=0 is only a displayed diagnostic."
+        }
+      },
+      {
+        "label": "good_run_integral_log_negative_2",
+        "passed": true
+      },
+      {
+        "label": "bump_tail_geometric_ratio_2",
+        "passed": true,
+        "details": {
+          "reason": "exp(-1)<1/2, so the entire later mass is <=2 times its first term."
+        }
+      },
+      {
+        "label": "t_recurrence_3",
+        "passed": true
+      },
+      {
+        "label": "sqrt_identity_3",
+        "passed": true
+      },
+      {
+        "label": "three_quarter_identity_3",
+        "passed": true
+      },
+      {
+        "label": "positive_baseline_margin_3",
+        "passed": true
+      },
+      {
+        "label": "baseline_margin_exceeds_t_next_3",
+        "passed": true
+      },
+      {
+        "label": "q_baseline_log_negative_3",
+        "passed": true,
+        "details": {
+          "reason": "ln(1024)=10 ln(2)<10; the checked upper exponent is an integer."
+        }
+      },
+      {
+        "label": "q_bump_log_negative_3",
+        "passed": true,
+        "details": {
+          "reason": "exp(sqrt(t))>=sqrt(t)^8/8!; ln(384)<9. Bumps start at k=1; k=0 is only a displayed diagnostic."
+        }
+      },
+      {
+        "label": "good_run_integral_log_negative_3",
+        "passed": true
+      },
+      {
+        "label": "bump_tail_geometric_ratio_3",
+        "passed": true,
+        "details": {
+          "reason": "exp(-1)<1/2, so the entire later mass is <=2 times its first term."
+        }
+      },
+      {
+        "label": "t_recurrence_4",
+        "passed": true
+      },
+      {
+        "label": "sqrt_identity_4",
+        "passed": true
+      },
+      {
+        "label": "three_quarter_identity_4",
+        "passed": true
+      },
+      {
+        "label": "positive_baseline_margin_4",
+        "passed": true
+      },
+      {
+        "label": "baseline_margin_exceeds_t_next_4",
+        "passed": true
+      },
+      {
+        "label": "q_baseline_log_negative_4",
+        "passed": true,
+        "details": {
+          "reason": "ln(1024)=10 ln(2)<10; the checked upper exponent is an integer."
+        }
+      },
+      {
+        "label": "q_bump_log_negative_4",
+        "passed": true,
+        "details": {
+          "reason": "exp(sqrt(t))>=sqrt(t)^8/8!; ln(384)<9. Bumps start at k=1; k=0 is only a displayed diagnostic."
+        }
+      },
+      {
+        "label": "good_run_integral_log_negative_4",
+        "passed": true
+      },
+      {
+        "label": "bump_tail_geometric_ratio_4",
+        "passed": true,
+        "details": {
+          "reason": "exp(-1)<1/2, so the entire later mass is <=2 times its first term."
+        }
+      },
+      {
+        "label": "t_recurrence_5",
+        "passed": true
+      },
+      {
+        "label": "sqrt_identity_5",
+        "passed": true
+      },
+      {
+        "label": "three_quarter_identity_5",
+        "passed": true
+      },
+      {
+        "label": "positive_baseline_margin_5",
+        "passed": true
+      },
+      {
+        "label": "baseline_margin_exceeds_t_next_5",
+        "passed": true
+      },
+      {
+        "label": "q_baseline_log_negative_5",
+        "passed": true,
+        "details": {
+          "reason": "ln(1024)=10 ln(2)<10; the checked upper exponent is an integer."
+        }
+      },
+      {
+        "label": "q_bump_log_negative_5",
+        "passed": true,
+        "details": {
+          "reason": "exp(sqrt(t))>=sqrt(t)^8/8!; ln(384)<9. Bumps start at k=1; k=0 is only a displayed diagnostic."
+        }
+      },
+      {
+        "label": "good_run_integral_log_negative_5",
+        "passed": true
+      },
+      {
+        "label": "bump_tail_geometric_ratio_5",
+        "passed": true,
+        "details": {
+          "reason": "exp(-1)<1/2, so the entire later mass is <=2 times its first term."
+        }
+      },
+      {
+        "label": "suppression_exponent_positive_1",
+        "passed": true
+      },
+      {
+        "label": "suppression_exponent_positive_2",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k2_p1/1000",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k2_p1/4",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k2_p1",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k2_p2",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k2_p10",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k2_p100",
+        "passed": true
+      },
+      {
+        "label": "suppression_exponent_positive_3",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k3_p1/1000",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k3_p1/4",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k3_p1",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k3_p2",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k3_p10",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k3_p100",
+        "passed": true
+      },
+      {
+        "label": "suppression_exponent_positive_4",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k4_p1/1000",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k4_p1/4",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k4_p1",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k4_p2",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k4_p10",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k4_p100",
+        "passed": true
+      },
+      {
+        "label": "suppression_exponent_positive_5",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k5_p1/1000",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k5_p1/4",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k5_p1",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k5_p2",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k5_p10",
+        "passed": true
+      },
+      {
+        "label": "fixed_origin_suppression_dominates_k5_p100",
+        "passed": true
+      },
+      {
+        "label": "total_error_growth_k2_p1/1000",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k2_p1/1000",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k2_p1/100",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k2_p1/100",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k2_p1/4",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k2_p1/4",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k2_p1",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k2_p1",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k2_p10",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k2_p10",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k3_p1/1000",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k3_p1/1000",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k3_p1/100",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k3_p1/100",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k3_p1/4",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k3_p1/4",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k3_p1",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k3_p1",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k3_p10",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k3_p10",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k4_p1/1000",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k4_p1/1000",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k4_p1/100",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k4_p1/100",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k4_p1/4",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k4_p1/4",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k4_p1",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k4_p1",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "total_error_growth_k4_p10",
+        "passed": true
+      },
+      {
+        "label": "total_error_reduced_exponent_positive_k4_p10",
+        "passed": true,
+        "details": {
+          "reason": "sqrt(t+5)<=ceil_sqrt(t+5) and ln(t+5)<bit_length(t+5)."
+        }
+      },
+      {
+        "label": "kl_lower_endpoint_16",
+        "passed": true
+      },
+      {
+        "label": "kl_exact_fourth_root_t16_j0",
+        "passed": true
+      },
+      {
+        "label": "kl_exact_fourth_root_t16_j1",
+        "passed": true
+      },
+      {
+        "label": "kl_lower_endpoint_256",
+        "passed": true
+      },
+      {
+        "label": "kl_exact_fourth_root_t256_j0",
+        "passed": true
+      },
+      {
+        "label": "kl_exact_fourth_root_t256_j1",
+        "passed": true
+      },
+      {
+        "label": "kl_lower_endpoint_4096",
+        "passed": true
+      },
+      {
+        "label": "kl_exact_fourth_root_t4096_j0",
+        "passed": true
+      },
+      {
+        "label": "kl_exact_fourth_root_t4096_j1",
+        "passed": true
+      },
+      {
+        "label": "kl_lower_endpoint_65536",
+        "passed": true
+      },
+      {
+        "label": "kl_exact_fourth_root_t65536_j0",
+        "passed": true
+      },
+      {
+        "label": "kl_exact_fourth_root_t65536_j1",
+        "passed": true
+      },
+      {
+        "label": "reverse_series_component_majorant_y8",
+        "passed": true
+      },
+      {
+        "label": "reverse_series_component_majorant_y64",
+        "passed": true
+      },
+      {
+        "label": "reverse_series_component_majorant_y512",
+        "passed": true
+      },
+      {
+        "label": "reverse_series_component_majorant_y4096",
+        "passed": true
+      },
+      {
+        "label": "correct_baseline_J_exponent_p1/100",
+        "passed": true
+      },
+      {
+        "label": "correct_baseline_WR_exponent_p1/100",
+        "passed": true
+      },
+      {
+        "label": "correct_baseline_J_exponent_p1",
+        "passed": true
+      },
+      {
+        "label": "correct_baseline_WR_exponent_p1",
+        "passed": true
+      },
+      {
+        "label": "correct_baseline_J_exponent_p10",
+        "passed": true
+      },
+      {
+        "label": "correct_baseline_WR_exponent_p10",
+        "passed": true
+      },
+      {
+        "label": "correct_baseline_J_exponent_p100",
+        "passed": true
+      },
+      {
+        "label": "correct_baseline_WR_exponent_p100",
+        "passed": true
+      }
+    ]
+  },
+  "scale_rows": [
+    {
+      "k": 0,
+      "t_k": "16",
+      "sqrt_t_k": "4",
+      "t_k_to_three_quarters": "8",
+      "log_mu_k_plus_1_exact": "-8",
+      "log_next_mass_ratio_exact": "-504",
+      "baseline_to_next_c_tail_log_margin_exact": "28664",
+      "q_baseline_upper_log_scale": "-3.2753068528194400546906E+4",
+      "q_bump_upper_log_scale": "-1.0128569617377621533808E-1",
+      "good_run_integral_upper_log_scale_without_constant": "-8"
+    },
+    {
+      "k": 1,
+      "t_k": "4096",
+      "sqrt_t_k": "64",
+      "t_k_to_three_quarters": "512",
+      "log_mu_k_plus_1_exact": "-512",
+      "log_next_mass_ratio_exact": "-134217216",
+      "baseline_to_next_c_tail_log_margin_exact": "140668768878080",
+      "q_baseline_upper_log_scale": "-1.4073748835480906852819E+14",
+      "q_bump_upper_log_scale": "-5.6371637709029051355475E+1",
+      "good_run_integral_upper_log_scale_without_constant": "-3584"
+    },
+    {
+      "k": 2,
+      "t_k": "68719476736",
+      "sqrt_t_k": "262144",
+      "t_k_to_three_quarters": "134217728",
+      "log_mu_k_plus_1_exact": "-134217728",
+      "log_next_mass_ratio_exact": "-2417851639229258215194624",
+      "baseline_to_next_c_tail_log_margin_exact": "11150372598940793017109432409541024598196224",
+      "q_baseline_upper_log_scale": "-1.1150372599265311570768E+43",
+      "q_bump_upper_log_scale": "-2.6212389873362677447787E+5",
+      "good_run_integral_upper_log_scale_without_constant": "-68585259008"
+    },
+    {
+      "k": 3,
+      "t_k": "324518553658426726783156020576256",
+      "sqrt_t_k": "18014398509481984",
+      "t_k_to_three_quarters": "2417851639229258349412352",
+      "log_mu_k_plus_1_exact": "-2417851639229258349412352",
+      "log_next_mass_ratio_exact": "-14134776518227074636666380005943348126619871175002533813333620351991545856",
+      "baseline_to_next_c_tail_log_margin_exact": "5545339388241629719156828368286133231080299416190314829993660448395408972338893539635629659542554000679167513822367547006207918080",
+      "q_baseline_upper_log_scale": "-5.5453393882416297191568E+129",
+      "q_bump_upper_log_scale": "-1.8014398509481926468784E+16",
+      "good_run_integral_upper_log_scale_without_constant": "-324518551240575087553897671163904"
+    },
+    {
+      "k": 4,
+      "t_k": "34175792574734561318320347298712833833643272357706444319152665725155515612490248800367393390985216",
+      "sqrt_t_k": "5846006549323611672814739330865132078623730171904",
+      "t_k_to_three_quarters": "14134776518227074636666380005943348126619871175004951664972849610340958208",
+      "log_mu_k_plus_1_exact": "-14134776518227074636666380005943348126619871175004951664972849610340958208",
+      "log_next_mass_ratio_exact": "-2824013958708217496949108842204627863351353911851577524683401930862693830361198499905873920995229996970897865498283996578123296865878390947626553074352169588203721454816336114629283945872832352718805694505984920024776704",
+      "baseline_to_next_c_tail_log_margin_exact": "682094244309526058233052550094132709858689826636870766121393346996050857798753340490530124053369557861026752197711526999161852660878805247194648210158838842574147007289494565299275644844111686849774081736076515617664677376781969239152039707294580129850564816434293214345563318561982872047662057515668363719369596394081779992079703816447567796491458451254273358429402137652101106375289995264",
+      "q_baseline_upper_log_scale": "-6.8209424430952605823305E+389",
+      "q_bump_upper_log_scale": "-5.8460065493236116728147E+48",
+      "good_run_integral_upper_log_scale_without_constant": "-34175792574734561318320333163936315606568635691326438375804539105284340607538583827517783050027008"
+    },
+    {
+      "k": 5,
+      "t_k": "39916806190694396233127454260736771321349025208709150830050944848744237837379281315699159309852714021786848936883849904879448759767871873214783435965696628406400113459021713530350754428887259743653067134890878479866616209102417407777777105368960883150142418137515120832847169904606880198557696",
+      "sqrt_t_k": "199791907220223502808422222706762643567910281130558153654986045416023791284464999687699590596063486154228923591770023865308670443474450259602571264",
+      "t_k_to_three_quarters": "2824013958708217496949108842204627863351353911851577524683401930862693830361198499905873920995229996970897865498283996578123296865878390947626553088486946106430796091482716120572632072492703527723757359478834530365734912",
+      "log_mu_k_plus_1_exact": "-2824013958708217496949108842204627863351353911851577524683401930862693830361198499905873920995229996970897865498283996578123296865878390947626553088486946106430796091482716120572632072492703527723757359478834530365734912",
+      "log_next_mass_ratio_exact": "-22521666186739810716017129863546474247925813985186306383480395759255528226899398031271474259176472311138130302909797370563984143657840869015723623128208458564711932390036470899999940399003451938771468124775412134017692556582989981820657376622292117781429636251681663364133246565240603802421309871873386179061056683850002592550658912005406539073633368208169912295100765107813056035892005304712416817301893705332191267615274619407764899319816463301682345544537060400016734099283814754756212143361398753990690261605230304522994875847200648184520809279469177289972016726305701660163731518432701980253093518812579883406557325048997981599287501577307823481989103616",
+      "baseline_to_next_c_tail_log_margin_exact": "1269384368176241449635942083308368789728254561472146970044222769970548783687923575392641385234187434893020030828000481177769301527100796283814793753178900476206378213982286363089520391918197142517974376387064162264976686823649522887949821555554507259199201950994807510712794143860440206886015235993899610384487855287523305615526349672217480693126243966661208516884451649833726643032697795555634392483515200893688843727842968760789802821422476800494891902372766690984609295430959379115695671932157489979604626608560305285795602848364435324553398711916484140156859319894933335707285205297435327054784514727359086445849148436375353065261284813475355172678433302414797654858473972029906178640636529362702828078139431949963743529280906468573595187942745897205427363612326749935626898245783750990412094848407333420739831189403655609859009350930875835868815766678902661597236875351425702360186178898267257150715757702387396226647434456773818847963541807674284372857050671109962744526001495484238474158645369472212369851680757931023965353071831042557566134666817271501007894482383580297063030740587895384816795426870254067952266509946585980790436368802118043435209937465198510080",
+      "q_baseline_upper_log_scale": "-1.2693843681762414496359E+1170",
+      "q_bump_upper_log_scale": "-1.9979190722022350280842E+146",
+      "good_run_integral_upper_log_scale_without_constant": "-39916806190694396233127454260736771321349025208709150830050944848744237834555267356990941812903605179582221073532495993027871235084469942352089605604498128500526192463791716559452888930603263165529770269012487532240063120615471301346981013886244762577510345644811593109089810425772349832822784"
+    }
+  ],
+  "fixed_origin_suppression_vs_clock": [
+    {
+      "k": 1,
+      "p": "1/1000",
+      "integer_lower_exponent": "3",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "-1270742311/2293760",
+      "certificate_dominates": false,
+      "log_ratio_suppression_to_clock_cost_decimal": "-9.0040871970633081336144E+0",
+      "finite_prefix_allowed": true
+    },
+    {
+      "k": 1,
+      "p": "1/4",
+      "integer_lower_exponent": "3",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "-1270742311/2293760",
+      "certificate_dominates": false,
+      "log_ratio_suppression_to_clock_cost_decimal": "-9.0040871970633081336144E+0",
+      "finite_prefix_allowed": true
+    },
+    {
+      "k": 1,
+      "p": "1",
+      "integer_lower_exponent": "3",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "-1270742311/2293760",
+      "certificate_dominates": false,
+      "log_ratio_suppression_to_clock_cost_decimal": "-9.0040871970633081336144E+0",
+      "finite_prefix_allowed": true
+    },
+    {
+      "k": 1,
+      "p": "2",
+      "integer_lower_exponent": "3",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "-2541485351/2293760",
+      "certificate_dominates": false,
+      "log_ratio_suppression_to_clock_cost_decimal": "-9.6972343776232534430316E+0",
+      "finite_prefix_allowed": true
+    },
+    {
+      "k": 1,
+      "p": "10",
+      "integer_lower_exponent": "3",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "-12707429671/2293760",
+      "certificate_dominates": false,
+      "log_ratio_suppression_to_clock_cost_decimal": "-1.1306672290057353817632E+1",
+      "finite_prefix_allowed": true
+    },
+    {
+      "k": 1,
+      "p": "100",
+      "integer_lower_exponent": "3",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "-127074303271/2293760",
+      "certificate_dominates": false,
+      "log_ratio_suppression_to_clock_cost_decimal": "-1.3609257383051399501650E+1",
+      "finite_prefix_allowed": true
+    },
+    {
+      "k": 2,
+      "p": "1/1000",
+      "integer_lower_exponent": "447",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "177099331010597630009/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "4.2301545853677787679161E+2",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 2,
+      "p": "1/4",
+      "integer_lower_exponent": "447",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "177099331010597630009/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "4.2301545853677787679161E+2",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 2,
+      "p": "1",
+      "integer_lower_exponent": "447",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "177099331010597630009/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "4.2301545853677787679161E+2",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 2,
+      "p": "2",
+      "integer_lower_exponent": "447",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "177099023147080364089/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "4.2232231135621793148219E+2",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 2,
+      "p": "10",
+      "integer_lower_exponent": "447",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "177096560238942236729/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "4.2071287344378383110759E+2",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 2,
+      "p": "100",
+      "integer_lower_exponent": "447",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "177068852522388303929/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "4.1841028835078978542357E+2",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 3,
+      "p": "1/1000",
+      "integer_lower_exponent": "133955583",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "11519776183684204545436203374704249384129364219213167638390083129/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "1.3395552161674612021039E+8",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 3,
+      "p": "1/4",
+      "integer_lower_exponent": "133955583",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "11519776183684204545436203374704249384129364219213167638390083129/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "1.3395552161674612021039E+8",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 3,
+      "p": "1",
+      "integer_lower_exponent": "133955583",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "11519776183684204545436203374704249384129364219213167638390083129/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "1.3395552161674612021039E+8",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 3,
+      "p": "2",
+      "integer_lower_exponent": "133955583",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "11519776183684204545436203374704243838157988220709536089556618809/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "1.3395552092359893965045E+8",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 3,
+      "p": "10",
+      "integer_lower_exponent": "133955583",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "11519776183684204545436203374704199470386980232680483698888904249/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "1.3395551931416102721635E+8",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 3,
+      "p": "100",
+      "integer_lower_exponent": "133955583",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "11519776183684204545436203374703700332963140367353644303877115449/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "1.3395551701157593422230E+8",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 4,
+      "p": "1/1000",
+      "integer_lower_exponent": "2417851621214859839930367",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "129776080943773866322874804528028652393740514987664602942821331813935576274968530506658872706001307956789874716030625773723059265101835100915844582850643093588787824050827878025350336120370335289/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "2.4178516212148598399302E+24",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 4,
+      "p": "1/4",
+      "integer_lower_exponent": "2417851621214859839930367",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "129776080943773866322874804528028652393740514987664602942821331813935576274968530506658872706001307956789874716030625773723059265101835100915844582850643093588787824050827878025350336120370335289/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "2.4178516212148598399302E+24",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 4,
+      "p": "1",
+      "integer_lower_exponent": "2417851621214859839930367",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "129776080943773866322874804528028652393740514987664602942821331813935576274968530506658872706001307956789874716030625773723059265101835100915844582850643093588787824050827878025350336120370335289/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "2.4178516212148598399302E+24",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 4,
+      "p": "2",
+      "integer_lower_exponent": "2417851621214859839930367",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "129776080943773866322874804528028652393740514987664602942821331813935576274968530506658872706001307956789874716030593351938072816567116501040042150236444177993081444692896829901828120441827855929/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "2.4178516212148598399302E+24",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 4,
+      "p": "10",
+      "integer_lower_exponent": "2417851621214859839930367",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "129776080943773866322874804528028652393740514987664602942821331813935576274968530506658872706001307956789874716030333977658181228289367702033622689322852853227430409829448444913650395013488021049/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "2.4178516212148598399302E+24",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 4,
+      "p": "100",
+      "integer_lower_exponent": "2417851621214859839930367",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "129776080943773866322874804528028652393740514987664602942821331813935576274968530506658872706001307956789874716027416017009400860164693713211403754044950449613856267615654113796650983944664878649/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "2.4178516212148598399302E+24",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 5,
+      "p": "1/1000",
+      "integer_lower_exponent": "14134776518227074636666374159936798803008198360265620799840770986610786303",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "177039046273939830646011801417646412906485958619039103833754601441865238755349717780443621330802069385080430113071820456335135696221438155737776813782645988003100685315587048967739196487651211661090580280313403862470420101781491418746682192426438443512581639126269144372092205040589078434205685085267301252229998539062958235547195521961938996748848488079171109110132040533978696307289438433344597829372828572688542637609244760000997412507499312810496370060318328164676462570122331196037746095827811920895390441771708563917698629244169260676746652204762043655913802266491673904939372089/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "1.4134776518227074636666E+73",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 5,
+      "p": "1/4",
+      "integer_lower_exponent": "14134776518227074636666374159936798803008198360265620799840770986610786303",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "177039046273939830646011801417646412906485958619039103833754601441865238755349717780443621330802069385080430113071820456335135696221438155737776813782645988003100685315587048967739196487651211661090580280313403862470420101781491418746682192426438443512581639126269144372092205040589078434205685085267301252229998539062958235547195521961938996748848488079171109110132040533978696307289438433344597829372828572688542637609244760000997412507499312810496370060318328164676462570122331196037746095827811920895390441771708563917698629244169260676746652204762043655913802266491673904939372089/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "1.4134776518227074636666E+73",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 5,
+      "p": "1",
+      "integer_lower_exponent": "14134776518227074636666374159936798803008198360265620799840770986610786303",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "177039046273939830646011801417646412906485958619039103833754601441865238755349717780443621330802069385080430113071820456335135696221438155737776813782645988003100685315587048967739196487651211661090580280313403862470420101781491418746682192426438443512581639126269144372092205040589078434205685085267301252229998539062958235547195521961938996748848488079171109110132040533978696307289438433344597829372828572688542637609244760000997412507499312810496370060318328164676462570122331196037746095827811920895390441771708563917698629244169260676746652204762043655913802266491673904939372089/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "1.4134776518227074636666E+73",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 5,
+      "p": "2",
+      "integer_lower_exponent": "14134776518227074636666374159936798803008198360265620799840770986610786303",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "177039046273939830646011801417646412906485958619039103833754601441865238755349717780443621330802069385080430113071820456335135696221438155737776813782645988003100685315587048967739196487651211661090580280313403862470420101781491418746682192426438443512581639126269144372092205040589078434205685085267301252229998539062958235547195521961938996748848488079171102632521782607417730505301540538057389988571279724014079619809231824388397083204828168713131348041560476197988497226222340159944327018609791893012978193954207477214855829849240535996204051341118292010232924094999302190125256249/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "1.4134776518227074636666E+73",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 5,
+      "p": "10",
+      "integer_lower_exponent": "14134776518227074636666374159936798803008198360265620799840770986610786303",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "177039046273939830646011801417646412906485958619039103833754601441865238755349717780443621330802069385080430113071820456335135696221438155737776813782645988003100685315587048967739196487651211661090580280313403862470420101781491418746682192426438443512581639126269144372092205040589078434205685085267301252229998539062958235547195521961938996748848488079171050811639719194930004089398357375759727262158888934618375477409128339487594448783459015934211171891497660464484774475022411871196974400865631669953680211414198783592113434689810738551863244431968278844785898723060328471612329529/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "1.4134776518227074636666E+73",
+      "finite_prefix_allowed": false
+    },
+    {
+      "k": 5,
+      "p": "100",
+      "integer_lower_exponent": "14134776518227074636666374159936798803008198360265620799840770986610786303",
+      "exp_lower_certificate_method": "exp(x)>=x^8/8!, followed by division by 512",
+      "exact_certificate_margin": "177039046273939830646011801417646412906485958619039103833754601441865238755349717780443621330802069385080430113071820456335135696221438155737776813782645988003100685315587048967739196487651211661090580280313403862470420101781491418746682192426438443512581639126269144372092205040589078434205685085267301252229998539062958235547195521961938996748848488079170467826716505804443081910487546799911021590019492553916703875407964134353564811543056047171359190203290983462567893524023218622789257451243829160536577907839100980336261489146225517303029166704030630733506863288746874138341903929/2293760",
+      "certificate_dominates": true,
+      "log_ratio_suppression_to_clock_cost_decimal": "1.4134776518227074636666E+73",
+      "finite_prefix_allowed": false
+    }
+  ],
+  "total_error_lower_bound_competition": [
+    {
+      "k": 0,
+      "p": "1/1000",
+      "exact_leading_margin_p_sqrt_t_minus_4": "-999/250",
+      "leading_margin_positive": false,
+      "reduced_log_lower_bound_without_fixed_factor": "-1.4490261218861711498250E+1",
+      "exact_rational_lower_bound_on_reduced_exponent": "-3867/250",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 0,
+      "p": "1/100",
+      "exact_leading_margin_p_sqrt_t_minus_4": "-99/25",
+      "leading_margin_positive": false,
+      "reduced_log_lower_bound_without_fixed_factor": "-1.4202261218861711498250E+1",
+      "exact_rational_lower_bound_on_reduced_exponent": "-759/50",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 0,
+      "p": "1/4",
+      "exact_leading_margin_p_sqrt_t_minus_4": "-3",
+      "leading_margin_positive": false,
+      "reduced_log_lower_bound_without_fixed_factor": "-6.5222612188617114982503E+0",
+      "exact_rational_lower_bound_on_reduced_exponent": "-15/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 0,
+      "p": "1",
+      "exact_leading_margin_p_sqrt_t_minus_4": "0",
+      "leading_margin_positive": false,
+      "reduced_log_lower_bound_without_fixed_factor": "1.7477738781138288501750E+1",
+      "exact_rational_lower_bound_on_reduced_exponent": "33/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 0,
+      "p": "10",
+      "exact_leading_margin_p_sqrt_t_minus_4": "36",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "3.0547773878113828850175E+2",
+      "exact_rational_lower_bound_on_reduced_exponent": "609/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 1,
+      "p": "1/1000",
+      "exact_leading_margin_p_sqrt_t_minus_4": "-492/125",
+      "leading_margin_positive": false,
+      "reduced_log_lower_bound_without_fixed_factor": "-3.5220874930626960296259E+3",
+      "exact_rational_lower_bound_on_reduced_exponent": "-881107/250",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 1,
+      "p": "1/100",
+      "exact_leading_margin_p_sqrt_t_minus_4": "-84/25",
+      "leading_margin_positive": false,
+      "reduced_log_lower_bound_without_fixed_factor": "-2.3424394930626960296259E+3",
+      "exact_rational_lower_bound_on_reduced_exponent": "-117239/50",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 1,
+      "p": "1/4",
+      "exact_leading_margin_p_sqrt_t_minus_4": "12",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "2.9114840506937303970374E+4",
+      "exact_rational_lower_bound_on_reduced_exponent": "58225/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 1,
+      "p": "1",
+      "exact_leading_margin_p_sqrt_t_minus_4": "60",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "1.2741884050693730397037E+5",
+      "exact_rational_lower_bound_on_reduced_exponent": "254833/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 1,
+      "p": "10",
+      "exact_leading_margin_p_sqrt_t_minus_4": "636",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "1.3070668405069373039704E+6",
+      "exact_rational_lower_bound_on_reduced_exponent": "2614129/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 2,
+      "p": "1/1000",
+      "exact_leading_margin_p_sqrt_t_minus_4": "32268/125",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "8.9386137335755153507499E+12",
+      "exact_rational_lower_bound_on_reduced_exponent": "2234653433392373/250",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 2,
+      "p": "1/100",
+      "exact_leading_margin_p_sqrt_t_minus_4": "65436/25",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "9.0003407026244443350750E+13",
+      "exact_rational_lower_bound_on_reduced_exponent": "4500170351311921/50",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 2,
+      "p": "1/4",
+      "exact_leading_margin_p_sqrt_t_minus_4": "65532",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "2.2517312281640825233507E+15",
+      "exact_rational_lower_bound_on_reduced_exponent": "4503462456328153/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 2,
+      "p": "1",
+      "exact_leading_margin_p_sqrt_t_minus_4": "262140",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "9.0071306692198265233507E+15",
+      "exact_rational_lower_bound_on_reduced_exponent": "18014261338439641/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 2,
+      "p": "10",
+      "exact_leading_margin_p_sqrt_t_minus_4": "2621436",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "9.0071923961888754523351E+16",
+      "exact_rational_lower_bound_on_reduced_exponent": "180143847923777497/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 3,
+      "p": "1/1000",
+      "exact_leading_margin_p_sqrt_t_minus_4": "2251799813684748/125",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "2.9230032746614813178561E+45",
+      "exact_rational_lower_bound_on_reduced_exponent": "730750818665370329464032272581749435782804785613/250",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 3,
+      "p": "1/100",
+      "exact_leading_margin_p_sqrt_t_minus_4": "4503599627370396/25",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "2.9230032746617733845522E+46",
+      "exact_rational_lower_bound_on_reduced_exponent": "1461501637330886692276122803961004604846900245801/50",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 3,
+      "p": "1/4",
+      "exact_leading_margin_p_sqrt_t_minus_4": "4503599627370492",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "7.3075081866545113458329E+47",
+      "exact_rational_lower_bound_on_reduced_exponent": "1461501637330902269166582351566071883063571251089/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 3,
+      "p": "1",
+      "exact_leading_margin_p_sqrt_t_minus_4": "18014398509481980",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "2.9230032746618055118888E+48",
+      "exact_rational_lower_bound_on_reduced_exponent": "5846006549323611023777636849714920942031368880017/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 3,
+      "p": "10",
+      "exact_leading_margin_p_sqrt_t_minus_4": "180143985094819836",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "2.9230032746618058039555E+49",
+      "exact_rational_lower_bound_on_reduced_exponent": "58460065493236116079110290827501109649644940427153/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 4,
+      "p": "1/1000",
+      "exact_leading_margin_p_sqrt_t_minus_4": "730750818665451459101842416358141509827966270988/125",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "9.9895953610111751404211E+142",
+      "exact_rational_lower_bound_on_reduced_exponent": "24973988402527937851052777838345330445988785132775821063189615347422890619574046059320289901674864673690149769731964146446221565535204587400552533/250",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 4,
+      "p": "1/100",
+      "exact_leading_margin_p_sqrt_t_minus_4": "1461501637330902918203684832716283019655932542876/25",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "9.9895953610111751404211E+143",
+      "exact_rational_lower_bound_on_reduced_exponent": "49947976805055875702105555676690660891977570280930748785009783288089931162919434141596465864449257319439537762094648198983695162888792225890689041/50",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 4,
+      "p": "1/4",
+      "exact_leading_margin_p_sqrt_t_minus_4": "1461501637330902918203684832716283019655932542972",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "2.4973988402527937851053E+145",
+      "exact_rational_lower_bound_on_reduced_exponent": "49947976805055875702105555676690660891977570282571186828597042231369307154788377290711760377633206969792523172508591655633428712949419751340244665/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 4,
+      "p": "1",
+      "exact_leading_margin_p_sqrt_t_minus_4": "5846006549323611672814739330865132078623730171900",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "9.9895953610111751404211E+145",
+      "exact_rational_lower_bound_on_reduced_exponent": "199791907220223502808422222706762643567910281130489802069836576293387150618137127056486453324680821585464215866336109554614931545555257446042173113/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    },
+    {
+      "k": 4,
+      "p": "10",
+      "exact_leading_margin_p_sqrt_t_minus_4": "58460065493236116728147393308651320786237301719036",
+      "leading_margin_positive": true,
+      "reduced_log_lower_bound_without_fixed_factor": "9.9895953610111751404211E+146",
+      "exact_rational_lower_bound_on_reduced_exponent": "1997919072202235028084222227067626435679102811305513184964710985037601272178322124245782768689252196973524528192266324342392965536825309782465314489/2",
+      "fixed_factor_omitted": "positive first-correct-action probability, uniform correct-herd delta, and constants depending on p and the fixed splice R"
+    }
+  ],
+  "two_way_KL_splice_components": [
+    {
+      "R": 14,
+      "t0": 16,
+      "true_model_changed": false,
+      "m_floor_sqrt_R_plus_1": 3,
+      "forward_KL_integral_component_upper": "4.0166713147141593277444E+4",
+      "true_generator_tail_mass_upper": "4.9787068367863942979342E-2",
+      "reverse_bump_components": [
+        {
+          "index": 1,
+          "log_reverse_bump_component": "-3.8256127301043628893458E+0",
+          "mass_log": "-8",
+          "sqrt_next_location": "64"
+        },
+        {
+          "index": 2,
+          "log_reverse_bump_component": "-4.9952334693523099474460E+2",
+          "mass_log": "-512",
+          "sqrt_next_location": "262144"
+        }
+      ],
+      "reverse_series_conservative_majorant": "1.3896690244560306955805E-1",
+      "note": "These are entropy-integral components, not fully evaluated KL divergences. Normalizer convergence and the baseline tail are proved analytically in the note."
+    },
+    {
+      "R": 254,
+      "t0": 256,
+      "true_model_changed": false,
+      "m_floor_sqrt_R_plus_1": 15,
+      "forward_KL_integral_component_upper": "1.5098426174063131398529E+3",
+      "true_generator_tail_mass_upper": "3.0590232050182578837148E-7",
+      "reverse_bump_components": [
+        {
+          "index": 1,
+          "log_reverse_bump_component": "-5.5681989722453128924284E+1",
+          "mass_log": "-64",
+          "sqrt_next_location": "4096"
+        },
+        {
+          "index": 2,
+          "log_reverse_bump_component": "-2.6211904670149982741695E+5",
+          "mass_log": "-262144",
+          "sqrt_next_location": "68719476736"
+        }
+      ],
+      "reverse_series_conservative_majorant": "1.0866283921833341513217E-9",
+      "note": "These are entropy-integral components, not fully evaluated KL divergences. Normalizer convergence and the baseline tail are proved analytically in the note."
+    },
+    {
+      "R": 4094,
+      "t0": 4096,
+      "true_model_changed": false,
+      "m_floor_sqrt_R_plus_1": 63,
+      "forward_KL_integral_component_upper": "1.2360829614531245365706E-13",
+      "true_generator_tail_mass_upper": "4.3596100000630809736231E-28",
+      "reverse_bump_components": [
+        {
+          "index": 1,
+          "log_reverse_bump_component": "-4.9952334693523099474460E+2",
+          "mass_log": "-512",
+          "sqrt_next_location": "262144"
+        },
+        {
+          "index": 2,
+          "log_reverse_bump_component": "-1.3421769057005224976295E+8",
+          "mass_log": "-134217728",
+          "sqrt_next_location": "18014398509481984"
+        }
+      ],
+      "reverse_series_conservative_majorant": "1.5185825933836502499079E-74",
+      "note": "These are entropy-integral components, not fully evaluated KL divergences. Normalizer convergence and the baseline tail are proved analytically in the note."
+    },
+    {
+      "R": 65534,
+      "t0": 65536,
+      "true_model_changed": false,
+      "m_floor_sqrt_R_plus_1": 255,
+      "forward_KL_integral_component_upper": "3.3190615850618906816384E-92",
+      "true_generator_tail_mass_upper": "1.7984862202794634374273E-111",
+      "reverse_bump_components": [
+        {
+          "index": 1,
+          "log_reverse_bump_component": "-4.0793644676069566695750E+3",
+          "mass_log": "-4096",
+          "sqrt_next_location": "16777216"
+        },
+        {
+          "index": 2,
+          "log_reverse_bump_component": "-6.8719476686093402999684E+10",
+          "mass_log": "-68719476736",
+          "sqrt_next_location": "4722366482869645213696"
+        }
+      ],
+      "reverse_series_conservative_majorant": "2.2095171172993206140936E-593",
+      "note": "These are entropy-integral components, not fully evaluated KL divergences. Normalizer convergence and the baseline tail are proved analytically in the note."
+    }
+  ],
+  "reverse_majorant_exact_certificates": [
+    {
+      "y": 8,
+      "exact_Taylor_lower_minus_target": "7030749866192/49718962755"
+    },
+    {
+      "y": 64,
+      "exact_Taylor_lower_minus_target": "5195127829033243742336/49718962755"
+    },
+    {
+      "y": 512,
+      "exact_Taylor_lower_minus_target": "1345224558366699304202979641070592/248594813775"
+    },
+    {
+      "y": 4096,
+      "exact_Taylor_lower_minus_target": "8145142818700994042778542780972488555618304/22599528525"
+    }
+  ],
+  "correct_specification_baseline": [
+    {
+      "p": "1/100",
+      "r": 256,
+      "exact_J_main_exponent": "-6396/25",
+      "exact_WR_main_exponent": "-112",
+      "R_used": false,
+      "transfer_argument": "Weighted reversal condition WR_p, not bounded restart R."
+    },
+    {
+      "p": "1",
+      "r": 256,
+      "exact_J_main_exponent": "-240",
+      "exact_WR_main_exponent": "-112",
+      "R_used": false,
+      "transfer_argument": "Weighted reversal condition WR_p, not bounded restart R."
+    },
+    {
+      "p": "10",
+      "r": 1600,
+      "exact_J_main_exponent": "-1200",
+      "exact_WR_main_exponent": "-760",
+      "R_used": false,
+      "transfer_argument": "Weighted reversal condition WR_p, not bounded restart R."
+    },
+    {
+      "p": "100",
+      "r": 160000,
+      "exact_J_main_exponent": "-120000",
+      "exact_WR_main_exponent": "-79600",
+      "R_used": false,
+      "transfer_argument": "Weighted reversal condition WR_p, not bounded restart R."
+    }
+  ],
+  "limitations": [
+    "Only finitely many scale parameters and moment orders were checked.",
+    "No finite computation proves the stated all-p or infinite-horizon conclusions.",
+    "Decimal logarithms are descriptive high-precision values, not interval certificates.",
+    "The exact certificates are integer/Fraction inequalities, not integrals over the complete C-infinity bump model.",
+    "The KL rows bound entropy-integral components; they do not numerically integrate the entire normalized pair of experiments.",
+    "The constants in the actual total-W lower bound include a positive model-dependent factor not evaluated here.",
+    "The finite initial interval is allowed to be very costly; no uniform welfare upper bound over the splice family is claimed."
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "title": "Finite validation of increasing-convex cost comparisons",
+  "seed": 20261126,
+  "exact": {
+    "arithmetic": "fractions.Fraction; every assertion is exact",
+    "lambda": {
+      "max_sample_size": 12,
+      "pure_measures": 7,
+      "finite_mixtures": 40,
+      "budget_rows": 517,
+      "moment_comparison_rows": 517,
+      "endpoint_means": {
+        "binary": {
+          "1": "0",
+          "2": "2",
+          "3": "3",
+          "4": "11/3",
+          "5": "25/6",
+          "6": "137/30",
+          "7": "49/10",
+          "8": "363/70",
+          "9": "761/140",
+          "10": "7129/1260",
+          "11": "7381/1260",
+          "12": "83711/13860"
+        },
+        "star": {
+          "1": "0",
+          "2": "2",
+          "3": "3",
+          "4": "4",
+          "5": "5",
+          "6": "6",
+          "7": "7",
+          "8": "8",
+          "9": "9",
+          "10": "10",
+          "11": "11",
+          "12": "12"
+        }
+      },
+      "endpoint_second_moments": {
+        "binary": {
+          "1": "0",
+          "2": "8",
+          "3": "14",
+          "4": "170/9",
+          "5": "415/18",
+          "6": "12019/450",
+          "7": "13489/450",
+          "8": "726301/22050",
+          "9": "3144919/88200",
+          "10": "30300391/793800",
+          "11": "32160403/793800",
+          "12": "4102360483/96049800"
+        },
+        "star": {
+          "1": "0",
+          "2": "8",
+          "3": "18",
+          "4": "32",
+          "5": "50",
+          "6": "72",
+          "7": "98",
+          "8": "128",
+          "9": "162",
+          "10": "200",
+          "11": "242",
+          "12": "288"
+        }
+      }
+    },
+    "partition_budget_geometry": {
+      "max_state": 12,
+      "partition_types_checked": 259,
+      "state_group_pairs_checked": 66,
+      "minimum_and_maximum_pair_weight_formula": "exactly_verified_on_enumerated_types"
+    },
+    "cost_cones_exhaustive_finite_check": {
+      "N": 5,
+      "positive_integer_cost_range": [
+        1,
+        6
+      ],
+      "cost_vectors": 1296,
+      "L": 53,
+      "U": 14,
+      "LS": 0,
+      "L_failure_witnesses": 4520,
+      "U_failure_witnesses": 5292,
+      "LS_failure_witnesses": 5786,
+      "note": "Finite exhaustive check only; the universal cone equivalences require the manuscript proof."
+    },
+    "simultaneous_positive_cone_examples": {
+      "integer_power_costs": [
+        3,
+        4
+      ],
+      "max_state": 8,
+      "independent_chain_cost_instances": 40,
+      "exact_moment_rows": 280,
+      "all_L_U_LS_conditions_hold": true,
+      "scope": "finite partition-type chains, not a test of infinite Xi models"
+    },
+    "exact_examples": {
+      "L_does_not_imply_U": {
+        "costs": {
+          "1": "0",
+          "2": "2",
+          "3": "3",
+          "4": "37/10"
+        },
+        "q_4_to_2": "2",
+        "q_2_to_1": "1",
+        "binary_mean": "217/60",
+        "witness_mean": "77/20",
+        "star_mean": "37/10",
+        "witness_second_moment": "4449/200",
+        "upper_mean_violation": "3/20",
+        "scope": "single-group pair-budget chain; not claimed sampling-consistent"
+      },
+      "normalized_cost_monotonicity_not_necessary": {
+        "costs": {
+          "1": "0",
+          "2": "2",
+          "3": "4",
+          "4": "5"
+        },
+        "U_holds": true,
+        "L_holds": true,
+        "LS_holds": false,
+        "c_3_over_3": "4/3",
+        "c_4_over_4": "5/4"
+      },
+      "simultaneous_two_pairs": {
+        "event_type": [
+          2,
+          2
+        ],
+        "total_event_rate_at_4": "3",
+        "pair_budget": "6",
+        "witness_mean": "10/3",
+        "binary_mean": "11/3",
+        "witness_second_moment": "152/9",
+        "binary_second_moment": "170/9",
+        "lower_mean_violation": "1/3",
+        "label_restrictions_checked": 10,
+        "scope": "exchangeable family consistent only through sample size four; not an infinite Xi counterexample"
+      }
+    },
+    "cost_domain_boundary": {
+      "N2_positive_cost_equalities": 4,
+      "nonpositive_transient_costs_rejected": 2,
+      "absorbing_state_cost": "0",
+      "note": "c_b=0 for b>=2 is outside the theorem; no limiting cost-time generator is silently used."
+    }
+  },
+  "numerical": {
+    "method": "scipy.linalg.expm on finite killed cost-time generators",
+    "seed": 20261126,
+    "chain_cost_instances": 217,
+    "instances_by_family": {
+      "binary": 3,
+      "star": 3,
+      "arbitrary_pair_budget": 90,
+      "pure_lambda": 21,
+      "finite_lambda_mixture": 60,
+      "arbitrary_simultaneous_partitions": 40
+    },
+    "maximum_state": 8,
+    "thresholds_per_instance": 17,
+    "threshold_definition": "listed fractions times maximum transient state cost in each instance",
+    "threshold_fractions": [
+      0.0,
+      1e-08,
+      1e-05,
+      0.001,
+      0.01,
+      0.03,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.5,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0
+    ],
+    "state_threshold_values": 23783,
+    "lower_comparisons": 21403,
+    "upper_and_mean_refined_comparisons_each": 23018,
+    "relative_scale_tolerance": 2e-10,
+    "tolerance_rule": "2e-10 * max(1,max(c),max(v))",
+    "max_absolute_errors_or_violations": {
+      "lower_order_violation": 2.886579864025407e-15,
+      "star_upper_violation": 7.105427357601002e-15,
+      "mean_refined_upper_violation": 7.105427357601002e-15,
+      "negative_stoploss": 0.0,
+      "mean_equation_residual": 1.7763568394002505e-15,
+      "stoploss_derivative_identity_residual": 7.327471962526033e-15,
+      "binary_explicit_transform_error": 6.217248937900877e-15
+    },
+    "ordinary_stochastic_order_crossing": [
+      {
+        "threshold": "1/10",
+        "binary_survival": 0.9976214309654685,
+        "star_survival": 0.9672161004820059,
+        "difference": 0.03040533048346261
+      },
+      {
+        "threshold": "20",
+        "binary_survival": 9.079779837134727e-05,
+        "star_survival": 0.0012726338013398079,
+        "difference": -0.0011818360029684607
+      }
+    ],
+    "status": "all finite floating diagnostics within declared tolerance",
+    "limitation": "Finite diagnostics, not proof; arbitrary infinite Xi models are not sampled or verified."
+  },
+  "power_threshold": {
+    "alpha_star_80_digit_evaluation": "2.409420839653209004582404330812436456168670921007628748684292612743039273145542",
+    "identity_residual_80_digit_evaluation": "0.0",
+    "R_b_monotonicity_checked_for_b": [
+      4,
+      10000
+    ],
+    "R4": 2.409420839653209,
+    "R10000": 2.000100015002417,
+    "LS_finite_scans": [
+      {
+        "alpha_offset": -1e-06,
+        "N": 80,
+        "nontrivial_LS_inequalities": 3081,
+        "minimum_slack": -1.35324645711421e-06,
+        "minimizer_b_K": [
+          4,
+          2
+        ],
+        "four_block_two_pair_mean_gap": -1.35324645711421e-06
+      },
+      {
+        "alpha_offset": 0.0,
+        "N": 80,
+        "nontrivial_LS_inequalities": 3081,
+        "minimum_slack": 1.7763568394002505e-15,
+        "minimizer_b_K": [
+          4,
+          2
+        ],
+        "four_block_two_pair_mean_gap": 0.0
+      },
+      {
+        "alpha_offset": 1e-06,
+        "N": 80,
+        "nontrivial_LS_inequalities": 3081,
+        "minimum_slack": 1.3532498179813501e-06,
+        "minimizer_b_K": [
+          4,
+          2
+        ],
+        "four_block_two_pair_mean_gap": 1.353249819757707e-06
+      }
+    ],
+    "single_group_power_threshold_at_n3": [
+      {
+        "alpha": -1,
+        "binary_minus_star_mean_at_n3": 0.27777777777777785
+      },
+      {
+        "alpha": 0,
+        "binary_minus_star_mean_at_n3": 0.33333333333333326
+      },
+      {
+        "alpha": 0.5,
+        "binary_minus_star_mean_at_n3": 0.2595130239938437
+      },
+      {
+        "alpha": 1,
+        "binary_minus_star_mean_at_n3": 0.0
+      },
+      {
+        "alpha": 1.5,
+        "binary_minus_star_mean_at_n3": -0.6356744903915645
+      },
+      {
+        "alpha": 2,
+        "binary_minus_star_mean_at_n3": -2.0
+      }
+    ],
+    "limitation": "Threshold identities and finite scans diagnose the stated proof; they do not replace its all-n argument."
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0"
+  },
+  "script_sha256": "c9d4188429970714e09a254d3181302d0aecbc4968050f8cf0ef9aed295332fe",
+  "overall_status": "PASS: all stated finite checks completed",
+  "scope_exclusions": [
+    "No Lean code or compilation",
+    "No proof of arbitrary infinite Xi models",
+    "Finite computed cases only"
+  ]
+}
