@@ -1,5 +1,32 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BernoulliCurvatureRemainderPositive",
+      "name": "WeightedBernoulliEntropyCurvatureResearchProof1.nonnegative_collision_remainder"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedBernoulliLogDerivative",
+      "name": "WeightedBernoulliEntropyCurvatureResearchProof1.loss_asymmetry_derivative"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -15,12 +42,10 @@
     "papers/weighted-bernoulli-entropy-curvature/formalization/BernoulliCurvatureRemainderPositive.lean": "b577794f87359157f726f75c5827a9699803245964e32b6d61dfe275053e7727",
     "papers/weighted-bernoulli-entropy-curvature/formalization/WeightedBernoulliLogDerivative.lean": "22f57f011e3d80f7f1786559849a79e635ca3a3a0feb90af6778bf3648ef7afd"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "e3cb82fac65763ed31578f776ca0754ecc0404544a14760c080c51c8abdf3cfd",
-  "paper_path": "papers/weighted-bernoulli-entropy-curvature/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/weighted-bernoulli-entropy-curvature/paper.en.md"
 }

@@ -1,5 +1,68 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TrapCertificate",
+      "name": "TrapCertificate.clampEnergyGap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TrapCertificate",
+      "name": "TrapCertificate.clampEnergyUnique"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TrapCertificate",
+      "name": "TrapCertificate.clampLevel"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TrapCertificate",
+      "name": "TrapCertificate.clampNormal"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TrapCertificate",
+      "name": "TrapCertificate.freeTerminalEnergyGap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TrapCertificate",
+      "name": "_private.TrapCertificate.0.TrapCertificate.energyConstantBound"
+    }
+  ],
   "dependency_versions": {
     "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
     "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
@@ -14,12 +77,10 @@
   "file_sha256": {
     "papers/speed-limited-harmonic-equilibration/formalization/TrapCertificate.lean": "8d78885b86e5eea6f678d163edf6855d4b3a845b98a71b900270efc392c9c18a"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.24.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "02886aecd97bdeafe81ec1393b48546987c14d4f0908595372786ee26c49dc25",
-  "paper_path": "papers/speed-limited-harmonic-equilibration/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/speed-limited-harmonic-equilibration/paper.en.md"
 }

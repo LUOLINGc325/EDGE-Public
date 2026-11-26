@@ -1,5 +1,145 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MethodOfStepsCertificate",
+      "name": "DelayedNewtonPreparation.firstTwoDelayPieces"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MethodOfStepsCertificate",
+      "name": "DelayedNewtonPreparation.firstTwoDelayPieces.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MethodOfStepsCertificate",
+      "name": "DelayedNewtonPreparation.first_delay_equation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MethodOfStepsCertificate",
+      "name": "DelayedNewtonPreparation.second_delay_equation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThresholdRearrangement",
+      "name": "Mpemba.centered_integral_nonneg"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThresholdRearrangement",
+      "name": "Mpemba.threshold"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThresholdRearrangement",
+      "name": "Mpemba.threshold._cstage1"
+    },
+    {
+      "axioms": [],
+      "module": "ThresholdRearrangement",
+      "name": "Mpemba.threshold._cstage2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThresholdRearrangement",
+      "name": "Mpemba.threshold._rarg._closed_1._cstage2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThresholdRearrangement",
+      "name": "Mpemba.threshold._rarg._cstage2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThresholdRearrangement",
+      "name": "Mpemba.threshold_integral_comparison"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThresholdRearrangement",
+      "name": "Mpemba.threshold_integral_deficit"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThresholdRearrangement",
+      "name": "Mpemba.threshold_integral_equality_ae"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThresholdRearrangement",
+      "name": "Mpemba.threshold_product_abs"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThresholdRearrangement",
+      "name": "Mpemba.threshold_product_nonneg"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -15,12 +155,10 @@
     "papers/delayed-newton-cooling-optimal-preparation/formalization/MethodOfStepsCertificate.lean": "d530313d78d3f053b2b1065455a938c18c443d46241e5282c1235ffefdc824e3",
     "papers/delayed-newton-cooling-optimal-preparation/formalization/ThresholdRearrangement.lean": "cd073d6fc444a89606c42f391cbb88c0f90ca8dcc625dab47f409d1e7457b99b"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "58a3ab59796de4c02792619090e26848a6a7e723d46926088ae97e201197e5b3",
-  "paper_path": "papers/delayed-newton-cooling-optimal-preparation/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/delayed-newton-cooling-optimal-preparation/paper.en.md"
 }

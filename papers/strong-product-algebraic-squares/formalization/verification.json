@@ -1,5 +1,87 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrongProductRectangleCommonHeight",
+      "name": "StrongProductAlgebraicSquaresResearchProof1.shared_first_coordinates_exhaust"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrongProductRectangleExclusiveCoordinate",
+      "name": "StrongProductAlgebraicSquaresResearchProof1.exclusive_coordinate_forces_full_width"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrongProductRectangleExclusiveWidth",
+      "name": "StrongProductAlgebraicSquaresResearchProof1.exclusive_width_forces_full_height"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "StrongProductRectangleIntersection",
+      "name": "StrongProductAlgebraicSquaresResearchProof3.common_rectangle_coordinates"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrongProductRectangleProjectCore",
+      "name": "StrongProductAlgebraicSquaresResearchProof1.rectangle_intersection_core"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "StrongProductRectangleProjectCore",
+      "name": "StrongProductAlgebraicSquaresResearchProof1.rectangle_intersection_core._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "StrongProductRectangleProjectCore",
+      "name": "StrongProductAlgebraicSquaresResearchProof1.rectangle_intersection_core._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrongProductTwoRectangleCover",
+      "name": "StrongProductAlgebraicSquaresResearchProof3.two_rectangle_cover"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StrongRetractCrossCorner",
+      "name": "StrongProductAlgebraicSquaresResearchProof2.fixed_cross_corner"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -20,12 +102,10 @@
     "papers/strong-product-algebraic-squares/formalization/StrongProductTwoRectangleCover.lean": "dc23f76aea62dbf51d8aad77203de0dfa65000f8a1e468b40a0997bf6b0a6269",
     "papers/strong-product-algebraic-squares/formalization/StrongRetractCrossCorner.lean": "8ef28c2b1f11facc796a2bfbc9b0520322df8472396ea43f5a53021c4db023d7"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "506ee89886d9c39db0475b64e13b28c1e36de696d0920365a507069aef001fdc",
-  "paper_path": "papers/strong-product-algebraic-squares/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/strong-product-algebraic-squares/paper.en.md"
 }

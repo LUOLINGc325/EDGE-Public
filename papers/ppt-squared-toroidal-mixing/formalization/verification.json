@@ -1,5 +1,324 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.attainedMinimum"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.composedRatio"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.composedRatio.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.exactMinimum"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.familyAttainedMinimum"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.familyColumn"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.familyColumn.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.familyExactMinimum"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.familyPopulation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.familyPopulation.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.familyScaled"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.familyScaled.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.populationColumnTotal"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.populationRowTotal"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.rawPopulation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.rawPopulation.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalArithmetic",
+      "name": "ToroidalArithmetic.strictSeparation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalBloch",
+      "name": "ToroidalBloch.hadamardEnergy"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalBloch",
+      "name": "ToroidalBloch.hadamardEnergy._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalBloch",
+      "name": "ToroidalBloch.pairedProjection"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalBloch",
+      "name": "ToroidalBloch.pairedProjection._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalBloch",
+      "name": "ToroidalBloch.shortPartition"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalSIC",
+      "name": "ToroidalSIC.hermiteEquality"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalSIC",
+      "name": "ToroidalSIC.hermiteMajorant"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalSIC",
+      "name": "ToroidalSIC.hermiteMomentComparison"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalSIC",
+      "name": "ToroidalSIC.hermiteMomentComparison._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalSIC",
+      "name": "ToroidalSIC.hermiteMomentComparison._simp_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalSIC",
+      "name": "ToroidalSIC.sicMomentBound"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalSIC",
+      "name": "ToroidalSIC.sicMomentBound._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalSIC",
+      "name": "ToroidalSIC.sqrtMajorant"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalSIC",
+      "name": "_private.ToroidalSIC.0.ToroidalSIC.majorant"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalSIC",
+      "name": "_private.ToroidalSIC.0.ToroidalSIC.majorant._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalSIC",
+      "name": "_private.ToroidalSIC.0.ToroidalSIC.majorant._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalSIC",
+      "name": "_private.ToroidalSIC.0.ToroidalSIC.majorant.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ToroidalSIC",
+      "name": "_private.ToroidalSIC.0.ToroidalSIC.majorantDeficit"
+    }
+  ],
   "dependency_versions": {
     "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
     "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
@@ -16,12 +335,10 @@
     "papers/ppt-squared-toroidal-mixing/formalization/ToroidalBloch.lean": "b283dd1ba930c068328ec936b8d1304352e88e71df20e8ed7a36012965ed21e4",
     "papers/ppt-squared-toroidal-mixing/formalization/ToroidalSIC.lean": "aa37c407b93fa18c7b46cc1f8e8fe300cf08e3925ace5f2afda02fecbe1c52bf"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.24.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "d3ad967a1dd9744164dd49d74916ec737d8ebc11195ad92514cfe4bcba649687",
-  "paper_path": "papers/ppt-squared-toroidal-mixing/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/ppt-squared-toroidal-mixing/paper.en.md"
 }

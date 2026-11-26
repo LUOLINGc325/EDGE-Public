@@ -425,82 +425,82 @@ The table gives the local check status of each supplement. Compiled entries cove
 | [all clique saturation](all-clique-saturation/paper.en.md) | [Modules](all-clique-saturation/formalization/README.md) | Compiled and checked |
 | [aoj general service indexability](aoj-general-service-indexability/paper.en.md) | [Modules](aoj-general-service-indexability/formalization/README.md) | Compiled and checked |
 | [bandit view table sharp conversion](bandit-view-table-sharp-conversion/paper.en.md) | [Modules](bandit-view-table-sharp-conversion/formalization/README.md) | Compiled and checked |
-| [binary markov gray dispersion](binary-markov-gray-dispersion/paper.en.md) | [Modules](binary-markov-gray-dispersion/formalization/README.md) | Source snapshot |
-| [binary renyi order monotonicity](binary-renyi-order-monotonicity/paper.en.md) | [Modules](binary-renyi-order-monotonicity/formalization/README.md) | Source snapshot |
+| [binary markov gray dispersion](binary-markov-gray-dispersion/paper.en.md) | [Modules](binary-markov-gray-dispersion/formalization/README.md) | Compiled and checked |
+| [binary renyi order monotonicity](binary-renyi-order-monotonicity/paper.en.md) | [Modules](binary-renyi-order-monotonicity/formalization/README.md) | Compiled and checked |
 | [binomial sign margin minimax](binomial-sign-margin-minimax/paper.zh.md) | [Modules](binomial-sign-margin-minimax/formalization/README.md) | Compiled and checked |
-| [boundary resetting global optimality](boundary-resetting-global-optimality/paper.en.md) | [Modules](boundary-resetting-global-optimality/formalization/README.md) | Source snapshot |
+| [boundary resetting global optimality](boundary-resetting-global-optimality/paper.en.md) | [Modules](boundary-resetting-global-optimality/formalization/README.md) | Compiled and checked |
 | [chained index uniform direct product](chained-index-uniform-direct-product/paper.en.md) | [Modules](chained-index-uniform-direct-product/formalization/README.md) | Compiled and checked |
-| [ci score quadratic rigidity](ci-score-quadratic-rigidity/paper.zh.md) | [Modules](ci-score-quadratic-rigidity/formalization/README.md) | Source snapshot |
+| [ci score quadratic rigidity](ci-score-quadratic-rigidity/paper.zh.md) | [Modules](ci-score-quadratic-rigidity/formalization/README.md) | Compiled and checked |
 | [collapsing bandit global indexability](collapsing-bandit-global-indexability/paper.en.md) | [Modules](collapsing-bandit-global-indexability/formalization/README.md) | Compiled and checked |
 | [common law lqr affine boundary](common-law-lqr-affine-boundary/paper.en.md) | [Modules](common-law-lqr-affine-boundary/formalization/README.md) | Compiled and checked |
-| [commuting effect threshold](commuting-effect-threshold/paper.en.md) | [Modules](commuting-effect-threshold/formalization/README.md) | Source snapshot |
+| [commuting effect threshold](commuting-effect-threshold/paper.en.md) | [Modules](commuting-effect-threshold/formalization/README.md) | Compiled and checked |
 | [composite sequential test induction](composite-sequential-test-induction/paper.en.md) | [Modules](composite-sequential-test-induction/formalization/README.md) | Compiled and checked |
 | [conditional information power boundaries](conditional-information-power-boundaries/paper.en.md) | [Modules](conditional-information-power-boundaries/formalization/README.md) | Compiled and checked |
 | [conjugate resetting global optimality](conjugate-resetting-global-optimality/paper.en.md) | [Modules](conjugate-resetting-global-optimality/formalization/README.md) | Compiled and checked |
-| [cvar one max exact optimality](cvar-one-max-exact-optimality/paper.en.md) | [Modules](cvar-one-max-exact-optimality/formalization/README.md) | Source snapshot |
-| [dca sharp finite horizon](dca-sharp-finite-horizon/paper.en.md) | [Modules](dca-sharp-finite-horizon/formalization/README.md) | Source snapshot |
-| [delayed newton cooling optimal preparation](delayed-newton-cooling-optimal-preparation/paper.en.md) | [Modules](delayed-newton-cooling-optimal-preparation/formalization/README.md) | Source snapshot |
+| [cvar one max exact optimality](cvar-one-max-exact-optimality/paper.en.md) | [Modules](cvar-one-max-exact-optimality/formalization/README.md) | Compiled and checked |
+| [dca sharp finite horizon](dca-sharp-finite-horizon/paper.en.md) | [Modules](dca-sharp-finite-horizon/formalization/README.md) | Compiled and checked |
+| [delayed newton cooling optimal preparation](delayed-newton-cooling-optimal-preparation/paper.en.md) | [Modules](delayed-newton-cooling-optimal-preparation/formalization/README.md) | Compiled and checked |
 | [directed cycle two season witness](directed-cycle-two-season-witness/paper.en.md) | [Modules](directed-cycle-two-season-witness/formalization/README.md) | Compiled and checked |
-| [efx four agents eight goods](efx-four-agents-eight-goods/paper.zh.md) | [Modules](efx-four-agents-eight-goods/formalization/README.md) | Source snapshot |
-| [efx matroid rank chores](efx-matroid-rank-chores/paper.en.md) | [Modules](efx-matroid-rank-chores/formalization/README.md) | Source snapshot |
-| [euclidean median all p sharp](euclidean-median-all-p-sharp/paper.en.md) | [Modules](euclidean-median-all-p-sharp/formalization/README.md) | Source snapshot |
+| [efx four agents eight goods](efx-four-agents-eight-goods/paper.zh.md) | [Modules](efx-four-agents-eight-goods/formalization/README.md) | Compiled and checked |
+| [efx matroid rank chores](efx-matroid-rank-chores/paper.en.md) | [Modules](efx-matroid-rank-chores/formalization/README.md) | Compiled and checked |
+| [euclidean median all p sharp](euclidean-median-all-p-sharp/paper.en.md) | [Modules](euclidean-median-all-p-sharp/formalization/README.md) | Compiled and checked |
 | [even cycle replica branch separation](even-cycle-replica-branch-separation/paper.zh.md) | [Modules](even-cycle-replica-branch-separation/formalization/README.md) | Compiled and checked |
 | [exact convex profile capital](exact-convex-profile-capital/paper.en.md) | [Modules](exact-convex-profile-capital/formalization/README.md) | Compiled and checked |
 | [exchangeable arithmetic merging improvement](exchangeable-arithmetic-merging-improvement/paper.zh.md) | [Modules](exchangeable-arithmetic-merging-improvement/formalization/README.md) | Compiled and checked |
-| [fixed angle mbqc unitary design](fixed-angle-mbqc-unitary-design/paper.zh.md) | [Modules](fixed-angle-mbqc-unitary-design/formalization/README.md) | Source snapshot |
+| [fixed angle mbqc unitary design](fixed-angle-mbqc-unitary-design/paper.zh.md) | [Modules](fixed-angle-mbqc-unitary-design/formalization/README.md) | Compiled and checked |
 | [full domain capital tensorization](full-domain-capital-tensorization/paper.en.md) | [Modules](full-domain-capital-tensorization/formalization/README.md) | Compiled and checked |
-| [gaffke delta sharp bound](gaffke-delta-sharp-bound/paper.en.md) | [Modules](gaffke-delta-sharp-bound/formalization/README.md) | Source snapshot |
-| [gaffke ordered iid interval](gaffke-ordered-iid-interval/paper.en.md) | [Modules](gaffke-ordered-iid-interval/formalization/README.md) | Source snapshot |
-| [gamma calibration unknown dispersion](gamma-calibration-unknown-dispersion/paper.zh.md) | [Modules](gamma-calibration-unknown-dispersion/formalization/README.md) | Source snapshot |
+| [gaffke delta sharp bound](gaffke-delta-sharp-bound/paper.en.md) | [Modules](gaffke-delta-sharp-bound/formalization/README.md) | Compiled and checked |
+| [gaffke ordered iid interval](gaffke-ordered-iid-interval/paper.en.md) | [Modules](gaffke-ordered-iid-interval/formalization/README.md) | Compiled and checked |
+| [gamma calibration unknown dispersion](gamma-calibration-unknown-dispersion/paper.zh.md) | [Modules](gamma-calibration-unknown-dispersion/formalization/README.md) | Compiled and checked |
 | [gaussian frequency gradient variance](gaussian-frequency-gradient-variance/paper.zh.md) | [Modules](gaussian-frequency-gradient-variance/formalization/README.md) | Compiled and checked |
 | [gaussian product sharp zcdp](gaussian-product-sharp-zcdp/paper.en.md) | [Modules](gaussian-product-sharp-zcdp/formalization/README.md) | Compiled and checked |
 | [general qutrit cooling](general-qutrit-cooling/paper.zh.md) | [Modules](general-qutrit-cooling/formalization/README.md) | Compiled and checked |
 | [graph burning long path forests](graph-burning-long-path-forests/paper.en.md) | [Modules](graph-burning-long-path-forests/formalization/README.md) | Compiled and checked |
 | [haar schmidt magic](haar-schmidt-magic/paper.zh.md) | [Modules](haar-schmidt-magic/formalization/README.md) | Compiled and checked |
 | [hard budget covariance fourth moment](hard-budget-covariance-fourth-moment/paper.en.md) | [Modules](hard-budget-covariance-fourth-moment/formalization/README.md) | Compiled and checked |
-| [independent winners bias extremizers](independent-winners-bias-extremizers/paper.en.md) | [Modules](independent-winners-bias-extremizers/formalization/README.md) | Source snapshot |
-| [krr exact zcdp](krr-exact-zcdp/paper.en.md) | [Modules](krr-exact-zcdp/formalization/README.md) | Source snapshot |
+| [independent winners bias extremizers](independent-winners-bias-extremizers/paper.en.md) | [Modules](independent-winners-bias-extremizers/formalization/README.md) | Compiled and checked |
+| [krr exact zcdp](krr-exact-zcdp/paper.en.md) | [Modules](krr-exact-zcdp/formalization/README.md) | Compiled and checked |
 | [loo continuous dual closure gap](loo-continuous-dual-closure-gap/paper.en.md) | [Modules](loo-continuous-dual-closure-gap/formalization/README.md) | Compiled and checked |
 | [minimizer rigidity stability](minimizer-rigidity-stability/paper.en.md) | [Modules](minimizer-rigidity-stability/formalization/README.md) | Compiled and checked |
-| [modular magnetization magic](modular-magnetization-magic/paper.en.md) | [Modules](modular-magnetization-magic/formalization/README.md) | Source snapshot |
-| [moment bayes minimax geometry](moment-bayes-minimax-geometry/paper.zh.md) | [Modules](moment-bayes-minimax-geometry/formalization/README.md) | Source snapshot |
-| [noiseless codes few binary measurements](noiseless-codes-few-binary-measurements/paper.en.md) | [Modules](noiseless-codes-few-binary-measurements/formalization/README.md) | Source snapshot |
+| [modular magnetization magic](modular-magnetization-magic/paper.en.md) | [Modules](modular-magnetization-magic/formalization/README.md) | Compiled and checked |
+| [moment bayes minimax geometry](moment-bayes-minimax-geometry/paper.zh.md) | [Modules](moment-bayes-minimax-geometry/formalization/README.md) | Compiled and checked |
+| [noiseless codes few binary measurements](noiseless-codes-few-binary-measurements/paper.en.md) | [Modules](noiseless-codes-few-binary-measurements/formalization/README.md) | Compiled and checked |
 | [noisy qubit design parity](noisy-qubit-design-parity/paper.zh.md) | [Modules](noisy-qubit-design-parity/formalization/README.md) | Compiled and checked |
-| [nonadaptive bernoulli moment characterization](nonadaptive-bernoulli-moment-characterization/paper.en.md) | [Modules](nonadaptive-bernoulli-moment-characterization/formalization/README.md) | Source snapshot |
+| [nonadaptive bernoulli moment characterization](nonadaptive-bernoulli-moment-characterization/paper.en.md) | [Modules](nonadaptive-bernoulli-moment-characterization/formalization/README.md) | Compiled and checked |
 | [noncommuting pell aliases](noncommuting-pell-aliases/paper.en.md) | [Modules](noncommuting-pell-aliases/formalization/README.md) | Compiled and checked |
 | [odd cycle exact complexity](odd-cycle-exact-complexity/paper.en.md) | [Modules](odd-cycle-exact-complexity/formalization/README.md) | Compiled and checked |
 | [odd qudit replica phase reflection](odd-qudit-replica-phase-reflection/paper.zh.md) | [Modules](odd-qudit-replica-phase-reflection/formalization/README.md) | Compiled and checked |
-| [online conformal parabolic evaluation](online-conformal-parabolic-evaluation/paper.zh.md) | [Modules](online-conformal-parabolic-evaluation/formalization/README.md) | Source snapshot |
-| [online unbounded knapsack minimax](online-unbounded-knapsack-minimax/paper.en.md) | [Modules](online-unbounded-knapsack-minimax/formalization/README.md) | Source snapshot |
-| [optimal resetting asymmetric](optimal-resetting-asymmetric/paper.en.md) | [Modules](optimal-resetting-asymmetric/formalization/README.md) | Source snapshot |
+| [online conformal parabolic evaluation](online-conformal-parabolic-evaluation/paper.zh.md) | [Modules](online-conformal-parabolic-evaluation/formalization/README.md) | Compiled and checked |
+| [online unbounded knapsack minimax](online-unbounded-knapsack-minimax/paper.en.md) | [Modules](online-unbounded-knapsack-minimax/formalization/README.md) | Compiled and checked |
+| [optimal resetting asymmetric](optimal-resetting-asymmetric/paper.en.md) | [Modules](optimal-resetting-asymmetric/formalization/README.md) | Compiled and checked |
 | [order seven sharp erasure](order-seven-sharp-erasure/paper.en.md) | [Modules](order-seven-sharp-erasure/formalization/README.md) | Compiled and checked |
 | [order six sharp erasure](order-six-sharp-erasure/paper.en.md) | [Modules](order-six-sharp-erasure/formalization/README.md) | Compiled and checked |
-| [ordinal causal benefit sharp bounds](ordinal-causal-benefit-sharp-bounds/paper.en.md) | [Modules](ordinal-causal-benefit-sharp-bounds/formalization/README.md) | Source snapshot |
+| [ordinal causal benefit sharp bounds](ordinal-causal-benefit-sharp-bounds/paper.en.md) | [Modules](ordinal-causal-benefit-sharp-bounds/formalization/README.md) | Compiled and checked |
 | [ordinal only frontier](ordinal-only-frontier/paper.en.md) | [Modules](ordinal-only-frontier/formalization/README.md) | Compiled and checked |
-| [ordinary ef1 three agent counterexample (extended source)](ordinary-ef1-three-agent-counterexample/paper.en.md) | [Modules](ordinary-ef1-three-agent-counterexample/lean/extended/README.md) | Source snapshot |
+| [ordinary ef1 three agent counterexample (extended source)](ordinary-ef1-three-agent-counterexample/paper.en.md) | [Modules](ordinary-ef1-three-agent-counterexample/lean/extended/README.md) | Compiled and checked |
 | [pairwise independent online crs sharp](pairwise-independent-online-crs-sharp/paper.en.md) | [Modules](pairwise-independent-online-crs-sharp/formalization/README.md) | Compiled and checked |
 | [path drift switch budget](path-drift-switch-budget/paper.en.md) | [Modules](path-drift-switch-budget/formalization/README.md) | Compiled and checked |
-| [pauli lindblad pec parity](pauli-lindblad-pec-parity/paper.en.md) | [Modules](pauli-lindblad-pec-parity/formalization/README.md) | Source snapshot |
+| [pauli lindblad pec parity](pauli-lindblad-pec-parity/paper.en.md) | [Modules](pauli-lindblad-pec-parity/formalization/README.md) | Compiled and checked |
 | [posthoc finite stake admissibility](posthoc-finite-stake-admissibility/paper.en.md) | [Modules](posthoc-finite-stake-admissibility/formalization/README.md) | Compiled and checked |
-| [ppt squared toroidal mixing](ppt-squared-toroidal-mixing/paper.en.md) | [Modules](ppt-squared-toroidal-mixing/formalization/README.md) | Source snapshot |
+| [ppt squared toroidal mixing](ppt-squared-toroidal-mixing/paper.en.md) | [Modules](ppt-squared-toroidal-mixing/formalization/README.md) | Compiled and checked |
 | [precise mergers without symmetry](precise-mergers-without-symmetry/paper.en.md) | [Modules](precise-mergers-without-symmetry/formalization/README.md) | Compiled and checked |
-| [processing oracle two phase](processing-oracle-two-phase/paper.en.md) | [Modules](processing-oracle-two-phase/formalization/README.md) | Source snapshot |
-| [prophet secretary stockout](prophet-secretary-stockout/paper.en.md) | [Modules](prophet-secretary-stockout/formalization/README.md) | Source snapshot |
-| [quantum channel product bound universality](quantum-channel-product-bound-universality/paper.en.md) | [Modules](quantum-channel-product-bound-universality/formalization/README.md) | Source snapshot |
+| [processing oracle two phase](processing-oracle-two-phase/paper.en.md) | [Modules](processing-oracle-two-phase/formalization/README.md) | Compiled and checked |
+| [prophet secretary stockout](prophet-secretary-stockout/paper.en.md) | [Modules](prophet-secretary-stockout/formalization/README.md) | Compiled and checked |
+| [quantum channel product bound universality](quantum-channel-product-bound-universality/paper.en.md) | [Modules](quantum-channel-product-bound-universality/formalization/README.md) | Compiled and checked |
 | [quantum code n23 m3 b2](quantum-code-n23-m3-b2/paper.zh.md) | [Modules](quantum-code-n23-m3-b2/formalization/README.md) | Compiled and checked |
-| [quantum transport polygon exactness](quantum-transport-polygon-exactness/paper.en.md) | [Modules](quantum-transport-polygon-exactness/formalization/README.md) | Source snapshot |
+| [quantum transport polygon exactness](quantum-transport-polygon-exactness/paper.en.md) | [Modules](quantum-transport-polygon-exactness/formalization/README.md) | Compiled and checked |
 | [qubit cooling bernstein certificate](qubit-cooling-bernstein-certificate/paper.en.md) | [Modules](qubit-cooling-bernstein-certificate/formalization/README.md) | Compiled and checked |
 | [random occupancy threshold](random-occupancy-threshold/paper.en.md) | [Modules](random-occupancy-threshold/formalization/README.md) | Compiled and checked |
-| [random occupancy threshold (extended source)](random-occupancy-threshold/paper.en.md) | [Modules](random-occupancy-threshold/lean/extended/README.md) | Source snapshot |
-| [randomized weighted two job robustness](randomized-weighted-two-job-robustness/paper.en.md) | [Modules](randomized-weighted-two-job-robustness/formalization/README.md) | Source snapshot |
+| [random occupancy threshold (extended source)](random-occupancy-threshold/paper.en.md) | [Modules](random-occupancy-threshold/lean/extended/README.md) | Compiled and checked |
+| [randomized weighted two job robustness](randomized-weighted-two-job-robustness/paper.en.md) | [Modules](randomized-weighted-two-job-robustness/formalization/README.md) | Compiled and checked |
 | [rank two scale classification](rank-two-scale-classification/paper.en.md) | [Modules](rank-two-scale-classification/formalization/README.md) | Compiled and checked |
-| [record constrained prophet gap](record-constrained-prophet-gap/paper.en.md) | [Modules](record-constrained-prophet-gap/formalization/README.md) | Source snapshot |
+| [record constrained prophet gap](record-constrained-prophet-gap/paper.en.md) | [Modules](record-constrained-prophet-gap/formalization/README.md) | Compiled and checked |
 | [replicable conformal pilot ranks](replicable-conformal-pilot-ranks/paper.en.md) | [Modules](replicable-conformal-pilot-ranks/formalization/README.md) | Compiled and checked |
-| [reversible environment weak response](reversible-environment-weak-response/paper.en.md) | [Modules](reversible-environment-weak-response/formalization/README.md) | Source snapshot |
+| [reversible environment weak response](reversible-environment-weak-response/paper.en.md) | [Modules](reversible-environment-weak-response/formalization/README.md) | Compiled and checked |
 | [risk sensitive ski rental](risk-sensitive-ski-rental/paper.en.md) | [Modules](risk-sensitive-ski-rental/formalization/README.md) | Compiled and checked |
-| [selection audit information](selection-audit-information/paper.en.md) | [Modules](selection-audit-information/formalization/README.md) | Source snapshot |
-| [sequential ldp autocovariance minimax](sequential-ldp-autocovariance-minimax/paper.en.md) | [Modules](sequential-ldp-autocovariance-minimax/formalization/README.md) | Source snapshot |
-| [sequential target recalculation](sequential-target-recalculation/paper.en.md) | [Modules](sequential-target-recalculation/formalization/README.md) | Source snapshot |
+| [selection audit information](selection-audit-information/paper.en.md) | [Modules](selection-audit-information/formalization/README.md) | Compiled and checked |
+| [sequential ldp autocovariance minimax](sequential-ldp-autocovariance-minimax/paper.en.md) | [Modules](sequential-ldp-autocovariance-minimax/formalization/README.md) | Compiled and checked |
+| [sequential target recalculation](sequential-target-recalculation/paper.en.md) | [Modules](sequential-target-recalculation/formalization/README.md) | Compiled and checked |
 | [sharp amplification and pointwise monotonicity](sharp-amplification-and-pointwise-monotonicity/paper.en.md) | [Modules](sharp-amplification-and-pointwise-monotonicity/formalization/README.md) | Compiled and checked |
 | [sharp conditional ranks under tilts](sharp-conditional-ranks-under-tilts/paper.en.md) | [Modules](sharp-conditional-ranks-under-tilts/formalization/README.md) | Compiled and checked |
 | [sharp minimal failures](sharp-minimal-failures/paper.en.md) | [Modules](sharp-minimal-failures/formalization/README.md) | Compiled and checked |
@@ -509,18 +509,18 @@ The table gives the local check status of each supplement. Compiled entries cove
 | [six cycle even replica factorization](six-cycle-even-replica-factorization/paper.zh.md) | [Modules](six-cycle-even-replica-factorization/formalization/README.md) | Compiled and checked |
 | [six cycle replica arithmetic](six-cycle-replica-arithmetic/paper.zh.md) | [Modules](six-cycle-replica-arithmetic/formalization/README.md) | Compiled and checked |
 | [slack null induction complexity](slack-null-induction-complexity/paper.en.md) | [Modules](slack-null-induction-complexity/formalization/README.md) | Compiled and checked |
-| [speed limited harmonic equilibration](speed-limited-harmonic-equilibration/paper.en.md) | [Modules](speed-limited-harmonic-equilibration/formalization/README.md) | Source snapshot |
-| [stroboscopic three state entropy range](stroboscopic-three-state-entropy-range/paper.en.md) | [Modules](stroboscopic-three-state-entropy-range/formalization/README.md) | Source snapshot |
-| [strong product algebraic squares](strong-product-algebraic-squares/paper.en.md) | [Modules](strong-product-algebraic-squares/formalization/README.md) | Source snapshot |
-| [subsampled max power lqrt](subsampled-max-power-lqrt/paper.zh.md) | [Modules](subsampled-max-power-lqrt/formalization/README.md) | Source snapshot |
+| [speed limited harmonic equilibration](speed-limited-harmonic-equilibration/paper.en.md) | [Modules](speed-limited-harmonic-equilibration/formalization/README.md) | Compiled and checked |
+| [stroboscopic three state entropy range](stroboscopic-three-state-entropy-range/paper.en.md) | [Modules](stroboscopic-three-state-entropy-range/formalization/README.md) | Compiled and checked |
+| [strong product algebraic squares](strong-product-algebraic-squares/paper.en.md) | [Modules](strong-product-algebraic-squares/formalization/README.md) | Compiled and checked |
+| [subsampled max power lqrt](subsampled-max-power-lqrt/paper.zh.md) | [Modules](subsampled-max-power-lqrt/formalization/README.md) | Compiled and checked |
 | [ternary pairwise moment](ternary-pairwise-moment/paper.zh.md) | [Modules](ternary-pairwise-moment/formalization/README.md) | Compiled and checked |
 | [topology constrained markov reconstruction](topology-constrained-markov-reconstruction/paper.en.md) | [Modules](topology-constrained-markov-reconstruction/formalization/README.md) | Compiled and checked |
 | [transitive composition lift complexity](transitive-composition-lift-complexity/paper.en.md) | [Modules](transitive-composition-lift-complexity/formalization/README.md) | Compiled and checked |
 | [two visits duplicate midpoint](two-visits-duplicate-midpoint/paper.zh.md) | [Modules](two-visits-duplicate-midpoint/formalization/README.md) | Compiled and checked |
-| [two weight qutrit sharp cooling](two-weight-qutrit-sharp-cooling/paper.en.md) | [Modules](two-weight-qutrit-sharp-cooling/formalization/README.md) | Source snapshot |
-| [unknown gap adaptation boundary](unknown-gap-adaptation-boundary/paper.en.md) | [Modules](unknown-gap-adaptation-boundary/formalization/README.md) | Source snapshot |
-| [weighted bernoulli entropy curvature](weighted-bernoulli-entropy-curvature/paper.en.md) | [Modules](weighted-bernoulli-entropy-curvature/formalization/README.md) | Source snapshot |
-| [weighted conformal explicit sample threshold](weighted-conformal-explicit-sample-threshold/paper.en.md) | [Modules](weighted-conformal-explicit-sample-threshold/formalization/README.md) | Source snapshot |
+| [two weight qutrit sharp cooling](two-weight-qutrit-sharp-cooling/paper.en.md) | [Modules](two-weight-qutrit-sharp-cooling/formalization/README.md) | Compiled and checked |
+| [unknown gap adaptation boundary](unknown-gap-adaptation-boundary/paper.en.md) | [Modules](unknown-gap-adaptation-boundary/formalization/README.md) | Compiled and checked |
+| [weighted bernoulli entropy curvature](weighted-bernoulli-entropy-curvature/paper.en.md) | [Modules](weighted-bernoulli-entropy-curvature/formalization/README.md) | Compiled and checked |
+| [weighted conformal explicit sample threshold](weighted-conformal-explicit-sample-threshold/paper.en.md) | [Modules](weighted-conformal-explicit-sample-threshold/formalization/README.md) | Compiled and checked |
 | [weighted conformal fixed cap curvature](weighted-conformal-fixed-cap-curvature/paper.en.md) | [Modules](weighted-conformal-fixed-cap-curvature/formalization/README.md) | Compiled and checked |
 | [weighted conformal poisson transfer](weighted-conformal-poisson-transfer/paper.en.md) | [Modules](weighted-conformal-poisson-transfer/formalization/README.md) | Compiled and checked |
 | [weighted maxcut feedback](weighted-maxcut-feedback/paper.zh.md) | [Modules](weighted-maxcut-feedback/formalization/README.md) | Compiled and checked |

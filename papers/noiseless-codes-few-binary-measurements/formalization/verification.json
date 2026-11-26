@@ -1,5 +1,101 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SparseMICCertificate",
+      "name": "SparseMICCertificate.eliminateTripleDefect"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SparseMICCertificate",
+      "name": "SparseMICCertificate.eliminateTripleDefects"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SparseMICCertificate",
+      "name": "SparseMICCertificate.emptyCell"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SparseMICCertificate",
+      "name": "SparseMICCertificate.gridCellInjective"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SparseMICCertificate",
+      "name": "SparseMICCertificate.gridCellInjective._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SparseMICCertificate",
+      "name": "SparseMICCertificate.gridCellInjective._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SparseMICCertificate",
+      "name": "SparseMICCertificate.gridCellInjective._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SparseMICCertificate",
+      "name": "SparseMICCertificate.normalizedParent"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SparseMICCertificate",
+      "name": "SparseMICCertificate.occupiedCell"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SparseMICCertificate",
+      "name": "SparseMICCertificate.spanIntersection"
+    }
+  ],
   "dependency_versions": {
     "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
     "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
@@ -14,12 +110,10 @@
   "file_sha256": {
     "papers/noiseless-codes-few-binary-measurements/formalization/SparseMICCertificate.lean": "0f76bcd45419d83412978233970134be7ccab2a6198867900a97113eb44b9b5c"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.24.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "f5759faae371a9b6b03a7290b705f9755b99fd43530b8dcd5705f6182b0a36fd",
-  "paper_path": "papers/noiseless-codes-few-binary-measurements/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/noiseless-codes-few-binary-measurements/paper.en.md"
 }

@@ -1,5 +1,261 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "NewtonPoissonTransfer",
+      "name": "StockoutPoissonBridge.newton_poisson_transfer"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "NewtonPoissonTransfer",
+      "name": "StockoutPoissonBridge.newton_poisson_transfer._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "NewtonPoissonTransfer",
+      "name": "StockoutPoissonBridge.newton_poisson_transfer._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PoissonNeighborV2",
+      "name": "StockoutPoissonBridge.poisson"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PoissonNeighborV2",
+      "name": "StockoutPoissonBridge.poisson_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PoissonNeighborV2",
+      "name": "StockoutPoissonBridge.poisson_succ_mul"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PoissonNormalization",
+      "name": "StockoutPoissonBridge.hasSum_poisson_pmf"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PoissonNormalization",
+      "name": "StockoutPoissonBridge.hasSum_poisson_pmf._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PoissonNormalization",
+      "name": "StockoutPoissonBridge.poisson.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PoissonStrictNeighborConcavity",
+      "name": "StockoutPoissonBridge.poisson_strict_logconcavity"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.NonnegInterval"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.calibrated_mass_weight_comparison"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.calibrated_prefix_nonneg"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.calibrated_prefix_nonneg._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.calibrated_prefix_nonneg._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.calibrated_prefix_nonpos"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.calibrated_prefix_nonpos._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.calibrated_prefix_nonpos._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.calibrated_prefix_sign"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.calibrated_weighted_sum_nonneg"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.calibrated_weighted_sum_nonneg._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.prefixSum"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.prefixSum.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutCrossing",
+      "name": "StockoutCrossing.weighted_sum_by_parts"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutLayerCake",
+      "name": "StockoutPoissonBridge.layer_cake_min_div"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "StockoutLayerCake",
+      "name": "StockoutPoissonBridge.layer_cake_min_div._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutLayerCake",
+      "name": "StockoutPoissonBridge.layer_cake_weighted"
+    },
+    {
+      "axioms": [],
+      "module": "StockoutLayerCake",
+      "name": "StockoutPoissonBridge.layer_cake_weighted._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StockoutLayerCake",
+      "name": "StockoutPoissonBridge.layer_cake_weighted._proof_2"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -19,12 +275,10 @@
     "papers/prophet-secretary-stockout/formalization/StockoutCrossing.lean": "583163f75f2bc7296602d29c76def985bbb5cbd8ef708f9bf19efd8ae504bdc6",
     "papers/prophet-secretary-stockout/formalization/StockoutLayerCake.lean": "06868cae3c2e356b86a29c57f1b163bd156437766661017afc4e5e60682034b4"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "30319993c63ddeca1ae8ab59b8bcf4fb7ea209d11d82869bbd232684ec939571",
-  "paper_path": "papers/prophet-secretary-stockout/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/prophet-secretary-stockout/paper.en.md"
 }

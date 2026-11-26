@@ -1,5 +1,131 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProphetBinBernoulliBound",
+      "name": "RecordConstrainedProphetGapResearchProof3.bernoulli_power_bound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProphetBinBernoulliSum",
+      "name": "RecordConstrainedProphetGapResearchProof3.bin_bernoulli_sum"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProphetBinDeficitConvexity",
+      "name": "RecordConstrainedProphetGapResearchProof3.bin_deficit_nonnegative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProphetBinDeficitExact",
+      "name": "RecordConstrainedProphetGapResearchProof3.bin_deficit_exact"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProphetLabelMassTelescopes",
+      "name": "RecordConstrainedProphetGapResearchProof2.maximum_label_mass_total"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProphetLastBinFiniteDenominator",
+      "name": "RecordConstrainedProphetGapResearchProof3.last_bin_finite_denominator"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProphetLastBinRatioComparison",
+      "name": "RecordConstrainedProphetGapResearchProof3.last_bin_ratio_comparison"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProphetLastBinRatioComparison",
+      "name": "_private.ProphetLastBinRatioComparison.0.RecordConstrainedProphetGapResearchProof3.last_bin_numerator_nonneg"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProphetMaximumLabelPositive",
+      "name": "RecordConstrainedProphetGapResearchProof3.maximum_label_mass_positive"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProphetNormalizedConstantReward",
+      "name": "RecordConstrainedProphetGapResearchProof3.normalized_constant_reward"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProphetNormalizedRewardBound",
+      "name": "RecordConstrainedProphetGapResearchProof3.normalized_reward_bound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProphetPerturbationStrictRatio",
+      "name": "RecordConstrainedProphetGapResearchProof3.perturbation_strict_ratio"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProphetTransferValueChain",
+      "name": "RecordConstrainedProphetGapResearchProof1.transfer_value_chain"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -25,12 +151,10 @@
     "papers/record-constrained-prophet-gap/formalization/ProphetPerturbationStrictRatio.lean": "8bb2184d1aea585b5cc071d7c625ec0b8b0963fa87e557eaec365acd9ba9a365",
     "papers/record-constrained-prophet-gap/formalization/ProphetTransferValueChain.lean": "2d4f0f4250044e51817511399bb68dd9f0503d6588fab1ca6e807a6696f37ddd"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "038982314686e953aef1ff5ef9039e2a46496cca0ab42aba4adc52e16eaf1f22",
-  "paper_path": "papers/record-constrained-prophet-gap/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/record-constrained-prophet-gap/paper.en.md"
 }

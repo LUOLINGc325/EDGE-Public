@@ -1,5 +1,50 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "QuadraticRigidityBinaryRange",
+      "name": "CiScoreQuadraticRigidityResearchProof1.binary_curvature_polynomial_range"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "QuadraticRigidityBinaryRange",
+      "name": "CiScoreQuadraticRigidityResearchProof1.binary_curvature_polynomial_range.match_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "QuadraticRigidityBinarySecondDerivative",
+      "name": "CiScoreQuadraticRigidityResearchProof1.binary_curvature_derivatives"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "QuadraticRigidityNegativeHarmonicThreshold",
+      "name": "CiScoreQuadraticRigidityResearchProof1.negative_harmonic_threshold"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -16,12 +61,10 @@
     "papers/ci-score-quadratic-rigidity/formalization/QuadraticRigidityBinarySecondDerivative.lean": "6cee1a0f95ee6e0f2726729f798a0f768e17fc0cd576f407581b5655714a3907",
     "papers/ci-score-quadratic-rigidity/formalization/QuadraticRigidityNegativeHarmonicThreshold.lean": "d3ef7dd5efb1729f99f59f174c2a6e69be697f6ae709e98b78d6647fdbf3cd74"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "6e49eaa838a71ddce9a912ac7eaeb1caeaf6d8c523b87a9922d35e6eaed95988",
-  "paper_path": "papers/ci-score-quadratic-rigidity/paper.zh.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/ci-score-quadratic-rigidity/paper.zh.md"
 }

@@ -1,5 +1,32 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThreeStateGeneratorDeterminant",
+      "name": "StroboscopicThreeStateEntropyRangeResearchProof1.generator_characteristic_polynomial"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThreeStateRateStrictCone",
+      "name": "StroboscopicThreeStateEntropyRangeResearchProof1.strict_rate_cone"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -15,12 +42,10 @@
     "papers/stroboscopic-three-state-entropy-range/formalization/ThreeStateGeneratorDeterminant.lean": "bc95011cf9d2f6b56fcdfa4f0f49c1d31b5da1f546e969f0f3cd852709b41f64",
     "papers/stroboscopic-three-state-entropy-range/formalization/ThreeStateRateStrictCone.lean": "98e2a93b7c3556fdb60ad9000ae5cdc30942c4062dca23fc9df164909532a875"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "44d153202a715dcb1b7cd172bfab3b3497830d38a25dce77d0cbc9b86c3fe746",
-  "paper_path": "papers/stroboscopic-three-state-entropy-range/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/stroboscopic-three-state-entropy-range/paper.en.md"
 }

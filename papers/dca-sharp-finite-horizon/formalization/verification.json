@@ -1,5 +1,120 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DcaActualFirstDescent",
+      "name": "DCASharpResidual.dca_one_step_curvature"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DcaCriticalSums",
+      "name": "DCASharpResidual.E"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DcaCriticalSums",
+      "name": "DCASharpResidual.E.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DcaCriticalSums",
+      "name": "DCASharpResidual.E_one"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DcaCriticalSums",
+      "name": "DCASharpResidual.E_succ"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DcaCriticalSums",
+      "name": "DCASharpResidual.E_succ._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DcaCriticalSums",
+      "name": "DCASharpResidual.T"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DcaCriticalSums",
+      "name": "DCASharpResidual.T_one"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DcaCriticalSums",
+      "name": "DCASharpResidual.T_succ_sub"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DcaSumsRealRecurrence",
+      "name": "DCASharpResidual.E_horizon_one"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DcaSumsRealRecurrence",
+      "name": "DCASharpResidual.E_recurrence"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DcaSumsRealRecurrence",
+      "name": "DCASharpResidual.E_recurrence._proof_1"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -16,12 +131,10 @@
     "papers/dca-sharp-finite-horizon/formalization/DcaCriticalSums.lean": "4e129cc71a4b8b9987b711d7d4d88092fad1d57c7fdcc16debc2b60843b2a713",
     "papers/dca-sharp-finite-horizon/formalization/DcaSumsRealRecurrence.lean": "4c0dfa8831d62dbe4e5d65beda3dca1755e3edb0b7eb6cb24b37e4bd395ea2fb"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "877de4364a5450f726895ab0fa24ce7733a3605cdab73e23722c9b726ea1676c",
-  "paper_path": "papers/dca-sharp-finite-horizon/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/dca-sharp-finite-horizon/paper.en.md"
 }

@@ -1,5 +1,7140 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.binPower_exp_approximation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.exp_sub_le_sub_nonpositive"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_approximation"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_approximation._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_approximation._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_approximation._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_approximation._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_approximation._simp_1_10"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_approximation._simp_1_11"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_approximation._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_approximation._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_approximation._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_approximation._simp_1_8"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_approximation._simp_1_9"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinPowerApproximation",
+      "name": "TwoColorNullity.Occupancy.log_one_sub_first_order"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance.congr_simp"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_approximation"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_approximation._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_approximation._proof_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_approximation._simp_1_10"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_approximation._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_approximation._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_approximation._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_approximation._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_approximation._simp_1_8"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_approximation._simp_1_9"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.varianceCurve"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.varianceCurve._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "TwoColorNullity.Occupancy.varianceCurve_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "_private.BinVarianceApproximation.0.TwoColorNullity.Occupancy.power_difference_bounds"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "_private.BinVarianceApproximation.0.TwoColorNullity.Occupancy.variance_pow_bounds"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "_private.BinVarianceApproximation.0.TwoColorNullity.Occupancy.variance_pow_bounds._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "_private.BinVarianceApproximation.0.TwoColorNullity.Occupancy.variance_pow_bounds._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "_private.BinVarianceApproximation.0.TwoColorNullity.Occupancy.variance_pow_bounds._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "_private.BinVarianceApproximation.0.TwoColorNullity.Occupancy.variance_pow_bounds._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "_private.BinVarianceApproximation.0.TwoColorNullity.Occupancy.variance_pow_bounds._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "_private.BinVarianceApproximation.0.TwoColorNullity.Occupancy.variance_pow_bounds._simp_1_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "_private.BinVarianceApproximation.0.TwoColorNullity.Occupancy.variance_pow_bounds._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "BinVarianceApproximation",
+      "name": "_private.BinVarianceApproximation.0.TwoColorNullity.Occupancy.variance_pow_bounds._simp_1_8"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "TwoColorNullity.Occupancy.SomeColorDeficit"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "TwoColorNullity.Occupancy.SomeColorDeficit._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "TwoColorNullity.Occupancy.any_color_deficit_probability_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "TwoColorNullity.Occupancy.any_color_deficit_probability_zero._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "TwoColorNullity.Occupancy.colorDecayRate"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "TwoColorNullity.Occupancy.colorDecayRate._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "TwoColorNullity.Occupancy.colorDecayRate_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "TwoColorNullity.Occupancy.log_count_over_n_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "_private.ColorSupplyProbability.0.TwoColorNullity.Occupancy.cutoff_exponent_eventually_below"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "_private.ColorSupplyProbability.0.TwoColorNullity.Occupancy.cutoff_exponent_eventually_below._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "_private.ColorSupplyProbability.0.TwoColorNullity.Occupancy.cutoff_exponent_eventually_below._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "_private.ColorSupplyProbability.0.TwoColorNullity.Occupancy.cutoff_exponent_eventually_below._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "_private.ColorSupplyProbability.0.TwoColorNullity.Occupancy.cutoff_exponent_eventually_below._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "_private.ColorSupplyProbability.0.TwoColorNullity.Occupancy.cutoff_exponent_eventually_below._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "_private.ColorSupplyProbability.0.TwoColorNullity.Occupancy.cutoff_exponent_eventually_below._simp_1_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "_private.ColorSupplyProbability.0.TwoColorNullity.Occupancy.cutoff_exponent_eventually_below._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "_private.ColorSupplyProbability.0.TwoColorNullity.Occupancy.cutoff_exponent_eventually_below._simp_1_8"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "_private.ColorSupplyProbability.0.TwoColorNullity.Occupancy.owner_count_probability_bound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyProbability",
+      "name": "_private.ColorSupplyProbability.0.TwoColorNullity.Occupancy.owner_count_probability_bound._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyTail",
+      "name": "TwoColorNullity.Occupancy.colorDeficit_fixed_group_tail"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyTail",
+      "name": "TwoColorNullity.Occupancy.colorDeficit_fixed_group_tail._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyTail",
+      "name": "TwoColorNullity.Occupancy.colorSupplyCoefficient"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyTail",
+      "name": "TwoColorNullity.Occupancy.colorSupplyCoefficient._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyTail",
+      "name": "TwoColorNullity.Occupancy.colorSupplyCoefficient._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyTail",
+      "name": "TwoColorNullity.Occupancy.colorSupplyCoefficient_pos"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyTail",
+      "name": "TwoColorNullity.Occupancy.restrictedOddCount.congr_simp"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyTail",
+      "name": "_private.ColorSupplyTail.0.TwoColorNullity.Occupancy.colorCount_mean_linear"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyTail",
+      "name": "_private.ColorSupplyTail.0.TwoColorNullity.Occupancy.colorCount_mean_linear._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyTail",
+      "name": "_private.ColorSupplyTail.0.TwoColorNullity.Occupancy.colorCount_mean_linear._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyTail",
+      "name": "_private.ColorSupplyTail.0.TwoColorNullity.Occupancy.colorCount_mean_linear._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyTail",
+      "name": "_private.ColorSupplyTail.0.TwoColorNullity.Occupancy.colorCount_mean_linear._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ColorSupplyTail",
+      "name": "_private.ColorSupplyTail.0.TwoColorNullity.Occupancy.colorCount_mean_linear._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.binaryLog_mul_of_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.binaryLog_pow_two"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.bins_ratio_from_logGap"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.bins_ratio_from_logGap._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.bins_ratio_from_logGap._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.bins_ratio_from_logGap._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.bins_ratio_from_logGap._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.bins_ratio_from_logGap._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.bins_ratio_from_logGap._simp_1_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.bins_ratio_from_logGap._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.bins_ratio_from_logGap._simp_1_8"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.bins_ratio_le_sixty_four_of_before_cutoff"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.bins_ratio_le_sixty_four_of_before_cutoff._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.bins_ratio_le_sixty_four_of_before_cutoff._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.criticalSlope"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.criticalSlope._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.criticalSlope._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.criticalSlope._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.criticalSlope_le_derivative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.criticalSlope_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.occupancyCurve_gap_lower"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalGapEstimates",
+      "name": "TwoColorNullity.Occupancy.occupancyCurve_gap_upper"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "TwoColorNullity.Occupancy.criticalRatio_rational_enclosure"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.curve_lower_rational"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.curve_upper_rational"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.expError12"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.expError12._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.expError12._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.expError12.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.expSeries12"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.expSeries12.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.expSeries12_enclosure"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.exp_split_four"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.lowerRational"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.lowerRational._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.lowerRational._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.lowerRational.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.upperRational"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.upperRational._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CriticalRatioNumerics",
+      "name": "_private.CriticalRatioNumerics.0.TwoColorNullity.Occupancy.upperRational.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reserveGreedy"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reserveGreedy._sunfold"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reserveGreedy._unsafe_rec"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reserveGreedy.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reserveGreedy.eq_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reserveGreedy.eq_def"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reserveGreedy.match_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reserveGreedy_correct"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reserveGreedy_correct._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reserveGreedy_correct._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reserveGreedy_correct._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reserveGreedy_correct._simp_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reservedItem"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reservedItem._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reservedItem_injective"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "TwoColorNullity.Occupancy.reservedItem_mem"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "_private.DeterministicReservations.0.TwoColorNullity.Occupancy.requestOptions"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "_private.DeterministicReservations.0.TwoColorNullity.Occupancy.requestOptions_nonempty"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "_private.DeterministicReservations.0.TwoColorNullity.Occupancy.reserveGreedy.match_1.eq_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "_private.DeterministicReservations.0.TwoColorNullity.Occupancy.reserveGreedy.match_1.eq_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "_private.DeterministicReservations.0.TwoColorNullity.Occupancy.reserveGreedy.match_1.splitter"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DeterministicReservations",
+      "name": "_private.DeterministicReservations.0.TwoColorNullity.Occupancy.reserveRow_unique_of_item"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DyadicWindowCount",
+      "name": "TwoColorNullity.Occupancy.excludedDyadicSizes"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DyadicWindowCount",
+      "name": "TwoColorNullity.Occupancy.excludedDyadicSizes.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DyadicWindowCount",
+      "name": "TwoColorNullity.Occupancy.excludedDyadicSizes_card"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DyadicWindowCount",
+      "name": "TwoColorNullity.Occupancy.excludedDyadicSizes_card._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DyadicWindowCount",
+      "name": "TwoColorNullity.Occupancy.excludedDyadicSizes_card._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DyadicWindowCount",
+      "name": "TwoColorNullity.Occupancy.excludedDyadicSizes_card._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DyadicWindowCount",
+      "name": "TwoColorNullity.Occupancy.excludedDyadicSizes_card._proof_1_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DyadicWindowCount",
+      "name": "TwoColorNullity.Occupancy.excludedDyadicSizes_card._proof_1_7"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DyadicWindowCount",
+      "name": "TwoColorNullity.Occupancy.excludedDyadicSizes_card._simp_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DyadicWindowCount",
+      "name": "_private.DyadicWindowCount.0.TwoColorNullity.Occupancy.transitionLog_double"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DyadicWindowCount",
+      "name": "_private.DyadicWindowCount.0.TwoColorNullity.Occupancy.transitionLog_double._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DyadicWindowCount",
+      "name": "_private.DyadicWindowCount.0.TwoColorNullity.Occupancy.transitionLog_mono"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DyadicWindowCount",
+      "name": "_private.DyadicWindowCount.0.TwoColorNullity.Occupancy.transitionLog_mono._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ExactProtectedOptimum",
+      "name": "TwoColorNullity.Occupancy.optimum_eq_lower_endpoint"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ExactProtectedOptimum",
+      "name": "TwoColorNullity.Occupancy.optimum_eq_lower_endpoint._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ExactProtectedOptimum",
+      "name": "TwoColorNullity.Occupancy.protected_assignment_approxEFX"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ExactProtectedOptimum",
+      "name": "TwoColorNullity.Occupancy.protected_assignment_approxEFX._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ExactProtectedOptimum",
+      "name": "TwoColorNullity.Occupancy.protected_assignment_approxEFX._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ExactProtectedOptimum",
+      "name": "TwoColorNullity.Occupancy.protected_assignment_approxEFX._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ExactProtectedOptimum",
+      "name": "TwoColorNullity.Occupancy.protected_assignment_approxEFX._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ExactProtectedOptimum",
+      "name": "TwoColorNullity.Occupancy.protected_assignment_approxEFX._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ExactProtectedOptimum",
+      "name": "TwoColorNullity.Occupancy.protected_endpoint_at_least_two"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ExactProtectedOptimum",
+      "name": "TwoColorNullity.Occupancy.protected_endpoint_at_least_two._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ExactProtectedOptimum",
+      "name": "TwoColorNullity.Occupancy.protected_endpoint_at_least_two._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ExactProtectedOptimum",
+      "name": "TwoColorNullity.Occupancy.protected_pair_allocation_factor"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "TwoColorNullity.Occupancy.runFallbackAllocation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "TwoColorNullity.Occupancy.runFallbackAllocation._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "TwoColorNullity.Occupancy.runFallbackAllocation._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "TwoColorNullity.Occupancy.runFallbackAllocation_valid"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "TwoColorNullity.Occupancy.runFallbackAllocation_valid._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "TwoColorNullity.Occupancy.runFallbackAllocation_valid._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "TwoColorNullity.Occupancy.runFallbackAllocation_valid._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "TwoColorNullity.Occupancy.runFallbackAllocation_valid._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "TwoColorNullity.Occupancy.runFallbackAllocation_valid._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "TwoColorNullity.Occupancy.runFallbackAllocation_valid._proof_1_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "TwoColorNullity.Occupancy.runFallbackAllocation_valid._proof_1_7"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "_private.FallbackAllocation.0.TwoColorNullity.Occupancy.fallbackCoordinates"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "_private.FallbackAllocation.0.TwoColorNullity.Occupancy.fallbackCoordinates._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "_private.FallbackAllocation.0.TwoColorNullity.Occupancy.fallbackOutside_card"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "_private.FallbackAllocation.0.TwoColorNullity.Occupancy.fallbackOwners"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "_private.FallbackAllocation.0.TwoColorNullity.Occupancy.fallbackOwners_card"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "_private.FallbackAllocation.0.TwoColorNullity.Occupancy.fallbackOwners_pos"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "_private.FallbackAllocation.0.TwoColorNullity.Occupancy.fallbackOwners_pos._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "_private.FallbackAllocation.0.TwoColorNullity.Occupancy.fallbackPairs"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "_private.FallbackAllocation.0.TwoColorNullity.Occupancy.fallbackPairs_spec"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "_private.FallbackAllocation.0.TwoColorNullity.Occupancy.fallbackPairs_spec._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "_private.FallbackAllocation.0.TwoColorNullity.Occupancy.floorLog_lt"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FallbackAllocation",
+      "name": "_private.FallbackAllocation.0.TwoColorNullity.Occupancy.floorLog_lt._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FeasibilityIndependentBlocks",
+      "name": "TwoColorNullity.Occupancy.binary_words_occupancy_uniform"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FeasibilityIndependentBlocks",
+      "name": "TwoColorNullity.Occupancy.blockOwners"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FeasibilityIndependentBlocks",
+      "name": "TwoColorNullity.Occupancy.blockOwners.eq_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FeasibilityIndependentBlocks",
+      "name": "TwoColorNullity.Occupancy.blockOwners_card"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FeasibilityIndependentBlocks",
+      "name": "TwoColorNullity.Occupancy.block_occupancy_exact"
+    },
+    {
+      "axioms": [],
+      "module": "FeasibilityIndependentBlocks",
+      "name": "TwoColorNullity.Occupancy.coordinateSlice"
+    },
+    {
+      "axioms": [],
+      "module": "FeasibilityIndependentBlocks",
+      "name": "TwoColorNullity.Occupancy.coordinateSlice._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FeasibilityIndependentBlocks",
+      "name": "TwoColorNullity.Occupancy.probability_sStar_below_from_independent_blocks"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FeasibilityIndependentBlocks",
+      "name": "TwoColorNullity.Occupancy.probability_sStar_below_from_independent_blocks._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FeasibilityIndependentBlocks",
+      "name": "TwoColorNullity.Occupancy.probability_sStar_below_from_independent_blocks._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FeasibilityIndependentBlocks",
+      "name": "TwoColorNullity.Occupancy.probability_sStar_below_from_independent_blocks._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteBoundedDifferences",
+      "name": "TwoColorNullity.Occupancy.CoordinateOscillation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteBoundedDifferences",
+      "name": "TwoColorNullity.Occupancy.CoordinateOscillation._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteBoundedDifferences",
+      "name": "TwoColorNullity.Occupancy.finiteMean_boundedDifferences_lowerTail"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteBoundedDifferences",
+      "name": "TwoColorNullity.Occupancy.finiteMean_boundedDifferences_mgf"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteBoundedDifferences",
+      "name": "TwoColorNullity.Occupancy.finiteMean_boundedDifferences_twoTails"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteBoundedDifferences",
+      "name": "TwoColorNullity.Occupancy.finiteMean_boundedDifferences_upperTail"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteBoundedDifferences",
+      "name": "TwoColorNullity.Occupancy.finiteProbability_union_two"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteBoundedDifferences",
+      "name": "TwoColorNullity.Occupancy.restrictedOddCount_twoTails"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteBoundedDifferences",
+      "name": "_private.FiniteBoundedDifferences.0.TwoColorNullity.Occupancy.section_head_difference"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteBoundedDifferences",
+      "name": "_private.FiniteBoundedDifferences.0.TwoColorNullity.Occupancy.section_oscillation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GreedyColorReservations",
+      "name": "TwoColorNullity.Occupancy.greedy_injective_choices"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GreedyColorReservations",
+      "name": "TwoColorNullity.Occupancy.greedy_injective_choices._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GreedyColorReservations",
+      "name": "TwoColorNullity.Occupancy.reserve_two_each_color"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "HalfColorOccupancy",
+      "name": "TwoColorNullity.Occupancy.designatedColorBins"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "HalfColorOccupancy",
+      "name": "TwoColorNullity.Occupancy.designatedColorBins.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "HalfColorOccupancy",
+      "name": "TwoColorNullity.Occupancy.designatedColorBins_half"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "HalfColorOccupancy",
+      "name": "TwoColorNullity.Occupancy.designatedColorBins_half._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "HalfColorOccupancy",
+      "name": "TwoColorNullity.Occupancy.designatedColor_mean_double"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "HalfColorOccupancy",
+      "name": "TwoColorNullity.Occupancy.restrictedOddCount.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "HalfColorOccupancy",
+      "name": "TwoColorNullity.Occupancy.restrictedOddCount_mean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "TwoColorNullity.Occupancy.disjointCoordinateBlocks"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "TwoColorNullity.Occupancy.finiteProbability_all_coordinate_events"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "TwoColorNullity.Occupancy.finiteProbability_all_coordinate_events._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "TwoColorNullity.Occupancy.finiteProbability_comp_equiv"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "TwoColorNullity.Occupancy.finiteProbability_not"
+    },
+    {
+      "axioms": [],
+      "module": "IndependentCoordinateGroups",
+      "name": "TwoColorNullity.Occupancy.groupedWords"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "TwoColorNullity.Occupancy.groupedWords_independent"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "TwoColorNullity.Occupancy.groupedWords_none_le"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "TwoColorNullity.Occupancy.groupedWords_uniform"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "TwoColorNullity.Occupancy.oddBinCount_relabel"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "TwoColorNullity.Occupancy.ownerImageEquiv"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "TwoColorNullity.Occupancy.ownerImageEquiv._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "TwoColorNullity.Occupancy.ownerImageEquiv._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "_private.IndependentCoordinateGroups.0.TwoColorNullity.Occupancy.wordsPartitionEquiv"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "_private.IndependentCoordinateGroups.0.TwoColorNullity.Occupancy.wordsPartitionEquiv._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "IndependentCoordinateGroups",
+      "name": "_private.IndependentCoordinateGroups.0.TwoColorNullity.Occupancy.wordsPartitionEquiv._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeConfinement",
+      "name": "TwoColorNullity.Occupancy.centered_limit_in_interval"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeConfinement",
+      "name": "TwoColorNullity.Occupancy.centered_no_constant_probability_limit"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeConfinement",
+      "name": "TwoColorNullity.Occupancy.centered_probability_limit_unique"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeConfinement",
+      "name": "TwoColorNullity.Occupancy.centered_reciprocal_near_limit_interval"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeConfinement",
+      "name": "TwoColorNullity.Occupancy.centered_reciprocal_near_limit_interval._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeConfinement",
+      "name": "TwoColorNullity.Occupancy.centered_reciprocal_near_limit_interval._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeConfinement",
+      "name": "TwoColorNullity.Occupancy.centered_subsequence_limits_exactly"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeConfinement",
+      "name": "_private.LatticeConfinement.0.TwoColorNullity.Occupancy.union_of_two_vanishing_cannot_cover"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.OutsideTransitionWindows"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.centeredEFX"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.centered_lattice_formula"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.centered_lattice_formula._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.factorReciprocal_error"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.factorReciprocal_error._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.factorReciprocal_error._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.factorReciprocal_error._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.factorReciprocal_error._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.fractionalTransition"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.reciprocalEnvelope"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.reciprocalEnvelope._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.reciprocalEnvelope._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.reciprocalEnvelope_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.reciprocal_error_le_envelope"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.reciprocal_error_le_envelope._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.reciprocal_error_le_envelope._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_le_log_add_two"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.windowUpper_eq_floor_of_outside"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeCorrection",
+      "name": "TwoColorNullity.Occupancy.windowUpper_eq_floor_of_outside._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeLimitAttainment",
+      "name": "TwoColorNullity.Occupancy.all_closed_interval_phases_attained"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeLimitAttainment",
+      "name": "TwoColorNullity.Occupancy.all_closed_interval_phases_attained_outside"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeLimitAttainment",
+      "name": "TwoColorNullity.Occupancy.all_closed_interval_phases_attained_outside._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeLimitAttainment",
+      "name": "_private.LatticeLimitAttainment.0.TwoColorNullity.Occupancy.nearby_interior_phase"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeLimitAttainment",
+      "name": "_private.LatticeLimitAttainment.0.TwoColorNullity.Occupancy.phaseAccuracy"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeLimitAttainment",
+      "name": "_private.LatticeLimitAttainment.0.TwoColorNullity.Occupancy.phaseAccuracy._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeLimitAttainment",
+      "name": "_private.LatticeLimitAttainment.0.TwoColorNullity.Occupancy.phaseAccuracy_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeLimitAttainment",
+      "name": "_private.LatticeLimitAttainment.0.TwoColorNullity.Occupancy.phaseAccuracy_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeLimitAttainment",
+      "name": "_private.LatticeLimitAttainment.0.TwoColorNullity.Occupancy.phaseErrorProbability"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeLimitAttainment",
+      "name": "_private.LatticeLimitAttainment.0.TwoColorNullity.Occupancy.phaseErrorProbability_antitone"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeLimitAttainment",
+      "name": "_private.LatticeLimitAttainment.0.TwoColorNullity.Occupancy.phaseErrorProbability_nonneg"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeLimitAttainment",
+      "name": "_private.LatticeLimitAttainment.0.TwoColorNullity.Occupancy.population_for_phase_accuracy"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.boundaryWidth"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.boundaryWidth.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.boundaryWidth_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.criticalRatio_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.log_over_sqrt_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.lt_two_nat_pow_iff_binaryLog"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_at_least_log2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_at_least_log2._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_at_least_log2._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_bin_range"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_bin_range._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_bounds"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_eventually_admissible"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_eventually_admissible._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_eventually_admissible._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_eventually_admissible._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_eventually_admissible._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_eventually_small"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionFloor_eventually_small._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionLog"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionLog_nonnegative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionLog_over_n_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionLog_shift"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transitionLog_shift._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transition_group_count_atTop"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transition_power_bounds"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.transition_power_bounds._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "LatticeScale",
+      "name": "TwoColorNullity.Occupancy.two_nat_pow_le_iff_binaryLog"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.floor_mem_meanCandidateRange"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.floor_mem_meanCandidateRange._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.floor_mem_meanCandidateRange._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.meanCandidateRange"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.meanCandidateRange_card"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.meanCandidateRange_card._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.meanCandidateRange_card._proof_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.meanPasses"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.meanPasses_spec"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.meanScreenDenominator"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.meanScreenNumerator"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.oddMean_exact_rational"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.oddMean_exact_rational._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.oddMean_exact_rational._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.oddMean_exact_rational._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.oddMean_exact_rational._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.oddMean_exact_rational._simp_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.oddMean_exact_rational._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.oddMean_exact_rational._simp_1_7"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.passingMeanCandidates"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MeanScreening",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize_of_max"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.criticalRatio"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.criticalRatio._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.criticalRatio_mem_Ioo"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.criticalRatio_unique"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.occupancyCurve"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.occupancyCurve._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.occupancyCurve._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.occupancyCurveDerivative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.occupancyCurveDerivative.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.occupancyCurveDerivative_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.occupancyCurve_criticalRatio"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.occupancyCurve_hasDerivAt"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.occupancyCurve_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.occupancyCurve_root_interval"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.occupancyCurve_strictMono"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.occupancyCurve_two_lt_one"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyCurve",
+      "name": "TwoColorNullity.Occupancy.one_lt_occupancyCurve_three"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyFourthMoment",
+      "name": "TwoColorNullity.Occupancy.finiteMean_boundedDifferences_fourthMoment"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyFourthMoment",
+      "name": "TwoColorNullity.Occupancy.restrictedOddCount_fourthMoment"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyFourthMoment",
+      "name": "_private.OccupancyFourthMoment.0.TwoColorNullity.Occupancy.fourth_power_le_exp_pair"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.eventually_descent_large"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_le_floor_regime"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_le_floor_regime._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_le_floor_regime._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.expectedOddCount_le_floor_regime._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.floor_candidate_success_mass_eventually"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.floor_candidate_success_mass_eventually._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.floor_candidate_success_mass_eventually._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.floor_candidate_success_mass_eventually._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.lower_floor_fails_probability_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.thresholdDescent"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.thresholdDescent._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.thresholdDescentMass"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.thresholdDescentMass._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.thresholdDescentMass_bounds"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyLowerThreshold",
+      "name": "TwoColorNullity.Occupancy.thresholdDescent_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.bin_parity_mean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.cast_mod_two_eq_sign"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.cast_mod_two_eq_sign._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_add"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_const"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_const._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_const._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_const._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_const._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_const._simp_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_const._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_const._simp_1_7"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_const_mul"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_const_mul._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_div"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_finset_sum"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_mul_const"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_product_coordinates"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.finiteMean_sub"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.flipSign"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.flipSign.congr_simp"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.flipSign.eq_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.hitCount"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.hitCount.congr_simp"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.hitCount.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.hit_parity_eq_product"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.hit_parity_mean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.oddBinCount.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.oddBinCount_mean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.sum_flipSign"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyParity",
+      "name": "TwoColorNullity.Occupancy.sum_flipSign._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancySensitivity",
+      "name": "TwoColorNullity.Occupancy.oddBinCount_bounded_difference"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancySensitivity",
+      "name": "TwoColorNullity.Occupancy.restrictedOddCount"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancySensitivity",
+      "name": "TwoColorNullity.Occupancy.restrictedOddCount_bounded_difference"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancySensitivity",
+      "name": "TwoColorNullity.Occupancy.restrictedOddCount_bounded_difference._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancySensitivity",
+      "name": "TwoColorNullity.Occupancy.restrictedOddCount_bounded_difference._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancySensitivity",
+      "name": "TwoColorNullity.Occupancy.restrictedOddCount_univ"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancySensitivity",
+      "name": "_private.OccupancySensitivity.0.TwoColorNullity.Occupancy.binOccupancy_eq_of_agreement_except"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.concentrationScale"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.count_correction_eventually_below_scale"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.deviationCoefficient"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.deviationCoefficient._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.deviationCoefficient._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.deviationCoefficient_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.far_owner_feasibility_tail"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.far_owner_feasibility_tail._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.far_owner_feasibility_tail._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.thresholdWindowConstant"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.thresholdWindowConstant_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.upper_mean_gap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.upper_mean_gap._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.upper_mean_gap._proof_1_11"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.upper_mean_gap._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.upper_mean_gap._proof_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.upper_mean_gap._simp_1_10"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.upper_mean_gap._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.upper_mean_gap._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.upper_mean_gap._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.upper_mean_gap._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.upper_mean_gap._simp_1_8"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.upper_mean_gap._simp_1_9"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperGap",
+      "name": "TwoColorNullity.Occupancy.windowUpper"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperThreshold",
+      "name": "TwoColorNullity.Occupancy.largeSetThreshold_eventually_le"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperThreshold",
+      "name": "TwoColorNullity.Occupancy.largeSetThreshold_eventually_le._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperThreshold",
+      "name": "TwoColorNullity.Occupancy.upperWindowEnvelope"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperThreshold",
+      "name": "TwoColorNullity.Occupancy.upperWindowEnvelope._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperThreshold",
+      "name": "TwoColorNullity.Occupancy.upper_window_fails_probability_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperThreshold",
+      "name": "_private.OccupancyUpperThreshold.0.TwoColorNullity.Occupancy.occupancy_window_union_estimate"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperThreshold",
+      "name": "_private.OccupancyUpperThreshold.0.TwoColorNullity.Occupancy.occupancy_window_union_estimate._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperThreshold",
+      "name": "_private.OccupancyUpperThreshold.0.TwoColorNullity.Occupancy.occupancy_window_union_estimate._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperThreshold",
+      "name": "_private.OccupancyUpperThreshold.0.TwoColorNullity.Occupancy.occupancy_window_union_estimate._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperThreshold",
+      "name": "_private.OccupancyUpperThreshold.0.TwoColorNullity.Occupancy.occupancy_window_union_estimate._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperThreshold",
+      "name": "_private.OccupancyUpperThreshold.0.TwoColorNullity.Occupancy.upperWindowEnvelope_zero"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyUpperThreshold",
+      "name": "_private.OccupancyUpperThreshold.0.TwoColorNullity.Occupancy.upperWindowEnvelope_zero._proof_1_1"
+    },
+    {
+      "axioms": [],
+      "module": "OccupancyUpperThreshold",
+      "name": "_private.OccupancyUpperThreshold.0.TwoColorNullity.Occupancy.upperWindowEnvelope_zero._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "TwoColorNullity.Occupancy.binParity"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "TwoColorNullity.Occupancy.binParity.congr_simp"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_exact"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "TwoColorNullity.Occupancy.pairParityMean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "TwoColorNullity.Occupancy.pairParityMean._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "TwoColorNullity.Occupancy.pairParityMean.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "TwoColorNullity.Occupancy.singleParityMean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "TwoColorNullity.Occupancy.singleParityMean._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "TwoColorNullity.Occupancy.singleParityMean.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "_private.OccupancyVariance.0.TwoColorNullity.Occupancy.centered_parity_product_mean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "_private.OccupancyVariance.0.TwoColorNullity.Occupancy.hitCount_two"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "_private.OccupancyVariance.0.TwoColorNullity.Occupancy.product_parity_mean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "_private.OccupancyVariance.0.TwoColorNullity.Occupancy.product_parity_mean._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "_private.OccupancyVariance.0.TwoColorNullity.Occupancy.sum_centered_parities"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "_private.OccupancyVariance.0.TwoColorNullity.Occupancy.sum_centered_parities._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVariance",
+      "name": "_private.OccupancyVariance.0.TwoColorNullity.Occupancy.sum_centered_parities._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.fourthCoefficient"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.fourthCoefficient._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.fourthCoefficient_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.n_scaled_odd_variance_lower"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.n_scaled_odd_variance_lower._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.n_scaled_odd_variance_lower._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.n_scaled_odd_variance_lower._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.n_scaled_odd_variance_lower._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.n_scaled_odd_variance_lower._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.oddBinCount_small_deviation"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.oddBinCount_small_deviation._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.oddBinCount_small_deviation._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.oddBinCount_small_deviation._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.oddBinCount_small_deviation._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_lower"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_lower._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.oddBinVariance_lower._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.varianceCoefficient"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.varianceCoefficient._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.varianceCoefficient._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.varianceCoefficient_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "TwoColorNullity.Occupancy.varianceCurve_monotone"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OccupancyVarianceLower",
+      "name": "_private.OccupancyVarianceLower.0.TwoColorNullity.Occupancy.varianceCurve_hasDerivAt"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.binOccupancy"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.binOccupancy.congr_simp"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.binOccupancy.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.fixed_items_feasible_iff_odd"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.fixed_items_feasible_iff_odd._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.fixed_items_feasible_iff_odd._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.oddBinCount"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.oddBinCount.congr_simp"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.oddBinCount_eq_card"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.oddBinCount_eq_card._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.oddBinCount_le_labels"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.projectedPairCount_eq_half_sub_odd"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.projectedPairCount_eq_half_sub_odd._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.sum_binOccupancy"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddBinIdentity",
+      "name": "TwoColorNullity.Occupancy.twice_pairCapacity_add_odd"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddRepresentatives",
+      "name": "TwoColorNullity.Occupancy.enough_same_color_items"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddRepresentatives",
+      "name": "TwoColorNullity.Occupancy.odd_bin_has_unused"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddRepresentatives",
+      "name": "TwoColorNullity.Occupancy.odd_bin_has_unused._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddRepresentatives",
+      "name": "TwoColorNullity.Occupancy.odd_representatives_card_le"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddRepresentatives",
+      "name": "TwoColorNullity.Occupancy.unusedItemsWithLabels"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddRepresentatives",
+      "name": "TwoColorNullity.Occupancy.unusedItemsWithLabels.congr_simp"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddRepresentatives",
+      "name": "TwoColorNullity.Occupancy.unusedItemsWithLabels.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddRepresentatives",
+      "name": "TwoColorNullity.Occupancy.usedItems"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddRepresentatives",
+      "name": "TwoColorNullity.signature.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddRepresentatives",
+      "name": "_private.OddRepresentatives.0.TwoColorNullity.Occupancy.restrictedOddCount_eq_card"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OddRepresentatives",
+      "name": "_private.OddRepresentatives.0.TwoColorNullity.Occupancy.restrictedOddCount_eq_card._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OneSidedMomentBound",
+      "name": "TwoColorNullity.Occupancy.finiteProbability_leftTail_normalized"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OneSidedMomentBound",
+      "name": "TwoColorNullity.Occupancy.finiteProbability_leftTail_normalized._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OneSidedMomentBound",
+      "name": "TwoColorNullity.Occupancy.finiteProbability_leftTail_scaled"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OneSidedMomentBound",
+      "name": "TwoColorNullity.Occupancy.leftTailMass"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OneSidedMomentBound",
+      "name": "TwoColorNullity.Occupancy.leftTailMass_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OneSidedMomentBound",
+      "name": "TwoColorNullity.Occupancy.leftTailShift"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OneSidedMomentBound",
+      "name": "TwoColorNullity.Occupancy.leftTailShift._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OneSidedMomentBound",
+      "name": "TwoColorNullity.Occupancy.leftTailShift._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OneSidedMomentBound",
+      "name": "TwoColorNullity.Occupancy.leftTailShift_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OneSidedMomentBound",
+      "name": "_private.OneSidedMomentBound.0.TwoColorNullity.Occupancy.absolute_eq_add_negative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OneSidedMomentBound",
+      "name": "_private.OneSidedMomentBound.0.TwoColorNullity.Occupancy.negativePart"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OneSidedMomentBound",
+      "name": "_private.OneSidedMomentBound.0.TwoColorNullity.Occupancy.negativePart_nonnegative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OneSidedMomentBound",
+      "name": "_private.OneSidedMomentBound.0.TwoColorNullity.Occupancy.square_le_absolute_add_fourth"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "TwoColorNullity.Occupancy.chorePair"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "TwoColorNullity.Occupancy.chorePair._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "TwoColorNullity.Occupancy.chorePair_contains"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "TwoColorNullity.Occupancy.chorePair_eq"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "TwoColorNullity.Occupancy.orderedPairOwner"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "TwoColorNullity.Occupancy.orderedPairOwner._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "TwoColorNullity.Occupancy.orderedPairOwner_bijective"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "_private.OrderedPairPlacement.0.TwoColorNullity.Occupancy.chorePairValue"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "_private.OrderedPairPlacement.0.TwoColorNullity.Occupancy.chorePairValue_eq"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "_private.OrderedPairPlacement.0.TwoColorNullity.Occupancy.chore_pairs_containing_singleton"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "_private.OrderedPairPlacement.0.TwoColorNullity.Occupancy.chore_pairs_containing_singleton.match_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "_private.OrderedPairPlacement.0.TwoColorNullity.Occupancy.pairKey"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "_private.OrderedPairPlacement.0.TwoColorNullity.Occupancy.pairKey._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "_private.OrderedPairPlacement.0.TwoColorNullity.Occupancy.pairKey_injective"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "_private.OrderedPairPlacement.0.TwoColorNullity.Occupancy.pairKey_mem"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "_private.OrderedPairPlacement.0.TwoColorNullity.Occupancy.pairKeys"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OrderedPairPlacement",
+      "name": "_private.OrderedPairPlacement.0.TwoColorNullity.Occupancy.pairKeys_card"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OwnerOccupancyLaw",
+      "name": "TwoColorNullity.Occupancy.owner_feasibility_law"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OwnerOccupancyLaw",
+      "name": "TwoColorNullity.Occupancy.owner_feasibility_tail"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OwnerOccupancyLaw",
+      "name": "TwoColorNullity.Occupancy.owner_occupancy_law"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OwnerSetUnion",
+      "name": "TwoColorNullity.Occupancy.bounded_owner_group_union"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "OwnerSetUnion",
+      "name": "TwoColorNullity.Occupancy.bounded_owner_group_union._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.CenteredConvergesInProbability"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.centered_phase_limit"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.centered_phase_limit._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phasePopulation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phasePopulation_atTop"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phaseReal"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phaseReal._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phaseReal_atTop"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phaseReal_exact_log"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phaseReal_exact_log._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phaseReal_exact_log._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phaseReal_exact_log._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phaseReal_exact_log._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phaseReal_exact_log._simp_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phaseReal_exact_log._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phaseReal_exact_log._simp_1_7"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phaseReal_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phaseReal_pow"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phase_floor_eventually"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phase_floor_eventually._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phase_fraction_limit"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phase_log_error_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.phase_outside_eventually"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.rounded_population_log_error"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PhaseSubsequences",
+      "name": "TwoColorNullity.Occupancy.rounded_population_log_error._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.finiteMean_comp_equiv"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.finiteMean_prod_fst"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.finiteMean_prod_fst._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.finiteMean_prod_fst._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.finiteMean_prod_fst._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.finiteMean_prod_fst._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.finiteMean_prod_fst._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.finiteMean_prod_fst._simp_1_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.finiteMean_prod_fst._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.finiteMean_prod_fst._simp_1_8"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.finiteProbability_eq_mean_indicator"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.projectedWords_odd_mean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.projectedWords_uniform_mean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.projectedWords_uniform_probability"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.projectionEquiv"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.projectionEquiv._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.projectionEquiv._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.projectionEquiv._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.projectionEquiv._proof_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProjectionProbability",
+      "name": "TwoColorNullity.Occupancy.projectionEquiv._proof_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "TwoColorNullity.Occupancy.chorePair.congr_simp"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "TwoColorNullity.Occupancy.protectedAssignment"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "TwoColorNullity.Occupancy.protectedAssignment._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "TwoColorNullity.Occupancy.protectedAssignment_spec"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "TwoColorNullity.Occupancy.protectedAssignment_spec._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "TwoColorNullity.Occupancy.protectedAssignment_spec._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "TwoColorNullity.Occupancy.protectedAssignment_spec._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "_private.ProtectedAllocation.0.TwoColorNullity.Occupancy.chosenOwner_card"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "_private.ProtectedAllocation.0.TwoColorNullity.Occupancy.outsideCount"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "_private.ProtectedAllocation.0.TwoColorNullity.Occupancy.reservationOwner"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "_private.ProtectedAllocation.0.TwoColorNullity.Occupancy.reservationOwner_has_request"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "_private.ProtectedAllocation.0.TwoColorNullity.Occupancy.reservationOwners"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "_private.ProtectedAllocation.0.TwoColorNullity.Occupancy.reservationOwners_nonempty"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedAllocation",
+      "name": "_private.ProtectedAllocation.0.TwoColorNullity.Occupancy.reservedChores"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedColorEFX",
+      "name": "TwoColorNullity.Occupancy.HasTwoOfEachColor"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedColorEFX",
+      "name": "TwoColorNullity.Occupancy.HasTwoOfEachColor.preserves_color_after_deletion"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedColorEFX",
+      "name": "TwoColorNullity.Occupancy.HasTwoOfEachColor.trimmed_cost"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedColorEFX",
+      "name": "TwoColorNullity.Occupancy.HasTwoOfEachColor.trimmed_cost._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedColorEFX",
+      "name": "TwoColorNullity.Occupancy.approxEFX_iff_distinct_owners"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedColorEFX",
+      "name": "TwoColorNullity.Occupancy.approxEFX_of_protected_pairs"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedColorEFX",
+      "name": "TwoColorNullity.Occupancy.approxEFX_of_protected_pairs._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedColorEFX",
+      "name": "TwoColorNullity.Occupancy.approxEFX_of_protected_pairs._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedColorEFX",
+      "name": "TwoColorNullity.Occupancy.approxEFX_of_protected_pairs._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ProtectedColorEFX",
+      "name": "TwoColorNullity.Occupancy.approxEFX_of_protected_pairs._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "TwoColorNullity.Occupancy.roundRobin"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "TwoColorNullity.Occupancy.roundRobin._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "TwoColorNullity.Occupancy.roundRobin_load"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "TwoColorNullity.Occupancy.roundRobin_load._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "TwoColorNullity.Occupancy.roundRobin_load._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "TwoColorNullity.Occupancy.roundRobin_load._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "TwoColorNullity.Occupancy.roundRobin_load._simp_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "_private.RoundRobinAllocation.0.TwoColorNullity.Occupancy.extra_round_le"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "_private.RoundRobinAllocation.0.TwoColorNullity.Occupancy.extra_round_le._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "_private.RoundRobinAllocation.0.TwoColorNullity.Occupancy.extra_round_le._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "_private.RoundRobinAllocation.0.TwoColorNullity.Occupancy.roundRobinSlots"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "_private.RoundRobinAllocation.0.TwoColorNullity.Occupancy.roundRobinSlots._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "_private.RoundRobinAllocation.0.TwoColorNullity.Occupancy.roundRobinSlots._proof_2"
+    },
+    {
+      "axioms": [],
+      "module": "RoundRobinAllocation",
+      "name": "_private.RoundRobinAllocation.0.TwoColorNullity.Occupancy.slotOwner"
+    },
+    {
+      "axioms": [],
+      "module": "RoundRobinAllocation",
+      "name": "_private.RoundRobinAllocation.0.TwoColorNullity.Occupancy.slotOwner._proof_1"
+    },
+    {
+      "axioms": [],
+      "module": "RoundRobinAllocation",
+      "name": "_private.RoundRobinAllocation.0.TwoColorNullity.Occupancy.slotOwner.congr_simp"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RoundRobinAllocation",
+      "name": "_private.RoundRobinAllocation.0.TwoColorNullity.Occupancy.slotOwner_count"
+    },
+    {
+      "axioms": [],
+      "module": "RoundRobinAllocation",
+      "name": "_private.RoundRobinAllocation.0.TwoColorNullity.Occupancy.slotOwner_count.match_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.pairSets_prefix_correct"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.pairSets_prefix_correct._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.runScreenedAllocation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.runScreenedAllocation._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.runScreenedAllocation._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.runScreenedAllocation._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.runScreenedAllocation._proof_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.runScreenedAllocation.match_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.screenedPairs"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.screenedPairs_pack"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.screenedPairs_pack._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.screenedPairs_pack._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.screened_construction_attains_optimum"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.screened_construction_attains_optimum._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.screened_construction_attains_optimum._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.screened_construction_attains_optimum._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.screened_construction_attains_optimum._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "TwoColorNullity.Occupancy.typicalOptimum.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocation",
+      "name": "_private.ScreenedAllocation.0.TwoColorNullity.Occupancy.pairSets_card_le_length"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.ScreenedOptimalCertificate"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.runRandomEFXAllocation"
+    },
+    {
+      "axioms": [],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.runRandomEFXAllocation._proof_1"
+    },
+    {
+      "axioms": [],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.runRandomEFXAllocation._proof_2"
+    },
+    {
+      "axioms": [],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.runRandomEFXAllocation.match_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.runRandomEFXAllocation_failure_probability_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.runRandomEFXAllocation_optimal_of_certificate"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.screened_fallback_valid"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.screened_optimum_failure_probability_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.screened_typical_optimum"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.screened_typical_optimum._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.screened_typical_optimum._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.screened_typical_optimum._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedAllocationProbability",
+      "name": "TwoColorNullity.Occupancy.selectedScreenedGroup"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.firstSuccessfulBlock"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.firstSuccessfulBlock_failure_probability_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.firstSuccessfulBlock_matches"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.screened_group_failure_exponential"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.screened_group_failure_exponential._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.screened_group_failure_geometric"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize_outside_eventually"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize_outside_eventually._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize_outside_eventually._proof_1_10"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize_outside_eventually._proof_1_11"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize_outside_eventually._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize_outside_eventually._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize_outside_eventually._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize_outside_eventually._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize_outside_eventually._proof_1_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize_outside_eventually._proof_1_7"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize_outside_eventually._proof_1_8"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.selectMeanSize_outside_eventually._proof_1_9"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedGroupSelection",
+      "name": "TwoColorNullity.Occupancy.successfulBlocks"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "TwoColorNullity.Occupancy.ColorRequest"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "TwoColorNullity.Occupancy.reservationRequests"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "TwoColorNullity.Occupancy.reservationRequests.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "TwoColorNullity.Occupancy.reservationRequests_length"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "TwoColorNullity.Occupancy.reservationRequests_mem"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "TwoColorNullity.Occupancy.screenedReservationRows"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "TwoColorNullity.Occupancy.screenedReservationRows_correct"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "_private.ScreenedReservations.0.TwoColorNullity.Occupancy.eligibleColor"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "_private.ScreenedReservations.0.TwoColorNullity.Occupancy.eligibleColor.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "_private.ScreenedReservations.0.TwoColorNullity.Occupancy.freeChores"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "_private.ScreenedReservations.0.TwoColorNullity.Occupancy.freeChores.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "_private.ScreenedReservations.0.TwoColorNullity.Occupancy.indexedRequest"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "_private.ScreenedReservations.0.TwoColorNullity.Occupancy.indexedRequest._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "_private.ScreenedReservations.0.TwoColorNullity.Occupancy.indexedRequest._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "_private.ScreenedReservations.0.TwoColorNullity.Occupancy.indexedRequest.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreenedReservations",
+      "name": "_private.ScreenedReservations.0.TwoColorNullity.Occupancy.indexedRequest_surjective"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.bitOperationsModel"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.mean_candidate_budgets_eventually"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.mean_candidate_budgets_eventually._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.mean_candidate_budgets_eventually._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.mean_candidate_budgets_eventually._proof_1_3"
+    },
+    {
+      "axioms": [],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screeningBitWidth"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_bit_width_log_bound"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_bit_width_log_bound._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_bit_width_log_bound._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_bit_width_log_bound._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_bit_width_log_bound._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_integers_fit"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_integers_fit._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_integers_fit._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_integers_fit._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_integers_fit._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_integers_fit._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_polynomial_budget"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_polynomial_budget._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_polynomial_budget._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_polynomial_budget._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_polynomial_budget._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ScreeningArithmetic",
+      "name": "TwoColorNullity.Occupancy.screening_polynomial_budget._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SecondOrderParityPowers",
+      "name": "TwoColorNullity.Occupancy.parity_powers_second_order"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SecondOrderParityPowers",
+      "name": "TwoColorNullity.Occupancy.parity_powers_second_order._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "SecondOrderParityPowers",
+      "name": "TwoColorNullity.Occupancy.parity_powers_second_order._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "SecondOrderParityPowers",
+      "name": "TwoColorNullity.Occupancy.parity_powers_second_order._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "SecondOrderParityPowers",
+      "name": "TwoColorNullity.Occupancy.parity_powers_second_order._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "SecondOrderParityPowers",
+      "name": "TwoColorNullity.Occupancy.parity_powers_second_order._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "SecondOrderParityPowers",
+      "name": "TwoColorNullity.Occupancy.parity_powers_second_order._simp_1_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SecondOrderParityPowers",
+      "name": "TwoColorNullity.Occupancy.parity_powers_second_order._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "SecondOrderParityPowers",
+      "name": "TwoColorNullity.Occupancy.parity_powers_second_order._simp_1_8"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SecondOrderParityPowers",
+      "name": "_private.SecondOrderParityPowers.0.TwoColorNullity.Occupancy.binPower_second_order"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SecondOrderParityPowers",
+      "name": "_private.SecondOrderParityPowers.0.TwoColorNullity.Occupancy.log_one_sub_second_order"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SharpRandomThreshold",
+      "name": "TwoColorNullity.Occupancy.exact_factor_failure_probability_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SharpRandomThreshold",
+      "name": "TwoColorNullity.Occupancy.exact_factor_failure_probability_zero._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SharpRandomThreshold",
+      "name": "TwoColorNullity.Occupancy.exact_factor_failure_probability_zero._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SharpRandomThreshold",
+      "name": "TwoColorNullity.Occupancy.exact_factor_failure_probability_zero._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SharpRandomThreshold",
+      "name": "TwoColorNullity.Occupancy.exact_factor_failure_probability_zero._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SharpRandomThreshold",
+      "name": "TwoColorNullity.Occupancy.largeSetThreshold_eventually_fraction"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SharpRandomThreshold",
+      "name": "TwoColorNullity.Occupancy.largeSetThreshold_eventually_fraction._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SharpRandomThreshold",
+      "name": "TwoColorNullity.Occupancy.largeSetThreshold_fraction_zero"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SharpRandomThreshold",
+      "name": "TwoColorNullity.Occupancy.largeSetThreshold_fraction_zero._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SharpRandomThreshold",
+      "name": "TwoColorNullity.Occupancy.sharp_random_efx_threshold"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SharpRandomThreshold",
+      "name": "TwoColorNullity.Occupancy.typicalOptimum"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransition",
+      "name": "TwoColorNullity.Occupancy.thin_transition_attained"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransition",
+      "name": "TwoColorNullity.Occupancy.windowUpper_eventually_le_thinCandidate"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransition",
+      "name": "TwoColorNullity.Occupancy.windowUpper_eventually_le_thinCandidate._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransition",
+      "name": "_private.ThinTransition.0.TwoColorNullity.Occupancy.thin_lower_eventually_bounded"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransition",
+      "name": "_private.ThinTransition.0.TwoColorNullity.Occupancy.thin_lower_eventually_bounded._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransition",
+      "name": "_private.ThinTransition.0.TwoColorNullity.Occupancy.thin_lower_eventually_bounded._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransition",
+      "name": "_private.ThinTransition.0.TwoColorNullity.Occupancy.thin_lower_eventually_bounded._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransition",
+      "name": "_private.ThinTransition.0.TwoColorNullity.Occupancy.thin_lower_eventually_bounded._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransition",
+      "name": "_private.ThinTransition.0.TwoColorNullity.Occupancy.thin_lower_eventually_bounded._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransition",
+      "name": "_private.ThinTransition.0.TwoColorNullity.Occupancy.thin_lower_probability_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.InThinWindow"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.sqrt_nat_atTop"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinCandidate"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinCandidate.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinCandidate_above_transition"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinCandidate_eventually_small"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinCandidate_ratio_bound"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinCandidate_ratio_bound._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinCandidate_ratio_bound._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinCandidate_ratio_bound._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinCandidate_ratio_bound._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinCandidate_ratio_bound._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinCandidate_ratio_bound._simp_1_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinCandidate_ratio_bound._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinCandidate_ratio_bound._simp_1_8"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinConstant"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinConstant._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thinConstant_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thin_group_count_atTop"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionScale",
+      "name": "TwoColorNullity.Occupancy.thin_group_count_atTop._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "TwoColorNullity.Occupancy.boundaryPopulation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "TwoColorNullity.Occupancy.boundaryPopulation_atTop"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "TwoColorNullity.Occupancy.boundaryPopulation_atTop._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "TwoColorNullity.Occupancy.boundaryPopulation_eventually_thin"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "TwoColorNullity.Occupancy.boundaryPopulation_eventually_thin._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "TwoColorNullity.Occupancy.boundaryPopulation_eventually_thin._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "TwoColorNullity.Occupancy.boundaryPopulation_rounds_below"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "TwoColorNullity.Occupancy.boundaryPopulation_rounds_below._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "TwoColorNullity.Occupancy.boundary_population_attains_index"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "TwoColorNullity.Occupancy.transitionMark.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "_private.ThinTransitionSubsequence.0.TwoColorNullity.Occupancy.transitionMark_log"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "_private.ThinTransitionSubsequence.0.TwoColorNullity.Occupancy.transitionMark_log._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "_private.ThinTransitionSubsequence.0.TwoColorNullity.Occupancy.transitionMark_log._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "_private.ThinTransitionSubsequence.0.TwoColorNullity.Occupancy.transitionMark_log._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "_private.ThinTransitionSubsequence.0.TwoColorNullity.Occupancy.transitionMark_log._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "_private.ThinTransitionSubsequence.0.TwoColorNullity.Occupancy.transitionMark_log._simp_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "_private.ThinTransitionSubsequence.0.TwoColorNullity.Occupancy.transitionMark_log._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ThinTransitionSubsequence",
+      "name": "_private.ThinTransitionSubsequence.0.TwoColorNullity.Occupancy.transitionMark_log._simp_1_7"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.excludedSizesBelow"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.excludedSizesBelow.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.excludedSizesBelow_card_bound"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.excludedSizesBelow_card_bound._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.excludedSizesBelow_card_bound._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.excludedSizesBelow_card_bound._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.excludedSizesBelow_card_bound._simp_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.transition_windows_natural_density_zero"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.transition_windows_natural_density_zero._proof_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.transition_windows_natural_density_zero._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.transition_windows_natural_density_zero._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.transition_windows_natural_density_zero._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.transition_windows_natural_density_zero._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.transition_windows_natural_density_zero._simp_1_7"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.transition_windows_natural_density_zero._simp_1_8"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "TwoColorNullity.Occupancy.transition_windows_natural_density_zero._simp_1_9"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "_private.TransitionWindowDensity.0.TwoColorNullity.Occupancy.sum_powers_two"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowDensity",
+      "name": "_private.TransitionWindowDensity.0.TwoColorNullity.Occupancy.sum_transition_marks"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.excluded_size_in_threshold_interval"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.excluded_size_in_threshold_interval._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.excluded_size_in_threshold_interval._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.excluded_size_in_threshold_interval._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.excluded_size_in_threshold_interval._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.excluded_size_in_threshold_interval._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.excluded_size_in_threshold_interval._simp_1_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.excluded_size_in_threshold_interval._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.excluded_size_in_threshold_interval._simp_1_8"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.thinCandidate_monotone_of_pos"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.thinCandidate_monotone_of_pos._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.thresholdInterval"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.thresholdInterval_card_le"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.thresholdInterval_contains"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.transitionMark"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.transitionMark._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.transitionMark_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.transitionMark_thin_le_twice"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.windowRatio"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.windowRatio.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TransitionWindowGeometry",
+      "name": "TwoColorNullity.Occupancy.windowRatio_bounds"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UniformMeanMeasure",
+      "name": "TwoColorNullity.Occupancy.discreteFiniteSample"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UniformMeanMeasure",
+      "name": "TwoColorNullity.Occupancy.finiteMean_cons"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UniformMeanMeasure",
+      "name": "TwoColorNullity.Occupancy.finiteMean_hoeffding_width_two"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UniformMeanMeasure",
+      "name": "TwoColorNullity.Occupancy.finiteMean_mono"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UniformMeanMeasure",
+      "name": "TwoColorNullity.Occupancy.finiteMean_prod"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UniformMeanMeasure",
+      "name": "TwoColorNullity.Occupancy.finiteProbability_ge_of_averaged_mgf"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UniformMeanMeasure",
+      "name": "TwoColorNullity.Occupancy.finiteUniformIsProbability"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UniformMeanMeasure",
+      "name": "_private.UniformMeanMeasure.0.TwoColorNullity.Occupancy.finiteUniformMeasure"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UniformMeanMeasure",
+      "name": "_private.UniformMeanMeasure.0.TwoColorNullity.Occupancy.finiteUniformMeasure.congr_simp"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UniformMeanMeasure",
+      "name": "_private.UniformMeanMeasure.0.TwoColorNullity.Occupancy.finiteUniformMeasure.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UniformMeanMeasure",
+      "name": "_private.UniformMeanMeasure.0.TwoColorNullity.Occupancy.uniformIntegral_eq_finiteMean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UniformMeanMeasure",
+      "name": "_private.UniformMeanMeasure.0.TwoColorNullity.Occupancy.uniformIntegral_eq_finiteMean._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "UniformMeanMeasure",
+      "name": "_private.UniformMeanMeasure.0.TwoColorNullity.Occupancy.uniformMeasureReal_eq_finiteProbability"
+    }
+  ],
   "dependency_versions": {
     "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
     "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
@@ -67,12 +7202,10 @@
     "papers/random-occupancy-threshold/lean/extended/TransitionWindowGeometry.lean": "4fa311fc902e1ce95edfa4caf056a252e48c0b1fc73afc9a78864424e69bd5a8",
     "papers/random-occupancy-threshold/lean/extended/UniformMeanMeasure.lean": "0112e001fa8e8517ad56518967f29790fdeee84fb1e86e1220fa55f83f73417d"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.24.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "355d75536b32b6b0e524cd8f15911b3f68aadcb0171e1c4960d5789478b00d82",
-  "paper_path": "papers/random-occupancy-threshold/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/random-occupancy-threshold/paper.en.md"
 }

@@ -1,5 +1,639 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix.below"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix.below.casesOn"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix.below.last"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix.below.nil"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix.below.rec"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix.below.step"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix.brecOn"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix.casesOn"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix.last"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix.nil"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix.rec"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix.recOn"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.SurvivingPrefix.step"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts._sunfold"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts.eq_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts.eq_3"
+    },
+    {
+      "axioms": [],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts.match_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts.match_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts_capital_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts_surviving_prefix"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts_surviving_prefix._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts_surviving_prefix._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts_surviving_prefix._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts_surviving_prefix._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts_surviving_prefix._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts_surviving_prefix._simp_1_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts_surviving_prefix._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.accepts_surviving_prefix._simp_1_8"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_pos_iff"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_pos_iff._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_pos_iff._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_pos_iff._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_pos_iff._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_pos_iff._simp_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_pos_iff._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_pos_iff._simp_1_7"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_update"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_update._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_update._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_update._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_update._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_update._simp_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_update._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.capital_update._simp_1_7"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.distance"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.distance_square_gap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.last_step_reject_iff"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.log_gap_update"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.log_gap_update._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.log_gap_update._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.log_gap_update._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.log_gap_update._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.log_gap_update._simp_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.log_gap_update._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.log_gap_update._simp_1_7"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.next_distance_le"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.rejects_of_sum_ge_distance"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "FiniteHorizon.sum_lt_distance"
+    },
+    {
+      "axioms": [],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.accepts.match_1.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.accepts.match_1.eq_2"
+    },
+    {
+      "axioms": [],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.accepts.match_1.splitter"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.accepts.match_3.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.accepts.match_3.eq_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.accepts.match_3.splitter"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.capital_of_distance"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.capital_of_distance._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.capital_of_distance._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.capital_of_distance._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.capital_of_distance._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.capital_of_distance._simp_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.capital_of_distance._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.capital_of_distance._simp_1_7"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.distance_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteHorizon",
+      "name": "_private.FiniteHorizon.0.FiniteHorizon.distance_sq"
+    }
+  ],
   "dependency_versions": {
     "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
     "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
@@ -14,12 +648,10 @@
   "file_sha256": {
     "papers/sequential-target-recalculation/formalization/FiniteHorizon.lean": "b270fee5b0d33fe2a401ff282b5d70e65cdc76094b9cdd2be4dea67e057bcb71"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.24.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "daaf6f3e6ea2415de207f50cd13e0dec80385a619e4bf1ab7522f4954d7c4f3a",
-  "paper_path": "papers/sequential-target-recalculation/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/sequential-target-recalculation/paper.en.md"
 }

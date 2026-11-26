@@ -1,5 +1,50 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "KrrHyperbolicDenominator",
+      "name": "KrrExactZcdpResearchProof1.curvature_denominator_derivative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "KrrHyperbolicNumerator",
+      "name": "KrrExactZcdpResearchProof1.curvature_numerator_derivative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "KrrSlopeRatioDerivative",
+      "name": "KrrExactZcdpResearchProof1.slope_ratio_derivative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "KrrStrictDenominator",
+      "name": "KrrExactZcdpResearchProof1.positive_curvature_denominator"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -17,12 +62,10 @@
     "papers/krr-exact-zcdp/formalization/KrrSlopeRatioDerivative.lean": "0c5aa18ef945d1e40307b8ee6d866a002491b7111f423ac3c703f2fe4b23f5ce",
     "papers/krr-exact-zcdp/formalization/KrrStrictDenominator.lean": "3a594732b22b104ee350a630a8b224c0e0cc37e401f1bf337b350761d679819c"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "2db7b6148b5e59685cd1ce151093ca952942f7dcbf4d53f592f6cfd84469304a",
-  "paper_path": "papers/krr-exact-zcdp/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/krr-exact-zcdp/paper.en.md"
 }

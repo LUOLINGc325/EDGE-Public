@@ -1,5 +1,349 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "RankTwo.Costs"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "RankTwo.EFX"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "RankTwo.UniversalAnchor"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "RankTwo.cost_union_eq_of_zero_marginals"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "RankTwo.cost_union_eq_of_zero_marginals._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "RankTwo.efx_and_pivot_ef_of_rank_anchor_stopping_condition"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "RankTwo.efx_of_maximal_pairs"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "RankTwo.efx_of_rank_anchors"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "RankTwo.efx_of_rank_anchors._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "RankTwo.efx_of_singletons_and_equal_cost"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "RankTwo.efx_of_small_others"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "RankTwo.efx_of_universal_anchors"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "_private.RankTwo.0.RankTwo.efx_of_anchor"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "_private.RankTwo.0.RankTwo.efx_of_anchor._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "_private.RankTwo.0.RankTwo.efx_of_small_bundle"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RankTwo",
+      "name": "_private.RankTwo.0.RankTwo.efx_of_small_bundle._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "TwoColor.EFX"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "TwoColor.EnvyFree"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "TwoColor.bundle"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "TwoColor.bundle.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "TwoColor.cost"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "TwoColor.cost.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "TwoColor.exact_minimum_own_cost"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "TwoColor.exists_EFX"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "TwoColor.exists_EFX._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "TwoColor.exists_bichromatic_of_full"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "TwoColor.exists_envyFree"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "TwoColor.exists_envyFree_with_all_monochromatic"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "TwoColor.exists_envyFree_with_one_bichromatic"
+    },
+    {
+      "axioms": [],
+      "module": "TwoColor",
+      "name": "TwoColor.exists_envyFree_with_one_bichromatic.match_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "_private.TwoColor.0.TwoColor.envyFree_of_mono"
+    },
+    {
+      "axioms": [],
+      "module": "TwoColor",
+      "name": "_private.TwoColor.0.TwoColor.monochrome"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "_private.TwoColor.0.TwoColor.monochrome_surjective"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "_private.TwoColor.0.TwoColor.monochrome_surjective._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "_private.TwoColor.0.TwoColor.monochrome_surjective._proof_1_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "_private.TwoColor.0.TwoColor.monochrome_surjective._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "_private.TwoColor.0.TwoColor.monochrome_surjective._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "_private.TwoColor.0.TwoColor.monochrome_surjective._simp_1_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoColor",
+      "name": "_private.TwoColor.0.TwoColor.monochrome_surjective._simp_1_5"
+    }
+  ],
   "dependency_versions": {
     "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
     "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
@@ -15,12 +359,10 @@
     "papers/efx-matroid-rank-chores/formalization/RankTwo.lean": "a87a38187d54aa135e310d8d37d36dfb55d5ce1921f060fd5cdb41e455cc5a2c",
     "papers/efx-matroid-rank-chores/formalization/TwoColor.lean": "9a37c3f61b18007ccd8621416e526e4170a39a25b257cc476cd12a2405735ea2"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.24.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "44cd55df7702c67a0205348ea59a8bca62817321e7d9afb88ff4ad1dc5ffdc2d",
-  "paper_path": "papers/efx-matroid-rank-chores/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/efx-matroid-rank-chores/paper.en.md"
 }

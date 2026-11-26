@@ -1,5 +1,32 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "QutritAlternatingRunSharp",
+      "name": "TwoWeightQutritSharpCoolingResearchProof1.alternating_run_bound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "QutritCycleCostAttainment",
+      "name": "TwoWeightQutritSharpCoolingResearchProof1.cycle_cost_attainment"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -15,12 +42,10 @@
     "papers/two-weight-qutrit-sharp-cooling/formalization/QutritAlternatingRunSharp.lean": "7538bd58718ecb77c879a45243c97e938f788257df51edc66d631282b3e49a61",
     "papers/two-weight-qutrit-sharp-cooling/formalization/QutritCycleCostAttainment.lean": "44545edf96b1ceb378609ac4d4f423b938009d26eb1228874c76158c564635d1"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "bf169c19180a78cd43b2694d25fe5a0ef385e0253790a97582b74dfcead98ca0",
-  "paper_path": "papers/two-weight-qutrit-sharp-cooling/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/two-weight-qutrit-sharp-cooling/paper.en.md"
 }

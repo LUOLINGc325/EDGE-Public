@@ -1,5 +1,23 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "RenyiOddsInequality",
+      "name": "BinaryRenyiOrderMonotonicityResearchProof1.renyi_odds_inequality"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -14,12 +32,10 @@
   "file_sha256": {
     "papers/binary-renyi-order-monotonicity/formalization/RenyiOddsInequality.lean": "dc329839841d7eb4f5a25c14a065d0edfa2841085739c1364f397d603e7ea969"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "b577d3974abfeab90312b8e3b77ef006a97e2c9c6dcc688fc8d9fa19328d1faa",
-  "paper_path": "papers/binary-renyi-order-monotonicity/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/binary-renyi-order-monotonicity/paper.en.md"
 }

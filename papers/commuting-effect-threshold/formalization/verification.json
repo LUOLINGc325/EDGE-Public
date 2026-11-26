@@ -1,5 +1,48 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CoarseScoreThreshold",
+      "name": "CommutingEffectThresholdResearchProof1.coarse_score_threshold"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "CoarseScoreThreshold",
+      "name": "CommutingEffectThresholdResearchProof1.coarse_score_threshold._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CoarseTableGap",
+      "name": "CommutingEffectThresholdResearchProof1.table_gap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "QubitDiskRestriction",
+      "name": "CommutingEffectThresholdResearchProof1.complex_qubit_disk"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -16,12 +59,10 @@
     "papers/commuting-effect-threshold/formalization/CoarseTableGap.lean": "5d72fd684ed498a47a1b320e289918e1b76ac82a6e27018e4c63646fe45a5519",
     "papers/commuting-effect-threshold/formalization/QubitDiskRestriction.lean": "f300a6531534637dec78fcd3c451fe4d3f5a44d059ba68e87b8c2d13eceb75d9"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "8cdc3d426ad1529fef2b3609b5ff92f073e025b00565a6bdce7943ce3dc46388",
-  "paper_path": "papers/commuting-effect-threshold/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/commuting-effect-threshold/paper.en.md"
 }

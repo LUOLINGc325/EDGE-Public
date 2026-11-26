@@ -1,5 +1,41 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MomentBayesScalarSchur",
+      "name": "MomentBayesMinimaxGeometryResearchProof1.scalar_schur_complement"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MomentCenteringSums",
+      "name": "MomentBayesMinimaxGeometryResearchProof2.centroid_coordinate_sum"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MomentPairCount",
+      "name": "MomentBayesMinimaxGeometryResearchProof2.pair_count_offset"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -16,12 +52,10 @@
     "papers/moment-bayes-minimax-geometry/formalization/MomentCenteringSums.lean": "8be9397fad74bd846df53625aafe6456cf6a8681c659affd4adabdc4b0dee6f5",
     "papers/moment-bayes-minimax-geometry/formalization/MomentPairCount.lean": "d6ba3916c114b49f8cbae101a8d1055020adbdbb1d8f3881e1618d90ab4dacad"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "8a51d1a391f860e73a5c68ea03ff2a43df5fcec7d26efe378d8c9cdef00ed975",
-  "paper_path": "papers/moment-bayes-minimax-geometry/paper.zh.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/moment-bayes-minimax-geometry/paper.zh.md"
 }

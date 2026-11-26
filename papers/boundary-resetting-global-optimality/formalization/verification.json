@@ -1,5 +1,32 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ResetQuotientDerivative",
+      "name": "BoundaryResettingGlobalOptimalityResearchProof1.reset_quotient_derivative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ResetWronskianDerivative",
+      "name": "BoundaryResettingGlobalOptimalityResearchProof1.reset_wronskian_derivative"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -15,12 +42,10 @@
     "papers/boundary-resetting-global-optimality/formalization/ResetQuotientDerivative.lean": "728dde15c51d4909c1709059070cc05287e33903eb605ef8eb8bedfe20f43d2d",
     "papers/boundary-resetting-global-optimality/formalization/ResetWronskianDerivative.lean": "1da2755278ff91cdfc46b5e280d074a469ebf8508786765c8a03a8a9b96e2960"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "91aee380a3aa17c94ffc9deebcbeac8ea09b1c2390604cfe626a9fdd4195a820",
-  "paper_path": "papers/boundary-resetting-global-optimality/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/boundary-resetting-global-optimality/paper.en.md"
 }

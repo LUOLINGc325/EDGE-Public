@@ -1,5 +1,290 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoShapeKernel",
+      "name": "RandomizedTwoJobRobustness.K"
+    },
+    {
+      "axioms": [],
+      "module": "TwoShapeKernel",
+      "name": "RandomizedTwoJobRobustness.K._proof_1"
+    },
+    {
+      "axioms": [],
+      "module": "TwoShapeKernel",
+      "name": "RandomizedTwoJobRobustness.K._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoShapeKernel",
+      "name": "RandomizedTwoJobRobustness.K.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoShapeKernel",
+      "name": "RandomizedTwoJobRobustness.K_eq_two_iff"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoShapeKernel",
+      "name": "RandomizedTwoJobRobustness.K_ge_two"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoShapeKernel",
+      "name": "RandomizedTwoJobRobustness.K_min_and_eq"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoShapeKernel",
+      "name": "RandomizedTwoJobRobustness.K_of_center"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoShapeKernel",
+      "name": "RandomizedTwoJobRobustness.K_of_ge"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoShapeKernel",
+      "name": "RandomizedTwoJobRobustness.K_of_le"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedLawUniqueness",
+      "name": "RandomizedTwoJobRobustness.pA.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedLawUniqueness",
+      "name": "RandomizedTwoJobRobustness.pB.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedLawUniqueness",
+      "name": "RandomizedTwoJobRobustness.three_share_law_unique"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedLowerBoundMean",
+      "name": "RandomizedTwoJobRobustness.average_two_shapes"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedLowerBoundMean",
+      "name": "RandomizedTwoJobRobustness.virtualUpper"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedLowerBoundMean",
+      "name": "RandomizedTwoJobRobustness.virtualUpper._cstage1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedLowerBoundMean",
+      "name": "RandomizedTwoJobRobustness.virtualUpper._cstage2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.D"
+    },
+    {
+      "axioms": [],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.D._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.D_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.OPT"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.OPT_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.m"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.mixedTau"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.mixed_ratio_eq"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.pA"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.pA_nonneg"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.pB"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.pB_nonneg"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.pS"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.pS_nonneg"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "WeightedMixture",
+      "name": "RandomizedTwoJobRobustness.probs_sum_one"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -17,12 +302,10 @@
     "papers/randomized-weighted-two-job-robustness/formalization/WeightedLowerBoundMean.lean": "0211d485b420f70383736b359c4935c4e487acf96beb82394b276e7173843cd9",
     "papers/randomized-weighted-two-job-robustness/formalization/WeightedMixture.lean": "486b1d6f66a138ab38fb7768ab43e7f654dc5f763e3663a2236bc0e8b1ee8740"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "bb76d99d96d9cac6c18619370380e3336fc3b52c64f91357b13df1b70b2a6767",
-  "paper_path": "papers/randomized-weighted-two-job-robustness/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/randomized-weighted-two-job-robustness/paper.en.md"
 }

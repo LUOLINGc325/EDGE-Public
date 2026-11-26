@@ -1,5 +1,275 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.Box"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.allocate"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.allocate._sunfold"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.allocate.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.allocate.eq_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.allocate.match_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.allocate_prefix"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.allocate_prefix_extra"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.allocate_total"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.allocate_within"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.bounds_decompose"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.exists_iff_prefix_and_suffix_cuts"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.exists_iff_prefix_cuts"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.lower"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.lower.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.upper"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.upper.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.valid"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.within"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.within.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "PrefixSaturation.within_prefix_le"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "_private.PrefixSaturation.0.PrefixSaturation.allocate.match_1.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "_private.PrefixSaturation.0.PrefixSaturation.allocate.match_1.eq_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "_private.PrefixSaturation.0.PrefixSaturation.allocate.match_1.splitter"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "_private.PrefixSaturation.0.PrefixSaturation.allocate_length"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "_private.PrefixSaturation.0.PrefixSaturation.lower_le_upper"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "_private.PrefixSaturation.0.PrefixSaturation.split_min"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "_private.PrefixSaturation.0.PrefixSaturation.within_sums"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "PrefixSaturation",
+      "name": "_private.PrefixSaturation.0.PrefixSaturation.within_take_drop"
+    }
+  ],
   "dependency_versions": {
     "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
     "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
@@ -14,12 +284,10 @@
   "file_sha256": {
     "papers/ordinal-causal-benefit-sharp-bounds/formalization/PrefixSaturation.lean": "fcd0793c04faed168a2ff9c6e6af05c923a2b382f42ba24a2482956cdce18419"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.24.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "66e8d14064e74cae8bdc38ba194dca53c05e85bc778c5a32c30fb7c3b527f48c",
-  "paper_path": "papers/ordinal-causal-benefit-sharp-bounds/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/ordinal-causal-benefit-sharp-bounds/paper.en.md"
 }

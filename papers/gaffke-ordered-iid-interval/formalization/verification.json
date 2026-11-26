@@ -1,5 +1,66 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaffkeEndpointCrossing",
+      "name": "GaffkeOrderedIidIntervalResearchProof2.endpoint_crossing"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaffkeRankSuperuniform",
+      "name": "GaffkeOrderedIidIntervalResearchProof1.rank_grid_superuniform"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaffkeRankSuperuniform",
+      "name": "GaffkeOrderedIidIntervalResearchProof1.rank_grid_superuniform._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaffkeRankSuperuniform",
+      "name": "GaffkeOrderedIidIntervalResearchProof1.rank_grid_superuniform._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaffkeRankSuperuniform",
+      "name": "GaffkeOrderedIidIntervalResearchProof1.rank_grid_superuniform._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaffkeRankSuperuniform",
+      "name": "GaffkeOrderedIidIntervalResearchProof1.rank_grid_superuniform._proof_4"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -15,12 +76,10 @@
     "papers/gaffke-ordered-iid-interval/formalization/GaffkeEndpointCrossing.lean": "643f8f7da8349d5f3dcd12a21bf00d9c87a36925db0233faf43ba3e1c1cb3cf8",
     "papers/gaffke-ordered-iid-interval/formalization/GaffkeRankSuperuniform.lean": "54b3ef1328d055ac3e2b9b5a900f6523d85f199430dc3673b96cb6528790f21e"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "299c7037bbd74e47f1c1780ada34a5a7c4905dbd8a4f9873da7ca697d3b880b9",
-  "paper_path": "papers/gaffke-ordered-iid-interval/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/gaffke-ordered-iid-interval/paper.en.md"
 }

@@ -1,5 +1,84 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ResetCertificate",
+      "name": "ResetCertificate.integral_exterior_laplace_nonpos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ResetCertificate",
+      "name": "ResetCertificate.integral_laplace_nonpos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ResetCertificate",
+      "name": "ResetCertificate.integral_mul_neg"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ResetCertificate",
+      "name": "ResetCertificate.integral_mul_neg._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ResetCertificate",
+      "name": "ResetCertificate.integral_mul_nonpos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ResetCertificate",
+      "name": "ResetCertificate.laplaceRatio_monotone"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ResetCertificate",
+      "name": "_private.ResetCertificate.0.ResetCertificate.centeredIntegral"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ResetCertificate",
+      "name": "_private.ResetCertificate.0.ResetCertificate.centeredNonpos"
+    }
+  ],
   "dependency_versions": {
     "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
     "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
@@ -14,12 +93,10 @@
   "file_sha256": {
     "papers/optimal-resetting-asymmetric/formalization/ResetCertificate.lean": "fc02f854daa1b5f1ff8508d79b9d600eaed86b5a2f09a996eb2339366205e254"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.24.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "e68c1e1cbeacad8f22bbaba4a1d800587a9ad0433b88be643d77b48284ca03a2",
-  "paper_path": "papers/optimal-resetting-asymmetric/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/optimal-resetting-asymmetric/paper.en.md"
 }

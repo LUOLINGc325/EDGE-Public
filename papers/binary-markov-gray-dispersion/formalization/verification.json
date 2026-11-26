@@ -1,5 +1,41 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GrayBinaryInnerProducts",
+      "name": "BinaryMarkovGrayDispersionResearchProof1.marked_vector_pairings"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GrayBinaryNoiseRankOne",
+      "name": "BinaryMarkovGrayDispersionResearchProof1.noise_rank_one"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GrayStrictMarkedEntries",
+      "name": "BinaryMarkovGrayDispersionResearchProof1.gray_marked_entry_positive"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -16,12 +52,10 @@
     "papers/binary-markov-gray-dispersion/formalization/GrayBinaryNoiseRankOne.lean": "deba515dbec28dc64919462fa44f0a791dd3cb58a4400fd1538bb8e422090eed",
     "papers/binary-markov-gray-dispersion/formalization/GrayStrictMarkedEntries.lean": "398d978ba9a0cc194d031a43874aeb2b96672e2cfada93c42bf4ef48b5121efe"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "d51edbfd2923abaad8e99339e7dcfd74ab722e30b3dd87bd649d041e1a632252",
-  "paper_path": "papers/binary-markov-gray-dispersion/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/binary-markov-gray-dispersion/paper.en.md"
 }

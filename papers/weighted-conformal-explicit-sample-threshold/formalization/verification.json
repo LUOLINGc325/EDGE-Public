@@ -1,5 +1,23 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ConformalThresholdCutoffDerivative",
+      "name": "WeightedConformalExplicitSampleThresholdResearchProof1.weighted_cutoff_derivative"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -14,12 +32,10 @@
   "file_sha256": {
     "papers/weighted-conformal-explicit-sample-threshold/formalization/ConformalThresholdCutoffDerivative.lean": "124dce6c6aa73e545c450a352f882282dc0549ac5bc807c438dd4059fe67622f"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "4583ffc1ebe21f289aeb7eb323d4d1a879dfdae3e85652188d465b46b6f41e25",
-  "paper_path": "papers/weighted-conformal-explicit-sample-threshold/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/weighted-conformal-explicit-sample-threshold/paper.en.md"
 }

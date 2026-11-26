@@ -1,5 +1,2078 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.EFXAgainst.congr_simp"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.FourEFX"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.FourValues"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.PairDominates"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.ThreeEFXAllocation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.ThreeEFXAllocation.casesOn"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.ThreeEFXAllocation.cover"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.ThreeEFXAllocation.disjoint"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.ThreeEFXAllocation.fair"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.ThreeEFXAllocation.mk"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.ThreeEFXAllocation.mk._flat_ctor"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.ThreeEFXAllocation.rec"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.ThreeEFXAllocation.recOn"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.ThreeEFXInput"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.ThreeEFXInput._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_16"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_17"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_18"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_19"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_20"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_21"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_22"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_6"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._proof_1_7"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._simp_1_13"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._simp_1_14"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2Ordered._simp_1_15"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2_of_three"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "EFXResearch.d2_of_three._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.assemble"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.assemble._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.assemble._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.boundByOldBundle"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.distinctOfDisjoint"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.efxSingleton"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.efxSmall"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.efxSmall._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.labelsDistinct"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.localLabels"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.localLabels.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.localLabels.eq_2"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.localLabels.eq_3"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.localLabels.eq_4"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.localLabels.match_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.localLabels.match_1.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.localLabels.match_1.eq_2"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.localLabels.match_1.eq_3"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.localLabels.match_1.eq_4"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.localLabels.match_1.splitter"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.orderThree"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.orderThree._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.orderThree._proof_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.orderThree._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.partitionOfFour"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.partitionOfFour._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.sdiff_erase_single"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.sdiff_erase_single._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.sdiff_erase_single._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.sdiff_erase_single._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.sdiff_erase_single._simp_1_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.singletonDisjoint"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.splitRest"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.D2",
+      "name": "_private.EFX.D2.0.EFXResearch.weakenEFX"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion._sizeOf_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion._sizeOf_inst"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.casesOn"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.cover"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.ctorIdx"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.disjoint"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.left"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.left_efx"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.left_floor"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.left_ne"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.mk"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.mk._flat_ctor"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.mk.inj"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.mk.injEq"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.mk.noConfusion"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.mk.sizeOf_spec"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.noConfusion"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.noConfusionType"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.rec"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.recOn"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.right"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.right_efx"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.right_floor"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.Completion.right_ne"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.EFXAgainst"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.FiniteMonotone"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.abc.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.bc.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.finiteInsertionA"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.finiteInsertionB"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.finiteInsertionC"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.sa.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.sb.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.sc.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "EFXResearch.sz.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.allGoods"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.allGoods.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.complete_on_all"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.imageBundle"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.imageBundle.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.image_abc"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.image_all"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.image_bc"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.image_erase"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.image_erase._simp_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.image_erase._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.image_mono"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.image_sa"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.image_sb"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.image_sc"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.image_sz"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.instReprGood.repr.match_1.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.instReprGood.repr.match_1.eq_2"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.instReprGood.repr.match_1.eq_3"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.instReprGood.repr.match_1.eq_4"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.instReprGood.repr.match_1.splitter"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.labels"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.labels.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.liftCompletion"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.liftCompletion._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.liftCompletion._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.liftCompletion._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.liftCompletion._proof_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.liftCompletion._proof_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.liftCompletion._simp_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.liftCompletion._simp_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.mem_imageBundle"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.mem_imageBundle._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.mem_imageBundle._simp_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.mem_imageBundle._simp_1_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.FiniteInsertion",
+      "name": "_private.EFX.FiniteInsertion.0.EFXResearch.mem_labels"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionAC",
+      "name": "EFXResearch.CompleteOn"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionAC",
+      "name": "EFXResearch.abc"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "EFX.InsertionAC",
+      "name": "EFXResearch.insertionA"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "EFX.InsertionAC",
+      "name": "EFXResearch.insertionC"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionAC",
+      "name": "_private.EFX.InsertionAC.0.EFXResearch.complete_swap"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionAC",
+      "name": "_private.EFX.InsertionAC.0.EFXResearch.cross_swap"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionAC",
+      "name": "_private.EFX.InsertionAC.0.EFXResearch.erase_swap"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionAC",
+      "name": "_private.EFX.InsertionAC.0.EFXResearch.insertionA_layout"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionAC",
+      "name": "_private.EFX.InsertionAC.0.EFXResearch.member_swap"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionAC",
+      "name": "_private.EFX.InsertionAC.0.EFXResearch.mono_swap"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionAC",
+      "name": "_private.EFX.InsertionAC.0.EFXResearch.nonempty_swap"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionAC",
+      "name": "_private.EFX.InsertionAC.0.EFXResearch.swapBundle"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionAC",
+      "name": "_private.EFX.InsertionAC.0.EFXResearch.swapGood"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionAC",
+      "name": "_private.EFX.InsertionAC.0.EFXResearch.swapGood.match_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionAC",
+      "name": "_private.EFX.InsertionAC.0.EFXResearch.swap_involutive"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle._sizeOf_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle._sizeOf_inst"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.a"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.b"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.c"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.casesOn"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.ctorIdx"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.mk"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.mk._flat_ctor"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.mk.inj"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.mk.injEq"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.mk.noConfusion"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.mk.sizeOf_spec"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.noConfusion"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.noConfusionType"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.rec"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.recOn"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Bundle.z"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Complete"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.CrossEFX"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.FullEFX"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good._sizeOf_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good._sizeOf_inst"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.a"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.a.elim"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.a.sizeOf_spec"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.b"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.b.elim"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.b.sizeOf_spec"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.c"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.c.elim"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.c.sizeOf_spec"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.casesOn"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.ctorElim"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.ctorElimType"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.ctorIdx"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.noConfusion"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.noConfusionType"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.ofNat"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.ofNat_ctorIdx"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.rec"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.recOn"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.toCtorIdx"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.z"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.z.elim"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Good.z.sizeOf_spec"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Monotone"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.NonemptyBundle"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.Subset"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder._sizeOf_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder._sizeOf_inst"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.casesOn"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.ctorIdx"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.le"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.mk"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.mk._flat_ctor"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.mk.inj"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.mk.injEq"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.mk.noConfusion"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.mk.sizeOf_spec"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.noConfusion"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.noConfusionType"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.rec"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.recOn"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.refl"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.total"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ValueOrder.trans"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ab"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.ac"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.az"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.bc"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.bcz"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.bz"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.complete_bc_az"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.complete_bcz_sa"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.complete_bz_ac"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.complete_cz_ab"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.complete_sa_bcz"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.cz"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.empty"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.empty_subset"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.erase"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.erase.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.erase.eq_2"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.erase.eq_3"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.erase.eq_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.erase_subset"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.fullEFX_of_cross"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.insertionB"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.insertionB_cross"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instDecidableEqBundle"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instDecidableEqBundle.decEq"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instDecidableEqBundle.decEq._proof_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instDecidableEqBundle.decEq._proof_2"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instDecidableEqBundle.decEq._proof_3"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instDecidableEqBundle.decEq._proof_4"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instDecidableEqBundle.decEq._proof_5"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instDecidableEqBundle.decEq.match_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instDecidableEqGood"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instDecidableEqGood._proof_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instDecidableEqGood._proof_2"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instReprBundle"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instReprBundle.repr"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instReprGood"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instReprGood.repr"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.instReprGood.repr.match_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.member"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.member.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.member.eq_2"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.member.eq_3"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.member.eq_4"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.sa"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.sb"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.sc"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.subset_bc_bcz"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.subset_bz_bcz"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.subset_cz_bcz"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.subset_sa_ab"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.subset_sa_ac"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.subset_sa_az"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.subset_sb_bc"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.subset_sc_bc"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "EFXResearch.sz"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "_private.EFX.InsertionB.0.EFXResearch.instReprGood.repr.match_1.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "_private.EFX.InsertionB.0.EFXResearch.instReprGood.repr.match_1.eq_2"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "_private.EFX.InsertionB.0.EFXResearch.instReprGood.repr.match_1.eq_3"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "_private.EFX.InsertionB.0.EFXResearch.instReprGood.repr.match_1.eq_4"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.InsertionB",
+      "name": "_private.EFX.InsertionB.0.EFXResearch.instReprGood.repr.match_1.splitter"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "EFXResearch.ThreeAgentExistence"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "EFXResearch.common_pair_dominant"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "EFXResearch.common_pair_dominant._proof_1_1"
+    },
+    {
+      "axioms": [],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "EFXResearch.natValueOrder"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "EFXResearch.nonempty_of_threeAgentExistence"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "EFXResearch.nonempty_of_threeAgentExistence._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "EFXResearch.nonempty_of_threeAgentExistence._proof_1_3"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "EFXResearch.nonempty_of_threeAgentExistence._proof_1_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "EFXResearch.nonempty_of_threeAgentExistence._proof_1_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "EFXResearch.nonempty_of_threeAgentExistence._simp_1_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "_private.EFX.ThreeAgentReduction.0.EFXResearch.le_of_score_le"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "_private.EFX.ThreeAgentReduction.0.EFXResearch.le_of_score_le._proof_1_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "_private.EFX.ThreeAgentReduction.0.EFXResearch.lowerBundles"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "_private.EFX.ThreeAgentReduction.0.EFXResearch.lowerBundles.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "_private.EFX.ThreeAgentReduction.0.EFXResearch.lowerBundles_mono"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "_private.EFX.ThreeAgentReduction.0.EFXResearch.mem_lowerBundles"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "_private.EFX.ThreeAgentReduction.0.EFXResearch.score"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "_private.EFX.ThreeAgentReduction.0.EFXResearch.score.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "_private.EFX.ThreeAgentReduction.0.EFXResearch.score_empty"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "EFX.ThreeAgentReduction",
+      "name": "_private.EFX.ThreeAgentReduction.0.EFXResearch.score_mono"
+    }
+  ],
   "dependency_versions": {
     "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
     "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
@@ -19,12 +2092,10 @@
     "papers/efx-four-agents-eight-goods/formalization/EFX/InsertionB.lean": "9707c6e4dfcf56806672941e9e9296da5c1d15111ea1d0ef72332743711fc7e1",
     "papers/efx-four-agents-eight-goods/formalization/EFX/ThreeAgentReduction.lean": "ad248f89b51c63cfaecfd89e1636bff59874c42ce3e7ce2ba4dcb8150cdc2a4c"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.24.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "0435a92c7990d8e5056cd65d41e9b738bae50bf396f1c97987bd9f180a623485",
-  "paper_path": "papers/efx-four-agents-eight-goods/paper.zh.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/efx-four-agents-eight-goods/paper.zh.md"
 }

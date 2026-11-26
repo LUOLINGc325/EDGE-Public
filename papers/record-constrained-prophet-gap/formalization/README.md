@@ -1,6 +1,6 @@
 # Lean supplement
 
-Archived Lean source is provided for reading and reproduction. Local compilation and kernel verification are pending for these bytes.
+Lean 4.19.0 compiled the listed modules. The axiom check covered 13 declarations.
 
 Read the [manuscript](../paper.en.md) for the mathematical statement and assumptions.
 The [verification record](verification.json) gives the snapshot status and hashes.

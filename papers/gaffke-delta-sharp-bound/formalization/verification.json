@@ -1,5 +1,77 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaffkeCompressionGapOrder",
+      "name": "GaffkeDeltaSharpBoundResearchProof1.same_d_comparison"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaffkeCompressionLaplaceProduct",
+      "name": "GaffkeDeltaSharpBoundResearchProof1.laplace_product_antitone"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaffkeDeletionExponentOrder",
+      "name": "GaffkeDeltaSharpBoundResearchProof1.deletion_exponent_order"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaffkeDeletionPositiveGap",
+      "name": "GaffkeDeltaSharpBoundResearchProof1.deletion_positive_gap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaffkeDeletionPowerComparison",
+      "name": "GaffkeDeltaSharpBoundResearchProof1.deletion_power_comparison"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaffkeDeletionRootExtraction",
+      "name": "GaffkeDeltaSharpBoundResearchProof1.deletion_root_extraction"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GaffkeLaplaceProductComparison",
+      "name": "GaffkeDeltaSharpBoundResearchProof1.laplace_product_lower"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -20,12 +92,10 @@
     "papers/gaffke-delta-sharp-bound/formalization/GaffkeDeletionRootExtraction.lean": "b6447b636326dc156214dec217c3f59a8287e1b5a3b77c9c407259774e284d44",
     "papers/gaffke-delta-sharp-bound/formalization/GaffkeLaplaceProductComparison.lean": "5785a38f0210c5fa15515256cdf6132a81c9c07548598bf8c977f4d161293c8a"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "d2fd787e3ad25f2018eaa425a7a0466ab09665da12322f8d643bf2862b6d4e5f",
-  "paper_path": "papers/gaffke-delta-sharp-bound/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/gaffke-delta-sharp-bound/paper.en.md"
 }

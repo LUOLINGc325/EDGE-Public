@@ -1,5 +1,23 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ReflectedClampDiscount",
+      "name": "OnlineConformalParabolicEvaluationResearchProof1.discounted_clipping_error"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -14,12 +32,10 @@
   "file_sha256": {
     "papers/online-conformal-parabolic-evaluation/formalization/ReflectedClampDiscount.lean": "5c15f5216fc849f9a8cf48e7f9cbd8807078170072806f6c13d7294654a37032"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "70ba12f9844c90bd449f90961396d405777235a9a9044e203d68f56edaea867e",
-  "paper_path": "papers/online-conformal-parabolic-evaluation/paper.zh.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/online-conformal-parabolic-evaluation/paper.zh.md"
 }

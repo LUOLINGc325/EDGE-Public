@@ -1,5 +1,1568 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.CompletePartition"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.allocation_determined_by_bundles"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.bundle"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.bundle.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.bundles_cover"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.bundles_disjoint"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.complete_partition_has_allocation"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.constant_allocation_empty_other_bundle"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.item_has_unique_owner"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.mem_bundle"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.swapRecipient_eq_iff"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.swapRecipient_involutive"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.swapRecipient_left"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.swapRecipient_right"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.swapped_bundle_left"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.swapped_bundle_left._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.swapped_bundle_other"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.swapped_bundle_other._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.swapped_bundle_right"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.swapped_bundle_right._proof_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.swapped_twice"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.total_allocation_is_complete_partition"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.utility_by_deleted_bundles"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "OrdinaryEF1.utility_by_recipient"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AllocationBridge",
+      "name": "_private.AllocationBridge.0._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Definitions",
+      "name": "OrdinaryEF1.EF1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Definitions",
+      "name": "OrdinaryEF1.gap"
+    },
+    {
+      "axioms": [],
+      "module": "Definitions",
+      "name": "OrdinaryEF1.swapRecipient"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.EF1_add_recipient_constant"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.alloc"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.alloc.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.alloc_eta"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.cyclicProfile"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.cyclicProfile._proof_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.cyclicProfile.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.equal_has_EF1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.equal_has_EF1_right"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.exact_nonexistence_region"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.exceptional_X_EF1_iff"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.exceptional_Y_EF1_iff"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.fin3_mk_two"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.fin3_one_ne_two"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.fin3_two_ne_one"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.fin3_two_ne_zero"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.fin3_zero_ne_two"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.gap_add_recipient_constant"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.integer_counterexample"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.noEF1_of_a_lt_b"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.noEF1_of_b_lt_a"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.seven_nonexceptional_allocations_fail"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.shifted_counterexample"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.small_g_has_EF1_left"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.small_g_has_EF1_right"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.small_z_has_EF1_left"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Family",
+      "name": "OrdinaryEF1.small_z_has_EF1_right"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Family",
+      "name": "_private.Family.0._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Family",
+      "name": "_private.Family.0._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Family",
+      "name": "_private.Family.0._proof_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Family",
+      "name": "_private.Family.0._proof_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Main",
+      "name": "OrdinaryEF1.at_most_two_items_original_definition"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Main",
+      "name": "OrdinaryEF1.exact_existence_region"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Main",
+      "name": "OrdinaryEF1.exact_existence_region._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Main",
+      "name": "OrdinaryEF1.exact_existence_region._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Main",
+      "name": "OrdinaryEF1.exact_existence_region._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Main",
+      "name": "OrdinaryEF1.integer_counterexample_original_definition"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Main",
+      "name": "OrdinaryEF1.nonexistence_requires_three_agents"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Main",
+      "name": "OrdinaryEF1.nonexistence_requires_three_agents._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Main",
+      "name": "OrdinaryEF1.nonexistence_requires_three_items"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Main",
+      "name": "OrdinaryEF1.nonexistence_requires_three_items._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Main",
+      "name": "OrdinaryEF1.simultaneous_minimality"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Main",
+      "name": "OrdinaryEF1.two_agents_original_definition"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.bestReduction_eq_of_certificate"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.cycleAgent"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.cycleAgent._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.cycleAgent.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.cycleAgent_three"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.cyclicProfile_symmetry"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.cyclic_difference_predecessor"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.cyclic_difference_successor"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.integer_profile_alphabet"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.integer_profile_nonnegative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.integer_witness_margin"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.nine_table_best_reductions"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.nine_table_gaps"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.nine_table_residuals"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.nine_table_residuals_positive"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.shifted_profile_alphabet"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.shifted_profile_positive"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.tableGap"
+    },
+    {
+      "axioms": [],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.tableGap._proof_2"
+    },
+    {
+      "axioms": [],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.tableGap._proof_3"
+    },
+    {
+      "axioms": [],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.tableGap._proof_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.tableGap.eq_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.tableOptimalDeletion"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.tableOptimalDeletion._proof_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.tableOptimalDeletion.eq_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.tableWitness"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.tableWitness.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.table_witness_distinct"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Numeric",
+      "name": "OrdinaryEF1.third_item_is_chore"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.EF1_iff_all_residuals_nonpositive"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.EF1_iff_original_definition"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.bestReduction"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.contribution"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.contribution.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.contribution_difference_row"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.deleted"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.deleted.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.deleted_card_le_one"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.deleted_item"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.deleted_item._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.deleted_item._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.deleted_none"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.deleted_none._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.difference"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.difference.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.difference_add_recipient_constant"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.every_single_deletion"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.gap.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.gap_eq_total_sub_reduction"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.gap_is_actual_swap_gap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.mem_deleted"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.mem_reductions_iff"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.not_EF1_iff_positive_residual"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.reduction"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.reduction.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.reduction_item"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.reduction_item._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.reduction_item._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.reduction_none"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.reductions"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.reductions_nonempty"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.residual"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.residual.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.residual_is_least_remaining_gap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.semanticEF1"
+    },
+    {
+      "axioms": [],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.swapRecipient.eq_1"
+    },
+    {
+      "axioms": [],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.swapped"
+    },
+    {
+      "axioms": [],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.swapped.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.totalGap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.totalGap.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.totalGap_difference_row"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.utility"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "OrdinaryEF1.utility.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Semantics",
+      "name": "_private.Semantics.0._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Stability",
+      "name": "OrdinaryEF1.counterexample_stable"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Stability",
+      "name": "OrdinaryEF1.positive_counterexample_neighborhood"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Stability",
+      "name": "OrdinaryEF1.robust_nonexistence_of_margins"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Stability",
+      "name": "OrdinaryEF1.shifted_counterexample_stable"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Stability",
+      "name": "OrdinaryEF1.shifted_nearby_profile_positive"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Stability",
+      "name": "OrdinaryEF1.shifted_witness_margin"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StabilityBounds",
+      "name": "OrdinaryEF1.closeProfile"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StabilityBounds",
+      "name": "OrdinaryEF1.contribution_perturbation_bound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "StabilityBounds",
+      "name": "OrdinaryEF1.three_item_gap_perturbation_bound"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "StabilityBounds",
+      "name": "OrdinaryEF1.three_item_gap_perturbation_bound._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoContribution"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoContribution.eq_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoFlip"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoFlip._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoFlip.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoGap_delete_item"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoGap_first_noDeletion"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoGap_second_noDeletion"
+    },
+    {
+      "axioms": [],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoNoDeletion"
+    },
+    {
+      "axioms": [],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoNoDeletion.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoSumGap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoSumGap.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoSumGap_flip"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.twoSumGap_move_item"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.two_EF1_of_minimum_and_second_nonenvy"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.two_agents_exists_EF1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.two_first_EF1_of_minimum"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.two_swap_reverse"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoAgents",
+      "name": "OrdinaryEF1.two_swap_twice"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoItems",
+      "name": "OrdinaryEF1.at_most_two_items_exists_EF1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoItems",
+      "name": "OrdinaryEF1.at_most_two_items_exists_EF1._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoItems",
+      "name": "OrdinaryEF1.no_items_exists_EF1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoItems",
+      "name": "OrdinaryEF1.one_agent_EF1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoItems",
+      "name": "OrdinaryEF1.one_agent_exists_EF1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoItems",
+      "name": "OrdinaryEF1.one_item_exists_EF1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TwoItems",
+      "name": "OrdinaryEF1.twoItemSplit"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TwoItems",
+      "name": "OrdinaryEF1.twoItemSplit._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "TwoItems",
+      "name": "OrdinaryEF1.twoItemSplit.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoItems",
+      "name": "OrdinaryEF1.two_item_same_sign_split_exists"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoItems",
+      "name": "OrdinaryEF1.two_item_split_EF1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "TwoItems",
+      "name": "OrdinaryEF1.two_items_exists_EF1"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -23,12 +1586,10 @@
     "papers/ordinary-ef1-three-agent-counterexample/lean/extended/TwoAgents.lean": "a5217391d1590f98e36807dfee04c84caafe4bec769d2a54163fb6587ee85a83",
     "papers/ordinary-ef1-three-agent-counterexample/lean/extended/TwoItems.lean": "87957f527119e1c42dc11f2cb85ca3c25c5fffbcf153e324d64e95d5d9146c1d"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "84fec91b87abad4fca45d987abcbabd2a1205489b1a3f81e059095184b572dd1",
-  "paper_path": "papers/ordinary-ef1-three-agent-counterexample/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/ordinary-ef1-three-agent-counterexample/paper.en.md"
 }

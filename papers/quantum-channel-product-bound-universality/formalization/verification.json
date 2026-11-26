@@ -1,5 +1,64 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DistinctPairComplement",
+      "name": "QuantumChannelProductBoundUniversalityResearchProof2.normalized_pair_complement"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DistinctPairDiagonalBound",
+      "name": "QuantumChannelProductBoundUniversalityResearchProof2.diagonal_incidence"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DistinctPairDiagonalBound",
+      "name": "QuantumChannelProductBoundUniversalityResearchProof2.diagonal_incidence._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DistinctPairDiagonalBound",
+      "name": "QuantumChannelProductBoundUniversalityResearchProof2.diagonal_incidence._proof_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "DistinctPairDiagonalBound",
+      "name": "QuantumChannelProductBoundUniversalityResearchProof2.diagonal_incidence._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "QuantumProductFactorCount",
+      "name": "QuantumChannelProductBoundUniversalityResearchProof1.factor_count_floor"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -16,12 +75,10 @@
     "papers/quantum-channel-product-bound-universality/formalization/DistinctPairDiagonalBound.lean": "a9a55fa565aa230da33023e2a5d2ab8740b6805281ed3603a764df7d6ec0f648",
     "papers/quantum-channel-product-bound-universality/formalization/QuantumProductFactorCount.lean": "3b621da3db324bcc744a6caedf0469a0725467a1caf229bb20679880a3137c2c"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "f142f7a55be89dbb23f6021430333ff23ce15d6b31ebebc5877efbe7260b6289",
-  "paper_path": "papers/quantum-channel-product-bound-universality/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/quantum-channel-product-bound-universality/paper.en.md"
 }

@@ -1,5 +1,48 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "JobSuffixRounding",
+      "name": "ProcessingOracleTwoPhaseResearchProof1.physical_suffix_rounding"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "JobValueFloorRecovery",
+      "name": "ProcessingOracleTwoPhaseResearchProof2.floor_recovery_three"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "JobValueFloorRecovery",
+      "name": "ProcessingOracleTwoPhaseResearchProof2.floor_recovery_three._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "JobValueFloorRecovery",
+      "name": "ProcessingOracleTwoPhaseResearchProof2.floor_recovery_three._proof_2"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -15,12 +58,10 @@
     "papers/processing-oracle-two-phase/formalization/JobSuffixRounding.lean": "1fc1d98f891ade56e587ef3a64b581dada8bf0b2af793f741e10db02412a73cb",
     "papers/processing-oracle-two-phase/formalization/JobValueFloorRecovery.lean": "897dbebd24fd9ac3d8fd308885e21e90cdca886c05537bc3e78681edd6220570"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "be5f7f739f8d6ac05b3dc9310b462fd1b25550200634b85052c48e0134a8fbb7",
-  "paper_path": "papers/processing-oracle-two-phase/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/processing-oracle-two-phase/paper.en.md"
 }

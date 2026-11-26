@@ -1,5 +1,92 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "AdjointCancellation",
+      "name": "ReversibleMarkovWeakResponse.star_sq_sum_cancellation"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdjointInverseCongruence",
+      "name": "ReversibleMarkovWeakResponse.equation_four_congruence"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "MarkovResolventSignCriterion",
+      "name": "ReversibleMarkovWeakResponse.normal_mode_deriv_nonpos_iff"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ModeDiscriminant",
+      "name": "ReversibleMarkovWeakResponse.modeBound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ModeDiscriminant",
+      "name": "ReversibleMarkovWeakResponse.modeBound.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ModeDiscriminant",
+      "name": "ReversibleMarkovWeakResponse.transverse_mode_criterion"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "ModeDiscriminant",
+      "name": "ReversibleMarkovWeakResponse.transverse_mode_strict"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "NormalModeAnalysis",
+      "name": "ReversibleMarkovWeakResponse.normalModeResponse"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "NormalModeAnalysis",
+      "name": "ReversibleMarkovWeakResponse.normal_mode_hasDerivAt"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -18,12 +105,10 @@
     "papers/reversible-environment-weak-response/formalization/ModeDiscriminant.lean": "70a8b923ab2d366ac7ae16ae91a3afcea99e0e1bb9b688c4fae9d862418190a4",
     "papers/reversible-environment-weak-response/formalization/NormalModeAnalysis.lean": "5ca6624762e658949fd1ec09b8e6ffb98e2196104c24a124d0d198bb6168db68"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "79719e3ff9a577b6e3686eaed1497fbe15a3a65be31a51a9f6d57d8592927161",
-  "paper_path": "papers/reversible-environment-weak-response/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/reversible-environment-weak-response/paper.en.md"
 }

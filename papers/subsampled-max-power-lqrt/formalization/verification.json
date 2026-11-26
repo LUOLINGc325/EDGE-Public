@@ -1,5 +1,23 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "GridExponentLoss",
+      "name": "SubsampledMaxPowerLqrt.grid_exponent_bound"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -14,12 +32,10 @@
   "file_sha256": {
     "papers/subsampled-max-power-lqrt/formalization/GridExponentLoss.lean": "b915393d8f67f399cb7345ec91c2b318ca6a5bafe8884f7fc11d5b351bff80bc"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "7d37c9efa175a8d84303fb301bf91f3e3edb17737ccd915e67b9242e009c83c2",
-  "paper_path": "papers/subsampled-max-power-lqrt/paper.zh.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/subsampled-max-power-lqrt/paper.zh.md"
 }

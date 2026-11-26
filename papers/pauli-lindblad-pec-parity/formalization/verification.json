@@ -1,5 +1,519 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [],
+      "module": "Parity",
+      "name": "PECParity.Selection"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.binaryCoefficient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.binaryCoefficient._proof_5"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.binaryLabel"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.binaryLabel._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.binaryLabel._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.binaryLabel.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.binary_coefficient_mass_difference"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.binary_collected_formula"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.binary_exact_cancellation_gap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.binary_no_cancellation_iff"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.binary_odd_dependency_strict_saving"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.collectedTotal"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.collectedTotal.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.collected_le_unsigned"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.exact_cancellation_gap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.fiber_mass_partition"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.fiber_parity_iff_even_kernel"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.fiber_parity_iff_even_kernel._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.independentLabels"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.independentLabels.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.independent_labels_have_even_kernel"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.independent_labels_no_saving"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.local_gap"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.mass"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.mass.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.mass_nonneg"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.mass_pos_of"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.mass_zero_of_absent"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.min_eq_zero_iff_of_nonnegative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.no_cancellation_iff_even_kernel"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.no_cancellation_iff_even_kernel._proof_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.odd_kernel_strict_saving"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.parityBit"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.parityBit.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.parityBit_eq_iff"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.product_weight_total"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.selectionParity"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.selectionParity._proof_3"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.selectionParity._proof_4"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.selectionParity.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.selectionWeight"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.selectionWeight_pos"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.signed_fiber_formula"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.total_equality_iff_fiber_parity"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.total_equality_iff_unmixed"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.total_mass_partition"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.triangleLabels"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.triangleLabels._proof_6"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.triangleLabels.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.triangle_odd_dependency_label"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.triangle_odd_dependency_parity"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.triangle_strict_saving"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.unmixed_iff_fiber_parity"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.unsignedTotal"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.unsignedTotal.eq_1"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.zmod_two_cases"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Parity",
+      "name": "PECParity.zmod_two_sum"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -14,12 +528,10 @@
   "file_sha256": {
     "papers/pauli-lindblad-pec-parity/formalization/Parity.lean": "cec70f09a3ddb16fe5527e3df310ada066946674ab69efa374ce2d6ac1069aea"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "669d0a52424332d6738890d9d692d130eea38e2e0f818f03740ef49b2e76365c",
-  "paper_path": "papers/pauli-lindblad-pec-parity/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/pauli-lindblad-pec-parity/paper.en.md"
 }

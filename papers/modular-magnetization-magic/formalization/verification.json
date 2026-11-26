@@ -1,5 +1,23 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "FiniteEighthPower",
+      "name": "ModularMagnetizationMagicResearchProof1.finite_eighth_power"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -14,12 +32,10 @@
   "file_sha256": {
     "papers/modular-magnetization-magic/formalization/FiniteEighthPower.lean": "63334640621126b5cd18678a61748efad8ce84e67099d7d209567928a64adbee"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "992bb53a28381f2ec75509c6dfd4a01c8c23b4a3cb783ffacf23b7bfb2ad10df",
-  "paper_path": "papers/modular-magnetization-magic/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/modular-magnetization-magic/paper.en.md"
 }

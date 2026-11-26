@@ -1,5 +1,104 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "KLOffsetFirstDerivative",
+      "name": "SelectionAuditInformationResearchProof1.kl_offset_first_derivative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "KLOffsetSecondDerivative",
+      "name": "SelectionAuditInformationResearchProof1.kl_offset_second_derivative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "KLStrictReference",
+      "name": "SelectionAuditInformationResearchProof1.strict_reference_coefficients"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "KLTangentAlternative",
+      "name": "SelectionAuditInformationResearchProof1.alternative_coordinate_derivative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "KLTangentNull",
+      "name": "SelectionAuditInformationResearchProof1.null_coordinate_derivative"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SelectionAuditCurvature",
+      "name": "SelectionAuditInformation.PhiSecondDerivRHS"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SelectionAuditCurvature",
+      "name": "SelectionAuditInformation.phi_second_deriv_ge_first_term"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SelectionAuditCurvature",
+      "name": "SelectionAuditInformation.phi_second_deriv_ne_zero"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SelectionAuditCurvature",
+      "name": "SelectionAuditInformation.phi_second_deriv_numerator_positive"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "SelectionAuditCurvature",
+      "name": "SelectionAuditInformation.phi_second_deriv_pos"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -19,12 +118,10 @@
     "papers/selection-audit-information/formalization/KLTangentNull.lean": "e7de035d6d746ac8efab212b16215adc4f5cc21e6f845adf92e22bb5e4247fdc",
     "papers/selection-audit-information/formalization/SelectionAuditCurvature.lean": "150a6f625fd6ccdeb6875df109ed2326d9a7643c00624a7445ebed49a3c75e10"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "f35c1b1127702bb4b880ef80728ce59d5f37bb1b0db4b2064ab55e12a988287e",
-  "paper_path": "papers/selection-audit-information/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/selection-audit-information/paper.en.md"
 }

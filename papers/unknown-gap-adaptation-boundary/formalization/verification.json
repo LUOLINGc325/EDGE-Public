@@ -1,5 +1,202 @@
 {
-  "build_result": "not_verified",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_command": "lean -j1 -o <output.olean> <module.lean>",
+  "build_result": "passed",
+  "coverage": "partial",
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapBaselineBudgetEquality",
+      "name": "UnknownGapAdaptationBoundaryResearchProof1.baseline_budget_equality"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapBaselineCycleBound",
+      "name": "UnknownGapAdaptationBoundaryResearchProof2.baseline_cycle_bound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapBoundedOvershoot",
+      "name": "UnknownGapAdaptationBoundaryResearchProof1.bounded_overshoot_step"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapCycleOddsComparison",
+      "name": "UnknownGapAdaptationBoundaryResearchProof2.cycle_odds_comparison"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapDyadicExponentialRatio",
+      "name": "UnknownGapAdaptationBoundaryResearchProof2.dyadic_exponential_ratio"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapDyadicFiniteTail",
+      "name": "UnknownGapAdaptationBoundaryResearchProof2.dyadic_finite_tail_bound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapDyadicGeometricComparison",
+      "name": "UnknownGapAdaptationBoundaryResearchProof2.dyadic_term_geometric_comparison"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapDyadicInfiniteTail",
+      "name": "UnknownGapAdaptationBoundaryResearchProof2.dyadic_infinite_tail_bound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapDyadicInfiniteTail",
+      "name": "UnknownGapAdaptationBoundaryResearchProof2.dyadic_infinite_tail_bound._proof_1"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapDyadicInfiniteTail",
+      "name": "UnknownGapAdaptationBoundaryResearchProof2.dyadic_infinite_tail_bound._proof_2"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapDyadicLogBoundary",
+      "name": "UnknownGapAdaptationBoundaryResearchProof2.dyadic_log_boundary"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapDyadicRatioBelowOne",
+      "name": "UnknownGapAdaptationBoundaryResearchProof2.dyadic_ratio_below_one"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapDyadicTailScaling",
+      "name": "UnknownGapAdaptationBoundaryResearchProof2.dyadic_tail_scaling"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapFirstDyadicTerm",
+      "name": "UnknownGapAdaptationBoundaryResearchProof2.first_dyadic_term"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapGaussianBudgetEquality",
+      "name": "UnknownGapAdaptationBoundaryResearchProof3.gaussian_budget_equality"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapGaussianCompleteSquare",
+      "name": "UnknownGapAdaptationBoundaryResearchProof3.gaussian_shift_complete_square"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapGaussianExponentBudget",
+      "name": "UnknownGapAdaptationBoundaryResearchProof3.gaussian_exponent_budget"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapGaussianExponentRatio",
+      "name": "UnknownGapAdaptationBoundaryResearchProof3.gaussian_shift_exponent"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapGaussianNumericOvershoot",
+      "name": "UnknownGapAdaptationBoundaryResearchProof3.gaussian_overshoot_numeric"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapHalfTailAdaptation",
+      "name": "UnknownGapAdaptationBoundaryResearchProof1.half_tail_adaptation_bound"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "AdaptiveGapTruncatedOvershootSum",
+      "name": "UnknownGapAdaptationBoundaryResearchProof3.truncated_overshoot_sum"
+    }
+  ],
   "dependency_versions": {
     "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
     "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
@@ -32,12 +229,10 @@
     "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapHalfTailAdaptation.lean": "62966831e7bb200245c100d63beba8e0e102c1bbea1ceaaed438e96d451c024e",
     "papers/unknown-gap-adaptation-boundary/formalization/AdaptiveGapTruncatedOvershootSum.lean": "eb33d7b9249d8b3fa175c7926f2d4fa48120e61b86be2f6b7540ea8406cab61b"
   },
-  "formalization_status": "Source snapshot with local build verification pending.",
   "lean_version": "4.19.0",
   "limitations": [
-    "The manuscript describes the mathematical results. This source snapshot lacks completed local kernel verification."
+    "The check covers the listed Lean modules and declarations. The manuscript describes the scope of the mathematical results."
   ],
   "manuscript_sha256": "e9d8a6a4b075e17c2e973275e5ca2d4c0346ccf044df65ecb4d6129b2c0ba528",
-  "paper_path": "papers/unknown-gap-adaptation-boundary/paper.en.md",
-  "verification_status": "source_snapshot"
+  "paper_path": "papers/unknown-gap-adaptation-boundary/paper.en.md"
 }
