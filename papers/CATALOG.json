@@ -101,6 +101,13 @@
       "parent": "physical-sciences"
     },
     {
+      "id": "theoretical-physics",
+      "zh": "理论物理",
+      "en": "Theoretical physics",
+      "level": "specialty",
+      "parent": "physics"
+    },
+    {
       "id": "chemistry",
       "zh": "化学",
       "en": "Chemistry",
@@ -150,6 +157,20 @@
       "parent": "biology"
     },
     {
+      "id": "neuroscience",
+      "zh": "神经科学",
+      "en": "Neuroscience",
+      "level": "discipline",
+      "parent": "life-sciences"
+    },
+    {
+      "id": "computational-neuroscience",
+      "zh": "计算神经科学",
+      "en": "Computational neuroscience",
+      "level": "specialty",
+      "parent": "neuroscience"
+    },
+    {
       "id": "control-dynamics",
       "zh": "控制与动力系统",
       "en": "Control and dynamical systems",
@@ -169,6 +190,13 @@
       "en": "Electric power engineering",
       "level": "specialty",
       "parent": "electrical-engineering"
+    },
+    {
+      "id": "transportation-engineering",
+      "zh": "交通工程",
+      "en": "Transportation engineering",
+      "level": "discipline",
+      "parent": "engineering-systems"
     }
   ],
   "projects": [
@@ -326,6 +354,18 @@
         "papers/bandit-view-table-sharp-conversion/evidence/code/binary_verify.py": "papers/bandit-view-table-sharp-conversion/code/binary_verify.py",
         "papers/bandit-view-table-sharp-conversion/evidence/code/verify_rich_lower.py": "papers/bandit-view-table-sharp-conversion/code/verify_rich_lower.py"
       }
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "bec-guessing-moment-blocklength-phase",
+      "title": "One-bit guessing at growing moment orders",
+      "category": "information-communication",
+      "related_categories": [],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "bell-chain-sharp-parity",
@@ -980,15 +1020,31 @@
       "legacy_paths": {}
     },
     {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "distributed-delay-phase-boundary",
+      "title": "Exact phase realization and strong stability for matrix-valued distributed delays",
+      "category": "control-dynamics",
+      "related_categories": [],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
       "slug": "divisive-normalization-stability-boundary",
-      "title": "Stability boundaries of divisive-normalization circuits: norm-one counterexamples and sharp spectral repairs",
+      "title": "Stability boundaries of divisive-normalization circuits: exact recurrence classifications and norm-one counterexamples",
       "category": "control-dynamics",
       "manuscripts": [
-        "paper.en.md"
+        "paper.en.md",
+        "paper.md"
       ],
       "dependencies": [],
       "unavailable_links": 0,
-      "legacy_paths": {}
+      "legacy_paths": {},
+      "related_categories": [
+        "computational-neuroscience"
+      ]
     },
     {
       "slug": "dominant-jordan-order-limit",
@@ -1247,6 +1303,18 @@
       "legacy_paths": {}
     },
     {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "finite-null-exact-pivotalization",
+      "title": "Exact pivotalization for finite composite tests",
+      "category": "probability-statistics",
+      "related_categories": [],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
       "slug": "finite-pinwheel-three-task",
       "title": "有限 Pinwheel 排程的期限障碍与两访参数算法",
       "category": "theoretical-computer-science",
@@ -1489,6 +1557,20 @@
       "legacy_paths": {}
     },
     {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "gamma-random-rank-capacity-transitions",
+      "title": "Tail-Sensitive and Robust Capacity Laws for Random-Rank Matrix Channels",
+      "category": "information-communication",
+      "related_categories": [
+        "probability-statistics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
       "slug": "gaussian-evcs-prior-geometry",
       "title": "Exact Geometry of Calibrated Confidence Sets",
       "category": "probability-statistics",
@@ -1729,6 +1811,20 @@
       "legacy_paths": {}
     },
     {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "heterogeneous-replication-scale-minimax",
+      "title": "Scale thresholds, weak recovery, and stopping-design limits for heterogeneous repeated measurements",
+      "category": "probability-statistics",
+      "related_categories": [
+        "learning-inference"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
       "slug": "heterogeneous-rmab-uniform-horizon",
       "title": "Synchronization, relaxation gaps, and uniform planning horizons in heterogeneous restless bandits",
       "category": "optimization-operations",
@@ -1738,6 +1834,18 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "hidden-state-inertia-budget",
+      "title": "Hidden-state complexity from excursion moments: inertia bounds and a quantitative dissipation penalty",
+      "category": "probability-statistics",
+      "related_categories": [],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "high-order-parity-gap",
@@ -1817,6 +1925,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "intermittent-kalman-tail-phase",
+      "title": "Exact tail phases of intermittent Kalman filtering: Jordan corrections and scalar shape classification",
+      "category": "control-dynamics",
+      "related_categories": [
+        "probability-statistics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "isometric-path-cover-split",
@@ -2062,6 +2184,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "mean-bounded-lag-headway",
+      "title": "Exact headway and gain limits for positive actuation kernels with bounded mean",
+      "category": "transportation-engineering",
+      "related_categories": [
+        "control-dynamics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "minimizer-rigidity-stability",
@@ -2648,6 +2784,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "ou-entropy-spectral-frontier",
+      "title": "The least dissipation of linear relaxation: spectral determinacy and exact acceleration frontiers",
+      "category": "probability-statistics",
+      "related_categories": [
+        "theoretical-physics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "pair-supported-leakage-coupling",
@@ -3369,6 +3519,20 @@
       "legacy_paths": {}
     },
     {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "scheduled-queue-continuous-extremes",
+      "title": "Two scales of heavy traffic in a scheduled queue",
+      "category": "optimization-operations",
+      "related_categories": [
+        "probability-statistics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
+    },
+    {
       "slug": "schmidt-reference-renyi-half-counterexample",
       "title": "排序 Schmidt 参考态最优性的半阶精确反例",
       "category": "quantum-physics",
@@ -3414,6 +3578,18 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "semidefinite-axiomatic-diversity",
+      "title": "An Axiomatic Diversity Measure from Threshold Semidefinite Programs",
+      "category": "mathematics",
+      "related_categories": [],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "sequential-ldp-autocovariance-minimax",
@@ -4085,6 +4261,20 @@
       "dependencies": [],
       "unavailable_links": 2,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "unbounded-queue-feedback-separation",
+      "title": "Full-support unbounded service times with a quantitative feedback capacity gap",
+      "category": "information-communication",
+      "related_categories": [
+        "optimization-operations"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "unidomination-thresholds-planar-bipartite",

@@ -7,6 +7,7 @@
 - [A square-root mixed-null inflation for weighted conformal BH](../../../../papers/mixed-null-square-root-boundary/)
 - [A universal boundary kernel for cross-validation after two-model selection](../../../../papers/two-model-cv-boundary-universality/)
 - [Narrow corridors in critical online conformal prediction](../../../../papers/narrow-corridor-expansion/)
+- [Scale thresholds, weak recovery, and stopping-design limits for heterogeneous repeated measurements](../../../../papers/heterogeneous-replication-scale-minimax/) · 交叉 / Cross-listed ([概率与统计 / Probability and statistics](../../../mathematical-statistical-sciences/probability-statistics/))
 - [Sharp contamination and inference frontiers for the optimal sub-Gaussian variance proxy](../../../../papers/optimal-proxy-tail-envelope-minimax/)
 - [Sharp limits of repeated majority cross-validation](../../../../papers/repeated-majority-cross-validation/)
 - [The sharp cost of online conformal coverage in subdiffusive corridors](../../../../papers/online-conformal-sharp-constant/)

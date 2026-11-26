@@ -7,6 +7,7 @@
 - [A linear threshold for optimal burning of long path forests](../../../papers/linear-threshold-path-forest-burning/)
 - [A Sharp Tail Criterion and Starting-Point Cutoff for Radial Stereographic Bouncy Particle Sampling](../../../papers/sbps-radial-tail-cutoff/)
 - [A two-quadrant complexity boundary for domination in split rectangle graphs](../../../papers/two-quadrant-complexity/)
+- [An Axiomatic Diversity Measure from Threshold Semidefinite Programs](../../../papers/semidefinite-axiomatic-diversity/)
 - [Cumulative envy is weakly NP-complete with two and three identical agents](../../../papers/two-three-agent-complexity/)
 - [Entropy of independent four-letter sums: exact ray classes and unrestricted asymptotics](../../../papers/quaternary-sum-entropy/)
 - [Exact Affinity Tensorization for Fully Interactive Testing under Local Bit Budgets](../../../papers/blackboard-testing-affinity-tensorization/)

@@ -1,0 +1,2791 @@
+{
+  "date": "2026-11-26",
+  "sources": [
+    {
+      "id": "S01",
+      "key": "ZRW2024",
+      "title": "On the existence of powerful p-values and e-values for composite hypotheses",
+      "authors": [
+        "Zhenyuan Zhang",
+        "Aaditya Ramdas",
+        "Ruodu Wang"
+      ],
+      "year": 2024,
+      "publication_status": "peer_reviewed_journal_article",
+      "venue": "The Annals of Statistics",
+      "volume": "52",
+      "issue": "5",
+      "pages": "2241-2267",
+      "doi": "10.1214/24-AOS2434",
+      "arxiv_id": "2305.16539",
+      "read_version": "arXiv v4, 2024-12-01; author-hosted manuscript, not asserted to be the version of record",
+      "url": "https://arxiv.org/html/2305.16539v4",
+      "author_pdf_url": "https://sas.uwaterloo.ca/~wang/papers/2024Zhang-Ramdas-Wang-AOS.pdf",
+      "metadata_evidence_urls": [
+        "https://www.imstat.org/publications/aos/aos_52_5/aos_52_5.pdf",
+        "https://www.math.uwaterloo.ca/~wang/publications.html",
+        "https://arxiv.org/abs/2305.16539"
+      ],
+      "metadata_verification": "IMS official issue search record verifies title, authors, 52(5), 2241-2267 and DOI; author publication list corroborates. Direct DOI retrieval failed. Author PDF begins Submitted to the Annals of Statistics, so it is not labeled as the published typeset version.",
+      "read_scope": "Abstract, introduction, definitions and joint atomlessness discussion; relevant sections 4.4-4.5 including Proposition 4.11 and Examples 4.12-4.16 in arXiv v4 numbering. No proof-by-proof review of all appendices. Secondary round additionally inspected section 6.1 Theorems 6.1-6.2, related finite-composite-alternative statements, and the scope discussion on extending SHINE.",
+      "known_contributions": [
+        "Exact/pivotal existence and convex-geometric criteria",
+        "Simultaneous transport and SHINE constructions",
+        "Superadditivity and the asymptotic first-order question",
+        "Symmetric and multi-point Gaussian examples",
+        "Exact/pivotal existence for finite composite alternatives under joint atomlessness"
+      ],
+      "project_delta": "Explicit finite-n Hellinger score-envelope calibration; in Section 8, one Q-independent calibrated statistic for every fixed finite-alphabet alternative with matching leading minimax adaptation cost. Neither existence against a composite alternative nor the first-order limit is new.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 1
+    },
+    {
+      "id": "S02",
+      "key": "HC2026",
+      "title": "Asymptotically Lossless Exact and Pivotal E-Values",
+      "authors": [
+        "Hengzhi He",
+        "Guang Cheng"
+      ],
+      "year": 2026,
+      "publication_status": "arxiv_preprint_no_journal_publication_verified",
+      "venue": "arXiv",
+      "doi": "10.48550/arXiv.2609.27923",
+      "arxiv_id": "2609.27923",
+      "read_version": "v1",
+      "date_displayed_by_primary_source": "2026-08-21",
+      "date_note": "The retrieved arXiv abstract and HTML display 21 Aug 2026 and the manuscript says August 2026; the identifier is 2609.27923. The displayed date is recorded without inferring an announcement month from it. No priority argument depends on the exact day.",
+      "url": "https://arxiv.org/html/2609.27923v1",
+      "metadata_evidence_urls": [
+        "https://arxiv.org/abs/2609.27923"
+      ],
+      "read_scope": "Abstract and setting; Theorem 2.2; Theorem 3.1; the binary-target construction and relevant proof in section 4; section 5 finite full-support coarsening, joint-atomlessness products, simultaneous purification and proof of the main theorem; discussion and references. Not an independent certification of every cited theorem.",
+      "known_contributions": [
+        "First-order equality for the optimal exact pivotal expected log e-value",
+        "Finite-experiment majorization proof",
+        "Extension of the first-order statement beyond pairwise absolute continuity and finite KL"
+      ],
+      "project_delta": "Quantitative finite-n Hellinger loss and explicit positive calibration kernel within the narrower finite-KL setting; no claim to first solve the first-order conjecture or to subsume its infinite-KL/support scope. Secondary Section 8 uses one statistic independent of Q; Theorem 2.2 in HC optimizes separately for specified Q and supplies no such uniform oracle-regret rate.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 2
+    },
+    {
+      "id": "S03",
+      "key": "EP_GAUSS2026",
+      "title": "The cost of exact calibration for growing Gaussian null families",
+      "display_heading": "The cost of exact e-values on growing null grids",
+      "authors": [
+        "Anonymous"
+      ],
+      "year": 2026,
+      "release_date": "2026-11-15",
+      "publication_status": "unrefereed_candidate_internal_replay_only",
+      "venue": "Evidence Press / Zenodo",
+      "doi": "10.5281/zenodo.24252837",
+      "read_version": "0.1.0-candidate release page; public source manuscript on main accessed 2026-11-26, whose header declares the same version/date",
+      "url": "https://www.evidencepress.org/releases/exact-calibration-gaussian-null-families/",
+      "paper_pdf_url": "https://github.com/ipitchford/exact-calibration-gaussian-null-families/releases/download/v0.1.0-candidate/exact-calibration-gaussian-null-families-0.1.0-candidate.pdf",
+      "metadata_verification": "Title, anonymous authorship, DOI, version and unrefereed status from the release's own citation block; date from the release/site index. Independent verification of the mathematical claims is not asserted.",
+      "read_scope": "Public release technical account, references and citation/version block; then public manuscript.tex abstract, introduction, model and main-result discussion, fixed-interval and exact-pivotal order-of-limits corollaries. Not all long proof sections, appendix details or verification code read. Direct archived PDF fetch was restricted, but the source-text page was readable.",
+      "known_contributions": [
+        "Exact versus valid log-growth on growing Gaussian null grids",
+        "Span/hull entropy and Christoffel-function comparison",
+        "Spacing-dependent asymptotic phases and order-of-limits distinction"
+      ],
+      "project_delta": "Fixed finite null family, exact plus pivotal output law, and general-space finite-n positive calibration kernel. No growing-family uniformity is claimed.",
+      "coverage_risk": "Relevant source-text parts were read, not a proof-by-proof audit; mutable main was not byte-compared with the DOI archive.",
+      "accessed_at": "2026-11-26",
+      "source_tex_url": "https://github.com/ipitchford/exact-calibration-gaussian-null-families/blob/main/manuscript.tex",
+      "manuscript_reference_number": 4
+    },
+    {
+      "id": "S04",
+      "key": "EP_INFINITE2026",
+      "title": "Exact pivotal e-variables for infinite hypotheses: a binary construction and what pivotality costs",
+      "authors": [
+        "Anonymous"
+      ],
+      "year": 2026,
+      "release_date": "2026-11-16",
+      "publication_status": "unrefereed_candidate_internal_replay_only",
+      "venue": "Evidence Press / Zenodo",
+      "doi": "10.5281/zenodo.24268845",
+      "read_version": "0.1.0-candidate release page; public source manuscript on main accessed 2026-11-26",
+      "url": "https://www.evidencepress.org/releases/exact-pivotal-e-variables-infinite-hypotheses/",
+      "paper_pdf_url": "https://github.com/ipitchford/exact-pivotal-e-variables-infinite-hypotheses/releases/download/v0.1.0-candidate/exact-pivotal-e-variables-infinite-hypotheses-0.1.0-candidate.pdf",
+      "metadata_verification": "Title, anonymous authorship, DOI, version and unrefereed status from the release's own citation block; date from the release/site index. Independent verification of the mathematical claims is not asserted.",
+      "read_scope": "Public release technical account and citation/version block; then manuscript.tex introduction, setting, separation-duality and binary-pivot statements/proofs, four-state illustration, sequential remarks and scope/open-questions section. Other unbounded/compactness proofs and verification package not audited. Direct archived PDF fetch was restricted, but the source-text page was readable.",
+      "known_contributions": [
+        "A separating bounded score yields a common fair coin and exact pivotal e-variable",
+        "Sharp growth guarantee from a separation margin alone",
+        "Infinite-family and unbounded-evidence pivotality limitations"
+      ],
+      "project_delta": "Preservation of the actual n-sample likelihood-envelope score up to exponential error, rather than existence or a binary margin-only construction.",
+      "coverage_risk": "Scope section explicitly treats one observation or repetitions of its one-observation pivot. This was read in mutable main, not byte-compared with the DOI archive; not all mathematical proofs were rechecked.",
+      "accessed_at": "2026-11-26",
+      "source_tex_url": "https://github.com/ipitchford/exact-pivotal-e-variables-infinite-hypotheses/blob/main/manuscript.tex",
+      "manuscript_reference_number": 3
+    },
+    {
+      "id": "S05",
+      "key": "PLT2022",
+      "title": "Asymptotics of Sequential Composite Hypothesis Testing Under Probabilistic Constraints",
+      "authors": [
+        "Jiachun Pan",
+        "Yonglong Li",
+        "Vincent Y. F. Tan"
+      ],
+      "year": 2022,
+      "publication_status": "peer_reviewed_journal_article",
+      "venue": "IEEE Transactions on Information Theory",
+      "volume": "68",
+      "issue": "8",
+      "pages": "4998-5012",
+      "doi": null,
+      "doi_note": "Journal DOI not verified from the readable primary records in this audit. Do not substitute the distinct 2021 conference DOI.",
+      "arxiv_id": "2106.00896",
+      "read_version": "arXiv v2, 2022-03-29",
+      "url": "https://arxiv.org/html/2106.00896v2",
+      "publisher_url": "https://ieeexplore.ieee.org/document/9745944",
+      "metadata_evidence_urls": [
+        "https://vyftan.github.io/journal.html",
+        "https://arxiv.org/abs/2106.00896"
+      ],
+      "conference_version": {
+        "year": 2021,
+        "venue": "2021 IEEE International Symposium on Information Theory",
+        "doi": "10.1109/ISIT45174.2021.9517987",
+        "url": "https://ieeexplore.ieee.org/document/9517987",
+        "official_program_url": "https://2021.ieee-isit.org/tempdev/Papers/ViewPaper.asp?PaperNum=1178",
+        "read_scope": "Official conference abstract/program only; v1 full text retrieval failed."
+      },
+      "metadata_verification": "Author journal list confirms journal, year, volume, issue, pages and publisher document link; arXiv v2 reports acceptance to Transactions on Information Theory. IEEE conference record separately verifies the 2021 conference DOI.",
+      "read_scope": "ArXiv v2 abstract, introduction and setting; relevant section IV, especially Proposition 6 and discussion distinguishing it from Wilks' theorem. Not all proofs/appendices read.",
+      "known_contributions": [
+        "Sequential composite testing under probabilistic stopping constraints",
+        "First- and second-order error-exponent analysis",
+        "A central limit theorem for a maximized log-likelihood statistic under its regularity assumptions"
+      ],
+      "precision_note": "Proposition 6 in v2 has a scalar normal limit under A1'-A4'; it is not cited as the exact finite tied-minimizer Gaussian-max coefficient in this project.",
+      "project_delta": "Exact common-null-law construction and expected-log objective at fixed n. The CLT/likelihood-extremum probability mechanism itself is not claimed as novel.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 8
+    },
+    {
+      "id": "S06",
+      "key": "LRR2025",
+      "title": "The numeraire e-variable and reverse information projection",
+      "authors": [
+        "Martin Larsson",
+        "Aaditya Ramdas",
+        "Johannes Ruf"
+      ],
+      "year": 2025,
+      "publication_status": "peer_reviewed_journal_article",
+      "venue": "The Annals of Statistics",
+      "volume": "53",
+      "issue": "3",
+      "pages": "1015-1043",
+      "doi": "10.1214/24-AOS2487",
+      "arxiv_id": "2402.18810",
+      "read_version": "arXiv v4, 2025-02-03",
+      "url": "https://arxiv.org/html/2402.18810v4",
+      "metadata_evidence_urls": [
+        "https://www.imstat.org/publications/aos/aos_53_3/aos_53_3.pdf",
+        "https://arxiv.org/abs/2402.18810"
+      ],
+      "metadata_verification": "IMS official issue record confirms formal journal metadata and DOI; arXiv abstract confirms authors and version history.",
+      "read_scope": "Abstract and introduction, including definitions, the numeraire/log-optimality characterization and effective-null/RIPr discussion; not all theorem proofs or examples read.",
+      "known_contributions": [
+        "General existence and log-optimality of the numeraire e-variable",
+        "Reverse information projection without the older existence assumptions",
+        "Ordinary composite-null expected-log optimization"
+      ],
+      "project_delta": "Cost of additionally imposing exactness and equal null distributions; no new claim for ordinary log-optimality, entropy upper bounds or RIPr.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 5
+    },
+    {
+      "id": "S07",
+      "key": "SR2026",
+      "title": "Optimal e-variables under constraints",
+      "authors": [
+        "Aytijhya Saha",
+        "Aaditya Ramdas"
+      ],
+      "year": 2026,
+      "publication_status": "arxiv_preprint_no_journal_publication_verified",
+      "venue": "arXiv",
+      "doi": "10.48550/arXiv.2604.21680",
+      "arxiv_id": "2604.21680",
+      "read_version": "v1, 2026-04-23",
+      "url": "https://arxiv.org/html/2604.21680v1",
+      "metadata_evidence_urls": [
+        "https://arxiv.org/abs/2604.21680"
+      ],
+      "read_scope": "Abstract, introduction and stated constraint classes; Theorem 6.1 and section 7 discussion/limitation concerning LFD pairs. Full-HTML keyword search found no occurrence of pivotal. All omitted proofs were not read.",
+      "known_contributions": [
+        "Optimize-then-constrain for privacy, quantization, boundedness and convex integral constraints",
+        "Composite extensions using least favorable distribution pairs"
+      ],
+      "project_delta": "A simultaneous null-law constraint with an explicit positive measure correction for arbitrary fixed finite hypotheses. The broad idea of constrained e-variable optimization is prior work.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 6
+    },
+    {
+      "id": "S08",
+      "key": "FFHT2024",
+      "title": "Matrix Majorization in Large Samples",
+      "authors": [
+        "Muhammad Usman Farooq",
+        "Tobias Fritz",
+        "Erkka Haapasalo",
+        "Marco Tomamichel"
+      ],
+      "year": 2024,
+      "publication_status": "peer_reviewed_journal_article",
+      "venue": "IEEE Transactions on Information Theory",
+      "volume": "70",
+      "issue": "5",
+      "pages": "3118-3144",
+      "doi": "10.1109/TIT.2024.3352088",
+      "arxiv_id": "2301.07353",
+      "read_version": "arXiv v2, 2024-01-08",
+      "url": "https://arxiv.org/html/2301.07353v2",
+      "metadata_evidence_urls": [
+        "https://arxiv.org/abs/2301.07353",
+        "https://scholars.cityu.edu.hk/en/publications/matrix-majorization-in-large-samples/"
+      ],
+      "metadata_verification": "ArXiv journal-reference and related-DOI fields agree with the author institutional publication record.",
+      "read_scope": "Abstract, introduction and Theorem 19 statement with its immediate proof context; also the specialization stated in HC2026 Theorem 3.1. Full semiring development and appendix proofs not audited.",
+      "known_contributions": [
+        "Sufficient strict multivariate divergence conditions for exact common stochastic transformations at all sufficiently large tensor powers",
+        "Large-sample and catalytic matrix majorization"
+      ],
+      "project_delta": "Explicit error-controlled score-envelope calibration; not a new general theory of experiment comparison or existence of simultaneous stochastic kernels.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 9
+    },
+    {
+      "id": "S09",
+      "key": "GHK2024",
+      "title": "Safe testing",
+      "authors": [
+        "Peter Grünwald",
+        "Rianne de Heide",
+        "Wouter Koolen"
+      ],
+      "year": 2024,
+      "publication_status": "peer_reviewed_journal_article",
+      "venue": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+      "volume": "86",
+      "issue": "5",
+      "pages": "1091-1128",
+      "doi": "10.1093/jrsssb/qkae011",
+      "url": "https://doi.org/10.1093/jrsssb/qkae011",
+      "metadata_evidence_urls": [
+        "https://ir.cwi.nl/pub/34779/",
+        "https://research.vu.nl/en/publications/safe-testing-2/"
+      ],
+      "metadata_verification": "Author institutional records at CWI and Vrije Universiteit agree on formal citation and DOI; publisher DOI retrieval redirected to an inaccessible CDN page.",
+      "read_scope": "Abstract and institutional publication metadata only. Used as foundational background, not as a full-text no-overlap certificate.",
+      "known_contributions": [
+        "Safe testing and optional continuation",
+        "Growth-rate-optimal e-variables for composite hypotheses",
+        "Reverse information projection background"
+      ],
+      "project_delta": "Fixed-n exact/pivotal calibration. No anytime-valid e-process is obtained merely by choosing a separate fixed-n construction for each n.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 10
+    },
+    {
+      "id": "S10",
+      "key": "WZ2025",
+      "title": "Simultaneous optimal transport",
+      "authors": [
+        "Ruodu Wang",
+        "Zhenyuan Zhang"
+      ],
+      "year": 2025,
+      "publication_status": "peer_reviewed_journal_article",
+      "venue": "Transactions of the American Mathematical Society",
+      "volume": "378",
+      "issue": "8",
+      "pages": "5845-5898",
+      "doi": "10.1090/tran/9393",
+      "online_publication_date": "2025-05-08",
+      "read_version": "Author-hosted manuscript dated 2024-12-20",
+      "url": "https://www.math.uwaterloo.ca/~wang/papers/2024Wang-Zhang-TAMS.pdf",
+      "metadata_evidence_urls": [
+        "https://doi.org/10.1090/tran/9393",
+        "https://uwaterloo.ca/statistics-and-actuarial-science/profiles/ruodu-wang"
+      ],
+      "metadata_verification": "AMS publisher search record verifies title, authors, volume, pages, DOI and online date; author institutional publication list verifies issue 8. Direct DOI opening returned 403, so the read PDF is explicitly the dated author version.",
+      "read_scope": "Abstract and introduction; section 3.1 joint atomlessness definition, Proposition 1 and remarks; Theorem 1 statement and related randomization remarks. Not all proofs/appendices read.",
+      "known_contributions": [
+        "Simultaneous transport of vector-valued measures",
+        "Joint atomlessness and the relation between common kernels and common deterministic maps",
+        "Transport existence criteria, with explicit attribution to older Torgersen/Shen work"
+      ],
+      "project_delta": "Quantitative special calibration construction. Common-kernel terminology, purification and joint atomlessness are prior tools.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 11
+    },
+    {
+      "id": "S11",
+      "key": "RLRR2026",
+      "title": "Strong duality for the GROW criterion",
+      "authors": [
+        "Ashwin Ram",
+        "Martin Larsson",
+        "Johannes Ruf",
+        "Aaditya Ramdas"
+      ],
+      "year": 2026,
+      "publication_status": "arxiv_preprint_no_journal_publication_verified",
+      "venue": "arXiv",
+      "doi": "10.48550/arXiv.2606.24768",
+      "arxiv_id": "2606.24768",
+      "read_version": "v2, 2026-07-20",
+      "url": "https://arxiv.org/abs/2606.24768v2",
+      "metadata_evidence_urls": [
+        "https://arxiv.org/abs/2606.24768"
+      ],
+      "read_scope": "Primary arXiv abstract and version/submission record only. Used as neighboring optimization background, not a full-text no-overlap certificate.",
+      "known_contributions": [
+        "Strong duality for bounded GROW and REGROW criteria for arbitrary composite alternatives",
+        "Assumptions and limitations for extensions to unbounded e-variables"
+      ],
+      "project_delta": "No new ordinary GROW/REGROW criterion or duality is claimed. The proposed new condition is full common-null-law exactness with quantitative adaptation for fixed finite nulls. This comparison is based only on the cited abstract, not a full-text exclusion proof.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 7
+    },
+    {
+      "id": "S12",
+      "key": "SHT1987",
+      "title": "Universal Sequential Coding of Single Messages",
+      "authors": [
+        "Yu. M. Shtar’kov"
+      ],
+      "year": 1987,
+      "publication_status": "peer_reviewed_journal_article",
+      "venue": "Problems of Information Transmission",
+      "volume": "23",
+      "issue": "3",
+      "pages": "175-186",
+      "doi": null,
+      "original_publication": {
+        "venue": "Problemy Peredachi Informatsii",
+        "volume": "23",
+        "issue": "3",
+        "pages": "3-17",
+        "language": "Russian"
+      },
+      "read_version": "MathNet original-journal archive metadata and abstract, indexed primary record; original paper not read",
+      "url": "https://www.mathnet.ru/php/archive.phtml?jrnid=ppi&option_lang=eng&paperid=811&wshow=paper",
+      "metadata_evidence_urls": [
+        "https://www.mathnet.ru/eng/ppi811"
+      ],
+      "metadata_verification": "Primary MathNet search record explicitly lists Russian original and English translation, author, year, volumes and pages. Direct page retrieval repeatedly timed out. No DOI verified.",
+      "read_scope": "Primary archive abstract and bibliographic record only. NML technical attribution is additionally corroborated by GHB2024 section 3.2 and Xie-Barron indexed author papers; no assertion of full-text reading.",
+      "known_contributions": [
+        "Normalized maximum likelihood and minimax individual-sequence coding regret are classical."
+      ],
+      "project_delta": "No new coding distribution or pointwise coding coefficient claimed; added condition is exact complete common-null-law calibration for multiple arbitrary fixed nulls.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 12
+    },
+    {
+      "id": "S13",
+      "key": "CB1990",
+      "title": "Information-Theoretic Asymptotics of Bayes Methods",
+      "authors": [
+        "Bertrand S. Clarke",
+        "Andrew R. Barron"
+      ],
+      "year": 1990,
+      "publication_status": "peer_reviewed_journal_article",
+      "venue": "IEEE Transactions on Information Theory",
+      "volume": "36",
+      "issue": "3",
+      "pages": "453-471",
+      "doi": "10.1109/18.54897",
+      "read_version": "Author-hosted typeset IEEE paper, May 1990; primary publisher abstract/metadata",
+      "url": "https://bertrandsclarke.weebly.com/uploads/2/7/3/6/2736392/clarkebarron1990.pdf",
+      "metadata_evidence_urls": [
+        "https://ieeexplore.ieee.org/document/54897/"
+      ],
+      "metadata_verification": "Typeset first page verifies authors, journal volume/issue/pages; IEEE official indexed metadata verifies DOI and publication record.",
+      "read_scope": "Abstract and introductory discussion in the first approximately two pages, including the parametric KL-to-mixture asymptotic. The technical theorem conditions, applications and all proofs were not audited.",
+      "known_contributions": [
+        "Classical d/2 log n relative-entropy cost of parametric Bayesian mixtures, with prior/Fisher-information dependent constant under regularity."
+      ],
+      "project_delta": "The dimension coefficient and information cost are not novel; the proposed extension preserves this leading learning cost under an additional complete common-null-law requirement.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 13
+    },
+    {
+      "id": "S14",
+      "key": "XB2000",
+      "title": "Asymptotic Minimax Regret for Data Compression, Gambling, and Prediction",
+      "authors": [
+        "Qun Xie",
+        "Andrew R. Barron"
+      ],
+      "year": 2000,
+      "publication_status": "peer_reviewed_journal_article",
+      "venue": "IEEE Transactions on Information Theory",
+      "volume": "46",
+      "issue": "2",
+      "pages": "431-445",
+      "doi": "10.1109/18.825803",
+      "read_version": "Author-hosted typeset paper as indexed in public search; direct PDF retrieval failed",
+      "url": "https://www.stat.yale.edu/~arb4/publications_files/asymptotc%20minimax%20regret%20for%20datacompression%20gambling%20and%20prediction.pdf",
+      "metadata_evidence_urls": [
+        "https://ieeexplore.ieee.org/document/825803/",
+        "https://www.stat.yale.edu/~arb4/publications.html",
+        "https://dblp.org/rec/journals/tit/XieB00"
+      ],
+      "metadata_verification": "Author-hosted indexed typeset first page verifies title, authors, volume/issue/start page; author publication list corroborates. DOI and complete page range cross-checked against DBLP metadata. IEEE page presented a JavaScript/robot check and DOI fetch was denied, so no readable publisher DOI response is claimed.",
+      "read_scope": "Indexed primary PDF abstract and opening introduction, including individual-sequence versus expectation criterion and multinomial asymptotics. Direct PDF open returned 502; full theorem proofs not read.",
+      "known_contributions": [
+        "Classical multinomial minimax individual-sequence regret, stronger constant asymptotics, and relation to expected redundancy."
+      ],
+      "project_delta": "All NML coefficient and coding optimality are deducted; exact calibration for an arbitrary finite composite null remains the proposed addition.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 14
+    },
+    {
+      "id": "S15",
+      "key": "WRB2020",
+      "title": "Universal inference",
+      "authors": [
+        "Larry Wasserman",
+        "Aaditya Ramdas",
+        "Sivaraman Balakrishnan"
+      ],
+      "year": 2020,
+      "publication_status": "peer_reviewed_journal_article",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "volume": "117",
+      "issue": "29",
+      "pages": "16880-16890",
+      "doi": "10.1073/pnas.1922664117",
+      "read_version": "Published article full-text record in PubMed Central, PMCID PMC7382245",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7382245/",
+      "metadata_evidence_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7382245/"
+      ],
+      "metadata_verification": "Published PMC record lists title, authors, volume/issue/pages and DOI; issue date 2020-07-21 and online date 2020-07-06 distinguished.",
+      "read_scope": "Abstract, introduction, section 1 split/cross-fit construction, Theorem 1 and expectation-based proof; relevant section 6 RIPR split-LRT discussion. Not every example, sequential theorem or supplementary proof read.",
+      "known_contributions": [
+        "Alternative estimation within ordinary finite-sample valid inference, including split/cross-fit likelihood ratios and nuisance-parameter extensions."
+      ],
+      "project_delta": "Ordinary validity with an estimated alternative is not new; section 8 adds exact expectation one and a common entire distribution for the fixed finite composite null while retaining the leading minimax learning coefficient.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 15
+    },
+    {
+      "id": "S16",
+      "key": "GHB2024",
+      "title": "Growth-Optimal E-Variables and an extension to the multivariate Csiszár-Sanov-Chernoff Theorem",
+      "authors": [
+        "Peter Grünwald",
+        "Yunda Hao",
+        "Akshay Balsubramani"
+      ],
+      "year": 2024,
+      "publication_status": "arxiv_preprint_no_journal_publication_verified",
+      "venue": "arXiv",
+      "doi": "10.48550/arXiv.2412.17554",
+      "arxiv_id": "2412.17554",
+      "read_version": "arXiv v2, submitted 2024-12-24; PDF internal date 2024-12-30 recorded separately",
+      "url": "https://arxiv.org/pdf/2412.17554v2",
+      "metadata_evidence_urls": [
+        "https://arxiv.org/abs/2412.17554"
+      ],
+      "metadata_verification": "Primary arXiv abstract page and PDF verify authors, title, v2 identifier and submission history. No journal publication verified.",
+      "read_scope": "Abstract, introduction, sections 1.1-1.2 and section 3.2, especially equations (3.8)-(3.10): expected relative-GROW redundancy, individual-sequence regret and Shtarkov/NML construction. Section 4 asymptotic claims read from introduction only; all later proofs not audited.",
+      "known_contributions": [
+        "Simple-null relative-GROW/NML connection and explicit expected-regret versus individual-sequence distinction."
+      ],
+      "project_delta": "The e-value/NML/unknown-alternative relationship and L=1 case are prior. Section 1.2 explicitly restricts main results to a simple null; the proposed additional result is the entire common law under L>=2 arbitrary fixed nulls with the original ordinary oracle benchmark.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 16
+    },
+    {
+      "id": "S17",
+      "key": "XB1997",
+      "title": "Minimax redundancy for the class of memoryless sources",
+      "authors": [
+        "Qun Xie",
+        "Andrew R. Barron"
+      ],
+      "year": 1997,
+      "publication_status": "peer_reviewed_journal_article",
+      "venue": "IEEE Transactions on Information Theory",
+      "volume": "43",
+      "issue": "2",
+      "pages": "646-657",
+      "doi": "10.1109/18.556120",
+      "read_version": "Author-hosted typeset paper indexed abstract; official IEEE indexed metadata and abstract",
+      "url": "https://www.stat.yale.edu/~arb4/publications_files/MinimaxRedundancyForTheClassOfMemorylessSources.pdf",
+      "metadata_evidence_urls": [
+        "https://ieeexplore.ieee.org/document/556120/"
+      ],
+      "metadata_verification": "Official IEEE search result verifies title, volume/issue/pages and DOI. Author-hosted indexed typeset first page confirms authors and March 1997 issue.",
+      "read_scope": "Primary abstract and opening page as indexed, stating minimax expected relative entropy on the multinomial simplex and stronger constant asymptotics. Direct PDF retrieval returned 502; proofs not read.",
+      "known_contributions": [
+        "Classical multinomial expected minimax redundancy and asymptotically optimal codes, including treatment of boundary risk."
+      ],
+      "project_delta": "No claim of a new d/2 log n lower-bound mechanism or constant; the minimax comparison transfers the existing learning scale to the exact-pivotal constrained class.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 17
+    },
+    {
+      "id": "S18",
+      "key": "HL2024",
+      "title": "A rank-based sequential test of independence",
+      "authors": [
+        "Alexander Henzi",
+        "Michael Law"
+      ],
+      "year": 2024,
+      "publication_status": "peer_reviewed_journal_article",
+      "venue": "Biometrika",
+      "volume": "111",
+      "issue": "4",
+      "pages": "1169-1186",
+      "doi": "10.1093/biomet/asae023",
+      "arxiv_id": "2305.13818",
+      "read_version": "arXiv v4, submitted 2024-01-25; PDF internal date 2024-01-29; journal metadata checked separately",
+      "url": "https://arxiv.org/pdf/2305.13818v4",
+      "metadata_evidence_urls": [
+        "https://academic.oup.com/biomet/article/111/4/1169/7673040"
+      ],
+      "metadata_verification": "Oxford official record verifies authors, December 2024 issue, pages and DOI; online publication 2024-05-14.",
+      "read_scope": "Abstract, introduction, sections 3.1-3.2, Proposition 1, test-martingale construction and Remark 2 on multinomial prediction/Jeffreys prior; beginning of section 3.3. Full performance proofs and appendices not audited.",
+      "known_contributions": [
+        "Randomized ranks turn the composite independence null into a common iid uniform law; multinomial prediction then learns an unspecified alternative, with explicit coding and growth-optimality discussion."
+      ],
+      "project_delta": "The broad combination of common-law reduction and learning is already known. The proposed theorem treats arbitrary fixed finite null lists without rank structure and controls regret against their original-experiment ordinary oracle, not solely a transformed multinomial comparison.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 18
+    },
+    {
+      "id": "S19",
+      "key": "PLHG2024",
+      "title": "E-statistics, group invariance and anytime-valid testing",
+      "authors": [
+        "Muriel Felipe Pérez-Ortiz",
+        "Tyron Lardy",
+        "Rianne de Heide",
+        "Peter D. Grünwald"
+      ],
+      "year": 2024,
+      "publication_status": "peer_reviewed_journal_article",
+      "venue": "The Annals of Statistics",
+      "volume": "52",
+      "issue": "4",
+      "pages": "1410-1432",
+      "doi": "10.1214/24-AOS2394",
+      "arxiv_id": "2208.07610",
+      "read_version": "Technical reading of arXiv v2 (2023-10-17); author-hosted published AoS PDF first page/introduction separately read",
+      "url": "https://arxiv.org/html/2208.07610v2",
+      "author_pdf_url": "https://riannedeheide.github.io/AOS2394.pdf",
+      "metadata_evidence_urls": [
+        "https://ir.cwi.nl/pub/34777/",
+        "https://www.imstat.org/publications/aos/aos_52_4/aos_52_4.pdf",
+        "https://riannedeheide.github.io/AOS2394.pdf"
+      ],
+      "metadata_verification": "Author-hosted typeset published PDF first page and official IMS issue indexed record verify title, authors, volume/issue/pages and DOI; CWI institutional record corroborates.",
+      "read_scope": "ArXiv v2 abstract, introduction, section 2.4 oracle-relative objective, related-work discussion and selected statements in sections 3.1-3.3 including relative-GROW consequence and composite invariant hypotheses. Published PDF abstract/introduction read. Not a proof-by-proof review or arXiv-to-published byte comparison.",
+      "known_contributions": [
+        "Under suitable group structure and amenability, maximal-invariant likelihood ratios are absolute and relative GROW among all e-statistics; composite invariant parameters and mixtures also discussed."
+      ],
+      "project_delta": "Common-null-law reduction with relative oracle optimality already exists in structured models. The new scope requires no group-orbit structure on the fixed finite null list and proves its separate logarithmic adaptation comparison.",
+      "accessed_at": "2026-11-26",
+      "manuscript_reference_number": 19
+    }
+  ],
+  "literature_coverage_limits": [
+    "The two Evidence Press archived complete PDFs and verification packages were not retrieved; their public release pages and relevant public manuscript.tex sections were read. Mutable main was not byte-compared with DOI archives.",
+    "The 2021 Pan-Li-Tan full conference version was not retrieved; its official abstract was read and the 2022 arXiv v2 relevant sections were read.",
+    "Only relevant parts of several background papers were inspected; Safe testing and Strong duality for the GROW criterion were used from primary abstracts/metadata only. No exhaustive global literature coverage is claimed.",
+    "Shtarkov original full text was not retrieved; primary archive metadata/abstract was readable through search despite direct-page timeout.",
+    "Xie-Barron 1997/2000 primary author-PDF indexed abstracts/opening text were read; direct PDF fetches returned 502, so no complete proof review is claimed.",
+    "Xie-Barron 2000 DOI is cross-checked against DBLP; its primary publisher URL could not provide readable metadata in this session.",
+    "Only the explicitly recorded sections of GHB, Henzi-Law and the group-invariance paper were reviewed, not every appendix or publication revision.",
+    "Additional screened, uncited technical neighbors HG2026 and TLG2024 are recorded separately in research_notes/universal_extension_sources.json; their partial review is not an exhaustive exclusion proof."
+  ],
+  "finite_experiments": {
+    "arithmetic_scope": {
+      "exact": "Fraction: input/type probabilities, rational score-threshold selection, M and its inverse, actual rho, c=(1-rho)/(1-2rho), compensation probabilities, output laws, null e-means.",
+      "floating": "Natural logarithms, KL/e-power values, and displayed entropy bounds use binary floating point; they are not interval enclosures or rational logarithmic certificates.",
+      "theory_boundary": "Finite cases and boundary identities support reproducibility; they do not replace the written general theorem or Lean verification."
+    },
+    "case_count": 15,
+    "exact_kernel_case_count": 12,
+    "boundary_case_count": 3,
+    "checks_by_category": {
+      "input": 132,
+      "type_count": 12,
+      "type_normalization": 40,
+      "partition": 36,
+      "lemma_conditions": 60,
+      "invertibility": 28,
+      "matrix_inverse_identity": 68,
+      "correction_nonnegative": 4331,
+      "correction_upper_bound": 4331,
+      "correction_equation": 4331,
+      "kernel_row_mass": 28,
+      "dummy_null_probability": 12,
+      "dummy_alternative_probability": 12,
+      "alternative_law": 24,
+      "common_output_law": 4359,
+      "exact_null_e_mean": 28,
+      "floating_display_consistency": 24,
+      "point_mass_common_law": 4,
+      "point_mass_exact_mean": 4,
+      "point_mass_boundary": 4,
+      "obstruction_algebra": 2,
+      "constant_statistic_exactness": 2
+    },
+    "check_count": 17872,
+    "all_passed": true,
+    "cases": [
+      {
+        "id": "bernoulli-tied-n20",
+        "kind": "exact_fraction_kernel",
+        "n": 20,
+        "alphabet_size": 2,
+        "null_count": 2,
+        "alternative": [
+          "1/2",
+          "1/2"
+        ],
+        "nulls": [
+          [
+            "9/10",
+            "1/10"
+          ],
+          [
+            "1/10",
+            "9/10"
+          ]
+        ],
+        "type_count": 21,
+        "retained_type_count": 9,
+        "output_count_including_dummy": 10,
+        "threshold_exact": "4/1",
+        "threshold_log_numerical": 1.3862943611198906,
+        "matrix_exact": [
+          [
+            "24718671645887274993/25000000000000000000",
+            "237032593/25000000000000000000"
+          ],
+          [
+            "237032593/25000000000000000000",
+            "24718671645887274993/25000000000000000000"
+          ]
+        ],
+        "rho_exact": "351660442937197/31250000000000000",
+        "rho_numerical": 0.011253134173990305,
+        "inflation_exact": "30898339557062803/30546679114125606",
+        "inflation_numerical": 1.011512231546459,
+        "beta_exact": "5425/131072",
+        "beta_numerical": 0.04138946533203125,
+        "envelope_total_exact": "281230107054546807/12500000000000000000",
+        "main_lemma_strong_mass_condition": true,
+        "common_dummy_probability_exact": "124381315195043188180716836265959993/127277829642190025000000000000000000",
+        "minimum_correction_exact": "18878431926780169862750585811/251691110300531399685253682860882372",
+        "maximum_kernel_row_mass_exact": "1464239955222511661910005164481193/125845555150265699842626841430441186",
+        "maximum_output_law_residual_exact": "0/1",
+        "maximum_null_e_mean_residual_exact": "0/1",
+        "kernel_sha256": "613a5029c1d9f1649c9b3731afb795e417d7a0920d0d2c2367958e62093d9526",
+        "numerical_nats": {
+          "constructed_e_power": 6.270167650866227,
+          "expected_likelihood_envelope": 6.34506754419102,
+          "oracle_n_r": 10.21651247531981,
+          "kl_values": [
+            0.5108256237659905,
+            0.5108256237659905
+          ],
+          "finite_error_bound": 0.2006386784655465,
+          "lower_bound": 6.144428865725473,
+          "ordinary_optimum_upper_bound": 7.038214724750965
+        },
+        "checks": {
+          "input": 10,
+          "type_count": 1,
+          "type_normalization": 3,
+          "partition": 3,
+          "lemma_conditions": 5,
+          "invertibility": 2,
+          "matrix_inverse_identity": 4,
+          "correction_nonnegative": 18,
+          "correction_upper_bound": 18,
+          "correction_equation": 18,
+          "kernel_row_mass": 2,
+          "dummy_null_probability": 1,
+          "dummy_alternative_probability": 1,
+          "alternative_law": 2,
+          "common_output_law": 20,
+          "exact_null_e_mean": 2,
+          "floating_display_consistency": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "bernoulli-tied-n40",
+        "kind": "exact_fraction_kernel",
+        "n": 40,
+        "alphabet_size": 2,
+        "null_count": 2,
+        "alternative": [
+          "1/2",
+          "1/2"
+        ],
+        "nulls": [
+          [
+            "9/10",
+            "1/10"
+          ],
+          [
+            "1/10",
+            "9/10"
+          ]
+        ],
+        "type_count": 41,
+        "retained_type_count": 17,
+        "output_count_including_dummy": 18,
+        "threshold_exact": "16/1",
+        "threshold_log_numerical": 2.772588722239781,
+        "matrix_exact": [
+          [
+            "2499047914333159144077534654969921870789/2500000000000000000000000000000000000000",
+            "18902931467302371589/2500000000000000000000000000000000000000"
+          ],
+          [
+            "18902931467302371589/2500000000000000000000000000000000000000",
+            "2499047914333159144077534654969921870789/2500000000000000000000000000000000000000"
+          ]
+        ],
+        "rho_exact": "595053541775534963355172810862813/1562500000000000000000000000000000000",
+        "rho_numerical": 0.00038083426673634236,
+        "inflation_exact": "1561904946458224465036644827189137187/1561309892916448930073289654378274374",
+        "inflation_numerical": 1.000381124557319,
+        "beta_exact": "883261893/137438953472",
+        "beta_numerical": 0.006426576095691416,
+        "envelope_total_exact": "952085408362869828841877202148211211/1250000000000000000000000000000000000000",
+        "main_lemma_strong_mass_condition": true,
+        "common_dummy_probability_exact": "650050099745596165872091164986812855786637819928676744511666567159156532181/650545788715187054197204022657614322500000000000000000000000000000000000000",
+        "minimum_correction_exact": "83103788297781859625122223039406639515805597354588795834981555/1300596077173526580860177041569387983112433042763804578874635882598387407124",
+        "maximum_kernel_row_mass_exact": "247938841167124557997355797881135769578701453225544925651374140037171381/650298038586763290430088520784693991556216521381902289437317941299193703562",
+        "maximum_output_law_residual_exact": "0/1",
+        "maximum_null_e_mean_residual_exact": "0/1",
+        "kernel_sha256": "5cef585f9585d777d3005a369e8fa938d04e1f45415aec507b9957be9113796b",
+        "numerical_nats": {
+          "constructed_e_power": 14.893544532332243,
+          "expected_likelihood_envelope": 14.923673828334,
+          "oracle_n_r": 20.43302495063962,
+          "kl_values": [
+            0.5108256237659905,
+            0.5108256237659905
+          ],
+          "finite_error_bound": 0.050636247814466864,
+          "lower_bound": 14.873037580519533,
+          "ordinary_optimum_upper_bound": 15.616821008893945
+        },
+        "checks": {
+          "input": 10,
+          "type_count": 1,
+          "type_normalization": 3,
+          "partition": 3,
+          "lemma_conditions": 5,
+          "invertibility": 2,
+          "matrix_inverse_identity": 4,
+          "correction_nonnegative": 34,
+          "correction_upper_bound": 34,
+          "correction_equation": 34,
+          "kernel_row_mass": 2,
+          "dummy_null_probability": 1,
+          "dummy_alternative_probability": 1,
+          "alternative_law": 2,
+          "common_output_law": 36,
+          "exact_null_e_mean": 2,
+          "floating_display_consistency": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "bernoulli-tied-n80",
+        "kind": "exact_fraction_kernel",
+        "n": 80,
+        "alphabet_size": 2,
+        "null_count": 2,
+        "alternative": [
+          "1/2",
+          "1/2"
+        ],
+        "nulls": [
+          [
+            "9/10",
+            "1/10"
+          ],
+          [
+            "1/10",
+            "9/10"
+          ]
+        ],
+        "type_count": 81,
+        "retained_type_count": 33,
+        "output_count_including_dummy": 34,
+        "threshold_exact": "256/1",
+        "threshold_log_numerical": 5.545177444479562,
+        "matrix_exact": [
+          [
+            "4999997058806028095081047755940936482962513470920075567751830437496111505198977/5000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "31663046628697328556742451706623511218177/5000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          [
+            "31663046628697328556742451706623511218177/5000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "4999997058806028095081047755940936482962513470920075567751830437496111505198977/5000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ]
+        ],
+        "rho_exact": "919123116220287172576268457349084109242408944300251535004440785001881/1562500000000000000000000000000000000000000000000000000000000000000000000000",
+        "rho_numerical": 5.882387943809838e-07,
+        "inflation_exact": "1562499080876883779712827423731542650915890757591055699748464995559214998119/1562498161753767559425654847463085301831781515182111399496929991118429996238",
+        "inflation_numerical": 1.0000005882394865,
+        "beta_exact": "27671792796946761093/151115727451828646838272",
+        "beta_numerical": 0.00018311656412975104,
+        "envelope_total_exact": "2941193971904425713779202576808559883370352036117777745086481239897297823/2500000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "main_lemma_strong_mass_condition": true,
+        "common_dummy_probability_exact": "1302080269590513705755941486057998482240251275159700117872980970508509748693277001883018018273245544552766978532582431652859482411746444432641719290735021/1302081801461472966188045706219237751526484595985092832914108325932024996865000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "minimum_correction_exact": "2924448536065455960259845823025576063436992230590009967714555452023334058907687137898582528363068436637666798059160741356751/31286111597641526942866523708236747248134324114674492530230197887174098623388125721521417328799489638199159242770316360592948019019730361414628976932",
+        "maximum_kernel_row_mass_exact": "765935930183315748930893252583106227093006880249496404520258845474864201708458121088825396014954624730412653979800478124717826203613893016785709421/1302081035526443889071690416951251065346478368166580367369385490767355223557478710341139107098641559507391708945236411453337607129572648046534736076444442",
+        "maximum_output_law_residual_exact": "0/1",
+        "maximum_null_e_mean_residual_exact": "0/1",
+        "kernel_sha256": "e62a9d3cf4cf01b8c65e0cfc7fbe98641f0a7ddf36357016e5da7833678f628a",
+        "numerical_nats": {
+          "constructed_e_power": 33.04828628079843,
+          "expected_likelihood_envelope": 33.05026906718306,
+          "oracle_n_r": 40.86604990127924,
+          "kl_values": [
+            0.5108256237659905,
+            0.5108256237659905
+          ],
+          "finite_error_bound": 0.002591791099077226,
+          "lower_bound": 33.04767727608398,
+          "ordinary_optimum_upper_bound": 33.743416247743006
+        },
+        "checks": {
+          "input": 10,
+          "type_count": 1,
+          "type_normalization": 3,
+          "partition": 3,
+          "lemma_conditions": 5,
+          "invertibility": 2,
+          "matrix_inverse_identity": 4,
+          "correction_nonnegative": 66,
+          "correction_upper_bound": 66,
+          "correction_equation": 66,
+          "kernel_row_mass": 2,
+          "dummy_null_probability": 1,
+          "dummy_alternative_probability": 1,
+          "alternative_law": 2,
+          "common_output_law": 68,
+          "exact_null_e_mean": 2,
+          "floating_display_consistency": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "bernoulli-tied-n160",
+        "kind": "exact_fraction_kernel",
+        "n": 160,
+        "alphabet_size": 2,
+        "null_count": 2,
+        "alternative": [
+          "1/2",
+          "1/2"
+        ],
+        "nulls": [
+          [
+            "9/10",
+            "1/10"
+          ],
+          [
+            "1/10",
+            "9/10"
+          ]
+        ],
+        "type_count": 161,
+        "retained_type_count": 65,
+        "output_count_including_dummy": 66,
+        "threshold_exact": "65536/1",
+        "threshold_log_numerical": 11.090354888959125,
+        "matrix_exact": [
+          [
+            "99999999999807202808911167884455036565586024992577063007969939059413286323834615476640266118695041974627743812661719749621395048500715744862101102676903236173/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "605319285324399638879907944512220454435654856901319944382493683590600554139409764173/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          [
+            "605319285324399638879907944512220454435654856901319944382493683590600554139409764173/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "99999999999807202808911167884455036565586024992577063007969939059413286323834615476640266118695041974627743812661719749621395048500715744862101102676903236173/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ]
+        ],
+        "rho_exact": "6024912221526003610780107325436718981966781000939404393334802399084494021379172505777061558889895055435472102497652996305560585265607858203329/3125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "rho_numerical": 1.927971910888321e-12,
+        "inflation_exact": "3124999999993975087778473996389219892674563281018033218999060595606665197600915505978620827494222938441110104944564527897502347003694439414734392141796671/3124999999987950175556947992778439785349126562036066437998121191213330395201831011957241654988445876882220209889129055795004694007388878829468784283593342",
+        "inflation_numerical": 1.000000000001928,
+        "beta_exact": "34288865709248772301997571508775720593797/182687704666362864775460604089535377456991567872",
+        "beta_numerical": 1.8769115180394602e-07,
+        "envelope_total_exact": "192797191088832115544963421888728278980186528007086768896237624040410473802245023472378308319873564890269215577494224959448650364836579876893146867/50000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "main_lemma_strong_mass_condition": true,
+        "common_dummy_probability_exact": "52083333332931672518565320287998948520994092450736775662174457032407970601908830014951503419508158568754500806861422039451208864883788865743651754645969146598679398489672309433012337397229794230104187535201850362241137434173833577086616612009067904862269947438404591307547311690662719534116928859670695848440081/52083333333132502925949133212973996422485442700601107299968686520222173253363850199287360916474097948037003498152150929916744900123147980491146404726555700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "minimum_correction_exact": "1999307755267709220017501401657019821160416159477682968070288293661281411144044505810924019559029946990563630152884619917289183206447206303811769548671618190037703579167728968113714255719253218174513863966968446138433815900390854124998790408174684922996059928551/5156765676537830467550239638433526432016921362211238757379220143595133079665020524437819488128422695931390452088867136375077611427112026163005332026563683420348977315040109634433265392367023925904195245573031062573178374699389873934579223493760978845381693736431243841624550695713722580768305839331405118305220",
+        "maximum_kernel_row_mass_exact": "5285010720636845272614128546148068820880830913456127258045973826730383256340705820468982113291724170322949365109211080528557815931689411701266102465540652222778835513875950825113022185693918162408598407787586857368639455401765540943051656636061015765840604887402649265572554296997900925078728760139/2741228070159583564329337913062032471756363460964921655238427550016360216032458278780104043689319433100370714005134635652014940811254287591913360708857536976080245835889742489882946340152996929033282735804611249052057978129675669828381587225630836123071321407260819094758313790879399898197888893539325878678038",
+        "maximum_output_law_residual_exact": "0/1",
+        "maximum_null_e_mean_residual_exact": "0/1",
+        "kernel_sha256": "e2c7c6d8ad62b78d35621ea29b1fee828f2c3ba6e4fdbb944f3dc0355084b5fc",
+        "numerical_nats": {
+          "constructed_e_power": 70.6616288691197,
+          "expected_likelihood_envelope": 70.6616332360595,
+          "oracle_n_r": 81.73209980255848,
+          "kl_values": [
+            0.5108256237659905,
+            0.5108256237659905
+          ],
+          "finite_error_bound": 4.988611820784904e-06,
+          "lower_bound": 70.66162824744768,
+          "ordinary_optimum_upper_bound": 71.35478041661945
+        },
+        "checks": {
+          "input": 10,
+          "type_count": 1,
+          "type_normalization": 3,
+          "partition": 3,
+          "lemma_conditions": 5,
+          "invertibility": 2,
+          "matrix_inverse_identity": 4,
+          "correction_nonnegative": 130,
+          "correction_upper_bound": 130,
+          "correction_equation": 130,
+          "kernel_row_mass": 2,
+          "dummy_null_probability": 1,
+          "dummy_alternative_probability": 1,
+          "alternative_law": 2,
+          "common_output_law": 132,
+          "exact_null_e_mean": 2,
+          "floating_display_consistency": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "bernoulli-unique-n20",
+        "kind": "exact_fraction_kernel",
+        "n": 20,
+        "alphabet_size": 2,
+        "null_count": 2,
+        "alternative": [
+          "11/20",
+          "9/20"
+        ],
+        "nulls": [
+          [
+            "9/10",
+            "1/10"
+          ],
+          [
+            "1/10",
+            "9/10"
+          ]
+        ],
+        "type_count": 21,
+        "retained_type_count": 8,
+        "output_count_including_dummy": 9,
+        "threshold_exact": "4/1",
+        "threshold_log_numerical": 1.3862943611198906,
+        "matrix_exact": [
+          [
+            "24718671645887274993/25000000000000000000",
+            "5386695883/25000000000000000000"
+          ],
+          [
+            "237032593/25000000000000000000",
+            "24940347764775847083/25000000000000000000"
+          ]
+        ],
+        "rho_exact": "28132835949942089/2500000000000000000",
+        "rho_numerical": 0.011253134379976836,
+        "inflation_exact": "2471867164050057911/2443734328100115822",
+        "inflation_numerical": 1.0115122317620402,
+        "beta_exact": "502979253773345689500169/6553600000000000000000000",
+        "beta_numerical": 0.07674854336141139,
+        "envelope_total_exact": "85196023805130381/6250000000000000000",
+        "main_lemma_strong_mass_condition": true,
+        "common_dummy_probability_exact": "218300670969191232304204339391949361/221352747110517737500000000000000000",
+        "minimum_correction_exact": "6666425264639663827136786058249773006246414403/89675197392742987560276995867401245488909093632887632",
+        "maximum_kernel_row_mass_exact": "11140655422756714946157531311643140969868219782727/974730406442858560437793433341317885749011887313996",
+        "maximum_output_law_residual_exact": "0/1",
+        "maximum_null_e_mean_residual_exact": "0/1",
+        "kernel_sha256": "37d74e274b90e144ec4807f4219a6db114d90f82e5b846a8c7fbed03ffa4e685",
+        "numerical_nats": {
+          "constructed_e_power": 5.910227989602706,
+          "expected_likelihood_envelope": 6.063805791390611,
+          "oracle_n_r": 8.119455234910735,
+          "kl_values": [
+            0.40597276174553676,
+            0.6256952194791585
+          ],
+          "finite_error_bound": 0.31487300552461395,
+          "lower_bound": 5.748932785865997,
+          "ordinary_optimum_upper_bound": 6.7569529719505566
+        },
+        "checks": {
+          "input": 10,
+          "type_count": 1,
+          "type_normalization": 3,
+          "partition": 3,
+          "lemma_conditions": 5,
+          "invertibility": 2,
+          "matrix_inverse_identity": 4,
+          "correction_nonnegative": 16,
+          "correction_upper_bound": 16,
+          "correction_equation": 16,
+          "kernel_row_mass": 2,
+          "dummy_null_probability": 1,
+          "dummy_alternative_probability": 1,
+          "alternative_law": 2,
+          "common_output_law": 18,
+          "exact_null_e_mean": 2,
+          "floating_display_consistency": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "bernoulli-unique-n40",
+        "kind": "exact_fraction_kernel",
+        "n": 40,
+        "alphabet_size": 2,
+        "null_count": 2,
+        "alternative": [
+          "11/20",
+          "9/20"
+        ],
+        "nulls": [
+          [
+            "9/10",
+            "1/10"
+          ],
+          [
+            "1/10",
+            "9/10"
+          ]
+        ],
+        "type_count": 41,
+        "retained_type_count": 16,
+        "output_count_including_dummy": 17,
+        "threshold_exact": "16/1",
+        "threshold_log_numerical": 2.772588722239781,
+        "matrix_exact": [
+          [
+            "2499047914333159144077534654969921870789/2500000000000000000000000000000000000000",
+            "413376041153217822559/2500000000000000000000000000000000000000"
+          ],
+          [
+            "18902931467302371589/2500000000000000000000000000000000000000",
+            "2499778880969366312115671149055951606559/2500000000000000000000000000000000000000"
+          ]
+        ],
+        "rho_exact": "95208566684085633584138618329595177/250000000000000000000000000000000000000",
+        "rho_numerical": 0.0003808342667363425,
+        "inflation_exact": "249904791433315914366415861381670404823/249809582866631828732831722763340809646",
+        "inflation_numerical": 1.000381124557319,
+        "beta_exact": "13139520401606438968690529420830117441556227570537/687194767360000000000000000000000000000000000000000",
+        "beta_numerical": 0.019120518702557366,
+        "envelope_total_exact": "293301045129642904886815079566671663/625000000000000000000000000000000000000",
+        "main_lemma_strong_mass_condition": true,
+        "common_dummy_probability_exact": "52019230651711531989804825902351093647748221418818823039094733542654689123117/52043663097214964319339942242362668676250000000000000000000000000000000000000",
+        "minimum_correction_exact": "38964418164869838676872203451444832666329821101988014135560045989633128806922127537488482929808705/609981727277670893767975449081032060160611830985222113339950714376211371041624396456560928718812081719393699072",
+        "maximum_kernel_row_mass_exact": "58107868461758494317064991358155191202938176644071360919072863842154071083159828191913999904415216218319605/152495431819417723441993862270258015040152957746305528334987678594052842760406099114140232179703020429848424768",
+        "maximum_output_law_residual_exact": "0/1",
+        "maximum_null_e_mean_residual_exact": "0/1",
+        "kernel_sha256": "55783ea14a73f80dc5be6e8b9ca5b97e19cab0cab9b73c09bf6bfba7e620b6ec",
+        "numerical_nats": {
+          "constructed_e_power": 13.962018851754445,
+          "expected_likelihood_envelope": 14.055811905370913,
+          "oracle_n_r": 16.23891046982147,
+          "kl_values": [
+            0.40597276174553676,
+            0.6256952194791585
+          ],
+          "finite_error_bound": 0.1290541497732581,
+          "lower_bound": 13.926757755597654,
+          "ordinary_optimum_upper_bound": 14.748959085930858
+        },
+        "checks": {
+          "input": 10,
+          "type_count": 1,
+          "type_normalization": 3,
+          "partition": 3,
+          "lemma_conditions": 5,
+          "invertibility": 2,
+          "matrix_inverse_identity": 4,
+          "correction_nonnegative": 32,
+          "correction_upper_bound": 32,
+          "correction_equation": 32,
+          "kernel_row_mass": 2,
+          "dummy_null_probability": 1,
+          "dummy_alternative_probability": 1,
+          "alternative_law": 2,
+          "common_output_law": 34,
+          "exact_null_e_mean": 2,
+          "floating_display_consistency": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "bernoulli-unique-n80",
+        "kind": "exact_fraction_kernel",
+        "n": 80,
+        "alphabet_size": 2,
+        "null_count": 2,
+        "alternative": [
+          "11/20",
+          "9/20"
+        ],
+        "nulls": [
+          [
+            "9/10",
+            "1/10"
+          ],
+          [
+            "1/10",
+            "9/10"
+          ]
+        ],
+        "type_count": 81,
+        "retained_type_count": 32,
+        "output_count_including_dummy": 33,
+        "threshold_exact": "256/1",
+        "threshold_log_numerical": 5.545177444479562,
+        "matrix_exact": [
+          [
+            "4999988639375018012312437997481114064856933845942701995878488579401658555071697/5000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "68617104289560912081830913118006235839995343/25000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          [
+            "1391304046348452076106052516062873455697/5000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "24999999167901178386485981835388939171067409829215870894386242366605953915108943/25000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ]
+        ],
+        "rho_exact": "28401562454969218905006297214872166217529923701051219235110498971532318429/12500000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "rho_numerical": 2.2721249963975374e-06,
+        "inflation_exact": "12499971598437545030781094993702785127833782470076298948780764889501028467681571/12499943196875090061562189987405570255667564940152597897561529779002056935363142",
+        "inflation_numerical": 1.0000022721353214,
+        "beta_exact": "7554550187508380351002195302301995083337146116257971056204976760910465701941554548302584177937912857/7555786372591432341913600000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "beta_numerical": 0.0009998363922665236,
+        "envelope_total_exact": "14408805932886754860882160155854967972338447933995379267494039816833625143/6250000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "main_lemma_strong_mass_condition": true,
+        "common_dummy_probability_exact": "26041488290268128133977446860694106467801950085963375850724621393278327432035212361157675056103381316176361519473161406414279504592808655901220516981165553449/26041548326823104294921229140428271365974093625317912286586520372920951948673212500000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "minimum_correction_exact": "58764898382877051300862250371982973789945903018120879586854790275659073067482180047456847600126353607240253409288493437496586351714129874462585436721204014176066836217036068468832380334324171561528458592892075/162759301815040677474869488426676762269709958415830899949709990787775062126261591797889838514187018429563474295931357173452940928994800659995323477883779099424013590169741220459679459087484975817585726279647828301683930873310726815744",
+        "maximum_kernel_row_mass_exact": "92452585731209355657419699973504572024765616058492866438798066526716686536620207797339655637710509071908928152871949814774286202336356129656037007768116761097466269700790658847908049379892558465611897358478591031744950483362191/40689825453760169368717372106669190567427489603957724987427497696943765531565397949472459628546754607390868573982839293363235232248700164998830869470944774856003397542435305114919864771871243954396431569911957075420982718327681703936",
+        "maximum_output_law_residual_exact": "0/1",
+        "maximum_null_e_mean_residual_exact": "0/1",
+        "kernel_sha256": "33f159663a9a4b15417853244f314235304309852a30ac1f20192b34cb74c658",
+        "numerical_nats": {
+          "constructed_e_power": 30.50336070134735,
+          "expected_likelihood_envelope": 30.513358282353654,
+          "oracle_n_r": 32.47782093964294,
+          "kl_values": [
+            0.40597276174553676,
+            0.6256952194791585
+          ],
+          "finite_error_bound": 0.012453331054459511,
+          "lower_bound": 30.500904951299194,
+          "ordinary_optimum_upper_bound": 31.206505462913597
+        },
+        "checks": {
+          "input": 10,
+          "type_count": 1,
+          "type_normalization": 3,
+          "partition": 3,
+          "lemma_conditions": 5,
+          "invertibility": 2,
+          "matrix_inverse_identity": 4,
+          "correction_nonnegative": 64,
+          "correction_upper_bound": 64,
+          "correction_equation": 64,
+          "kernel_row_mass": 2,
+          "dummy_null_probability": 1,
+          "dummy_alternative_probability": 1,
+          "alternative_law": 2,
+          "common_output_law": 66,
+          "exact_null_e_mean": 2,
+          "floating_display_consistency": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "bernoulli-unique-n160",
+        "kind": "exact_fraction_kernel",
+        "n": 160,
+        "alphabet_size": 2,
+        "null_count": 2,
+        "alternative": [
+          "11/20",
+          "9/20"
+        ],
+        "nulls": [
+          [
+            "9/10",
+            "1/10"
+          ],
+          [
+            "1/10",
+            "9/10"
+          ]
+        ],
+        "type_count": 161,
+        "retained_type_count": 64,
+        "output_count_including_dummy": 65,
+        "threshold_exact": "65536/1",
+        "threshold_log_numerical": 11.090354888959125,
+        "matrix_exact": [
+          [
+            "99999999997208691560412670019859486325806431464757576669349970224353369378804832678330807285655829226403574012064190288805278571754166307813052127236064137693/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "26474267798778216016705117496413244542971478425190884051786460157345407498888908689781827/500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ],
+          [
+            "1228925863450823456055941300435234021060146778915640540805836443759453624697462493/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "499999999999985914850794363706051683753430816959695305975963932285656857803391857894567848177077675493698494861406154859680829517953092206105170635413700642627/500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ]
+        ],
+        "rho_exact": "6978271098968324950351284185483921338106058326625074439116589790121817693280990138419175140613336455578736873428829463844662903171119126364184546681/250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "rho_numerical": 2.79130843958733e-11,
+        "inflation_exact": "249999999993021728901031675049648715814516078661893941673374925560883410209878182306719009861580824859386663544421263126571170536155337096828880873635815453319/249999999986043457802063350099297431629032157323787883346749851121766820419756364613438019723161649718773327088842526253142341072310674193657761747271630906638",
+        "inflation_numerical": 1.000000000027913,
+        "beta_exact": "1574135839172929010380408700068701311391418683932055895952193902242093787019631335136311979120430129074022725108587411918835124461207448329481681855018255538757560829810102162085575601429284388310324773/182687704666362864775460604089535377456991567872000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "beta_numerical": 8.616539586217511e-06,
+        "envelope_total_exact": "3492656836785571548662721123071139608022326509264118718917883695333559554550806704079345300939952213448195837070417589469430051774736388485985624827/125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "main_lemma_strong_mass_condition": true,
+        "common_dummy_probability_exact": "10416666665794089338695299527169751185593584464224576848747294161396396308666765214836427722684340547790705216949090690496394893956088955266416209990816861146611701252418770269706508218212125492149245427517216758662478431819237022908182054147598802612043432499646708004886641174570350991593915773001307967034511349729/10416666666085144075085972920804059651209673221824495139447910463406950850823181858893250821798402071615555295368438593880930878012944758069073406136317954443250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "minimum_correction_exact": "3654417515581761917951039388385456828268190878751017986363413510648069087772446511950018327203112955083213279574469987698542512196146706318685912055264541015392967882483436574539315391452377272942950179561369142277471749608981293571138443918848367673380419618699793145353342232192015152674399437779578516061951223583835079684385395819447533335007312566465361440006373998794533432049636306708900161820130133289855141144993177/651041666612130583668964497088946117670544710699865779862111424331053672012438537624316334851938421118641791062574628111896384434870264037021555162973234603655864309951879443862473016854003756195881088472107940654069724556980079783816887133617989101329602771214756982681397779237834460159904983560110781680201489278136789810746623059384338713621521972915301550041244001984223615343342098101476161035608616827370592647804351015274859424142956463175861180492125785552310272",
+        "maximum_kernel_row_mass_exact": "4543145246470671477923434658563944842759758793714729721848415079753291525001423458878011768498567435472950762238206135398828021646618017789121297136433322110142895550246054092600912415508496972626167462314448607335089364861906174305373700979853989378836035957067412918744218251993170755319316539730129797600637157124545633478812650672635835694380008498322758566699300258548371962140735938335408928475574150378392205473614717212614605943446700369805953031335221/162760416653032645917241124272236529417636177674966444965527856082763418003109634406079083712984605279660447765643657027974096108717566009255388790743308650913966077487969860965618254213500939048970272118026985163517431139245019945954221783404497275332400692803689245670349444809458615039976245890027695420050372319534197452686655764846084678405380493228825387510311000496055903835835524525369040258902154206842648161951087753818714856035739115793965295123031446388077568",
+        "maximum_output_law_residual_exact": "0/1",
+        "maximum_null_e_mean_residual_exact": "0/1",
+        "kernel_sha256": "3020e9e8ff4ea30a74d6d88657390ad59c7ffe905a451e6768b6a0e92ecf0bb4",
+        "numerical_nats": {
+          "constructed_e_power": 63.61292933583495,
+          "expected_likelihood_envelope": 63.61311085277083,
+          "oracle_n_r": 64.95564187928588,
+          "kl_values": [
+            0.40597276174553676,
+            0.6256952194791585
+          ],
+          "finite_error_bound": 0.00019604510377746828,
+          "lower_bound": 63.61291480766705,
+          "ordinary_optimum_upper_bound": 64.30625803333078
+        },
+        "checks": {
+          "input": 10,
+          "type_count": 1,
+          "type_normalization": 3,
+          "partition": 3,
+          "lemma_conditions": 5,
+          "invertibility": 2,
+          "matrix_inverse_identity": 4,
+          "correction_nonnegative": 128,
+          "correction_upper_bound": 128,
+          "correction_equation": 128,
+          "kernel_row_mass": 2,
+          "dummy_null_probability": 1,
+          "dummy_alternative_probability": 1,
+          "alternative_law": 2,
+          "common_output_law": 130,
+          "exact_null_e_mean": 2,
+          "floating_display_consistency": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "ternary-asymmetric-three-null-n20",
+        "kind": "exact_fraction_kernel",
+        "n": 20,
+        "alphabet_size": 3,
+        "null_count": 3,
+        "alternative": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "nulls": [
+          [
+            "4/5",
+            "3/20",
+            "1/20"
+          ],
+          [
+            "1/20",
+            "3/4",
+            "1/5"
+          ],
+          [
+            "1/10",
+            "1/10",
+            "4/5"
+          ]
+        ],
+        "type_count": 231,
+        "retained_type_count": 76,
+        "output_count_including_dummy": 77,
+        "threshold_exact": "4/1",
+        "threshold_log_numerical": 1.3862943611198906,
+        "matrix_exact": [
+          [
+            "190086208845257/190734863281250",
+            "13431351941079407073/52428800000000000000000000",
+            "28204519313822751/52428800000000000000000000"
+          ],
+          [
+            "947216966756856641/52428800000000000000000000",
+            "13371623051740366563/13421772800000000000",
+            "58659809632887/390625000000000000"
+          ],
+          [
+            "254254564729/50000000000000000000",
+            "4588615416223019/25000000000000000000",
+            "95106210332672/95367431640625"
+          ]
+        ],
+        "rho_exact": "203771587729998477358627/52428800000000000000000000",
+        "rho_numerical": 0.00388663459262845,
+        "inflation_exact": "52225028412270001522641373/52021256824540003045282746",
+        "inflation_numerical": 1.003917083134252,
+        "beta_exact": "322859219/3486784401",
+        "beta_numerical": 0.09259511970611228,
+        "envelope_total_exact": "60883195595987821694943/6553600000000000000000000",
+        "main_lemma_strong_mass_condition": true,
+        "common_dummy_probability_exact": "348551993916898976409521596250897212872170075669/351833342337776433392739942400000000000000000000",
+        "minimum_correction_exact": "128408049349779154339204164608541825625753223057288294137964856898286703208168816640/152205102759413716647643906656402962771080170398962624664722535135677675430695772627042933549",
+        "maximum_kernel_row_mass_exact": "2166841960264917919808029911550051089055366425067518011111191860393184099086973280675446995490279/319197235662109994695039714132288786181296321512525266240872194004856708384834500956348342178152448",
+        "maximum_output_law_residual_exact": "0/1",
+        "maximum_null_e_mean_residual_exact": "0/1",
+        "kernel_sha256": "c41c35e69c5b3776dc238613c30232fff783788d93138cc32637bbf9af8957bb",
+        "numerical_nats": {
+          "constructed_e_power": 5.839216730620507,
+          "expected_likelihood_envelope": 6.054973561633409,
+          "oracle_n_r": 10.216512475319814,
+          "kl_values": [
+            0.6067196479165842,
+            0.5323384641451808,
+            0.5108256237659907
+          ],
+          "finite_error_bound": 0.3526053556432154,
+          "lower_bound": 5.702368205990194,
+          "ordinary_optimum_upper_bound": 7.153585850301519
+        },
+        "checks": {
+          "input": 13,
+          "type_count": 1,
+          "type_normalization": 4,
+          "partition": 3,
+          "lemma_conditions": 5,
+          "invertibility": 3,
+          "matrix_inverse_identity": 9,
+          "correction_nonnegative": 228,
+          "correction_upper_bound": 228,
+          "correction_equation": 228,
+          "kernel_row_mass": 3,
+          "dummy_null_probability": 1,
+          "dummy_alternative_probability": 1,
+          "alternative_law": 2,
+          "common_output_law": 231,
+          "exact_null_e_mean": 3,
+          "floating_display_consistency": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "ternary-asymmetric-three-null-n30",
+        "kind": "exact_fraction_kernel",
+        "n": 30,
+        "alphabet_size": 3,
+        "null_count": 3,
+        "alternative": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "nulls": [
+          [
+            "4/5",
+            "3/20",
+            "1/20"
+          ],
+          [
+            "1/20",
+            "3/4",
+            "1/5"
+          ],
+          [
+            "1/10",
+            "1/10",
+            "4/5"
+          ]
+        ],
+        "type_count": 496,
+        "retained_type_count": 185,
+        "output_count_including_dummy": 186,
+        "threshold_exact": "8/1",
+        "threshold_log_numerical": 2.0794415416798357,
+        "matrix_exact": [
+          [
+            "595715780180311034267/596046447753906250000",
+            "34883773682177845075455997533/214748364800000000000000000000000000000",
+            "1046849642176507984825507/214748364800000000000000000000000000000"
+          ],
+          [
+            "1196179343440549551107526127/214748364800000000000000000000000000000",
+            "7029317302049191317619627539/7036874417766400000000000000",
+            "42142739568012843619169/6250000000000000000000000000"
+          ],
+          [
+            "176691410372574911/200000000000000000000000000000",
+            "339015112031304626753387/200000000000000000000000000000",
+            "186096478439134461952/186264514923095703125"
+          ]
+        ],
+        "rho_exact": "29009110500178549695036930167889743/26843545600000000000000000000000000000",
+        "rho_numerical": 0.001080673579133248,
+        "inflation_exact": "26814536489499821450304963069832110257/26785527378999642900609926139664220514",
+        "inflation_numerical": 1.0010830143491192,
+        "beta_exact": "1431352186988/68630377364883",
+        "beta_numerical": 0.020855956821831473,
+        "envelope_total_exact": "538290346187594872717774269376121991/214748364800000000000000000000000000000",
+        "main_lemma_strong_mass_condition": true,
+        "common_dummy_probability_exact": "69937155797906052082187611658547405765149363834671618443662896570268593/70113092294655150140660286456060601119539200000000000000000000000000000",
+        "minimum_correction_exact": "5803860218720881459638737811009017976152892835546111197067807389617946252391379131178856819738696130195399985192480695910400/81450063155192013996120884915614096284182795027874956357350345330177338009759228444326952730163958634696274238613481346232877919927121657",
+        "maximum_kernel_row_mass_exact": "33372339270341831764282715031181874546002361404016841958875860763774415752753359749239526478428079286331516357446310680288843880018703090848729/17064651585789476717742120564641086014495620816126553460109610849142340908890420244028157010116688539215478475506936720330549437368170449767235584",
+        "maximum_output_law_residual_exact": "0/1",
+        "maximum_null_e_mean_residual_exact": "0/1",
+        "kernel_sha256": "2091df8bdc25f8443870cc351d9123b777e6227c7dd488e13480dc1e04505cd2",
+        "numerical_nats": {
+          "constructed_e_power": 10.333451093891105,
+          "expected_likelihood_envelope": 10.410686397592901,
+          "oracle_n_r": 15.324768712979722,
+          "kl_values": [
+            0.6067196479165842,
+            0.5323384641451808,
+            0.5108256237659907
+          ],
+          "finite_error_bound": 0.12516613668329424,
+          "lower_bound": 10.285520260909607,
+          "ordinary_optimum_upper_bound": 11.50929868626101
+        },
+        "checks": {
+          "input": 13,
+          "type_count": 1,
+          "type_normalization": 4,
+          "partition": 3,
+          "lemma_conditions": 5,
+          "invertibility": 3,
+          "matrix_inverse_identity": 9,
+          "correction_nonnegative": 555,
+          "correction_upper_bound": 555,
+          "correction_equation": 555,
+          "kernel_row_mass": 3,
+          "dummy_null_probability": 1,
+          "dummy_alternative_probability": 1,
+          "alternative_law": 2,
+          "common_output_law": 558,
+          "exact_null_e_mean": 3,
+          "floating_display_consistency": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "ternary-asymmetric-three-null-n40",
+        "kind": "exact_fraction_kernel",
+        "n": 40,
+        "alphabet_size": 3,
+        "null_count": 3,
+        "alternative": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "nulls": [
+          [
+            "4/5",
+            "3/20",
+            "1/20"
+          ],
+          [
+            "1/20",
+            "3/4",
+            "1/5"
+          ],
+          [
+            "1/10",
+            "1/10",
+            "4/5"
+          ]
+        ],
+        "type_count": 861,
+        "retained_type_count": 312,
+        "output_count_including_dummy": 313,
+        "threshold_exact": "16/1",
+        "threshold_log_numerical": 2.772588722239781,
+        "matrix_exact": [
+          [
+            "291015506222472216142100432173/291038304567337036132812500000",
+            "2041127104651855399370279522322372278241/5497558138880000000000000000000000000000000000000000",
+            "1231103287604136389818230450746579/1099511627776000000000000000000000000000000000000000"
+          ],
+          [
+            "12352334892878592100398356479289608153/5497558138880000000000000000000000000000000000000000",
+            "720480551274553747350979550024653474719/720575940379279360000000000000000000000",
+            "225993595145216288260374046751/976562500000000000000000000000000000"
+          ],
+          [
+            "893655963801502470322889/5000000000000000000000000000000000000000",
+            "497190571622018951179131776621911/2500000000000000000000000000000000000000",
+            "1818834197723476022838427648/1818989403545856475830078125"
+          ]
+        ],
+        "rho_exact": "729033344785380154647413637285580158661436712523/5497558138880000000000000000000000000000000000000000",
+        "rho_numerical": 0.00013261039289961995,
+        "inflation_exact": "5496829105535214619845352586362714419841338563287477/5496100072190429239690705172725428839682677126574954",
+        "inflation_numerical": 1.0001326455732629,
+        "beta_exact": "38559735553818913/4052555153018976267",
+        "beta_numerical": 0.009514919377492888,
+        "envelope_total_exact": "202694326856885452228773257669997147448678361019/687194767360000000000000000000000000000000000000000",
+        "main_lemma_strong_mass_condition": true,
+        "common_dummy_probability_exact": "37837607696447378277137160348093505303515913952092465475384838404036412499100976592896741881521133/37848773016025626341458435494146646310134103400361450536960000000000000000000000000000000000000000",
+        "minimum_correction_exact": "174038997534191190768101500384407686106213255468421823175626432852775002695457116319147330062107630335930424940774050641079245335448933438718357903638679579462205440000/32830529911833469850432958251259137316053005695001077630750749197626236642920026737302586892753903418182777755365278149517867811270033381011028106322818487510138709701051995554365244099",
+        "maximum_kernel_row_mass_exact": "2753217426169619110963245214675094115504724936747514278045063545168811841501405011969488671918921817297796823684599918522130510314852123548246334282037952490195965919896049100806834153333072055513/12706337383206254022360491937190746534132364311657227634255035998571169377008695644829795398175449252919820814803204014467883373261740683747142897270181711432929546178447104694000822254689336109826048",
+        "maximum_output_law_residual_exact": "0/1",
+        "maximum_null_e_mean_residual_exact": "0/1",
+        "kernel_sha256": "d11a4e8743ed3ecdb6b4224eca41dace14928817c683be4d680d59bf830050dd",
+        "numerical_nats": {
+          "constructed_e_power": 14.926347481615258,
+          "expected_likelihood_envelope": 14.980237020613746,
+          "oracle_n_r": 20.433024950639627,
+          "kl_values": [
+            0.6067196479165842,
+            0.5323384641451808,
+            0.5108256237659907
+          ],
+          "finite_error_bound": 0.07080453844917062,
+          "lower_bound": 14.909432482164576,
+          "ordinary_optimum_upper_bound": 16.078849309281857
+        },
+        "checks": {
+          "input": 13,
+          "type_count": 1,
+          "type_normalization": 4,
+          "partition": 3,
+          "lemma_conditions": 5,
+          "invertibility": 3,
+          "matrix_inverse_identity": 9,
+          "correction_nonnegative": 936,
+          "correction_upper_bound": 936,
+          "correction_equation": 936,
+          "kernel_row_mass": 3,
+          "dummy_null_probability": 1,
+          "dummy_alternative_probability": 1,
+          "alternative_law": 2,
+          "common_output_law": 939,
+          "exact_null_e_mean": 3,
+          "floating_display_consistency": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "ternary-asymmetric-three-null-n60",
+        "kind": "exact_fraction_kernel",
+        "n": 60,
+        "alphabet_size": 3,
+        "null_count": 3,
+        "alternative": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "nulls": [
+          [
+            "4/5",
+            "3/20",
+            "1/20"
+          ],
+          [
+            "1/20",
+            "3/4",
+            "1/5"
+          ],
+          [
+            "1/10",
+            "1/10",
+            "4/5"
+          ]
+        ],
+        "type_count": 1891,
+        "retained_type_count": 708,
+        "output_count_including_dummy": 709,
+        "threshold_exact": "64/1",
+        "threshold_log_numerical": 4.1588830833596715,
+        "matrix_exact": [
+          [
+            "13877762492007696116974688473873088501410969/13877787807814456755295395851135253906250000",
+            "683115889745662587092592488600239120721367733408309259960097/1152921504606846976000000000000000000000000000000000000000000000000000000000000",
+            "3085620850591328647529646147866154837996757095317727/1152921504606846976000000000000000000000000000000000000000000000000000000000000"
+          ],
+          [
+            "172851533153614439674388014720484797985798219175534973691/230584300921369395200000000000000000000000000000000000000000000000000000000000",
+            "3868542521156886627903809765310126999048279669051521863243719/3868562622766813359059763200000000000000000000000000000000000",
+            "782805245772411936773555548592438406055746056739/1953125000000000000000000000000000000000000000000000000000"
+          ],
+          [
+            "8091798837785737603573686609332477663/1000000000000000000000000000000000000000000000000000000000000",
+            "266959666275123322754607688666681796571256427153843/1000000000000000000000000000000000000000000000000000000000000",
+            "867359117935472837070217685566731409424384/867361737988403547205962240695953369140625"
+          ]
+        ],
+        "rho_exact": "1497802170534572432609884498093013826851234575867509717894126768946420937/288230376151711744000000000000000000000000000000000000000000000000000000000000",
+        "rho_numerical": 5.19654517519068e-06,
+        "inflation_exact": "288228878349541209427567390115501906986173148765424132490282105873231053579063/288227380547370674855134780231003813972346297530848264980564211746462107158126",
+        "inflation_numerical": 1.0000051965991839,
+        "beta_exact": "47323872787660719562422776/42391158275216203514294433201",
+        "beta_numerical": 0.0011163618715115035,
+        "envelope_total_exact": "11573760554023094182836936450462234861717732126469668525780964495673513163/1152921504606846976000000000000000000000000000000000000000000000000000000000000",
+        "main_lemma_strong_mass_condition": true,
+        "common_dummy_probability_exact": "61070752131040192937047656859958041892386917392514210992479799717157249701880224674542807197326433001823153119858473935217670901916292392445203013/61071365207496727567720272187909991386175785135323488720430258239285752927858246811648000000000000000000000000000000000000000000000000000000000000",
+        "minimum_correction_exact": "53666048285931345065373017819213294001649356807930762278426319679637791346720661197815985410895189670224738744432517245001719300617224115121729081888146637343951642780340210069865131927217438912975874477762376540026748844791953336497284869394372493479772160/488956828263300048516537360427376032871349246721110164025170341340582929764167259864442590032611637084071029288222802534865506132217130183943514097091153857768736189743894124482123800226840420064791793142106250764362182395971006747135834852437055435928699181622565592126303448458499",
+        "maximum_kernel_row_mass_exact": "74092082188778905313091150336850872204956752067738077710475556296272693742076514380710509117585437481026448799120717469327206137555630729259407978571129122086244884440282500247377304022496693620251367860382169187770581956527942813952626104849565264507088103527098705586607249075144348295433359689/9019661474065849161041507018864551068127434003229188580322715235137869714365609912881236509263954773788279342026941518053721470403284216788501992822207686646836328431943223246440604108445900679910044072754282369551269015611777529520918951016677216959345997102040805324707792523210492902686527674384384",
+        "maximum_output_law_residual_exact": "0/1",
+        "maximum_null_e_mean_residual_exact": "0/1",
+        "kernel_sha256": "e9401166cb7a032bb1e40388a4f4d0003f28c64489a0d2f9b6fa8ce718169495",
+        "numerical_nats": {
+          "constructed_e_power": 24.334117247988168,
+          "expected_likelihood_envelope": 24.34409627725506,
+          "oracle_n_r": 30.649537425959444,
+          "kl_values": [
+            0.6067196479165842,
+            0.5323384641451808,
+            0.5108256237659907
+          ],
+          "finite_error_bound": 0.012236686089136086,
+          "lower_bound": 24.331859591165923,
+          "ordinary_optimum_upper_bound": 25.44270856592317
+        },
+        "checks": {
+          "input": 13,
+          "type_count": 1,
+          "type_normalization": 4,
+          "partition": 3,
+          "lemma_conditions": 5,
+          "invertibility": 3,
+          "matrix_inverse_identity": 9,
+          "correction_nonnegative": 2124,
+          "correction_upper_bound": 2124,
+          "correction_equation": 2124,
+          "kernel_row_mass": 3,
+          "dummy_null_probability": 1,
+          "dummy_alternative_probability": 1,
+          "alternative_law": 2,
+          "common_output_law": 2127,
+          "exact_null_e_mean": 3,
+          "floating_display_consistency": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "point-mass-equal-null-support-n1",
+        "kind": "exact_boundary_identity",
+        "n": 1,
+        "alternative": [
+          "1/1",
+          "0/1",
+          "0/1"
+        ],
+        "nulls": [
+          [
+            "1/2",
+            "1/2",
+            "0/1"
+          ],
+          [
+            "1/2",
+            "0/1",
+            "1/2"
+          ]
+        ],
+        "statistic": "E = 2^n on the all-a sequence; E = 0 otherwise",
+        "common_nonzero_output_mass_exact": "1/2",
+        "nonzero_e_value_exact": "2/1",
+        "null_e_means_exact": [
+          "1/1",
+          "1/1"
+        ],
+        "numerical_nats": {
+          "constructed_e_power": 0.6931471805599453,
+          "oracle_n_r": 0.6931471805599453,
+          "gaussian_max_coefficient": 0.0
+        },
+        "interpretation": "Distinct active nulls need not give a positive second-order coefficient when they coincide Q-almost surely. This is outside full-support finite alphabets.",
+        "checks": {
+          "point_mass_common_law": 2,
+          "point_mass_exact_mean": 2,
+          "point_mass_boundary": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "point-mass-equal-null-support-n8",
+        "kind": "exact_boundary_identity",
+        "n": 8,
+        "alternative": [
+          "1/1",
+          "0/1",
+          "0/1"
+        ],
+        "nulls": [
+          [
+            "1/2",
+            "1/2",
+            "0/1"
+          ],
+          [
+            "1/2",
+            "0/1",
+            "1/2"
+          ]
+        ],
+        "statistic": "E = 2^n on the all-a sequence; E = 0 otherwise",
+        "common_nonzero_output_mass_exact": "1/256",
+        "nonzero_e_value_exact": "256/1",
+        "null_e_means_exact": [
+          "1/1",
+          "1/1"
+        ],
+        "numerical_nats": {
+          "constructed_e_power": 5.545177444479562,
+          "oracle_n_r": 5.545177444479562,
+          "gaussian_max_coefficient": 0.0
+        },
+        "interpretation": "Distinct active nulls need not give a positive second-order coefficient when they coincide Q-almost surely. This is outside full-support finite alphabets.",
+        "checks": {
+          "point_mass_common_law": 2,
+          "point_mass_exact_mean": 2,
+          "point_mass_boundary": 2
+        },
+        "passed": true
+      },
+      {
+        "id": "point-mass-unequal-two-state-obstruction-n1",
+        "kind": "exact_algebra_with_written_argument",
+        "n": 1,
+        "alternative": [
+          "1/1",
+          "0/1"
+        ],
+        "nulls": [
+          [
+            "9/10",
+            "1/10"
+          ],
+          [
+            "1/10",
+            "9/10"
+          ]
+        ],
+        "difference_vector_exact": [
+          "4/5",
+          "-4/5"
+        ],
+        "argument": "For every output event B, pivotality gives (4/5)(K(0,B)-K(1,B))=0. Thus both conditional output laws coincide and Q induces the common null law. Exactness and Jensen imply E_Q log E <= 0; E=1 attains 0.",
+        "numerical_nats": {
+          "exact_pivotal_optimum": 0.0,
+          "oracle_n_r": 0.10536051565782634
+        },
+        "interpretation": "An arbitrary point-mass alternative does not imply exact finite-n equality with the oracle.",
+        "checks": {
+          "obstruction_algebra": 2,
+          "constant_statistic_exactness": 2
+        },
+        "passed": true
+      }
+    ]
+  },
+  "universal_experiments": {
+    "kernel_count": 4,
+    "q_evaluation_count": 20,
+    "check_count": 64075,
+    "checks_by_category": {
+      "inputs": 18,
+      "types": 4,
+      "null_type_normalization": 10,
+      "nml": 8,
+      "nml_null_domination": 13030,
+      "partition": 4,
+      "lemma_conditions": 16,
+      "inverse": 10,
+      "inverse_identity": 26,
+      "correction_nonnegative": 7791,
+      "correction_equation": 7791,
+      "row_probability": 10,
+      "null_dummy": 4,
+      "nml_output": 4,
+      "dummy_lower_bound": 12,
+      "retained_value": 5278,
+      "exact_common_null_output_law": 7801,
+      "exact_null_e_mean": 10,
+      "alternative_input": 20,
+      "alternative_normalization": 20,
+      "nml_q_domination": 22120,
+      "q_output_law": 20,
+      "q_dummy_mass": 20,
+      "floating_bound_consistency": 44,
+      "known_null_control": 4
+    },
+    "all_passed": true,
+    "kernels": [
+      {
+        "id": "binary-n80",
+        "n": 80,
+        "alphabet_size": 2,
+        "null_count": 2,
+        "nulls_exact": [
+          [
+            "9/10",
+            "1/10"
+          ],
+          [
+            "1/10",
+            "9/10"
+          ]
+        ],
+        "construction_inputs": [
+          "n",
+          "null family",
+          "fixed threshold rule 2^ceil(sqrt(n))"
+        ],
+        "q_used_in_construction": false,
+        "kernel_sha256": "9c23af40be767831917c1f9e9f755538eb25630a80e63f230f91f3889451c711",
+        "numerator": "One fixed output law of multinomial NML; unchanged across all Q evaluations.",
+        "type_count": 81,
+        "retained_type_count": 37,
+        "threshold_exact": "512/1",
+        "nml_C_exact": "364364983121922045116631774025051132054571361704028547879934475521614322216046139979876493203591965421588829878207321/30649910817317777167166940543006183672374782443672043520000000000000000000000000000000000000000000000000000000000000",
+        "rho_actual_exact": "12940401228676826405259414216728373686173601266996154296914160860875009/1562500000000000000000000000000000000000000000000000000000000000000000000000",
+        "rho_actual_numerical": 8.28185678635317e-06,
+        "inflation_exact": "1562487059598771323173594740585783271626313826398733003845703085839139124991/1562474119197542646347189481171566543252627652797466007691406171678278249982",
+        "envelope_mass_exact": "41409283931765351258365269006822318135105162449851336979438119688721155223/2500000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "common_null_dummy_exact": "1302040198841188660391958807871865878513373408740415585295654145447691273623671910836171498100122605588654713109554388405043998723313240412519793696840669/1302061765997952205289324567642972119377189710664555006409505143065231874985000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "universal_dummy_e_lower_bound_exact": "15295023855126351691818658806129062359944837723355873280000000000000000000000000000000000000000000000000000000000000/364364983121922045116631774025051132054571361704028547879934475521614322216046139979876493203591965421588829878207321",
+        "universal_dummy_e_actual_exact": "648910738150928511392764156479319028895268388929339976587279119246976429336843377534946450961891385488449521670694520201324976061195810275983649046881163169331330209388397634029388427734375000000/910904913758284668421742512901279023819062248106732028173080345863140521851232641199268963614419622423950785596413930065908359789299993262277726920699005679275535907062898305922553636187608507617",
+        "maximum_compensation_row_mass_exact": "10783667690563765111476633639332830074583829537580240223482292899824175275980570227185854940295228629083886632914225885781733774942895075534681773469/1302050982508879224157070284505505211343447992569953165535877627740591097798947891406398683955062900817283796996187302630929780457088183307595328378614138",
+        "rho_scope": "Uses the exactly computed matrix norm; the finite positive-compensation lemma conditions are all checked. No numerical Hellinger-rate certification is claimed.",
+        "nml_scaling_numerical": {
+          "log_C": 2.475526313486739,
+          "classical_leading_term": 2.1910133173369406,
+          "offset": 0.2845129961497985
+        },
+        "checks": {
+          "inputs": 4,
+          "types": 1,
+          "null_type_normalization": 2,
+          "nml": 2,
+          "nml_null_domination": 162,
+          "partition": 1,
+          "lemma_conditions": 4,
+          "inverse": 2,
+          "inverse_identity": 4,
+          "correction_nonnegative": 74,
+          "correction_equation": 74,
+          "row_probability": 2,
+          "null_dummy": 1,
+          "nml_output": 1,
+          "dummy_lower_bound": 3,
+          "retained_value": 74,
+          "exact_common_null_output_law": 76,
+          "exact_null_e_mean": 2
+        },
+        "evaluations": [
+          {
+            "name": "interior-0.35",
+            "q_exact": [
+              "13/20",
+              "7/20"
+            ],
+            "kernel_sha256": "9c23af40be767831917c1f9e9f755538eb25630a80e63f230f91f3889451c711",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "185782931148598863307809618529265787661766096009942049995524509733691576585230704612135273124383883977/3022314549036572936765440000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "q_outside_a_numerical": 0.06147041551575799,
+            "q_dummy_mass_exact": "241896844614020526380456765575514984169843988324581172900006094574530867236123366332242757090920464050588326053986502964421183364750864142433886243715882059609745023733701415520278353006058815725760050570305998277815641854338047718987793221442684351060613/3935207628023950029102422045424980369640132216083037658870006539882880481948612723290159526210807310407107361317667597073485312908728721993494331190656621024149568791895573790720000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "numerical_nats": {
+              "universal_e_power": 15.857737448622908,
+              "likelihood_envelope": 18.138506113605157,
+              "oracle_n_r": 18.15539829526966,
+              "ordinary_optimum_upper_bound": 18.15539829526966,
+              "universal_lower_bound": 15.084599258218853,
+              "exact_beta_error_bound": 0.5783805418995639,
+              "regret_upper_bound_vs_q_specific_ordinary": 3.7470540359462485
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 81,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "interior-0.50",
+            "q_exact": [
+              "1/2",
+              "1/2"
+            ],
+            "kernel_sha256": "9c23af40be767831917c1f9e9f755538eb25630a80e63f230f91f3889451c711",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "3821883362119006893/151115727451828646838272",
+            "q_outside_a_numerical": 2.52911025646706e-05,
+            "q_dummy_mass_exact": "4976245772761262380080287829294918008894589825672811730729968331727671606227200957868677401727458998463418658206459433736297811977179626863272891432883843764911169933731417/196760381401197501455121102271249018482006610804151882943500326994144024097430636164507976310540365520355368065883379853674265645436436099674716559532831051207478439594778689536",
+            "numerical_nats": {
+              "universal_e_power": 31.077765690658595,
+              "likelihood_envelope": 33.05026906718306,
+              "oracle_n_r": 40.86604990127924,
+              "ordinary_optimum_upper_bound": 33.743416247743006,
+              "universal_lower_bound": 30.574496508937397,
+              "exact_beta_error_bound": 0.0002462447589218555,
+              "regret_upper_bound_vs_q_specific_ordinary": 3.1689197388056063
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 81,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "interior-0.65",
+            "q_exact": [
+              "7/20",
+              "13/20"
+            ],
+            "kernel_sha256": "9c23af40be767831917c1f9e9f755538eb25630a80e63f230f91f3889451c711",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "185782931148598863307809618529265787661766096009942049995524509733691576585230704612135273124383883977/3022314549036572936765440000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "q_outside_a_numerical": 0.06147041551575799,
+            "q_dummy_mass_exact": "241896844614020526380456765575514984169843988324581172900006094574530867236123366332242757090920464050588326053986502964421183364750864142433886243715882059609745023733701415520278353006058815725760050570305998277815641854338047718987793221442684351060613/3935207628023950029102422045424980369640132216083037658870006539882880481948612723290159526210807310407107361317667597073485312908728721993494331190656621024149568791895573790720000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "numerical_nats": {
+              "universal_e_power": 15.857737448622908,
+              "likelihood_envelope": 18.138506113605157,
+              "oracle_n_r": 18.15539829526966,
+              "ordinary_optimum_upper_bound": 18.15539829526966,
+              "universal_lower_bound": 15.084599258218853,
+              "exact_beta_error_bound": 0.5783805418995639,
+              "regret_upper_bound_vs_q_specific_ordinary": 3.7470540359462485
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 81,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "boundary-point-mass",
+            "q_exact": [
+              "1/1",
+              "0/1"
+            ],
+            "kernel_sha256": "9c23af40be767831917c1f9e9f755538eb25630a80e63f230f91f3889451c711",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "1/1",
+            "q_outside_a_numerical": 1.0,
+            "q_dummy_mass_exact": "1302040198841188660391958807871865878513373408740415585295654145447691273623671910836171498100122605588654713109554388405043998723313240412519793696840669/1302050982508879224157070284505505211343447992569953165535877627740591097798947891406398683955062900817283796996187302630929780457088183307595328378614138",
+            "numerical_nats": {
+              "universal_e_power": -0.33907668716447376,
+              "likelihood_envelope": 8.428841252626114,
+              "oracle_n_r": 8.428841252626107,
+              "ordinary_optimum_upper_bound": 8.428841252626107,
+              "universal_lower_bound": -3.4556464967422578,
+              "exact_beta_error_bound": 9.408961435881633,
+              "regret_upper_bound_vs_q_specific_ordinary": 12.577634929928317
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 81,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "known-null-control",
+            "q_exact": [
+              "9/10",
+              "1/10"
+            ],
+            "kernel_sha256": "9c23af40be767831917c1f9e9f755538eb25630a80e63f230f91f3889451c711",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": true,
+            "q_outside_a_exact": "2499979295358034117077751584937253234602159613871689028039471148515040081355977/2500000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "q_outside_a_numerical": 0.9999917181432136,
+            "q_dummy_mass_exact": "1302040198841188660391958807871865878513373408740415585295654145447691273623671910836171498100122605588654713109554388405043998723313240412519793696840669/1302061765997952205289324567642972119377189710664555006409505143065231874985000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "numerical_nats": {
+              "universal_e_power": -0.3390100301288101,
+              "likelihood_envelope": -9.393908585256847e-20,
+              "oracle_n_r": 0.0,
+              "ordinary_optimum_upper_bound": 0.0,
+              "universal_lower_bound": -11.884409825765841,
+              "exact_beta_error_bound": 9.408883512279102,
+              "regret_upper_bound_vs_q_specific_ordinary": 12.577557006325787
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 81,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 3,
+              "known_null_control": 1
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "id": "binary-n160",
+        "n": 160,
+        "alphabet_size": 2,
+        "null_count": 2,
+        "nulls_exact": [
+          [
+            "9/10",
+            "1/10"
+          ],
+          [
+            "1/10",
+            "9/10"
+          ]
+        ],
+        "construction_inputs": [
+          "n",
+          "null family",
+          "fixed threshold rule 2^ceil(sqrt(n))"
+        ],
+        "q_used_in_construction": false,
+        "kernel_sha256": "c279db1182b079c10b1951ac469b0e0ebf55dd5ede497650b67c9666feac8cfd",
+        "numerator": "One fixed output law of multinomial NML; unchanged across all Q evaluations.",
+        "type_count": 161,
+        "retained_type_count": 89,
+        "threshold_exact": "8192/1",
+        "nml_C_exact": "1134617179664741024941777011972535477405181857500392297509748466893367171087115045485388700815020200294119665415486056156442105720129492269520442440493231757326395822393435892699847401081702138139097895983750047554010231387400272413026161402390845266023639526013583551468853923737/68647976601306097149819007990813932172694353001433054093944634591855431833976560521225596406614545549772963113914808580371219879997166438125740282911150571520000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "rho_actual_exact": "1967342229439294931382570142686129338189943635265738742978035984600172334348780859014050298820588266306658345276237784479862207127323181520073540145323/1562500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "rho_actual_numerical": 1.2590990268411488e-06,
+        "inflation_exact": "1562498032657770560705068617429857313870661810056364734261257021964015399827665651219140985949701179411733693341654723762215520137792872676818479926459854677/1562496065315541121410137234859714627741323620112729468522514043928030799655331302438281971899402358823467386683309447524431040275585745353636959852919709354",
+        "envelope_mass_exact": "12590990268411487560848448913189975239742794990654325657642261253835890442427241748212749870918308562089789349094698048967285459473660082654403844984357341/5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "common_null_dummy_exact": "7812460653180182000966877471030312072837569922232467879551265221419329267452428807150609098071165488377927324225171276128147919238613167635668425295532222499369110472779192087302741385180044135308540473454047081296722473974613296872521244795741948771272560259407637460794963970799320100809967339033617923518901866143/7812480326577705607050686174298573138706618100563647342612570219640153998276656512191409859497011794117336933416547237622155201377928726768184799264598546770000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "universal_dummy_e_lower_bound_exact": "34319798360674941513315887112595026759432339198897591924041778682976552865728882277182547617589095617565328422001721013294718141910204485759761880940260884480000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/1134617179664741024941777011972535477405181857500392297509748466893367171087115045485388700815020200294119665415486056156442105720129492269520442440493231757326395822393435892699847401081702138139097895983750047554010231387400272413026161402390845266023639526013583551468853923737",
+        "universal_dummy_e_actual_exact": "5862921654086559663865628306305815223411755628503822447616994510407484548574310424472443694297445826968118932686981310466326848209845678280428845749623843823856411149965104827419790607285200445172633073040658502801340638980356708350010813373812031206154651576126486862394558340286233162811497540358203134162348343584121784957599856234256212732195663134588020775339407470254773554358009414813612814043608523206785321235656738281250000000/11893246866555076224502271048716053503041552188399486859693925255801989512729963058184697801704388041132228568585731744639069267139432828422436396195190773845789765544819507967375885926460801789778004094732726475414604773544282380536262623903686278161834526252068641359013392489769824183240653882542108657936539549610862944571328935705860139247431047727556182853281366962645764437115081820828048915856676906570333091431681483516373992679",
+        "maximum_compensation_row_mass_exact": "9836711147196474656912850713428689623612543678869869705066129440594264945345684200136707049443112890736434869963326022332991422285320556571223632419671134969031045574973121886670161687716084921720145560447475851362458840074520028983937300825756843503798131109255080949945610842981602416495968580681908241776543/7812470489891329197441534383881025501527193534776146749420970287548769861717374152834809234778214931490818060660041239454170252230035452956224996519164642170504079503824767060424628055341731851393462193599607528772573836433453371392550228733042774528116064057538746715875913916410163082412383835002198605427143642686",
+        "rho_scope": "Uses the exactly computed matrix norm; the finite positive-compensation lemma conditions are all checked. No numerical Hellinger-rate certification is claimed.",
+        "nml_scaling_numerical": {
+          "log_C": 2.805058928728158,
+          "classical_leading_term": 2.5375869076169133,
+          "offset": 0.2674720211112449
+        },
+        "checks": {
+          "inputs": 4,
+          "types": 1,
+          "null_type_normalization": 2,
+          "nml": 2,
+          "nml_null_domination": 322,
+          "partition": 1,
+          "lemma_conditions": 4,
+          "inverse": 2,
+          "inverse_identity": 4,
+          "correction_nonnegative": 178,
+          "correction_equation": 178,
+          "row_probability": 2,
+          "null_dummy": 1,
+          "nml_output": 1,
+          "dummy_lower_bound": 3,
+          "retained_value": 178,
+          "exact_common_null_output_law": 180,
+          "exact_null_e_mean": 2
+        },
+        "evaluations": [
+          {
+            "name": "interior-0.35",
+            "q_exact": [
+              "13/20",
+              "7/20"
+            ],
+            "kernel_sha256": "c279db1182b079c10b1951ac469b0e0ebf55dd5ede497650b67c9666feac8cfd",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "5812871344906228156567714048381403599175197472358095215431763146070814377122814388071036418809769223624402950264113740897195808648937730639731716661628538848514620913545818794544855890710019977279896132259/7307508186654514591018424163581415098279662714880000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "q_outside_a_numerical": 0.0007954655946225422,
+            "q_dummy_mass_exact": "7323468579919121792955042393199361490067356166810224301585015589462892931813111854199921959235290803872911259274806646115598474804921350308305368240172040084449357222784578150563699792459684364927101506578115750373570084293930655623502909560405774255558034097329940055695269391028640486048507873632043596876805925663001449148821266926646355374470263792029255146098260221444392231067864644073606981463443118481242620238135398772698308059221249625481912370060814749977084772229695096814921992792680197166496068924857637/9206529924669842652517263984035091182917352451223667371355111430958859130929468723031102801565429503640354894763019101480483741052872245133473540468184047926464338470154925103803852778575904975717634045876803312571359400340257869970925636271082747709591714723927003366512803191358082395979958640966043644355552451648699364093542232856392115377046051666714951680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "numerical_nats": {
+              "universal_e_power": 34.00043170088166,
+              "likelihood_envelope": 36.31048397977175,
+              "oracle_n_r": 36.31079659053932,
+              "ordinary_optimum_upper_bound": 36.31079659053932,
+              "universal_lower_bound": 33.49547312068682,
+              "exact_beta_error_bound": 0.00995193035677928,
+              "regret_upper_bound_vs_q_specific_ordinary": 3.508158039644883
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 161,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "interior-0.50",
+            "q_exact": [
+              "1/2",
+              "1/2"
+            ],
+            "kernel_sha256": "c279db1182b079c10b1951ac469b0e0ebf55dd5ede497650b67c9666feac8cfd",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "3995521549151536222909289366080667427/730750818665451459101842416358141509827966271488",
+            "q_outside_a_numerical": 5.4676935654323845e-12,
+            "q_dummy_mass_exact": "65439947362012375982422352686170903046475438557893960409178743647985345110226540594776038942834196933679130975294839211995667331535004485224857488361466538518107947548114328744085027142088247973423801325987455445489597833924824744423576896193105650161317875792714598075699042871236409493100824839523082274908992620931898376200581389976389800304516193/11968488902070795448272443179245618537792558186590767582761644860246516870208309339940433642035058354732461363191924831924628863368733918673515602608639262304403640011201402634945008612148676468432924259639844306342767220442335230962203327152407572022469229141105104376466644148765507114773946233255856737662218187143309173321604902713309749990159867166729437184",
+            "numerical_nats": {
+              "universal_e_power": 68.35814878821957,
+              "likelihood_envelope": 70.6616332360595,
+              "oracle_n_r": 81.73209980255848,
+              "ordinary_optimum_upper_bound": 71.35478041661945,
+              "universal_lower_bound": 67.85657304816155,
+              "exact_beta_error_bound": 1.259169792289269e-06,
+              "regret_upper_bound_vs_q_specific_ordinary": 3.498207368457896
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 161,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "interior-0.65",
+            "q_exact": [
+              "7/20",
+              "13/20"
+            ],
+            "kernel_sha256": "c279db1182b079c10b1951ac469b0e0ebf55dd5ede497650b67c9666feac8cfd",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "5812871344906228156567714048381403599175197472358095215431763146070814377122814388071036418809769223624402950264113740897195808648937730639731716661628538848514620913545818794544855890710019977279896132259/7307508186654514591018424163581415098279662714880000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "q_outside_a_numerical": 0.0007954655946225422,
+            "q_dummy_mass_exact": "7323468579919121792955042393199361490067356166810224301585015589462892931813111854199921959235290803872911259274806646115598474804921350308305368240172040084449357222784578150563699792459684364927101506578115750373570084293930655623502909560405774255558034097329940055695269391028640486048507873632043596876805925663001449148821266926646355374470263792029255146098260221444392231067864644073606981463443118481242620238135398772698308059221249625481912370060814749977084772229695096814921992792680197166496068924857637/9206529924669842652517263984035091182917352451223667371355111430958859130929468723031102801565429503640354894763019101480483741052872245133473540468184047926464338470154925103803852778575904975717634045876803312571359400340257869970925636271082747709591714723927003366512803191358082395979958640966043644355552451648699364093542232856392115377046051666714951680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "numerical_nats": {
+              "universal_e_power": 34.00043170088166,
+              "likelihood_envelope": 36.31048397977175,
+              "oracle_n_r": 36.31079659053932,
+              "ordinary_optimum_upper_bound": 36.31079659053932,
+              "universal_lower_bound": 33.49547312068682,
+              "exact_beta_error_bound": 0.00995193035677928,
+              "regret_upper_bound_vs_q_specific_ordinary": 3.508158039644883
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 161,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "boundary-point-mass",
+            "q_exact": [
+              "1/1",
+              "0/1"
+            ],
+            "kernel_sha256": "c279db1182b079c10b1951ac469b0e0ebf55dd5ede497650b67c9666feac8cfd",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "0/1",
+            "q_outside_a_numerical": 0.0,
+            "q_dummy_mass_exact": "0/1",
+            "numerical_nats": {
+              "universal_e_power": 14.052622511872642,
+              "likelihood_envelope": 16.857682505252228,
+              "oracle_n_r": 16.857682505252214,
+              "ordinary_optimum_upper_bound": 16.857682505252214,
+              "universal_lower_bound": 14.052622317422674,
+              "exact_beta_error_bound": 1.2591013955898234e-06,
+              "regret_upper_bound_vs_q_specific_ordinary": 3.498207368389499
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 161,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "known-null-control",
+            "q_exact": [
+              "9/10",
+              "1/10"
+            ],
+            "kernel_sha256": "c279db1182b079c10b1951ac469b0e0ebf55dd5ede497650b67c9666feac8cfd",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": true,
+            "q_outside_a_exact": "4999993704504865794256219575775543404386117792180367149636022470284849279448530083901251746427827335868651829272554685782750295619619773296791978086863118980259/5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "q_outside_a_numerical": 0.9999987409009732,
+            "q_dummy_mass_exact": "7812460653180182000966877471030312072837569922232467879551265221419329267452428807150609098071165488377927324225171276128147919238613167635668425295532222499369110472779192087302741385180044135308540473454047081296722473974613296872521244795741948771272560259407637460794963970799320100809967339033617923518901866143/7812480326577705607050686174298573138706618100563647342612570219640153998276656512191409859497011794117336933416547237622155201377928726768184799264598546770000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "numerical_nats": {
+              "universal_e_power": -0.7072947676268808,
+              "likelihood_envelope": -1.2149443038413115e-37,
+              "oracle_n_r": 0.0,
+              "ordinary_optimum_upper_bound": 0.0,
+              "universal_lower_bound": -15.314285971786811,
+              "exact_beta_error_bound": 12.509227043058653,
+              "regret_upper_bound_vs_q_specific_ordinary": 16.007433152346756
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 161,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 3,
+              "known_null_control": 1
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "id": "ternary-n40",
+        "n": 40,
+        "alphabet_size": 3,
+        "null_count": 3,
+        "nulls_exact": [
+          [
+            "4/5",
+            "3/20",
+            "1/20"
+          ],
+          [
+            "1/20",
+            "3/4",
+            "1/5"
+          ],
+          [
+            "1/10",
+            "1/10",
+            "4/5"
+          ]
+        ],
+        "construction_inputs": [
+          "n",
+          "null family",
+          "fixed threshold rule 2^ceil(sqrt(n))"
+        ],
+        "q_used_in_construction": false,
+        "kernel_sha256": "bca6bbd8f6765e1a207263243c8dcb3f9d2e8e8c269a6e3f59ffc0c7d5de32c1",
+        "numerator": "One fixed output law of multinomial NML; unchanged across all Q evaluations.",
+        "type_count": 861,
+        "retained_type_count": 401,
+        "threshold_exact": "128/1",
+        "nml_C_exact": "1094579917023130093635784276129625729114158059321/22517998136852480000000000000000000000000000000",
+        "rho_actual_exact": "327038862053685505582082728936604744249456526813/1374389534720000000000000000000000000000000000000000",
+        "rho_actual_numerical": 0.00023795208984933963,
+        "inflation_exact": "1374062495857946314494417917271063395255750543473187/1373735456995892628988835834542126790511501086946374",
+        "envelope_mass_exact": "1877645889244040033231170689312466485276082480731/2748779069440000000000000000000000000000000000000000",
+        "common_null_dummy_exact": "3773515268340990799931543309949593797716813716298183040869604053753578228347903675380126926072257340303/3776095271137902878614087333421633087700697779394002454902210560000000000000000000000000000000000000000",
+        "universal_dummy_e_lower_bound_exact": "11171038138204160000000000000000000000000000000/1094579917023130093635784276129625729114158059321",
+        "universal_dummy_e_actual_exact": "2629448275450872634681403287772220582858553371413606040707765578355656887593206846986715994138399442670866376816861412458236609580006868645633856219266190374471482141921296715736389160156250/4591530554372381282067957465948466325786165529268135096634088681428455912530110933117405407396600284126869203716881457066698536707572029261021541752734274589093004959155552871237751583531259",
+        "maximum_compensation_row_mass_exact": "70069787528580432591175113588891122762044329198602809779553878798287042524798328999971194287667557664613029889986975091418017800368771066432774234975806265155507408829483653643831720437724789328571613987/152063218795133341181815887335720258182057745455414210895694752426284594679646226330727697366944896683323771640052086577174458512749374531681903937134882026283047017335324940402159430512166775435502607663104",
+        "rho_scope": "Uses the exactly computed matrix norm; the finite positive-compensation lemma conditions are all checked. No numerical Hellinger-rate certification is claimed.",
+        "nml_scaling_numerical": {
+          "log_C": 3.8838110245805666,
+          "classical_leading_term": 3.6888794541139363,
+          "offset": 0.19493157046663034
+        },
+        "checks": {
+          "inputs": 5,
+          "types": 1,
+          "null_type_normalization": 3,
+          "nml": 2,
+          "nml_null_domination": 2583,
+          "partition": 1,
+          "lemma_conditions": 4,
+          "inverse": 3,
+          "inverse_identity": 9,
+          "correction_nonnegative": 1203,
+          "correction_equation": 1203,
+          "row_probability": 3,
+          "null_dummy": 1,
+          "nml_output": 1,
+          "dummy_lower_bound": 3,
+          "retained_value": 802,
+          "exact_common_null_output_law": 1206,
+          "exact_null_e_mean": 3
+        },
+        "evaluations": [
+          {
+            "name": "interior-uniform",
+            "q_exact": [
+              "1/3",
+              "1/3",
+              "1/3"
+            ],
+            "kernel_sha256": "bca6bbd8f6765e1a207263243c8dcb3f9d2e8e8c269a6e3f59ffc0c7d5de32c1",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "102366549349902358/4052555153018976267",
+            "q_outside_a_numerical": 0.025259754768209325,
+            "q_dummy_mass_exact": "15559052345083688119230602768221135393731669107460027488720487129413136375594771857769263525183603309467601301732374068910680319753183509347038502370794330881439304457135327196452763452181034681222268670147806489740509667141/616244580912869665369210952702508807085113074745472854501956491121749899586056773020222558460631392010586703261038510984819140314622772586212816592483149979839866362987799533930697847050457359716506735309242541937123307552768",
+            "numerical_nats": {
+              "universal_e_power": 12.015350474467265,
+              "likelihood_envelope": 14.980237020613746,
+              "oracle_n_r": 20.433024950639627,
+              "ordinary_optimum_upper_bound": 16.078849309281857,
+              "universal_lower_bound": 10.857815905800084,
+              "exact_beta_error_bound": 0.23861009023309576,
+              "regret_upper_bound_vs_q_specific_ordinary": 5.221033403481773
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 861,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "interior-0.4-0.4-0.2",
+            "q_exact": [
+              "2/5",
+              "2/5",
+              "1/5"
+            ],
+            "kernel_sha256": "bca6bbd8f6765e1a207263243c8dcb3f9d2e8e8c269a6e3f59ffc0c7d5de32c1",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "648928749482470626490381664/9094947017729282379150390625",
+            "q_outside_a_numerical": 0.07135047056541154,
+            "q_dummy_mass_exact": "3082313667755180869988308765752150741089126120279972336907698664160905713002506328524600653004201157871426310209552318724120441185589945456016055144041367332300285403607625507208863245151205566411549871313130533778843852449099018911/43218966196472291921343153073769445365444922076509957064358432156235663421638897242112221126417607787096747995307193428167937131760645153145192107653793421571619722196636797776295517937844231095000000000000000000000000000000000000000",
+            "numerical_nats": {
+              "universal_e_power": 10.149078300032093,
+              "likelihood_envelope": 13.259641233353062,
+              "oracle_n_r": 15.693268048187615,
+              "ordinary_optimum_upper_bound": 14.35825352202117,
+              "universal_lower_bound": 8.70226979309355,
+              "exact_beta_error_bound": 0.6735604156789462,
+              "regret_upper_bound_vs_q_specific_ordinary": 5.655983728927623
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 861,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "interior-0.2-0.4-0.4",
+            "q_exact": [
+              "1/5",
+              "2/5",
+              "2/5"
+            ],
+            "kernel_sha256": "bca6bbd8f6765e1a207263243c8dcb3f9d2e8e8c269a6e3f59ffc0c7d5de32c1",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "473950512386159447102820576/1818989403545856475830078125",
+            "q_outside_a_numerical": 0.26055704967948773,
+            "q_dummy_mass_exact": "351744601375911956161878791542448122999763934979186783506763202145954323009381832858237203032310620307674847333118630230200786321766199959264800872077256853698179448633205772669066772448496480654500421448455409949566179325080862209/1350592693639759122541973533555295167670153814890936158261201004882364481926215538816006910200550243346773374853349794630248035367520161035787253364181044424113116318644899930509234935557632221718750000000000000000000000000000000000",
+            "numerical_nats": {
+              "universal_e_power": 6.2480980514893645,
+              "likelihood_envelope": 9.990423750703346,
+              "oracle_n_r": 12.12297122716026,
+              "ordinary_optimum_upper_bound": 11.089036039371456,
+              "universal_lower_bound": 3.6475416769301106,
+              "exact_beta_error_bound": 2.4590710491926693,
+              "regret_upper_bound_vs_q_specific_ordinary": 7.441494362441346
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 861,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "boundary-point-mass",
+            "q_exact": [
+              "1/1",
+              "0/1",
+              "0/1"
+            ],
+            "kernel_sha256": "bca6bbd8f6765e1a207263243c8dcb3f9d2e8e8c269a6e3f59ffc0c7d5de32c1",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "0/1",
+            "q_outside_a_numerical": 0.0,
+            "q_dummy_mass_exact": "0/1",
+            "numerical_nats": {
+              "universal_e_power": 5.044172126994226,
+              "likelihood_envelope": 8.925742052568388,
+              "oracle_n_r": 8.925742052568388,
+              "ordinary_optimum_upper_bound": 8.925742052568388,
+              "universal_lower_bound": 5.0416929909347274,
+              "exact_beta_error_bound": 0.00023803705309433099,
+              "regret_upper_bound_vs_q_specific_ordinary": 4.982661350301771
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 861,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "known-null-control",
+            "q_exact": [
+              "4/5",
+              "3/20",
+              "1/20"
+            ],
+            "kernel_sha256": "bca6bbd8f6765e1a207263243c8dcb3f9d2e8e8c269a6e3f59ffc0c7d5de32c1",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": true,
+            "q_outside_a_exact": "1374062495857966608679374200857928565216904525972957/1374389534720000000000000000000000000000000000000000",
+            "q_outside_a_numerical": 0.9997620479101654,
+            "q_dummy_mass_exact": "3773515268340990799931543309949593797716813716298183040869604053753578228347903675380126926072257340303/3776095271137902878614087333421633087700697779394002454902210560000000000000000000000000000000000000000",
+            "numerical_nats": {
+              "universal_e_power": -0.5533458989112537,
+              "likelihood_envelope": -1.890513328621166e-09,
+              "oracle_n_r": 0.0,
+              "ordinary_optimum_upper_bound": 0.0,
+              "universal_lower_bound": -13.318635196233625,
+              "exact_beta_error_bound": 9.434824169762544,
+              "regret_upper_bound_vs_q_specific_ordinary": 14.41724748301122
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 861,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 3,
+              "known_null_control": 1
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "id": "ternary-n80",
+        "n": 80,
+        "alphabet_size": 3,
+        "null_count": 3,
+        "nulls_exact": [
+          [
+            "4/5",
+            "3/20",
+            "1/20"
+          ],
+          [
+            "1/20",
+            "3/4",
+            "1/5"
+          ],
+          [
+            "1/10",
+            "1/10",
+            "4/5"
+          ]
+        ],
+        "construction_inputs": [
+          "n",
+          "null family",
+          "fixed threshold rule 2^ceil(sqrt(n))"
+        ],
+        "q_used_in_construction": false,
+        "kernel_sha256": "04f6ec38215384344b81c05cd7017a3b78d92eefd3d47b4a95b25bbd64ac9515",
+        "numerator": "One fixed output law of multinomial NML; unchanged across all Q evaluations.",
+        "type_count": 3321,
+        "retained_type_count": 2112,
+        "threshold_exact": "512/1",
+        "nml_C_exact": "2816357848507344218489987017465545825844553957197792029479934475521614322216046139979876493203591965421588829878207321/30649910817317777167166940543006183672374782443672043520000000000000000000000000000000000000000000000000000000000000",
+        "rho_actual_exact": "2587284861238867308477990791163212823367614316418953733866343496179988442259/100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "rho_actual_numerical": 2.587284861238867e-05,
+        "inflation_exact": "99997412715138761132691522009208836787176632385683581046266133656503820011557741/99994825430277522265383044018417673574353264771367162092532267313007640023115482",
+        "envelope_mass_exact": "1972468630912645561208211969310645350982126686326194399223463988671749876473707264331905933406724451/30223145490365729367654400000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "common_null_dummy_exact": "1007320305167749138083145190087009282545567786191686739281832049318480515281307068710196976067129207058507780827706756690608487468891801414123419956171621739140845031472139670378991603/1007386052421000150258904548187244048432287583315044899559095948634557388774993455446308756743628888473600000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "universal_dummy_e_lower_bound_exact": "15295023855126351691818658806129062359944837723355873280000000000000000000000000000000000000000000000000000000000000/2816357848507344218489987017465545825844553957197792029479934475521614322216046139979876493203591965421588829878207321",
+        "universal_dummy_e_actual_exact": "192710964678700080801042073173678660113128331472690133834378353483782035750881283577833335274630162510064231428641296436285257227208352456711511496355110118516730590774194958223746835439954127237194537826496726162274788628842015026364057119711661694184445992300130548860839896496823512504919497409684426975759652568766310358162476122378477785898027090289753859853050244055339135229587554931640625/483096383213619190713664823272268725766733485891371991548138017260564265913310527285066083361922551196002285578311011187824635515097707894576656669357173544089125515454520282410368521072708901748681284434292200886618608736333278267703836689466827561580270062006058887389416697423896365424455224875452647201368224037571254988165155853059621082605980723924450717568497744124286617697924979050901808",
+        "maximum_compensation_row_mass_exact": "14696646595768698916949243278864165892799450115564585044052822542181286804767932848184911159500834260077682023201146426114124419595808655793462506068168983112266826717454521187647088707142523518222261502970529865009798160500739536528427221885510679102678863051314809290371635154307810867810224758143608017339169250136351768918844558893266960816710154607067154864823803850766361/315998650854599629248367891762124635060135698076315610548117275698570167101290514414166434262013708015563934085549737791916863448243269668969258727658100295015094971902098915027002340006496873167665787549200178951300684849434118657052190919823939405040705394980277699706730955435945112974094065275074384809994422128942486370597910017680529696392615497189666294331908016286849826816",
+        "rho_scope": "Uses the exactly computed matrix norm; the finite positive-compensation lemma conditions are all checked. No numerical Hellinger-rate certification is claimed.",
+        "nml_scaling_numerical": {
+          "log_C": 4.5205700334233825,
+          "classical_leading_term": 4.382026634673881,
+          "offset": 0.13854339874950128
+        },
+        "checks": {
+          "inputs": 5,
+          "types": 1,
+          "null_type_normalization": 3,
+          "nml": 2,
+          "nml_null_domination": 9963,
+          "partition": 1,
+          "lemma_conditions": 4,
+          "inverse": 3,
+          "inverse_identity": 9,
+          "correction_nonnegative": 6336,
+          "correction_equation": 6336,
+          "row_probability": 3,
+          "null_dummy": 1,
+          "nml_output": 1,
+          "dummy_lower_bound": 3,
+          "retained_value": 4224,
+          "exact_common_null_output_law": 6339,
+          "exact_null_e_mean": 3
+        },
+        "evaluations": [
+          {
+            "name": "interior-uniform",
+            "q_exact": [
+              "1/3",
+              "1/3",
+              "1/3"
+            ],
+            "kernel_sha256": "04f6ec38215384344b81c05cd7017a3b78d92eefd3d47b4a95b25bbd64ac9515",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "2666081440537857254704660863267508/147808829414345923316083210206383297601",
+            "q_outside_a_numerical": 1.8037362524968988e-05,
+            "q_dummy_mass_exact": "73708334414940013028611244041085863601765779027787148353023445774934248242562003973297975859310057421661886234631002568407222130742822269378117287862914041590085807789193992020953997083605583054352225507685297787929679754417796720441806505461836490442341216446818094354033434342087864204474871080325627053548902833134044920495283567472810268032017790593352916747336722308750310152680241470930101853371165492982264601/4086601068044755530164073824736749062972471636125486158666020063389769145977445797091916234768305680948634587316305824554672001170768370247191385215512401923370708786107534637252690631062080932560521820507597534720096403916352959504063886220466354255793636761641636205754209675153000433977096563882742027031779378539389200606237746500253983469716528799257367562155159920599357960118506940582610224311606239806119317864448",
+            "numerical_nats": {
+              "universal_e_power": 30.42097484129422,
+              "likelihood_envelope": 33.93309941053318,
+              "oracle_n_r": 40.866049901279254,
+              "ordinary_optimum_upper_bound": 35.03171169920129,
+              "universal_lower_bound": 29.41229690336306,
+              "exact_beta_error_bound": 0.000232473746737074,
+              "regret_upper_bound_vs_q_specific_ordinary": 5.61941479583823
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 3321,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "interior-0.4-0.4-0.2",
+            "q_exact": [
+              "2/5",
+              "2/5",
+              "1/5"
+            ],
+            "kernel_sha256": "04f6ec38215384344b81c05cd7017a3b78d92eefd3d47b4a95b25bbd64ac9515",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "54684012875455505470493211462877640866140726245062912/82718061255302767487140869206996285356581211090087890625",
+            "q_outside_a_numerical": 0.0006610891508527698,
+            "q_dummy_mass_exact": "15748196573860078005280945714336800259592037701221405703346401090719034032903629879396056089051462536767498836993877153036514010799573083389233331358470994116003469951819123978306324003891164059110759799718599116492778618067335169828279394120313488945022102583983797691732148148879795980408132801441173207620132658884669915554021103412442110439766030948984159663513142259902918824773422544770435545360958601779302879813909315187720299/23822699931327011557785664001970603642885660884835569900214451410056115938980549466087618680186025372089792620894798548529421600488908103904871312077671054871982008028052270549740814521134103939343851387277815106287797206887153502213233147884551661369178059373720451773329015551092516907564767892804689868502542019471084395127531265416209703716129957223138800000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "numerical_nats": {
+              "universal_e_power": 25.598631381755666,
+              "likelihood_envelope": 29.113413451268908,
+              "oracle_n_r": 31.38653609637523,
+              "ordinary_optimum_upper_bound": 30.21202573993702,
+              "universal_lower_bound": 24.585245430925553,
+              "exact_beta_error_bound": 0.0075979869199728845,
+              "regret_upper_bound_vs_q_specific_ordinary": 5.626780309011465
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 3321,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "interior-0.2-0.4-0.4",
+            "q_exact": [
+              "1/5",
+              "2/5",
+              "2/5"
+            ],
+            "kernel_sha256": "04f6ec38215384344b81c05cd7017a3b78d92eefd3d47b4a95b25bbd64ac9515",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "873657707771995335683177136664031833997249533405275584/82718061255302767487140869206996285356581211090087890625",
+            "q_outside_a_numerical": 0.010561873604308977,
+            "q_dummy_mass_exact": "134020505440670155661863505736345469478494249790066922163718957954564447563989666900153242706482157535132107188596056160618171431760292773870158743548458380031572804959865766407115164794731839064852139002102631027168098260493186563801339177974148370223112460204900370640563910639720368004482779563797652979455220116364351610023444653857024095361428575224917106876676669485170001886749003729843729441896084073962500611853659753742911/12689648400919928031490943182867864156366651749734856125824459202799777666360377911623376427655908401326238967095950931389961790033154174665236849473191257921865416208124433886580689553160921842690261747484631626218641978100401368366423906898731353712275244694808479282668154590425701477751119261082043608932462013212580466154579864390736702973790815282211718750000000000000000000000000000000000000000000000000000000000000000000000000",
+            "numerical_nats": {
+              "universal_e_power": 18.47126094019264,
+              "likelihood_envelope": 22.041189262961915,
+              "oracle_n_r": 24.24594245432052,
+              "ordinary_optimum_upper_bound": 23.139801551630026,
+              "universal_lower_bound": 17.399617688439925,
+              "exact_beta_error_bound": 0.12100154109860807,
+              "regret_upper_bound_vs_q_specific_ordinary": 5.740183863190101
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 3321,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "boundary-point-mass",
+            "q_exact": [
+              "1/1",
+              "0/1",
+              "0/1"
+            ],
+            "kernel_sha256": "04f6ec38215384344b81c05cd7017a3b78d92eefd3d47b4a95b25bbd64ac9515",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": false,
+            "q_outside_a_exact": "0/1",
+            "q_outside_a_numerical": 0.0,
+            "q_dummy_mass_exact": "0/1",
+            "numerical_nats": {
+              "universal_e_power": 13.330888637945009,
+              "likelihood_envelope": 17.851484105136777,
+              "oracle_n_r": 17.851484105136777,
+              "ordinary_optimum_upper_bound": 17.851484105136777,
+              "universal_lower_bound": 13.33088819786063,
+              "exact_beta_error_bound": 2.587385276342502e-05,
+              "regret_upper_bound_vs_q_specific_ordinary": 5.619208195944256
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 3321,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 2
+            },
+            "passed": true
+          },
+          {
+            "name": "known-null-control",
+            "q_exact": [
+              "4/5",
+              "3/20",
+              "1/20"
+            ],
+            "kernel_sha256": "04f6ec38215384344b81c05cd7017a3b78d92eefd3d47b4a95b25bbd64ac9515",
+            "uses_unchanged_nml_numerator": true,
+            "known_null_control": true,
+            "q_outside_a_exact": "24178062863781743837314305140823866550608077751572265817054580677221947478590432444103982124624592817201/24178516392292583494123520000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "q_outside_a_numerical": 0.9999812425004296,
+            "q_dummy_mass_exact": "1007320305167749138083145190087009282545567786191686739281832049318480515281307068710196976067129207058507780827706756690608487468891801414123419956171621739140845031472139670378991603/1007386052421000150258904548187244048432287583315044899559095948634557388774993455446308756743628888473600000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "numerical_nats": {
+              "universal_e_power": -0.918491949958298,
+              "likelihood_envelope": -1.1494544931154555e-17,
+              "oracle_n_r": 0.0,
+              "ordinary_optimum_upper_bound": 0.0,
+              "universal_lower_bound": -15.9743779327933,
+              "exact_beta_error_bound": 11.453807899369918,
+              "regret_upper_bound_vs_q_specific_ordinary": 17.07299022146141
+            },
+            "bound_scope": "Q-specific ordinary optimum is not numerically solved; the envelope/oracle give its upper bound. Q(Ac) is computed for evaluation only and is not a kernel input.",
+            "checks": {
+              "alternative_input": 1,
+              "alternative_normalization": 1,
+              "nml_q_domination": 3321,
+              "q_output_law": 1,
+              "q_dummy_mass": 1,
+              "floating_bound_consistency": 3,
+              "known_null_control": 1
+            },
+            "passed": true
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "arithmetic_scope": {
+      "exact": "Fraction: multinomial NML type probabilities and C, rational threshold decisions, null classification matrix, actual rho, compensation, common output law, exact null e-means, positive dummy lower bound and pointwise NML domination for each evaluated Q.",
+      "floating": "Logarithms, KL/e-power, scaling displays and log-power bounds use binary floating point, not interval or rational logarithmic certificates."
+    },
+    "limitations": "Finite probability certificates and floating log diagnostics do not establish the general theorem, compact-set uniformity, minimax lower bound or proof-assistant verification."
+  }
+}

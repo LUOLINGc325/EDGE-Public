@@ -3,3 +3,8 @@
 - [Research manuscript](paper.en.md)
 - [Offline MathML reading copy](paper.en.html)
 - [Reproduction instructions](REPRODUCTION.md)
+
+## Expanded manuscript
+
+- [Research manuscript](paper.md)
+- [Offline reading copy](paper.html)

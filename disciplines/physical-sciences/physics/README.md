@@ -4,4 +4,5 @@
 
 [上级学科 / Parent](../)
 
+- [理论物理 / Theoretical physics](theoretical-physics/)
 - [量子信息与物理 / Quantum information and physics](quantum-physics/)

@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**366 research entries / 成果条目 · 467 manuscript versions / 论文版本**
+**378 research entries / 成果条目 · 480 manuscript versions / 论文版本**
 
 [按学科浏览](BY_FIELD.md) · [导出单项成果](EXPORT.md) · [项目清单](CATALOG.json)
 
@@ -22,6 +22,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | A two-quadrant complexity boundary for domination in split rectangle graphs | — | [Read](two-quadrant-complexity/paper.en.md) |
 | A universal boundary kernel for cross-validation after two-model selection | — | [Read](two-model-cv-boundary-universality/paper.en.md) |
 | A Vanishing Second Spike in a Real Haar Interaction Graph | — | [Read](real-haar-mst-singular-regularization/paper.en.md) |
+| An Axiomatic Diversity Measure from Threshold Semidefinite Programs · [正文 / Manuscript](semidefinite-axiomatic-diversity/paper.md) | — | — |
 | An order \(1/n\) horizon bound for record-constrained prophet inequalities | — | [Read](uniform-bin-minimum-rate/paper.en.md) |
 | Approximate Local Privacy: Blackwell Structure, Exact Pearson Information, and Minimax Estimation | — | [Read](approximate-ldp-blackwell-structure/paper.en.md) |
 | Assignment bounds and constant-factor algorithms for bounded-hop independent-set reconfiguration | [阅读](bounded-hop-independent-set-approximation/paper.zh.md) | [Read](bounded-hop-independent-set-approximation/paper.en.md) |
@@ -47,9 +48,13 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Exact finite-power prediction with corrupted smooth feedback | — | [Read](exact-finite-power-plateau/paper.en.md) |
 | Exact Geometry and Uniform Recovery of Congestion Monotonicity on AC Lines | — | [Read](ac-line-congestion-geometry/paper.en.md) |
 | Exact Geometry of Calibrated Confidence Sets | — | [Read](gaussian-evcs-prior-geometry/paper.en.md) |
+| Exact headway and gain limits for positive actuation kernels with bounded mean · [正文 / Manuscript](mean-bounded-lag-headway/paper.md) | — | — |
 | Exact minimax one-bit quantization and the cost of shared randomness | — | [Read](onebit-minimax-shared-randomness/paper.en.md) |
 | Exact phase complexity of discrete CVaR ski rental | — | [Read](polynomial-exact-phase-sweep/paper.en.md) |
+| Exact phase realization and strong stability for matrix-valued distributed delays · [正文 / Manuscript](distributed-delay-phase-boundary/paper.md) | — | — |
+| Exact pivotalization for finite composite tests · [正文 / Manuscript](finite-null-exact-pivotalization/paper.md) | — | — |
 | Exact power thresholds for noncyclic Gaussian sources and their discontinuity at pole coalescence | — | [Read](noncyclic-mimo-power-elimination/paper.en.md) |
+| Exact tail phases of intermittent Kalman filtering: Jordan corrections and scalar shape classification · [正文 / Manuscript](intermittent-kalman-tail-phase/paper.md) | — | — |
 | Exact Two-Sided Coverage of the Bivariate Gaffke Intervals | — | [Read](exact-coverage-and-risk-transitions/paper.en.md) |
 | Extremal visibility of logical Pauli operators under product measurements | — | [Read](stabilizer-logical-pauli-visibility/paper.en.md) |
 | Feasible-output frontiers and covert communication over Gamma noise | — | [Read](gamma-covert-feasible-frontier/paper.en.md) |
@@ -58,6 +63,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Finite-resource response of reversible covalent switches | — | [Read](covalent-switch-finite-resource-response/paper.en.md) |
 | Finite-size nonmonotone submodular correlation gaps | — | [Read](finite-cardinality-profile/paper.en.md) |
 | Fixed Block Perception Budgets | — | [Read](block-fdiv-perception-frontier/paper.en.md) |
+| Full-support unbounded service times with a quantitative feedback capacity gap · [正文 / Manuscript](unbounded-queue-feedback-separation/paper.md) | — | — |
 | Gaffke 统计量留一系数的尖锐下界 | [阅读](gaffke-delta-sharp-bound/paper.zh.md) | [Read](gaffke-delta-sharp-bound/paper.en.md) |
 | Glauber 退火中过量活动度的桥结构机制 | [阅读](glauber-annealing-activity-counterexample/paper.zh.md) | [Read](glauber-annealing-activity-counterexample/paper.en.md) |
 | Global and Stable Recovery of Compositional Lotka–Volterra Dynamics | — | [Read](compositional-glv-convex-recovery/paper.en.md) |
@@ -67,6 +73,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Hard Communication Budgets for Heavy-Tailed Mean Estimation | — | [Read](moment-hard-communication/paper.en.md) |
 | Hawkes Processes with Missed and Spurious Events | — | [Read](hawkes-missed-spurious-recovery/paper.en.md) |
 | Helly 圆弧图的最大极小团横截与锐利比例界 | [阅读](upper-clique-transversal-helly-circular-arc/paper.zh.md) | — |
+| Hidden-state complexity from excursion moments: inertia bounds and a quantitative dissipation penalty · [正文 / Manuscript](hidden-state-inertia-budget/paper.md) | — | — |
 | High-order parity gaps and crossover radii for noisy qubit designs | — | [Read](high-order-parity-gap/paper.en.md) |
 | Hitting and cover-time robustness separate on bounded-degree graphs | — | [Read](bounded-degree-cover-hitting-separation/paper.en.md) |
 | Information loss and sharp power limits for conditional Gamma calibration | — | [Read](conditional-information-power-boundaries/paper.en.md) |
@@ -84,6 +91,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Noncommuting Markov aliases on a fixed cubic graph of girth six | — | [Read](noncommuting-pell-aliases/paper.en.md) |
 | Nonmonotonicity and sharp high-privacy limits for additive privacy | — | [Read](additive-privacy-bv-minimax/paper.en.md) |
 | One versus two long-time queries for affine Hamiltonian encoding | — | [Read](long-time-hamiltonian-affine-state/paper.en.md) |
+| One-bit guessing at growing moment orders · [正文 / Manuscript](bec-guessing-moment-blocklength-phase/paper.md) | — | — |
 | Optimal centroid partitions in one-trap games on finite metric trees | — | [Read](continuous-star-partition-optimality/paper.en.md) |
 | Optimal fibers in information bottlenecks: stability, tensor products, and regular continuation | — | [Read](ib-canonical-strict-concavity/paper.en.md) |
 | Optimal finite preparation for delayed Newton cooling | — | [Read](finite-common-preparation/paper.en.md) |
@@ -108,6 +116,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Reliability exponents for binary noisy-permutation channels | — | [Read](binary-reliability-exponents/paper.en.md) |
 | Rigidity and stability of optimal quantum polygon approximations | — | [Read](minimizer-rigidity-stability/paper.en.md) |
 | Rényi contraction of repeated symmetric channels | — | [Read](renyi-product-order-phase/paper.en.md) |
+| Scale thresholds, weak recovery, and stopping-design limits for heterogeneous repeated measurements · [正文 / Manuscript](heterogeneous-replication-scale-minimax/paper.md) | — | — |
 | Schmidt 稳定子熵的随机极限与单项局部酉极小态 | [阅读](haar-schmidt-magic/paper.zh.md) | — |
 | Self-deleting paths with bounded deleters per edge | — | [Read](bounded-edge-deleters/paper.en.md) |
 | Serial service and the exact ordinal scheduling frontier | — | [Read](serial-service-frontier/paper.en.md) |
@@ -133,10 +142,11 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Single-frequency identification of a reflected diffusion from weak Floquet response | — | [Read](single-frequency-inverse-identification/paper.en.md) |
 | Singular-value product bounds for quantum channels and the optimal qubit count | — | [Read](quantum-channel-product-bound-universality/paper.en.md) |
 | Spurious Local Minima and Certified Global Optimization in Two-Sensor Switched-Linear Scheduling | — | [Read](switched-linear-scheduling-global-certificate/paper.en.md) |
-| Stability boundaries of divisive-normalization circuits: norm-one counterexamples and sharp spectral repairs | — | [Read](divisive-normalization-stability-boundary/paper.en.md) |
+| Stability boundaries of divisive-normalization circuits: exact recurrence classifications and norm-one counterexamples · [正文 / Manuscript](divisive-normalization-stability-boundary/paper.md) | — | [Read](divisive-normalization-stability-boundary/paper.en.md) |
 | Stable FCFS queues with maximal total-variation separation | — | [Read](ergodic-queue-total-variation-separation/paper.en.md) |
 | Strict Priority in Nonpreemptive Clearing Systems with Common Exponential Patience | — | [Read](equal-patience-priority-classification/paper.en.md) |
 | Synchronization, relaxation gaps, and uniform planning horizons in heterogeneous restless bandits | — | [Read](heterogeneous-rmab-uniform-horizon/paper.en.md) |
+| Tail-Sensitive and Robust Capacity Laws for Random-Rank Matrix Channels · [正文 / Manuscript](gamma-random-rank-capacity-transitions/paper.md) | — | — |
 | The additive cost of counted feedback at the growing-round erasure frontier | — | [Read](counted-feedback-additive-frontier/paper.en.md) |
 | The bottleneck spectral neighbor of a balanced complete tripartite graph | — | [Read](bottleneck-spectral-neighbor/paper.en.md) |
 | The complexity of exact terminal induction with slack composite nulls | — | [Read](slack-null-induction-complexity/paper.en.md) |
@@ -148,6 +158,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | The Exact Statistical Price of a Robust-Regret Certificate in LQR | — | [Read](lqr-certificate-efficiency-frontier/paper.en.md) |
 | The finite-population effect for Euclidean coordinate medians | — | [Read](fixed-population-sharp-deficit/paper.en.md) |
 | The first capacity transition of the power-constrained Cauchy channel | — | [Read](cauchy-channel-capacity-transition/paper.en.md) |
+| The least dissipation of linear relaxation: spectral determinacy and exact acceleration frontiers · [正文 / Manuscript](ou-entropy-spectral-frontier/paper.md) | — | — |
 | The pointwise extension frontier of the exchangeable arithmetic prefix rule | — | [Read](three-coordinate-extension-frontier/paper.en.md) |
 | The sharp cost of online conformal coverage in subdiffusive corridors | — | [Read](online-conformal-sharp-constant/paper.en.md) |
 | The sharp peripheral Jordan order of monitored quantum kernels | — | [Read](sharp-peripheral-jordan-order/paper.en.md) |
@@ -165,6 +176,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Three Projective Measurements Witness an Exclusion Advantage for Every Pure Entangled State | [阅读](pure-entanglement-three-measurement-exclusion/paper.zh.md) | [Read](pure-entanglement-three-measurement-exclusion/paper.en.md) |
 | Transient learning at a common reward threshold in finite-state Markov decision processes | — | [Read](finite-worst-models-transient-learning/paper.en.md) |
 | Truthful reports break the optimal report-independent envy-ratio barrier | — | [Read](envy-ratio-truthful-report-separation/paper.en.md) |
+| Two scales of heavy traffic in a scheduled queue · [正文 / Manuscript](scheduled-queue-continuous-extremes/paper.md) | — | — |
 | Two scales of private e-power when epsilon tends to zero | — | [Read](vanishing-epsilon-two-scales/paper.en.md) |
 | Two-level Pauli spectra and the four-qubit obstruction to mutually unbiased orbits | — | [Read](four-qubit-pauli-mub-obstruction-and-robustness/paper.en.md) |
 | Two-season frequency witnesses on directed cycles | [阅读](directed-cycle-two-season-witness/paper.zh.md) | [Read](directed-cycle-two-season-witness/paper.en.md) |
