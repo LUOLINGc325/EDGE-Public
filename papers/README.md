@@ -4,7 +4,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 
 多模型协作科研系统的研究稿。各成果的假设、证明、适用范围和局限见正文；公开不等于外部同行评议、期刊录用、原创优先权确认或完整形式化验证。
 
-**404 research entries / 成果条目 · 506 manuscript versions / 论文版本**
+**405 research entries / 成果条目 · 507 manuscript versions / 论文版本**
 
 [按学科浏览](BY_FIELD.md) · [导出单项成果](EXPORT.md) · [项目清单](CATALOG.json)
 
@@ -97,6 +97,7 @@ Research drafts from a collaborative multi-model research system. Read the assum
 | Lüders 总变差顺序分数在测量粗粒化下增加的量子比特反例 | [阅读](lueders-coarse-graining-tv/paper.zh.md) | [Read](lueders-coarse-graining-tv/paper.en.md) |
 | Lüders 粗粒化可以增大测量顺序分数 | [阅读](commuting-effect-threshold/paper.zh.md) | [Read](commuting-effect-threshold/paper.en.md) |
 | Magnetization projection at every integer stabilizer Rényi order | — | [Read](integer-order-projection-law/paper.en.md) |
+| Matrix discrepancy on two-dimensional subspaces and sharp variance-profile bounds · [正文 / Manuscript](kadison-singer-sharp-constant/paper.md) | — | — |
 | Minimal negative-association failures of swap rounding | — | [Read](sharp-minimal-failures/paper.en.md) |
 | Minimum-distinct couplings: a sharp support threshold | — | [Read](pair-supported-leakage-coupling/paper.en.md) |
 | Narrow corridors in critical online conformal prediction | — | [Read](narrow-corridor-expansion/paper.en.md) |

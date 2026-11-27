@@ -169,6 +169,12 @@
 
 - [A square-to-clipped-square transition in high-privacy noise](additive-privacy-bv-minimax/) · 交叉 / Cross-listed
 
+#### 矩阵差异理论 / Matrix discrepancy
+
+[学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/mathematics/matrix-discrepancy/)
+
+- [Matrix discrepancy on two-dimensional subspaces and sharp variance-profile bounds](kadison-singer-sharp-constant/)
+
 ### 概率与统计 / Probability and statistics
 
 [学科目录 / Field directory](../disciplines/mathematical-statistical-sciences/probability-statistics/)
@@ -186,6 +192,7 @@
 - [Gradual stability transitions for nonregular median estimation](nonregular-median-stability-frontier/)
 - [Hidden-state complexity from excursion moments: inertia bounds and a quantitative dissipation penalty](hidden-state-inertia-budget/)
 - [Loss geometry, evidence efficiency, and adaptive repair in multivariate mean testing](gue-loss-sign-growth-frontier/)
+- [Matrix discrepancy on two-dimensional subspaces and sharp variance-profile bounds](kadison-singer-sharp-constant/) · 交叉 / Cross-listed
 - [Noncommuting Markov aliases on a fixed cubic graph of girth six](noncommuting-pell-aliases/)
 - [Precise independent e-merging beyond reordered martingales](independent-e-merging-beyond-martingales/)
 - [Scale thresholds, weak recovery, and stopping-design limits for heterogeneous repeated measurements](heterogeneous-replication-scale-minimax/)

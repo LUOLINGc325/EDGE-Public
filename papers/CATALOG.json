@@ -248,6 +248,13 @@
       "parent": "probability-statistics"
     },
     {
+      "id": "matrix-discrepancy",
+      "zh": "矩阵差异理论",
+      "en": "Matrix discrepancy",
+      "level": "specialty",
+      "parent": "mathematics"
+    },
+    {
       "id": "risk-optimization",
       "zh": "风险优化",
       "en": "Risk optimization",
@@ -2292,6 +2299,20 @@
       "dependencies": [],
       "unavailable_links": 0,
       "legacy_paths": {}
+    },
+    {
+      "dependencies": [],
+      "unavailable_links": 0,
+      "legacy_paths": {},
+      "slug": "kadison-singer-sharp-constant",
+      "title": "Matrix discrepancy on two-dimensional subspaces and sharp variance-profile bounds",
+      "category": "matrix-discrepancy",
+      "related_categories": [
+        "probability-statistics"
+      ],
+      "manuscripts": [
+        "paper.md"
+      ]
     },
     {
       "slug": "kcbs-rank-one-all-dimensions",

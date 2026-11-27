@@ -5,6 +5,7 @@
 [上级学科 / Parent](../)
 
 - [几何分析 / Geometric analysis](geometric-analysis/)
+- [矩阵差异理论 / Matrix discrepancy](matrix-discrepancy/)
 
 - [A linear threshold for optimal burning of long path forests](../../../papers/linear-threshold-path-forest-burning/)
 - [A Sharp Tail Criterion and Starting-Point Cutoff for Radial Stereographic Bouncy Particle Sampling](../../../papers/sbps-radial-tail-cutoff/)

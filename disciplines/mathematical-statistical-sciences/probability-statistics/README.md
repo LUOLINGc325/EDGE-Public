@@ -23,6 +23,7 @@
 - [Gradual stability transitions for nonregular median estimation](../../../papers/nonregular-median-stability-frontier/)
 - [Hidden-state complexity from excursion moments: inertia bounds and a quantitative dissipation penalty](../../../papers/hidden-state-inertia-budget/)
 - [Loss geometry, evidence efficiency, and adaptive repair in multivariate mean testing](../../../papers/gue-loss-sign-growth-frontier/)
+- [Matrix discrepancy on two-dimensional subspaces and sharp variance-profile bounds](../../../papers/kadison-singer-sharp-constant/) · 交叉 / Cross-listed ([矩阵差异理论 / Matrix discrepancy](../mathematics/matrix-discrepancy/))
 - [Noncommuting Markov aliases on a fixed cubic graph of girth six](../../../papers/noncommuting-pell-aliases/)
 - [Precise independent e-merging beyond reordered martingales](../../../papers/independent-e-merging-beyond-martingales/)
 - [Scale thresholds, weak recovery, and stopping-design limits for heterogeneous repeated measurements](../../../papers/heterogeneous-replication-scale-minimax/)
